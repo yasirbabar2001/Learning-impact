@@ -10,6 +10,11 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Self-contained server bundle (.next/standalone) for cPanel "Setup Node.js App" hosting.
+  output: "standalone",
+  // No next/image usage, so skip the sharp image optimiser and keep the upload small.
+  images: { unoptimized: true },
+  outputFileTracingExcludes: { "*": ["node_modules/@img/**", "node_modules/sharp/**", "node_modules/.pnpm/@img+*/**", "node_modules/.pnpm/sharp@*/**"] },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

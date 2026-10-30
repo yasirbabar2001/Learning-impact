@@ -7,12 +7,13 @@ import { byProgramOrder, makeReference } from "./shared";
 import type { Store } from "./types";
 
 /**
- * Development store: a single JSON file under .data/. Serverless hosts have a read-only
- * file system, so production deployments use the Supabase store instead.
+ * File store: a single JSON file. Used for local development and on traditional hosting
+ * (e.g. cPanel) where the disk is persistent; set DATA_DIR to a folder outside the app so
+ * redeploys never touch it. Serverless hosts need the Supabase store instead.
  */
 type Db = { programs: Program[]; requests: TrainingRequest[]; settings: SiteSettings };
 
-const DIR = path.join(process.cwd(), ".data");
+const DIR = process.env.DATA_DIR || path.join(process.cwd(), ".data");
 const FILE = path.join(DIR, "db.json");
 
 let queue: Promise<unknown> = Promise.resolve();

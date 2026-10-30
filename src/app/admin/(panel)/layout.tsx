@@ -12,9 +12,9 @@ export default async function PanelLayout({ children }: { children: React.ReactN
     <div className="admin">
       <AdminNav />
       <main id="main" className="admin__main">
-        {!usingSupabase && process.env.NODE_ENV === "production" && (
+        {!usingSupabase && process.env.VERCEL && (
           <p className="form-alert">
-            No database is configured (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY). Data is being kept in local files, which most hosts erase. See README.
+            No database is configured (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY). Vercel does not keep local files, so requests would be lost. See README.
           </p>
         )}
         {children}

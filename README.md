@@ -32,8 +32,8 @@ New requests can also be e-mailed to the team (optional, via [Resend](https://re
 ## Tech
 
 Next.js 16 (App Router, server actions), React 19, TypeScript, Motion for animation, Zod for validation and
-Supabase (Postgres) for storage. Without Supabase credentials the app stores data in a local `.data/` folder, which
-is only meant for local development.
+either a JSON file on disk (cPanel / any server with a persistent disk; set `DATA_DIR`) or Supabase (Postgres) for
+serverless hosting such as Vercel.
 
 ## Run locally
 
@@ -47,7 +47,13 @@ Checks: `pnpm typecheck`, `pnpm lint`, `pnpm build`, `pnpm test:e2e` (Playwright
 
 ## Go live on learningimpact.pk
 
-### 1. Database (Supabase, free tier is enough)
+**Option A: domain.pk cPanel hosting (Node.js).** Follow [docs/HOSTING-DOMAIN-PK.md](docs/HOSTING-DOMAIN-PK.md).
+Every push to `main` builds a ready-to-upload `learning-impact-hosting.zip` (GitHub → Actions → *Build hosting
+package* → Artifacts). Data is kept in a JSON file in the folder named by `DATA_DIR`, so no database is required.
+
+**Option B: Vercel + Supabase.** Serverless hosting has no persistent disk, so it needs the Supabase database.
+
+#### 1. Database (Supabase, free tier is enough)
 
 1. Create a project at [supabase.com](https://supabase.com) (choose a region near Pakistan, for example Mumbai or Singapore).
 2. Open **SQL Editor → New query**, paste the contents of [`supabase/schema.sql`](supabase/schema.sql) and run it.
@@ -55,7 +61,7 @@ Checks: `pnpm typecheck`, `pnpm lint`, `pnpm build`, `pnpm test:e2e` (Playwright
 
 The starter program catalogue and default settings are added automatically the first time the site loads.
 
-### 2. Hosting (Vercel)
+#### 2. Hosting (Vercel)
 
 1. At [vercel.com](https://vercel.com) choose **Add New → Project** and import the `learning-impact` GitHub repository.
 2. Add these **Environment Variables** before the first deploy:
@@ -71,7 +77,7 @@ The starter program catalogue and default settings are added automatically the f
 
 3. Deploy. Every push to `main` redeploys automatically.
 
-### 3. Domain (domain.pk)
+#### 3. Domain (domain.pk)
 
 1. In Vercel: **Project → Settings → Domains**, add `learningimpact.pk` and `www.learningimpact.pk`.
 2. In your domain.pk control panel, open DNS management for `learningimpact.pk` and add the records Vercel shows.
@@ -87,7 +93,7 @@ The starter program catalogue and default settings are added automatically the f
 3. Wait for the records to propagate (usually minutes, up to 48 hours for .pk). Vercel issues the HTTPS certificate
    automatically. `www` redirects to the bare domain.
 
-### 4. E-mail alerts (optional)
+#### 4. E-mail alerts (optional)
 
 Create a free Resend account, verify `learningimpact.pk` there (it gives you DNS records to add at domain.pk), then
 set `RESEND_API_KEY`, `NOTIFY_EMAIL_TO` (comma-separated addresses) and `NOTIFY_EMAIL_FROM`.

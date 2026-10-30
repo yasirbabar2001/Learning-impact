@@ -1,0 +1,33 @@
+name: Build hosting package
+
+# Builds learning-impact-hosting.zip on every push to main. Download it from the run's
+# "Artifacts" section and upload it to cPanel (see docs/HOSTING-DOMAIN-PK.md).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://learningimpact.pk
+      - run: pnpm package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: learning-impact-hosting
+          path: learning-impact-hosting.zip
+          retention-days: 30

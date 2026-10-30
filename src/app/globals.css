@@ -612,8 +612,9 @@ p {
 .nav__link.is-active {
   color: var(--fg);
 }
-.nav__pill {
+.nav__link .nav__pill {
   position: absolute;
+  z-index: 0;
   inset: 0;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.09);
@@ -1320,8 +1321,9 @@ p {
 .tab:hover:not(.is-active) {
   color: var(--fg);
 }
-.tab__pill {
+.tab .tab__pill {
   position: absolute;
+  z-index: 0;
   inset: 0;
   border-radius: 999px;
   background: #fff;

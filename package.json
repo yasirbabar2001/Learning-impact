@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "package": "node scripts/package-hosting.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.118.0",
