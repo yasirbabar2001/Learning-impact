@@ -135,3 +135,32 @@ export function Choices({
     </fieldset>
   );
 }
+
+/** Checkbox group shown as chips; the value is the selected labels joined with "; ". */
+export function MultiChoices({ label, name, options, value, onChange, hint }: Omit<Base, "error" | "required"> & { options: Option[] }) {
+  const selected = value ? value.split("; ") : [];
+  const toggle = (v: string) => {
+    const next = selected.includes(v) ? selected.filter((x) => x !== v) : [...selected, v];
+    onChange(options.map((o) => o.value).filter((o) => next.includes(o)).join("; "));
+  };
+  return (
+    <fieldset className="choices">
+      <legend>{label}</legend>
+      {hint && <p className="field__hint choices__hint">{hint}</p>}
+      <div className="choices__grid">
+        {options.map((o) => {
+          const checked = selected.includes(o.value);
+          return (
+            <label key={o.value} className={`choice choice--multi spot ${checked ? "is-checked" : ""}`}>
+              <input type="checkbox" name={name} value={o.value} checked={checked} onChange={() => toggle(o.value)} />
+              <span className="choice__tick" aria-hidden="true">
+                {checked ? "✓" : "+"}
+              </span>
+              <span className="choice__label">{o.label}</span>
+            </label>
+          );
+        })}
+      </div>
+    </fieldset>
+  );
+}

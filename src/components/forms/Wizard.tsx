@@ -7,7 +7,14 @@ import { Success } from "./Success";
 
 export type Values = Record<string, string>;
 export type Ctx = { values: Values; set: (name: string, value: string) => void; errors: Record<string, string> };
-export type StepDef = { title: string; subtitle?: string; fields: string[]; required: string[]; render: (ctx: Ctx) => ReactNode };
+export type StepDef = {
+  title: string;
+  subtitle?: string;
+  fields: string[];
+  /** Fields that must be filled before continuing; may depend on earlier answers. */
+  required: string[] | ((values: Values) => string[]);
+  render: (ctx: Ctx) => ReactNode;
+};
 
 type Props = {
   action: (state: FormState, fd: FormData) => Promise<FormState>;
@@ -43,7 +50,8 @@ export function Wizard({ action, steps, initial, submitLabel, successTitle, succ
 
   const check = (i: number) => {
     const found: Record<string, string> = {};
-    for (const f of steps[i].required) if (!values[f]?.trim()) found[f] = "This is required.";
+    const req = steps[i].required;
+    for (const f of typeof req === "function" ? req(values) : req) if (!values[f]?.trim()) found[f] = "This is required.";
     if (steps[i].fields.includes("email") && values.email && !EMAIL.test(values.email.trim())) found.email = "Enter a valid work e-mail.";
     setErrors(found);
     return Object.keys(found).length === 0;

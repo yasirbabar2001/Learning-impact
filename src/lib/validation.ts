@@ -4,18 +4,21 @@ import { FORMATS, REQUEST_STATUSES } from "./types";
 const text = (max: number) => z.string().trim().max(max, `Please keep this under ${max} characters.`);
 const required = (label: string, max = 120) => text(max).min(1, `${label} is required.`);
 
-const optionalNumber = z
-  .string()
-  .trim()
-  .transform((v, ctx) => {
-    if (!v) return null;
-    const n = Number(v);
-    if (!Number.isInteger(n) || n < 1 || n > 100000) {
-      ctx.addIssue({ code: "custom", message: "Enter a whole number of participants." });
-      return z.NEVER;
-    }
-    return n;
-  });
+const optionalCount = (message: string, max = 100000) =>
+  z
+    .string()
+    .trim()
+    .transform((v, ctx) => {
+      if (!v) return null;
+      const n = Number(v);
+      if (!Number.isInteger(n) || n < 1 || n > max) {
+        ctx.addIssue({ code: "custom", message });
+        return z.NEVER;
+      }
+      return n;
+    });
+
+const optionalNumber = optionalCount("Enter a whole number of participants.");
 
 const optionalDate = z
   .string()
@@ -36,29 +39,58 @@ const contact = {
   email: z.string().trim().max(160).pipe(z.email("Enter a valid work e-mail.")),
   phone: text(40).regex(/^[+()\d\s-]*$/, "Use digits, spaces, + or - only."),
   city: text(80),
+  designation: text(80),
   message: text(3000),
 };
 
-export const bookingSchema = z.object({
-  ...contact,
-  programSlug: required("Program", 120),
-  participants: optionalNumber,
-  format: z.enum(FORMATS, { message: "Choose a delivery format." }),
-  preferredDate: optionalDate,
-  timing: text(80),
-});
-
-export const trainerSchema = z.object({
-  ...contact,
-  topic: required("Training topic", 200),
-  engagement: required("Engagement type", 60),
-  participants: optionalNumber,
-  format: z.enum(FORMATS, { message: "Choose a delivery format." }),
-  preferredDate: optionalDate,
-  duration: text(80),
-  language: text(60),
+/** Where and how the training happens, who attends, and what else is needed. */
+const logistics = {
+  venueType: text(60),
+  venueCity: text(80),
+  venueAddress: text(200),
+  platform: text(40),
+  audienceLevel: text(40),
+  extras: text(400),
   budget: text(80),
-});
+};
+
+type Logistics = { format: string; venueType: string; venueCity: string };
+
+/** On-site and hybrid training needs a proposed location. */
+function requireVenue(d: Logistics, ctx: z.RefinementCtx) {
+  if (d.format === "virtual") return;
+  if (!d.venueType) ctx.addIssue({ code: "custom", path: ["venueType"], message: "Tell us where the training should take place." });
+  if (!d.venueCity) ctx.addIssue({ code: "custom", path: ["venueCity"], message: "Training city is required." });
+}
+
+export const bookingSchema = z
+  .object({
+    ...contact,
+    ...logistics,
+    programSlug: required("Program", 120),
+    participants: optionalNumber,
+    batches: optionalCount("Enter a whole number of batches.", 500),
+    format: z.enum(FORMATS, { message: "Choose a delivery format." }),
+    preferredDate: optionalDate,
+    timing: text(80),
+    language: text(60),
+  })
+  .superRefine(requireVenue);
+
+export const trainerSchema = z
+  .object({
+    ...contact,
+    ...logistics,
+    topic: required("Training topic", 200),
+    engagement: required("Engagement type", 60),
+    participants: optionalNumber,
+    format: z.enum(FORMATS, { message: "Choose a delivery format." }),
+    preferredDate: optionalDate,
+    timing: text(80),
+    duration: text(80),
+    language: text(60),
+  })
+  .superRefine(requireVenue);
 
 export const enquirySchema = z.object({
   ...contact,

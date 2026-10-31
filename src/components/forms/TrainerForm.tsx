@@ -2,10 +2,11 @@
 
 import { submitTrainerRequest } from "@/app/actions";
 import { FORMAT_ICONS } from "@/components/Icons";
-import { ENGAGEMENTS, LANGUAGES } from "@/lib/site";
+import { ENGAGEMENTS, LANGUAGES, TIMINGS } from "@/lib/site";
 import { FORMAT_LABELS, FORMATS } from "@/lib/types";
-import { Choices, TextArea, TextField } from "./Fields";
+import { Choices, TextField } from "./Fields";
 import { ContactFields, CONTACT_FIELDS, CONTACT_REQUIRED } from "./contact-fields";
+import { LOGISTICS_INITIAL, VenueAndNeeds, VENUE_FIELDS, venueRequired } from "./logistics-fields";
 import { Wizard, type StepDef } from "./Wizard";
 
 export function TrainerForm({ topic = "", industry = "" }: { topic?: string; industry?: string }) {
@@ -34,9 +35,9 @@ export function TrainerForm({ topic = "", industry = "" }: { topic?: string; ind
       ),
     },
     {
-      title: "Logistics",
+      title: "Schedule",
       subtitle: "Approximate is perfect at this stage.",
-      fields: ["format", "participants", "preferredDate", "duration", "budget", "message"],
+      fields: ["format", "participants", "preferredDate", "duration", "timing"],
       required: ["format"],
       render: ({ values, set, errors }) => (
         <>
@@ -53,11 +54,17 @@ export function TrainerForm({ topic = "", industry = "" }: { topic?: string; ind
             <TextField label="Number of participants" name="participants" type="number" inputMode="numeric" min="1" value={values.participants} onChange={(v) => set("participants", v)} error={errors.participants} />
             <TextField label="Preferred start date" name="preferredDate" type="date" min={today} value={values.preferredDate} onChange={(v) => set("preferredDate", v)} error={errors.preferredDate} />
             <TextField label="Duration" name="duration" value={values.duration} onChange={(v) => set("duration", v)} error={errors.duration} hint="e.g. 2 days, 6 weekly sessions" />
-            <TextField label="Budget range (optional)" name="budget" value={values.budget} onChange={(v) => set("budget", v)} error={errors.budget} hint="Helps us match the right trainer" />
           </div>
-          <TextArea label="Describe the audience and the outcome you want" name="message" value={values.message} onChange={(v) => set("message", v)} error={errors.message} />
+          <Choices label="Preferred timing" name="timing" value={values.timing} onChange={(v) => set("timing", v)} options={TIMINGS.map((t) => ({ value: t, label: t }))} />
         </>
       ),
+    },
+    {
+      title: "Venue & needs",
+      subtitle: "Where the training happens, who attends and what else would help.",
+      fields: VENUE_FIELDS,
+      required: venueRequired,
+      render: (ctx) => <VenueAndNeeds {...ctx} messageLabel="Describe the audience and the outcome you want" />,
     },
     {
       title: "Your details",
@@ -72,7 +79,23 @@ export function TrainerForm({ topic = "", industry = "" }: { topic?: string; ind
     <Wizard
       action={submitTrainerRequest}
       steps={steps}
-      initial={{ topic, engagement: "", language: "", format: "", participants: "", preferredDate: "", duration: "", budget: "", message: "", company: "", industry, contactName: "", email: "", phone: "", city: "" }}
+      initial={{
+        ...LOGISTICS_INITIAL,
+        topic,
+        engagement: "",
+        language: "",
+        format: "",
+        participants: "",
+        preferredDate: "",
+        duration: "",
+        timing: "",
+        company: "",
+        industry,
+        contactName: "",
+        email: "",
+        phone: "",
+        city: "",
+      }}
       submitLabel="Request a trainer"
       successTitle="Trainer request received"
       successBody="Thank you. We will shortlist suitable trainers and share their profiles with you, usually within two working days."

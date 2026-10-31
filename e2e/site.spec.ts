@@ -15,6 +15,18 @@ test("a company books a program and the admin sees it", async ({ page }) => {
   await page.getByLabel("Number of participants").fill("12");
   await page.getByRole("button", { name: /Continue/ }).click();
 
+  // On-site training cannot continue without a proposed location.
+  await expect(page.getByRole("heading", { name: "Venue & needs" })).toBeVisible();
+  await page.getByRole("button", { name: /Continue/ }).click();
+  await expect(page.getByText("This is required.").first()).toBeVisible();
+  await page.locator("label.choice", { hasText: "At our premises" }).click();
+  await page.getByLabel(/Training city/).fill("Lahore");
+  await page.getByLabel(/Venue name/).fill("Gulberg III head office");
+  await page.locator("label.choice", { hasText: "Middle management" }).click();
+  await page.locator("label.choice", { hasText: "Participant certificates" }).click();
+  await page.locator("label.choice", { hasText: "Refreshments & lunch" }).click();
+  await page.getByRole("button", { name: /Continue/ }).click();
+
   await page.getByLabel(/Company/).fill(company);
   await page.getByLabel(/Your name/).fill("Test Person");
   await page.getByLabel(/Work e-mail/).fill("test@example.com");
@@ -27,6 +39,11 @@ test("a company books a program and the admin sees it", async ({ page }) => {
   await page.getByRole("button", { name: "Sign in" }).click();
   await expect(page).toHaveURL(/\/admin$/);
   await page.locator("button.req", { hasText: company }).click();
+  const detail = page.locator(".detail__list");
+  await expect(detail).toContainText("At our premises");
+  await expect(detail).toContainText("Lahore");
+  await expect(detail).toContainText("Gulberg III head office");
+  await expect(detail).toContainText("Participant certificates; Refreshments & lunch");
   await page.getByRole("button", { name: "Confirmed", exact: true }).click();
   await expect(page.locator(".req", { hasText: company }).locator(".badge")).toHaveText("Confirmed");
 });
@@ -37,6 +54,10 @@ test("a company requests a trainer", async ({ page }) => {
   await page.locator("label.choice", { hasText: "Workshop" }).click();
   await page.getByRole("button", { name: /Continue/ }).click();
   await page.locator("label.choice", { hasText: "Hybrid" }).click();
+  await page.getByRole("button", { name: /Continue/ }).click();
+  await page.locator("label.choice", { hasText: "Learning Impact to arrange" }).click();
+  await page.getByLabel(/Training city/).fill("Karachi");
+  await page.locator("label.choice", { hasText: "Microsoft Teams" }).click();
   await page.getByRole("button", { name: /Continue/ }).click();
   await page.getByLabel(/Company/).fill("Trainer Co");
   await page.getByLabel(/Your name/).fill("Test Person");
@@ -67,6 +88,10 @@ test("a company books training from its industry and the admin sees the industry
   await page.locator("label.choice", { hasText: "Something tailored" }).click();
   await page.getByRole("button", { name: /Continue/ }).click();
   await page.locator("label.choice", { hasText: "Live virtual" }).click();
+  await page.getByRole("button", { name: /Continue/ }).click();
+  // Virtual training asks for a platform instead of a venue.
+  await expect(page.getByText("Proposed training location")).toHaveCount(0);
+  await page.locator("label.choice", { hasText: "Zoom" }).click();
   await page.getByRole("button", { name: /Continue/ }).click();
   await expect(page.getByLabel("Industry / sector")).toHaveValue("Payment Service Providers");
   await page.getByLabel(/Company/).fill(company);

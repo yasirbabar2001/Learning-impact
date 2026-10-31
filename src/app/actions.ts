@@ -20,7 +20,43 @@ async function guard(fd: FormData): Promise<FormState | null> {
   return null;
 }
 
-const withIndustry = (industry: string, details: Record<string, string>) => (industry ? { Industry: industry, ...details } : details);
+type DetailSource = {
+  industry: string;
+  designation: string;
+  venueType?: string;
+  venueCity?: string;
+  venueAddress?: string;
+  platform?: string;
+  audienceLevel?: string;
+  language?: string;
+  timing?: string;
+  batches?: number | null;
+  budget?: string;
+  extras?: string;
+  format?: string;
+};
+
+/** Collects the optional answers into the labelled details shown to the admin, in a sensible order. */
+function buildDetails(d: DetailSource, first: Record<string, string> = {}): Record<string, string> {
+  const onsite = d.format && d.format !== "virtual";
+  const online = d.format && d.format !== "onsite";
+  const rows: [string, string | number | null | undefined][] = [
+    ["Industry", d.industry],
+    ...Object.entries(first),
+    ["Venue", onsite ? d.venueType : ""],
+    ["Training city", onsite ? d.venueCity : ""],
+    ["Venue address", onsite ? d.venueAddress : ""],
+    ["Online platform", online ? d.platform : ""],
+    ["Audience level", d.audienceLevel],
+    ["Language", d.language],
+    ["Preferred timing", d.timing],
+    ["Batches", d.batches],
+    ["Budget", d.budget],
+    ["Also needed", d.extras],
+    ["Contact designation", d.designation],
+  ];
+  return Object.fromEntries(rows.filter(([, v]) => v != null && v !== "").map(([k, v]) => [k, String(v)]));
+}
 
 async function save(input: NewRequest): Promise<FormState> {
   try {
@@ -54,7 +90,7 @@ export async function submitBooking(_: FormState, fd: FormData): Promise<FormSta
     programSlug: program?.slug ?? null,
     programTitle: program?.title ?? "Custom / not sure yet",
     message: d.message,
-    details: withIndustry(d.industry, d.timing ? { "Preferred timing": d.timing } : {}),
+    details: buildDetails(d),
   });
 }
 
@@ -64,10 +100,8 @@ export async function submitTrainerRequest(_: FormState, fd: FormData): Promise<
   const parsed = trainerSchema.safeParse(read(fd));
   if (!parsed.success) return { ok: false, errors: fieldErrors(parsed.error) };
   const d = parsed.data;
-  const details: Record<string, string> = { Topic: d.topic, Engagement: d.engagement };
-  if (d.duration) details.Duration = d.duration;
-  if (d.language) details.Language = d.language;
-  if (d.budget) details.Budget = d.budget;
+  const first: Record<string, string> = { Topic: d.topic, Engagement: d.engagement };
+  if (d.duration) first.Duration = d.duration;
   return save({
     type: "trainer_request",
     company: d.company,
@@ -81,7 +115,7 @@ export async function submitTrainerRequest(_: FormState, fd: FormData): Promise<
     programSlug: null,
     programTitle: null,
     message: d.message,
-    details: withIndustry(d.industry, details),
+    details: buildDetails(d, first),
   });
 }
 
@@ -104,6 +138,6 @@ export async function submitEnquiry(_: FormState, fd: FormData): Promise<FormSta
     programSlug: null,
     programTitle: null,
     message: d.message,
-    details: withIndustry(d.industry, {}),
+    details: buildDetails(d),
   });
 }

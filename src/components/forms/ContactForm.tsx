@@ -23,7 +23,7 @@ export function ContactForm() {
           ),
         },
       ]}
-      initial={{ company: "", industry: "", contactName: "", email: "", phone: "", city: "", message: "" }}
+      initial={{ company: "", industry: "", contactName: "", designation: "", email: "", phone: "", city: "", message: "" }}
       submitLabel="Send message"
       successTitle="Message sent"
       successBody="Thank you for getting in touch. A member of our team will reply shortly."
