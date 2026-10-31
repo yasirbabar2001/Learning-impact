@@ -9,7 +9,7 @@ import { Wizard, type StepDef } from "./Wizard";
 
 type Lite = Pick<Program, "slug" | "title" | "duration" | "category">;
 
-export function BookingForm({ programs, preselect }: { programs: Lite[]; preselect?: string }) {
+export function BookingForm({ programs, preselect, industry = "" }: { programs: Lite[]; preselect?: string; industry?: string }) {
   const today = new Date().toISOString().slice(0, 10);
   const valid = programs.some((p) => p.slug === preselect);
 
@@ -78,7 +78,7 @@ export function BookingForm({ programs, preselect }: { programs: Lite[]; presele
     <Wizard
       action={submitBooking}
       steps={steps}
-      initial={{ programSlug: valid ? preselect! : "", format: "", participants: "", preferredDate: "", timing: "", message: "", company: "", contactName: "", email: "", phone: "", city: "" }}
+      initial={{ programSlug: valid ? preselect! : "", format: "", participants: "", preferredDate: "", timing: "", message: "", company: "", industry, contactName: "", email: "", phone: "", city: "" }}
       submitLabel="Send booking request"
       successTitle="Booking request received"
       successBody="Thank you. Our team will review your request and get back to you within one working day with availability and a proposal."

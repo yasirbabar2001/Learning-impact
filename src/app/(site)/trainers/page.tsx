@@ -3,6 +3,7 @@ import { TrainerForm } from "@/components/forms/TrainerForm";
 import { IconTarget, IconUsers, IconShield } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
+import { industryBySlug } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "Hire a Corporate Trainer",
@@ -10,8 +11,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/trainers" },
 };
 
-export default async function TrainersPage({ searchParams }: { searchParams: Promise<{ topic?: string }> }) {
-  const { topic } = await searchParams;
+export default async function TrainersPage({ searchParams }: { searchParams: Promise<{ topic?: string; industry?: string }> }) {
+  const { topic, industry } = await searchParams;
   return (
     <>
       <PageHero eyebrow="Hire a trainer" title="The right expert," highlight="right on time.">
@@ -36,7 +37,7 @@ export default async function TrainersPage({ searchParams }: { searchParams: Pro
       </section>
       <section className="container section section--tight form-section">
         <Reveal>
-          <TrainerForm topic={topic?.slice(0, 200)} />
+          <TrainerForm topic={topic?.slice(0, 200)} industry={industryBySlug(industry)?.name} />
         </Reveal>
       </section>
     </>

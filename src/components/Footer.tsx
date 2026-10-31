@@ -37,6 +37,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
         <div>
           <h3>Explore</h3>
           <Link href="/programs">Programs</Link>
+          <Link href="/industries">Industries</Link>
           <Link href="/trainers">Hire a trainer</Link>
           <Link href="/about">About us</Link>
           <Link href="/contact">Contact</Link>

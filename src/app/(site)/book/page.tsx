@@ -3,6 +3,7 @@ import { BookingForm } from "@/components/forms/BookingForm";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { getPublishedPrograms } from "@/lib/data";
+import { industryBySlug } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "Book a Training Program",
@@ -10,8 +11,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/book" },
 };
 
-export default async function BookPage({ searchParams }: { searchParams: Promise<{ program?: string }> }) {
-  const [{ program }, programs] = await Promise.all([searchParams, getPublishedPrograms()]);
+export default async function BookPage({ searchParams }: { searchParams: Promise<{ program?: string; industry?: string }> }) {
+  const [{ program, industry }, programs] = await Promise.all([searchParams, getPublishedPrograms()]);
   return (
     <>
       <PageHero eyebrow="Book a program" title="Let's plan your" highlight="training.">
@@ -19,7 +20,7 @@ export default async function BookPage({ searchParams }: { searchParams: Promise
       </PageHero>
       <section className="container section section--tight form-section">
         <Reveal>
-          <BookingForm programs={programs.map(({ slug, title, duration, category }) => ({ slug, title, duration, category }))} preselect={program} />
+          <BookingForm programs={programs.map(({ slug, title, duration, category }) => ({ slug, title, duration, category }))} preselect={program} industry={industryBySlug(industry)?.name} />
         </Reveal>
       </section>
     </>

@@ -4,6 +4,7 @@ export const SITE_NAME = "Learning Impact";
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/programs", label: "Programs" },
+  { href: "/industries", label: "Industries" },
   { href: "/trainers", label: "Hire a Trainer" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

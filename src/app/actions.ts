@@ -20,6 +20,8 @@ async function guard(fd: FormData): Promise<FormState | null> {
   return null;
 }
 
+const withIndustry = (industry: string, details: Record<string, string>) => (industry ? { Industry: industry, ...details } : details);
+
 async function save(input: NewRequest): Promise<FormState> {
   try {
     const created = await store.createRequest(input);
@@ -52,7 +54,7 @@ export async function submitBooking(_: FormState, fd: FormData): Promise<FormSta
     programSlug: program?.slug ?? null,
     programTitle: program?.title ?? "Custom / not sure yet",
     message: d.message,
-    details: d.timing ? { "Preferred timing": d.timing } : {},
+    details: withIndustry(d.industry, d.timing ? { "Preferred timing": d.timing } : {}),
   });
 }
 
@@ -79,7 +81,7 @@ export async function submitTrainerRequest(_: FormState, fd: FormData): Promise<
     programSlug: null,
     programTitle: null,
     message: d.message,
-    details,
+    details: withIndustry(d.industry, details),
   });
 }
 
@@ -102,6 +104,6 @@ export async function submitEnquiry(_: FormState, fd: FormData): Promise<FormSta
     programSlug: null,
     programTitle: null,
     message: d.message,
-    details: {},
+    details: withIndustry(d.industry, {}),
   });
 }

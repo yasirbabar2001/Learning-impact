@@ -53,3 +53,31 @@ test("admin pages and export require sign-in", async ({ page, request }) => {
   await expect(page).toHaveURL(/\/admin\/login/);
   expect((await request.get("/admin/export")).status()).toBe(401);
 });
+
+test("a company books training from its industry and the admin sees the industry", async ({ page }) => {
+  const company = `Industry Co ${Date.now()}`;
+  await page.goto("/industries");
+  await page.getByRole("tab", { name: "Specialised sectors" }).click();
+  await page.getByPlaceholder(/Search an industry/).fill("payment");
+  const card = page.locator(".industry-card", { hasText: "Payment Service Providers" });
+  await expect(card).toContainText("Fraud prevention");
+  await card.getByRole("link", { name: /Book training/ }).click();
+  await expect(page).toHaveURL(/\/book\?industry=payment-service-providers/);
+
+  await page.locator("label.choice", { hasText: "Something tailored" }).click();
+  await page.getByRole("button", { name: /Continue/ }).click();
+  await page.locator("label.choice", { hasText: "Live virtual" }).click();
+  await page.getByRole("button", { name: /Continue/ }).click();
+  await expect(page.getByLabel("Industry / sector")).toHaveValue("Payment Service Providers");
+  await page.getByLabel(/Company/).fill(company);
+  await page.getByLabel(/Your name/).fill("Test Person");
+  await page.getByLabel(/Work e-mail/).fill("test@example.com");
+  await page.getByRole("button", { name: /Send booking request/ }).click();
+  await expect(page.getByText("Booking request received")).toBeVisible();
+
+  await page.goto("/admin/login");
+  await page.getByLabel("Password").fill("e2e-password");
+  await page.getByRole("button", { name: "Sign in" }).click();
+  await page.locator("button.req", { hasText: company }).click();
+  await expect(page.locator(".detail__list")).toContainText("Payment Service Providers");
+});

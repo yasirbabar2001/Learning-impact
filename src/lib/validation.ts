@@ -31,6 +31,7 @@ const optionalDate = z
 
 const contact = {
   company: required("Company name"),
+  industry: text(80),
   contactName: required("Your name"),
   email: z.string().trim().max(160).pipe(z.email("Enter a valid work e-mail.")),
   phone: text(40).regex(/^[+()\d\s-]*$/, "Use digits, spaces, + or - only."),

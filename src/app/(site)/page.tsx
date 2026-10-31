@@ -8,6 +8,7 @@ import { Swoosh } from "@/components/Swoosh";
 import { RotatingWords, SplitWords } from "@/components/Text";
 import { TiltCard } from "@/components/TiltCard";
 import { getPublishedPrograms, getSettings } from "@/lib/data";
+import { INDUSTRIES } from "@/lib/industries";
 
 const TOPICS = [
   "Leadership",
@@ -40,7 +41,7 @@ const WHY = [
   { icon: <IconMic />, title: "English or Urdu", text: "Delivery in the language your people learn best in, or a natural mix of both." },
 ];
 
-const INDUSTRIES = ["Banking & Finance", "FMCG & Retail", "Telecom & Tech", "Healthcare & Pharma", "Manufacturing", "Education", "Energy", "Development sector", "Public sector", "Start-ups"];
+const FEATURED_INDUSTRIES = ["commercial-banking", "islamic-banking", "insurance-and-takaful", "telecommunications", "pharmaceutical", "fmcg", "manufacturing", "oil-and-gas", "government-and-public-sector", "education", "hospitality-and-hotels", "fintech"];
 
 const FAQ = [
   { q: "How quickly can a training be arranged?", a: "For catalogue programs, usually within two to three weeks of confirmation. Tailored programs and specialist trainers may need a little longer; tell us your dates and we will be upfront about what is possible." },
@@ -277,15 +278,23 @@ export default async function Home() {
       <section className="section container">
         <Reveal className="industries glass">
           <div>
-            <p className="eyebrow">Built for teams in</p>
+            <p className="eyebrow">Built for your sector</p>
             <h2 className="h3">Every industry has its own language. We speak it.</h2>
+            <p className="muted industries__lead">Training shaped around the regulations, risks and customers of {INDUSTRIES.length} industries.</p>
+            <Link href="/industries" className="btn btn--primary industries__cta">
+              <span className="btn__label">Explore training by industry</span>
+              <span className="btn__arrow">→</span>
+            </Link>
           </div>
           <div className="chips">
-            {INDUSTRIES.map((x) => (
-              <span key={x} className="chip">
-                {x}
-              </span>
+            {FEATURED_INDUSTRIES.map((slug) => INDUSTRIES.find((i) => i.slug === slug)!).map((ind) => (
+              <Link key={ind.slug} href={`/book?industry=${ind.slug}`} className="chip">
+                {ind.name}
+              </Link>
             ))}
+            <Link href="/industries" className="chip chip--more">
+              +{INDUSTRIES.length - FEATURED_INDUSTRIES.length} more →
+            </Link>
           </div>
           <span className="industries__badge">
             <IconShield size={18} /> Confidential by default

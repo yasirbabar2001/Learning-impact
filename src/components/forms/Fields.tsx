@@ -78,6 +78,25 @@ export function TextArea({ label, name, value, onChange, error, hint, required, 
   );
 }
 
+/** Native select styled like the floating-label inputs (label always raised). */
+export function SelectField({ label, name, value, onChange, error, hint, required, children }: Base & { children: ReactNode }) {
+  const id = useId();
+  return (
+    <label className={`field field--select ${error ? "has-error" : ""}`}>
+      <select id={id} name={name} value={value} aria-invalid={Boolean(error)} onChange={(e) => onChange(e.target.value)}>
+        {children}
+      </select>
+      <span className="field__label">
+        {label}
+        {required && <i aria-hidden="true"> *</i>}
+      </span>
+      <span className="field__glow" aria-hidden="true" />
+      {hint && !error && <span className="field__hint">{hint}</span>}
+      <Err id={`${id}-err`} error={error} />
+    </label>
+  );
+}
+
 export type Option = { value: string; label: string; note?: string; icon?: ReactNode };
 
 /** Radio group rendered as chips; the selection highlight glides between options. */

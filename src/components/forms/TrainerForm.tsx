@@ -8,7 +8,7 @@ import { Choices, TextArea, TextField } from "./Fields";
 import { ContactFields, CONTACT_FIELDS, CONTACT_REQUIRED } from "./contact-fields";
 import { Wizard, type StepDef } from "./Wizard";
 
-export function TrainerForm({ topic = "" }: { topic?: string }) {
+export function TrainerForm({ topic = "", industry = "" }: { topic?: string; industry?: string }) {
   const today = new Date().toISOString().slice(0, 10);
 
   const steps: StepDef[] = [
@@ -72,7 +72,7 @@ export function TrainerForm({ topic = "" }: { topic?: string }) {
     <Wizard
       action={submitTrainerRequest}
       steps={steps}
-      initial={{ topic, engagement: "", language: "", format: "", participants: "", preferredDate: "", duration: "", budget: "", message: "", company: "", contactName: "", email: "", phone: "", city: "" }}
+      initial={{ topic, engagement: "", language: "", format: "", participants: "", preferredDate: "", duration: "", budget: "", message: "", company: "", industry, contactName: "", email: "", phone: "", city: "" }}
       submitLabel="Request a trainer"
       successTitle="Trainer request received"
       successBody="Thank you. We will shortlist suitable trainers and share their profiles with you, usually within two working days."
