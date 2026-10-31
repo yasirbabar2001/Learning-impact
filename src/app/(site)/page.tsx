@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
 import { IconBook, IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
@@ -237,6 +238,40 @@ export default async function Home() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="section container" aria-labelledby="ifspace-title">
+        <Reveal className="initiative">
+          <a className="initiative__brand" href="https://islamicfinancespace.com" target="_blank" rel="noopener noreferrer" aria-label="Visit ifSPACE, Islamic Finance Space (opens in a new tab)">
+            <Image src="/ifspace-logo.png" alt="ifSPACE: Islamic Finance Space" width={561} height={206} />
+            <span className="initiative__visit">
+              islamicfinancespace.com <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+          <div className="initiative__body">
+            <p className="eyebrow">
+              <span className="eyebrow__dot" />
+              An initiative of Learning Impact
+            </p>
+            <h2 className="h3" id="ifspace-title">
+              ifSPACE: a home for <span className="rainbow-text">Islamic finance</span> learning.
+            </h2>
+            <p className="muted">
+              ifSPACE (Islamic Finance Space) is our dedicated platform for people building a career in Islamic banking and finance. It helps professionals
+              prepare for recognised Islamic finance certifications and deepen their understanding of the field, from core Shariah principles to how they are
+              applied in real products and institutions.
+            </p>
+            <ul className="ticks">
+              <li>Guidance and preparation for professional certifications</li>
+              <li>Structured study of Islamic banking, finance and Shariah principles</li>
+              <li>For bankers, finance teams, students and Shariah professionals</li>
+            </ul>
+            <a className="btn btn--ghost" href="https://islamicfinancespace.com" target="_blank" rel="noopener noreferrer">
+              <span className="btn__label">Explore ifSPACE</span>
+              <span className="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </Reveal>
       </section>
 
       <section className="section container">
