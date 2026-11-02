@@ -15,8 +15,11 @@
 
   /* Header */
   .head { position: absolute; top: 14mm; left: 20mm; right: 20mm; display: flex; align-items: flex-end; justify-content: space-between; }
+  .head .brand { width: 62mm; }
   .head img { width: 62mm; height: auto; display: block; }
-  .rule { position: absolute; top: 34mm; left: 20mm; right: 20mm; height: 0.3mm; background: linear-gradient(90deg, rgba(13, 44, 102, 0.55), rgba(13, 44, 102, 0.15)); }
+  /* Sits under "IMPACT", right-aligned to the end of the swoosh */
+  .head .legal { margin-top: 1.4mm; padding-right: 1.6mm; text-align: right; font-family: "Outfit", Arial, sans-serif; font-weight: 600; font-size: 8pt; letter-spacing: 0.16em; color: var(--navy); }
+  .rule { position: absolute; top: 37mm; left: 20mm; right: 20mm; height: 0.3mm; background: linear-gradient(90deg, rgba(13, 44, 102, 0.55), rgba(13, 44, 102, 0.15)); }
 
   /* Footer */
   .foot { position: absolute; left: 20mm; right: 20mm; bottom: 12mm; }
@@ -32,7 +35,10 @@
 <body>
   <div class="page">
     <header class="head">
-      <img src="logo-navy.svg" alt="Learning Impact">
+      <div class="brand">
+        <img src="logo-navy.svg" alt="Learning Impact">
+        <div class="legal">(SMC-PRIVATE) LIMITED</div>
+      </div>
     </header>
     <div class="rule"></div>
 
