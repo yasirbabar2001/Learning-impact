@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Learning Impact letterhead</title>
+<style>
+  @font-face { font-family: "Outfit"; src: url("fonts/outfit-latin.woff2") format("woff2"); font-weight: 100 900; }
+  @font-face { font-family: "Inter"; src: url("fonts/inter-latin.woff2") format("woff2"); font-weight: 100 900; }
+  @page { size: A4; margin: 0; }
+  :root { --navy: #0d2c66; --gold: #e0a800; --ink: #1f2937; --grey: #5b6474; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: "Inter", Arial, sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { position: relative; width: 210mm; height: 297mm; overflow: hidden; background: #fff; }
+
+  /* Header */
+  .head { position: absolute; top: 14mm; left: 20mm; right: 20mm; display: flex; align-items: flex-end; justify-content: space-between; }
+  .head img { width: 62mm; height: auto; display: block; }
+  .rule { position: absolute; top: 34mm; left: 20mm; right: 20mm; height: 0.3mm; background: linear-gradient(90deg, rgba(13, 44, 102, 0.55), rgba(13, 44, 102, 0.15)); }
+
+  /* Footer */
+  .foot { position: absolute; left: 20mm; right: 20mm; bottom: 12mm; }
+  .foot svg.swoosh { display: block; width: 100%; height: 5mm; }
+  .foot .row { display: flex; justify-content: space-between; align-items: flex-end; gap: 10mm; margin-top: 2.5mm; }
+  .foot .name { font-family: "Outfit", Arial, sans-serif; font-weight: 700; font-size: 10.5pt; letter-spacing: 0.04em; color: var(--navy); }
+  .foot .addr { margin-top: 1.2mm; font-size: 8.2pt; line-height: 1.5; color: var(--grey); max-width: 120mm; }
+  .foot .web { text-align: right; font-size: 8.2pt; line-height: 1.6; color: var(--grey); white-space: nowrap; }
+  .foot .web b { color: var(--navy); font-weight: 600; }
+  .band { position: absolute; left: 0; right: 0; bottom: 0; height: 2.2mm; background: linear-gradient(90deg, #ff4d6d, #ff9f1c, #ffd23f, #2ee59d, #00c2ff, #7b61ff, #ff4dd8); }
+</style>
+</head>
+<body>
+  <div class="page">
+    <header class="head">
+      <img src="logo-navy.svg" alt="Learning Impact">
+    </header>
+    <div class="rule"></div>
+
+
+    <footer class="foot">
+      <svg class="swoosh" viewBox="0 0 600 14" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M2 11 Q330 13 588 4" stroke="#e0a800" stroke-width="2" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        <circle cx="591" cy="4" r="3" fill="#e0a800"/>
+      </svg>
+      <div class="row">
+        <div>
+          <div class="name">LEARNING IMPACT (SMC-PRIVATE) LIMITED</div>
+          <div class="addr">304, Shaheen One Plaza, D-12 Markaz, D-12,<br>Islamabad Urban, Islamabad, Islamabad Capital Territory</div>
+        </div>
+        <div class="web"><b>learningimpact.pk</b><br>info@learningimpact.pk</div>
+      </div>
+    </footer>
+    <div class="band"></div>
+  </div>
+</body>
+</html>
