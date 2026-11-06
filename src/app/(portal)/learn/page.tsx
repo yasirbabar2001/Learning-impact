@@ -7,7 +7,10 @@ import { all } from "@/lib/db";
 import { requireUser } from "@/lib/portal/auth";
 import { ORDER_STATUS, ordersOf } from "@/lib/portal/commerce";
 import { certificateFor } from "@/lib/portal/exam";
-import { BADGES, levelFor, LEVELS, recentXp, userBadges } from "@/lib/portal/game";
+import { InvitePanel } from "@/components/portal/InvitePanel";
+import { BADGES, levelFor, LEVELS, recentXp, userBadges, weeklyRank } from "@/lib/portal/game";
+import { REFERRAL_XP, refCodeFor, referralStats } from "@/lib/portal/referrals";
+import { SITE_URL } from "@/lib/site";
 import { courseProgress, enrollmentsOf, progressMap } from "@/lib/portal/learning";
 
 export const metadata: Metadata = { title: "My quests" };
@@ -45,6 +48,11 @@ export default async function Dashboard() {
   const enrolled = new Set(enrollments.map((e) => e.course_slug));
   const suggestions = catalog().filter((c) => c.available && !enrolled.has(c.slug)).slice(0, 3);
   const first = user.name.split(/\s+/)[0];
+  const league = weeklyRank(user.id);
+  const refs = referralStats(user.id);
+  const inviteUrl = `${SITE_URL}/r/${refCodeFor(user.id)}`;
+  const pkToday = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Karachi" });
+  const streakAtRisk = user.streak >= 2 && user.last_active_day !== pkToday && quests.some((q) => !q.certified);
 
   return (
     <div className="container dash">
@@ -79,6 +87,16 @@ export default async function Dashboard() {
           </ol>
         </Reveal>
       </section>
+
+      {streakAtRisk && (
+        <Reveal className="notice glass streak-alert">
+          <span>🔥</span>
+          <div>
+            <strong>Keep your {user.streak}-day streak alive!</strong>
+            <p className="muted">You haven&apos;t learned today yet. One card or one quick check before midnight keeps the flame burning.</p>
+          </div>
+        </Reveal>
+      )}
 
       {invites.length > 0 && (
         <Reveal className="notice glass">
@@ -197,6 +215,25 @@ export default async function Dashboard() {
               ))}
             </ul>
           )}
+        </div>
+      </section>
+
+      <section className="dash__cols">
+        <InvitePanel url={inviteUrl} joined={refs.joined} enrolled={refs.enrolled} xp={refs.xp} rewards={REFERRAL_XP} />
+        <div className="glass dash__panel">
+          <h2 className="h3">🏟️ Weekly league</h2>
+          <div className="league-card">
+            <span className="league-card__rank">{league ? `#${league.rank}` : "—"}</span>
+            <p className="muted">
+              {league
+                ? `You're #${league.rank} of ${league.players} learners this week with ${league.xp} XP.${league.rank > 1 ? " Clear a stage to climb!" : " You're leading. Defend the crown!"}`
+                : "Earn XP this week to enter the league. It resets every Monday."}
+            </p>
+          </div>
+          <Link href="/learn/leaderboard" className="btn btn--ghost btn--sm">
+            <span className="btn__label">Open the league table</span>
+            <span className="btn__arrow">→</span>
+          </Link>
         </div>
       </section>
 

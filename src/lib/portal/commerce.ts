@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { all, now, one, run, tx } from "../db";
 import { newId, newToken, tokenHash } from "./auth";
+import { rewardEnrolment } from "./referrals";
 
 export type Order = {
   id: string;
@@ -171,7 +172,10 @@ export function approveOrder(orderId: string, adminNote: string) {
     const o = one<Order>("SELECT * FROM orders WHERE id = ?", orderId);
     if (!o || o.status === "approved") return o ?? null;
     run("UPDATE orders SET status = 'approved', admin_note = ?, decided_at = ? WHERE id = ?", adminNote, now(), o.id);
-    if (o.kind === "individual") enroll(o.user_id, o.course_slug, "purchase", o.id, null);
+    if (o.kind === "individual") {
+      enroll(o.user_id, o.course_slug, "purchase", o.id, null);
+      rewardEnrolment(o.user_id);
+    }
     else if (o.company_id)
       run("INSERT INTO seat_pools (id, company_id, course_slug, order_id, total, created_at) VALUES (?, ?, ?, ?, ?, ?)", newId(), o.company_id, o.course_slug, o.id, o.seats, now());
     return one<Order>("SELECT * FROM orders WHERE id = ?", o.id)!;

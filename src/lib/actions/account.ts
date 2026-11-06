@@ -1,12 +1,14 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { now, one, run, tx } from "../db";
 import { currentUser, endUserSession, hashPassword, homeFor, newId, requireUser, safeNext, startUserSession, tokenHash, verifyPassword } from "../portal/auth";
 import { button, esc, sendMail } from "../portal/mail";
 import { CHECK_MESSAGES, checkCode, issueCode } from "../portal/otp";
+import { REF_COOKIE, referrerByCode, rewardJoin } from "../portal/referrals";
 import { rateLimited } from "../rate-limit";
 import { SITE_URL } from "../site";
 import { fieldErrors, type FieldErrors } from "../validation";
@@ -111,6 +113,9 @@ export async function register(_: AuthState, fd: FormData): Promise<AuthState> {
       );
     }
   });
+  // Invited by a friend? Their code arrives in a cookie set by /r/CODE (or the form).
+  const referrer = referrerByCode(String(fd.get("ref") ?? "") || (await cookies()).get(REF_COOKIE)?.value);
+  if (referrer && referrer.id !== id) run("UPDATE users SET referred_by = ? WHERE id = ?", referrer.id, id);
   await startUserSession(id);
   await issueCode({ id, email: d.email, name: d.name }, "verify");
   redirect(`/verify-email?next=${encodeURIComponent(safeNext(fd.get("next"), ""))}`);
@@ -156,6 +161,7 @@ export async function verifyEmail(_: AuthState, fd: FormData): Promise<AuthState
   const { result, triesLeft } = checkCode(user.id, "verify", String(fd.get("code") ?? ""));
   if (result !== "ok") return { errors: { code: result === "wrong" ? `${CHECK_MESSAGES.wrong} ${triesLeft} attempt(s) left.` : CHECK_MESSAGES[result] } };
   run("UPDATE users SET email_verified_at = ? WHERE id = ?", now(), user.id);
+  rewardJoin(user);
   if (user.account_type === "company") {
     const company = one<{ name: string }>("SELECT name FROM companies WHERE id = ?", user.company_id ?? "");
     await companyNotice(company?.name ?? user.organisation, user.name, user.email);
@@ -240,12 +246,13 @@ export async function updateProfile(_: AuthState, fd: FormData): Promise<AuthSta
   if (!parsed.success) return { errors: fieldErrors(parsed.error), values: keep(fd) };
   const d = parsed.data;
   run(
-    "UPDATE users SET name = ?, phone = ?, organisation = ?, designation = ?, show_on_leaderboard = ? WHERE id = ?",
+    "UPDATE users SET name = ?, phone = ?, organisation = ?, designation = ?, show_on_leaderboard = ?, reminders = ? WHERE id = ?",
     d.name,
     d.phone,
     d.organisation,
     d.designation,
     fd.get("leaderboard") === "on" ? 1 : 0,
+    fd.get("reminders") === "on" ? 1 : 0,
     user.id,
   );
   revalidatePath("/learn", "layout");

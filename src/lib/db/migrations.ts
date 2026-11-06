@@ -207,4 +207,12 @@ export const MIGRATIONS: string[] = [
   );
   CREATE INDEX email_codes_user ON email_codes(user_id, purpose);
   `,
+  /* 3: referrals and reminder e-mails */ `
+  ALTER TABLE users ADD COLUMN ref_code TEXT;
+  ALTER TABLE users ADD COLUMN referred_by TEXT REFERENCES users(id) ON DELETE SET NULL;
+  ALTER TABLE users ADD COLUMN reminders INTEGER NOT NULL DEFAULT 1;
+  ALTER TABLE users ADD COLUMN last_reminded_day TEXT;
+  CREATE UNIQUE INDEX users_ref_code ON users(ref_code);
+  CREATE INDEX users_referred_by ON users(referred_by);
+  `,
 ];

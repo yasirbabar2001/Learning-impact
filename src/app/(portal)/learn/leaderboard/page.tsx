@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { requireUser } from "@/lib/portal/auth";
-import { leaderboard, levelFor, publicName, type LeaderRow } from "@/lib/portal/game";
+import { daysUntilReset, leaderboard, levelFor, publicName, weekStart, weeklyRank, type LeaderRow } from "@/lib/portal/game";
 
 export const metadata: Metadata = { title: "Leaderboard" };
 
 export default async function LeaderboardPage({ searchParams }: { searchParams: Promise<{ range?: string }> }) {
   const user = await requireUser("/learn/leaderboard");
   const { range } = await searchParams;
-  const allTime = range === "all";
-  const rows = leaderboard({ days: allTime ? undefined : 30, limit: 50 });
-  const team = user.company_id ? leaderboard({ days: allTime ? undefined : 30, companyId: user.company_id, limit: 20 }) : [];
+  const mode = range === "all" ? "all" : range === "month" ? "month" : "week";
+  const span = mode === "week" ? { since: weekStart() } : mode === "month" ? { days: 30 } : {};
+  const rows = leaderboard({ ...span, limit: 50 });
+  const team = user.company_id ? leaderboard({ ...span, companyId: user.company_id, limit: 20 }) : [];
+  const me = weeklyRank(user.id);
+  const resetIn = daysUntilReset();
 
   return (
     <div className="container dash">
@@ -21,15 +24,28 @@ export default async function LeaderboardPage({ searchParams }: { searchParams: 
         </p>
         <h1 className="h2">Leaderboard</h1>
         <div className="tabs lboard__tabs">
-          <Link href="/learn/leaderboard" className={`tab ${!allTime ? "is-active" : ""}`}>
-            {!allTime && <span className="tab__pill" />}
-            <span>Last 30 days</span>
-          </Link>
-          <Link href="/learn/leaderboard?range=all" className={`tab ${allTime ? "is-active" : ""}`}>
-            {allTime && <span className="tab__pill" />}
-            <span>All time</span>
-          </Link>
+          {(
+            [
+              ["week", "This week", "/learn/leaderboard"],
+              ["month", "Last 30 days", "/learn/leaderboard?range=month"],
+              ["all", "All time", "/learn/leaderboard?range=all"],
+            ] as const
+          ).map(([key, label, href]) => (
+            <Link key={key} href={href} className={`tab ${mode === key ? "is-active" : ""}`}>
+              {mode === key && <span className="tab__pill" />}
+              <span>{label}</span>
+            </Link>
+          ))}
         </div>
+        {mode === "week" && (
+          <div className="league-card notice glass">
+            <span className="league-card__rank">{me ? `#${me.rank}` : "—"}</span>
+            <div>
+              <strong>{me ? `You are #${me.rank} of ${me.players} in this week's league with ${me.xp} XP.` : "You haven't earned XP this week yet. One lesson puts you on the board!"}</strong>
+              <p className="muted">The weekly league resets every Monday (Pakistan time), {resetIn} day{resetIn > 1 ? "s" : ""} to go. Top 3 earn bragging rights on the Hall of Fame.</p>
+            </div>
+          </div>
+        )}
       </Reveal>
       <div className={team.length ? "dash__cols" : ""}>
         <Board list={rows} title="All learners" meId={user.id} />

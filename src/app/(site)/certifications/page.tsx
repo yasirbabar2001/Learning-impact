@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { CertCatalog } from "@/components/portal/CertCatalog";
 import { Reveal } from "@/components/Reveal";
+import Link from "next/link";
+import { cookies } from "next/headers";
 import { catalog, formatPkr } from "@/lib/courses/catalog";
+import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals";
 
 export const metadata: Metadata = {
   title: "Professional Certifications",
@@ -14,13 +17,14 @@ export const dynamic = "force-dynamic";
 
 const HOW = [
   { icon: "🗺️", title: "Pick your quest", text: "Each certification is a quest of five stages with a story to follow." },
-  { icon: "🧩", title: "Learn in bite-size cards", text: "Short lesson cards, real Pakistani workplace cases and instant knowledge checks." },
+  { icon: "🎬", title: "Live the story", text: "Story scenes, narrated mini-movies, animated visuals, decisions and games set in real Pakistani workplaces." },
   { icon: "🎯", title: "Beat every stage test", text: "A scored SCORM test closes each stage. Score 7/10 to unlock the next one." },
   { icon: "🐉", title: "Defeat the final boss", text: "A timed exam of 40 questions drawn from a larger bank. Pass mark 75%." },
   { icon: "🎓", title: "Get certified", text: "A certificate with a QR code that employers can verify online." },
 ];
 
-export default function CertificationsPage() {
+export default async function CertificationsPage() {
+  const referrer = referrerByCode((await cookies()).get(REF_COOKIE)?.value);
   const items = catalog().map((c) => ({
     slug: c.slug,
     title: c.title,
@@ -42,6 +46,17 @@ export default function CertificationsPage() {
           defeat a tough final exam to earn a verified certificate.
         </p>
       </PageHero>
+      {referrer && (
+        <section className="container section--tight">
+          <p className="auth__invite">
+            🎁 <strong>{referrer.name.split(" ")[0]}</strong> invited you to Learning Impact.{" "}
+            <Link href="/register" className="inline-link">
+              Create your free account
+            </Link>{" "}
+            and get a {REFERRAL_XP.welcome} XP welcome bonus.
+          </p>
+        </section>
+      )}
       <section className="container section section--tight">
         <ol className="how-strip">
           {HOW.map((h, i) => (

@@ -4,7 +4,19 @@ import { Reveal } from "@/components/Reveal";
 import { getCourse } from "@/lib/courses/catalog";
 import { certificateByCode } from "@/lib/portal/exam";
 
-export const metadata: Metadata = { title: "Certificate verification", robots: { index: false } };
+export async function generateMetadata({ params }: { params: Promise<{ code: string }> }): Promise<Metadata> {
+  const { code } = await params;
+  const cert = certificateByCode(decodeURIComponent(code).toUpperCase());
+  const course = cert ? getCourse(cert.course_slug) : null;
+  const title = cert && !cert.revoked_at ? `${cert.holder_name} is certified in ${course?.title ?? cert.course_slug}` : "Certificate verification";
+  return {
+    title,
+    description: "A verified professional certification earned on Learning Impact through gamified quests and a proctored final exam.",
+    robots: { index: false },
+    openGraph: { title, type: "website", siteName: "Learning Impact" },
+    twitter: { card: "summary_large_image", title },
+  };
+}
 export const dynamic = "force-dynamic";
 
 export default async function VerifyPage({ params }: { params: Promise<{ code: string }> }) {

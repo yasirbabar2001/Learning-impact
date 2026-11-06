@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { changePassword, updateProfile } from "@/lib/actions/account";
 import { Field } from "./AuthForms";
 
-type Profile = { name: string; email: string; phone: string; organisation: string; designation: string; leaderboard: boolean };
+type Profile = { name: string; email: string; phone: string; organisation: string; designation: string; leaderboard: boolean; reminders: boolean };
 
 export function ProfileForm({ p }: { p: Profile }) {
   const [state, action, pending] = useActionState(updateProfile, {});
@@ -22,6 +22,10 @@ export function ProfileForm({ p }: { p: Profile }) {
       <label className="check-row">
         <input type="checkbox" name="leaderboard" defaultChecked={state.values ? state.values.leaderboard === "on" : p.leaderboard} />
         <span>Show me on the public leaderboard (first name and initial only)</span>
+      </label>
+      <label className="check-row">
+        <input type="checkbox" name="reminders" defaultChecked={state.values ? state.values.reminders === "on" : p.reminders} />
+        <span>E-mail me streak reminders and a nudge when my quest is waiting</span>
       </label>
       {state.message && <p className={state.ok ? "form-ok" : "form-alert"}>{state.message}</p>}
       <button className="btn btn--primary auth__submit" disabled={pending}>

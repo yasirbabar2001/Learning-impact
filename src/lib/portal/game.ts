@@ -1,25 +1,7 @@
 import "server-only";
 import { all, now, one, run } from "../db";
 
-/** Levels a learner climbs with XP. */
-export const LEVELS = [
-  { name: "Explorer", xp: 0 },
-  { name: "Pathfinder", xp: 300 },
-  { name: "Achiever", xp: 800 },
-  { name: "Specialist", xp: 1600 },
-  { name: "Expert", xp: 3000 },
-  { name: "Master", xp: 5000 },
-  { name: "Legend", xp: 8000 },
-] as const;
-
-export function levelFor(xp: number) {
-  let i = 0;
-  while (i + 1 < LEVELS.length && xp >= LEVELS[i + 1].xp) i++;
-  const cur = LEVELS[i];
-  const next = LEVELS[i + 1] ?? null;
-  const progress = next ? (xp - cur.xp) / (next.xp - cur.xp) : 1;
-  return { index: i + 1, name: cur.name, next, progress, toNext: next ? next.xp - xp : 0 };
-}
+export { LEVELS, levelFor } from "./levels";
 
 /** XP rules, in one place so the UI can explain them. */
 export const XP = {
@@ -27,6 +9,8 @@ export const XP = {
   check: 10,
   quizPass: 100,
   quizPerfect: 50,
+  /** Games and scenarios: 5 XP for taking part plus up to 10 for accuracy. */
+  activity: 15,
   examPass: 500,
   examDistinction: 250,
 } as const;
@@ -38,6 +22,8 @@ export const BADGES: Record<string, { name: string; description: string; icon: s
   "streak-7": { name: "Unstoppable", description: "Learned 7 days in a row.", icon: "⚡" },
   "streak-30": { name: "Iron Will", description: "Learned 30 days in a row.", icon: "🏔️" },
   "boss-slayer": { name: "Boss Slayer", description: "Passed your first final exam.", icon: "🐉" },
+  connector: { name: "Connector", description: "Three friends joined through your invite link.", icon: "🤝" },
+  ambassador: { name: "Ambassador", description: "A friend you invited enrolled in a certification.", icon: "📣" },
   distinction: { name: "Distinction", description: "Scored 90% or more in a final exam.", icon: "🏆" },
 };
 
@@ -92,9 +78,17 @@ export function recentXp(userId: string, limit = 8) {
 
 export type LeaderRow = { id: string; name: string; organisation: string; xp: number };
 
-/** XP earned in the last 30 days (or all time), for learners who allow it. */
-export function leaderboard(opts: { days?: number; companyId?: string; limit?: number } = {}): LeaderRow[] {
-  const since = opts.days ? new Date(Date.now() - opts.days * 864e5).toISOString() : "";
+/** Monday 00:00 Pakistan time of the current week, as an ISO timestamp: the weekly league resets then. */
+export function weekStart(at = Date.now()): string {
+  const pk = new Date(at + 5 * 36e5); // PKT is UTC+5 all year
+  const daysSinceMonday = (pk.getUTCDay() + 6) % 7;
+  const monday = Date.UTC(pk.getUTCFullYear(), pk.getUTCMonth(), pk.getUTCDate() - daysSinceMonday) - 5 * 36e5;
+  return new Date(monday).toISOString();
+}
+
+/** XP earned since a moment (or in the last N days, or all time), for learners who allow it. */
+export function leaderboard(opts: { days?: number; since?: string; companyId?: string; limit?: number } = {}): LeaderRow[] {
+  const since = opts.since ?? (opts.days ? new Date(Date.now() - opts.days * 864e5).toISOString() : "");
   const params: (string | number)[] = [since];
   let where = "u.status = 'active' AND u.show_on_leaderboard = 1";
   if (opts.companyId) {
@@ -116,3 +110,18 @@ export const publicName = (name: string) => {
   const [first, ...rest] = name.trim().split(/\s+/);
   return rest.length ? `${first} ${rest[rest.length - 1][0]}.` : first;
 };
+
+/** The learner's place in this week's league (null before they earn XP this week). */
+export function weeklyRank(userId: string): { rank: number; xp: number; players: number } | null {
+  const since = weekStart();
+  const rows = all<{ user_id: string; points: number }>(
+    `SELECT e.user_id, SUM(e.xp) AS points FROM xp_events e JOIN users u ON u.id = e.user_id
+     WHERE e.created_at >= ? AND u.status = 'active' GROUP BY e.user_id HAVING points > 0 ORDER BY points DESC`,
+    since,
+  );
+  const i = rows.findIndex((r) => r.user_id === userId);
+  return i < 0 ? null : { rank: i + 1, xp: rows[i].points, players: rows.length };
+}
+
+/** Whole days until the weekly league resets (at least 1). */
+export const daysUntilReset = () => Math.max(1, Math.ceil((Date.parse(weekStart()) + 7 * 864e5 - Date.now()) / 864e5));

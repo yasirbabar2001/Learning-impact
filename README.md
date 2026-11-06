@@ -29,6 +29,15 @@ sent. All motion respects the visitor's "reduce motion" setting.
 - 14 professional certifications (`/certifications`); each is a gamified **quest**: 5 stages of short lesson cards
   with knowledge checks, a scored **SCORM 1.2** test after every stage (7/10 unlocks the next), and a tough timed
   **final exam** (40 questions drawn from a 50-question bank, 60 minutes, 75% to pass, 3 attempts).
+- Interactive lessons: chat-style **story scenes** with an illustrated cast, narrated **mini-movies**
+  (browser text-to-speech), 8 kinds of animated **diagrams**, **decision scenarios**, **flip cards**, **sort**,
+  **match** and **order** games, optional video, synthesized **sound effects**, auto-narration, combo counter,
+  the guide mascot **Ilmi**, and full-screen celebrations with level-ups and share buttons. The final exam is a
+  boss battle with a health bar.
+- Retention and word of mouth: personal **invite links** (`/r/CODE`, XP for both sides, Connector and
+  Ambassador badges), a **weekly league** that resets every Monday, streak-at-risk alerts, daily **reminder
+  e-mails** (`/api/cron/reminders`, protected by `CRON_SECRET`, one-click unsubscribe), WhatsApp/LinkedIn sharing
+  and rich link previews for certificates.
 - XP, 7 levels, daily streaks, badges, a leaderboard (opt-out), and PDF certificates with a QR code that anyone can
   check at `/verify`.
 - Buying: individuals or companies (team seats) order online and pay by bank transfer / Easypaisa / JazzCash,

@@ -52,6 +52,17 @@ export default async function CertificatesPage() {
                       <a href={linkedin} target="_blank" rel="noopener noreferrer" className="btn btn--ghost btn--sm">
                         <span className="btn__label">Add to LinkedIn</span>
                       </a>
+                      <a
+                        href={`https://wa.me/?text=${encodeURIComponent(`I just earned my ${course?.title ?? ""} certification on Learning Impact! 🏆 Verify it here: ${verifyUrl}`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="share-btn share-btn--wa"
+                      >
+                        Share on WhatsApp
+                      </a>
+                      <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(verifyUrl)}`} target="_blank" rel="noopener noreferrer" className="share-btn share-btn--li">
+                        Post on LinkedIn
+                      </a>
                       <Link href={`/verify/${c.code}`} className="btn btn--ghost btn--sm">
                         <span className="btn__label">Public verification page</span>
                       </Link>

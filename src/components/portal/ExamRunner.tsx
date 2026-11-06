@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { finishExam, recordExamAnswer } from "@/lib/actions/learning";
+import { play } from "@/lib/portal/sfx";
 
 type Q = { id: string; question: string; options: string[] };
 
@@ -43,7 +44,15 @@ export function ExamRunner({ slug, title, questions, deadline, initialAnswers }:
   const secs = Math.floor((left % 60000) / 1000);
   const low = left < 5 * 60000;
 
+  const [hit, setHit] = useState(0);
+  const hp = 1 - answered / questions.length;
+
   const choose = async (k: number) => {
+    if (answers[q.id] === undefined) {
+      // Every first answer lands a blow on the boss (no hint whether it was right).
+      play("hit");
+      setHit((h) => h + 1);
+    } else play("tap");
     setAnswers((a) => ({ ...a, [q.id]: k }));
     setSaving(q.id);
     const ok = await recordExamAnswer(slug, q.id, k);
@@ -61,6 +70,15 @@ export function ExamRunner({ slug, title, questions, deadline, initialAnswers }:
         <span className={`exam__timer ${low ? "is-low" : ""}`} aria-live="polite">
           ⏱ {String(mins).padStart(2, "0")}:{String(secs).padStart(2, "0")}
         </span>
+      </div>
+      <div className="boss-hp" aria-label={`Boss health ${Math.round(hp * 100)}%`}>
+        <motion.span key={hit} className="boss-hp__face" animate={hit ? { x: [0, -10, 10, -6, 0], rotate: [0, -8, 8, 0], scale: [1, 0.9, 1] } : {}} transition={{ duration: 0.45 }}>
+          {hp === 0 ? "😵" : hp < 0.3 ? "🥵" : "🐉"}
+        </motion.span>
+        <div className="boss-hp__bar">
+          <motion.span animate={{ width: `${hp * 100}%` }} transition={{ type: "spring", stiffness: 140, damping: 18 }} />
+        </div>
+        <span className="boss-hp__label">{hp === 0 ? "Every question answered. Finish it!" : `Boss HP ${Math.round(hp * 100)}%`}</span>
       </div>
       {saveError && <p className="form-alert">An answer could not be saved. Check your connection; your answers are kept while the page is open.</p>}
 

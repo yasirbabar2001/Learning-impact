@@ -116,7 +116,7 @@ export function LoginForm({ next, initialType = "individual" }: { next?: string;
 
 const SIZES = ["1–50", "51–200", "201–500", "501–1,000", "1,000+"];
 
-export function RegisterForm({ next, email, initialType = "individual" }: { next?: string; email?: string; initialType?: AccountType }) {
+export function RegisterForm({ next, email, initialType = "individual", refCode }: { next?: string; email?: string; initialType?: AccountType; refCode?: string }) {
   const [state, action, pending] = useActionState(register, {});
   const e = state.errors ?? {};
   const v = state.values ?? {};
@@ -128,6 +128,7 @@ export function RegisterForm({ next, email, initialType = "individual" }: { next
       <TypeSwitch value={type} onChange={setType} />
       <input type="hidden" name="type" value={type} />
       <input type="hidden" name="next" value={next ?? ""} />
+      <input type="hidden" name="ref" value={refCode ?? ""} />
       {company ? (
         <>
           <p className="auth__note">Company accounts are activated after we review your company profile, usually within one working day.</p>

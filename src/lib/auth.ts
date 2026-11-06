@@ -53,3 +53,11 @@ export async function isAdmin(): Promise<boolean> {
 export async function requireAdmin() {
   if (!(await isAdmin())) redirect("/admin/login");
 }
+
+/** Signed tokens for links in e-mails (e.g. unsubscribe), so they cannot be forged. */
+export const signFor = (purpose: string, value: string) => sign(`${purpose}:${value}`);
+export function checkSigned(purpose: string, value: string, token: string): boolean {
+  const a = Buffer.from(signFor(purpose, value));
+  const b = Buffer.from(token);
+  return a.length === b.length && timingSafeEqual(a, b);
+}

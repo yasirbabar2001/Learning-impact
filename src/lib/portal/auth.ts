@@ -20,11 +20,13 @@ export type User = {
   status: "active" | "disabled";
   account_type: "individual" | "company";
   email_verified_at: string | null;
+  referred_by: string | null;
   xp: number;
   streak: number;
   best_streak: number;
   last_active_day: string | null;
   show_on_leaderboard: number;
+  reminders: number;
   created_at: string;
 };
 

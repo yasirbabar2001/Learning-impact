@@ -112,6 +112,25 @@ stored in `DATA_DIR/uploads`.
    **Approve & unlock** (or **Reject** with a reason). **Learners** lets you enrol someone free, grant an extra
    exam attempt, create a password-reset link, disable an account or revoke a certificate.
 
+6. **Reminder e-mails (keeps learners coming back):** the portal can e-mail a learner whose streak is about to
+   break ("your 5-day streak ends at midnight") and, once a week, anyone who has not opened their quest for 4 days.
+   Each learner gets at most one a day and can switch them off from the e-mail or their profile.
+   - In *Setup Node.js App* add `CRON_SECRET` = a long random password of your own (letters and digits only, for
+     example 30 characters). **SAVE** and **RESTART**.
+   - In cPanel open **Cron Jobs**. Under *Add New Cron Job* choose **Once Per Day**, then change *Hour* to **13**
+     (13:00 server time is about 6 pm in Pakistan; if your server runs on Pakistan time choose **18**).
+   - In *Command* paste this, with your own secret in place of `YOUR_CRON_SECRET`:
+
+     ```
+     curl -s "https://learningimpact.pk/api/cron/reminders?key=YOUR_CRON_SECRET" > /dev/null
+     ```
+
+   - Click **Add New Cron Job**. To test it at once, open that address in your browser: it shows how many
+     reminders were sent, e.g. `{"streak":0,"comeback":0,"failed":0,"checked":0}`.
+7. **Invite links:** every learner's dashboard shows a personal link (`learningimpact.pk/r/CODE`). When a friend
+   signs up with it and verifies their e-mail, the friend gets 50 XP and the learner 100 XP. When the friend's
+   first payment is approved, the learner gets 250 XP and the Ambassador badge. Nothing to set up.
+
 **Back up `learning-impact-data` regularly** (download it from File Manager, or use your host's backup tool). It
 holds every learner, payment, result and certificate.
 

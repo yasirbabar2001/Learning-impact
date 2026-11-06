@@ -2,6 +2,7 @@ import { notFound, redirect } from "next/navigation";
 import { LessonPlayer, type PublicCard } from "@/components/portal/LessonPlayer";
 import { getCourse } from "@/lib/courses/catalog";
 import { requireUser } from "@/lib/portal/auth";
+import { SITE_URL } from "@/lib/site";
 import { courseProgress, enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 
 export default async function StagePage({ params }: { params: Promise<{ slug: string; sid: string }> }) {
@@ -26,6 +27,10 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
       <LessonPlayer
         slug={slug}
         sid={sid}
+        courseTitle={course.title}
+        cast={course.quest.cast}
+        xp={user.xp}
+        shareUrl={`${SITE_URL}/certifications/${slug}`}
         stageLabel={`Stage ${idx + 1} of ${course.sessions.length}`}
         stage={s.stage}
         title={s.title}

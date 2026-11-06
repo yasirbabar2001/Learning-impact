@@ -155,3 +155,43 @@ test("certificate verification rejects unknown codes", async ({ page }) => {
   await page.getByRole("button", { name: "Verify" }).click();
   await expect(page.getByRole("heading", { name: "No certificate matches this code." })).toBeVisible();
 });
+
+async function signUpIndividual(page: Page, name: string, email: string, from = "/register") {
+  await page.goto(from);
+  await page.getByLabel(/Full name/).fill(name);
+  await page.getByLabel("E-mail", { exact: false }).first().fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.locator("input[name=terms]").check();
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await expect(page).toHaveURL(/\/verify-email/);
+  await typeCode(page, await codeFor(email));
+  await page.getByRole("button", { name: "Verify" }).click();
+  await expect(page).toHaveURL(/\/learn/);
+}
+
+test("a learner's invite link brings a friend and pays both of them XP", async ({ page, browser }) => {
+  const stamp = Date.now();
+  await signUpIndividual(page, "Ayesha Inviter", `inviter${stamp}@example.com`);
+  const link = await page.getByLabel("Your invite link").inputValue();
+  expect(link).toMatch(/\/r\/[A-Z0-9]{6}$/);
+
+  const friend = await (await browser.newContext()).newPage();
+  await friend.goto(new URL(link).pathname);
+  await expect(friend).toHaveURL(/\/certifications\?invited=1/);
+  await expect(friend.getByText(/Ayesha.*invited you/)).toBeVisible();
+  await signUpIndividual(friend, "Bilal Friend", `friend${stamp}@example.com`);
+  await expect(friend.locator(".xp-feed")).toContainText("Welcome bonus");
+
+  await page.reload();
+  await expect(page.locator(".invite-panel__stats dd").first()).toHaveText("1");
+  await expect(page.locator(".xp-feed")).toContainText("Friend joined: Bilal");
+
+  // The weekly league counts this week's XP.
+  await page.goto("/learn/leaderboard");
+  await expect(page.locator(".league-card")).toContainText(/You are #\d+ of \d+/);
+
+  // Reminder cron is closed without the secret; forged unsubscribe links are refused.
+  expect((await page.request.get("/api/cron/reminders")).status()).toBe(404);
+  await friend.goto("/api/unsubscribe?u=x&t=forged");
+  await expect(friend.getByText("Link not valid")).toBeVisible();
+});

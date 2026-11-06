@@ -4,7 +4,8 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-type Result = { score: number; total: number; passed: boolean; xp: number };
+export type ScormResult = { score: number; total: number; passed: boolean; xp: number };
+type Result = ScormResult;
 
 /**
  * Minimal SCORM 1.2 runtime (window.API) for the stage-test package shown in the iframe. On commit it
@@ -17,7 +18,7 @@ export function ScormPlayer({
   nextHref,
   examHref,
   mapHref,
-  onXp,
+  onResult,
 }: {
   slug: string;
   sid: string;
@@ -25,7 +26,7 @@ export function ScormPlayer({
   nextHref: string | null;
   examHref: string | null;
   mapHref: string;
-  onXp: (xp: number) => void;
+  onResult: (r: ScormResult) => void;
 }) {
   const [run, setRun] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
@@ -33,10 +34,10 @@ export function ScormPlayer({
   const cmi = useRef<Record<string, string>>({});
   const sent = useRef(false);
   // Kept in a ref: the SCORM session must only restart on a retake, never because the parent re-rendered.
-  const onXpRef = useRef(onXp);
+  const onResultRef = useRef(onResult);
   useEffect(() => {
-    onXpRef.current = onXp;
-  }, [onXp]);
+    onResultRef.current = onResult;
+  }, [onResult]);
 
   useEffect(() => {
     cmi.current = { "cmi.core.lesson_status": "not attempted", "cmi.core.student_name": "", "cmi.core.lesson_mode": "normal" };
@@ -59,7 +60,7 @@ export function ScormPlayer({
         if (!res.ok) throw new Error(String(res.status));
         const data = (await res.json()) as Result;
         setResult(data);
-        onXpRef.current(data.xp);
+        onResultRef.current(data);
       } catch {
         setError("Your result could not be saved. Check your connection and retake the test.");
       }
