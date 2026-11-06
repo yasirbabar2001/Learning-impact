@@ -19,8 +19,26 @@ Interaction design: a rainbow curtain sweep on every page change, a rainbow ring
 buttons, 3D tilt cards, pointer-following light on cards, word-by-word headline reveals, and confetti when a request is
 sent. All motion respects the visitor's "reduce motion" setting.
 
+**Certification portal** (learners log in at `/login`):
+
+- 14 professional certifications (`/certifications`); each is a gamified **quest**: 5 stages of short lesson cards
+  with knowledge checks, a scored **SCORM 1.2** test after every stage (7/10 unlocks the next), and a tough timed
+  **final exam** (40 questions drawn from a 50-question bank, 60 minutes, 75% to pass, 3 attempts).
+- XP, 7 levels, daily streaks, badges, a leaderboard (opt-out), and PDF certificates with a QR code that anyone can
+  check at `/verify`.
+- Buying: individuals or companies (team seats) order online and pay by bank transfer / Easypaisa / JazzCash,
+  upload a receipt, and an admin approves. Company managers invite employees by e-mail and follow progress, scores
+  and certificates on `/company` (CSV report).
+- Course content lives in `content/courses/*.json` (format: `src/lib/courses/schema.ts`, guide:
+  `content/WRITING-GUIDE.md`, checked by `pnpm content:check`). Batch 1: Advanced Leadership, Agentic AI,
+  AML/CFT, Customer Experience. Facts to confirm with experts: `content/EXPERT-REVIEW.md`.
+- Data: SQLite (`portal.db`, Node's built-in `node:sqlite`) in `DATA_DIR`; receipts in `DATA_DIR/uploads`.
+
 **Admin panel** (`/admin`, password protected):
 
+- **Payments**, **Learners**, **Certifications**: approve receipts, manage learners (free enrolment, extra exam
+  attempts, reset links, revoke certificates), set prices and publish certifications, bank details, and download any
+  stage test as a SCORM 1.2 zip for a client's own LMS.
 - **Requests**: every booking, trainer request and enquiry, with counters, filters, search, a detail drawer,
   status pipeline (New → Contacted → Proposal sent → Confirmed → Closed), internal notes, one-click e-mail / call /
   WhatsApp, delete, and CSV export.

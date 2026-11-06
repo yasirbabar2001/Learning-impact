@@ -36,11 +36,14 @@ export function Footer({ settings }: { settings: SiteSettings }) {
         </div>
         <div>
           <h3>Explore</h3>
+          <Link href="/certifications">Certifications</Link>
           <Link href="/programs">Programs</Link>
           <Link href="/industries">Industries</Link>
           <Link href="/trainers">Hire a trainer</Link>
           <Link href="/about">About us</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/verify">Verify a certificate</Link>
+          <Link href="/login">Learner login</Link>
         </div>
         <div>
           <h3>Contact</h3>

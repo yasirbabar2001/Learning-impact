@@ -4,6 +4,7 @@ import { Aurora } from "@/components/Aurora";
 import { Effects } from "@/components/Effects";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
+import "./portal.css";
 
 const display = Outfit({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 const body = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });

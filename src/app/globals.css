@@ -660,6 +660,18 @@ p {
 .nav__cta:hover {
   box-shadow: 0 8px 30px -6px rgba(255, 77, 216, 0.6);
 }
+.nav__login {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fg);
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+.nav__login:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
 .nav__burger {
   display: none;
   width: 46px;
@@ -737,7 +749,8 @@ p {
 
 @media (max-width: 960px) {
   .nav__links,
-  .nav__cta {
+  .nav__cta,
+  .nav__login {
     display: none;
   }
   .nav__burger {

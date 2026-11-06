@@ -76,6 +76,36 @@ Then cPanel → **Domains** → turn on **Force HTTPS Redirect** for the domain.
   phone, WhatsApp, e-mail and social links.
 - Submit a test booking on the site and confirm it appears in the admin panel, then delete it.
 
+## Certification portal: first steps after uploading
+
+The portal (learner accounts, quests, exams, certificates, company seats) needs no extra hosting setup. Its database
+is a file, `portal.db`, created automatically in your `DATA_DIR` folder next to `db.json`. Payment receipts are
+stored in `DATA_DIR/uploads`.
+
+1. **Payment details:** sign in at `/admin` → **Certifications** → fill in *Payment details shown to buyers*
+   (account title, bank, account number, IBAN, Easypaisa/JazzCash numbers) → Save.
+2. **Prices:** on the same page, enter a price per learner for each ready certification, tick **Published**, Save.
+   Certifications without content or without a price show as "Coming soon".
+3. **E-mail (recommended):** in *Setup Node.js App* add these environment variables, then restart the app:
+
+   | Name | Value |
+   | --- | --- |
+   | `SMTP_HOST` | `mail.learningimpact.pk` |
+   | `SMTP_PORT` | `465` |
+   | `SMTP_USER` | `info@learningimpact.pk` |
+   | `SMTP_PASS` | that mailbox's password |
+   | `MAIL_FROM` | `Learning Impact <info@learningimpact.pk>` |
+   | `NOTIFY_EMAIL_TO` | the address that should hear about new payments, e.g. `sales@learningimpact.pk` |
+
+   Without e-mail the portal still works: admins create password-reset links on **Learners**, and company
+   managers copy invitation links from their dashboard.
+4. **Daily work:** **Payments** shows submitted receipts; check each against your statement and click
+   **Approve & unlock** (or **Reject** with a reason). **Learners** lets you enrol someone free, grant an extra
+   exam attempt, create a password-reset link, disable an account or revoke a certificate.
+
+**Back up `learning-impact-data` regularly** (download it from File Manager, or use your host's backup tool). It
+holds every learner, payment, result and certificate.
+
 ## Updating the site later
 
 1. Download the newest package (step 1).

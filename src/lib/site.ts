@@ -2,12 +2,17 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://learningim
 export const SITE_NAME = "Learning Impact";
 
 export const NAV_LINKS = [
-  { href: "/", label: "Home" },
+  { href: "/certifications", label: "Certifications" },
   { href: "/programs", label: "Programs" },
   { href: "/industries", label: "Industries" },
   { href: "/trainers", label: "Hire a Trainer" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+] as const;
+
+/** Extra links shown only in the mobile menu. */
+export const MOBILE_EXTRA_LINKS = [
+  { href: "/about", label: "About" },
+  { href: "/book", label: "Book corporate training" },
 ] as const;
 
 export const ENGAGEMENTS = ["Workshop", "Multi-day course", "Training series", "Coaching", "Keynote / talk"] as const;

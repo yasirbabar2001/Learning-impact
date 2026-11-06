@@ -36,7 +36,17 @@ function ensureFile() {
 
 async function load(): Promise<Db> {
   await ensureFile();
-  const db = JSON.parse(await readFile(FILE, "utf8")) as Db;
+  let raw: string;
+  try {
+    raw = await readFile(FILE, "utf8");
+  } catch (err) {
+    // The file was removed while the site was running: recreate it instead of failing every page.
+    if ((err as NodeJS.ErrnoException).code !== "ENOENT") throw err;
+    seeding = null;
+    await ensureFile();
+    raw = await readFile(FILE, "utf8");
+  }
+  const db = JSON.parse(raw) as Db;
   return { ...db, settings: { ...DEFAULT_SETTINGS, ...db.settings } };
 }
 

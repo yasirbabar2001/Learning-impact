@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
+import { HomeQuests } from "@/components/portal/HomeQuests";
 import { IconBook, IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
 import { Magnetic } from "@/components/Magnetic";
 import { Reveal } from "@/components/Reveal";
@@ -76,9 +77,9 @@ export default async function Home() {
           <p>{settings.heroSubtitle}</p>
         </Reveal>
         <Reveal delay={1.05} className="hero__ctas">
-          <Magnetic href="/book">Book a training program</Magnetic>
-          <Magnetic href="/trainers" variant="ghost">
-            Request a trainer
+          <Magnetic href="/certifications">Explore certifications</Magnetic>
+          <Magnetic href="/book" variant="ghost">
+            Book corporate training
           </Magnetic>
         </Reveal>
         <Reveal delay={1.2} className="hero__for">
@@ -102,9 +103,11 @@ export default async function Home() {
         ))}
       </section>
 
+      <HomeQuests />
+
       <section className="section container">
         <Reveal>
-          <p className="eyebrow">Two ways to work with us</p>
+          <p className="eyebrow">Corporate training</p>
           <h2 className="h2">
             Pick a program, or bring in <span className="rainbow-text">the right expert.</span>
           </h2>

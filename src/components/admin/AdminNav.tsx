@@ -8,6 +8,9 @@ import { Logo } from "../Logo";
 
 const LINKS = [
   { href: "/admin", label: "Requests" },
+  { href: "/admin/orders", label: "Payments" },
+  { href: "/admin/learners", label: "Learners" },
+  { href: "/admin/certifications", label: "Certifications" },
   { href: "/admin/programs", label: "Programs" },
   { href: "/admin/settings", label: "Site settings" },
 ];

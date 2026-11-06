@@ -20,7 +20,14 @@ const PIECES = Array.from({ length: 46 }, (_, i) => ({
   w: 6 + rand(i, 5) * 8,
 }));
 
-export function Success({ title, reference, body }: { title: string; reference?: string; body: string }) {
+type Action = { href: string; label: string; primary?: boolean };
+
+const DEFAULT_ACTIONS: Action[] = [
+  { href: "/", label: "Back to home" },
+  { href: "/programs", label: "Explore programs", primary: true },
+];
+
+export function Success({ title, reference, body, referenceLabel = "Your reference", actions = DEFAULT_ACTIONS }: { title: string; reference?: string; body: string; referenceLabel?: string; actions?: Action[] }) {
   return (
     <motion.div className="success" initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}>
       <div className="success__confetti" aria-hidden="true">
@@ -49,19 +56,17 @@ export function Success({ title, reference, body }: { title: string; reference?:
       <h2>{title}</h2>
       {reference && (
         <p className="success__ref">
-          Your reference <strong>{reference}</strong>
+          {referenceLabel} <strong>{reference}</strong>
         </p>
       )}
       <p className="muted">{body}</p>
       <div className="success__actions">
-        <Link href="/" className="btn btn--ghost">
-          <span className="btn__label">Back to home</span>
-          <span className="btn__arrow">→</span>
-        </Link>
-        <Link href="/programs" className="btn btn--primary">
-          <span className="btn__label">Explore programs</span>
-          <span className="btn__arrow">→</span>
-        </Link>
+        {actions.map((a) => (
+          <Link key={a.href} href={a.href} className={`btn ${a.primary ? "btn--primary" : "btn--ghost"}`}>
+            <span className="btn__label">{a.label}</span>
+            <span className="btn__arrow">→</span>
+          </Link>
+        ))}
       </div>
     </motion.div>
   );

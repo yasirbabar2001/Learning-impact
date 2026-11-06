@@ -1,12 +1,12 @@
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { getSettings } from "@/lib/data";
+import { currentUser } from "@/lib/portal/auth";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
-export const revalidate = 300;
 
 export default async function SiteLayout({ children }: { children: React.ReactNode }) {
-  const settings = await getSettings();
+  const [settings, user] = await Promise.all([getSettings(), currentUser()]);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
@@ -22,7 +22,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
   return (
     <>
       {settings.announcement && <div className="announce">{settings.announcement}</div>}
-      <Nav />
+      <Nav signedIn={Boolean(user)} />
       {children}
       <Footer settings={settings} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />

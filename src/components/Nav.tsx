@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { NAV_LINKS } from "@/lib/site";
+import { MOBILE_EXTRA_LINKS, NAV_LINKS } from "@/lib/site";
 import { Logo } from "./Logo";
 
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
 
-export function Nav() {
+export function Nav({ signedIn = false }: { signedIn?: boolean }) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -56,8 +56,11 @@ export function Nav() {
             ))}
           </nav>
 
-          <Link href="/book" className="nav__cta">
-            <span>Book training</span>
+          <Link href={signedIn ? "/learn" : "/login"} className="nav__login">
+            {signedIn ? "My quests" : "Log in"}
+          </Link>
+          <Link href="/certifications" className="nav__cta">
+            <span>Get certified</span>
           </Link>
 
           <button
@@ -82,7 +85,7 @@ export function Nav() {
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
           >
             <nav aria-label="Mobile">
-              {[...NAV_LINKS, { href: "/book", label: "Book training" }].map((l, i) => (
+              {[...NAV_LINKS, ...MOBILE_EXTRA_LINKS, signedIn ? { href: "/learn", label: "My quests" } : { href: "/login", label: "Log in" }].map((l, i) => (
                 <motion.div
                   key={l.href}
                   initial={{ y: 60, opacity: 0, rotate: 4 }}

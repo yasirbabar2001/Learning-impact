@@ -1,0 +1,115 @@
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { z } from "zod";
+import { requireAdmin } from "@/lib/auth";
+import { catalogEntry, formatPkr, saveCourseSettings, TOPICS } from "@/lib/courses/catalog";
+import { now, one, run } from "@/lib/db";
+import { createPasswordReset } from "@/lib/portal/auth";
+import { approveOrder, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
+import { button, esc, sendMail } from "@/lib/portal/mail";
+import { SITE_URL } from "@/lib/site";
+
+export async function approveOrderAction(fd: FormData) {
+  await requireAdmin();
+  const order = approveOrder(String(fd.get("id")), String(fd.get("note") ?? "").slice(0, 500));
+  if (order) {
+    const buyer = one<{ email: string; name: string }>("SELECT email, name FROM users WHERE id = ?", order.user_id);
+    const entry = catalogEntry(order.course_slug);
+    if (buyer && entry) {
+      const individual = order.kind === "individual";
+      void sendMail(
+        buyer.email,
+        individual ? `You're in: ${entry.title}` : `${order.seats} seats ready: ${entry.title}`,
+        `<p>Assalam-o-Alaikum ${esc(buyer.name.split(" ")[0])},</p><p>We have confirmed your payment of <b>${formatPkr(order.amount_pkr)}</b> (order ${order.reference}).</p>${
+          individual
+            ? `<p>Your quest <b>${esc(entry.title)}</b> is unlocked.</p>${button(`${SITE_URL}/learn/${order.course_slug}`, "Start the quest")}`
+            : `<p>${order.seats} seats for <b>${esc(entry.title)}</b> are now in your company account. Invite your team from the company dashboard.</p>${button(`${SITE_URL}/company`, "Invite my team")}`
+        }`,
+      );
+    }
+  }
+  revalidatePath("/admin/orders");
+}
+
+export async function rejectOrderAction(fd: FormData) {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  const note = String(fd.get("note") ?? "").trim().slice(0, 500) || "We could not match this payment to our bank or wallet statement.";
+  rejectOrder(id, note);
+  const order = one<Order>("SELECT * FROM orders WHERE id = ?", id);
+  const buyer = order && one<{ email: string }>("SELECT email FROM users WHERE id = ?", order.user_id);
+  if (order && buyer) {
+    void sendMail(
+      buyer.email,
+      `About your payment for order ${order.reference}`,
+      `<p>We could not confirm the payment for order <b>${order.reference}</b>.</p>${note ? `<p><b>Reason:</b> ${esc(note)}</p>` : ""}<p>You can submit the payment details again from your order page.</p>${button(`${SITE_URL}/orders/${order.reference}`, "Open my order")}`,
+    );
+  }
+  revalidatePath("/admin/orders");
+}
+
+export async function saveCourseSettingsAction(fd: FormData) {
+  await requireAdmin();
+  const slug = String(fd.get("slug"));
+  if (!TOPICS.some((t) => t.slug === slug)) return;
+  const price = Math.max(0, Math.min(10_000_000, Math.round(Number(fd.get("price")) || 0)));
+  saveCourseSettings(slug, price, fd.get("published") === "on" && price > 0);
+  revalidatePath("/", "layout");
+}
+
+export type AdminFormState = { ok?: boolean; message?: string; link?: string };
+
+export async function savePaymentSettingsAction(_: AdminFormState, fd: FormData): Promise<AdminFormState> {
+  await requireAdmin();
+  const s = paymentSettings();
+  const keys = Object.keys(s) as (keyof typeof s)[];
+  const next = Object.fromEntries(keys.map((k) => [k, String(fd.get(k) ?? "").trim().slice(0, 600)])) as typeof s;
+  savePaymentSettings(next);
+  return { ok: true, message: "Payment details saved." };
+}
+
+export async function adminEnrollAction(_: AdminFormState, fd: FormData): Promise<AdminFormState> {
+  await requireAdmin();
+  const email = z.email().safeParse(String(fd.get("email") ?? "").trim().toLowerCase());
+  const slug = String(fd.get("slug"));
+  if (!email.success) return { message: "Enter the learner's account e-mail." };
+  if (!TOPICS.some((t) => t.slug === slug)) return { message: "Choose a certification." };
+  const user = one<{ id: string }>("SELECT id FROM users WHERE email = ?", email.data);
+  if (!user) return { message: "No learner account uses that e-mail. Ask them to register first." };
+  enroll(user.id, slug, "admin", null, null);
+  revalidatePath("/admin/learners");
+  return { ok: true, message: `Enrolled ${email.data}.` };
+}
+
+export async function grantAttemptAction(fd: FormData) {
+  await requireAdmin();
+  run("UPDATE enrollments SET extra_attempts = extra_attempts + 1 WHERE id = ?", String(fd.get("id")));
+  revalidatePath("/admin/learners");
+}
+
+export async function resetLinkAction(_: AdminFormState, fd: FormData): Promise<AdminFormState> {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  const user = one<{ id: string; email: string }>("SELECT id, email FROM users WHERE id = ?", id);
+  if (!user) return { message: "Learner not found." };
+  const token = createPasswordReset(user.id, 48);
+  const link = `${SITE_URL}/reset-password/${token}`;
+  const sent = await sendMail(user.email, "Set a new Learning Impact password", `<p>Use this link to choose a new password. It works for 48 hours.</p>${button(link, "Choose a new password")}`);
+  return { ok: true, message: sent ? `Reset link e-mailed to ${user.email}. You can also share it:` : "Share this link with the learner (valid 48 hours):", link };
+}
+
+export async function setUserStatusAction(fd: FormData) {
+  await requireAdmin();
+  const status = fd.get("status") === "disabled" ? "disabled" : "active";
+  const id = String(fd.get("id"));
+  run("UPDATE users SET status = ? WHERE id = ?", status, id);
+  if (status === "disabled") run("DELETE FROM sessions WHERE user_id = ?", id);
+  revalidatePath("/admin/learners");
+}
+
+export async function revokeCertificateAction(fd: FormData) {
+  await requireAdmin();
+  run("UPDATE certificates SET revoked_at = ? WHERE id = ? AND revoked_at IS NULL", now(), String(fd.get("id")));
+  revalidatePath("/admin/learners");
+}
