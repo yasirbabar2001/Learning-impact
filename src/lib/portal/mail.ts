@@ -11,22 +11,40 @@ export const mailConfigured = () => Boolean(process.env.SMTP_HOST && process.env
 
 let transport: Transporter | null = null;
 
-export async function sendMail(to: string, subject: string, html: string): Promise<boolean> {
-  if (!mailConfigured()) return false;
+/**
+ * Shared hosting often serves a mail certificate for the server's own name (e.g. server29.example.net),
+ * not mail.yourdomain. Prefer SMTP_HOST = that server name; SMTP_ALLOW_INVALID_CERT=1 is a last resort.
+ */
+function getTransport() {
   const port = Number(process.env.SMTP_PORT || 465);
   transport ??= nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port,
     secure: port === 465,
     auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+    tls: process.env.SMTP_ALLOW_INVALID_CERT === "1" ? { rejectUnauthorized: false } : undefined,
+    connectionTimeout: 15_000,
+    greetingTimeout: 15_000,
   });
+  return transport;
+}
+
+/** Sends and reports what happened, so the admin can see why e-mail fails. */
+export async function sendMailDetailed(to: string, subject: string, html: string): Promise<{ ok: boolean; error?: string }> {
+  if (!mailConfigured()) return { ok: false, error: "E-mail is not set up: add SMTP_HOST, SMTP_USER and SMTP_PASS to the app's environment variables." };
   try {
-    await transport.sendMail({ from: process.env.MAIL_FROM || `Learning Impact <${process.env.SMTP_USER}>`, to, subject, html: layout(subject, html) });
-    return true;
+    await getTransport().sendMail({ from: process.env.MAIL_FROM || `Learning Impact <${process.env.SMTP_USER}>`, to, subject, html: layout(subject, html) });
+    return { ok: true };
   } catch (err) {
-    console.error("Sending e-mail failed", err);
-    return false;
+    transport = null; // rebuild with fresh settings next time
+    const e = err as Error & { code?: string; response?: string };
+    console.error("Sending e-mail failed", e);
+    return { ok: false, error: [e.code, e.response ?? e.message].filter(Boolean).join(": ") };
   }
+}
+
+export async function sendMail(to: string, subject: string, html: string): Promise<boolean> {
+  return (await sendMailDetailed(to, subject, html)).ok;
 }
 
 const layout = (title: string, body: string) => `<!doctype html><html><body style="margin:0;background:#f4f5f7;font-family:Arial,sans-serif;color:#1f2937">

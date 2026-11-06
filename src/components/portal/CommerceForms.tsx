@@ -4,7 +4,7 @@ import { startTransition, useActionState, useState } from "react";
 import { startCheckout, submitPaymentProof } from "@/lib/actions/commerce";
 import { Field } from "./AuthForms";
 
-export function CheckoutForm({ slug, team, unitPrice, needsCompany, companyName }: { slug: string; team: boolean; unitPrice: number; needsCompany: boolean; companyName: string | null }) {
+export function CheckoutForm({ slug, team, unitPrice, companyName }: { slug: string; team: boolean; unitPrice: number; companyName: string | null }) {
   const [state, action, pending] = useActionState(startCheckout, {});
   const [seats, setSeats] = useState(10);
   const e = state.errors ?? {};
@@ -14,13 +14,9 @@ export function CheckoutForm({ slug, team, unitPrice, needsCompany, companyName 
       <input type="hidden" name="kind" value={team ? "seats" : "individual"} />
       {team && (
         <>
-          {needsCompany ? (
-            <Field label="Company name" name="company" required autoComplete="organization" error={e.company} defaultValue={state.values?.company} hint="You will manage this company's team on Learning Impact." />
-          ) : (
-            <p className="muted">
-              Buying for <strong>{companyName}</strong>
-            </p>
-          )}
+          <p className="muted">
+            Buying for <strong>{companyName}</strong>
+          </p>
           <label className={`field ${e.seats ? "has-error" : ""}`}>
             <input name="seats" type="number" min={2} max={1000} value={seats} onChange={(ev) => setSeats(Number(ev.target.value))} placeholder=" " />
             <span className="field__label">Number of seats (learners)</span>

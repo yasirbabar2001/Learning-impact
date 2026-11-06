@@ -19,7 +19,12 @@ Interaction design: a rainbow curtain sweep on every page change, a rainbow ring
 buttons, 3D tilt cards, pointer-following light on cards, word-by-word headline reveals, and confetti when a request is
 sent. All motion respects the visitor's "reduce motion" setting.
 
-**Certification portal** (learners log in at `/login`):
+**Certification portal** (log in at `/login`):
+
+- Sign-up and login ask first: **Individual** or **Company**. Every new account verifies its e-mail with a
+  6-digit code (10-minute expiry, 5 tries, resend after 60 s). Individuals are active straight away; company
+  profiles (name, industry, size, city, NTN, contact person) wait for admin approval in **Admin → Companies**.
+  Forgotten passwords are reset with an e-mailed code.
 
 - 14 professional certifications (`/certifications`); each is a gamified **quest**: 5 stages of short lesson cards
   with knowledge checks, a scored **SCORM 1.2** test after every stage (7/10 unlocks the next), and a tough timed

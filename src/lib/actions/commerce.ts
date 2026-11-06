@@ -2,12 +2,10 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { z } from "zod";
 import { catalogEntry, formatPkr } from "../courses/catalog";
 import { run } from "../db";
-import { requireUser } from "../portal/auth";
+import { companyOf, requireUser } from "../portal/auth";
 import {
-  createCompany,
   createOrder,
   MAX_PROOF_BYTES,
   openOrderFor,
@@ -40,13 +38,10 @@ export async function startCheckout(_: CheckoutState, fd: FormData): Promise<Che
 
   const seats = Number(fd.get("seats"));
   if (!Number.isInteger(seats) || seats < 2 || seats > 1000) return { errors: { seats: "Choose between 2 and 1,000 seats." } };
-  let companyId = user.company_id;
-  if (!companyId || user.company_role !== "manager") {
-    const name = z.string().trim().min(2).max(120).safeParse(fd.get("company"));
-    if (!name.success) return { errors: { company: "Enter your company's name." }, values: { company: String(fd.get("company") ?? "") } };
-    if (user.company_id && user.company_role !== "manager") return { message: "Your account belongs to another company's team. Ask its manager to buy seats, or use a different account." };
-    companyId = createCompany(name.data, user.id);
-  }
+  const company = companyOf(user);
+  if (user.account_type !== "company" || user.company_role !== "manager" || !company) return { message: "Team seats are bought from a company account. Register your company first." };
+  if (company.status !== "approved") return { message: "Your company profile is still under review. You can buy seats as soon as it is approved." };
+  const companyId = company.id;
   const order = createOrder({ userId: user.id, companyId, kind: "seats", slug, seats, unitPrice: entry.pricePkr });
   redirect(`/orders/${order.reference}`);
 }

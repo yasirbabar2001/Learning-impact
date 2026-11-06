@@ -7,7 +7,7 @@ import { catalogEntry, formatPkr, saveCourseSettings, TOPICS } from "@/lib/cours
 import { now, one, run } from "@/lib/db";
 import { createPasswordReset } from "@/lib/portal/auth";
 import { approveOrder, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
-import { button, esc, sendMail } from "@/lib/portal/mail";
+import { button, esc, sendMail, sendMailDetailed } from "@/lib/portal/mail";
 import { SITE_URL } from "@/lib/site";
 
 export async function approveOrderAction(fd: FormData) {
@@ -112,4 +112,45 @@ export async function revokeCertificateAction(fd: FormData) {
   await requireAdmin();
   run("UPDATE certificates SET revoked_at = ? WHERE id = ? AND revoked_at IS NULL", now(), String(fd.get("id")));
   revalidatePath("/admin/learners");
+}
+
+export async function approveCompanyAction(fd: FormData) {
+  await reviewCompany(fd, true);
+}
+
+export async function rejectCompanyAction(fd: FormData) {
+  await reviewCompany(fd, false);
+}
+
+async function reviewCompany(fd: FormData, approve: boolean) {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  const note = String(fd.get("note") ?? "").trim().slice(0, 500) || (approve ? "" : "We could not confirm the company details provided.");
+  run("UPDATE companies SET status = ?, review_note = ?, reviewed_at = ? WHERE id = ?", approve ? "approved" : "rejected", note, now(), id);
+  const company = one<{ name: string }>("SELECT name FROM companies WHERE id = ?", id);
+  const manager = one<{ email: string; name: string }>("SELECT email, name FROM users WHERE company_id = ? AND company_role = 'manager' ORDER BY created_at LIMIT 1", id);
+  if (company && manager) {
+    void sendMail(
+      manager.email,
+      approve ? `${company.name} is approved on Learning Impact` : `About your company account: ${company.name}`,
+      approve
+        ? `<p>Assalam-o-Alaikum ${esc(manager.name.split(" ")[0])},</p><p>Your company account for <b>${esc(company.name)}</b> is approved. You can now buy certification seats and invite your team.</p>${button(`${SITE_URL}/company`, "Open my company dashboard")}`
+        : `<p>We could not approve the company account for <b>${esc(company.name)}</b>.</p><p><b>Reason:</b> ${esc(note)}</p><p>Reply to this e-mail or call +92 334 9990778 and we will help.</p>`,
+    );
+  }
+  revalidatePath("/admin/companies");
+}
+
+export async function markVerifiedAction(fd: FormData) {
+  await requireAdmin();
+  run("UPDATE users SET email_verified_at = COALESCE(email_verified_at, ?) WHERE id = ?", now(), String(fd.get("id")));
+  revalidatePath("/admin/learners");
+}
+
+export async function testEmailAction(_: AdminFormState, fd: FormData): Promise<AdminFormState> {
+  await requireAdmin();
+  const to = z.email().safeParse(String(fd.get("to") ?? "").trim());
+  if (!to.success) return { message: "Enter the address to send the test to." };
+  const r = await sendMailDetailed(to.data, "Learning Impact e-mail test", "<p>E-mail from the website is working. Learners will receive their verification codes.</p>");
+  return r.ok ? { ok: true, message: `Sent to ${to.data}. Check the inbox (and spam folder).` } : { message: `Sending failed: ${r.error}` };
 }

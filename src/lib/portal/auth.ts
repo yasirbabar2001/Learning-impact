@@ -18,6 +18,8 @@ export type User = {
   company_id: string | null;
   company_role: "manager" | "member" | null;
   status: "active" | "disabled";
+  account_type: "individual" | "company";
+  email_verified_at: string | null;
   xp: number;
   streak: number;
   best_streak: number;
@@ -85,17 +87,42 @@ export const currentUser = cache(async (): Promise<User | null> => {
   return user ?? null;
 });
 
-/** Page/action guard: sends visitors to the login page and brings them back afterwards. */
+/** Page/action guard: sends visitors to the login page and brings them back afterwards, and unverified accounts to the code page. */
 export async function requireUser(next = "/learn"): Promise<User> {
   const user = await currentUser();
   if (!user) redirect(`/login?next=${encodeURIComponent(next)}`);
+  if (!user.email_verified_at) redirect(`/verify-email?next=${encodeURIComponent(next)}`);
   return user;
 }
 
+export type Company = {
+  id: string;
+  name: string;
+  status: "pending" | "approved" | "rejected";
+  industry: string;
+  city: string;
+  address: string;
+  employees: string;
+  ntn: string;
+  phone: string;
+  review_note: string;
+  created_at: string;
+  reviewed_at: string | null;
+};
+
+export const companyOf = (user: User) => (user.company_id ? (one<Company>("SELECT * FROM companies WHERE id = ?", user.company_id) ?? null) : null);
+
+/** Company features need a verified company account whose profile an admin has approved. */
 export async function requireCompanyManager(): Promise<User & { company_id: string }> {
   const user = await requireUser("/company");
-  if (!user.company_id || user.company_role !== "manager") redirect("/company/setup");
+  if (user.account_type !== "company" || !user.company_id || user.company_role !== "manager") redirect("/company/setup");
+  if (companyOf(user)?.status !== "approved") redirect("/company/pending");
   return user as User & { company_id: string };
+}
+
+/** Where to send someone right after they sign in or verify. */
+export function homeFor(user: Pick<User, "account_type">, next?: string) {
+  return safeNext(next, user.account_type === "company" ? "/company" : "/learn");
 }
 
 /** Only allows relative in-site paths as post-login destinations. */

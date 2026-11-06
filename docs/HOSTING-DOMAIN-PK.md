@@ -86,20 +86,29 @@ stored in `DATA_DIR/uploads`.
    (account title, bank, account number, IBAN, Easypaisa/JazzCash numbers) → Save.
 2. **Prices:** on the same page, enter a price per learner for each ready certification, tick **Published**, Save.
    Certifications without content or without a price show as "Coming soon".
-3. **E-mail (recommended):** in *Setup Node.js App* add these environment variables, then restart the app:
+3. **E-mail (required for sign-up codes):** every new account must enter a 6-digit code sent by e-mail, so set
+   this up first. In *Setup Node.js App* add these environment variables, then **SAVE** and **RESTART**:
 
    | Name | Value |
    | --- | --- |
-   | `SMTP_HOST` | `mail.learningimpact.pk` |
+   | `SMTP_HOST` | your server's own name from the hosting page, e.g. `server29.hndservers.net` |
    | `SMTP_PORT` | `465` |
    | `SMTP_USER` | `info@learningimpact.pk` |
    | `SMTP_PASS` | that mailbox's password |
    | `MAIL_FROM` | `Learning Impact <info@learningimpact.pk>` |
-   | `NOTIFY_EMAIL_TO` | the address that should hear about new payments, e.g. `sales@learningimpact.pk` |
+   | `NOTIFY_EMAIL_TO` | who should hear about new payments and companies, e.g. `sales@learningimpact.pk` |
 
-   Without e-mail the portal still works: admins create password-reset links on **Learners**, and company
-   managers copy invitation links from their dashboard.
-4. **Daily work:** **Payments** shows submitted receipts; check each against your statement and click
+   Then go to **Admin → Learners → E-mail check**, send a test to yourself and read the result on screen.
+   - "certificate" / "altnames" error: use the server name above as `SMTP_HOST` (not `mail.learningimpact.pk`).
+     As a last resort add `SMTP_ALLOW_INVALID_CERT` = `1`.
+   - "Invalid login" / "535": the mailbox password in `SMTP_PASS` is wrong.
+   - Timeout: ask domain.pk whether outgoing SMTP on port 465 is allowed (or try `SMTP_PORT` = `587`).
+
+   If someone cannot receive their code, open **Admin → Learners**, find them and click **Mark e-mail verified**.
+4. **Companies:** company accounts appear in **Admin → Companies** once they verify their e-mail. Check the
+   details and click **Approve company** (or **Reject** with a reason). Only approved companies can buy seats and
+   invite staff; both outcomes are e-mailed to the company.
+5. **Daily work:** **Payments** shows submitted receipts; check each against your statement and click
    **Approve & unlock** (or **Reject** with a reason). **Learners** lets you enrol someone free, grant an extra
    exam attempt, create a password-reset link, disable an account or revoke a certificate.
 

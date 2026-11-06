@@ -178,4 +178,33 @@ export const MIGRATIONS: string[] = [
     value TEXT NOT NULL
   );
   `,
+  /* 2: account types, e-mail verification codes, company approval */ `
+  ALTER TABLE users ADD COLUMN account_type TEXT NOT NULL DEFAULT 'individual' CHECK (account_type IN ('individual', 'company'));
+  ALTER TABLE users ADD COLUMN email_verified_at TEXT;
+  -- Accounts created before verification existed are treated as verified.
+  UPDATE users SET email_verified_at = created_at;
+  UPDATE users SET account_type = 'company' WHERE company_role = 'manager';
+
+  ALTER TABLE companies ADD COLUMN status TEXT NOT NULL DEFAULT 'approved' CHECK (status IN ('pending', 'approved', 'rejected'));
+  ALTER TABLE companies ADD COLUMN industry TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN city TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN address TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN employees TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN ntn TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN phone TEXT NOT NULL DEFAULT '';
+  ALTER TABLE companies ADD COLUMN reviewed_at TEXT;
+  ALTER TABLE companies ADD COLUMN review_note TEXT NOT NULL DEFAULT '';
+
+  CREATE TABLE email_codes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    purpose TEXT NOT NULL CHECK (purpose IN ('verify', 'reset')),
+    code_hash TEXT NOT NULL,
+    attempts INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL,
+    expires_at TEXT NOT NULL,
+    used_at TEXT
+  );
+  CREATE INDEX email_codes_user ON email_codes(user_id, purpose);
+  `,
 ];

@@ -1,10 +1,11 @@
-import { grantAttemptAction, revokeCertificateAction, setUserStatusAction } from "@/app/admin/portal-actions";
-import { EnrollForm, ResetLinkButton } from "@/components/admin/PortalAdminForms";
+import { grantAttemptAction, markVerifiedAction, revokeCertificateAction, setUserStatusAction } from "@/app/admin/portal-actions";
+import { EnrollForm, ResetLinkButton, TestEmailForm } from "@/components/admin/PortalAdminForms";
+import { mailConfigured } from "@/lib/portal/mail";
 import { catalogEntry, TOPICS } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
 import { levelFor } from "@/lib/portal/game";
 
-type U = { id: string; name: string; email: string; phone: string; organisation: string; status: string; xp: number; created_at: string; last_login_at: string | null; company: string | null };
+type U = { id: string; name: string; email: string; phone: string; organisation: string; status: string; xp: number; created_at: string; last_login_at: string | null; company: string | null; account_type: string; email_verified_at: string | null };
 type E = { id: string; user_id: string; course_slug: string; source: string; extra_attempts: number; completed_at: string | null; attempts: number; best: number | null };
 type C = { id: string; user_id: string; course_slug: string; code: string; percent: number };
 
@@ -12,7 +13,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
   const { q = "" } = await searchParams;
   const like = `%${q.trim()}%`;
   const users = all<U>(
-    `SELECT u.id, u.name, u.email, u.phone, u.organisation, u.status, u.xp, u.created_at, u.last_login_at, c.name AS company
+    `SELECT u.id, u.name, u.email, u.phone, u.organisation, u.status, u.xp, u.created_at, u.last_login_at, u.account_type, u.email_verified_at, c.name AS company
      FROM users u LEFT JOIN companies c ON c.id = u.company_id
      WHERE u.name LIKE ? OR u.email LIKE ? OR u.organisation LIKE ? ORDER BY u.created_at DESC LIMIT 200`,
     like,
@@ -43,6 +44,10 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
         </form>
       </div>
       <section className="settings__group glass">
+        <h2>E-mail check</h2>
+        <TestEmailForm configured={mailConfigured()} host={process.env.SMTP_HOST ?? ""} />
+      </section>
+      <section className="settings__group glass">
         <h2>Enrol a learner manually</h2>
         <EnrollForm courses={TOPICS.map((t) => ({ slug: t.slug, title: t.title }))} />
       </section>
@@ -52,6 +57,8 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
             <div className="order-admin__head">
               <span className={`badge ${u.status === "active" ? "badge--confirmed" : "badge--closed"}`}>{u.status === "active" ? "Active" : "Disabled"}</span>
               <strong>{u.name}</strong>
+              <span className="tag">{u.account_type === "company" ? "Company" : "Individual"}</span>
+              {!u.email_verified_at && <span className="tag tag--gold">E-mail not verified</span>}
               <span className="muted">
                 {u.email}
                 {u.phone ? ` · ${u.phone}` : ""}
@@ -92,6 +99,14 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
             </ul>
             <div className="order-admin__actions">
               <ResetLinkButton id={u.id} />
+              {!u.email_verified_at && (
+                <form action={markVerifiedAction}>
+                  <input type="hidden" name="id" value={u.id} />
+                  <button className="btn btn--ghost btn--sm">
+                    <span className="btn__label">Mark e-mail verified</span>
+                  </button>
+                </form>
+              )}
               <form action={setUserStatusAction}>
                 <input type="hidden" name="id" value={u.id} />
                 <input type="hidden" name="status" value={u.status === "active" ? "disabled" : "active"} />

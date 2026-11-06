@@ -256,15 +256,6 @@ export function revokeInvitation(companyId: string, invitationId: string) {
   run("UPDATE invitations SET status = 'revoked' WHERE id = ? AND company_id = ? AND status = 'pending'", invitationId, companyId);
 }
 
-export function createCompany(name: string, managerId: string) {
-  const id = newId();
-  tx(() => {
-    run("INSERT INTO companies (id, name, created_at) VALUES (?, ?, ?)", id, name, now());
-    run("UPDATE users SET company_id = ?, company_role = 'manager', organisation = ? WHERE id = ?", id, name, managerId);
-  });
-  return id;
-}
-
 export const companyById = (id: string) => one<{ id: string; name: string; created_at: string }>("SELECT * FROM companies WHERE id = ?", id) ?? null;
 
 export type TeamRow = {

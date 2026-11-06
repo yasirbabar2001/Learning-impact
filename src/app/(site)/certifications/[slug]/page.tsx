@@ -101,7 +101,10 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
               <span className="btn__arrow">→</span>
             </Link>
           )}
-          <Link href={`/checkout/${slug}?team=1`} className="btn btn--ghost cert__cta">
+          <Link
+            href={user ? `/checkout/${slug}?team=1` : `/login?type=company&next=${encodeURIComponent(`/checkout/${slug}?team=1`)}`}
+            className="btn btn--ghost cert__cta"
+          >
             <span className="btn__label">Buy seats for my team</span>
             <span className="btn__arrow">→</span>
           </Link>

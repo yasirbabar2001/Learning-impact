@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { adminEnrollAction, resetLinkAction, savePaymentSettingsAction } from "@/app/admin/portal-actions";
+import { adminEnrollAction, resetLinkAction, savePaymentSettingsAction, testEmailAction } from "@/app/admin/portal-actions";
 import type { PaymentSettings } from "@/lib/portal/commerce";
 import { Field } from "./ProgramsManager";
 
@@ -72,6 +72,24 @@ export function PaymentSettingsForm({ s }: { s: PaymentSettings }) {
       <button className="btn btn--primary btn--sm" disabled={pending}>
         <span className="btn__label">Save payment details</span>
       </button>
+    </form>
+  );
+}
+
+export function TestEmailForm({ configured, host }: { configured: boolean; host: string }) {
+  const [state, action, pending] = useActionState(testEmailAction, {});
+  return (
+    <form action={action} className="admin-form admin-inline">
+      <p className="muted admin-full">
+        {configured ? `E-mail is set up (server: ${host}). Send yourself a test to confirm codes are delivered.` : "E-mail is not set up yet: add SMTP_HOST, SMTP_PORT, SMTP_USER and SMTP_PASS in Setup Node.js App, then restart the app."}
+      </p>
+      <Field label="Send a test to">
+        <input name="to" type="email" required placeholder="you@example.com" />
+      </Field>
+      <button className="btn btn--primary btn--sm" disabled={pending}>
+        <span className="btn__label">{pending ? "Sending…" : "Send test e-mail"}</span>
+      </button>
+      {state.message && <p className={`${state.ok ? "form-ok" : "form-alert"} admin-full`}>{state.message}</p>}
     </form>
   );
 }

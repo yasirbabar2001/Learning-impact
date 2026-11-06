@@ -2,8 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CheckoutForm } from "@/components/portal/CommerceForms";
 import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
-import { requireUser } from "@/lib/portal/auth";
-import { companyById } from "@/lib/portal/commerce";
+import { companyOf, requireUser } from "@/lib/portal/auth";
 import { enrollmentFor } from "@/lib/portal/learning";
 
 export default async function CheckoutPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ team?: string }> }) {
@@ -14,8 +13,9 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
   if (!e || !e.course) notFound();
   if (!e.available) redirect(`/certifications/${slug}`);
   if (!isTeam && enrollmentFor(user.id, slug)) redirect(`/learn/${slug}`);
-  const manager = user.company_id && user.company_role === "manager";
-  const company = manager ? companyById(user.company_id!) : null;
+  const company = user.account_type === "company" && user.company_role === "manager" ? companyOf(user) : null;
+  if (isTeam && !company) redirect("/company/setup");
+  if (isTeam && company?.status !== "approved") redirect("/company/pending");
 
   return (
     <section className="container section checkout" style={{ ["--c" as string]: e.color }}>
@@ -26,7 +26,7 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
           </p>
           <h1 className="h3">{e.title}</h1>
           <p className="muted">{e.course.tagline}</p>
-          <CheckoutForm slug={slug} team={isTeam} unitPrice={e.pricePkr} needsCompany={!manager} companyName={company?.name ?? null} />
+          <CheckoutForm slug={slug} team={isTeam} unitPrice={e.pricePkr} companyName={company?.name ?? null} />
           <p className="checkout__switch">
             {isTeam ? (
               <Link href={`/checkout/${slug}`} className="inline-link">

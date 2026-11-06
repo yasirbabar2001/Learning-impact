@@ -4,22 +4,12 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { catalogEntry } from "../courses/catalog";
-import { currentUser, requireCompanyManager, requireUser } from "../portal/auth";
-import { acceptInvitation, companyById, createCompany, createInvitation, invitationByToken, revokeInvitation, seatsFree } from "../portal/commerce";
+import { currentUser, requireCompanyManager } from "../portal/auth";
+import { acceptInvitation, companyById, createInvitation, invitationByToken, revokeInvitation, seatsFree } from "../portal/commerce";
 import { button, esc, mailConfigured, sendMail } from "../portal/mail";
 import { SITE_URL } from "../site";
 
 export type InviteState = { ok?: boolean; message?: string; links?: { email: string; url: string }[]; emails?: string };
-
-export async function setupCompany(_: { message?: string }, fd: FormData): Promise<{ message?: string }> {
-  const user = await requireUser("/company/setup");
-  if (user.company_id && user.company_role === "manager") redirect("/company");
-  if (user.company_id) return { message: "Your account already belongs to a company team. Use another account to manage a company." };
-  const name = z.string().trim().min(2).max(120).safeParse(fd.get("company"));
-  if (!name.success) return { message: "Enter your company's name." };
-  createCompany(name.data, user.id);
-  redirect("/company");
-}
 
 /** Invites one or more e-mail addresses (comma, space or new-line separated) to a course, one seat each. */
 export async function inviteEmployees(_: InviteState, fd: FormData): Promise<InviteState> {
