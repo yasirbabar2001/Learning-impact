@@ -92,6 +92,32 @@ test("individual verifies their e-mail with a code, buys a certification and sta
   await page.getByRole("button", { name: /Begin the stage/ }).click();
   await expect(page.locator(".lcard")).toBeVisible();
 
+  // Play through stage 1: checks give instant feedback, completing shows the celebration at once.
+  const course = JSON.parse(readFileSync(path.join(process.cwd(), "content/courses/customer-experience.json"), "utf8"));
+  const s1 = course.sessions[0];
+  for (let i = 0; i < s1.cards.length; i++) {
+    await expect(page.locator(".lesson__count")).toHaveText(`${i + 1} / ${s1.cards.length}`);
+    if (s1.cards[i].type === "check") {
+      await page.locator(".check-opt").nth(s1.cards[i].answer).click();
+      await expect(page.locator(".check-fb.is-right")).toBeVisible();
+    }
+    if (i < s1.cards.length - 1) await page.locator(".lesson__nav .btn--primary").click();
+  }
+  await page.getByRole("button", { name: "Complete lesson" }).click();
+  await expect(page.getByRole("dialog", { name: "Lesson complete!" })).toBeVisible();
+  await page.getByRole("button", { name: /Start the stage test/ }).click();
+  const quiz = page.frameLocator(".scorm__frame");
+  for (const [n, q] of s1.quiz.entries()) {
+    await quiz.locator(".opt", { has: quiz.locator("span", { hasText: q.options[q.answer] }) }).first().click();
+    await quiz.locator("#next").click();
+    if (n === s1.quiz.length - 1) break;
+  }
+  const cleared = page.getByRole("dialog", { name: /Stage cleared/ });
+  await expect(cleared).toBeVisible();
+  await cleared.getByRole("link", { name: /Next stage/ }).click(); // enabled once the server has recorded the pass
+  await expect(page).toHaveURL(/\/learn\/customer-experience\/s2$/);
+  await expect(page.getByRole("button", { name: /Begin the stage/ })).toBeVisible();
+
   // Logging in with the wrong account type is explained.
   await page.context().clearCookies();
   await page.goto("/login");

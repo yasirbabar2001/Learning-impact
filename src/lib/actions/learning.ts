@@ -5,51 +5,9 @@ import { redirect } from "next/navigation";
 import { getCourse } from "../courses/catalog";
 import { currentUser, requireUser } from "../portal/auth";
 import { attemptsAllowed, attemptsOf, certificateFor, openAttempt, saveAnswer, startAttempt, submitAttempt } from "../portal/exam";
-import { awardXp } from "../portal/game";
-import { answerCheck, completeLesson, courseProgress, enrollmentFor, progressMap, recordCardsSeen, stageOf } from "../portal/learning";
+import { courseProgress, enrollmentFor, progressMap } from "../portal/learning";
 
-/** Loads course, session and stage, and confirms the learner may open it. */
-async function access(slug: string, sid: string) {
-  const user = await currentUser();
-  const course = getCourse(slug);
-  const session = course?.sessions.find((s) => s.id === sid);
-  if (!user || !course || !session || !enrollmentFor(user.id, slug)) return null;
-  const stage = stageOf(course, user.id, sid);
-  if (!stage || stage.status === "locked") return null;
-  return { user, course, session };
-}
-
-export async function saveCardProgress(slug: string, sid: string, seen: number) {
-  const a = await access(slug, sid);
-  if (!a || !Number.isInteger(seen) || seen < 0) return;
-  recordCardsSeen(a.user.id, slug, sid, Math.min(seen, a.session.cards.length));
-}
-
-export async function checkAnswer(slug: string, sid: string, cardIndex: number, choice: number) {
-  const a = await access(slug, sid);
-  if (!a || !Number.isInteger(cardIndex) || !Number.isInteger(choice)) return null;
-  return answerCheck(a.user.id, a.course, a.session, cardIndex, choice);
-}
-
-const GAMES = new Set(["scenario", "flip", "sort", "match", "order"]);
-
-/** XP for an interactive card, once per card. The score is reported by the browser (low stakes, capped). */
-export async function recordActivity(slug: string, sid: string, cardIndex: number, score: number, max: number) {
-  const a = await access(slug, sid);
-  const card = a?.session.cards[cardIndex];
-  if (!a || !card || !GAMES.has(card.type) || !(max > 0) || !(score >= 0)) return { xp: 0 };
-  const ratio = Math.min(1, score / max);
-  const xp = awardXp(a.user.id, `activity:${slug}:${sid}:${cardIndex}`, `${card.type === "scenario" ? "Decision" : "Challenge"}: ${a.session.stage}`, Math.round(5 + 10 * ratio));
-  return { xp };
-}
-
-export async function finishLesson(slug: string, sid: string) {
-  const a = await access(slug, sid);
-  if (!a) return null;
-  const xp = completeLesson(a.user.id, a.course, a.session);
-  revalidatePath(`/learn/${slug}`);
-  return { xp };
-}
+/* Lesson events (cards seen, checks, games, completion) go through /api/learn/[slug]/[sid]. */
 
 /* ---------- Final exam ---------- */
 

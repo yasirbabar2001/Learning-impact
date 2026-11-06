@@ -51,7 +51,14 @@ export function Aurora({ intensity = 1 }: { intensity?: number }) {
     };
 
     let raf = 0;
+    let lastFrame = 0;
     const draw = (t: number) => {
+      // ~30 fps is plenty for slow-drifting light and halves the work on modest laptops.
+      if (t - lastFrame < 32) {
+        if (!reduce) raf = requestAnimationFrame(draw);
+        return;
+      }
+      lastFrame = t;
       pointer.x += (pointer.tx - pointer.x) * 0.04;
       pointer.y += (pointer.ty - pointer.y) * 0.04;
       ctx.globalCompositeOperation = "source-over";

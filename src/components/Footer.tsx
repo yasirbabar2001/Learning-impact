@@ -18,11 +18,11 @@ export function Footer({ settings }: { settings: SiteSettings }) {
           Let&apos;s build your team&apos;s <span className="rainbow-text">next leap.</span>
         </h2>
         <div className="footer__actions">
-          <Link href="/book" className="btn btn--primary">
+          <Link prefetch={false} href="/book" className="btn btn--primary">
             <span className="btn__label">Book a program</span>
             <span className="btn__arrow">→</span>
           </Link>
-          <Link href="/trainers" className="btn btn--ghost">
+          <Link prefetch={false} href="/trainers" className="btn btn--ghost">
             <span className="btn__label">Request a trainer</span>
             <span className="btn__arrow">→</span>
           </Link>
@@ -36,14 +36,14 @@ export function Footer({ settings }: { settings: SiteSettings }) {
         </div>
         <div>
           <h3>Explore</h3>
-          <Link href="/certifications">Certifications</Link>
-          <Link href="/programs">Programs</Link>
-          <Link href="/industries">Industries</Link>
-          <Link href="/trainers">Hire a trainer</Link>
-          <Link href="/about">About us</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/verify">Verify a certificate</Link>
-          <Link href="/login">Learner login</Link>
+          <Link prefetch={false} href="/certifications">Certifications</Link>
+          <Link prefetch={false} href="/programs">Programs</Link>
+          <Link prefetch={false} href="/industries">Industries</Link>
+          <Link prefetch={false} href="/trainers">Hire a trainer</Link>
+          <Link prefetch={false} href="/about">About us</Link>
+          <Link prefetch={false} href="/contact">Contact</Link>
+          <Link prefetch={false} href="/verify">Verify a certificate</Link>
+          <Link prefetch={false} href="/login">Learner login</Link>
         </div>
         <div>
           <h3>Contact</h3>

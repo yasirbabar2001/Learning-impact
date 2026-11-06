@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
-import { useCallback, useEffect, useRef, useState, useTransition } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { checkAnswer, finishLesson, recordActivity, saveCardProgress } from "@/lib/actions/learning";
 import type { Card, CastMember } from "@/lib/courses/schema";
 import { play, setSoundOn, soundOn } from "@/lib/portal/sfx";
 import { autoReadOn, plain, setAutoRead, speak, speechSupported, stopSpeaking } from "@/lib/portal/speech";
@@ -17,8 +16,20 @@ import { Celebration } from "./Celebration";
 import { encourage, Ilmi, praise, type IlmiMood } from "./Ilmi";
 import { ScormPlayer, type ScormResult } from "./ScormPlayer";
 
-/** Cards as sent to the browser: knowledge-check answers stay on the server. */
-export type PublicCard = Exclude<Card, { type: "check" }> | { type: "check"; question: string; options: string[] };
+/** Cards as sent to the browser. Knowledge checks carry their answer so feedback is instant; XP is still decided on the server. */
+export type PublicCard = Card;
+
+/** Sends a lesson event to the server without blocking the UI (see /api/learn/[slug]/[sid]). */
+export function lessonEvent(slug: string, sid: string, body: Record<string, unknown>): Promise<{ xp?: number }> {
+  return fetch(`/api/learn/${slug}/${sid}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body), keepalive: true })
+    .then((r) => (r.ok ? r.json() : {}))
+    .catch(() => ({}));
+}
+
+/** Tells the header to add XP right away (it refreshes from the server on the next page load). */
+export const announceXp = (xp: number) => {
+  if (xp > 0) window.dispatchEvent(new CustomEvent("li:xp", { detail: xp }));
+};
 
 type Props = {
   slug: string;
@@ -107,6 +118,11 @@ function script(card: PublicCard, cast: CastMember[]): string {
   }
 }
 
+// Mirrors XP in src/lib/portal/game.ts, so rewards can be shown before the server answers.
+const LESSON_XP = 50;
+const PASS_XP = 100;
+const PERFECT_XP = 50;
+
 export function LessonPlayer(p: Props) {
   const [phase, setPhase] = useState<"intro" | "cards" | "done" | "quiz">(p.lessonDone ? "done" : p.startAt > 0 ? "cards" : "intro");
   const [i, setI] = useState(Math.min(p.startAt, p.cards.length - 1));
@@ -122,11 +138,15 @@ export function LessonPlayer(p: Props) {
   const [autoRead, setAutoReadState] = useState(false);
   const [reading, setReading] = useState(false);
   const [canSpeak, setCanSpeak] = useState(false);
-  const [celebrate, setCelebrate] = useState<null | { kind: "lesson" | "stage"; xp: number; result?: ScormResult }>(null);
-  const [pending, start] = useTransition();
+  const [celebrate, setCelebrate] = useState<null | { kind: "lesson" | "stage"; xp: number; xpBefore: number; result?: ScormResult; confirmed?: boolean }>(null);
+  /** What the server has recorded for this stage test so far (props are not refreshed while on the page). */
+  const quizSoFar = useRef({ passed: p.quiz.passed, best: p.quiz.best });
   const popId = useRef(0);
   const moodTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const router = useRouter();
+  /** Resolves once the server has recorded the lesson as complete (the stage test needs that). */
+  const completion = useRef<Promise<unknown> | null>(null);
+  /** False only while a lesson completion is being saved. */
+  const [ready, setReady] = useState(true);
 
   useEffect(() => {
     // Preferences live in this browser; read them after mounting.
@@ -135,6 +155,15 @@ export function LessonPlayer(p: Props) {
     setAutoReadState(autoReadOn());
     setCanSpeak(speechSupported());
   }, []);
+
+  const router = useRouter();
+  // Warm up the next screen while the learner takes the stage test, so "Next stage" responds instantly.
+  useEffect(() => {
+    if (phase === "quiz" || phase === "done") {
+      router.prefetch(p.mapHref);
+      if (p.nextHref || p.examHref) router.prefetch((p.nextHref || p.examHref)!);
+    }
+  }, [phase, router, p.mapHref, p.nextHref, p.examHref]);
 
   const react = useCallback((m: IlmiMood, msg: string | null, ms = 2600) => {
     setMood(m);
@@ -151,6 +180,7 @@ export function LessonPlayer(p: Props) {
     const id = ++popId.current;
     setEarned((e) => e + xp);
     setPops((ps) => [...ps, { id, xp }]);
+    announceXp(xp);
     play("xp");
     setTimeout(() => setPops((ps) => ps.filter((x) => x.id !== id)), 1600);
   }, []);
@@ -184,8 +214,8 @@ export function LessonPlayer(p: Props) {
       setDir(to > i ? 1 : -1);
       setI(to);
       play("whoosh");
-      if (to > i) void saveCardProgress(p.slug, p.sid, to);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (to > i) void lessonEvent(p.slug, p.sid, { event: "seen", index: to });
+      if (window.scrollY > 120) window.scrollTo({ top: 0 });
     },
     [i, p.cards.length, p.slug, p.sid],
   );
@@ -201,7 +231,7 @@ export function LessonPlayer(p: Props) {
         setReading(true);
         speak(script(card, p.cast), () => setReading(false));
       }
-    }, 450);
+    }, 260);
     return () => {
       clearTimeout(t);
       stopSpeaking();
@@ -221,32 +251,36 @@ export function LessonPlayer(p: Props) {
   }, [phase, i, blocked, go]);
 
   const answer = (choice: number) => {
-    if (checks[i]) return;
-    start(async () => {
-      const r = await checkAnswer(p.slug, p.sid, i, choice);
-      if (!r) return;
-      setChecks((c) => ({ ...c, [i]: { choice, ...r } }));
-      play(r.correct ? "correct" : "wrong");
-      streak(r.correct);
-      gain(r.xp);
-    });
+    if (checks[i] || card.type !== "check") return;
+    // Feedback is instant; the server records the attempt and decides the XP in the background.
+    const correct = choice === card.answer;
+    setChecks((c) => ({ ...c, [i]: { choice, correct, answer: card.answer, explanation: card.explanation, xp: 0 } }));
+    play(correct ? "correct" : "wrong");
+    streak(correct);
+    void lessonEvent(p.slug, p.sid, { event: "check", index: i, choice }).then((r) => gain(r.xp ?? 0));
   };
 
   const gameResult = (index: number) => (score: number, max: number) => {
     if (games[index]) return;
     setGames((g) => ({ ...g, [index]: true }));
     streak(score / max >= 0.75);
-    void recordActivity(p.slug, p.sid, index, score, max).then((r) => gain(r.xp));
+    void lessonEvent(p.slug, p.sid, { event: "activity", index, score, max }).then((r) => gain(r.xp ?? 0));
   };
 
-  const complete = () =>
-    start(async () => {
-      stopSpeaking();
-      const r = await finishLesson(p.slug, p.sid);
-      setCelebrate({ kind: "lesson", xp: earned + (r?.xp ?? 0) });
-      setEarned((e) => e + (r?.xp ?? 0));
-      router.refresh(); // update XP and streak in the header
-    });
+  const complete = () => {
+    stopSpeaking();
+    // Celebrate at once. Lesson XP is paid only the first time, so the amount is known in advance.
+    const lessonXp = p.lessonDone ? 0 : LESSON_XP;
+    setCelebrate({ kind: "lesson", xp: earned + lessonXp, xpBefore: p.xp });
+    if (!completion.current) {
+      setReady(false);
+      completion.current = lessonEvent(p.slug, p.sid, { event: "complete" }).then((r) => {
+        setEarned((e) => e + (r.xp ?? 0));
+        announceXp(r.xp ?? 0);
+        setReady(true);
+      });
+    }
+  };
 
   const listen = () => {
     if (reading) {
@@ -355,20 +389,20 @@ export function LessonPlayer(p: Props) {
           <div className="lesson__progress" aria-label={`Card ${i + 1} of ${p.cards.length}`}>
             <motion.span className="lesson__progress-fill" animate={{ width: `${progress}%` }} transition={{ type: "spring", stiffness: 120, damping: 20 }} />
           </div>
-          <AnimatePresence mode="wait" custom={dir}>
+          <AnimatePresence mode="popLayout" custom={dir} initial={false}>
             <motion.article
               key={i}
               custom={dir}
               className={`lcard lcard--${card.type} glass`}
               variants={{
-                enter: (d: number) => ({ opacity: 0, x: d * 80, rotateY: d * 12 }),
-                center: { opacity: 1, x: 0, rotateY: 0 },
-                exit: (d: number) => ({ opacity: 0, x: d * -80, rotateY: d * -12 }),
+                enter: (d: number) => ({ opacity: 0, x: d * 48 }),
+                center: { opacity: 1, x: 0 },
+                exit: (d: number) => ({ opacity: 0, x: d * -48, transition: { duration: 0.14 } }),
               }}
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="lcard__head">
                 <span className="lcard__kind">
@@ -380,7 +414,7 @@ export function LessonPlayer(p: Props) {
                   </button>
                 )}
               </div>
-              <CardBody card={card} index={i} cast={p.cast} slug={p.slug} sid={p.sid} check={checks[i]} pending={pending} onAnswer={answer} onGame={gameResult(i)} />
+              <CardBody card={card} index={i} cast={p.cast} slug={p.slug} sid={p.sid} check={checks[i]} onAnswer={answer} onGame={gameResult(i)} />
             </motion.article>
           </AnimatePresence>
           <div className="lesson__nav">
@@ -397,8 +431,8 @@ export function LessonPlayer(p: Props) {
                 <span className="btn__arrow">→</span>
               </button>
             ) : (
-              <button className="btn btn--primary" onClick={complete} disabled={blocked || pending}>
-                <span className="btn__label">{pending ? "Saving…" : "Complete lesson"}</span>
+              <button className="btn btn--primary" onClick={complete} disabled={blocked || Boolean(celebrate)}>
+                <span className="btn__label">Complete lesson</span>
                 <span className="btn__arrow">✓</span>
               </button>
             )}
@@ -449,15 +483,25 @@ export function LessonPlayer(p: Props) {
         <ScormPlayer
           slug={p.slug}
           sid={p.sid}
+          ready={ready}
           pass={p.quiz.pass}
           nextHref={p.nextHref}
           examHref={p.examHref}
           mapHref={p.mapHref}
+          onPreview={(r) => {
+            // Celebrate the moment the test ends; XP is predictable (first pass / first perfect score only).
+            if (!r.passed) return;
+            const q = quizSoFar.current;
+            const xp = (q.passed ? 0 : PASS_XP) + (r.score === r.total && q.best < r.total ? PERFECT_XP : 0);
+            setCelebrate({ kind: "stage", xp, xpBefore: p.xp + earned, result: { ...r, xp }, confirmed: false });
+          }}
           onResult={(r) => {
+            if (r.failed || !r.passed) setCelebrate((c) => (c?.kind === "stage" ? null : c));
+            if (r.failed) return;
+            quizSoFar.current = { passed: quizSoFar.current.passed || r.passed, best: Math.max(quizSoFar.current.best, r.score) };
             gain(r.xp);
-            if (r.passed) setCelebrate({ kind: "stage", xp: r.xp, result: r });
+            if (r.passed) setCelebrate((c) => (c?.kind === "stage" ? { ...c, confirmed: true } : { kind: "stage", xp: r.xp, xpBefore: p.xp + earned, result: r, confirmed: true }));
             else react("sad", "So close! Review and try again.", 4000);
-            router.refresh();
           }}
         />
       )}
@@ -493,11 +537,11 @@ export function LessonPlayer(p: Props) {
           icon={celebrate.result.score === celebrate.result.total ? "💎" : "🏆"}
           title={celebrate.result.score === celebrate.result.total ? "Perfect score! Stage cleared!" : "Stage cleared!"}
           subtitle={`${p.stage}: ${celebrate.result.score}/${celebrate.result.total} on the stage test.${p.nextHref ? " The next stage is unlocked." : " The final boss awaits!"}`}
-          xpBefore={p.xp + earned - celebrate.xp}
+          xpBefore={celebrate.xpBefore}
           xpGained={celebrate.xp}
           share={{ text: `I just cleared “${p.stage}” in the ${p.courseTitle} certification quest on Learning Impact! 🏆`, url: p.shareUrl }}
           actions={[
-            ...(p.nextHref || p.examHref ? [{ label: p.nextHref ? "Next stage" : "Face the final boss", href: (p.nextHref || p.examHref)!, primary: true }] : []),
+            ...(p.nextHref || p.examHref ? [{ label: p.nextHref ? "Next stage" : "Face the final boss", href: (p.nextHref || p.examHref)!, primary: true, pending: !celebrate.confirmed }] : []),
             { label: "Quest map", href: p.mapHref },
           ]}
         />
@@ -513,7 +557,6 @@ function CardBody({
   slug,
   sid,
   check,
-  pending,
   onAnswer,
   onGame,
 }: {
@@ -523,7 +566,6 @@ function CardBody({
   slug: string;
   sid: string;
   check?: CheckResult;
-  pending: boolean;
   onAnswer: (choice: number) => void;
   onGame: (score: number, max: number) => void;
 }) {
@@ -562,7 +604,7 @@ function CardBody({
             {card.options.map((o, k) => {
               const cls = check ? (k === check.answer ? "is-right" : k === check.choice ? "is-wrong" : "is-dim") : "";
               return (
-                <button key={k} className={`check-opt ${cls}`} onClick={() => onAnswer(k)} disabled={Boolean(check) || pending}>
+                <button key={k} className={`check-opt ${cls}`} onClick={() => onAnswer(k)} disabled={Boolean(check)}>
                   <b>{"ABCD"[k]}</b>
                   <span>{o}</span>
                 </button>

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { logout } from "@/lib/actions/account";
+import { levelFor } from "@/lib/portal/levels";
 import { Logo } from "../Logo";
 
 type NavUser = { name: string; xp: number; streak: number; level: number; levelName: string; progress: number; manager: boolean };
@@ -33,6 +34,18 @@ export function PortalNav({ user }: { user: NavUser | null }) {
     { href: "/learn/certificates", label: "Certificates" },
     ...(user?.manager ? [{ href: "/company", label: "My team" }] : []),
   ];
+  // XP earned on this page is announced by the lesson player ("li:xp") so the header updates instantly,
+  // without reloading the page from the server. A fresh server value resets it.
+  const [extra, setExtra] = useState({ base: user?.xp ?? 0, xp: 0 });
+  if (user && extra.base !== user.xp) setExtra({ base: user.xp, xp: 0 });
+  useEffect(() => {
+    const onXp = (e: Event) => setExtra((x) => ({ ...x, xp: x.xp + Number((e as CustomEvent<number>).detail || 0) }));
+    window.addEventListener("li:xp", onXp);
+    return () => window.removeEventListener("li:xp", onXp);
+  }, []);
+  const xp = (user?.xp ?? 0) + extra.xp;
+  const lvl = levelFor(xp);
+
   const active = (l: { href: string; exact?: boolean }) => (l.exact ? path === l.href : path.startsWith(l.href));
   const initials = user?.name
     .split(/\s+/)
@@ -62,12 +75,12 @@ export function PortalNav({ user }: { user: NavUser | null }) {
             <span className="streak-chip" title={`${user.streak}-day learning streak`}>
               🔥 {user.streak}
             </span>
-            <span className="xp-chip" title={`Level ${user.level} ${user.levelName} · ${user.xp} XP`}>
-              <span className="xp-chip__lvl">L{user.level}</span>
+            <span className="xp-chip" title={`Level ${lvl.index} ${lvl.name} · ${xp} XP`}>
+              <span className="xp-chip__lvl">L{lvl.index}</span>
               <span className="xp-chip__bar">
-                <motion.span initial={{ width: 0 }} animate={{ width: `${Math.round(user.progress * 100)}%` }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }} />
+                <motion.span initial={{ width: 0 }} animate={{ width: `${Math.round(lvl.progress * 100)}%` }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }} />
               </span>
-              <span className="xp-chip__xp">{user.xp.toLocaleString()} XP</span>
+              <span className="xp-chip__xp">{xp.toLocaleString()} XP</span>
             </span>
             <button className="avatar" onClick={() => setMenu((m) => !m)} aria-expanded={menu} aria-label="Account menu">
               {initials}

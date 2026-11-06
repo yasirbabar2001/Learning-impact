@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-export type ScormResult = { score: number; total: number; passed: boolean; xp: number };
+export type ScormResult = { score: number; total: number; passed: boolean; xp: number; failed?: boolean };
 type Result = ScormResult;
 
 /**
@@ -19,6 +19,8 @@ export function ScormPlayer({
   examHref,
   mapHref,
   onResult,
+  onPreview,
+  ready = true,
 }: {
   slug: string;
   sid: string;
@@ -27,6 +29,10 @@ export function ScormPlayer({
   examHref: string | null;
   mapHref: string;
   onResult: (r: ScormResult) => void;
+  /** Called at once with the score the test computed in the browser, before the server confirms it. */
+  onPreview?: (r: { score: number; total: number; passed: boolean }) => void;
+  /** False while the lesson completion is still being saved: the test only opens after that. */
+  ready?: boolean;
 }) {
   const [run, setRun] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
@@ -35,9 +41,11 @@ export function ScormPlayer({
   const sent = useRef(false);
   // Kept in a ref: the SCORM session must only restart on a retake, never because the parent re-rendered.
   const onResultRef = useRef(onResult);
+  const onPreviewRef = useRef(onPreview);
   useEffect(() => {
     onResultRef.current = onResult;
-  }, [onResult]);
+    onPreviewRef.current = onPreview;
+  }, [onResult, onPreview]);
 
   useEffect(() => {
     cmi.current = { "cmi.core.lesson_status": "not attempted", "cmi.core.student_name": "", "cmi.core.lesson_mode": "normal" };
@@ -55,6 +63,9 @@ export function ScormPlayer({
         const r = Number(cmi.current[`cmi.interactions.${n}.student_response`]);
         responses.push(Number.isInteger(r) ? r : null);
       }
+      const raw = Number(cmi.current["cmi.core.score.raw"]);
+      const max = Number(cmi.current["cmi.core.score.max"]) || responses.length;
+      if (Number.isFinite(raw)) onPreviewRef.current?.({ score: raw, total: max, passed: status === "passed" });
       try {
         const res = await fetch(`/api/scorm/${slug}/${sid}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ responses }) });
         if (!res.ok) throw new Error(String(res.status));
@@ -63,6 +74,7 @@ export function ScormPlayer({
         onResultRef.current(data);
       } catch {
         setError("Your result could not be saved. Check your connection and retake the test.");
+        onResultRef.current({ score: 0, total: responses.length, passed: false, xp: 0, failed: true });
       }
     };
 
@@ -127,7 +139,13 @@ export function ScormPlayer({
         </motion.div>
       )}
       {error && <p className="form-alert">{error}</p>}
-      <iframe key={run} className="scorm__frame" src={`/scorm/${slug}/${sid}/index.html`} title="Stage test" />
+      {ready ? (
+        <iframe key={run} className="scorm__frame" src={`/scorm/${slug}/${sid}/index.html`} title="Stage test" />
+      ) : (
+        <div className="scorm__frame scorm__wait" role="status">
+          <span className="spinner" aria-hidden="true" /> Preparing your stage test…
+        </div>
+      )}
     </div>
   );
 }

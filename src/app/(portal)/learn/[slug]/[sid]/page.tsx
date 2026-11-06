@@ -18,8 +18,8 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
   if (st.status === "locked") redirect(`/learn/${slug}`);
   const s = st.session;
 
-  // Strip answers from knowledge checks before they reach the browser.
-  const cards: PublicCard[] = s.cards.map((c) => (c.type === "check" ? { type: "check", question: c.question, options: c.options } : c));
+  // Knowledge checks are practice (not graded), so their answers travel with the card for instant feedback.
+  const cards: PublicCard[] = s.cards;
   const next = course.sessions[idx + 1];
 
   return (

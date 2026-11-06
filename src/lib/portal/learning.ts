@@ -106,7 +106,7 @@ export function completeLesson(userId: string, course: Course, session: Session)
   });
 }
 
-/** Marks a knowledge-check card. XP only if the first answer is right. Never sends the answer before the learner chooses. */
+/** Records a knowledge-check answer. XP only if the first answer is right (practice cards; the browser shows feedback itself). */
 export function answerCheck(userId: string, course: Course, session: Session, cardIndex: number, choice: number) {
   const card = session.cards[cardIndex];
   if (!card || card.type !== "check") return null;

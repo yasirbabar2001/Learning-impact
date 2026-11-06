@@ -31,7 +31,18 @@ export default async function PortalLayout({ children }: { children: React.React
       <footer className="portal-foot">
         <span>© {new Date().getFullYear()} Learning Impact (SMC-Private) Limited</span>
         <span>
-          <Link href="/terms">Terms</Link> · <Link href="/contact">Help</Link> · <Link href="/">learningimpact.pk</Link>
+          {/* No prefetch: on shared hosting, prefetching these on every page competed with the page being opened. */}
+          <Link href="/terms" prefetch={false}>
+            Terms
+          </Link>{" "}
+          ·{" "}
+          <Link href="/contact" prefetch={false}>
+            Help
+          </Link>{" "}
+          ·{" "}
+          <Link href="/" prefetch={false}>
+            learningimpact.pk
+          </Link>
         </span>
       </footer>
     </>

@@ -151,9 +151,9 @@ p {
   background: var(--bg);
 }
 .aurora canvas {
+  /* The canvas is drawn at ~1/5 size and scaled up, which already softens it: no CSS blur needed. */
   width: 100%;
   height: 100%;
-  filter: blur(24px) saturate(1.35);
   transform: scale(1.08);
   opacity: 1;
 }
@@ -169,7 +169,6 @@ p {
   inset: -50%;
   opacity: 0.07;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation: grain 1.2s steps(6) infinite;
 }
 .aurora__vignette {
   position: absolute;
@@ -2926,4 +2925,13 @@ button.req:hover {
   .curtain {
     display: none;
   }
+}
+
+/* ---------- Performance ----------
+   The animated background sits behind every card. Re-blurring it per card (backdrop-filter) on every frame
+   made office laptops lag, so cards use a tinted surface instead. Overlays (nav, modals, drawer) keep the blur. */
+html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initiative, .faq__item, .tabs, .program-card, .success, .approach__item, .contact-card, .industry-card, .auth__perk, .how-strip__item, .cert-card, .stage-row, .quest-card, .game-strip__item) {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background-color: rgba(13, 13, 19, 0.55);
 }

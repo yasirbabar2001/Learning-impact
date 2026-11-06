@@ -44,8 +44,9 @@ sent. All motion respects the visitor's "reduce motion" setting.
   upload a receipt, and an admin approves. Company managers invite employees by e-mail and follow progress, scores
   and certificates on `/company` (CSV report).
 - Course content lives in `content/courses/*.json` (format: `src/lib/courses/schema.ts`, guide:
-  `content/WRITING-GUIDE.md`, checked by `pnpm content:check`). Batch 1: Advanced Leadership, Agentic AI,
-  AML/CFT, Customer Experience. Facts to confirm with experts: `content/EXPERT-REVIEW.md`.
+  `content/WRITING-GUIDE.md`, checked by `pnpm content:check`). All 14 certifications have full
+  interactive content (5 stages, about 100 cards, 50 stage-test and 50 exam questions each). Facts to confirm
+  with subject experts before publishing a course: `content/EXPERT-REVIEW.md`.
 - Data: SQLite (`portal.db`, Node's built-in `node:sqlite`) in `DATA_DIR`; receipts in `DATA_DIR/uploads`.
 
 **Admin panel** (`/admin`, password protected):

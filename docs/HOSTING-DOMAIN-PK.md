@@ -127,7 +127,15 @@ stored in `DATA_DIR/uploads`.
 
    - Click **Add New Cron Job**. To test it at once, open that address in your browser: it shows how many
      reminders were sent, e.g. `{"streak":0,"comeback":0,"failed":0,"checked":0}`.
-7. **Invite links:** every learner's dashboard shows a personal link (`learningimpact.pk/r/CODE`). When a friend
+7. **Keep the site awake (recommended, makes the first click fast):** shared hosting puts a Node.js app to sleep
+   after a few idle minutes, and the next visitor then waits several seconds while it starts again. In cPanel →
+   **Cron Jobs**, add one more job with *Common Settings* = **Once Per Five Minutes** and this command:
+
+   ```
+   curl -s https://learningimpact.pk/api/health > /dev/null
+   ```
+
+8. **Invite links:** every learner's dashboard shows a personal link (`learningimpact.pk/r/CODE`). When a friend
    signs up with it and verifies their e-mail, the friend gets 50 XP and the learner 100 XP. When the friend's
    first payment is approved, the learner gets 250 XP and the Ambassador badge. Nothing to set up.
 

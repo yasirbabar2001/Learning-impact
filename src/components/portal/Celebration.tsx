@@ -11,7 +11,7 @@ const rand = (i: number, k: number) => {
   const x = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453;
   return x - Math.floor(x);
 };
-const PIECES = Array.from({ length: 70 }, (_, i) => ({
+const PIECES = Array.from({ length: 56 }, (_, i) => ({
   x: (rand(i, 1) - 0.5) * 1100,
   y: -200 - rand(i, 2) * 420,
   r: rand(i, 3) * 900 - 450,
@@ -20,7 +20,7 @@ const PIECES = Array.from({ length: 70 }, (_, i) => ({
   w: 7 + rand(i, 5) * 9,
 }));
 
-export type CelebrationAction = { label: string; href?: string; onClick?: () => void; primary?: boolean };
+export type CelebrationAction = { label: string; href?: string; onClick?: () => void; primary?: boolean; pending?: boolean };
 
 /**
  * Full-screen reward moment: confetti, a big icon, XP counting up and the level bar filling.
@@ -68,13 +68,11 @@ export function Celebration({
   return (
     <motion.div className="celebrate" initial={{ opacity: 0 }} animate={{ opacity: 1 }} role="dialog" aria-modal="true" aria-label={title}>
       <div className="celebrate__confetti" aria-hidden="true">
+        {/* Plain CSS animation: far cheaper than animating 70 components in JavaScript. */}
         {PIECES.map((p, i) => (
-          <motion.span
+          <span
             key={i}
-            style={{ background: p.c, width: p.w, height: p.w * 0.45 }}
-            initial={{ x: 0, y: 0, rotate: 0, opacity: 1 }}
-            animate={{ x: p.x, y: [0, p.y, p.y + 900], rotate: p.r, opacity: [1, 1, 0] }}
-            transition={{ duration: 2.6, delay: p.d, ease: "easeOut", times: [0, 0.35, 1] }}
+            style={{ background: p.c, width: p.w, height: p.w * 0.45, ["--x" as string]: `${p.x}px`, ["--y" as string]: `${p.y}px`, ["--r" as string]: `${p.r}deg`, animationDelay: `${p.d}s` }}
           />
         ))}
       </div>
@@ -107,7 +105,11 @@ export function Celebration({
         </AnimatePresence>
         <div className="lesson__actions celebrate__actions">
           {actions.map((a) =>
-            a.href ? (
+            a.pending ? (
+              <button key={a.label} className={`btn ${a.primary ? "btn--primary" : "btn--ghost"}`} disabled>
+                <span className="btn__label">Saving…</span>
+              </button>
+            ) : a.href ? (
               <Link key={a.label} href={a.href} className={`btn ${a.primary ? "btn--primary" : "btn--ghost"}`}>
                 <span className="btn__label">{a.label}</span>
                 {a.primary && <span className="btn__arrow">→</span>}
