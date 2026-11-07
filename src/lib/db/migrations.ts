@@ -215,4 +215,7 @@ export const MIGRATIONS: string[] = [
   CREATE UNIQUE INDEX users_ref_code ON users(ref_code);
   CREATE INDEX users_referred_by ON users(referred_by);
   `,
+  /* 4: admin access is a permission on a normal account (one login for everyone) */ `
+  ALTER TABLE users ADD COLUMN is_admin INTEGER NOT NULL DEFAULT 0;
+  `,
 ];

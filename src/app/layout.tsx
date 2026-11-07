@@ -1,3 +1,4 @@
+import { IfspaceCard } from "@/components/IfspaceCard";
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { Aurora } from "@/components/Aurora";
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Aurora />
         <Effects />
         {children}
+        <IfspaceCard />
       </body>
     </html>
   );

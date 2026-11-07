@@ -16,7 +16,8 @@ const LINKS = [
   { href: "/admin/settings", label: "Site settings" },
 ];
 
-export function AdminNav() {
+/** `me` is the signed-in account (absent when using the owner password), so admins can switch back to it. */
+export function AdminNav({ me }: { me?: { home: string; label: string } }) {
   const path = usePathname();
   return (
     <header className="admin-nav">
@@ -36,6 +37,11 @@ export function AdminNav() {
         })}
       </nav>
       <div className="admin-nav__end">
+        {me && (
+          <Link href={me.home} className="role-switch">
+            ↩ {me.label}
+          </Link>
+        )}
         <Link href="/" className="link-arrow" target="_blank">
           View site <span>↗</span>
         </Link>

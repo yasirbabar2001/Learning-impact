@@ -23,6 +23,7 @@ export default async function PortalLayout({ children }: { children: React.React
                 levelName: level.name,
                 progress: level.progress,
                 manager: user.company_role === "manager",
+                admin: Boolean(user.is_admin),
               }
             : null
         }

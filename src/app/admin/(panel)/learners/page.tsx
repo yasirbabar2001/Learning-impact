@@ -1,19 +1,21 @@
-import { grantAttemptAction, markVerifiedAction, revokeCertificateAction, setUserStatusAction } from "@/app/admin/portal-actions";
+import { grantAttemptAction, markVerifiedAction, revokeCertificateAction, setAdminAction, setUserStatusAction } from "@/app/admin/portal-actions";
+import { currentUser } from "@/lib/portal/auth";
 import { EnrollForm, ResetLinkButton, TestEmailForm } from "@/components/admin/PortalAdminForms";
 import { mailConfigured } from "@/lib/portal/mail";
 import { catalogEntry, TOPICS } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
 import { levelFor } from "@/lib/portal/game";
 
-type U = { id: string; name: string; email: string; phone: string; organisation: string; status: string; xp: number; created_at: string; last_login_at: string | null; company: string | null; account_type: string; email_verified_at: string | null };
+type U = { id: string; name: string; email: string; phone: string; organisation: string; status: string; xp: number; created_at: string; last_login_at: string | null; company: string | null; account_type: string; email_verified_at: string | null; is_admin: number };
 type E = { id: string; user_id: string; course_slug: string; source: string; extra_attempts: number; completed_at: string | null; attempts: number; best: number | null };
 type C = { id: string; user_id: string; course_slug: string; code: string; percent: number };
 
 export default async function AdminLearners({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
   const { q = "" } = await searchParams;
+  const me = await currentUser();
   const like = `%${q.trim()}%`;
   const users = all<U>(
-    `SELECT u.id, u.name, u.email, u.phone, u.organisation, u.status, u.xp, u.created_at, u.last_login_at, u.account_type, u.email_verified_at, c.name AS company
+    `SELECT u.id, u.name, u.email, u.phone, u.organisation, u.status, u.xp, u.created_at, u.last_login_at, u.account_type, u.email_verified_at, u.is_admin, c.name AS company
      FROM users u LEFT JOIN companies c ON c.id = u.company_id
      WHERE u.name LIKE ? OR u.email LIKE ? OR u.organisation LIKE ? ORDER BY u.created_at DESC LIMIT 200`,
     like,
@@ -37,7 +39,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
       <div className="board__head">
         <div>
           <h1 className="h3">Learners</h1>
-          <p className="muted">{total} learner account(s).</p>
+          <p className="muted">{total} account(s). “Give admin access” lets someone open this panel by choosing <b>Admin</b> on the normal login page, then switch back to their own account.</p>
         </div>
         <form className="search">
           <input type="search" name="q" defaultValue={q} placeholder="Search name, e-mail or organisation" />
@@ -58,6 +60,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
               <span className={`badge ${u.status === "active" ? "badge--confirmed" : "badge--closed"}`}>{u.status === "active" ? "Active" : "Disabled"}</span>
               <strong>{u.name}</strong>
               <span className="tag">{u.account_type === "company" ? "Company" : "Individual"}</span>
+              {u.is_admin ? <span className="tag tag--gold">Admin</span> : null}
               {!u.email_verified_at && <span className="tag tag--gold">E-mail not verified</span>}
               <span className="muted">
                 {u.email}
@@ -104,6 +107,15 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
                   <input type="hidden" name="id" value={u.id} />
                   <button className="btn btn--ghost btn--sm">
                     <span className="btn__label">Mark e-mail verified</span>
+                  </button>
+                </form>
+              )}
+              {u.status === "active" && u.id !== me?.id && (
+                <form action={setAdminAction}>
+                  <input type="hidden" name="id" value={u.id} />
+                  <input type="hidden" name="admin" value={u.is_admin ? "0" : "1"} />
+                  <button className="btn btn--ghost btn--sm" title={u.is_admin ? "This person can no longer open the admin panel" : "Lets this person switch to Admin from their normal login"}>
+                    <span className="btn__label">{u.is_admin ? "Remove admin access" : "Give admin access"}</span>
                   </button>
                 </form>
               )}

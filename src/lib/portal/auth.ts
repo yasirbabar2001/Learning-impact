@@ -27,6 +27,7 @@ export type User = {
   last_active_day: string | null;
   show_on_leaderboard: number;
   reminders: number;
+  is_admin: number;
   created_at: string;
 };
 

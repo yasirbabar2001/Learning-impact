@@ -221,3 +221,42 @@ test("a learner's invite link brings a friend and pays both of them XP", async (
   await friend.goto("/api/unsubscribe?u=x&t=forged");
   await expect(friend.getByText("Link not valid")).toBeVisible();
 });
+
+test("one login: an account given admin access can switch between learner and admin", async ({ page, browser }) => {
+  // The header offers Log in and Create account; the ifSPACE window is on the page.
+  await page.goto("/");
+  await expect(page.locator(".nav").getByRole("link", { name: "Log in" })).toBeVisible();
+  await expect(page.locator(".nav").getByRole("link", { name: "Create account" })).toBeVisible();
+  await expect(page.locator(".ifspace")).toBeVisible();
+
+  const email = `admin${Date.now()}@example.com`;
+  await signUpIndividual(page, "Amna Admin", email);
+
+  // Without admin access, choosing Admin is refused.
+  await page.context().clearCookies();
+  await page.goto("/login");
+  await page.getByRole("radio", { name: /Admin/ }).click();
+  await page.locator("input[name=email]").fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.getByRole("button", { name: /Log in to admin panel/ }).click();
+  await expect(page.getByText(/does not have admin access/)).toBeVisible();
+
+  // The owner gives this account admin access.
+  const admin = await adminPage(browser);
+  await admin.goto(`/admin/learners?q=${encodeURIComponent(email)}`);
+  await admin.locator(".order-admin", { hasText: email }).getByRole("button", { name: "Give admin access" }).click();
+  await expect(admin.locator(".order-admin", { hasText: email }).getByRole("button", { name: "Remove admin access" })).toBeVisible();
+
+  // Same login window, choose Admin: straight into the panel.
+  await page.locator("input[name=password]").fill("password123"); // the password is never echoed back after an error
+  await page.getByRole("button", { name: /Log in to admin panel/ }).click();
+  await expect(page).toHaveURL(/\/admin$/);
+  await page.getByRole("link", { name: /Switch to my learner account/ }).click();
+  await expect(page).toHaveURL(/\/learn$/);
+  await page.getByRole("button", { name: "Account menu" }).click();
+  await page.getByRole("link", { name: /Switch to Admin/ }).click();
+  await expect(page).toHaveURL(/\/admin$/);
+  // An admin cannot remove their own access.
+  await page.goto(`/admin/learners?q=${encodeURIComponent(email)}`);
+  await expect(page.locator(".order-admin", { hasText: email }).getByRole("button", { name: /admin access/ })).toHaveCount(0);
+});

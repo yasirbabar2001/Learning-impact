@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { endSession, passwordMatches, requireAdmin, startSession, adminConfigured } from "@/lib/auth";
+import { endUserSession } from "@/lib/portal/auth";
 import { rateLimited } from "@/lib/rate-limit";
 import { store } from "@/lib/store";
 import { FORMATS } from "@/lib/types";
@@ -22,7 +23,8 @@ export async function login(_: AdminState, fd: FormData): Promise<AdminState> {
 
 export async function logout() {
   await endSession();
-  redirect("/admin/login");
+  await endUserSession();
+  redirect("/login");
 }
 
 export async function setRequestStatus(id: string, status: string) {

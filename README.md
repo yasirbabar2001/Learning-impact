@@ -21,7 +21,13 @@ sent. All motion respects the visitor's "reduce motion" setting.
 
 **Certification portal** (log in at `/login`):
 
-- Sign-up and login ask first: **Individual** or **Company**. Every new account verifies its e-mail with a
+- One login for everyone (`/login`): **Individual**, **Company** or **Admin**. Admin is a permission on a normal
+  account, given or removed in **Admin → Learners**; admins switch between the admin panel and their own account
+  with one click. The owner password page (`/admin/login`, `ADMIN_PASSWORD`) remains as a backup and to make the
+  first admin.
+- The header shows **Log in** and **Create account** (or **My dashboard**), and every page has a small ifSPACE
+  window pointing to islamicfinancespace.com for Islamic finance training (visitors can shrink it to a badge).
+- Sign-up asks first: **Individual** or **Company**. Every new account verifies its e-mail with a
   6-digit code (10-minute expiry, 5 tries, resend after 60 s). Individuals are active straight away; company
   profiles (name, industry, size, city, NTN, contact person) wait for admin approval in **Admin → Companies**.
   Forgotten passwords are reset with an e-mailed code.

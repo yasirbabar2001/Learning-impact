@@ -5,7 +5,7 @@ import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
 import { catalogEntry, formatPkr, saveCourseSettings, TOPICS } from "@/lib/courses/catalog";
 import { now, one, run } from "@/lib/db";
-import { createPasswordReset } from "@/lib/portal/auth";
+import { createPasswordReset, currentUser } from "@/lib/portal/auth";
 import { approveOrder, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
 import { button, esc, sendMail, sendMailDetailed } from "@/lib/portal/mail";
 import { SITE_URL } from "@/lib/site";
@@ -105,6 +105,17 @@ export async function setUserStatusAction(fd: FormData) {
   const id = String(fd.get("id"));
   run("UPDATE users SET status = ? WHERE id = ?", status, id);
   if (status === "disabled") run("DELETE FROM sessions WHERE user_id = ?", id);
+  revalidatePath("/admin/learners");
+}
+
+/** Gives or removes admin access for an account. You cannot remove your own (so nobody locks themselves out). */
+export async function setAdminAction(fd: FormData) {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  const grant = fd.get("admin") === "1";
+  const me = await currentUser();
+  if (!grant && me?.id === id) return;
+  run("UPDATE users SET is_admin = ? WHERE id = ? AND status = 'active'", grant ? 1 : 0, id);
   revalidatePath("/admin/learners");
 }
 

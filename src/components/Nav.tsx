@@ -9,7 +9,8 @@ import { Logo } from "./Logo";
 
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
 
-export function Nav({ signedIn = false }: { signedIn?: boolean }) {
+/** `account` is the signed-in user (null when signed out): the header shows Log in / Create account, or the dashboard. */
+export function Nav({ account = null }: { account?: { home: string; admin: boolean } | null }) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -56,12 +57,27 @@ export function Nav({ signedIn = false }: { signedIn?: boolean }) {
             ))}
           </nav>
 
-          <Link href={signedIn ? "/learn" : "/login"} className="nav__login">
-            {signedIn ? "My quests" : "Log in"}
-          </Link>
-          <Link href="/certifications" className="nav__cta">
-            <span>Get certified</span>
-          </Link>
+          {account ? (
+            <>
+              {account.admin && (
+                <Link href="/admin" className="nav__login nav__login--admin">
+                  🛡️ Admin
+                </Link>
+              )}
+              <Link href={account.home} className="nav__cta">
+                <span>My dashboard</span>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link href="/login" className="nav__login">
+                Log in
+              </Link>
+              <Link href="/register" className="nav__cta">
+                <span>Create account</span>
+              </Link>
+            </>
+          )}
 
           <button
             className={`nav__burger ${open ? "is-open" : ""}`}
@@ -85,7 +101,16 @@ export function Nav({ signedIn = false }: { signedIn?: boolean }) {
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
           >
             <nav aria-label="Mobile">
-              {[...NAV_LINKS, ...MOBILE_EXTRA_LINKS, signedIn ? { href: "/learn", label: "My quests" } : { href: "/login", label: "Log in" }].map((l, i) => (
+              {[
+                ...NAV_LINKS,
+                ...MOBILE_EXTRA_LINKS,
+                ...(account
+                  ? [{ href: account.home, label: "My dashboard" }, ...(account.admin ? [{ href: "/admin", label: "Admin panel" }] : [])]
+                  : [
+                      { href: "/login", label: "Log in" },
+                      { href: "/register", label: "Create account" },
+                    ]),
+              ].map((l, i) => (
                 <motion.div
                   key={l.href}
                   initial={{ y: 60, opacity: 0, rotate: 4 }}
