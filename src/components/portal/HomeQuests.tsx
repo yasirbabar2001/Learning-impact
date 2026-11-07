@@ -49,13 +49,13 @@ export function HomeQuests() {
               <span className="cert-card__glow" aria-hidden="true" />
               <span className="cert-card__top">
                 <span className="tag">{c.category}</span>
-                {c.available ? <span className="tag tag--gold">Enrolling</span> : <span className="tag">Coming soon</span>}
+                {c.available ? <span className="tag free-tag">🎁 Start for free</span> : <span className="tag">Coming soon</span>}
               </span>
               <h3>{c.title}</h3>
               {c.available && c.course && <span className="cert-card__quest">⚔️ {c.course.quest.name}</span>}
               <p className="muted">{c.course?.tagline ?? c.tagline}</p>
               <span className="cert-card__foot">
-                <strong>{c.available ? formatPkr(c.pricePkr) : "Register interest"}</strong>
+                <strong>{c.available ? `Stage 1 free · then ${formatPkr(c.pricePkr)}` : "Register interest"}</strong>
                 <span className="cert-card__go" aria-hidden="true">
                   →
                 </span>

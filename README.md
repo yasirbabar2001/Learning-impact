@@ -32,6 +32,9 @@ sent. All motion respects the visitor's "reduce motion" setting.
   profiles (name, industry, size, city, NTN, contact person) wait for admin approval in **Admin → Companies**.
   Forgotten passwords are reset with an e-mailed code.
 
+- **Start for free:** stage 1 of every published certification is free for any signed-in learner; stages 2–5, the
+  exam and the certificate unlock after payment (progress carries over). Admins can **preview** every course,
+  stage and the exam question bank without anything being recorded.
 - 14 professional certifications (`/certifications`); each is a gamified **quest**: 5 stages of short lesson cards
   with knowledge checks, a scored **SCORM 1.2** test after every stage (7/10 unlocks the next), and a tough timed
   **final exam** (40 questions drawn from a 50-question bank, 60 minutes, 75% to pass, 3 attempts).

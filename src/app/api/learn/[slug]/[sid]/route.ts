@@ -2,7 +2,7 @@ import { revalidatePath } from "next/cache";
 import { getCourse } from "@/lib/courses/catalog";
 import { currentUser } from "@/lib/portal/auth";
 import { awardXp } from "@/lib/portal/game";
-import { answerCheck, completeLesson, enrollmentFor, recordCardsSeen, stageOf } from "@/lib/portal/learning";
+import { accessFor, answerCheck, completeLesson, recordCardsSeen, stageOf } from "@/lib/portal/learning";
 
 export const dynamic = "force-dynamic";
 
@@ -24,11 +24,14 @@ export async function POST(req: Request, { params }: { params: Promise<{ slug: s
   const user = await currentUser();
   const course = getCourse(slug);
   const session = course?.sessions.find((s) => s.id === sid);
-  if (!user || !course || !session || !enrollmentFor(user.id, slug)) return Response.json({ error: "not-allowed" }, { status: 403 });
-  const stage = stageOf(course, user.id, sid);
+  const access = user && course && session ? accessFor(user, slug) : null;
+  if (!user || !course || !session || !access) return Response.json({ error: "not-allowed" }, { status: 403 });
+  const stage = stageOf(course, user.id, sid, access.mode);
   if (!stage || stage.status === "locked") return Response.json({ error: "locked" }, { status: 403 });
   const b = (await req.json().catch(() => null)) as Body | null;
   if (!b) return Response.json({ error: "bad-request" }, { status: 400 });
+  // Admin previews record nothing: no progress, no XP.
+  if (access.mode === "preview") return Response.json({ ok: true, xp: 0, preview: true });
 
   switch (b.event) {
     case "seen":

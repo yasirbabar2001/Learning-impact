@@ -1,26 +1,29 @@
 import { notFound, redirect } from "next/navigation";
 import { LessonPlayer, type PublicCard } from "@/components/portal/LessonPlayer";
-import { getCourse } from "@/lib/courses/catalog";
+import { catalogEntry, formatPkr, getCourse } from "@/lib/courses/catalog";
 import { requireUser } from "@/lib/portal/auth";
+import { accessFor, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 import { SITE_URL } from "@/lib/site";
-import { courseProgress, enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 
 export default async function StagePage({ params }: { params: Promise<{ slug: string; sid: string }> }) {
   const { slug, sid } = await params;
   const user = await requireUser(`/learn/${slug}/${sid}`);
   const course = getCourse(slug);
   if (!course) notFound();
-  if (!enrollmentFor(user.id, slug)) redirect(`/certifications/${slug}`);
-  const p = courseProgress(course, progressMap(user.id, slug));
-  const idx = p.stages.findIndex((s) => s.session.id === sid);
+  const access = accessFor(user, slug);
+  if (!access) redirect(`/certifications/${slug}`);
+  const all = stagesFor(course, user.id, access.mode);
+  const idx = all.findIndex((s) => s.session.id === sid);
   if (idx < 0) notFound();
-  const st = p.stages[idx];
-  if (st.status === "locked") redirect(`/learn/${slug}`);
+  const st = all[idx];
+  if (st.status === "locked") redirect(st.paywall ? `/checkout/${slug}` : `/learn/${slug}`);
   const s = st.session;
 
   // Knowledge checks are practice (not graded), so their answers travel with the card for instant feedback.
   const cards: PublicCard[] = s.cards;
   const next = course.sessions[idx + 1];
+  const nextLocked = access.mode === "trial" && Boolean(next && all[idx + 1]?.paywall);
+  const price = catalogEntry(slug)?.pricePkr ?? 0;
 
   return (
     <div className="container" style={{ ["--c" as string]: course.quest.color }}>
@@ -39,9 +42,11 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
         startAt={st.progress?.lesson_done_at ? 0 : (st.progress?.cards_seen ?? 0)}
         lessonDone={Boolean(st.progress?.lesson_done_at)}
         quiz={{ passed: Boolean(st.progress?.quiz_passed_at), best: st.progress?.quiz_best ?? 0, attempts: st.progress?.quiz_attempts ?? 0, pass: QUIZ_PASS }}
-        nextHref={next ? `/learn/${slug}/${next.id}` : null}
-        examHref={next ? null : `/learn/${slug}/exam`}
+        nextHref={next && !nextLocked ? `/learn/${slug}/${next.id}` : null}
+        examHref={next || access.mode === "trial" ? null : `/learn/${slug}/exam`}
         mapHref={`/learn/${slug}`}
+        mode={access.mode}
+        unlock={nextLocked ? { href: `/checkout/${slug}`, price: formatPkr(price), stages: course.sessions.length - idx - 1 } : null}
       />
     </div>
   );

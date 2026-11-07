@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Card, CastMember } from "@/lib/courses/schema";
+import type { AccessMode } from "@/lib/portal/learning";
 import { play, setSoundOn, soundOn } from "@/lib/portal/sfx";
 import { autoReadOn, plain, setAutoRead, speak, speechSupported, stopSpeaking } from "@/lib/portal/speech";
 import { DiagramCard } from "./cards/DiagramCard";
@@ -49,6 +50,10 @@ type Props = {
   examHref: string | null;
   xp: number;
   shareUrl: string;
+  /** "trial": the free stage; "preview": an admin looking around (nothing is saved). */
+  mode?: AccessMode;
+  /** For the free stage: where to pay to unlock the remaining stages. */
+  unlock?: { href: string; price: string; stages: number } | null;
 };
 
 type CheckResult = { choice: number; correct: boolean; answer: number; explanation: string; xp: number };
@@ -161,9 +166,9 @@ export function LessonPlayer(p: Props) {
   useEffect(() => {
     if (phase === "quiz" || phase === "done") {
       router.prefetch(p.mapHref);
-      if (p.nextHref || p.examHref) router.prefetch((p.nextHref || p.examHref)!);
+      if (p.nextHref || p.examHref || p.unlock) router.prefetch((p.nextHref || p.examHref || p.unlock?.href)!);
     }
-  }, [phase, router, p.mapHref, p.nextHref, p.examHref]);
+  }, [phase, router, p.mapHref, p.nextHref, p.examHref, p.unlock]);
 
   const react = useCallback((m: IlmiMood, msg: string | null, ms = 2600) => {
     setMood(m);
@@ -306,6 +311,16 @@ export function LessonPlayer(p: Props) {
         </AnimatePresence>
       </div>
 
+      {p.mode === "preview" && (
+        <p className="mode-banner mode-banner--preview" role="status">
+          👁️ <strong>Admin preview.</strong> Every stage is open and nothing you do here is saved (no progress, no XP).
+        </p>
+      )}
+      {p.mode === "trial" && (
+        <p className="mode-banner mode-banner--trial" role="status">
+          🎁 <strong>Free stage.</strong> Stage 1 is on us. {p.unlock ? `Unlock the other ${p.unlock.stages} stages, the final exam and your certificate for ${p.unlock.price}.` : ""}
+        </p>
+      )}
       <div className="lesson__top">
         <Link href={p.mapHref} className="link-arrow" onClick={() => stopSpeaking()}>
           <span>←</span> Quest map
@@ -460,6 +475,12 @@ export function LessonPlayer(p: Props) {
               <span className="btn__label">{p.quiz.passed ? "Retake the stage test" : "Start the stage test"}</span>
               <span className="btn__arrow">→</span>
             </button>
+            {p.quiz.passed && p.unlock && (
+              <Link href={p.unlock.href} className="btn btn--primary">
+                <span className="btn__label">Unlock the full certification · {p.unlock.price}</span>
+                <span className="btn__arrow">→</span>
+              </Link>
+            )}
             {p.quiz.passed && (p.nextHref || p.examHref) && (
               <Link href={(p.nextHref || p.examHref)!} className="btn btn--ghost">
                 <span className="btn__label">{p.nextHref ? "Next stage" : "Face the final boss"}</span>
@@ -536,11 +557,20 @@ export function LessonPlayer(p: Props) {
         <Celebration
           icon={celebrate.result.score === celebrate.result.total ? "💎" : "🏆"}
           title={celebrate.result.score === celebrate.result.total ? "Perfect score! Stage cleared!" : "Stage cleared!"}
-          subtitle={`${p.stage}: ${celebrate.result.score}/${celebrate.result.total} on the stage test.${p.nextHref ? " The next stage is unlocked." : " The final boss awaits!"}`}
+          subtitle={`${p.stage}: ${celebrate.result.score}/${celebrate.result.total} on the stage test.${
+            p.unlock
+              ? ` Your free stage is done! Unlock the other ${p.unlock.stages} stages, the final exam and your certificate to keep going. Your progress is saved.`
+              : p.nextHref
+                ? " The next stage is unlocked."
+                : p.examHref
+                  ? " The final boss awaits!"
+                  : ""
+          }`}
           xpBefore={celebrate.xpBefore}
           xpGained={celebrate.xp}
           share={{ text: `I just cleared “${p.stage}” in the ${p.courseTitle} certification quest on Learning Impact! 🏆`, url: p.shareUrl }}
           actions={[
+            ...(p.unlock ? [{ label: `Unlock the full certification · ${p.unlock.price}`, href: p.unlock.href, primary: true, pending: !celebrate.confirmed }] : []),
             ...(p.nextHref || p.examHref ? [{ label: p.nextHref ? "Next stage" : "Face the final boss", href: (p.nextHref || p.examHref)!, primary: true, pending: !celebrate.confirmed }] : []),
             { label: "Quest map", href: p.mapHref },
           ]}

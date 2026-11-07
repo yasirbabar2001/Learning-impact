@@ -1,6 +1,8 @@
 import "server-only";
 import { all, now, one, run, tx } from "../db";
+import { catalogEntry } from "../courses/catalog";
 import type { Course, Session } from "../courses/schema";
+import { hasAdminAccess, type User } from "./auth";
 import { awardXp, grantBadge, XP } from "./game";
 
 export const QUIZ_PASS = 7; // out of 10
@@ -27,10 +29,31 @@ export type Progress = {
 
 export type StageStatus = "locked" | "open" | "lesson-done" | "passed";
 
+/**
+ * How a signed-in person may use a course:
+ * - "full": enrolled (purchase, company seat or admin grant); stages unlock one after another;
+ * - "trial": not enrolled yet; stage 1 is free for every learner on a published course, the rest needs payment;
+ * - "preview": an administrator looking at any course; every stage is open and nothing is recorded.
+ */
+export type AccessMode = "full" | "trial" | "preview";
+export type Access = { mode: AccessMode; enrollment: Enrollment | null };
+
+/** Number of stages anyone can play for free. */
+export const FREE_STAGES = 1;
+
 export const enrollmentFor = (userId: string, slug: string) =>
   one<Enrollment>("SELECT * FROM enrollments WHERE user_id = ? AND course_slug = ?", userId, slug) ?? null;
 
 export const enrollmentsOf = (userId: string) => all<Enrollment>("SELECT * FROM enrollments WHERE user_id = ? ORDER BY created_at DESC", userId);
+
+/** Decides full / trial / preview access to a course, or null when the person may not open it. */
+export function accessFor(user: User, slug: string): Access | null {
+  const enrollment = enrollmentFor(user.id, slug);
+  if (enrollment) return { mode: "full", enrollment };
+  if (hasAdminAccess(user)) return { mode: "preview", enrollment: null };
+  if (catalogEntry(slug)?.available) return { mode: "trial", enrollment: null };
+  return null;
+}
 
 export function progressMap(userId: string, slug: string): Map<string, Progress> {
   return new Map(
@@ -61,9 +84,28 @@ export function courseProgress(course: Course, progress: Map<string, Progress>) 
   return { stages: st, passed, total: course.sessions.length, percent, examUnlocked: passed === course.sessions.length };
 }
 
-export function stageOf(course: Course, userId: string, sessionId: string) {
-  const st = stages(course, progressMap(userId, course.slug));
+export function stageOf(course: Course, userId: string, sessionId: string, mode: AccessMode = "full") {
+  const st = stagesFor(course, userId, mode);
   return st.find((s) => s.session.id === sessionId) ?? null;
+}
+
+/** Stages as this person sees them: trial stages after the free one are behind the paywall; previews are all open. */
+export function stagesFor(course: Course, userId: string, mode: AccessMode) {
+  if (mode === "preview") return course.sessions.map((s) => ({ session: s, status: "open" as StageStatus, progress: null as Progress | null, paywall: false }));
+  return stages(course, progressMap(userId, course.slug)).map((s, i) => {
+    const paywall = mode === "trial" && i >= FREE_STAGES;
+    return { ...s, status: paywall ? ("locked" as StageStatus) : s.status, paywall };
+  });
+}
+
+/** Courses a learner has started for free (progress recorded, not enrolled). */
+export function trialsOf(userId: string): string[] {
+  return all<{ course_slug: string }>(
+    `SELECT DISTINCT p.course_slug FROM session_progress p
+     WHERE p.user_id = ? AND NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug)
+     ORDER BY p.updated_at DESC`,
+    userId,
+  ).map((r) => r.course_slug);
 }
 
 function ensureRow(userId: string, slug: string, sid: string) {

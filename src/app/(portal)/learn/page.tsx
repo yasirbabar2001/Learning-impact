@@ -11,7 +11,7 @@ import { InvitePanel } from "@/components/portal/InvitePanel";
 import { BADGES, levelFor, LEVELS, recentXp, userBadges, weeklyRank } from "@/lib/portal/game";
 import { REFERRAL_XP, refCodeFor, referralStats } from "@/lib/portal/referrals";
 import { SITE_URL } from "@/lib/site";
-import { courseProgress, enrollmentsOf, progressMap } from "@/lib/portal/learning";
+import { courseProgress, enrollmentsOf, progressMap, trialsOf } from "@/lib/portal/learning";
 
 export const metadata: Metadata = { title: "My quests" };
 
@@ -34,9 +34,16 @@ export default async function Dashboard() {
       if (!course) return null;
       const p = courseProgress(course, progressMap(user.id, course.slug));
       const next = p.stages.find((s) => s.status !== "passed");
-      return { course, p, next, certified: Boolean(certificateFor(user.id, course.slug)) };
+      return { course, p, next, certified: Boolean(certificateFor(user.id, course.slug)), trial: false };
     })
     .filter((q) => q !== null);
+  // Courses started for free (stage 1) and not bought yet.
+  for (const slug of trialsOf(user.id)) {
+    const course = getCourse(slug);
+    if (!course || quests.some((q) => q.course.slug === slug)) continue;
+    const p = courseProgress(course, progressMap(user.id, slug));
+    quests.push({ course, p, next: p.stages[0].status === "passed" ? undefined : p.stages[0], certified: false, trial: true });
+  }
   const badges = userBadges(user.id);
   const xpFeed = recentXp(user.id);
   const openOrders = ordersOf(user.id).filter((o) => o.status === "awaiting_payment" || o.status === "submitted" || o.status === "rejected");
@@ -131,7 +138,7 @@ export default async function Dashboard() {
         {quests.length === 0 ? (
           <div className="empty glass">
             <h3>No quests yet</h3>
-            <p className="muted">Choose a certification to begin. Companies can also enrol you with a seat.</p>
+            <p className="muted">Every certification starts with a free stage. Pick one and start learning now, no payment needed.</p>
             <Link href="/certifications" className="btn btn--primary">
               <span className="btn__label">Browse certifications</span>
               <span className="btn__arrow">→</span>
@@ -139,15 +146,21 @@ export default async function Dashboard() {
           </div>
         ) : (
           <div className="quest-cards">
-            {quests.map(({ course, p, next, certified }, i) => (
+            {quests.map(({ course, p, next, certified, trial }, i) => (
               <Reveal key={course.slug} delay={i * 0.06}>
                 <Link href={`/learn/${course.slug}`} className="quest-card spot" style={{ ["--c" as string]: course.quest.color }}>
                   <Ring percent={certified ? 100 : p.percent} label={certified ? "🏆" : undefined} />
                   <div className="quest-card__body">
-                    <span className="quest-card__name">⚔️ {course.quest.name}</span>
+                    <span className="quest-card__name">
+                      ⚔️ {course.quest.name} {trial && <span className="tag free-tag">Free stage</span>}
+                    </span>
                     <h3>{course.title}</h3>
                     <p className="muted">
-                      {certified
+                      {trial
+                        ? next
+                          ? "🎁 Free stage in progress · Stage 1 is on us"
+                          : "🔓 Free stage cleared! Unlock the full certification to continue"
+                        : certified
                         ? "Certified. Download your certificate any time."
                         : p.examUnlocked
                           ? "All stages cleared. The final boss awaits!"
@@ -245,7 +258,7 @@ export default async function Dashboard() {
               <Link key={s.slug} href={`/certifications/${s.slug}`} className="suggest__card spot" style={{ ["--c" as string]: s.color }}>
                 <span className="tag">{s.category}</span>
                 <strong>{s.title}</strong>
-                <span className="muted">{formatPkr(s.pricePkr)}</span>
+                <span className="muted">🎁 Start for free · then {formatPkr(s.pricePkr)}</span>
               </Link>
             ))}
           </div>

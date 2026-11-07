@@ -3,24 +3,28 @@ import { notFound, redirect } from "next/navigation";
 import { QuestMap, type MapNode } from "@/components/portal/QuestMap";
 import { Ring } from "@/components/portal/Ring";
 import { Reveal } from "@/components/Reveal";
-import { getCourse } from "@/lib/courses/catalog";
+import { catalogEntry, formatPkr, getCourse } from "@/lib/courses/catalog";
 import { requireUser } from "@/lib/portal/auth";
 import { attemptsAllowed, attemptsOf, certificateFor } from "@/lib/portal/exam";
-import { courseProgress, enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
+import { accessFor, courseProgress, progressMap, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 
 export default async function QuestPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const user = await requireUser(`/learn/${slug}`);
   const course = getCourse(slug);
   if (!course) notFound();
-  const enrollment = enrollmentFor(user.id, slug);
-  if (!enrollment) redirect(`/certifications/${slug}`);
+  const access = accessFor(user, slug);
+  if (!access) redirect(`/certifications/${slug}`);
+  const { mode, enrollment } = access;
   const p = courseProgress(course, progressMap(user.id, slug));
+  const shown = stagesFor(course, user.id, mode);
+  const price = formatPkr(catalogEntry(slug)?.pricePkr ?? 0);
+  const freeDone = mode === "trial" && p.stages[0]?.status === "passed";
   const cert = certificateFor(user.id, slug);
   const attempts = attemptsOf(user.id, slug).filter((a) => a.submitted_at);
   const best = attempts.reduce((m, a) => Math.max(m, a.percent ?? 0), 0);
 
-  const nodes: MapNode[] = p.stages.map((s, i) => ({
+  const nodes: MapNode[] = shown.map((s, i) => ({
     key: s.session.id,
     href: s.status === "locked" ? null : `/learn/${slug}/${s.session.id}`,
     n: `Stage ${i + 1}`,
@@ -33,21 +37,27 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
         : s.status === "lesson-done"
           ? `Lesson done · take the test (${QUIZ_PASS}/10 to pass)`
           : s.status === "open"
-            ? `${s.session.minutes} min · ${s.session.cards.length} cards`
-            : "Clear the previous stage to unlock",
+            ? `${mode === "trial" ? "Free · " : ""}${s.session.minutes} min · ${s.session.cards.length} cards`
+            : s.paywall
+              ? `🔒 Included in the full certification (${price})`
+              : "Clear the previous stage to unlock",
   }));
   nodes.push({
     key: "boss",
-    href: p.examUnlocked ? `/learn/${slug}/exam` : null,
+    href: mode === "preview" || (mode === "full" && p.examUnlocked) ? `/learn/${slug}/exam` : null,
     n: "Final boss",
     stage: "Certification exam",
     title: `${course.exam.questionsPerAttempt} questions · ${course.exam.minutes} min · pass ${course.exam.passMark}%`,
-    status: cert ? "boss-done" : p.examUnlocked ? "boss-open" : "boss-locked",
+    status: cert ? "boss-done" : mode === "preview" || (mode === "full" && p.examUnlocked) ? "boss-open" : "boss-locked",
     note: cert
       ? `Certified with ${cert.percent}%`
-      : p.examUnlocked
-        ? `${attemptsAllowed(enrollment.extra_attempts) - attempts.length} attempt(s) left${attempts.length ? ` · best ${best}%` : ""}`
-        : "Unlocks when every stage is cleared",
+      : mode === "preview"
+        ? "Preview the question bank"
+        : mode === "trial"
+          ? "🔒 Included in the full certification"
+          : p.examUnlocked && enrollment
+            ? `${attemptsAllowed(enrollment.extra_attempts) - attempts.length} attempt(s) left${attempts.length ? ` · best ${best}%` : ""}`
+            : "Unlocks when every stage is cleared",
   });
 
   return (
@@ -78,6 +88,34 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
           </div>
         </Reveal>
       </section>
+      {mode === "preview" && (
+        <section className="container">
+          <p className="mode-banner mode-banner--preview">
+            👁️ <strong>Admin preview.</strong> All stages are open so you can review the content. Nothing you do here is saved.
+          </p>
+        </section>
+      )}
+      {mode === "trial" && (
+        <section className="container">
+          <div className="unlock-banner glass">
+            <span className="unlock-banner__icon" aria-hidden="true">
+              {freeDone ? "🔓" : "🎁"}
+            </span>
+            <div>
+              <strong>{freeDone ? "You cleared your free stage!" : "Stage 1 is free. Try it now."}</strong>
+              <p className="muted">
+                {freeDone
+                  ? `Unlock the other ${course.sessions.length - 1} stages, the final exam and your verified certificate. Your progress is kept.`
+                  : `No payment needed to start. When you are ready, unlock the full certification for ${price}.`}
+              </p>
+            </div>
+            <Link href={`/checkout/${slug}`} className={`btn ${freeDone ? "btn--primary" : "btn--ghost"}`}>
+              <span className="btn__label">Unlock full certification · {price}</span>
+              <span className="btn__arrow">→</span>
+            </Link>
+          </div>
+        </section>
+      )}
       <section className="container quest__map">
         <QuestMap nodes={nodes} />
       </section>

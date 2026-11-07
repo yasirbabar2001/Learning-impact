@@ -49,7 +49,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                 <span className="cert-card__glow" aria-hidden="true" />
                 <span className="cert-card__top">
                   <span className="tag">{c.category}</span>
-                  {c.available ? <span className="tag tag--gold">Enrolling</span> : <span className="tag">Coming soon</span>}
+                  {c.available ? <span className="tag free-tag">🎁 Start for free</span> : <span className="tag">Coming soon</span>}
                 </span>
                 <h3>{c.title}</h3>
                 {c.questName && <span className="cert-card__quest">⚔️ {c.questName}</span>}
@@ -60,7 +60,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                   {c.level ? <span>{c.level}</span> : null}
                 </span>
                 <span className="cert-card__foot">
-                  <strong>{c.available ? c.price : "Register interest"}</strong>
+                  <strong>{c.available ? `Stage 1 free · then ${c.price}` : "Register interest"}</strong>
                   <span className="cert-card__go" aria-hidden="true">
                     →
                   </span>

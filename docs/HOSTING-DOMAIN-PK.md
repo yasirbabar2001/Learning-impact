@@ -93,6 +93,10 @@ stored in `DATA_DIR/uploads`.
 1. **Payment details:** sign in at `/admin` → **Certifications** → fill in *Payment details shown to buyers*
    (account title, bank, account number, IBAN, Easypaisa/JazzCash numbers) → Save.
 2. **Prices:** on the same page, enter a price per learner for each ready certification, tick **Published**, Save.
+   Once published, **stage 1 is free** for every learner ("Start for free"); the other stages, the exam and the
+   certificate unlock after payment, and the free-stage progress carries over. **👁️ Preview course** on the same
+   page opens every stage and the final-exam question bank for you (nothing is saved). Previewing needs you to be
+   logged in with your admin account (`info@learningimpact.pk`), not the owner-password page.
    Certifications without content or without a price show as "Coming soon".
 3. **E-mail (required for sign-up codes):** every new account must enter a 6-digit code sent by e-mail, so set
    this up first. In *Setup Node.js App* add these environment variables, then **SAVE** and **RESTART**:

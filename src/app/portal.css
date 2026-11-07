@@ -3590,3 +3590,76 @@
   background: none;
   font-size: inherit;
 }
+
+/* --- Free stage / admin preview banners --- */
+.mode-banner {
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.mode-banner--preview {
+  background: rgba(0, 194, 255, 0.1);
+  border: 1px solid rgba(0, 194, 255, 0.35);
+}
+.mode-banner--trial {
+  background: linear-gradient(90deg, rgba(46, 229, 157, 0.14), rgba(255, 210, 63, 0.1));
+  border: 1px solid rgba(46, 229, 157, 0.4);
+}
+.free-tag {
+  background: linear-gradient(90deg, #2ee59d, #ffd23f) !important;
+  color: #04110b !important;
+  font-weight: 800;
+}
+.unlock-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  border-radius: 22px;
+  border-color: rgba(46, 229, 157, 0.4);
+  background: linear-gradient(90deg, rgba(46, 229, 157, 0.12), rgba(255, 210, 63, 0.08));
+}
+.unlock-banner > div {
+  flex: 1;
+  min-width: 220px;
+}
+.unlock-banner__icon {
+  font-size: 34px;
+}
+.exam-preview {
+  text-align: left;
+  justify-items: stretch;
+  max-width: 900px;
+}
+.exam-preview__stage ol {
+  display: grid;
+  gap: 18px;
+  padding-left: 22px;
+}
+.exam-preview__stage ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: grid;
+  gap: 4px;
+}
+.exam-preview__stage ul li {
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 14.5px;
+}
+.exam-preview__stage ul li.is-answer {
+  background: rgba(46, 229, 157, 0.14);
+  border: 1px solid rgba(46, 229, 157, 0.45);
+}
+.cert__free-note {
+  font-size: 13px;
+  color: #8ff5c9;
+  text-align: center;
+}
+.cert__preview {
+  justify-content: center;
+}

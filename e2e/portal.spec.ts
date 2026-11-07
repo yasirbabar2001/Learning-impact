@@ -291,3 +291,80 @@ test("one login: the owner logs in as an individual and switches to admin", asyn
   await page.getByRole("link", { name: /Switch to Admin/ }).click();
   await expect(page).toHaveURL(/\/admin$/);
 });
+
+/** Plays a whole stage (cards, then the SCORM stage test with the right answers). */
+async function playStage(page: Page, s: { cards: { type: string; answer?: number }[]; quiz: { options: string[]; answer: number }[] }) {
+  await page.getByRole("button", { name: /Begin the stage/ }).click();
+  for (let i = 0; i < s.cards.length; i++) {
+    await expect(page.locator(".lesson__count")).toHaveText(`${i + 1} / ${s.cards.length}`);
+    if (s.cards[i].type === "check") {
+      await page.locator(".check-opt").nth(s.cards[i].answer!).click();
+      await expect(page.locator(".check-fb")).toBeVisible();
+    }
+    if (i < s.cards.length - 1) await page.locator(".lesson__nav .btn--primary").click();
+  }
+  await page.getByRole("button", { name: "Complete lesson" }).click();
+  await page.getByRole("button", { name: /Start the stage test/ }).click();
+  const quiz = page.frameLocator(".scorm__frame");
+  for (const q of s.quiz) {
+    await quiz.locator(".opt", { has: quiz.locator("span", { hasText: q.options[q.answer] }) }).first().click();
+    await quiz.locator("#next").click();
+  }
+}
+
+test("stage 1 is free for every learner; the rest asks for payment; admins preview everything", async ({ page, browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="conflict-management"])');
+  await form.locator("input[name=price]").fill("18000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  // Catalogue and course page say "Start for free".
+  await page.goto("/certifications");
+  await expect(page.locator(".cert-card", { hasText: "Conflict Management" }).getByText(/Start for free/)).toBeVisible();
+  await page.goto("/certifications/conflict-management");
+  await page.getByRole("link", { name: /Start for free/ }).click();
+  await expect(page).toHaveURL(/\/register\?next=/);
+
+  const email = `trial${Date.now()}@example.com`;
+  await page.getByLabel(/Full name/).fill("Tara Trial");
+  await page.getByLabel("E-mail", { exact: false }).first().fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.locator("input[name=terms]").check();
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await typeCode(page, await codeFor(email));
+  await page.getByRole("button", { name: "Verify" }).click();
+  await expect(page).toHaveURL(/\/learn\/conflict-management\/s1$/); // straight into the free stage
+  await expect(page.getByText(/Free stage\./)).toBeVisible();
+
+  const course = JSON.parse(readFileSync(path.join(process.cwd(), "content/courses/conflict-management.json"), "utf8"));
+  await playStage(page, course.sessions[0]);
+  const cleared = page.getByRole("dialog", { name: /Stage cleared/ });
+  await expect(cleared).toContainText("Your free stage is done");
+  await cleared.getByRole("link", { name: /Unlock the full certification · PKR 18,000/ }).click();
+  await expect(page).toHaveURL(/\/checkout\/conflict-management/);
+
+  // Stage 2 is behind the paywall; the map and dashboard explain it.
+  await page.goto("/learn/conflict-management/s2");
+  await expect(page).toHaveURL(/\/checkout\/conflict-management/);
+  await page.goto("/learn/conflict-management");
+  await expect(page.getByText("You cleared your free stage!")).toBeVisible();
+  await page.goto("/learn");
+  await expect(page.locator(".quest-card", { hasText: "Conflict Management" })).toContainText("Free stage");
+
+  // Admin preview: any stage and the exam bank, nothing recorded.
+  const owner = await (await browser.newContext()).newPage();
+  await owner.goto("/login");
+  await owner.locator("input[name=email]").fill("info@learningimpact.pk");
+  await owner.locator("input[name=password]").fill("e2e-password");
+  await owner.getByRole("button", { name: /^Log in/ }).click();
+  await expect(owner).toHaveURL(/\/learn$/);
+  await owner.goto("/learn/green-banking/s4"); // not published, stage 4
+  await expect(owner.getByText(/Admin preview\./)).toBeVisible();
+  await owner.getByRole("button", { name: /Begin the stage/ }).click();
+  await expect(owner.locator(".lcard")).toBeVisible();
+  await owner.goto("/learn/green-banking/exam");
+  await expect(owner.getByText(/Admin preview of the final exam/)).toBeVisible();
+  await expect(owner.locator(".exam-preview .is-answer")).toHaveCount(50);
+});

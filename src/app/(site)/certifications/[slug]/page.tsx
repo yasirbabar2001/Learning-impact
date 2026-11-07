@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { Reveal } from "@/components/Reveal";
 import { SplitWords } from "@/components/Text";
 import { catalogEntry, courseMinutes, formatPkr } from "@/lib/courses/catalog";
-import { currentUser } from "@/lib/portal/auth";
-import { enrollmentFor, QUIZ_PASS } from "@/lib/portal/learning";
+import { currentUser, hasAdminAccess } from "@/lib/portal/auth";
+import { enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 
 export const dynamic = "force-dynamic";
 
@@ -22,6 +22,10 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   if (!e) notFound();
   const user = await currentUser();
   const enrolled = user ? enrollmentFor(user.id, slug) : null;
+  const admin = hasAdminAccess(user);
+  const firstStage = e.course ? `/learn/${slug}/${e.course.sessions[0].id}` : `/learn/${slug}`;
+  const started = user && e.course && !enrolled ? progressMap(user.id, slug).get(e.course.sessions[0].id) : undefined;
+  const startHref = user ? firstStage : `/register?next=${encodeURIComponent(firstStage)}`;
   const c = e.course;
 
   if (!c || !e.available) {
@@ -35,6 +39,12 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
         </h1>
         <p className="page-hero__lead">{e.tagline} This certification quest is being prepared. Companies can reserve seats for their teams now.</p>
         <div className="hero__ctas cert-soon__ctas">
+          {admin && c && (
+            <Link href={`/learn/${slug}`} className="btn btn--primary">
+              <span className="btn__label">👁️ Preview as admin</span>
+              <span className="btn__arrow">→</span>
+            </Link>
+          )}
           <Link href={`/contact`} className="btn btn--primary">
             <span className="btn__label">Notify me / reserve seats</span>
             <span className="btn__arrow">→</span>
@@ -96,10 +106,17 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
               <span className="btn__arrow">→</span>
             </Link>
           ) : (
-            <Link href={`/checkout/${slug}`} className="btn btn--primary cert__cta">
-              <span className="btn__label">Enrol now</span>
-              <span className="btn__arrow">→</span>
-            </Link>
+            <>
+              <Link href={started?.quiz_passed_at ? `/learn/${slug}` : startHref} className="btn btn--primary cert__cta cert__free">
+                <span className="btn__label">{started?.quiz_passed_at ? "See my progress" : started ? "Continue my free stage" : "🎁 Start for free"}</span>
+                <span className="btn__arrow">→</span>
+              </Link>
+              <p className="cert__free-note">Stage 1 is free, no payment needed. Unlock the rest when you are ready.</p>
+              <Link href={`/checkout/${slug}`} className="btn btn--ghost cert__cta">
+                <span className="btn__label">Enrol now · {formatPkr(e.pricePkr)}</span>
+                <span className="btn__arrow">→</span>
+              </Link>
+            </>
           )}
           <Link
             href={user ? `/checkout/${slug}?team=1` : `/login?type=company&next=${encodeURIComponent(`/checkout/${slug}?team=1`)}`}
@@ -109,6 +126,11 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
             <span className="btn__arrow">→</span>
           </Link>
           <p className="cert__pay muted">Pay by bank transfer, Easypaisa or JazzCash. Access within one working day.</p>
+          {admin && (
+            <Link href={`/learn/${slug}`} className="role-switch cert__preview">
+              👁️ Preview as admin
+            </Link>
+          )}
         </Reveal>
       </section>
 

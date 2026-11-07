@@ -8,13 +8,19 @@ export default async function AdminCertifications() {
   const items = catalog();
   const counts = new Map(all<{ course_slug: string; n: number }>("SELECT course_slug, COUNT(*) AS n FROM enrollments GROUP BY course_slug").map((r) => [r.course_slug, r.n]));
   const certs = new Map(all<{ course_slug: string; n: number }>("SELECT course_slug, COUNT(*) AS n FROM certificates WHERE revoked_at IS NULL GROUP BY course_slug").map((r) => [r.course_slug, r.n]));
+  const trials = new Map(
+    all<{ course_slug: string; n: number }>(
+      `SELECT p.course_slug, COUNT(DISTINCT p.user_id) AS n FROM session_progress p
+       WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug) GROUP BY p.course_slug`,
+    ).map((r) => [r.course_slug, r.n]),
+  );
   const ready = items.filter((i) => i.course && !i.available).length;
   return (
     <div className="board">
       <div className="board__head">
         <div>
           <h1 className="h3">Certifications</h1>
-          <p className="muted">Set a price (PKR per learner) and publish each certification once its content is ready. Session tests can be downloaded as SCORM 1.2 packages for a client&apos;s own LMS.</p>
+          <p className="muted">Set a price (PKR per learner) and publish each certification once its content is ready. Session tests can be downloaded as SCORM 1.2 packages for a client&apos;s own LMS. Stage 1 of every published certification is free for all learners; the rest unlocks after payment. <b>Preview course</b> opens every stage and the exam bank (nothing is saved).</p>
         </div>
       </div>
       {ready > 0 && <p className="form-ok">{ready} certification(s) have content ready: set a price and tick Published to start selling.</p>}
@@ -25,7 +31,7 @@ export default async function AdminCertifications() {
               <span className={`badge ${i.available ? "badge--confirmed" : i.course ? "badge--new" : "badge--closed"}`}>{i.available ? "Live" : i.course ? "Ready to publish" : "Content in preparation"}</span>
               <strong>{i.title}</strong>
               <span className="muted">
-                {counts.get(i.slug) ?? 0} enrolled · {certs.get(i.slug) ?? 0} certified
+                {trials.get(i.slug) ?? 0} on the free stage · {counts.get(i.slug) ?? 0} enrolled · {certs.get(i.slug) ?? 0} certified
               </span>
             </div>
             {i.course ? (
@@ -42,8 +48,11 @@ export default async function AdminCertifications() {
                   <button className="btn btn--primary btn--sm">
                     <span className="btn__label">Save</span>
                   </button>
+                  <a href={`/learn/${i.slug}`} target="_blank" className="btn btn--ghost btn--sm">
+                    <span className="btn__label">👁️ Preview course</span>
+                  </a>
                   <a href={`/certifications/${i.slug}`} target="_blank" className="inline-link">
-                    Preview page ↗
+                    Sales page ↗
                   </a>
                 </form>
                 <p className="muted scorm-links">

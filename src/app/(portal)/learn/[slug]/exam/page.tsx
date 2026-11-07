@@ -3,17 +3,21 @@ import { notFound, redirect } from "next/navigation";
 import { Reveal } from "@/components/Reveal";
 import { beginExam } from "@/lib/actions/learning";
 import { getCourse } from "@/lib/courses/catalog";
+import type { Course } from "@/lib/courses/schema";
 import { requireUser } from "@/lib/portal/auth";
 import { attemptsAllowed, attemptsOf, certificateFor, closeExpired, openAttempt } from "@/lib/portal/exam";
-import { courseProgress, enrollmentFor, progressMap } from "@/lib/portal/learning";
+import { accessFor, courseProgress, progressMap } from "@/lib/portal/learning";
 
 export default async function ExamPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const user = await requireUser(`/learn/${slug}/exam`);
   const course = getCourse(slug);
   if (!course) notFound();
-  const enrollment = enrollmentFor(user.id, slug);
-  if (!enrollment) redirect(`/certifications/${slug}`);
+  const access = accessFor(user, slug);
+  if (!access) redirect(`/certifications/${slug}`);
+  if (access.mode === "preview") return <ExamPreview slug={slug} course={course} />;
+  const enrollment = access.enrollment;
+  if (!enrollment) redirect(`/learn/${slug}`); // free stage only: the exam is part of the full certification
   closeExpired(user.id, course, user.name);
   const p = courseProgress(course, progressMap(user.id, slug));
   const cert = certificateFor(user.id, slug);
@@ -101,6 +105,49 @@ export default async function ExamPage({ params }: { params: Promise<{ slug: str
           </>
         )}
       </Reveal>
+    </div>
+  );
+}
+
+/** Admin preview: the whole question bank, with answers and explanations, grouped by stage. */
+function ExamPreview({ slug, course }: { slug: string; course: Course }) {
+  const { exam } = course;
+  const per = Math.ceil(exam.bank.length / course.sessions.length);
+  return (
+    <div className="container boss" style={{ ["--c" as string]: course.quest.color }}>
+      <div className="boss__card glass exam-preview">
+        <Link href={`/learn/${slug}`} className="link-arrow">
+          <span>←</span> Quest map
+        </Link>
+        <p className="mode-banner mode-banner--preview">
+          👁️ <strong>Admin preview of the final exam.</strong> Learners get {exam.questionsPerAttempt} of these {exam.bank.length} questions in a random order, {exam.minutes} minutes, pass mark {exam.passMark}%.
+        </p>
+        <h1 className="h2">{course.title}: question bank</h1>
+        {course.sessions.map((s, si) => (
+          <section key={s.id} className="exam-preview__stage">
+            <h2 className="h3">
+              Stage {si + 1} · {s.stage}
+            </h2>
+            <ol start={si * per + 1}>
+              {exam.bank.slice(si * per, si * per + per).map((q) => (
+                <li key={q.id}>
+                  <p>
+                    <strong>{q.question}</strong> <span className="tag">difficulty {q.difficulty}</span>
+                  </p>
+                  <ul>
+                    {q.options.map((o, k) => (
+                      <li key={k} className={k === q.answer ? "is-answer" : ""}>
+                        <b>{"ABCD"[k]}</b> {o} {k === q.answer && "✓"}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="muted">{q.explanation}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }
