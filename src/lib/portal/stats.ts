@@ -62,3 +62,67 @@ export function dashboardStats() {
     ),
   };
 }
+
+/* ---------- Website visitors ---------- */
+
+export type VisitBucket = { label: string; visitors: number; views: number };
+export type VisitPeriod = { key: "day" | "month" | "year" | "all"; title: string; visitors: number; views: number; buckets: VisitBucket[] };
+
+const PKT = 5 * 36e5; // Pakistan time, UTC+5 all year
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+/** Unique visitors and page views today (by hour), this month (by day), this year (by month) and all time (by month). */
+export function visitorStats(at = Date.now()): VisitPeriod[] {
+  const pk = new Date(at + PKT);
+  const y = pk.getUTCFullYear();
+  const m = pk.getUTCMonth();
+  const d = pk.getUTCDate();
+  const iso = (utcMs: number) => new Date(utcMs - PKT).toISOString();
+  const dayStart = iso(Date.UTC(y, m, d));
+  const monthStart = iso(Date.UTC(y, m, 1));
+  const yearStart = iso(Date.UTC(y, 0, 1));
+  const totals = (since: string) => one<{ v: number; p: number }>("SELECT COUNT(DISTINCT visitor) AS v, COUNT(*) AS p FROM visits WHERE created_at >= ?", since) ?? { v: 0, p: 0 };
+  // Buckets are computed in Pakistan time with SQLite's date modifiers.
+  const grouped = (fmt: string, since: string) =>
+    new Map(
+      all<{ k: string; v: number; p: number }>(
+        `SELECT strftime('${fmt}', created_at, '+5 hours') AS k, COUNT(DISTINCT visitor) AS v, COUNT(*) AS p FROM visits WHERE created_at >= ? GROUP BY k`,
+        since,
+      ).map((r) => [r.k, r]),
+    );
+
+  const hours = grouped("%H", dayStart);
+  const days = grouped("%d", monthStart);
+  const months = grouped("%m", yearStart);
+  const allMonths = all<{ k: string; v: number; p: number }>(
+    "SELECT strftime('%Y-%m', created_at, '+5 hours') AS k, COUNT(DISTINCT visitor) AS v, COUNT(*) AS p FROM visits GROUP BY k ORDER BY k",
+  );
+  const daysInMonth = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  const t = { day: totals(dayStart), month: totals(monthStart), year: totals(yearStart), all: totals("") };
+  const b = (map: Map<string, { v: number; p: number }>, key: string, label: string): VisitBucket => ({ label, visitors: map.get(key)?.v ?? 0, views: map.get(key)?.p ?? 0 });
+
+  // All time: every month from the first visit (or this month) to now.
+  const first = allMonths[0]?.k ?? `${y}-${String(m + 1).padStart(2, "0")}`;
+  const allMap = new Map(allMonths.map((r) => [r.k, r]));
+  const allBuckets: VisitBucket[] = [];
+  for (let yy = Number(first.slice(0, 4)), mm = Number(first.slice(5, 7)) - 1; yy < y || (yy === y && mm <= m); mm === 11 ? (yy++, (mm = 0)) : mm++) {
+    const k = `${yy}-${String(mm + 1).padStart(2, "0")}`;
+    allBuckets.push(b(allMap, k, `${MONTHS[mm]} ${String(yy).slice(2)}`));
+  }
+
+  return [
+    { key: "day", title: "Today", visitors: t.day.v, views: t.day.p, buckets: Array.from({ length: 24 }, (_, h) => b(hours, String(h).padStart(2, "0"), `${String(h).padStart(2, "0")}:00`)) },
+    { key: "month", title: `${MONTHS[m]} ${y}`, visitors: t.month.v, views: t.month.p, buckets: Array.from({ length: daysInMonth }, (_, i) => b(days, String(i + 1).padStart(2, "0"), String(i + 1))) },
+    { key: "year", title: String(y), visitors: t.year.v, views: t.year.p, buckets: MONTHS.map((name, i) => b(months, String(i + 1).padStart(2, "0"), name)) },
+    { key: "all", title: "All time", visitors: t.all.v, views: t.all.p, buckets: allBuckets },
+  ];
+}
+
+/** The most visited pages and referring sites over the last 30 days. */
+export function visitorTop() {
+  const since = new Date(Date.now() - 30 * 864e5).toISOString();
+  return {
+    pages: all<{ path: string; n: number }>("SELECT path, COUNT(*) AS n FROM visits WHERE created_at >= ? GROUP BY path ORDER BY n DESC LIMIT 6", since),
+    referrers: all<{ referrer: string; n: number }>("SELECT referrer, COUNT(*) AS n FROM visits WHERE created_at >= ? AND referrer <> '' GROUP BY referrer ORDER BY n DESC LIMIT 6", since),
+  };
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { GENDERS } from "@/lib/portal/genders";
 import Link from "next/link";
 import { useActionState, useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
@@ -66,6 +67,26 @@ function Submit({ pending, label }: { pending: boolean; label: string }) {
 }
 
 export type AccountType = "individual" | "company";
+
+/** Gender as three pill-shaped radio options (a real radio group, so it works with keyboards and forms). */
+export function GenderField({ value, error }: { value?: string; error?: string }) {
+  return (
+    <fieldset className={`gender-pick ${error ? "has-error" : ""}`}>
+      <legend>
+        Gender <span className="gender-pick__star">*</span>
+      </legend>
+      <div className="gender-pick__opts">
+        {GENDERS.map((g) => (
+          <label key={g} className="gender-pick__opt">
+            <input type="radio" name="gender" value={g} defaultChecked={value === g} required />
+            <span>{g}</span>
+          </label>
+        ))}
+      </div>
+      {error && <span className="field__error">{error}</span>}
+    </fieldset>
+  );
+}
 
 /** "Individual or company?" switch shown before logging in or signing up. */
 export function TypeSwitch({ value, onChange }: { value: AccountType; onChange: (t: AccountType) => void }) {
@@ -184,7 +205,8 @@ export function RegisterForm({ next, email, initialType = "individual", refCode 
             <Field label="Designation" name="designation" required autoComplete="organization-title" error={e.designation} defaultValue={v.designation} hint="e.g. Head of L&D, HR Manager" />
           </div>
           <Field label="Work e-mail" name="email" type="email" required autoComplete="email" error={e.email} defaultValue={v.email ?? email} hint="We send a verification code here" />
-          <Field label="Phone / WhatsApp" name="phone" type="tel" required autoComplete="tel" error={e.phone} defaultValue={v.phone} />
+          <Field label="Mobile number" name="phone" type="tel" required autoComplete="tel" error={e.phone} defaultValue={v.phone} hint="With country code, e.g. +92 300 1234567" />
+          <GenderField value={v.gender} error={e.gender} />
         </>
       ) : (
         <>
@@ -194,7 +216,8 @@ export function RegisterForm({ next, email, initialType = "individual", refCode 
             <Field label="Organisation" name="organisation" autoComplete="organization" error={e.organisation} defaultValue={v.organisation} />
             <Field label="Designation" name="designation" autoComplete="organization-title" error={e.designation} defaultValue={v.designation} />
           </div>
-          <Field label="Phone / WhatsApp" name="phone" type="tel" autoComplete="tel" error={e.phone} defaultValue={v.phone} />
+          <Field label="Mobile number" name="phone" type="tel" required autoComplete="tel" error={e.phone} defaultValue={v.phone} hint="With country code, e.g. +92 300 1234567" />
+          <GenderField value={v.gender} error={e.gender} />
         </>
       )}
       <Field label="Password" name="password" type="password" required autoComplete="new-password" error={e.password} hint="At least 8 characters" />

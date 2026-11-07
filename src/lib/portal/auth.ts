@@ -28,6 +28,7 @@ export type User = {
   show_on_leaderboard: number;
   reminders: number;
   is_admin: number;
+  gender: string;
   created_at: string;
 };
 

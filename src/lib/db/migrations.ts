@@ -218,4 +218,18 @@ export const MIGRATIONS: string[] = [
   /* 4: admin access is a permission on a normal account (one login for everyone) */ `
   ALTER TABLE users ADD COLUMN is_admin INTEGER NOT NULL DEFAULT 0;
   `,
+  /* 5: gender at sign-up (mobile number becomes required in the forms) */ `
+  ALTER TABLE users ADD COLUMN gender TEXT NOT NULL DEFAULT '';
+  `,
+  /* 6: anonymous page-view counting for the admin visitor charts */ `
+  CREATE TABLE visits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    visitor TEXT NOT NULL,
+    path TEXT NOT NULL,
+    referrer TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL
+  );
+  CREATE INDEX visits_created ON visits(created_at);
+  CREATE INDEX visits_visitor ON visits(visitor, created_at);
+  `,
 ];

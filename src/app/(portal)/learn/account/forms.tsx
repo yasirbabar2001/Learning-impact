@@ -9,7 +9,7 @@ export async function AccountForms() {
       <div className="dash__cols">
         <div className="glass dash__panel">
           <h2 className="h3">Profile</h2>
-          <ProfileForm p={{ name: u.name, email: u.email, phone: u.phone, organisation: u.organisation, designation: u.designation, leaderboard: Boolean(u.show_on_leaderboard), reminders: Boolean(u.reminders) }} />
+          <ProfileForm p={{ name: u.name, email: u.email, phone: u.phone, organisation: u.organisation, designation: u.designation, leaderboard: Boolean(u.show_on_leaderboard), reminders: Boolean(u.reminders), gender: u.gender }} />
         </div>
         <div className="glass dash__panel">
           <h2 className="h3">Password</h2>

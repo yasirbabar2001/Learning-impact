@@ -3936,3 +3936,59 @@
   font-size: 18px;
   color: var(--muted);
 }
+
+/* --- Gender choice (sign-up, profile) --- */
+.gender-pick {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.gender-pick legend {
+  padding: 0 0 8px 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.gender-pick__star {
+  color: var(--gold);
+}
+.gender-pick__opts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gender-pick__opt {
+  position: relative;
+  cursor: pointer;
+}
+.gender-pick__opt input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  cursor: pointer;
+}
+.gender-pick__opt span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 15px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.gender-pick__opt input:checked + span {
+  background: #fff;
+  color: #050507;
+  border-color: #fff;
+  font-weight: 700;
+}
+.gender-pick__opt input:focus-visible + span {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.gender-pick.has-error .gender-pick__opt span {
+  border-color: rgba(255, 77, 109, 0.6);
+}

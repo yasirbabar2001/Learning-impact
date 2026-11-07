@@ -3347,3 +3347,177 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
   flex-shrink: 0;
   white-space: nowrap;
 }
+
+/* ---------- Admin › Users table ---------- */
+.users-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.users-filter input,
+.users-filter select {
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--fg);
+  font: inherit;
+  font-size: 14px;
+}
+.users-filter input {
+  flex: 1 1 240px;
+}
+.users-filter select option {
+  background: #111;
+}
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(13, 13, 19, 0.55);
+}
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+.users-table th,
+.users-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.users-table th {
+  position: sticky;
+  top: 0;
+  background: #121219;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.users-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.users-table .num {
+  text-align: right;
+}
+.users-table .nowrap {
+  white-space: nowrap;
+}
+.users-table td strong {
+  margin-right: 6px;
+}
+
+/* ---------- Website visitors chart ---------- */
+.visitors__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.visitors__tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+.visitors__tabs button {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.visitors__tabs button.is-on {
+  background: #fff;
+  color: #050507;
+}
+.visitors__totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 36px;
+}
+.visitors__totals div {
+  display: grid;
+}
+.visitors__totals strong {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.visitors__totals span {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.visitors__plot {
+  position: relative;
+  padding-left: 30px;
+}
+.visitors__max {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 11px;
+  color: var(--faint);
+}
+.visitors__bars {
+  display: grid;
+  gap: 3px;
+  align-items: end;
+  height: 190px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  /* faint gridlines at quarter heights */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0 / 100% 25%;
+}
+.visitors__col {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  cursor: default;
+}
+.visitors__bar {
+  width: min(22px, 76%);
+  border-radius: 4px 4px 0 0;
+  background: #00a8e0;
+  transition: background 0.15s;
+}
+.visitors__col.is-hover .visitors__bar {
+  background: #5cc8ff;
+}
+.visitors__tick {
+  position: absolute;
+  bottom: -19px;
+  font-size: 10.5px;
+  color: var(--faint);
+  white-space: nowrap;
+}
+.visitors__tip {
+  margin-top: 26px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+}
+.visitors__toggle {
+  justify-self: start;
+  font-size: 13px;
+}
+.visitors__table {
+  max-height: 320px;
+}
+.visitors__lists {
+  margin-top: 14px;
+}

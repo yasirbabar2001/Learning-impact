@@ -19,6 +19,12 @@ async function codeFor(email: string, after = 0): Promise<string> {
   throw new Error(`No code e-mailed to ${email}`);
 }
 
+/** Mobile number and gender are required at sign-up. */
+async function fillMobileAndGender(page: Page, gender = "Female") {
+  await page.getByLabel(/Mobile number/).fill("+92 300 1234567");
+  await page.locator(".gender-pick__opt", { hasText: new RegExp(`^${gender}$`) }).click();
+}
+
 async function typeCode(page: Page, code: string) {
   await page.getByLabel("Digit 1").fill(code); // filling the first box spreads the digits
   await expect(page.getByLabel("Digit 6")).toHaveValue(code[5]);
@@ -51,6 +57,7 @@ test("individual verifies their e-mail with a code, buys a certification and sta
   await page.getByLabel("E-mail", { exact: false }).first().fill(email);
   await page.locator("input[name=password]").fill("password123");
   await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page);
   await page.getByRole("button", { name: /Create my account/ }).click();
 
   // Unverified accounts cannot reach the portal yet.
@@ -139,7 +146,7 @@ test("company verifies its e-mail, waits for approval, then manages its team", a
   await page.getByLabel(/Full name/).fill("Hina Raza");
   await page.getByLabel(/^Designation/).fill("Head of L&D");
   await page.getByLabel(/Work e-mail/).fill(email);
-  await page.getByLabel(/Phone/).fill("0300 1234567");
+  await fillMobileAndGender(page, "Male");
   await page.locator("input[name=password]").fill("password123");
   await page.locator("input[name=terms]").check();
   await page.getByRole("button", { name: /Register my company/ }).click();
@@ -188,6 +195,7 @@ async function signUpIndividual(page: Page, name: string, email: string, from = 
   await page.getByLabel("E-mail", { exact: false }).first().fill(email);
   await page.locator("input[name=password]").fill("password123");
   await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page);
   await page.getByRole("button", { name: /Create my account/ }).click();
   await expect(page).toHaveURL(/\/verify-email/);
   await typeCode(page, await codeFor(email));
@@ -229,6 +237,7 @@ async function individual(page: Page, name: string, email: string) {
   await page.getByLabel("E-mail", { exact: false }).first().fill(email);
   await page.locator("input[name=password]").fill("password123");
   await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page);
   await page.getByRole("button", { name: /Create my account/ }).click();
   if (await page.getByText(/already exists/).isVisible().catch(() => false)) {
     await page.goto("/login");
@@ -332,6 +341,7 @@ test("stage 1 is free for every learner; the rest asks for payment; admins previ
   await page.getByLabel("E-mail", { exact: false }).first().fill(email);
   await page.locator("input[name=password]").fill("password123");
   await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page);
   await page.getByRole("button", { name: /Create my account/ }).click();
   await typeCode(page, await codeFor(email));
   await page.getByRole("button", { name: "Verify" }).click();
@@ -456,4 +466,51 @@ test("a learner who leaves part-way comes back to the same card; a finished free
   await expect(later.getByText("You cleared your free stage!")).toBeVisible();
   await later.goto("/learn/talent-management/s1");
   await expect(later.getByRole("heading", { name: "Stage cleared!" })).toBeVisible();
+});
+
+test("sign-up requires mobile and gender; Admin › Users lists them and exports Excel; visitors are charted", async ({ page, browser }) => {
+  const email = `gender${Date.now()}@example.com`;
+  await page.goto("/register");
+  await page.getByLabel(/Full name/).fill("Gita Gender");
+  await page.getByLabel("E-mail", { exact: false }).first().fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.locator("input[name=terms]").check();
+  // the browser itself blocks an empty required field; bypass it to check the server rules too
+  await page.locator("form.auth__form").evaluate((f) => f.setAttribute("novalidate", ""));
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await expect(page.getByText(/Enter your mobile number/)).toBeVisible();
+  await expect(page.getByText("Please choose an option.")).toBeVisible();
+  await page.getByLabel(/Mobile number/).fill("+44 7700 900123");
+  await page.locator(".gender-pick__opt", { hasText: /^Female$/ }).click();
+  await page.locator("input[name=password]").fill("password123");
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await expect(page).toHaveURL(/\/verify-email/);
+
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/users");
+  const row = admin.locator(".users-table tbody tr", { hasText: email });
+  await expect(row).toContainText("+44 7700 900123");
+  await expect(row).toContainText("Female");
+  await admin.locator("select[name=gender]").selectOption("Male");
+  await admin.getByRole("button", { name: "Apply" }).click();
+  await expect(admin.locator(".users-table tbody tr", { hasText: email })).toHaveCount(0);
+
+  const xls = await admin.request.get(`/admin/users-export?q=${encodeURIComponent(email)}`);
+  expect(xls.status()).toBe(200);
+  expect(xls.headers()["content-type"]).toContain("spreadsheetml");
+  const { unzipSync, strFromU8 } = await import("fflate");
+  const sheet = strFromU8(unzipSync(new Uint8Array(await xls.body()))["xl/worksheets/sheet1.xml"]);
+  expect(sheet).toContain(email);
+  expect(sheet).toContain("+44 7700 900123");
+  expect((await page.request.get("/admin/users-export")).status()).toBe(401); // not for learners
+
+  // Visits from real browsers are counted (headless test browsers are ignored as bots).
+  const ua = { "user-agent": "Mozilla/5.0 (Windows NT 10.0) Chrome/130 Safari/537.36", "content-type": "application/json" };
+  expect((await admin.request.post("/api/track", { headers: ua, data: { path: "/certifications" } })).status()).toBe(204);
+  await admin.request.post("/api/track", { headers: { ...ua, "user-agent": "Googlebot/2.1" }, data: { path: "/" } });
+  await admin.goto("/admin");
+  await admin.getByRole("tab", { name: "Today" }).click();
+  await expect(admin.locator(".visitors__totals strong").first()).not.toHaveText("0");
+  await admin.getByRole("button", { name: "Show as table" }).click();
+  await expect(admin.locator(".visitors__table tbody tr")).toHaveCount(24);
 });

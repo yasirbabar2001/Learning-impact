@@ -1,4 +1,5 @@
 import { IfspaceCard } from "@/components/IfspaceCard";
+import { VisitTracker } from "@/components/VisitTracker";
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { Aurora } from "@/components/Aurora";
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Effects />
         {children}
         <IfspaceCard />
+        <VisitTracker />
       </body>
     </html>
   );

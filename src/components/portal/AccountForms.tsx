@@ -2,9 +2,9 @@
 
 import { useActionState } from "react";
 import { changePassword, updateProfile } from "@/lib/actions/account";
-import { Field } from "./AuthForms";
+import { Field, GenderField } from "./AuthForms";
 
-type Profile = { name: string; email: string; phone: string; organisation: string; designation: string; leaderboard: boolean; reminders: boolean };
+type Profile = { name: string; email: string; phone: string; organisation: string; designation: string; leaderboard: boolean; reminders: boolean; gender: string };
 
 export function ProfileForm({ p }: { p: Profile }) {
   const [state, action, pending] = useActionState(updateProfile, {});
@@ -18,7 +18,8 @@ export function ProfileForm({ p }: { p: Profile }) {
         <Field label="Organisation" name="organisation" defaultValue={String(v.organisation ?? "")} error={e.organisation} />
         <Field label="Designation" name="designation" defaultValue={String(v.designation ?? "")} error={e.designation} />
       </div>
-      <Field label="Phone / WhatsApp" name="phone" type="tel" defaultValue={String(v.phone ?? "")} error={e.phone} />
+      <Field label="Mobile number" name="phone" type="tel" required defaultValue={String(v.phone ?? "")} error={e.phone} hint="With country code, e.g. +92 300 1234567" />
+      <GenderField value={String(v.gender ?? "")} error={e.gender} />
       <label className="check-row">
         <input type="checkbox" name="leaderboard" defaultChecked={state.values ? state.values.leaderboard === "on" : p.leaderboard} />
         <span>Show me on the public leaderboard (first name and initial only)</span>

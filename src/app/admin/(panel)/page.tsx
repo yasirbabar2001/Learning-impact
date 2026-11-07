@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { catalog, formatPkr } from "@/lib/courses/catalog";
 import { ORDER_STATUS } from "@/lib/portal/commerce";
-import { dashboardStats } from "@/lib/portal/stats";
+import { VisitorsChart } from "@/components/admin/VisitorsChart";
+import { dashboardStats, visitorStats, visitorTop } from "@/lib/portal/stats";
 import { store } from "@/lib/store";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +21,8 @@ const newerThan = (iso: string, days: number) => Date.parse(iso) > Date.now() - 
 /** Admin home: clickable tiles with live numbers, each opening the page where you act on them. */
 export default async function AdminDashboard() {
   const s = dashboardStats();
+  const visits = visitorStats();
+  const top = visitorTop();
   const requests = await store.listRequests();
   const newRequests = requests.filter((r) => r.status === "new").length;
   const requests7 = requests.filter((r) => newerThan(r.createdAt, 7)).length;
@@ -40,9 +43,9 @@ export default async function AdminDashboard() {
     {
       title: "People",
       tiles: [
-        { href: "/admin/learners", icon: "🧑‍🎓", label: "Learners", value: s.learners, note: `+${s.newLearners7} in the last 7 days` },
+        { href: "/admin/users?type=individual", icon: "🧑‍🎓", label: "Learners", value: s.learners, note: `+${s.newLearners7} in the last 7 days` },
         { href: "/admin/companies", icon: "🏢", label: "Companies to approve", value: s.companiesPending, note: `${s.companiesApproved} approved`, tone: s.companiesPending ? "alert" : undefined },
-        { href: "/admin/learners", icon: "✉️", label: "E-mail not verified", value: s.unverified, note: "Can be marked verified" },
+        { href: "/admin/users?status=unverified", icon: "✉️", label: "E-mail not verified", value: s.unverified, note: "Can be marked verified" },
         { href: "/admin/learners", icon: "⚡", label: "Active in the last 24 h", value: s.activeToday, note: "Learners who earned XP" },
       ],
     },
@@ -99,6 +102,49 @@ export default async function AdminDashboard() {
         </section>
       ))}
 
+      <section className="dash-admin__group">
+        <h2 className="dash-admin__title">Website</h2>
+        <VisitorsChart periods={visits} />
+        <div className="dash-admin__cols visitors__lists">
+          <div className="glass dash-admin__panel">
+            <h2 className="h3">Most visited pages (30 days)</h2>
+            {top.pages.length === 0 ? (
+              <p className="muted">No visits counted yet.</p>
+            ) : (
+              <ul className="hbars">
+                {top.pages.map((x) => (
+                  <li key={x.path} title={`${x.path}: ${x.n} views`}>
+                    <span className="hbars__label">{x.path}</span>
+                    <span className="hbars__track">
+                      <span className="hbars__bar" style={{ width: `${(x.n / top.pages[0].n) * 100}%` }} />
+                    </span>
+                    <span className="hbars__value">{x.n}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <div className="glass dash-admin__panel">
+            <h2 className="h3">Where visitors came from (30 days)</h2>
+            {top.referrers.length === 0 ? (
+              <p className="muted">No referring websites yet (direct visits and bookmarks are not listed).</p>
+            ) : (
+              <ul className="hbars">
+                {top.referrers.map((x) => (
+                  <li key={x.referrer} title={`${x.referrer}: ${x.n} visits`}>
+                    <span className="hbars__label">{x.referrer}</span>
+                    <span className="hbars__track">
+                      <span className="hbars__bar" style={{ width: `${(x.n / top.referrers[0].n) * 100}%` }} />
+                    </span>
+                    <span className="hbars__value">{x.n}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      </section>
+
       <section className="dash-admin__cols">
         <div className="glass dash-admin__panel">
           <h2 className="h3">New accounts, last 14 days</h2>
@@ -153,7 +199,7 @@ export default async function AdminDashboard() {
             </ul>
           )}
         </Link>
-        <Link href="/admin/learners" className="glass dash-admin__panel dash-admin__panel--link">
+        <Link href="/admin/users" className="glass dash-admin__panel dash-admin__panel--link">
           <h2 className="h3">Newest accounts →</h2>
           <ul className="feed">
             {s.recentUsers.map((u) => (

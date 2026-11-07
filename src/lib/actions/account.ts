@@ -9,6 +9,7 @@ import { now, one, run, tx } from "../db";
 import { currentUser, endUserSession, hashPassword, homeFor, isOwnerEmail, newId, requireUser, safeNext, startUserSession, tokenHash, verifyPassword } from "../portal/auth";
 import { button, esc, sendMail } from "../portal/mail";
 import { CHECK_MESSAGES, checkCode, issueCode } from "../portal/otp";
+import { GENDERS } from "../portal/genders";
 import { REF_COOKIE, referrerByCode, rewardJoin } from "../portal/referrals";
 import { rateLimited } from "../rate-limit";
 import { SITE_URL } from "../site";
@@ -23,13 +24,17 @@ const read = (fd: FormData) => Object.fromEntries([...fd.entries()].map(([k, v])
 const keep = (fd: FormData) => Object.fromEntries(Object.entries(read(fd)).filter(([k]) => !/password|confirm|current|token/.test(k)));
 
 const phone = z.string().trim().max(40).regex(/^[+()\d\s-]*$/, "Use digits, spaces, + or - only.");
+/** Mobile number: required, at least 7 digits (country code welcome). */
+const mobile = phone.refine((v) => v.replace(/\D/g, "").length >= 7, "Enter your mobile number, with country code if outside Pakistan.");
+const gender = z.enum(GENDERS, { message: "Please choose an option." });
 const terms = z.literal("on", { message: "Please accept the terms to continue." });
 
 const individualSchema = z.object({
   name: z.string().trim().min(2, "Enter your full name.").max(80),
   email,
   password,
-  phone,
+  phone: mobile,
+  gender,
   organisation: z.string().trim().max(120),
   designation: z.string().trim().max(80),
   terms,
@@ -45,7 +50,8 @@ const companySchema = z.object({
   name: z.string().trim().min(2, "Enter the contact person's full name.").max(80),
   designation: z.string().trim().min(2, "Enter the contact person's designation.").max(80),
   email,
-  phone: phone.min(7, "Enter a contact number."),
+  phone: mobile,
+  gender,
   password,
   terms,
 });
@@ -88,13 +94,14 @@ export async function register(_: AuthState, fd: FormData): Promise<AuthState> {
         now(),
       );
       run(
-        `INSERT INTO users (id, email, name, password_hash, phone, organisation, designation, account_type, company_id, company_role, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, 'company', ?, 'manager', ?)`,
+        `INSERT INTO users (id, email, name, password_hash, phone, gender, organisation, designation, account_type, company_id, company_role, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'company', ?, 'manager', ?)`,
         id,
         d.email,
         d.name,
         hashed,
         d.phone,
+        d.gender,
         d.company,
         d.designation,
         companyId,
@@ -102,12 +109,13 @@ export async function register(_: AuthState, fd: FormData): Promise<AuthState> {
       );
     } else {
       run(
-        "INSERT INTO users (id, email, name, password_hash, phone, organisation, designation, account_type, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, 'individual', ?)",
+        "INSERT INTO users (id, email, name, password_hash, phone, gender, organisation, designation, account_type, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'individual', ?)",
         id,
         d.email,
         d.name,
         hashed,
         d.phone,
+        d.gender,
         d.organisation,
         d.designation,
         now(),
@@ -255,7 +263,8 @@ export async function resetPassword(_: AuthState, fd: FormData): Promise<AuthSta
 
 const profileSchema = z.object({
   name: z.string().trim().min(2, "Enter your full name.").max(80),
-  phone: z.string().trim().max(40).regex(/^[+()\d\s-]*$/, "Use digits, spaces, + or - only."),
+  phone: mobile,
+  gender,
   organisation: z.string().trim().max(120),
   designation: z.string().trim().max(80),
 });
@@ -266,9 +275,10 @@ export async function updateProfile(_: AuthState, fd: FormData): Promise<AuthSta
   if (!parsed.success) return { errors: fieldErrors(parsed.error), values: keep(fd) };
   const d = parsed.data;
   run(
-    "UPDATE users SET name = ?, phone = ?, organisation = ?, designation = ?, show_on_leaderboard = ?, reminders = ? WHERE id = ?",
+    "UPDATE users SET name = ?, phone = ?, gender = ?, organisation = ?, designation = ?, show_on_leaderboard = ?, reminders = ? WHERE id = ?",
     d.name,
     d.phone,
+    d.gender,
     d.organisation,
     d.designation,
     fd.get("leaderboard") === "on" ? 1 : 0,

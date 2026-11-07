@@ -24,6 +24,13 @@ sent. All motion respects the visitor's "reduce motion" setting.
 - **Admin dashboard** (`/admin`): clickable tiles with live numbers (revenue, payments to review, learners, companies
   to approve, free-stage learners and conversion, enrolments, certificates, exam pass rate, courses live, new
   requests) plus sign-up and top-course charts; training requests moved to `/admin/requests`.
+- **Website visitors** on the dashboard: unique visitors and page views today (by hour), this month (by day), this
+  year (by month) and all time. Counting uses an anonymous first-party cookie (`li_vid`), skips bots, headless
+  browsers and admin pages, and stores no IP address. Most visited pages and referring sites (30 days) are listed too.
+- **Admin → Users** (`/admin/users`): every account in a list (name, e-mail, mobile, gender, type, organisation,
+  status, enrolments, certificates, XP, sign-up and last login) with search and filters, and **Download Excel**
+  (`/admin/users-export`, same filters). Sign-up asks for a mobile number and gender (both required); accounts made
+  before this show gender as "—".
 - Content is international: stories set in organisations around the world, international standards first with
   examples from several jurisdictions, and at least two real-world cases per stage (see `content/EXPERT-REVIEW.md`).
 - One login for everyone (`/login`, Individual or Company). `info@learningimpact.pk` (or `ADMIN_EMAILS`) is always
