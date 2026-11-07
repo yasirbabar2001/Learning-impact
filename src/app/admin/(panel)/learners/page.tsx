@@ -1,5 +1,5 @@
 import { grantAttemptAction, markVerifiedAction, revokeCertificateAction, setAdminAction, setUserStatusAction } from "@/app/admin/portal-actions";
-import { currentUser } from "@/lib/portal/auth";
+import { currentUser, isOwnerEmail } from "@/lib/portal/auth";
 import { EnrollForm, ResetLinkButton, TestEmailForm } from "@/components/admin/PortalAdminForms";
 import { mailConfigured } from "@/lib/portal/mail";
 import { catalogEntry, TOPICS } from "@/lib/courses/catalog";
@@ -39,7 +39,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
       <div className="board__head">
         <div>
           <h1 className="h3">Learners</h1>
-          <p className="muted">{total} account(s). “Give admin access” lets someone open this panel by choosing <b>Admin</b> on the normal login page, then switch back to their own account.</p>
+          <p className="muted">{total} account(s). “Give admin access” lets someone switch to this panel from their normal login (header “Admin” button or account menu). Owner e-mails are always admins.</p>
         </div>
         <form className="search">
           <input type="search" name="q" defaultValue={q} placeholder="Search name, e-mail or organisation" />
@@ -60,7 +60,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
               <span className={`badge ${u.status === "active" ? "badge--confirmed" : "badge--closed"}`}>{u.status === "active" ? "Active" : "Disabled"}</span>
               <strong>{u.name}</strong>
               <span className="tag">{u.account_type === "company" ? "Company" : "Individual"}</span>
-              {u.is_admin ? <span className="tag tag--gold">Admin</span> : null}
+              {isOwnerEmail(u.email) ? <span className="tag tag--gold">Owner · Admin</span> : u.is_admin ? <span className="tag tag--gold">Admin</span> : null}
               {!u.email_verified_at && <span className="tag tag--gold">E-mail not verified</span>}
               <span className="muted">
                 {u.email}
@@ -110,7 +110,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
                   </button>
                 </form>
               )}
-              {u.status === "active" && u.id !== me?.id && (
+              {u.status === "active" && u.id !== me?.id && !isOwnerEmail(u.email) && (
                 <form action={setAdminAction}>
                   <input type="hidden" name="id" value={u.id} />
                   <input type="hidden" name="admin" value={u.is_admin ? "0" : "1"} />

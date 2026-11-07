@@ -124,6 +124,21 @@ export async function requireCompanyManager(): Promise<User & { company_id: stri
 }
 
 /** Where to send someone right after they sign in or verify. */
+/**
+ * Owner e-mails are always administrators (no setup needed). Override with ADMIN_EMAILS (comma-separated).
+ * Other accounts get admin access from an administrator in Admin → Learners.
+ */
+export const OWNER_EMAILS = (process.env.ADMIN_EMAILS || "info@learningimpact.pk")
+  .split(",")
+  .map((e) => e.trim().toLowerCase())
+  .filter(Boolean);
+export const isOwnerEmail = (email: string) => OWNER_EMAILS.includes(email.trim().toLowerCase());
+
+/** Whether this signed-in account may switch to the admin panel. */
+export function hasAdminAccess(user: Pick<User, "email" | "is_admin" | "status" | "email_verified_at"> | null | undefined): boolean {
+  return Boolean(user && user.status === "active" && user.email_verified_at && (user.is_admin || isOwnerEmail(user.email)));
+}
+
 export function homeFor(user: Pick<User, "account_type">, next?: string) {
   return safeNext(next, user.account_type === "company" ? "/company" : "/learn");
 }

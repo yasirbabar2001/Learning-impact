@@ -125,21 +125,17 @@ export async function login(_: AuthState, fd: FormData): Promise<AuthState> {
   if (await rateLimited("login-learner", 12, 15 * 60_000)) return { message: "Too many attempts. Please wait 15 minutes and try again.", values: keep(fd) };
   const e = email.safeParse(fd.get("email"));
   const pw = String(fd.get("password") ?? "");
-  const chosen = String(fd.get("type") ?? "");
-  const type = chosen === "company" ? "company" : "individual";
+  const type = fd.get("type") === "company" ? "company" : "individual";
   const user = e.success
-    ? one<{ id: string; name: string; email: string; password_hash: string; status: string; account_type: "individual" | "company"; email_verified_at: string | null; is_admin: number }>(
-        "SELECT id, name, email, password_hash, status, account_type, email_verified_at, is_admin FROM users WHERE email = ?",
+    ? one<{ id: string; name: string; email: string; password_hash: string; status: string; account_type: "individual" | "company"; email_verified_at: string | null }>(
+        "SELECT id, name, email, password_hash, status, account_type, email_verified_at FROM users WHERE email = ?",
         e.data,
       )
     : undefined;
   // Same message whether the e-mail or the password is wrong.
   if (!user || !(await verifyPassword(pw, user.password_hash))) return { message: "That e-mail and password do not match.", values: keep(fd) };
   if (user.status !== "active") return { message: "This account is disabled. Please contact us.", values: keep(fd) };
-  // "Admin" works for any account that an administrator has given admin access.
-  if (chosen === "admin" && !user.is_admin)
-    return { message: "This account does not have admin access. Choose “Individual” or “Company”, or ask an administrator to grant access.", values: keep(fd) };
-  if (chosen !== "admin" && user.account_type !== type)
+  if (user.account_type !== type)
     return {
       message: user.account_type === "company" ? "This e-mail belongs to a company account. Choose “Company” above and log in again." : "This e-mail belongs to an individual account. Choose “Individual” above and log in again.",
       values: keep(fd),
@@ -149,7 +145,6 @@ export async function login(_: AuthState, fd: FormData): Promise<AuthState> {
     await issueCode(user, "verify");
     redirect(`/verify-email?next=${encodeURIComponent(safeNext(fd.get("next"), ""))}`);
   }
-  if (chosen === "admin") redirect(safeNext(fd.get("next"), "/admin"));
   redirect(homeFor(user, String(fd.get("next") ?? "") || undefined));
 }
 

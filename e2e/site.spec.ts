@@ -34,8 +34,8 @@ test("a company books a program and the admin sees it", async ({ page }) => {
   await expect(page.locator(".success__ref strong")).toHaveText(/^LI-\d{4}-[A-Z0-9]{4}$/);
 
   await page.goto("/admin");
-  await expect(page).toHaveURL(/\/login\?type=admin/);
-  await page.goto("/admin/login"); // owner password sign-in
+  await expect(page).toHaveURL(/\/login\?next=/);
+  await page.goto("/admin/login"); // owner password sign-in (backup)
   await page.getByLabel("Password").fill("e2e-password");
   await page.getByRole("button", { name: "Sign in" }).click();
   await expect(page).toHaveURL(/\/admin$/);
@@ -72,8 +72,8 @@ test("a company requests a trainer", async ({ page }) => {
 
 test("admin pages and export require sign-in", async ({ page, request }) => {
   await page.goto("/admin/settings");
-  await expect(page).toHaveURL(/\/login\?type=admin/); // one login for everyone
-  await expect(page.getByRole("radio", { name: /Admin/ })).toHaveAttribute("aria-checked", "true");
+  await expect(page).toHaveURL(/\/login\?next=%2Fadmin|\/login\?next=\/admin/); // one login for everyone
+  await expect(page.getByRole("radio", { name: /Admin/ })).toHaveCount(0); // no separate admin choice
   expect((await request.get("/admin/export")).status()).toBe(401);
 });
 

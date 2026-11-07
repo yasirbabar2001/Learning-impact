@@ -21,10 +21,10 @@ sent. All motion respects the visitor's "reduce motion" setting.
 
 **Certification portal** (log in at `/login`):
 
-- One login for everyone (`/login`): **Individual**, **Company** or **Admin**. Admin is a permission on a normal
-  account, given or removed in **Admin → Learners**; admins switch between the admin panel and their own account
-  with one click. The owner password page (`/admin/login`, `ADMIN_PASSWORD`) remains as a backup and to make the
-  first admin.
+- One login for everyone (`/login`, Individual or Company). `info@learningimpact.pk` (or `ADMIN_EMAILS`) is always
+  an admin; others get admin access in **Admin → Learners**. Admins switch between their own dashboard and the
+  admin panel (header **Admin** button, account menu, and **Switch to my learner account** in the panel). The owner
+  password page (`/admin/login`, `ADMIN_PASSWORD`) remains as a backup.
 - The header shows **Log in** and **Create account** (or **My dashboard**), and every page has a small ifSPACE
   window pointing to islamicfinancespace.com for Islamic finance training (visitors can shrink it to a badge).
 - Sign-up asks first: **Individual** or **Company**. Every new account verifies its e-mail with a

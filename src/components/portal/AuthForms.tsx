@@ -66,18 +66,15 @@ function Submit({ pending, label }: { pending: boolean; label: string }) {
 }
 
 export type AccountType = "individual" | "company";
-/** Login also offers "admin" for accounts that an administrator has given admin access. */
-export type LoginType = AccountType | "admin";
 
 /** "Individual or company?" switch shown before logging in or signing up. */
-export function TypeSwitch<T extends LoginType>({ value, onChange, withAdmin = false }: { value: T; onChange: (t: T) => void; withAdmin?: boolean }) {
-  const opts = [
+export function TypeSwitch({ value, onChange }: { value: AccountType; onChange: (t: AccountType) => void }) {
+  const opts: { v: AccountType; icon: string; label: string; note: string }[] = [
     { v: "individual", icon: "🧑‍💼", label: "Individual", note: "Learn and get certified" },
     { v: "company", icon: "🏢", label: "Company", note: "Buy seats, manage a team" },
-    ...(withAdmin ? [{ v: "admin", icon: "🛡️", label: "Admin", note: "Manage the portal" }] : []),
-  ] as { v: T; icon: string; label: string; note: string }[];
+  ];
   return (
-    <div className={`type-switch ${withAdmin ? "type-switch--3" : ""}`} role="radiogroup" aria-label="Account type">
+    <div className="type-switch" role="radiogroup" aria-label="Account type">
       {opts.map((o) => (
         <button key={o.v} type="button" role="radio" aria-checked={value === o.v} className={`type-switch__opt ${value === o.v ? "is-on" : ""}`} onClick={() => onChange(o.v)}>
           {value === o.v && <motion.span layoutId="type-pill" className="type-switch__pill" transition={{ type: "spring", stiffness: 420, damping: 34 }} />}
@@ -94,21 +91,20 @@ export function TypeSwitch<T extends LoginType>({ value, onChange, withAdmin = f
   );
 }
 
-export function LoginForm({ next, initialType = "individual" }: { next?: string; initialType?: LoginType }) {
+export function LoginForm({ next, initialType = "individual" }: { next?: string; initialType?: AccountType }) {
   const [state, action, pending] = useActionState(login, {});
   const v = state.values ?? {};
-  const [type, setType] = useState<LoginType>((v.type as LoginType) || initialType);
+  const [type, setType] = useState<AccountType>((v.type as AccountType) || initialType);
   return (
     <form action={action} className="auth__form">
       <p className="auth__ask">Log in as</p>
-      <TypeSwitch value={type} onChange={setType} withAdmin />
+      <TypeSwitch value={type} onChange={setType} />
       <input type="hidden" name="type" value={type} />
       <input type="hidden" name="next" value={next ?? ""} />
-      {type === "admin" && <p className="auth__note">Use your own Learning Impact account. Admin access is given by an existing administrator in Admin → Learners.</p>}
       <Field label={type === "company" ? "Company account e-mail" : "E-mail"} name="email" type="email" required autoComplete="email" defaultValue={v.email} />
       <Field label="Password" name="password" type="password" required autoComplete="current-password" />
       <Alert state={state} />
-      <Submit pending={pending} label={type === "company" ? "Log in to company account" : type === "admin" ? "Log in to admin panel" : "Log in"} />
+      <Submit pending={pending} label={type === "company" ? "Log in to company account" : "Log in"} />
       <p className="auth__alt">
         <Link href="/forgot-password" className="inline-link">
           Forgot your password?

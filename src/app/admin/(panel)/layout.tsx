@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AdminNav } from "@/components/admin/AdminNav";
 import { requireAdmin } from "@/lib/auth";
-import { currentUser, homeFor } from "@/lib/portal/auth";
+import { currentUser, hasAdminAccess, homeFor } from "@/lib/portal/auth";
 import { usingSupabase } from "@/lib/store";
 
 export const metadata: Metadata = { title: "Admin", robots: { index: false, follow: false } };
@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 export default async function PanelLayout({ children }: { children: React.ReactNode }) {
   await requireAdmin();
   const user = await currentUser();
-  const me = user?.is_admin ? { home: homeFor(user), label: user.account_type === "company" ? "Switch to my company account" : "Switch to my learner account" } : undefined;
+  const me = user && hasAdminAccess(user) ? { home: homeFor(user), label: user.account_type === "company" ? "Switch to my company account" : "Switch to my learner account" } : undefined;
   return (
     <div className="admin">
       <AdminNav me={me} />

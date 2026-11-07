@@ -82,15 +82,13 @@ The portal (learner accounts, quests, exams, certificates, company seats) needs 
 is a file, `portal.db`, created automatically in your `DATA_DIR` folder next to `db.json`. Payment receipts are
 stored in `DATA_DIR/uploads`.
 
-0. **Your admin login (do this once):** everyone, admins included, now uses the one login page
-   (`/login`), which offers **Individual**, **Company** or **Admin**. To make your own account an admin:
-   1. Create a normal account at `/register` (Individual) with your e-mail, and verify it with the code.
-   2. Open `learningimpact.pk/admin/login` and sign in with the owner password (`ADMIN_PASSWORD`).
-   3. Go to **Learners**, find your account, click **Give admin access**, then **Sign out**.
-   4. From now on, log in at `/login`, choose **Admin**, and use your own e-mail and password. In the admin panel,
-      **Switch to my learner account** takes you to your own dashboard; the account menu there has **Switch to
-      Admin**. Give or remove admin access for colleagues in the same way. Nobody can remove their own access, and
-      the owner password page stays available as a backup.
+0. **Your admin login:** there is one login page (`/login`) for everyone. `info@learningimpact.pk` is always an
+   administrator. Create (or log in to) an **Individual** account with that e-mail, verify it with the code sent to
+   that mailbox, and you will see **🛡️ Admin** in the header and **Switch to Admin** in your account menu. In the
+   admin panel, **Switch to my learner account** takes you back. To make colleagues admins, open **Admin →
+   Learners** and click **Give admin access** on their account; they then switch the same way. (Optional: set
+   `ADMIN_EMAILS` to a comma-separated list to change the owner e-mails. The old owner-password page
+   `/admin/login` still works as a backup.)
 
 1. **Payment details:** sign in at `/admin` → **Certifications** → fill in *Payment details shown to buyers*
    (account title, bank, account number, IBAN, Easypaisa/JazzCash numbers) → Save.
