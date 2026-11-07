@@ -28,7 +28,7 @@ export function ContactFields({ values, set, errors }: Ctx) {
       <TextField label="Your designation" name="designation" value={values.designation ?? ""} onChange={(v) => set("designation", v)} error={errors.designation} autoComplete="organization-title" hint="e.g. HR Manager, Head of L&D" />
       <TextField label="Work e-mail" name="email" type="email" value={values.email} onChange={(v) => set("email", v)} error={errors.email} required autoComplete="email" inputMode="email" />
       <TextField label="Phone / WhatsApp" name="phone" type="tel" value={values.phone} onChange={(v) => set("phone", v)} error={errors.phone} autoComplete="tel" inputMode="tel" />
-      <TextField label="Office city" name="city" value={values.city} onChange={(v) => set("city", v)} error={errors.city} autoComplete="address-level2" hint="e.g. Karachi, Lahore, Islamabad" />
+      <TextField label="Office city" name="city" value={values.city} onChange={(v) => set("city", v)} error={errors.city} autoComplete="address-level2" hint="e.g. Dubai, London, Karachi" />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export function VenueAndNeeds({ values, set, errors, messageLabel }: Ctx & { mes
             options={VENUE_TYPES.map((t) => ({ value: t.value, label: t.value, note: t.note }))}
           />
           <div className="grid-2">
-            <TextField label="Training city" name="venueCity" required value={values.venueCity} onChange={(v) => set("venueCity", v)} error={errors.venueCity} hint="e.g. Karachi, Lahore, Islamabad" />
+            <TextField label="Training city" name="venueCity" required value={values.venueCity} onChange={(v) => set("venueCity", v)} error={errors.venueCity} hint="e.g. Dubai, London, Karachi" />
             <TextField
               label="Venue name / address (if known)"
               name="venueAddress"
