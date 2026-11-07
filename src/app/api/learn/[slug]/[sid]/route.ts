@@ -30,19 +30,21 @@ export async function POST(req: Request, { params }: { params: Promise<{ slug: s
   if (!stage || stage.status === "locked") return Response.json({ error: "locked" }, { status: 403 });
   const b = (await req.json().catch(() => null)) as Body | null;
   if (!b) return Response.json({ error: "bad-request" }, { status: 400 });
-  // Admin previews record nothing: no progress, no XP.
-  if (access.mode === "preview") return Response.json({ ok: true, xp: 0, preview: true });
+  // Admin preview: the place in the lesson is remembered, but no XP, badges or leaderboard points.
+  const preview = access.mode === "preview";
 
   switch (b.event) {
     case "seen":
       if (Number.isInteger(b.index) && b.index >= 0) recordCardsSeen(user.id, slug, sid, Math.min(b.index, session.cards.length));
       return Response.json({ ok: true });
     case "check": {
+      if (preview) return Response.json({ xp: 0 });
       if (!Number.isInteger(b.index) || !Number.isInteger(b.choice)) break;
       const r = answerCheck(user.id, course, session, b.index, b.choice);
       return Response.json({ xp: r?.xp ?? 0 });
     }
     case "activity": {
+      if (preview) return Response.json({ xp: 0 });
       const card = session.cards[b.index];
       if (!card || !GAMES.has(card.type) || !(b.max > 0) || !(b.score >= 0)) return Response.json({ xp: 0 });
       const ratio = Math.min(1, b.score / b.max);
@@ -50,7 +52,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ slug: s
       return Response.json({ xp });
     }
     case "complete": {
-      const xp = completeLesson(user.id, course, session);
+      const xp = completeLesson(user.id, course, session, { rewards: !preview });
       revalidatePath(`/learn/${slug}`);
       return Response.json({ xp });
     }

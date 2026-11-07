@@ -91,7 +91,9 @@ export function stageOf(course: Course, userId: string, sessionId: string, mode:
 
 /** Stages as this person sees them: trial stages after the free one are behind the paywall; previews are all open. */
 export function stagesFor(course: Course, userId: string, mode: AccessMode) {
-  if (mode === "preview") return course.sessions.map((s) => ({ session: s, status: "open" as StageStatus, progress: null as Progress | null, paywall: false }));
+  // Admin preview: every stage is open, but the admin's own place is remembered.
+  if (mode === "preview")
+    return stages(course, progressMap(userId, course.slug)).map((s) => ({ ...s, status: s.status === "locked" ? ("open" as StageStatus) : s.status, paywall: false }));
   return stages(course, progressMap(userId, course.slug)).map((s, i) => {
     const paywall = mode === "trial" && i >= FREE_STAGES;
     return { ...s, status: paywall ? ("locked" as StageStatus) : s.status, paywall };
@@ -130,7 +132,8 @@ export function recordCardsSeen(userId: string, slug: string, sid: string, seen:
   );
 }
 
-export function completeLesson(userId: string, course: Course, session: Session) {
+/** Marks a lesson complete. `rewards: false` (admin preview) saves the place but pays no XP or badges. */
+export function completeLesson(userId: string, course: Course, session: Session, { rewards = true } = {}) {
   return tx(() => {
     ensureRow(userId, course.slug, session.id);
     run(
@@ -142,6 +145,7 @@ export function completeLesson(userId: string, course: Course, session: Session)
       course.slug,
       session.id,
     );
+    if (!rewards) return 0;
     const xp = awardXp(userId, `lesson:${course.slug}:${session.id}`, `Lesson: ${session.title}`, XP.lesson);
     grantBadge(userId, "first-steps");
     return xp;
@@ -158,7 +162,7 @@ export function answerCheck(userId: string, course: Course, session: Session, ca
 }
 
 /** Grades a SCORM session test from the learner's choices (indexes per question, in order). Score is computed here, never trusted from the browser. */
-export function gradeQuiz(userId: string, course: Course, session: Session, responses: (number | null)[]) {
+export function gradeQuiz(userId: string, course: Course, session: Session, responses: (number | null)[], { rewards = true } = {}) {
   const score = session.quiz.reduce((n, q, i) => n + (responses[i] === q.answer ? 1 : 0), 0);
   const passed = score >= QUIZ_PASS;
   return tx(() => {
@@ -177,6 +181,7 @@ export function gradeQuiz(userId: string, course: Course, session: Session, resp
       session.id,
     );
     let xp = 0;
+    if (!rewards) return { score, total: session.quiz.length, passed, xp };
     if (passed) xp += awardXp(userId, `quiz-pass:${course.slug}:${session.id}`, `Passed test: ${session.stage}`, XP.quizPass);
     if (score === session.quiz.length) {
       xp += awardXp(userId, `quiz-perfect:${course.slug}:${session.id}`, `Perfect score: ${session.stage}`, XP.quizPerfect);

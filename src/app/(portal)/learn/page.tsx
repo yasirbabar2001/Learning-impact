@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { Ring } from "@/components/portal/Ring";
 import { catalog, formatPkr, getCourse } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
-import { requireUser } from "@/lib/portal/auth";
+import { hasAdminAccess, requireUser } from "@/lib/portal/auth";
 import { ORDER_STATUS, ordersOf } from "@/lib/portal/commerce";
 import { certificateFor } from "@/lib/portal/exam";
 import { InvitePanel } from "@/components/portal/InvitePanel";
@@ -56,6 +56,7 @@ export default async function Dashboard() {
   const suggestions = catalog().filter((c) => c.available && !enrolled.has(c.slug)).slice(0, 3);
   const first = user.name.split(/\s+/)[0];
   const league = weeklyRank(user.id);
+  const isAdmin = hasAdminAccess(user);
   const refs = referralStats(user.id);
   const inviteUrl = `${SITE_URL}/r/${refCodeFor(user.id)}`;
   const pkToday = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Karachi" });
@@ -152,20 +153,24 @@ export default async function Dashboard() {
                   <Ring percent={certified ? 100 : p.percent} label={certified ? "🏆" : undefined} />
                   <div className="quest-card__body">
                     <span className="quest-card__name">
-                      ⚔️ {course.quest.name} {trial && <span className="tag free-tag">Free stage</span>}
+                      ⚔️ {course.quest.name} {trial && <span className="tag free-tag">{isAdmin ? "Preview" : "Free stage"}</span>}
                     </span>
                     <h3>{course.title}</h3>
                     <p className="muted">
                       {trial
                         ? next
-                          ? "🎁 Free stage in progress · Stage 1 is on us"
+                          ? next.progress?.lesson_done_at
+                            ? "🎁 Free stage: lesson done, take the stage test"
+                            : next.progress?.cards_seen
+                              ? `🎁 Free stage in progress · card ${Math.min(next.progress.cards_seen + 1, next.session.cards.length)} of ${next.session.cards.length}`
+                              : "🎁 Free stage ready · Stage 1 is on us"
                           : "🔓 Free stage cleared! Unlock the full certification to continue"
                         : certified
                         ? "Certified. Download your certificate any time."
                         : p.examUnlocked
                           ? "All stages cleared. The final boss awaits!"
                           : next
-                            ? `Next: Stage ${course.sessions.indexOf(next.session) + 1} · ${next.session.stage}`
+                            ? `${next.progress?.cards_seen && !next.progress.lesson_done_at ? "Continue" : "Next"}: Stage ${course.sessions.indexOf(next.session) + 1} · ${next.session.stage}${next.progress?.cards_seen && !next.progress.lesson_done_at ? ` (card ${Math.min(next.progress.cards_seen + 1, next.session.cards.length)} of ${next.session.cards.length})` : next.progress?.lesson_done_at && !next.progress.quiz_passed_at ? " (stage test next)" : ""}`
                             : ""}
                     </p>
                     <span className="quest-card__stages">

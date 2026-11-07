@@ -1,7 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { getCourse } from "@/lib/courses/catalog";
 import { currentUser } from "@/lib/portal/auth";
-import { accessFor, gradeQuiz, QUIZ_PASS, stageOf } from "@/lib/portal/learning";
+import { accessFor, gradeQuiz, stageOf } from "@/lib/portal/learning";
 
 export const dynamic = "force-dynamic";
 
@@ -24,12 +24,8 @@ export async function POST(req: Request, { params }: { params: Promise<{ slug: s
   const raw = Array.isArray(body?.responses) ? body.responses : [];
   if (raw.length !== session.quiz.length) return Response.json({ error: "incomplete" }, { status: 400 });
   const responses = raw.map((r) => (Number.isInteger(r) && (r as number) >= 0 && (r as number) <= 3 ? (r as number) : null));
-  if (preview) {
-    // Admin preview: graded so the test can be checked, but nothing is saved.
-    const score = session.quiz.reduce((n, q, i) => n + (responses[i] === q.answer ? 1 : 0), 0);
-    return Response.json({ score, total: session.quiz.length, passed: score >= QUIZ_PASS, xp: 0 });
-  }
-  const result = gradeQuiz(user.id, course, session, responses);
+  // Admin preview: the result is saved so the place is remembered, but pays no XP.
+  const result = gradeQuiz(user.id, course, session, responses, { rewards: !preview });
   revalidatePath(`/learn/${slug}`);
   return Response.json(result);
 }

@@ -3911,3 +3911,28 @@
 .pnav__inner {
   background: rgba(10, 10, 15, 0.92);
 }
+.resume-note {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  padding: 10px 40px 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  background: rgba(255, 210, 63, 0.1);
+  border: 1px solid rgba(255, 210, 63, 0.35);
+}
+.resume-note .inline-link {
+  font-size: 13px;
+}
+.resume-note__close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--muted);
+}

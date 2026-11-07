@@ -2,6 +2,7 @@ import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
 import { PaymentSettingsForm } from "@/components/admin/PortalAdminForms";
 import { catalog } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
+import { OWNER_EMAILS } from "@/lib/portal/auth";
 import { paymentSettings } from "@/lib/portal/commerce";
 
 export default async function AdminCertifications() {
@@ -11,7 +12,9 @@ export default async function AdminCertifications() {
   const trials = new Map(
     all<{ course_slug: string; n: number }>(
       `SELECT p.course_slug, COUNT(DISTINCT p.user_id) AS n FROM session_progress p
-       WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug) GROUP BY p.course_slug`,
+       WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug)
+         AND p.user_id NOT IN (SELECT id FROM users WHERE is_admin = 1 OR lower(email) IN (${OWNER_EMAILS.map((e) => `'${e.replace(/'/g, "")}'`).join(",") || "''"}))
+       GROUP BY p.course_slug`,
     ).map((r) => [r.course_slug, r.n]),
   );
   const ready = items.filter((i) => i.course && !i.available).length;

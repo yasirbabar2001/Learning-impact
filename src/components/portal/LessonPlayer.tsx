@@ -131,6 +131,8 @@ const PERFECT_XP = 50;
 export function LessonPlayer(p: Props) {
   const [phase, setPhase] = useState<"intro" | "cards" | "done" | "quiz">(p.lessonDone ? "done" : p.startAt > 0 ? "cards" : "intro");
   const [i, setI] = useState(Math.min(p.startAt, p.cards.length - 1));
+  /** Shown when a learner comes back to a stage they left part-way through. */
+  const [resumed, setResumed] = useState(p.startAt > 0 && !p.lessonDone);
   const [dir, setDir] = useState(1);
   const [checks, setChecks] = useState<Record<number, CheckResult>>({});
   const [games, setGames] = useState<Record<number, boolean>>({});
@@ -275,7 +277,7 @@ export function LessonPlayer(p: Props) {
   const complete = () => {
     stopSpeaking();
     // Celebrate at once. Lesson XP is paid only the first time, so the amount is known in advance.
-    const lessonXp = p.lessonDone ? 0 : LESSON_XP;
+    const lessonXp = p.lessonDone || p.mode === "preview" ? 0 : LESSON_XP;
     setCelebrate({ kind: "lesson", xp: earned + lessonXp, xpBefore: p.xp });
     if (!completion.current) {
       setReady(false);
@@ -313,7 +315,7 @@ export function LessonPlayer(p: Props) {
 
       {p.mode === "preview" && (
         <p className="mode-banner mode-banner--preview" role="status">
-          👁️ <strong>Admin preview.</strong> Every stage is open and nothing you do here is saved (no progress, no XP).
+          👁️ <strong>Admin preview.</strong> Every stage is open. Your place is remembered, but no XP or leaderboard points are earned.
         </p>
       )}
       {p.mode === "trial" && (
@@ -407,6 +409,23 @@ export function LessonPlayer(p: Props) {
 
       {phase === "cards" && card && (
         <>
+          {resumed && (
+            <p className="resume-note" role="status">
+              👋 <strong>Welcome back!</strong> You are continuing where you left off: card {Math.min(p.startAt, p.cards.length - 1) + 1} of {p.cards.length}.
+              <button
+                className="inline-link"
+                onClick={() => {
+                  setResumed(false);
+                  go(0);
+                }}
+              >
+                Start the stage from the beginning
+              </button>
+              <button className="resume-note__close" onClick={() => setResumed(false)} aria-label="Dismiss">
+                ×
+              </button>
+            </p>
+          )}
           <div className="lesson__progress" aria-label={`Card ${i + 1} of ${p.cards.length}`}>
             <motion.span className="lesson__progress-fill" animate={{ width: `${progress}%` }} transition={{ type: "spring", stiffness: 120, damping: 20 }} />
           </div>
@@ -522,7 +541,7 @@ export function LessonPlayer(p: Props) {
             // Celebrate the moment the test ends; XP is predictable (first pass / first perfect score only).
             if (!r.passed) return;
             const q = quizSoFar.current;
-            const xp = (q.passed ? 0 : PASS_XP) + (r.score === r.total && q.best < r.total ? PERFECT_XP : 0);
+            const xp = p.mode === "preview" ? 0 : (q.passed ? 0 : PASS_XP) + (r.score === r.total && q.best < r.total ? PERFECT_XP : 0);
             setCelebrate({ kind: "stage", xp, xpBefore: p.xp + earned, result: { ...r, xp }, confirmed: false });
           }}
           onResult={(r) => {

@@ -37,7 +37,9 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
         : s.status === "lesson-done"
           ? `Lesson done · take the test (${QUIZ_PASS}/10 to pass)`
           : s.status === "open"
-            ? `${mode === "trial" ? "Free · " : ""}${s.session.minutes} min · ${s.session.cards.length} cards`
+            ? s.progress?.cards_seen
+              ? `In progress · card ${Math.min(s.progress.cards_seen + 1, s.session.cards.length)} of ${s.session.cards.length}`
+              : `${mode === "trial" ? "Free · " : ""}${s.session.minutes} min · ${s.session.cards.length} cards`
             : s.paywall
               ? `🔒 Included in the full certification (${price})`
               : "Clear the previous stage to unlock",
@@ -91,7 +93,7 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
       {mode === "preview" && (
         <section className="container">
           <p className="mode-banner mode-banner--preview">
-            👁️ <strong>Admin preview.</strong> All stages are open so you can review the content. Nothing you do here is saved.
+            👁️ <strong>Admin preview.</strong> All stages are open so you can review the content. Your place is remembered, but no XP or leaderboard points are earned.
           </p>
         </section>
       )}

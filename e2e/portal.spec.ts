@@ -364,6 +364,12 @@ test("stage 1 is free for every learner; the rest asks for payment; admins previ
   await expect(owner.getByText(/Admin preview\./)).toBeVisible();
   await owner.getByRole("button", { name: /Begin the stage/ }).click();
   await expect(owner.locator(".lcard")).toBeVisible();
+  // The admin's place is remembered in preview too (without XP).
+  for (let i = 0; i < 3; i++) await owner.locator(".lesson__nav .btn--primary").click({ force: true }).catch(() => {});
+  const at = await owner.locator(".lesson__count").innerText();
+  await owner.waitForTimeout(500);
+  await owner.reload();
+  await expect(owner.locator(".lesson__count")).toHaveText(at);
   await owner.goto("/learn/green-banking/exam");
   await expect(owner.getByText(/Admin preview of the final exam/)).toBeVisible();
   await expect(owner.locator(".exam-preview .is-answer")).toHaveCount(50);
@@ -391,4 +397,63 @@ test("each stage offers its presentation as a PDF; the admin dashboard links to 
   await expect(page.locator(".tile")).toHaveCount(15);
   await page.locator(".tile", { hasText: "Companies to approve" }).click();
   await expect(page).toHaveURL(/\/admin\/companies$/);
+});
+
+test("a learner who leaves part-way comes back to the same card; a finished free stage stays finished", async ({ page, browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="talent-management"])');
+  await form.locator("input[name=price]").fill("15000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  const email = `resume${Date.now()}@example.com`;
+  await signUpIndividual(page, "Rita Resume", email);
+  const course = JSON.parse(readFileSync(path.join(process.cwd(), "content/courses/talent-management.json"), "utf8"));
+  const s1 = course.sessions[0];
+  await page.goto("/learn/talent-management/s1");
+  await page.getByRole("button", { name: /Begin the stage/ }).click();
+  for (let i = 0; i < 6; i++) {
+    if (s1.cards[i].type === "check") await page.locator(".check-opt").first().click();
+    await page.locator(".lesson__nav .btn--primary").click();
+  }
+  await expect(page.locator(".lesson__count")).toHaveText(`7 / ${s1.cards.length}`);
+  await page.waitForTimeout(500); // the place is saved in the background
+  const cookies = await page.context().cookies();
+  await page.context().close(); // the learner closes the browser
+
+  // Comes back later in a new window: the stage, the map and the dashboard all pick up where they left off.
+  const back = await (await browser.newContext()).newPage();
+  await back.context().addCookies(cookies);
+  await back.goto("/learn/talent-management");
+  await expect(back.locator(".qnode", { hasText: "Stage 1" })).toContainText(`In progress · card 7 of ${s1.cards.length}`);
+  await back.goto("/learn");
+  await expect(back.locator(".quest-card", { hasText: "Talent" })).toContainText(`card 7 of ${s1.cards.length}`);
+  await back.goto("/certifications/talent-management");
+  await back.getByRole("link", { name: /Continue my free stage/ }).click();
+  await expect(back.getByText("Welcome back!")).toBeVisible();
+  await expect(back.locator(".lesson__count")).toHaveText(`7 / ${s1.cards.length}`);
+
+  // Finishes the stage, closes, comes back: stage 1 shows as cleared.
+  for (let i = 6; i < s1.cards.length; i++) {
+    if (s1.cards[i].type === "check") await back.locator(".check-opt").nth(s1.cards[i].answer).click();
+    if (i < s1.cards.length - 1) await back.locator(".lesson__nav .btn--primary").click();
+  }
+  await back.getByRole("button", { name: "Complete lesson" }).click();
+  await back.getByRole("button", { name: /Start the stage test/ }).click();
+  const quiz = back.frameLocator(".scorm__frame");
+  for (const q of s1.quiz) {
+    await quiz.locator(".opt", { has: quiz.locator("span", { hasText: q.options[q.answer] }) }).first().click();
+    await quiz.locator("#next").click();
+  }
+  await expect(back.getByRole("dialog", { name: /Stage cleared/ })).toBeVisible();
+  const cookies2 = await back.context().cookies();
+  await back.context().close();
+  const later = await (await browser.newContext()).newPage();
+  await later.context().addCookies(cookies2);
+  await later.goto("/learn/talent-management");
+  await expect(later.locator(".qnode", { hasText: "Stage 1" })).toContainText("Cleared");
+  await expect(later.getByText("You cleared your free stage!")).toBeVisible();
+  await later.goto("/learn/talent-management/s1");
+  await expect(later.getByRole("heading", { name: "Stage cleared!" })).toBeVisible();
 });

@@ -1,16 +1,20 @@
 import "server-only";
 import { all, one } from "../db";
+import { OWNER_EMAILS } from "./auth";
 
 const n = (sql: string, ...args: (string | number)[]) => one<{ n: number }>(sql, ...args)?.n ?? 0;
 const daysAgo = (d: number) => new Date(Date.now() - d * 864e5).toISOString();
 
+/** Admin previews are saved too; leave admins out of learner numbers. */
+const NOT_ADMIN = `p.user_id NOT IN (SELECT id FROM users WHERE is_admin = 1 OR lower(email) IN (${OWNER_EMAILS.map((e) => `'${e.replace(/'/g, "")}'`).join(",") || "''"}))`;
+
 /** Numbers for the admin dashboard (all from the portal database). */
 export function dashboardStats() {
   const monthStart = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString();
-  const starters = n(`SELECT COUNT(*) AS n FROM (SELECT DISTINCT user_id, course_slug FROM session_progress)`);
+  const starters = n(`SELECT COUNT(*) AS n FROM (SELECT DISTINCT p.user_id, p.course_slug FROM session_progress p WHERE ${NOT_ADMIN})`);
   const converted = n(
     `SELECT COUNT(*) AS n FROM (SELECT DISTINCT p.user_id, p.course_slug FROM session_progress p
-       JOIN enrollments e ON e.user_id = p.user_id AND e.course_slug = p.course_slug)`,
+       JOIN enrollments e ON e.user_id = p.user_id AND e.course_slug = p.course_slug WHERE ${NOT_ADMIN})`,
   );
   const examsTaken = n("SELECT COUNT(*) AS n FROM exam_attempts WHERE submitted_at IS NOT NULL");
   const examsPassed = n("SELECT COUNT(*) AS n FROM exam_attempts WHERE submitted_at IS NOT NULL AND passed = 1");
@@ -38,10 +42,10 @@ export function dashboardStats() {
     enrolments: n("SELECT COUNT(*) AS n FROM enrollments"),
     freeStage: n(
       `SELECT COUNT(*) AS n FROM (SELECT DISTINCT p.user_id, p.course_slug FROM session_progress p
-         WHERE NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug))`,
+         WHERE ${NOT_ADMIN} AND NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = p.user_id AND e.course_slug = p.course_slug))`,
     ),
     conversion: starters ? Math.round((converted / starters) * 100) : 0,
-    stagesCleared: n("SELECT COUNT(*) AS n FROM session_progress WHERE quiz_passed_at IS NOT NULL"),
+    stagesCleared: n(`SELECT COUNT(*) AS n FROM session_progress p WHERE quiz_passed_at IS NOT NULL AND ${NOT_ADMIN}`),
     certificates: n("SELECT COUNT(*) AS n FROM certificates WHERE revoked_at IS NULL"),
     examsTaken,
     examPassRate: examsTaken ? Math.round((examsPassed / examsTaken) * 100) : 0,
