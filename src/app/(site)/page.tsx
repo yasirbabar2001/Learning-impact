@@ -38,7 +38,7 @@ const WHY = [
   { icon: <IconSpark />, title: "Practical, not theoretical", text: "Most of the time is spent practising, so new habits survive the return to the desk." },
   { icon: <IconChart />, title: "Measurable results", text: "Pre- and post-session checks and a summary report available for every engagement." },
   { icon: <IconUsers />, title: "Vetted expert trainers", text: "Practitioners with real industry experience, matched carefully to your audience." },
-  { icon: <IconGlobe />, title: "Anywhere in Pakistan", text: "On-site in your offices or a venue of your choice, or live online for distributed teams." },
+  { icon: <IconGlobe />, title: "Anywhere you work", text: "Live online for teams anywhere in the world, or on-site at your offices or a venue of your choice." },
   { icon: <IconMic />, title: "English or Urdu", text: "Delivery in the language your people learn best in, or a natural mix of both." },
 ];
 
@@ -47,7 +47,7 @@ const FEATURED_INDUSTRIES = ["commercial-banking", "islamic-banking", "insurance
 const FAQ = [
   { q: "How quickly can a training be arranged?", a: "For catalogue programs, usually within two to three weeks of confirmation. Tailored programs and specialist trainers may need a little longer; tell us your dates and we will be upfront about what is possible." },
   { q: "Can you customise a program for our company?", a: "Yes. Every catalogue program can be adapted, and we also design programs from scratch around your goals, culture and the challenges your people face." },
-  { q: "Do you deliver outside Karachi, Lahore and Islamabad?", a: "Yes. We deliver on-site anywhere in Pakistan, and live virtual sessions work for teams spread across cities." },
+  { q: "Do you work with organisations outside Pakistan?", a: "Yes. Our certifications are fully online and open to learners worldwide, live virtual sessions work for teams in any time zone, and on-site delivery can be arranged on request." },
   { q: "What is the minimum or maximum group size?", a: "Interactive workshops work best with 8 to 25 participants. For larger audiences we run multiple cohorts or keynote-style sessions." },
   { q: "Do participants receive certificates?", a: "Yes, participants receive a certificate of completion. We can also include assessments if you need evidence of learning." },
   { q: "How is pricing decided?", a: "Pricing depends on the program, duration, number of participants and format. Send a request and we will share a clear proposal with no obligation." },
@@ -209,7 +209,7 @@ export default async function Home() {
         </Reveal>
         <div className="formats">
           {[
-            { icon: <IconBuilding size={30} />, title: "On-site", text: "Immersive in-person sessions at your office or a venue we arrange, anywhere in Pakistan." },
+            { icon: <IconBuilding size={30} />, title: "On-site", text: "Immersive in-person sessions at your office or a venue we arrange, in Pakistan or abroad on request." },
             { icon: <IconScreen size={30} />, title: "Live virtual", text: "Interactive online classrooms with breakouts, polls and real practice, never a passive webinar." },
             { icon: <IconHybrid size={30} />, title: "Hybrid", text: "A room and remote colleagues learning together, facilitated so nobody is a second-class participant." },
           ].map((f, i) => (

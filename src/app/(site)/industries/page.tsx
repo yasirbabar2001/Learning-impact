@@ -7,7 +7,7 @@ import { INDUSTRIES } from "@/lib/industries";
 export const metadata: Metadata = {
   title: "Industry Training",
   description:
-    "Sector-specific corporate training for banking, Islamic finance, telecom, pharma, FMCG, manufacturing, energy, public sector and more than 60 industries across Pakistan.",
+    "Sector-specific corporate training for banking, Islamic finance, telecom, pharma, FMCG, manufacturing, energy, public sector and more than 60 industries, on-site or live online worldwide.",
   alternates: { canonical: "/industries" },
 };
 

@@ -62,7 +62,7 @@ async function save(input: NewRequest): Promise<FormState> {
   try {
     const created = await store.createRequest(input);
     await notifyNewRequest(created);
-    revalidatePath("/admin");
+    revalidatePath("/admin", "layout");
     return { ok: true, reference: created.reference };
   } catch (err) {
     console.error("Saving request failed", err);

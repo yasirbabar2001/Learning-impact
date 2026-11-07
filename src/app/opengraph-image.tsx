@@ -16,7 +16,7 @@ export default function OpengraphImage() {
           <span style={{ fontWeight: 800, marginLeft: 24 }}>IMPACT</span>
         </div>
         <div style={{ width: 620, height: 8, borderRadius: 8, background: "#FFD23F", marginTop: 10 }} />
-        <div style={{ marginTop: 48, fontSize: 40, color: "rgba(255,255,255,.8)" }}>Corporate training programs & expert trainers in Pakistan</div>
+        <div style={{ marginTop: 48, fontSize: 40, color: "rgba(255,255,255,.8)" }}>Professional certifications, corporate training & expert trainers</div>
       </div>
     ),
     size,

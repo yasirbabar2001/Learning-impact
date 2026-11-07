@@ -39,6 +39,9 @@ test("a company books a program and the admin sees it", async ({ page }) => {
   await page.getByLabel("Password").fill("e2e-password");
   await page.getByRole("button", { name: "Sign in" }).click();
   await expect(page).toHaveURL(/\/admin$/);
+  await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible();
+  await page.locator(".tile", { hasText: "New training requests" }).click(); // dashboard tiles are links
+  await expect(page).toHaveURL(/\/admin\/requests$/);
   await page.locator("button.req", { hasText: company }).click();
   const detail = page.locator(".detail__list");
   await expect(detail).toContainText("At our premises");
@@ -105,6 +108,8 @@ test("a company books training from its industry and the admin sees the industry
   await page.goto("/admin/login");
   await page.getByLabel("Password").fill("e2e-password");
   await page.getByRole("button", { name: "Sign in" }).click();
+  await expect(page).toHaveURL(/\/admin$/);
+  await page.goto("/admin/requests");
   await page.locator("button.req", { hasText: company }).click();
   await expect(page.locator(".detail__list")).toContainText("Payment Service Providers");
 });

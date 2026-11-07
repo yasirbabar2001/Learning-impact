@@ -368,3 +368,27 @@ test("stage 1 is free for every learner; the rest asks for payment; admins previ
   await expect(owner.getByText(/Admin preview of the final exam/)).toBeVisible();
   await expect(owner.locator(".exam-preview .is-answer")).toHaveCount(50);
 });
+
+test("each stage offers its presentation as a PDF; the admin dashboard links to every section", async ({ page, browser }) => {
+  await page.goto("/login");
+  await page.locator("input[name=email]").fill("info@learningimpact.pk");
+  await page.locator("input[name=password]").fill("e2e-password");
+  await page.getByRole("button", { name: /^Log in/ }).click();
+  await expect(page).toHaveURL(/\/learn$/);
+  await page.goto("/learn/it-infrastructure/s2"); // admin preview
+  const link = page.locator(".slides-link");
+  await expect(link).toHaveAttribute("href", "/api/slides/it-infrastructure/s2");
+  const pdf = await page.request.get("/api/slides/it-infrastructure/s2");
+  expect(pdf.status()).toBe(200);
+  expect(pdf.headers()["content-type"]).toBe("application/pdf");
+  expect((await pdf.body()).subarray(0, 5).toString()).toBe("%PDF-");
+  // a signed-out visitor cannot download slides
+  const anon = await browser.newContext();
+  expect((await anon.request.get("http://localhost:3200/api/slides/it-infrastructure/s2")).status()).toBe(404);
+  await anon.close();
+
+  await page.goto("/admin");
+  await expect(page.locator(".tile")).toHaveCount(15);
+  await page.locator(".tile", { hasText: "Companies to approve" }).click();
+  await expect(page).toHaveURL(/\/admin\/companies$/);
+});

@@ -236,7 +236,7 @@ export default async function Dashboard() {
         <div className="glass dash__panel">
           <h2 className="h3">🏟️ Weekly league</h2>
           <div className="league-card">
-            <span className="league-card__rank">{league ? `#${league.rank}` : "—"}</span>
+            <span className="league-card__rank">{league ? `#${league.rank}` : "🏁"}</span>
             <p className="muted">
               {league
                 ? `You're #${league.rank} of ${league.players} learners this week with ${league.xp} XP.${league.rank > 1 ? " Clear a stage to climb!" : " You're leading. Defend the crown!"}`

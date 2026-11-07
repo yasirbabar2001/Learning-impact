@@ -11,85 +11,114 @@ type Story = Extract<Card, { type: "story" }>;
 type Explainer = Extract<Card, { type: "explainer" }>;
 type Video = Extract<Card, { type: "video" }>;
 
-/** A chat-style scene: lines appear one by one, with typing dots in between. */
+/**
+ * A comic-style scene: one panel at a time. The speaker is drawn large with their expression and a big speech
+ * panel; narration appears as a caption. Learners tap through it (or open the whole script).
+ */
 export function StoryCard({ card, cast, onDone }: { card: Story; cast: CastMember[]; onDone?: () => void }) {
-  const [shown, setShown] = useState(1);
-  const [typing, setTyping] = useState(false);
-  const end = useRef<HTMLDivElement>(null);
-  const done = shown >= card.lines.length;
+  const [at, setAt] = useState(0);
+  const [script, setScript] = useState(false);
   const people = new Map(cast.map((c) => [c.id, c]));
+  const line = card.lines[at];
+  const last = at >= card.lines.length - 1;
+  const speaker = line.who === "narrator" ? null : (people.get(line.who) ?? null);
+  // Everyone who speaks in this scene, in order of appearance.
+  const inScene = [...new Set(card.lines.map((l) => l.who).filter((w) => w !== "narrator" && people.has(w)))].map((w) => people.get(w)!);
+  // Speakers alternate sides so a conversation reads left-right like a comic.
+  const side = speaker ? (inScene.indexOf(speaker) % 2 === 0 ? "left" : "right") : "center";
 
-  useEffect(() => {
-    if (done) {
-      onDone?.();
-      return;
-    }
-    const next = card.lines[shown];
-    const wait = 500 + Math.min(1600, card.lines[shown - 1].text.length * 18);
-    const t1 = setTimeout(() => setTyping(true), 250);
-    const t2 = setTimeout(() => {
-      setTyping(false);
-      setShown((n) => n + 1);
-      play(next.who === "narrator" ? "flip" : "tap");
-    }, wait);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shown, done]);
-
-  useEffect(() => {
-    end.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }, [shown, typing]);
-
-  const sides = new Map<string, "left" | "right">();
-  card.lines.forEach((l) => {
-    if (l.who !== "narrator" && !sides.has(l.who)) sides.set(l.who, sides.size % 2 === 0 ? "left" : "right");
-  });
+  const go = (to: number) => {
+    if (to < 0 || to >= card.lines.length) return;
+    play(card.lines[to].who === "narrator" ? "flip" : "tap");
+    setAt(to);
+    if (to === card.lines.length - 1) onDone?.();
+  };
 
   return (
     <>
       <h2>{card.title}</h2>
-      <p className="story__setting">📍 {card.setting}</p>
-      <div className="story">
-        {card.lines.slice(0, shown).map((l, i) => {
-          const who = people.get(l.who);
-          if (l.who === "narrator" || !who)
+      <p className="scene__setting">📍 {card.setting}</p>
+      {script ? (
+        <div className="scene-script">
+          {card.lines.map((l, k) => {
+            const who = people.get(l.who);
             return (
-              <motion.p key={i} className="story__narration" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                <NarratorBadge size={26} /> {l.text}
-              </motion.p>
+              <p key={k} className={l.who === "narrator" || !who ? "scene-script__narration" : ""}>
+                {who ? (
+                  <>
+                    <strong style={{ color: who.look.color }}>{who.name}:</strong> {l.text}
+                  </>
+                ) : (
+                  <em>{l.text}</em>
+                )}
+              </p>
             );
-          const side = sides.get(l.who) ?? "left";
-          return (
-            <motion.div key={i} className={`story__line story__line--${side}`} initial={{ opacity: 0, y: 14, scale: 0.96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ type: "spring", stiffness: 300, damping: 24 }}>
-              <Avatar look={who.look} mood={l.mood} size={46} title={who.name} />
-              <div className="story__bubble" style={{ ["--who" as string]: who.look.color }}>
-                <span className="story__who">
-                  {who.name} <small>{who.role}</small>
+          })}
+        </div>
+      ) : (
+        <div className="scene" style={{ ["--who" as string]: speaker?.look.color ?? "#ffd23f" }}>
+          {inScene.length > 0 && (
+            <div className="scene__cast" aria-label="In this scene">
+              {inScene.map((c) => (
+                <span key={c.id} className={`scene__castmate ${speaker?.id === c.id ? "is-speaking" : ""}`} title={`${c.name}, ${c.role}`}>
+                  <Avatar look={c.look} size={34} title={c.name} />
+                  <small>{c.name.split(" ")[0]}</small>
                 </span>
-                {l.text}
-              </div>
-            </motion.div>
-          );
-        })}
-        <AnimatePresence>
-          {typing && !done && (
-            <motion.div className="story__typing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <span />
-              <span />
-              <span />
-            </motion.div>
+              ))}
+            </div>
           )}
-        </AnimatePresence>
-        <div ref={end} />
-      </div>
-      {!done && (
-        <button className="inline-link story__skip" onClick={() => setShown(card.lines.length)}>
-          Show the whole scene
-        </button>
+          <button className={`scene__panel scene__panel--${side}`} onClick={() => go(at + 1)} disabled={last} aria-label={last ? "End of scene" : "Next line"}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={at}
+                className="scene__frame"
+                initial={{ opacity: 0, x: side === "right" ? 30 : side === "left" ? -30 : 0, y: side === "center" ? 12 : 0 }}
+                animate={{ opacity: 1, x: 0, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {speaker ? (
+                  <>
+                    <span className="scene__portrait">
+                      <Avatar look={speaker.look} mood={line.mood} size={112} title={speaker.name} />
+                      <span className="scene__nameplate">
+                        <strong>{speaker.name}</strong>
+                        <small>{speaker.role}</small>
+                      </span>
+                    </span>
+                    <span className="scene__speech">{line.text}</span>
+                  </>
+                ) : (
+                  <span className="scene__caption">
+                    <NarratorBadge size={30} />
+                    <span>{line.text}</span>
+                  </span>
+                )}
+              </motion.div>
+            </AnimatePresence>
+          </button>
+          <div className="scene__controls">
+            <button className="scene__arrow" onClick={() => go(at - 1)} disabled={at === 0} aria-label="Previous line">
+              ◀
+            </button>
+            <span className="scene__dots" aria-label={`Line ${at + 1} of ${card.lines.length}`}>
+              {card.lines.map((_, k) => (
+                <i key={k} className={k === at ? "is-on" : k < at ? "is-done" : ""} />
+              ))}
+            </span>
+            {last ? (
+              <span className="scene__end">Scene complete ✓</span>
+            ) : (
+              <button className="scene__next" onClick={() => go(at + 1)}>
+                Continue ▶
+              </button>
+            )}
+          </div>
+        </div>
       )}
+      <button className="inline-link scene__toggle" onClick={() => setScript((v) => !v)}>
+        {script ? "Back to the scene" : "Read the whole scene"}
+      </button>
     </>
   );
 }

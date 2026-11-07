@@ -10,14 +10,14 @@ import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals"
 export const metadata: Metadata = {
   title: "Professional Certifications",
   description:
-    "Gamified professional certifications for Pakistan's corporate sector: leadership, AI, AML/CFT, HR, procurement, customer experience, green banking and more. Session tests, a tough final exam and verified certificates.",
+    "Gamified professional certifications for professionals worldwide: leadership, AI, AML/CFT, HR, procurement, customer experience, green banking and more. Session tests, a tough final exam and verified certificates.",
   alternates: { canonical: "/certifications" },
 };
 export const dynamic = "force-dynamic";
 
 const HOW = [
   { icon: "🗺️", title: "Pick your quest", text: "Each certification is a quest of five stages with a story to follow." },
-  { icon: "🎬", title: "Live the story", text: "Story scenes, narrated mini-movies, animated visuals, decisions and games set in real Pakistani workplaces." },
+  { icon: "🎬", title: "Live the story", text: "Story scenes, narrated mini-movies, animated visuals, decisions, games and real-world cases from organisations around the world." },
   { icon: "🎯", title: "Beat every stage test", text: "A scored SCORM test closes each stage. Score 7/10 to unlock the next one." },
   { icon: "🐉", title: "Defeat the final boss", text: "A timed exam of 40 questions drawn from a larger bank. Pass mark 75%." },
   { icon: "🎓", title: "Get certified", text: "A certificate with a QR code that employers can verify online." },

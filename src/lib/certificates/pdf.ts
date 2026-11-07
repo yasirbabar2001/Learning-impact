@@ -55,10 +55,10 @@ export async function certificatePdf(d: CertificateData): Promise<Uint8Array> {
   doc.setAuthor("Learning Impact (SMC-Private) Limited");
   doc.setSubject(`Certificate ${d.code}`);
   // Full fonts (not subsets): subsetting drops advance widths for some glyphs such as "-".
-  const light = await doc.embedFont(font("outfit-latin-300-normal.ttf"), { subset: false, features: { calt: false, case: false } });
-  const bold = await doc.embedFont(font("outfit-latin-700-normal.ttf"), { subset: false, features: { calt: false, case: false } });
-  const body = await doc.embedFont(font("inter-latin-400-normal.ttf"), { subset: false, features: { calt: false, case: false } });
-  const semi = await doc.embedFont(font("inter-latin-600-normal.ttf"), { subset: false, features: { calt: false, case: false } });
+  const light = await doc.embedFont(font("outfit-latin-300-normal.ttf"), { subset: false, features: { liga: false, calt: false, case: false } });
+  const bold = await doc.embedFont(font("outfit-latin-700-normal.ttf"), { subset: false, features: { liga: false, calt: false, case: false } });
+  const body = await doc.embedFont(font("inter-latin-400-normal.ttf"), { subset: false, features: { liga: false, calt: false, case: false } });
+  const semi = await doc.embedFont(font("inter-latin-600-normal.ttf"), { subset: false, features: { liga: false, calt: false, case: false } });
 
   const page = doc.addPage([842, 595]); // A4 landscape
   const W = page.getWidth();

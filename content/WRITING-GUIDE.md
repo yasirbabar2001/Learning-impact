@@ -4,9 +4,9 @@ Each course is a **quest**: a short story frame, 5 sessions ("stages" on the que
 10 questions after each session, and a tough timed final exam ("the final boss") drawn from a question bank.
 
 - File: `content/courses/<slug>.json`, matching `src/lib/courses/schema.ts`. Check with `pnpm content:check`.
-- Audience: working professionals in Pakistan's corporate sector (banks, telecoms, FMCG, pharma, public sector,
-  services). Use local, realistic examples: Pakistani organisations described generically (never real company
-  names), PKR amounts, cities, and diverse Pakistani names for people in scenarios.
+- Audience: **international**. Working professionals anywhere in the world (banks, telecoms, consumer goods,
+  healthcare, technology, public sector, services). Learning Impact is based in Pakistan but the portal serves a
+  global audience: see "International scope (v3)" below.
 - **Original wording only.** Never copy text from books, standards bodies, regulators or websites. Paraphrase and
   explain. Regulatory facts must be accurate; where details change often (thresholds, deadlines, circular numbers)
   either state them only if certain or describe them generally and tell learners to check the current circular.
@@ -67,5 +67,34 @@ flip/order → check → example → keypoints → reflect. Vary it between sess
 
 ## Tone
 Energetic, warm and motivating. Second person ("you"). Celebrate progress, use the quest frame (stages, the
-mission) in story cards. Pakistani workplace realism (Karachi/Lahore/Islamabad offices, branches, WhatsApp, Raast,
-CNIC, PKR), no real company names. Original wording only.
+mission) in story cards. International workplace realism (see below). Original wording only.
+
+
+---
+
+# International scope (v3) — required
+
+The portal is an **international** site. Content must work for a learner in London, Dubai, Singapore, Nairobi,
+Toronto, São Paulo, Kuala Lumpur, Riyadh or Karachi alike.
+
+- **Story world:** a fictional organisation that operates internationally (several countries or a regional hub).
+  Cast of 4–5 people with names from different regions (e.g. a mix of South Asian, Arab, East Asian, African,
+  European, Latin American names). Settings move between cities around the world. Pakistan may appear as one of
+  several locations, never as the default frame.
+- **Money:** USD by default (`USD 2.4m`), or the local currency of the city a scene is set in (GBP, EUR, AED, SGD…).
+  No PKR unless a scene is explicitly set in Pakistan.
+- **Laws and regulation:** teach the **international standard or principle first** (FATF Recommendations, Basel
+  Committee, ILO conventions, OECD guidelines, UN Guiding Principles, ISO standards, IFRS/ISSB, GHG Protocol,
+  NIST/ISO 27001, GDPR as a widely copied model, etc.), then illustrate with **examples from several
+  jurisdictions** (e.g. US, UK, EU, UAE, Singapore, India, Pakistan, Saudi Arabia, Kenya). Always tell learners to
+  check the rules where they work. Do not invent precise thresholds, rates or deadlines; state only what is
+  certain and widely documented.
+- **Real-world examples are required:** every session includes **at least two real, well-documented cases**
+  (companies, institutions or events), as `example` cards titled `Real case: …`, as the basis of a `scenario`, or in
+  `stats` diagrams. Use only facts that are widely reported and settled (regulator findings, court outcomes,
+  official reports, company statements), give the year, round figures ("about USD 2bn"), and describe them in
+  your own words. No speculation, no allegations presented as fact, nothing defamatory. Good sources of cases:
+  enforcement actions, public inquiries, well-known business-school-style turnarounds and failures.
+- Real company names are allowed **only** in real cases. The story world stays fictional.
+- Quiz and exam questions test international principles and practice; a question may use a named jurisdiction
+  when the course teaches that jurisdiction's example.

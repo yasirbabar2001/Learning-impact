@@ -21,6 +21,11 @@ sent. All motion respects the visitor's "reduce motion" setting.
 
 **Certification portal** (log in at `/login`):
 
+- **Admin dashboard** (`/admin`): clickable tiles with live numbers (revenue, payments to review, learners, companies
+  to approve, free-stage learners and conversion, enrolments, certificates, exam pass rate, courses live, new
+  requests) plus sign-up and top-course charts; training requests moved to `/admin/requests`.
+- Content is international: stories set in organisations around the world, international standards first with
+  examples from several jurisdictions, and at least two real-world cases per stage (see `content/EXPERT-REVIEW.md`).
 - One login for everyone (`/login`, Individual or Company). `info@learningimpact.pk` (or `ADMIN_EMAILS`) is always
   an admin; others get admin access in **Admin → Learners**. Admins switch between their own dashboard and the
   admin panel (header **Admin** button, account menu, and **Switch to my learner account** in the panel). The owner
@@ -38,7 +43,9 @@ sent. All motion respects the visitor's "reduce motion" setting.
 - 14 professional certifications (`/certifications`); each is a gamified **quest**: 5 stages of short lesson cards
   with knowledge checks, a scored **SCORM 1.2** test after every stage (7/10 unlocks the next), and a tough timed
   **final exam** (40 questions drawn from a 50-question bank, 60 minutes, 75% to pass, 3 attempts).
-- Interactive lessons: chat-style **story scenes** with an illustrated cast, narrated **mini-movies**
+- **Downloadable stage presentations:** every stage has a PDF slide deck generated from its content (diagrams drawn as
+  shapes, scenes as comic panels, cases, key terms, take-aways) at `/api/slides/<course>/<stage>`.
+- Interactive lessons: comic-panel **story scenes** (one speaker at a time, tap to continue) with an illustrated cast, narrated **mini-movies**
   (browser text-to-speech), 8 kinds of animated **diagrams**, **decision scenarios**, **flip cards**, **sort**,
   **match** and **order** games, optional video, synthesized **sound effects**, auto-narration, combo counter,
   the guide mascot **Ilmi**, and full-screen celebrations with level-ups and share buttons. The final exam is a

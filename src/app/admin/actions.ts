@@ -30,19 +30,19 @@ export async function logout() {
 export async function setRequestStatus(id: string, status: string) {
   await requireAdmin();
   await store.updateRequest(id, { status: statusSchema.parse(status) });
-  revalidatePath("/admin");
+  revalidatePath("/admin", "layout");
 }
 
 export async function saveRequestNotes(id: string, notes: string) {
   await requireAdmin();
   await store.updateRequest(id, { notes: notes.slice(0, 5000) });
-  revalidatePath("/admin");
+  revalidatePath("/admin", "layout");
 }
 
 export async function removeRequest(id: string) {
   await requireAdmin();
   await store.deleteRequest(id);
-  revalidatePath("/admin");
+  revalidatePath("/admin", "layout");
 }
 
 export async function saveProgram(_: AdminState, fd: FormData): Promise<AdminState> {

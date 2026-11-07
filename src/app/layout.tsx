@@ -11,14 +11,14 @@ const display = Outfit({ subsets: ["latin"], variable: "--font-display", display
 const body = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 const description =
-  "Learning Impact helps organisations in Pakistan book corporate training programs and hire expert trainers: leadership, communication, sales, digital skills and more, delivered on-site, live online or hybrid.";
+  "Learning Impact offers gamified professional certifications and helps organisations worldwide book corporate training programs and hire expert trainers: leadership, communication, sales, digital skills and more, delivered on-site, live online or hybrid.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: `${SITE_NAME} | Corporate Training & Expert Trainers in Pakistan`, template: `%s | ${SITE_NAME}` },
+  title: { default: `${SITE_NAME} | Professional Certifications & Corporate Training`, template: `%s | ${SITE_NAME}` },
   description,
   applicationName: SITE_NAME,
-  keywords: ["corporate training Pakistan", "employee training", "hire a trainer", "leadership training", "soft skills training", "Karachi", "Lahore", "Islamabad"],
+  keywords: ["professional certification", "online certification", "corporate training", "employee training", "hire a trainer", "leadership training", "AML certification", "corporate training Pakistan"],
   alternates: { canonical: "/" },
   openGraph: { type: "website", siteName: SITE_NAME, url: SITE_URL, title: SITE_NAME, description, locale: "en_PK" },
   twitter: { card: "summary_large_image", title: SITE_NAME, description },

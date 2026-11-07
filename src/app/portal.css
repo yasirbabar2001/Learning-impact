@@ -3663,3 +3663,255 @@
 .cert__preview {
   justify-content: center;
 }
+
+/* --- Story scenes: comic panels, one line at a time --- */
+.scene__setting {
+  font-size: 14px;
+  color: var(--muted);
+}
+.scene {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 22px;
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--who) 22%, #10101a), #08080d 75%);
+  border: 1px solid var(--line-strong);
+}
+.scene__cast {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.scene__castmate {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  opacity: 0.45;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.scene__castmate small {
+  font-size: 11px;
+  font-weight: 700;
+}
+.scene__castmate.is-speaking {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.scene__castmate.is-speaking .avatar-svg {
+  box-shadow: 0 0 0 3px var(--who), 0 0 16px var(--who);
+}
+.scene__panel {
+  display: block;
+  width: 100%;
+  min-height: 210px;
+  padding: 0;
+  text-align: left;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.scene__panel:disabled {
+  cursor: default;
+}
+.scene__frame {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 210px;
+  padding: 14px 10px;
+}
+.scene__panel--right .scene__frame {
+  flex-direction: row-reverse;
+}
+.scene__portrait {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  width: 132px;
+  text-align: center;
+}
+.scene__portrait .avatar-svg {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--who) 70%, transparent), 0 12px 30px -8px rgba(0, 0, 0, 0.7);
+}
+.scene__nameplate {
+  display: grid;
+  line-height: 1.25;
+}
+.scene__nameplate strong {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--who) 60%, #fff);
+}
+.scene__nameplate small {
+  font-size: 11.5px;
+  color: var(--faint);
+}
+.scene__speech {
+  position: relative;
+  flex: 1;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: #fff;
+  color: #14141c;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  box-shadow: 0 14px 34px -14px rgba(0, 0, 0, 0.7);
+}
+/* comic speech tail pointing at the speaker */
+.scene__speech::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  transform: translateY(-50%);
+}
+.scene__panel--right .scene__speech::before {
+  left: auto;
+  right: -12px;
+  border-right: 0;
+  border-left: 10px solid #fff;
+}
+.scene__caption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.55);
+  border-top: 2px solid rgba(255, 210, 63, 0.6);
+  border-bottom: 2px solid rgba(255, 210, 63, 0.6);
+  font-size: 16.5px;
+  font-style: italic;
+  line-height: 1.55;
+  color: rgba(255, 245, 210, 0.95);
+}
+.scene__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.scene__arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line-strong);
+}
+.scene__arrow:disabled {
+  opacity: 0.3;
+}
+.scene__dots {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.scene__dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+.scene__dots .is-done {
+  background: color-mix(in srgb, var(--who) 60%, #666);
+}
+.scene__dots .is-on {
+  background: var(--who);
+  box-shadow: 0 0 8px var(--who);
+  transform: scale(1.3);
+}
+.scene__next {
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: #0b0b10;
+  font-weight: 800;
+  font-size: 14px;
+  white-space: nowrap;
+  animation: nudge 1.6s ease-in-out infinite;
+}
+@keyframes nudge {
+  50% {
+    transform: translateX(3px);
+  }
+}
+.scene__end {
+  font-size: 13px;
+  font-weight: 800;
+  color: #2ee59d;
+  white-space: nowrap;
+}
+.scene__toggle {
+  justify-self: start;
+  font-size: 13px;
+}
+.scene-script {
+  display: grid;
+  gap: 8px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.scene-script__narration {
+  color: rgba(255, 245, 210, 0.85);
+}
+@media (max-width: 600px) {
+  .scene__frame,
+  .scene__panel--right .scene__frame {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .scene__portrait {
+    width: auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+  .scene__portrait .avatar-svg {
+    width: 64px;
+    height: 64px;
+  }
+  .scene__speech {
+    font-size: 15.5px;
+    padding: 14px 16px;
+  }
+  .scene__speech::before,
+  .scene__panel--right .scene__speech::before {
+    top: -10px;
+    left: 32px;
+    right: auto;
+    transform: none;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    border-top: 0;
+  }
+}
+.slides-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8fd8ff;
+  background: rgba(0, 194, 255, 0.1);
+  border: 1px solid rgba(0, 194, 255, 0.35);
+}
+.slides-link:hover {
+  background: rgba(0, 194, 255, 0.18);
+}
+/* Portal header: near-solid so scrolled content never shows through it */
+.pnav__inner {
+  background: rgba(10, 10, 15, 0.92);
+}

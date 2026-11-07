@@ -32,7 +32,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
       <div className="footer__grid">
         <div>
           <Logo className="footer__logo" animated={false} />
-          <p className="muted">Corporate training programs and expert trainers for organisations across Pakistan.</p>
+          <p className="muted">Corporate training, professional certifications and expert trainers for organisations worldwide.</p>
         </div>
         <div>
           <h3>Explore</h3>

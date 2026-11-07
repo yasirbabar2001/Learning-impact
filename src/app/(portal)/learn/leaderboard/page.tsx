@@ -39,10 +39,10 @@ export default async function LeaderboardPage({ searchParams }: { searchParams: 
         </div>
         {mode === "week" && (
           <div className="league-card notice glass">
-            <span className="league-card__rank">{me ? `#${me.rank}` : "—"}</span>
+            <span className="league-card__rank">{me ? `#${me.rank}` : "🏁"}</span>
             <div>
               <strong>{me ? `You are #${me.rank} of ${me.players} in this week's league with ${me.xp} XP.` : "You haven't earned XP this week yet. One lesson puts you on the board!"}</strong>
-              <p className="muted">The weekly league resets every Monday (Pakistan time), {resetIn} day{resetIn > 1 ? "s" : ""} to go. Top 3 earn bragging rights on the Hall of Fame.</p>
+              <p className="muted">The weekly league resets every Monday at 00:00 Pakistan time (UTC+5), {resetIn} day{resetIn > 1 ? "s" : ""} to go. Top 3 earn bragging rights on the Hall of Fame.</p>
             </div>
           </div>
         )}

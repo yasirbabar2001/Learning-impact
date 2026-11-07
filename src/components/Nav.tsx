@@ -74,7 +74,8 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
                 Log in
               </Link>
               <Link href="/register" className="nav__cta">
-                <span>Create account</span>
+                <span className="nav__long">Create account</span>
+                <span className="nav__short">Sign up</span>
               </Link>
             </>
           )}

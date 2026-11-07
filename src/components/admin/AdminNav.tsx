@@ -7,7 +7,8 @@ import { logout } from "@/app/admin/actions";
 import { Logo } from "../Logo";
 
 const LINKS = [
-  { href: "/admin", label: "Requests" },
+  { href: "/admin", label: "Dashboard" },
+  { href: "/admin/requests", label: "Requests" },
   { href: "/admin/orders", label: "Payments" },
   { href: "/admin/companies", label: "Companies" },
   { href: "/admin/learners", label: "Learners" },

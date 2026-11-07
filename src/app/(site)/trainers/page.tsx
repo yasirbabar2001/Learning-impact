@@ -7,7 +7,7 @@ import { industryBySlug } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "Hire a Corporate Trainer",
-  description: "Request an expert trainer for workshops, courses, coaching or keynotes. Matched to your topic, industry and audience, anywhere in Pakistan.",
+  description: "Request an expert trainer for workshops, courses, coaching or keynotes. Matched to your topic, industry and audience, on-site or online.",
   alternates: { canonical: "/trainers" },
 };
 

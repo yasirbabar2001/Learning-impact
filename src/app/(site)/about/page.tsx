@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learning Impact designs and delivers corporate training that changes how people work, for organisations across Pakistan.",
+  description: "Learning Impact designs and delivers corporate training that changes how people work, for organisations in Pakistan and around the world.",
   alternates: { canonical: "/about" },
 };
 

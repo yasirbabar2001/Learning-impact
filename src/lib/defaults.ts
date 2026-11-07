@@ -5,7 +5,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   heroTitle: "Training that leaves an",
   heroHighlight: "impact.",
   heroSubtitle:
-    "Book proven programs for your teams or bring in a specialist trainer. Delivered on-site across Pakistan, live online, or both.",
+    "Book proven programs for your teams or bring in a specialist trainer. Delivered live online worldwide, on-site, or both.",
   announcement: "",
   email: "info@learningimpact.pk",
   phone: "",

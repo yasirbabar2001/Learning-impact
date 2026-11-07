@@ -334,6 +334,9 @@ export function LessonPlayer(p: Props) {
               🔥 x{combo}
             </motion.span>
           )}
+          <a className="tool-btn" href={`/api/slides/${p.slug}/${p.sid}`} download title="Download the stage presentation (PDF)" aria-label="Download the stage presentation (PDF)">
+            📥 <small>Slides</small>
+          </a>
           <span className="earned-chip" title="XP earned in this stage">
             ⭐ {earned}
           </span>
@@ -380,6 +383,9 @@ export function LessonPlayer(p: Props) {
               <li key={o}>{o}</li>
             ))}
           </ul>
+          <a className="slides-link" href={`/api/slides/${p.slug}/${p.sid}`} download>
+            📥 Download the stage presentation (PDF)
+          </a>
           <ul className="lesson__features">
             <li>🎬 Story scenes</li>
             <li>🎞️ Mini-movies</li>
@@ -496,6 +502,9 @@ export function LessonPlayer(p: Props) {
             >
               <span className="btn__label">Review the lesson</span>
             </button>
+            <a className="btn btn--ghost" href={`/api/slides/${p.slug}/${p.sid}`} download>
+              <span className="btn__label">📥 Stage slides (PDF)</span>
+            </a>
           </div>
         </motion.div>
       )}
