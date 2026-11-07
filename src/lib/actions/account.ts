@@ -1,11 +1,12 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { passwordMatches } from "../auth";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { now, one, run, tx } from "../db";
-import { currentUser, endUserSession, hashPassword, homeFor, newId, requireUser, safeNext, startUserSession, tokenHash, verifyPassword } from "../portal/auth";
+import { currentUser, endUserSession, hashPassword, homeFor, isOwnerEmail, newId, requireUser, safeNext, startUserSession, tokenHash, verifyPassword } from "../portal/auth";
 import { button, esc, sendMail } from "../portal/mail";
 import { CHECK_MESSAGES, checkCode, issueCode } from "../portal/otp";
 import { REF_COOKIE, referrerByCode, rewardJoin } from "../portal/referrals";
@@ -132,10 +133,29 @@ export async function login(_: AuthState, fd: FormData): Promise<AuthState> {
         e.data,
       )
     : undefined;
+  const ok = Boolean(user && (await verifyPassword(pw, user.password_hash)));
+  // The owner (info@learningimpact.pk) can always get in with the server's admin password: the account is
+  // created if it does not exist yet and counts as verified. Knowing ADMIN_PASSWORD already gives admin access.
+  if (!ok && e.success && isOwnerEmail(e.data) && passwordMatches(pw)) {
+    const id = user?.id ?? newId();
+    if (!user)
+      run(
+        "INSERT INTO users (id, email, name, password_hash, phone, organisation, designation, account_type, email_verified_at, created_at) VALUES (?, ?, ?, ?, '', 'Learning Impact', '', 'individual', ?, ?)",
+        id,
+        e.data,
+        "Learning Impact",
+        await hashPassword(pw),
+        now(),
+        now(),
+      );
+    else run("UPDATE users SET email_verified_at = COALESCE(email_verified_at, ?), status = 'active' WHERE id = ?", now(), id);
+    await startUserSession(id);
+    redirect(safeNext(fd.get("next"), "/learn")); // land as an individual; "Admin" is one click away
+  }
   // Same message whether the e-mail or the password is wrong.
-  if (!user || !(await verifyPassword(pw, user.password_hash))) return { message: "That e-mail and password do not match.", values: keep(fd) };
+  if (!user || !ok) return { message: "That e-mail and password do not match.", values: keep(fd) };
   if (user.status !== "active") return { message: "This account is disabled. Please contact us.", values: keep(fd) };
-  if (user.account_type !== type)
+  if (user.account_type !== type && !isOwnerEmail(user.email))
     return {
       message: user.account_type === "company" ? "This e-mail belongs to a company account. Choose “Company” above and log in again." : "This e-mail belongs to an individual account. Choose “Individual” above and log in again.",
       values: keep(fd),

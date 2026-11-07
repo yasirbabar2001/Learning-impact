@@ -278,4 +278,16 @@ test("one login: the owner logs in as an individual and switches to admin", asyn
   await expect(page.locator(".order-admin", { hasText: "info@learningimpact.pk" }).getByText("Owner · Admin")).toBeVisible();
   await other.goto("/admin");
   await expect(other).toHaveURL(/\/admin$/);
+
+  // The owner can always log in with the server's admin password (even with the wrong tab chosen).
+  await page.context().clearCookies();
+  await page.goto("/login");
+  await page.getByRole("radio", { name: /Company/ }).click();
+  await page.locator("input[name=email]").fill("info@learningimpact.pk");
+  await page.locator("input[name=password]").fill("e2e-password");
+  await page.getByRole("button", { name: /Log in/ }).click();
+  await expect(page).toHaveURL(/\/learn$/);
+  await page.getByRole("button", { name: "Account menu" }).click();
+  await page.getByRole("link", { name: /Switch to Admin/ }).click();
+  await expect(page).toHaveURL(/\/admin$/);
 });
