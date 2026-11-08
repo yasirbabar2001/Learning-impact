@@ -1,0 +1,3232 @@
+{
+  "slug": "za-cyber-resilience-popia",
+  "title": "South Africa | Joint Standard on Cybersecurity, Operational Resilience and POPIA",
+  "tagline": "Meet the PA and FSCA cyber Joint Standard, the 2026 incident template, the PA's resilience directive and POPIA's safeguard and breach rules.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "South African banks, branches of foreign banks and mutual banks",
+    "Bank controlling companies and their groups",
+    "Contact centres and outsourced service partners",
+    "Bank IT, security operations and incident response",
+    "Privacy, compliance and operational risk teams"
+  ],
+  "hours": 6,
+  "description": "A South Africa-specific cybersecurity, resilience and privacy quest for bank staff. It is based on **Joint Standard 2 of 2024 (Cybersecurity and Cyber Resilience Requirements)**, made by the **Prudential Authority** and the **Financial Sector Conduct Authority** under the Financial Sector Regulation Act and in force since 1 June 2025; **Joint Notice 2 of 2026**, which sets the template banks file on the PA's Umoja portal for material IT and cyber incidents from 1 September 2026; **Joint Standard 1 of 2023** on IT governance and risk; the PA's **Directive 4 of 2023** on operational resilience; and the **Protection of Personal Information Act 4 of 2013 (POPIA)**, enforced by the **Information Regulator**.\n\nParagraph 7.2.7 of Joint Standard 2 requires every bank to run a comprehensive cyber awareness programme for all users, including contractors and third-party staff with system access, with refresher training at least once a year, regular new content, training for the board and periodic review of the programme. This quest is designed to support that duty for all staff, and gives managers, incident teams, privacy staff and directors the governance, incident notification and resilience knowledge their roles need.\n\nIt builds knowledge of the rules and real public cases; it does not replace your institution's own cyber, privacy, incident response and business continuity policies and procedures, which you must always follow.",
+  "audience": [
+    "All employees of South African banks who use bank systems or handle customer information",
+    "Contractors, consultants and outsourced staff with access to a bank's systems or information",
+    "IT, security operations and incident response teams",
+    "Information officers, deputy information officers and privacy and compliance teams",
+    "Senior managers and board members who oversee cyber risk and operational resilience"
+  ],
+  "outcomes": [
+    "Explain who made Joint Standards 1 and 2, when they apply and what the board and management must put in place",
+    "Apply the paragraph 7.2.7 training duty, including who counts as a user and how often refreshers happen",
+    "Recognise and report phishing, smishing, vishing and impersonation scams, and explain the hygiene controls behind every user",
+    "Apply POPIA's eight conditions, the section 19 safeguard duty and the operator rules to everyday banking tasks",
+    "Classify incidents and meet the Joint Notice 2 of 2026 timelines and POPIA section 22 notification duties",
+    "Explain Directive 4 of 2023 on operational resilience and prepare evidence for a supervisory review"
+  ],
+  "quest": {
+    "name": "The Resilience Mandate",
+    "premise": "You have just joined the information security office of Marula Bank Limited, a fictional South African bank with its head office in Rosebank, Johannesburg, a security operations centre in Midrand, a hub in Durban and a contact centre in Gqeberha. The Prudential Authority has scheduled a review of how the bank meets the cyber Joint Standard. With CISO Lindiwe Khumalo, incident lead Johan Botha, information officer Fatima Essop, contact centre lead Kagiso Molefe and board committee chair Zanele Nkosi, clear five stages, then face the final review.",
+    "badge": {
+      "name": "Cyber Resilience Guardian (SA)",
+      "description": "Awarded to South African bank staff who can apply Joint Standard 2, the 2026 incident template, Directive 4 of 2023 and POPIA's security rules."
+    },
+    "color": "#0f766e",
+    "cast": [
+      {
+        "id": "lindiwe",
+        "name": "Lindiwe Khumalo",
+        "role": "Chief Information Security Officer, Rosebank, your mentor",
+        "look": {
+          "skin": 4,
+          "hair": "bun",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "johan",
+        "name": "Johan Botha",
+        "role": "Cyber Incident Response Lead, Midrand SOC",
+        "look": {
+          "skin": 1,
+          "hair": "beard",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "fatima",
+        "name": "Fatima Essop",
+        "role": "Information Officer and Head of Privacy",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#9d174d"
+        }
+      },
+      {
+        "id": "kagiso",
+        "name": "Kagiso Molefe",
+        "role": "Contact Centre Team Leader, Gqeberha",
+        "look": {
+          "skin": 5,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "zanele",
+        "name": "Zanele Nkosi",
+        "role": "Independent Director, Chair of the IT and Risk Committee",
+        "look": {
+          "skin": 4,
+          "hair": "curly",
+          "color": "#6d28d9"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Joint Standards: Governance, Scope and the Training Duty",
+      "stage": "The Standards Room",
+      "summary": "Who makes South Africa's bank cyber rules, which institutions they cover, what Joint Standard 2 of 2024 asks the board and management to build, and the paragraph 7.2.7 awareness training duty.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the roles of the Prudential Authority and the FSCA in making the Joint Standards",
+        "State when Joint Standards 1 and 2 took effect and which institutions they cover",
+        "Describe the board's ultimate responsibility and the governance structure the cyber standard expects",
+        "Apply paragraph 7.2.7: who must be trained, how often, and how the programme is kept current"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one: the Standards Room",
+          "setting": "Information security office, Marula Bank head office, Rosebank, Johannesburg. A Monday in November 2026.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your access badge works, but your laptop refuses to open email until you approve a sign-in on your phone. A note on the desk reads: 'Welcome to the cyber team. Coffee at nine. Lindiwe.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Morning! I'm Lindiwe Khumalo, the bank's CISO. You picked a lively time to join. The Prudential Authority wants to walk through how we meet the cyber Joint Standard next month.",
+              "mood": "happy"
+            },
+            {
+              "who": "johan",
+              "text": "Johan Botha, incident response, out of the Midrand security operations centre. And since September we also report material incidents on the new template. No more improvising.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kagiso",
+              "text": "Kagiso Molefe, contact centre in Gqeberha. Half my agents work for an outsourcer. Does this cyber standard even touch them?",
+              "mood": "worried"
+            },
+            {
+              "who": "fatima",
+              "text": "Fatima Essop, information officer. And remember POPIA sits right next to all of this. When customer data is involved, the Information Regulator cares too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Five stages, one mission: show the regulators that every person here knows the rules and their part in them. Stage one is the rulebook itself. Let's open it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who writes South Africa's bank cyber rules",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Twin peaks",
+              "narration": "South Africa splits financial regulation between two authorities. The Prudential Authority, inside the Reserve Bank, keeps banks safe and sound. The Financial Sector Conduct Authority watches how they treat customers."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Joint Standards",
+              "narration": "Under the Financial Sector Regulation Act, the two authorities can make binding standards together. For technology they made two: Joint Standard 1 of 2023 on IT governance and risk, and Joint Standard 2 of 2024 on cybersecurity and cyber resilience."
+            },
+            {
+              "icon": "📅",
+              "heading": "When they bite",
+              "narration": "Joint Standard 1 has applied since 15 November 2024. Joint Standard 2 was published in May 2024 and has applied since 1 June 2025, giving firms about a year to prepare."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Who is covered",
+              "narration": "The cyber standard covers banks, branches of foreign banks, controlling companies and mutual banks, along with insurers, fund managers, market infrastructures and others. A bank or controlling company must also cover cyber risk in the entities structured under it."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Proportionate, not optional",
+              "narration": "The standard expects a bank to apply its minimum requirements in a way that fits its size, complexity and risk profile. Proportionality changes how you comply, never whether you comply."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The South African cyber and resilience rulebook",
+          "caption": "Dates as stated in the PA and FSCA documents. Always check the authorities' websites for later changes.",
+          "items": [
+            {
+              "label": "Directive 4 of 2023",
+              "value": "Jun 2023",
+              "detail": "The PA directs banks to apply the Basel operational resilience principles."
+            },
+            {
+              "label": "Joint Standard 1 published",
+              "value": "Nov 2023",
+              "detail": "IT governance and risk management requirements for financial institutions."
+            },
+            {
+              "label": "Joint Standard 2 published",
+              "value": "May 2024",
+              "detail": "Cybersecurity and cyber resilience requirements, made jointly by the PA and FSCA."
+            },
+            {
+              "label": "Joint Standard 1 in force",
+              "value": "15 Nov 2024",
+              "detail": "IT strategy, IT risk framework, IT resilience and incident notification apply."
+            },
+            {
+              "label": "Resilience deadline",
+              "value": "31 Dec 2024",
+              "detail": "Banks had to meet Directive 4 of 2023 by this date."
+            },
+            {
+              "label": "Joint Standard 2 in force",
+              "value": "1 Jun 2025",
+              "detail": "Cyber governance, controls, training and notification duties apply."
+            },
+            {
+              "label": "Joint Notice 2 of 2026",
+              "value": "1 Sep 2026",
+              "detail": "A set template for notifying material IT and cyber incidents takes effect."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Who made Joint Standard 2 of 2024 on cybersecurity and cyber resilience?",
+          "options": [
+            "The Information Regulator under POPIA",
+            "The Prudential Authority and the FSCA together, under the FSR Act",
+            "The Financial Intelligence Centre under the FIC Act",
+            "The Banking Association as an industry code"
+          ],
+          "answer": 1,
+          "explanation": "It is a joint standard: the Prudential Authority and the Financial Sector Conduct Authority made it together under the Financial Sector Regulation Act. POPIA is a separate law enforced by the Information Regulator."
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who carries cyber accountability at Marula Bank",
+          "caption": "Joint Standard 2 places final responsibility at the top, but the controls only work if every layer plays its part.",
+          "items": [
+            {
+              "label": "Governing body (the board)",
+              "detail": "Ultimately responsible for compliance and cyber risk oversight; approves the cyber strategy and framework."
+            },
+            {
+              "label": "Board committee",
+              "detail": "May carry the primary oversight work the board delegates, such as an IT and risk committee."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Builds and runs the strategy and framework with the board; reports risk metrics."
+            },
+            {
+              "label": "Cyber and information security function",
+              "detail": "Properly resourced, with authority and access to the board, and separated from conflicts."
+            },
+            {
+              "label": "Every user",
+              "detail": "Staff, contractors, consultants and providers with system access: follow policy and report."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What Joint Standard 2 asks a bank to build",
+          "body": "Think of the standard as a set of building blocks the bank must have, approved and kept current:\n\n- **Strategy and framework:** a board-approved cybersecurity strategy, reviewed at least once a year, and a cyber framework aligned with enterprise risk management and reviewed at least yearly through an independent review.\n- **Identify:** know your critical processes and information assets, classify them by criticality and sensitivity, and keep an asset inventory that is reviewed at least every two years.\n- **Protect:** access control, data security, secure systems and networks, cryptography and **awareness training**.\n- **Detect, respond and recover:** monitoring, an incident response plan, backups and customer communication.\n- **Situational awareness, testing and learning:** threat intelligence, testing, remediation and lessons learnt.\n- **Hygiene:** strong access management, multi-factor authentication, patching, secure configuration and malware protection.\n- **Notification:** tell the responsible authority when an incident is classified as material."
+        },
+        {
+          "type": "sort",
+          "title": "Cyber standard or IT governance standard?",
+          "prompt": "Sort each duty into the Joint Standard that mainly carries it.",
+          "buckets": [
+            "Joint Standard 2 of 2024 (cyber)",
+            "Joint Standard 1 of 2023 (IT governance)"
+          ],
+          "items": [
+            {
+              "text": "Cyber awareness refresher training for all users at least yearly",
+              "bucket": 0
+            },
+            {
+              "text": "An IT strategy approved by the board and reviewed at least yearly",
+              "bucket": 1
+            },
+            {
+              "text": "Multi-factor authentication for privileged and administrative accounts",
+              "bucket": 0
+            },
+            {
+              "text": "An IT risk management framework covering all material IT risks",
+              "bucket": 1
+            },
+            {
+              "text": "Penetration testing of systems reachable from the internet",
+              "bucket": 0
+            },
+            {
+              "text": "Notifying a material systems failure, malfunction or delay",
+              "bucket": 1
+            },
+            {
+              "text": "Taking part in trusted cyber threat information sharing",
+              "bucket": 0
+            },
+            {
+              "text": "Managing IT programmes and projects in a controlled way",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The question from the boardroom",
+          "setting": "Video call between Rosebank, Gqeberha and the board office. Late afternoon.",
+          "lines": [
+            {
+              "who": "zanele",
+              "text": "Zanele Nkosi here, chair of the board's IT and risk committee. Lindiwe, the PA letter asks what training the board itself has had. Is that really their business?",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "It is. The cyber standard says the governing body must be trained so it understands technology risk and how cyber risk is managed. It's not just for staff.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kagiso",
+              "text": "And my outsourced agents? HR says the annual course is only for Marula employees.",
+              "mood": "worried"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Look at how the standard defines a user: employees, contractors, consultants and third-party providers who can get into our systems or information. If they log into our CRM, they're users.",
+              "mood": "thinking"
+            },
+            {
+              "who": "zanele",
+              "text": "Then let's get this right before the PA asks. Show me the options.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Forty agents, one login each",
+          "situation": "Marula's outsourced contact centre partner in Gqeberha supplies 40 agents. Each has a Marula login to the customer relationship system and can see account details. HR plans to run the yearly cyber awareness refresher only for permanent Marula staff, saying the partner 'handles its own training'. Kagiso asks you what to do.",
+          "choices": [
+            {
+              "text": "Agree with HR. The agents are not Marula employees, so Marula's training duty does not reach them.",
+              "outcome": "Risky. Joint Standard 2 counts contractors and third-party service providers with access to the bank's systems as users. Leaving them out creates a gap in the bank's own awareness programme that a supervisor can easily spot.",
+              "score": 0
+            },
+            {
+              "text": "Bring the agents into Marula's awareness programme, or make sure by contract and evidence that the partner's training meets Marula's programme, and track completion for every login.",
+              "outcome": "Best answer. The bank must keep a high level of awareness among all users. It can deliver the training itself or rely on the partner, but it must be able to show that every person with access is covered and refreshed at least yearly.",
+              "score": 2
+            },
+            {
+              "text": "Send the agents a link to the cyber policy and ask them to read it when they have time.",
+              "outcome": "Better than nothing, but a policy link is not a comprehensive awareness programme, and there is no proof of completion or yearly refresher. The gap remains.",
+              "score": 1
+            },
+            {
+              "text": "Remove the agents' access to the CRM until the partner proves it trains its people.",
+              "outcome": "Too blunt. It would stop customer service without fixing the training gap. The right fix is to cover the agents in the programme and evidence it, not to break the service.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Paragraph 7.2.7: the training duty in plain words",
+          "caption": "Joint Standard 2 of 2024, paragraph 7.2.7, summarised in our own words.",
+          "headers": [
+            "What it covers",
+            "What the standard expects"
+          ],
+          "items": [
+            {
+              "label": "All users",
+              "left": "Comprehensive awareness programme",
+              "right": "Keep a high level of cyber awareness across everyone with access"
+            },
+            {
+              "label": "Refreshers",
+              "left": "At least once a year",
+              "right": "Every user repeats the core training yearly or more often"
+            },
+            {
+              "label": "New content",
+              "left": "Regularly",
+              "right": "Add material as threats change, not only at the yearly refresher"
+            },
+            {
+              "label": "Governing body",
+              "left": "Board training",
+              "right": "Understand technology risk and cyber risk management practice"
+            },
+            {
+              "label": "The programme",
+              "left": "Periodic review",
+              "right": "Update for policy changes, emerging risks and the threat landscape"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Words the standard uses",
+          "cards": [
+            {
+              "front": "Cyber event",
+              "back": "Anything observable happening in an IT system. Many events are harmless; some signal an incident."
+            },
+            {
+              "front": "Cyber incident",
+              "back": "An event that threatens the security of a system or its information, or breaks security or acceptable use policy, whether malicious or not."
+            },
+            {
+              "front": "Material incident",
+              "back": "A disruption with, or likely to have, a severe and widespread impact on the bank's operations, its customers or the wider financial system."
+            },
+            {
+              "front": "User",
+              "back": "Employees, contractors, consultants and third-party providers who have access to the bank's IT systems or information assets."
+            },
+            {
+              "front": "Cyber resilience",
+              "back": "The ability to keep delivering the mission by anticipating and adapting to threats, and withstanding, containing and quickly recovering from incidents."
+            },
+            {
+              "front": "Defence in depth",
+              "back": "Several layers of people, process and technology controls, so that if one fails another limits the damage."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under paragraph 7.2.7, how often must user refresher training on cybersecurity happen at a minimum?",
+          "options": [
+            "Every two years, in line with the asset inventory review",
+            "Only when a new employee joins",
+            "At least once a year, with new content added regularly",
+            "Only after a material incident"
+          ],
+          "answer": 2,
+          "explanation": "The standard requires refresher training for users at least annually, plus regular training on new content as risks evolve. The two-year cycle belongs to the asset inventory review, not to training."
+        },
+        {
+          "type": "example",
+          "title": "Real case: the Justice department ransomware attack, 2021",
+          "body": "On the evening of 6 September 2021 South Africa's Department of Justice and Constitutional Development was hit by ransomware. In its own public statement the department said all its information systems were encrypted and unavailable, affecting services such as letters of authority, bail services, email and its website.\n\nThe same statement explained that ransomware often spreads through **phishing emails with malicious attachments** or through **drive-by downloads**, where simply visiting an infected website installs malware.\n\n**Why it matters for training:** the department's description of the entry routes points straight at everyday user behaviour. Opening an attachment or clicking a link can start an attack that stops a whole organisation. This is exactly why Joint Standard 2 makes awareness training a duty for *all* users, refreshed at least yearly, and not a nice-to-have for the IT team.\n\n*Source: Department of Justice and Constitutional Development statement on gov.za, September 2021.*"
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "Joint Standard 2 of 2024 (cyber) applies to banks from 1 June 2025; Joint Standard 1 of 2023 (IT governance) from 15 November 2024.",
+            "Both were made jointly by the Prudential Authority and the FSCA under the Financial Sector Regulation Act.",
+            "The board is ultimately responsible for cyber compliance and oversight, and approves the cyber strategy and framework.",
+            "Paragraph 7.2.7: awareness programme for all users, refreshers at least yearly, new content regularly, board training and periodic programme review.",
+            "Contractors and third-party providers with system access are users too."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about who can log into the systems you use every day. Are there contractors, consultants or partner staff among them, and how would you check that they are covered by your bank's cyber awareness programme?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-cy-s1-q1",
+          "question": "Since when has Joint Standard 2 of 2024 on cybersecurity and cyber resilience applied to South African banks?",
+          "options": [
+            "15 November 2024",
+            "31 December 2024",
+            "1 September 2026",
+            "1 June 2025"
+          ],
+          "answer": 3,
+          "explanation": "The authorities confirmed 1 June 2025 as the effective date of Joint Standard 2. 15 November 2024 is the date for Joint Standard 1, and 1 September 2026 is when the incident template took effect.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s1-q2",
+          "question": "Marula Bank's outsourced contact centre agents log into the bank's CRM. How does Joint Standard 2 treat them for awareness training?",
+          "options": [
+            "As outsiders, so only their employer's rules apply",
+            "As users only if they hold a bank employment contract",
+            "As users, so the bank's programme must cover them",
+            "As exempt, because they are covered by POPIA instead"
+          ],
+          "answer": 2,
+          "explanation": "The standard defines users to include contractors and third-party service providers with access to the bank's systems or information assets. The bank must be able to show they are covered.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s1-q3",
+          "question": "Which body is ultimately responsible for a bank's compliance with Joint Standard 2?",
+          "options": [
+            "The chief information security officer",
+            "The external auditor",
+            "The Prudential Authority's supervision team",
+            "The governing body (board of directors)"
+          ],
+          "answer": 3,
+          "explanation": "The standard places ultimate responsibility on the governing body, which may delegate primary oversight work to a committee but keeps the accountability.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s1-q4",
+          "question": "The board of a mid-sized bank asks whether it must undergo any cyber training itself. What does paragraph 7.2.7 say?",
+          "options": [
+            "Board members are exempt because they do not use bank systems",
+            "Only the chair of the risk committee must be trained",
+            "Board training is optional if the CISO reports every quarter",
+            "The governing body must be trained on technology risk and cyber risk management"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 7.2.7 expressly requires the governing body to undergo training that raises its awareness of technology risk and improves its understanding of cyber risk management practice.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s1-q5",
+          "question": "How often must a bank's cybersecurity strategy be reviewed under Joint Standard 2?",
+          "options": [
+            "Only when the board changes",
+            "Regularly, and at least once a year",
+            "Every three years with the audit plan",
+            "Only after a material incident"
+          ],
+          "answer": 1,
+          "explanation": "The standard requires the strategy to be reviewed regularly but at least annually to reflect the threat landscape, resources, gaps and lessons learnt.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s1-q6",
+          "question": "A small mutual bank argues that because it is small, Joint Standard 2 does not apply to it. What is the best response?",
+          "options": [
+            "It applies, but the bank may implement it in a way that fits its size and risk",
+            "It is correct: the standard covers only large banks",
+            "It applies only if the bank uses cloud services",
+            "It applies only after the PA grants written approval"
+          ],
+          "answer": 0,
+          "explanation": "Mutual banks are listed as financial institutions under the standard. Proportionality affects how the requirements are implemented, not whether they apply.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s1-q7",
+          "question": "Which of these is a Joint Standard 2 requirement about the training programme itself?",
+          "options": [
+            "It must be approved by the Information Regulator",
+            "It must be delivered only in a classroom",
+            "It must be reviewed periodically to keep its content current",
+            "It must be identical for every financial institution"
+          ],
+          "answer": 2,
+          "explanation": "The programme must be reviewed periodically, taking into account changes in security policy, emerging risks and the evolving threat landscape.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s1-q8",
+          "question": "A staff member installs an unapproved file-sharing app and uploads a customer list by mistake, with no malicious intent. Under the standard's definitions, is this a cyber incident?",
+          "options": [
+            "No, because no attacker was involved",
+            "No, because only events affecting availability count",
+            "Yes, because breaking security or acceptable use policy counts even without malice",
+            "Only if the Information Regulator says so"
+          ],
+          "answer": 2,
+          "explanation": "The standard defines a cyber incident to include events that violate security policies or acceptable use policies, whether or not they result from malicious activity.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-cy-s1-q9",
+          "question": "A bank is a controlling company with subsidiaries in two other African countries. What does Joint Standard 2 expect regarding those subsidiaries?",
+          "options": [
+            "They are ignored because they are licensed abroad",
+            "Their cyber risks must be catered for and mitigated in applying the standard",
+            "They must each apply for a separate South African licence",
+            "They are covered only if they share the same IT system"
+          ],
+          "answer": 1,
+          "explanation": "For banks and controlling companies, the standard requires cyber risks from juristic persons and branches structured under them, local and foreign, to be catered for and mitigated.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-cy-s1-q10",
+          "question": "Which statement correctly compares the two Joint Standards?",
+          "options": [
+            "Joint Standard 1 covers POPIA; Joint Standard 2 covers anti-money laundering",
+            "Both cover only insurers and pension funds",
+            "Joint Standard 1 covers IT governance and risk; Joint Standard 2 covers cybersecurity and cyber resilience",
+            "Joint Standard 2 replaced Joint Standard 1 on 1 June 2025"
+          ],
+          "answer": 2,
+          "explanation": "Joint Standard 1 of 2023 sets IT governance and risk management requirements; Joint Standard 2 of 2024 sets cyber requirements. They operate side by side; neither replaced the other.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Phishing, Social Engineering and Access Hygiene",
+      "stage": "The Lure Line",
+      "summary": "How criminals talk their way into banks through email, SMS, calls and messaging, how to spot, stop and report a lure, and the access and malware controls Joint Standard 2 requires behind every user.",
+      "minutes": 45,
+      "objectives": [
+        "Recognise phishing, smishing, vishing, spoofing and advance-fee lures and their warning signs",
+        "Respond correctly when you receive or fall for a lure, including prompt reporting",
+        "Describe the Joint Standard 2 hygiene controls on MFA, least privilege, privileged access and malware",
+        "Use the SARB's public warning on scams that abuse its name to verify regulator contact"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A call from 'the Reserve Bank'",
+          "setting": "Marula Bank contact centre, Gqeberha. Tuesday, 10:40.",
+          "lines": [
+            {
+              "who": "kagiso",
+              "text": "We had a strange one this morning. A caller said he was from the Reserve Bank's compliance division and needed a customer's account details to 'release a frozen foreign transfer'.",
+              "mood": "worried"
+            },
+            {
+              "who": "johan",
+              "text": "And at Midrand we caught an email to the payments team: the PA's logo, a link to 'confirm your Umoja login'. The sender domain was one letter off.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Same playbook, two channels. Authority, urgency and a request for something only we can give: data, credentials or a payment.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kagiso",
+              "text": "My agent refused and logged it. But she says she nearly believed him. He knew the customer's name and branch.",
+              "mood": "happy"
+            },
+            {
+              "who": "lindiwe",
+              "text": "That's why stage two matters. Criminals rarely break in through the firewall. They talk their way in. Welcome to the Lure Line.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How social engineering works",
+          "scenes": [
+            {
+              "icon": "🎭",
+              "heading": "The pretext",
+              "narration": "The attacker borrows a trusted identity: a regulator, a senior executive, a supplier, IT support or a customer. A logo or a known name makes the story feel real."
+            },
+            {
+              "icon": "⏰",
+              "heading": "Pressure",
+              "narration": "Next comes urgency or fear. 'Your account will be frozen today.' 'The CEO needs this payment before the meeting.' Pressure is designed to stop you from checking."
+            },
+            {
+              "icon": "🤫",
+              "heading": "Secrecy",
+              "narration": "Many lures ask you to keep it confidential or to skip the usual process. A request to bypass a control is itself a warning sign."
+            },
+            {
+              "icon": "🎯",
+              "heading": "The ask",
+              "narration": "Finally, the real goal: a password or one-time PIN, customer data, a changed bank account, a payment, or a click that installs malware."
+            },
+            {
+              "icon": "📡",
+              "heading": "Many channels",
+              "narration": "The same tricks arrive by email (phishing), SMS (smishing), voice calls (vishing), WhatsApp, social media or even a letter. Defend the person, not just the inbox."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From lure to loss",
+          "caption": "Every stage is a chance to stop the attack. The earlier someone pauses and checks, the cheaper the stop.",
+          "items": [
+            {
+              "label": "Wide net",
+              "detail": "Thousands of messages or calls go out, often using public details and stolen data."
+            },
+            {
+              "label": "Hook",
+              "detail": "A few people respond to a believable story with a trusted name or logo."
+            },
+            {
+              "label": "Trust built",
+              "detail": "The attacker adds detail, urgency and secrecy to keep the target engaged."
+            },
+            {
+              "label": "The ask",
+              "detail": "Credentials, a one-time PIN, customer data, a payment or a malicious click."
+            },
+            {
+              "label": "Loss",
+              "detail": "Account takeover, data breach, fraud or ransomware across the bank."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "An email shows the Prudential Authority's logo and asks you to 'urgently confirm your Umoja portal password' through a link. What is the strongest warning sign?",
+          "options": [
+            "It mentions a real portal",
+            "It asks you to give your password through a link under time pressure",
+            "It was sent on a weekday",
+            "It has a logo"
+          ],
+          "answer": 1,
+          "explanation": "Logos and real names are easy to copy. A request for credentials through a link, combined with urgency, is the classic phishing pattern. Check through a channel you already trust."
+        },
+        {
+          "type": "match",
+          "title": "Name the lure",
+          "prompt": "Match each attack to its description.",
+          "pairs": [
+            {
+              "left": "Phishing",
+              "right": "A deceptive email that tries to get you to click, open an attachment or give credentials"
+            },
+            {
+              "left": "Smishing",
+              "right": "The same trick sent by SMS, often with a short link and an urgent warning"
+            },
+            {
+              "left": "Vishing",
+              "right": "A phone call where the caller pretends to be a bank, regulator or IT support"
+            },
+            {
+              "left": "Email spoofing",
+              "right": "Forging the sender so a message seems to come from a trusted address"
+            },
+            {
+              "left": "Drive-by download",
+              "right": "Malware installed just by visiting an infected or malicious website"
+            },
+            {
+              "left": "Advance-fee scam",
+              "right": "A promise of a large sum in return for fees or details paid up front"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Hygiene controls in Joint Standard 2 that blunt the lure",
+          "body": "Training is one layer. Joint Standard 2 also requires technical and process controls that limit what a fooled user can damage:\n\n- **Multi-factor authentication:** for users with access to critical system functions; MFA or privileged access management for all administrative and privileged accounts; and MFA for every account that reaches applications holding sensitive information over the internet.\n- **Least privilege and segregation of duties:** access is granted according to role, with periodic access reviews by system and asset owners.\n- **Privileged accounts:** granted on a need-to-use basis, logged and reviewed.\n- **Remote access:** only from secured devices or connections, with strong authentication.\n- **Malware protection:** endpoint protection that covers malicious links, websites, email attachments and infected removable media.\n- **Browsing and cloud services:** internet browsing separated from sensitive systems, and controls against unauthorised internet services used to share or store sensitive data."
+        },
+        {
+          "type": "sort",
+          "title": "Red flag or routine?",
+          "prompt": "Sort each situation at Marula Bank.",
+          "buckets": [
+            "Red flag: stop and report",
+            "Routine: proceed normally"
+          ],
+          "items": [
+            {
+              "text": "A 'supplier' emails new bank details and asks you to update them before today's payment run",
+              "bucket": 0
+            },
+            {
+              "text": "A caller says he is from the Reserve Bank and needs a customer's account details",
+              "bucket": 0
+            },
+            {
+              "text": "Your sign-in asks for MFA when you log in from home through the bank's secure connection",
+              "bucket": 1
+            },
+            {
+              "text": "An SMS asks you to read back the one-time PIN you just received to 'IT support'",
+              "bucket": 0
+            },
+            {
+              "text": "Your manager asks you in the team meeting to complete the yearly cyber refresher",
+              "bucket": 1
+            },
+            {
+              "text": "A WhatsApp from the 'CEO' asks you to buy vouchers and keep it secret",
+              "bucket": 0
+            },
+            {
+              "text": "IT announces a planned patch window through the usual intranet notice",
+              "bucket": 1
+            },
+            {
+              "text": "A USB stick labelled 'Salaries 2026' is left in the staff kitchen",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "He knew the customer's name",
+          "setting": "Contact centre floor, Gqeberha. Same afternoon.",
+          "lines": [
+            {
+              "who": "kagiso",
+              "text": "Here's what bothers me. The caller knew the customer's full name and branch. My agent said that made him sound official.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatima",
+              "text": "Names and branches leak all the time: social media, old breaches, even a customer's own posts. Knowing a detail proves nothing about who is calling.",
+              "mood": "neutral"
+            },
+            {
+              "who": "johan",
+              "text": "And the Reserve Bank does not phone our agents asking for customer account details. If a regulator needs information, it comes through formal channels to compliance.",
+              "mood": "worried"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Let's practise. Same caller, but this time he's pushier.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The pushy 'regulator'",
+          "situation": "A caller tells your agent he is from the South African Reserve Bank. He says a customer's incoming foreign transfer is being held and that he needs the customer's ID number, account number and recent balance within ten minutes, or 'the funds will be returned'. He gives a mobile number for call-backs and asks the agent not to involve a supervisor because 'this is confidential'.",
+          "choices": [
+            {
+              "text": "Give the details because the caller named the Reserve Bank and the customer could lose money.",
+              "outcome": "This is the scam succeeding. The pressure, secrecy and request for customer data are the lure. Disclosing it could breach POPIA and expose the customer to fraud.",
+              "score": 0
+            },
+            {
+              "text": "Politely decline, end the call, report it at once through the bank's phishing and fraud reporting route, and let compliance verify through official channels.",
+              "outcome": "Best answer. The agent protects customer data, does not use the caller's number, and gives the security and fraud teams what they need to warn others and look for related attempts.",
+              "score": 2
+            },
+            {
+              "text": "Call back the mobile number the caller gave to check he is genuine.",
+              "outcome": "A call-back only works on a number you already trust from an official source. The caller's own number will reach the caller. Report it instead.",
+              "score": 0
+            },
+            {
+              "text": "Give only the account number, since the ID number is more sensitive.",
+              "outcome": "Any customer data shared with an unverified caller is a disclosure risk, and an account number is valuable to fraudsters. Partial compliance still helps the attacker.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the Reserve Bank's name used in '419' scams",
+          "body": "The South African Reserve Bank warns on its own website that its corporate identity has been abused by syndicates running advance-fee ('419') scams. Victims receive letters, emails, SMSs, WhatsApp messages or social media messages showing the SARB logo or the names of SARB employees.\n\nThe pattern the SARB describes is classic social engineering: a promise of a large sum, a demand for **confidentiality**, then requests for **banking details, passport and identity documents**, followed by fees for fake lawyers or 'legal costs' until the victim stops paying.\n\nThe SARB points out that it does **not** hold bank accounts for private individuals or businesses and does **not** receive or hold cross-border transfers for members of the public. Victims are told to report to the South African Police Service and to the SARB's Financial Surveillance Department.\n\n**Lesson for bank staff:** a regulator's name and logo are free to copy. Verify through official channels, never through contact details the sender supplies.\n\n*Source: SARB 'Fraud and Scams' page, resbank.co.za.*"
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Spot, stop, report",
+          "items": [
+            {
+              "label": "Spot",
+              "detail": "Look for pressure, secrecy, odd senders, unusual requests and requests to bypass process."
+            },
+            {
+              "label": "Stop",
+              "detail": "Do not click, reply, pay or share. End the call politely."
+            },
+            {
+              "label": "Verify",
+              "detail": "Check through a channel you already trust: the intranet directory or official website."
+            },
+            {
+              "label": "Report",
+              "detail": "Use the bank's phishing button or fraud and security reporting route at once."
+            },
+            {
+              "label": "Preserve",
+              "detail": "Keep the email or call notes; do not forward the lure to colleagues."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "You clicked. Now what?",
+          "prompt": "You clicked a link in an email that now looks suspicious and typed your password. Put the right actions in order.",
+          "steps": [
+            "Stop: do not enter anything else and close the page",
+            "Report immediately through the bank's security reporting route, saying what you clicked and entered",
+            "Change your password from a trusted device or follow the security team's reset instructions",
+            "Follow the security team's instructions, such as disconnecting the device if asked",
+            "Watch for unexpected MFA prompts and report any you did not start"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which Joint Standard 2 requirement most directly limits the damage when an attacker steals an ordinary user's password for an internet-facing app holding sensitive data?",
+          "options": [
+            "Yearly review of firewall rules",
+            "MFA for accounts that reach applications with sensitive information over the internet",
+            "A biennial review of the asset inventory",
+            "Board approval of the cyber strategy"
+          ],
+          "answer": 1,
+          "explanation": "With MFA, a stolen password alone is not enough to log in. Joint Standard 2 requires MFA for all user accounts used to access applications containing sensitive information through the internet."
+        },
+        {
+          "type": "tip",
+          "title": "Never share a one-time PIN",
+          "body": "No genuine colleague, IT support desk, bank or regulator needs your one-time PIN or password. If a caller asks for it, or you get MFA prompts you did not start, deny the prompt and report it straight away. Approving an unexpected prompt to 'make it stop' is how many account takeovers succeed."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Social engineering uses a trusted identity, pressure and secrecy to get credentials, data, payments or clicks.",
+            "It arrives by email, SMS, voice, WhatsApp, social media or letter: verify through channels you already trust.",
+            "Joint Standard 2 adds MFA, least privilege, privileged access control, malware protection and secure remote access.",
+            "The SARB warns that its name is abused in advance-fee scams and that it does not hold accounts or transfers for the public.",
+            "If you click or disclose, report immediately. Speed limits the damage."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall a message or call you received that tried to rush you. Which warning signs were there, and what would you now do differently at each step of spot, stop, verify and report?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-cy-s2-q1",
+          "question": "A caller claiming to be from the SARB asks a branch agent for a customer's account balance to 'release a foreign transfer'. Based on the SARB's public warning, what should the agent know?",
+          "options": [
+            "The SARB does not hold accounts or cross-border transfers for the public",
+            "The SARB routinely calls bank agents for customer data",
+            "The request is valid if the caller knows the customer's name",
+            "Such requests must be answered within ten minutes"
+          ],
+          "answer": 0,
+          "explanation": "The SARB states that it does not keep accounts for private individuals or businesses and does not receive cross-border funds for members of the public. The call is a lure.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q2",
+          "question": "What is smishing?",
+          "options": [
+            "Phishing carried out by voice calls",
+            "Malware hidden in a USB stick",
+            "A forged website that copies a bank's login page",
+            "Phishing carried out by SMS text message"
+          ],
+          "answer": 3,
+          "explanation": "Smishing uses SMS messages, often with a short link and an urgent warning. Vishing uses voice calls.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s2-q3",
+          "question": "Under Joint Standard 2, which accounts must have MFA or at least privileged access management mechanisms?",
+          "options": [
+            "All administrative and privileged accounts",
+            "Only accounts of board members",
+            "Only accounts created in the last year",
+            "Only customer-facing mobile banking accounts"
+          ],
+          "answer": 0,
+          "explanation": "The standard requires MFA, or at least privileged access management mechanisms, for all administrative and privileged accounts.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q4",
+          "question": "A supplier emails new banking details and asks the accounts team to update them before today's payment run. What is the best response?",
+          "options": [
+            "Update the details because the email uses the supplier's logo",
+            "Verify the change with the supplier through contact details already on file before acting",
+            "Reply to the email asking if it is genuine",
+            "Pay half to the old account and half to the new one"
+          ],
+          "answer": 1,
+          "explanation": "Changed bank details under time pressure is a classic payment fraud pattern. Verify through a trusted channel, not by replying to the email.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q5",
+          "question": "Which control does Joint Standard 2 require to address malware delivered through malicious links, websites, email attachments and removable media?",
+          "options": [
+            "A yearly penetration test of internal systems only",
+            "Board approval of every email attachment",
+            "Endpoint protection with up-to-date signatures and regular scanning",
+            "Disabling all internet access for all staff"
+          ],
+          "answer": 2,
+          "explanation": "The standard requires endpoint protection that addresses common malware delivery channels, up-to-date signatures, regular scanning and detection and response for indicators of compromise.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q6",
+          "question": "You receive several MFA prompts on your phone that you did not start. What should you do?",
+          "options": [
+            "Approve one so the prompts stop",
+            "Ignore them and carry on working",
+            "Deny them and report to the security team straight away",
+            "Turn off MFA on your account"
+          ],
+          "answer": 2,
+          "explanation": "Unexpected prompts often mean someone has your password. Denying and reporting lets the security team reset credentials and investigate.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s2-q7",
+          "question": "Which principle does Joint Standard 2 require when granting user access to systems?",
+          "options": [
+            "Equal access for all staff to avoid complaints",
+            "Access for life once granted",
+            "Least privilege and segregation of duties, based on the user's role",
+            "Access decided by the user's own manager only, with no reviews"
+          ],
+          "answer": 2,
+          "explanation": "Access must follow segregation of duties and least privilege according to roles and responsibilities, with periodic user access reviews by system and asset owners.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s2-q8",
+          "question": "A message tells you to keep a payment request confidential and not to involve your supervisor. Why is this a strong warning sign?",
+          "options": [
+            "Confidential requests are always from the CEO",
+            "It asks you to bypass a normal control that would expose the fraud",
+            "Supervisors are not allowed to see payments",
+            "It proves the request comes from a regulator"
+          ],
+          "answer": 1,
+          "explanation": "Attackers ask for secrecy so that nobody checks. Any request to skip a normal control should be stopped and verified.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q9",
+          "question": "A contractor working for Marula Bank's IT supplier has access to production servers. How must the bank treat the contractor's access under Joint Standard 2?",
+          "options": [
+            "Leave it to the supplier to monitor",
+            "Give it permanent administrator rights to save time",
+            "Subject it to the same monitoring and access restrictions as employees",
+            "Exclude it from access reviews because the person is not staff"
+          ],
+          "answer": 2,
+          "explanation": "The standard requires third-party providers and contractors with access to be subject to the same monitoring and access restrictions as the bank's own employees.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s2-q10",
+          "question": "In its public statement on the 2021 ransomware attack, how did the Justice department say ransomware often spreads?",
+          "options": [
+            "Through phishing emails with malicious attachments or drive-by downloads",
+            "Only through stolen laptops",
+            "Only through attacks on payment cards",
+            "Through faulty electricity supply"
+          ],
+          "answer": 0,
+          "explanation": "The department's statement explained that ransomware often spreads through phishing emails containing malicious attachments, or drive-by downloads from infected websites.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "POPIA: Lawful Processing and Security Safeguards",
+      "stage": "The Privacy Vault",
+      "summary": "POPIA from the Act itself: the eight conditions for lawful processing, valid grounds, purpose and retention, the section 19 safeguard duty, operators under sections 20 and 21, special personal information, the information officer and the consequences of failure.",
+      "minutes": 50,
+      "objectives": [
+        "Name POPIA's eight conditions for lawful processing and apply them to banking situations",
+        "Identify a valid ground for processing and apply minimality, purpose and retention rules",
+        "Apply the section 19 safeguard cycle and the operator rules in sections 20 and 21",
+        "Explain the information officer's role and the main civil, administrative and criminal consequences"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Two requests before lunch",
+          "setting": "Privacy office, Marula Bank head office, Rosebank. Wednesday morning.",
+          "lines": [
+            {
+              "who": "fatima",
+              "text": "Two emails this morning. Marketing wants to use ID copies and income data from account opening to target a new credit card. And a branch reports a stolen laptop with a spreadsheet of loan applicants.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "The laptop is encrypted, so that one may be contained. But tell our new colleague why you look worried about the marketing request too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatima",
+              "text": "Because POPIA isn't only about hackers. It's about whether we may use information at all, for what, and for how long. A breach is just one way to fail.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kagiso",
+              "text": "My agents hear 'POPIA' and think it means 'never say anything to anyone'. That can't be right either.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatima",
+              "text": "It isn't. POPIA lets us use personal information for good reasons, carefully. Stage three: the Privacy Vault. Let's learn the eight conditions.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "POPIA in five scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The Act",
+              "narration": "The Protection of Personal Information Act 4 of 2013, known as POPIA, sets the conditions for processing personal information in South Africa. The Information Regulator enforces it."
+            },
+            {
+              "icon": "👤",
+              "heading": "Whose information",
+              "narration": "Personal information means information about an identifiable, living person and, where it applies, an identifiable existing company or other juristic person. Think ID numbers, contact details, account and financial history."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Responsible party",
+              "narration": "The bank decides why and how customer information is processed, so it is the responsible party. It must make sure the conditions are met when it designs the processing and while it runs."
+            },
+            {
+              "icon": "🧾",
+              "heading": "Operators",
+              "narration": "An operator processes information for the bank under a contract or mandate, such as a card processor, cloud provider or archiving firm. The bank stays accountable for what its operators do."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "The information officer",
+              "narration": "Every body has an information officer who encourages and ensures compliance, deals with requests and works with the Regulator. The officer must be registered with the Regulator before taking up the role."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "The eight conditions for lawful processing (POPIA s 4)",
+          "cards": [
+            {
+              "front": "1. Accountability (s 8)",
+              "back": "The responsible party makes sure every condition is met, both when it plans the processing and while it does it."
+            },
+            {
+              "front": "2. Processing limitation (ss 9-12)",
+              "back": "Process lawfully and reasonably, only what is adequate and relevant, on a valid ground, and usually collect from the person directly."
+            },
+            {
+              "front": "3. Purpose specification (ss 13-14)",
+              "back": "Collect for a specific, explicit and lawful purpose, and keep records no longer than needed unless an exception applies."
+            },
+            {
+              "front": "4. Further processing limitation (s 15)",
+              "back": "Any later use must be compatible with the original purpose of collection."
+            },
+            {
+              "front": "5. Information quality (s 16)",
+              "back": "Take reasonable steps to keep information complete, accurate, not misleading and updated where needed."
+            },
+            {
+              "front": "6. Openness (ss 17-18)",
+              "back": "Keep documentation of processing and tell people what is collected, by whom and why."
+            },
+            {
+              "front": "7. Security safeguards (ss 19-22)",
+              "back": "Protect integrity and confidentiality, control operators and notify compromises."
+            },
+            {
+              "front": "8. Data subject participation (ss 23-25)",
+              "back": "People may ask what is held about them and ask for corrections or deletion."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which POPIA condition contains section 19, the duty to secure personal information, and section 22, the duty to notify compromises?",
+          "options": [
+            "Openness",
+            "Security safeguards",
+            "Information quality",
+            "Data subject participation"
+          ],
+          "answer": 1,
+          "explanation": "Security safeguards is the seventh condition and covers sections 19 to 22: security measures, operators and notification of security compromises."
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Section 19: the safeguard cycle",
+          "caption": "POPIA expects appropriate, reasonable measures against loss, damage, unauthorised destruction and unlawful access or processing.",
+          "items": [
+            {
+              "label": "Identify risks",
+              "detail": "Find all reasonably foreseeable internal and external risks to the personal information you hold or control."
+            },
+            {
+              "label": "Build safeguards",
+              "detail": "Set up and maintain appropriate technical and organisational safeguards against those risks."
+            },
+            {
+              "label": "Verify",
+              "detail": "Check regularly that the safeguards actually work as intended."
+            },
+            {
+              "label": "Update",
+              "detail": "Keep improving them as new risks or weaknesses appear, guided by accepted security practice."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "May we use it at all? Grounds, minimality, purpose and retention",
+          "body": "Before security even comes up, POPIA asks whether processing is allowed:\n\n- **A valid ground (s 11):** consent; necessity for a contract with the person; a legal obligation (for example the bank's FIC Act customer due diligence); protecting the person's legitimate interest; a public law duty; or the legitimate interests of the bank or a third party. If the bank relies on consent, it must be able to prove it, and consent can be withdrawn.\n- **Objection:** people may object on reasonable grounds to processing based on legitimate interests, and may object to direct marketing.\n- **Minimality (s 10):** only information that is adequate, relevant and not excessive for the purpose.\n- **Purpose (s 13):** a specific, explicitly defined and lawful purpose, made known to the person.\n- **Retention (s 14):** keep records no longer than needed, unless the law, a contract, consent or a lawful need requires more; then destroy, delete or de-identify them so they cannot be reconstructed.\n- **Further use (s 15):** later uses must be compatible with the original purpose."
+        },
+        {
+          "type": "match",
+          "title": "Which condition is in play?",
+          "prompt": "Match each Marula Bank situation to the POPIA condition it mainly tests.",
+          "pairs": [
+            {
+              "left": "Using account-opening data to target a credit card campaign",
+              "right": "Further processing limitation: is the new use compatible with the original purpose?"
+            },
+            {
+              "left": "Asking new customers for their religion 'just in case'",
+              "right": "Processing limitation (minimality): it is not relevant or needed for a bank account"
+            },
+            {
+              "left": "Keeping closed-account files forever 'to be safe'",
+              "right": "Purpose specification (retention): keep only as long as needed or legally required"
+            },
+            {
+              "left": "A customer asks what information the bank holds about him",
+              "right": "Data subject participation: the right to access and ask for correction"
+            },
+            {
+              "left": "A spreadsheet of applicants is emailed to a personal address",
+              "right": "Security safeguards: integrity and confidentiality are compromised"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The archive company",
+          "setting": "Supplier review meeting, Rosebank. Thursday.",
+          "lines": [
+            {
+              "who": "lindiwe",
+              "text": "Next item: the document archiving firm in Midrand that scans and stores our loan files. Fatima, are we covered?",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatima",
+              "text": "The contract is from 2015. It says nothing about security measures or about telling us if files are accessed by someone who shouldn't see them.",
+              "mood": "worried"
+            },
+            {
+              "who": "johan",
+              "text": "And they have remote access to our document system. Under the cyber standard that makes their staff users too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatima",
+              "text": "Under POPIA they're our operator. The bank must have a written contract making sure they keep proper security, and they must tell us immediately if they suspect unauthorised access.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the operator gap",
+          "situation": "Marula's archiving firm processes thousands of loan files containing ID numbers, payslips and bank statements. Its contract has no security or breach clauses. Procurement says renegotiating will take months and suggests 'just trusting them' because they have never had a problem.",
+          "choices": [
+            {
+              "text": "Accept procurement's view; a clean history is enough evidence of good security.",
+              "outcome": "Not enough. POPIA requires a written contract under which the operator keeps the security measures in section 19, and the operator must tell the bank immediately of suspected unauthorised access. History is not a control.",
+              "score": 0
+            },
+            {
+              "text": "Prioritise a contract amendment with security and immediate breach-notice terms, assess the firm's controls now, and record the risk and interim measures until it is signed.",
+              "outcome": "Best answer. It closes the legal gap, gives the bank evidence of the operator's safeguards, and manages the risk transparently in the meantime, which also supports Joint Standard 2's third-party requirements.",
+              "score": 2
+            },
+            {
+              "text": "Stop sending files to the archive firm and keep everything in branch storerooms.",
+              "outcome": "Moving files to storerooms can create new risks and does not fix the existing contract. Halting without a plan is not a safeguard.",
+              "score": 0
+            },
+            {
+              "text": "Email the firm asking it to confirm in writing that it follows POPIA.",
+              "outcome": "A step in the right direction, but a general confirmation is not a contract setting the security measures and breach notice, and it does not test the controls.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Responsible party and operator: who does what",
+          "headers": [
+            "The bank (responsible party)",
+            "The operator"
+          ],
+          "items": [
+            {
+              "label": "Who decides",
+              "left": "Decides the purpose and means of processing",
+              "right": "Processes for the bank under a contract or mandate"
+            },
+            {
+              "label": "Authority",
+              "left": "Sets the instructions",
+              "right": "Acts only with the bank's knowledge or authorisation (s 20)"
+            },
+            {
+              "label": "Confidentiality",
+              "left": "Secures information under s 19",
+              "right": "Treats information as confidential (s 20)"
+            },
+            {
+              "label": "Security",
+              "left": "Must ensure by written contract that the operator keeps s 19 measures (s 21)",
+              "right": "Establishes and maintains those measures"
+            },
+            {
+              "label": "Suspected breach",
+              "left": "Notifies the Regulator and data subjects (s 22)",
+              "right": "Notifies the bank immediately (s 21)"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Special personal information or not?",
+          "prompt": "POPIA gives extra protection to special personal information (s 26). Sort these.",
+          "buckets": [
+            "Special personal information",
+            "Other personal information"
+          ],
+          "items": [
+            {
+              "text": "A customer's medical condition mentioned in a hardship application",
+              "bucket": 0
+            },
+            {
+              "text": "A fingerprint template used for biometric login",
+              "bucket": 0
+            },
+            {
+              "text": "Details of a criminal charge against a loan applicant",
+              "bucket": 0
+            },
+            {
+              "text": "A customer's religious beliefs",
+              "bucket": 0
+            },
+            {
+              "text": "A customer's bank account number",
+              "bucket": 1
+            },
+            {
+              "text": "A customer's email address and mobile number",
+              "bucket": 1
+            },
+            {
+              "text": "A customer's monthly salary",
+              "bucket": 1
+            },
+            {
+              "text": "A company client's registered address",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What is the most an administrative fine can be under section 109 of POPIA?",
+          "options": [
+            "R1 million",
+            "R5 million",
+            "R10 million",
+            "R50 million"
+          ],
+          "answer": 2,
+          "explanation": "Section 109 caps an administrative fine in an infringement notice at R10 million. Civil claims and criminal penalties are separate routes."
+        },
+        {
+          "type": "tip",
+          "title": "Three POPIA habits for every desk",
+          "body": "**Ask why** before you collect or share: is there a purpose and a valid ground? **Share the minimum**: send only the fields the task needs, through approved channels, never to personal email or apps. **Lock and dispose**: lock screens, encrypt devices, and use approved destruction so records cannot be put back together."
+        },
+        {
+          "type": "example",
+          "title": "Story case: the overshared spreadsheet",
+          "body": "*This is the quest's own fictional case.* A Marula credit analyst needed help from a colleague at the Durban hub with five problem loan files. To save time she emailed the whole month's applicant spreadsheet (2,300 rows with ID numbers, salaries and contact details) to the colleague's personal webmail because the bank's mail was slow.\n\n**What went wrong under POPIA:**\n- *Minimality and purpose:* five rows were needed; 2,300 were sent.\n- *Security safeguards:* information left the bank's controlled systems for an uncontrolled account.\n- *Accountability:* the bank cannot show who else may now see the data.\n\n**What Marula did:** Fatima's team treated it as a possible security compromise, worked with the colleague to delete the copies and secure the webmail account, assessed whether there were reasonable grounds to believe anyone unauthorised had accessed the data, and recorded the decision. It then added data loss prevention rules and a coaching session for the team."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "POPIA sets eight conditions for lawful processing; the bank, as responsible party, is accountable for all of them.",
+            "Processing needs a valid ground, a specific purpose, only relevant information and no longer retention than needed.",
+            "Section 19: identify risks, build safeguards, verify them regularly and keep them updated.",
+            "Operators need a written contract with security measures and must tell the bank immediately of suspected unauthorised access.",
+            "Special personal information gets extra protection; administrative fines can reach R10 million."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one task you do that involves customer information. What is its purpose, which fields do you really need, where does the information travel, and how is it destroyed when the task is done?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-cy-s3-q1",
+          "question": "Under POPIA, what is the bank when it decides why and how customer information is processed?",
+          "options": [
+            "The operator",
+            "The data subject",
+            "The responsible party",
+            "The information regulator"
+          ],
+          "answer": 2,
+          "explanation": "A responsible party decides the purpose of and means for processing. An operator processes for it under a contract or mandate.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s3-q2",
+          "question": "How many conditions for the lawful processing of personal information does section 4 of POPIA list?",
+          "options": [
+            "Five",
+            "Six",
+            "Eight",
+            "Ten"
+          ],
+          "answer": 2,
+          "explanation": "Section 4 lists eight conditions: accountability, processing limitation, purpose specification, further processing limitation, information quality, openness, security safeguards and data subject participation.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s3-q3",
+          "question": "Marketing wants to use income data collected at account opening to target customers for a new credit card. Which POPIA condition must be assessed first?",
+          "options": [
+            "Further processing limitation: is the new use compatible with the original purpose?",
+            "Openness: is the bank's PAIA manual up to date?",
+            "Information quality: is the income figure still accurate?",
+            "Data subject participation: has anyone asked for access?"
+          ],
+          "answer": 0,
+          "explanation": "Section 15 requires further processing to be compatible with the purpose of collection, taking into account factors such as the relationship between purposes and the consequences for the person.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q4",
+          "question": "Which of these is part of the section 19 duty to secure personal information?",
+          "options": [
+            "Publishing customers' details to prove transparency",
+            "Regularly verifying that safeguards are effectively implemented",
+            "Keeping every record permanently",
+            "Letting operators set their own security rules"
+          ],
+          "answer": 1,
+          "explanation": "Section 19 requires the responsible party to identify foreseeable risks, set up safeguards, regularly verify that they work and keep them updated.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q5",
+          "question": "A cloud provider processing Marula Bank's customer data suspects an intruder accessed it. Under POPIA, what must the provider do?",
+          "options": [
+            "Notify only the Information Regulator, not the bank",
+            "Wait until the investigation is complete",
+            "Notify the bank immediately",
+            "Notify the affected customers directly instead of the bank"
+          ],
+          "answer": 2,
+          "explanation": "Section 21(2) requires an operator to notify the responsible party immediately when there are reasonable grounds to believe information was accessed or acquired by an unauthorised person.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q6",
+          "question": "Which of these is special personal information under section 26 of POPIA?",
+          "options": [
+            "A customer's email address",
+            "A company's registered address",
+            "A customer's account balance",
+            "Biometric information such as a fingerprint template"
+          ],
+          "answer": 3,
+          "explanation": "Special personal information includes religious or philosophical beliefs, race or ethnic origin, trade union membership, political persuasion, health or sex life, biometric information and certain criminal behaviour information.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s3-q7",
+          "question": "A bank relies on a customer's consent to process information for an optional rewards programme. Who must prove the consent was given?",
+          "options": [
+            "The customer",
+            "The Information Regulator",
+            "The bank, as responsible party",
+            "The rewards partner only"
+          ],
+          "answer": 2,
+          "explanation": "Section 11(2) places the burden of proof for consent on the responsible party. The person may also withdraw consent at any time.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q8",
+          "question": "What does POPIA require when a record of personal information no longer needs to be kept?",
+          "options": [
+            "Move it to an archive indefinitely",
+            "Send it back to the Regulator",
+            "Keep it for marketing use",
+            "Destroy, delete or de-identify it so it cannot be reconstructed"
+          ],
+          "answer": 3,
+          "explanation": "Section 14 requires destruction, deletion or de-identification as soon as reasonably practicable once retention is no longer authorised, in a way that prevents reconstruction.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q9",
+          "question": "Who must be registered with the Information Regulator before taking up their POPIA duties?",
+          "options": [
+            "Every employee who handles customer data",
+            "The information officer",
+            "Every operator's staff member",
+            "Each data subject"
+          ],
+          "answer": 1,
+          "explanation": "Section 55(2) says information officers may take up their duties only after the responsible party has registered them with the Regulator.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s3-q10",
+          "question": "A customer sues the bank for damages after a POPIA breach. The bank argues it did not act intentionally or negligently. Under section 99, is that a complete answer?",
+          "options": [
+            "Yes: intent must always be proved",
+            "No: liability can arise whether or not there was intent or negligence",
+            "Yes: only the Regulator can sue",
+            "No: but only criminal courts may hear it"
+          ],
+          "answer": 1,
+          "explanation": "Section 99 allows a civil action for damages whether or not there is intent or negligence. The Act lists specific defences, such as vis major or that compliance was not reasonably practicable.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Incidents: Detect, Respond and Notify",
+      "stage": "The 24-Hour Window",
+      "summary": "Detecting and responding to cyber incidents under Joint Standard 2, deciding when an incident is material, notifying the PA under Joint Notice 2 of 2026, and notifying the Information Regulator and customers under POPIA section 22.",
+      "minutes": 50,
+      "objectives": [
+        "Distinguish cyber events, cyber incidents and material incidents as Joint Standard 2 defines them",
+        "Describe the incident response plan the standard requires and your own escalation role",
+        "Apply the Joint Notice 2 of 2026 template timelines and filing route for banks",
+        "Apply POPIA sections 21 and 22 on operator notice, notification to the Regulator and customers, and allowed delay"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "02:10 on a Friday",
+          "setting": "Security operations centre, Midrand. Early Friday morning, with a video link to the Durban hub.",
+          "lines": [
+            {
+              "who": "johan",
+              "text": "We have encryption spreading on two file servers at the Durban hub. One holds scanned loan applications. I've isolated the network segment.",
+              "mood": "worried"
+            },
+            {
+              "who": "lindiwe",
+              "text": "Good. Start the incident response plan. First questions: what's affected, are customer services down, and has anything left the building?",
+              "mood": "thinking"
+            },
+            {
+              "who": "johan",
+              "text": "Branch systems in KwaZulu-Natal can't open loan files. Core banking is fine so far. We see a large outbound transfer from one server last night.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatima",
+              "text": "If loan files went out, we may have personal information in the hands of criminals. That's POPIA section 22 territory.",
+              "mood": "worried"
+            },
+            {
+              "who": "lindiwe",
+              "text": "And if we classify this as material, the Joint Notice clock starts for the Prudential Authority. Two regimes, one incident. Welcome to stage four.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "From event to material incident",
+          "scenes": [
+            {
+              "icon": "👁️",
+              "heading": "Events",
+              "narration": "IT systems produce countless events. Joint Standard 2 expects banks to monitor them, through a security operations centre or managed security service, and to escalate anything suspicious quickly."
+            },
+            {
+              "icon": "⚠️",
+              "heading": "Incidents",
+              "narration": "An event becomes a cyber incident when it threatens the security of a system or its information, or breaks security or acceptable use policy."
+            },
+            {
+              "icon": "🔥",
+              "heading": "Material incidents",
+              "narration": "An incident is material when it has, or is likely to have, a severe and widespread impact on the bank's operations, its customers, or the wider financial system and economy."
+            },
+            {
+              "icon": "📋",
+              "heading": "The plan",
+              "narration": "The bank must have a tested incident response and management plan that isolates and neutralises the incident, resumes services securely, investigates root causes and feeds lessons back."
+            },
+            {
+              "icon": "📨",
+              "heading": "Classification triggers notice",
+              "narration": "Once the bank classifies a cyber incident or information security compromise as material, it must notify the responsible authority in the form the authorities set."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The incident response path",
+          "items": [
+            {
+              "label": "Detect and escalate",
+              "detail": "Monitoring or a staff report raises the alarm; escalate to the incident team at once."
+            },
+            {
+              "label": "Triage and classify",
+              "detail": "Assess scope and impact against the bank's materiality criteria."
+            },
+            {
+              "label": "Contain",
+              "detail": "Isolate affected systems and accounts to stop the spread."
+            },
+            {
+              "label": "Recover",
+              "detail": "Restore from secure backups within recovery objectives; keep customers informed."
+            },
+            {
+              "label": "Notify",
+              "detail": "Regulators, the Information Regulator and customers, as each rule requires."
+            },
+            {
+              "label": "Learn",
+              "detail": "Find the control gaps, fix them and update the plan and training."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Joint Standard 2, what makes an incident 'material'?",
+          "options": [
+            "Any incident that involves a virus",
+            "A severe and widespread impact, actual or likely, on operations, customers or the wider financial system",
+            "Any incident lasting longer than one hour",
+            "Any incident reported in the media"
+          ],
+          "answer": 1,
+          "explanation": "The standard defines a material incident by its actual or likely severe and widespread impact on the institution's operations, its customers, or the broader financial system and economy."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Joint Notice 2 of 2026: the notification template clock",
+          "caption": "Timelines as set out in the instructions of the Reporting of Material IT and Cyber Incident Template (Annexure A). Check the current template before filing.",
+          "items": [
+            {
+              "label": "Immediate notification",
+              "value": "24 hours",
+              "detail": "Within 24 hours after classifying the incident as material: contact details and incident details, plus cyber details for a cyber incident."
+            },
+            {
+              "label": "Subsequent update",
+              "value": "14 days",
+              "detail": "Within 14 calendar days from the notification: the impact of the incident."
+            },
+            {
+              "label": "Full incident report",
+              "value": "Agreed",
+              "detail": "On timelines agreed with the authority: all parts of the template and the final investigation report."
+            },
+            {
+              "label": "In force",
+              "value": "1 Sep 2026",
+              "detail": "The determination of the template took effect on this date."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What Joint Notice 2 of 2026 changed",
+          "body": "The PA and FSCA signed **Joint Notice 2 of 2026** on 31 August 2026. It sets the form, manner and period for notifying **material IT and cyber incidents** under paragraph 15.1 of Joint Standard 1 and paragraph 9.1 of Joint Standard 2, and took effect on **1 September 2026**.\n\n- **Form:** the 'Reporting of Material IT and Cyber Incident Template', attached as Annexure A.\n- **Manner for banks:** banks, branches of foreign banks, controlling companies and mutual banks complete and submit the template on the PA's secure **Umoja portal** as a notification. Other institutions, such as fund managers, use the FSCA's Joint Standards Submission Portal.\n- **Period:** set out on the template's cover page (see the clock above).\n\nThe template asks for much more than 'what broke': detection time, attack type (phishing, vishing, ransomware and others), whether customer data was leaked, how customers were told and supported, whether the incident went to the board, whether other authorities such as the **Information Regulator** were told, root cause and lessons learnt. Good records from minute one make it possible to answer."
+        },
+        {
+          "type": "sort",
+          "title": "Which notification route?",
+          "prompt": "For each fact in the Durban incident, which route does it mainly trigger?",
+          "buckets": [
+            "PA notice (Joint Standards)",
+            "POPIA s 22 notice",
+            "Both routes"
+          ],
+          "items": [
+            {
+              "text": "Branch loan systems across a province are down for days, with severe impact",
+              "bucket": 0
+            },
+            {
+              "text": "Reasonable grounds to believe an attacker copied customer ID numbers and payslips",
+              "bucket": 1
+            },
+            {
+              "text": "A material ransomware incident in which customer files were also stolen",
+              "bucket": 2
+            },
+            {
+              "text": "Core banking outage classified as material, with no personal information touched",
+              "bucket": 0
+            },
+            {
+              "text": "A small, contained leak of 40 customers' details by email to a stranger",
+              "bucket": 1
+            },
+            {
+              "text": "A widespread system failure after a faulty update, classified as material",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Who do we tell, and when?",
+          "setting": "Crisis room, Rosebank. Friday, 09:30.",
+          "lines": [
+            {
+              "who": "zanele",
+              "text": "I've been told the board must hear about this. What are we telling the regulators, and when?",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "We classified it as material at 08:00 given the regional outage. The Umoja notification is due within 24 hours of that, and an impact update within 14 days.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatima",
+              "text": "Forensics confirms loan files were copied. So there are reasonable grounds to believe personal information was acquired by an unauthorised person. POPIA says we must notify the Regulator and the customers as soon as reasonably possible.",
+              "mood": "worried"
+            },
+            {
+              "who": "johan",
+              "text": "The police want a few days before we tell customers. They're tracing the attackers.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatima",
+              "text": "POPIA allows a delay to customers only if a public body investigating offences, or the Regulator, decides notice would impede a criminal investigation. Let's get that in writing.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The notification call",
+          "situation": "It is Friday morning. The Durban incident has been classified as material. Forensics shows that files with about 3,000 customers' ID numbers and payslips were copied out. The marketing head says: 'Let's wait until we know everything before telling anyone. We don't want headlines.'",
+          "choices": [
+            {
+              "text": "Agree to wait until the full investigation ends, then report once with all the facts.",
+              "outcome": "Wrong on both counts. The PA notification is due within 24 hours of classification, with updates later; and POPIA requires notice as soon as reasonably possible after discovery. Waiting for perfect facts breaks both.",
+              "score": 0
+            },
+            {
+              "text": "File the PA notification on Umoja within 24 hours of classification, notify the Information Regulator and affected customers as soon as reasonably possible, and record any written law enforcement request to delay customer notice.",
+              "outcome": "Best answer. Each regime is met on its own terms. Section 22 lets the bank take account of law enforcement needs and scoping, and allows delaying customer notice only when a public body or the Regulator decides it would impede a criminal investigation.",
+              "score": 2
+            },
+            {
+              "text": "Notify the Information Regulator only; the PA does not need to know about data theft.",
+              "outcome": "Incomplete. The incident is classified as material, so Joint Standard 2 and the Joint Notice require notice to the PA as well. The template even asks whether other authorities were told.",
+              "score": 0
+            },
+            {
+              "text": "Notify the PA now and tell customers only if the stolen data appears online.",
+              "outcome": "Half right. The PA notice is correct, but POPIA's trigger is reasonable grounds to believe personal information was accessed or acquired, not proof that it was published.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two notification regimes side by side",
+          "headers": [
+            "Prudential notice",
+            "Privacy notice"
+          ],
+          "items": [
+            {
+              "label": "Rule",
+              "left": "Joint Standard 2 para 9.1 and Joint Notice 2 of 2026",
+              "right": "POPIA section 22"
+            },
+            {
+              "label": "Trigger",
+              "left": "Bank classifies a cyber incident or compromise as material",
+              "right": "Reasonable grounds to believe personal information was accessed or acquired without authority"
+            },
+            {
+              "label": "Who is told",
+              "left": "The responsible authority (for banks, the PA via Umoja)",
+              "right": "The Information Regulator and the affected data subjects"
+            },
+            {
+              "label": "When",
+              "left": "Within 24 hours of classification, update within 14 days, then full report",
+              "right": "As soon as reasonably possible after discovery"
+            },
+            {
+              "label": "Allowed delay",
+              "left": "None stated beyond the template timelines",
+              "right": "Customer notice only if law enforcement or the Regulator says it would impede an investigation"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Section 22 in practice",
+          "cards": [
+            {
+              "front": "How must customers be told?",
+              "back": "In writing: by post to the last known address, by email, by a prominent notice on the bank's website, through the news media, or as the Regulator directs."
+            },
+            {
+              "front": "What must the notice contain?",
+              "back": "Possible consequences, what the bank has done or will do, what the customer can do to protect themselves, and the identity of the unauthorised person if known."
+            },
+            {
+              "front": "What if the customer can't be identified?",
+              "back": "The duty to notify the data subject applies unless the person's identity cannot be established; the Regulator must still be told."
+            },
+            {
+              "front": "Can the Regulator require publicity?",
+              "back": "Yes. If it believes publicity would protect affected people, it may direct the bank to publicise the compromise."
+            },
+            {
+              "front": "What may the bank take into account on timing?",
+              "back": "Legitimate law enforcement needs and the steps reasonably needed to find the scope and restore system integrity."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "An operator tells Marula Bank that it suspects someone accessed the bank's customer data. Who must notify the Information Regulator and the affected customers under POPIA?",
+          "options": [
+            "The operator, because it held the data",
+            "The bank, as responsible party",
+            "The police",
+            "Nobody until the attacker is identified"
+          ],
+          "answer": 1,
+          "explanation": "The operator must tell the bank immediately (s 21). The bank, as responsible party, must notify the Regulator and the data subjects under section 22."
+        },
+        {
+          "type": "example",
+          "title": "Real case: how the Justice department handled its 2021 ransomware attack",
+          "body": "After ransomware struck on 6 September 2021, the Department of Justice and Constitutional Development published updates on gov.za. Its first statement said it had **activated its business continuity plan**, used manual recording so courts could keep sitting, issued documents to bereaved families by hand, and was working with state agencies. At that point it said no data compromise had been detected.\n\nBy 10 October 2021 the picture had moved on. The department reported that the malware had been contained and services were being restored step by step. After a high-level assessment of a **possible leak of personal information**, and in line with POPIA, it **issued a notice on its website to its data subjects**. It also said it had upgraded its ICT security infrastructure and tightened electronic and physical access control.\n\n**Lessons:** a first assessment can change; keep re-assessing whether personal information was reached. A website notice is one of the channels section 22 allows. And the fixes it named (security tooling and access control) are exactly the controls Joint Standard 2 expects before an attack.\n\n*Sources: department statements on gov.za, 20 September and 10 October 2021.*"
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Joint Standard 2 requires monitoring, escalation and a tested incident response plan that isolates, recovers, investigates and learns.",
+            "A material incident has, or is likely to have, a severe and widespread impact on operations, customers or the financial system.",
+            "From 1 September 2026 banks notify material IT and cyber incidents on the Umoja portal: within 24 hours of classification, an update within 14 days, then a full report.",
+            "POPIA s 22: notify the Information Regulator and affected people as soon as reasonably possible when there are reasonable grounds to believe information was accessed or acquired.",
+            "One incident can trigger both regimes. Keep records from the first minute."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you noticed something odd on your screen tonight, who exactly would you call, and what three facts would you write down first so the incident team could classify it quickly?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-cy-s4-q1",
+          "question": "From 1 September 2026, where does a South African bank submit the template for a material IT or cyber incident?",
+          "options": [
+            "By email to the Information Regulator",
+            "On the FSCA's complaints portal",
+            "Through the Financial Intelligence Centre's reporting system",
+            "On the Prudential Authority's Umoja portal"
+          ],
+          "answer": 3,
+          "explanation": "Joint Notice 2 of 2026 requires banks, branches, controlling companies and mutual banks to complete and submit the template on the PA's Umoja portal.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s4-q2",
+          "question": "Under the template instructions, when is the immediate notification of a material cyber incident due?",
+          "options": [
+            "Within 24 hours after the incident is classified as material",
+            "Within 72 hours after the incident started",
+            "Within 14 calendar days after detection",
+            "Only after the final investigation report"
+          ],
+          "answer": 0,
+          "explanation": "The template's instructions set immediate notification within 24 hours following classification as material. The impact update follows within 14 calendar days of notification.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q3",
+          "question": "What is the trigger for a POPIA section 22 notification?",
+          "options": [
+            "Proof that stolen data has been published online",
+            "Reasonable grounds to believe personal information was accessed or acquired by an unauthorised person",
+            "A system outage of more than one day",
+            "A complaint from at least ten customers"
+          ],
+          "answer": 1,
+          "explanation": "Section 22(1) is triggered by reasonable grounds to believe personal information has been accessed or acquired by an unauthorised person.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q4",
+          "question": "Which of these is an allowed channel for notifying a customer under section 22(4)?",
+          "options": [
+            "A verbal message to the customer's neighbour",
+            "A post on a staff WhatsApp group",
+            "An entry in the bank's internal risk register",
+            "A prominent notice on the bank's website"
+          ],
+          "answer": 3,
+          "explanation": "Section 22(4) allows written notice by post, email, a prominent website notice, the news media or as the Regulator directs.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s4-q5",
+          "question": "When may a bank delay notifying affected customers of a compromise under POPIA?",
+          "options": [
+            "Whenever the bank fears media coverage",
+            "When a public body investigating offences or the Regulator decides notice would impede a criminal investigation",
+            "Until the bank's share price recovers",
+            "Until the end of the financial year"
+          ],
+          "answer": 1,
+          "explanation": "Section 22(3) allows delaying notice to data subjects only if such a public body or the Regulator determines that notification will impede a criminal investigation.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q6",
+          "question": "What must the subsequent update under the template, due within 14 calendar days of notification, mainly cover?",
+          "options": [
+            "The bank's annual financial statements",
+            "The impact of the incident",
+            "The names of all staff on duty",
+            "The bank's marketing plan for affected customers"
+          ],
+          "answer": 1,
+          "explanation": "The template instructions link the subsequent update to the tab on the impact of the incident; the full report later includes all tabs and the final investigation report.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q7",
+          "question": "Which element must Joint Standard 2's incident response and management plan include?",
+          "options": [
+            "A promise never to inform customers",
+            "A rule that only the CEO may respond",
+            "A ban on involving third parties",
+            "A process to investigate the control gaps that led to the compromise"
+          ],
+          "answer": 3,
+          "explanation": "The plan must isolate and neutralise incidents, resume services securely, investigate the control deficiencies and full impact, feed in lessons learnt and be tested.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q8",
+          "question": "A faulty software update causes a nationwide card outage that the bank classifies as material. No personal information is involved. Which notification applies?",
+          "options": [
+            "Notification to the PA under the Joint Standards template",
+            "Notification to the Information Regulator under POPIA s 22",
+            "No notification, because there was no attack",
+            "Notification to customers only"
+          ],
+          "answer": 0,
+          "explanation": "Joint Standard 1 paragraph 15.1 covers material IT incidents such as failures and malfunctions, and Joint Notice 2 of 2026 applies the template. POPIA s 22 needs unauthorised access to personal information.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-cy-s4-q9",
+          "question": "What must a POPIA section 22 notice to a customer include?",
+          "options": [
+            "The bank's internal incident ticket number only",
+            "A waiver of the customer's right to claim damages",
+            "The names of the staff involved",
+            "A recommendation on steps the customer can take to reduce the possible harm"
+          ],
+          "answer": 3,
+          "explanation": "Section 22(5) requires the possible consequences, the bank's measures, recommendations for the customer's own protective steps, and the attacker's identity if known.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s4-q10",
+          "question": "Which Joint Standard 2 requirement deals with keeping customers informed during a cyber attack?",
+          "options": [
+            "A clear communication strategy for affected customers, including the recourse available",
+            "A rule that customers must sign a non-disclosure agreement",
+            "A ban on any customer communication until the attack ends",
+            "A requirement to publish all forensic reports"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 7.4.1 requires a clear communication strategy for financial customers affected by cyber attacks, including details of any recourse available.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Operational Resilience, Testing and Assessment Readiness",
+      "stage": "The Resilience Summit",
+      "summary": "PA Directive 4 of 2023 and the Basel resilience principles, how Joint Standards 1 and 2 and POPIA fit together, Joint Standard 2's testing and remediation cycles, roles across the bank, and the evidence a supervisor expects to see.",
+      "minutes": 50,
+      "objectives": [
+        "Explain what Directive 4 of 2023 requires and the seven categories of the Basel resilience principles",
+        "Show how Directive 4, Joint Standards 1 and 2 and POPIA fit together",
+        "Apply Joint Standard 2's testing, simulation and remediation requirements and review cycles",
+        "Prepare evidence of training, testing and board oversight for a supervisory review"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Four weeks to the review",
+          "setting": "Board room, Marula Bank head office, Rosebank. A Thursday in late November.",
+          "lines": [
+            {
+              "who": "zanele",
+              "text": "The PA review is in four weeks. They want our cyber programme, our training evidence and how we meet the operational resilience directive. Where do we stand?",
+              "mood": "thinking"
+            },
+            {
+              "who": "lindiwe",
+              "text": "The Durban incident hurt, but it showed our plan works. Systems recovered within our objectives and we filed on Umoja on time.",
+              "mood": "neutral"
+            },
+            {
+              "who": "johan",
+              "text": "Our last simulation exercise was a table-top. The standard wants scenario exercises that include an adversarial attack and defence. We haven't done that yet.",
+              "mood": "worried"
+            },
+            {
+              "who": "kagiso",
+              "text": "And the contact centre partner's agents finished the yearly refresher. I have the completion records.",
+              "mood": "happy"
+            },
+            {
+              "who": "fatima",
+              "text": "We should also show the board how POPIA, the Joint Standards and the resilience directive fit together. One picture, not four binders.",
+              "mood": "thinking"
+            },
+            {
+              "who": "zanele",
+              "text": "Then that's stage five: the Resilience Summit. Let's get ready to show, not just tell.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Directive 4 of 2023 on operational resilience",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "The source",
+              "narration": "In March 2021 the Basel Committee published principles for operational resilience. The Prudential Authority adopted them for South African banks through a directive under the Banks Act."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Replacing the old directive",
+              "narration": "Directive 4 of 2023, dated 1 June 2023, replaced Directive 10 of 2021 and moved the compliance date to 31 December 2024 to align with other countries."
+            },
+            {
+              "icon": "🧩",
+              "heading": "Part of risk management",
+              "narration": "Operational resilience must be built into the bank's enterprise risk management and board-approved policies, as the Banks Act regulations on governance require. It applies on a consolidated, group basis."
+            },
+            {
+              "icon": "📏",
+              "heading": "Risk-based and harmonised",
+              "narration": "Banks must assess their policies and practices against the principles, apply them in line with risk appetite, run business continuity and third-party management consistently, and align with critical functions in recovery and resolution plans."
+            },
+            {
+              "icon": "💰",
+              "heading": "Teeth",
+              "narration": "If the PA judges a bank's resilience policies inadequate, the regulations let it require the bank to hold extra capital or to align its policies with its risk exposure."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "The seven categories of resilience principles",
+          "cards": [
+            {
+              "front": "Governance",
+              "back": "The board approves and oversees the resilience approach, including tolerance for disruption."
+            },
+            {
+              "front": "Operational risk management",
+              "back": "Identify and manage operational risks and keep controls effective."
+            },
+            {
+              "front": "Business continuity planning and testing",
+              "back": "Plans that keep critical operations running through severe but plausible disruption, tested regularly."
+            },
+            {
+              "front": "Mapping interconnections",
+              "back": "Know the people, technology, processes, information and facilities that critical operations depend on."
+            },
+            {
+              "front": "Third-party dependency management",
+              "back": "Manage the risk from service providers and other third parties that critical operations rely on."
+            },
+            {
+              "front": "Incident management",
+              "back": "Find, record, respond to, recover from and learn from incidents."
+            },
+            {
+              "front": "Resilient ICT including cyber security",
+              "back": "Technology and cyber controls that protect and restore critical operations."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "By what date did Directive 4 of 2023 require banks to comply with the operational resilience requirements?",
+          "options": [
+            "30 June 2023",
+            "31 December 2024",
+            "1 June 2025",
+            "1 September 2026"
+          ],
+          "answer": 1,
+          "explanation": "Directive 4 of 2023 replaced Directive 10 of 2021, which had effectively set 30 June 2023, and required compliance on or before 31 December 2024."
+        },
+        {
+          "type": "concept",
+          "title": "How the rulebook fits together",
+          "body": "Four instruments, one aim: a bank that keeps serving customers safely through disruption.\n\n- **Directive 4 of 2023 (PA, Banks Act):** the umbrella. Operational resilience across governance, risk, continuity, mapping, third parties, incidents and ICT.\n- **Joint Standard 1 of 2023 (PA and FSCA):** IT governance and risk management. In general terms: a board-approved IT strategy and IT risk framework, controlled IT operations and projects, protection of confidential information, IT resilience and continuity, IT assurance and notice of material IT incidents. It also expects IT-related training for people with access to IT systems.\n- **Joint Standard 2 of 2024 (PA and FSCA):** the cyber layer: governance, controls, awareness training, testing, incident response and notice of material cyber incidents.\n- **POPIA (Information Regulator):** the privacy layer: lawful processing, security safeguards and breach notification for personal information.\n\nOne strong control often serves several rules at once, but each rule must be evidenced on its own terms."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "The Joint Standard 2 review clock",
+          "caption": "Minimum cycles stated in Joint Standard 2 of 2024. The standard expects more frequent action where risk requires it.",
+          "items": [
+            {
+              "label": "Cyber strategy review",
+              "value": "1 year",
+              "detail": "Reviewed regularly and at least yearly for threats, resources, gaps and lessons."
+            },
+            {
+              "label": "Independent framework review",
+              "value": "1 year",
+              "detail": "Adequacy and effectiveness checked at least yearly by audit or a control function."
+            },
+            {
+              "label": "User refresher training",
+              "value": "1 year",
+              "detail": "Every user refreshed at least yearly, with new content added regularly."
+            },
+            {
+              "label": "Internet-facing pen tests",
+              "value": "1 year",
+              "detail": "At every major change, and at least yearly if there is none."
+            },
+            {
+              "label": "Asset inventory review",
+              "value": "2 years",
+              "detail": "Updated when things change and reviewed at least every two years."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Which instrument mainly says it?",
+          "prompt": "Sort each requirement into the instrument that mainly carries it.",
+          "buckets": [
+            "Directive 4 of 2023",
+            "Joint Standard 2 of 2024",
+            "POPIA"
+          ],
+          "items": [
+            {
+              "text": "Assess policies against the Basel operational resilience principles",
+              "bucket": 0
+            },
+            {
+              "text": "Align resilience with critical functions in recovery and resolution plans",
+              "bucket": 0
+            },
+            {
+              "text": "Run scenario-based simulation exercises including an adversarial attack and defence",
+              "bucket": 1
+            },
+            {
+              "text": "Report security control deficiencies that cannot be fixed in time to the governing body",
+              "bucket": 1
+            },
+            {
+              "text": "Register the information officer with the Regulator",
+              "bucket": 2
+            },
+            {
+              "text": "Notify affected people of a personal information compromise",
+              "bucket": 2
+            },
+            {
+              "text": "Train the governing body on technology and cyber risk",
+              "bucket": 1
+            },
+            {
+              "text": "Apply the principles on a consolidated basis across the group",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "When the systems went dark at the ports",
+          "setting": "Team lunch, Rosebank canteen.",
+          "lines": [
+            {
+              "who": "johan",
+              "text": "Everyone talks about banks, but my favourite resilience lesson is from Transnet in 2021. Their port systems went down after a security breach.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kagiso",
+              "text": "I remember the queues of trucks. What saved them?",
+              "mood": "neutral"
+            },
+            {
+              "who": "johan",
+              "text": "Manual processes. Bulk and automotive cargo switched to manual straight away, and they brought the container system back in about a week. They also set up a daily line to their big customers.",
+              "mood": "happy"
+            },
+            {
+              "who": "lindiwe",
+              "text": "That's operational resilience in a sentence: know your critical operations, have a workaround, talk to your customers, recover in a planned order.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Transnet's port systems, July 2021",
+          "body": "On the morning of 22 July 2021 Transnet, the state-owned port and rail operator, suffered an IT security breach that disrupted its port systems. Government's statement on gov.za a week later reported:\n\n- **Manual fallback:** bulk, break-bulk and automotive operations that used the general cargo system switched to manual processes immediately, limiting disruption. Rail kept running to plan.\n- **Prioritised recovery:** the main container terminal operating system was fully restored, with remaining systems brought back in stages to reduce further risk.\n- **Customer engagement:** the minister and Transnet set up a platform for regular meetings with affected customers' senior representatives.\n- **Data:** the preliminary assessment indicated that Transnet and customer data had not been compromised, with investigations under way.\n\n**Lessons for a bank under Directive 4 and Joint Standard 2:** map critical operations and their dependencies, pre-plan manual workarounds, restore in a planned order, and communicate with customers throughout.\n\n*Source: Ministry of Public Enterprises statement on gov.za, 29 July 2021.*"
+        },
+        {
+          "type": "scenario",
+          "title": "Skipping the simulation",
+          "situation": "The board's IT and risk committee is asked to approve this year's cyber testing plan. To save money, the COO proposes dropping the planned scenario-based simulation exercise with an attack-and-defence component, arguing that 'we just had a real incident in Durban, so we've been tested'.",
+          "choices": [
+            {
+              "text": "Approve the COO's proposal; a real incident is the best test.",
+              "outcome": "A real incident gives lessons, but Joint Standard 2 requires regular scenario-based simulation exercises, including an adversarial attack and defence exercise, designed from relevant threat intelligence. One incident does not replace that.",
+              "score": 0
+            },
+            {
+              "text": "Keep the exercise, design it from current threat intelligence and the Durban lessons, and track any findings through remediation with timelines reported to the committee.",
+              "outcome": "Best answer. It meets the standard's simulation requirement, uses the real incident to sharpen the scenario, and feeds results into the remediation process the board must oversee.",
+              "score": 2
+            },
+            {
+              "text": "Replace it with an extra penetration test of the website.",
+              "outcome": "Penetration testing is also required, but it checks specific systems. It does not test response, recovery and communication plans the way a simulation does.",
+              "score": 1
+            },
+            {
+              "text": "Postpone the decision until after the PA review.",
+              "outcome": "Delay leaves a known gap in front of the supervisor and does not show the board exercising oversight of cyber testing.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Getting ready for the PA review",
+          "prompt": "Put Marula's readiness steps in a sensible order.",
+          "steps": [
+            "Confirm the critical operations, their dependencies and tolerances for disruption",
+            "Check the cyber strategy, framework and policies are approved and within their review dates",
+            "Gather training evidence: user refreshers, new-content sessions, board training and the programme review",
+            "Test: penetration tests, simulation exercise and backup restoration",
+            "Track findings in the remediation process with severity and timelines",
+            "Report the overall position and open gaps to the board committee"
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who owns what at Marula Bank",
+          "prompt": "Match each role to its main responsibility in this quest.",
+          "pairs": [
+            {
+              "left": "Board (governing body)",
+              "right": "Ultimately responsible; approves cyber strategy and framework; is trained on cyber risk"
+            },
+            {
+              "left": "CISO and cyber function",
+              "right": "Runs the cyber framework with authority, resources and access to the board"
+            },
+            {
+              "left": "Information officer",
+              "right": "Encourages and ensures POPIA compliance and works with the Information Regulator"
+            },
+            {
+              "left": "Every user",
+              "right": "Completes training, follows access and data rules, reports lures and incidents promptly"
+            },
+            {
+              "left": "Third-party manager",
+              "right": "Builds security and breach-notice terms into contracts and checks providers' controls"
+            },
+            {
+              "left": "Internal audit",
+              "right": "Independently reviews the cyber framework at least yearly"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Prioritising what to protect and recover first",
+          "caption": "Joint Standard 2 asks banks to classify processes and assets by criticality and sensitivity and to use that to prioritise protection, detection, response and recovery.",
+          "axes": {
+            "x": "Sensitivity of information",
+            "y": "Criticality to business"
+          },
+          "items": [
+            {
+              "label": "Protect and rehearse",
+              "detail": "High criticality, high sensitivity: core banking, payments, customer data stores."
+            },
+            {
+              "label": "Recover fast",
+              "detail": "High criticality, lower sensitivity: ATM availability, branch teller and queue systems."
+            },
+            {
+              "label": "Lock down",
+              "detail": "Lower criticality, high sensitivity: HR files, archived loan scans."
+            },
+            {
+              "label": "Standard care",
+              "detail": "Lower criticality, lower sensitivity: intranet news, cafeteria menus."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Joint Standard 2, what must happen when testing finds security control deficiencies that cannot be fixed in a timely way?",
+          "options": [
+            "They must be escalated and reported to the governing body",
+            "They can be closed if the vendor disagrees",
+            "They must be reported only to the Information Regulator",
+            "They must be hidden until the next audit"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 7.7.1 requires the bank to escalate and report to the governing body any testing results that identify deficiencies that cannot be remediated in time, and to follow a remediation plan with timelines."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "Directive 4 of 2023 made the Basel operational resilience principles binding on banks, with compliance due by 31 December 2024.",
+            "The seven categories run from governance to resilient ICT including cyber security; the PA can require extra capital if resilience is inadequate.",
+            "Joint Standard 2's minimum cycles: yearly strategy review, independent framework review, refreshers and internet-facing pen tests; asset inventory every two years.",
+            "Simulation exercises must include an adversarial attack and defence; unresolved deficiencies go to the board.",
+            "Readiness means evidence: approvals, training records, test results, remediation tracking and board reporting."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If your part of the bank lost its main system for a week, what would your manual workaround be, who depends on you, and who would you need to keep informed?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-cy-s5-q1",
+          "question": "Which international document does Directive 4 of 2023 require South African banks to implement?",
+          "options": [
+            "The FATF Recommendations",
+            "ISO 27001 certification",
+            "The EU's General Data Protection Regulation",
+            "The Basel Committee's principles for operational resilience (March 2021)"
+          ],
+          "answer": 3,
+          "explanation": "Directive 4 of 2023 directs banks to assess and implement the principles in the BCBS paper on operational resilience published in March 2021.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s5-q2",
+          "question": "Which directive did Directive 4 of 2023 replace?",
+          "options": [
+            "Directive 1 of 2026",
+            "Directive 10 of 2021",
+            "Directive 2 of 2019",
+            "Joint Standard 1 of 2023"
+          ],
+          "answer": 1,
+          "explanation": "Directive 4 of 2023 states that it replaces Directive 10 of 2021 and extends the compliance date.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s5-q3",
+          "question": "If the PA finds a bank's operational resilience policies inadequate, what may it require under the Banks Act regulations as described in Directive 4?",
+          "options": [
+            "Immediate closure of all branches",
+            "Additional capital, or alignment of policies with the bank's risk exposure",
+            "A criminal prosecution of the board",
+            "A transfer of the licence to the FSCA"
+          ],
+          "answer": 1,
+          "explanation": "The directive notes that regulation 38(4) lets the PA require extra capital or require the bank to align its resilience policies with its risk exposure.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s5-q4",
+          "question": "Under Joint Standard 2, when must penetration testing be done on systems directly accessible from the internet?",
+          "options": [
+            "Whenever they undergo major changes, and at least yearly if there are none",
+            "Only once, when the system is first launched",
+            "Every five years",
+            "Only after a material incident"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 7.7.3 requires penetration testing of internet-facing systems whenever they undergo major changes or updates, and at least annually if no major changes are made.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s5-q5",
+          "question": "What must Joint Standard 2's scenario-based simulation exercises include?",
+          "options": [
+            "A fire drill only",
+            "An adversarial attack and defence exercise",
+            "A review of the marketing budget",
+            "A customer satisfaction survey"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 7.7.4 requires regular scenario-based simulation exercises that include, but are not limited to, an adversarial attack and defence simulation, designed from relevant threat intelligence.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s5-q6",
+          "question": "Which of the seven Basel resilience categories most directly covers a bank's reliance on its cloud provider?",
+          "options": [
+            "Third-party dependency management",
+            "Governance",
+            "Information quality",
+            "Data subject participation"
+          ],
+          "answer": 0,
+          "explanation": "Third-party dependency management covers risks from service providers that critical operations depend on. Information quality and data subject participation are POPIA conditions.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s5-q7",
+          "question": "In the 2021 Transnet case reported on gov.za, what limited disruption for bulk and automotive cargo?",
+          "options": [
+            "An immediate switch to manual processes",
+            "Paying the attackers",
+            "Closing the ports for a month",
+            "Moving cargo to another country's ports"
+          ],
+          "answer": 0,
+          "explanation": "Government's statement said bulk, break-bulk and automotive operations switched immediately to manual processes, which resulted in minimal disruption.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-cy-s5-q8",
+          "question": "Under Joint Standard 2, what must the bank do with issues found in cybersecurity testing?",
+          "options": [
+            "Delete them once the test report is filed",
+            "Send them to customers for comment",
+            "Fix them only if the vendor agrees",
+            "Track them in a remediation process with severity, priority and timeframes"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 7.7.6 requires a comprehensive remediation process including severity classification, risk-based prioritisation, timeframes by severity and tracking of all issues.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-cy-s5-q9",
+          "question": "Directive 4 of 2023 asks banks to harmonise their resilience approach with which other planning?",
+          "options": [
+            "The critical functions and shared services in recovery and resolution plans",
+            "The bank's staff social calendar",
+            "Its marketing campaign plans",
+            "The Information Regulator's annual plan"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 2.1.5 asks banks to consider whether their resilience approach is harmonised with the actions, mappings and critical functions in their recovery and resolution plans.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-cy-s5-q10",
+          "question": "Which statement best describes how Joint Standard 1 of 2023 relates to Joint Standard 2 of 2024?",
+          "options": [
+            "Joint Standard 1 sets IT governance and risk rules; Joint Standard 2 adds specific cyber requirements",
+            "Joint Standard 1 applies only to insurers",
+            "Joint Standard 2 repealed Joint Standard 1",
+            "They are voluntary industry guidelines"
+          ],
+          "answer": 0,
+          "explanation": "Joint Standard 1 covers IT governance and risk management in general; Joint Standard 2 sets cybersecurity and cyber resilience requirements. Both are binding standards that apply side by side.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "za",
+    "programs": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      77,
+      78,
+      83,
+      84,
+      85,
+      90,
+      91,
+      93,
+      94,
+      114
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "annual",
+      "periodic"
+    ],
+    "regulators": [
+      "Prudential Authority (South African Reserve Bank)",
+      "Financial Sector Conduct Authority (FSCA)",
+      "Information Regulator (POPIA)"
+    ],
+    "references": [
+      {
+        "title": "Joint Standard 2 of 2024: Cybersecurity and Cyber Resilience Requirements for Financial Institutions (published with Joint Communication 2 of 2024)",
+        "issuer": "Prudential Authority and FSCA",
+        "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/prudential-authority/pa-public-awareness/Communication/2024/Joint-Communication-2-of-2024-Publication-of-the-Joint-Standard-Cybersecurity-and-cyber-resilience",
+        "provision": "Paragraphs 3-9, especially 7.2.7 (awareness and training), 7.5 (incident response) and 9.1 (notification)",
+        "note": "Applies to banks, branches, controlling companies and mutual banks. Requires a board-approved cyber strategy and framework, controls, an awareness programme for all users with at least yearly refreshers and board training, testing, incident response and notice of material incidents.",
+        "effective": "2025-06-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Joint Notice 2 of 2026: Determination of the Notification Template for Material IT and Cyber Incidents",
+        "issuer": "Prudential Authority and FSCA",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/communication/2026/joint-communication-5-of-2026/Joint%20Notice%202%20of%202026%20-%20Determination%20of%20the%20Notification%20Template_310826.pdf",
+        "provision": "Paragraphs 2-4",
+        "note": "Sets the template banks file on the PA's Umoja portal when an IT or cyber incident is classified as material, under JS1 para 15.1 and JS2 para 9.1; in force from 1 September 2026.",
+        "effective": "2026-09-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Annexure A: Reporting of Material IT and/or Cyber Incident Template",
+        "issuer": "Prudential Authority and FSCA",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/communication/2026/joint-communication-5-of-2026/Annexure%20A%20-%20Reporting%20of%20Material%20IT%20and%20Cyber%20Incident%20Template.xlsx",
+        "provision": "Instructions tab",
+        "note": "Immediate notification within 24 hours of classifying an incident as material; an impact update within 14 calendar days of notification; a full report with the final investigation report on timelines agreed with the authority.",
+        "effective": "2026-09-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "FSCA-PA Joint Communication 5 of 2026: Determination of the notification template for material IT and cyber incidents",
+        "issuer": "Prudential Authority and FSCA",
+        "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/prudential-authority/pa-public-awareness/Communication/2026/joint-communication-5-of-2026-determination-of-notification-template-for-material-it-and-cyber-incidents",
+        "note": "Publishes the determination, template and consultation report; confirms Joint Standard 1 took effect on 15 November 2024 and Joint Standard 2 on 1 June 2025, and that the determination applies from 1 September 2026.",
+        "effective": "2026-09-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Joint Standard 1 of 2023: IT Governance and Risk Management Requirements for Financial Institutions (published with Joint Communication 4 of 2023)",
+        "issuer": "Prudential Authority and FSCA",
+        "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/prudential-authority/pa-public-awareness/Communication/2023/Joint-Communication-4-of-2023-Publication-of-the-Joint-Standard-IT-Gov-and-Risk",
+        "provision": "Paragraphs 5-7, 13 and 15.1",
+        "note": "Board responsibility, an approved IT strategy and IT risk framework reviewed at least yearly, IT resilience and continuity, and notice of material IT incidents; also expects IT-related training for people with access to IT systems.",
+        "effective": "2024-11-15",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Directive 4 of 2023 (D4/2023): Directive on operational resilience",
+        "issuer": "Prudential Authority (SARB)",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-deposit-takers/banks-directives/2023/D4-2023%20-%20Directive%20on%20operational%20resilience.pdf",
+        "provision": "Paragraphs 1.2, 1.5-1.9 and 2.1-2.2",
+        "note": "Issued under Banks Act s 6(6); replaces Directive 10 of 2021. Banks must assess themselves against the BCBS operational resilience principles in seven categories, apply them on a consolidated basis and comply by 31 December 2024.",
+        "effective": "2024-12-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Protection of Personal Information Act 4 of 2013",
+        "issuer": "Parliament (Department of Justice and Constitutional Development)",
+        "url": "https://www.justice.gov.za/legislation/acts/2013-004.pdf",
+        "provision": "Sections 4, 8-26, 55, 99, 106-107 and 109",
+        "note": "Eight conditions for lawful processing; security safeguards (s 19); operators (ss 20-21); notification of compromises to the Regulator and data subjects as soon as reasonably possible (s 22); information officer duties; civil, criminal and administrative consequences.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Regulations relating to the Protection of Personal Information, 2018 (GN R.1383, Government Gazette 42110)",
+        "issuer": "Information Regulator",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201812/42110rg10897gon1383.pdf",
+        "provision": "Regulation 4(1)(e)",
+        "note": "As originally made, the information officer had to make sure internal awareness sessions are held on POPIA; the regulations were amended in April 2025 and the amended text could not be opened, so the quest does not rely on this duty.",
+        "effective": "2018-12-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Department of Justice's IT system attacked by ransomware (media statement)",
+        "issuer": "Department of Justice and Constitutional Development (gov.za)",
+        "url": "https://www.gov.za/news/media-statements/justice-and-constitutional-development-establishes-security-breach-it-systems",
+        "note": "Real case: ransomware on 6 September 2021 encrypted the department's systems; it activated its business continuity plan and noted that ransomware often spreads through phishing emails and drive-by downloads.",
+        "effective": "2021-09-20",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Update on progress in restoring justice services following ransomware attack (media statement)",
+        "issuer": "Department of Justice and Constitutional Development (gov.za)",
+        "url": "https://www.gov.za/news/media-statements/justice-and-constitutional-development-update-progress-restoring-justice",
+        "note": "Real case: the malware was contained, services were restored in stages, a POPIA notice was issued to data subjects on the department's website, and security and access control were strengthened.",
+        "effective": "2021-10-10",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Minister Pravin Gordhan commends Transnet for restoring full ports operations (media statement)",
+        "issuer": "Ministry of Public Enterprises (gov.za)",
+        "url": "https://www.gov.za/speeches/minister-pravin-gordhan-commends-transnet-restoring-full-ports-operations-29-jul-2021-0000",
+        "note": "Real case: after an IT security breach on 22 July 2021, Transnet switched bulk operations to manual, restored its container terminal system in stages and engaged customers daily.",
+        "effective": "2021-07-29",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Fraud and Scams",
+        "issuer": "South African Reserve Bank",
+        "url": "https://www.resbank.co.za/en/home/contact-us/fraud-and-scams",
+        "note": "The SARB warns that syndicates abuse its logo and employee names in advance-fee scams, and that it does not hold accounts or cross-border funds for members of the public.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "za-cy-x1",
+        "question": "A foreign bank operates a branch in Johannesburg. Its head office argues that the group's global cyber policy is enough and that Joint Standard 2 does not reach a branch. Which view is correct?",
+        "options": [
+          "The branch is exempt because the parent is supervised abroad",
+          "The branch is a financial institution under the standard and must meet it",
+          "Only the FSCA's conduct standards apply to the branch",
+          "The branch must comply only once it has 500 staff"
+        ],
+        "answer": 1,
+        "explanation": "The definition of financial institution in Joint Standard 2 includes a branch of a foreign institution as defined in the Banks Act. A global policy can help, but the branch must meet the standard.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x2",
+        "question": "During the PA's review, the bank shows that its cyber framework was last independently reviewed 20 months ago. What is the problem?",
+        "options": [
+          "Nothing, because a review every two years is allowed",
+          "The framework must be reviewed monthly by the board",
+          "Only the strategy needs review; the framework is fixed",
+          "The framework must be reviewed at least annually through an independent review"
+        ],
+        "answer": 3,
+        "explanation": "Joint Standard 2 requires the cybersecurity framework to be reviewed regularly but at least annually for adequacy and effectiveness through an independent review. Two years applies to the asset inventory.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x3",
+        "question": "Which of these best describes what 'independent review' means in Joint Standard 2?",
+        "options": [
+          "A review by the team that designed the control",
+          "A review by any staff member outside IT",
+          "A review by the Information Regulator",
+          "A review by internal or external audit or an independent control function"
+        ],
+        "answer": 3,
+        "explanation": "The standard defines an independent review as one carried out by an internal or external audit function or an independent control function.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x4",
+        "question": "Marula Bank's learning team proposes moving the cyber awareness refresher to every 18 months to save time, while sending monthly tips. Is this compliant?",
+        "options": [
+          "No: refresher training must happen at least yearly, whatever tips are added",
+          "Yes, because monthly tips replace the formal refresher",
+          "Yes, if the board approves the longer cycle",
+          "No, because refresher training must happen every quarter"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 7.2.7 requires user refresher training at least annually and regular new content. Tips can support the programme but do not stretch the yearly minimum.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x5",
+        "question": "A board member says the board can hand the whole cyber topic to its risk committee and stop worrying about it. What does Joint Standard 2 allow?",
+        "options": [
+          "Transferring all responsibility to the committee",
+          "Delegating primary oversight work to a committee while the board stays ultimately responsible",
+          "Transferring responsibility to the CISO by resolution",
+          "Removing cyber from the board agenda once a committee exists"
+        ],
+        "answer": 1,
+        "explanation": "The governing body may delegate primary oversight activities to an existing or new committee, but it remains ultimately responsible for compliance and for cyber risk oversight.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x6",
+        "question": "Which pair of documents must the governing body approve under Joint Standard 2?",
+        "options": [
+          "The firewall rule set and the patch schedule",
+          "The cybersecurity strategy and the cybersecurity framework",
+          "Each staff member's training record",
+          "Every penetration test report"
+        ],
+        "answer": 1,
+        "explanation": "The strategy must be approved by the governing body and aligned with business strategy, and the framework must also be approved by the governing body.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x7",
+        "question": "A bank's information asset inventory records each asset's location, but not who owns it or who manages it. Which requirement is not met?",
+        "options": [
+          "The inventory must include location, ownership and management roles",
+          "The inventory must be published on the bank's website",
+          "The inventory must list only paper records",
+          "The inventory must be approved by the FSCA"
+        ],
+        "answer": 0,
+        "explanation": "Joint Standard 2 requires an inventory of information assets that includes location, ownership and the roles and responsibilities for managing them, reviewed at least every two years.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x8",
+        "question": "The cyber function at a bank reports to the head of IT operations, who decides its budget and whose systems it audits. What governance concern does Joint Standard 2 raise?",
+        "options": [
+          "None, because reporting lines are a matter for HR",
+          "The function must report to the Information Regulator",
+          "The function must be outsourced to an external firm",
+          "Oversight must be structured to keep segregation of duties and avoid conflicts"
+        ],
+        "answer": 3,
+        "explanation": "The standard requires the cyber function to have adequate resources, authority and access to the governing body, structured to ensure segregation of duties and avoid conflicts of interest.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x9",
+        "question": "A new cyber threat targeting South African banks appears in March. The yearly refresher is in October. What does paragraph 7.2.7 expect?",
+        "options": [
+          "Wait for the October refresher to cover it",
+          "Add training on the new content regularly, without waiting for the refresher",
+          "Do nothing unless the threat causes an incident",
+          "Ask the FSCA to approve new material first"
+        ],
+        "answer": 1,
+        "explanation": "Besides the yearly refresher, the standard expects training on new content to be done regularly, considering evolving risks.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x10",
+        "question": "An agent receives a WhatsApp from someone using the CEO's photo, asking for gift vouchers for a client event and saying 'don't tell anyone, it's a surprise'. Which combination of signs best shows social engineering?",
+        "options": [
+          "A known photo, polite wording and a weekday message",
+          "An unusual channel, a request for value and a demand for secrecy",
+          "A request linked to a client event",
+          "A message sent during business hours"
+        ],
+        "answer": 1,
+        "explanation": "A senior name on an unusual channel, a request for something of value and pressure to keep it secret are classic lure signals. Polite wording or a known photo do not prove identity.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x11",
+        "question": "Marula Bank lets staff reach the customer CRM over the internet from home. Only a password is required. Which Joint Standard 2 requirement is most clearly at risk?",
+        "options": [
+          "Biennial review of the asset inventory",
+          "Yearly review of the cyber strategy",
+          "MFA for accounts that access applications with sensitive information through the internet",
+          "Notification of material incidents to the authority"
+        ],
+        "answer": 2,
+        "explanation": "The standard requires MFA for all user accounts used to access applications containing sensitive information through the internet, and strong authentication for remote access.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x12",
+        "question": "A system administrator also approves her own access requests and reviews the logs of her own privileged account. Which Joint Standard 2 principles are breached?",
+        "options": [
+          "Data minimisation and purpose specification",
+          "Segregation of duties and review of privileged account activity",
+          "Board approval of the cyber strategy",
+          "Penetration testing frequency"
+        ],
+        "answer": 1,
+        "explanation": "The standard requires segregation of duties when granting access, and privileged account use must be logged and reviewed as part of monitoring. Self-approval and self-review defeat both.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x13",
+        "question": "Which statement about the SARB's warning on advance-fee scams is accurate?",
+        "options": [
+          "The SARB confirms it holds foreign funds for individuals on request",
+          "The SARB says such scams only arrive by post",
+          "Scammers have used the SARB's logo and employee names to make lures look real",
+          "The SARB tells victims to pay the fees and then complain"
+        ],
+        "answer": 2,
+        "explanation": "The SARB says syndicates have abused its corporate identity, using its logo and employee names, through letters, email, SMS, WhatsApp and social media. It does not hold funds for the public.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x14",
+        "question": "A staff member clicked a phishing link and entered her password, then felt embarrassed and waited a day before telling anyone. Why is this delay the biggest problem?",
+        "options": [
+          "The bank can no longer find out who clicked",
+          "Joint Standard 2 requires dismissal after any click",
+          "It gives the attacker time to use the credentials before they are reset",
+          "Reporting is only possible on the same day"
+        ],
+        "answer": 2,
+        "explanation": "Speed matters most after a compromise. Prompt reporting lets the security team reset credentials, check activity and contain spread. A blame-free reporting culture supports this.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x15",
+        "question": "Joint Standard 2 requires controls against 'unauthorised internet services'. Which staff behaviour does this target most directly?",
+        "options": [
+          "Using the bank's approved email system",
+          "Logging in with MFA",
+          "Using personal cloud storage or messaging apps to send or store sensitive data",
+          "Completing the yearly awareness refresher"
+        ],
+        "answer": 2,
+        "explanation": "The standard requires security controls to prevent and detect the use of unauthorised internet services that let users communicate or store sensitive data.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x16",
+        "question": "A caller to the contact centre says he is from IT support and asks the agent to read out the one-time PIN just sent to her phone 'to fix the login'. What should the agent do?",
+        "options": [
+          "Refuse, end the call and report it, because no genuine helper needs a one-time PIN",
+          "Share the PIN because IT support is internal",
+          "Share half the PIN to test the caller",
+          "Ask the caller for his employee number and then share it"
+        ],
+        "answer": 0,
+        "explanation": "A one-time PIN is a second factor. Sharing it hands the attacker the account. An employee number can also be faked; verify through trusted channels instead.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x17",
+        "question": "Which design choice reflects the Joint Standard 2 requirement to reduce exposure from web browsing?",
+        "options": [
+          "Allowing browsing only on administrator accounts",
+          "Blocking the bank's own website",
+          "Running browsing on the core banking server",
+          "Separating internet browsing from sensitive systems physically or logically"
+        ],
+        "answer": 3,
+        "explanation": "The standard requires internet browsing to be isolated from sensitive IT systems through physical or logical segregation, or equivalent controls.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x18",
+        "question": "Under Joint Standard 2, who should perform periodic user access reviews to confirm that privileges are still appropriate?",
+        "options": [
+          "Appropriate parties such as the owners of the IT systems and information assets",
+          "Each user for their own access",
+          "The Information Regulator",
+          "The external auditor only, every five years"
+        ],
+        "answer": 0,
+        "explanation": "The standard requires appropriate parties such as system and information asset owners to perform periodic user access reviews.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x19",
+        "question": "A loan officer asks applicants for their religion and political affiliation 'to understand them better'. Which POPIA problems arise?",
+        "options": [
+          "It is excessive for the purpose and touches special personal information",
+          "None, if the applicant answers voluntarily on a form",
+          "Only an information quality problem",
+          "Only an openness problem, solved by a privacy notice"
+        ],
+        "answer": 0,
+        "explanation": "Minimality requires information to be adequate, relevant and not excessive, and religion and political persuasion are special personal information that is prohibited unless an authorisation applies.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x20",
+        "question": "Marula Bank uses a card processor that handles customer card data. The contract does not mention security. What does section 21 of POPIA require?",
+        "options": [
+          "Nothing, because operators are separately licensed",
+          "Only an annual phone call to the processor",
+          "A notice to the Regulator naming the processor",
+          "A written contract ensuring the operator establishes and maintains section 19 security measures"
+        ],
+        "answer": 3,
+        "explanation": "Section 21(1) requires the responsible party, by written contract, to ensure the operator establishes and maintains the security measures in section 19.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x21",
+        "question": "A bank keeps closed-account files for many years because a law requires certain records to be kept. Does POPIA's retention condition stop this?",
+        "options": [
+          "Yes: all records must be deleted on account closure",
+          "Yes: unless the customer consents in writing each year",
+          "No: retention is allowed when the law requires or authorises it",
+          "No: POPIA has no retention rule at all"
+        ],
+        "answer": 2,
+        "explanation": "Section 14(1) allows records to be kept longer than the purpose needs when retention is required or authorised by law, among other exceptions. After that, they must be destroyed or de-identified.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x22",
+        "question": "Which statement about personal information under POPIA is correct?",
+        "options": [
+          "It can include information about an identifiable existing juristic person, such as a company",
+          "It covers only information about individuals over 18",
+          "It excludes ID numbers and account numbers",
+          "It covers only information stored on paper"
+        ],
+        "answer": 0,
+        "explanation": "POPIA defines personal information as relating to an identifiable living natural person and, where applicable, an identifiable existing juristic person.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x23",
+        "question": "A staff member knowingly obtains a customer's account number without the bank's consent and sells it to a third party. How does POPIA treat this?",
+        "options": [
+          "Only as a disciplinary matter for HR",
+          "As an offence, with a possible fine or imprisonment of up to 10 years",
+          "As a civil matter with no criminal consequence",
+          "As lawful if the buyer is a bank customer"
+        ],
+        "answer": 1,
+        "explanation": "Section 106 makes knowingly or recklessly obtaining or disclosing an account number without consent, and selling one so obtained, an offence; section 107 sets a fine or imprisonment of up to 10 years.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x24",
+        "question": "Which factor must the Information Regulator consider when setting an administrative fine under section 109?",
+        "options": [
+          "The bank's share price on the day of the breach",
+          "Whether the bank has a branch in Gauteng",
+          "The number of data subjects affected or potentially affected",
+          "The age of the information officer"
+        ],
+        "answer": 2,
+        "explanation": "Section 109(3) lists factors including the nature of the information, the duration and extent of the contravention, the number of people affected and the likelihood of substantial damage or distress.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x25",
+        "question": "A bank processes customer information for FIC Act customer due diligence without asking for consent. Which section 11 ground most clearly supports this?",
+        "options": [
+          "The bank's marketing interest",
+          "The customer's implied consent by walking into a branch",
+          "Processing complies with an obligation imposed by law on the bank",
+          "No ground is needed for regulated banks"
+        ],
+        "answer": 2,
+        "explanation": "Section 11(1)(c) allows processing that complies with an obligation imposed by law on the responsible party, such as the bank's duties under the FIC Act.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x26",
+        "question": "Under section 19(3), what must a bank have due regard to when designing security safeguards for personal information?",
+        "options": [
+          "Only the cheapest available technology",
+          "Generally accepted information security practices and any industry rules that apply to it",
+          "The preferences of the bank's largest customer",
+          "Whatever its operators propose"
+        ],
+        "answer": 1,
+        "explanation": "Section 19(3) requires due regard to generally accepted information security practices and procedures, including those required by specific industry or professional rules. For banks this includes the Joint Standards.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x27",
+        "question": "Marula's information officer wants to show how POPIA's security condition and Joint Standard 2 fit together. Which statement is most accurate?",
+        "options": [
+          "Both require risk-based safeguards, and the bank must meet each in full",
+          "Joint Standard 2 replaces POPIA for banks",
+          "POPIA replaces Joint Standard 2 for customer data",
+          "Only one applies, chosen by the board each year"
+        ],
+        "answer": 0,
+        "explanation": "POPIA and Joint Standard 2 are separate obligations enforced by different authorities. Strong controls can satisfy both, but neither replaces the other.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x28",
+        "question": "Marula Bank detects ransomware at 22:00 on Monday and, after triage, classifies it as material at 10:00 on Tuesday. By when is the immediate notification on Umoja due under the template?",
+        "options": [
+          "By 22:00 on Tuesday, 24 hours after detection",
+          "By 10:00 on Wednesday, 24 hours after classification",
+          "By the following Monday",
+          "Within 14 days of detection"
+        ],
+        "answer": 1,
+        "explanation": "The template's clock runs from classification as material, not from detection: immediate notification is due within 24 hours following classification. Classification itself should not be delayed without reason.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-cy-x29",
+        "question": "During a material incident, investigators find that attackers copied 3,000 customers' payslips. The police ask in writing for customer notices to wait five days. Which approach is correct?",
+        "options": [
+          "Notify nobody until the police finish",
+          "Notify customers immediately, ignoring the police",
+          "Notify only the PA, because the police are involved",
+          "Notify the PA and the Regulator, record the police request, and notify customers when the delay ends"
+        ],
+        "answer": 3,
+        "explanation": "The PA notice follows the Joint Notice timelines. Under section 22, the Regulator is still notified, and only the customer notice may be delayed where a public body investigating offences decides notice would impede its investigation.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-cy-x30",
+        "question": "Which document did Joint Notice 2 of 2026 determine as the form for notifying material IT and cyber incidents?",
+        "options": [
+          "The FIC's suspicious transaction report form",
+          "The Information Regulator's PAIA manual template",
+          "The Reporting of Material IT and Cyber Incident Template (Annexure A)",
+          "A free-form letter to the PA's CEO"
+        ],
+        "answer": 2,
+        "explanation": "The Joint Notice determines the 'Reporting of Material IT and Cyber Incident Template', attached as Annexure A, as the information banks must submit.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x31",
+        "question": "A contained phishing incident affects five staff mailboxes, with no customer impact and no service disruption. The bank's criteria say it is not material. What follows under Joint Standard 2?",
+        "options": [
+          "The PA must be notified within 24 hours anyway",
+          "The incident can be deleted from the records",
+          "The Information Regulator must always be notified",
+          "No PA notice is needed, but the bank still manages and learns from it under its plan"
+        ],
+        "answer": 3,
+        "explanation": "Notification under paragraph 9.1 follows classification as material. Non-material incidents are still handled, investigated and used for lessons under the response plan. POPIA s 22 applies only if personal information was reached.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x32",
+        "question": "Which statement correctly describes the trigger for the PA notice under the Joint Standards?",
+        "options": [
+          "It follows the bank classifying the incident as material",
+          "It follows any phishing email received by staff",
+          "It follows the incident being reported in the media",
+          "It follows the Information Regulator's request"
+        ],
+        "answer": 0,
+        "explanation": "Both Joint Standard 1 paragraph 15.1 and Joint Standard 2 paragraph 9.1 tie notification to the bank classifying the event or incident as material.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x33",
+        "question": "The template asks whether 'any other regulatory authority, such as the Information Regulator' has been notified. What does this tell the incident team?",
+        "options": [
+          "Choose one regulator and ignore the other",
+          "Let the PA forward the information to the Regulator",
+          "Wait for the PA to decide on POPIA",
+          "Coordinate the PA notice and any POPIA notice and record both"
+        ],
+        "answer": 3,
+        "explanation": "The template expects the bank to say which other authorities were told. POPIA notice is the bank's own duty and is not passed on by the PA, so the team must handle both.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x34",
+        "question": "Joint Standard 2 requires backups of sensitive information to be protected. Which practice meets the standard best?",
+        "options": [
+          "Encrypted backups stored offline or offsite, including suitable cloud storage",
+          "Unencrypted backups on the same server as production",
+          "Backups kept only on staff laptops",
+          "No backups, relying on the vendor's goodwill"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 7.4.1 requires sensitive information in backup media to be secured, for example encrypted, and backup media to be stored offline or at an offsite location, which can include cloud storage.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x35",
+        "question": "In the Justice department's 2021 ransomware case, which response did the department report on gov.za?",
+        "options": [
+          "It paid the ransom and restored all systems in one day",
+          "It shut down the courts for a month",
+          "It reported that no personal information was involved at any stage",
+          "It activated its business continuity plan and later notified data subjects on its website"
+        ],
+        "answer": 3,
+        "explanation": "Its statements said it activated its business continuity plan, kept courts running manually, and after assessing a possible leak issued a POPIA notice to data subjects on its website.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x36",
+        "question": "A bank's resilience team mapped only its own staff and systems for its critical payments operation, ignoring its card processor and cloud host. Which Directive 4 categories are most clearly weak?",
+        "options": [
+          "Information quality and openness",
+          "Mapping interconnections and third-party dependency management",
+          "Purpose specification and retention",
+          "Capital adequacy and liquidity"
+        ],
+        "answer": 1,
+        "explanation": "Mapping must cover interconnections and interdependencies of critical operations, and third-party dependency management covers providers they rely on. The other options are POPIA conditions or unrelated risks.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x37",
+        "question": "A bank group asks whether Directive 4 of 2023 applies only to the licensed bank or across the group. What does the directive say?",
+        "options": [
+          "Only to the licensed bank, never to subsidiaries",
+          "Only to foreign subsidiaries",
+          "The principles must be applied on a consolidated basis",
+          "Only to entities with more than 1,000 staff"
+        ],
+        "answer": 2,
+        "explanation": "The directive states that the principles must be applied on a consolidated basis and form part of a forward-looking resilience approach in line with risk appetite and tolerance for disruption.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x38",
+        "question": "The board asks why operational resilience is a matter of capital, not only of IT. Which point from Directive 4 answers best?",
+        "options": [
+          "Resilience costs are deducted from capital automatically",
+          "The FSCA sets capital for IT projects",
+          "POPIA fines are paid out of regulatory capital",
+          "Regulation 38(4) lets the PA require additional capital if resilience policies are inadequate"
+        ],
+        "answer": 3,
+        "explanation": "Directive 4 explains that where the PA considers a bank's resilience policies inadequate, regulation 38(4) allows it to require extra capital or alignment of policies with risk exposure.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x39",
+        "question": "Marula Bank's internet banking platform had a major update in March. Its last penetration test was in January. What does Joint Standard 2 require?",
+        "options": [
+          "Nothing until next January",
+          "A test only if customers complain",
+          "A penetration test to validate controls after the major update",
+          "A test only if the PA asks for one"
+        ],
+        "answer": 2,
+        "explanation": "For systems directly accessible from the internet, penetration testing is required whenever they undergo major changes or updates, and at least yearly where there are no major changes.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x40",
+        "question": "Testing reveals a critical flaw in a new mobile app the week before launch. Under Joint Standard 2's remediation rules, what should happen?",
+        "options": [
+          "Launch on time and fix it in the next quarter",
+          "Launch and disclose the flaw on social media",
+          "Fix the known major flaw before the app goes into production",
+          "Ask customers to accept the risk in the terms"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7.7.6 requires known major issues and security flaws to be remediated before production deployment, with all testing issues tracked.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x41",
+        "question": "Which piece of evidence best shows the PA that Marula meets the paragraph 7.2.7 training duty?",
+        "options": [
+          "A copy of the cyber policy on the intranet",
+          "Completion records for all users, board training records and the latest programme review",
+          "A single email reminding staff to be careful",
+          "The vendor's brochure for the e-learning tool"
+        ],
+        "answer": 1,
+        "explanation": "The duty covers all users, yearly refreshers, regular new content, board training and periodic review. Evidence should show each of these, not just that a policy exists.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-cy-x42",
+        "question": "Joint Standard 2 requires banks to take part in cyber threat information sharing. What is the main aim?",
+        "options": [
+          "To share and receive timely, actionable information on threats, vulnerabilities and incidents",
+          "To publish customers' personal information",
+          "To replace the bank's own monitoring",
+          "To advertise the bank's security products"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 7.6.2 requires participation in information-sharing arrangements with trusted external parties to share reliable, actionable information and receive timely threat information.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-cy-x43",
+        "question": "A data scientist wants to test a new model using a full copy of production customer data in a development environment without production-level controls. What does Joint Standard 2 require?",
+        "options": [
+          "Restrict it unless equivalent controls exist; exceptions need safeguards and senior management approval",
+          "Allow it, because development is internal",
+          "Allow it if the data scientist signs a POPIA declaration",
+          "Allow it only on weekends"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 7.2.3 restricts sensitive information in non-production environments unless equivalent controls are in place; in exceptional cases there must be safeguards and senior management approval, with masking where possible.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-cy-x44",
+        "question": "Which combination best summarises what a South African bank must evidence in this quest's area?",
+        "options": [
+          "Only POPIA, because it is an Act",
+          "Only Joint Standard 2, because it is the newest",
+          "Only the FIC Act, because it covers all bank risk",
+          "Directive 4 resilience, Joint Standards 1 and 2 governance and cyber controls, and POPIA privacy safeguards"
+        ],
+        "answer": 3,
+        "explanation": "Each instrument has its own scope and authority: the PA's directive, the joint PA and FSCA standards, and POPIA enforced by the Information Regulator. The bank must evidence each on its own terms.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
