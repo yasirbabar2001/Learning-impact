@@ -1,0 +1,3178 @@
+{
+ "slug": "us-cybersecurity-glba-nydfs",
+ "title": "United States | Bank Cybersecurity: GLBA Safeguards, NYDFS Part 500 and Incident Notification",
+ "tagline": "Protect customer information the way US bank regulators expect: GLBA safeguards, NYDFS Part 500, phishing defence and the 36- and 72-hour notices.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Commercial banking",
+  "Retail banking",
+  "Bank operations and IT",
+  "Foreign bank branches in New York",
+  "Bank service providers"
+ ],
+ "hours": 6,
+ "description": "This quest teaches the cybersecurity rules that US banks work under. At federal level it covers the **Interagency Guidelines Establishing Information Security Standards** issued under the Gramm-Leach-Bliley Act (GLBA) by the OCC, the Federal Reserve and the FDIC, their guidance on response programs for unauthorized access to customer information, and the 2021 **computer-security incident notification rule** (the 36-hour rule). At state level it covers the New York State Department of Financial Services (NYDFS) cybersecurity regulation, **23 NYCRR Part 500**, as amended in 2023.\n\nYou will learn which duties apply to every federally supervised bank and which apply only to institutions licensed or chartered by NYDFS, and practise spotting phishing and social engineering, managing access, handling an incident against the 36- and 72-hour clocks, overseeing service providers and reporting to the board.\n\nIt is meant for all staff of US banks, and in particular staff of NYDFS-regulated banks and New York branches of foreign banks, where Part 500 requires cybersecurity awareness training, including social engineering, at least once a year. The federal guidelines require every bank to train staff to implement its information security program. This quest builds knowledge and does not replace your institution's own information security policies, incident response plan and training.",
+ "audience": [
+  "All employees of US banks who handle customer information or use bank systems",
+  "Staff of NYDFS-regulated banks and New York branches and agencies of foreign banks",
+  "IT, security operations and incident response teams",
+  "Vendor managers and business owners of outsourced services",
+  "CISOs, senior managers and board members who oversee the security program"
+ ],
+ "outcomes": [
+  "Explain which cybersecurity duties apply to all federally supervised banks and which apply only to NYDFS covered entities",
+  "Describe the parts of a GLBA information security program, including staff training, testing and the annual board report",
+  "Recognise phishing, vishing, MFA fatigue and pretext calls, and respond and report the right way",
+  "Apply least privilege, access reviews, prompt removal of access and MFA to protect customer information",
+  "Classify an incident and meet the 36-hour federal notice, the NYDFS 72-hour notice and customer notice expectations",
+  "Support third-party oversight, CISO and board reporting and the NYDFS annual compliance filing"
+ ],
+ "quest": {
+  "name": "The 36-Hour Clock",
+  "premise": "You have just joined the information security office of Kestrel Point Bank, a fictional New York-chartered bank that is a member of the Federal Reserve, with headquarters in Manhattan, an operations center in Buffalo and branches across the state. Its sister bank in Philadelphia is a national bank supervised by the OCC. With CISO Priya Raman, incident lead Tomas Herrera, branch manager Grace Okafor, third-party risk head Kenji Mori and board risk chair Ellen Whitaker, clear five stages before the Federal Reserve and NYDFS examiners arrive, then face the final boss.",
+  "badge": {
+   "name": "Cyber Sentinel (US Banking)",
+   "description": "Awarded to US bank staff who can apply the GLBA safeguards, NYDFS Part 500 and the federal and state incident notice rules."
+  },
+  "color": "#0e7490",
+  "cast": [
+   {
+    "id": "priya",
+    "name": "Priya Raman",
+    "role": "CISO, Manhattan, your mentor",
+    "look": {
+     "skin": 3,
+     "hair": "bun",
+     "color": "#0f766e"
+    }
+   },
+   {
+    "id": "tomas",
+    "name": "Tomas Herrera",
+    "role": "Incident Response Lead, Buffalo",
+    "look": {
+     "skin": 3,
+     "hair": "beard",
+     "color": "#1d4ed8"
+    }
+   },
+   {
+    "id": "grace",
+    "name": "Grace Okafor",
+    "role": "Regional Branch Manager, Brooklyn",
+    "look": {
+     "skin": 5,
+     "hair": "curly",
+     "color": "#b45309"
+    }
+   },
+   {
+    "id": "kenji",
+    "name": "Kenji Mori",
+    "role": "Head of Third-Party Risk",
+    "look": {
+     "skin": 2,
+     "hair": "short",
+     "color": "#4b5563"
+    }
+   },
+   {
+    "id": "ellen",
+    "name": "Ellen Whitaker",
+    "role": "Independent Director, Board Risk Committee Chair",
+    "look": {
+     "skin": 1,
+     "hair": "long",
+     "color": "#7c3aed"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "The Rulebook: GLBA Safeguards, NYDFS Part 500 and Who Must Comply",
+   "stage": "The Rulebook Vault",
+   "summary": "Who sets US bank cybersecurity rules, what the federal GLBA information security guidelines require of every bank, and when NYDFS Part 500 adds a second, stricter layer.",
+   "minutes": 45,
+   "objectives": [
+    "Name the federal banking agencies and NYDFS and explain which banks each one supervises for cybersecurity",
+    "Describe the parts of a written information security program under the Interagency Guidelines",
+    "Explain who is a covered entity under 23 NYCRR Part 500 and what a limited exemption does and does not remove",
+    "Separate duties that apply to all federally supervised banks from duties that apply only to NYDFS-regulated institutions"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Day one: two examiners, one bank",
+     "setting": "Information security office, Kestrel Point Bank headquarters, Manhattan. 8:30 am.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Your new laptop asks you to set up multi-factor authentication before it will even open email. A sticky note on the screen says: 'Welcome. Read the Rulebook first. Priya.'",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Welcome aboard. I'm Priya Raman, the bank's CISO. Good news: you joined in exam season. The Federal Reserve and NYDFS are both coming to look at our cybersecurity.",
+       "mood": "happy"
+      },
+      {
+       "who": "grace",
+       "text": "Grace Okafor, branches. Why do we get two regulators? My cousin works at a national bank in Philadelphia and she only talks about the OCC.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Because we are a New York-chartered bank that is a member of the Fed. Federal rules apply to every bank with a federal supervisor. New York adds its own rule for the institutions it licenses or charters.",
+       "mood": "thinking"
+      },
+      {
+       "who": "kenji",
+       "text": "Kenji Mori, third-party risk. And our sister bank in Philadelphia is a national bank, so the OCC is its supervisor and Part 500 is not its rulebook.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Exactly. Stage one is the Rulebook Vault: who writes the rules, what every bank must do, and what New York adds. Let's open it.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Two layers of cybersecurity rules",
+     "scenes": [
+      {
+       "icon": "🏛️",
+       "heading": "The federal layer",
+       "narration": "The Gramm-Leach-Bliley Act told the banking agencies to set standards for protecting customer information. The OCC, the Federal Reserve and the FDIC answered with the Interagency Guidelines Establishing Information Security Standards. Each agency publishes the same text for the banks it supervises."
+      },
+      {
+       "icon": "🏦",
+       "heading": "Who checks your bank",
+       "narration": "Your primary federal regulator depends on your charter. National banks have the OCC. State banks that are members of the Federal Reserve have the Fed. State banks that are not members have the FDIC."
+      },
+      {
+       "icon": "🗽",
+       "heading": "The New York layer",
+       "narration": "New York's Department of Financial Services wrote its own cybersecurity regulation, Part 500 of Title 23 of the New York codes. It applies to anyone operating under a New York banking, insurance or financial services license or charter."
+      },
+      {
+       "icon": "➕",
+       "heading": "Both at once",
+       "narration": "A New York-chartered bank like Kestrel Point must meet both layers. Where they differ, you follow the stricter or more specific duty, such as New York's yearly awareness training and its own 72-hour incident notice."
+      },
+      {
+       "icon": "🎓",
+       "heading": "Why training sits at the center",
+       "narration": "Both layers name training. The federal guidelines tell every bank to train staff to carry out its security program. Part 500 requires awareness training, including social engineering, for all personnel at least once a year."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Federal layer and New York layer",
+     "caption": "Kestrel Point must meet both columns. Its Philadelphia sister bank, a national bank, meets only the federal column.",
+     "headers": [
+      "Federal (all federally supervised banks)",
+      "NYDFS Part 500 (covered entities only)"
+     ],
+     "items": [
+      {
+       "label": "Who it covers",
+       "left": "Every bank supervised by the OCC, the Fed or the FDIC",
+       "right": "Covered entities: anyone licensed or chartered under New York banking, insurance or financial services law"
+      },
+      {
+       "label": "Core rule",
+       "left": "Interagency Guidelines Establishing Information Security Standards",
+       "right": "23 NYCRR Part 500, as amended in November 2023"
+      },
+      {
+       "label": "Program",
+       "left": "Comprehensive written information security program",
+       "right": "Risk-based cybersecurity program and written policies approved at least yearly"
+      },
+      {
+       "label": "Leadership",
+       "left": "Board approves the program and gets a yearly report",
+       "right": "A named CISO, written CISO report to the board at least yearly"
+      },
+      {
+       "label": "Training",
+       "left": "Train staff to implement the program; no set frequency",
+       "right": "Awareness training with social engineering for all personnel, at least yearly"
+      },
+      {
+       "label": "Incident notice",
+       "left": "36-hour notice to the primary federal regulator for notification incidents",
+       "right": "Notice to DFS within 72 hours of determining a cybersecurity incident"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Kestrel Point Bank is a New York-chartered bank and a member of the Federal Reserve. Which pair of regulators examines its cybersecurity?",
+     "options": [
+      "The Federal Reserve and NYDFS",
+      "The OCC and NYDFS",
+      "The FDIC and the OCC",
+      "Only NYDFS, because the bank has a New York charter"
+     ],
+     "answer": 0,
+     "explanation": "A state member bank's primary federal regulator is the Federal Reserve, and as a New York-chartered bank it is also a covered entity under Part 500. The OCC supervises national banks, and the FDIC supervises state banks that are not Fed members."
+    },
+    {
+     "type": "concept",
+     "title": "What the federal guidelines require of every bank",
+     "body": "The Interagency Guidelines apply to every bank supervised by the three agencies. Each bank must have a **comprehensive written information security program** with administrative, technical and physical safeguards that fit its size, complexity and activities. The program must be designed to:\n\n- keep customer information **secure and confidential**\n- protect against **anticipated threats** to that information\n- prevent **unauthorized access or use** that could cause a customer substantial harm or inconvenience\n- make sure customer and consumer information is **disposed of properly**\n\nTo build it, the bank **involves the board**, **assesses risk**, **manages and controls risk** (including training staff and testing key controls), **oversees service providers**, **adjusts** the program as things change and **reports to the board at least once a year**. Customer information covers records in any form, paper or electronic."
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "The GLBA information security program cycle",
+     "caption": "Every federally supervised bank runs this loop; there is no finish line.",
+     "items": [
+      {
+       "label": "Board approves and oversees",
+       "detail": "The board or a board committee approves the written program and assigns responsibility for it"
+      },
+      {
+       "label": "Assess risk",
+       "detail": "Identify foreseeable internal and external threats, their likelihood and damage, and whether controls are enough"
+      },
+      {
+       "label": "Manage and control risk",
+       "detail": "Choose controls, train staff, test key controls and dispose of information properly"
+      },
+      {
+       "label": "Oversee service providers",
+       "detail": "Due diligence, contract terms and monitoring where the risk assessment calls for it"
+      },
+      {
+       "label": "Adjust the program",
+       "detail": "Update for new technology, threats, outsourcing, mergers and system changes"
+      },
+      {
+       "label": "Report to the board",
+       "detail": "At least yearly: program status, compliance, tests, breaches and recommended changes"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Federal duty or New York only?",
+     "prompt": "Sort each duty: does it apply to every federally supervised bank, or only to NYDFS covered entities?",
+     "buckets": [
+      "All federally supervised banks",
+      "NYDFS covered entities only"
+     ],
+     "items": [
+      {
+       "text": "Have a written information security program approved by the board",
+       "bucket": 0
+      },
+      {
+       "text": "Train staff to implement the information security program",
+       "bucket": 0
+      },
+      {
+       "text": "Designate a Chief Information Security Officer (CISO)",
+       "bucket": 1
+      },
+      {
+       "text": "Notify the primary federal regulator of a notification incident within 36 hours",
+       "bucket": 0
+      },
+      {
+       "text": "Give all personnel awareness training with social engineering at least yearly",
+       "bucket": 1
+      },
+      {
+       "text": "File a compliance certification or acknowledgment by April 15 each year",
+       "bucket": 1
+      },
+      {
+       "text": "Oversee service providers through due diligence and contract terms",
+       "bucket": 0
+      },
+      {
+       "text": "Notify the regulator within 72 hours of determining a cybersecurity incident",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Grace's question about the small branch",
+     "setting": "Video call between the Brooklyn branch office and the CISO's office.",
+     "lines": [
+      {
+       "who": "grace",
+       "text": "One of our customers runs a tiny New York-licensed money business with eight staff. She asked me if Part 500 applies to her. Does it?",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "If she operates under a DFS license, she is a covered entity. But Part 500 has a limited exemption for very small firms, based on staff numbers, revenue or assets.",
+       "mood": "neutral"
+      },
+      {
+       "who": "grace",
+       "text": "So she can skip the whole thing?",
+       "mood": "happy"
+      },
+      {
+       "who": "priya",
+       "text": "No. The limited exemption removes some sections, such as the CISO and the incident response plan duties. It does not remove the yearly awareness training with social engineering, the risk assessment or multi-factor authentication for key access.",
+       "mood": "thinking"
+      },
+      {
+       "who": "kenji",
+       "text": "And she has to file a notice of exemption with DFS. An exemption is claimed, not assumed.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The national bank colleague",
+     "situation": "Your colleague at the Philadelphia sister bank, a national bank supervised by the OCC, says: 'Part 500 does not apply to us, so we do not need any security awareness training at all.' Her team handles customer account data every day.",
+     "choices": [
+      {
+       "text": "Agree. Training is a New York requirement, so a national bank can skip it.",
+       "outcome": "This is wrong. The federal guidelines apply to national banks too, and they require the bank to train staff to implement its information security program. Skipping training would leave a gap the OCC can cite.",
+       "score": 0
+      },
+      {
+       "text": "Explain that the federal guidelines also require staff training, even though they set no yearly frequency, so her bank must still train staff under its own program.",
+       "outcome": "Right. The OCC's version of the Interagency Guidelines requires training to implement the program. Part 500's yearly social engineering course is the New York rule, but federal training is not optional.",
+       "score": 2
+      },
+      {
+       "text": "Tell her to follow Part 500 in full because New York rules apply to every US bank.",
+       "outcome": "Not quite. Part 500 applies to New York covered entities, not to every bank. Some banks choose to adopt it as a benchmark, but it is not her legal rulebook.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "Part 500 in numbers",
+     "caption": "Figures from the text of 23 NYCRR Part 500 on the DFS website.",
+     "items": [
+      {
+       "label": "Incident notice to DFS",
+       "value": "72 hours",
+       "detail": "Latest point after determining a cybersecurity incident has occurred"
+      },
+      {
+       "label": "Awareness training",
+       "value": "Yearly",
+       "detail": "At least once a year for all personnel, including social engineering"
+      },
+      {
+       "label": "Annual filing",
+       "value": "April 15",
+       "detail": "Certification of material compliance or acknowledgment of gaps"
+      },
+      {
+       "label": "Second amendment",
+       "value": "2023",
+       "detail": "Took effect November 1, 2023, with duties phased in over two years"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Key terms",
+     "cards": [
+      {
+       "front": "Customer information (federal)",
+       "back": "Any record, paper or electronic, holding nonpublic personal information about a bank customer, kept by or for the bank."
+      },
+      {
+       "front": "Covered entity (Part 500)",
+       "back": "Anyone operating under, or required to operate under, a license, charter or similar authorization under New York banking, insurance or financial services law."
+      },
+      {
+       "front": "Nonpublic information (Part 500)",
+       "back": "Sensitive business information, plus personal data such as a name with a Social Security, account or card number, access codes, biometrics, or health data."
+      },
+      {
+       "front": "Senior governing body",
+       "back": "The board or a board committee; if there is none, the senior officers responsible for the cybersecurity program."
+      },
+      {
+       "front": "Class A company",
+       "back": "A larger covered entity, defined by revenue and either staff numbers or group revenue, with extra duties such as independent audits."
+      },
+      {
+       "front": "Primary federal regulator",
+       "back": "OCC for national banks, Federal Reserve for state member banks, FDIC for state non-member banks."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A small DFS-licensed firm qualifies for the Part 500 limited exemption. Which duty still applies to it?",
+     "options": [
+      "Designating a CISO who reports to the board in writing",
+      "Keeping a written incident response plan tested every year",
+      "Running endpoint detection and response tools",
+      "At least yearly cybersecurity awareness training that includes social engineering"
+     ],
+     "answer": 3,
+     "explanation": "The limited exemption removes several sections, including the CISO duty, the incident response and continuity plan section and parts of 500.14, but not the awareness training in 500.14(a)(3). Endpoint detection is a Class A duty."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Capital One and the OCC (2020)",
+     "body": "In August 2020 the **OCC** fined two Capital One national banks **USD 80 million** and issued a separate cease-and-desist order. The OCC found that, around 2015, the bank had not set up effective **risk assessment** before moving its IT operations to the cloud, and lacked adequate network security controls, data loss prevention and handling of alerts.\n\nInternal audit missed many of these gaps and did not report them clearly to the audit committee. Where audit did raise concerns, the **board did not hold management accountable**. The OCC found the bank out of compliance with its version of the **Interagency Guidelines Establishing Information Security Standards**.\n\n**Lesson:** the federal guidelines are enforceable. A risk assessment must come before a major technology change, and the board's oversight duty is tested by what it does with bad news."
+    },
+    {
+     "type": "example",
+     "title": "Real case: PayPal and NYDFS (2025)",
+     "body": "In January 2025 **NYDFS** settled with PayPal, a DFS-licensed money transmitter, for **USD 2 million** under Part 500.\n\nIn 2022 an engineering team changed how tax forms were shown to customers. The team **had not been adequately trained** on the company's code deployment rules, so it misclassified the change and skipped the required risk review and testing. The forms went live showing full Social Security numbers. Criminals then used **credential stuffing** (trying stolen passwords in bulk) to reach those forms, and multi-factor authentication was **optional** for the affected customer accounts.\n\nDFS found failures in policies and procedures, in qualified and trained cybersecurity personnel, and in access controls.\n\n**Lesson:** training is a control. People who change systems must know the rules they are expected to follow."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage one takeaways",
+     "items": [
+      "Every bank with a federal supervisor must follow the Interagency Guidelines: a written, board-approved program built on risk assessment",
+      "The federal guidelines require the bank to train staff to implement the program but do not set a training frequency",
+      "Part 500 applies only to NYDFS covered entities, such as New York-chartered banks and DFS-licensed branches of foreign banks",
+      "Part 500 adds a CISO, yearly awareness training with social engineering, a 72-hour notice and an April 15 filing",
+      "A limited exemption removes some Part 500 sections but not the yearly awareness training"
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Find out who your institution's primary federal regulator is and whether it is also a NYDFS covered entity. Which of the duties in this stage would change for you if the answer were different?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "us-cy-s1-q1",
+     "question": "A state-chartered bank in Ohio is not a member of the Federal Reserve. Which agency is its primary federal regulator for the information security guidelines?",
+     "options": [
+      "The OCC",
+      "NYDFS",
+      "The Federal Reserve",
+      "The FDIC"
+     ],
+     "answer": 3,
+     "explanation": "State non-member banks are supervised at federal level by the FDIC, which publishes its own copy of the Interagency Guidelines. The OCC supervises national banks and the Fed supervises state member banks.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s1-q2",
+     "question": "Under the Interagency Guidelines, who must approve a bank's written information security program?",
+     "options": [
+      "The head of IT, with the CISO's countersignature",
+      "The primary federal regulator before the program takes effect",
+      "The board of directors or an appropriate committee of the board",
+      "The bank's external auditor after its yearly review"
+     ],
+     "answer": 2,
+     "explanation": "The guidelines require the board or an appropriate board committee to approve the written program and oversee it. Regulators examine programs but do not pre-approve them.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s1-q3",
+     "question": "Which statement about staff training under the federal Interagency Guidelines is accurate?",
+     "options": [
+      "Training is recommended but is not mentioned in the guidelines",
+      "Only IT staff must be trained; other staff are out of scope",
+      "Banks must train all staff every quarter using a regulator-approved course",
+      "Banks must train staff to implement the program, but the guidelines set no frequency"
+     ],
+     "answer": 3,
+     "explanation": "Training staff to implement the information security program is one of the risk control duties in the guidelines. The text does not prescribe a frequency or a course; the bank decides based on its program and risks.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s1-q4",
+     "question": "A London-headquartered bank operates a New York branch licensed by DFS. Its compliance head believes Part 500 does not apply because the parent has its own group security program. What is correct?",
+     "options": [
+      "Only the parent bank is covered, so the branch needs no program of its own",
+      "Part 500 applies only to New York-chartered banks, not to branches",
+      "The branch is exempt because its parent is supervised in the United Kingdom",
+      "The branch is a covered entity, but it may adopt the parent's program if that program meets Part 500"
+     ],
+     "answer": 3,
+     "explanation": "DFS confirms that licensed New York branches of foreign banks are covered entities. Part 500 lets a covered entity adopt an affiliate's program, but the program must satisfy every applicable section.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s1-q5",
+     "question": "Which of these is one of the stated objectives of a bank's information security program under the federal guidelines?",
+     "options": [
+      "Keeping the bank's marketing plans confidential from competitors",
+      "Ensuring the proper disposal of customer and consumer information",
+      "Maximising the return on the bank's IT budget",
+      "Guaranteeing that no security incident will ever occur"
+     ],
+     "answer": 1,
+     "explanation": "The four objectives are security and confidentiality, protection against anticipated threats, protection against harmful unauthorized access or use, and proper disposal. No program can promise zero incidents.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s1-q6",
+     "question": "Kestrel Point's Philadelphia sister bank is a national bank. A manager there asks whether it must send DFS a yearly Part 500 compliance filing. What is the best answer?",
+     "options": [
+      "No; it is not a New York covered entity, though federal guidelines still apply",
+      "No, because national banks are exempt from all cybersecurity rules",
+      "Yes, because any bank serving New York customers must file",
+      "Yes, because its holding company also owns a New York-chartered bank"
+     ],
+     "answer": 0,
+     "explanation": "Part 500 covers entities operating under New York licenses or charters. A national bank operates under an OCC charter, so the federal guidelines and the 36-hour rule apply, not the DFS filing.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s1-q7",
+     "question": "A DFS-licensed firm with 12 employees believes it qualifies for the limited exemption. What must it do?",
+     "options": [
+      "Nothing; small firms are automatically outside Part 500",
+      "Stop all cybersecurity training until it grows past 20 staff",
+      "File a notice of exemption with DFS and still meet the sections that remain",
+      "Ask the Federal Reserve to confirm the exemption in writing"
+     ],
+     "answer": 2,
+     "explanation": "A covered entity that qualifies for an exemption must file a notice of exemption with DFS within 30 days of the determination. The limited exemption removes some sections only; awareness training and other duties stay.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s1-q8",
+     "question": "In the 2020 Capital One enforcement action, which governance failure did the OCC specifically highlight?",
+     "options": [
+      "The board approved a cloud migration that the OCC had prohibited",
+      "The board appointed a CISO who lacked a US security clearance",
+      "The board did not hold management accountable for concerns raised by internal audit",
+      "The board failed to file a yearly certification with the OCC"
+     ],
+     "answer": 2,
+     "explanation": "The OCC found that internal audit missed many gaps and that, where audit raised concerns, the board did not take effective action to hold management accountable. There is no federal yearly certification like the DFS filing.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s1-q9",
+     "question": "Which description of 'customer information' under the federal guidelines is correct?",
+     "options": [
+      "Only data that includes a Social Security number",
+      "Records with nonpublic personal information about a customer, whether paper or electronic",
+      "Only electronic records stored in the core banking system",
+      "Any information the bank publishes about its products"
+     ],
+     "answer": 1,
+     "explanation": "The guidelines define customer information as any record containing nonpublic personal information about a customer, in paper, electronic or other form, kept by or for the bank.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s1-q10",
+     "question": "In the 2025 PayPal settlement, why did NYDFS treat a training gap as a cybersecurity violation?",
+     "options": [
+      "The CISO had not personally delivered the training sessions",
+      "The company trained staff on a framework that DFS had not approved",
+      "An untrained engineering team skipped the required risk review, exposing customer data",
+      "Staff had failed to complete the yearly phishing course on time"
+     ],
+     "answer": 2,
+     "explanation": "DFS found the engineers were not adequately trained on deployment policies, misclassified the change, skipped the risk review and testing, and exposed unmasked Social Security numbers. That broke the personnel and training duty and the policy duties.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Phishing, Vishing and Social Engineering",
+   "stage": "The Lure Lagoon",
+   "summary": "Why both rulebooks focus on the human layer: recognising phishing, phone pretexts and MFA fatigue, reporting fast, and what Part 500's yearly social engineering training must cover.",
+   "minutes": 50,
+   "objectives": [
+    "Explain the federal training expectation on pretext calling and the Part 500 duty to include social engineering in yearly training",
+    "Recognise phishing, vishing, pretext calls, business email compromise and MFA fatigue attacks",
+    "Respond to and report a suspected social engineering attempt in the right order",
+    "Describe how banks measure whether awareness training works"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The help desk that wasn't",
+     "setting": "Brooklyn branch back office, 4:50 pm on a Friday.",
+     "lines": [
+      {
+       "who": "grace",
+       "text": "Priya, one of my tellers just got a call from 'IT support'. They said her VPN token was failing and asked her to log in on a page they texted her.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Did she do it?",
+       "mood": "thinking"
+      },
+      {
+       "who": "grace",
+       "text": "She started to. Then the page asked her to approve a push on her phone and she stopped. Something felt off: our help desk never texts links.",
+       "mood": "neutral"
+      },
+      {
+       "who": "tomas",
+       "text": "Tomas here from Buffalo. Good instinct. That is the same playbook used against Twitter in 2020: a fake help desk call, a look-alike login page and a push approval.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "She did the most important thing: she stopped and told someone. Grace, ask her to report it through the phishing button and the security hotline right now.",
+       "mood": "proud"
+      },
+      {
+       "who": "grace",
+       "text": "I will. But how do I train fifteen tellers to spot this every time?",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "That's this stage: the Lure Lagoon. Let's learn the lures.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "How social engineering works",
+     "scenes": [
+      {
+       "icon": "🎣",
+       "heading": "The lure",
+       "narration": "Social engineering attacks the person, not the system. The attacker builds a story that makes you want to help: an urgent request, a fake problem, a familiar name or a reward."
+      },
+      {
+       "icon": "📞",
+       "heading": "Many channels",
+       "narration": "It arrives by email as phishing, by phone as vishing, by text as smishing, and in person. Attackers often combine channels, for example an email followed by a call that confirms it."
+      },
+      {
+       "icon": "🔑",
+       "heading": "What they want",
+       "narration": "They want credentials, a multi-factor approval, a payment, customer data or a change to account details, such as a new phone number or payee."
+      },
+      {
+       "icon": "⏸️",
+       "heading": "The pause",
+       "narration": "Your best defence is a pause. Check the request through a channel you already trust, never through the contact details in the message itself."
+      },
+      {
+       "icon": "📣",
+       "heading": "Report every time",
+       "narration": "Report even when you did not fall for it. One report can reveal a campaign aimed at dozens of colleagues and lets the security team block it."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "funnel",
+     "title": "From lure to loss: where you can break the chain",
+     "caption": "Every stage you stop earlier saves more. A report at the contact stage protects everyone.",
+     "items": [
+      {
+       "label": "Reconnaissance",
+       "detail": "Attacker studies staff names, roles and habits from public sources"
+      },
+      {
+       "label": "Contact",
+       "detail": "Email, call or text with a believable story and urgency"
+      },
+      {
+       "label": "Action",
+       "detail": "Victim clicks, enters credentials or approves a push"
+      },
+      {
+       "label": "Access",
+       "detail": "Attacker enters systems and looks for data or payments"
+      },
+      {
+       "label": "Loss",
+       "detail": "Data theft, fraudulent payments or ransomware"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which statement correctly compares the federal and New York training duties on social engineering?",
+     "options": [
+      "Both rules require a quarterly phishing simulation for every employee",
+      "Part 500 expressly requires social engineering in yearly training; the federal guidance expects training on pretext calling and fraud schemes",
+      "Only the federal guidelines mention social engineering; Part 500 covers technical staff only",
+      "Neither rule mentions social engineering, so it is left to bank policy"
+     ],
+     "answer": 1,
+     "explanation": "23 NYCRR 500.14(a)(3) requires at least yearly awareness training that includes social engineering for all personnel. The Fed's small-entity guide to the federal guidelines says banks should train staff to recognise and respond to fraud schemes such as pretext calling."
+    },
+    {
+     "type": "concept",
+     "title": "What Part 500 says about awareness training",
+     "body": "Under **23 NYCRR 500.14(a)(3)**, every covered entity must provide **cybersecurity awareness training** that:\n\n- is given **periodically, and at least once a year**\n- reaches **all personnel**\n- **includes social engineering**\n- is **updated to reflect risks found in the entity's risk assessment**\n\nThis duty survives the limited exemption for small firms. Part 500 also asks for more targeted training: **cybersecurity personnel** need updates and training sufficient for the risks (500.10), and employees who carry out the **incident response and continuity plans** need training on their roles (500.16).\n\nAt federal level, the guidelines require every bank to **train staff to implement** its program. The Fed's compliance guide gives examples: teach staff to recognise and respond to **pretext calling** and other fraud or identity theft schemes, train IT staff in computer security, and train staff to dispose of customer information properly."
+    },
+    {
+     "type": "sort",
+     "title": "Red flag or normal?",
+     "prompt": "A request lands in your inbox or phone. Sort each one.",
+     "buckets": [
+      "Likely social engineering",
+      "Normal business"
+     ],
+     "items": [
+      {
+       "text": "A caller from 'IT' asks you to read out the code just sent to your phone",
+       "bucket": 0
+      },
+      {
+       "text": "An email from the CFO's personal webmail asks for an urgent, secret wire before 5 pm",
+       "bucket": 0
+      },
+      {
+       "text": "A vendor emails new bank details for its invoices and asks you not to call because the phones are down",
+       "bucket": 0
+      },
+      {
+       "text": "A push approval appears on your phone when you are not logging in",
+       "bucket": 0
+      },
+      {
+       "text": "The service desk replies to the ticket you opened, inside the ticketing system",
+       "bucket": 1
+      },
+      {
+       "text": "Your manager asks you in a team meeting to finish this year's awareness course by month end",
+       "bucket": 1
+      },
+      {
+       "text": "A 'customer' calls asking to change the account's phone number but cannot answer the security questions and grows angry",
+       "bucket": 0
+      },
+      {
+       "text": "The security team announces a planned phishing test in the staff newsletter",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: an MFA prompt approved four times (NYDFS, 2021)",
+     "body": "In March 2021 **NYDFS** fined Residential Mortgage Services, a DFS-licensed mortgage banker, **USD 1.5 million**.\n\nIn March 2019 an employee who handled loan applicants' personal data clicked a link in a **phishing email** that appeared to come from a business partner, and entered her email password on a fake page. The firm used multi-factor authentication, so the password alone was not enough. But that evening she **approved the push prompt on her phone four times**, although she was not logging in herself. She reported it only after a fifth prompt the next day.\n\nIT blocked access but did not check what data the mailbox held, so **no one notified consumers or DFS**. The event was first disclosed to DFS examiners about 18 months later.\n\n**Lesson:** MFA helps only if staff know never to approve a prompt they did not start, and report it at once."
+    },
+    {
+     "type": "example",
+     "title": "Real case: the Twitter help desk calls (NYDFS report, 2020)",
+     "body": "In October 2020 **NYDFS** published its investigation of the July 2020 Twitter hack, which hit accounts of several DFS-licensed cryptocurrency firms.\n\nThe attackers **phoned Twitter employees pretending to be the IT help desk**, offering to fix VPN problems that were common after the move to remote work. They sent staff to a **look-alike VPN login page**, captured the credentials in real time, and got some employees to **approve the MFA prompt**. With that access they took over high-profile accounts and posted a bitcoin scam, collecting over **USD 118,000**.\n\nDFS noted the attack used no malware and no sophisticated exploits, just phone calls. It recommended stronger MFA such as hardware security keys, fewer people with access to powerful internal tools, and better staff training.\n\n**Lesson:** a confident voice on the phone can beat expensive technology."
+    },
+    {
+     "type": "story",
+     "title": "The CFO's urgent wire",
+     "setting": "Treasury operations, Manhattan. 3:40 pm.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "An email arrives in the treasury mailbox, signed with the CFO's name. It asks for an urgent USD 480,000 wire to a new supplier account 'before the cut-off', and says the CFO is in a board meeting and cannot take calls.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kenji",
+       "text": "The supplier is real, we use them. But the account number is new and the email says not to call.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Urgency, secrecy, a new account and a block on calling back. That is four red flags in one message.",
+       "mood": "thinking"
+      },
+      {
+       "who": "kenji",
+       "text": "If it is genuine and we miss the cut-off, the CFO will be furious.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "A real CFO will forgive a ten-minute call-back. A fraudulent wire may never come back.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "What do you do with the wire request?",
+     "situation": "You are the treasury analyst handling the email above. The sender address looks right at a glance but is one letter different from the bank's domain. The supplier exists in the vendor master file with a different account number on record.",
+     "choices": [
+      {
+       "text": "Send the wire; the supplier is genuine and the CFO's name is on the email.",
+       "outcome": "This is how business email compromise succeeds. The look-alike domain and changed account details are classic signs. The money would likely be lost and the bank would have to report the fraud.",
+       "score": 0
+      },
+      {
+       "text": "Reply to the email asking the CFO to confirm the new account details.",
+       "outcome": "Better than paying, but you are asking the attacker to confirm their own story. Replies go to the fake address. Verification must use a channel you already trust.",
+       "score": 1
+      },
+      {
+       "text": "Hold the wire, verify with the CFO and the supplier using contact details already on file, and report the email to security through the phishing button.",
+       "outcome": "Right. Out-of-band verification using known contacts stops the fraud, and the report lets security block the domain and warn others. If it was genuine, the delay costs minutes, not money.",
+       "score": 2
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Your five-step response to a suspected lure",
+     "items": [
+      {
+       "label": "Stop",
+       "detail": "Do not click, reply, approve or pay; do not forward the message to colleagues"
+      },
+      {
+       "label": "Verify",
+       "detail": "Use a known channel: the number on file, the intranet directory or walking over"
+      },
+      {
+       "label": "Report",
+       "detail": "Use the phishing button or security hotline; give time, sender and what you did"
+      },
+      {
+       "label": "Contain",
+       "detail": "If you clicked or approved, say so at once so security can reset access"
+      },
+      {
+       "label": "Learn",
+       "detail": "Share the pattern in team briefings without blaming the person who reported"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Name the technique",
+     "prompt": "Match each attack to its description.",
+     "pairs": [
+      {
+       "left": "Phishing",
+       "right": "A fraudulent email that pushes you to click a link, open a file or enter credentials"
+      },
+      {
+       "left": "Vishing",
+       "right": "A phone call from someone pretending to be IT, a regulator, a customer or an executive"
+      },
+      {
+       "left": "Pretext calling",
+       "right": "A caller posing as a customer to get account details or change contact information"
+      },
+      {
+       "left": "MFA fatigue",
+       "right": "Repeated push prompts sent in the hope that you approve one to make them stop"
+      },
+      {
+       "left": "Business email compromise",
+       "right": "Email from a real or spoofed executive or supplier account asking for a payment or bank detail change"
+      },
+      {
+       "left": "Credential stuffing",
+       "right": "Automated use of passwords stolen elsewhere to break into accounts that reuse them"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Myth or fact?",
+     "cards": [
+      {
+       "front": "Myth: 'We have MFA, so phishing is no longer a risk.'",
+       "back": "Fact: attackers can trick people into approving prompts or entering codes on fake pages. MFA must be paired with training, and stronger methods resist this better."
+      },
+      {
+       "front": "Myth: 'If I clicked a link, I should keep quiet to avoid trouble.'",
+       "back": "Fact: a fast report lets security reset access before damage spreads. Silence is what turns a click into a breach."
+      },
+      {
+       "front": "Myth: 'Phishing tests are about catching people out.'",
+       "back": "Fact: tests measure whether training works and show where to focus it. Reporting rates matter as much as click rates."
+      },
+      {
+       "front": "Myth: 'Training once at hiring is enough.'",
+       "back": "Fact: Part 500 requires at least yearly training for all personnel, updated for risks in the risk assessment."
+      },
+      {
+       "front": "Myth: 'Only email is social engineering.'",
+       "back": "Fact: phone, text, video and in-person pretexts are all social engineering, and Part 500 training must cover the topic."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A teller receives six MFA push prompts in two minutes while she is serving a customer and not logging in. What should she do?",
+     "options": [
+      "Deny the prompts and report them to security at once, because someone likely has her password",
+      "Approve one prompt so the alerts stop and she can keep working",
+      "Ignore them; prompts she did not start cannot cause harm",
+      "Turn off her phone until the end of the day and report it tomorrow"
+     ],
+     "answer": 0,
+     "explanation": "Unexpected prompts mean someone is trying to log in with her credentials. Approving gives access, as in the Residential Mortgage case. Waiting delays the password reset that would shut the attacker out."
+    },
+    {
+     "type": "tip",
+     "title": "Make your awareness training count",
+     "body": "- **Tie it to the risk assessment**: Part 500 requires training to be updated for the risks the entity has identified, so last year's slides are not enough.\n- **Cover every channel**: email, calls, texts, collaboration tools and in-person visitors.\n- **Teach the report, not just the spot**: make the reporting route one click or one call.\n- **Target high-risk roles**: payments, treasury, executive assistants, call centers and IT help desks.\n- **Keep evidence**: completion records and content updates show examiners the duty was met."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage two takeaways",
+     "items": [
+      "Part 500 requires all personnel to receive cybersecurity awareness training with social engineering at least once a year",
+      "Federal guidance expects banks to train staff to recognise fraud schemes such as pretext calling",
+      "Never approve an MFA prompt you did not start, and never share a one-time code",
+      "Verify unusual requests through a channel you already trust, not the contact details in the message",
+      "Report every lure quickly, even if you clicked; a fast report is the strongest control"
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of the last unusual request you received at work by email, phone or text. Which red flags did it show, and do you know exactly how to report one at your institution?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "us-cy-s2-q1",
+     "question": "How often must a NYDFS covered entity give cybersecurity awareness training to its personnel under Part 500?",
+     "options": [
+      "Periodically, and at least once a year",
+      "Every two years, aligned with the exam cycle",
+      "Only at hiring, with refreshers left to the CISO",
+      "Quarterly, with a mandatory phishing test each time"
+     ],
+     "answer": 0,
+     "explanation": "Section 500.14(a)(3) requires periodic, but at minimum annual, awareness training including social engineering for all personnel, updated for the risks found in the risk assessment.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s2-q2",
+     "question": "Which content must Part 500 awareness training include?",
+     "options": [
+      "Instructions for configuring firewalls",
+      "The bank's yearly financial results",
+      "A test on the text of the Gramm-Leach-Bliley Act",
+      "Social engineering"
+     ],
+     "answer": 3,
+     "explanation": "Part 500 expressly requires that awareness training include social engineering and be updated to reflect risks the entity identified.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s2-q3",
+     "question": "A caller claims to be an account holder, gives the correct name and address, and asks the call center to change the phone number on file because 'my phone was stolen'. The caller cannot answer the security questions. What is the best response?",
+     "options": [
+      "Decline the change, follow the verification procedure and flag the call as a possible pretext",
+      "Change the number because the name and address match",
+      "Ask the caller for the full card number instead and proceed if it is right",
+      "Change the number and send a confirmation code to the new phone"
+     ],
+     "answer": 0,
+     "explanation": "Changing contact details is a classic step in account takeover. Name and address are easy to find; failing verification is a red flag. The federal guidance expects staff to be trained to resist pretext calling.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s2-q4",
+     "question": "In the Residential Mortgage Services case (NYDFS, 2021), what allowed the attacker into the employee's mailbox despite multi-factor authentication?",
+     "options": [
+      "A vendor shared its administrator password",
+      "The employee approved push prompts on her phone that she had not started",
+      "The firm had switched MFA off for all mailboxes",
+      "The attacker stole the employee's phone from her desk"
+     ],
+     "answer": 1,
+     "explanation": "The employee entered her password on a phishing page and then approved MFA push prompts four times one evening although she was not logging in. MFA was in place, but the human step defeated it.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s2-q5",
+     "question": "What did NYDFS find was the main technique in the July 2020 Twitter hack?",
+     "options": [
+      "Malware hidden in a software update from a vendor",
+      "A brute-force attack on Twitter's password database",
+      "Phone calls posing as the IT help desk, leading staff to a fake VPN login page",
+      "An insider who sold administrator access for bitcoin"
+     ],
+     "answer": 2,
+     "explanation": "DFS reported that attackers called employees claiming to be from the IT help desk about VPN problems, sent them to a look-alike login page and got some to approve MFA. It found no malware or sophisticated exploits.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s2-q6",
+     "question": "An email from a known supplier asks accounts payable to send future payments to a new bank account and says not to phone because its lines are down. What should the clerk do first?",
+     "options": [
+      "Reply to the email asking for a letter on company letterhead",
+      "Update the account, since the email came from the supplier's address",
+      "Verify the change by calling the supplier on the number already on file",
+      "Forward the email to all colleagues so they know about the change"
+     ],
+     "answer": 2,
+     "explanation": "Changed bank details plus a block on calling are signs of business email compromise. Verification must use a trusted channel already on record; replies and letters can be faked by the same attacker.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s2-q7",
+     "question": "Kestrel Point updated its risk assessment after a rise in text-message scams targeting staff phones. What does Part 500 imply for this year's awareness training?",
+     "options": [
+      "The training can stay the same as long as it is delivered yearly",
+      "Only the IT team needs to hear about the new risk",
+      "The training should be updated to cover the newly identified risk",
+      "No change is needed until the next DFS examination"
+     ],
+     "answer": 2,
+     "explanation": "Part 500 requires awareness training that is updated to reflect risks identified in the entity's risk assessment, so new threats found there belong in the training.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s2-q8",
+     "question": "A branch employee clicked a link in a suspicious email and entered her password before realising it was fake. What is the best next step?",
+     "options": [
+      "Delete the email so no one else can click it",
+      "Report it immediately so security can reset her credentials and check for misuse",
+      "Wait to see if anything unusual happens over the next week",
+      "Change her password herself and say nothing to avoid a record"
+     ],
+     "answer": 1,
+     "explanation": "Fast reporting lets the security team reset access, review activity and block the campaign. Quietly changing the password misses sessions already opened and other victims.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s2-q9",
+     "question": "Under Part 500, which group must receive cybersecurity updates and training sufficient to address relevant cybersecurity risks, in addition to the general awareness training?",
+     "options": [
+      "Board members only",
+      "External auditors",
+      "Cybersecurity personnel",
+      "Customers who use online banking"
+     ],
+     "answer": 2,
+     "explanation": "Section 500.10 requires covered entities to provide cybersecurity personnel with updates and training sufficient to address relevant risks, and to verify that key personnel keep their knowledge current.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s2-q10",
+     "question": "A bank's phishing test shows a falling click rate but also very few reports of the test email. What is the most useful conclusion?",
+     "options": [
+      "Training should also push staff to report, because detection depends on reports",
+      "Reporting does not matter as long as nobody clicks",
+      "The tests should stop because staff now recognise phishing",
+      "The program is fully effective because fewer people clicked"
+     ],
+     "answer": 0,
+     "explanation": "Low reporting means real attacks may go unnoticed until someone clicks. Effective awareness programs measure both clicks and reports, and teach the reporting route.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Access Management and Protecting Customer Information",
+   "stage": "The Keyholder's Hall",
+   "summary": "Least privilege, privileged accounts, yearly access reviews, prompt removal of leavers, multi-factor authentication, encryption and secure disposal under the federal guidelines and Part 500.",
+   "minutes": 50,
+   "objectives": [
+    "Apply least privilege and explain the Part 500 access duties, including yearly reviews and prompt removal of access",
+    "Explain where Part 500 requires multi-factor authentication and how compensating controls are approved",
+    "Link federal access controls, encryption, monitoring and disposal measures to everyday tasks",
+    "Recognise the access failures behind real enforcement cases"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The folder called PASSWORDS",
+     "setting": "IT audit room, Buffalo operations center.",
+     "lines": [
+      {
+       "who": "tomas",
+       "text": "Priya, the access review turned up something ugly. Three branch PCs still share one local admin account, and someone kept a spreadsheet of service passwords on the shared drive.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Encrypted, at least?",
+       "mood": "thinking"
+      },
+      {
+       "who": "tomas",
+       "text": "Password-protected, in a folder literally named PASSWORDS. Anyone with access to that drive could copy it, including the call center.",
+       "mood": "neutral"
+      },
+      {
+       "who": "grace",
+       "text": "That's not my team's spreadsheet, I hope. We just use the logins we were given.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "It is nobody's spreadsheet from today. NYDFS fined a consumer lender for exactly this pattern in 2023. Access is where policy meets real life.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Welcome to the Keyholder's Hall. Who gets which keys, for how long, and how we prove it.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Access management in five rules",
+     "scenes": [
+      {
+       "icon": "🔐",
+       "heading": "Need to have, not nice to have",
+       "narration": "Give each person only the access their job needs. Part 500 says access to systems holding nonpublic information must be limited to what is necessary for the user's job."
+      },
+      {
+       "icon": "👑",
+       "heading": "Guard the master keys",
+       "narration": "Privileged accounts can change settings and create other accounts. Keep as few as possible, limit what they can do and use them only for tasks that need them."
+      },
+      {
+       "icon": "📋",
+       "heading": "Review every year at least",
+       "narration": "Covered entities must review all user access at least once a year and remove access that is no longer needed. Many banks review sensitive systems more often."
+      },
+      {
+       "icon": "🚪",
+       "heading": "Close the door when people leave",
+       "narration": "Access must be terminated promptly after someone leaves. Movers matter too: a transfer should remove old access, not just add new access."
+      },
+      {
+       "icon": "📱",
+       "heading": "Prove it is really you",
+       "narration": "Multi-factor authentication combines at least two of: something you know, something you have, something you are. Part 500 requires it for anyone accessing a covered entity's information systems."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Layers of access protection",
+     "caption": "The top of the pyramid holds the most power, so it gets the most control.",
+     "items": [
+      {
+       "label": "Privileged accounts",
+       "detail": "Fewest people, tightest limits, monitored activity"
+      },
+      {
+       "label": "Access to nonpublic information",
+       "detail": "Only what the role needs; reviewed at least yearly"
+      },
+      {
+       "label": "Multi-factor authentication",
+       "detail": "Required for anyone accessing the entity's systems under Part 500"
+      },
+      {
+       "label": "Password policy",
+       "detail": "Written policy meeting industry standards where passwords are used"
+      },
+      {
+       "label": "Joiner, mover, leaver process",
+       "detail": "Grant, change and promptly remove access as people move"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A loan officer moves from the mortgage team to commercial lending. Which access action best fits Part 500's access duties?",
+     "options": [
+      "Grant the commercial lending access and remove the mortgage access she no longer needs",
+      "Add commercial lending access and keep the mortgage access in case she helps out later",
+      "Keep all access as is until the yearly access review",
+      "Give her a privileged account so she can manage her own permissions"
+     ],
+     "answer": 0,
+     "explanation": "Part 500 limits access to what the job requires and requires removal of access no longer necessary. Movers who keep old rights build up excess access over time, a common audit finding."
+    },
+    {
+     "type": "concept",
+     "title": "The Part 500 access and authentication rules",
+     "body": "Section **500.7** requires every covered entity, based on its risk assessment, to:\n\n- limit user access to systems with nonpublic information to what each **job requires**\n- limit the **number and functions of privileged accounts**, and use them only when needed\n- **review all user access at least once a year** and remove what is no longer necessary\n- disable or securely configure protocols that allow **remote control of devices**\n- **promptly terminate access** after departures\n- keep a **written password policy** that meets industry standards\n\nClass A companies must also use a privileged access management solution and block commonly used passwords.\n\nSection **500.12** requires **multi-factor authentication for any individual accessing any information system** of the covered entity. The CISO may approve equivalent or more secure compensating controls in writing, reviewed at least yearly."
+    },
+    {
+     "type": "sort",
+     "title": "Federal guideline or Part 500 detail?",
+     "prompt": "Both rulebooks expect access controls. Sort each item by where the specific wording comes from.",
+     "buckets": [
+      "Federal guidelines (all banks)",
+      "Part 500 (covered entities)"
+     ],
+     "items": [
+      {
+       "text": "Consider access controls that stop employees giving customer data to people seeking it by fraud",
+       "bucket": 0
+      },
+      {
+       "text": "Consider dual control, segregation of duties and background checks for staff with access to customer data",
+       "bucket": 0
+      },
+      {
+       "text": "Consider encryption of customer information in transit or in storage where unauthorized people may have access",
+       "bucket": 0
+      },
+      {
+       "text": "Review all user access privileges at least once a year",
+       "bucket": 1
+      },
+      {
+       "text": "Use multi-factor authentication for any individual accessing any information system",
+       "bucket": 1
+      },
+      {
+       "text": "Have a written policy requiring encryption of nonpublic information in transit over external networks and at rest",
+       "bucket": 1
+      },
+      {
+       "text": "Monitor the activity of authorized users to detect unauthorized access or tampering",
+       "bucket": 1
+      },
+      {
+       "text": "Develop measures to dispose of customer and consumer information properly",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: OneMain Financial and NYDFS (2023)",
+     "body": "In May 2023 **NYDFS** settled with OneMain Financial Group, a DFS-licensed consumer lender, for **USD 4.25 million** under Part 500.\n\nDFS described findings from the company's own internal audit:\n\n- access reviews for a network of more than **11,000 users** were done **manually**, with a high risk of error\n- local administrator accounts were **shared**, so actions could not be traced to a person\n- some accounts still used the **default password** given at onboarding\n- passwords were kept in a file in a folder named **'PASSWORDS'** on a shared drive that call center staff could reach\n\nDFS also found gaps in application security, cybersecurity training for personnel and third-party oversight.\n\n**Lesson:** access failures are usually ordinary habits. Shared accounts, default passwords and convenient files are what examiners look for."
+    },
+    {
+     "type": "example",
+     "title": "Real case: optional MFA at PayPal (NYDFS, 2025)",
+     "body": "In the **2025 PayPal** settlement, DFS found that the company's own policy required risk-based authentication for activity that gave access to account information, but **multi-factor authentication was optional** for the customer accounts that criminals reached by credential stuffing.\n\nThe attackers used passwords stolen elsewhere and tested them automatically. Where customers had reused passwords and had not turned on MFA, the attackers got in and could view tax forms showing **full Social Security numbers**, which an untrained engineering team had left unmasked.\n\nPayPal stopped the automated logins with CAPTCHA and rate limiting, masked the data and forced password resets. DFS still found a violation of the Part 500 duty to use **effective controls against unauthorized access**.\n\n**Lesson:** a control written in a policy only counts when it is switched on."
+    },
+    {
+     "type": "story",
+     "title": "The leaver's account",
+     "setting": "Grace's office, Brooklyn branch, Monday morning.",
+     "lines": [
+      {
+       "who": "grace",
+       "text": "Quick one. A teller left on Friday after a dispute with her supervisor. HR said they'd tell IT 'this week'. Is that OK?",
+       "mood": "neutral"
+      },
+      {
+       "who": "tomas",
+       "text": "Her credentials still work on the teller platform and her VPN token is active. 'This week' is too slow.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Part 500 says access must be terminated promptly after departures. A departure after a dispute is exactly when to act fastest.",
+       "mood": "thinking"
+      },
+      {
+       "who": "grace",
+       "text": "I didn't know I was part of this. I thought access was IT's problem.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Managers start the process. IT can only remove what it knows about.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Closing the leaver's access",
+     "situation": "You are the security analyst on duty. The teller's access is still live three days after she left, and the core system shows a login from her account at 7:10 am today from an unfamiliar device.",
+     "choices": [
+      {
+       "text": "Disable all her accounts and tokens now, preserve the logs and escalate the 7:10 am login as a possible incident.",
+       "outcome": "Right. Prompt termination is a Part 500 duty, and the login after departure may mean misuse. Preserving logs keeps evidence for the incident team, which will judge whether any notice is needed.",
+       "score": 2
+      },
+      {
+       "text": "Disable her accounts now, but treat the login as a glitch since she has left the bank.",
+       "outcome": "Half right. Removing access is correct, but a login after departure is a warning sign that needs investigation, not an assumption. Customer information may have been viewed.",
+       "score": 1
+      },
+      {
+       "text": "Wait for HR's formal ticket so the change is properly documented.",
+       "outcome": "Paperwork matters, but it cannot justify leaving active access for a leaver, especially with suspicious activity. Document after you act.",
+       "score": 0
+      },
+      {
+       "text": "Reset her password and send the new one to her personal email so she can return any bank files.",
+       "outcome": "This keeps the account alive and sends a credential outside the bank. It increases risk instead of removing it.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "matrix",
+     "title": "Access risk at a glance",
+     "caption": "Monitoring, MFA strength and review frequency should rise as you move toward the top right.",
+     "axes": {
+      "x": "Privilege level",
+      "y": "Data sensitivity"
+     },
+     "items": [
+      {
+       "label": "Watch closely",
+       "detail": "Low privilege, highly sensitive data: tellers and call center agents viewing customer records"
+      },
+      {
+       "label": "Highest risk",
+       "detail": "High privilege, highly sensitive data: database and core system administrators"
+      },
+      {
+       "label": "Baseline controls",
+       "detail": "Low privilege, low sensitivity: intranet and general office tools"
+      },
+      {
+       "label": "Guard the keys",
+       "detail": "High privilege, low sensitivity data: network and directory administrators who can grant access"
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "A clean joiner-mover-leaver cycle",
+     "prompt": "Put the steps of access management for one employee in a sensible order.",
+     "steps": [
+      "Manager requests access based on the role's documented needs",
+      "Access owner approves and IT grants only the listed rights, with MFA enrolled",
+      "Activity on sensitive systems is monitored as the risk assessment requires",
+      "On a transfer, old access is removed and new role access is granted",
+      "Yearly (or more frequent) review confirms each right is still needed",
+      "On departure, all accounts, tokens and remote access are disabled promptly"
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Protecting customer information day to day",
+     "cards": [
+      {
+       "front": "Clean desk",
+       "back": "Lock away printed customer records and lock your screen whenever you step away."
+      },
+      {
+       "front": "Sharing data",
+       "back": "Send customer information only through approved, encrypted channels, never personal email or messaging apps."
+      },
+      {
+       "front": "Disposal",
+       "back": "Shred paper and use approved wiping for media. Both rulebooks expect secure disposal of customer information."
+      },
+      {
+       "front": "Shared accounts",
+       "back": "Never share logins. Shared accounts hide who did what and break audit trails."
+      },
+      {
+       "front": "Unusual access request",
+       "back": "If someone asks for access 'just in case', ask what task it supports. Least privilege protects them too."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under Part 500, who may approve a compensating control in place of multi-factor authentication?",
+     "options": [
+      "Any system owner, verbally, if the system is old",
+      "The help desk manager, for up to three months",
+      "The CISO, in writing, with the control reviewed at least once a year",
+      "No one; Part 500 allows no alternatives to MFA in any case"
+     ],
+     "answer": 2,
+     "explanation": "Section 500.12(b) lets a covered entity's CISO approve reasonably equivalent or more secure compensating controls in writing, and requires them to be reviewed periodically and at least yearly."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage three takeaways",
+     "items": [
+      "Give each person only the access the job needs, and keep privileged accounts few, limited and used only when needed",
+      "Part 500 requires a review of all user access at least yearly and prompt termination of access after departures",
+      "Part 500 requires MFA for anyone accessing a covered entity's systems; only the CISO can approve written alternatives",
+      "Federal guidelines expect access controls, encryption, dual control, monitoring and secure disposal where the risk assessment calls for them",
+      "Shared accounts, default passwords and convenient password files are recurring enforcement findings"
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "List the systems you can access today. Is there any access you no longer use? Who would you ask to remove it, and how quickly would your access end if you left tomorrow?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "us-cy-s3-q1",
+     "question": "Under Part 500, how often at minimum must a covered entity review all user access privileges?",
+     "options": [
+      "Only when an employee leaves",
+      "Only after a cybersecurity incident",
+      "At least once a year",
+      "Every three years"
+     ],
+     "answer": 2,
+     "explanation": "Section 500.7(a)(4) requires a periodic review, at minimum annual, of all user access privileges and removal of access that is no longer necessary.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s3-q2",
+     "question": "A database administrator uses her privileged account to read email and browse the web all day. Which Part 500 principle does this break?",
+     "options": [
+      "Privileged accounts must be shared within the team",
+      "Privileged accounts must be reviewed every month",
+      "Privileged accounts should be used only for functions that need that access",
+      "Privileged users are exempt from MFA"
+     ],
+     "answer": 2,
+     "explanation": "Part 500 requires covered entities to limit the use of privileged accounts to when performing functions that need such access. Everyday use widens the damage if the account is compromised by phishing.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s3-q3",
+     "question": "Which control does the federal Interagency Guidelines list among measures a bank must consider for employees with access to customer information?",
+     "options": [
+      "Dual control, segregation of duties and background checks",
+      "Rotating all staff between branches monthly",
+      "Banning remote work for all employees",
+      "Mandatory polygraph tests every year"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph III.C.1 lists dual control procedures, segregation of duties and employee background checks for staff with responsibilities for or access to customer information.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s3-q4",
+     "question": "What did NYDFS find about passwords at OneMain Financial in its 2023 consent order?",
+     "options": [
+      "Customers' passwords were sold to a vendor",
+      "Passwords were kept in a file in a folder named 'PASSWORDS' on a widely accessible shared drive",
+      "Passwords were changed every day, which overloaded the help desk",
+      "The company used biometrics instead of passwords for all staff"
+     ],
+     "answer": 1,
+     "explanation": "DFS cited internal audit findings that passwords were stored on a shared drive in a folder named 'PASSWORDS', reachable by staff including the call center, along with shared admin accounts and default passwords.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s3-q5",
+     "question": "A covered entity's legacy teller system cannot support multi-factor authentication. What does Part 500 allow?",
+     "options": [
+      "DFS must approve the system before it is used again",
+      "The business line head may sign a permanent waiver",
+      "The CISO may approve equivalent or more secure compensating controls in writing, reviewed at least yearly",
+      "The system can run without extra controls because it is legacy"
+     ],
+     "answer": 2,
+     "explanation": "Section 500.12(b) allows the CISO to approve reasonably equivalent or more secure compensating controls in writing, reviewed periodically and at least annually.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s3-q6",
+     "question": "An employee resigns and leaves on Friday. Under Part 500, when should her access be removed?",
+     "options": [
+      "At the next yearly access review",
+      "Only if she is believed to be a security risk",
+      "Within 90 days, when HR closes the file",
+      "Promptly after her departure"
+     ],
+     "answer": 3,
+     "explanation": "Part 500 requires covered entities to promptly terminate access following departures. Waiting for a review cycle or a risk judgement leaves an open door.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s3-q7",
+     "question": "Why do shared administrator accounts worry examiners, as in the OneMain case?",
+     "options": [
+      "They cost more in software licences",
+      "They prevent the use of encryption",
+      "They make it impossible to tell which person carried out an action",
+      "They are slower than individual accounts"
+     ],
+     "answer": 2,
+     "explanation": "Shared accounts break accountability: logs show the account, not the person. DFS noted that shared local admin accounts compromised the ability to identify malicious actors.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s3-q8",
+     "question": "Kestrel Point wants to stop customer records leaving by personal email. Which Part 500 duty most directly supports monitoring for this?",
+     "options": [
+      "The April 15 yearly compliance filing",
+      "The definition of a Class A company",
+      "The 72-hour incident notice to DFS",
+      "Risk-based controls to monitor authorized users' activity and detect unauthorized access or use of nonpublic information"
+     ],
+     "answer": 3,
+     "explanation": "Section 500.14(a)(1) requires risk-based policies, procedures and controls to monitor authorized users and detect unauthorized access, use or tampering with nonpublic information.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s3-q9",
+     "question": "Under Part 500, which statement about encryption of nonpublic information is accurate?",
+     "options": [
+      "Encryption is optional and left to each business line",
+      "A written policy must require encryption in transit over external networks and at rest, with CISO-approved alternatives if at-rest encryption is infeasible",
+      "Only data sent to regulators must be encrypted",
+      "Encryption is required at rest but never in transit"
+     ],
+     "answer": 1,
+     "explanation": "Section 500.15 requires a written encryption policy meeting industry standards for nonpublic information in transit over external networks and at rest, with written CISO approval of compensating controls where encryption at rest is infeasible.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s3-q10",
+     "question": "What was the main access control failure DFS cited in the 2025 PayPal settlement?",
+     "options": [
+      "Staff badges did not open the data center doors",
+      "Multi-factor authentication was optional for affected customer accounts",
+      "Administrators were locked out of their own accounts",
+      "The company used too many security tools"
+     ],
+     "answer": 1,
+     "explanation": "DFS found that MFA was optional for the customer accounts reached through credential stuffing, despite PayPal's policy calling for risk-based authentication, and cited the duty to use effective controls against unauthorized access.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Incidents: Response Programs, the 36-Hour Rule and the 72-Hour Notice",
+   "stage": "The Clock Tower",
+   "summary": "How a bank responds to unauthorized access to customer information, when the federal 36-hour notice and the NYDFS 72-hour notice apply, what service providers must tell banks, and when customers are notified.",
+   "minutes": 55,
+   "objectives": [
+    "Describe the elements of a federal response program for unauthorized access to customer information, including customer notice",
+    "Decide whether an event is a computer-security incident and a notification incident under the 36-hour rule",
+    "Apply the Part 500 definitions of cybersecurity event and incident, the 72-hour notice and the extortion payment notices",
+    "Explain the bank service provider's four-hour disruption notice and Part 500's incident plan and testing duties"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Saturday, 2:14 am",
+     "setting": "Incident bridge call. Tomas in Buffalo, Priya at home in Queens, Ellen joining later.",
+     "lines": [
+      {
+       "who": "tomas",
+       "text": "Our online banking provider just called. Ransomware hit their data center. Customers have been unable to log in for two hours and they don't know when it comes back.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Is our own network affected? And has any customer data left their systems?",
+       "mood": "thinking"
+      },
+      {
+       "who": "tomas",
+       "text": "No sign it reached us. Data exfiltration unknown. They say a full forensic answer could take days.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Then two clocks may be ticking. The Fed's 36-hour clock starts when we determine it is a notification incident. DFS's 72-hour clock starts when we determine it is a cybersecurity incident, and an incident at a service provider counts.",
+       "mood": "neutral"
+      },
+      {
+       "who": "tomas",
+       "text": "So who decides, and when?",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "We decide, using our incident plan, and we write down when and why. Welcome to the Clock Tower.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Three notice regimes, one incident",
+     "scenes": [
+      {
+       "icon": "🏛️",
+       "heading": "Federal: the 36-hour rule",
+       "narration": "Since 2022, every banking organization supervised by the OCC, the Fed or the FDIC must notify its primary federal regulator of a notification incident as soon as possible, and no later than 36 hours after determining one has occurred. Email or phone is enough; it is an early warning, not a full report."
+      },
+      {
+       "icon": "🧩",
+       "heading": "Federal: service providers",
+       "narration": "A bank service provider must tell each affected bank as soon as possible when an incident has disrupted, or is likely to disrupt, covered services for four or more hours. Scheduled maintenance the bank was told about does not count."
+      },
+      {
+       "icon": "🗽",
+       "heading": "New York: the 72-hour notice",
+       "narration": "A NYDFS covered entity must notify DFS electronically as promptly as possible, and no later than 72 hours after determining a cybersecurity incident has occurred at the entity, its affiliates or a third-party service provider."
+      },
+      {
+       "icon": "👥",
+       "heading": "Customers",
+       "narration": "Under the federal response program guidance, when sensitive customer information is accessed without authority, the bank investigates promptly and notifies affected customers as soon as possible if misuse has occurred or is reasonably possible."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "And more",
+       "narration": "State breach notice laws, suspicious activity reports and law enforcement contacts may also apply. Your incident plan pulls these together so nothing is missed."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Federal 36-hour notice and NYDFS 72-hour notice",
+     "caption": "A New York-chartered bank may owe both notices for the same event, each on its own clock.",
+     "headers": [
+      "Federal 36-hour rule",
+      "NYDFS Part 500.17"
+     ],
+     "items": [
+      {
+       "label": "Who",
+       "left": "Banks and holding companies supervised by the OCC, the Fed or the FDIC",
+       "right": "NYDFS covered entities"
+      },
+      {
+       "label": "Trigger",
+       "left": "A notification incident: actual harm that materially disrupts or is likely to disrupt key operations",
+       "right": "A cybersecurity incident: an event that requires notice to a government body, is likely to cause material harm, or deploys ransomware"
+      },
+      {
+       "label": "Deadline",
+       "left": "As soon as possible, no later than 36 hours after determining",
+       "right": "As promptly as possible, no later than 72 hours after determining"
+      },
+      {
+       "label": "To whom",
+       "left": "Primary federal regulator's supervisory office or designated contact",
+       "right": "The Superintendent, electronically, using the DFS form"
+      },
+      {
+       "label": "Third parties",
+       "left": "Service providers must alert bank customers of 4+ hour disruptions",
+       "right": "Incidents at a third-party service provider count for the covered entity"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "When does the federal 36-hour clock start?",
+     "options": [
+      "When the bank determines that a notification incident has occurred",
+      "When the attacker first enters the network",
+      "When the bank's board is informed",
+      "When the forensic investigation is complete"
+     ],
+     "answer": 0,
+     "explanation": "The rule requires notice as soon as possible and no later than 36 hours after the banking organization determines a notification incident has occurred. Waiting for full forensics would defeat its early-warning purpose."
+    },
+    {
+     "type": "concept",
+     "title": "Federal definitions that decide the 36-hour notice",
+     "body": "The 2021 rule (OCC, Fed and FDIC, 86 FR 66424) uses two steps.\n\nA **computer-security incident** is an occurrence that causes **actual harm** to the confidentiality, integrity or availability of an information system or the information it holds. A failed attempt is not one.\n\nA **notification incident** is a computer-security incident that has **materially disrupted or degraded**, or is **reasonably likely** to, the bank's:\n\n- ability to carry out banking operations or deliver products and services to a **material portion of its customers**\n- **business lines** whose failure would cause a material loss of revenue, profit or franchise value\n- operations whose failure would **threaten US financial stability**\n\nOnly notification incidents trigger the 36-hour notice. The rule's examples include a large denial-of-service attack that blocks customer access for an extended period, and hacking that disables operations for an extended period."
+    },
+    {
+     "type": "sort",
+     "title": "Which notice could it trigger?",
+     "prompt": "Kestrel Point (a New York-chartered Fed member bank) faces these events. Sort each by the most likely outcome.",
+     "buckets": [
+      "Likely both 36-hour and 72-hour notices",
+      "Likely 72-hour DFS notice only",
+      "Likely neither notice"
+     ],
+     "items": [
+      {
+       "text": "Ransomware locks the core banking system and branches cannot serve customers for a day",
+       "bucket": 0
+      },
+      {
+       "text": "A denial-of-service attack takes online banking down for most customers for many hours",
+       "bucket": 0
+      },
+      {
+       "text": "Ransomware hits a material part of the HR systems; banking services are not disrupted or likely to be",
+       "bucket": 1
+      },
+      {
+       "text": "An event that requires the bank to notify a state attorney general under a breach law, with no disruption",
+       "bucket": 1
+      },
+      {
+       "text": "A phishing email is blocked by the filter and nobody clicks",
+       "bucket": 2
+      },
+      {
+       "text": "A failed login attempt from abroad is stopped by MFA",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "The federal response program for customer information",
+     "body": "The interagency guidance on **response programs** (Supplement A to the guidelines) expects every bank's program to cover unauthorized access to customer information. As the Fed's compliance guide summarises it, the program should include:\n\n- **assessing** the nature and scope of the incident and what customer information was accessed or misused\n- **notifying the primary federal regulator** promptly once the bank becomes aware of unauthorized access to **sensitive customer information**\n- notifying **law enforcement**, in addition to filing a timely **SAR**, where federal crimes need immediate attention\n- **containing** the incident while **preserving records and evidence**\n- **notifying customers** when warranted\n\n**Sensitive customer information** means a name, address or phone number together with a Social Security, driver's license, account or card number, or a PIN or password giving account access; or any combination, such as a user name and password, that lets someone into the account."
+    },
+    {
+     "type": "flip",
+     "title": "Customer notice under the federal guidance",
+     "cards": [
+      {
+       "front": "When must the bank investigate?",
+       "back": "Once it becomes aware of unauthorized access to sensitive customer information, it conducts a reasonable investigation to promptly judge the likelihood of misuse."
+      },
+      {
+       "front": "When must customers be told?",
+       "back": "If misuse has occurred or is reasonably possible, the bank notifies affected customers as soon as possible."
+      },
+      {
+       "front": "Can notice be delayed?",
+       "back": "Yes, if an appropriate law enforcement agency decides notice would hinder a criminal investigation and asks in writing. Notice follows once it no longer interferes."
+      },
+      {
+       "front": "Is a name plus account number sensitive?",
+       "back": "Yes. A name, address or phone number combined with an account or card number is sensitive customer information."
+      },
+      {
+       "front": "What about a user name and password?",
+       "back": "Yes. Any combination that would let an unauthorized person access the account electronically counts."
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: an incident nobody investigated (NYDFS, 2021)",
+     "body": "Back to **Residential Mortgage Services** (DFS consent order, March 2021, **USD 1.5 million**). After the 2019 phishing compromise of an employee's mailbox, IT blocked the intruder but **did not investigate** what the mailbox held, although the employee handled Social Security and bank account numbers every day.\n\nBecause no one checked, the firm could not tell which consumers were affected and **sent no breach notices** to consumers, state agencies or DFS. Part 500 then required notice to DFS within **72 hours** of determining that a cybersecurity event needing notice to another government body had occurred.\n\nOnly after DFS examiners asked did the firm hire outside experts, review every email in the account and notify affected consumers, offering credit monitoring, by late 2020.\n\n**Lesson:** blocking the attacker is the start of incident response, not the end. You cannot meet a notice deadline for an impact you never assessed."
+    },
+    {
+     "type": "story",
+     "title": "Two hours later on the bridge",
+     "setting": "Incident bridge call, 4:20 am.",
+     "lines": [
+      {
+       "who": "tomas",
+       "text": "Update: the provider now says online banking will be down at least 24 hours. That's most of our retail customers locked out.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Then I am determining that this is a notification incident under the federal rule and a cybersecurity incident under Part 500. Log the time: 4:21 am.",
+       "mood": "thinking"
+      },
+      {
+       "who": "ellen",
+       "text": "Ellen here. Do we notify now, or wait until we know whether data was stolen?",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Now. The Fed notice can be a call or email to our supervisory contact. DFS gets its electronic notice too. We keep both updated as facts change.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ellen",
+       "text": "And customers?",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "If we find sensitive customer information was accessed and misuse is reasonably possible, they get notice as soon as possible. That decision comes from the investigation.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The ransom note",
+     "situation": "A day later the attackers email Kestrel Point directly, threatening to publish customer files unless the bank pays. A senior executive suggests quietly paying through a crypto broker 'so the regulators never need to know'.",
+     "choices": [
+      {
+       "text": "Pay quietly; if the data never appears, no further notices are needed.",
+       "outcome": "This breaks Part 500. A covered entity that makes an extortion payment must notify DFS within 24 hours of payment and explain within 30 days why it paid, the alternatives considered and its sanctions diligence, including OFAC. Secrecy is not an option.",
+       "score": 0
+      },
+      {
+       "text": "Refuse to discuss payment at all and stop updating regulators until the threat passes.",
+       "outcome": "Declining to pay can be a sound decision, but going quiet is not. Part 500 imposes a continuing duty to update DFS with material changes, and the federal supervisor should be kept informed.",
+       "score": 1
+      },
+      {
+       "text": "Escalate under the incident plan to legal, the board and law enforcement, keep DFS and the Fed updated, and follow the Part 500 extortion payment notices if any payment is ever made.",
+       "outcome": "Right. The plan sets who decides. If a payment is made, DFS must be told within 24 hours and given a written explanation within 30 days, including diligence on sanctions rules.",
+       "score": 2
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "timeline",
+     "title": "Kestrel Point's incident clocks",
+     "caption": "Clocks run from determination, so the incident plan must say who determines and how it is recorded.",
+     "items": [
+      {
+       "label": "Provider calls",
+       "value": "Sat 2:14 am",
+       "detail": "Service provider reports a ransomware disruption; triage starts"
+      },
+      {
+       "label": "Determination",
+       "value": "Sat 4:21 am",
+       "detail": "CISO determines a notification incident and a cybersecurity incident; time logged"
+      },
+      {
+       "label": "Federal notice",
+       "value": "Within 36 h",
+       "detail": "Fed supervisory contact told by email or phone, as soon as possible"
+      },
+      {
+       "label": "DFS notice",
+       "value": "Within 72 h",
+       "detail": "Electronic notice to DFS, then continuing updates"
+      },
+      {
+       "label": "Customer notice",
+       "value": "ASAP once known",
+       "detail": "If sensitive data was accessed and misuse is reasonably possible"
+      },
+      {
+       "label": "If a ransom is paid",
+       "value": "24 h / 30 days",
+       "detail": "DFS notice of payment, then written reasons and diligence"
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "A Part 500 incident response plan in action",
+     "prompt": "Put these response steps in a sensible order.",
+     "steps": [
+      "Detect and triage the event using the roles and decision rights set in the plan",
+      "Contain the threat while preserving logs and evidence",
+      "Determine whether a reportable incident has occurred and record the time",
+      "Send the required regulator notices and keep them updated",
+      "Recover systems, including restoring from backups",
+      "Prepare a root cause analysis and update the plan and training"
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under Part 500, which event is a 'cybersecurity incident' even if no customer data was taken?",
+     "options": [
+      "A phishing email that the filter blocked",
+      "Ransomware deployed within a material part of the covered entity's information systems",
+      "An unsuccessful attempt to guess an administrator's password",
+      "A scheduled software update that was announced in advance"
+     ],
+     "answer": 1,
+     "explanation": "Part 500 defines a cybersecurity incident to include an event that results in ransomware being deployed within a material part of the entity's systems, as well as events requiring notice to a government body or likely to cause material harm."
+    },
+    {
+     "type": "tip",
+     "title": "Make the clocks workable before you need them",
+     "body": "- **Name the decision-maker** who determines an incident, and a backup, in the incident plan.\n- **Keep regulator contacts current**: the Fed, OCC or FDIC supervisory contact and the DFS portal access.\n- **Give service providers a bank point of contact** so their four-hour disruption notices reach someone at 2 am.\n- **Test yearly**: Part 500 requires covered entities to test incident response and continuity plans, and backup restoration, at least once a year.\n- **Train the responders**: Part 500 requires training for employees responsible for carrying out the plans."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage four takeaways",
+     "items": [
+      "Federally supervised banks notify their primary federal regulator no later than 36 hours after determining a notification incident",
+      "Bank service providers must alert affected banks as soon as possible of incidents disrupting covered services for four or more hours",
+      "NYDFS covered entities notify DFS no later than 72 hours after determining a cybersecurity incident, including one at a third-party service provider",
+      "Under the federal response program guidance, customers are notified as soon as possible when misuse of sensitive information has occurred or is reasonably possible",
+      "Part 500 requires DFS notice within 24 hours of any extortion payment and a written explanation within 30 days"
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If your bank's main system went down tonight, who would determine whether it is a reportable incident, and how would you reach them? Find the answer in your incident plan."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "us-cy-s4-q1",
+     "question": "Under the federal rule, what must a bank do after determining a notification incident has occurred?",
+     "options": [
+      "File a full forensic report with FinCEN within 30 days",
+      "Notify every customer by mail within 36 hours",
+      "Inform the FFIEC within 72 hours",
+      "Notify its primary federal regulator as soon as possible and no later than 36 hours later"
+     ],
+     "answer": 3,
+     "explanation": "The rule requires notice to the primary federal regulator's supervisory office or designated contact as soon as possible and no later than 36 hours after determination. It is an early alert, not a full report.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s4-q2",
+     "question": "Which event is NOT a computer-security incident under the federal rule?",
+     "options": [
+      "A blocked attempt that caused no actual harm to any system or data",
+      "A denial-of-service attack that takes online banking offline",
+      "A hack that alters customer account balances",
+      "Ransomware that encrypts a branch file server"
+     ],
+     "answer": 0,
+     "explanation": "A computer-security incident requires actual harm to the confidentiality, integrity or availability of a system or its information. An unsuccessful attempt causing no harm does not qualify.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q3",
+     "question": "A bank's card processor suffers an attack and expects card services to be degraded for six hours. What must the processor do under the federal rule?",
+     "options": [
+      "Do nothing, because only banks have notice duties",
+      "Notify a bank-designated point of contact at each affected bank as soon as possible",
+      "Wait until the disruption ends and then send a summary",
+      "Notify the bank's primary federal regulator directly within 36 hours"
+     ],
+     "answer": 1,
+     "explanation": "Bank service providers must notify at least one bank-designated contact at each affected banking organization as soon as possible when an incident has disrupted or is likely to disrupt covered services for four or more hours.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q4",
+     "question": "A NYDFS covered entity learns its outsourced payroll provider suffered a cybersecurity incident that affects the entity. The provider says it has already told DFS. What must the covered entity do?",
+     "options": [
+      "Nothing, because the provider's notice covers it",
+      "Wait for DFS to contact it",
+      "Notify only the Federal Reserve",
+      "Notify DFS itself within 72 hours of determining the incident occurred"
+     ],
+     "answer": 3,
+     "explanation": "Part 500.17(a) covers incidents at the entity, its affiliates or a third-party service provider, and DFS's FAQ confirms the covered entity must notify even if the provider also does.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s4-q5",
+     "question": "Under the federal response program guidance, when should a bank notify affected customers after unauthorized access to sensitive customer information?",
+     "options": [
+      "Within 36 hours, in every case",
+      "As soon as possible once it determines misuse has occurred or is reasonably possible",
+      "Only if a court orders it",
+      "Only after the attacker has been arrested"
+     ],
+     "answer": 1,
+     "explanation": "After a reasonable investigation to promptly assess the likelihood of misuse, the bank should notify affected customers as soon as possible if misuse has occurred or is reasonably possible.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q6",
+     "question": "Which data set is 'sensitive customer information' under the federal response program guidance?",
+     "options": [
+      "A customer's name and the city where she lives",
+      "A customer's name together with her debit card number",
+      "The average credit score of all customers in a region",
+      "A list of the bank's branch addresses"
+     ],
+     "answer": 1,
+     "explanation": "Sensitive customer information is a name, address or phone number combined with items such as a Social Security, driver's license, account or card number, or a PIN or password; or any combination allowing account access.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q7",
+     "question": "A covered entity pays a ransom to regain access to its systems. What does Part 500 require?",
+     "options": [
+      "Approval from DFS before any payment is made",
+      "Notice to DFS only if the payment exceeds a set threshold",
+      "No notice, since the incident itself was already reported",
+      "Notice to DFS within 24 hours of payment and a written explanation within 30 days"
+     ],
+     "answer": 3,
+     "explanation": "Section 500.17(c) requires notice of an extortion payment within 24 hours and, within 30 days, a written description of why it was necessary, alternatives considered and diligence, including on OFAC rules.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q8",
+     "question": "What was the central failure in the Residential Mortgage Services case regarding incident response?",
+     "options": [
+      "IT blocked the intruder but never checked what customer data the mailbox held, so no notices were sent",
+      "The firm reported the event to the wrong federal agency",
+      "The firm notified customers too early, before DFS approved",
+      "The firm paid a ransom without telling DFS"
+     ],
+     "answer": 0,
+     "explanation": "DFS found the firm failed to investigate which consumer data was exposed, so it could not send required breach notices to consumers, state agencies or DFS within 72 hours. The event surfaced during an exam about 18 months later.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s4-q9",
+     "question": "Under Part 500, how often must a covered entity test its incident response and business continuity plans?",
+     "options": [
+      "Whenever DFS requests a test",
+      "Every three years",
+      "Only after a real incident",
+      "At least once a year, including its ability to restore from backups"
+     ],
+     "answer": 3,
+     "explanation": "Section 500.16(d) requires periodic, at minimum annual, testing of incident response and BCDR plans with critical staff and management, and of the ability to restore critical data and systems from backups.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s4-q10",
+     "question": "A law enforcement agency asks a bank in writing to delay customer notice because it would hinder a criminal investigation. What does the federal guidance allow?",
+     "options": [
+      "Delay the notice, then notify customers once it will no longer interfere",
+      "Cancel customer notice permanently",
+      "Delay only if the bank's board votes to do so",
+      "Notify customers anyway, since the bank's duty overrides the request"
+     ],
+     "answer": 0,
+     "explanation": "The response program guidance recognises a delay when an appropriate law enforcement agency determines notice would interfere with a criminal investigation and asks in writing; notice follows as soon as it will no longer interfere.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Third Parties, Board Oversight and Exam Readiness",
+   "stage": "The Boardroom Summit",
+   "summary": "Overseeing service providers under the federal guidelines and Part 500, how the board and the CISO govern the program, the April 15 DFS filing, testing and records, and how examiners judge the whole program.",
+   "minutes": 55,
+   "objectives": [
+    "Explain the federal service provider duties and the Part 500 third-party service provider policy in general terms",
+    "Describe the board's role under the federal guidelines and Part 500, including yearly reports and sufficient understanding",
+    "Explain the NYDFS April 15 certification or acknowledgment, who signs it and how long records are kept",
+    "Prepare evidence of training, testing and oversight for a federal or DFS examination"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The vendor that started early",
+     "setting": "Third-party risk office, Manhattan. Two weeks before the exams.",
+     "lines": [
+      {
+       "who": "kenji",
+       "text": "Bad news. Marketing signed a new analytics vendor last month. They already have a feed of customer data, and our security questionnaire is still 'pending'.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "So customer information is flowing to a provider we haven't assessed. That's the OneMain pattern DFS cited in 2023.",
+       "mood": "thinking"
+      },
+      {
+       "who": "kenji",
+       "text": "The contract also has no clause on telling us about security incidents.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ellen",
+       "text": "Ellen Whitaker. I chair the board risk committee. I'll be asking about this at our meeting, and so will the examiners.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Then let's fix it properly. Final stage: the Boardroom Summit. Third parties, the board, and proving it all to the examiners.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Who answers for third parties",
+     "scenes": [
+      {
+       "icon": "🤝",
+       "heading": "You can outsource work, not responsibility",
+       "narration": "Banks rely on providers for core systems, cloud, cards and more. Under both rulebooks, the bank stays responsible for protecting its customer information wherever it sits."
+      },
+      {
+       "icon": "🔍",
+       "heading": "Federal: select, contract, monitor",
+       "narration": "The federal guidelines require due diligence when selecting service providers, contracts that require them to protect customer information, and monitoring where the risk assessment calls for it, for example by reviewing their audits and test results."
+      },
+      {
+       "icon": "🗽",
+       "heading": "New York: a written policy",
+       "narration": "Part 500 requires written third-party policies based on risk: identify and assess providers, set minimum security practices, do due diligence and reassess them periodically."
+      },
+      {
+       "icon": "📝",
+       "heading": "What contracts should cover",
+       "narration": "Part 500's guidelines point to access controls and multi-factor authentication, encryption, prompt notice of cybersecurity events affecting the entity, and representations about the provider's security."
+      },
+      {
+       "icon": "📚",
+       "heading": "The wider guidance",
+       "narration": "The 2023 interagency guidance on third-party relationships describes the full life cycle, from planning and due diligence to contracts, ongoing monitoring and exit."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Third-party life cycle in brief",
+     "caption": "Based in general terms on the 2023 interagency third-party guidance and Part 500.11.",
+     "items": [
+      {
+       "label": "Plan",
+       "detail": "Decide if outsourcing fits; identify data and systems the provider will touch"
+      },
+      {
+       "label": "Due diligence",
+       "detail": "Assess security practices before any data flows, scaled to risk"
+      },
+      {
+       "label": "Contract",
+       "detail": "Security duties, MFA and encryption, incident notice, audit rights"
+      },
+      {
+       "label": "Monitor",
+       "detail": "Review audits, test results and incidents; reassess risk ratings"
+      },
+      {
+       "label": "Exit",
+       "detail": "Retrieve or destroy data and remove access when the relationship ends"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under the federal guidelines, which duty does a bank have toward a service provider that handles customer information?",
+     "options": [
+      "Approve the provider's own board members",
+      "Run the provider's security operations itself",
+      "Report the provider's annual revenue to its regulator",
+      "Require it by contract to implement appropriate measures to protect customer information"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph III.D requires due diligence in selecting providers, contracts requiring appropriate safeguards, and monitoring where the risk assessment indicates, including reviewing audits or test summaries."
+    },
+    {
+     "type": "concept",
+     "title": "The board and the CISO",
+     "body": "**Federal guidelines (all banks).** The board or a board committee must **approve** the written program and **oversee** it, assigning responsibility and reviewing management reports. Management must report to the board **at least once a year** on the program's status and compliance, covering items such as the risk assessment, risk decisions, service provider arrangements, **test results**, **security breaches and responses** and recommended changes.\n\n**Part 500 (covered entities).** The **CISO** reports **in writing at least once a year** to the senior governing body on the program, material risks, its effectiveness, material events and plans to fix material gaps, and reports **significant events promptly**. The senior governing body must:\n\n- have **sufficient understanding** of cybersecurity to oversee it, using advisors if needed\n- require management to develop and maintain the program\n- **regularly receive and review** management reports\n- confirm management has given the program **sufficient resources**"
+    },
+    {
+     "type": "match",
+     "title": "Who does what in governance?",
+     "prompt": "Match each role to its duty.",
+     "pairs": [
+      {
+       "left": "Board or board committee",
+       "right": "Approves the written information security program and oversees its implementation"
+      },
+      {
+       "left": "Management (federal)",
+       "right": "Reports at least yearly to the board on program status and compliance with the guidelines"
+      },
+      {
+       "left": "CISO (Part 500)",
+       "right": "Reports in writing at least yearly to the senior governing body and promptly on significant events"
+      },
+      {
+       "left": "Highest-ranking executive and CISO",
+       "right": "Sign the yearly DFS certification or acknowledgment"
+      },
+      {
+       "left": "Independent testers",
+       "right": "Conduct or review tests of key controls, separate from those who build or run the program"
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: the board's role at Capital One (OCC, 2020)",
+     "body": "The **OCC's 2020** action against Capital One is a governance case as much as a technology case. Besides the **USD 80 million** penalty, a separate cease-and-desist order required the board to appoint a **compliance committee** with a majority of directors who were not employees or officers, to meet at least quarterly and to report progress to the board.\n\nThe OCC's findings explain why: internal audit had not reported weaknesses clearly to the audit committee, and when concerns were raised, the **board did not hold management accountable**.\n\n**Lesson:** under the federal guidelines the board does more than approve a document. Examiners look at what reports it received, what questions it asked and whether problems were followed through."
+    },
+    {
+     "type": "example",
+     "title": "Real case: vendors and NYDFS at OneMain (2023)",
+     "body": "In the **2023 OneMain** settlement (**USD 4.25 million**), DFS found that the company had a vendor management policy that assigned risk ratings, but did not complete due diligence on time for some **high- and medium-risk vendors**. Some vendors **started work before** the security questionnaire and risk acceptance were finished.\n\nAfter several cybersecurity events caused by vendors' poor handling of nonpublic information, OneMain ended those relationships but **did not adjust their risk scores** or improve its own third-party procedures.\n\n**Lesson:** a vendor policy only works if the steps happen before data flows, and if lessons from vendor incidents feed back into the process."
+    },
+    {
+     "type": "story",
+     "title": "The board risk committee",
+     "setting": "Board risk committee meeting, 30th floor, Manhattan.",
+     "lines": [
+      {
+       "who": "ellen",
+       "text": "Priya, your written report says awareness training completion is 97%. Who are the other 3%, and what access do they have?",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "Mostly new joiners in their first month and two contractors. The contractors' access is suspended until they finish.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ellen",
+       "text": "Good. And the analytics vendor Kenji mentioned?",
+       "mood": "neutral"
+      },
+      {
+       "who": "kenji",
+       "text": "Data feed paused, assessment done this week, contract amended to add incident notice and encryption terms.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ellen",
+       "text": "That's the kind of answer I can defend to examiners. I want it in the minutes.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The April 15 filing",
+     "situation": "It is early April. The CISO's draft DFS filing certifies material compliance with Part 500 for last year. But the yearly access review for two legacy systems was never finished, and the incident response plan was not tested last year.",
+     "choices": [
+      {
+       "text": "Sign the certification anyway; the gaps are small and will be fixed this year.",
+       "outcome": "Risky and wrong. A certification must rest on data and documentation showing material compliance. Certifying over known gaps can itself be a violation and damages the entity's credibility with DFS.",
+       "score": 0
+      },
+      {
+       "text": "File an acknowledgment of noncompliance naming the sections not met, describing the gaps and giving a remediation timeline, signed by the highest-ranking executive and the CISO.",
+       "outcome": "Right. Part 500 gives two options: certify material compliance, or acknowledge noncompliance, identify the sections and give a remediation plan. Supporting records are kept for five years.",
+       "score": 2
+      },
+      {
+       "text": "Skip this year's filing until the gaps are closed.",
+       "outcome": "Not allowed. Every covered entity must submit either a certification or an acknowledgment by April 15 each year.",
+       "score": 0
+      },
+      {
+       "text": "Ask the business lines to sign instead, since the gaps are theirs.",
+       "outcome": "Wrong signers. Part 500 requires the highest-ranking executive and the CISO (or the senior officer responsible for the program if there is no CISO) to sign.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "The governance calendar",
+     "caption": "Part 500 figures from 23 NYCRR 500.4 and 500.17; federal figure from the Interagency Guidelines.",
+     "items": [
+      {
+       "label": "Board report (federal)",
+       "value": "Yearly",
+       "detail": "Management reports program status and compliance to the board or committee"
+      },
+      {
+       "label": "CISO written report",
+       "value": "Yearly",
+       "detail": "To the senior governing body under Part 500"
+      },
+      {
+       "label": "DFS filing",
+       "value": "April 15",
+       "detail": "Certification or acknowledgment for the prior calendar year"
+      },
+      {
+       "label": "Supporting records",
+       "value": "5 years",
+       "detail": "Kept for DFS to examine after each filing"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Evidence an examiner would ask for",
+     "prompt": "Which evidence best supports each area?",
+     "buckets": [
+      "Training",
+      "Testing and oversight",
+      "Governance"
+     ],
+     "items": [
+      {
+       "text": "Completion records for yearly awareness training, by person",
+       "bucket": 0
+      },
+      {
+       "text": "Course content updated after the latest risk assessment",
+       "bucket": 0
+      },
+      {
+       "text": "Records of role training for incident responders and security staff",
+       "bucket": 0
+      },
+      {
+       "text": "Penetration test and vulnerability scan reports with remediation tracking",
+       "bucket": 1
+      },
+      {
+       "text": "Reviews of service providers' audit reports and test results",
+       "bucket": 1
+      },
+      {
+       "text": "Results of the yearly incident response and backup restoration test",
+       "bucket": 1
+      },
+      {
+       "text": "Board minutes approving the program and discussing the yearly report",
+       "bucket": 2
+      },
+      {
+       "text": "Signed DFS certification or acknowledgment with supporting documents",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Exam-day quick answers",
+     "cards": [
+      {
+       "front": "Who tests key controls?",
+       "back": "Independent third parties or staff independent of those who develop or maintain the program, at a frequency set by the risk assessment (federal guidelines)."
+      },
+      {
+       "front": "How is a Part 500 violation counted?",
+       "back": "A single prohibited act or failure is a violation, including a material failure to comply with any section for any 24-hour period."
+      },
+      {
+       "front": "Does DFS consider frameworks like NIST?",
+       "back": "Yes. Alignment with nationally recognised frameworks such as NIST is one of the factors DFS weighs when setting a penalty."
+      },
+      {
+       "front": "Can the CISO work for an affiliate or vendor?",
+       "back": "Yes under Part 500, but the covered entity keeps responsibility and names a senior person to oversee the provider."
+      },
+      {
+       "front": "Does the program ever stay fixed?",
+       "back": "No. The federal guidelines require adjusting it for changes in technology, threats, outsourcing and business arrangements."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which statement about the Part 500 yearly filing is correct?",
+     "options": [
+      "It is optional for banks that the Federal Reserve also supervises",
+      "It is either a certification of material compliance or an acknowledgment of noncompliance with a remediation plan",
+      "It must be signed by the external auditor and the board chair",
+      "It is filed every three years with the 72-hour notice log"
+     ],
+     "answer": 1,
+     "explanation": "Section 500.17(b) requires a yearly submission by April 15: a certification or an acknowledgment identifying the sections not complied with and a remediation timeline, signed by the highest-ranking executive and the CISO."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage five takeaways",
+     "items": [
+      "Banks stay responsible for customer information held by providers: due diligence, protective contract terms and risk-based monitoring",
+      "Part 500 requires written third-party policies, including terms on MFA, encryption and incident notice",
+      "The federal board approves and oversees the program and receives a report at least yearly",
+      "Part 500 adds a written yearly CISO report and a board with sufficient understanding that confirms resources",
+      "By April 15 each covered entity certifies compliance or acknowledges gaps, signed by its top executive and CISO, keeping records five years"
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If an examiner asked you tomorrow to prove you completed this year's security training and know how to report an incident, what evidence would you show?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "us-cy-s5-q1",
+     "question": "Under the federal guidelines, how often must management report to the board on the information security program?",
+     "options": [
+      "Every quarter, by regulation",
+      "Only when a breach occurs",
+      "Every three years, before the exam",
+      "At least once a year"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph III.F requires a report to the board or an appropriate committee at least annually on the program's overall status and compliance with the guidelines.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s5-q2",
+     "question": "Who must sign the yearly Part 500 certification or acknowledgment?",
+     "options": [
+      "Any two directors of the board",
+      "The highest-ranking executive and the CISO",
+      "The head of compliance alone",
+      "The board chair and the external auditor"
+     ],
+     "answer": 1,
+     "explanation": "Section 500.17(b)(2) requires the filing to be signed by the covered entity's highest-ranking executive and its CISO, or the senior officer responsible for the program if there is no CISO.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s5-q3",
+     "question": "A covered entity knows it did not complete its yearly access reviews last year. What should its April 15 submission be?",
+     "options": [
+      "A letter asking DFS to waive the requirement for that year",
+      "An acknowledgment identifying the sections not met and a remediation timeline",
+      "A certification of compliance, with the gap fixed quietly afterwards",
+      "No submission until the reviews are complete"
+     ],
+     "answer": 1,
+     "explanation": "Part 500 offers an acknowledgment for entities that did not materially comply, identifying the sections, describing the gaps and giving a remediation timeline. Certifying over known gaps is not supported by the evidence.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s5-q4",
+     "question": "Which of these is a duty of the senior governing body under Part 500?",
+     "options": [
+      "Confirming that management has allocated sufficient resources to the cybersecurity program",
+      "Writing the technical firewall rules",
+      "Personally approving every user access request",
+      "Submitting the 72-hour notice to DFS"
+     ],
+     "answer": 0,
+     "explanation": "Section 500.4(d) requires the senior governing body to have sufficient understanding, require management to maintain the program, regularly review reports and confirm sufficient resources.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s5-q5",
+     "question": "A business unit wants a new vendor to start receiving customer data before the security assessment is complete. Based on the OneMain case and Part 500, what is the best response?",
+     "options": [
+      "Allow it, because the contract can be fixed later",
+      "Hold the data until due diligence is done, scaled to the vendor's risk",
+      "Allow it for low-risk data, and for any other data too if the deadline is close",
+      "Allow it if the vendor promises in an email to be secure"
+     ],
+     "answer": 1,
+     "explanation": "Part 500 requires due diligence on third-party providers' cybersecurity practices, and DFS cited OneMain for letting vendors start before security reviews were complete. Assessment should precede data flows.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s5-q6",
+     "question": "Under Part 500, which contract topic should third-party policies address?",
+     "options": [
+      "Notice to the covered entity of cybersecurity events affecting its systems or nonpublic information",
+      "The provider's staff dress code",
+      "The provider's marketing budget",
+      "The provider's share price targets"
+     ],
+     "answer": 0,
+     "explanation": "Section 500.11(b) lists guidelines for due diligence and contract terms, including access controls and MFA, encryption, notice of cybersecurity events affecting the entity, and representations and warranties about security.",
+     "difficulty": 2
+    },
+    {
+     "id": "us-cy-s5-q7",
+     "question": "How long must a covered entity keep the records supporting its yearly certification or acknowledgment?",
+     "options": [
+      "Five years",
+      "One year",
+      "Ten years",
+      "Until the next DFS examination only"
+     ],
+     "answer": 0,
+     "explanation": "Section 500.17(b)(3) requires covered entities to keep all supporting records, schedules and documentation for five years for DFS examination.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s5-q8",
+     "question": "In the OCC's 2020 Capital One cease-and-desist order, what did the board have to set up?",
+     "options": [
+      "A new subsidiary to run its cloud operations",
+      "A dedicated hotline to the OCC staffed by directors",
+      "A crypto reserve to cover future penalties",
+      "A compliance committee with a majority of directors who were not bank employees or officers"
+     ],
+     "answer": 3,
+     "explanation": "The order required a compliance committee of at least three members, a majority of them directors who were not employees or officers, meeting at least quarterly to oversee compliance with the order.",
+     "difficulty": 4
+    },
+    {
+     "id": "us-cy-s5-q9",
+     "question": "Under the federal guidelines, who should conduct or review tests of the key controls of the information security program?",
+     "options": [
+      "Independent third parties or staff independent of those who develop or maintain the program",
+      "The same engineers who built the controls, for efficiency",
+      "The bank's marketing team, as an outside view",
+      "The primary federal regulator, every year"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph III.C.3 says tests should be conducted or reviewed by independent third parties or staff independent of those who develop or maintain the security program, at a frequency set by the risk assessment.",
+     "difficulty": 3
+    },
+    {
+     "id": "us-cy-s5-q10",
+     "question": "Under Part 500, what counts as a violation?",
+     "options": [
+      "A single prohibited act or failure, including a material failure to comply with a section for any 24-hour period",
+      "Only violations that DFS finds during an on-site exam",
+      "Only a breach that leads to customer losses",
+      "Only failures that continue for more than a year"
+     ],
+     "answer": 0,
+     "explanation": "Section 500.20(b) states that one prohibited act or failure is a violation, including failure to secure nonpublic information due to noncompliance and material failure to comply for any 24-hour period.",
+     "difficulty": 4
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "us",
+  "programs": [
+   71,
+   72,
+   73,
+   76,
+   77,
+   78,
+   83,
+   84,
+   88
+  ],
+  "classification": "mandatory-explicit",
+  "frequency": [
+   "annual",
+   "periodic"
+  ],
+  "regulators": [
+   "Board of Governors of the Federal Reserve System",
+   "Office of the Comptroller of the Currency (OCC)",
+   "Federal Deposit Insurance Corporation (FDIC)",
+   "New York State Department of Financial Services (NYDFS)"
+  ],
+  "references": [
+   {
+    "title": "Interagency Guidelines Establishing Information Security Standards (12 CFR 208, Appendix D-2; Federal Reserve Regulatory Service)",
+    "issuer": "Federal Reserve Board",
+    "url": "https://www.federalreserve.gov/frrs/guidance/interagency-guidelines-establishing-information-security-standards-for-state-member-banks.htm",
+    "provision": "Sections II and III (III.C.2 staff training, III.D service providers, III.F annual board report)",
+    "note": "Written information security program approved and overseen by the board, risk assessment, controls, staff training, testing, service provider oversight and an at least annual report to the board; the text is common to all three banking agencies.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Interagency Guidelines Establishing Information Security Standards: Small-Entity Compliance Guide",
+    "issuer": "Federal Reserve Board",
+    "url": "https://www.federalreserve.gov/supervisionreg/interagencyguidelines.htm",
+    "note": "Explains the guidelines, including training staff to resist pretext calling and other fraud, and the response program guidance: notice to the primary federal regulator, SAR and law enforcement, containment and customer notice when misuse is likely.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Appendix B to Part 364: Interagency Guidelines Establishing Information Security Standards",
+    "issuer": "FDIC",
+    "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-364/appendix-Appendix%20B%20to%20Part%20364",
+    "provision": "Appendix B, Section III.C.2",
+    "note": "FDIC version of the same guidelines for state non-member banks (host blocks automated access; text confirmed through the Federal Reserve copy)."
+   },
+   {
+    "title": "Appendix B to Part 30: Interagency Guidelines Establishing Information Security Standards",
+    "issuer": "OCC",
+    "url": "https://www.ecfr.gov/current/title-12/chapter-I/part-30/appendix-Appendix%20B%20to%20Part%2030",
+    "note": "OCC version of the same guidelines for national banks and federal savings associations."
+   },
+   {
+    "title": "Computer-Security Incident Notification Requirements for Banking Organizations and Their Bank Service Providers (86 FR 66424)",
+    "issuer": "OCC, Federal Reserve Board, FDIC",
+    "url": "https://www.occ.gov/news-issuances/federal-register/2021/86fr66424.pdf",
+    "provision": "12 CFR 53.2-53.4 (OCC); 12 CFR 225 Subpart N (Board); 12 CFR Part 304 (FDIC)",
+    "note": "Banking organizations notify their primary federal regulator as soon as possible and no later than 36 hours after determining a notification incident has occurred; bank service providers notify affected bank customers as soon as possible of incidents disrupting covered services for four or more hours.",
+    "effective": "2022-04-01",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Cybersecurity Regulation 23 NYCRR Part 500",
+    "issuer": "NYDFS",
+    "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500",
+    "provision": "23 NYCRR 500.4, 500.7, 500.11, 500.12, 500.14(a)(3), 500.16, 500.17",
+    "note": "Covered entities need a risk-based program, a CISO and board oversight, access limits and MFA, third-party policies, at least annual awareness training that includes social engineering, tested incident plans, notice to DFS within 72 hours of determining a cybersecurity incident and an annual compliance filing by April 15.",
+    "effective": "2023-11-01",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Part 500 Requirement Checklist for DFS-Regulated Entities with 500.19(a) Limited Exemptions",
+    "issuer": "NYDFS",
+    "url": "https://www.dfs.ny.gov/system/files/documents/2026/07/Cybersecurity-Part500-Requirement-Checklist_0.pdf",
+    "note": "DFS checklist for smaller entities; lists the duties that still apply under a limited exemption, including at least annual awareness training with social engineering for all staff.",
+    "effective": "2026",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Cybersecurity FAQs",
+    "issuer": "NYDFS",
+    "url": "https://www.dfs.ny.gov/cybersecurity/faqs",
+    "note": "Confirms that DFS-licensed New York branches, agencies and representative offices of foreign banks are covered entities, and that a covered entity must notify DFS of an incident at its third-party service provider even if the provider also notifies DFS.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Third-Party Relationships: Interagency Guidance on Risk Management (Bulletin 2023-17)",
+    "issuer": "OCC",
+    "url": "https://www.occ.gov/news-issuances/bulletins/2023/bulletin-2023-17.html",
+    "note": "Joint guidance on the life cycle of third-party relationships: planning, due diligence, contracts, monitoring and termination.",
+    "effective": "2023-06-06",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "SR 23-4: Interagency Guidance on Third-Party Relationships: Risk Management",
+    "issuer": "Federal Reserve Board",
+    "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2304.htm",
+    "note": "Federal Reserve transmittal of the same interagency guidance.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Consent Order: Capital One, N.A. and Capital One Bank (USA), N.A. (AA-EC-20-51, civil money penalty)",
+    "issuer": "OCC",
+    "url": "https://www.occ.gov/static/enforcement-actions/ea2020-036.pdf",
+    "note": "2020 enforcement action for noncompliance with the information security guidelines: weak risk assessment before a cloud migration, audit gaps and a board that did not hold management accountable; USD 80 million penalty.",
+    "effective": "2020",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Consent Order to PayPal, Inc.",
+    "issuer": "NYDFS",
+    "url": "https://www.dfs.ny.gov/system/files/documents/2026/07/ea20250123-paypal-inc.pdf",
+    "note": "2025 Part 500 settlement: untrained engineers skipped a required risk review, exposing customer data, and MFA was optional; USD 2 million penalty.",
+    "effective": "2025",
+    "checked": "2026-11-08"
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "us-cy-x1",
+    "question": "A bank holding company owns a national bank in Ohio and a state member bank chartered in New York. Which statement about their cybersecurity rulebooks is correct?",
+    "options": [
+     "Both follow the Interagency Guidelines; only the New York bank must also meet Part 500",
+     "Neither follows the guidelines because the holding company has a group program",
+     "Only the New York bank must follow the Interagency Guidelines",
+     "Both must meet Part 500 because they share a holding company"
+    ],
+    "answer": 0,
+    "explanation": "The Interagency Guidelines apply to banks supervised by the OCC, the Fed and the FDIC. Part 500 covers entities operating under New York licenses or charters, so it reaches the New York bank but not the Ohio national bank.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x2",
+    "question": "An examiner asks Kestrel Point to show how it decided which security controls to adopt from the list in the federal guidelines, such as encryption and dual control. What does the guidelines' structure expect?",
+    "options": [
+     "The regulator picks the measures for the bank at each exam",
+     "The bank must adopt every listed measure regardless of its size",
+     "The bank considers each listed measure and adopts those its risk assessment shows are appropriate",
+     "The bank may ignore the list if its board approves"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph III.C.1 tells each bank to consider whether each listed security measure is appropriate and adopt those it concludes are, designing controls to fit the sensitivity of information and the complexity of its activities.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x3",
+    "question": "A New York branch of a foreign bank uses its parent's global security program. DFS examiners find the program has no yearly awareness training for branch staff. What follows?",
+    "options": [
+     "The branch is compliant because the parent's home regulator approved the program",
+     "Only the parent can be cited, since it wrote the program",
+     "The branch is out of compliance, because an adopted program must still meet every applicable Part 500 section",
+     "Training is not required for branches of foreign banks"
+    ],
+    "answer": 2,
+    "explanation": "Part 500.2(d) lets a covered entity adopt an affiliate's program only if the provisions satisfy Part 500. DFS states that licensed New York branches of foreign banks are covered entities, and yearly awareness training applies to all personnel.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x4",
+    "question": "Which situation best matches a 'Class A company' under Part 500?",
+    "options": [
+     "A covered entity with at least USD 20 million in revenue, counted as the rule sets out, in each of the last two years and over 2,000 group employees",
+     "Any covered entity with more than 20 employees",
+     "Any covered entity that is a member of the Federal Reserve",
+     "A covered entity that had a cybersecurity incident in the last two years"
+    ],
+    "answer": 0,
+    "explanation": "Class A requires at least USD 20 million gross annual revenue in each of the last two fiscal years from the entity and its affiliates' New York operations, plus either over 2,000 employees averaged over two years or over USD 1 billion group revenue.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x5",
+    "question": "A compliance officer says: 'Under the federal guidelines our board must approve a new security training course every year.' What is the most accurate correction?",
+    "options": [
+     "Correct; each course needs a board resolution every year",
+     "The board approves and oversees the written program; the guidelines require staff training but set no yearly course approval",
+     "The OCC, not the board, approves training courses",
+     "Training is outside the federal guidelines altogether"
+    ],
+    "answer": 1,
+    "explanation": "The board approves the written program, oversees it and receives a yearly report. Training staff is a risk control duty, but the guidelines prescribe no course, frequency or board approval of each course.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x6",
+    "question": "Which pair of objectives is part of the federal information security program objectives?",
+    "options": [
+     "Protect against anticipated threats, and ensure proper disposal of customer and consumer information",
+     "Protect trade secrets, and prevent insider trading",
+     "Detect money laundering, and file currency transaction reports",
+     "Maximise system uptime, and reduce IT costs"
+    ],
+    "answer": 0,
+    "explanation": "The four objectives are: security and confidentiality of customer information; protection against anticipated threats; protection against unauthorized access or use that could cause substantial harm or inconvenience; and proper disposal.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x7",
+    "question": "A small DFS-licensed lender qualifies for a limited exemption and decides to drop both its awareness training and its multi-factor authentication. What is wrong with this plan?",
+    "options": [
+     "The exemption does not remove the awareness training, and MFA is still required at least for remote and privileged access",
+     "Nothing; the limited exemption removes all of Part 500",
+     "Only the training decision is wrong; MFA can be dropped entirely",
+     "Only the MFA decision is wrong; training can be dropped"
+    ],
+    "answer": 0,
+    "explanation": "The limited exemption removes sections such as 500.4, 500.5 and 500.16 and parts of 500.14, but not 500.14(a)(3) training. Under 500.12(a), limited-exempt entities still need MFA for remote access, remote access to third-party apps with nonpublic information and privileged accounts.",
+    "difficulty": 5
+   },
+   {
+    "id": "us-cy-x8",
+    "question": "Which lesson about training does the 2025 PayPal settlement best illustrate?",
+    "options": [
+     "Training is only a concern for customer-facing staff",
+     "Phishing simulations replace the need for policy training",
+     "Staff who change systems must be trained on the policies they are expected to follow, or the policies fail",
+     "A company with good policies cannot be cited for training gaps"
+    ],
+    "answer": 2,
+    "explanation": "DFS found the engineering team was not adequately trained on deployment policies, skipped the required risk review and exposed full Social Security numbers. Good policies did not help because the people applying them were not trained.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x9",
+    "question": "A covered entity gives its awareness training only to employees, not to the contractors who use its systems every day. Which Part 500 risk does this create?",
+    "options": [
+     "The training duty covers all personnel, so leaving out contractors with system access is likely a gap",
+     "None, because Part 500 applies only to employees on payroll",
+     "Contractors are covered only if they are Class A companies",
+     "Contractors must be trained by DFS directly"
+    ],
+    "answer": 0,
+    "explanation": "Section 500.14(a)(3) requires training for all personnel, and Part 500 counts contractors and agents who use the entity's systems as authorized users. Leaving them out of training is likely to be treated as a gap.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x10",
+    "question": "A caller with a confident voice says he is a DFS examiner and needs a teller to email him a list of large customers' account numbers today 'to check the exam file'. What should the teller do?",
+    "options": [
+     "Send the list, because regulators are entitled to bank data",
+     "Ask the caller for his badge number and then send it",
+     "Send the list but remove the customers' names",
+     "Decline, verify through the bank's compliance team using known contacts, and report the call"
+    ],
+    "answer": 3,
+    "explanation": "Impersonating a regulator is a common pretext. Real examination requests go through the bank's designated contacts. A badge number given by the caller proves nothing; verification must use a channel the bank already trusts.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x11",
+    "question": "Why did DFS's Twitter report recommend hardware security keys over app-based push approvals?",
+    "options": [
+     "Hardware keys are cheaper than smartphones",
+     "Hardware keys remove the need for any training",
+     "Push approvals are banned by Part 500",
+     "Hardware keys resist the trick of getting staff to approve a login started on a fake page"
+    ],
+    "answer": 3,
+    "explanation": "In the Twitter hack, staff entered credentials on a look-alike page and approved push prompts. DFS noted that hardware MFA would have stopped the attackers, while still recommending training.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x12",
+    "question": "Kestrel Point's risk assessment shows that most fraud attempts against staff now arrive by phone, not email, yet the yearly course covers only email phishing. Which change best meets Part 500?",
+    "options": [
+     "Update the course to cover phone-based social engineering identified in the risk assessment",
+     "Move the topic to the IT team's technical training only",
+     "Ask DFS to approve the existing course as sufficient",
+     "Keep the course and add a second email phishing test"
+    ],
+    "answer": 0,
+    "explanation": "Part 500 requires awareness training that includes social engineering and is updated to reflect risks the entity identifies in its risk assessment. Phone attacks are social engineering and should be covered for all personnel.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x13",
+    "question": "An executive assistant gets an email from the CEO's account, which a phishing attack has really taken over, asking her to buy gift cards for a client event and send the codes. What is the best protection?",
+    "options": [
+     "A rule to verify unusual payment or gift requests in person or by a known phone number, even from real accounts",
+     "Checking that the sender address exactly matches the CEO's",
+     "Waiting for the CEO to send a second email to confirm",
+     "Buying the cards but only sending half the codes"
+    ],
+    "answer": 0,
+    "explanation": "When an account is genuinely compromised, the sender address is real, so address checks fail. Out-of-band verification through a known channel is what stops business email compromise.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x14",
+    "question": "Which training content does the Fed's compliance guide to the federal guidelines give as an example?",
+    "options": [
+     "Training staff to write the bank's encryption software",
+     "Training staff to file yearly certifications with DFS",
+     "Training customers to set up multi-factor authentication",
+     "Training staff to recognise and respond to fraud schemes such as pretext calling"
+    ],
+    "answer": 3,
+    "explanation": "The guide says institutions should, for example, train staff to recognise and respond to fraud and identity theft schemes such as pretext calling, give IT staff computer security training and train staff in proper disposal.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x15",
+    "question": "An employee realises she approved an MFA prompt by mistake twenty minutes ago. She is embarrassed. What message should the bank's training culture give her?",
+    "options": [
+     "Ask a colleague to log in from her machine to check",
+     "Change her password next week during the routine reset",
+     "Say nothing unless something visibly goes wrong",
+     "Report it now; fast reporting lets security end the session and reset access"
+    ],
+    "answer": 3,
+    "explanation": "A mistaken approval may have let an attacker in. The Residential Mortgage case shows the harm of slow reporting and weak follow-up. Training should reward fast reporting so containment can start at once.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x16",
+    "question": "A bank wants to know whether its awareness training is working. Which measure gives the best evidence?",
+    "options": [
+     "The number of slides in the training deck",
+     "The percentage of staff who say they enjoyed the course",
+     "The cost of the training vendor's contract",
+     "Trends in phishing test click rates and reporting rates, plus real incident reports from staff"
+    ],
+    "answer": 3,
+    "explanation": "Effectiveness shows in behaviour: fewer clicks and more reports in tests and real attacks. Completion records prove the duty was met, but behaviour measures show whether training changes risk.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x17",
+    "question": "During the yearly access review, a manager approves all 40 of her team's access rights in two minutes without checking them. Which risk does this create?",
+    "options": [
+     "The bank becomes a Class A company",
+     "The review breaches the 72-hour rule",
+     "No risk, because the review was completed on time",
+     "Excess access stays in place, so the review fails its purpose even though it is recorded"
+    ],
+    "answer": 3,
+    "explanation": "Part 500 requires reviewing access and removing what is no longer needed. A rubber-stamp review produces a record without removing excess rights, which examiners treat as a weak control.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x18",
+    "question": "A Class A company finds that blocking commonly used passwords is infeasible on one older platform. What does Part 500 allow?",
+    "options": [
+     "The CISO may approve in writing, at least yearly, the infeasibility and equivalent or stronger compensating controls",
+     "DFS must be asked for a waiver before the platform is used",
+     "The platform may run without controls until replaced",
+     "The help desk may approve an exception for one year"
+    ],
+    "answer": 0,
+    "explanation": "Section 500.7(c)(2) lets the CISO approve in writing, at least annually, the infeasibility of blocking common passwords and the use of reasonably equivalent or more secure compensating controls.",
+    "difficulty": 5
+   },
+   {
+    "id": "us-cy-x19",
+    "question": "Which control from the federal guidelines' list most directly addresses an employee handing customer data to someone who phones pretending to be the customer?",
+    "options": [
+     "Procedures for system modifications",
+     "Encryption of backup tapes in storage",
+     "Environmental controls against fire and water damage",
+     "Access controls that prevent employees from giving customer information to people seeking it by fraud"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph III.C.1.a includes controls to prevent employees from providing customer information to unauthorized individuals who may seek it through fraudulent means, which is the pretext scenario.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x20",
+    "question": "Under Part 500, which group of users must use multi-factor authentication at a covered entity that does NOT have a limited exemption?",
+    "options": [
+     "Only administrators",
+     "Only customers using online banking",
+     "Any individual accessing any of the covered entity's information systems",
+     "Only remote users"
+    ],
+    "answer": 2,
+    "explanation": "After the 2023 amendment, 500.12(a) requires MFA for any individual accessing any information systems of a covered entity, unless it has a limited exemption, in which case a narrower set applies.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x21",
+    "question": "A teller at a New York-chartered bank wants a colleague to use her login while she is on leave 'so customers aren't kept waiting'. What is the core problem?",
+    "options": [
+     "It is fine as long as the password is changed afterwards",
+     "It is only a problem if the colleague makes an error",
+     "It is allowed if the branch manager agrees verbally",
+     "Shared credentials break accountability and the access limits the bank must keep"
+    ],
+    "answer": 3,
+    "explanation": "Access must be limited to what each user's job requires, and actions must be traceable to a person. DFS cited shared admin accounts at OneMain because they hide who did what.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x22",
+    "question": "Which pair correctly matches Part 500 encryption duties?",
+    "options": [
+     "In transit only within the internal network",
+     "At rest only, with no alternative allowed",
+     "In transit over external networks and at rest, with CISO-approved alternatives if at-rest encryption is infeasible",
+     "Only for data sent to DFS or the Federal Reserve"
+    ],
+    "answer": 2,
+    "explanation": "Section 500.15 requires a written policy for encryption meeting industry standards in transit over external networks and at rest, with CISO-approved compensating controls where at-rest encryption is infeasible, reviewed at least yearly.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x23",
+    "question": "A bank is shredding old loan files. Which rulebook expects proper disposal of customer information?",
+    "options": [
+     "Neither; disposal is only a matter of internal policy",
+     "Only Part 500, since it is the stricter rule",
+     "Both: the federal guidelines include disposal, and Part 500 requires secure disposal of nonpublic information no longer needed",
+     "Only the federal guidelines, since Part 500 covers electronic data only"
+    ],
+    "answer": 2,
+    "explanation": "The federal guidelines make proper disposal an objective and a control, and Part 500.13(b) requires policies for secure disposal of certain nonpublic information no longer necessary, unless law requires retention.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x24",
+    "question": "Kestrel Point has a written policy requiring MFA for remote access, but the setting was never switched on for one vendor portal that holds customer data. Which case shows how DFS views this?",
+    "options": [
+     "Capital One 2020, where DFS fined a national bank",
+     "Residential Mortgage 2021, where the firm had no MFA at all",
+     "PayPal 2025, where a policy required strong authentication but MFA was optional in practice",
+     "Twitter 2020, where hackers used malware"
+    ],
+    "answer": 2,
+    "explanation": "DFS cited PayPal for failing to use effective controls although its policy called for risk-based authentication. Capital One was an OCC action, and Residential Mortgage did have MFA.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x25",
+    "question": "Kestrel Point's core platform is hit by ransomware on Monday at 9 am. At 1 pm the CISO determines that branches cannot serve customers and that it is a notification incident. By when must the Fed hear about it?",
+    "options": [
+     "No later than 9 pm on Tuesday",
+     "No later than 1 pm on Thursday",
+     "Within 36 business hours of 9 am Monday",
+     "As soon as possible and no later than 1 am on Wednesday"
+    ],
+    "answer": 3,
+    "explanation": "The 36 hours run from the determination that a notification incident has occurred, here 1 pm Monday, so the outside limit is 1 am Wednesday. The rule also says as soon as possible, so earlier is expected where possible.",
+    "difficulty": 5
+   },
+   {
+    "id": "us-cy-x26",
+    "question": "In the same incident, when does Kestrel Point's latest deadline for the DFS notice fall, if the incident was determined at 1 pm Monday?",
+    "options": [
+     "9 pm on Tuesday",
+     "1 pm on Thursday",
+     "1 am on Wednesday",
+     "The following Monday"
+    ],
+    "answer": 1,
+    "explanation": "Part 500.17(a) requires notice as promptly as possible and no later than 72 hours after determining a cybersecurity incident. Seventy-two hours after 1 pm Monday is 1 pm Thursday.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x27",
+    "question": "A cloud provider tells a national bank it will take its systems offline for a four-hour scheduled upgrade next Sunday, as agreed. Does the provider owe a notice under the federal incident rule when the upgrade happens?",
+    "options": [
+     "Yes, because the outage lasts four hours",
+     "No; previously communicated scheduled maintenance is excluded",
+     "No, because cloud providers are never bank service providers",
+     "Yes, it must notify the OCC directly"
+    ],
+    "answer": 1,
+    "explanation": "The bank service provider duty does not apply to scheduled maintenance, testing or software updates previously communicated to the bank customer.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x28",
+    "question": "A bank service provider suffers an incident affecting a bank that never gave it a designated contact. Whom must the provider notify under the federal rule?",
+    "options": [
+     "The bank's CEO and CIO, or two people with comparable responsibilities",
+     "Every customer of the bank",
+     "The bank's primary federal regulator",
+     "The bank's external auditor"
+    ],
+    "answer": 0,
+    "explanation": "If no bank-designated point of contact was provided, the rule requires notice to the bank's CEO and CIO, or two individuals of comparable responsibility, through any reasonable means.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x29",
+    "question": "Staff at a covered entity report 300 phishing emails in a week; none succeeded. Must the entity give DFS a 72-hour incident notice?",
+    "options": [
+     "Yes, every cybersecurity event must be reported within 72 hours",
+     "Yes, if more than 100 emails were received",
+     "No, because phishing is outside Part 500",
+     "Generally no; unsuccessful attempts are cybersecurity events, not incidents, unless a notice trigger applies"
+    ],
+    "answer": 3,
+    "explanation": "A cybersecurity event includes unsuccessful attempts, but the 72-hour notice applies to cybersecurity incidents: events needing notice to a government body, likely to cause material harm, or deploying ransomware. DFS encourages voluntary sharing of notable attempts.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x30",
+    "question": "A bank discovers that an intruder accessed a file containing customers' names and account numbers. Under the federal response program guidance, what should it do about its primary federal regulator?",
+    "options": [
+     "Notify it only after customers have been told",
+     "Notify it only if the 36-hour rule's disruption test is met",
+     "Notify it promptly once aware of unauthorized access to sensitive customer information",
+     "Never; customer data incidents go only to FinCEN"
+    ],
+    "answer": 2,
+    "explanation": "The response program guidance expects prompt notice to the primary federal regulator once the bank becomes aware of unauthorized access to sensitive customer information, separate from the 36-hour rule's disruption-based test.",
+    "difficulty": 5
+   },
+   {
+    "id": "us-cy-x31",
+    "question": "Which element must a Part 500 incident response plan include?",
+    "options": [
+     "A commitment never to restore from backups",
+     "A rule that only the board may declare an incident",
+     "Preparation of a root cause analysis describing how the event happened, its impact and how to prevent recurrence",
+     "A list of approved ransom payment brokers"
+    ],
+    "answer": 2,
+    "explanation": "Section 500.16(a)(1) lists plan areas including goals, internal processes, roles and decision authority, communications, remediation, documentation, recovery from backups, root cause analysis and plan updates.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x32",
+    "question": "A covered entity paid an extortion demand on Tuesday at 10 am. What is the latest time for its notice of payment to DFS?",
+    "options": [
+     "Within 30 days",
+     "Wednesday at 10 am",
+     "Friday at 10 am",
+     "Only when the written explanation is ready"
+    ],
+    "answer": 1,
+    "explanation": "Section 500.17(c) requires notice within 24 hours of the extortion payment, then a written explanation of reasons, alternatives and diligence, including OFAC compliance, within 30 days.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x33",
+    "question": "After an incident, a bank notified its regulators within the deadlines. Two days later it learns that far more customer records were taken than first thought. What does Part 500 require?",
+    "options": [
+     "Nothing, because the notice was already filed on time",
+     "Update DFS with the material new information",
+     "Withdraw the first notice and start a new 72-hour clock",
+     "Inform only the customers, not DFS"
+    ],
+    "answer": 1,
+    "explanation": "Part 500.17(a)(2) gives covered entities a continuing obligation to update the Superintendent with material changes or new information that was previously unavailable.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x34",
+    "question": "Under the federal guidelines, when must a bank monitor a service provider to confirm it is meeting its contractual security obligations?",
+    "options": [
+     "Every month for every provider, whatever the risk",
+     "Where the bank's risk assessment indicates, for example by reviewing audits or test summaries",
+     "Never, because the contract transfers the risk",
+     "Only when the provider has a breach"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph III.D.3 requires monitoring where indicated by the bank's risk assessment, and says the bank should review audits, test result summaries or equivalent evaluations as part of it.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x35",
+    "question": "A covered entity's CISO is employed by a managed security firm. Which statement fits Part 500?",
+    "options": [
+     "Not allowed; the CISO must be on the entity's own payroll",
+     "Allowed only for Class A companies",
+     "Allowed, but the entity keeps responsibility, names a senior overseer and requires the firm to protect it under Part 500",
+     "Allowed, and responsibility for compliance passes to the firm"
+    ],
+    "answer": 2,
+    "explanation": "Section 500.4(a) allows a CISO employed by an affiliate or third-party provider, provided the entity retains responsibility, designates a senior person to direct and oversee the provider, and requires the provider to maintain a compliant program.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x36",
+    "question": "A board member says she does not understand cybersecurity reports and leaves them to management. Which Part 500 duty is at risk?",
+    "options": [
+     "The duty to run penetration tests",
+     "The senior governing body must have sufficient understanding to oversee cybersecurity, using advisors if needed",
+     "The yearly 72-hour notice",
+     "The duty to encrypt data at rest"
+    ],
+    "answer": 1,
+    "explanation": "Section 500.4(d)(1) requires the senior governing body to have sufficient understanding of cybersecurity matters to exercise oversight, which may include using advisors. Leaving reports unread undermines oversight.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x37",
+    "question": "Which topic does the federal guidelines' yearly report to the board specifically suggest including?",
+    "options": [
+     "Security breaches or violations and management's responses",
+     "Each employee's training score",
+     "The CISO's salary",
+     "The bank's lending targets"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph III.F says the report should discuss material matters such as the risk assessment, risk decisions, service provider arrangements, test results, security breaches or violations and management's responses, and recommended changes.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x38",
+    "question": "Kestrel Point is merging with a smaller bank and moving both onto one cloud platform. Which federal guideline duty applies most directly?",
+    "options": [
+     "Adjust the information security program for changes such as mergers and new systems, after assessing risk",
+     "Notify the Fed under the 36-hour rule before the migration",
+     "Only the acquired bank's program needs review",
+     "None, until the merger has closed for a full year"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph III.E requires the bank to monitor, evaluate and adjust its program for changes in technology, threats and business arrangements, including mergers and outsourcing. Capital One shows the cost of skipping risk assessment before a cloud move.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x39",
+    "question": "Which evidence would best show DFS that the awareness training duty was met for last year?",
+    "options": [
+     "A record that the board approved the training budget",
+     "Per-person completion records for all personnel, and course content updated for risks in the risk assessment",
+     "An email from the CISO saying training happened",
+     "A training vendor's brochure"
+    ],
+    "answer": 1,
+    "explanation": "Part 500 requires training for all personnel, at least yearly, including social engineering and updated for identified risks. Completion records and updated content show both coverage and relevance, and support the April 15 filing.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x40",
+    "question": "In setting a Part 500 penalty, which factor does DFS expressly consider?",
+    "options": [
+     "Whether the CISO holds a particular certification",
+     "The extent to which the entity's policies are consistent with nationally recognised frameworks such as NIST",
+     "The entity's share price on the day of the incident",
+     "The number of social media followers the entity has"
+    ],
+    "answer": 1,
+    "explanation": "Section 500.20(c) lists penalty factors including cooperation, good faith, intent, prior violations, harm to consumers, the board's participation and consistency with nationally recognised frameworks such as NIST.",
+    "difficulty": 4
+   },
+   {
+    "id": "us-cy-x41",
+    "question": "Under Part 500, what must a covered entity's yearly CISO report to the senior governing body cover?",
+    "options": [
+     "Only the budget for next year",
+     "Material cybersecurity risks, the program's overall effectiveness, material events and plans to fix material gaps",
+     "Only the number of phishing emails blocked",
+     "Only incidents reported to DFS within 72 hours"
+    ],
+    "answer": 1,
+    "explanation": "Section 500.4(b) requires a written report at least yearly covering, as applicable, confidentiality and integrity, policies, material risks, overall effectiveness, material events and remediation plans for material inadequacies.",
+    "difficulty": 3
+   },
+   {
+    "id": "us-cy-x42",
+    "question": "Which statement best sums up how the federal and New York layers fit together for a New York-chartered state member bank?",
+    "options": [
+     "The federal guidelines replace Part 500 for any Fed member bank",
+     "It must meet the federal guidelines and 36-hour rule and also Part 500's more detailed duties, including yearly training and the 72-hour notice",
+     "Part 500 replaces the federal guidelines for any New York bank",
+     "It may choose whichever layer it prefers each year"
+    ],
+    "answer": 1,
+    "explanation": "Neither layer displaces the other. A New York-chartered Fed member bank is supervised by the Fed under the federal rules and is also a DFS covered entity under Part 500, so it must satisfy both.",
+    "difficulty": 3
+   }
+  ]
+ }
+}
