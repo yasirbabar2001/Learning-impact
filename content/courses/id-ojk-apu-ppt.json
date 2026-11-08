@@ -1,0 +1,3265 @@
+{
+  "slug": "id-ojk-apu-ppt",
+  "title": "Indonesia | APU PPT PPPSPM Programme under POJK 8/2023",
+  "tagline": "Apply Law 8/2010, Law 9/2013 and OJK's POJK 8/2023: CDD, PEPs, PPATK reporting on goAML, DTTOT freezing and the bank's programme.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional commercial banks in Indonesia",
+    "Foreign bank branches in Indonesia",
+    "Rural banks (BPR)",
+    "Financial services supervised by OJK"
+  ],
+  "hours": 6,
+  "description": "This quest teaches Indonesia's own rules on anti-money laundering (APU), countering the financing of terrorism (PPT) and preventing the financing of proliferation of weapons of mass destruction (PPPSPM) for conventional banks.\n\nIt is based on **Law 8/2010** on money laundering, **Law 9/2013** on terrorism financing, **OJK Regulation (POJK) 8/2023**, OJK's freezing guidance and **PPATK**'s reporting guidance for goAML. POJK 8/2023 requires banks to train officers and staff at least once a year, and directors must make sure staff in relevant units and new joiners attend; this quest is built for that yearly and induction training.\n\nYou will learn the offences and penalties, CDD, beneficial owners, PEPs and EDD, suspicious, cash and cross-border reports to PPATK, tipping off, immediate freezing under the DTTOT and DPPSPM, records, staff screening and OJK's sanctions.\n\nThe quest builds knowledge; it does not replace your bank's own policies, procedures or legal advice. Always follow your institution's approved procedures and the current official texts.",
+  "audience": [
+    "Branch, teller, customer service and account-opening staff at conventional banks in Indonesia",
+    "AML/CFT/CPF unit, transaction monitoring and list-screening staff who analyse alerts and file reports to PPATK",
+    "Relationship managers, payments, treasury and correspondent banking staff",
+    "New joiners who need AML/CFT/CPF training under POJK 8/2023",
+    "Directors, commissioners, internal auditors and risk managers who oversee the programme"
+  ],
+  "outcomes": [
+    "Explain the offences, penalties and tipping-off ban in Law 8/2010 and Law 9/2013",
+    "Apply POJK 8/2023 CDD, beneficial owner, PEP and EDD requirements",
+    "Recognise suspicious transactions and meet PPATK reporting deadlines for LTKM, LTKT and LTKL through goAML",
+    "Freeze and report correctly when a customer matches the DTTOT or DPPSPM",
+    "Describe the five pillars of the bank's programme, staff screening and yearly training duties",
+    "Describe OJK's administrative sanctions and how to avoid them"
+  ],
+  "quest": {
+    "name": "The Nusantara Shield Mission",
+    "premise": "You have just joined the AML/CFT/CPF unit of Bank Lintas Samudra, a fictional conventional bank with branches from Medan to Denpasar. Over five stages you will learn Indonesia's laws, protect the bank's door, report to PPATK, freeze terrorist and proliferation funds, and get the programme ready for OJK's examiners.",
+    "badge": {
+      "name": "Nusantara Shield",
+      "description": "Awarded for mastering Indonesia's AML, CFT and CPF rules for conventional banks under Law 8/2010, Law 9/2013 and POJK 8/2023."
+    },
+    "color": "#c0392b",
+    "cast": [
+      {
+        "id": "dewi",
+        "name": "Dewi Kartika",
+        "role": "Head of the AML/CFT/CPF unit, Jakarta, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#1d4e89"
+        }
+      },
+      {
+        "id": "rizal",
+        "name": "Rizal Hakim",
+        "role": "Transaction monitoring and screening analyst",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#2a9d8f"
+        }
+      },
+      {
+        "id": "maria",
+        "name": "Maria Simanjuntak",
+        "role": "Branch manager, Medan",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#e76f51"
+        }
+      },
+      {
+        "id": "agus",
+        "name": "Agus Wibowo",
+        "role": "Director overseeing compliance",
+        "look": {
+          "skin": 4,
+          "hair": "bald",
+          "color": "#264653"
+        }
+      },
+      {
+        "id": "ketut",
+        "name": "Ketut Arya",
+        "role": "Branch operations and learning lead, Denpasar",
+        "look": {
+          "skin": 4,
+          "hair": "short",
+          "color": "#8d6e63"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Framework: Laws, Offences and Who's Who",
+      "stage": "The Statute Gate",
+      "summary": "Map Indonesia's AML/CFT/CPF rulebook: Law 8/2010, Law 9/2013, POJK 8/2023, the roles of OJK and PPATK, the laundering offences and their penalties.",
+      "minutes": 45,
+      "objectives": [
+        "Explain how Law 8/2010, Law 9/2013 and POJK 8/2023 fit together",
+        "Distinguish active and passive laundering under Law 8/2010 and their maximum penalties",
+        "Describe the roles of OJK, PPATK and the bank",
+        "Respond to customer questions about reporting without tipping off"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Bank Lintas Samudra",
+          "setting": "AML/CFT/CPF unit, Bank Lintas Samudra head office, Jalan Jenderal Sudirman, Jakarta. 8:45 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "mood": "neutral",
+              "text": "Your badge reads: AML/CFT/CPF Officer. Your quest: keep criminal proceeds, terrorist funds and proliferation money out of Bank Lintas Samudra, a fictional conventional commercial bank with branches from Medan to Denpasar."
+            },
+            {
+              "who": "dewi",
+              "mood": "happy",
+              "text": "Selamat datang! I'm Dewi Kartika, head of the bank's special AML/CFT/CPF unit. Five stages lie ahead of you, and OJK's supervisors visit us next quarter."
+            },
+            {
+              "who": "rizal",
+              "mood": "neutral",
+              "text": "Rizal Hakim, transaction monitoring. Medan has already called. A trader brought in a large bag of cash and asked our teller a strange question."
+            },
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "(on video from Medan) Maria Simanjuntak, branch manager. He asked whether deposits 'just under the limit' get reported to the government. My teller froze."
+            },
+            {
+              "who": "rizal",
+              "mood": "thinking",
+              "text": "So which rule applies? The money laundering law? OJK's regulation? PPATK's reporting rules? The teller wants a one-line answer."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "There is no one-line answer, which is why we start here. Before you judge a single deposit, you need the map: the laws, the offences and who does what."
+            },
+            {
+              "who": "agus",
+              "mood": "proud",
+              "text": "Agus Wibowo, the director who oversees compliance. Stage one is the Statute Gate. Learn the rulebook the way an OJK examiner reads it."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Indonesia's AML/CFT/CPF rulebook in five layers",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "Law 8/2010 sets the base",
+              "narration": "Undang-Undang Nomor 8 Tahun 2010, the law on preventing and eradicating money laundering, creates the laundering offences, names the reporting parties, including banks, and sets their reporting duties."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Law 9/2013 covers terror funds",
+              "narration": "Undang-Undang Nomor 9 Tahun 2013 makes terrorism financing a crime, adds its own reporting and tipping-off rules, and creates the domestic terrorist list with immediate freezing."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "OJK writes the bank rules",
+              "narration": "For banks, OJK is the supervisory and regulatory authority. Its regulation POJK 8/2023, in force since 14 June 2023, sets the programme every bank must run against laundering, terrorism financing and proliferation financing."
+            },
+            {
+              "icon": "📡",
+              "heading": "PPATK receives the reports",
+              "narration": "PPATK, the Indonesian Financial Transaction Reports and Analysis Centre, is the financial intelligence unit. Banks file their reports to it electronically through the goAML application."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Your bank fills in the detail",
+              "narration": "Finally, the bank turns all of this into written policies and procedures, proposed by the directors and approved by the Board of Commissioners. That is what you apply every day."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "From statute to your desk",
+          "caption": "Higher layers bind lower ones: a bank procedure can be stricter than POJK 8/2023, never looser.",
+          "items": [
+            {
+              "label": "Laws 8/2010 and 9/2013",
+              "detail": "Offences, reporting parties, reporting duties, tipping off, freezing and criminal penalties."
+            },
+            {
+              "label": "POJK 8/2023 (OJK)",
+              "detail": "The bank's programme: five pillars, CDD, EDD, lists, records, training and administrative sanctions."
+            },
+            {
+              "label": "PPATK reporting rules",
+              "detail": "How and when reports are filed through goAML, plus PPATK guidance on spotting suspicion."
+            },
+            {
+              "label": "Bank policies and procedures",
+              "detail": "Written, approved by the Board of Commissioners, reviewed every year and applied consistently."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Decode the acronyms",
+          "prompt": "Indonesian AML vocabulary is full of acronyms. Match each one to its meaning.",
+          "pairs": [
+            {
+              "left": "APU",
+              "right": "Anti Pencucian Uang: anti-money laundering"
+            },
+            {
+              "left": "PPT",
+              "right": "Pencegahan Pendanaan Terorisme: countering the financing of terrorism"
+            },
+            {
+              "left": "PPPSPM",
+              "right": "Preventing the financing of proliferation of weapons of mass destruction"
+            },
+            {
+              "left": "PPATK",
+              "right": "Indonesia's financial intelligence unit, which receives and analyses reports"
+            },
+            {
+              "left": "LTKM",
+              "right": "Laporan Transaksi Keuangan Mencurigakan: the suspicious transaction report"
+            },
+            {
+              "left": "DTTOT",
+              "right": "The domestic list of suspected terrorists and terrorist organisations"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Maria's trader worries about reports 'to the government'. Which body actually receives a bank's suspicious transaction reports?",
+          "options": [
+            "PPATK, the financial intelligence unit",
+            "OJK, the bank's supervisor",
+            "Bank Indonesia, the central bank",
+            "The Indonesian National Police"
+          ],
+          "answer": 0,
+          "explanation": "Law 8/2010 requires banks to send suspicious, large cash and cross-border transfer reports to PPATK. OJK supervises whether the bank complies, and the police investigate cases PPATK passes on, but the report itself goes to PPATK."
+        },
+        {
+          "type": "concept",
+          "title": "Three ways to launder under Law 8/2010",
+          "body": "Law 8/2010 has three core laundering offences:\n\n- **Article 3 (active):** placing, transferring, spending, paying, converting or moving assets abroad that you know or should reasonably suspect are criminal proceeds, in order to hide their origin. Up to **20 years** in prison and a fine of up to **IDR 10 billion**.\n- **Article 4 (concealing):** hiding the true origin, source, location, use or ownership of such assets. Up to **20 years** and **IDR 5 billion**.\n- **Article 5 (passive):** receiving or controlling such assets, for example as a deposit, gift or payment. Up to **5 years** and **IDR 1 billion**. This does not apply to a reporting party that meets its reporting duties.\n\n**Proceeds** come from a long list of crimes, including corruption, bribery, narcotics, fraud, tax, banking and forestry crimes, plus any crime punishable by four years or more, whether committed in Indonesia or abroad, if it is also a crime under Indonesian law."
+        },
+        {
+          "type": "sort",
+          "title": "Active or passive laundering?",
+          "prompt": "Decide which group of Law 8/2010 offences fits each person's conduct.",
+          "buckets": [
+            "Active (Articles 3 and 4)",
+            "Passive (Article 5)"
+          ],
+          "items": [
+            {
+              "text": "A trader converts bribe money into US dollars and wires it abroad to hide where it came from",
+              "bucket": 0
+            },
+            {
+              "text": "A cousin registers a villa bought with drug money in his own name to hide the real owner",
+              "bucket": 0
+            },
+            {
+              "text": "A friend accepts a car as a gift although he should have suspected it was bought with fraud proceeds",
+              "bucket": 1
+            },
+            {
+              "text": "A nominee lets a corruption suspect park funds in her account, knowing their source",
+              "bucket": 1
+            },
+            {
+              "text": "An official buys gold bars with embezzled funds so the money can no longer be traced",
+              "bucket": 0
+            },
+            {
+              "text": "A shop owner takes payment he suspects comes from illegal logging",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Maximum criminal penalties",
+          "caption": "Figures are the statutory maxima in Law 8/2010; a court sets the actual sentence.",
+          "items": [
+            {
+              "label": "Article 3: active laundering",
+              "value": "20 yrs + IDR 10bn",
+              "detail": "Prison and fine maxima for placing, transferring or converting proceeds to hide their origin."
+            },
+            {
+              "label": "Article 4: concealment",
+              "value": "20 yrs + IDR 5bn",
+              "detail": "Hiding the origin, location or true ownership of proceeds."
+            },
+            {
+              "label": "Article 5: passive laundering",
+              "value": "5 yrs + IDR 1bn",
+              "detail": "Receiving or controlling proceeds; reporting parties doing their duty are exempt."
+            },
+            {
+              "label": "Corporations (Article 7)",
+              "value": "IDR 100bn",
+              "detail": "Maximum fine, plus possible extra penalties such as licence revocation or dissolution."
+            },
+            {
+              "label": "Tipping off (Article 12)",
+              "value": "5 yrs + IDR 1bn",
+              "detail": "For directors, commissioners or staff who reveal an STR to the customer or others."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A second visit in Medan",
+          "setting": "Bank Lintas Samudra, Medan branch. The next morning.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "He's back. Pak Hendra, a palm oil trader. Yesterday IDR 480 million in cash. Today he wants to deposit another IDR 450 million, split across his wife's and his son's accounts."
+            },
+            {
+              "who": "rizal",
+              "mood": "thinking",
+              "text": "Separate days, separate accounts, each amount below the cash reporting line. And yesterday he asked what gets reported."
+            },
+            {
+              "who": "maria",
+              "mood": "neutral",
+              "text": "His documents are in order and he's a long-standing customer. My teller doesn't want to offend him."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Remember how Law 8/2010 defines a suspicious transaction. One of its limbs covers transactions that seem designed to avoid a report the bank must file."
+            },
+            {
+              "who": "agus",
+              "mood": "neutral",
+              "text": "Then the question is not whether he's a nice man. It's what the teller does in the next five minutes."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Five minutes at the counter",
+          "situation": "Pak Hendra is at the teller window with IDR 450 million in cash for two family accounts. He smiles and asks: 'These smaller amounts don't go to PPATK, do they?' The teller calls Maria over. The bank has not yet filed anything on him. What should Maria do?",
+          "choices": [
+            {
+              "text": "Explain the IDR 500 million cash-report threshold so he can plan his deposits without trouble",
+              "outcome": "This hands the customer a map for avoiding reports. Helping someone stay under a reporting line can itself feed suspicion and exposes staff to serious consequences. Staff should never coach customers around reporting duties.",
+              "score": 0
+            },
+            {
+              "text": "Carry out the CDD the transaction requires, avoid any discussion of reporting, note his words and escalate to the AML unit",
+              "outcome": "Correct. The amount alone triggers CDD under POJK 8/2023, and his question plus the split deposits may point to avoidance of reporting. Maria records the facts and reports internally; the AML unit decides whether an LTKM goes to PPATK. She says nothing about reports.",
+              "score": 2
+            },
+            {
+              "text": "Tell him firmly that the bank will now report him to PPATK as suspicious",
+              "outcome": "This is tipping off. Law 8/2010 bars directors, commissioners and staff from telling a customer about an STR being prepared or filed, with penalties of up to 5 years and IDR 1 billion. It also warns a possible launderer.",
+              "score": 0
+            },
+            {
+              "text": "Process the deposits and wait a few weeks to see whether he keeps splitting cash before telling anyone",
+              "outcome": "Partly right: monitoring matters. But his question and the pattern are already worth escalating now. Waiting delays the analysis the AML unit must do, and the three-working-day STR clock starts once the bank knows of suspicious elements.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Words an examiner expects you to know",
+          "cards": [
+            {
+              "front": "Pihak Pelapor",
+              "back": "Reporting party: any person or business that Law 8/2010 requires to report to PPATK. Banks are listed first among financial service providers."
+            },
+            {
+              "front": "Lembaga Pengawas dan Pengatur",
+              "back": "Supervisory and regulatory authority. For banks this is OJK, which sets KYC rules and supervises compliance."
+            },
+            {
+              "front": "Patut diduga",
+              "back": "'Should reasonably have suspected'. The laundering offences do not require certainty: what a reasonable person would have suspected can be enough."
+            },
+            {
+              "front": "Personil Pengendali Korporasi",
+              "back": "Controlling personnel of a corporation: people who set or carry out its policy without needing a superior's approval. They can be punished along with the company."
+            },
+            {
+              "front": "Transaksi Keuangan Mencurigakan",
+              "back": "Suspicious financial transaction, defined in Law 8/2010 in four limbs (you will meet them in stage three)."
+            },
+            {
+              "front": "Harta Kekayaan",
+              "back": "Assets of any kind, movable or immovable, tangible or intangible, obtained directly or indirectly."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the framework grew",
+          "items": [
+            {
+              "label": "Law 8/2010 enacted",
+              "value": "Oct 2010",
+              "detail": "New money laundering law; PPATK confirmed as the independent FIU."
+            },
+            {
+              "label": "Law 9/2013 enacted",
+              "value": "Mar 2013",
+              "detail": "Terrorism financing offence, TF reporting and the DTTOT freezing regime."
+            },
+            {
+              "label": "FATF observer",
+              "value": "Jun 2018",
+              "detail": "Indonesia admitted as an observer to the Financial Action Task Force."
+            },
+            {
+              "label": "POJK 8/2023 in force",
+              "value": "Jun 2023",
+              "detail": "Replaces OJK's 2017 regulation and adds proliferation financing."
+            },
+            {
+              "label": "FATF full member",
+              "value": "Oct 2023",
+              "detail": "Indonesia accepted as the FATF's 40th member at the Paris plenary."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A company is convicted of laundering under Law 8/2010. Who can be punished?",
+          "options": [
+            "Only the employee who handled the money",
+            "Only the company, never individuals",
+            "The company and/or its controlling personnel",
+            "Only directors named in the articles of association"
+          ],
+          "answer": 2,
+          "explanation": "Article 6 of Law 8/2010 allows penalties against the corporation and/or its controlling personnel when the laundering was ordered by them, served the company's purposes, fell within the offender's role and was meant to benefit the company."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Indonesia joins the FATF (PPATK, 2023)",
+          "body": "PPATK announced that on **25 October 2023**, at the FATF plenary in Paris, Indonesia was accepted by acclamation as the FATF's **40th member**.\n\nThe road was long. Indonesia had been an observer since **29 June 2018** and then went through a mutual evaluation testing both its laws and how well they work. In February 2023 the FATF gave Indonesia a fast-track action plan focused on three outcomes: **supervision of compliance**, **asset confiscation** and **proliferation financing**. PPATK reported that all **48 action items** were completed.\n\n**What it means for you:** membership is judged on effectiveness, not paperwork. Examiners now look for real outcomes inside banks: useful suspicious transaction reports, working list screening and staff who know their role. Every LTKM you help write feeds Indonesia's results."
+        },
+        {
+          "type": "tip",
+          "title": "When a customer asks 'who sees my reports?'",
+          "body": "- Do not confirm or deny that any report exists or will exist.\n- Do not explain thresholds so the customer can plan around them.\n- Use a neutral line: *'We follow the bank's standard procedures for all customers.'*\n- Write down the exact words, time and context straight after the conversation.\n- Escalate through the internal channel to the AML unit the same day."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one: what to remember",
+          "items": [
+            "Law 8/2010 creates the laundering offences and the reporting duties of banks; Law 9/2013 does the same for terrorism financing.",
+            "POJK 8/2023, in force since 14 June 2023, is OJK's rulebook for the bank's AML, CFT and CPF programme.",
+            "PPATK is the FIU and receives reports; OJK supervises the bank and imposes administrative sanctions.",
+            "Laundering can be active (Articles 3 and 4) or passive (Article 5); 'should reasonably have suspected' can be enough.",
+            "Penalties reach 20 years in prison, and corporations face fines of up to IDR 100 billion.",
+            "Never tip off: telling a customer about an STR is a crime for staff, directors and commissioners."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the last time a customer asked you an unusual question about limits, reports or 'the government'. How did you answer, and what would you write down now?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-aml-s1-q1",
+          "question": "Which institution serves as Indonesia's financial intelligence unit?",
+          "options": [
+            "PPATK",
+            "OJK",
+            "Bank Indonesia",
+            "The Directorate General of Taxes"
+          ],
+          "answer": 0,
+          "explanation": "Law 8/2010 establishes PPATK as the independent body that receives and analyses reports. OJK is the banks' supervisor, not the FIU.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s1-q2",
+          "question": "What is the maximum prison term for active laundering under Article 3 of Law 8/2010?",
+          "options": [
+            "5 years",
+            "15 years",
+            "10 years",
+            "20 years"
+          ],
+          "answer": 3,
+          "explanation": "Article 3 carries up to 20 years in prison and a fine of up to IDR 10 billion. Five years is the cap for passive laundering under Article 5.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q3",
+          "question": "Budi accepts a new car from a friend as a gift. He had good reason to suspect it was bought with fraud proceeds but did not hide anything. Which offence is most relevant?",
+          "options": [
+            "Active laundering under Article 3, up to 20 years and IDR 10 billion",
+            "No offence, because Budi did not know for certain where the money came from",
+            "Passive laundering under Article 5, up to 5 years and IDR 1 billion",
+            "Concealment under Article 4, up to 20 years and IDR 5 billion"
+          ],
+          "answer": 2,
+          "explanation": "Receiving or controlling assets one knows or should reasonably suspect are proceeds is passive laundering under Article 5. Certainty is not required, so 'no offence' is wrong.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q4",
+          "question": "Which knowledge standard do the laundering offences in Law 8/2010 use?",
+          "options": [
+            "The person must have been convicted of the predicate crime first",
+            "The prosecution must prove the person planned the predicate crime",
+            "The person must have admitted knowing where the money came from",
+            "The person knew or should reasonably have suspected the assets were proceeds of crime"
+          ],
+          "answer": 3,
+          "explanation": "Articles 3 to 5 apply to assets the person knew or should reasonably have suspected ('patut diduga') were proceeds. The other options add requirements the law does not state.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q5",
+          "question": "Proceeds of a fraud committed in Singapore are moved through an Indonesian account to hide their origin. When can this be laundering under Law 8/2010?",
+          "options": [
+            "Only if the fraud was committed by an Indonesian citizen",
+            "Never, because predicate crimes must take place in Indonesia",
+            "When the fraud is also a crime under Indonesian law",
+            "Only if Singapore asks Indonesia to prosecute"
+          ],
+          "answer": 2,
+          "explanation": "Law 8/2010 covers proceeds of listed crimes committed inside or outside Indonesia, provided the act is also a crime under Indonesian law. Nationality and a foreign request are not conditions.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s1-q6",
+          "question": "Which authority issued POJK 8/2023 and supervises how banks apply their AML, CFT and CPF programme?",
+          "options": [
+            "OJK (Otoritas Jasa Keuangan)",
+            "PPATK, the financial intelligence unit",
+            "Bank Indonesia's payment system department",
+            "The Ministry of Finance"
+          ],
+          "answer": 0,
+          "explanation": "POJK stands for Peraturan OJK, a regulation of the Financial Services Authority, which is the supervisory and regulatory authority for banks under Law 8/2010.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s1-q7",
+          "question": "What is the maximum principal fine for a corporation convicted of laundering under Law 8/2010?",
+          "options": [
+            "IDR 10 billion",
+            "IDR 1 billion",
+            "IDR 25 billion",
+            "IDR 100 billion"
+          ],
+          "answer": 3,
+          "explanation": "Article 7 sets a maximum fine of IDR 100 billion for corporations, plus possible extra penalties such as announcement of the verdict, freezing of business or revocation of licence. IDR 10 billion is the cap for individuals under Article 3.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q8",
+          "question": "What did POJK 8/2023 add compared with the 2017 OJK regulation it replaced?",
+          "options": [
+            "Prevention of proliferation financing of weapons of mass destruction",
+            "The first rules on customer due diligence",
+            "The creation of PPATK as the FIU",
+            "Criminal penalties for money laundering"
+          ],
+          "answer": 0,
+          "explanation": "POJK 8/2023 extended the programme to proliferation financing (PPPSPM). CDD rules existed before, PPATK was created by statute, and criminal penalties sit in the laws, not in an OJK regulation.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q9",
+          "question": "A bank employee tells a customer that an STR about him is being drafted. What penalty does Law 8/2010 allow?",
+          "options": [
+            "Up to 5 years in prison and a fine of up to IDR 1 billion",
+            "Only an internal warning letter from the bank",
+            "Up to 20 years in prison and a fine of up to IDR 10 billion",
+            "An administrative fine imposed by OJK only"
+          ],
+          "answer": 0,
+          "explanation": "Article 12 bars directors, commissioners and staff of reporting parties from disclosing an STR in preparation or filed, and sets up to 5 years and IDR 1 billion for breaches.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s1-q10",
+          "question": "A teller accepts a deposit, finds it suspicious and the bank reports it to PPATK as the law requires. Why is the teller not guilty of passive laundering under Article 5?",
+          "options": [
+            "Tellers are not 'persons' under Law 8/2010",
+            "Article 5 expressly does not apply to reporting parties carrying out their reporting duties",
+            "Passive laundering only applies to amounts above IDR 500 million",
+            "The teller is protected only if OJK approves the deposit in advance"
+          ],
+          "answer": 1,
+          "explanation": "Article 5(2) excludes reporting parties that fulfil their reporting duties. There is no amount threshold for the offence and no OJK pre-approval mechanism.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Customer Due Diligence, Beneficial Owners and PEPs",
+      "stage": "The Gatehouse",
+      "summary": "Apply POJK 8/2023 at the door and after it: CDD triggers, verification channels, beneficial owners, high-risk customers, PEPs, simplified CDD and refusals.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise the five situations that trigger CDD",
+        "Identify beneficial owners of companies and trusts",
+        "Apply EDD and senior approval to PEPs, their families and close associates",
+        "Know when to refuse, close and report a relationship"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Two new accounts in Medan",
+          "setting": "Bank Lintas Samudra, Medan branch, corporate desk. 10:20 am.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "happy",
+              "text": "Busy morning! PT Sawit Makmur Abadi wants a corporate current account, and Ibu Ratna, wife of a regional head in North Sumatra, wants our premium savings package."
+            },
+            {
+              "who": "rizal",
+              "mood": "thinking",
+              "text": "The company's director signed everything, but the share register shows a holding company in another country. Who actually owns it?"
+            },
+            {
+              "who": "maria",
+              "mood": "neutral",
+              "text": "And Ibu Ratna's relationship manager is thrilled. She plans to move a large deposit next week."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Two classic tests for POJK 8/2023: the beneficial owner behind a company, and a politically exposed person's family member."
+            },
+            {
+              "who": "agus",
+              "mood": "neutral",
+              "text": "Neither is a reason to refuse business. Both are reasons to do the work properly before we say yes."
+            },
+            {
+              "who": "dewi",
+              "mood": "proud",
+              "text": "Stage two is the Gatehouse. Let's learn exactly what OJK expects at the door and after it."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Five moments that trigger CDD",
+          "scenes": [
+            {
+              "icon": "🤝",
+              "heading": "A new relationship",
+              "narration": "POJK 8/2023 requires customer due diligence whenever the bank opens a business relationship with a prospective customer."
+            },
+            {
+              "icon": "💰",
+              "heading": "IDR 100 million or more",
+              "narration": "CDD is also needed for any transaction, in rupiah or foreign currency, worth at least IDR 100 million or its equivalent, including for walk-in customers."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Fund transfers",
+              "narration": "Every fund transfer transaction triggers CDD, whatever the amount."
+            },
+            {
+              "icon": "🚩",
+              "heading": "Signs of suspicion",
+              "narration": "When there are indications of a suspicious transaction linked to laundering, terrorism financing or proliferation financing, CDD applies."
+            },
+            {
+              "icon": "❓",
+              "heading": "Doubtful information",
+              "narration": "Finally, if the bank doubts information given by the customer, a walk-in customer, an attorney or a beneficial owner, it must carry out CDD again."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The CDD journey",
+          "items": [
+            {
+              "label": "Classify the customer",
+              "detail": "Individual, corporation or legal arrangement such as a trust."
+            },
+            {
+              "label": "Identify",
+              "detail": "Collect identity data, source of funds, income or net worth and purpose."
+            },
+            {
+              "label": "Verify",
+              "detail": "In person, face to face by video, or non face to face with strong authentication."
+            },
+            {
+              "label": "Find the beneficial owner",
+              "detail": "Acting for themselves or someone else? Identify and verify the real owner."
+            },
+            {
+              "label": "Rate the risk",
+              "detail": "Group by risk level using identity, business, ownership, products and channels."
+            },
+            {
+              "label": "Approve or apply EDD",
+              "detail": "High-risk customers and PEPs get enhanced due diligence and senior approval."
+            },
+            {
+              "label": "Monitor and update",
+              "detail": "Check transactions against the profile and refresh data when things change."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A walk-in customer with no account wants to buy a cashier's cheque for IDR 150 million. Does POJK 8/2023 require CDD?",
+          "options": [
+            "No, CDD applies only to account holders",
+            "Yes, because the transaction is at least IDR 100 million",
+            "No, because walk-in customers are covered by simplified CDD",
+            "Only if the customer pays in cash rather than by transfer"
+          ],
+          "answer": 1,
+          "explanation": "Article 19 of POJK 8/2023 requires CDD for transactions of IDR 100 million or more, and the regulation applies CDD to walk-in customers (WIC) as well as account holders. The payment method does not change that."
+        },
+        {
+          "type": "sort",
+          "title": "CDD, EDD or refuse?",
+          "prompt": "Using POJK 8/2023, decide what the bank must do in each situation.",
+          "buckets": [
+            "Standard CDD",
+            "Enhanced due diligence",
+            "Refuse or close"
+          ],
+          "items": [
+            {
+              "text": "A salaried teacher opens a savings account with a valid ID and a clear purpose",
+              "bucket": 0
+            },
+            {
+              "text": "A former minister of another country opens an investment account",
+              "bucket": 1
+            },
+            {
+              "text": "A company whose owners are in a country the FATF has called for countermeasures against",
+              "bucket": 1
+            },
+            {
+              "text": "An applicant asks to open an account under a made-up name",
+              "bucket": 2
+            },
+            {
+              "text": "A customer refuses to say who the money really belongs to and the bank cannot establish the beneficial owner",
+              "bucket": 2
+            },
+            {
+              "text": "A local shop owner deposits cash in line with her known turnover",
+              "bucket": 0
+            },
+            {
+              "text": "A business partner of a domestic PEP asks to open a high-value account",
+              "bucket": 1
+            },
+            {
+              "text": "A prospective customer appears on the DTTOT",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Verifying identity remotely",
+          "caption": "Physical face-to-face meetings remain the third option. Whatever the channel, the bank owns the result.",
+          "headers": [
+            "Face to face, electronic",
+            "Non face to face, electronic"
+          ],
+          "items": [
+            {
+              "label": "How it works",
+              "left": "A real-time online meeting between bank staff and the applicant",
+              "right": "No live meeting; the system checks identity electronically"
+            },
+            {
+              "label": "Identity check",
+              "left": "Staff compare the person, data and documents live",
+              "right": "Uses national population data plus at least two authentication factors"
+            },
+            {
+              "label": "Authentication",
+              "left": "Live visual confirmation by staff",
+              "right": "Something you are (biometric) and something you have; 'something you know' optional"
+            },
+            {
+              "label": "Third-party tools",
+              "left": "Allowed with a written agreement; the bank stays responsible",
+              "right": "Same: provider must meet OJK criteria; data belongs to the bank"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Beneficial owners: who really stands behind the account",
+          "body": "POJK 8/2023 defines the **beneficial owner** as the individual who ultimately owns the funds, controls the customer's transactions, gives the authority to transact, or controls a company or legal arrangement.\n\nWhat the bank must do:\n- **Ask the question every time:** is the customer acting for itself or for someone else?\n- **Apply CDD or EDD to the beneficial owner**; if the owner is a PEP, EDD is required.\n- **Use the higher risk:** if the customer and its owner have different risk levels, CDD follows the higher one.\n- **For companies:** identify and verify owners from reliable sources. If in doubt, or nobody controls through ownership, find who controls by other means; if still nobody, identify the relevant director.\n- **For trusts:** settlor, trustee, protector, beneficiaries and anyone who controls the trust.\n- **If the beneficial owner cannot be established, refuse** the relationship or transaction."
+        },
+        {
+          "type": "order",
+          "title": "Finding the owner behind PT Sawit Makmur Abadi",
+          "prompt": "Put the bank's steps for a corporate customer in the order POJK 8/2023 implies.",
+          "steps": [
+            "Classify the customer as a corporation and collect its identity data and documents",
+            "Ask whether the company acts for itself or on behalf of someone else",
+            "Trace who owns the company, through the foreign holding company if necessary",
+            "If ownership gives no clear answer, identify who controls the company by other means",
+            "If no individual can be found that way, identify the relevant director",
+            "Verify the beneficial owner's identity from reliable sources and apply CDD or EDD at the higher risk level"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The regional head's wife",
+          "setting": "Medan branch, relationship manager's office. 2:00 pm.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "happy",
+              "text": "Ibu Ratna is charming and her deposit would make our quarterly target. Her husband is a regional head, but the account is in her name only."
+            },
+            {
+              "who": "rizal",
+              "mood": "thinking",
+              "text": "POJK 8/2023 covers PEPs' family members and close associates too. The same high-risk rules apply to them."
+            },
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "Do we need head office sign-off? She wants to start tomorrow."
+            },
+            {
+              "who": "dewi",
+              "mood": "neutral",
+              "text": "A designated senior officer must approve. And we need to understand the source of funds and source of wealth, not just fill in a form."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Opening for a PEP's family member",
+          "situation": "Ibu Ratna's relationship manager has her ID, tax number and a signed form stating 'family savings' as the source of funds. She plans to deposit IDR 3 billion next week. The RM wants to open the account today and 'tidy up the PEP paperwork later'. What should Maria do?",
+          "choices": [
+            {
+              "text": "Open the account today as the RM suggests, since the account is in the wife's name rather than the official's",
+              "outcome": "The rule follows the person, not the account title. POJK 8/2023 applies the high-risk treatment to PEPs' family members and close associates. Opening first and approving later breaks the senior-approval requirement.",
+              "score": 0
+            },
+            {
+              "text": "Treat her as PEP-related: get the designated senior officer's approval, analyse source of funds and wealth, then open with closer monitoring",
+              "outcome": "Correct. For PEPs, and for their family and close associates, the bank needs a designated senior officer's approval to open or continue, EDD that analyses source of funds and wealth, and stricter monitoring. It also records her in the separate high-risk customer list.",
+              "score": 2
+            },
+            {
+              "text": "Refuse the account because politically exposed people are too risky for the bank",
+              "outcome": "POJK 8/2023 does not ban PEPs. It requires enhanced measures. A blanket refusal is not what the rule asks for, although the senior officer may decline after EDD if the risk cannot be managed.",
+              "score": 1
+            },
+            {
+              "text": "Open the account but cap deposits below IDR 100 million until the paperwork is done",
+              "outcome": "This designs the relationship around a CDD trigger instead of applying EDD. The PEP link already requires approval and EDD before opening, whatever the deposit size.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "PEPs under POJK 8/2023",
+          "cards": [
+            {
+              "front": "Who is a PEP?",
+              "back": "Someone entrusted with a prominent function, not middle or junior ranks: heads of state or government, senior politicians, officials, military or law enforcement officers, senior SOE executives, key party officials."
+            },
+            {
+              "front": "Three groups",
+              "back": "Foreign PEPs, domestic PEPs, and people with prominent functions in international organisations, such as directors, deputy directors and board members."
+            },
+            {
+              "front": "Family and close associates",
+              "back": "The bank must apply the same high-risk treatment to a PEP's family members and close associates."
+            },
+            {
+              "front": "Who approves?",
+              "back": "A senior officer designated by the bank, who may approve, refuse, continue or end the relationship."
+            },
+            {
+              "front": "What EDD covers",
+              "back": "Periodic EDD, at least analysis of information on the customer or beneficial owner, the source of funds and the source of wealth."
+            },
+            {
+              "front": "After approval",
+              "back": "Stricter monitoring of the relationship, and inclusion in the bank's separate list of high-risk customers."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Keeping the profile alive",
+          "caption": "Articles 51 and 52 of POJK 8/2023 turn CDD into a continuous process, not a one-off form.",
+          "items": [
+            {
+              "label": "Monitor transactions",
+              "detail": "Do they fit the customer's business, risk profile and source of funds?"
+            },
+            {
+              "label": "Spot the mismatch",
+              "detail": "Analyse every transaction that departs from the profile or usual pattern."
+            },
+            {
+              "label": "Ask carefully",
+              "detail": "The bank may ask the customer about background and purpose, minding tipping off."
+            },
+            {
+              "label": "Update and document",
+              "detail": "Refresh data and documents; directors approve the data-updating plan and results."
+            },
+            {
+              "label": "Re-rate or report",
+              "detail": "Adjust the risk level; if the explanation is unconvincing, file an LTKM."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A corporate customer is rated medium risk, but its beneficial owner is rated high risk. How should the bank apply due diligence?",
+          "options": [
+            "Apply CDD or EDD based on the higher risk level",
+            "Average the two ratings to medium-high",
+            "Use the customer's rating, since the company holds the account",
+            "Use the owner's rating only if the owner signs the forms"
+          ],
+          "answer": 0,
+          "explanation": "Article 32 of POJK 8/2023 says that where the risk levels of the customer and its beneficial owner differ, CDD or EDD follows the higher risk level."
+        },
+        {
+          "type": "example",
+          "title": "Real case: dormant accounts and account trading (PPATK, 2025)",
+          "body": "In a press release of **18 May 2025**, PPATK said that in **2024** more than **28,000 accounts** obtained through the **buying and selling of bank accounts** had been used for online gambling deposits. Accounts held in other people's names were also widely used to collect proceeds of fraud, drug trafficking and other crimes.\n\nUsing its powers under Law 8/2010, PPATK temporarily halted transactions on accounts the banks' own data showed as **dormant**, explaining that dormant accounts controlled by third parties were a common route for abuse. Customers kept full rights to their funds and could ask their branch to reactivate the account.\n\n**The CDD lesson:** an account in one person's name may be run by another. That is exactly why POJK 8/2023 makes the bank ask whether the customer acts for itself or for a beneficial owner, and keep checking the account's activity against the profile."
+        },
+        {
+          "type": "tip",
+          "title": "Simplified CDD is not 'no CDD'",
+          "body": "POJK 8/2023 lets a bank apply **simplified CDD** to customers and transactions it has assessed as low risk. Even then the bank must still:\n- identify and verify the customer and any beneficial owner;\n- know the purpose of the relationship;\n- monitor transactions and update data in line with the risk.\n\nSimplified CDD stops applying the moment laundering, terrorism financing or proliferation financing is suspected. The bank keeps a list of customers on simplified CDD and tells OJK about its own simplified procedure."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two: what to remember",
+          "items": [
+            "CDD is required for new relationships, transactions of IDR 100 million or more, fund transfers, suspicion and doubtful information.",
+            "Anonymous accounts and accounts in fictitious names are banned; refuse or close when CDD fails, documents look false or the customer is listed.",
+            "Always ask who the beneficial owner is; if it cannot be established, refuse the relationship.",
+            "PEPs, their families and close associates need a designated senior officer's approval, source of funds and wealth analysis and closer monitoring.",
+            "When a relationship is refused or closed for these reasons, the bank documents it and reports it to PPATK as suspicious."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one customer type you handle often. What would make you ask 'who really owns this money?', and how would you check the answer?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-aml-s2-q1",
+          "question": "Which of these transactions triggers CDD under POJK 8/2023 regardless of its amount?",
+          "options": [
+            "A cash deposit of IDR 50 million",
+            "A balance enquiry at an ATM",
+            "A fund transfer",
+            "A request for a printed account statement"
+          ],
+          "answer": 2,
+          "explanation": "Article 19 lists fund transfers as a CDD trigger without any amount. Cash transactions trigger CDD from IDR 100 million, and enquiries are not transactions.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s2-q2",
+          "question": "Under POJK 8/2023, which pair of authentication factors must at least be used for non face-to-face electronic verification?",
+          "options": [
+            "Something the applicant knows and a signed form",
+            "A password and a security question",
+            "Something the applicant is and something the applicant has",
+            "A selfie and a scanned utility bill only"
+          ],
+          "answer": 2,
+          "explanation": "Article 21 requires the use of population data and at least two factors: something you are and something you have. 'Something you know' can be added.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s2-q3",
+          "question": "A corporate customer's ownership is spread so widely that no individual controls it through shares. What does POJK 8/2023 require next?",
+          "options": [
+            "Record the beneficial owner as 'not applicable' and proceed",
+            "Refuse the company because it has no beneficial owner",
+            "Identify the individual who controls the company by other means, and failing that the relevant director",
+            "Accept the company's own statement that it has no owner"
+          ],
+          "answer": 2,
+          "explanation": "Article 33 says that if ownership gives no answer, the bank identifies who controls by other means; if there is still nobody, it identifies the relevant director. 'Not applicable' and automatic refusal are not the rule.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s2-q4",
+          "question": "Which of these is a duty for PEP relationships under POJK 8/2023?",
+          "options": [
+            "Approval from a designated senior officer to open or continue the relationship",
+            "Approval from OJK before the account is opened",
+            "A report to PPATK every time the PEP deposits money",
+            "Closing the account when the PEP leaves office"
+          ],
+          "answer": 0,
+          "explanation": "Article 37 requires a designated senior officer's approval, EDD on source of funds and wealth, and stricter monitoring. There is no OJK pre-approval or automatic reporting of every PEP deposit.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s2-q5",
+          "question": "A bank cannot establish the identity of a prospective customer's beneficial owner despite asking. What must it do?",
+          "options": [
+            "Refuse the business relationship or transaction",
+            "Open the account and mark it for review next year",
+            "Open the account as long as the customer signs a declaration",
+            "Apply simplified CDD instead"
+          ],
+          "answer": 0,
+          "explanation": "Article 33(12) requires the bank to refuse when it doubts or cannot be sure of the beneficial owner's identity. Simplified CDD is only for assessed low risk.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s2-q6",
+          "question": "Siti applies to open a savings account but refuses to provide her source of funds. Under Law 8/2010, what must the bank do?",
+          "options": [
+            "Open the account but block withdrawals",
+            "Open the account with a note that information is pending",
+            "Refuse or end the relationship and report it to PPATK as a suspicious transaction",
+            "Ask OJK for permission to proceed"
+          ],
+          "answer": 2,
+          "explanation": "Law 8/2010 requires financial service providers to end the relationship where a customer refuses KYC and to report that action to PPATK as suspicious. POJK 8/2023 also makes refused or closed cases reportable.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s2-q7",
+          "question": "During CDD the bank comes to suspect laundering and believes that continuing CDD would alert the customer. What does POJK 8/2023 require?",
+          "options": [
+            "Finish all CDD steps first, then report",
+            "Tell the customer the bank needs more time for checks",
+            "Close the account immediately without reporting",
+            "Stop the CDD process and report the suspicious transaction to PPATK"
+          ],
+          "answer": 3,
+          "explanation": "Article 49(3) says that where CDD would breach the anti-tipping-off rule, the bank stops CDD and files an LTKM with PPATK.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s2-q8",
+          "question": "Which customers must a bank keep in a separate list under POJK 8/2023?",
+          "options": [
+            "Customers and beneficial owners that meet the bank's high-risk criteria",
+            "Every customer with a balance over IDR 500 million",
+            "Customers who have closed their accounts",
+            "Customers who used non face-to-face onboarding"
+          ],
+          "answer": 0,
+          "explanation": "Article 40 requires a separate list of prospective customers, customers, walk-in customers and beneficial owners who meet high-risk criteria. The other groups are not defined that way.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s2-q9",
+          "question": "A bank relies on another regulated financial institution's identification and verification of a shared customer. Who is responsible for the CDD?",
+          "options": [
+            "The third party that did the checks",
+            "The bank that relies on it",
+            "OJK, which supervises both institutions",
+            "Responsibility is split evenly between the two"
+          ],
+          "answer": 1,
+          "explanation": "Article 46(4) of POJK 8/2023 keeps CDD responsibility with the relying bank, which also needs a written agreement and prompt access to the information and documents.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s2-q10",
+          "question": "A low-risk customer on simplified CDD starts receiving transfers that suggest laundering. What happens to the simplified treatment?",
+          "options": [
+            "It continues until the yearly review",
+            "It continues because the customer was rated low risk at onboarding",
+            "It is suspended only if PPATK asks",
+            "It no longer applies, so full CDD and analysis are needed"
+          ],
+          "answer": 3,
+          "explanation": "POJK 8/2023 says simplified CDD does not apply where laundering, terrorism financing or proliferation financing is suspected, or specific risk rises.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Reporting to PPATK: LTKM, LTKT, LTKL and Tipping Off",
+      "stage": "The Signal Tower",
+      "summary": "Spot suspicious transactions, meet PPATK reporting deadlines through goAML, handle postponements and blocking orders, keep records and never tip off.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the four-limb definition of a suspicious transaction",
+        "Meet the deadlines for LTKM, LTKT and LTKL reports",
+        "Use postponement, temporary halts and blocking orders correctly",
+        "Keep and produce records as the law requires"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The alert that wouldn't go away",
+          "setting": "AML/CFT/CPF unit, Jakarta head office. 4:10 pm.",
+          "lines": [
+            {
+              "who": "rizal",
+              "mood": "worried",
+              "text": "Look at this student account from our Yogyakarta branch. Hundreds of small transfers in from strangers every evening, and the money leaves within minutes to e-wallet top-ups."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Declared profile: university student, monthly allowance from parents. That doesn't match hundreds of incoming payments a night."
+            },
+            {
+              "who": "rizal",
+              "mood": "neutral",
+              "text": "It looks like a collection account for online gambling deposits. The branch says a man phoned asking why one transfer was 'pending'."
+            },
+            {
+              "who": "agus",
+              "mood": "neutral",
+              "text": "Then we need two answers today: is this an LTKM, and how fast must it reach PPATK?"
+            },
+            {
+              "who": "dewi",
+              "mood": "proud",
+              "text": "Welcome to stage three, the Signal Tower. Our job is to turn what we notice into reports PPATK can use, on time and without warning the customer."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Four ways a transaction becomes suspicious",
+          "scenes": [
+            {
+              "icon": "📉",
+              "heading": "It breaks the pattern",
+              "narration": "Under Law 8/2010, a transaction is suspicious if it departs from the customer's profile, characteristics or usual transaction pattern."
+            },
+            {
+              "icon": "🙈",
+              "heading": "It dodges a report",
+              "narration": "It is also suspicious if the customer appears to be structuring it to avoid a report the bank is required to file."
+            },
+            {
+              "icon": "💸",
+              "heading": "It may involve proceeds",
+              "narration": "A transaction made, or abandoned, using assets suspected to come from crime is suspicious too. Note that attempts count."
+            },
+            {
+              "icon": "📨",
+              "heading": "PPATK asks for it",
+              "narration": "Finally, PPATK can ask a reporting party to report a transaction because it involves suspected proceeds of crime."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Then the clock runs",
+              "narration": "Once the bank knows of suspicious elements, the report must go to PPATK as soon as possible and no later than three working days."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Reports to PPATK and their deadlines",
+          "caption": "Sources: Law 8/2010, Articles 23, 25 and 26, and PPATK's reporting guidance. All reports go through goAML.",
+          "items": [
+            {
+              "label": "LTKM: suspicious transaction report",
+              "value": "3 working days",
+              "detail": "At the latest, from when the bank knows of suspicious elements. Applies to ML, TF and PF, including attempts."
+            },
+            {
+              "label": "LTKT: cash transaction report",
+              "value": "14 working days",
+              "detail": "Cash of IDR 500 million or more, in one transaction or several in one working day."
+            },
+            {
+              "label": "LTKL: cross-border transfer report",
+              "value": "14 working days",
+              "detail": "Fund transfers to and from abroad; PPATK says every such transfer is reported, whatever the amount."
+            },
+            {
+              "label": "Report of a postponed transaction",
+              "value": "24 hours",
+              "detail": "When the bank postpones a transaction, it reports to PPATK with the minutes within 24 hours."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The AML unit concludes on Monday that the student account's activity is suspicious. Under Law 8/2010, what is the latest the LTKM can reach PPATK?",
+          "options": [
+            "Three working days after the bank knew of the suspicious elements",
+            "Fourteen working days after the last transaction",
+            "The end of the month, in the monthly batch",
+            "Thirty days after the customer was first contacted"
+          ],
+          "answer": 0,
+          "explanation": "Article 25(1) requires suspicious transaction reports as soon as possible and no later than three working days after the bank knows of the suspicious elements. Fourteen working days applies to cash and cross-border transfer reports."
+        },
+        {
+          "type": "concept",
+          "title": "Filing through goAML",
+          "body": "PPATK's reporting guidance says that LTKM, LTKT and LTKL reports **must be filed electronically through the goAML application**. Paper or other non-electronic filing is allowed only when:\n- communication facilities are not available where the reporting party is based;\n- the bank's own facilities suffer a technical failure;\n- force majeure prevents electronic filing; or\n- PPATK's reporting system is down.\n\nThe detailed procedure for financial service providers is set by **PPATK Head Regulation No. 1 of 2021** on filing LTKM, LTKT and LTKL through goAML.\n\nPOJK 8/2023 adds that the bank reports suspicious transactions **and attempted transactions** linked to terrorism or proliferation financing, files **correction reports** where needed, and that the AML unit may report directly to PPATK, **even when the transaction involves the bank's own directors or commissioners**."
+        },
+        {
+          "type": "sort",
+          "title": "LTKM, LTKT or LTKL?",
+          "prompt": "Decide which report each situation calls for. Some real cases need more than one report; pick the one the situation describes.",
+          "buckets": [
+            "LTKM (suspicious)",
+            "LTKT (cash)",
+            "LTKL (cross-border transfer)"
+          ],
+          "items": [
+            {
+              "text": "A routine IDR 600 million cash deposit by a supermarket chain matching its turnover",
+              "bucket": 1
+            },
+            {
+              "text": "A customer's USD 2,000 transfer to a relative studying in Australia",
+              "bucket": 2
+            },
+            {
+              "text": "A student account receiving hundreds of small payments a night, forwarded to e-wallets",
+              "bucket": 0
+            },
+            {
+              "text": "Three cash deposits of IDR 200 million each by the same customer on one working day",
+              "bucket": 1
+            },
+            {
+              "text": "An incoming transfer from Hong Kong to an Indonesian importer's account",
+              "bucket": 2
+            },
+            {
+              "text": "An applicant walks away when asked for ID after offering to deposit a large sum",
+              "bucket": 0
+            },
+            {
+              "text": "A customer splits cash across family accounts after asking what gets reported",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "From noticing to filing",
+          "items": [
+            {
+              "label": "Notice and record",
+              "detail": "Staff note the facts, words and documents at the time."
+            },
+            {
+              "label": "Report internally",
+              "detail": "Escalate to the AML unit through a confidential channel."
+            },
+            {
+              "label": "Analyse",
+              "detail": "Profile, history, counterparties; ask the customer only with tipping-off in mind."
+            },
+            {
+              "label": "Decide and document",
+              "detail": "Suspicion formed or not, with reasons kept on file."
+            },
+            {
+              "label": "File the LTKM",
+              "detail": "On goAML, no later than three working days after the bank knows."
+            },
+            {
+              "label": "Follow through",
+              "detail": "Review the relationship, keep monitoring and keep the records."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The caller at the branch",
+          "setting": "Bank Lintas Samudra, Yogyakarta branch, customer service desk. Next morning.",
+          "lines": [
+            {
+              "who": "narrator",
+              "mood": "neutral",
+              "text": "The man who phoned yesterday now stands at the desk. He says he is the student's uncle and 'helps manage' the account."
+            },
+            {
+              "who": "rizal",
+              "mood": "worried",
+              "text": "(on the phone to the branch) The LTKM went to PPATK through goAML an hour ago. He's asking whether the bank 'reported anything to anyone'."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Anyone could be tempted to calm him down with a white lie, or to tell him the truth. Both are wrong."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Did you report me?",
+          "situation": "The 'uncle' asks the customer service officer, Putri, directly whether the bank has reported the account to PPATK. He is calm but insistent and says he will move the money elsewhere if the bank 'is causing trouble'. What should Putri do?",
+          "choices": [
+            {
+              "text": "Reassure him that the bank never reports ordinary student accounts",
+              "outcome": "This is a false statement that engages with the question about reporting and may undermine PPATK's analysis. Staff should not discuss reporting at all, truthfully or otherwise.",
+              "score": 0
+            },
+            {
+              "text": "Tell him honestly that a report was filed, because customers deserve transparency",
+              "outcome": "This is tipping off. Law 8/2010 forbids directors, commissioners and staff from telling the customer or anyone else about an LTKM being prepared or filed. The penalty reaches 5 years and IDR 1 billion.",
+              "score": 0
+            },
+            {
+              "text": "Say she cannot discuss internal processes, offer the standard service, record the exchange and alert the AML unit at once",
+              "outcome": "Correct. Putri neither confirms nor denies anything, handles the service request by the book and passes his words and threat to move funds to the AML unit, which may need to update its analysis or file a further report.",
+              "score": 2
+            },
+            {
+              "text": "Refuse to speak to him and call security",
+              "outcome": "Unnecessary escalation can itself signal that something is wrong. A calm, neutral answer plus prompt internal reporting protects the bank better; security is only for real threats.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Protections and powers you should know",
+          "cards": [
+            {
+              "front": "Does bank secrecy block a report?",
+              "back": "No. Law 8/2010 says carrying out reporting duties is exempt from the secrecy rules that bind the reporting party."
+            },
+            {
+              "front": "Can staff be sued for reporting?",
+              "back": "Reporting parties, their officers and staff cannot be prosecuted or sued for reporting under the law, unless they abused their authority."
+            },
+            {
+              "front": "Can the bank pause a transaction?",
+              "back": "Yes. It may postpone a transaction for up to five working days where proceeds or false documents are suspected."
+            },
+            {
+              "front": "Can PPATK stop transactions?",
+              "back": "Yes. PPATK may ask a financial service provider to temporarily halt all or part of a transaction, and the bank must comply."
+            },
+            {
+              "front": "Who may order a block?",
+              "back": "Investigators, prosecutors or judges may order a block on suspected proceeds; the bank acts immediately and sends minutes within one working day."
+            },
+            {
+              "front": "Exception to tipping off",
+              "back": "Giving information to the supervisory authority, OJK for banks, is not tipping off."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Postponing a transaction",
+          "prompt": "Put the steps Law 8/2010 sets for a bank-initiated postponement in order.",
+          "steps": [
+            "The bank suspects the transaction uses criminal proceeds or a false document",
+            "The bank postpones the transaction, for no more than five working days",
+            "The postponement is recorded in official minutes (berita acara)",
+            "A copy of the minutes is given to the customer",
+            "The bank reports the postponement, with the minutes, to PPATK within 24 hours",
+            "By the fifth working day the bank decides whether to carry out or refuse the transaction"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Records and requests",
+          "caption": "Keep the whole STR trail too: POJK 8/2023 requires records of every step in identifying suspicious transactions.",
+          "items": [
+            {
+              "label": "Customer identity records",
+              "value": "5 years minimum",
+              "detail": "After the relationship ends (Law 8/2010), or after a mismatch with the transaction's purpose is found (POJK 8/2023)."
+            },
+            {
+              "label": "Fund transfer information",
+              "value": "5 years minimum",
+              "detail": "Information identifying originators and beneficiaries, after the transfer ends (Law 9/2013)."
+            },
+            {
+              "label": "Producing records on request",
+              "value": "3 working days",
+              "detail": "Maximum time to give OJK or another authority the data and documents it asks for."
+            },
+            {
+              "label": "Investigator's block",
+              "value": "30 working days",
+              "detail": "Maximum length of a block ordered under Law 8/2010; it then ends by law."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which disclosure about an LTKM does Law 8/2010 permit?",
+          "options": [
+            "Telling the customer's lawyer, if the customer consents",
+            "Confirming the report to a family member managing the account",
+            "Mentioning it to the customer to obtain missing documents",
+            "Giving information to OJK as the bank's supervisory authority"
+          ],
+          "answer": 3,
+          "explanation": "Article 12(2) says the tipping-off ban does not apply to information given to the supervisory and regulatory authority. Disclosure to the customer or anyone acting for them is prohibited."
+        },
+        {
+          "type": "example",
+          "title": "Real case: OJK orders banks to block gambling accounts (2023)",
+          "body": "In press release **SP 190/OJK/GKPB/XII/2023**, dated **16 December 2023**, OJK said it had used its power under the 2023 financial sector law (the P2SK Law) to **order banks to block accounts** identified as used for illegal activity, including online gambling. In the previous **three months** it had ordered **more than 4,000** online gambling accounts blocked.\n\nOJK also:\n- asked banks to build systems that profile gambling behaviour so they can spot and block it early on their own;\n- asked banks to strengthen **CDD and EDD** to identify customers linked to gambling or other crimes;\n- stressed that where transactions do not fit the customer's profile, the bank must act quickly, including by **reporting an LTKM to PPATK**.\n\n**The lesson:** a block ordered by an authority does not replace the bank's own duty to notice, analyse and report."
+        },
+        {
+          "type": "tip",
+          "title": "Write an LTKM that PPATK can use",
+          "body": "- Lead with **why** the activity is suspicious, in plain words.\n- Name the limb: off-profile, avoiding a report, suspected proceeds, or PPATK request.\n- Give the facts: dates, amounts, counterparties, channels, accounts.\n- Explain what the customer said and what CDD shows about the profile.\n- Attach supporting analysis and keep your working papers on file.\n- Never let the three-working-day deadline slip while you polish the wording."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three: what to remember",
+          "items": [
+            "A suspicious transaction is off-profile, designed to avoid reporting, linked to suspected proceeds, or requested by PPATK; attempts count.",
+            "LTKM: no later than three working days after the bank knows. LTKT and LTKL: within fourteen working days.",
+            "Cash reports start at IDR 500 million in one working day; cross-border transfers are reported whatever the amount.",
+            "All reports go through goAML; paper filing is only for listed emergencies.",
+            "Reporting overrides secrecy and protects staff acting in good faith; tipping off is a crime.",
+            "Keep identity records for at least five years and produce records to OJK within three working days."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer pushed you hard tomorrow on whether you had reported them, what exact words would you use, and whom would you tell straight afterwards?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-aml-s3-q1",
+          "question": "Through which application must banks file LTKM, LTKT and LTKL reports with PPATK?",
+          "options": [
+            "SIPENDAR",
+            "The OJK reporting portal",
+            "BI-FAST",
+            "goAML"
+          ],
+          "answer": 3,
+          "explanation": "PPATK's reporting guidance requires electronic filing through goAML, with PPATK Head Regulation No. 1 of 2021 setting the procedure for financial service providers. BI-FAST is a payment system.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s3-q2",
+          "question": "A customer deposits IDR 300 million in cash in the morning and IDR 250 million in the afternoon of the same working day. Which report is required?",
+          "options": [
+            "None, because each deposit is below IDR 500 million",
+            "An LTKL, because the total exceeds IDR 500 million",
+            "An LTKT, because cash totalling at least IDR 500 million in one working day is reportable",
+            "An LTKT only if the customer is a walk-in customer"
+          ],
+          "answer": 2,
+          "explanation": "Law 8/2010 counts one or several cash transactions in one working day toward the IDR 500 million threshold. LTKL is for cross-border transfers.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s3-q3",
+          "question": "What is the deadline for filing a cash transaction report (LTKT) with PPATK?",
+          "options": [
+            "Three working days from the transaction",
+            "Fourteen working days from the date of the transaction",
+            "Twenty-four hours from the transaction",
+            "The end of the following month"
+          ],
+          "answer": 1,
+          "explanation": "Article 25(2) of Law 8/2010 sets 14 working days for cash transaction reports. Three working days is the deadline for suspicious transaction reports.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s3-q4",
+          "question": "A customer's outward transfer of USD 300 to a supplier in Malaysia is routine and fits his profile. What does PPATK's guidance say about reporting it?",
+          "options": [
+            "It is not reportable, because it is below the cash threshold",
+            "It is reported as an LTKM, because all foreign transfers are suspicious",
+            "It is reported only if it exceeds IDR 100 million",
+            "It is reported as an LTKL, because every cross-border transfer is reportable regardless of amount"
+          ],
+          "answer": 3,
+          "explanation": "PPATK's guidance says every transfer to or from abroad is reported, whatever the amount, within 14 working days. Being reportable does not make it suspicious.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s3-q5",
+          "question": "A bank postpones a transaction because the customer seems to be using a forged document. Within what time must it report the postponement to PPATK?",
+          "options": [
+            "Within three working days, with the LTKM",
+            "Within fourteen working days",
+            "Only if the customer complains",
+            "Within 24 hours, attaching the postponement minutes"
+          ],
+          "answer": 3,
+          "explanation": "Article 26 of Law 8/2010 requires a report of the postponement, with the minutes, within 24 hours. The postponement itself may last up to five working days.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s3-q6",
+          "question": "An employee fears a customer will sue her for defamation after she escalated a suspicion that led to an LTKM. What does Law 8/2010 say?",
+          "options": [
+            "She is protected only if PPATK later confirms a crime",
+            "She is protected only if the report was filed within 24 hours",
+            "Reporting parties and their staff cannot be sued or prosecuted for reporting, unless they abused their authority",
+            "The bank must indemnify her, but she can still be held liable"
+          ],
+          "answer": 2,
+          "explanation": "Article 29 shields reporting parties, officers and staff from civil and criminal action for carrying out reporting duties, except where authority was abused. The protection does not depend on the outcome.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s3-q7",
+          "question": "Which situation fits the Law 8/2010 limb about avoiding reports?",
+          "options": [
+            "A customer's salary arrives late from a new employer",
+            "A customer splits cash deposits across days to stay below the reporting threshold",
+            "A pensioner withdraws cash for a family wedding",
+            "A company pays its staff through the bank's payroll service"
+          ],
+          "answer": 1,
+          "explanation": "Law 8/2010 treats as suspicious a transaction that seems designed to avoid a report the bank must file. Splitting cash to stay under a threshold is the classic example.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s3-q8",
+          "question": "An investigator sends the bank a written order to block a suspect's account. When must the bank carry it out?",
+          "options": [
+            "Within three working days",
+            "Immediately after receiving the order",
+            "After notifying the customer and allowing an objection",
+            "After OJK confirms the order"
+          ],
+          "answer": 1,
+          "explanation": "Article 71 of Law 8/2010 requires the reporting party to block immediately on receiving the order, keep the funds in place and deliver minutes within one working day.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s3-q9",
+          "question": "OJK asks a bank for CDD records on a customer during an inspection. How quickly must the bank provide them under POJK 8/2023?",
+          "options": [
+            "As soon as possible and no later than three working days",
+            "Within fourteen working days",
+            "Within thirty days",
+            "At the next annual report"
+          ],
+          "answer": 0,
+          "explanation": "Article 63(4) requires the bank to provide stored data, information and documents within three working days of a request from OJK or another competent authority.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s3-q10",
+          "question": "A customer abandons a large transfer when the teller asks about the source of funds, and the bank suspects the money is criminal proceeds. Can this be reported as an LTKM?",
+          "options": [
+            "No, only completed transactions can be reported",
+            "Yes, a transaction abandoned using suspected proceeds can be suspicious",
+            "Only if the amount is above IDR 500 million",
+            "Only if PPATK has asked about the customer before"
+          ],
+          "answer": 1,
+          "explanation": "Law 8/2010 defines a suspicious transaction to include one that is made or cancelled using assets suspected to come from crime. There is no amount threshold for LTKM.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Terrorism and Proliferation Financing: Lists and Immediate Freezing",
+      "stage": "The Frozen Vault",
+      "summary": "Apply Law 9/2013 and POJK 8/2023 to terrorism and proliferation financing: the DTTOT and DPPSPM, immediate freezing, freeze and nil reports, and transfer information.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the terrorism financing offence and the bank's TF duties",
+        "Describe how the DTTOT is created and reaches banks",
+        "Freeze and report correctly after a confirmed list match",
+        "Handle false positives, joint funds and objections"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A name on the new list",
+          "setting": "AML/CFT/CPF unit, Jakarta head office. 7:50 am.",
+          "lines": [
+            {
+              "who": "rizal",
+              "mood": "worried",
+              "text": "OJK's system pushed an updated DTTOT overnight. Our screening found a strong match: a customer at our Denpasar branch. Same full name, same date of birth, same ID number."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Then this is not a 'maybe'. Under POJK 8/2023 a match means an immediate freeze, without delay and without warning the customer."
+            },
+            {
+              "who": "ketut",
+              "mood": "neutral",
+              "text": "(from Denpasar) Ketut here. The customer's brother runs a travel agency with him. They hold a joint business account too."
+            },
+            {
+              "who": "agus",
+              "mood": "neutral",
+              "text": "And the brother is already on his way to the branch to withdraw cash for 'urgent payments'."
+            },
+            {
+              "who": "dewi",
+              "mood": "proud",
+              "text": "Stage four, the Frozen Vault. Terrorism and proliferation financing work on a different clock from laundering. Let's learn it."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How a name reaches the DTTOT",
+          "scenes": [
+            {
+              "icon": "👮",
+              "heading": "The police chief applies",
+              "narration": "Under Law 9/2013, the Chief of the Indonesian National Police applies to the Central Jakarta District Court to list a person or corporation as a suspected terrorist or terrorist organisation."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "The court decides",
+              "narration": "The application carries the identity, the reasons and supporting documents, plus a foreign ministry recommendation where the material comes from abroad. The court rules within thirty working days."
+            },
+            {
+              "icon": "📋",
+              "heading": "The list is issued",
+              "narration": "Once the court agrees, the police chief places the name on the DTTOT and must notify the listed person in writing within ten working days."
+            },
+            {
+              "icon": "📨",
+              "heading": "It reaches the banks",
+              "narration": "The list and every change go to the relevant agencies and supervisors, which pass it on. For banks, OJK delivers the DTTOT and the proliferation list, the DPPSPM, through its own system."
+            },
+            {
+              "icon": "🧊",
+              "heading": "Funds freeze at once",
+              "narration": "Banks must then freeze immediately all funds owned or controlled, directly or indirectly, by the listed person, and the freeze lasts as long as the name stays on the list."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two lists, two reporting lines",
+          "headers": [
+            "DTTOT",
+            "DPPSPM"
+          ],
+          "items": [
+            {
+              "label": "What it lists",
+              "left": "Suspected terrorists and terrorist organisations",
+              "right": "Suspected financiers of weapons of mass destruction"
+            },
+            {
+              "label": "Main legal basis",
+              "left": "Law 9/2013 and POJK 8/2023",
+              "right": "Proliferation financing rules and POJK 8/2023"
+            },
+            {
+              "label": "Freeze report with minutes goes to",
+              "left": "Indonesian National Police, copy to OJK",
+              "right": "PPATK, copy to OJK"
+            },
+            {
+              "label": "If there is no match",
+              "left": "Nil report to the police, copy to OJK",
+              "right": "Nil report to PPATK, copy to OJK"
+            },
+            {
+              "label": "Deadline for freeze or nil report",
+              "left": "3 working days from receiving the list",
+              "right": "3 working days from receiving the list"
+            },
+            {
+              "label": "Suspicious transaction report",
+              "left": "LTKM to PPATK on any match",
+              "right": "LTKM to PPATK on any match"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Rizal confirms the Denpasar customer matches the DTTOT. Where does the freeze report with its minutes go?",
+          "options": [
+            "To PPATK only",
+            "To the Central Jakarta District Court",
+            "To the Indonesian National Police, with a copy to OJK",
+            "To Bank Indonesia, with a copy to PPATK"
+          ],
+          "answer": 2,
+          "explanation": "POJK 8/2023 sends the DTTOT freeze report and minutes to the National Police with a copy to OJK, within three working days of receiving the list. For the DPPSPM the report goes to PPATK. A match is also reported to PPATK as an LTKM."
+        },
+        {
+          "type": "concept",
+          "title": "The terrorism financing offence and its duties",
+          "body": "**Law 9/2013** makes it a crime to deliberately **provide, collect, give or lend funds**, directly or indirectly, intending them to be used, wholly or partly, for a terrorist act, a terrorist organisation or a terrorist. The maximum is **15 years** in prison and a fine of **IDR 1 billion**. Conspiracy, attempt and assistance carry the same penalty; planning or organising the offence can mean **life imprisonment** or up to **20 years**. Corporations face fines of up to **IDR 100 billion**.\n\nDuties for banks:\n- **Report** TF-related suspicious transactions to PPATK no later than **three working days** after knowing of them. A deliberate failure can bring an administrative fine of up to **IDR 1 billion**, imposed by the supervisor.\n- **No tipping off:** up to **5 years** and **IDR 1 billion**.\n- **Know your customer** under the supervisor's rules, including for TF risks.\n- **Freeze** listed persons' funds immediately."
+        },
+        {
+          "type": "order",
+          "title": "A confirmed list match: what happens next",
+          "prompt": "Put the bank's steps after screening finds a match in the order POJK 8/2023 requires.",
+          "steps": [
+            "Confirm that the customer's identity and other information match the list entry",
+            "Freeze immediately all funds the person owns or controls, without delay and without telling them first",
+            "Prepare the official freeze minutes (berita acara)",
+            "Send the freeze report and minutes to the police for the DTTOT, or PPATK for the DPPSPM, copying OJK, within three working days",
+            "Report the match to PPATK as a suspicious transaction (LTKM)",
+            "Keep the freeze in place for as long as the name stays on the list"
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Freeze, escalate or clear?",
+          "prompt": "Screening has produced these alerts against the DTTOT. Decide the right handling for each.",
+          "buckets": [
+            "Freeze now",
+            "Escalate to verify",
+            "Document as false positive"
+          ],
+          "items": [
+            {
+              "text": "Full name, date of birth and national ID number all match the list entry",
+              "bucket": 0
+            },
+            {
+              "text": "Same common name, but different date of birth, nationality and ID number",
+              "bucket": 2
+            },
+            {
+              "text": "Name matches an alias on the list, date of birth matches, no ID number held by the bank",
+              "bucket": 1
+            },
+            {
+              "text": "A beneficial owner of a corporate customer matches the list on name, date of birth and passport",
+              "bucket": 0
+            },
+            {
+              "text": "Partial name match with a listed organisation; the customer is a registered charity with a similar name",
+              "bucket": 1
+            },
+            {
+              "text": "Name matches, but the customer was born 40 years after the listed person",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The brother at the counter",
+          "setting": "Bank Lintas Samudra, Denpasar branch. 9:30 am.",
+          "lines": [
+            {
+              "who": "ketut",
+              "mood": "worried",
+              "text": "The brother is here. He says half the money in the joint travel agency account is his, and he needs IDR 200 million today to pay hotels."
+            },
+            {
+              "who": "rizal",
+              "mood": "thinking",
+              "text": "The freeze covers funds owned or controlled directly or indirectly, wholly or jointly with others. The joint account is in scope."
+            },
+            {
+              "who": "ketut",
+              "mood": "neutral",
+              "text": "He's not on the list himself. Isn't freezing his share unfair?"
+            },
+            {
+              "who": "dewi",
+              "mood": "neutral",
+              "text": "There's a lawful route for that: objections go to the police chief, and a court can follow. The branch doesn't decide it at the counter."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Releasing 'his half'",
+          "situation": "The listed customer's brother is not on the DTTOT. He shows documents suggesting he contributed half the funds in their joint business account, which the bank froze this morning. He asks Ketut to release IDR 200 million so the agency can pay suppliers, and says the bank will be 'responsible for ruining the business'. What should Ketut do?",
+          "choices": [
+            {
+              "text": "Release IDR 200 million, since the brother is not listed and has evidence of his share",
+              "outcome": "This breaks the freeze. POJK 8/2023 extends the freeze to funds the listed person owns or controls jointly with others, and the bank must not make funds available to listed persons. Only the lawful objection route can lift it.",
+              "score": 0
+            },
+            {
+              "text": "Keep the freeze, tell him neutrally that the funds cannot be released, and refer the matter to the AML unit and legal team",
+              "outcome": "Correct. Ketut keeps the funds frozen, avoids discussing the list or reports, and escalates. The AML unit can explain to the brother, through the proper channel, that objections go to the police chief under Law 9/2013, and logs his request as possible sanction evasion.",
+              "score": 2
+            },
+            {
+              "text": "Close the joint account and send the brother a cheque for his half",
+              "outcome": "Closing the account and paying out moves frozen funds. The freeze must stay in place while the listed person remains on the DTTOT.",
+              "score": 0
+            },
+            {
+              "text": "Keep the freeze but tell him the account is blocked because his brother is a terror suspect",
+              "outcome": "Keeping the freeze is right, but volunteering the reason risks disclosing information beyond what the process allows and could alert others. Let the AML unit manage communications through the proper channel.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Freezing vocabulary",
+          "cards": [
+            {
+              "front": "Pemblokiran secara serta merta",
+              "back": "Immediate freezing, without delay and without telling the customer beforehand, as soon as a list match is confirmed."
+            },
+            {
+              "front": "Berita acara",
+              "back": "Official minutes recording what was frozen, when and by whom; they go with the freeze report."
+            },
+            {
+              "front": "Laporan nihil",
+              "back": "Nil report: if screening finds no match, the bank still reports that to the police (DTTOT) or PPATK (DPPSPM), copying OJK."
+            },
+            {
+              "front": "Making funds available",
+              "back": "Banned: the bank must not provide, give or lend funds to or for listed persons or corporations."
+            },
+            {
+              "front": "Sanction evasion",
+              "back": "POJK 8/2023 requires banks to identify, assess, understand and mitigate the risk that customers try to get around the lists."
+            },
+            {
+              "front": "Objection",
+              "back": "A listed person can object to a freeze in writing to the police chief; if refused, the dispute can go to the Central Jakarta District Court."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "The CFT and CPF clocks",
+          "caption": "Freezing is not a judgement on the customer's guilt; it is a legal duty that follows the list.",
+          "items": [
+            {
+              "label": "Freeze after a confirmed match",
+              "value": "Immediately",
+              "detail": "Without delay and without prior notice to the customer or beneficial owner."
+            },
+            {
+              "label": "Freeze or nil report",
+              "value": "3 working days",
+              "detail": "From the day the bank receives the DTTOT or DPPSPM through OJK's system."
+            },
+            {
+              "label": "TF suspicious transaction report",
+              "value": "3 working days",
+              "detail": "From when the bank knows of the TF-related suspicious transaction (Law 9/2013)."
+            },
+            {
+              "label": "Court ruling on a listing",
+              "value": "30 working days",
+              "detail": "Central Jakarta District Court decides the police chief's application."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Which rule says so?",
+          "prompt": "Match each duty to the instrument that sets it.",
+          "pairs": [
+            {
+              "left": "Refuse a transfer if the sender won't give originator details",
+              "right": "Law 9/2013: transfer senders must supply full information or the transfer is refused"
+            },
+            {
+              "left": "Keep transfer data on senders and recipients",
+              "right": "Law 9/2013: the sending provider keeps it for at least five years"
+            },
+            {
+              "left": "Check a foreign respondent bank first",
+              "right": "POJK 8/2023: understand its business, reputation and home AML/CFT/CPF regime before cross-border correspondent banking"
+            },
+            {
+              "left": "Keep the lists up to date",
+              "right": "POJK 8/2023: maintain the DTTOT and DPPSPM delivered through OJK's system"
+            },
+            {
+              "left": "Report a deliberate TF reporting failure",
+              "right": "Law 9/2013: the supervisor may impose an administrative fine of up to IDR 1 billion"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which funds does the immediate freeze under POJK 8/2023 cover?",
+          "options": [
+            "Only accounts held solely in the listed person's name",
+            "Funds owned or controlled by the listed person, directly or indirectly, wholly or jointly with others",
+            "Only funds deposited after the person was listed",
+            "Only funds above IDR 100 million"
+          ],
+          "answer": 1,
+          "explanation": "Article 53(5) extends the freeze to funds owned or controlled directly or indirectly, however obtained, held wholly or jointly with other parties. There is no threshold or date limit."
+        },
+        {
+          "type": "example",
+          "title": "Inside the DTTOT: what PPATK publishes",
+          "body": "PPATK's public page on the DTTOT explains how Indonesia applies **targeted financial sanctions** under Law 9/2013, in line with **FATF Recommendation 6** and the UN Security Council resolutions on terrorism, including resolutions **1267 (1999)** and **1373 (2001)**.\n\nThe page sets out:\n- listing by **Central Jakarta District Court** designation, and the procedures for extending or removing a listing;\n- **immediate freezing** of all funds owned or controlled by listed persons, objections to a freeze, and an exception for **basic necessities**;\n- that the list is also sent to **Customs** so cash carried by listed people can be stopped at the border;\n- a **2015 joint regulation** of the Supreme Court, the foreign ministry, the police, the counter-terrorism agency (BNPT) and PPATK that governs the process.\n\nPPATK also links the **proliferation financing list** from the same page. When Indonesia joined the FATF in 2023, PPATK noted that proliferation financing had been one of the three areas of its fast-track action plan."
+        },
+        {
+          "type": "tip",
+          "title": "Screening hygiene that examiners check",
+          "body": "- Load every list update from OJK's system the day it arrives and keep evidence of when.\n- Screen customers, walk-in customers **and beneficial owners**, not just account names.\n- Use aliases, dates of birth and ID numbers to resolve matches; record why each alert was cleared.\n- Re-screen the whole customer base after each update, not only new customers.\n- Send freeze or nil reports within three working days, every time."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four: what to remember",
+          "items": [
+            "Law 9/2013 punishes providing or collecting funds for terrorism with up to 15 years and IDR 1 billion; organisers can face life.",
+            "TF-related suspicious transactions go to PPATK within three working days; deliberate failure risks an administrative fine of up to IDR 1 billion.",
+            "OJK delivers the DTTOT and DPPSPM to banks; on a confirmed match, freeze immediately, without delay and without warning.",
+            "Freeze reports and nil reports are due within three working days: DTTOT to the police, DPPSPM to PPATK, both copied to OJK.",
+            "Freezes cover funds owned or controlled directly, indirectly or jointly, and last while the name stays listed.",
+            "Objections go to the police chief and then the court, never to the branch counter."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Where in your daily work could you be the person who notices a listed name or someone trying to work around a freeze? What would you do in the first ten minutes?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-aml-s4-q1",
+          "question": "What is the maximum prison term for providing funds to a terrorist organisation under Article 4 of Law 9/2013?",
+          "options": [
+            "15 years",
+            "5 years",
+            "20 years",
+            "10 years"
+          ],
+          "answer": 0,
+          "explanation": "Article 4 sets up to 15 years and a fine of up to IDR 1 billion. Planning or organising the offence under Article 6 can mean life or up to 20 years.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s4-q2",
+          "question": "Who applies to have a person placed on the DTTOT?",
+          "options": [
+            "PPATK, to OJK",
+            "OJK, to the Supreme Court",
+            "The bank that finds suspicious transactions, to the police",
+            "The Chief of the Indonesian National Police, to the Central Jakarta District Court"
+          ],
+          "answer": 3,
+          "explanation": "Article 27 of Law 9/2013 gives the police chief the role of applying to the Central Jakarta District Court, which rules on the listing.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s4-q3",
+          "question": "Screening confirms that a customer matches the DPPSPM. Where does the freeze report and minutes go?",
+          "options": [
+            "To PPATK, with a copy to OJK",
+            "To the National Police, with a copy to OJK",
+            "To the Ministry of Foreign Affairs",
+            "To OJK only"
+          ],
+          "answer": 0,
+          "explanation": "For the proliferation financing list POJK 8/2023 sends freeze and nil reports to PPATK, copying OJK. DTTOT reports go to the National Police.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s4-q4",
+          "question": "A bank receives an updated DTTOT and finds no customer matches. What must it do?",
+          "options": [
+            "Nothing, since no freeze was needed",
+            "Send a nil report to PPATK within fourteen working days",
+            "Send a nil report to the police, with a copy to OJK, within three working days",
+            "Inform the customers who were screened"
+          ],
+          "answer": 2,
+          "explanation": "POJK 8/2023 requires a nil report to the National Police, copied to OJK, within three working days of receiving the DTTOT. For the DPPSPM the nil report goes to PPATK.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s4-q5",
+          "question": "When must a bank freeze funds after confirming a DTTOT match?",
+          "options": [
+            "Within three working days, after writing to the customer",
+            "After the police send a separate court order to the bank",
+            "After OJK approves the freeze",
+            "Immediately, without delay and without notifying the customer first"
+          ],
+          "answer": 3,
+          "explanation": "Article 53(4) requires immediate freezing without delay and without prior notice. The three-working-day period applies to the freeze report, not to the freeze itself.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s4-q6",
+          "question": "A listed person believes the freeze of his account is wrong. Under Law 9/2013, to whom does he first send a written objection?",
+          "options": [
+            "The bank's branch manager",
+            "The Chief of the Indonesian National Police",
+            "OJK's banking supervisors",
+            "PPATK's head"
+          ],
+          "answer": 1,
+          "explanation": "Article 29 of Law 9/2013 sends objections to the police chief. If the objection is refused, the person can bring a civil claim in the Central Jakarta District Court.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s4-q7",
+          "question": "A bank deliberately fails to report a TF-related suspicious transaction to PPATK. What administrative sanction does Law 9/2013 set?",
+          "options": [
+            "A fine of up to IDR 100 billion imposed by PPATK",
+            "Automatic revocation of the bank's licence",
+            "A fine of up to IDR 1 billion imposed by the supervisory authority",
+            "A written warning only"
+          ],
+          "answer": 2,
+          "explanation": "Article 13 of Law 9/2013 allows an administrative fine of up to IDR 1 billion, imposed by the supervisory and regulatory authority, for deliberate failure to report within three working days.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s4-q8",
+          "question": "How long does a freeze on a DTTOT-listed person's funds last?",
+          "options": [
+            "Thirty working days, then it ends by law",
+            "For as long as the person remains on the list",
+            "Five working days, like a postponement",
+            "Until the bank's next annual review"
+          ],
+          "answer": 1,
+          "explanation": "Article 28(5) of Law 9/2013 keeps the freeze in place while the identity stays on the DTTOT. The 30-day limit belongs to other blocking powers.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s4-q9",
+          "question": "A customer asks to send money abroad but refuses to give the originator's address and source of funds. What does Law 9/2013 require?",
+          "options": [
+            "The bank must refuse the transfer",
+            "The bank may send it and report later",
+            "The bank sends it but files an LTKL marked incomplete",
+            "The bank must close the customer's account at once"
+          ],
+          "answer": 0,
+          "explanation": "Article 18 of Law 9/2013 requires the financial service provider to refuse a transfer when the customer does not give the required information.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s4-q10",
+          "question": "Under POJK 8/2023, which customers must be screened against the DTTOT and DPPSPM?",
+          "options": [
+            "Only new customers onboarded after the list update",
+            "Customers and also their beneficial owners",
+            "Only customers who send cross-border transfers",
+            "Only corporate customers"
+          ],
+          "answer": 1,
+          "explanation": "POJK 8/2023 requires matching customers' identities against the lists and freezing where the customer or beneficial owner matches. Existing customers are screened when a list update arrives.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Bank's Programme: Board, People, Training and Sanctions",
+      "stage": "The Council Chamber",
+      "summary": "See the programme as OJK's examiners do: five pillars, board and AML unit roles, risk assessment and policy cycles, staff screening, yearly training and OJK sanctions.",
+      "minutes": 45,
+      "objectives": [
+        "Describe the five pillars of POJK 8/2023",
+        "Explain the duties of directors, commissioners and the AML unit",
+        "Plan training and staff screening that meet POJK 8/2023",
+        "Describe OJK's administrative sanctions and fines"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Six weeks before the examiners",
+          "setting": "Board meeting room, Bank Lintas Samudra head office, Jakarta. 3:00 pm.",
+          "lines": [
+            {
+              "who": "agus",
+              "mood": "worried",
+              "text": "OJK's examiners arrive in six weeks. Ketut, where are we on AML/CFT/CPF training?"
+            },
+            {
+              "who": "ketut",
+              "mood": "neutral",
+              "text": "Eighty-two percent of staff completed this year's module. The gap is mostly new joiners in the branches and the payments operations team."
+            },
+            {
+              "who": "dewi",
+              "mood": "thinking",
+              "text": "Those are exactly the people POJK 8/2023 names: staff in relevant units and new employees. And we have no evaluation of whether the training worked."
+            },
+            {
+              "who": "rizal",
+              "mood": "neutral",
+              "text": "Also, our individual risk assessment update is due to OJK by the end of June, and the policy review flagged changes we haven't written yet."
+            },
+            {
+              "who": "agus",
+              "mood": "thinking",
+              "text": "So the question isn't whether we have a programme on paper. It's whether every pillar works."
+            },
+            {
+              "who": "dewi",
+              "mood": "proud",
+              "text": "Final stage: the Council Chamber. Let's look at the programme the way OJK's examiners will."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The five pillars of POJK 8/2023",
+          "scenes": [
+            {
+              "icon": "👔",
+              "heading": "Active board oversight",
+              "narration": "Pillar one: the Board of Directors and the Board of Commissioners actively oversee the programme. Directors propose and run it; commissioners approve and supervise."
+            },
+            {
+              "icon": "📘",
+              "heading": "Policies and procedures",
+              "narration": "Pillar two: written policies and procedures, built on the risk assessment, covering CDD, beneficial owners, refusals, monitoring, records and reporting to PPATK."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Internal control",
+              "narration": "Pillar three: an effective and independent internal control system, with clear limits of authority and independent checks that the programme works."
+            },
+            {
+              "icon": "💻",
+              "heading": "Management information system",
+              "narration": "Pillar four: systems that identify, analyse, monitor and report customers' transaction patterns, built on a single customer identification file."
+            },
+            {
+              "icon": "🧑‍🏫",
+              "heading": "People and training",
+              "narration": "Pillar five: human resources and training, meaning screening of new staff, knowing your employees, and AML, CFT and CPF training at least once a year."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The programme's yearly rhythm",
+          "caption": "POJK 8/2023 allows several of these steps more than once a year when risk, size or major changes require it.",
+          "items": [
+            {
+              "label": "Assess risk",
+              "detail": "Update the individual ML/TF/PF risk assessment at least yearly; send it to OJK by the end of June."
+            },
+            {
+              "label": "Review policies",
+              "detail": "Review written policies at least yearly; draft any changes within six months of the review."
+            },
+            {
+              "label": "Train people",
+              "detail": "Train officers and staff at least once a year, more often where risk or big changes call for it."
+            },
+            {
+              "label": "Monitor and report",
+              "detail": "Run monitoring, list screening and reporting to PPATK every day."
+            },
+            {
+              "label": "Test independently",
+              "detail": "Independent checks confirm the programme actually works; fix what they find."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who does what?",
+          "prompt": "Match each role to its duty under POJK 8/2023.",
+          "pairs": [
+            {
+              "left": "Board of Directors",
+              "right": "Proposes policies, sets up the AML unit and ensures yearly training, especially for relevant units and new joiners"
+            },
+            {
+              "left": "Board of Commissioners",
+              "right": "Approves and evaluates the policies and oversees how the directors carry out their duties"
+            },
+            {
+              "left": "Special AML/CFT/CPF unit",
+              "right": "Analyses risk yearly, monitors customers, compiles reports to PPATK and recommends training needs"
+            },
+            {
+              "left": "Director overseeing compliance",
+              "right": "For banks, the AML unit or officer sits under this member of the Board of Directors"
+            },
+            {
+              "left": "Independent examiners",
+              "right": "Test whether the programme is effective, as part of internal control"
+            },
+            {
+              "left": "Human resources",
+              "right": "Screens new hires and monitors employee profiles under know your employee"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "How often must a bank train its officers and staff on AML, CFT and CPF under POJK 8/2023?",
+          "options": [
+            "Once on joining and then every three years",
+            "Only when OJK issues a new regulation",
+            "Every two years for all staff",
+            "At least once a year, and more often if risk or major changes require it"
+          ],
+          "answer": 3,
+          "explanation": "Article 72 requires continuous, periodic training at least once a year, with extra sessions where the bank's risk assessment, size, complexity or major events call for it. Article 8 makes directors ensure relevant units and new employees attend."
+        },
+        {
+          "type": "concept",
+          "title": "The people pillar: screening, KYE and training",
+          "body": "Under POJK 8/2023 a bank must protect itself from **insiders** being used for laundering, terrorism financing or proliferation financing:\n\n- **Pre-employment screening:** high standards when hiring permanent and non-permanent staff, including senior officers and experts, from the **lowest grade up to one level below** the Board of Directors and the Board of Commissioners.\n- **Know your employee:** understand and monitor staff profiles from the lowest level **up to and including** the directors and commissioners.\n- **Training at least yearly**, continuous and periodic, covering:\n  - the laws and regulations on the programme;\n  - techniques, methods and typologies of ML, TF and PF;\n  - the bank's policies and procedures and **each employee's role**;\n  - other material where needed.\n- Training may be in-house, with partners such as industry associations or PPATK, or by sending staff to external courses.\n- The bank must **evaluate** the training."
+        },
+        {
+          "type": "sort",
+          "title": "Does this training plan meet POJK 8/2023?",
+          "prompt": "Sort each element of Bank Lintas Samudra's draft plan.",
+          "buckets": [
+            "Meets the rule",
+            "Gap to fix"
+          ],
+          "items": [
+            {
+              "text": "Every officer and employee gets AML/CFT/CPF training at least once a year",
+              "bucket": 0
+            },
+            {
+              "text": "New joiners wait for the next annual cycle, up to eleven months away",
+              "bucket": 1
+            },
+            {
+              "text": "The module covers Law 8/2010, Law 9/2013, POJK 8/2023, typologies and each role",
+              "bucket": 0
+            },
+            {
+              "text": "Completion is tracked, but nobody evaluates whether the training worked",
+              "bucket": 1
+            },
+            {
+              "text": "Payments operations get an extra session after a new instant-transfer product launches",
+              "bucket": 0
+            },
+            {
+              "text": "The module covers money laundering only, with nothing on proliferation financing",
+              "bucket": 1
+            },
+            {
+              "text": "Some sessions are run jointly with PPATK and the banking association",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "What does a failure cost?",
+          "setting": "Director's office, head office. The next day.",
+          "lines": [
+            {
+              "who": "agus",
+              "mood": "thinking",
+              "text": "Suppose OJK finds our training and risk assessment fall short. What exactly can it do to us?"
+            },
+            {
+              "who": "dewi",
+              "mood": "neutral",
+              "text": "POJK 8/2023 lists the sanctions, from a written warning with an order to act, up to a ban on individuals acting as a bank's main party."
+            },
+            {
+              "who": "rizal",
+              "mood": "worried",
+              "text": "And late reports have their own daily fine. The risk assessment update to OJK is one of those reports."
+            },
+            {
+              "who": "agus",
+              "mood": "neutral",
+              "text": "Then let's see the numbers, and let's decide how to close the gaps before the examiners do it for us."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "OJK's administrative fines under POJK 8/2023",
+          "caption": "Fines do not end the duty: the bank must still comply and still submit the missing report.",
+          "items": [
+            {
+              "label": "Fine cap for a bank",
+              "value": "1% of net profit",
+              "detail": "Of the previous year's net profit, up to IDR 100 billion a year, for breaches of the programme duties."
+            },
+            {
+              "label": "Fine cap for an individual",
+              "value": "IDR 5bn a year",
+              "detail": "Maximum for a person under the same fine provisions."
+            },
+            {
+              "label": "Late report, commercial bank",
+              "value": "IDR 100k per day",
+              "detail": "Per working day late, per report, up to IDR 3 million per report."
+            },
+            {
+              "label": "Report not submitted",
+              "value": "IDR 10m per report",
+              "detail": "For commercial banks: a report more than 30 working days late counts as not submitted."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The training budget squeeze",
+          "situation": "Finance asks to cut this year's AML/CFT/CPF training budget. Their proposal: skip this year's refresher for everyone, roll it into a 'bigger' programme next year, and give new joiners a reading pack instead of training. Agus asks you for a recommendation before the board meeting. What do you advise?",
+          "choices": [
+            {
+              "text": "Accept the proposal: a bigger programme next year covers two years at once",
+              "outcome": "Skipping a year breaches the at-least-yearly duty in POJK 8/2023, and the directors are responsible for making sure staff, especially new joiners, attend. A double session next year does not cure the gap.",
+              "score": 0
+            },
+            {
+              "text": "Keep yearly training for all, prioritise relevant units and new joiners, use cheaper formats such as e-learning and PPATK sessions, and add an evaluation",
+              "outcome": "Correct. The rule fixes the minimum frequency and content, not the delivery method. A risk-based plan that keeps every employee trained yearly, focuses on the units the regulation names and evaluates results meets the rule at lower cost.",
+              "score": 2
+            },
+            {
+              "text": "Train only branch staff this year and exempt head office",
+              "outcome": "Partly right on prioritising the front line, but POJK 8/2023 covers officers and staff generally, and head office units such as payments and treasury are often the most relevant ones.",
+              "score": 1
+            },
+            {
+              "text": "Replace training with a signed declaration that staff have read the AML policy",
+              "outcome": "A declaration is not training and does not cover typologies, laws or roles. It would also fail the duty to evaluate training.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "OJK's sanction toolkit",
+          "cards": [
+            {
+              "front": "Written warning",
+              "back": "A warning or written reprimand, together with an order to take specific action."
+            },
+            {
+              "front": "Fine",
+              "back": "Capped at 1% of the previous year's net profit and IDR 100 billion a year for a bank; deferred for a bank that made a loss."
+            },
+            {
+              "front": "Restricting activities",
+              "back": "OJK can restrict certain business activities of the bank."
+            },
+            {
+              "front": "Lower soundness rating",
+              "back": "OJK can lower the assessment of factors that make up the bank's soundness rating."
+            },
+            {
+              "front": "Freezing activities",
+              "back": "OJK can freeze certain business activities."
+            },
+            {
+              "front": "Ban as main party",
+              "back": "An individual can be banned from acting as a main party of a financial institution."
+            },
+            {
+              "front": "Publication",
+              "back": "OJK may announce sanctions to the public, and a sanction never removes the duty to comply."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "What changed with POJK 8/2023",
+          "caption": "Older OJK circulars, such as the 2017 freezing guidance, still apply where they are consistent with POJK 8/2023.",
+          "headers": [
+            "Before (2017 regulation)",
+            "Now (POJK 8/2023)"
+          ],
+          "items": [
+            {
+              "label": "Scope",
+              "left": "Money laundering and terrorism financing",
+              "right": "Adds proliferation financing of weapons of mass destruction"
+            },
+            {
+              "label": "Lists",
+              "left": "Domestic terrorist list",
+              "right": "Both the DTTOT and the proliferation list (DPPSPM)"
+            },
+            {
+              "label": "Training",
+              "left": "Periodic training",
+              "right": "At least once a year, with evaluation"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which staff must pass pre-employment screening under POJK 8/2023?",
+          "options": [
+            "Only staff in the AML unit and branches",
+            "Only permanent staff above supervisor grade",
+            "Permanent and non-permanent staff from the lowest grade up to one level below the boards",
+            "Only members of the Board of Directors"
+          ],
+          "answer": 2,
+          "explanation": "Article 71 requires screening for permanent and non-permanent staff, including senior officers and experts, from the lowest level up to one level below the directors and commissioners. Know-your-employee monitoring then runs up to the boards themselves."
+        },
+        {
+          "type": "example",
+          "title": "Inspection findings at Bank Lintas Samudra (the quest's story)",
+          "body": "*This is the quest's own fictional story.* Six weeks later, OJK's examiners close their visit with four findings:\n\n1. **Training:** 14% of new joiners had no AML/CFT/CPF training within the year, and no evaluation existed. The directors must fix this, since POJK 8/2023 makes them responsible for attendance.\n2. **Risk assessment:** the individual assessment did not refer to Indonesia's national and sectoral risk assessments, which the regulation requires.\n3. **Screening:** beneficial owners of corporate customers were not screened against the DPPSPM.\n4. **Policies:** changes flagged in last year's policy review were drafted after more than six months.\n\nThe examiners order corrective actions with deadlines and warn that fines are possible. Agus presents the action plan to both boards, and the AML unit tracks every item to closure."
+        },
+        {
+          "type": "tip",
+          "title": "Build the evidence file before anyone asks",
+          "body": "Examiners test evidence, not intentions. Keep ready:\n- board and commissioner minutes where AML/CFT/CPF was discussed;\n- the latest risk assessment and proof it reached OJK on time;\n- the policy review, approvals and change log;\n- training attendance by unit and by joining date, plus evaluation results;\n- screening logs, freeze and nil reports, LTKM statistics;\n- independent test reports and how findings were closed."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five: what to remember",
+          "items": [
+            "The programme stands on five pillars: board oversight, policies and procedures, internal control, MIS, and people and training.",
+            "Update the risk assessment yearly and send it to OJK by the end of June; review policies yearly.",
+            "Directors ensure officers and staff, especially relevant units and new joiners, are trained at least once a year; training is evaluated.",
+            "Screen new hires up to one level below the boards and apply know-your-employee monitoring up to the boards.",
+            "OJK can warn, fine (up to 1% of prior-year profit, capped at IDR 100 billion a year), restrict, downgrade, freeze activities or ban individuals."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If OJK's examiners asked you tomorrow to prove your own part of the programme works, what evidence could you show them, and what is missing?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-aml-s5-q1",
+          "question": "Which of these is one of the five pillars of the programme under POJK 8/2023?",
+          "options": [
+            "Marketing and sales targets",
+            "Human resources and training",
+            "Customer satisfaction surveys",
+            "Branch expansion planning"
+          ],
+          "answer": 1,
+          "explanation": "Article 3 lists active board oversight, policies and procedures, internal control, management information systems, and human resources and training.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s5-q2",
+          "question": "By when must a bank send OJK its updated individual ML/TF/PF risk assessment each year?",
+          "options": [
+            "By the end of March",
+            "By the end of December",
+            "Within fourteen working days of the year end",
+            "By the end of June"
+          ],
+          "answer": 3,
+          "explanation": "Article 74 of POJK 8/2023 requires the yearly update of the risk assessment to reach OJK by the end of June at the latest.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s5-q3",
+          "question": "Under POJK 8/2023, who approves the bank's AML/CFT/CPF policies and procedures?",
+          "options": [
+            "The head of the AML unit alone",
+            "OJK, before they take effect",
+            "The Board of Commissioners, on the directors' proposal",
+            "PPATK, during its compliance audit"
+          ],
+          "answer": 2,
+          "explanation": "Directors propose the written policies and procedures; the Board of Commissioners approves and evaluates them (Articles 8 and 9).",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s5-q4",
+          "question": "In a commercial bank, to whom does the special AML/CFT/CPF unit or officer report?",
+          "options": [
+            "The head of internal audit",
+            "The Board of Commissioners directly",
+            "The member of the Board of Directors who oversees compliance",
+            "The head of the largest branch"
+          ],
+          "answer": 2,
+          "explanation": "Article 11 places the unit or officer in the organisation structure, responsible to the directors, and for banks under the director in charge of the compliance function.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s5-q5",
+          "question": "A bank's yearly policy review identifies needed changes. By when must the changes be drafted?",
+          "options": [
+            "Within six months of the review result",
+            "Within three working days",
+            "Before the next review a year later",
+            "Within thirty working days"
+          ],
+          "answer": 0,
+          "explanation": "Article 17(5) of POJK 8/2023 requires changes to be drawn up no later than six months after the review result.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s5-q6",
+          "question": "What is the maximum yearly fine OJK can impose on a commercial bank under the general fine provisions of POJK 8/2023?",
+          "options": [
+            "IDR 5 billion regardless of profit",
+            "0.5% of total assets, with no cap",
+            "IDR 1 billion per breach",
+            "1% of the previous year's net profit, capped at IDR 100 billion"
+          ],
+          "answer": 3,
+          "explanation": "Article 79 caps fines at 1% of prior-year net profit and IDR 100 billion a year for institutions, and IDR 5 billion a year for individuals.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s5-q7",
+          "question": "Which of the following is included in the minimum content of AML/CFT/CPF training under POJK 8/2023?",
+          "options": [
+            "Sales techniques for high-value products",
+            "Typologies of ML, TF and PF, and each employee's role",
+            "The bank's dividend policy",
+            "Personal tax planning for staff"
+          ],
+          "answer": 1,
+          "explanation": "Article 72(3) covers the laws and regulations, techniques, methods and typologies, and the bank's policies and procedures with employees' roles and responsibilities.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-aml-s5-q8",
+          "question": "A commercial bank sends a required report to OJK ten working days late. What fine does POJK 8/2023 set?",
+          "options": [
+            "IDR 10 million, because any late report counts as not submitted",
+            "IDR 100,000 per working day late, up to IDR 3 million for that report",
+            "IDR 1 billion, as for a TF reporting failure",
+            "No fine, only a written warning"
+          ],
+          "answer": 1,
+          "explanation": "Article 78 sets IDR 100,000 per working day per report, up to IDR 3 million per report, for commercial banks. A report counts as not submitted only after 30 working days late.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-aml-s5-q9",
+          "question": "A bank's know-your-employee monitoring under POJK 8/2023 must cover which staff?",
+          "options": [
+            "Only staff handling cash",
+            "Staff from the lowest level up to and including the directors and commissioners",
+            "Only staff below managerial grade",
+            "Only staff in the AML unit"
+          ],
+          "answer": 1,
+          "explanation": "Article 71(b) applies know-your-employee monitoring from the lowest level up to the Board of Directors and Board of Commissioners. Pre-employment screening stops one level below the boards.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-aml-s5-q10",
+          "question": "Bank Lintas Samudra has a subsidiary abroad in a country whose AML rules are looser than POJK 8/2023. Which standard must the subsidiary apply?",
+          "options": [
+            "The POJK 8/2023 standard",
+            "The host country's looser rules",
+            "Whichever rules the subsidiary's board prefers",
+            "Only FATF's general recommendations"
+          ],
+          "answer": 0,
+          "explanation": "Article 67 requires offices and subsidiaries abroad to apply POJK 8/2023 where host-country standards are looser; where the host country is stricter, they follow the host rules.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "id",
+    "programs": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      15,
+      17,
+      23,
+      24,
+      25,
+      26
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "annual",
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Otoritas Jasa Keuangan (OJK)",
+      "Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK)",
+      "Indonesian National Police (DTTOT listing and freezing reports)"
+    ],
+    "references": [
+      {
+        "title": "POJK Nomor 8 Tahun 2023 tentang Penerapan Program Anti Pencucian Uang, Pencegahan Pendanaan Terorisme, dan Pencegahan Pendanaan Proliferasi Senjata Pemusnah Massal di Sektor Jasa Keuangan (OJK Regulation 8/2023: AML, CFT and CPF programmes)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Penerapan-Program-APU-PPT-dan-PPPSPM-di-SJK/POJK%208-2023%20-%20APU%20PPT%20dan%20PPPSPM%20di%20SJK.pdf",
+        "provision": "Articles 3-11, 14-15, 17-23, 32-41, 45-53, 63, 65, 67, 69, 71-72, 74, 76-80",
+        "note": "Five-pillar programme, risk assessment, board and AML unit duties, CDD, beneficial owners, PEPs, EDD, list screening and immediate freezing, records, staff screening, training at least yearly, reporting and administrative sanctions.",
+        "effective": "2023-06-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Undang-Undang Nomor 8 Tahun 2010 tentang Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang (Law 8/2010 on the Prevention and Eradication of Money Laundering)",
+        "issuer": "Republic of Indonesia (copy published by OJK)",
+        "url": "https://www.ojk.go.id/apu-ppt/id/peraturan/uu/Documents/UU%20Nomor%208%20Tahun%202010%20tentang%20TPPU.pdf",
+        "provision": "Articles 1-7, 12, 17-30, 32, 65 and 71",
+        "note": "Laundering offences and penalties, tipping off, KYC, five-year records, suspicious reports within three working days, cash and cross-border reports within fourteen working days, postponement, protection of reporters and blocking orders.",
+        "effective": "2010-10-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Undang-Undang Nomor 9 Tahun 2013 tentang Pencegahan dan Pemberantasan Tindak Pidana Pendanaan Terorisme (Law 9/2013 on the Prevention and Eradication of Terrorism Financing)",
+        "issuer": "Republic of Indonesia (copy published by OJK)",
+        "url": "https://www.ojk.go.id/apu-ppt/id/peraturan/uu/Documents/UU%20Nomor%209%20Tahun%202013%20tentang%20TPPT.pdf",
+        "provision": "Articles 4-10, 13, 16-19 and 27-29",
+        "note": "Terrorism financing offence and penalties, tipping off, TF suspicious reports within three working days, transfer information, DTTOT listing, immediate freezing and objections.",
+        "effective": "2013-03-13",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "SEOJK Nomor 38/SEOJK.01/2017 tentang Pedoman Pemblokiran Secara Serta Merta atas Dana Nasabah di Sektor Jasa Keuangan yang Identitasnya Tercantum dalam DTTOT (OJK Circular 38/2017: immediate freezing)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/otoritas-jasa-keuangan/surat-edaran-ojk-dan-dewan-komisioner/Documents/Pages/SEOJK-Pedoman-Pemblokiran-Dana-Nasabah-dalam-Daftar-Terduga-Teroris-dan-Organisasi-Teroris/SAL%20SEOJK%2038%20-%20Pemblokiran%20Teroris.pdf",
+        "note": "Step-by-step guidance for freezing, without delay, the funds of customers named on the DTTOT and reporting the freeze; kept alive by POJK 8/2023 where consistent with it.",
+        "effective": "2017-07-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Pedoman Pelaporan (PPATK reporting guidance for reporting parties)",
+        "issuer": "Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK)",
+        "url": "https://www.ppatk.go.id/pelaporan/read/50/pedoman-pelaporan.html",
+        "note": "Report types (LTKM, LTKT, LTKL), cross-border transfers reportable whatever the amount, mandatory electronic filing through goAML with limited exceptions, and PPATK Head Regulation 1/2021 for financial service providers.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Daftar Terduga Teroris dan Organisasi Teroris (DTTOT) (Domestic list of suspected terrorists and terrorist organisations)",
+        "issuer": "Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK)",
+        "url": "https://www.ppatk.go.id/dalam_negeri/read/1400/daftar-terduga-teroris-dan-organisasi-teroris-dttot.html",
+        "note": "Targeted financial sanctions under Law 9/2013: court-based listing, immediate freezing, objections, delisting, basic-necessities exception and the 2015 joint regulation.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Keanggotaan Penuh FATF: Bekal Penting Menuju Indonesia Emas 2045 (PPATK press release on full FATF membership)",
+        "issuer": "Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK)",
+        "url": "https://www.ppatk.go.id/siaran_pers/read/1296/keanggotaan-penuh-fatf-bekal-penting-menuju-indonesia-emas-2045-.html",
+        "note": "Indonesia accepted as the FATF's 40th member on 25 October 2023 after observer status from 29 June 2018 and completion of all 48 action-plan items.",
+        "effective": "2023-10-25",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Siaran Pers SP 190/OJK/GKPB/XII/2023: OJK Minta Perbankan Blokir Rekening Aktifitas Kejahatan dan Judi Online (OJK press release on blocking accounts used for crime and online gambling)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Documents/Pages/OJK-Minta-Perbankan-Blokir-Rekening-Aktifitas-Kejahatan-dan-Judi-Online/SP%20-%20OJK%20Minta%20Perbankan%20Blokir%20Rekening%20Aktifitas%20Kejahatan%20dan%20Judi%20Online.pdf",
+        "note": "OJK ordered banks to block more than 4,000 online gambling accounts in three months and asked for stronger CDD/EDD, profiling systems and LTKM reporting.",
+        "effective": "2023-12-16",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "PPATK Hentikan Sementara Transaksi Rekening Dormant untuk Lindungi Kepentingan Publik (PPATK press release on halting dormant accounts)",
+        "issuer": "Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK)",
+        "url": "https://www.ppatk.go.id/siaran_pers/read/1476/ppatk-hentikan-sementara-transaksi-rekening-dormant-untuk-lindungi-kepentingan-publik.html",
+        "note": "More than 28,000 traded accounts were used for online gambling deposits in 2024; PPATK temporarily halted dormant accounts under Law 8/2010.",
+        "effective": "2025-05-18",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "id-aml-x1",
+        "question": "A notary's client converts the proceeds of a large tax crime into foreign currency and property in his children's names to hide where the money came from. Under Law 8/2010, what is the maximum fine he faces for the Article 3 offence?",
+        "options": [
+          "IDR 1 billion",
+          "IDR 5 billion",
+          "IDR 10 billion",
+          "IDR 100 billion"
+        ],
+        "answer": 2,
+        "explanation": "Article 3 (placing, converting, transferring to hide origin) carries up to 20 years and IDR 10 billion. IDR 5 billion is the Article 4 cap and IDR 100 billion the corporate cap.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x2",
+        "question": "Which statement about predicate crimes under Law 8/2010 is correct?",
+        "options": [
+          "Only corruption, narcotics and terrorism are predicate crimes",
+          "Tax crimes are excluded because they are handled by the tax office",
+          "Crimes committed abroad never count as predicate crimes",
+          "Besides the listed crimes, any crime punishable by four years or more can generate proceeds"
+        ],
+        "answer": 3,
+        "explanation": "Article 2 lists many crimes, including tax, banking, fraud and forestry crimes, and adds any crime carrying four years or more, at home or abroad if also criminal in Indonesia.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x3",
+        "question": "PT Graha Lestari's president director orders staff to route bribery proceeds through company accounts for the company's benefit. Who may be punished under Law 8/2010?",
+        "options": [
+          "Only the junior staff who made the transfers",
+          "Only the company, as directors act on its behalf",
+          "No one, because companies cannot launder money",
+          "The company and/or its controlling personnel, such as the president director"
+        ],
+        "answer": 3,
+        "explanation": "Articles 6 and 7 allow penalties against the corporation and/or its controlling personnel when the act was ordered by them, served the company's purpose and was meant to benefit it.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x4",
+        "question": "Which authority imposes administrative sanctions on a bank for failing to file reports to PPATK under Law 8/2010?",
+        "options": [
+          "The supervisory and regulatory authority, which for banks is OJK",
+          "PPATK in every case",
+          "The Central Jakarta District Court",
+          "The Ministry of Finance"
+        ],
+        "answer": 0,
+        "explanation": "Article 30 gives the supervisory and regulatory authority the power to impose these sanctions; PPATK steps in only where no such authority exists. OJK is that authority for banks.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x5",
+        "question": "OJK finds during an inspection that a bank failed to report a suspicious transaction. What does Law 8/2010 require OJK to do with this finding?",
+        "options": [
+          "Pass the finding to PPATK promptly",
+          "File the LTKM itself on the bank's behalf",
+          "Keep the finding confidential within OJK",
+          "Wait for the bank to report it within fourteen days"
+        ],
+        "answer": 0,
+        "explanation": "Article 32 requires the supervisory and regulatory authority to send unreported suspicious transactions it discovers to PPATK promptly.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x6",
+        "question": "A relationship manager deliberately tells a corporate client's finance director that the bank is drafting an LTKM about the client. Who else, besides staff, does the tipping-off ban in Law 8/2010 cover?",
+        "options": [
+          "Only staff of PPATK",
+          "Only external auditors",
+          "Directors, commissioners and managers of the reporting party",
+          "No one else; it applies only to front-line staff"
+        ],
+        "answer": 2,
+        "explanation": "Article 12 covers directors, commissioners, managers and employees of reporting parties, and separately PPATK and supervisory staff.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x7",
+        "question": "What did PPATK report about Indonesia's admission to the FATF in October 2023?",
+        "options": [
+          "Indonesia was admitted as an observer for the first time",
+          "Indonesia was placed on the FATF list of high-risk jurisdictions",
+          "Indonesia became the 40th member after completing all items in its action plan",
+          "Indonesia joined after the FATF waived its mutual evaluation"
+        ],
+        "answer": 2,
+        "explanation": "PPATK's release says Indonesia was accepted by acclamation as the 40th member on 25 October 2023, after being an observer since 2018 and completing all 48 action-plan items.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x8",
+        "question": "Article 5 of Law 8/2010 penalises receiving or controlling criminal proceeds. Which combination of maximum penalties applies?",
+        "options": [
+          "20 years in prison and an IDR 5 billion fine",
+          "15 years in prison and an IDR 1 billion fine",
+          "5 years in prison and an IDR 1 billion fine",
+          "4 years in prison and no fine"
+        ],
+        "answer": 2,
+        "explanation": "Article 5 sets up to 5 years and IDR 1 billion. 20 years and IDR 5 billion is Article 4; 15 years and IDR 1 billion is the TF offence under Law 9/2013.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x9",
+        "question": "A prospective customer opens an account through the bank's app. The bank checks her identity against national population data and asks only for a password and PIN. Is this enough under POJK 8/2023?",
+        "options": [
+          "Yes; any two factors satisfy the rule",
+          "Yes; population data alone is sufficient",
+          "No; app onboarding is not allowed for banks",
+          "No; it needs at least something she is and something she has"
+        ],
+        "answer": 3,
+        "explanation": "Article 21 requires non face-to-face electronic verification to use population data and at least two factors: something you are and something you have. A password and PIN are both 'something you know'.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x10",
+        "question": "A trust opens an account at the bank. Whose identities must the bank identify and verify as beneficial owners under POJK 8/2023?",
+        "options": [
+          "Only the trustee who signs the account documents",
+          "The settlor, trustee, protector, beneficiaries and anyone controlling the trust",
+          "Only the beneficiaries who receive payments",
+          "Only the settlor who created the trust"
+        ],
+        "answer": 1,
+        "explanation": "Article 33(4) lists the settlor, trustee, protector, beneficiaries or class of beneficiaries, and any individual who controls the trust.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x11",
+        "question": "A state-owned enterprise with majority government ownership opens an account. Its ownership information is publicly available and reliable. What does POJK 8/2023 allow?",
+        "options": [
+          "Beneficial owner checks do not apply to state-owned enterprises at all",
+          "The bank must always collect a full beneficial owner declaration from the customer",
+          "The bank must ask OJK to verify the owner",
+          "The bank need not ask the customer again for beneficial owner identity data it can rely on publicly"
+        ],
+        "answer": 3,
+        "explanation": "Article 34 still applies beneficial owner verification to state bodies, majority state-owned companies and listed companies, but lets the bank rely on adequate and reliable public information; if in doubt it must ask the customer.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x12",
+        "question": "Which factor is NOT among those POJK 8/2023 lists for grouping customers by risk level?",
+        "options": [
+          "The customer's ownership structure, for companies",
+          "The products, services and delivery channels used",
+          "The frequency of transactions",
+          "The customer's religion"
+        ],
+        "answer": 3,
+        "explanation": "Article 20 lists identity, business location, profile, frequency of transactions, business activity, ownership structure, products, services and channels, and other relevant information. Religion is not a risk factor.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x13",
+        "question": "The bank's customer is a former senior official of an international organisation, who served as a deputy director. How does POJK 8/2023 classify her?",
+        "options": [
+          "As an ordinary customer, because international organisations are outside Indonesia",
+          "As a domestic PEP only if she is Indonesian",
+          "As a PEP only if she still holds the post today",
+          "As a PEP, because she held a prominent function in an international organisation"
+        ],
+        "answer": 3,
+        "explanation": "Article 2(2) treats people with prominent functions in international organisations, such as directors, deputy directors and board members, as one of the three PEP groups.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x14",
+        "question": "A long-standing customer's account suddenly receives large transfers that do not fit his profile. The bank asks him to explain, and his answer is vague and unconvincing. What does POJK 8/2023 require?",
+        "options": [
+          "Close the account immediately without reporting",
+          "Report the transactions to PPATK as suspicious",
+          "Wait for six months of further activity",
+          "Ask OJK whether to report"
+        ],
+        "answer": 1,
+        "explanation": "Article 52 requires analysis of off-profile transactions; the bank may ask the customer, minding tipping off, and must report an LTKM if the explanation is not convincing.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x15",
+        "question": "A bank refuses to open an account because the applicant's documents appear forged. What else must it do under POJK 8/2023?",
+        "options": [
+          "Return the documents and take no further action",
+          "Report the applicant to OJK only",
+          "Complete identification as far as possible, document the case and report it to PPATK",
+          "Open a restricted account so the applicant can be monitored"
+        ],
+        "answer": 2,
+        "explanation": "Article 49 requires refusal, but the bank still completes identification and verification where possible, documents the case and reports it to PPATK as a suspicious transaction.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x16",
+        "question": "Customers from a country the FATF has publicly identified as high risk, with a call for countermeasures, ask to open accounts. What must the bank apply under POJK 8/2023?",
+        "options": [
+          "Simplified CDD, since the FATF already monitors the country",
+          "A blanket ban on all customers with any link to the country",
+          "Standard CDD, as POJK 8/2023 does not mention FATF lists",
+          "EDD and countermeasures proportionate to the risk, in line with the FATF publication"
+        ],
+        "answer": 3,
+        "explanation": "Article 41 requires EDD and proportionate countermeasures for relationships with high-risk countries named by the FATF, adjusted to the FATF publication, and independent countermeasures where the FATF lists a country without a call.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x17",
+        "question": "What must the directors approve in connection with updating customer data under POJK 8/2023?",
+        "options": [
+          "The data-updating plan report and the report on its realisation",
+          "Every individual change to a customer's address",
+          "Each customer's annual risk score",
+          "The list of dormant accounts closed each month"
+        ],
+        "answer": 0,
+        "explanation": "Article 51 requires the bank to prepare a data-updating plan and a realisation report, both approved by the Board of Directors.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x18",
+        "question": "On Tuesday a teller notices odd activity but does not escalate it until the following Monday, when the AML unit confirms suspicion. Why is this a problem under Law 8/2010?",
+        "options": [
+          "The three-working-day deadline runs from when the bank knows of suspicious elements, so internal delay eats into it",
+          "There is no problem, since the deadline starts when PPATK is told",
+          "The deadline is fourteen working days, so a week's delay is fine",
+          "The deadline only starts after the customer is interviewed"
+        ],
+        "answer": 0,
+        "explanation": "Article 25(1) runs the LTKM deadline from when the financial service provider knows of the suspicious elements. Knowledge held by staff can count for the bank, so slow internal escalation creates risk.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x19",
+        "question": "Which cash transactions are exempt from the LTKT duty under Law 8/2010?",
+        "options": [
+          "All cash deposits by companies with an account over five years old",
+          "Transactions with the government and the central bank, and salary or pension payments",
+          "Any cash transaction below IDR 1 billion",
+          "Cash deposits by PEPs approved by a senior officer"
+        ],
+        "answer": 1,
+        "explanation": "Article 23(4) exempts transactions with the government and central bank, salary or pension payments, and other transactions PPATK sets or approves. The bank must keep a list of exempted transactions.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x20",
+        "question": "PPATK asks a bank to temporarily halt transactions on an account. What must the bank do?",
+        "options": [
+          "Comply only after notifying the customer and waiting for objections",
+          "Comply and record the halt in official minutes",
+          "Refuse unless a court order is attached",
+          "Comply only if OJK confirms the request"
+        ],
+        "answer": 1,
+        "explanation": "Law 8/2010 lets PPATK request a temporary halt and POJK 8/2023 makes compliance mandatory for the bank; the halt is recorded in minutes.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x21",
+        "question": "The bank's Head of Treasury, a director, makes unusual transfers through his own account that look like laundering. What does POJK 8/2023 allow the AML unit to do?",
+        "options": [
+          "Report the transactions directly to PPATK, even though they involve a director",
+          "Report only after the Board of Directors approves",
+          "Refer the matter to internal audit instead of PPATK",
+          "Wait until the director leaves the bank"
+        ],
+        "answer": 0,
+        "explanation": "Article 15 gives the AML unit authority to report suspicious transactions directly to PPATK, including those by directors, commissioners or their affiliates.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x22",
+        "question": "When may a bank file reports with PPATK on paper rather than through goAML?",
+        "options": [
+          "Whenever the bank prefers, provided it calls PPATK first",
+          "For any report about a customer with fewer than three transactions",
+          "For all cash transaction reports below IDR 1 billion",
+          "Only in listed situations such as unavailable facilities, technical failure, force majeure or a PPATK system outage"
+        ],
+        "answer": 3,
+        "explanation": "PPATK's guidance requires electronic filing through goAML and allows non-electronic filing only in the listed circumstances.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x23",
+        "question": "A bank decides to postpone a suspicious transaction on its own initiative. What is the longest the postponement can last under Law 8/2010?",
+        "options": [
+          "Three working days",
+          "Five working days",
+          "Thirty working days",
+          "Until PPATK finishes its analysis"
+        ],
+        "answer": 1,
+        "explanation": "Article 26 allows postponement for up to five working days; by the fifth working day the bank decides whether to carry out or refuse the transaction.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x24",
+        "question": "For how long must a bank keep records of a customer's identity documents after the relationship ends?",
+        "options": [
+          "At least five years",
+          "At least three years",
+          "At least ten years",
+          "Until the next OJK inspection"
+        ],
+        "answer": 0,
+        "explanation": "Law 8/2010 Article 21 and POJK 8/2023 Article 63 both set a minimum of five years after the relationship ends.",
+        "difficulty": 2
+      },
+      {
+        "id": "id-aml-x25",
+        "question": "In December 2023 OJK said it had ordered banks to block over 4,000 online gambling accounts. What else did it ask banks to do?",
+        "options": [
+          "Stop opening accounts for anyone under 30",
+          "Report every e-wallet top-up to OJK",
+          "Strengthen CDD and EDD and build systems to profile and spot gambling activity",
+          "Close all accounts receiving transfers from e-wallets"
+        ],
+        "answer": 2,
+        "explanation": "OJK's press release SP 190/OJK/GKPB/XII/2023 asked banks to develop profiling systems, strengthen CDD and EDD, and report off-profile transactions to PPATK as LTKMs.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x26",
+        "question": "Why does reporting an LTKM not breach bank secrecy?",
+        "options": [
+          "Because the customer consents in the account terms",
+          "Law 8/2010 exempts reporting duties from the secrecy rules binding the reporting party",
+          "Because OJK approves each report in advance",
+          "Because PPATK is part of the bank's own group"
+        ],
+        "answer": 1,
+        "explanation": "Article 28 of Law 8/2010 says carrying out the reporting duty is exempt from the secrecy provisions that apply to the reporting party.",
+        "difficulty": 2
+      },
+      {
+        "id": "id-aml-x27",
+        "question": "Ahmad collects donations from friends, knowing part of the money will buy equipment for a terrorist group. He never touches a weapon. Under Law 9/2013, has he committed terrorism financing?",
+        "options": [
+          "No; only those who carry out attacks commit an offence",
+          "Yes; collecting funds intended even partly for a terrorist organisation is the offence",
+          "No; the offence requires funds above IDR 100 million",
+          "Only if the group is also on a UN list"
+        ],
+        "answer": 1,
+        "explanation": "Article 4 covers deliberately providing, collecting, giving or lending funds intended to be used wholly or partly for terrorism, a terrorist organisation or a terrorist. No amount or UN listing is required.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x28",
+        "question": "A bank receives the DTTOT on 3 March (a working day). By when must it send the freeze report or nil report?",
+        "options": [
+          "Within fourteen working days of receiving the list",
+          "Within twenty-four hours of receiving the list",
+          "Within three working days of receiving the list",
+          "Before the end of the month"
+        ],
+        "answer": 2,
+        "explanation": "POJK 8/2023 sets three working days from receipt of the DTTOT or DPPSPM for freeze reports and nil reports.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x29",
+        "question": "Screening of a corporate customer finds that its beneficial owner matches the DTTOT. What does POJK 8/2023 require?",
+        "options": [
+          "Freeze immediately the funds the beneficial owner owns or controls, and report",
+          "Freeze nothing, because the account belongs to the company",
+          "Ask the company to replace the owner within 30 days",
+          "Close the account and return the balance to the company"
+        ],
+        "answer": 0,
+        "explanation": "Article 53 requires an immediate freeze where the customer or beneficial owner matches, covering funds owned or controlled directly or indirectly, followed by freeze and LTKM reports.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x30",
+        "question": "A listed customer's lawyer asks the bank to release funds to pay for the customer's food and medicine. Where can this request lawfully be handled?",
+        "options": [
+          "By the branch manager, if the amount is small",
+          "Through the official DTTOT process, which provides an exception for basic necessities",
+          "By the bank's AML unit on its own authority",
+          "It cannot be handled; no exceptions exist"
+        ],
+        "answer": 1,
+        "explanation": "PPATK's DTTOT page describes an exception for basic necessities within the official process. A branch or AML unit cannot lift a freeze on its own authority.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x31",
+        "question": "A customer's screening alert shows the same common name as a DTTOT entry, but a different date of birth, nationality and ID number. What is the sound response?",
+        "options": [
+          "Freeze the account immediately just in case",
+          "Tell the customer about the match and ask for comments",
+          "Clear it as a false positive and record the reasons",
+          "Ignore the alert without recording anything"
+        ],
+        "answer": 2,
+        "explanation": "POJK 8/2023 requires banks to manage false positives and false negatives. With several identifiers clearly different, the bank clears the alert and documents why.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x32",
+        "question": "Who notifies a person in writing that he has been placed on the DTTOT, and within what time?",
+        "options": [
+          "The bank, within three working days",
+          "PPATK, within twenty-four hours",
+          "The police chief, within ten working days",
+          "OJK, within thirty days"
+        ],
+        "answer": 2,
+        "explanation": "Article 27(7) of Law 9/2013 requires the police chief to notify the listed person or corporation in writing within ten working days.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x33",
+        "question": "What must a commercial bank do before offering cross-border correspondent banking to a foreign respondent bank?",
+        "options": [
+          "Understand the respondent's business, reputation and its home country's AML/CFT/CPF regime",
+          "Get PPATK's written approval of the respondent",
+          "Check only that the respondent has a SWIFT code",
+          "Ask the respondent's customers for their identity documents"
+        ],
+        "answer": 0,
+        "explanation": "Article 54 of POJK 8/2023 requires the bank to gather this information before providing cross-border correspondent banking services.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x34",
+        "question": "Besides screening names, POJK 8/2023 asks banks to manage another list-related risk. Which one?",
+        "options": [
+          "Currency exchange risk on frozen balances",
+          "The reputational risk of publishing the lists",
+          "Sanction evasion by customers, walk-in customers or beneficial owners",
+          "Interest rate risk on frozen deposits"
+        ],
+        "answer": 2,
+        "explanation": "Article 53(11) requires banks to identify, assess, understand and mitigate the risk of sanction evasion relating to the DTTOT and DPPSPM.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x35",
+        "question": "Which duty does POJK 8/2023 place on the Board of Directors rather than the Board of Commissioners?",
+        "options": [
+          "Approving the AML/CFT/CPF policies and procedures",
+          "Ensuring officers and staff, especially relevant units and new joiners, attend yearly training",
+          "Evaluating the policies and overseeing the directors",
+          "Supervising how the directors carry out their duties"
+        ],
+        "answer": 1,
+        "explanation": "Article 8(1)(f) makes the directors ensure yearly training. Approving, evaluating and overseeing are commissioners' duties under Article 9.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x36",
+        "question": "What does POJK 8/2023 require the bank's individual risk assessment to refer to?",
+        "options": [
+          "The bank's marketing plan for the year",
+          "The previous year's LTKM count only",
+          "The risk assessments of competitor banks",
+          "Indonesia's national and sectoral ML/TF/PF risk assessments"
+        ],
+        "answer": 3,
+        "explanation": "Article 4(4) requires the bank's assessment to refer to Indonesia's national and sectoral risk assessments.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-aml-x37",
+        "question": "When must a bank assess the ML/TF/PF risk of a new product or new technology under POJK 8/2023?",
+        "options": [
+          "Before the product or technology is launched or used",
+          "Within six months after launch",
+          "At the next yearly risk assessment",
+          "Only if OJK asks for it"
+        ],
+        "answer": 0,
+        "explanation": "Article 18 requires the risk assessment before new products, business practices, delivery mechanisms or technologies are launched or used.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x38",
+        "question": "A commercial bank submits a required report to OJK 35 working days after the deadline. How does POJK 8/2023 treat it?",
+        "options": [
+          "As not submitted, with a fine of IDR 10 million for that report",
+          "As late, with a fine of IDR 100,000 per day without limit",
+          "As on time, because it was eventually submitted",
+          "As late, with a fine capped at IDR 3 million"
+        ],
+        "answer": 0,
+        "explanation": "Article 78 treats reports more than 30 working days late as not submitted. For commercial banks the fine is IDR 10 million per report, and the bank must still submit it.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x39",
+        "question": "Which is evidence of an effective and independent internal control system under POJK 8/2023?",
+        "options": [
+          "A larger number of LTKMs than last year",
+          "Independent examination to make sure the programme is effective",
+          "Approval of every account by the AML unit",
+          "Annual sign-off by the external auditor on financial statements only"
+        ],
+        "answer": 1,
+        "explanation": "Article 65 points to adequate policies, procedures and internal monitoring, clear limits of authority, and independent examination of the programme's effectiveness.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x40",
+        "question": "What must a bank's management information system maintain for every customer under POJK 8/2023?",
+        "options": [
+          "A separate file for each account the customer holds",
+          "A single customer identification file",
+          "A copy of the customer's tax return",
+          "A record of the customer's social media accounts"
+        ],
+        "answer": 1,
+        "explanation": "Article 69 requires a single customer identification file containing at least the identification data set out in the regulation.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-aml-x41",
+        "question": "OJK fines a commercial bank under POJK 8/2023, but the bank made a loss the previous year. What happens to the fine calculation?",
+        "options": [
+          "It is cancelled permanently",
+          "It is replaced by a fixed IDR 5 billion fine",
+          "It is doubled the following year",
+          "It is deferred until the bank makes a profit"
+        ],
+        "answer": 3,
+        "explanation": "Article 80 defers the calculation of fines for institutions that made a loss in the previous year, and sets it on the profit once the bank is profitable again.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-aml-x42",
+        "question": "Who, by law, is responsible for making sure a financial conglomerate applies the programme across all its offices and subsidiaries at home and abroad?",
+        "options": [
+          "The financial institution that is the conglomerate's parent",
+          "Each subsidiary separately, with no group role",
+          "PPATK, through its foreign cooperation",
+          "The host country regulator only"
+        ],
+        "answer": 0,
+        "explanation": "Article 67(3) makes the parent of the financial conglomerate responsible for group-wide application, including risk assessment and mitigation in each member.",
+        "difficulty": 4
+      }
+    ]
+  }
+}

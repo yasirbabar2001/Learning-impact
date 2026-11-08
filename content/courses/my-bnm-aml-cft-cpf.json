@@ -1,0 +1,3337 @@
+{
+  "slug": "my-bnm-aml-cft-cpf",
+  "title": "Malaysia | AMLA and BNM AML/CFT/CPF and TFS Compliance",
+  "tagline": "Apply Malaysia's amended AMLA and Bank Negara Malaysia's AML/CFT/CPF and TFS rules with confidence at a conventional bank.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Licensed conventional banks in Malaysia",
+    "Licensed investment banks",
+    "Development financial institutions"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the anti-money laundering, counter-terrorism financing and counter-proliferation financing rules that apply to conventional banks in Malaysia. It is based on the **Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001 (AMLA)** as amended by **Act A1761**, in force from 1 March 2026, and on **Bank Negara Malaysia's** policy document on AML/CFT/CPF and Targeted Financial Sanctions for Financial Institutions, effective 6 February 2024.\n\nSection 19 of AMLA makes ongoing employee training part of every reporting institution's compliance programme, and BNM requires regular training with refreshers, pitched to each role, with customer-facing staff trained before they deal with customers. Since March 2026 key AMLA duties also bind directors, officers and employees personally. This quest supports that duty for branch, onboarding, operations, screening and compliance staff and their managers.\n\nIn five stages you join the compliance team of a fictional Malaysian bank: the law, customer due diligence, suspicious transaction reporting, targeted financial sanctions and the bank's programme.\n\nThe quest builds knowledge and does not replace your bank's own AML/CFT/CPF policies and procedures; always follow them and the latest BNM requirements.",
+  "audience": [
+    "Tellers, branch and account-opening staff at conventional banks in Malaysia who carry out CDD and handle cash",
+    "Relationship managers in retail, SME and corporate banking who onboard customers and spot unusual activity",
+    "Compliance, AML monitoring and sanctions screening staff who review alerts, submit reports to FIED and handle name matches",
+    "Branch compliance officers, line managers and senior managers who approve higher-risk relationships",
+    "Directors, internal auditors and risk managers who oversee or test the bank's AML/CFT/CPF programme"
+  ],
+  "outcomes": [
+    "Explain how AMLA, Act A1761 and BNM's AML/CFT/CPF and TFS policy document fit together, and which duties now bind you personally",
+    "Apply BNM's CDD, beneficial ownership, enhanced CDD and PEP requirements to real onboarding decisions",
+    "Escalate suspicion through the internal chain so the Compliance Officer can report promptly to FIED, and avoid tipping off",
+    "Apply cash threshold reporting and record-keeping rules, including the six-year minimum retention period",
+    "Screen, freeze, reject and report under Malaysia's targeted financial sanctions on terrorism and proliferation financing",
+    "Describe the roles of the board, senior management and Compliance Officer, the training and audit duties, and BNM's enforcement tools"
+  ],
+  "quest": {
+    "name": "The Straits Shield Mission",
+    "premise": "You have just joined Seri Merbau Bank Berhad, a fictional conventional bank headquartered in Kuala Lumpur with branches from Penang to Johor Bahru, as an AML/CFT/CPF officer in the head office compliance team. The amended AMLA is now in force and a BNM examination is coming. With Compliance Officer Nurul Aina Hashim, Penang branch compliance officer Daniel Tan, relationship manager Kavitha Subramaniam, sanctions analyst Farid Iskandar and independent director Dato' Lim Chee Keong, clear five stages, then face the final boss: the examiner's exam.",
+    "badge": {
+      "name": "Straits Shield Guardian",
+      "description": "Awarded to bankers who can apply Malaysia's AMLA and BNM's AML/CFT/CPF and TFS rules: know the customer, report suspicion, freeze sanctioned funds and keep the records."
+    },
+    "color": "#0e7490",
+    "cast": [
+      {
+        "id": "nurul",
+        "name": "Nurul Aina Hashim",
+        "role": "Compliance Officer (AML/CFT/CPF), head office, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "daniel",
+        "name": "Daniel Tan Wei Ming",
+        "role": "Branch Compliance Officer, Penang George Town",
+        "look": {
+          "skin": 2,
+          "hair": "short",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "kavitha",
+        "name": "Kavitha Subramaniam",
+        "role": "Relationship Manager, SME and Corporate, Johor Bahru",
+        "look": {
+          "skin": 4,
+          "hair": "long",
+          "color": "#9d174d"
+        }
+      },
+      {
+        "id": "farid",
+        "name": "Farid Iskandar",
+        "role": "Sanctions Screening Analyst, Kuala Lumpur",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "lim",
+        "name": "Dato' Lim Chee Keong",
+        "role": "Independent Director, Board Risk Committee chair",
+        "look": {
+          "skin": 2,
+          "hair": "bald",
+          "color": "#475569"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Rulebook: AMLA, Act A1761 and BNM's Policy Document",
+      "stage": "The Statute Gate",
+      "summary": "Map Malaysia's AML/CFT/CPF framework: AMLA as amended by Act A1761, BNM and FIED, the policy document's S and G paragraphs, personal duties and penalties.",
+      "minutes": 45,
+      "objectives": [
+        "Explain how AMLA, Act A1761 and BNM's AML/CFT/CPF and TFS policy document fit together",
+        "Identify the roles of BNM, FIED, the Minister of Home Affairs, the Strategic Trade Controller and the police",
+        "Describe what Act A1761 changed, including personal duties for directors, officers and employees",
+        "Recall the main offences and penalties under AMLA and BNM's new administrative powers"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Seri Merbau Bank",
+          "setting": "Compliance floor, Seri Merbau Bank head office, KL Sentral. 9:05 am, a Monday in March 2026.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your badge says AML/CFT/CPF Officer. Your mission: keep dirty money, terrorist funds and proliferation money out of Seri Merbau Bank.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nurul",
+              "text": "Selamat datang! I'm Nurul, the bank's Compliance Officer for AML/CFT/CPF. Five stages lie ahead, and BNM examiners are due before year end.",
+              "mood": "happy"
+            },
+            {
+              "who": "daniel",
+              "text": "(video call from Penang) Daniel here, branch compliance. A customer asked our teller, very casually, whether the bank 'tells the government' about his deposits. She froze.",
+              "mood": "worried"
+            },
+            {
+              "who": "farid",
+              "text": "And the amended AMLA came into force on 1 March. Half the branch thinks it only changed the Act's name.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kavitha",
+              "text": "My team in JB asks a simpler question: if something goes wrong, is it the bank's problem or ours?",
+              "mood": "neutral"
+            },
+            {
+              "who": "nurul",
+              "text": "Since this month, the honest answer is: both. Before you judge a single deposit, you need the map. Which law, which rule, and who does what.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "Stage one is the Statute Gate. Ready to read the rulebook the way a BNM examiner does?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Malaysia's rulebook in five layers",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The Act sets the base",
+              "narration": "It starts with the Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001, known as AMLA. It creates the money laundering offence and the reporting, due diligence, record-keeping and compliance programme duties of reporting institutions such as your bank."
+            },
+            {
+              "icon": "🛠️",
+              "heading": "Act A1761 rewires it",
+              "narration": "Act A1761 amended AMLA from 1 March 2026. It adds restricted activity financing, meaning proliferation financing, renames the Act, and extends key duties to the directors, officers and employees of reporting institutions personally."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "BNM is the competent authority",
+              "narration": "Bank Negara Malaysia administers AMLA. Its Financial Intelligence and Enforcement Department, FIED, is Malaysia's financial intelligence unit and receives suspicious transaction reports and cash threshold reports."
+            },
+            {
+              "icon": "📘",
+              "heading": "The policy document adds detail",
+              "narration": "BNM's policy document on AML/CFT/CPF and Targeted Financial Sanctions for Financial Institutions took effect on 6 February 2024. Paragraphs marked S are binding standards; paragraphs marked G are guidance."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Your bank closes the loop",
+              "narration": "Finally, your board approves the bank's AML/CFT/CPF policies and senior management turns them into procedures. That is the layer you apply every day, and it must sit inside the layers above."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "From statute to your desk",
+          "caption": "Each layer must stay inside the one above it. When a bank procedure is looser than the policy document, the policy document wins.",
+          "items": [
+            {
+              "label": "AMLA 2001, as amended by Act A1761",
+              "detail": "Offences, reporting, CDD, records, compliance programme, sanctions powers and enforcement."
+            },
+            {
+              "label": "Orders under AMLA",
+              "detail": "Domestic List declarations and UN sanctions measures given effect in Malaysian law."
+            },
+            {
+              "label": "BNM AML/CFT/CPF and TFS policy document",
+              "detail": "Binding S standards and G guidance on risk, CDD, reporting, records and TFS."
+            },
+            {
+              "label": "Bank's board-approved policy",
+              "detail": "How Seri Merbau Bank applies the law and the policy document to its risks."
+            },
+            {
+              "label": "Procedures and system rules",
+              "detail": "The forms, checklists and screening settings you use on every case."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who does what in Malaysia",
+          "prompt": "Match each body to its main AML/CFT/CPF role for a bank.",
+          "pairs": [
+            {
+              "left": "Bank Negara Malaysia",
+              "right": "Competent authority under AMLA and supervisor of banks: issues the policy document, examines and takes enforcement action."
+            },
+            {
+              "left": "FIED, BNM",
+              "right": "Financial intelligence unit: receives STRs, cash threshold reports and TFS match reports from reporting institutions."
+            },
+            {
+              "left": "Minister of Home Affairs",
+              "right": "Declares specified entities on the Domestic List and authorises any dealing with funds frozen under it."
+            },
+            {
+              "left": "Strategic Trade Controller",
+              "right": "Authorises dealings with, and exemptions for, funds frozen under the proliferation financing sanctions."
+            },
+            {
+              "left": "Inspector-General of Police",
+              "right": "Receives the bank's immediate report, alongside FIED, when it holds funds of a terrorism-related specified entity."
+            },
+            {
+              "left": "The bank's board",
+              "right": "Approves AML/CFT/CPF policies and keeps oversight of the whole programme."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A paragraph in BNM's policy document is marked G. What does that mean for Seri Merbau Bank?",
+          "options": [
+            "It is guidance: a recommended way of meeting the standards, not a binding requirement on its own",
+            "It is a general standard that applies to every reporting institution without exception",
+            "It applies only to groups of companies with foreign branches",
+            "It must be followed exactly, and any departure is an offence under AMLA"
+          ],
+          "answer": 0,
+          "explanation": "The policy document marks binding standards with S and guidance with G. Paragraph 9.1 says enforcement or supervisory action can follow breaches of S provisions. G paragraphs show good ways to comply, so departing from them needs a sound reason, but they are not standards in themselves."
+        },
+        {
+          "type": "concept",
+          "title": "What Act A1761 changed in March 2026",
+          "body": "Act A1761 was gazetted on 14 May 2025 and brought into force on 1 March 2026. For bank staff, five changes matter most:\n\n- **New name and new offence.** The Act now also covers *restricted activity financing*, that is financing linked to weapons of mass destruction and their delivery, with an offence in new section 66H.\n- **Personal duties.** Record keeping (s13), CDD (s16), record retention (s17) and the compliance programme (s19) now bind the reporting institution **or its director, officer or employee**. Breaching ss16 or 19 can bring a fine of up to RM1 million.\n- **BNM can specify more.** BNM may issue directions, guidelines and other instruments to banks and their people, and they must comply.\n- **Administrative action.** New section 83B lets BNM direct compliance, reprimand, issue a public statement or impose a monetary penalty of up to RM1 million, after written notice and a chance to respond.\n- **Court orders and publicity.** BNM can seek orders, including removing a CEO, director or manager, and may publish its actions."
+        },
+        {
+          "type": "sort",
+          "title": "Where does this rule live?",
+          "prompt": "Sort each rule into the layer where it is set.",
+          "buckets": [
+            "AMLA (the Act)",
+            "BNM policy document",
+            "Bank's own procedure"
+          ],
+          "items": [
+            {
+              "text": "Money laundering offence with up to 15 years' imprisonment",
+              "bucket": 0
+            },
+            {
+              "text": "Offence of tipping off about a suspicious transaction report",
+              "bucket": 0
+            },
+            {
+              "text": "Offence of structuring transactions to avoid reporting",
+              "bucket": 0
+            },
+            {
+              "text": "Cash threshold report submitted within five working days",
+              "bucket": 1
+            },
+            {
+              "text": "Delayed verification may not exceed ten working days",
+              "bucket": 1
+            },
+            {
+              "text": "FIED told of a new Compliance Officer within ten working days",
+              "bucket": 1
+            },
+            {
+              "text": "How many days the Compliance Officer has to review an internal report",
+              "bucket": 2
+            },
+            {
+              "text": "Which internal form a teller uses to raise a concern",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "What breaches can cost under AMLA",
+          "caption": "Figures from AMLA as amended by Act A1761. Your bank's disciplinary rules apply on top of these.",
+          "items": [
+            {
+              "label": "Money laundering (s4)",
+              "value": "15 years",
+              "detail": "Maximum prison term, plus a fine of at least five times the proceeds or RM5 million, whichever is higher."
+            },
+            {
+              "label": "Tipping off (s14A)",
+              "value": "RM3m / 5 yrs",
+              "detail": "Maximum fine or prison term, or both, for disclosing a report or related information."
+            },
+            {
+              "label": "CDD or programme breach",
+              "value": "RM1m",
+              "detail": "Maximum fine for breaching ss16 or 19, now for the bank or its director, officer or employee."
+            },
+            {
+              "label": "Administrative penalty (s83B)",
+              "value": "RM1m",
+              "detail": "Maximum monetary penalty BNM may impose, in proportion to the gravity of the breach."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SME Bank and staff awareness (BNM, 2025)",
+          "body": "On 20 November 2025 BNM imposed an administrative monetary penalty of **RM460,000** on Small Medium Enterprise Development Bank Malaysia Berhad for failing to submit suspicious transaction reports promptly, a requirement in paragraph 22.1.1 of the policy document then in force.\n\nBNM found that the bank did not report promptly on suspicious activity by several customers. Its public notice put the breach down to **inadequate staff awareness** of STR requirements. The bank's remedies included stronger internal AML/CFT policies and better training for relevant staff. In setting the penalty BNM weighed the severity of the breach, the lack of reasonable care, the bank's controls and its past record.\n\n**The lesson for you:** a training gap is not a soft issue. When staff do not know what to escalate, the bank misses its reporting duty, and BNM treats that as a breach with a price tag."
+        },
+        {
+          "type": "story",
+          "title": "'Isn't that compliance's job?'",
+          "setting": "Video call between head office and Johor Bahru, 4:30 pm.",
+          "lines": [
+            {
+              "who": "kavitha",
+              "text": "Honest question from my RMs: CDD and reporting are the Compliance Officer's job, right? We sell, compliance checks.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lim",
+              "text": "(joining from the boardroom) That was never quite true, Kavitha. And since 1 March the Act itself names directors, officers and employees in sections 16 and 19.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "BNM's policy document already said staff must be told they can be held personally liable. Paragraph 9.1 allows action against directors, officers and employees too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kavitha",
+              "text": "So if one of my RMs skips a beneficial owner check to close a deal...",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "Then the bank has a problem, and the RM may have one too. Let's test that with a real-looking case.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The VIP who is 'in a hurry'",
+          "situation": "A long-standing corporate client tells Kavitha's newest RM, Hafiz, that he needs a second company account opened today for a property deal. He promises the shareholder list 'next week' and says the previous RM never asked for it. The deal is worth a lot of fee income, and Hafiz's manager is on leave. What should Hafiz do?",
+          "choices": [
+            {
+              "text": "Open the account today and chase the shareholder list next week; the client is well known to the bank.",
+              "outcome": "Risky. Identifying beneficial owners is part of CDD, and delayed verification is only allowed for low-risk cases with no suspicion, within strict limits. Under the amended AMLA, Hafiz himself can breach the CDD duty.",
+              "score": 0
+            },
+            {
+              "text": "Explain that the bank must complete CDD, including the owners, before opening, and refer any exception request to compliance.",
+              "outcome": "Best. Hafiz applies the bank's procedure, does not accuse the client of anything, and lets compliance decide whether any permitted flexibility applies. If the client refuses or the story keeps changing, compliance can consider an STR.",
+              "score": 2
+            },
+            {
+              "text": "Open the account but block it until the documents arrive, without telling compliance.",
+              "outcome": "Partly sensible, but Hafiz is improvising a control the bank has not approved. Any delayed verification must follow the bank's documented risk procedures, not a private arrangement.",
+              "score": 1
+            },
+            {
+              "text": "Ask a colleague to open it under their login so Hafiz is not responsible.",
+              "outcome": "Poor. It hides who acted, breaks the bank's controls and does nothing to meet the CDD duty. It could also be seen as an attempt to evade personal accountability.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Key terms in Malaysian AML/CFT/CPF",
+          "cards": [
+            {
+              "front": "Reporting institution",
+              "back": "A person or business listed in AMLA's First Schedule, such as a licensed bank, that must meet AMLA's reporting, CDD, record-keeping and compliance programme duties."
+            },
+            {
+              "front": "Competent authority",
+              "back": "The authority that administers AMLA's reporting regime. For banks this is Bank Negara Malaysia, acting through FIED."
+            },
+            {
+              "front": "Restricted activity",
+              "back": "A term taken from the Strategic Trade Act 2010, linked to weapons of mass destruction. Financing it is an offence under new section 66H."
+            },
+            {
+              "front": "Proliferator",
+              "back": "Under the amended AMLA, a person who commits, attempts or facilitates a restricted activity, or is designated a prohibited end-user under the Strategic Trade Act."
+            },
+            {
+              "front": "Specified entity",
+              "back": "A person or group on the Domestic List declared by the Minister of Home Affairs, or on the UN terrorism-related lists, whose funds must be frozen."
+            },
+            {
+              "front": "S and G paragraphs",
+              "back": "In BNM's policy document, S marks a binding standard and G marks guidance on how to comply."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the current framework arrived",
+          "items": [
+            {
+              "label": "AMLA enacted",
+              "value": "2001",
+              "detail": "Act 613 creates the money laundering offence and reporting institution duties."
+            },
+            {
+              "label": "Policy document in force",
+              "value": "6 Feb 2024",
+              "detail": "BNM's AML/CFT/CPF and TFS for FIs document adds proliferation financing."
+            },
+            {
+              "label": "Royal Assent to Act A1761",
+              "value": "24 Apr 2025",
+              "detail": "Parliament's amendments to AMLA receive assent."
+            },
+            {
+              "label": "Act A1761 gazetted",
+              "value": "14 May 2025",
+              "detail": "Published, with commencement left to the Minister of Finance."
+            },
+            {
+              "label": "Amendments in force",
+              "value": "1 Mar 2026",
+              "detail": "New name, restricted activity financing and personal duties apply."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Since 1 March 2026, who can commit an offence by breaching the CDD duty in section 16 of AMLA?",
+          "options": [
+            "Only the reporting institution itself, as a body corporate",
+            "The reporting institution, or its director, officer or employee",
+            "Only the Compliance Officer named to FIED",
+            "Only directors who sit on the board risk committee"
+          ],
+          "answer": 1,
+          "explanation": "Act A1761 inserted 'or the director, officer or employee of the reporting institution' into section 16 and added a fine of up to RM1 million for breaches. The Compliance Officer has key duties, but CDD is not his or hers alone."
+        },
+        {
+          "type": "tip",
+          "title": "Reading a BNM paragraph reference",
+          "body": "BNM numbers its policy document in a way you will meet in every audit report and enforcement notice:\n\n- **14A** is CDD for banking and deposit-taking institutions; 14B to 14D cover other sectors, so ignore them at a bank.\n- **22** is suspicious transaction reports, **21** cash threshold reports, **24** record keeping.\n- **27, 28 and 29** are targeted financial sanctions on terrorism financing, proliferation financing and other UN regimes.\n- **11.6** is employee training.\n\nCheck the S or G marker in the margin before you call something mandatory."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "AMLA, as amended by Act A1761 from 1 March 2026, is the base law; BNM's AML/CFT/CPF and TFS policy document sets the detailed rules for banks.",
+            "BNM is the competent authority; its FIED is the financial intelligence unit that receives STRs, cash threshold reports and TFS reports.",
+            "Act A1761 added restricted activity (proliferation) financing and made key duties bind directors, officers and employees personally.",
+            "S paragraphs are binding standards; G paragraphs are guidance. Enforcement can follow breaches of S paragraphs.",
+            "BNM can now impose administrative penalties of up to RM1 million, reprimand, publish and seek court orders."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one task you do every week that touches a customer, an account or a payment. Which AMLA duty does it serve, and what would change for you personally now that the Act names employees?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-aml-s1-q1",
+          "question": "Which body is Malaysia's financial intelligence unit that receives suspicious transaction reports from banks?",
+          "options": [
+            "The Securities Commission Malaysia's enforcement division",
+            "The Financial Intelligence and Enforcement Department of Bank Negara Malaysia",
+            "The Royal Malaysia Police commercial crime unit",
+            "The Companies Commission of Malaysia"
+          ],
+          "answer": 1,
+          "explanation": "BNM is the competent authority under AMLA, and its FIED receives STRs and cash threshold reports. The police and other agencies act on intelligence but are not where banks file STRs.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s1-q2",
+          "question": "From what date did the amendments made by Act A1761 to AMLA come into force?",
+          "options": [
+            "6 February 2024",
+            "14 May 2025",
+            "1 January 2026",
+            "1 March 2026"
+          ],
+          "answer": 3,
+          "explanation": "Act A1761 was gazetted on 14 May 2025 and came into force on 1 March 2026. 6 February 2024 is when BNM's AML/CFT/CPF and TFS policy document took effect.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s1-q3",
+          "question": "What new kind of financing did Act A1761 bring into AMLA, alongside money laundering and terrorism financing?",
+          "options": [
+            "Restricted activity financing, linked to weapons of mass destruction",
+            "Online gambling financing, linked to illegal betting sites",
+            "Tax evasion financing, linked to offshore structures",
+            "Wildlife trade financing, linked to protected species"
+          ],
+          "answer": 0,
+          "explanation": "Act A1761 added restricted activity financing, defined by reference to the Strategic Trade Act 2010, with an offence in new section 66H. The Act's name now includes Anti-Restricted Activity Financing.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s1-q4",
+          "question": "A relationship manager tells a new colleague: 'Under AMLA only the bank can be liable for CDD failures, never us.' Since March 2026, is she right?",
+          "options": [
+            "Yes: CDD duties remain with the reporting institution as a body corporate",
+            "Yes, unless the employee is the named Compliance Officer at head office",
+            "No: section 16 now applies to the bank or its director, officer or employee",
+            "No, but only directors can be fined, not ordinary employees"
+          ],
+          "answer": 2,
+          "explanation": "Act A1761 extended section 16 to directors, officers and employees, with a fine of up to RM1 million for breaches. BNM's policy document already required staff to be told they may be personally liable.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s1-q5",
+          "question": "What is the maximum prison term for the money laundering offence under section 4 of AMLA?",
+          "options": [
+            "Five years",
+            "Seven years",
+            "Fifteen years",
+            "Ten years"
+          ],
+          "answer": 2,
+          "explanation": "Section 4 carries imprisonment of up to fifteen years plus a fine of at least five times the proceeds or RM5 million, whichever is higher. Five years is the maximum for tipping off.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s1-q6",
+          "question": "Kavitha reads paragraph 11.6.6 of BNM's policy document and sees a G in the margin. How should she treat it?",
+          "options": [
+            "As guidance on a good way to comply, not a binding standard on its own",
+            "As a binding standard whose breach is an offence under section 86",
+            "As a rule that applies only to development financial institutions",
+            "As a requirement that applies only to the board of directors"
+          ],
+          "answer": 0,
+          "explanation": "S marks standards and G marks guidance. Paragraph 9.1 ties enforcement to S provisions. G paragraphs still show what BNM considers good practice.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s1-q7",
+          "question": "Under new section 83B of AMLA, which of these may BNM do after giving written notice and a chance to respond?",
+          "options": [
+            "Imprison an employee for up to three years",
+            "Revoke a bank's licence without a court",
+            "Seize a director's personal assets",
+            "Impose a monetary penalty of up to RM1 million"
+          ],
+          "answer": 3,
+          "explanation": "Section 83B allows directions, monetary penalties up to RM1 million, reprimands or public statements, and remedial requirements. Prison is a criminal penalty that only a court can impose.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s1-q8",
+          "question": "A branch manager says the bank's procedure lets tellers delay verification for up to twenty working days for busy customers. BNM's policy document says ten. Which applies?",
+          "options": [
+            "The bank's twenty days, because the board approved the procedure",
+            "The policy document's ten working days, because bank procedures must sit within it",
+            "Whichever the branch manager chooses in the circumstances",
+            "Neither, because delayed verification is not allowed at all"
+          ],
+          "answer": 1,
+          "explanation": "The bank's policies and procedures must comply with the policy document. Paragraph 14A.10.7 caps 'reasonably practicable' at ten working days unless BNM specifies otherwise.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s1-q9",
+          "question": "BNM imposed RM460,000 on SME Bank in 2025 for late STRs. What root cause did BNM's notice identify?",
+          "options": [
+            "Inadequate staff awareness of STR-related requirements",
+            "A failed upgrade to the bank's transaction monitoring system",
+            "Deliberate concealment of reports by senior management",
+            "A shortage of staff in the bank's compliance team"
+          ],
+          "answer": 0,
+          "explanation": "BNM's notice attributed the breach to inadequate staff awareness and noted the bank enhanced its policies and staff training. That is why training is a programme requirement, not an extra.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s1-q10",
+          "question": "Farid tells a new joiner that the Minister of Home Affairs and the Strategic Trade Controller both play roles in Malaysia's sanctions regime. Which statement is accurate?",
+          "options": [
+            "The Controller declares the Domestic List; the Minister handles all PF exemptions",
+            "Both bodies receive STRs directly from banks instead of FIED",
+            "The Minister declares the Domestic List; the Controller authorises dealings in PF-frozen funds",
+            "Both bodies are departments within Bank Negara Malaysia"
+          ],
+          "answer": 2,
+          "explanation": "The Domestic List is declared by the Minister of Home Affairs under section 66B, and the Minister authorises dealings with funds frozen under it. For proliferation financing, BNM's policy document points to the Strategic Trade Controller.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Know Your Customer: Risk, CDD, Beneficial Owners, EDD and PEPs",
+      "stage": "The Onboarding Hall",
+      "summary": "Apply BNM's risk-based approach and paragraph 14A CDD rules: triggers, data, verification, the beneficial owner cascade, enhanced CDD, PEPs, higher-risk countries and reliance.",
+      "minutes": 55,
+      "objectives": [
+        "Identify when CDD is required and what standard CDD collects",
+        "Apply the beneficial owner cascade to companies and trusts",
+        "Decide when enhanced CDD applies and what it requires, including for PEPs",
+        "Explain the limits on delayed verification and reliance on third parties"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Layers in Johor Bahru",
+          "setting": "Seri Merbau Bank, Johor Bahru business centre. 10:20 am.",
+          "lines": [
+            {
+              "who": "kavitha",
+              "text": "Big one today: Tebrau Freight Sdn Bhd wants a current account and trade lines. Lots of business through the port.",
+              "mood": "happy"
+            },
+            {
+              "who": "kavitha",
+              "text": "Shareholders: a Malaysian individual with 30 per cent, and a Labuan company with 70 per cent. The Labuan company's owners are 'confidential', says their lawyer.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "(on speaker) And the directors?",
+              "mood": "neutral"
+            },
+            {
+              "who": "kavitha",
+              "text": "One director mentioned, proudly, that his wife's father is a senior state government official.",
+              "mood": "worried"
+            },
+            {
+              "who": "farid",
+              "text": "So we have a hidden owner, a possible PEP family member and a cash-heavy port business. Which box do we tick first?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "No box first. Risk first. Stage two is the Onboarding Hall: who we must identify, how deep we go, and when we stop.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The risk-based approach to knowing your customer",
+          "scenes": [
+            {
+              "icon": "🧭",
+              "heading": "Start with risk",
+              "narration": "BNM expects every bank to identify and assess its money laundering, terrorism financing and proliferation financing risks, guided by Malaysia's National Risk Assessment, and to scale its controls to those risks."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "Profile each customer",
+              "narration": "Each customer gets a risk rating. The profile weighs the type of customer, the countries involved, the products and channels used, such as cash or non face-to-face, and any other sign of higher risk."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Do the CDD",
+              "narration": "Identify and verify the customer, anyone acting for them and the beneficial owners, and understand the purpose of the relationship."
+            },
+            {
+              "icon": "⚠️",
+              "heading": "Go deeper where risk is higher",
+              "narration": "Higher risk means enhanced CDD: more information, source of wealth or funds, and senior management approval before the relationship starts or continues."
+            },
+            {
+              "icon": "🔄",
+              "heading": "Keep watching",
+              "narration": "CDD never ends at account opening. Ongoing due diligence checks that transactions fit the profile and that records stay up to date, more often for higher-risk customers."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "When a bank must carry out CDD (paragraph 14A.1)",
+          "caption": "Sanctions screening applies to every customer and transaction regardless of these thresholds.",
+          "items": [
+            {
+              "label": "Establishing a business relationship",
+              "detail": "Opening an account or any new relationship."
+            },
+            {
+              "label": "Money-changing, wire transfers, e-money",
+              "detail": "Specific CDD measures apply under paragraph 14A.11."
+            },
+            {
+              "label": "Occasional transactions of RM25,000 or more",
+              "detail": "Including several transactions in a day that appear linked."
+            },
+            {
+              "label": "Cash transactions of RM25,000 or more",
+              "detail": "Physical cash, whichever product it touches."
+            },
+            {
+              "label": "Any suspicion of ML/TF/PF",
+              "detail": "Regardless of amount."
+            },
+            {
+              "label": "Doubt about earlier CDD information",
+              "detail": "When previously obtained data looks wrong or incomplete."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "Finding the beneficial owner of a company (paragraph 14A.9.6)",
+          "caption": "Stop at the first step that identifies a beneficial owner. Only natural persons can be ultimate beneficial owners.",
+          "items": [
+            {
+              "label": "Step 1: ownership",
+              "detail": "Identify natural persons with a controlling ownership interest; at minimum directors, partners and shareholders with more than 25% equity."
+            },
+            {
+              "label": "Step 2: control by other means",
+              "detail": "If ownership leaves doubt, or no natural person controls through ownership, identify who controls the company in other ways."
+            },
+            {
+              "label": "Step 3: senior management",
+              "detail": "If no one is found at steps 1 or 2, identify the natural person holding a senior management position."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A walk-in customer with no account at the Penang branch buys three bank drafts on the same morning: RM9,000, RM8,500 and RM9,000, all for the same payee. What does paragraph 14A.1 require?",
+          "options": [
+            "No CDD, because each transaction is below RM25,000",
+            "CDD, because linked occasional transactions in a day total RM25,000 or more",
+            "Only sanctions screening, because CDD is for account holders",
+            "CDD only if the customer pays for the drafts in cash"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 14A.1(e) covers occasional transactions of RM25,000 and above, including several transactions in a day that appear to be linked. Here they total RM26,500 for one payee on one morning. Splitting amounts to avoid a threshold may also be structuring, an offence under section 4A of AMLA."
+        },
+        {
+          "type": "concept",
+          "title": "What standard CDD collects",
+          "body": "**Individuals and beneficial owners (paragraph 14A.9.1)**: full name; NRIC, passport or other official document number; residential and mailing address; date of birth; nationality; occupation type; employer or nature of business; contact number; and purpose of the transaction. The bank must then verify identity using reliable, independent sources.\n\n**Legal persons (paragraphs 14A.9.3 to 14A.9.7)**: understand the business and its ownership and control structure; obtain name, legal form and proof of existence, the powers that bind it, senior management names and the registered and business address; verify who is authorised to act; and identify beneficial owners. Where there is doubt, check the information with the Companies Commission of Malaysia, Labuan FSA or another relevant authority.\n\n**Legal arrangements such as trusts**: identify the settlor, trustees, any protector, the beneficiaries or class, and anyone else with ultimate effective control.\n\n**Timing (paragraph 14A.8)**: verify before or during the opening of the relationship."
+        },
+        {
+          "type": "order",
+          "title": "Onboarding a company, in BNM's order",
+          "prompt": "Put the onboarding steps for a new corporate customer in a sensible order.",
+          "steps": [
+            "Screen the company, its directors and known owners against the Domestic List and UN lists",
+            "Collect the company's legal documents, registered address and the powers that bind it",
+            "Verify the identity and authority of the person acting for the company",
+            "Work through the beneficial owner cascade: ownership, then other control, then senior management",
+            "Assign a risk rating and decide between standard and enhanced CDD",
+            "Obtain senior management approval if enhanced CDD applies, then open the account"
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Standard, enhanced or stop?",
+          "prompt": "Sort each onboarding situation into the action BNM's rules point to.",
+          "buckets": [
+            "Standard CDD",
+            "Enhanced CDD",
+            "Do not proceed; consider STR"
+          ],
+          "items": [
+            {
+              "text": "Salaried local teacher opening a savings account, documents verified",
+              "bucket": 0
+            },
+            {
+              "text": "Customer from a country the FATF has called on members to apply enhanced measures to",
+              "bucket": 1
+            },
+            {
+              "text": "Foreign PEP opening a premium current account",
+              "bucket": 1
+            },
+            {
+              "text": "Company whose owners refuse to be identified after repeated requests",
+              "bucket": 2
+            },
+            {
+              "text": "Domestic PEP assessed by the bank as higher risk",
+              "bucket": 1
+            },
+            {
+              "text": "Applicant whose NRIC photo does not match the person at the counter",
+              "bucket": 2
+            },
+            {
+              "text": "Listed company on Bursa Malaysia opening an operating account",
+              "bucket": 0
+            },
+            {
+              "text": "Cash-intensive business with large unexplained deposits planned",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A father-in-law in government",
+          "setting": "Johor Bahru, the next afternoon.",
+          "lines": [
+            {
+              "who": "kavitha",
+              "text": "Update: the director's father-in-law is a senior official in a state government. Does that make the director a PEP?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "Not the director himself. But BNM's PEP rules cover family members, and a spouse's parent is on BNM's family list. So the director is a family member of a domestic PEP.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farid",
+              "text": "For domestic PEPs and their families, BNM wants a risk assessment. Enhanced CDD is required if the relationship is assessed as higher risk.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kavitha",
+              "text": "And the Labuan owners are still 'confidential'.",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "Then we may never reach the PEP question. Let's decide this properly.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Tebrau Freight: open, escalate or decline?",
+          "situation": "Tebrau Freight's lawyer still refuses to name the owners of the Labuan company that holds 70 per cent. One director is the son-in-law of a senior state official. The company wants the account active by Friday for a large shipment and offers to sign a letter promising the owners are 'reputable'. Kavitha must recommend a course of action to her manager.",
+          "choices": [
+            {
+              "text": "Accept the signed letter as enough for beneficial ownership and open the account by Friday.",
+              "outcome": "Poor. A letter of comfort does not identify or verify the natural persons behind the 70 per cent stake. Paragraph 14A.9.6 requires identification and reasonable verification. HSBC Bank Malaysia was penalised in 2025 for beneficial owner failures.",
+              "score": 0
+            },
+            {
+              "text": "Open the account, rate it high risk and monitor it closely until the owners are disclosed.",
+              "outcome": "Partly right on risk, but monitoring cannot replace CDD that was never completed. Paragraph 14A.16 says if CDD cannot be completed the bank must not open the account.",
+              "score": 1
+            },
+            {
+              "text": "Explain the bank cannot open without identifying the owners; if they still refuse, do not open and refer to compliance to consider an STR.",
+              "outcome": "Best. This follows paragraph 14A.16: no account without completed CDD, and the bank must consider an STR. If the owners are disclosed, the PEP family link is assessed for enhanced CDD.",
+              "score": 2
+            },
+            {
+              "text": "Open the account in the 30 per cent shareholder's personal name instead, as he is fully identified.",
+              "outcome": "Poor. This disguises who the real customer is, and AMLA forbids accounts in a false or incorrect name. It may also be a step towards tipping off or facilitating laundering.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "PEPs under BNM's policy document",
+          "cards": [
+            {
+              "front": "Foreign PEP",
+              "back": "Someone who is or was entrusted with a prominent public function by a foreign country. Enhanced CDD and enhanced ongoing due diligence always apply."
+            },
+            {
+              "front": "Domestic PEP",
+              "back": "Someone who is or was entrusted with a prominent public function in Malaysia, including federal, state and local government. The bank assesses the risk; enhanced measures apply if higher risk."
+            },
+            {
+              "front": "International organisation PEP",
+              "back": "A member of senior management of an international organisation, such as a director or board member. Treated like a domestic PEP: risk-assessed."
+            },
+            {
+              "front": "Family members",
+              "back": "BNM lists parent, sibling, spouse, child and spouse's parent, by blood, marriage or non-biological relationship."
+            },
+            {
+              "front": "Close associates",
+              "back": "People closely connected to a PEP socially or professionally, such as business partners, staff on the PEP's payroll or close friends."
+            },
+            {
+              "front": "When does PEP status end?",
+              "back": "BNM asks the bank to weigh the informal influence the person may still have and whether old and new roles link to the same matters. There is no automatic expiry date."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Enhanced CDD: what BNM requires at minimum",
+          "caption": "Paragraphs 14A.12, 14A.13.5 and 15. Foreign PEPs always need these measures; domestic and international organisation PEPs need them when assessed as higher risk.",
+          "headers": [
+            "Higher-risk customer",
+            "PEP requiring enhanced CDD"
+          ],
+          "items": [
+            {
+              "label": "Information",
+              "left": "Standard CDD details plus extra data on the customer and beneficial owner",
+              "right": "Same, for every PEP subject to enhanced CDD"
+            },
+            {
+              "label": "Source of money",
+              "left": "Enquire on source of wealth or source of funds",
+              "right": "Both source of wealth and source of funds"
+            },
+            {
+              "label": "Approval",
+              "left": "Senior management approval before opening or continuing",
+              "right": "Senior management at head office"
+            },
+            {
+              "label": "Monitoring",
+              "left": "Enhanced ongoing due diligence: more controls, selected patterns",
+              "right": "Same, applied throughout the relationship"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A low-risk customer cannot produce her proof of address at account opening. Under BNM's delayed verification rules, what is the longest the bank may normally take to complete verification?",
+          "options": [
+            "Thirty calendar days",
+            "Five working days",
+            "Ten working days, unless BNM specifies another period",
+            "Until the next periodic CDD review"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 14A.10.7 says 'as soon as reasonably practicable' must not exceed ten working days or another period BNM specifies. Delayed verification is guidance-based flexibility only for low risk, with no suspicion, where the delay is essential and the risk is managed."
+        },
+        {
+          "type": "example",
+          "title": "Real case: HSBC Bank Malaysia and beneficial owners (BNM, 2025)",
+          "body": "On 13 March 2025 BNM imposed an administrative monetary penalty of **RM324,000** on HSBC Bank Malaysia Berhad for failing to meet CDD requirements, citing paragraphs 14A.1(h), 14A.3(c) and 14A.9.6 of the 2019 policy document: identifying and taking reasonable measures to verify the natural persons who are a customer's **beneficial owners**.\n\nBNM found the gaps in an on-site examination, which revealed a **lack of understanding of the beneficial owner requirements**. The bank responded by strengthening compliance monitoring and giving staff refresher training on beneficial ownership. BNM weighed the lack of reasonable care, the bank's past compliance record and its remedial actions.\n\n**The lesson:** beneficial ownership is not a form-filling exercise. If staff cannot work the cascade, the bank cannot see who really controls its customers."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank Pembangunan Malaysia (BNM, 2025)",
+          "body": "BNM's published list of enforcement actions shows that on 14 February 2025 it imposed an administrative monetary penalty of **RM229,500** on Bank Pembangunan Malaysia Berhad, a development financial institution, for **failure to conduct customer due diligence**. The provisions cited were paragraphs 14A.3(c) and 14A.9.6 of the 2019 policy document, the same beneficial owner requirements as in the HSBC case.\n\nBNM records that the institution took remedial steps to prevent recurrence.\n\n**The lesson:** two banks in one quarter were penalised for the same paragraph. Beneficial ownership on corporate accounts is a known examination focus, so expect your files to be sampled."
+        },
+        {
+          "type": "tip",
+          "title": "Relying on introducers and other banks",
+          "body": "BNM lets a bank rely on a third party for CDD, but with firm limits (paragraph 16):\n\n- **Responsibility stays with your bank.** Reliance never moves accountability.\n- You must be able to get the CDD information **immediately**, and be satisfied the third party is regulated and keeps records.\n- You must **not** rely on third parties located in higher-risk countries.\n- You may **never** rely on a third party for **ongoing** due diligence; that is always your job."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "CDD is triggered by new relationships, occasional or cash transactions of RM25,000 or more, any suspicion, and doubts about earlier data.",
+            "Beneficial owners are found by a cascade: more than 25% ownership, then control by other means, then senior management.",
+            "If CDD cannot be completed, do not open or continue the relationship, and consider an STR.",
+            "Enhanced CDD means more information, source of wealth or funds (both for PEPs) and senior management approval (head office for PEPs).",
+            "Foreign PEPs always get enhanced CDD; domestic and international organisation PEPs are risk-assessed, and family includes a spouse's parent.",
+            "Delayed verification is for low-risk cases only and normally may not exceed ten working days."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick a corporate customer file you know. Could you name its beneficial owners and explain which step of BNM's cascade you used to find them? What would you need to check?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-aml-s2-q1",
+          "question": "At what amount must a bank carry out CDD on an occasional cash transaction under paragraph 14A.1?",
+          "options": [
+            "RM25,000 and above",
+            "RM3,000 and above",
+            "RM10,000 and above",
+            "RM50,000 and above"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 14A.1(e) and (f) set RM25,000 and above for occasional and cash transactions. RM3,000 and RM10,000 appear in the specific CDD rules for wire transfers and money-changing.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s2-q2",
+          "question": "A company's shareholders are Aminah with 20%, Boon with 26% and a foundation with 54% whose controllers are unclear. Applying step 1 of BNM's cascade, who must be identified at minimum?",
+          "options": [
+            "Aminah and Boon, because both hold more than 15%",
+            "Only the foundation, because it has the largest stake",
+            "Nobody, because no individual holds a majority stake",
+            "Boon, because he holds more than 25%, and then the foundation's controllers must be explored"
+          ],
+          "answer": 3,
+          "explanation": "Step 1 requires at least directors and shareholders with more than 25% equity. Boon qualifies. Where doubt remains about who controls through the foundation, step 2 looks at control by other means.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s2-q3",
+          "question": "Which of these is NOT among the minimum items BNM requires for identifying an individual customer under standard CDD?",
+          "options": [
+            "Date of birth",
+            "Monthly income figure",
+            "Nationality",
+            "Purpose of transaction"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 14A.9.1 lists full name, ID number, address, date of birth, nationality, occupation type, employer or business, contact number and purpose of transaction. Income is often asked, but it is not on the minimum list.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s2-q4",
+          "question": "A prospective customer refuses to explain the purpose of a new business account or name its owners. What does paragraph 14A.16 require?",
+          "options": [
+            "Do not open the account, and consider lodging an STR",
+            "Open the account and rate the customer as high risk",
+            "Open the account with lower transaction limits",
+            "Ask a senior manager to approve an exception"
+          ],
+          "answer": 0,
+          "explanation": "If CDD cannot be completed, the bank must not open the account or perform the transaction, and must consider an STR. Risk ratings and limits cannot replace incomplete CDD.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s2-q5",
+          "question": "Kavitha learns that a new customer's mother is a federal deputy minister. Under BNM's policy document, what is the customer?",
+          "options": [
+            "A foreign PEP, requiring enhanced CDD in every case",
+            "Not covered, because PEP rules apply only to the office holder",
+            "A family member of a domestic PEP, requiring a risk assessment",
+            "A close associate, to whom PEP rules never apply"
+          ],
+          "answer": 2,
+          "explanation": "BNM's PEP rules apply to family members, including children. For domestic PEPs the bank assesses risk and applies enhanced CDD if the relationship is higher risk.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s2-q6",
+          "question": "For a PEP who requires enhanced CDD, what must the bank obtain about the customer's money?",
+          "options": [
+            "Source of funds only, for the first transaction",
+            "Both source of wealth and source of funds",
+            "Source of wealth only, at the first review",
+            "Either source, at the relationship manager's choice"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 14A.12.1(c) asks the bank to enquire on source of wealth or funds for higher-risk customers, and says for PEPs both must be obtained.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s2-q7",
+          "question": "Who must approve a new business relationship with a PEP that requires enhanced CDD?",
+          "options": [
+            "The branch manager where the account is opened",
+            "The board of directors at its next meeting",
+            "The relationship manager's direct supervisor",
+            "Senior management at the bank's head office"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 14A.12.1(d) requires senior management approval before establishing or continuing a higher-risk relationship, and for PEPs that means senior management at head office.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s2-q8",
+          "question": "A bank wants to rely on an overseas introducer to perform CDD on new customers. Which arrangement does BNM prohibit?",
+          "options": [
+            "Relying on a regulated third party in the same financial group",
+            "Relying on a third party located in a higher-risk country",
+            "Obtaining written confirmation that CDD has been done",
+            "Getting an attestation that the third party keeps records"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 16.4 prohibits reliance on third parties in higher-risk countries. Group reliance, written confirmations and attestations are all allowed or expected under paragraph 16.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s2-q9",
+          "question": "A former foreign head of state left office three years ago but still chairs his party's funding committee. The RM wants to drop his PEP status. What should guide the decision?",
+          "options": [
+            "A fixed rule that PEP status ends one year after leaving office",
+            "Whether the customer signs a declaration that he is no longer a PEP",
+            "Whether his account balance has fallen below the bank's PEP threshold",
+            "His remaining informal influence and whether old and new roles link to the same matters"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 15.4.1 tells banks to weigh the influence the person can still exercise and whether previous and current functions are linked. There is no automatic time limit.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s2-q10",
+          "question": "HSBC Bank Malaysia was penalised RM324,000 in 2025. Which requirement did the breach concern?",
+          "options": [
+            "Identifying and verifying customers' beneficial owners",
+            "Submitting cash threshold reports on time",
+            "Freezing funds of specified entities",
+            "Notifying FIED of a new Compliance Officer"
+          ],
+          "answer": 0,
+          "explanation": "BNM cited paragraphs 14A.1(h), 14A.3(c) and 14A.9.6, the beneficial owner requirements, and found a lack of understanding of them during an on-site examination.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Suspicion, STRs, Cash Threshold Reports and Tipping Off",
+      "stage": "The Signal Tower",
+      "summary": "Escalate suspicion through the internal chain so the Compliance Officer can report promptly to FIED, file cash threshold reports correctly and never tip off a customer.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the internal STR chain and the deadline for submission to FIED",
+        "Apply the RM25,000 cash threshold reporting rules and the five-working-day deadline",
+        "Recognise red flags from BNM's examples",
+        "Avoid tipping off and explain the protection for good-faith reporters"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Deposits from four states",
+          "setting": "Seri Merbau Bank, Penang George Town branch. 11:40 am.",
+          "lines": [
+            {
+              "who": "daniel",
+              "text": "Here's the customer who asked whether we 'tell the government'. A student account, opened last year. Quiet until two months ago.",
+              "mood": "thinking"
+            },
+            {
+              "who": "daniel",
+              "text": "Since then: cash deposits through deposit machines in Kedah, Perak, Selangor and Johor, most between RM20,000 and RM24,000 a day, then fast transfers out to many different people.",
+              "mood": "worried"
+            },
+            {
+              "who": "farid",
+              "text": "Just under RM25,000 each day. Someone knows where the cash threshold sits.",
+              "mood": "neutral"
+            },
+            {
+              "who": "daniel",
+              "text": "The teller wants to know two things: should she report, and what does she say if he asks again?",
+              "mood": "neutral"
+            },
+            {
+              "who": "nurul",
+              "text": "Good questions. One is about the reporting chain, the other is about tipping off. Get either wrong and the bank, or the teller, is in trouble.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "Stage three: the Signal Tower. Let's learn to send the right signal, to the right place, without warning anyone.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How a suspicion becomes a report to FIED",
+          "scenes": [
+            {
+              "icon": "👀",
+              "heading": "Someone notices",
+              "narration": "Any employee who sees a transaction or activity that seems unusual, has no clear economic purpose, looks illegal or may involve crime proceeds raises an internal report. Attempted and proposed transactions count, and there is no minimum amount."
+            },
+            {
+              "icon": "📨",
+              "heading": "The branch channel",
+              "narration": "At a branch, the internal report goes to the designated branch compliance officer, who channels it to the Compliance Officer at head office. Head office staff report straight to the Compliance Officer."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "The Compliance Officer decides",
+              "narration": "The Compliance Officer evaluates the grounds for suspicion. If there are no reasonable grounds, the decision and the supporting documents are recorded and filed."
+            },
+            {
+              "icon": "📡",
+              "heading": "Prompt submission",
+              "narration": "Once the suspicion is confirmed, the Compliance Officer submits the STR to FIED through the Financial Intelligence System, FINS, within the next working day."
+            },
+            {
+              "icon": "🔒",
+              "heading": "Secrecy throughout",
+              "narration": "Reports and related information are kept strictly confidential. The bank answers FIED's follow-up requests promptly, and the customer is never told."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The internal STR chain at Seri Merbau Bank",
+          "caption": "Paragraphs 22.1 to 22.4 of BNM's policy document. The Compliance Officer has sole discretion and independence to report.",
+          "items": [
+            {
+              "label": "Employee raises an internal report",
+              "detail": "Facts, dates, amounts and why it looks suspicious. No investigation, no confrontation."
+            },
+            {
+              "label": "Branch compliance officer",
+              "detail": "Channels every branch report to head office securely and confidentially."
+            },
+            {
+              "label": "Compliance Officer evaluates",
+              "detail": "Within the review period set in the bank's policy; documents a decision not to report."
+            },
+            {
+              "label": "STR to FIED via FINS",
+              "detail": "Within the next working day after the Compliance Officer establishes suspicion."
+            },
+            {
+              "label": "Follow-up and records",
+              "detail": "Answer FIED's requests promptly; keep a complete file of all internal reports."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Red flag or ordinary banking?",
+          "prompt": "Sort each observation. Red flags are triggers to escalate, not proof of crime.",
+          "buckets": [
+            "Red flag: escalate",
+            "Ordinary: no escalation needed"
+          ],
+          "items": [
+            {
+              "text": "Many cash deposits via machines in different states, each just under RM25,000",
+              "bucket": 0
+            },
+            {
+              "text": "A retiree with no stated income receives frequent transfers from dozens of strangers",
+              "bucket": 0
+            },
+            {
+              "text": "Large deposit into a new company account withdrawn within two days",
+              "bucket": 0
+            },
+            {
+              "text": "Customer is accompanied by a third party who gives instructions and holds her documents",
+              "bucket": 0
+            },
+            {
+              "text": "Several unrelated applicants share one mobile number and address",
+              "bucket": 0
+            },
+            {
+              "text": "Monthly salary credit followed by usual bill payments",
+              "bucket": 1
+            },
+            {
+              "text": "A hardware shop banks its weekend takings every Monday, in line with its profile",
+              "bucket": 1
+            },
+            {
+              "text": "A customer pays her credit card bill in full from her own savings account",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Kenji deposits RM20,000 in cash in the morning and withdraws RM10,000 in cash from the same account that afternoon. What does the cash threshold rule require?",
+          "options": [
+            "Nothing, because the net cash movement is only RM10,000",
+            "A cash threshold report, because the cash amounts are aggregated to RM30,000",
+            "A suspicious transaction report, because deposits and withdrawals on one day are always suspicious",
+            "A cash threshold report only if each transaction was RM25,000 or more"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 21.3.2 forbids offsetting. Deposits and withdrawals in cash on the same account in a day are added together, so RM20,000 plus RM10,000 is RM30,000, above the RM25,000 threshold. A CTR is not an STR, and it never removes the duty to file an STR if there is suspicion."
+        },
+        {
+          "type": "concept",
+          "title": "Cash threshold reports in brief",
+          "body": "BNM requires banks to report cash transactions to FIED once they reach the threshold (paragraph 21):\n\n- **What counts as cash:** physical notes and coins in any currency, and bearer negotiable instruments such as traveller's cheques or money orders. Bank drafts, ordinary cheques, electronic transfers and fixed deposit renewals do not count.\n- **Threshold:** single or multiple cash transactions in the same account in one day totalling **RM25,000 or more**, including cash withdrawals and over-the-counter cash contra between accounts.\n- **No offsetting:** deposits and withdrawals are added, not netted.\n- **Deadline:** submit through FINS within **five working days** of the transaction, with complete and accurate information.\n- **Not a substitute:** filing a CTR never discharges the separate duty to submit an STR.\n\nSplitting cash to stay under the threshold may be **structuring**, an offence under section 4A of AMLA."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "STR and CTR side by side",
+          "headers": [
+            "Suspicious transaction report",
+            "Cash threshold report"
+          ],
+          "items": [
+            {
+              "label": "Trigger",
+              "left": "Suspicion or reasonable grounds to suspect",
+              "right": "Cash of RM25,000 or more, same account, one day"
+            },
+            {
+              "label": "Amount",
+              "left": "Any amount, including attempts",
+              "right": "Fixed threshold, aggregated"
+            },
+            {
+              "label": "Who submits",
+              "left": "Compliance Officer, via FINS",
+              "right": "Compliance Officer, via FINS"
+            },
+            {
+              "label": "Deadline",
+              "left": "Next working day after suspicion is established",
+              "right": "Within five working days of the transaction"
+            },
+            {
+              "label": "Customer told?",
+              "left": "Never: tipping off is an offence",
+              "right": "Not disclosed: the same confidentiality applies"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "'Will you report me?'",
+          "setting": "Penang branch counter, two days later. 3:15 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "The student is back with another bag of cash. He leans towards the teller, Mei Ling, and lowers his voice.",
+              "mood": "neutral"
+            },
+            {
+              "who": "daniel",
+              "text": "(watching from the back office) Mei Ling already filed an internal report yesterday. I passed it to Nurul this morning.",
+              "mood": "thinking"
+            },
+            {
+              "who": "narrator",
+              "text": "'Just tell me,' the customer says. 'Did someone report my account? My friend said banks do that.'",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "(on Daniel's phone) Whatever she says now matters. A wrong sentence could be a crime under section 14A.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The teller's answer",
+          "situation": "Mei Ling's customer asks directly whether his account has been reported. An internal report is already with the Compliance Officer. The queue is long, the customer is getting loud, and Mei Ling wants to calm him down. What should she do?",
+          "choices": [
+            {
+              "text": "Reassure him: 'Don't worry, nothing has been reported, it's just a routine check.'",
+              "outcome": "Poor. Lying invites follow-up questions and may still signal that something is going on. She should not discuss reports at all, true or false.",
+              "score": 0
+            },
+            {
+              "text": "Tell him honestly that compliance is looking at his deposits, so he can explain them.",
+              "outcome": "Poor. Disclosing that a report is proposed or made is tipping off under section 14A of AMLA, punishable by a fine of up to RM3 million or up to five years' prison, or both.",
+              "score": 0
+            },
+            {
+              "text": "Process his transaction in line with normal procedure, give a neutral answer that the bank does not discuss internal processes, and tell Daniel what was said.",
+              "outcome": "Best. She neither confirms nor denies, follows procedure, and passes the new information up the chain. The Compliance Officer can add it to the STR.",
+              "score": 2
+            },
+            {
+              "text": "Refuse the deposit and ask him to leave, saying the bank no longer wants his business.",
+              "outcome": "Partly understandable, but a sudden refusal at this moment may itself signal suspicion. Decisions to exit must come from compliance, timed so they do not tip off the customer.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "When disclosure is allowed (AMLA s14A(3))",
+          "prompt": "Match each situation to how section 14A treats it.",
+          "pairs": [
+            {
+              "left": "Compliance Officer sends the STR to FIED",
+              "right": "Allowed: done in the course of duties under AMLA."
+            },
+            {
+              "left": "Informing a related Malaysian financial services company of the risk of a customer",
+              "right": "Allowed within the conditions of s14A(3)(b) and the bank's controls."
+            },
+            {
+              "left": "A director gives the bank's supervisor information in the course of duty",
+              "right": "Allowed under s14A(3)(c)."
+            },
+            {
+              "left": "Sharing report details with written authorisation of FIED's Director",
+              "right": "Allowed: the bank applies in writing, with justification and safeguards."
+            },
+            {
+              "left": "Telling the customer's accountant that an STR was lodged",
+              "right": "Not allowed: tipping off, an offence for the person who discloses."
+            },
+            {
+              "left": "A colleague who hears about the STR and posts it in a chat group",
+              "right": "Not allowed: further disclosure is also an offence under s14A(2)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "After reviewing an internal report from Penang, Nurul concludes there are no reasonable grounds for suspicion. What must she do?",
+          "options": [
+            "Delete the internal report so it cannot be misread later",
+            "Submit an STR anyway, because every internal report must reach FIED",
+            "Document and file her decision with the supporting documents",
+            "Return the report to the branch and ask Daniel to decide"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 22.2.3 requires the Compliance Officer to document and file a decision not to report, with supporting documents, and paragraph 22.4 requires a complete file of all internal reports, submitted or not, available to supervisors on request."
+        },
+        {
+          "type": "example",
+          "title": "Real case: AmBank and late cash threshold reports (BNM, 2026)",
+          "body": "On 10 September 2026 BNM imposed an administrative monetary penalty of **RM276,000** on AmBank (M) Berhad for failing to submit cash threshold reports promptly, in breach of paragraph 21.4.3 of the policy documents in force over the period.\n\nThe bank found the breaches itself, in a review of its transaction and regulatory reporting records: CTRs for multiple transactions had not been sent to BNM. BNM put this down to **lapses in technology implementation arising from inadequate oversight of system changes**. The bank submitted the omitted reports and strengthened its procedures, systems and oversight.\n\nBNM counted **self-reporting** and effective remediation in its assessment, alongside the lack of reasonable care.\n\n**The lesson:** a system change can silently break a reporting duty. Test reports after every change, and report problems early."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Reporting numbers to remember",
+          "caption": "From paragraphs 21 and 22 of BNM's policy document.",
+          "items": [
+            {
+              "label": "STR threshold",
+              "value": "Any amount",
+              "detail": "Suspicion triggers an STR regardless of amount, including attempted or proposed transactions."
+            },
+            {
+              "label": "STR deadline",
+              "value": "Next working day",
+              "detail": "From the date the Compliance Officer establishes the suspicion."
+            },
+            {
+              "label": "CTR threshold",
+              "value": "RM25,000",
+              "detail": "Cash in the same account in one day, deposits and withdrawals added together."
+            },
+            {
+              "label": "CTR deadline",
+              "value": "5 working days",
+              "detail": "From the date of the transaction, through FINS."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Protection and pitfalls",
+          "cards": [
+            {
+              "front": "Am I protected if I report in good faith?",
+              "back": "Yes. AMLA section 24 bars civil, criminal or disciplinary proceedings over information given in a report, unless it was given in bad faith."
+            },
+            {
+              "front": "Do I need proof before raising a report?",
+              "back": "No. Reason to suspect is enough. Investigating or questioning the customer to 'be sure' risks tipping off."
+            },
+            {
+              "front": "Can CDD itself tip off the customer?",
+              "back": "It can. If pursuing CDD would tip off a suspected customer, the bank may stop CDD, record why, and file an STR immediately (paragraph 14A.17)."
+            },
+            {
+              "front": "Does an STR have to wait for the transaction to finish?",
+              "back": "No. Attempted and proposed transactions are reportable, and the bank can file a fresh or updated STR when new suspicion arises."
+            },
+            {
+              "front": "Who decides whether to file?",
+              "back": "The Compliance Officer, who under BNM's rules has sole discretion and independence to report. Your job is to escalate, not to decide."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Writing an internal report that helps",
+          "body": "BNM asks that STRs explain what gave rise to doubt. Your internal report is the raw material, so:\n\n- State **facts**: dates, amounts, channels, accounts and people involved.\n- Say **why** it looked unusual against what you know of the customer.\n- Note anything the customer **said**, word for word if you can.\n- Do **not** speculate about crimes or label the customer.\n- Send it only through the bank's secure channel, never by personal chat."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "Suspicion of any amount, including attempted or proposed transactions, must be escalated: employee, branch compliance officer, then the Compliance Officer.",
+            "The Compliance Officer submits STRs to FIED via FINS within the next working day after establishing suspicion, and documents decisions not to file.",
+            "Cash of RM25,000 or more in one account in a day is reported as a CTR within five working days; deposits and withdrawals are added, not netted.",
+            "Tipping off is an offence under section 14A of AMLA: up to RM3 million, five years' prison, or both.",
+            "Good-faith reporters are protected by section 24 of AMLA."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer asked you tomorrow whether the bank had 'reported' them, what exact words would you use? Write them down and check them against the bank's procedure."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-aml-s3-q1",
+          "question": "A teller at the Penang branch suspects a deposit. Under BNM's reporting mechanism, where does her internal report go first?",
+          "options": [
+            "Directly to FIED through FINS",
+            "To the designated branch compliance officer",
+            "To the branch manager for approval",
+            "To the customer's relationship manager"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 22.2.1 makes the branch compliance officer responsible for channelling all internal reports from branch staff to the Compliance Officer at head office.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s3-q2",
+          "question": "Nurul establishes suspicion on a case on Tuesday. By when must the STR reach FIED?",
+          "options": [
+            "Within five working days",
+            "Within ten working days",
+            "By the end of the month",
+            "Within the next working day"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 22.2.6 requires submission within the next working day from the date the Compliance Officer establishes the suspicion. Five working days is the CTR deadline.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s3-q3",
+          "question": "A customer tries to transfer RM800 to a person he says is 'supporting fighters overseas', then cancels when asked for details. What should staff do?",
+          "options": [
+            "Nothing, because the transfer did not go through",
+            "Escalate an internal report: attempted transactions of any amount are reportable",
+            "Nothing, because the amount is below every threshold",
+            "Report it only if he tries again with a larger amount"
+          ],
+          "answer": 1,
+          "explanation": "Section 14 of AMLA covers attempted and proposed transactions, including links to terrorism, and BNM requires STRs regardless of amount.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q4",
+          "question": "Which of these counts as cash for a cash threshold report?",
+          "options": [
+            "A bank draft issued against an account",
+            "An online transfer between two accounts",
+            "A fixed deposit renewed on maturity",
+            "Traveller's cheques exchanged over the counter"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 21.2.1 includes physical currency and bearer negotiable instruments such as traveller's cheques, but excludes bank drafts, cheques, electronic transfers and fixed deposit rollovers.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q5",
+          "question": "A customer asks Mei Ling whether 'someone reported' his account. An internal report has been raised. Which answer is safest?",
+          "options": [
+            "A neutral reply that the bank does not discuss internal processes, then tell the branch compliance officer",
+            "Confirm that compliance is reviewing the account so he can explain",
+            "Say no report exists, to calm him down",
+            "Tell him to ask the Compliance Officer directly by email"
+          ],
+          "answer": 0,
+          "explanation": "Disclosing that a report is proposed or made is tipping off under section 14A of AMLA. A neutral reply avoids both disclosure and false reassurance, and the new information goes up the chain.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q6",
+          "question": "What is the maximum penalty for tipping off under section 14A of AMLA?",
+          "options": [
+            "A fine of up to RM1 million only",
+            "Up to fifteen years' prison and a fine of RM5 million",
+            "A fine of up to RM3 million or up to five years' prison, or both",
+            "A written reprimand from BNM"
+          ],
+          "answer": 2,
+          "explanation": "Section 14A sets a fine not exceeding RM3 million or imprisonment up to five years, or both. Fifteen years and RM5 million relate to the money laundering offence itself.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q7",
+          "question": "While doing CDD on a walk-in customer, Daniel forms a suspicion and believes further questions would tip the customer off. What does paragraph 14A.17 allow?",
+          "options": [
+            "Finish all CDD questions first, then decide on an STR",
+            "Ask the customer to come back with a lawyer",
+            "Stop the CDD, record why, and file an STR immediately",
+            "Refer the customer to another bank without comment"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 14A.17.1 permits the bank not to pursue CDD where it would tip off a suspected customer, provided it documents the reason and immediately files an STR.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s3-q8",
+          "question": "A teller who filed an internal report in good faith worries the customer will sue her. What does AMLA say?",
+          "options": [
+            "Section 24 bars civil, criminal or disciplinary proceedings unless the report was in bad faith",
+            "She is protected only if the STR leads to a conviction",
+            "She is protected only if the Compliance Officer files an STR",
+            "She has no protection; only the bank is protected"
+          ],
+          "answer": 0,
+          "explanation": "Section 24(1) protects people who disclose or supply information in a report from civil, criminal or disciplinary proceedings, unless it was in bad faith.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q9",
+          "question": "AmBank (M) Berhad was penalised RM276,000 in 2026 for late cash threshold reports. What did BNM say caused the lapses?",
+          "options": [
+            "Tellers who deliberately split customers' cash deposits",
+            "A Compliance Officer who refused to submit the reports",
+            "Customers who gave false identity documents at the counter",
+            "Technology implementation lapses from inadequate oversight of system changes"
+          ],
+          "answer": 3,
+          "explanation": "BNM's notice attributed the missed CTRs to lapses in technology implementation arising from inadequate oversight of system changes. The bank found the breaches itself and self-reported.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s3-q10",
+          "question": "A customer deposits RM15,000 cash in the morning and RM12,000 cash in the afternoon into the same account. No suspicion arises. What does the bank file?",
+          "options": [
+            "Nothing, because each deposit is below RM25,000",
+            "A cash threshold report within five working days",
+            "A suspicious transaction report within one working day",
+            "Both a CTR and an STR, as always required"
+          ],
+          "answer": 1,
+          "explanation": "Multiple cash transactions in the same account in a day are aggregated. RM27,000 reaches the RM25,000 threshold, so a CTR is due within five working days. An STR is needed only if there is suspicion.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Targeted Financial Sanctions on Terrorism and Proliferation Financing",
+      "stage": "The Frozen Vault",
+      "summary": "Screen against the Domestic and UN lists without delay, resolve potential matches, freeze, block or reject, and report to FIED and the police under BNM's paragraphs 27 to 29.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the TF, PF and other UN sanctions regimes and who authorises dealings in frozen funds",
+        "Apply the screening, database and re-screening duties, including for dormant accounts",
+        "Respond correctly to a potential and a confirmed match",
+        "Learn from BNM's published TFS enforcement cases"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Friday, 4:50 pm: the Gazette",
+          "setting": "Sanctions screening desk, head office, Kuala Lumpur.",
+          "lines": [
+            {
+              "who": "farid",
+              "text": "Nurul, the Minister of Home Affairs has just added three names to the Domestic List. It's in the Gazette. It's ten to five on a Friday.",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "Then our sanctions database gets updated now, not on Monday. BNM's word is 'without delay'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farid",
+              "text": "Re-screening the whole customer base too? Including dormant accounts?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "Including dormant accounts. That's in the policy document.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farid",
+              "text": "First pass is done. One possible hit: a dormant account in Ipoh with a similar name and the same year of birth.",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "Welcome to the Frozen Vault, stage four. Possible matches, true matches, freezing and reporting. Let's work it through.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Three sanctions regimes, one discipline",
+          "scenes": [
+            {
+              "icon": "🛡️",
+              "heading": "Terrorism financing",
+              "narration": "Paragraph 27 covers the UN lists on ISIL, Al-Qaida and the Taliban, plus Malaysia's own Domestic List declared by the Minister of Home Affairs. People on these lists are specified entities."
+            },
+            {
+              "icon": "☢️",
+              "heading": "Proliferation financing",
+              "narration": "Paragraph 28 covers UN designations on weapons of mass destruction, given effect in Malaysia through the Strategic Trade Act 2010. Here the Strategic Trade Controller authorises any dealing with frozen funds."
+            },
+            {
+              "icon": "🌐",
+              "heading": "Other UN regimes",
+              "narration": "Paragraph 29 covers other UN Security Council sanctions, for example those aimed at armed conflict, given effect through regulations under the Central Bank of Malaysia Act 2009."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Without delay",
+              "narration": "For each regime the bank keeps its sanctions database current as soon as a listing is published, screens all customers and transactions, and freezes or blocks immediately on a confirmed match."
+            },
+            {
+              "icon": "📝",
+              "heading": "Report and keep reporting",
+              "narration": "The bank reports positive matches at once, keeps reporting changes to frozen funds, and files suspicious transaction reports on related and attempted transactions."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Terrorism financing and proliferation financing TFS",
+          "headers": [
+            "Terrorism financing (para 27)",
+            "Proliferation financing (para 28)"
+          ],
+          "items": [
+            {
+              "label": "Lists",
+              "left": "UN ISIL/Al-Qaida/Taliban lists and the Domestic List",
+              "right": "UN proliferation designations under the Strategic Trade Act"
+            },
+            {
+              "label": "Authority for dealings and exemptions",
+              "left": "Minister of Home Affairs, in writing",
+              "right": "Strategic Trade Controller, in writing"
+            },
+            {
+              "label": "Immediate match report goes to",
+              "left": "FIED and the Inspector-General of Police",
+              "right": "FIED"
+            },
+            {
+              "label": "Also required",
+              "left": "Periodic reports on frozen funds; STRs on related or attempted transactions",
+              "right": "Periodic reports on frozen funds; STRs on related or attempted transactions"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The screening loop",
+          "caption": "Screening applies to every customer and transaction, regardless of CDD thresholds or product features.",
+          "items": [
+            {
+              "label": "New listing published",
+              "detail": "UN website or Malaysian Gazette."
+            },
+            {
+              "label": "Update the database without delay",
+              "detail": "Accessible to head office, branches and relevant agents."
+            },
+            {
+              "label": "Screen the whole customer base",
+              "detail": "Including dormant accounts, potential customers and transactions."
+            },
+            {
+              "label": "Resolve potential matches",
+              "detail": "Further inquiries to separate true matches from false positives."
+            },
+            {
+              "label": "Act and report",
+              "detail": "Freeze, block or reject; report; keep records of screening."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Seri Merbau Bank confirms that a current account holder is a specified entity on the Domestic List. Besides freezing the funds, who must it report to immediately?",
+          "options": [
+            "FIED and the Inspector-General of Police",
+            "Only the Ministry of Home Affairs",
+            "Only the bank's board risk committee",
+            "The customer, so that he can apply for an exemption"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 27.7.1 requires an immediate report to FIED and the Inspector-General of Police, using the template in Appendix 8a, once the bank finds it holds funds of a specified entity or related party. The bank may tell the person they can apply to the Minister for an exemption, but that is not the report."
+        },
+        {
+          "type": "concept",
+          "title": "Screening duties in detail",
+          "body": "For each regime, BNM's policy document sets the same core duties:\n\n- **Keep a sanctions database** for the UN list and, for terrorism, the Domestic List; update it **without delay** when a listing is published, and keep names on it until formal delisting.\n- **Screen existing, potential and new customers**, as part of CDD and ongoing due diligence, and screen transactions. There is **no threshold**.\n- **Collect the minimum data points** to screen: full name, NRIC or passport number and date of birth.\n- **Re-screen the entire customer database**, including dormant accounts, whenever a new designation is published.\n- **Deal with false positives**: make further inquiries with the customer, counterparty or credible sources. For common names the bank may ask FIED.\n- **Look at related parties**: people acting for a listed person, or holding funds owned or controlled by one, and analyse past transactions.\n- **Keep records** of all screening and make them available to supervisors."
+        },
+        {
+          "type": "order",
+          "title": "A confirmed match on the Domestic List",
+          "prompt": "Put Farid's actions in order once the Ipoh account turns out to be a true match.",
+          "steps": [
+            "Confirm the match through further inquiries and identification documents",
+            "Freeze the funds and block transactions immediately and without delay",
+            "Report at once to FIED and the Inspector-General of Police using the prescribed form",
+            "Submit a suspicious transaction report on the account and any related or attempted transactions",
+            "Analyse past transactions and look for related parties",
+            "Report changes to the frozen funds at the intervals BNM specifies"
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Frozen funds: what can happen?",
+          "prompt": "Sort each request about a frozen terrorism-related account.",
+          "buckets": [
+            "Permitted",
+            "Only with prior written authorisation",
+            "Not permitted"
+          ],
+          "items": [
+            {
+              "text": "Crediting interest or dividends to the frozen account, which stay frozen",
+              "bucket": 0
+            },
+            {
+              "text": "Telling the listed person they may apply to the Minister for a basic expenses exemption",
+              "bucket": 0
+            },
+            {
+              "text": "Paying the listed person's medical bills from the frozen balance",
+              "bucket": 1
+            },
+            {
+              "text": "A relative asks to withdraw part of the balance on the person's behalf",
+              "bucket": 1
+            },
+            {
+              "text": "Opening a new account for a potential customer who is a positive name match",
+              "bucket": 2
+            },
+            {
+              "text": "Waiting until Monday to freeze because the screening team has gone home",
+              "bucket": 2
+            },
+            {
+              "text": "Unfreezing because the customer says the listing is a mistake",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Same name, different person?",
+          "setting": "Sanctions desk, Saturday morning call.",
+          "lines": [
+            {
+              "who": "farid",
+              "text": "The Ipoh account: the name matches a listed person and the birth year matches. But our NRIC number for the customer doesn't fit the listing's details.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "So it's a potential match, not yet a true match. What does BNM say we do with potential matches?",
+              "mood": "neutral"
+            },
+            {
+              "who": "farid",
+              "text": "Make further inquiries: documents, the counterparty, credible sources. And for common names we can query FIED.",
+              "mood": "neutral"
+            },
+            {
+              "who": "daniel",
+              "text": "(joining) The Ipoh branch manager wants to call the customer and ask if he's 'that person'.",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "Careful. Let's decide how to resolve this without either freezing an innocent person for weeks or tipping off a real one.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Resolving the Ipoh potential match",
+          "situation": "A dormant account in Ipoh matches the name and birth year of a person newly added to the Domestic List, but the NRIC number held by the bank differs from the details in the listing. The account holds about RM48,000. It is Saturday. What should the bank do?",
+          "choices": [
+            {
+              "text": "Treat it as a false positive straight away, because the NRIC number differs, and close the alert.",
+              "outcome": "Poor. A differing number is useful, but BNM requires the bank to ascertain whether a potential match is a true match through further inquiries. Closing it on one data point, without records, is how screening breaches happen.",
+              "score": 0
+            },
+            {
+              "text": "Keep the alert open, make further inquiries quickly through compliance, query FIED on the common name, and freeze and report at once if it is confirmed.",
+              "outcome": "Best. The bank resolves the match promptly with evidence, can query FIED for similar or common names, and is ready to freeze and report immediately on confirmation. Every step is recorded.",
+              "score": 2
+            },
+            {
+              "text": "Ask the branch manager to phone the customer and ask whether he is the listed person.",
+              "outcome": "Poor. If the customer is the listed person, this may warn him and lead to the funds moving. Inquiries should be made through controlled channels set by compliance.",
+              "score": 0
+            },
+            {
+              "text": "Freeze and report it as a confirmed match now, and sort out the details next week.",
+              "outcome": "Partly right on speed, but reporting an unconfirmed match as confirmed may harm an innocent customer. The policy document asks the bank to ascertain true matches; fast, documented inquiries come first.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Sanctions terms you must know",
+          "cards": [
+            {
+              "front": "Domestic List",
+              "back": "Names declared as specified entities by the Minister of Home Affairs under section 66B of AMLA and published in the Gazette."
+            },
+            {
+              "front": "UNSCR List",
+              "back": "Persons designated by the UN Security Council or its sanctions committees; for terrorism they are deemed specified entities under section 66C of AMLA."
+            },
+            {
+              "front": "Related party",
+              "back": "A person who holds funds owned or controlled by a listed person, or who acts on behalf of or at the direction of one."
+            },
+            {
+              "front": "Positive name match",
+              "back": "A potential customer or customer confirmed as a listed person. Potential customers must be rejected; existing customers' funds frozen."
+            },
+            {
+              "front": "Unilateral sanctions lists",
+              "back": "Lists of other countries. Banks may add them to the database; a positive match with one calls for an STR (paragraph 27.8.3)."
+            },
+            {
+              "front": "Basic and extraordinary expenditure",
+              "back": "Payments from frozen funds that need written authorisation from the Minister of Home Affairs, or for PF the Strategic Trade Controller."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: AEON Credit and a missed rejection (BNM, 2026)",
+          "body": "On 6 April 2026 BNM imposed an administrative monetary penalty of **RM520,000** on AEON Credit Service (M) Berhad for breaching targeted financial sanctions requirements, citing paragraphs 27.6.1 and 27.6.2.\n\nAn on-site examination found that a specified entity on the **Domestic List** had been onboarded. The institution **failed to reject** the applicant despite a positive match, and there was a **delay in freezing** the account after the customer was confirmed as a specified entity.\n\nBNM's notice put the breaches down to **lack of staff oversight and a gap in the standard operating procedure**. The remedy included an improved SOP and **refresher training** for relevant staff.\n\n**The lesson:** a hit that is seen but not acted on is worse than no screening at all. Rejection and freezing must be immediate."
+        },
+        {
+          "type": "example",
+          "title": "Real cases: screening against outdated or skipped lists (BNM, 2025-2026)",
+          "body": "**Standard Chartered Bank Malaysia Berhad, 2026.** BNM imposed an administrative monetary penalty of **RM132,000** on 10 June 2026 after an on-site examination found the bank had not updated its sanctions database **without delay** when the Domestic List was published, so screening ran against an outdated database. BNM noted that no specified entity was onboarded and no transaction facilitated.\n\n**HSBC Bank Malaysia Berhad, 2025.** BNM's notice of 28 May 2025 described customers onboarded **without proper sanctions screening** because of staff oversight, ineffective maker-checker controls and inadequate systems, recurring after the first fix. Penalties for the screening breaches totalled about RM2.9 million across HSBC's two Malaysian banking entities.\n\n**The lesson:** BNM penalised these breaches even though no listed person was found. The duty is the process itself."
+        },
+        {
+          "type": "check",
+          "question": "Under the proliferation financing sanctions, who must authorise payment of basic expenses from funds the bank has frozen?",
+          "options": [
+            "The Minister of Home Affairs",
+            "The bank's Compliance Officer",
+            "The Strategic Trade Controller under the Strategic Trade Act 2010",
+            "The Inspector-General of Police"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 28 points to the Strategic Trade Controller for any dealing with, and exemptions from, funds frozen under the PF sanctions. The Minister of Home Affairs plays that role for the terrorism-related lists under paragraph 27."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "TFS penalties published by BNM",
+          "caption": "Administrative monetary penalties from BNM's enforcement notices. Several cases involved no actual listed person: the failure was the process.",
+          "items": [
+            {
+              "label": "Zurich General Insurance, 2026",
+              "value": "RM1.04m",
+              "detail": "Outdated database, unresolved matches, late freezing and late reporting to BNM."
+            },
+            {
+              "label": "AEON Credit Service, 2026",
+              "value": "RM520,000",
+              "detail": "Failed to reject a positive match; delayed freezing."
+            },
+            {
+              "label": "Standard Chartered Bank Malaysia, 2026",
+              "value": "RM132,000",
+              "detail": "Domestic List not updated without delay; screening against old data."
+            },
+            {
+              "label": "HSBC Malaysia entities, 2025",
+              "value": "~RM2.9m",
+              "detail": "New customers onboarded without proper sanctions screening, twice."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Five habits for screening staff",
+          "body": "- **Clock starts at publication.** Check the UN website and the Gazette routinely, not only when told.\n- **Never clear a hit on one data point.** Use name, NRIC or passport number, date of birth and other details together, and record your reasoning.\n- **Dormant means in scope.** Re-screen the whole base after each new listing.\n- **Release nothing without paper.** Frozen funds stay frozen until delisting unless written authorisation is given.\n- **Report twice:** the TFS match report and, where relevant, an STR."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Banks must keep sanctions databases current without delay and screen all customers and transactions, regardless of thresholds.",
+            "After each new listing, the whole customer base is re-screened, including dormant accounts.",
+            "On a confirmed match: freeze or block immediately, reject potential customers, report at once and file an STR on related or attempted transactions.",
+            "Terrorism-related matches go to FIED and the Inspector-General of Police; dealings need the Minister of Home Affairs' written authorisation.",
+            "Proliferation financing matches go to FIED; dealings and exemptions need the Strategic Trade Controller's written authorisation."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Where in your daily work could a listed person or their front reach the bank: a new account, a payment, a guarantee, a trade document? What would you check, and who would you call?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-aml-s4-q1",
+          "question": "Who declares the names on Malaysia's Domestic List of specified entities?",
+          "options": [
+            "The Governor of Bank Negara Malaysia",
+            "The Attorney General",
+            "The Minister of Home Affairs",
+            "The Minister of Finance"
+          ],
+          "answer": 2,
+          "explanation": "The Domestic List is declared by the Minister of Home Affairs under section 66B of AMLA and published in the Gazette.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s4-q2",
+          "question": "When must a bank update its sanctions database after a new UN designation is published?",
+          "options": [
+            "Within five working days",
+            "At the next monthly list refresh",
+            "Without delay upon publication",
+            "When the customer next transacts"
+          ],
+          "answer": 2,
+          "explanation": "BNM requires the sanctions database to be updated and effected without delay upon publication. Standard Chartered Bank Malaysia was penalised in 2026 for not doing so for the Domestic List.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s4-q3",
+          "question": "After a new listing, should Seri Merbau Bank re-screen dormant accounts?",
+          "options": [
+            "Yes: the entire customer database, including dormant accounts, must be screened without delay",
+            "No: dormant accounts are screened only when they are reactivated",
+            "Only if the dormant account holds more than RM25,000",
+            "Only if the account was opened within the last six years"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 27.4.4 requires screening of the entire customer database, including dormant accounts, without delay for any positive name match.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s4-q4",
+          "question": "A potential new customer is a positive name match with the UN ISIL and Al-Qaida list. What must the bank do?",
+          "options": [
+            "Open the account but freeze it immediately",
+            "Open the account and monitor it closely",
+            "Ask the customer for a written explanation first",
+            "Reject the potential customer and report as required"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 27.6.2 requires the bank to reject a potential customer when there is a positive name match. AEON Credit was penalised in 2026 for failing to reject one.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s4-q5",
+          "question": "A frozen account of a specified entity receives a dividend payment. What happens to it?",
+          "options": [
+            "It must be returned to the payer immediately",
+            "It may be credited, but it remains frozen while the listing lasts",
+            "It may be paid out to the customer's family",
+            "It must be transferred to the Inspector-General of Police"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 27.6.5 allows frozen accounts to receive dividends, interest and other benefits, but they must stay frozen as long as the entity remains listed.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s4-q6",
+          "question": "A listed person asks the bank to release frozen funds to pay rent and food. What may the bank do?",
+          "options": [
+            "Tell him he may apply to the Minister of Home Affairs, and pay only on written authorisation",
+            "Pay basic expenses, since they are allowed automatically",
+            "Pay up to a small monthly limit set by the bank",
+            "Refuse to discuss exemptions in any circumstances"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 27.6.6 allows the bank to advise the person to apply to the Minister for basic and extraordinary expenditure exemptions; paragraph 27.6.7 says payment only follows written authorisation.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s4-q7",
+          "question": "A customer is a positive match on a foreign country's unilateral sanctions list but not on the UN or Domestic lists. What does BNM's policy document require?",
+          "options": [
+            "Freeze the funds and report to the police",
+            "Close the account immediately without notice",
+            "Submit a suspicious transaction report",
+            "Take no action, because only UN and domestic lists matter"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 27.8.3 requires an STR where there is a positive name match with individuals or entities on other unilateral sanctions lists. The freezing duty attaches to the Domestic and UN lists.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s4-q8",
+          "question": "Under the proliferation financing TFS, to whom does the bank immediately report a detection, freeze, block or rejection?",
+          "options": [
+            "The Inspector-General of Police only",
+            "FIED, using the prescribed form",
+            "The Minister of Home Affairs only",
+            "The bank's external auditor"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 28.6.1 requires an immediate report to FIED on any detection, freezing, blocking or rejection. The additional report to the Inspector-General of Police is a feature of the terrorism-related regime in paragraph 27.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s4-q9",
+          "question": "Farid's screening flags a customer with a common name. Data points partly match. Which step does BNM's policy document allow to help decide?",
+          "options": [
+            "Asking the customer directly whether he is on the list",
+            "Clearing the alert if the customer has banked for years",
+            "Waiting for the next scheduled list update before deciding",
+            "Querying FIED on whether the customer is a specified entity"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 27.4.10 allows banks to direct queries to FIED in the case of similar or common names, alongside further inquiries required by paragraph 27.4.9.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s4-q10",
+          "question": "Standard Chartered Bank Malaysia was penalised RM132,000 in 2026 even though no listed person had been onboarded. Why?",
+          "options": [
+            "It froze an innocent customer's account by mistake",
+            "It failed to update its database without delay, so screening used outdated lists",
+            "It reported matches to the police but not to FIED",
+            "It refused to share screening records with BNM examiners"
+          ],
+          "answer": 1,
+          "explanation": "BNM found the bank did not update its sanctions database without delay after the Domestic List was published, so screening ran against outdated data. The duty is the process, whether or not a hit exists.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Programme: Board, Compliance Officer, Training, Audit, Records and Enforcement",
+      "stage": "The Council Chamber",
+      "summary": "Bring it together for the examination: governance, the Compliance Officer, employee screening, BNM's training rules, independent audit, record keeping and BNM's enforcement tools.",
+      "minutes": 55,
+      "objectives": [
+        "Distinguish the roles of the board, senior management and the Compliance Officer",
+        "Apply BNM's employee training rules in paragraph 11.6",
+        "Explain record-keeping periods and the independent audit requirements",
+        "Describe BNM's administrative, civil and publication powers under the amended AMLA"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The board asks for proof",
+          "setting": "Board Risk Committee room, head office. 2:00 pm.",
+          "lines": [
+            {
+              "who": "lim",
+              "text": "Nurul, BNM's examiners arrive next month. The committee wants to know one thing: could we prove our programme works, not just that it exists?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nurul",
+              "text": "We can show the policy, the risk assessment and the reports. Training records are weaker: some new tellers served customers before finishing their AML module.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lim",
+              "text": "That is a requirement, not a nice-to-have, isn't it?",
+              "mood": "worried"
+            },
+            {
+              "who": "nurul",
+              "text": "It is. Paragraph 11.6.5: customer-facing staff are trained before they deal with customers. And since March, section 19 duties bind people, not just the bank.",
+              "mood": "neutral"
+            },
+            {
+              "who": "daniel",
+              "text": "And the internal auditors want to see six years of records for a 2020 account that closed last year.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lim",
+              "text": "Then let's walk through the whole programme, the way an examiner would. Final stage: the Council Chamber.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The compliance programme AMLA and BNM expect",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Governance",
+              "narration": "Section 19 of AMLA requires internal programmes, policies, procedures and controls to guard against and detect offences. BNM adds that the programme must fit the bank's risks and size, under board oversight and senior management accountability."
+            },
+            {
+              "icon": "🧑‍⚖️",
+              "heading": "A Compliance Officer with weight",
+              "narration": "Senior management appoints a Compliance Officer at management level at head office and designates one at each branch or subsidiary. The Compliance Officer must have stature, authority and seniority, and be fit and proper."
+            },
+            {
+              "icon": "🧪",
+              "heading": "Employee screening",
+              "narration": "The bank evaluates employees' personal, employment and financial history when hiring and throughout employment, with clear triggers for re-screening."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training and awareness",
+              "narration": "Training runs regularly with refreshers, fits each role, reaches customer-facing staff before they serve customers, and tells everyone they can be personally liable."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Independent audit and records",
+              "narration": "An independent audit tests whether the programme complies and works, and reports in writing to the board. Records are kept so any transaction can be rebuilt, for at least six years."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Board and senior management: who does what",
+          "caption": "Paragraphs 11.2 and 11.3 of BNM's policy document.",
+          "headers": [
+            "Board",
+            "Senior management"
+          ],
+          "items": [
+            {
+              "label": "Policies",
+              "left": "Approves AML/CFT/CPF policies and minimum standards",
+              "right": "Formulates policies and procedures and proposes updates"
+            },
+            {
+              "label": "Oversight",
+              "left": "Assesses implementation through regular reports",
+              "right": "Reports regularly on ML/TF/PF risk and control strength"
+            },
+            {
+              "label": "Structure",
+              "left": "Sets lines of authority and separates doers from controllers",
+              "right": "Appoints the Compliance Officer and resources the programme"
+            },
+            {
+              "label": "Audit",
+              "left": "Ensures an effective, independent audit of AML/CFT/CPF",
+              "right": "Makes sure issues raised are addressed in good time"
+            },
+            {
+              "label": "People",
+              "left": "Understands ML/TF/PF risks and required measures",
+              "right": "Provides training at all levels and an employee assessment system"
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "BNM's training rules, paragraph by paragraph",
+          "prompt": "Match each paragraph of section 11.6 to what it requires or suggests.",
+          "pairs": [
+            {
+              "left": "11.6.1",
+              "right": "Run awareness and training regularly, with refresher courses at appropriate intervals."
+            },
+            {
+              "left": "11.6.2",
+              "right": "Make employees aware they may be held personally liable for failures."
+            },
+            {
+              "left": "11.6.3",
+              "right": "Make AML/CFT/CPF policies and procedures, and BNM's documents, available to all employees."
+            },
+            {
+              "left": "11.6.4",
+              "right": "Pitch training to each employee's responsibilities and the bank's risks."
+            },
+            {
+              "left": "11.6.5",
+              "right": "Train customer-facing employees before they deal with customers."
+            },
+            {
+              "left": "11.6.7(b)",
+              "right": "Guidance: train supervisors and managers on overall procedures and consequences of non-compliance."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A teller joins the Penang branch on Monday. When must she complete AML/CFT/CPF training under BNM's policy document?",
+          "options": [
+            "Within her first three months, at the next scheduled class",
+            "Before she deals with any customer",
+            "Within the first year, as part of annual refresher training",
+            "Only if her role involves opening accounts"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.6.5 is a standard: employees who deal directly with customers must be trained on AML/CFT/CPF before dealing with the customer. A teller serves customers from day one, so training comes first."
+        },
+        {
+          "type": "concept",
+          "title": "The Compliance Officer: BNM's minimum",
+          "body": "BNM expects more of the Compliance Officer than a job title (paragraph 11.4):\n\n- **Reference point** for AML/CFT/CPF across the bank, with enough **stature, authority and seniority** to influence decisions.\n- **Fit and proper**: probity and integrity, competence, and financial integrity; with the knowledge to do the job and kept up to date. BNM encourages, but does not require, a relevant professional certification.\n- **Clear, documented role**, covering compliance with the rules, CDD, records, ongoing due diligence, STRs and TFS, secure and confidential reporting channels, staff awareness and risks from new products and technology.\n- **Notification**: the bank tells FIED in writing within **ten working days** of appointing or changing the Compliance Officer.\n\nAMLA section 19 also requires compliance officers at management level in **each branch and subsidiary**."
+        },
+        {
+          "type": "sort",
+          "title": "Whose job is it?",
+          "prompt": "Sort each duty to the role BNM's policy document gives it.",
+          "buckets": [
+            "Board",
+            "Senior management",
+            "Compliance Officer"
+          ],
+          "items": [
+            {
+              "text": "Approve the bank's AML/CFT/CPF policies, including CDD and TFS",
+              "bucket": 0
+            },
+            {
+              "text": "Ensure regular independent audits and set their scope and frequency",
+              "bucket": 0
+            },
+            {
+              "text": "Appoint a Compliance Officer at management level at head office",
+              "bucket": 1
+            },
+            {
+              "text": "Provide appropriate AML/CFT/CPF training to employees at all levels",
+              "bucket": 1
+            },
+            {
+              "text": "Allocate adequate resources to the programme",
+              "bucket": 1
+            },
+            {
+              "text": "Evaluate internal suspicious transaction reports and submit STRs promptly",
+              "bucket": 2
+            },
+            {
+              "text": "Ensure employees know the bank's reporting channels",
+              "bucket": 2
+            },
+            {
+              "text": "Identify ML/TF/PF risks of new products and technology",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The life of an AML record",
+          "caption": "AMLA sections 13 and 17 and paragraph 24 of BNM's policy document. Breaching section 17 can bring a fine of up to RM3 million or five years' prison.",
+          "items": [
+            {
+              "label": "Capture",
+              "detail": "CDD documents, verification results, transaction records and analysis, kept up to date."
+            },
+            {
+              "label": "Make it rebuildable",
+              "detail": "Enough detail to reconstruct any transaction as evidence."
+            },
+            {
+              "label": "Keep at least six years",
+              "detail": "Counted from account closure or the end of the relationship or transaction, whichever is later (AMLA s17)."
+            },
+            {
+              "label": "Hold longer if needed",
+              "detail": "Keep beyond six years while records are subject to investigation or prosecution, until told they are no longer needed."
+            },
+            {
+              "label": "Produce on demand",
+              "detail": "In a form admissible under the Evidence Act 1950, available to supervisors and law enforcement in good time."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "What the auditors found",
+          "setting": "Internal audit close-out meeting, two weeks later.",
+          "lines": [
+            {
+              "who": "daniel",
+              "text": "Audit's draft: sanctions screening is solid, but our STR review timeframes were never written into policy, and two branches have no designated compliance officer.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nurul",
+              "text": "Both are standards. Paragraph 22.2.2 asks for a policy on review timeframes, and AMLA section 19 wants compliance officers in each branch.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lim",
+              "text": "And how often should audit look at AML at all? Some members want it every three years to save cost.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nurul",
+              "text": "BNM leaves frequency to the board, but it must match the bank's ML/TF/PF risks, and any extra requirements BNM sets apply.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Setting the audit plan",
+          "situation": "Seri Merbau Bank launched a fully digital account last year, its STR volumes doubled, and BNM took supervisory action against the bank two years ago for AML lapses. Some board members propose cutting the independent AML/CFT/CPF audit to once every three years and narrowing it to sanctions screening only. Dato' Lim asks you for a recommendation.",
+          "choices": [
+            {
+              "text": "Agree: sanctions screening is the highest-risk area, so audit only that, every three years.",
+              "outcome": "Poor. BNM sets a minimum scope: compliance with AMLA and instruments under it, internal policies, programme adequacy and effectiveness, and reporting and MIS reliability. Narrowing it breaches that minimum.",
+              "score": 0
+            },
+            {
+              "text": "Keep the full minimum scope and set frequency by risk; new channels, rising STR volumes and past enforcement all point to auditing more often, not less.",
+              "outcome": "Best. BNM's guidance lists exactly these circumstances as reasons to review audit frequency. The board decides, but it must be commensurate with the bank's risks.",
+              "score": 2
+            },
+            {
+              "text": "Keep the full scope every three years, but ask compliance to do yearly self-checks instead of audit.",
+              "outcome": "Partly reasonable: self-checks help, but they are not an independent audit. With these risk changes, three years is hard to justify.",
+              "score": 1
+            },
+            {
+              "text": "Leave the decision to the external auditors when they next visit.",
+              "outcome": "Poor. Paragraph 11.7 makes the board responsible for ensuring regular independent audits and for their scope and frequency.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "How BNM takes administrative action under AMLA s83B",
+          "prompt": "Put the steps in order.",
+          "steps": [
+            "BNM is satisfied that a person has breached a relevant provision or instrument",
+            "BNM gives written notice of the proposed action and the grounds for it",
+            "The person may make written representations within fourteen days",
+            "BNM considers any representation and gives written notice of its decision",
+            "The decision takes effect, immediately or on the date BNM specifies",
+            "BNM may publish the action and its outcome in the public interest"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Enforcement tools after Act A1761",
+          "cards": [
+            {
+              "front": "Administrative action (s83B)",
+              "back": "BNM may direct compliance, impose a monetary penalty of up to RM1 million, reprimand or issue a public statement, or require remedial measures."
+            },
+            {
+              "front": "Action plans (s83A)",
+              "back": "BNM may direct or agree an action plan with a bank, director, officer or employee who failed to comply. Breaching it is an offence."
+            },
+            {
+              "front": "Civil action and court orders (s83C, s83D)",
+              "back": "BNM may sue and seek orders, including removing a CEO, director or manager or barring them from management."
+            },
+            {
+              "front": "Publication (s83E)",
+              "back": "BNM may publish actions taken under AMLA and their outcomes, including settlements."
+            },
+            {
+              "front": "Officers of a body corporate (s87)",
+              "back": "When a bank commits an offence, its directors and officers are deemed to have committed it unless they prove no consent or connivance and due diligence."
+            },
+            {
+              "front": "Defence for reasonable steps (s24(2))",
+              "back": "In proceedings for a Part IV offence, a person may show they took all reasonable steps and exercised due diligence."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Customer records for an account closed in 2020 are part of a money laundering prosecution still under way. The six-year minimum has ended. What should the bank do?",
+          "options": [
+            "Destroy them, because the retention period has ended",
+            "Hand them to the customer, since the account is closed",
+            "Keep them only if the customer consents",
+            "Keep them until the law enforcement agency says they are no longer needed"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 24.4 requires records under ongoing investigation or prosecution to be kept beyond the retention period until the relevant law enforcement agency confirms they are no longer required. Destroying them early would also defeat the duty to make records available to law enforcement in a timely manner."
+        },
+        {
+          "type": "example",
+          "title": "Real cases: what banks fixed after BNM acted",
+          "body": "BNM's enforcement notices name the **root causes** behind penalties, and the same fixes keep appearing:\n\n- **SME Bank (2025, RM460,000):** late STRs due to inadequate staff awareness; fixed with stronger policies and **enhanced staff training**.\n- **HSBC Bank Malaysia (2025, RM324,000):** lack of understanding of beneficial owner rules; fixed with better monitoring and **refresher training**.\n- **AEON Credit Service (2026, RM520,000):** sanctions failures due to lack of staff oversight and an SOP gap; fixed with a better SOP and **refresher training**.\n- **AmBank (M) (2026, RM276,000):** late CTRs after **system changes** with weak oversight; fixed with stronger systems, SOPs and oversight.\n\nIn every notice BNM weighed reasonable care, past record and remediation, and gave credit for self-reporting where it applied.\n\n**The lesson:** training, procedures and change control are the three levers examiners test."
+        },
+        {
+          "type": "tip",
+          "title": "Exam-readiness checklist for your own role",
+          "body": "Before the examiners arrive, make sure you can:\n\n- Show your **training record**, completed before you served customers if you are customer-facing.\n- Find the bank's **AML/CFT/CPF policy and procedures** without help.\n- Explain your **escalation route** for suspicion and for sanctions hits.\n- Retrieve a **customer file** and rebuild a transaction from the records.\n- Say in one sentence why you may be **personally liable**."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "AMLA section 19 requires a compliance programme with employee screening, ongoing training and independent audit; since March 2026 it binds directors, officers and employees too.",
+            "The board approves policies and oversees; senior management implements, resources, appoints the Compliance Officer and provides training.",
+            "The Compliance Officer must be senior and fit and proper; FIED is told within ten working days of any appointment or change.",
+            "Customer-facing staff must be trained before dealing with customers, and all staff told they may be personally liable.",
+            "Records are kept at least six years, longer when under investigation, in a form admissible in court.",
+            "BNM can impose penalties up to RM1 million, reprimand, publish, require action plans and seek court orders."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a BNM examiner sat with you for ten minutes tomorrow, which part of your work would you be least comfortable explaining? What will you do this week to fix that?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-aml-s5-q1",
+          "question": "Under AMLA section 19, which three elements must a reporting institution's compliance programme include?",
+          "options": [
+            "Employee integrity screening, ongoing training and an independent audit function",
+            "Customer satisfaction surveys, staff bonuses and a hotline",
+            "External legal opinions, insurance cover and a press policy",
+            "Annual board retreats, IT upgrades and a code of dress"
+          ],
+          "answer": 0,
+          "explanation": "Section 19(2) lists procedures for employee integrity and history checks, ongoing employee training including KYC, and an independent audit function.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s5-q2",
+          "question": "Within how many working days must FIED be told in writing that the bank has appointed a new Compliance Officer?",
+          "options": [
+            "Two working days",
+            "Five working days",
+            "Ten working days",
+            "Thirty working days"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 11.4.9 requires written notice to FIED within ten working days of the appointment or change, with contact details.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s5-q3",
+          "question": "A new contact centre agent will handle customer calls from her second day. When must her AML/CFT/CPF training happen?",
+          "options": [
+            "Within her first quarter",
+            "Before she deals with any customer",
+            "At the next annual refresher",
+            "Only after probation ends"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.6.5 requires employees who deal directly with customers to be trained before dealing with the customer.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s5-q4",
+          "question": "Which body is responsible under BNM's policy document for ensuring regular independent audits of AML/CFT/CPF measures?",
+          "options": [
+            "The Compliance Officer",
+            "The branch managers",
+            "The external auditor alone",
+            "The board"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.7.2 places this on the board, which also sets the frequency and scope in line with the bank's risks.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s5-q5",
+          "question": "The board proposes an AML/CFT/CPF audit every three years even though the bank launched new digital channels and STR volumes doubled. What does BNM's guidance suggest?",
+          "options": [
+            "Three years is BNM's fixed minimum, so it is acceptable",
+            "These changes are reasons to review frequency upwards in line with risk",
+            "Audit frequency is the Compliance Officer's decision alone",
+            "New channels reduce the need for audit because they are automated"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.7.6 lists new products or channels and changes in reporting volumes as circumstances to consider when setting audit frequency, which must match the risks.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s5-q6",
+          "question": "How long must records obtained in CDD be kept under BNM's policy document?",
+          "options": [
+            "At least five years after account opening",
+            "At least seven years after the last statement",
+            "At least three years after the customer's death",
+            "At least six years after the transaction, the end of the relationship or the occasional transaction"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 24.3 sets at least six years following completion of the transaction, termination of the relationship or the date of the occasional transaction. AMLA section 17 also sets six years.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-aml-s5-q7",
+          "question": "Records for a closed account are subject to an ongoing police investigation, and six years have passed. What must the bank do?",
+          "options": [
+            "Keep them until the agency says they are no longer required",
+            "Destroy them under the normal retention schedule",
+            "Return them to the former customer",
+            "Keep them for one more year and then destroy them"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 24.4 requires retention beyond the stipulated period while records are subject to investigation or prosecution, until the agency confirms they are no longer needed.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-aml-s5-q8",
+          "question": "BNM proposes administrative action against a bank officer under section 83B of AMLA. What opportunity must he be given?",
+          "options": [
+            "To appeal directly to the Federal Court within seven days",
+            "To pay a compound instead within thirty days",
+            "To make written representations within fourteen days of the notice",
+            "To choose a different regulator to hear the case"
+          ],
+          "answer": 2,
+          "explanation": "Section 83B requires written notice of the proposed action and grounds, and gives the person fourteen days to make written representations before a decision.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s5-q9",
+          "question": "A bank commits an AMLA offence. A director says he cannot be charged because he never personally acted. What does section 87 provide?",
+          "options": [
+            "He cannot be charged unless the bank is convicted first",
+            "He is liable only if he signed the relevant document",
+            "He is deemed to have committed it unless he proves no consent or connivance and due diligence",
+            "He is automatically liable with no defence available"
+          ],
+          "answer": 2,
+          "explanation": "Section 87 deems directors and officers to have committed the offence unless they prove it happened without their consent or connivance and they exercised due diligence. The bank need not be convicted first.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-aml-s5-q10",
+          "question": "Which of these is a duty of the Compliance Officer under paragraph 11.4.8?",
+          "options": [
+            "Ensure internal STRs are evaluated before being promptly reported to FIED",
+            "Approve the bank's AML/CFT/CPF policies on behalf of the board",
+            "Set the scope and frequency of the independent audit",
+            "Appoint compliance officers in each branch on behalf of the board"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 11.4.8(g) gives the Compliance Officer the duty to ensure internal STRs are evaluated before prompt reporting to FIED. Policy approval and audit scope sit with the board.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "my",
+    "programs": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      15,
+      23,
+      24,
+      25,
+      26,
+      50
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Bank Negara Malaysia (BNM)",
+      "Financial Intelligence and Enforcement Department, BNM (FIED)",
+      "Ministry of Home Affairs (Domestic List)",
+      "Strategic Trade Controller (Strategic Trade Act 2010)",
+      "Royal Malaysia Police (Inspector-General of Police)"
+    ],
+    "references": [
+      {
+        "title": "Policy Document on Anti-Money Laundering, Countering Financing of Terrorism, Countering Proliferation Financing and Targeted Financial Sanctions for Financial Institutions (AML/CFT/CPF and TFS for FIs)",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/pd-amlcftcpftfs-fi",
+        "provision": "Paragraphs 9, 10, 11 (incl. 11.6.1-11.6.7), 12, 14A, 15, 16, 17, 21, 22, 23, 24, 27, 28 and 29",
+        "note": "Binding standards and guidance on risk assessment, compliance programme, training, CDD, beneficial owners, PEPs, CTRs, STRs to FIED, tipping off, record keeping and targeted financial sanctions.",
+        "effective": "2024-02-06",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities Act 2001 (Act 613)",
+        "issuer": "Attorney General's Chambers (Laws of Malaysia)",
+        "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/1719599_BI/010722_Act%20613_final.pdf",
+        "provision": "Sections 4, 4A, 13, 14, 14A, 16, 17, 19, 24, 66B, 66C and 87",
+        "note": "Money laundering and structuring offences, record keeping, reporting, tipping off, CDD, retention, compliance programme including employee training, protection of reporters, sanctions and liability of officers.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering, Anti-Terrorism Financing and Proceeds of Unlawful Activities (Amendment) Act 2025 (Act A1761)",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/820862/Act_A1761-AMLA_%28AMENDMENT%29_ACT_2025.pdf",
+        "provision": "Sections 3, 11, 12, 15, 16, 18, 20, 45, 48 and 49 (new ss66H, 83, 83A-83E)",
+        "note": "Renames AMLA, adds restricted activity financing, extends record, CDD, retention and compliance programme duties to directors, officers and employees, deletes s22 and adds administrative action, civil action, court orders and publication.",
+        "effective": "2026-03-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Enforcement Actions taken by BNM against Regulatees / Licensees / Reporting Institutions",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/enforcement-actions-regulatees",
+        "note": "Published list of administrative monetary penalties, including CDD, STR, CTR and TFS breaches by banks.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalty on Small Medium Enterprise Development Bank Malaysia Berhad",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn022026",
+        "note": "RM460,000 for failing to promptly submit STRs, attributed to inadequate staff awareness.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Negara Malaysia imposed an Administrative Monetary Penalty on HSBC Bank Malaysia Berhad and HSBC Amanah Malaysia Berhad",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn525",
+        "note": "RM324,000 on HSBC Bank Malaysia for beneficial owner CDD failures, and penalties for onboarding without proper sanctions screening.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalties on AmBank (M) Berhad and AmBank Islamic Berhad for AML/CFT Breaches",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn202026",
+        "note": "RM276,000 on AmBank (M) for failing to promptly submit cash threshold reports after system changes.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalty on AEON Credit Service (M) Berhad for Targeted Financial Sanctions Breaches",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn112026",
+        "note": "RM520,000 for failing to reject a positive match and delay in freezing.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalties on Standard Chartered Bank Malaysia Berhad and Standard Chartered Saadiq Berhad for TFS Breaches",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn162026",
+        "note": "RM132,000 on Standard Chartered Bank Malaysia for not updating its sanctions database without delay after the Domestic List was published.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalties on Zurich General Insurance Malaysia Berhad and Zurich General Takaful Malaysia Berhad for TFS Breaches",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn082026",
+        "note": "RM1,040,000 on Zurich General Insurance for outdated screening, unresolved matches and failure to freeze and report immediately.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "my-aml-x1",
+        "question": "Which statement best describes how AMLA and BNM's AML/CFT/CPF and TFS policy document relate for a licensed bank?",
+        "options": [
+          "AMLA sets the offences and core duties; the policy document, issued under AMLA and other Acts, sets detailed binding standards",
+          "The policy document replaced AMLA for banks when it took effect in February 2024",
+          "AMLA applies only to criminals, while the policy document applies only to banks",
+          "The two are alternatives, and a bank may choose which one to follow"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 4 of the policy document says it is issued under AMLA sections including 13 to 19 and 83, and under the FSA and other Acts. AMLA remains the base law; the policy document fills in the detail.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x2",
+        "question": "Under the amended section 19 of AMLA, who can commit an offence by failing to implement the compliance programme the Act requires?",
+        "options": [
+          "Only the board of directors, collectively",
+          "Only the Compliance Officer appointed at head office",
+          "The reporting institution, or any of its directors, officers or employees",
+          "Only the chief executive officer named in the licence"
+        ],
+        "answer": 2,
+        "explanation": "Act A1761 inserted directors, officers and employees into section 19 and created an offence with a fine of up to RM1 million for contraventions.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x3",
+        "question": "A director asks what the maximum fine is for breaching section 19 of AMLA after March 2026. What is the correct answer?",
+        "options": [
+          "RM100,000",
+          "RM3 million",
+          "RM1 million",
+          "RM5 million"
+        ],
+        "answer": 2,
+        "explanation": "New section 19(8) sets a fine not exceeding RM1 million. RM3 million applies to tipping off and record retention offences; RM5 million is the floor option for the money laundering fine.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x4",
+        "question": "Before Act A1761, section 22 of AMLA required officers to take reasonable steps to ensure compliance and allowed BNM to agree action plans. What happened to it?",
+        "options": [
+          "It was deleted, and new section 83A now provides for directed or agreed action plans",
+          "It was kept unchanged and extended to proliferation financing",
+          "It was moved into the BNM policy document as a G paragraph",
+          "It was replaced by a duty on customers to report suspicion"
+        ],
+        "answer": 0,
+        "explanation": "Act A1761 deleted section 22. New section 83A lets the competent authority direct or agree an action plan with an institution or its directors, officers or employees; failing to comply is an offence.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x5",
+        "question": "A money launderer moved RM2 million of crime proceeds through accounts. If convicted under section 4 of AMLA as amended, what is the minimum fine?",
+        "options": [
+          "RM2 million: the value of the proceeds involved",
+          "RM5 million: the fixed statutory fine in every case",
+          "RM1 million: the general penalty under section 86",
+          "RM10 million: five times the proceeds, as that exceeds RM5 million"
+        ],
+        "answer": 3,
+        "explanation": "Section 4 sets a fine of not less than five times the proceeds or RM5 million, whichever is higher. Five times RM2 million is RM10 million, which is higher. Imprisonment of up to fifteen years also applies.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x6",
+        "question": "A customer splits RM60,000 of cash into several smaller deposits across days to avoid a reporting requirement. Which AMLA offence is most directly engaged?",
+        "options": [
+          "Tipping off, under section 14A",
+          "Structuring transactions to evade reporting, under section 4A",
+          "Falsifying documents, under section 89",
+          "Opening an account in a false name, under section 18"
+        ],
+        "answer": 1,
+        "explanation": "Section 4A forbids structuring transactions to avoid the reporting requirement in section 14(1)(a), with a fine of up to five times the aggregate value or up to seven years' prison, or both.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x7",
+        "question": "Under section 83E inserted by Act A1761, what may BNM do with information about enforcement actions?",
+        "options": [
+          "Publish actions taken under AMLA and their outcomes, including settlements, in the public interest",
+          "Only share them privately with the bank's external auditors",
+          "Publish them only after a court conviction is final",
+          "Keep them secret under AMLA's secrecy provisions"
+        ],
+        "answer": 0,
+        "explanation": "Section 83E lets the competent authority, the regulatory or supervisory authority or an enforcement agency publish actions taken under the Act, including compounds, civil and administrative actions, and their outcomes.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x8",
+        "question": "Which court order may BNM seek under new section 83D of AMLA against a bank's chief executive officer who has contravened the Act?",
+        "options": [
+          "An order cancelling his professional qualifications worldwide",
+          "An order transferring his shares to Bank Negara Malaysia",
+          "An order removing him from office or barring him from management for a set period",
+          "An order requiring him to serve as Compliance Officer"
+        ],
+        "answer": 2,
+        "explanation": "Section 83D(1)(ff) allows the court to remove a CEO, director or manager, or bar them from being one or from management of the institution for a period the court decides.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x9",
+        "question": "Paragraph 9.1 of BNM's policy document refers to enforcement and supervisory action. Against whom can such action be taken for breaching S provisions?",
+        "options": [
+          "Only the reporting institution as a company",
+          "The reporting institution, including its directors, officers and employees",
+          "Only customers who give false information",
+          "Only the external auditors who sign off the accounts"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 9.1 states that enforcement and/or supervisory action can be taken against the reporting institution, including its directors, officers and employees, for non-compliance with S provisions.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x10",
+        "question": "A Malaysian sole trader wants to open a current account. The RM collects all CDD data but cannot verify the address until a utility bill arrives in a week. The customer is low risk with no suspicion. What may the bank do?",
+        "options": [
+          "Refuse the account until every document is verified",
+          "Open the account and verify at the first annual review",
+          "Open the account and skip address verification entirely",
+          "Open with risk controls such as limits, and complete verification within ten working days"
+        ],
+        "answer": 3,
+        "explanation": "Paragraphs 14A.10.5 to 14A.10.9 allow delayed verification for low risk with no suspicion, where the delay is essential and risks are managed, for example by limiting transactions, and normally within ten working days.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x11",
+        "question": "A private company's only shareholder is a trust. The trust's trustee is a corporate trust company. Who must the bank try to identify as beneficial owners?",
+        "options": [
+          "Only the corporate trust company, since it holds legal title",
+          "The settlor, trustees, any protector, beneficiaries and anyone with ultimate effective control, looking through the corporate trustee",
+          "Only the company's directors, since a trust cannot own a company",
+          "Nobody, because trusts are exempt from beneficial owner rules"
+        ],
+        "answer": 1,
+        "explanation": "For legal arrangements the policy document lists settlor, trustees, protector, beneficiaries and others with ultimate effective control, and says that where a party is a legal person its own beneficial owner should be identified.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x12",
+        "question": "Which customer category is exempted from the bank obtaining its certificate of incorporation and verifying its directors and shareholders, while the bank still records their identities?",
+        "options": [
+          "A private limited company with fewer than five shareholders",
+          "A foreign company listed on any exchange in a higher-risk country",
+          "A newly registered society or charity",
+          "A public company listed on Bursa Malaysia"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 14A.9.8 exempts listed companies on Bursa Malaysia, among others, but paragraph 14A.9.9 still requires the bank to identify and keep director and shareholder information. Foreign listed companies in higher-risk countries are not exempt.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x13",
+        "question": "A domestic PEP's relationship is assessed as not higher risk. Which treatment does BNM allow?",
+        "options": [
+          "CDD measures similar to other customers, with the risk assessment documented",
+          "Enhanced CDD with head office approval in every case",
+          "No CDD at all, because the customer is a public figure",
+          "A ban on opening any account for domestic PEPs"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 15.3.5 allows CDD similar to other customers for domestic PEPs not assessed as higher risk. Enhanced measures are required if the assessment shows higher risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x14",
+        "question": "Which person is a 'family member' of a PEP under BNM's definition?",
+        "options": [
+          "The PEP's former classmate",
+          "The PEP's neighbour",
+          "The PEP's spouse's parent",
+          "The PEP's family lawyer"
+        ],
+        "answer": 2,
+        "explanation": "BNM lists parent, sibling, spouse, child and spouse's parent. A family lawyer or former classmate may need the close associate test, which looks at social or professional closeness.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x15",
+        "question": "The FATF calls on members to apply enhanced due diligence to a country. A customer is from that country. What does paragraph 17 require of Seri Merbau Bank?",
+        "options": [
+          "Closing every account linked to the country at once",
+          "Standard CDD, because country lists are only advisory",
+          "Enhanced CDD proportionate to the risk, including any specific measures the FATF or the Government imposes",
+          "Reporting every transaction of the customer to FIED as an STR"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 17.1 and 17.2 require enhanced CDD, proportionate to risk, for persons from higher-risk countries called for by the FATF or the Government, including any specific measures imposed. Countermeasures apply when called for.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x16",
+        "question": "A bank relies on a group company to introduce customers and perform CDD. Which task can it NEVER pass to the third party?",
+        "options": [
+          "Ongoing due diligence on the customers",
+          "Collecting identity documents at onboarding",
+          "Introducing new business to the bank",
+          "Verifying the customer's identity at onboarding"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 16.9 says reporting institutions shall not rely on third parties to conduct ongoing due diligence. Reliance for initial CDD and introductions is possible under conditions.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x17",
+        "question": "Under paragraph 10.6, which set of factors must a customer risk profile consider?",
+        "options": [
+          "Customer age, gender and religion only",
+          "Account balance, fee income and length of relationship only",
+          "Only the risk rating given by another bank",
+          "Customer, country or geographic, and product, service, transaction or channel risk, plus any other higher-risk information"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 10.6.2 lists customer risk, country or geographical risk, products, services, transactions or delivery channels, and any other information suggesting higher risk.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x18",
+        "question": "A bank plans to launch a new instant-payment wallet. When must it assess the ML/TF/PF risks of the product?",
+        "options": [
+          "Within six months after launch, once data exists",
+          "Before the launch, and then take measures to manage the risks",
+          "Only if BNM asks for an assessment",
+          "Only if the product handles cash"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 12.2 requires a risk assessment prior to the launch or use of new products, practices and technologies, and appropriate measures to manage and mitigate the risks.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x19",
+        "question": "BNM's paragraph 22.1.1 lists situations where an STR must be submitted. Which of these is one of them?",
+        "options": [
+          "The transaction has no clear economic purpose",
+          "The customer is a foreign national",
+          "The transaction exceeds RM10,000",
+          "The customer pays a higher fee than usual"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 22.1.1 covers transactions that appear unusual, have no clear economic purpose, appear illegal, involve proceeds of unlawful activity or instrumentalities of an offence, or indicate ML/TF/PF, regardless of amount.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x20",
+        "question": "A branch manager tells Daniel to hold back an internal report until the customer's loan is fully drawn, so as not to 'disrupt' a good relationship. What should Daniel do?",
+        "options": [
+          "Wait until the loan is drawn, as the manager outranks him",
+          "Ask the customer whether the funds are legitimate",
+          "Channel the report to the Compliance Officer without delay, as the reporting mechanism requires",
+          "Delete the report and note the manager's instruction"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 22.2.1 makes the branch compliance officer responsible for channelling all internal reports to the Compliance Officer, and STRs must be prompt. A commercial reason never justifies delay.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x21",
+        "question": "Which requirement applies to how Seri Merbau Bank handles internal STRs that the Compliance Officer decides NOT to submit?",
+        "options": [
+          "Destroy them after thirty days to protect customer privacy",
+          "Keep them, with supporting evidence, in a complete file available to supervisors on request",
+          "Return them to the employees who raised them",
+          "Forward them to the customer's relationship manager"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 22.4 requires the Compliance Officer to maintain a complete file of all internal STRs and supporting evidence, whether submitted or not, and to make them available to supervisors on request.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x22",
+        "question": "A customer deposits RM18,000 cash, then withdraws RM8,000 cash from the same account on the same day, and the teller has no concerns. A week later the bank finds no report was filed. Which duty was breached?",
+        "options": [
+          "Nothing, because the net amount was RM10,000",
+          "The STR, which was due within one working day",
+          "The duty to freeze, which applies to large cash",
+          "The cash threshold report, which was due within five working days"
+        ],
+        "answer": 3,
+        "explanation": "Deposits and withdrawals are aggregated, not offset: RM26,000 reaches the RM25,000 threshold. The CTR was due within five working days. No suspicion arose, so no STR was due.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x23",
+        "question": "Seri Merbau Bank wants to share details of an STR with its overseas parent bank for group risk management. Under AMLA section 14A and paragraph 23, what is the safest route?",
+        "options": [
+          "Share freely, because the parent is part of the same group",
+          "Apply in writing to the Director of FIED for authorisation, with justification and safeguards",
+          "Share only the customer's name, which is not report information",
+          "Ask the customer to consent to the disclosure"
+        ],
+        "answer": 1,
+        "explanation": "The related corporation exception in s14A(3)(b) covers companies incorporated in Malaysia and engaged in financial services in Malaysia. For other disclosure, paragraph 23.4 lets the bank seek written authorisation from FIED's Director.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x24",
+        "question": "Which statement about the Compliance Officer's discretion to file STRs is correct under BNM's policy document?",
+        "options": [
+          "The CEO must approve each STR before submission",
+          "The board must ratify each STR at its next meeting",
+          "The branch manager decides for branch customers",
+          "The Compliance Officer has sole discretion and independence to report suspicious transactions"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 22.2.7 gives the Compliance Officer sole discretion and independence to report, and requires utmost confidentiality.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x25",
+        "question": "BNM's Appendix 4a lists transactions that may trigger suspicion. Which of these is listed?",
+        "options": [
+          "Multiple cash deposits by machine up to daily limits to avoid CDD at the counter",
+          "A customer who always uses the same branch for deposits",
+          "A salary account receiving a regular monthly credit",
+          "A customer who asks for a printed statement each month"
+        ],
+        "answer": 0,
+        "explanation": "Appendix 4a includes multiple cash deposits or withdrawals via cash deposit machines up to the daily limit to avoid CDD verification over the counter. Regular, explained activity is not a trigger.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x26",
+        "question": "After filing an STR, the Compliance Officer receives a request from FIED for more documents. What does the policy document require?",
+        "options": [
+          "Refuse, because the customer has not consented",
+          "Provide it only after a court order is served",
+          "Provide the additional information and respond promptly",
+          "Ask the customer to send the documents directly"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 22.2.8 requires banks to provide additional information and documents FIED requests and to respond promptly to further enquiries about reports under section 14 of AMLA.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x27",
+        "question": "Under the amended section 14 of AMLA, which new ground for reporting did Act A1761 add?",
+        "options": [
+          "Any foreign currency transaction above RM10,000",
+          "Any transaction by a politically exposed person",
+          "Suspicion that a transaction, activity or property is linked to a restricted activity or proliferator",
+          "Any account opened without face-to-face contact"
+        ],
+        "answer": 2,
+        "explanation": "Act A1761 added section 14(1)(d), covering suspicion of links to restricted activity, proliferators or persons financing restricted activity, and (e) for activity the competent authority specifies.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x28",
+        "question": "Which minimum data points does BNM require banks to obtain to facilitate sanctions screening, even for transactions below CDD thresholds?",
+        "options": [
+          "Full name, NRIC or passport number, and date of birth",
+          "Full name, occupation and monthly income",
+          "Mobile number, email address and home address",
+          "Nationality, employer and purpose of transaction"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 27.4.3 requires at least full name, NRIC or passport or other official document number, and date of birth to facilitate screening.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x29",
+        "question": "A listing is published on the UN website on a Friday evening. Seri Merbau Bank's vendor updates the screening database on Tuesday. What is the compliance issue?",
+        "options": [
+          "None, because vendors have five working days to update",
+          "None, because UN lists apply only after the Gazette",
+          "None, if no matching customer is eventually found",
+          "The database must be updated without delay upon publication, not days later"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 27.3.2 requires updates without delay upon publication on the UN website. BNM penalised Standard Chartered Bank Malaysia in 2026 for screening against an outdated database even though no listed person was onboarded.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x30",
+        "question": "A company customer is not listed, but its 60% owner has just been added to the Domestic List. What should the bank consider?",
+        "options": [
+          "Nothing, because only the listed person's own accounts matter",
+          "Whether the company is a related party, as its funds may be owned or controlled by a specified entity",
+          "Closing the company account without any further analysis",
+          "Asking the listed owner to sell his shares before acting"
+        ],
+        "answer": 1,
+        "explanation": "A related party includes a person whose funds are wholly or jointly owned or controlled, directly or indirectly, by a specified entity. Paragraph 27.5 requires due diligence on related parties and analysis of past transactions.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x31",
+        "question": "How long does a freeze under the terrorism-related TFS remain in effect?",
+        "options": [
+          "Until the specified entity is removed from the Domestic List or UNSCR List",
+          "For ninety days, then the bank must apply to extend it",
+          "Until the customer provides a satisfactory explanation",
+          "Until the Compliance Officer decides to lift it"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 27.6.3 keeps the freeze or block in effect until the entity is delisted as published by the UN or in the Gazette.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x32",
+        "question": "Zurich General Insurance Malaysia was penalised RM1.04 million in 2026. Which failure did BNM identify besides outdated screening?",
+        "options": [
+          "Failing to submit cash threshold reports on premiums",
+          "Failing to appoint a Compliance Officer at head office",
+          "Failing to freeze a specified entity's funds and report to BNM immediately",
+          "Failing to keep records for six years"
+        ],
+        "answer": 2,
+        "explanation": "BNM's notice found Zurich failed to update its database without delay, failed to resolve potential matches, and failed to freeze one specified entity's funds and report to BNM immediately.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x33",
+        "question": "A customer of Seri Merbau Bank is confirmed as a specified entity. Two weeks after the immediate report, the frozen balance receives interest. What further reporting applies?",
+        "options": [
+          "None, because the immediate report covers everything",
+          "Periodic reporting of changes to the frozen funds, in the form and intervals BNM specifies",
+          "A new STR every time interest is credited",
+          "A report to the customer explaining the interest"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 27.7.2 requires banks holding frozen funds to report changes to those funds using the form and at the intervals in Appendix 8b.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x34",
+        "question": "A bank's PF risk assessment rates its institutional PF risk as low. What does BNM say about applying TFS on proliferation financing?",
+        "options": [
+          "Low PF risk allows the bank to screen only quarterly",
+          "Low PF risk means PF sanctions screening is optional",
+          "Low PF risk allows freezing to wait for police instructions",
+          "TFS on PF must be fully implemented whatever the institutional PF risk level"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 10.5.2 requires full implementation of TFS on PF irrespective of the institutional PF risk level. Lower risk affects other mitigation measures, not the sanctions duties.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x35",
+        "question": "Under BNM's paragraph 10.4, what does 'PF risk' mean for a bank's PF risk assessment?",
+        "options": [
+          "The risk that customers trade in any dual-use goods at all",
+          "The risk of breach, non-implementation or evasion of the targeted financial sanctions on PF",
+          "The risk of the bank's own staff joining a weapons programme",
+          "The risk of currency losses on trade finance transactions"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 10.4.1 limits PF risk, for this purpose, to potential breach, non-implementation or evasion of the TFS on PF in paragraph 28.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x36",
+        "question": "In 2025 BNM penalised HSBC's two Malaysian banking entities about RM2.9 million for sanctions screening failures. What made BNM's notice especially critical?",
+        "options": [
+          "A listed terrorist moved funds through the bank undetected",
+          "The bank refused to cooperate with BNM's examiners",
+          "The bank reported its screening matches to a foreign regulator only",
+          "Customers were onboarded without proper screening, and the breach recurred after remediation"
+        ],
+        "answer": 3,
+        "explanation": "BNM noted staff oversight, ineffective maker-checker functions and system gaps, and that remedial measures were insufficient so the breach recurred in 2024. No specified entity was onboarded.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x37",
+        "question": "Under BNM's paragraph 11.5, when must a bank's employee screening apply?",
+        "options": [
+          "On hiring and throughout employment, with clear triggers for re-screening",
+          "Only on hiring, for customer-facing roles",
+          "Only after an employee is suspected of fraud",
+          "Only for staff who earn above a salary threshold"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 11.5.3 applies screening on hiring and throughout employment, and paragraph 11.5.4 requires evaluation of criminal, employment and financial history plus clear re-screening triggers.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x38",
+        "question": "A bank's AML training is identical for tellers, trade finance officers and board members. Which BNM standard does that most likely fail?",
+        "options": [
+          "Training must be delivered by an external provider",
+          "Training must be completed in a single annual session",
+          "Training must be appropriate to each employee's level of responsibility and the bank's risks",
+          "Training must be identical for every employee"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11.6.4 requires training appropriate to employees' responsibilities in detecting ML/TF/PF and to the risks the bank has identified. Paragraph 11.6.7 suggests role-specific content.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x39",
+        "question": "What minimum scope does BNM set for the independent AML/CFT/CPF audit?",
+        "options": [
+          "Only a sample check of sanctions screening alerts",
+          "Only a review of the Compliance Officer's qualifications",
+          "AMLA compliance, internal policy compliance, programme adequacy and effectiveness, and reporting and MIS reliability",
+          "Only the financial statements of the bank"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11.7.5 sets the minimum scope: compliance with AMLA and instruments under it, internal policies, adequacy and effectiveness of the programme, and reliability, integrity and timeliness of reporting and MIS.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x40",
+        "question": "Who must receive the auditor's written report on the effectiveness of AML/CFT/CPF measures?",
+        "options": [
+          "The board",
+          "The customer complaints unit",
+          "The Securities Commission",
+          "Each branch manager"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 11.7.8 requires the auditor to submit a written report to the board, and findings and corrective measures must be available to FIED on request.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x41",
+        "question": "Which statement about record retention is correct under AMLA as amended?",
+        "options": [
+          "Records are kept at least five years from account opening only",
+          "Records may be destroyed once a CTR has been filed",
+          "Records need to be kept only for customers rated high risk",
+          "Records are kept at least six years from account closure or completion or termination of the relationship or transaction, whichever is later"
+        ],
+        "answer": 3,
+        "explanation": "Section 17(1), as amended by Act A1761, sets at least six years from the account closing or the business relationship, transaction or activity being completed or terminated, whichever is later.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-aml-x42",
+        "question": "A bank officer is found to have repeatedly ignored the bank's AML procedures. Which BNM tool under the amended AMLA could apply to him personally, without a criminal trial?",
+        "options": [
+          "Imprisonment ordered by BNM's FIED",
+          "An administrative monetary penalty under section 83B, after notice and a chance to respond",
+          "Forfeiture of his house under the money laundering offence",
+          "A ban from banking imposed by the bank's auditors"
+        ],
+        "answer": 1,
+        "explanation": "Section 83B lets the competent or supervisory authority take administrative action, including penalties up to RM1 million, against 'any person' who breaches Part IV duties, which now bind officers and employees.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-aml-x43",
+        "question": "Senior management at Seri Merbau Bank wants to cut AML training to save costs. Which of their duties under paragraph 11.3.2 does this put at risk?",
+        "options": [
+          "Providing appropriate levels of AML/CFT/CPF training for employees at all levels",
+          "Approving the bank's dividend policy each year",
+          "Setting the bank's interest rates on deposits",
+          "Appointing the bank's external statutory auditor"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 11.3.2(h) makes senior management responsible for providing appropriate levels of training for employees at all levels, and 11.3.2(f) for allocating adequate resources.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-aml-x44",
+        "question": "BNM's enforcement notices in 2025 and 2026 repeatedly cited refresher training as a remedy. What is the best conclusion for a bank's programme?",
+        "options": [
+          "Training is a cosmetic remedy that BNM accepts instead of a penalty",
+          "Training matters only for banks that have already been penalised",
+          "Gaps in staff knowledge are a common root cause of breaches, so training is a core control",
+          "Training can replace system controls such as screening"
+        ],
+        "answer": 2,
+        "explanation": "Notices for SME Bank, HSBC, AEON Credit and Zurich cited awareness or oversight gaps and listed training among remedies. Training does not replace controls or avoid penalties, but it addresses a recurring cause.",
+        "difficulty": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,3270 @@
+{
+ "slug": "in-rbi-aml-kyc",
+ "title": "India | PMLA and RBI KYC Directions: AML/CFT Compliance",
+ "tagline": "Apply India's AML/CFT rules at a commercial bank: PMLA 2002, the PML Rules, RBI's KYC Directions 2025, FIU-IND reporting and sanctions.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Commercial banks in India",
+  "Retail, branch and digital onboarding teams",
+  "Payments, remittance and correspondent banking teams",
+  "Bank compliance, risk and internal audit functions"
+ ],
+ "hours": 6,
+ "description": "This quest teaches staff of Indian commercial banks the country's own AML/CFT regime: the **Prevention of Money-laundering Act, 2002 (PMLA)**, the **PML (Maintenance of Records) Rules, 2005**, and the **Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025**, which RBI issued on 28 November 2025 and keeps updated. It also covers reporting to the **Financial Intelligence Unit – India (FIU-IND)** and the sanctions procedures under UAPA section 51A and WMD Act section 12A.\n\nParagraph 79 of the KYC Directions requires an ongoing training programme on the bank's KYC/AML/CFT policy, with a different focus for frontline, compliance and onboarding staff. This quest is built for that audience, and for managers, auditors and directors with oversight roles.\n\nAcross five stages you follow a fictional team at Kaveri Meridian Bank in Mumbai, Pune, Kochi and New Delhi through customer acceptance and CDD, beneficial ownership, CKYCR, V-CIP, risk categorisation, PEPs, periodic updation, CTRs and STRs, tipping off, records, sanctions screening, wire transfers, correspondent banking, the Designated Director and Principal Officer, and real RBI and FIU-IND penalties.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own KYC/AML policies, procedures or advice from your compliance team.",
+ "audience": [
+  "Branch, front-desk and contact centre staff at Indian commercial banks",
+  "Account opening, digital onboarding and V-CIP officials who perform customer due diligence",
+  "Payments, remittance, treasury and correspondent banking staff",
+  "Transaction monitoring analysts and the Principal Officer's team who prepare reports to FIU-IND",
+  "Managers, internal auditors, the Designated Director and Board members with AML/CFT oversight"
+ ],
+ "outcomes": [
+  "Explain how the PMLA 2002, the PML Rules 2005 and RBI's KYC Directions 2025 fit together, and the roles of RBI, FIU-IND, the Designated Director and the Principal Officer",
+  "Apply the Customer Acceptance Policy, identification triggers, beneficial ownership tests and CKYCR rules",
+  "Run risk categorisation, V-CIP, enhanced due diligence for non-face-to-face customers and PEPs, and periodic updation of KYC",
+  "File the right reports with FIU-IND on time, avoid tipping off and keep records for the required periods",
+  "Apply sanctions screening, wire transfer and correspondent banking rules, and describe the programme RBI and FIU-IND expect"
+ ],
+ "quest": {
+  "name": "The Rupee Trail",
+  "premise": "You have joined the AML/CFT compliance team at Kaveri Meridian Bank, a fictional Indian commercial bank, just as RBI's new KYC Directions bed in. With Principal Officer Meera Iyer, analyst Arjun Malhotra, branch manager Farhan Qureshi, V-CIP lead Kavya Reddy and Designated Director Vikram Desai, you must follow the trail of suspicious money from the counter to FIU-IND and get the bank ready for its audit.",
+  "badge": {
+   "name": "Rupee Trail Guardian",
+   "description": "Awarded for demonstrating working knowledge of India's PMLA, PML Rules and RBI KYC Directions as they apply to commercial banks."
+  },
+  "color": "#c2410c",
+  "cast": [
+   {
+    "id": "meera",
+    "name": "Meera Iyer",
+    "role": "Principal Officer (AML/CFT)",
+    "look": {
+     "skin": 3,
+     "hair": "bun",
+     "color": "#c2410c"
+    }
+   },
+   {
+    "id": "arjun",
+    "name": "Arjun Malhotra",
+    "role": "Transaction monitoring analyst",
+    "look": {
+     "skin": 2,
+     "hair": "short",
+     "color": "#1d4ed8"
+    }
+   },
+   {
+    "id": "farhan",
+    "name": "Farhan Qureshi",
+    "role": "Branch manager, Shivajinagar, Pune",
+    "look": {
+     "skin": 3,
+     "hair": "beard",
+     "color": "#047857"
+    }
+   },
+   {
+    "id": "kavya",
+    "name": "Kavya Reddy",
+    "role": "Digital onboarding and V-CIP lead",
+    "look": {
+     "skin": 4,
+     "hair": "long",
+     "color": "#7c3aed"
+    }
+   },
+   {
+    "id": "vikram",
+    "name": "Vikram Desai",
+    "role": "Whole-time director and Designated Director",
+    "look": {
+     "skin": 2,
+     "hair": "bald",
+     "color": "#334155"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "PMLA 2002, the PML Rules and the RBI KYC Directions",
+   "stage": "The Rulebook Vault",
+   "summary": "Map India's AML/CFT rulebook: the Prevention of Money-laundering Act 2002, the PML (Maintenance of Records) Rules 2005, RBI's KYC Directions 2025, FIU-IND, the Designated Director and Principal Officer, staff training and the penalties that follow failures.",
+   "minutes": 50,
+   "objectives": [
+    "Explain how the PMLA 2002, the PML Rules 2005 and the RBI KYC Directions 2025 fit together for a commercial bank",
+    "Describe the roles of RBI, FIU-IND, the Board, the Designated Director and the Principal Officer",
+    "Outline the money-laundering offence and the penalty powers of the Director, FIU-IND and of RBI",
+    "State what paragraph 79 of the KYC Directions requires for staff screening and training"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage one: the rulebook vault",
+     "setting": "Compliance floor, Kaveri Meridian Bank head office, Bandra Kurla Complex, Mumbai. 9:10 am.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Your first morning at Kaveri Meridian Bank. Your badge says 'AML/CFT Compliance' and your inbox already holds an FIU-IND circular and an RBI inspection follow-up.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "Welcome! I'm Meera Iyer, the bank's Principal Officer. Every report we send to FIU-IND goes out under my name.",
+       "mood": "happy"
+      },
+      {
+       "who": "arjun",
+       "text": "Arjun Malhotra, transaction monitoring. I live in the alert queue. Some days it feels like the alerts live in me.",
+       "mood": "thinking"
+      },
+      {
+       "who": "farhan",
+       "text": "(on video from Pune) Farhan Qureshi, branch manager, Shivajinagar. My tellers ask me one question daily: which rule says we have to do all this?",
+       "mood": "worried"
+      },
+      {
+       "who": "vikram",
+       "text": "Vikram Desai, whole-time director. The Board named me Designated Director, so I answer for the bank's PMLA compliance. I want to know we are on solid ground.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "So your first mission is the map: the Act, the Rules, RBI's Directions, who does what, and what happens when a bank gets it wrong.",
+       "mood": "proud"
+      },
+      {
+       "who": "meera",
+       "text": "Five stages, one final exam. By the end you should be able to explain our duties to a teller, an analyst and a director. Ready?",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Three layers of one regime",
+     "scenes": [
+      {
+       "icon": "📜",
+       "heading": "The Act",
+       "narration": "The Prevention of Money-laundering Act, 2002 creates the money-laundering offence and, in its Chapter Four, places record-keeping and reporting duties on reporting entities. Every bank is a reporting entity."
+      },
+      {
+       "icon": "📒",
+       "heading": "The Rules",
+       "narration": "The Prevention of Money-laundering (Maintenance of Records) Rules, 2005 fill in the detail: which transactions must be recorded and reported, when reports are due, and how client due diligence works."
+      },
+      {
+       "icon": "🏦",
+       "heading": "RBI's Directions",
+       "narration": "On 28 November 2025 RBI replaced its old KYC Master Direction with entity-wise Directions. Commercial banks now follow the Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025, kept updated as amendments arrive."
+      },
+      {
+       "icon": "🔎",
+       "heading": "FIU-IND",
+       "narration": "The Financial Intelligence Unit – India receives cash, suspicious and other prescribed reports, analyses them and passes intelligence to enforcement agencies. Its Director can also penalise reporting entities that fail their duties."
+      },
+      {
+       "icon": "📘",
+       "heading": "Your bank's policy",
+       "narration": "Each bank turns all of this into a Board-approved KYC policy. That policy, and the procedures under it, are what you apply at the counter and in the back office."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "From Parliament to your desk",
+     "caption": "Each layer must stay consistent with the one above it. The Directions apply to commercial banks, other than small finance, payments and local area banks.",
+     "items": [
+      {
+       "label": "PMLA 2002",
+       "detail": "Offence of money laundering; Chapter IV duties of reporting entities; FIU-IND powers."
+      },
+      {
+       "label": "PML Rules 2005",
+       "detail": "Records, reports, deadlines and client due diligence in detail."
+      },
+      {
+       "label": "RBI KYC Directions 2025",
+       "detail": "How commercial banks must apply KYC, CDD, monitoring, reporting and sanctions duties."
+      },
+      {
+       "label": "Board-approved KYC policy",
+       "detail": "Customer acceptance, risk management, identification and transaction monitoring."
+      },
+      {
+       "label": "Procedures and training",
+       "detail": "What each team does every day, taught through an ongoing training programme."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A colleague says the RBI KYC Directions 2025 are 'just guidance' because the real law is the PMLA. What is the best answer?",
+     "options": [
+      "The Directions are binding RBI instructions that tell banks how to meet their PMLA and PML Rules duties",
+      "The Directions are optional best practice that banks may adopt if they choose",
+      "The Directions replaced the PMLA for banks when they were issued in 2025",
+      "The Directions only apply to banks' overseas branches and subsidiaries"
+     ],
+     "answer": 0,
+     "explanation": "RBI issues the Directions to commercial banks, and RBI can penalise non-compliance. They implement the Act and Rules rather than replace them; overseas branches follow them too, applying the stricter standard where host rules differ."
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Designated Director and Principal Officer",
+     "caption": "Paragraphs 14 and 15 of the KYC Directions; the PML Rules name the Principal Officer as the officer who furnishes information to the Director, FIU-IND.",
+     "headers": [
+      "Designated Director",
+      "Principal Officer"
+     ],
+     "items": [
+      {
+       "label": "Who",
+       "left": "A Managing Director or whole-time director the Board authorises",
+       "right": "A nominated officer at management level"
+      },
+      {
+       "label": "Answers for",
+       "left": "Overall compliance with Chapter IV of the PMLA and the Rules",
+       "right": "Compliance, transaction monitoring, and sharing and reporting information"
+      },
+      {
+       "label": "Reports to FIU-IND",
+       "left": "Is accountable, but does not file reports",
+       "right": "Files the prescribed reports under Rule 8"
+      },
+      {
+       "label": "Name given to",
+       "left": "FIU-IND and RBI",
+       "right": "FIU-IND and RBI"
+      },
+      {
+       "label": "Same person?",
+       "left": "Cannot be the Principal Officer",
+       "right": "Cannot be named Designated Director"
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "The offence and the penalties",
+     "body": "**The offence.** Under the PMLA, money laundering covers any process or activity connected with the proceeds of crime, such as concealing, possessing, acquiring or using them, or projecting or claiming them as untainted. It is treated as continuing for as long as someone keeps enjoying those proceeds.\n\n**Punishment.** Section 4 provides rigorous imprisonment of at least three and up to seven years plus a fine, with a higher ceiling of ten years for certain scheduled offences.\n\n**Failures by the bank.** Under section 13, the Director, FIU-IND can inquire into a reporting entity and then:\n- issue a written warning;\n- direct it to follow specific instructions or send progress reports;\n- impose a penalty of **₹10,000 to ₹1 lakh for each failure** on the bank, its designated director or any employee.\n\nAppeals go to the Appellate Tribunal. **RBI** separately penalises banks for breaching its Directions under the Banking Regulation Act, 1949."
+    },
+    {
+     "type": "match",
+     "title": "Who does what?",
+     "prompt": "Match each player in India's regime to its role.",
+     "pairs": [
+      {
+       "left": "Reserve Bank of India",
+       "right": "Issues the KYC Directions to commercial banks, inspects them and imposes penalties for breaches"
+      },
+      {
+       "left": "FIU-IND",
+       "right": "Receives and analyses CTRs, STRs and other reports and can penalise reporting entities under section 13"
+      },
+      {
+       "left": "Board of Directors",
+       "right": "Approves the KYC policy and receives the outcome of the ML/TF risk assessment"
+      },
+      {
+       "left": "Designated Director",
+       "right": "Ensures the bank's overall compliance with the PMLA's reporting-entity duties"
+      },
+      {
+       "left": "Principal Officer",
+       "right": "Monitors transactions and furnishes the bank's reports to the Director, FIU-IND"
+      },
+      {
+       "left": "Audit Committee",
+       "right": "Receives quarterly audit notes on KYC/AML compliance"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "The cost-cutting idea",
+     "setting": "Board committee room, BKC. 4:30 pm.",
+     "lines": [
+      {
+       "who": "vikram",
+       "text": "A consultant suggested a saving: make Meera both Principal Officer and Designated Director. One role, one salary line.",
+       "mood": "thinking"
+      },
+      {
+       "who": "meera",
+       "text": "It sounds efficient, but the Directions say the bank must not nominate the Principal Officer as Designated Director.",
+       "mood": "worried"
+      },
+      {
+       "who": "vikram",
+       "text": "And the consultant also wants to outsource our KYC sign-off to a vendor in Bengaluru.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "Outsourcing the work is possible within RBI's outsourcing rules. Outsourcing the decision on whether KYC is compliant is not.",
+       "mood": "neutral"
+      },
+      {
+       "who": "vikram",
+       "text": "Then help me write a clear answer for the Board.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Advising the Board",
+     "situation": "The Board's risk committee asks you for a one-line recommendation on the consultant's two ideas: (1) combine the Principal Officer and Designated Director roles; (2) let a vendor decide whether customer KYC meets the bank's norms.",
+     "choices": [
+      {
+       "text": "Reject both: the roles must be held by different people, and the bank may not outsource decisions on KYC compliance.",
+       "outcome": "Correct. The Directions bar the Principal Officer from being Designated Director and say banks must not outsource the decision-making on KYC compliance. The vendor can support processing under the bank's control.",
+       "score": 2
+      },
+      {
+       "text": "Accept the combined role but keep KYC decisions in-house.",
+       "outcome": "Half right. Keeping KYC decisions in-house is correct, but combining the two roles breaks an express rule in the Directions.",
+       "score": 1
+      },
+      {
+       "text": "Accept both, provided the Board approves them in writing.",
+       "outcome": "Board approval cannot override the Directions. Both ideas conflict with RBI's express requirements.",
+       "score": 0
+      },
+      {
+       "text": "Accept both, but tell FIU-IND and RBI the new names.",
+       "outcome": "Notifying names is required for each role, but it does not cure a prohibited arrangement.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "What failure has cost Indian banks",
+     "caption": "Figures from the PMLA text, FIU-IND's summary of Order 13/DIR/FIU-IND/2024 and RBI's press release of 23 August 2013 (penalties of ₹0.50–2.00 crore each).",
+     "items": [
+      {
+       "label": "Section 13 PMLA",
+       "value": "₹10k–₹1 lakh",
+       "detail": "Range of the penalty per failure the Director, FIU-IND may impose."
+      },
+      {
+       "label": "Union Bank of India",
+       "value": "₹54 lakh",
+       "detail": "FIU-IND order, October 2024: STRs not filed and alerts closed with little justification."
+      },
+      {
+       "label": "Six banks, 2013",
+       "value": "₹6.5 crore",
+       "detail": "RBI penalties in August 2013 for KYC/AML lapses, including CTR omissions."
+      },
+      {
+       "label": "Money laundering",
+       "value": "3–7 years",
+       "detail": "Rigorous imprisonment under PMLA section 4, plus a fine (higher cap for some offences)."
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Myth or fact?",
+     "cards": [
+      {
+       "front": "Myth: only the compliance team has PMLA duties.",
+       "back": "Fact: the Rules make it the duty of the bank, its designated director, officers and employees to follow the procedures for maintaining and furnishing information."
+      },
+      {
+       "front": "Myth: FIU-IND only collects reports; it cannot fine banks.",
+       "back": "Fact: section 13 lets the Director, FIU-IND warn, direct and fine a reporting entity, its designated director or employees."
+      },
+      {
+       "front": "Myth: the KYC policy can be signed off by the Principal Officer.",
+       "back": "Fact: the Board, or a committee it delegates, must approve the KYC policy."
+      },
+      {
+       "front": "Myth: overseas branches follow only host-country rules.",
+       "back": "Fact: the Directions apply to overseas branches and majority-owned subsidiaries; where standards differ, the stricter one applies."
+      },
+      {
+       "front": "Myth: training once at induction is enough.",
+       "back": "Fact: paragraph 79 requires an ongoing training programme, with a different focus for frontline, compliance and onboarding staff."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which of these is NOT one of the four key elements RBI requires in a bank's KYC policy?",
+     "options": [
+      "Customer Acceptance Policy",
+      "Risk management",
+      "Monitoring of transactions",
+      "Product pricing policy"
+     ],
+     "answer": 3,
+     "explanation": "The four elements are the Customer Acceptance Policy, risk management, Customer Identification Procedures and monitoring of transactions. Pricing is outside the KYC policy."
+    },
+    {
+     "type": "example",
+     "title": "Real case: FIU-IND orders training at a co-operative bank (2024)",
+     "body": "After an RBI inspection, RBI shared findings with FIU-IND that **The Utkal Co-operative Bank Ltd.** had not filed cash transaction reports and suspicious transaction reports on various accounts.\n\nFIU-IND issued a show-cause notice, heard the bank and, by Order-in-Original No. 06/DIR/FIU-IND/2024 dated 9 February 2024, imposed a penalty of **₹1 lakh** under section 13(2)(d) for breaching section 12 of the PMLA and Rules 3 and 7.\n\nThe Director also **directed the bank to give suitable AML/CFT training to the staff concerned**.\n\n**Lessons for you:**\n- RBI and FIU-IND work together: inspection findings travel.\n- Failing to file a CTR is a breach in itself, even without any suspicion.\n- Regulators see training gaps as a root cause and can order a fix."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage one take-aways",
+     "items": [
+      "The PMLA 2002 sets the offence and reporting-entity duties; the PML Rules 2005 set records, reports and deadlines; RBI's KYC Directions 2025 tell commercial banks how to comply.",
+      "The Board approves the KYC policy, which has four elements: customer acceptance, risk management, customer identification and transaction monitoring.",
+      "The Designated Director answers for overall PMLA compliance; the Principal Officer monitors and reports to FIU-IND. They must be different people.",
+      "FIU-IND can fine ₹10,000 to ₹1 lakh per failure; RBI penalises breaches of its Directions under the Banking Regulation Act.",
+      "Paragraph 79 requires Know Your Employee screening and ongoing KYC/AML/CFT training tailored to frontline, compliance and onboarding staff."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of your own role. Which of the people in this stage (Principal Officer, Designated Director, Board, auditors) would you go to first with a KYC question, and do you know their name at your institution?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-aml-s1-q1",
+     "question": "Which instrument contains the offence of money laundering and the punishment for it in India?",
+     "options": [
+      "The PML (Maintenance of Records) Rules, 2005",
+      "The RBI KYC Directions, 2025",
+      "The Prevention of Money-laundering Act, 2002",
+      "The Banking Regulation Act, 1949"
+     ],
+     "answer": 2,
+     "explanation": "The PMLA defines the offence (section 3) and sets the punishment (section 4). The Rules and the Directions deal with records, reporting and KYC procedures.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s1-q2",
+     "question": "Kaveri Meridian Bank wants to name its Principal Officer as Designated Director too. What do the KYC Directions say?",
+     "options": [
+      "The bank must not nominate the Principal Officer as Designated Director",
+      "It is allowed if the Board approves the dual role",
+      "It is allowed only for banks with fewer than 100 branches",
+      "It is required, so that one person owns PMLA compliance"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 14 of the Directions expressly bars the bank from nominating the Principal Officer as Designated Director. Board approval or bank size does not change this.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s1-q3",
+     "question": "Who must approve a commercial bank's KYC policy?",
+     "options": [
+      "The Principal Officer, after consulting FIU-IND",
+      "The Board of Directors, or a committee to which it has delegated the power",
+      "RBI's regional office, before the policy takes effect",
+      "The head of retail banking, with the CFO's sign-off"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 6 requires a KYC policy approved by the Board or a Board-delegated committee. RBI does not pre-approve it and the Principal Officer cannot approve it.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s1-q4",
+     "question": "During an inquiry, the Director, FIU-IND finds that a bank employee repeatedly ignored the reporting procedure. Which action is available under section 13 of the PMLA?",
+     "options": [
+      "Rigorous imprisonment of the employee for three to seven years",
+      "Cancellation of the bank's licence by FIU-IND",
+      "A penalty fixed at 1% of the bank's annual profit",
+      "A penalty of ₹10,000 to ₹1 lakh for each failure, which may be imposed on the employee"
+     ],
+     "answer": 3,
+     "explanation": "Section 13 lets the Director warn, direct, require reports and impose ₹10,000 to ₹1 lakh per failure on the entity, its designated director or employees. Imprisonment is for the offence under section 4, and licensing belongs to RBI.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s1-q5",
+     "question": "What does paragraph 79 of the KYC Directions require about staff training?",
+     "options": [
+      "A one-time course at induction, refreshed only if RBI issues new rules",
+      "Annual external certification of every employee by FIU-IND",
+      "An ongoing programme on the KYC/AML/CFT policy, with a different focus for frontline, compliance and onboarding staff",
+      "Training for compliance staff only, since others follow procedures"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 79 requires ongoing training adapted to frontline staff, compliance staff and staff dealing with new customers, plus special training for front-desk staff on customer-education issues.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s1-q6",
+     "question": "Kaveri Meridian's branch in Dubai finds that the local AML rule on a point is stricter than RBI's. Which standard should the branch apply?",
+     "options": [
+      "RBI's standard, because the bank is Indian",
+      "The host-country standard, because local law always prevails",
+      "Whichever standard the branch head considers more practical",
+      "The stricter of the two standards"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 4 applies the Directions to overseas branches and majority-owned subsidiaries and requires the more stringent standard where RBI and host-country rules differ.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s1-q7",
+     "question": "To whom must the bank communicate the name, designation and contact details of its Designated Director and Principal Officer?",
+     "options": [
+      "RBI only",
+      "The Ministry of Home Affairs and FIU-IND",
+      "SEBI and the Indian Banks' Association",
+      "FIU-IND and RBI"
+     ],
+     "answer": 3,
+     "explanation": "Paragraphs 14 and 15 require the bank to give the details of both officers to FIU-IND and RBI.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s1-q8",
+     "question": "An auditor notes that Kaveri Meridian has engaged a vendor that both processes KYC files and makes the final call on whether each customer's KYC is compliant. What is the problem?",
+     "options": [
+      "Vendors may not see customer documents under any circumstances",
+      "Outsourcing any KYC work needs prior approval from FIU-IND",
+      "Banks must not outsource the decision-making on KYC compliance",
+      "There is no problem if the vendor is located in India"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 13 says the bank must not outsource the decision-making functions of determining compliance with KYC norms. Supporting work can be outsourced within RBI's outsourcing rules.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s1-q9",
+     "question": "Which body receives the bank's quarterly audit notes and compliance on KYC/AML?",
+     "options": [
+      "The Audit Committee",
+      "The Principal Officer's team",
+      "The FIU-IND Director",
+      "The bank's statutory central auditors"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 12 lists independent evaluation, concurrent or internal audit, and submission of quarterly audit notes and compliance to the Audit Committee.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s1-q10",
+     "question": "In 2024 FIU-IND penalised The Utkal Co-operative Bank Ltd. for failing to file CTRs and STRs. What else did the Director order?",
+     "options": [
+      "Closure of all accounts that had been missed",
+      "Replacement of the bank's Board of Directors",
+      "A ban on opening new accounts for one year",
+      "Suitable AML/CFT training for the staff concerned"
+     ],
+     "answer": 3,
+     "explanation": "FIU-IND's order summary records a ₹1 lakh penalty and a direction to provide suitable AML/CFT training to the concerned staff.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Customer acceptance, identification and due diligence",
+   "stage": "The Onboarding Gate",
+   "summary": "Apply RBI's Customer Acceptance Policy, the triggers for customer identification, the officially valid documents, the beneficial ownership tests of the PML Rules, reliance on third parties and the Central KYC Records Registry.",
+   "minutes": 55,
+   "objectives": [
+    "Apply the Customer Acceptance Policy rules, including when not to open an account and when to consider an STR",
+    "Recognise when customer identification is required, including the ₹50,000 walk-in threshold and structuring",
+    "Identify beneficial owners of companies, partnerships, associations and trusts using the PML Rules thresholds",
+    "Use the Central KYC Records Registry correctly, including the KYC Identifier and upload timelines"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage two: the onboarding gate",
+     "setting": "Shivajinagar branch, Pune. 11:20 am, a busy Monday.",
+     "lines": [
+      {
+       "who": "farhan",
+       "text": "Three cases at once. A walk-in wants several demand drafts. A logistics partnership wants a current account. And a young engineer says she already has a 'CKYC number'.",
+       "mood": "worried"
+      },
+      {
+       "who": "kavya",
+       "text": "(on video from the digital onboarding hub, Kochi) Kavya Reddy here. The CKYC one is easy if we use the registry properly. Don't make her bring a pile of photocopies.",
+       "mood": "happy"
+      },
+      {
+       "who": "farhan",
+       "text": "The partnership worries me more. One partner signs everything, but the deed mentions a 'silent partner' in Dubai.",
+       "mood": "thinking"
+      },
+      {
+       "who": "meera",
+       "text": "Then we need to know who really owns and controls that firm before we open anything. The PML Rules give us the thresholds.",
+       "mood": "neutral"
+      },
+      {
+       "who": "farhan",
+       "text": "And the walk-in with the drafts? He keeps asking what the limit is before we need his ID.",
+       "mood": "worried"
+      },
+      {
+       "who": "meera",
+       "text": "Asking about limits is a small red flag on its own. Let's go through the gate rules one by one.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "What customer due diligence means in India",
+     "scenes": [
+      {
+       "icon": "🪪",
+       "heading": "Identify and verify",
+       "narration": "CDD means identifying the customer and verifying that identity from reliable, independent sources, such as an officially valid document, Aadhaar-based e-KYC or records from the Central KYC Records Registry."
+      },
+      {
+       "icon": "🎯",
+       "heading": "Purpose and nature",
+       "narration": "The bank also gathers the purpose and intended nature of the relationship, so it knows what normal activity should look like later."
+      },
+      {
+       "icon": "🏢",
+       "heading": "Business, ownership, control",
+       "narration": "For businesses, staff take reasonable steps to understand what the customer does and who owns and controls it."
+      },
+      {
+       "icon": "👤",
+       "heading": "The real owner",
+       "narration": "Staff decide whether the customer acts for a beneficial owner, then identify that natural person and take all reasonable steps to verify who they are."
+      },
+      {
+       "icon": "🔗",
+       "heading": "One customer, one ID",
+       "narration": "CDD applies at the level of the Unique Customer Identification Code. An existing KYC-compliant customer opening another product does not need fresh identification."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "The onboarding path at Kaveri Meridian",
+     "caption": "Based on Chapters III, V and VI and paragraph 65 of the RBI KYC Directions 2025.",
+     "items": [
+      {
+       "label": "Acceptance check",
+       "detail": "No anonymous, fictitious or benami names; screen against the sanctions lists."
+      },
+      {
+       "label": "Identify",
+       "detail": "Collect the OVD, e-KYC data or KYC Identifier, plus PAN or Form 60."
+      },
+      {
+       "label": "Verify",
+       "detail": "Check documents with issuing authorities, such as PAN and GST verification facilities."
+      },
+      {
+       "label": "Beneficial owner",
+       "detail": "For non-individuals, identify the natural persons who own or control."
+      },
+      {
+       "label": "Risk category",
+       "detail": "Assign low, medium or high risk and record the reasons internally."
+      },
+      {
+       "label": "Registry",
+       "detail": "Upload KYC records to CKYCR within 10 days and share the KYC Identifier."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A walk-in customer with no account wants to buy demand drafts totalling ₹55,000 in one visit. Does the bank need to identify him?",
+     "options": [
+      "Yes: walk-in transactions of ₹50,000 or more, single or connected, need customer identification",
+      "No: walk-in customers only need identification above ₹10 lakh",
+      "No: demand drafts are bank instruments, so no CDD applies",
+      "Only if he pays in cash rather than by cheque"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 21 requires identification for walk-in transactions of ₹50,000 or more, whether one transaction or several that appear connected. Separately, drafts of ₹50,000 and above must be paid for by debit to an account or by cheque, not cash."
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Who is the beneficial owner?",
+     "caption": "Thresholds from the definition of beneficial owner in the KYC Directions, which follows Rule 9(3) of the PML Rules. Entities listed in India (and their subsidiaries) need not have shareholders identified.",
+     "headers": [
+      "Ownership test",
+      "Control test or fallback"
+     ],
+     "items": [
+      {
+       "label": "Company",
+       "left": "Natural person with more than 10% of shares, capital or profits",
+       "right": "Or anyone controlling, e.g. right to appoint most directors"
+      },
+      {
+       "label": "Partnership firm",
+       "left": "More than 10% of capital or profits",
+       "right": "Or anyone controlling management or policy decisions"
+      },
+      {
+       "label": "Association or body of individuals",
+       "left": "More than 15% of property, capital or profits",
+       "right": "If no one qualifies: the senior managing official"
+      },
+      {
+       "label": "Trust",
+       "left": "Author, trustee and beneficiaries with 10% or more interest",
+       "right": "Plus anyone with ultimate effective control"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "CDD now, or not needed?",
+     "prompt": "Decide whether each request triggers customer identification at that moment.",
+     "buckets": [
+      "Identify the customer now",
+      "No fresh identification needed"
+     ],
+     "items": [
+      {
+       "text": "A walk-in asks to send ₹8,000 abroad to a relative",
+       "bucket": 0
+      },
+      {
+       "text": "A walk-in pays ₹48,000 today and ₹48,000 tomorrow for the same purpose, saying he wants to 'stay under the limit'",
+       "bucket": 0
+      },
+      {
+       "text": "An existing KYC-compliant customer opens a fixed deposit",
+       "bucket": 1
+      },
+      {
+       "text": "The bank doubts whether a customer's earlier ID data was genuine",
+       "bucket": 0
+      },
+      {
+       "text": "A KYC-compliant customer transfers her account to the bank's Nagpur branch",
+       "bucket": 1
+      },
+      {
+       "text": "A new company account is opened for a logistics firm",
+       "bucket": 0
+      },
+      {
+       "text": "A non-customer pays ₹75,000 of credit card dues at the counter",
+       "bucket": 0
+      },
+      {
+       "text": "A KYC-compliant customer adds a debit card to her existing account",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "Documents the bank may accept",
+     "body": "**Officially valid documents (OVDs)** are: passport, driving licence, proof of possession of Aadhaar number, Voter ID card, NREGA job card signed by a State Government officer, and the National Population Register letter with name and address.\n\n**When the address is out of date**, some documents count as OVDs for proof of address only, e.g. a utility bill not older than two months, a property or municipal tax receipt, a pension payment order, or an employer's accommodation allotment letter. The customer must then give an OVD with the current address **within three months**.\n\n**Also remember:**\n- PAN (or Form 60) is obtained and verified with the issuing authority.\n- Aadhaar numbers must be redacted where the Directions say so.\n- Banks must not ask for **introductions** when opening accounts.\n- A rejection must reflect real thought, and the officer records the reasons. The policy must not shut out the financially or socially disadvantaged, including persons with disabilities."
+    },
+    {
+     "type": "story",
+     "title": "The KYC Identifier",
+     "setting": "Shivajinagar branch, Pune. 12:05 pm.",
+     "lines": [
+      {
+       "who": "farhan",
+       "text": "The engineer gave her KYC Identifier, but our new teller still asked for her passport, a utility bill and two photos.",
+       "mood": "angry"
+      },
+      {
+       "who": "kavya",
+       "text": "That's exactly what the Directions try to stop. We retrieve her records online with the identifier and only ask for more if something has changed or the record is incomplete.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "RBI fined a large private bank in 2026 for not having a system to use the KYC Identifier when opening accounts. This is not a small thing.",
+       "mood": "worried"
+      },
+      {
+       "who": "farhan",
+       "text": "Fine. Now the partnership. The local partner refuses to name the silent partner in Dubai.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The silent partner",
+     "situation": "Coastline Logistics, a partnership, wants a current account. The deed shows a Pune partner with 55% and 'a partner resident abroad' with 45%, name withheld. The Pune partner says the Dubai partner 'values privacy' and offers a large fixed deposit if the bank skips this.",
+     "choices": [
+      {
+       "text": "Explain that the bank must identify and verify every natural person with more than 10% of capital or profits; without it the account cannot be opened, and consider an STR if suspicion arises.",
+       "outcome": "Correct. The 45% partner is a beneficial owner. If CDD cannot be applied because the customer will not cooperate, the bank must not open the account and should consider an STR.",
+       "score": 2
+      },
+      {
+       "text": "Open the account now and collect the Dubai partner's details at the next periodic updation.",
+       "outcome": "CDD must be completed before the relationship starts. Deferring beneficial owner identification breaks the Customer Acceptance Policy.",
+       "score": 0
+      },
+      {
+       "text": "Accept a declaration from the Pune partner that the Dubai partner is not a PEP or sanctioned.",
+       "outcome": "A self-declaration about an unnamed person is not identification or verification. The bank still does not know who the beneficial owner is.",
+       "score": 0
+      },
+      {
+       "text": "Refuse the account politely and close the file without further thought.",
+       "outcome": "Refusing is right, but the bank should also record the reasons and consider whether the refusal and the incentive offered warrant an STR.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Third-party reliance: the conditions",
+     "prompt": "Match each condition for relying on CDD done by a third party.",
+     "pairs": [
+      {
+       "left": "Get the records",
+       "right": "The bank obtains the CDD records immediately from the third party or from CKYCR"
+      },
+      {
+       "left": "Copies on request",
+       "right": "The bank is satisfied the third party will provide identification copies without delay"
+      },
+      {
+       "left": "Regulated third party",
+       "right": "The third party is regulated and supervised and has CDD and record-keeping measures"
+      },
+      {
+       "left": "Country risk",
+       "right": "The third party is not based in a country assessed as high-risk"
+      },
+      {
+       "left": "Who is responsible?",
+       "right": "The bank keeps ultimate responsibility for CDD and any enhanced measures"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Customer Acceptance Policy: quick rules",
+     "cards": [
+      {
+       "front": "Benami or fictitious names?",
+       "back": "Never. No account may be opened in an anonymous, fictitious or benami name."
+      },
+      {
+       "front": "Customer will not cooperate with CDD?",
+       "back": "Do not open the account, and consider filing an STR."
+      },
+      {
+       "front": "Joint account?",
+       "back": "Apply CDD to every joint account holder."
+      },
+      {
+       "front": "Extra information beyond the KYC policy?",
+       "back": "Only with the customer's explicit consent."
+      },
+      {
+       "front": "Acting for someone else?",
+       "back": "The policy must spell out when a customer may act on behalf of another person or entity."
+      },
+      {
+       "front": "Sanctions?",
+       "back": "The bank needs a system to check that the customer does not match anyone on the lists in Chapter IX."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A partnership's deed shows four partners with 30%, 30%, 32% and 8% of profits, and no other control rights. Who are the beneficial owners under the PML Rules test?",
+     "options": [
+      "The three partners with 30%, 30% and 32%",
+      "Only the partner with 32%",
+      "All four partners",
+      "Only the managing partner who signs cheques"
+     ],
+     "answer": 0,
+     "explanation": "For a partnership, a natural person with more than 10% of capital or profits, or who controls through other means, is a beneficial owner. The 8% partner does not cross the threshold unless he has control rights."
+    },
+    {
+     "type": "example",
+     "title": "Real case: RBI penalises Yes Bank over the KYC Identifier (2026)",
+     "body": "By an order dated **27 April 2026**, RBI imposed a monetary penalty of **₹31.80 lakh** on Yes Bank Limited for not complying with certain provisions of its KYC directions.\n\nThe statutory inspection looked at the bank's position as on 31 March 2025. After a show-cause notice and a personal hearing, RBI found one charge sustained: the bank had **not put in place a system to use the KYC Identifier** assigned by the Central KYC Records Registry when establishing account-based relationships.\n\nThe penalty was imposed under section 47A(1)(c) read with section 46(4)(i) of the Banking Regulation Act, 1949. As in all such releases, RBI said it was not ruling on the validity of any customer transaction.\n\n**Lesson:** CKYCR is not optional plumbing. Retrieving records with the identifier is a regulatory duty and a better customer experience."
+    },
+    {
+     "type": "example",
+     "title": "Real case: RBI penalises Central Bank of India (2026)",
+     "body": "By an order dated **23 March 2026**, RBI imposed a penalty of **₹63.60 lakh** on Central Bank of India for non-compliance with its directions on KYC and on Basic Savings Bank Deposit Accounts.\n\nThe sustained charges were that the bank:\n- **failed to upload the KYC records of certain customers onto CKYCR within the prescribed timeline**; and\n- opened additional BSBD accounts for customers who already held one.\n\n**What the timeline is:** under Rule 9(1A) of the PML Rules, as restated in paragraph 65 of the KYC Directions, the bank must capture and upload a customer's KYC records to CKYCR **within 10 days** of starting the account-based relationship. Updated information obtained later must reach CKYCR within seven days, or any period the Government notifies.\n\n**Lesson:** back-office uploads are part of KYC. A missed batch upload can lead to a penalty just as a missed document does."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage two take-aways",
+     "items": [
+      "No anonymous, fictitious or benami accounts; no account where CDD cannot be applied, and consider an STR when a customer will not cooperate.",
+      "Identify walk-in customers for transactions of ₹50,000 or more (single or connected), for any international money transfer, and whenever structuring is suspected.",
+      "Beneficial owner thresholds: more than 10% for companies and partnerships, more than 15% for associations, 10% or more for trust beneficiaries, plus anyone with control.",
+      "Use the KYC Identifier to retrieve CKYCR records and upload new KYC records within 10 days of opening the relationship.",
+      "Relying on a third party never moves responsibility: the bank keeps ultimate responsibility for CDD."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Recall the last account you opened or reviewed. Could you name every beneficial owner and show how you verified them? What would you do differently after this stage?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-aml-s2-q1",
+     "question": "Under the KYC Directions, what is the threshold for identifying a walk-in customer (no account) for an ordinary transaction?",
+     "options": [
+      "More than ₹10 lakh in cash in a single transaction",
+      "₹2 lakh or more, counting only single transactions",
+      "₹50,000 or more, whether one transaction or several that appear connected",
+      "Any amount above ₹25,000 paid in cash"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 21 sets ₹50,000 or more, single or connected, for walk-in customers. ₹10 lakh is the cash transaction reporting threshold in the PML Rules, which is a different duty.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s2-q2",
+     "question": "A walk-in customer who has no account asks the bank to remit ₹6,000 to a cousin in Singapore. What does the bank need to do?",
+     "options": [
+      "Nothing, because the amount is below ₹50,000",
+      "Identify the customer, because any international money transfer for a non-account holder needs identification",
+      "Only record the cousin's name and bank details",
+      "Identify the customer only if he pays in cash"
+     ],
+     "answer": 1,
+     "explanation": "Identification is required for any international money transfer operation for a person who is not an account holder, regardless of amount.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s2-q3",
+     "question": "A company customer's shareholding shows: holding company A with 60% (owned 100% by Mr Rao), and five individuals with 8% each. Who is the beneficial owner?",
+     "options": [
+      "Mr Rao, who controls more than 10% through holding company A",
+      "Holding company A, as the largest shareholder",
+      "All five individuals, as together they hold 40%",
+      "Nobody, because no individual holds shares directly"
+     ],
+     "answer": 0,
+     "explanation": "Beneficial owners are natural persons who hold more than 10% acting alone or together, or through other legal persons. Mr Rao controls 60% through A. Each individual holds 8% and, absent a control arrangement, is below the threshold.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s2-q4",
+     "question": "A customer will not provide documents needed for CDD and becomes evasive when asked about the source of an initial deposit. What does the Customer Acceptance Policy require?",
+     "options": [
+      "Open the account with a low balance limit until documents arrive",
+      "Do not open the account, and consider filing an STR",
+      "Open the account if a senior manager approves an exception",
+      "Refer the customer to another bank and take no further action"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 17 says the bank must not open an account where it cannot apply CDD because of non-cooperation or unreliable information, and should consider an STR.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s2-q5",
+     "question": "Within what time must the bank upload a new customer's KYC records to the Central KYC Records Registry?",
+     "options": [
+      "Within 30 days of the start of the relationship",
+      "Within 15 days of the end of the month",
+      "At the first periodic updation of KYC",
+      "Within 10 days of the start of the account-based relationship"
+     ],
+     "answer": 3,
+     "explanation": "Rule 9(1A) of the PML Rules, restated in paragraph 65, requires upload within 10 days of commencing the account-based relationship. RBI penalised Central Bank of India in 2026 for missing this timeline.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s2-q6",
+     "question": "A customer gives her KYC Identifier. The records retrieved from CKYCR are complete and current. What should the branch do?",
+     "options": [
+      "Ask for fresh OVD copies anyway, to keep a branch file",
+      "Ask her to visit the branch with two introducers",
+      "Rely on the CKYCR records and not ask her to resubmit the same documents",
+      "Restart CDD because CKYCR data cannot be relied on"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 65 says the bank should use the KYC Identifier to obtain records and not require the customer to submit them again unless information has changed, the record is incomplete or not current, or similar exceptions apply.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s2-q7",
+     "question": "Which of the following is an officially valid document (OVD) under the KYC Directions?",
+     "options": [
+      "A PAN card",
+      "A bank passbook from another bank",
+      "A college identity card",
+      "A job card issued under NREGA and signed by a State Government officer"
+     ],
+     "answer": 3,
+     "explanation": "The OVD list is passport, driving licence, proof of possession of Aadhaar number, Voter ID, NREGA job card signed by a State Government officer, and the NPR letter. PAN is collected and verified separately.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s2-q8",
+     "question": "A customer's passport shows a Delhi address but she lives in Chennai and provides a two-month-old electricity bill for the Chennai address. What applies?",
+     "options": [
+      "The bill can serve as a deemed OVD for address, and she must give an OVD with the current address within three months",
+      "The account cannot be opened until she updates her passport",
+      "The bill is enough permanently and no further document is needed",
+      "The bank must verify the address only at periodic updation"
+     ],
+     "answer": 0,
+     "explanation": "A utility bill not more than two months old is deemed an OVD for proof of address only, and the customer must submit an OVD with the current address within three months.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s2-q9",
+     "question": "Kaveri Meridian wants to rely on CDD done by an insurance company that is regulated in India. Which statement is correct?",
+     "options": [
+      "Once it relies on the insurer, responsibility for CDD moves to the insurer",
+      "Reliance is allowed only if FIU-IND approves each case",
+      "Reliance is never allowed for account-based relationships",
+      "The bank may rely on it under conditions, but it keeps ultimate responsibility for CDD"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 22 allows reliance on a regulated third party subject to conditions, including getting the records immediately and the third party not being in a high-risk country. The bank remains ultimately responsible.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s2-q10",
+     "question": "For a trust, which persons must the bank identify as beneficial owners?",
+     "options": [
+      "Only the trustees who sign the account opening form",
+      "The author, the trustee, beneficiaries with 10% or more interest and anyone with ultimate effective control",
+      "Only beneficiaries with more than 25% interest",
+      "Only the author of the trust and the managing trustee"
+     ],
+     "answer": 1,
+     "explanation": "For trusts the definition covers the author, the trustee, beneficiaries with 10% or more interest and any natural person exercising ultimate effective control.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Risk categorisation, V-CIP, enhanced due diligence and periodic updation",
+   "stage": "The Risk Ledger",
+   "summary": "Categorise customers by risk and review them every six months, run video-based customer identification (V-CIP) to RBI's standards, apply enhanced due diligence to non-face-to-face customers and PEPs, monitor accounts and keep KYC up to date on the 2-8-10 year cycle.",
+   "minutes": 55,
+   "objectives": [
+    "Categorise customers as low, medium or high risk and keep the category confidential",
+    "Explain the V-CIP standards, including why only specially trained officials may run it",
+    "Apply enhanced due diligence to non-face-to-face onboarding and to politically exposed persons",
+    "Carry out ongoing due diligence and periodic updation of KYC within RBI's minimum periods"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage three: the risk ledger",
+     "setting": "Digital onboarding hub, Kaveri Meridian Bank, Kakkanad, Kochi. 3:40 pm.",
+     "lines": [
+      {
+       "who": "kavya",
+       "text": "Come and watch this V-CIP call. The customer keeps glancing to the left before every answer.",
+       "mood": "thinking"
+      },
+      {
+       "who": "narrator",
+       "text": "On screen, a man answers questions about his occupation. A faint second voice can be heard just before he speaks.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kavya",
+       "text": "I changed the order of my questions twice. Each time he pauses and someone off-camera whispers.",
+       "mood": "worried"
+      },
+      {
+       "who": "meera",
+       "text": "That is prompting. The Directions are clear: if the official sees prompting at the customer's end, the account opening is rejected.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kavya",
+       "text": "This is why RBI says only specially trained officials may run V-CIP. A script cannot spot this. People can.",
+       "mood": "proud"
+      },
+      {
+       "who": "arjun",
+       "text": "And when you're done, I have 2,300 accounts due for their six-monthly risk review. Anyone want to help?",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "V-CIP done right",
+     "scenes": [
+      {
+       "icon": "🎥",
+       "heading": "What V-CIP is",
+       "narration": "Video-based Customer Identification is a live, consent-based audio-visual interaction in which an authorised bank official identifies the customer. Done to RBI's standards, it counts the same as face-to-face identification."
+      },
+      {
+       "icon": "🧑‍🏫",
+       "heading": "Trained officials only",
+       "narration": "Only officials specially trained for V-CIP may run it. They must be able to check liveness and detect manipulation or suspicious behaviour, and act on what they see."
+      },
+      {
+       "icon": "🔀",
+       "heading": "Real time, not recorded",
+       "narration": "The official varies the order and type of questions to show the call is live. If someone is prompting the customer, the account opening is rejected."
+      },
+      {
+       "icon": "🛡️",
+       "heading": "Secure by design",
+       "narration": "Calls start from the bank's own secured network, block IP addresses outside India or spoofed ones, and carry GPS co-ordinates with a date and time stamp."
+      },
+      {
+       "icon": "✅",
+       "heading": "Audit before use",
+       "narration": "The official captures a photo, matches it with the Aadhaar or OVD and PAN, and the account becomes operational only after concurrent audit. Recordings are stored in India."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "During a V-CIP call, the official hears someone off-camera telling the customer how to answer. What should happen?",
+     "options": [
+      "The bank rejects the account opening process",
+      "The official notes it and completes the account opening",
+      "The call continues after the other person leaves the room",
+      "The customer is asked to come to a branch within three days to finish"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 27 says the bank shall reject the account opening process if it observes any prompting at the customer's end."
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "The clocks in RBI's KYC Directions",
+     "caption": "Minimum frequencies counted from account opening or the last KYC updation (paragraphs 41 and 42). A bank's Board-approved policy can set shorter periods.",
+     "items": [
+      {
+       "label": "Risk category review",
+       "value": "6 months",
+       "detail": "Banks review the risk categorisation of accounts at least once every six months."
+      },
+      {
+       "label": "High-risk customers",
+       "value": "2 years",
+       "detail": "Periodic updation of KYC at least once every two years."
+      },
+      {
+       "label": "Medium-risk customers",
+       "value": "8 years",
+       "detail": "Periodic updation at least once every eight years."
+      },
+      {
+       "label": "Low-risk customers",
+       "value": "10 years",
+       "detail": "Periodic updation at least once every ten years."
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Enhanced measures or standard?",
+     "prompt": "Decide whether each customer needs enhanced due diligence or monitoring under the KYC Directions.",
+     "buckets": [
+      "Enhanced measures",
+      "Standard CDD and monitoring"
+     ],
+     "items": [
+      {
+       "text": "A customer onboarded remotely through DigiLocker documents, not yet verified face to face or by V-CIP",
+       "bucket": 0
+      },
+      {
+       "text": "The brother of a serving foreign head of government opens an account",
+       "bucket": 0
+      },
+      {
+       "text": "A multi-level marketing firm receives many small cash deposits across the country",
+       "bucket": 0
+      },
+      {
+       "text": "A salaried teacher whose account was opened through a fully compliant V-CIP",
+       "bucket": 1
+      },
+      {
+       "text": "An existing customer becomes a senior executive of a foreign state-owned corporation",
+       "bucket": 0
+      },
+      {
+       "text": "A pensioner whose account receives only monthly pension credits",
+       "bucket": 1
+      },
+      {
+       "text": "An NRI onboarded with an OVD copy certified by a notary abroad",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "PEPs under RBI's Directions",
+     "body": "In the KYC Directions, **politically exposed persons** are individuals who are or have been entrusted with prominent public functions **by a foreign country**: heads of state or government, senior politicians, senior government, judicial or military officers, senior executives of state-owned corporations and important political party officials.\n\nA bank **may** serve a PEP, as customer or beneficial owner, only if, on top of normal CDD:\n- it has risk management systems to find out whether someone is a PEP;\n- it takes reasonable measures to establish the **source of funds and wealth**;\n- **senior management** approves opening the account;\n- the account is under **enhanced ongoing monitoring**;\n- if an existing customer or beneficial owner later becomes a PEP, senior management approves **continuing** the relationship.\n\nThe same rules apply to **family members and close associates** of PEPs. Your bank's policy may go further, for example for domestic public figures."
+    },
+    {
+     "type": "story",
+     "title": "The six-month backlog",
+     "setting": "Transaction monitoring room, BKC, Mumbai. 6:15 pm.",
+     "lines": [
+      {
+       "who": "arjun",
+       "text": "Some of these accounts haven't had their risk category reviewed for over a year. The system was switched off during a migration.",
+       "mood": "worried"
+      },
+      {
+       "who": "meera",
+       "text": "Then we have a regulatory breach to fix, not just a backlog. RBI has penalised banks in 2026 for not having a system of periodic risk review at all.",
+       "mood": "thinking"
+      },
+      {
+       "who": "arjun",
+       "text": "And one of the accounts belongs to Mr Anand Pillai. Long-time NRI customer in Port Louis. He was just appointed a minister in Mauritius.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "Then he is now a PEP for us. Before we decide anything, think about what the Directions require.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "A customer becomes a PEP",
+     "situation": "Mr Pillai has banked with Kaveri Meridian for 12 years: an NRE account, two fixed deposits and a home loan in Kochi. News reports confirm his appointment as a minister in Mauritius. His relationship manager says: 'He is a good customer; nothing has changed.'",
+     "choices": [
+      {
+       "text": "Flag him as a PEP, seek senior management approval to continue, establish source of funds and wealth, and put the accounts under enhanced monitoring.",
+       "outcome": "Correct. When an existing customer becomes a PEP, the bank needs senior management approval to continue, reasonable measures on source of funds and wealth, and enhanced ongoing monitoring.",
+       "score": 2
+      },
+      {
+       "text": "Close all his accounts immediately because PEPs are too risky.",
+       "outcome": "The Directions let banks serve PEPs with the right controls. Closing a long-standing relationship without assessment is not what the rules require.",
+       "score": 0
+      },
+      {
+       "text": "Keep the relationship as it is and review it at his next periodic updation.",
+       "outcome": "A change to PEP status needs action now: senior management approval and enhanced monitoring cannot wait for the next updation cycle.",
+       "score": 0
+      },
+      {
+       "text": "Raise the risk category to high, but leave approval to the relationship manager.",
+       "outcome": "Raising the risk category is right, but approval to continue must come from senior management, not the relationship manager.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Remote onboarding: two routes",
+     "caption": "Paragraphs 27 and 44 of the KYC Directions. Aadhaar OTP-based e-KYC accounts follow their own conditions in paragraph 25.",
+     "headers": [
+      "V-CIP",
+      "Other non-face-to-face"
+     ],
+     "items": [
+      {
+       "label": "Status",
+       "left": "On par with face-to-face if all V-CIP standards are met",
+       "right": "Enhanced due diligence applies"
+      },
+      {
+       "label": "Offer first?",
+       "left": "Must be offered first for remote onboarding where the bank has V-CIP",
+       "right": "Used where V-CIP is not chosen"
+      },
+      {
+       "label": "Risk category",
+       "left": "Set by the normal risk assessment",
+       "right": "High risk until verified face to face or by V-CIP"
+      },
+      {
+       "label": "First transaction",
+       "left": "No special rule",
+       "right": "Must be a credit from the customer's existing KYC-compliant bank account"
+      },
+      {
+       "label": "Address and mobile",
+       "left": "Captured during the call",
+       "right": "Positive address confirmation before operations; transactions only from the mobile number used at opening"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "V-CIP: what the official must know",
+     "cards": [
+      {
+       "front": "Who may run a V-CIP?",
+       "back": "Only bank officials specially trained for it, able to check liveness and detect fraudulent manipulation or suspicious conduct."
+      },
+      {
+       "front": "Can liveness checks exclude a customer with special needs?",
+       "back": "No. The bank must take account of special needs, and the liveness check must not exclude persons with special needs."
+      },
+      {
+       "front": "The call drops halfway. Continue?",
+       "back": "No. After a call drop or disconnection, a fresh session must be started."
+      },
+      {
+       "front": "Customer shows a printed copy of his e-PAN.",
+       "back": "Not valid. Printed copies of equivalent e-documents, including e-PAN, cannot be used for V-CIP."
+      },
+      {
+       "front": "Aadhaar XML file downloaded four working days ago?",
+       "back": "Too old. The XML file or Secure QR code must not be older than three working days on the day of V-CIP."
+      },
+      {
+       "front": "Forged identity detected on V-CIP?",
+       "back": "Report it as a cyber event under the regulatory guidelines and use the lessons to update the technology and workflows."
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Periodic updation for a change of address",
+     "prompt": "Put the steps for an individual customer who has only changed address in the right order.",
+     "steps": [
+      "Send at least three advance intimations before the due date, at least one by letter",
+      "Receive the customer's self-declaration of the new address through a registered channel",
+      "Give the customer an acknowledgement showing the date of receipt",
+      "Verify the declared address by positive confirmation within two months",
+      "Update the records promptly and send the updated KYC to CKYCR",
+      "Inform the customer of the date on which the KYC details were updated"
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Kaveri Meridian classifies a trading company as high risk. What is the latest point by which its KYC must next be updated under the Directions?",
+     "options": [
+      "Two years from account opening or the last KYC updation",
+      "Six months from account opening or the last updation",
+      "Eight years from account opening or the last updation",
+      "Only when the company reports a change in its documents"
+     ],
+     "answer": 0,
+     "explanation": "Periodic updation is at least every two years for high-risk, eight for medium-risk and ten for low-risk customers. Six months is the minimum frequency for reviewing risk categorisation, which is a different duty."
+    },
+    {
+     "type": "example",
+     "title": "Real case: RBI penalises a central co-operative bank (2026)",
+     "body": "By an order dated **3 June 2026**, RBI imposed a penalty of **₹3 lakh** on The Karnal Central Cooperative Bank Limited, Haryana, for not complying with its KYC directions.\n\nNABARD's statutory inspection looked at the bank's position as on 31 March 2025. After a show-cause notice and hearing, RBI found that the bank had failed to:\n- put in place a **system of periodic review of risk categorisation** of accounts; and\n- put in place **robust software** to identify and report suspicious transactions.\n\nIn 2026 RBI also penalised several NBFCs on the same point, e.g. Fusion Finance Limited (₹2.70 lakh, order dated 14 August 2026), for having no system to review risk categorisation at least every six months.\n\n**Lesson:** risk categories are not set once at onboarding. Without a working six-monthly review, risk-based monitoring and periodic updation both fail."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage three take-aways",
+     "items": [
+      "Customers are categorised low, medium or high risk; the category and the reasons stay confidential to avoid tipping off.",
+      "Risk categorisation is reviewed at least every six months; KYC is updated at least every 2, 8 and 10 years for high, medium and low risk.",
+      "V-CIP is run only by specially trained officials; prompting means rejection, and accounts become operational only after concurrent audit.",
+      "Non-face-to-face customers not onboarded by V-CIP are high risk until verified, and their first transaction must come from their own KYC-compliant account.",
+      "Foreign PEPs, their families and close associates need senior management approval, source of funds and wealth checks and enhanced monitoring."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If you were asked to run or supervise a V-CIP call tomorrow, what three warning signs would you watch for, and what would you do the moment you saw one?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-aml-s3-q1",
+     "question": "How often, at a minimum, must a bank review the risk categorisation of its customers' accounts?",
+     "options": [
+      "At least once a year",
+      "At least once every six months",
+      "At least once every two years",
+      "Only at periodic updation of KYC"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 41 requires a system of periodic review of risk categorisation at least once every six months. RBI has penalised banks and NBFCs in 2026 for lacking such a system.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s3-q2",
+     "question": "A customer asks why the bank has placed him in the 'high risk' category. What should the staff member do?",
+     "options": [
+      "Explain that the bank cannot share risk categorisation details, without revealing the category or reasons",
+      "Tell him the category and the reasons, as he is entitled to know",
+      "Lower the category if he provides a written explanation",
+      "Show him the internal risk scoring sheet on request"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 20 requires the bank to keep the risk category and the reasons confidential and not reveal them to the customer, to avoid tipping off.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s3-q3",
+     "question": "Which statement about V-CIP is correct under the KYC Directions?",
+     "options": [
+      "Only bank officials specially trained for V-CIP may conduct it",
+      "Any customer service agent may run it if the call is recorded",
+      "The customer must blink and smile for the liveness check to pass",
+      "It may be run from a vendor's premises outside the bank's network"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 27 limits V-CIP to specially trained officials. Specific gestures are not mandatory for liveness, and calls must originate from the bank's own secured network.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s3-q4",
+     "question": "Ms Fernandes opened her account remotely using DigiLocker documents, not by V-CIP. A week later she asks to link her husband's mobile number for transaction OTPs. What should the bank do?",
+     "options": [
+      "Link it, as spouses may share OTP numbers",
+      "Link it after a one-time OTP to the original number",
+      "Decline: transactions are permitted only from the mobile number used for account opening",
+      "Link it once she has made three successful transactions"
+     ],
+     "answer": 2,
+     "explanation": "For non-face-to-face onboarding under paragraph 44, alternate mobile numbers must not be linked after CDD for transaction OTPs or updates; transactions are allowed only from the number used at opening.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s3-q5",
+     "question": "Under the KYC Directions, which person is a PEP?",
+     "options": [
+      "A municipal ward clerk in Pune",
+      "A senior judge in Kenya who opens an account with the bank's Mumbai branch",
+      "A retired schoolteacher whose cousin is a local councillor in India",
+      "A junior officer in a foreign embassy's visa section"
+     ],
+     "answer": 1,
+     "explanation": "The Directions define PEPs as individuals entrusted with prominent public functions by a foreign country, including senior judicial officers. Junior or local roles do not meet the definition, though a bank's own policy may go further.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s3-q6",
+     "question": "An existing customer becomes a PEP. What must the bank obtain to continue the relationship?",
+     "options": [
+      "Senior management approval",
+      "FIU-IND's written consent",
+      "A fresh introduction from another customer",
+      "Approval from the branch manager only"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 45 requires senior management approval to continue the relationship when an existing customer or beneficial owner becomes a PEP.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s3-q7",
+     "question": "A low-risk individual's periodic KYC updation is due but he has not yet responded. What do the Directions say about his account?",
+     "options": [
+      "The bank allows all transactions while it completes updation within the permitted time, with regular monitoring",
+      "The bank freezes the account until he updates his KYC",
+      "The bank closes the account after the first reminder",
+      "The bank allows only credits until he updates his KYC"
+     ],
+     "answer": 0,
+     "explanation": "For low-risk individuals, paragraph 42 lets all transactions continue while updation is completed within one year of falling due (or by 30 June 2026 if later), with regular monitoring.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s3-q8",
+     "question": "Before the due date of periodic updation, what notice must the bank give the customer?",
+     "options": [
+      "One email at least 30 days before the due date",
+      "A single letter sent by registered post",
+      "No notice: the customer must track the due date",
+      "At least three advance intimations, at least one of them by letter"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 42(7) requires at least three advance intimations, including at least one by letter, and at least three reminders after the due date, including one by letter.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s3-q9",
+     "question": "An individual tells the bank through his registered email that only his address has changed. What must the bank do with the new address?",
+     "options": [
+      "Verify it through positive confirmation within two months",
+      "Accept it without verification, as the email is registered",
+      "Ask him to open a new account at the new address",
+      "Verify it at the next periodic updation"
+     ],
+     "answer": 0,
+     "explanation": "For a change in address only, the bank takes a self-declaration through a registered channel and verifies the address by positive confirmation within two months.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s3-q10",
+     "question": "Which type of transaction does paragraph 40 of the KYC Directions specifically require banks to monitor?",
+     "options": [
+      "Salary credits from a listed employer",
+      "Standing instructions for utility bills",
+      "Deposits of third-party cheques followed by large cash withdrawals",
+      "Interest credits on fixed deposits"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 40 lists large and complex transactions (including RTGS) with unusual patterns, threshold breaches, high turnover inconsistent with balances, and third-party cheque deposits followed by large cash withdrawals.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Reporting to FIU-IND, tipping off, monitoring and records",
+   "stage": "The Signal Room",
+   "summary": "Know every report a bank sends to FIU-IND (CTR, CBWTR, NTR, counterfeit currency and STR), the deadlines in Rule 8, filing through FINnet 2.0, the confidentiality and tipping-off rules, money mule accounts, alert software and the PMLA record-keeping periods.",
+   "minutes": 55,
+   "objectives": [
+    "Identify which transactions must be reported to FIU-IND and by when under Rules 3 and 8 of the PML Rules",
+    "Recognise a suspicious transaction under the Indian definition, including attempted transactions",
+    "Avoid tipping off and keep the fact of reporting confidential, without restricting accounts merely because an STR was filed",
+    "Apply the five-year record-keeping rules and RBI's expectations on money mules and alert software"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage four: the signal room",
+     "setting": "Transaction monitoring room, BKC, Mumbai. 10:05 am.",
+     "lines": [
+      {
+       "who": "arjun",
+       "text": "Look at this cluster. Fourteen new savings accounts, mostly students, opened in the last two months. Each gets dozens of small UPI credits, then cash goes out at ATMs within hours.",
+       "mood": "worried"
+      },
+      {
+       "who": "meera",
+       "text": "Classic money mule pattern. Someone is renting these accounts to move fraud proceeds.",
+       "mood": "thinking"
+      },
+      {
+       "who": "arjun",
+       "text": "The alert system flagged them three weeks ago. The first reviewer closed the alerts as 'student activity'.",
+       "mood": "angry"
+      },
+      {
+       "who": "meera",
+       "text": "That is exactly what FIU-IND criticised at a public sector bank in 2024: alerts closed with minimal justification and almost no STRs filed.",
+       "mood": "neutral"
+      },
+      {
+       "who": "meera",
+       "text": "And the Directions are blunt: if an account turns out to be a mule and we never filed an STR, RBI deems us non-compliant.",
+       "mood": "worried"
+      },
+      {
+       "who": "arjun",
+       "text": "So we reopen, investigate and get this to you for a decision today.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "From alert to FIU-IND",
+     "scenes": [
+      {
+       "icon": "🚨",
+       "heading": "Alerts",
+       "narration": "The bank must run robust software that raises alerts when transactions do not fit the customer's risk category and updated profile. RBI encourages banks to consider AI and machine learning tools to support monitoring."
+      },
+      {
+       "icon": "🔍",
+       "heading": "Investigation",
+       "narration": "Analysts review the alert against what the bank knows: the customer's business, risk profile and source of funds. Closing an alert needs a real reason on file."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "Principal Officer's decision",
+       "narration": "When the Principal Officer is satisfied a transaction is suspicious, the PML Rules require the information to be furnished promptly to the Director, FIU-IND."
+      },
+      {
+       "icon": "📤",
+       "heading": "Filing",
+       "narration": "Reports are filed in FIU-IND's prescribed formats through its FINnet 2.0 system, using the FINGate 2.0 portal on which reporting entities are registered."
+      },
+      {
+       "icon": "🤐",
+       "heading": "Silence",
+       "narration": "Everyone in the bank keeps the fact of reporting confidential. The customer is never told, and the account is not restricted merely because an STR was filed."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "The reports a bank sends to FIU-IND",
+     "caption": "Rules 3 and 8 of the PML (Maintenance of Records) Rules, 2005. Each day of delay in reporting or in correcting a misreported transaction is a separate violation.",
+     "headers": [
+      "What triggers it",
+      "When it is due"
+     ],
+     "items": [
+      {
+       "label": "Cash Transaction Report (CTR)",
+       "left": "Cash over ₹10 lakh, or connected cash transactions in a month that together exceed ₹10 lakh",
+       "right": "Monthly, by the 15th of the next month"
+      },
+      {
+       "label": "Cross-Border Wire Transfer Report",
+       "left": "Cross-border wire transfers over ₹5 lakh where the origin or destination is in India",
+       "right": "Monthly, by the 15th of the next month"
+      },
+      {
+       "label": "NPO Transaction Report",
+       "left": "Receipts by non-profit organisations of more than ₹10 lakh",
+       "right": "Monthly, by the 15th of the next month"
+      },
+      {
+       "label": "Counterfeit Currency Report",
+       "left": "Cash transactions using forged or counterfeit notes, or forged securities or documents",
+       "right": "Monthly, by the 15th of the next month"
+      },
+      {
+       "label": "Suspicious Transaction Report (STR)",
+       "left": "Any suspicious transaction, attempted or executed, cash or not, of any value",
+       "right": "Promptly, once the Principal Officer is satisfied it is suspicious"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A customer deposits ₹4 lakh in cash on the 3rd, ₹3.5 lakh on the 12th and ₹3 lakh on the 25th of the same month, all for his trading business. What does Rule 3 require?",
+     "options": [
+      "Report the series in the monthly CTR, because connected cash transactions in the month exceed ₹10 lakh",
+      "Nothing, because no single deposit exceeds ₹10 lakh",
+      "File an STR immediately, because splitting cash is always suspicious",
+      "Report only the largest deposit in the next CTR"
+     ],
+     "answer": 0,
+     "explanation": "Rule 3 covers a series of integrally connected cash transactions individually below ₹10 lakh within a month whose total exceeds ₹10 lakh. Splitting can be a red flag, but a CTR duty arises regardless; an STR depends on the facts."
+    },
+    {
+     "type": "sort",
+     "title": "CTR, STR or neither?",
+     "prompt": "Choose the right reporting route for each situation at Kaveri Meridian.",
+     "buckets": [
+      "Monthly threshold report",
+      "Consider an STR",
+      "No FIU-IND report needed"
+     ],
+     "items": [
+      {
+       "text": "A jeweller deposits ₹12 lakh in cash in one go, consistent with his known business",
+       "bucket": 0
+      },
+      {
+       "text": "A customer abandons a ₹3 lakh transfer when asked for the source of funds and leaves",
+       "bucket": 1
+      },
+      {
+       "text": "A new student account receives 40 small UPI credits a day, withdrawn in cash within hours",
+       "bucket": 1
+      },
+      {
+       "text": "An exporter receives an ₹8 lakh wire from a foreign buyer, matching its invoices",
+       "bucket": 0
+      },
+      {
+       "text": "A salaried customer pays her ₹18,000 credit card bill from her salary account",
+       "bucket": 2
+      },
+      {
+       "text": "A shell-like firm with ₹1 lakh capital shows crores of RTGS turnover passing on the same day",
+       "bucket": 1
+      },
+      {
+       "text": "A pensioner withdraws ₹20,000 in cash for household expenses",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "Tipping off and protection for reporters",
+     "body": "**Confidentiality.** Under PMLA section 12 and Rule 8, the bank, its directors, officers and all employees must keep confidential the fact that records are maintained and information is furnished to FIU-IND. Group-wide information sharing must include safeguards against tipping off.\n\n**Do not alert the customer.** If staff suspect money laundering or terrorist financing and reasonably believe that carrying on with CDD would tip off the customer, the Directions say **stop the CDD and file an STR** instead. The customer's risk category and the reasons for it are also kept confidential.\n\n**Do not punish on the STR alone.** The bank must not restrict operations in an account merely because an STR has been filed. Any restriction needs its own legal basis, such as a freezing order.\n\n**Protection.** Section 14 of the PMLA says the bank, its directors and employees are not liable to civil or criminal proceedings for furnishing information to FIU-IND under section 12, except as section 13 provides."
+    },
+    {
+     "type": "story",
+     "title": "The teller's question",
+     "setting": "Shivajinagar branch, Pune. 2:30 pm.",
+     "lines": [
+      {
+       "who": "farhan",
+       "text": "One of the mule accounts belongs to a student who walked in today to withdraw cash. My teller wants to ask her outright: 'Are you renting out your account?'",
+       "mood": "worried"
+      },
+      {
+       "who": "meera",
+       "text": "Careful. An STR is being prepared on that account. Questions that hint at a report could tip her off.",
+       "mood": "neutral"
+      },
+      {
+       "who": "farhan",
+       "text": "Then should we just block the account until FIU-IND replies?",
+       "mood": "thinking"
+      },
+      {
+       "who": "meera",
+       "text": "Not merely because of the STR. If there are fraud complaints or a legal order, those are separate grounds. Let's think it through.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Handling the customer under an STR",
+     "situation": "The student asks to withdraw ₹45,000 in cash. The STR on her account will be filed today. There is no freezing order, no fraud complaint naming her account, and her KYC is complete.",
+     "choices": [
+      {
+       "text": "Process the request normally, record any unusual behaviour for the Principal Officer, and say nothing about monitoring or reports.",
+       "outcome": "Correct. The fact of reporting stays confidential, and the bank must not restrict the account merely because an STR is filed. New observations go to the Principal Officer to update the case.",
+       "score": 2
+      },
+      {
+       "text": "Refuse the withdrawal and tell her the account is under review by FIU-IND.",
+       "outcome": "This tips her off and restricts the account solely because of the STR, both of which the rules prohibit.",
+       "score": 0
+      },
+      {
+       "text": "Ask her detailed questions about who controls the account before paying.",
+       "outcome": "Normal questions are fine, but probing that signals suspicion can tip her off. Her KYC is complete, so heavy questioning now adds risk without legal need.",
+       "score": 1
+      },
+      {
+       "text": "Delay the payment until the STR is filed, then pay without explanation.",
+       "outcome": "An unexplained delay tied to the STR is still a restriction based on the report, and it may alert the customer.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "The STR path at Kaveri Meridian",
+     "prompt": "Put the steps in the order they should happen.",
+     "steps": [
+      "Alert software flags transactions that do not match the customer's risk profile",
+      "An analyst investigates and records reasons, escalating if suspicion remains",
+      "The case goes to the Principal Officer with the evidence gathered",
+      "The Principal Officer decides the transaction is suspicious",
+      "The STR is filed promptly with FIU-IND through its reporting portal",
+      "The case file is kept confidential and retained under the PMLA record rules"
+     ]
+    },
+    {
+     "type": "match",
+     "title": "What to keep, and for how long",
+     "prompt": "Match each record to its PMLA and RBI retention rule.",
+     "pairs": [
+      {
+       "left": "Transaction records",
+       "right": "At least five years from the date of the transaction"
+      },
+      {
+       "left": "Identity and address records",
+       "right": "At least five years after the relationship ends or the account closes, whichever is later"
+      },
+      {
+       "left": "What a transaction record must show",
+       "right": "Nature, amount and currency, date, and the parties involved"
+      },
+      {
+       "left": "Access by authorities",
+       "right": "Identification and transaction data made available swiftly on request"
+      },
+      {
+       "left": "Wire transfer data at an intermediary bank",
+       "right": "If details cannot travel with the domestic leg, keep all information received for at least five years"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "What makes a transaction 'suspicious' in India?",
+     "cards": [
+      {
+       "front": "Does value matter?",
+       "back": "No. Proceeds of a scheduled offence can be suspicious regardless of the value involved."
+      },
+      {
+       "front": "Does the transaction need to complete?",
+       "back": "No. Attempted transactions are included, so a customer who walks away can still be reported."
+      },
+      {
+       "front": "Is cash required?",
+       "back": "No. Suspicious transactions can be in cash or by any other means, including electronic transfers."
+      },
+      {
+       "front": "Complexity?",
+       "back": "A transaction made in circumstances of unusual or unjustified complexity can be suspicious."
+      },
+      {
+       "front": "No obvious reason?",
+       "back": "A transaction that seems to have no economic rationale or genuine purpose can be suspicious."
+      },
+      {
+       "front": "Terrorism?",
+       "back": "Reasonable grounds to suspect funds are linked to, or meant for, terrorism or terrorists make it suspicious."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "funnel",
+     "title": "How the signal narrows",
+     "caption": "A healthy funnel closes alerts for documented reasons, not to clear a queue.",
+     "items": [
+      {
+       "label": "Transaction data",
+       "detail": "Every transaction runs through the bank's monitoring rules and models."
+      },
+      {
+       "label": "Alerts",
+       "detail": "Transactions that do not fit the customer's risk category and profile."
+      },
+      {
+       "label": "Investigations",
+       "detail": "Alerts that remain unexplained after review of the customer's profile."
+      },
+      {
+       "label": "STRs to FIU-IND",
+       "detail": "Cases the Principal Officer is satisfied are suspicious."
+      },
+      {
+       "label": "Intelligence",
+       "detail": "FIU-IND analyses reports and shares results with enforcement agencies."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "The Principal Officer is satisfied on 9 June that a transaction is suspicious. When must the STR be furnished to FIU-IND?",
+     "options": [
+      "By 15 July, with the monthly reports",
+      "Promptly, once she is satisfied that it is suspicious",
+      "Within 30 days of the transaction date",
+      "At the end of the quarter, with other STRs"
+     ],
+     "answer": 1,
+     "explanation": "Rule 8(2) requires the Principal Officer to furnish suspicious transaction information promptly once satisfied it is suspicious. The 15th-of-the-month deadline applies to CTRs and other threshold reports."
+    },
+    {
+     "type": "example",
+     "title": "Real case: FIU-IND fines Union Bank of India ₹54 lakh (2024)",
+     "body": "After an observation by FIU-IND, a review of **Union Bank of India** found current accounts at a Mumbai branch used by an NBFC and associated entities for heavy **circular fund transfers**. The entities shared a registered address and beneficial owners, had authorised capital of only ₹1 lakh each, yet showed turnover far beyond their declared business, mainly RTGS inflows passed quickly to group entities.\n\nOnly **one STR** had been filed despite the volumes, and many **alerts were closed with minimal justification**.\n\nBy Order-in-Original No. 13/DIR/FIU-IND/2024 (October 2024), the Director imposed **₹54 lakh** for failing to report STRs, to carry out ongoing due diligence, to review CDD and to run an internal mechanism to detect and report suspicious transactions. FIU-IND also directed a review of due diligence and of how alerts are closed.\n\n**Lesson:** a closed alert without reasons is a reporting failure waiting to be found."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage four take-aways",
+     "items": [
+      "CTR, cross-border wire transfer, NPO and counterfeit currency reports are monthly, due by the 15th of the next month; STRs go promptly once the Principal Officer is satisfied.",
+      "Thresholds: cash over ₹10 lakh (single or connected within a month), cross-border wires over ₹5 lakh, NPO receipts over ₹10 lakh. STRs have no threshold.",
+      "Each day of delay in reporting or correcting a report is a separate violation.",
+      "Never tip off: keep reporting confidential, stop CDD and file an STR if CDD would alert the customer, and do not restrict an account merely because of an STR.",
+      "Keep transaction records five years from the transaction and identity records five years after the relationship ends; a mule account with no STR means the bank is deemed non-compliant."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of an alert or unusual transaction you have seen. Would your file note convince an FIU-IND reviewer that it was closed for a real reason? What would you add?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-aml-s4-q1",
+     "question": "By when must a bank's monthly Cash Transaction Report reach FIU-IND?",
+     "options": [
+      "By the 15th day of the following month",
+      "By the 7th working day of the following month",
+      "By the last day of the following month",
+      "Within 30 days of each cash transaction"
+     ],
+     "answer": 0,
+     "explanation": "Rule 8(1) requires the Principal Officer to furnish CTR and other monthly threshold information by the 15th of the succeeding month.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s4-q2",
+     "question": "A customer starts a ₹2 lakh cash deposit, but cancels it when the cashier asks for his PAN, saying he will 'come back with a smaller amount'. What should the bank consider?",
+     "options": [
+      "Nothing, because the transaction was never completed",
+      "An STR, because attempted transactions are covered and the behaviour suggests avoidance",
+      "A CTR, because the cash was presented at the counter",
+      "Closing his account immediately without any report"
+     ],
+     "answer": 1,
+     "explanation": "The definition of suspicious transaction includes attempted transactions of any value. A CTR applies only to cash over ₹10 lakh, and closing the account is not the required response.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q3",
+     "question": "An STR has been filed on a customer. She then asks to transfer funds to her own account at another bank. There is no freezing order. What is correct?",
+     "options": [
+      "The bank must block all debits until FIU-IND responds",
+      "The bank must tell her that a report was filed before acting",
+      "The bank must not restrict the account merely because an STR was filed",
+      "The bank must close the account within seven days"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 54 says the bank shall not restrict operations merely on the basis of an STR, and the fact of reporting must stay confidential.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q4",
+     "question": "During onboarding, a teller grows suspicious that the applicant is a front for someone else and believes further CDD questions would alert him. What do the Directions require?",
+     "options": [
+      "Complete CDD fully and then decide whether to report",
+      "Stop the CDD process and file an STR",
+      "Ask the applicant directly whether he is acting for someone else",
+      "Open the account and monitor it closely for six months"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 19 says that where the bank suspects ML or TF and reasonably believes CDD would tip off the customer, it should not pursue CDD and should file an STR instead.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s4-q5",
+     "question": "Which cross-border wire transfers must be reported to FIU-IND in the monthly report under Rule 3?",
+     "options": [
+      "All cross-border wire transfers of any value",
+      "Those of more than ₹5 lakh where the origin or destination of funds is in India",
+      "Only outward transfers above ₹10 lakh",
+      "Only transfers involving high-risk countries"
+     ],
+     "answer": 1,
+     "explanation": "Rule 3(1)(E) covers cross-border wire transfers of more than ₹5 lakh, or the foreign currency equivalent, where either the origin or the destination is in India.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q6",
+     "question": "Kaveri Meridian closes a customer's account in March 2026. Until when, at least, must it keep the customer's identification records?",
+     "options": [
+      "Until at least March 2029",
+      "Until at least the end of 2026",
+      "Until at least March 2036",
+      "Until at least March 2031"
+     ],
+     "answer": 3,
+     "explanation": "Identification records must be kept for at least five years after the business relationship ends or the account is closed, whichever is later.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s4-q7",
+     "question": "An investigation proves that an account opened at Kaveri Meridian was operated as a money mule, but no STR was ever filed. What is the consequence under the KYC Directions?",
+     "options": [
+      "No consequence if the bank closes the account promptly",
+      "Only the account-opening officer is held responsible",
+      "The bank is deemed not to have complied with the Directions",
+      "The bank must refund the defrauded victims in full"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 68 says that if an account is established to be a money mule but the bank did not file an STR, the bank is deemed not to have complied with the Directions.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q8",
+     "question": "A CTR for the previous month was filed late by four days. How does Rule 8 treat the delay?",
+     "options": [
+      "The delay is excused if the report was eventually filed",
+      "The four days count together as one violation",
+      "Each day of delay counts as a separate violation",
+      "Delays are treated as violations only for STRs"
+     ],
+     "answer": 2,
+     "explanation": "Rule 8(4) and paragraph 54 say each day of delay in reporting, or in correcting a misreported transaction, is a separate violation.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q9",
+     "question": "A branch employee files an STR in good faith and the customer threatens to sue her for defamation. What protection does the PMLA give?",
+     "options": [
+      "None; she must rely on the bank's insurance policy",
+      "Protection applies only to the Principal Officer, not to other staff",
+      "Section 14 protects the bank and its employees from civil or criminal proceedings for furnishing the information",
+      "Protection applies only if FIU-IND later confirms the suspicion"
+     ],
+     "answer": 2,
+     "explanation": "Section 14 says the reporting entity, its directors and employees are not liable to civil or criminal proceedings for furnishing information under section 12(1)(b), except as section 13 provides.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s4-q10",
+     "question": "In its 2024 order against Union Bank of India, which practice did FIU-IND criticise?",
+     "options": [
+      "Filing too many defensive STRs on low-risk customers",
+      "Sharing STRs with the customer's auditors",
+      "Uploading KYC records to CKYCR late",
+      "Closing alerts with minimal justification while filing only one STR"
+     ],
+     "answer": 3,
+     "explanation": "FIU-IND's order summary notes that only one STR was filed despite high volumes and that alerts were closed with minimal justification. It imposed ₹54 lakh.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Sanctions, wire transfers, correspondent banking and programme readiness",
+   "stage": "The Final Audit",
+   "summary": "Screen against the UNSC and Government of India lists under UAPA section 51A and WMD Act section 12A, carry complete originator and beneficiary data on wire transfers, run correspondent banking due diligence, and bring the bank's whole AML/CFT programme together for audit and the final exam.",
+   "minutes": 60,
+   "objectives": [
+    "Apply the daily list checks and match procedures under UAPA section 51A, WMD Act section 12A and the UNSCR 1718 Order",
+    "State the information that must travel with cross-border and domestic wire transfers, and each bank's role in the chain",
+    "Carry out correspondent banking due diligence, including the shell bank prohibition and approvals",
+    "Summarise the programme RBI expects: risk assessment, policy, audit, training and regulatory recap"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage five: the final audit",
+     "setting": "Financial institutions desk, Kaveri Meridian Bank, Connaught Place, New Delhi. 8:45 am.",
+     "lines": [
+      {
+       "who": "vikram",
+       "text": "Internal audit starts its AML review on Monday. As Designated Director, I want to walk in knowing every gap.",
+       "mood": "thinking"
+      },
+      {
+       "who": "meera",
+       "text": "Three areas worry me: sanctions screening, wire transfer data and a new correspondent request from an offshore bank.",
+       "mood": "worried"
+      },
+      {
+       "who": "arjun",
+       "text": "The sanctions team flagged an overnight update to the UN list. Our screening ran at 6 am, so we're covered for today.",
+       "mood": "proud"
+      },
+      {
+       "who": "kavya",
+       "text": "And the payments team says some inward SWIFT messages arrive with the originator's address missing. They've been processing them anyway.",
+       "mood": "worried"
+      },
+      {
+       "who": "vikram",
+       "text": "Then let's go through each one. By Monday I want answers, not surprises.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Sanctions duties in India",
+     "scenes": [
+      {
+       "icon": "🛑",
+       "heading": "UAPA section 51A",
+       "narration": "Banks must not hold accounts for individuals or entities on the UN Security Council's ISIL and Al-Qaida list or the Taliban list, or in the schedules to the 2007 Order that implements Security Council resolutions."
+      },
+      {
+       "icon": "📅",
+       "heading": "Every single day",
+       "narration": "Banks verify these lists daily and take every addition, deletion or change into account. Accounts resembling listed names are reported to FIU-IND and the Ministry of Home Affairs is advised, following the UAPA Order of 2 February 2021."
+      },
+      {
+       "icon": "☢️",
+       "heading": "WMD Act section 12A",
+       "narration": "Under the Finance Ministry's Order of 1 September 2023, banks must not carry out transactions for persons on the designated list, and must check customers at onboarding and periodically. The Director, FIU-IND is the Central Nodal Officer."
+      },
+      {
+       "icon": "🇰🇵",
+       "heading": "UNSCR 1718",
+       "narration": "Banks also check the UNSCR 1718 list on North Korea every day and comply with the Government's 2017 Order implementing it."
+      },
+      {
+       "icon": "🌍",
+       "heading": "FATF-listed countries",
+       "narration": "For countries the FATF calls out, banks apply effective, proportionate enhanced due diligence, examine the background and purpose of transactions and keep written findings, while legitimate trade can continue."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "A match under WMD Act section 12A",
+     "caption": "Paragraph 57 of the KYC Directions, which applies the Order of 1 September 2023. For UAPA matches, follow the 2021 Order reproduced in Annex I of the Directions.",
+     "items": [
+      {
+       "label": "Screen",
+       "detail": "Check customers at onboarding and periodically against the designated list on FIU-IND's portal."
+      },
+      {
+       "label": "Stop",
+       "detail": "Do not carry out any transaction where the particulars match the designated list."
+      },
+      {
+       "label": "Inform the CNO",
+       "detail": "Immediately send full particulars of the funds or assets to the Central Nodal Officer (Director, FIU-IND)."
+      },
+      {
+       "label": "Copy",
+       "detail": "Send a copy to the State Nodal Officer where the account is held and to RBI."
+      },
+      {
+       "label": "Freeze",
+       "detail": "On a freezing order from the CNO, act without delay."
+      },
+      {
+       "label": "Unfreezing requests",
+       "detail": "Forward any unfreezing application with asset details to the CNO within two working days."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "How often must a bank verify the UNSC sanctions lists and the lists in the schedules to the 2007 Order under the KYC Directions?",
+     "options": [
+      "Weekly",
+      "Monthly, with the CTR",
+      "Daily",
+      "Only when RBI circulates an update"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 56 requires the bank to verify these lists on a daily basis and take additions, deletions and changes into account. Paragraph 58 also requires daily checks of the UNSCR 1718 list."
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "What must travel with a wire transfer",
+     "caption": "Paragraph 74 of the KYC Directions. Domestic transfers by account holders carry the same information as cross-border ones. Ordinary card purchases and FI-to-FI transfers for their own account are outside these rules.",
+     "headers": [
+      "Cross-border",
+      "Domestic, originator not an account holder"
+     ],
+     "items": [
+      {
+       "label": "Originator name",
+       "left": "Always required",
+       "right": "Required if the transfer is ₹50,000 or more"
+      },
+      {
+       "label": "Originator account number",
+       "left": "Required, or a unique transaction reference if there is no account",
+       "right": "Required (or unique reference) if ₹50,000 or more"
+      },
+      {
+       "label": "Originator address or ID",
+       "left": "Address, national ID number, customer ID number, or date and place of birth",
+       "right": "Required if ₹50,000 or more"
+      },
+      {
+       "label": "Beneficiary name and account",
+       "left": "Always required (or unique reference)",
+       "right": "Required if ₹50,000 or more"
+      },
+      {
+       "label": "Below ₹50,000?",
+       "left": "No lower limit for cross-border transfers",
+       "right": "Unique reference enough if details can be provided within three working days on request"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Who does what in a wire transfer chain?",
+     "prompt": "Match each bank's role with its duty under paragraph 74.",
+     "pairs": [
+      {
+       "left": "Ordering bank",
+       "right": "Includes complete originator and beneficiary data and does not execute the transfer if it cannot comply"
+      },
+      {
+       "left": "Intermediary bank",
+       "right": "Keeps all information with the transfer and has risk-based rules to execute, reject or suspend incomplete ones"
+      },
+      {
+       "left": "Beneficiary bank",
+       "right": "Uses post-event or real-time monitoring to spot transfers missing required information"
+      },
+      {
+       "left": "Bank on both sides",
+       "right": "Considers information from both sides when deciding whether to file an STR"
+      },
+      {
+       "left": "Any bank, cross-border",
+       "right": "Must not process cross-border transactions of designated persons and entities"
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "Correspondent banking under the Directions",
+     "body": "Cross-border correspondent relationships need a **policy approved by the Board, or by a committee headed by the Chairman, CEO or MD**, setting the parameters for approval. On top of normal CDD, the bank must:\n- gather enough information to understand the **respondent's business**, management, purpose of the account and any third parties using it;\n- judge from public information its **reputation and quality of supervision**, including any ML/TF investigation or regulatory action;\n- **assess the respondent's AML/CFT controls**;\n- get **prior senior management approval**, then **post facto approval** of the Board or empowered committee;\n- **document** each institution's AML/CFT responsibilities.\n\nFor **payable-through accounts**, the bank must be satisfied the respondent has done CDD on customers with direct access and can supply CDD information immediately on request.\n\n**Never** deal with a **shell bank**, and make sure respondents do not let shell banks use their accounts. Take extra care with respondents in jurisdictions with strategic AML/CFT deficiencies."
+    },
+    {
+     "type": "story",
+     "title": "The offshore request",
+     "setting": "Financial institutions desk, Connaught Place. 11:30 am.",
+     "lines": [
+      {
+       "who": "meera",
+       "text": "The respondent, Halcyon Trust Bank, is licensed in a small island jurisdiction. Its 'head office' is a registered agent's address. No staff, no management on the island.",
+       "mood": "worried"
+      },
+      {
+       "who": "vikram",
+       "text": "But the relationship manager says it would bring in large USD deposits from a regulated group.",
+       "mood": "thinking"
+      },
+      {
+       "who": "meera",
+       "text": "Is it part of a regulated financial group under effective consolidated supervision? He couldn't tell me.",
+       "mood": "neutral"
+      },
+      {
+       "who": "vikram",
+       "text": "Then we need a decision rule before Monday's audit.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Halcyon Trust Bank",
+     "situation": "Halcyon is incorporated and licensed offshore, has no meaningful management or staff there, and its relationship manager cannot show it belongs to any regulated group under consolidated supervision. It asks for a USD vostro account and payable-through access for its own clients.",
+     "choices": [
+      {
+       "text": "Decline: on these facts Halcyon meets the definition of a shell bank, and the Directions forbid correspondent relationships with shell banks.",
+       "outcome": "Correct. A bank with no physical presence (meaningful mind and management) where it is licensed, and no affiliation with a supervised regulated group, is a shell bank. No approval can cure that.",
+       "score": 2
+      },
+      {
+       "text": "Proceed if senior management approves now and the Board ratifies it later.",
+       "outcome": "The approval route applies to permitted relationships. It cannot authorise a relationship with a shell bank.",
+       "score": 0
+      },
+      {
+       "text": "Open the vostro account but refuse payable-through access.",
+       "outcome": "Limiting the product does not change who the respondent is. Any correspondent relationship with a shell bank is prohibited.",
+       "score": 0
+      },
+      {
+       "text": "Ask for more evidence of group membership and physical presence before deciding, and do not open anything meanwhile.",
+       "outcome": "Reasonable while facts are unclear, but if the evidence does not appear, the answer must be a clear decline and the file should record why.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Compliant or a breach?",
+     "prompt": "Classify each practice found by internal audit.",
+     "buckets": [
+      "Compliant",
+      "Breach to fix"
+     ],
+     "items": [
+      {
+       "text": "Sanctions lists are refreshed in the screening tool every morning",
+       "bucket": 0
+      },
+      {
+       "text": "Inward SWIFT payments missing originator data are processed without any rule or follow-up",
+       "bucket": 1
+      },
+      {
+       "text": "A new correspondent relationship was approved by senior management and ratified by the Board later",
+       "bucket": 0
+      },
+      {
+       "text": "A respondent bank allows a shell bank to use its account with us",
+       "bucket": 1
+      },
+      {
+       "text": "The ML/TF risk assessment was last reviewed 20 months ago",
+       "bucket": 1
+      },
+      {
+       "text": "Quarterly KYC audit notes go to the Audit Committee",
+       "bucket": 0
+      },
+      {
+       "text": "A new instant-payment product was launched before any ML/TF risk assessment",
+       "bucket": 1
+      },
+      {
+       "text": "Written findings on transactions with a FATF-listed country are kept on file",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "Kaveri Meridian's AML/CFT programme cycle",
+     "caption": "Paragraphs 10-12, 72 and 79 of the KYC Directions. The audit function itself must be staffed with people well trained in KYC/AML/CFT.",
+     "items": [
+      {
+       "label": "Risk assessment",
+       "detail": "Documented, proportionate, reviewed at least annually and presented to the Board."
+      },
+      {
+       "label": "Policy and controls",
+       "detail": "Board-approved KYC policy and a risk-based approach, including for new products."
+      },
+      {
+       "label": "People",
+       "detail": "Know Your Employee screening and ongoing training tailored to each role."
+      },
+      {
+       "label": "Operate",
+       "detail": "CDD, monitoring, screening and prompt reporting to FIU-IND."
+      },
+      {
+       "label": "Assure",
+       "detail": "Independent evaluation, concurrent and internal audit, quarterly notes to the Audit Committee."
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Audit-day questions",
+     "cards": [
+      {
+       "front": "How often is the ML/TF risk assessment reviewed?",
+       "back": "At least annually, at a periodicity the Board or its committee sets; the outcome goes to the Board and is available to competent authorities."
+      },
+      {
+       "front": "When must a new product be risk-assessed?",
+       "back": "Before it is launched or used, with a risk-based approach to manage what the assessment finds."
+      },
+      {
+       "front": "Who must be trained?",
+       "back": "Staff through an ongoing programme on the KYC/AML/CFT policy, focused differently for frontline, compliance and onboarding staff; audit staff must be well versed too."
+      },
+      {
+       "front": "What is Know Your Employee?",
+       "back": "A screening mechanism built into recruitment, so that staff handling KYC/AML/CFT have integrity and sound knowledge."
+      },
+      {
+       "front": "Can the bank deal with FATF-listed countries?",
+       "back": "Yes, legitimate trade can continue, but with effective, proportionate EDD and written findings kept for RBI."
+      },
+      {
+       "front": "Who fines for breaches?",
+       "back": "FIU-IND under PMLA section 13 for reporting-entity failures; RBI under the Banking Regulation Act for breaches of its Directions."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "An ordering bank cannot obtain the originator information required for a cross-border wire transfer. What must it do?",
+     "options": [
+      "Execute it and send the details within three working days",
+      "Not execute the wire transfer",
+      "Execute it if the amount is below ₹5 lakh",
+      "Execute it and file a CTR for the month"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 74 says the ordering bank shall not execute the wire transfer if it cannot comply with the information requirements. The three-working-day window is only for small domestic transfers by non-account holders."
+    },
+    {
+     "type": "example",
+     "title": "Real case: RBI's KYC/AML penalties on six banks (2013)",
+     "body": "In August 2013 RBI announced penalties on six banks, from **₹0.50 crore to ₹2 crore** each (about ₹6.5 crore in all), for violating its instructions on KYC and AML. The banks were Allahabad Bank, Bank of Maharashtra, Corporation Bank, Dena Bank, IDBI Bank and Indian Bank. A seventh bank received only a cautionary letter.\n\nRBI's scrutiny in April and May 2013 found lapses such as:\n- customer identification, **risk categorisation** and **periodic review of risk profiles**;\n- **periodic KYC updation**;\n- KYC for **walk-in customers**, including for third-party products;\n- **omissions in cash transaction reports**.\n\n**Lesson:** the same weaknesses still feature in RBI and FIU-IND orders more than a decade later. That is why this quest has drilled them."
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "Recent enforcement at a glance (2024-2026)",
+     "caption": "Dates are the dates of the orders, taken from RBI press releases and FIU-IND's order summary.",
+     "items": [
+      {
+       "label": "Central Bank of India",
+       "value": "₹63.60 lakh",
+       "detail": "RBI, March 2026: KYC records not uploaded to CKYCR in time, plus BSBD account lapses."
+      },
+      {
+       "label": "Union Bank of India",
+       "value": "₹54 lakh",
+       "detail": "FIU-IND, October 2024: unreported suspicious transactions and weak ongoing due diligence."
+      },
+      {
+       "label": "Yes Bank",
+       "value": "₹31.80 lakh",
+       "detail": "RBI, April 2026: no system to use the CKYCR KYC Identifier at onboarding."
+      },
+      {
+       "label": "Monghyr-Jamui CCB",
+       "value": "₹5 lakh",
+       "detail": "RBI, September 2026: KYC records not uploaded to CKYCR within the timeline."
+      }
+     ]
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage five take-aways",
+     "items": [
+      "Check the UNSC, 2007 Order and UNSCR 1718 lists daily; never hold accounts for listed persons; report resembling accounts to FIU-IND and advise MHA under the 2021 UAPA Order.",
+      "Under WMD Act section 12A, do not transact with designated persons, inform the Director, FIU-IND (the CNO) immediately and copy the State Nodal Officer and RBI.",
+      "Cross-border wires must carry full originator and beneficiary data; an ordering bank that cannot comply must not send the transfer.",
+      "Correspondent banking needs respondent due diligence, prior senior management and post facto Board approval, documented responsibilities and no shell banks.",
+      "The programme rests on an annual ML/TF risk assessment, a Board-approved KYC policy, independent audit with quarterly notes, and ongoing role-based training."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Imagine internal audit visits your team next week. Which one practice from this quest would you most want to check first, and what evidence would show it works?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-aml-s5-q1",
+     "question": "Under paragraph 56 of the KYC Directions, which UN lists must banks check for UAPA section 51A purposes?",
+     "options": [
+      "Only the OFAC SDN list published in the United States",
+      "Only lists published by the Indian Banks' Association",
+      "The ISIL (Da'esh) and Al-Qaida Sanctions List and the Taliban Sanctions List",
+      "The FATF grey list and the FATF black list"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 56 names the UNSC ISIL (Da'esh) and Al-Qaida list and the Taliban list, plus the schedules to the 2007 Order. OFAC and FATF statements are different instruments.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s5-q2",
+     "question": "A customer's name matches an entry on the designated list under section 12A of the WMD Act. Whom must the bank inform immediately?",
+     "options": [
+      "The local police station, with a copy to the customer",
+      "The Central Nodal Officer, i.e. the Director, FIU-IND, with copies to the State Nodal Officer and RBI",
+      "The Ministry of External Affairs only",
+      "Its correspondent bank abroad, which handles the freeze"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 57 requires immediate information with full particulars to the CNO (Director, FIU-IND), with a copy to the State Nodal Officer and RBI.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s5-q3",
+     "question": "The sanctions team updated the screening lists last on Monday. It is now Thursday and a new UN listing was published on Tuesday. What is the issue?",
+     "options": [
+      "No issue, because weekly updates are acceptable",
+      "No issue, because UN listings take effect only after RBI circulates them",
+      "The only issue is that MHA must be told of the delay",
+      "The Directions require the lists to be verified daily, so Tuesday's change should already be in use"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 56 requires daily verification of the lists, taking additions, deletions and changes into account for meticulous compliance.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s5-q4",
+     "question": "A non-account holder asks the bank to send ₹60,000 by NEFT to a supplier in Jaipur. What information must accompany the transfer?",
+     "options": [
+      "Full originator and beneficiary information, as for a cross-border transfer",
+      "Only a unique transaction reference number",
+      "Only the beneficiary's account number and IFSC",
+      "No information, because domestic transfers are exempt"
+     ],
+     "answer": 0,
+     "explanation": "Domestic wire transfers of ₹50,000 and above where the originator is not an account holder must carry the same originator and beneficiary information as cross-border transfers.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s5-q5",
+     "question": "Which approval is required to establish a new cross-border correspondent banking relationship?",
+     "options": [
+      "Prior approval from RBI's Foreign Exchange Department",
+      "Prior approval from senior management, followed by post facto approval of the Board or empowered committee",
+      "Approval of the Principal Officer only",
+      "Post facto approval of the Audit Committee only"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 73 requires prior senior management approval and post facto approval from the Board or the empowered committee.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s5-q6",
+     "question": "Under the KYC Directions, what is a shell bank?",
+     "options": [
+      "A bank with no physical presence where it is licensed and no affiliation with a supervised regulated group",
+      "Any bank incorporated in an offshore financial centre",
+      "A bank that offers only correspondent and trade services",
+      "Any bank that has been fined for AML failures"
+     ],
+     "answer": 0,
+     "explanation": "A shell bank lacks meaningful mind and management in its country of incorporation and licensing and is unaffiliated with a regulated group under effective consolidated supervision.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s5-q7",
+     "question": "How often, at a minimum, must the bank review its ML/TF risk assessment?",
+     "options": [
+      "At least every six months",
+      "At least annually",
+      "At least every three years",
+      "Only after an RBI inspection"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 10 lets the Board set the periodicity in line with the assessment's outcome, but the bank must review it at least annually.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-aml-s5-q8",
+     "question": "Kaveri Meridian plans to launch a new prepaid instant-payment product next month. What do the Directions require first?",
+     "options": [
+      "FIU-IND registration of the product before launch",
+      "An ML/TF risk assessment before the product is launched, and risk-based controls to manage the risks found",
+      "A risk assessment within six months after the launch",
+      "Approval from the Indian Banks' Association"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 72 requires ML/TF risk assessments before launching new products, practices or technologies, and a risk-based approach to managing the risks.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-aml-s5-q9",
+     "question": "A beneficiary bank keeps receiving cross-border transfers from one ordering bank with the originator information missing. What should it have?",
+     "options": [
+      "A rule to credit all such transfers and ignore the gaps",
+      "A rule to return all such transfers without review",
+      "A rule to report all such transfers in the monthly CTR",
+      "Risk-based policies to decide when to execute, reject or suspend such transfers and what follow-up to take"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 74 requires beneficiary banks to identify transfers lacking required information and to have risk-based policies on executing, rejecting or suspending them, including follow-up and STRs where suspicious.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-aml-s5-q10",
+     "question": "Which statement about transactions with countries named in FATF statements is correct under the Directions?",
+     "options": [
+      "Legitimate trade may continue, but with effective, proportionate EDD and written findings kept for RBI",
+      "All transactions with such countries are prohibited",
+      "No extra measures are needed unless RBI names the customer",
+      "Only transactions above ₹10 lakh need any review"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 61 requires EDD proportionate to the risk, examination of background and purpose, and retained written findings, while not precluding legitimate trade.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "in",
+  "programs": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11,
+   15,
+   17,
+   22,
+   24,
+   25,
+   26
+  ],
+  "classification": "mandatory-explicit",
+  "frequency": [
+   "periodic",
+   "role"
+  ],
+  "regulators": [
+   "Reserve Bank of India (RBI)",
+   "Financial Intelligence Unit - India (FIU-IND)"
+  ],
+  "references": [
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Paragraph 79 (Hiring of Employees and Employee training)",
+    "note": "Know Your Employee screening, KYC/AML/CFT staff with integrity and sound knowledge, and an ongoing training programme focused differently for frontline, compliance and onboarding staff, with trained audit staff.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Paragraphs 6-15 (KYC policy, ML/TF risk assessment, compliance, Designated Director, Principal Officer)",
+    "note": "Board-approved KYC policy, risk assessment reviewed at least annually, independent evaluation and audit, and separate Designated Director and Principal Officer notified to FIU-IND and RBI.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Chapters III-VI (paragraphs 16-49: acceptance, risk management, CIP, CDD, V-CIP, beneficial owner, ongoing due diligence, periodic updation, EDD, PEPs)",
+    "note": "Customer acceptance rules, ₹50,000 identification threshold, beneficial owner tests, V-CIP standards with specially trained officials, six-monthly risk review, 2/8/10-year updation, EDD for non-face-to-face customers and foreign PEPs.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Paragraphs 50-62, 65 and 68 (records, FIU-IND reporting, sanctions, CKYCR, money mules)",
+    "note": "Five-year records, confidential reporting without restricting accounts on an STR alone, alert software, daily list checks under UAPA 51A and WMD 12A, CKYCR upload within 10 days, STRs on money mule accounts.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Paragraphs 72-74 (new technologies, correspondent banking, wire transfers)",
+    "note": "Risk assessment before new products, respondent due diligence with senior management and post facto Board approval and no shell banks, and originator and beneficiary information on wire transfers.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Prevention of Money-laundering Act, 2002",
+    "issuer": "Parliament of India (FIU-IND copy)",
+    "url": "https://fiuindia.gov.in/files/AML_Legislation/pmla_2002.html",
+    "provision": "Section 12 (reporting entity to maintain records)",
+    "note": "Records that allow reconstruction of transactions, reporting to the Director, FIU-IND, client identity records, confidentiality and five-year retention periods.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Prevention of Money-laundering Act, 2002",
+    "issuer": "Parliament of India (FIU-IND copy)",
+    "url": "https://fiuindia.gov.in/files/AML_Legislation/pmla_2002.html",
+    "provision": "Sections 4, 13, 14 and 26 (punishment, Director's powers, protection, appeals)",
+    "note": "Three to seven years' rigorous imprisonment for money laundering; warnings, directions and ₹10,000 to ₹1 lakh per failure under section 13; no civil or criminal liability for furnishing information; appeals to the Appellate Tribunal.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Prevention of Money-laundering (Maintenance of Records) Rules, 2005 (as amended)",
+    "issuer": "Government of India (FIU-IND copy)",
+    "url": "https://fiuindia.gov.in/files/AML_Legislation/notification.html",
+    "provision": "Rules 3, 7 and 8 (records, Principal Officer, furnishing information)",
+    "note": "Cash over ₹10 lakh, connected cash series, NPO receipts, counterfeit currency, suspicious transactions and cross-border wires over ₹5 lakh; monthly reports by the 15th, STRs promptly, each day of delay a separate violation, confidentiality.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Prevention of Money-laundering (Maintenance of Records) Rules, 2005 (as amended)",
+    "issuer": "Government of India (FIU-IND copy)",
+    "url": "https://fiuindia.gov.in/files/AML_Legislation/notification.html",
+    "provision": "Rule 9 (client due diligence)",
+    "note": "Identify and verify clients and beneficial owners, rely on third parties only under conditions, and follow the regulator's guidelines.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "FINnet 2.0 Resources for Reporting Entity",
+    "issuer": "Financial Intelligence Unit - India",
+    "url": "https://fiuindia.gov.in/files/misc/finnet2.html",
+    "note": "FIU-IND's guidance for reporting entities on registration and report filing through the FINGate 2.0 portal.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Summary of Order-in-Original No. 13/DIR/FIU-IND/2024 (Union Bank of India)",
+    "issuer": "Financial Intelligence Unit - India",
+    "url": "https://fiuindia.gov.in/pdfs/judgements/UBI_Order_13_2024.pdf",
+    "provision": "Section 13 PMLA",
+    "note": "₹54 lakh penalty for failing to report suspicious transactions, ongoing due diligence failures and weak alert handling.",
+    "effective": "2024-10-01",
+    "checked": "2026-11-08"
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "in-aml-x1",
+    "question": "A new joiner asks which document actually tells a commercial bank how to perform KYC, CDD and monitoring in practice, now that RBI has replaced its 2016 Master Direction. What is the best answer?",
+    "options": [
+     "The Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+     "The FIU-IND reporting format guide",
+     "The Prevention of Money-laundering Act, 2002 on its own",
+     "The Indian Banks' Association KYC guidance notes"
+    ],
+    "answer": 0,
+    "explanation": "On 28 November 2025 RBI issued entity-wise Directions; commercial banks now follow the KYC Directions 2025. The PMLA sets the legal duties, FIU-IND's guide covers report formats, and IBA notes may inform risk assessment but are not RBI's instructions.",
+    "difficulty": 2
+   },
+   {
+    "id": "in-aml-x2",
+    "question": "The Director, FIU-IND finds that Kaveri Meridian's Designated Director failed to ensure that a reporting procedure was followed. Which statement about the Director's powers is correct?",
+    "options": [
+     "The Director may penalise only the bank, never an individual",
+     "The Director may imprison the Designated Director for up to three years",
+     "The Director may impose a penalty on the Designated Director personally, of ₹10,000 to ₹1 lakh for each failure",
+     "The Director must refer the matter to RBI, which alone can act"
+    ],
+    "answer": 2,
+    "explanation": "Section 13(2) lets the Director warn, direct, require reports or fine the reporting entity, its designated director on the Board or any employee, between ₹10,000 and ₹1 lakh per failure. Imprisonment relates to the money-laundering offence under section 4.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x3",
+    "question": "Kaveri Meridian is restructuring. Which proposal complies with the KYC Directions?",
+    "options": [
+     "The Principal Officer also becomes Designated Director to simplify reporting lines",
+     "An independent non-executive director is named Designated Director",
+     "The Designated Director role is left vacant while a search takes place",
+     "The Board names a whole-time director as Designated Director and a separate management-level officer as Principal Officer"
+    ],
+    "answer": 3,
+    "explanation": "The Designated Director must be the Managing Director or a whole-time director authorised by the Board, and the Principal Officer cannot be nominated as Designated Director. Both must be in place and notified to FIU-IND and RBI.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x4",
+    "question": "Which pair of statements correctly describes the punishment for the offence of money laundering under section 4 of the PMLA?",
+    "options": [
+     "Simple imprisonment of up to two years, or a fine, at the court's choice",
+     "Rigorous imprisonment of at least three years and up to seven years, plus a fine; a higher cap of ten years applies for certain scheduled offences",
+     "A fine of ₹10,000 to ₹1 lakh for each failure, imposed by FIU-IND",
+     "Rigorous imprisonment of up to three years, with no minimum term"
+    ],
+    "answer": 1,
+    "explanation": "Section 4 provides rigorous imprisonment of three to seven years and a fine, rising to ten years for offences in paragraph 2 of Part A of the Schedule. The ₹10,000 to ₹1 lakh range is the section 13 administrative penalty.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x5",
+    "question": "Kaveri Meridian's training plan gives every employee the same 30-minute AML video once a year. Measured against paragraph 79 of the KYC Directions, what is the main gap?",
+    "options": [
+     "The video must be approved by FIU-IND before use",
+     "Training must be delivered in person, not by video",
+     "Training must be ongoing and focused differently for frontline, compliance and onboarding staff, with special front-desk training",
+     "Training is required only every three years, so the plan is excessive"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 79 requires an ongoing programme on the KYC/AML/CFT policy with a different focus for frontline staff, compliance staff and staff dealing with new customers, plus special training for front-desk staff on customer-education issues.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x6",
+    "question": "An internal auditor at Kaveri Meridian is assigned to review KYC/AML compliance but has never been trained on the bank's KYC policy. Which part of the Directions does this conflict with?",
+    "options": [
+     "The requirement that the audit function be staffed with persons adequately trained and well versed in KYC/AML/CFT",
+     "The requirement that auditors be approved by FIU-IND",
+     "The requirement that the Principal Officer audit his own work",
+     "None, because training duties cover only frontline staff"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 79(3) requires banks to ensure the audit function is properly staffed with people adequately trained in the bank's KYC/AML/CFT policies, the regulation and related issues.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x7",
+    "question": "Kaveri Meridian's Singapore branch finds that a Singapore rule prevents it from applying one RBI KYC requirement. What must the bank do?",
+    "options": [
+     "Bring it to RBI's notice; RBI may advise further action, including extra measures to manage ML/TF risk",
+     "Ignore the RBI requirement, since host law prevails abroad",
+     "Apply the RBI requirement anyway, even if it breaks Singapore law",
+     "Close the Singapore branch within three months"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 4 says that where host-country law prohibits implementing the Directions, the bank must inform RBI, which may advise further action including additional measures.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x8",
+    "question": "Which list correctly names the steps paragraph 12 of the KYC Directions uses to ensure compliance with the KYC policy?",
+    "options": [
+     "Annual FIU-IND certification, RBI pre-approval of the policy, and monthly Board reports",
+     "External audit by a CERT-In auditor, weekly Board reports, and staff rotation",
+     "Customer satisfaction surveys, mystery shopping and branch rankings",
+     "Define senior management for KYC, allocate responsibility, independent evaluation, concurrent or internal audit, and quarterly audit notes to the Audit Committee"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 12 lists specifying senior management for KYC, allocating responsibility, independent evaluation of compliance functions, concurrent or internal audit, and quarterly audit notes and compliance to the Audit Committee.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x9",
+    "question": "A reporting entity disagrees with a penalty order made by the Director, FIU-IND under section 13. Where can it appeal?",
+    "options": [
+     "To the RBI Ombudsman",
+     "To the Appellate Tribunal under the PMLA",
+     "To the Banking Codes and Standards Board",
+     "To the Central KYC Records Registry"
+    ],
+    "answer": 1,
+    "explanation": "Section 26 of the PMLA allows a reporting entity aggrieved by an order of the Director under section 13(2) to appeal to the Appellate Tribunal.",
+    "difficulty": 2
+   },
+   {
+    "id": "in-aml-x10",
+    "question": "A walk-in customer buys drafts of ₹30,000 on Monday and ₹30,000 on Wednesday for the same supplier, saying both are 'part of one order'. What is the correct view?",
+    "options": [
+     "Each draft is under ₹50,000, so no identification is needed",
+     "Identification is needed only if he pays in cash",
+     "The transactions appear connected and total ₹60,000, so he must be identified",
+     "Only a CTR is needed, as the total exceeds ₹50,000"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 21 counts several transactions that appear connected. Together they reach ₹50,000 or more, so CIP applies. CTRs relate to cash over ₹10 lakh, not to this threshold.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x11",
+    "question": "An unincorporated association of traders has no member with more than 15% of its property, capital or profits. Whom must the bank treat as beneficial owner?",
+    "options": [
+     "The natural person who holds the position of senior managing official",
+     "Every member with more than 5%",
+     "The association itself, as a body of individuals",
+     "Nobody, so beneficial owner identification is waived"
+    ],
+    "answer": 0,
+    "explanation": "Where no natural person meets the ownership test for a company, partnership or association, the beneficial owner is the relevant natural person who is the senior managing official.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x12",
+    "question": "A company customer is listed on the National Stock Exchange of India. What does paragraph 38 say about identifying its shareholders and beneficial owners?",
+    "options": [
+     "All shareholders above 10% must still be identified",
+     "It is not necessary to identify and verify any shareholder or beneficial owner of such a listed entity",
+     "The bank must obtain SEBI's list of beneficial owners",
+     "Only the promoter group must be identified and verified"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 38 exempts entities listed on a stock exchange in India, entities listed in notified jurisdictions, and subsidiaries of such listed entities from shareholder and beneficial owner identification.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x13",
+    "question": "A customer with a valid KYC Identifier wants an account. The CKYCR record shows an old address, and she says she has moved. What should the bank do?",
+    "options": [
+     "Reject the KYC Identifier and restart full CDD from paper documents",
+     "Open the account with the old address and update it at periodic updation",
+     "Use the CKYCR record but obtain updated address information, since her information has changed",
+     "Ask her to update CKYCR herself before the bank can proceed"
+    ],
+    "answer": 2,
+    "explanation": "The bank should retrieve records with the KYC Identifier and may seek further documents only in listed cases, such as when the customer's information has changed. It then updates CKYCR with the new information.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x14",
+    "question": "An existing KYC-compliant savings customer wants to open a current account for her sole proprietorship. What CDD is required?",
+    "options": [
+     "Full fresh CDD of her as an individual, as for a new customer",
+     "Nothing at all, because she already has an account",
+     "Only a self-declaration that the business is genuine",
+     "No fresh identification of her as an individual, but the bank obtains the required proofs of the proprietorship's business activity"
+    ],
+    "answer": 3,
+    "explanation": "CDD applies at UCIC level, so she need not be re-identified. For a sole proprietorship, the Directions also require documents proving the firm's business or activity (normally two, one in exceptional cases).",
+    "difficulty": 5
+   },
+   {
+    "id": "in-aml-x15",
+    "question": "Which of the following conditions is NOT required for Kaveri Meridian to rely on CDD done by a third party?",
+    "options": [
+     "The bank obtains the CDD records immediately from the third party or CKYCR",
+     "The third party must be based in India",
+     "The third party is regulated and has CDD and record-keeping measures",
+     "The third party is not in a country assessed as high-risk"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 22 requires immediate access to records, assurance of copies on request, a regulated third party, and that it is not based in a high-risk country. There is no requirement that it be in India; the bank keeps ultimate responsibility.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x16",
+    "question": "A branch rejects an elderly applicant with a disability because 'the paperwork looks like trouble', without reviewing her documents. What do the Directions say?",
+    "options": [
+     "The branch has full discretion and need not give reasons",
+     "The bank must not reject without applying its mind, the officer must record the reasons, and the policy must not deny access to disadvantaged people",
+     "Rejection is fine if the branch files an STR afterwards",
+     "Only the Principal Officer may reject applications"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 18 says the Customer Acceptance Policy must not deny banking to the public, especially the disadvantaged including persons with disabilities, and rejections need application of mind with reasons recorded.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x17",
+    "question": "Mr Joshi pays ₹49,000 in cash on three consecutive days to buy prepaid travel cards at a branch where he has no account, each time asking whether the amount is 'below the limit'. What should the bank do?",
+    "options": [
+     "Nothing, since each transaction is below ₹50,000",
+     "Refuse the third payment but keep no record",
+     "Identify him, as the bank has reason to believe he is structuring below ₹50,000, and consider an STR",
+     "Identify him only if the total exceeds ₹10 lakh"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 21 requires identification where the bank believes a customer is intentionally structuring transactions below ₹50,000. The pattern and his questions also justify considering an STR.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x18",
+    "question": "In March 2026 RBI penalised Central Bank of India ₹63.60 lakh. Which KYC failing was among the sustained charges?",
+    "options": [
+     "Failing to obtain introductions for new accounts",
+     "Failing to file cross-border wire transfer reports",
+     "Failing to upload certain customers' KYC records to CKYCR within the prescribed timeline",
+     "Failing to screen customers against the UNSCR 1718 list"
+    ],
+    "answer": 2,
+    "explanation": "RBI's press release lists failure to upload KYC records to CKYCR within the timeline and opening additional BSBD accounts for customers who already had one.",
+    "difficulty": 2
+   },
+   {
+    "id": "in-aml-x19",
+    "question": "During V-CIP, the customer's Aadhaar Secure QR code was generated five working days before the call. What should the official do?",
+    "options": [
+     "Accept it, as Aadhaar data does not expire",
+     "Accept it if a supervisor countersigns",
+     "Accept it and verify the address later by letter",
+     "Not accept it, because the QR code or XML file must not be older than three working days on the day of V-CIP"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 27(2)(viii) requires the XML file or Secure QR code to be no older than three working days from the date of the V-CIP.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x20",
+    "question": "Kaveri Meridian's V-CIP vendor proposes hosting the video platform on its own servers and keeping copies of recordings for 'analytics'. Which requirement does this break?",
+    "options": [
+     "None, provided the vendor is located in India",
+     "Only the rule on geo-tagging of recordings",
+     "The bank must house V-CIP infrastructure on its premises and, if using cloud, ensure all data goes to the bank and the provider keeps none",
+     "Only the requirement for a CERT-In empanelled auditor"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 27(1)(i) requires the infrastructure in the bank's own premises and connections from its secured network; in a cloud model the bank owns the data, recordings move to its servers immediately and the provider retains no data.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-aml-x21",
+    "question": "A V-CIP account was opened correctly on Friday. When can the customer start transacting?",
+    "options": [
+     "Only after the account has been subjected to concurrent audit",
+     "Immediately after the call ends",
+     "After the first credit from another bank account",
+     "After 30 days of monitoring as a high-risk account"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 27(2)(xv) says accounts opened through V-CIP become operational only after concurrent audit. The first-credit rule applies to non-face-to-face accounts not opened through V-CIP.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x22",
+    "question": "Ms Kaur opened an account non-face-to-face using an equivalent e-document, not V-CIP or Aadhaar OTP e-KYC. Her first transaction request is a cash deposit at an ATM. What applies?",
+    "options": [
+     "Any credit is acceptable as the first transaction",
+     "Only her first withdrawal is restricted",
+     "No restriction applies once PAN is verified",
+     "The first transaction must be a credit from her existing KYC-compliant bank account, so the cash deposit cannot be the first transaction"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 44(5) requires the first transaction in such accounts to be a credit from the customer's existing KYC-complied bank account. The account is also high-risk until verified face to face or by V-CIP.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x23",
+    "question": "A long-standing customer is a senior official of a state-owned enterprise in India (not a foreign one). Under the KYC Directions' PEP paragraph, which statement is correct?",
+    "options": [
+     "He is automatically a PEP and needs senior management approval",
+     "He is not a PEP under the Directions' definition, but the bank's own policy and risk assessment still decide how he is treated",
+     "He must be exited, as domestic officials cannot hold accounts",
+     "He is a PEP only if his account balance exceeds ₹10 lakh"
+    ],
+    "answer": 1,
+    "explanation": "The Directions define PEPs as those entrusted with prominent public functions by a foreign country. A domestic official is outside that definition, though the bank may treat him as higher risk under its own policy.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-aml-x24",
+    "question": "Kaveri Meridian's medium-risk customer last updated KYC in January 2020. What is the latest periodic updation date under the minimum periods in the Directions?",
+    "options": [
+     "January 2022",
+     "January 2025",
+     "January 2030",
+     "January 2028"
+    ],
+    "answer": 3,
+    "explanation": "Periodic updation is required at least once every eight years for medium-risk customers, counted from account opening or the last updation: January 2020 plus eight years is January 2028.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x25",
+    "question": "A legal entity customer confirms at periodic updation that its directors and shareholding have changed. What must the bank do?",
+    "options": [
+     "Carry out the KYC process equivalent to onboarding a new legal entity customer",
+     "Accept a self-declaration through the registered email",
+     "Record the change at the next periodic updation",
+     "Update only the beneficial owner names in its system"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 42(4) requires, where an LE's KYC information has changed, the KYC process applicable to onboarding a new LE customer. A self-declaration suffices only where nothing has changed.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x26",
+    "question": "A customer whose account was opened when he was a minor turns 18. What do the Directions require?",
+    "options": [
+     "Nothing until his next periodic updation",
+     "Closing the minor account and opening a new one through V-CIP only",
+     "Fresh photographs and ensuring CDD documents meet current standards, with fresh KYC where needed",
+     "A letter of consent from his guardian"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 42(3)(v) requires fresh photographs when the customer becomes a major and that CDD documents meet current standards; fresh KYC may be done where required.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x27",
+    "question": "Which transaction pattern do the Directions say must be immediately reported to RBI and other authorities such as FIU-IND?",
+    "options": [
+     "A salaried customer receiving a bonus credit",
+     "A retailer depositing daily cash takings at one branch",
+     "A customer paying an insurance premium by cheque",
+     "A company seeking a large number of cheque books, with many small cash deposits across the country into one account"
+    ],
+    "answer": 3,
+    "explanation": "The explanation under paragraph 41, on marketing and MLM firms, requires such cases (many cheque books, multiple small cash deposits nationwide, or many cheques of similar amounts and dates) to be reported immediately to RBI and other authorities such as FIU-IND.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x28",
+    "question": "A charitable trust registered as an NPO receives a single donation of ₹12 lakh by bank transfer. What reporting duty arises for the bank?",
+    "options": [
+     "A CTR, because the amount exceeds ₹10 lakh",
+     "An STR, because all NPO receipts are suspicious",
+     "No report, because the transfer was not in cash",
+     "The receipt goes in the monthly report on NPO transactions, due by the 15th of the next month"
+    ],
+    "answer": 3,
+    "explanation": "Rule 3(1)(BA) covers receipts by non-profit organisations of more than ₹10 lakh, reported monthly by the 15th under Rule 8(1). CTRs are for cash, and an STR needs actual suspicion.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x29",
+    "question": "A customer pays in ₹40,000 in cash, and the teller finds that two ₹500 notes are counterfeit. What reporting duty arises under Rule 3?",
+    "options": [
+     "None, because the amount is below ₹10 lakh",
+     "Only an internal incident report is needed",
+     "The transaction is reportable as one where counterfeit currency notes were used as genuine",
+     "Only a CTR at month end"
+    ],
+    "answer": 2,
+    "explanation": "Rule 3(1)(C) covers all cash transactions where forged or counterfeit notes have been used as genuine, regardless of the ₹10 lakh threshold; they are reported monthly by the 15th.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x30",
+    "question": "Arjun closes 300 alerts in one day with the note 'activity normal'. Six months later FIU-IND finds STRs should have been filed on several. Based on the Union Bank of India order, which failings are likely to be found?",
+    "options": [
+     "Failure to report STRs and to maintain an effective internal mechanism to detect and report suspicious transactions",
+     "Only a failure to file CTRs",
+     "Only a breach of the KYC Identifier rule",
+     "No failing, because alerts are internal documents"
+    ],
+    "answer": 0,
+    "explanation": "In the 2024 Union Bank order, FIU-IND found failures to report suspicious transactions and to evolve an internal mechanism for detecting and reporting them, along with ongoing due diligence failures, after alerts were closed with minimal justification.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x31",
+    "question": "Which statement about the confidentiality of reports to FIU-IND is correct?",
+    "options": [
+     "Only the Principal Officer is bound by confidentiality",
+     "Confidentiality ends once FIU-IND acknowledges the report",
+     "The customer may be told if he asks in writing",
+     "The bank, its directors, officers and all employees must keep the fact of reporting confidential, though group-wide sharing of unusual-activity analysis is allowed with safeguards"
+    ],
+    "answer": 3,
+    "explanation": "Rule 8(6) and paragraph 54 bind the bank, its directors, officers and all employees. Sharing analysis of unusual transactions under group-wide policies is permitted, with safeguards against tipping off.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x32",
+    "question": "A relationship manager learns an STR was filed on his client. He emails the client: 'Compliance is looking at your transfers; keep them small for a while.' What is wrong?",
+    "options": [
+     "He has tipped off the client and breached the duty to keep reporting confidential",
+     "Nothing, because he did not mention FIU-IND by name",
+     "Only that he used email instead of a phone call",
+     "Only that he should have copied the Principal Officer"
+    ],
+    "answer": 0,
+    "explanation": "Disclosing that the client is under review and coaching him to change behaviour breaches the confidentiality duty and is tipping off, whether or not FIU-IND is named. Coaching smaller transfers also encourages structuring.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x33",
+    "question": "Which information must a bank's transaction record contain so that an individual transaction can be reconstructed?",
+    "options": [
+     "The nature, the amount and currency, the date, and the parties to the transaction",
+     "The customer's risk category and the reasons for it",
+     "The branch manager's approval and the teller's ID only",
+     "The customer's PAN and CKYCR identifier only"
+    ],
+    "answer": 0,
+    "explanation": "Rule 4 and paragraph 50 require the nature of the transaction, its amount and currency, its date and the parties to it.",
+    "difficulty": 2
+   },
+   {
+    "id": "in-aml-x34",
+    "question": "Kaveri Meridian filed a CTR on 15 May but later found one transaction was misreported. It corrected the report on 25 May. How does Rule 8 view this?",
+    "options": [
+     "Corrections have no deadline, so there is no issue",
+     "Each day of delay in correcting a misreported transaction beyond the time limit is a separate violation",
+     "Only the original report date matters",
+     "A correction within one month is always allowed"
+    ],
+    "answer": 1,
+    "explanation": "Rule 8(4) and paragraph 54 treat each day of delay in reporting or in rectifying a misreported transaction beyond the time limit as a separate violation.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x35",
+    "question": "Through which FIU-IND system do reporting entities register and file their reports?",
+    "options": [
+     "FINnet 2.0, using the FINGate 2.0 portal",
+     "CKYCR, operated by CERSAI",
+     "The RBI Reporting Portal (CIMS)",
+     "The Income Tax e-filing portal"
+    ],
+    "answer": 0,
+    "explanation": "FIU-IND's site lists reporting-entity registration on FINnet 2.0 and report filing on FINGate 2.0. CKYCR stores KYC records; it is not used for STRs or CTRs.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x36",
+    "question": "Which description of a 'suspicious transaction' in the KYC Directions is correct?",
+    "options": [
+     "Any transaction, including an attempted one, that gives reasonable grounds to suspect proceeds of a scheduled offence regardless of value, or appears unusually complex, without economic rationale, or linked to terrorism",
+     "Any cash transaction above ₹10 lakh, or a series of connected ones in a month",
+     "Any transaction by a high-risk customer that exceeds its expected monthly turnover",
+     "Only completed transactions that the bank can prove involve criminal proceeds"
+    ],
+    "answer": 0,
+    "explanation": "The definition covers attempted transactions, cash or not, regardless of value, on four grounds: proceeds of crime, unusual complexity, no economic rationale, or terrorist financing. No proof is needed, only reasonable grounds.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x37",
+    "question": "A screening match against the UAPA lists turns out to resemble an existing customer closely. Under paragraph 56, whom must the bank inform?",
+    "options": [
+     "Only RBI's Department of Supervision",
+     "Only the customer, to give him a chance to explain",
+     "FIU-IND, and it must also advise the Ministry of Home Affairs as the 2021 UAPA Order requires",
+     "Only the State police, under the CrPC"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 56(3) requires the bank to report accounts resembling listed individuals or entities to FIU-IND and to advise MHA under the 2 February 2021 Order.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x38",
+    "question": "The bank has reasons to believe beyond doubt that a customer's funds fall within section 12A(2)(a) or (b) of the WMD Act, though no freezing order has arrived. What must it do?",
+    "options": [
+     "Wait for the CNO's freezing order before taking any action",
+     "Prevent the customer from conducting financial transactions and inform the CNO without delay by email, fax and post",
+     "Close the account and pay out the balance by cheque",
+     "File an STR only and allow transactions to continue"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 57(7) requires the bank to prevent such a person from conducting financial transactions, under intimation to the CNO by email, fax and post, without delay.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-aml-x39",
+    "question": "A customer whose assets were frozen under section 12A of the WMD Act applies to the bank for unfreezing. What must the bank do?",
+    "options": [
+     "Forward the application with full details of the frozen assets to the CNO within two working days",
+     "Decide the application itself within 30 days",
+     "Unfreeze the assets if the customer provides an indemnity",
+     "Send the application to RBI only"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 57(9) requires the bank to forward the unfreezing application, with full asset details, to the CNO by email, fax and post within two working days.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x40",
+    "question": "A walk-in, non-account customer sends ₹20,000 to a relative in Chennai by NEFT. What must the ordering bank include with the transfer?",
+    "options": [
+     "Full originator information including address, as for any cross-border transfer",
+     "Nothing, since transfers below ₹50,000 are exempt from all rules",
+     "Only the beneficiary's mobile number",
+     "At least a unique transaction reference number, provided full details can be made available within three working days on request"
+    ],
+    "answer": 3,
+    "explanation": "For domestic transfers below ₹50,000 by non-account holders, a unique reference number that allows tracing is enough, as long as the ordering bank can supply the information within three working days of a request.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x41",
+    "question": "An intermediary bank receives a cross-border transfer whose originator data cannot technically be carried into the related domestic leg. What must it do?",
+    "options": [
+     "Drop the originator data, since the domestic leg is exempt",
+     "Return the transfer to the ordering bank in every case",
+     "Ask the beneficiary to supply the originator data",
+     "Keep a record of all information received for at least five years"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 74(2)(ii)(b) requires the intermediary bank to keep a record of all the information received for at least five years where technical limits prevent it travelling with the domestic transfer.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x42",
+    "question": "Kaveri Meridian controls both the ordering and beneficiary sides of a remittance through its money transfer arrangement. The sending side looks normal but the receiving side shows the beneficiary collecting from 20 unrelated senders. What do the Directions require?",
+    "options": [
+     "Assess each side separately and ignore the other side's data",
+     "Consider information from both sides in deciding whether to file an STR, and file one if suspicious",
+     "Report only through the monthly cross-border wire report",
+     "Ask the ordering customer to explain the beneficiary's activity"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 74(2)(iv) requires a bank controlling both sides to take into account all information from both sides when deciding on an STR, and to file one if the transaction is found suspicious.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-aml-x43",
+    "question": "A respondent bank asks Kaveri Meridian for a payable-through account so that its own customers can transact directly. What must Kaveri Meridian be satisfied of?",
+    "options": [
+     "That the respondent's customers have each opened accounts at Kaveri Meridian",
+     "That the respondent has done CDD on customers with direct access and monitors them, and can give CDD information immediately on request",
+     "That RBI has pre-approved each of the respondent's customers",
+     "That the respondent's customers are all resident in India"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 73(5)-(6) requires the correspondent to be satisfied that the respondent has conducted CDD and ongoing due diligence on customers with direct access and can provide relevant CDD information immediately on request.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-aml-x44",
+    "question": "Which statement about the bank's ML/TF risk assessment is correct under paragraph 10?",
+    "options": [
+     "It is prepared by FIU-IND and shared with each bank every year",
+     "It must be documented, proportionate, reviewed at least annually, presented to the Board or its committee, and made available to competent authorities",
+     "It need only cover customers, not products or delivery channels",
+     "It is confidential and may not be shown to any authority"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 10 requires a documented, proportionate assessment covering clients, countries, products, services, transactions and channels, reviewed at least annually, reported to the Board and available to competent authorities.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-aml-x45",
+    "question": "In June 2026 RBI penalised The Karnal Central Cooperative Bank. Which two KYC failings did RBI find sustained?",
+    "options": [
+     "No Designated Director, and late CTR filing",
+     "No V-CIP workflow, and failure to verify GST numbers",
+     "No system of periodic review of risk categorisation, and no robust software to identify and report suspicious transactions",
+     "No correspondent banking policy, and missing wire transfer data"
+    ],
+    "answer": 2,
+    "explanation": "RBI's press release on the order of 3 June 2026 lists failure to put in place a system of periodic review of risk categorisation and failure to put in place robust software for identifying and reporting suspicious transactions.",
+    "difficulty": 3
+   }
+  ]
+ }
+}

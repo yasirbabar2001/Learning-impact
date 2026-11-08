@@ -1,0 +1,3270 @@
+{
+  "slug": "bh-cbb-financial-crime",
+  "title": "Bahrain | CBB Financial Crime (Module FC) and AML Law Compliance",
+  "tagline": "Bahrain's AML law and the CBB's Module FC in practice: CDD, PEPs, STRs to the FIU, sanctions, the MLRO and records.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional banks licensed by the Central Bank of Bahrain",
+    "Retail, corporate and private banking",
+    "Correspondent banking, payments and trade finance",
+    "Operations and transaction monitoring",
+    "Compliance, risk and internal audit"
+  ],
+  "hours": 6,
+  "description": "A country-specific quest for staff of **conventional banks licensed by the Central Bank of Bahrain (CBB)**. It is built on **Decree-Law No. 4 of 2001** on the prevention and prohibition of money laundering, as amended (including **Decree-Law No. 36 of 2017** on terrorist financing), the CBB's **Financial Crime Module (Module FC) in Volume 1 of the CBB Rulebook**, the CBB's guidance on risk assessment, terrorist financing and beneficial ownership, and reporting to the financial intelligence unit at the Ministry of Interior.\n\nModule FC content comes from **CBB-hosted copies** that could be opened: the 2023 copies issued with the Module FC amendments, and an earlier CBB-hosted consultation copy used only for sections whose 'date last changed' matches the 2023 contents list. The in-force Rulebook site could not be opened, so always check the current paragraph. Volume 1 only: other Rulebook volumes are not covered.\n\nIt is for branch, onboarding, payments, monitoring, correspondent and trade staff, the MLRO team, managers and board members who need to know the offences, the risk-based approach, CDD and enhanced due diligence, PEPs, STRs and tipping off, sanctions in general terms, the MLRO, records and the CBB's enforcement powers.\n\nThis quest builds knowledge of the Bahrain framework; it does not replace your institution's own AML/CFT policies and procedures, which you must always follow.",
+  "audience": [
+    "Employees of CBB-licensed conventional banks who need a grounding in Bahrain's AML law and Module FC",
+    "Branch, call-centre and onboarding staff who identify customers and handle cash and transfers",
+    "Transaction monitoring, payments, correspondent banking and trade finance teams",
+    "MLROs, deputy MLROs and compliance staff preparing for CBB AML/CFT examinations",
+    "Senior managers and board members accountable for the bank's AML/CFT systems and controls"
+  ],
+  "outcomes": [
+    "Explain the money laundering, related and terrorist financing offences under Decree-Law No. 4 of 2001 as amended, and banks' Article 5 duties",
+    "Apply the CBB's risk-based approach and Module FC's CDD, beneficial ownership, timing and monitoring rules",
+    "Apply enhanced due diligence for PEPs, non-residents, correspondents, introduced business and wire transfers",
+    "Escalate suspicion to the MLRO, support an online STR to the FIU and the CBB, and avoid tipping off",
+    "Describe in general terms the duties to screen, freeze and report for UN and CBB-designated persons",
+    "Describe the MLRO's role, board oversight, record keeping and the CBB's enforcement powers"
+  ],
+  "quest": {
+    "name": "Guardians of the Bay",
+    "premise": "You have just joined the Financial Crime Compliance team of Pearlgate Bank, a fictional conventional retail and wholesale bank licensed by the CBB, with its head office at Bahrain Bay in Manama and branches in Muharraq and Riffa. The CBB's Compliance Directorate has announced an onsite AML/CFT examination. With MLRO Noora Al Mahmood, branch manager Yusuf Janahi, analyst Anjali Menon and correspondent banking head David Okafor, clear five stages, then face the final boss: briefing chief executive Khalid Al Mannai and the board.",
+    "badge": {
+      "name": "Bahrain FC Guardian",
+      "description": "Awarded to bank staff who can apply Bahrain's AML law and the CBB's Module FC: know the customer, report right and keep the programme exam-ready."
+    },
+    "color": "#ce1126",
+    "cast": [
+      {
+        "id": "noora",
+        "name": "Noora Al Mahmood",
+        "role": "MLRO, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#1b4965"
+        }
+      },
+      {
+        "id": "yusuf",
+        "name": "Yusuf Janahi",
+        "role": "Branch Manager, Muharraq",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#7f5539"
+        }
+      },
+      {
+        "id": "anjali",
+        "name": "Anjali Menon",
+        "role": "Transaction Monitoring Analyst",
+        "look": {
+          "skin": 4,
+          "hair": "long",
+          "color": "#6a4c93"
+        }
+      },
+      {
+        "id": "david",
+        "name": "David Okafor",
+        "role": "Head of Correspondent Banking and Trade",
+        "look": {
+          "skin": 5,
+          "hair": "short",
+          "color": "#2a9d8f"
+        }
+      },
+      {
+        "id": "khalid",
+        "name": "Khalid Al Mannai",
+        "role": "Chief Executive",
+        "look": {
+          "skin": 3,
+          "hair": "bald",
+          "color": "#264653"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "Bahrain's Framework: Decree-Law 4 of 2001, the CBB and Module FC",
+      "stage": "The Bahrain Bay Tower",
+      "summary": "Map Bahrain's anti-money laundering framework: Decree-Law No. 4 of 2001 and its amendments, the money laundering and related offences, the duties it places on banks, the authorities involved and how the CBB's Financial Crime Module for conventional banks fits on top.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the money laundering offence, the related offences and corporate liability under Decree-Law No. 4 of 2001",
+        "List the duties Article 5 of the Decree-Law places on banks and explain why secrecy cannot be pleaded",
+        "Explain the roles of the CBB, the Ministry of Interior's financial intelligence unit, the Policy Committee and the Public Prosecution",
+        "Explain how Module FC in Volume 1 of the CBB Rulebook applies to conventional banks and which version this quest uses"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Pearlgate Bank",
+          "setting": "Financial Crime Compliance floor, Pearlgate Bank head office, Bahrain Bay, Manama. 8:30 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your badge photo is slightly blurred, but it opens the door. A note on your desk says: 'Welcome. Meeting room 4 at 9. Bring questions.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "Good morning, and welcome to Pearlgate. I'm Noora Al Mahmood, the bank's MLRO. You'll be shadowing me for a while.",
+              "mood": "happy"
+            },
+            {
+              "who": "noora",
+              "text": "Timing is lively: the CBB's Compliance Directorate has told us it plans an onsite AML/CFT examination of the bank.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yusuf",
+              "text": "(on a video call from Muharraq branch) Yusuf here. My tellers ask me whether money laundering is a police matter or something we answer for.",
+              "mood": "worried"
+            },
+            {
+              "who": "anjali",
+              "text": "And my monitoring team wants to know which rules our alerts are really built on: the law, the Rulebook or our own policy.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "All fair questions. Before we look at a single customer, everyone needs the same map: the law, the regulator's rules and who does what.",
+              "mood": "proud"
+            },
+            {
+              "who": "noora",
+              "text": "Stage one is the Bahrain Bay Tower. Climb it with me and you'll have answers for both of them by lunch.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Bahrain's AML framework in five scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The law at the base",
+              "narration": "Decree-Law Number 4 of 2001 is Bahrain's anti-money laundering law. It creates the money laundering offence, related offences and penalties, and lists the core duties of institutions such as banks."
+            },
+            {
+              "icon": "✏️",
+              "heading": "Amended over time",
+              "narration": "The law has been amended since 2001. A 2017 amendment, Decree-Law Number 36, rewrote the terrorist financing offence in Article 3 and set heavy penalties for it."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "The regulator's rules",
+              "narration": "The Central Bank of Bahrain licenses and supervises banks. For conventional banks, its detailed AML and CFT rules sit in the Financial Crime Module, called Module FC, in Volume 1 of the CBB Rulebook."
+            },
+            {
+              "icon": "📡",
+              "heading": "Where suspicions go",
+              "narration": "Suspicious transaction reports go to the financial intelligence unit at the Ministry of Interior, which the law calls the Enforcement Unit, and, under Module FC, also to the CBB's Compliance Directorate."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Policy and prosecution",
+              "narration": "A national Policy Committee sets general anti-money laundering policy and reporting guidelines, and the Public Prosecution brings money laundering cases before the courts."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Layers of Bahrain's AML/CFT framework",
+          "caption": "Each layer must fit the one above it. Your bank's procedures are where the rules meet real customers.",
+          "items": [
+            {
+              "label": "Decree-Law No. 4 of 2001",
+              "detail": "The AML law, as amended: offences, penalties, institutions' duties and the authorities' powers."
+            },
+            {
+              "label": "CBB Law of 2006",
+              "detail": "Gives the CBB power to issue binding directives to its licensees and to enforce them."
+            },
+            {
+              "label": "Module FC, Volume 1",
+              "detail": "The CBB's directive for conventional banks: CDD, monitoring, MLRO, STRs, records and sanctions."
+            },
+            {
+              "label": "CBB guidance papers",
+              "detail": "Risk assessment, terrorist financing, beneficial ownership and other guidance read with Module FC."
+            },
+            {
+              "label": "Pearlgate's own policies",
+              "detail": "Board-approved procedures that turn all of the above into daily steps."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who does what in Bahrain?",
+          "prompt": "Match each body to its role in the anti-money laundering system.",
+          "pairs": [
+            {
+              "left": "CBB Compliance Directorate",
+              "right": "Runs AML/CFT examinations of licensees, issues AML/CFT rules and guidance and receives copies of STRs"
+            },
+            {
+              "left": "FIU at the Ministry of Interior",
+              "right": "Receives and analyses reports of suspected money laundering and can investigate and seek court orders"
+            },
+            {
+              "left": "Policy Committee",
+              "right": "Sets general anti-money laundering policies and issues guidelines on suspicious transaction reporting"
+            },
+            {
+              "left": "Public Prosecution",
+              "right": "Brings money laundering and related cases before the courts"
+            },
+            {
+              "left": "MENAFATF",
+              "right": "The regional FATF-style body; Bahrain is a founding member and hosts its secretariat"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer was never convicted of the fraud that produced his funds. Can he still be convicted of laundering them under Decree-Law No. 4 of 2001?",
+          "options": [
+            "No, the predicate offence must be proved in court first",
+            "Yes, the law allows a money laundering conviction without a conviction for the underlying crime",
+            "Only if the fraud took place inside Bahrain",
+            "Only if the bank filed an STR before the arrest"
+          ],
+          "answer": 1,
+          "explanation": "The Decree-Law states that a person can be punished for money laundering even if not convicted of the underlying criminal activity, and 'criminal activity' covers crimes in Bahrain or in any other state."
+        },
+        {
+          "type": "concept",
+          "title": "What the Decree-Law makes a crime",
+          "body": "**Money laundering (Article 2):** dealing with the proceeds of crime to make their source look lawful, for example by:\n\n- conducting a transaction with them,\n- concealing or disguising their nature, source, location, movement or ownership,\n- acquiring, receiving or transferring them, or\n- keeping or possessing them,\n\nwhile **knowing, believing or having reason to know or believe** they come from crime. Destroying evidence or helping an offender hide the crime counts as participation.\n\n**Related offences (Article 2.6)** matter most to bank staff:\n\n- failing to disclose information or suspicion gained through your work,\n- ignoring or obstructing an order of the enforcement unit, and\n- revealing an investigation or attachment order in a way likely to harm the investigation.\n\n**Companies** can be fined and have property confiscated, and officers whose intent or gross negligence led to the offence are liable too."
+        },
+        {
+          "type": "sort",
+          "title": "Which kind of offence is it?",
+          "prompt": "Sort each act into the category it falls under in Decree-Law No. 4 of 2001 as amended.",
+          "buckets": [
+            "Money laundering",
+            "Related offence",
+            "Terrorist financing"
+          ],
+          "items": [
+            {
+              "text": "Buying a villa with bribe money while aware of where it came from",
+              "bucket": 0
+            },
+            {
+              "text": "Splitting fraud proceeds across relatives' accounts to hide their source",
+              "bucket": 0
+            },
+            {
+              "text": "A clerk keeps quiet about a suspicion he formed while processing a transfer",
+              "bucket": 1
+            },
+            {
+              "text": "Telling a customer that an attachment order has been issued so he can move his money",
+              "bucket": 1
+            },
+            {
+              "text": "Ignoring an order the enforcement unit obtained during an investigation",
+              "bucket": 1
+            },
+            {
+              "text": "Collecting donations for a group known to carry out terrorist acts",
+              "bucket": 2
+            },
+            {
+              "text": "Holding funds for safekeeping on behalf of a terrorist cell member",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Yusuf's secrecy question",
+          "setting": "Video call with Muharraq branch, 11:05 am.",
+          "lines": [
+            {
+              "who": "yusuf",
+              "text": "A long-standing customer says that if anyone asks about his account, banking secrecy protects him. Is he right?",
+              "mood": "worried"
+            },
+            {
+              "who": "noora",
+              "text": "Confidentiality matters, but the Decree-Law is clear on this point: a bank cannot plead secrecy before the investigating magistrate or the court for accounts, customer identity or records the law requires.",
+              "mood": "thinking"
+            },
+            {
+              "who": "anjali",
+              "text": "So if a lawful order comes in, we comply, through the proper channel.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "Exactly. Requests go through the legal team and me, and we never tell the customer about an investigation.",
+              "mood": "proud"
+            },
+            {
+              "who": "yusuf",
+              "text": "That's clear. And what about the records he keeps asking us to delete?",
+              "mood": "happy"
+            },
+            {
+              "who": "noora",
+              "text": "We don't delete them. The law sets minimum retention periods. Let's look at the duties the law gives us.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Article 5: what the law asks of every bank",
+          "cards": [
+            {
+              "front": "Identity evidence",
+              "back": "Keep a copy of each customer's identity evidence for five years after the relationship ends."
+            },
+            {
+              "front": "Transaction records",
+              "back": "Keep a record of each transaction for five years after it was completed."
+            },
+            {
+              "front": "Suspicion",
+              "back": "Report suspected transactions to the enforcement unit and the relevant authorities."
+            },
+            {
+              "front": "Follow-up",
+              "back": "Give the enforcement unit any further information or help it asks for."
+            },
+            {
+              "front": "Internal controls",
+              "back": "Follow the regulator's instructions on policies, procedures, management-level compliance officers and audit of those controls."
+            },
+            {
+              "front": "Accounts",
+              "back": "Never open or keep secret, fictitious or anonymous accounts."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The lawyer's letter",
+          "situation": "An investigating magistrate's order asks Pearlgate for a customer's account records. The customer's lawyer then writes to Yusuf saying banking secrecy forbids the bank from handing anything over and asking whether 'something is going on'. Yusuf forwards it to you.",
+          "choices": [
+            {
+              "text": "Pass the order and the letter to the MLRO and legal team, comply with the order through them, and say nothing to the customer or lawyer about any investigation.",
+              "outcome": "Best. Under Article 7 of the Decree-Law a bank cannot plead secrecy against the magistrate or court for these records. Routing it through the MLRO keeps the response controlled, and silence avoids revealing an order in a way that could harm the investigation.",
+              "score": 2
+            },
+            {
+              "text": "Hold the records back until the customer's lawyer agrees in writing that they can be released.",
+              "outcome": "Poor. The customer's consent is not needed, and secrecy cannot be pleaded against the order. Delay could amount to obstructing an order, which is itself an offence.",
+              "score": 0
+            },
+            {
+              "text": "Comply with the order, but reply to the lawyer to reassure him that it is only routine.",
+              "outcome": "Partly right. Complying is correct, but commenting on the order to the customer's lawyer risks revealing it and prejudicing the investigation.",
+              "score": 1
+            },
+            {
+              "text": "Ask the branch team to send the records straight to the magistrate today to save time.",
+              "outcome": "Partly right on speed, but bypassing the MLRO and legal team risks sending incomplete records and loses the bank's audit trail of what was produced.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the framework grew",
+          "caption": "Laws and rules keep moving, so always check the current version before you rely on a paragraph number.",
+          "items": [
+            {
+              "label": "Decree-Law No. 4",
+              "value": "2001",
+              "detail": "Bahrain's anti-money laundering law creates the offence, institutions' duties and the enforcement unit."
+            },
+            {
+              "label": "Module FC first issued",
+              "value": "2004",
+              "detail": "First issued by the Bahrain Monetary Agency, the CBB's predecessor."
+            },
+            {
+              "label": "CBB replaces the BMA",
+              "value": "2006",
+              "detail": "The CBB Law takes effect; the Rulebook modules stay in force."
+            },
+            {
+              "label": "Decree-Law No. 36",
+              "value": "2017",
+              "detail": "Rewrites the terrorist financing offence in Article 3 with heavy penalties."
+            },
+            {
+              "label": "Mutual evaluation",
+              "value": "2018",
+              "detail": "FATF approves Bahrain's mutual evaluation report in June 2018."
+            },
+            {
+              "label": "CBB guidance papers",
+              "value": "2020-21",
+              "detail": "Guidance on terrorist financing, risk assessment and beneficial ownership."
+            },
+            {
+              "label": "Module FC amendments",
+              "value": "2023",
+              "detail": "CBB consults on and amends parts of Module FC for conventional banks."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "From the CBB's own reports: how AML supervision works",
+          "body": "The CBB's annual reports describe its AML/CFT supervision in plain terms:\n\n- The **Compliance Directorate** carries out onsite examinations of licensees to test compliance with the AML Law, the CBB Law and the Financial Crime Module, focusing on procedures, systems and internal controls.\n- In 2021 it began producing **monthly sanctions exposure reports** to monitor the sector's exposure to major international sanctions programmes.\n- Bahrain prepares regular **follow-up reports** on its mutual evaluation for the MENAFATF plenary; the 2021 report included requests to re-rate some FATF Recommendations.\n- The CBB issued guidance papers on **risk assessment** and **beneficial ownership** in 2021 as part of its outreach to the industry.\n\nThe message for Pearlgate: an examination tests whether controls work in practice, not just whether a policy exists."
+        },
+        {
+          "type": "tip",
+          "title": "Which version of Module FC are you reading?",
+          "body": "The in-force CBB Rulebook is published on the CBB's Rulebook website, which this quest could not open automatically. Its Module FC content comes from **CBB-hosted copies**: the 2023 copies issued with the Module FC amendments and an earlier 2021 consultation copy, used only for sections whose 'date last changed' matches the 2023 contents list.\n\n- Always check the paragraph in the current Rulebook before quoting it.\n- Look at the **date last changed** printed for each section.\n- Volume 1 covers **conventional banks**; other volumes cover other licensees and are not part of this quest."
+        },
+        {
+          "type": "check",
+          "question": "Which part of the CBB Rulebook holds the detailed AML/CFT rules for Pearlgate, a conventional bank licensee?",
+          "options": [
+            "Module FC in Volume 1 (Conventional Banks)",
+            "The High-Level Controls Module in Volume 6",
+            "A separate AML regulation issued by the Ministry of Interior",
+            "The Policy Committee's reporting guidelines alone"
+          ],
+          "answer": 0,
+          "explanation": "Module FC in Volume 1 applies to all conventional bank licensees and contains the CBB's directive on combating money laundering and terrorist financing. The Ministry of Interior's FIU receives reports; it does not issue the bank's rulebook."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "Decree-Law No. 4 of 2001, as amended, creates the money laundering offence, related offences, penalties and banks' core duties.",
+            "Knowing, believing or having reason to believe funds are criminal is enough, and no conviction for the underlying crime is needed.",
+            "Failing to disclose a suspicion formed at work, obstructing orders or revealing an investigation are offences in their own right.",
+            "Banks must keep identity and transaction records, report suspicion, help the enforcement unit, run controls and never keep anonymous accounts.",
+            "Module FC in Volume 1 of the CBB Rulebook is the CBB's directive for conventional banks; check the current version of any paragraph."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one request you might receive at work that touches customer confidentiality, such as a court order or a relative asking about an account. Who in your bank should handle it, and what must you avoid saying to the customer?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-aml-s1-q1",
+          "question": "Under Decree-Law No. 4 of 2001, which state of mind is enough for the money laundering offence when someone deals with proceeds of crime?",
+          "options": [
+            "Knowing, believing or having reason to know or believe the property comes from crime",
+            "Only a written admission by the customer that the funds are criminal",
+            "Only proven, actual knowledge confirmed by a criminal court judgment",
+            "Only knowledge that the underlying crime took place in Bahrain"
+          ],
+          "answer": 0,
+          "explanation": "Article 2 covers knowing or believing, and also having reason to know or believe. The law defines criminal activity to include crimes in other states, so a Bahrain-only test is wrong.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s1-q2",
+          "question": "A cashier at Pearlgate suspects a deposit is linked to drug trafficking but tells no one. What risk does the cashier personally face under the Decree-Law?",
+          "options": [
+            "Committing a related offence for failing to disclose a suspicion formed in the course of employment",
+            "Only an internal warning, because the law covers just the customer",
+            "None, because only the bank as a company can be prosecuted",
+            "None, because only the MLRO can commit offences under the law"
+          ],
+          "answer": 0,
+          "explanation": "Article 2.6 makes failing to disclose information or suspicion acquired through one's employment an offence related to money laundering. It applies to individuals, not only to the bank or the MLRO.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s1-q3",
+          "question": "Which of these is a duty Article 5 of the Decree-Law places directly on institutions such as banks?",
+          "options": [
+            "Approving the appointment of the national Policy Committee",
+            "Not opening or keeping secret, fictitious or anonymous accounts",
+            "Prosecuting customers who launder money through their accounts",
+            "Publishing the names of customers reported to the authorities"
+          ],
+          "answer": 1,
+          "explanation": "Article 5 lists record keeping, reporting, cooperation, internal controls, audit and the ban on secret, fictitious or anonymous accounts. Prosecution belongs to the Public Prosecution, and naming reported customers would breach confidentiality and could tip them off.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s1-q4",
+          "question": "For how long must a bank keep a copy of a customer's identity evidence under Article 5 of the Decree-Law?",
+          "options": [
+            "Three years after the customer's last transaction",
+            "Five years after the relationship has ended",
+            "Five years after the account was first opened",
+            "Ten years after the customer's identity document expires"
+          ],
+          "answer": 1,
+          "explanation": "Article 5(a) runs the five-year period from the end of the relationship, not from opening. Transaction records run for five years after the transaction was completed.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s1-q5",
+          "question": "A customer's lawyer insists that bank secrecy prevents Pearlgate from giving records to the investigating magistrate. What does the Decree-Law say?",
+          "options": [
+            "Secrecy applies to foreign customers but not to Bahraini nationals",
+            "Secrecy prevails unless the customer gives written consent to release the records",
+            "Secrecy can be pleaded once, after which the court decides on an appeal",
+            "Secrecy or confidentiality cannot be pleaded before the investigating magistrate or the court for these records"
+          ],
+          "answer": 3,
+          "explanation": "Article 7 removes the secrecy plea before the investigating magistrate and the competent court for accounts, customer identity and required records. Customer consent is not a condition.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s1-q6",
+          "question": "Who does the Decree-Law make responsible for appointing the enforcement unit that receives money laundering reports?",
+          "options": [
+            "The board of each licensed bank",
+            "The Minister of Interior",
+            "The Governor of the CBB",
+            "The Minister of Justice"
+          ],
+          "answer": 1,
+          "explanation": "Article 4.4 gives the Minister of Interior the power to appoint the enforcement unit, which receives reports, investigates and handles international cooperation. The CBB supervises banks but does not run the FIU.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s1-q7",
+          "question": "Pearlgate's board asks whether the bank itself, not just individuals, can be punished for money laundering. What is the best answer?",
+          "options": [
+            "Yes, but only through CBB administrative penalties and never through the courts",
+            "Only if the bank's chief executive personally carried out the transactions",
+            "Yes: a corporate body can be fined and have property confiscated, and officers whose intent or gross negligence caused the offence are also liable",
+            "No: only natural persons can commit money laundering under Bahraini law"
+          ],
+          "answer": 2,
+          "explanation": "Article 3.3 provides for fines and confiscation against corporate bodies, and Article 2.5 makes officers acting for the body liable where the offence resulted from their intentional conduct or gross negligence.",
+          "difficulty": 4
+        },
+        {
+          "id": "bh-aml-s1-q8",
+          "question": "Which body sets general anti-money laundering policies and issues guidelines on reporting suspicious transactions under Article 4 of the Decree-Law?",
+          "options": [
+            "The Policy Committee appointed in coordination with the relevant entities",
+            "The bank's own internal audit department",
+            "The Public Prosecution",
+            "The CBB's Consumer Protection Office"
+          ],
+          "answer": 0,
+          "explanation": "Article 4 sets up a Policy Committee whose powers include setting general policies and issuing reporting guidelines in coordination with the relevant entities. The Public Prosecution conducts court proceedings.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s1-q9",
+          "question": "Noora tells a new analyst to check the 'date last changed' next to each Module FC section. Why is that good practice?",
+          "options": [
+            "Because sections older than five years no longer have legal effect",
+            "Because the date shows when the bank last trained staff on that section",
+            "Because only sections changed in the current year are inspected by the CBB",
+            "Because the Rulebook is amended over time, so a paragraph must be checked against the current version before it is relied on"
+          ],
+          "answer": 3,
+          "explanation": "The CBB annotates each section with the date it last changed, and amendments such as the 2023 changes alter content. Old dates do not mean a rule has lapsed.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s1-q10",
+          "question": "Which act would count as participation in money laundering under Article 2.2 of the Decree-Law?",
+          "options": [
+            "Asking the customer about the purpose of a large transfer",
+            "Declining to open an account for a customer who refuses CDD",
+            "Destroying a document that could be used as evidence in the offence",
+            "Filing an internal suspicious transaction report with the MLRO"
+          ],
+          "answer": 2,
+          "explanation": "Article 2.2 treats destroying, concealing or forging potential evidence, or knowingly helping an offender hide the crime, as participation. The other options are normal compliance actions.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Risk-Based Approach and Customer Due Diligence under Module FC",
+      "stage": "The Onboarding Gate",
+      "summary": "Apply the CBB's risk-based approach and the Module FC customer due diligence rules for conventional banks: what to collect and verify, beneficial owners, timing, incomplete CDD, non-resident customers and ongoing monitoring, including the BD 6,000 significant-transaction rule.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the risk-based approach and the four risk categories the CBB expects banks to assess",
+        "Describe the information Module FC requires for natural persons and legal entities and how it is verified",
+        "Identify beneficial owners using the three-step test and apply the timing and incomplete-CDD rules",
+        "Apply ongoing monitoring rules, including how significant transactions are treated without automated monitoring"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Two customers at the gate",
+          "setting": "Pearlgate Bank, Muharraq branch. 9:40 am, a busy Sunday.",
+          "lines": [
+            {
+              "who": "yusuf",
+              "text": "Two arrivals this morning. An engineer who landed last week for a new job, still waiting for his CPR card, and two founders whose company is still being registered.",
+              "mood": "worried"
+            },
+            {
+              "who": "yusuf",
+              "text": "Both want accounts today. My team's instinct is to say 'come back when your papers are done'.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "Module FC actually expects retail banks to help both of them, unless there are serious reasons not to. But there are conditions.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anjali",
+              "text": "Like not letting money out until due diligence is complete?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "That's one of them. And before any of that, we decide how risky each relationship is. Risk drives how deep we go.",
+              "mood": "happy"
+            },
+            {
+              "who": "noora",
+              "text": "Welcome to the Onboarding Gate. By the end of this stage you'll know what to collect, what to verify and when the door can open.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The risk-based approach in five scenes",
+          "scenes": [
+            {
+              "icon": "🔎",
+              "heading": "Identify",
+              "narration": "Start by listing the risks the bank faces. The CBB asks banks to look at country or geographic risk, customer risk, product, service and transaction risk, and delivery channel risk."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Assess",
+              "narration": "Next, judge how likely each risk is and how much harm it would cause. The CBB's guidance suggests a simple scale from low to significant."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Evaluate",
+              "narration": "Then decide priorities. Some risks need stronger controls; a few may be avoided altogether by not offering a product."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Mitigate",
+              "narration": "Apply controls in proportion to the risk: standard due diligence for most customers and enhanced measures where the risk is higher."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Review",
+              "narration": "Keep the documented risk assessment up to date, share it with senior management, and refresh each customer's risk profile through the relationship."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Rating a risk: likelihood against impact",
+          "caption": "The CBB's risk assessment guidance uses likelihood and impact to rank risks. The same risk can rate differently in different banks.",
+          "axes": {
+            "x": "Likelihood",
+            "y": "Impact"
+          },
+          "items": [
+            {
+              "label": "Unlikely but severe",
+              "detail": "Keep strong preventive controls and watch for change, for example sanctions exposure."
+            },
+            {
+              "label": "Likely and severe",
+              "detail": "Significant risk: strongest controls, senior attention, possibly avoid the business."
+            },
+            {
+              "label": "Unlikely and minor",
+              "detail": "Low risk: standard due diligence and routine monitoring."
+            },
+            {
+              "label": "Likely but minor",
+              "detail": "Medium risk: tune monitoring and review more often."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Which risk category?",
+          "prompt": "Sort each factor into the risk category the CBB's guidance places it in.",
+          "buckets": [
+            "Country or geographic",
+            "Customer",
+            "Product, service or channel"
+          ],
+          "items": [
+            {
+              "text": "A country named by FATF as having weak AML/CFT systems",
+              "bucket": 0
+            },
+            {
+              "text": "A country subject to UN sanctions or embargoes",
+              "bucket": 0
+            },
+            {
+              "text": "A company with nominee shareholders or bearer shares",
+              "bucket": 1
+            },
+            {
+              "text": "A cash-intensive business owner",
+              "bucket": 1
+            },
+            {
+              "text": "A customer named in credible negative news about fraud",
+              "bucket": 1
+            },
+            {
+              "text": "Private banking services",
+              "bucket": 2
+            },
+            {
+              "text": "Accounts opened without meeting the customer face to face",
+              "bucket": 2
+            },
+            {
+              "text": "Payments received from unknown, unrelated third parties",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The CBB's risk assessment guidance distinguishes inherent risk from residual risk. Which statement is correct?",
+          "options": [
+            "Inherent risk is the level before any controls; residual risk is what remains after controls are applied",
+            "Inherent risk applies to customers; residual risk applies only to products",
+            "Residual risk is always zero once a bank has a written AML policy"
+          ],
+          "answer": 0,
+          "explanation": "The guidance defines inherent risk as the natural level before mitigation and residual risk as what is left after it. A high residual risk suggests controls are not good enough and need remedial action."
+        },
+        {
+          "type": "concept",
+          "title": "What to collect from an individual",
+          "body": "Before providing **any** financial service to a natural person, Module FC requires a conventional bank to identify the customer and obtain, among other things:\n\n- full legal name and other names used,\n- full permanent residential address (a P.O. box is not enough),\n- date and place of birth, nationality, passport number and CPR or Iqama number,\n- occupation or public position, employer details,\n- type of account and expected nature and volume of business,\n- the customer's signature, **source of funds** and **reason for opening the account**.\n\n**Verification (retail banks):** confirm name, date of birth and address through the **national E-KYC application**, or, where that is not practical, current official documents, with at least one copy showing a clear photograph.\n\nCopies made from originals are certified by an authorised official writing **'original sighted'**, the date and a signature."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Verifying identity: retail and wholesale banks",
+          "caption": "From Module FC sections FC-1.2.2A and FC-1.2.3 in the CBB-hosted 2023 copy.",
+          "headers": [
+            "Retail bank licensee",
+            "Wholesale bank licensee"
+          ],
+          "items": [
+            {
+              "label": "Name and date of birth",
+              "left": "National E-KYC application first; otherwise a current official document",
+              "right": "A copy of a current, valid official identity document"
+            },
+            {
+              "label": "Residential address",
+              "left": "National E-KYC application first; otherwise a utility bill, statement or official record",
+              "right": "A recent utility bill, bank statement, official record or home-visit record"
+            },
+            {
+              "label": "Photograph",
+              "left": "At least one copy shows a clear photograph",
+              "right": "At least one copy shows a clear photograph"
+            },
+            {
+              "label": "Extra step",
+              "left": "Not specified for this check",
+              "right": "Direct contact by phone, letter or email where appropriate"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Finding the beneficial owner of a company",
+          "caption": "Module FC requires banks to identify and take reasonable steps to verify beneficial owners of legal persons. The CBB's 2021 guidance explains the method.",
+          "items": [
+            {
+              "label": "Ownership",
+              "detail": "Identify the natural persons who ultimately hold a controlling ownership interest."
+            },
+            {
+              "label": "Control by other means",
+              "detail": "If ownership leaves doubt, or no one controls through ownership, find who controls by other means."
+            },
+            {
+              "label": "Senior managing official",
+              "detail": "If no natural person is found, identify the person in the senior managing role."
+            },
+            {
+              "label": "Verify",
+              "detail": "Take reasonable measures to verify identities, and verify shareholders holding 20% or more."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Onboarding a company customer",
+          "prompt": "Put Pearlgate's steps for a new corporate customer in the right order.",
+          "steps": [
+            "Record the entity's details: name, registration number, legal form, addresses, activity and source of funds",
+            "Verify them with certified documents such as the commercial registration and constitutional documents",
+            "Work out the ownership structure and identify the beneficial owners, controllers and providers of funds",
+            "Verify the identity of beneficial owners and of shareholders holding 20% or more",
+            "Screen the entity, its owners and managers against sanctions lists and for PEP links",
+            "Rate the customer's risk and apply enhanced measures if the risk is higher",
+            "Approve the relationship and set up ongoing monitoring"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Anjali's alert",
+          "setting": "Transaction Monitoring team, head office. 2:15 pm.",
+          "lines": [
+            {
+              "who": "anjali",
+              "text": "A small trading company opened with expected turnover of a few thousand dinars a month. This week it paid in BD 18,000 in cash in three visits.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "What does our monitoring system say?",
+              "mood": "neutral"
+            },
+            {
+              "who": "anjali",
+              "text": "It flagged it as outside the expected profile. Module FC wants banks to verify the source of funds for significant or abnormal transactions and record what they found.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "Right. And for banks without automated monitoring, the module sets a hard line: transactions above BD 6,000 count as significant and go in a daily report to the MLRO.",
+              "mood": "proud"
+            },
+            {
+              "who": "yusuf",
+              "text": "Do we just ask the customer, or does this go straight to an STR?",
+              "mood": "worried"
+            },
+            {
+              "who": "noora",
+              "text": "First we examine the background and purpose and document it. If the answer doesn't hold up, it becomes an internal report. Let's practise.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The founders want their capital back",
+          "situation": "The two founders from this morning opened an account for their company under formation, with evidence that they applied for commercial registration. They deposited BD 50,000 of initial capital. Three days later, before the final registration or full CDD, they ask Yusuf to transfer BD 45,000 to a supplier abroad 'to secure stock'.",
+          "choices": [
+            {
+              "text": "Explain that the account can receive money but nothing can be paid out until registration and full CDD are complete, record the request, and tell the MLRO if the urgency or destination raises concern.",
+              "outcome": "Best. Module FC lets banks receive funds for companies under formation but bars disbursement until due diligence is complete. Recording the request and escalating concerns keeps the bank's options open.",
+              "score": 2
+            },
+            {
+              "text": "Make the payment because the account was opened properly and the money belongs to the company.",
+              "outcome": "Poor. Opening the account at stage one does not make it fully operational. Paying out before CDD is complete breaks the timing rules in Module FC.",
+              "score": 0
+            },
+            {
+              "text": "Close the account immediately and return the money in cash.",
+              "outcome": "Partly right. Exiting is an option where CDD cannot be completed, but these customers are still within the time allowed to finish their formalities, and funds received by transfer should be returned the same way.",
+              "score": 1
+            },
+            {
+              "text": "Allow a smaller payment of BD 5,000 as a goodwill gesture while the paperwork is finished.",
+              "outcome": "Poor. The rule is no disbursement until CDD is complete, whatever the amount. Splitting the payment does not change that.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "When due diligence cannot be completed",
+          "cards": [
+            {
+              "front": "Can we start before CDD is done?",
+              "back": "Generally no. A relationship or transaction must not start before CDD is complete, with narrow exceptions where no money may be paid out until CDD is finished."
+            },
+            {
+              "front": "Which exceptions?",
+              "back": "Companies under formation being registered, newly arrived residents taking up work, non-face-to-face business, and documents submitted after initial CDD."
+            },
+            {
+              "front": "CDD fails: what are the options?",
+              "back": "Consider freezing the funds and filing an STR, ending the relationship, not proceeding with the transaction, or returning the funds."
+            },
+            {
+              "front": "Returning funds",
+              "back": "Return them by the method used to send them: cash for cash, wire for wire."
+            },
+            {
+              "front": "Nominee accounts",
+              "back": "The person behind the account must be disclosed to the bank and verified."
+            },
+            {
+              "front": "Minors",
+              "back": "Follow normal identification and also verify the parent or legal guardian."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Pearlgate has no automated monitoring for one small product line. How must transactions above BD 6,000 on it be treated under Module FC?",
+          "options": [
+            "They may be ignored if the customer is low risk",
+            "They must be reported to the FIU as STRs automatically",
+            "They are treated as significant, captured in a daily report for the MLRO or a delegate, and the records kept for five years",
+            "They must be approved by the CBB before processing"
+          ],
+          "answer": 2,
+          "explanation": "Without automated monitoring, Module FC treats transactions above BD 6,000 as significant: they go into a daily report for the MLRO or a delegated official and the records are kept for five years. A large transaction is not automatically suspicious."
+        },
+        {
+          "type": "example",
+          "title": "Worked example: a non-resident customer file",
+          "body": "A businessman living in another country asks Pearlgate's retail arm for an account. Module FC requires retail banks dealing with non-residents to have **documented acceptance criteria** and **approved policies** on what they offer them, backed by a risk assessment. Pearlgate's file therefore records:\n\n- a **viable economic reason** for banking in Bahrain,\n- **enhanced due diligence** results,\n- his **country of tax residence**, where relevant,\n- evidence of his **banking relationship at home**,\n- an **indicative volume and value** of incoming funds, and\n- a test that he can be **contacted without unreasonable delay**.\n\nThe bank also tells him which services, such as loans, credit cards or cheque books, may be limited because of his non-resident status. A file built this way lets Anjali's team spot activity that does not match the stated purpose."
+        },
+        {
+          "type": "tip",
+          "title": "Keep CDD alive after onboarding",
+          "body": "Due diligence does not end at account opening:\n\n- **Scrutinise transactions** against what you know about the customer and their risk profile.\n- **Investigate significant, unexpected or unexplained changes** in activity.\n- When a customer **closes one account and opens another**, review and refresh their identity information.\n- Standard terms must require customers to **provide up-to-date identification**.\n- Review higher-risk customers more often, following your bank's documented review policy."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Assess country, customer, product or service and channel risk; document it, keep it current and match controls to the risk.",
+            "Collect the Module FC information set, including source of funds and reason for the account, and verify it, using E-KYC where practical.",
+            "For companies, identify beneficial owners by ownership, then control, then senior managing official, and verify shareholders of 20% or more.",
+            "No relationship or payout before CDD is complete; if CDD fails, consider an STR and freezing, exit, not proceeding or returning funds the same way.",
+            "Without automated monitoring, transactions above BD 6,000 are significant and go to the MLRO's daily report."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one customer type you deal with, such as salaried expatriates, small traders or new companies. Which of the four risk categories matters most for them, and what one extra question would help you understand their expected activity?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-aml-s2-q1",
+          "question": "Which four risk categories does the CBB expect a conventional bank to assess in its ML/TF risk assessment?",
+          "options": [
+            "Credit, market, liquidity and operational",
+            "Cash, cheque, card and wire transfer",
+            "Country or geographic, customer, product, service or transaction, and distribution channel",
+            "Retail, corporate, treasury and private banking"
+          ],
+          "answer": 2,
+          "explanation": "The CBB's risk assessment guidance and Module FC's risk-based approach both name country or geographic, customer, product, service or transaction, and delivery channel risk. The other lists describe prudential risks or business lines.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s2-q2",
+          "question": "A retail customer can prove his address only with a post office box. What does Module FC say?",
+          "options": [
+            "A P.O. box is acceptable if an employer letter confirms it",
+            "A P.O. box is acceptable if the customer is a GCC national",
+            "Addresses are optional for customers with a valid CPR",
+            "A P.O. box is not enough; the bank needs the full permanent residential address"
+          ],
+          "answer": 3,
+          "explanation": "Module FC asks for the full permanent address, meaning the residential address, and states that a post office box is insufficient. Nationality or an employer letter does not change that.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s2-q3",
+          "question": "How should an authorised Pearlgate official certify a copy of an identity document seen in original form?",
+          "options": [
+            "Stamp it 'verified' and send it to the CBB for approval",
+            "Scan it without marking, since originals were seen",
+            "Write 'original sighted' on it with the date and their signature",
+            "Ask the customer to sign the copy as a true copy"
+          ],
+          "answer": 2,
+          "explanation": "Module FC requires the official to write 'original sighted', with the date and signature, and equivalent measures for electronic copies. A customer's own signature is not certification.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s2-q4",
+          "question": "A company's shares are spread so thinly that no natural person holds a controlling interest, and no one controls it by other means. Whom must Pearlgate identify as beneficial owner?",
+          "options": [
+            "The company's external auditor",
+            "The natural person holding the senior managing official position",
+            "The largest corporate shareholder, whatever its own ownership",
+            "No one, because there is no beneficial owner to identify"
+          ],
+          "answer": 1,
+          "explanation": "Module FC's cascade ends with the senior managing official where no natural person is found through ownership or other control. Leaving the field blank or naming a corporate shareholder does not meet the rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s2-q5",
+          "question": "Which shareholders of a private company must Pearlgate verify under the Module FC due diligence rules, unless the company is a FATF/GCC listed company?",
+          "options": [
+            "Shareholders holding 20% or more of the issued capital",
+            "Only shareholders who are also directors",
+            "Only shareholders resident outside Bahrain",
+            "Every shareholder, regardless of the size of the holding"
+          ],
+          "answer": 0,
+          "explanation": "Module FC asks banks to obtain and verify the identity of shareholders holding 20% or more of issued capital, where applicable, with an exception for FATF/GCC listed companies.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s2-q6",
+          "question": "A new arrival awaiting his CPR asks to open a salary account. Under Module FC's timing rule, what is allowed?",
+          "options": [
+            "Verification may be completed after funds are received, but no funds may be paid out until CDD is fully met",
+            "The account may be used freely for 90 days before verification",
+            "The account must be refused until the CPR card is issued",
+            "The account can be fully used once the customer signs a declaration"
+          ],
+          "answer": 0,
+          "explanation": "Newly arrived persons taking up work or residence are one of the exceptions where verification can follow receipt of funds, provided nothing is disbursed until the requirements are met.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s2-q7",
+          "question": "Pearlgate cannot complete CDD on a customer who sent BD 12,000 by wire transfer. Which option is consistent with Module FC?",
+          "options": [
+            "Consider freezing the funds and filing an STR, or ending the relationship, or returning the funds by wire transfer",
+            "Return the funds in cash to close the matter quickly",
+            "Keep the account open and complete CDD at the next annual review",
+            "Process the customer's instructions and note the missing documents"
+          ],
+          "answer": 0,
+          "explanation": "Module FC lists freezing and filing an STR, terminating, not proceeding or returning funds by the same method. Funds received by wire go back by wire, not cash, and carrying on without CDD is not an option.",
+          "difficulty": 4
+        },
+        {
+          "id": "bh-aml-s2-q8",
+          "question": "Anjali's monitoring flags a transaction that is large and outside a customer's normal pattern. What does Module FC require next?",
+          "options": [
+            "Wait for a second unusual transaction before acting",
+            "Verify the source of funds, examine the background and purpose, and document the findings",
+            "Block the customer's card and close the account",
+            "File an STR immediately without speaking to anyone"
+          ],
+          "answer": 1,
+          "explanation": "For significant or abnormal transactions, Module FC requires the bank to verify the source of funds, examine background and purpose and record the findings, with the investigation done by the MLRO or a delegate. An STR follows if suspicion remains.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s2-q9",
+          "question": "Which item is part of the information Module FC asks a retail bank to obtain from a non-resident customer?",
+          "options": [
+            "Approval of the account by the CBB's Compliance Directorate",
+            "A guarantee from a Bahraini citizen for the account",
+            "A deposit equal to six months of expected turnover",
+            "Evidence of the customer's banking relationship in their country of residence"
+          ],
+          "answer": 3,
+          "explanation": "The non-resident rules include a viable economic reason, EDD, tax residence, evidence of home-country banking, reasons for using Bahrain, indicative volumes and contactability. Guarantees, deposits or CBB approval are not part of the list.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s2-q10",
+          "question": "A customer closes his savings account and opens a new current account. What does Module FC require Pearlgate to do?",
+          "options": [
+            "Nothing, because he is an existing customer",
+            "Review the customer's identity information, update records and re-verify anything missing or out of date",
+            "Treat the new account as a new customer and file an STR",
+            "Ask the CBB to confirm the customer's identity"
+          ],
+          "answer": 1,
+          "explanation": "Module FC requires a review of identity information when an existing customer closes one account and opens another, with missing or outdated information obtained and re-verified.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Enhanced Due Diligence: PEPs, Correspondents, Wire Transfers and TF Risk",
+      "stage": "The High-Risk Harbour",
+      "summary": "Apply Module FC's enhanced due diligence for higher-risk customers, politically exposed persons, non-face-to-face business, correspondent banking, introduced business, shell banks and wire transfers, and use the CBB's terrorist financing guidance to see why TF looks different from money laundering.",
+      "minutes": 55,
+      "objectives": [
+        "List the enhanced due diligence measures Module FC describes for higher-risk customers",
+        "Apply the PEP rules: identification, senior management approval, source of wealth and funds, and enhanced monitoring",
+        "Explain the extra steps for correspondent banking, shell banks, introduced business and wire transfers missing originator data",
+        "Contrast terrorist financing with money laundering using the CBB's 2020 TF guidance"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A busy morning in the harbour",
+          "setting": "Correspondent Banking and Trade desk, Pearlgate head office. 10:00 am.",
+          "lines": [
+            {
+              "who": "david",
+              "text": "Two things on my desk. A small bank abroad wants us to be its correspondent for US dollar payments, and a private banking prospect turns out to be a senior official's brother.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "Both are classic enhanced due diligence cases. Module FC has specific sections for each.",
+              "mood": "neutral"
+            },
+            {
+              "who": "david",
+              "text": "The relationship manager says the official's brother is 'just a businessman', so the PEP rules don't apply.",
+              "mood": "worried"
+            },
+            {
+              "who": "noora",
+              "text": "The PEP rules reach family members and close associates too. Being a relative is exactly the point.",
+              "mood": "thinking"
+            },
+            {
+              "who": "anjali",
+              "text": "And I have an inward transfer with no originator name or account number at all.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "Then this is the right stage for all three of you. The High-Risk Harbour: where we go deeper before we go ahead.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Enhanced due diligence in five scenes",
+          "scenes": [
+            {
+              "icon": "🚩",
+              "heading": "When it applies",
+              "narration": "Module FC requires enhanced due diligence for customers identified as having a higher risk profile, with extra inquiries and information in their case."
+            },
+            {
+              "icon": "🧾",
+              "heading": "Know more",
+              "narration": "That can mean more information about the customer and the purpose of the relationship, and updating their identification data more often."
+            },
+            {
+              "icon": "💰",
+              "heading": "Follow the money",
+              "narration": "It usually means understanding the source of funds and the source of wealth, and the reasons for particular transactions."
+            },
+            {
+              "icon": "✅",
+              "heading": "Senior sign-off",
+              "narration": "Senior management approval may be needed to start or continue the relationship."
+            },
+            {
+              "icon": "📈",
+              "heading": "Watch closely",
+              "narration": "Monitoring is stepped up, with more controls, more often, and closer review of selected transaction patterns."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Handling a politically exposed person",
+          "caption": "Based on Section FC-1.5 as it appears in the CBB-hosted copy that could be opened; check the current Rulebook text.",
+          "items": [
+            {
+              "label": "Identify",
+              "detail": "Use risk management systems and public databases to check PEP status at onboarding and periodically after."
+            },
+            {
+              "label": "Approve",
+              "detail": "Obtain senior management approval before accepting a PEP as a customer."
+            },
+            {
+              "label": "Source of wealth and funds",
+              "detail": "Record in the file the reasonable steps taken to establish both."
+            },
+            {
+              "label": "Profile",
+              "detail": "Build a profile of expected activity to use in monitoring."
+            },
+            {
+              "label": "Monitor",
+              "detail": "Apply enhanced ongoing monitoring, overseen at senior level such as by the MLRO."
+            },
+            {
+              "label": "Extend",
+              "detail": "Apply the same rules to the PEP's family members and close associates."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Which extra step fits?",
+          "prompt": "Match each higher-risk situation with a measure Module FC calls for.",
+          "pairs": [
+            {
+              "left": "New PEP customer",
+              "right": "Senior management approval before acceptance and a record of source of wealth and funds"
+            },
+            {
+              "left": "Correspondent bank relationship",
+              "right": "A due diligence questionnaire, a signed statement of responsibilities and senior management approval"
+            },
+            {
+              "left": "Account opened without meeting the customer",
+              "right": "Extra measures to confirm the customer is who they claim and the address is genuine"
+            },
+            {
+              "left": "Customer introduced by another institution",
+              "right": "A formal agreement, FATF-consistent CDD by the introducer and access to its records"
+            },
+            {
+              "left": "Approach from a suspected shell bank",
+              "right": "Refuse the relationship and make a suspicious transaction report"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The relationship manager says the PEP rules don't apply to the senior official's brother because the brother holds no public office himself. Who is right?",
+          "options": [
+            "The relationship manager, because PEP rules apply only to office holders",
+            "Noora, because Module FC applies the PEP requirements to family members and close associates as well",
+            "Neither: relatives are covered only if they share a joint account with the PEP",
+            "The relationship manager, unless the brother is resident outside Bahrain"
+          ],
+          "answer": 1,
+          "explanation": "Module FC extends the requirements for all types of PEP to their family and close associates. The brother needs the same enhanced measures, including senior management approval and source of wealth and funds."
+        },
+        {
+          "type": "concept",
+          "title": "Correspondent banking under Module FC",
+          "body": "Before Pearlgate acts as correspondent for a respondent bank, Module FC expects it to gather enough information, for example through a questionnaire, to understand the respondent's business. Factors include:\n\n- ownership, management and main business activities,\n- where it and its customers are located, and whether its country follows FATF standards,\n- the strength of its AML/CFT controls and the purpose of the account,\n- whether third parties use the account directly (payable-through accounts) and whether they were verified,\n- whether it can provide customer identification data on request, and\n- whether it has faced a money laundering or terrorist financing investigation.\n\nBefore opening, the bank must have a **signed statement** of each side's AML responsibilities and **senior management approval**. It must refuse relationships with **shell banks** and must not knowingly deal with banks that serve shell banks."
+        },
+        {
+          "type": "sort",
+          "title": "How should Pearlgate respond?",
+          "prompt": "Sort each situation by the response Module FC points to.",
+          "buckets": [
+            "Refuse or exit",
+            "Enhanced due diligence",
+            "Standard CDD may be enough"
+          ],
+          "items": [
+            {
+              "text": "A bank with no physical presence where it is licensed and no regulated group",
+              "bucket": 0
+            },
+            {
+              "text": "A respondent bank that knowingly serves shell banks",
+              "bucket": 0
+            },
+            {
+              "text": "A foreign minister's business partner opening a private banking account",
+              "bucket": 1
+            },
+            {
+              "text": "A new correspondent relationship with a bank in a FATF-compliant country",
+              "bucket": 1
+            },
+            {
+              "text": "A non-resident retail customer with income from abroad",
+              "bucket": 1
+            },
+            {
+              "text": "A charity asking for an account before showing the ministry's certificate of authorised signatories",
+              "bucket": 0
+            },
+            {
+              "text": "A resident teacher opening a salary account with expected activity",
+              "bucket": 2
+            },
+            {
+              "text": "A resident engineer whose activity matches his stated salary",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Anjali's anonymous wire",
+          "setting": "Payments operations, 1:30 pm.",
+          "lines": [
+            {
+              "who": "anjali",
+              "text": "This inward transfer has a beneficiary but no originator name, address or account number. Payments wants to credit it anyway.",
+              "mood": "worried"
+            },
+            {
+              "who": "david",
+              "text": "It came through one of our correspondents. Maybe their system just dropped the fields.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "Maybe. But Module FC tells us to scrutinise inward transfers missing originator information carefully, and to presume they are suspicious and pass them to the MLRO.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anjali",
+              "text": "Unless the sending bank gives us the details quickly when we ask?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "Yes: if it confirms the originator information in writing within two business days of our request, or the banks are acting as principals. Let's decide what to do.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The wire with no sender",
+          "situation": "An inward transfer of USD 48,000 for a Pearlgate customer arrives without the originator's name or account number. The customer phones twice asking for the money and says the sender is 'a business friend'. The payments team wants to credit it now and chase the details later.",
+          "choices": [
+            {
+              "text": "Hold the transfer, ask the sending bank in writing for the originator information, and pass the case to the MLRO for review on a possible STR if the details do not arrive in time.",
+              "outcome": "Best. Module FC treats such transfers as presumed suspicious and sends them to the MLRO, unless the originating institution provides the information in writing within two business days of the request.",
+              "score": 2
+            },
+            {
+              "text": "Credit the funds because the beneficiary is a known customer with full CDD.",
+              "outcome": "Poor. Good CDD on the beneficiary does not fix missing originator information, which is what the rule targets.",
+              "score": 0
+            },
+            {
+              "text": "Ask the customer to tell you who sent the money and credit it if the answer sounds reasonable.",
+              "outcome": "Partly right. The customer's explanation is useful context, but the rule looks to the originating institution for the information, and discussing suspicion with the customer risks tipping off.",
+              "score": 1
+            },
+            {
+              "text": "Return the transfer immediately without telling anyone.",
+              "outcome": "Poor. Returning it may lose the information trail and skips the MLRO review the rule requires.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Money laundering and terrorist financing compared",
+          "caption": "Drawn from the CBB's November 2020 guidance on combating the financing of terrorism and its 2021 risk assessment guidance.",
+          "headers": [
+            "Money laundering",
+            "Terrorist financing"
+          ],
+          "items": [
+            {
+              "label": "Where funds come from",
+              "left": "Proceeds of crime",
+              "right": "Criminal or entirely legitimate sources"
+            },
+            {
+              "label": "Main purpose",
+              "left": "Hide the criminal origin of funds",
+              "right": "Get funds to terrorist acts, people or groups"
+            },
+            {
+              "label": "Typical amounts",
+              "left": "Often large and layered",
+              "right": "Often small and easy to overlook"
+            },
+            {
+              "label": "Stages",
+              "left": "Placement, layering, integration",
+              "right": "Raise, move, use"
+            },
+            {
+              "label": "How risk is found",
+              "left": "Often enforcement-led",
+              "right": "More intelligence-led"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Terrorist financing: terms to know",
+          "cards": [
+            {
+              "front": "Raise, move, use",
+              "back": "The three stages of terrorist financing: raising funds, moving them through channels, and using them for attacks, people or support."
+            },
+            {
+              "front": "Legitimate sources",
+              "back": "Salaries, savings, businesses or charitable donations can all fund terrorism, so a clean source does not mean low TF risk."
+            },
+            {
+              "front": "Small amounts",
+              "back": "A low-value transfer may be low risk for money laundering yet a TF warning sign alongside other factors."
+            },
+            {
+              "front": "Prepaid cards",
+              "back": "The CBB's guidance notes that low-limit prepaid cards have been used for TF despite low ML risk."
+            },
+            {
+              "front": "Diverted donations",
+              "back": "Lawful funds such as charity collections can be diverted to radicalisation, recruitment or terrorism."
+            },
+            {
+              "front": "Without delay",
+              "back": "For UN designations, FATF reads 'without delay' as ideally within hours, to stop funds moving."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Before opening a correspondent relationship for a respondent bank, which two steps does Module FC require?",
+          "options": [
+            "A signed statement of each institution's AML responsibilities and senior management approval",
+            "A cash deposit from the respondent bank and approval by the CBB",
+            "A visit to the respondent's head office and a legal opinion from Bahrain",
+            "A guarantee from the respondent's central bank and annual audited accounts"
+          ],
+          "answer": 0,
+          "explanation": "Module FC requires a signed statement setting out each institution's detection and monitoring responsibilities and senior management approval before the relationship opens. The other items may be useful but are not the stated requirements."
+        },
+        {
+          "type": "example",
+          "title": "Worked example: Pearlgate's file on a PEP",
+          "body": "Pearlgate's private bank is asked to open an account for a former senior official from a neighbouring country who now runs a consultancy. The file shows how Module FC's PEP rules are applied:\n\n- **Identification:** PEP status confirmed from public databases at onboarding, with a reminder to re-check periodically.\n- **Approval:** the head of private banking and the MLRO sign off before acceptance, as senior management approval is required.\n- **Source of wealth:** salary history, sale of a family property and the consultancy's audited accounts, recorded in writing.\n- **Source of funds:** the first deposit comes from his own account at a regulated bank, matching the story.\n- **Profile:** expected monthly inflows from consultancy fees and a few large investment transfers a year.\n- **Monitoring:** enhanced monitoring with periodic senior review; his spouse and business partner are flagged as associates.\n\nThis is the quest's fictional story, not a real case."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "Higher-risk customers need enhanced due diligence: more information, source of funds and wealth, senior approval and closer monitoring.",
+            "PEPs need identification at onboarding and periodically, senior management approval, a written record of source of wealth and funds, and enhanced monitoring; family and associates are covered.",
+            "Correspondent banking needs a questionnaire-based review, a signed responsibilities statement and senior approval; never deal with shell banks.",
+            "Inward wires missing originator data are presumed suspicious and go to the MLRO unless the sending bank supplies the data in writing within two business days.",
+            "TF can use small, clean-looking amounts; think 'raise, move, use' and do not rely on ML red flags alone."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which of today's higher-risk situations is most likely to reach your desk: a PEP, a correspondent, a non-face-to-face customer or an incomplete wire? Write down the first person you would escalate it to and what you would send them."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-aml-s3-q1",
+          "question": "Which measure is listed in Module FC as part of enhanced due diligence for a higher-risk customer?",
+          "options": [
+            "Obtaining senior management approval to start or continue the relationship",
+            "Waiving the need for a source of funds if the customer is wealthy",
+            "Reducing monitoring to avoid burdening a valuable client",
+            "Replacing identity checks with a personal reference only"
+          ],
+          "answer": 0,
+          "explanation": "Module FC's EDD measures include more information, source of funds and wealth, reasons for transactions, senior management approval and enhanced monitoring. EDD increases checks; it never removes them.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s3-q2",
+          "question": "When must Pearlgate check whether a customer or beneficial owner is a PEP under Module FC?",
+          "options": [
+            "Only when the customer makes a transaction above BD 6,000",
+            "Only once, when the account is opened",
+            "Only when the CBB sends a list of PEPs",
+            "When establishing the relationship and periodically afterwards"
+          ],
+          "answer": 3,
+          "explanation": "Module FC requires risk management systems to determine PEP status both at the start of the relationship and periodically after it, using public databases and information. The CBB does not publish PEP lists for banks.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s3-q3",
+          "question": "An existing Pearlgate customer is appointed to a senior government post. What does Module FC require?",
+          "options": [
+            "Close the account, because banks may not serve serving officials",
+            "Nothing, because PEP rules only apply to new customers",
+            "File an STR, because appointment to office is suspicious",
+            "Apply PEP measures, including senior management approval for the relationship to continue and enhanced monitoring"
+          ],
+          "answer": 3,
+          "explanation": "Where an existing customer becomes a PEP, Module FC requires enhanced measures, including a record of source of wealth and funds, senior management approval to continue and ongoing monitoring. Becoming a PEP is not suspicious in itself.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s3-q4",
+          "question": "Which of these is NOT a factor Module FC lists for understanding a respondent bank in a correspondent relationship?",
+          "options": [
+            "The respondent's ownership structure and management",
+            "The respondent's share price performance over the last five years",
+            "Whether the respondent has been subject to an ML or TF investigation",
+            "Whether the respondent can provide customer identification data on request"
+          ],
+          "answer": 1,
+          "explanation": "Module FC's factors cover ownership, management, activities, location, AML/CFT controls, account purpose, payable-through users, ability to supply customer data and past investigations. Share price performance is not one of them.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s3-q5",
+          "question": "Pearlgate is approached by an institution it suspects is a shell bank. What must it do under Module FC?",
+          "options": [
+            "Decline politely and take no further action",
+            "Open the relationship with enhanced monitoring",
+            "Refuse to establish relations and make a suspicious transaction report",
+            "Ask the institution's regulator for a reference and proceed if satisfied"
+          ],
+          "answer": 2,
+          "explanation": "Module FC bars relationships with shell banks and requires an STR when approached by a shell bank or a suspected one. Simply declining misses the reporting duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s3-q6",
+          "question": "Pearlgate relies on an introducer for part of a customer's CDD. Who remains responsible for meeting Module FC's CDD requirements?",
+          "options": [
+            "Pearlgate, not the introducer",
+            "The CBB, because it approves introducers",
+            "The introducer, once a formal agreement is signed",
+            "Responsibility is shared equally and split by contract"
+          ],
+          "answer": 0,
+          "explanation": "Module FC states that where part of CDD is delegated to another institution or intermediary, responsibility stays with the bank. The formal agreement and confirmations support, but do not transfer, that duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s3-q7",
+          "question": "An inward wire lacks originator information. Under Module FC, when may Pearlgate avoid treating it as presumed suspicious?",
+          "options": [
+            "If the originating institution provides the originator information in writing within two business days of the request",
+            "If the beneficiary confirms by phone who sent the money",
+            "If the payment came through a correspondent in a GCC country",
+            "If the amount is below USD 10,000"
+          ],
+          "answer": 0,
+          "explanation": "The presumption lifts where the originating institution promptly, within two business days, supplies the information in writing on request, or where both banks act as principals. Amount, beneficiary statements or the route do not lift it.",
+          "difficulty": 4
+        },
+        {
+          "id": "bh-aml-s3-q8",
+          "question": "According to the CBB's TF guidance, why can a small transfer be a TF warning sign even when it looks low risk for money laundering?",
+          "options": [
+            "Because TF only involves transfers below reporting thresholds",
+            "Because terrorist acts can need only limited funds, so small amounts matter when combined with other factors",
+            "Because all small transfers must be reported to the FIU",
+            "Because small transfers are always made in cash"
+          ],
+          "answer": 1,
+          "explanation": "The guidance explains that low-volume transfers may be lower ML risk but higher TF risk alongside other indicators, since attacks may need little money. It does not require reporting every small transfer.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s3-q9",
+          "question": "Which description of terrorist financing stages matches the CBB's 2020 guidance?",
+          "options": [
+            "Placement, layering and integration",
+            "Raise, move and use funds",
+            "Identify, assess and mitigate",
+            "Collect, verify and approve"
+          ],
+          "answer": 1,
+          "explanation": "The CBB's TF guidance describes raising, moving and using funds. Placement, layering and integration describe money laundering; identify-assess-mitigate describes risk assessment.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s3-q10",
+          "question": "A charity asks Pearlgate to open an account. What must the bank have before providing financial services under Module FC?",
+          "options": [
+            "A deposit guarantee from a licensed bank",
+            "A letter from the charity's chairman listing its donors",
+            "An original certificate authenticated by the relevant ministry confirming who may act for the charity",
+            "An STR filed in advance as a precaution"
+          ],
+          "answer": 2,
+          "explanation": "Module FC's EDD for charities, clubs and societies requires an original ministry-authenticated certificate identifying and authorising those acting for the organisation before services are provided.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Suspicious Transaction Reporting, Tipping Off, Terrorist Financing and Sanctions",
+      "stage": "The Signal Room",
+      "summary": "Follow a suspicion from the counter to the authorities under Module FC: internal reports to the MLRO, the MLRO's independent decision, external STRs through the online system to the FIU and the CBB, tipping off, the 2017 terrorist financing offence and the general duties on UN and CBB-designated persons.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the internal and external STR process under Chapter FC-5, including who decides and how reports are sent",
+        "Recognise tipping off and the related offences under Decree-Law No. 4 of 2001",
+        "Explain the terrorist financing offence as rewritten by Decree-Law No. 36 of 2017",
+        "Describe in general terms the duties to screen, freeze and report for UN and CBB-designated persons"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A quiet word at the counter",
+          "setting": "Pearlgate Bank, Riffa branch. 12:10 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A teller, Salman, watches a customer pay in BD 9,500 in old notes for the third time this week, each time with a different story.",
+              "mood": "neutral"
+            },
+            {
+              "who": "yusuf",
+              "text": "(visiting the branch) Salman, you look troubled. What's up?",
+              "mood": "thinking"
+            },
+            {
+              "who": "narrator",
+              "text": "Salman explains. His supervisor told him to 'leave it, he's a good customer, and the MLRO is too busy for small things'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "yusuf",
+              "text": "That's not how this works. Noora, can you join us?",
+              "mood": "worried"
+            },
+            {
+              "who": "noora",
+              "text": "(on the phone) Salman did the right thing by speaking up. A line manager can talk it through with him, but nobody can stop a report reaching me.",
+              "mood": "proud"
+            },
+            {
+              "who": "noora",
+              "text": "This is the Signal Room stage. Let's trace exactly what happens to Salman's suspicion, and what must never be said to the customer.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "From suspicion to STR in five scenes",
+          "scenes": [
+            {
+              "icon": "👀",
+              "heading": "Notice",
+              "narration": "Staff who handle customer business notice something they know or suspect is linked to money laundering or terrorist financing, or that simply looks unusual or suspicious."
+            },
+            {
+              "icon": "📝",
+              "heading": "Report inside",
+              "narration": "They report it promptly to the MLRO. Procedures can allow a chat with a line manager first, but that can never be used to stop the report."
+            },
+            {
+              "icon": "🧠",
+              "heading": "MLRO decides",
+              "narration": "The MLRO, or an authorised delegate, considers the report with all the information the bank holds. The decision to report is not subject to anyone else's approval."
+            },
+            {
+              "icon": "📤",
+              "heading": "Report outside",
+              "narration": "If suspicion remains, the MLRO reports promptly through the online STR system to the financial intelligence unit at the Ministry of Interior and to the CBB's Compliance Directorate. Paper reports are not accepted."
+            },
+            {
+              "icon": "🤐",
+              "heading": "Stay silent and keep records",
+              "narration": "Nobody tells the customer. If no report is made, the MLRO records why, and STR details are kept for at least five years."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Salman's suspicion, step by step",
+          "prompt": "Put the reporting steps in the order Module FC sets them out.",
+          "steps": [
+            "Salman notices unusual cash deposits that don't fit the customer's profile",
+            "Salman reports his suspicion promptly to the MLRO, using the internal procedure",
+            "The MLRO considers the report against all the information the bank holds",
+            "The MLRO decides, without needing anyone's consent, that suspicion remains",
+            "The MLRO files the STR through the online STR system to the FIU and the CBB's Compliance Directorate",
+            "The bank keeps the STR details and how it was handled for at least five years"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "How alerts become STRs",
+          "caption": "Not every alert is suspicious, but every internal report gets a recorded decision.",
+          "items": [
+            {
+              "label": "Alerts and observations",
+              "detail": "Monitoring alerts and things staff notice at the counter and in operations."
+            },
+            {
+              "label": "Internal reports",
+              "detail": "Staff knowledge or suspicion reported promptly to the MLRO."
+            },
+            {
+              "label": "MLRO review",
+              "detail": "Considered with KYC and all other relevant information the bank holds."
+            },
+            {
+              "label": "External STRs",
+              "detail": "Filed online to the FIU and the CBB Compliance Directorate when suspicion remains."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Salman's supervisor wants to discuss the case before it goes to the MLRO. What does Module FC say about this?",
+          "options": [
+            "The supervisor decides whether the report goes ahead",
+            "Consultation is allowed, but it must not be used to stop a report reaching the MLRO",
+            "Consultation with line managers is prohibited in all cases",
+            "The teller must first get the customer's explanation in writing"
+          ],
+          "answer": 1,
+          "explanation": "Module FC allows internal processes where staff consult line managers first, but these must not prevent reports reaching the MLRO once staff have stated knowledge or suspicion. Procedures must also allow disciplinary action against staff who fail to report without reasonable excuse."
+        },
+        {
+          "type": "concept",
+          "title": "Tipping off and the related offences",
+          "body": "Module FC states that, in line with the AML Law, the bank, its directors, officers and employees **must not warn or inform** customers, beneficial owners or other subjects that information about them is being reported.\n\nIt also says that if staff form a suspicion and believe that carrying on with CDD would **tip off** the customer, the bank may stop the CDD process and **must file an STR**.\n\nDecree-Law No. 4 of 2001 backs this up with related offences:\n\n- **failing to disclose** a suspicion gained at work,\n- **obstructing** an order issued by or for the enforcement unit, and\n- **disclosing** an investigation or attachment order in a way likely to harm the investigation.\n\nIn practice: no hints, no 'friendly warnings', no telling the customer why a payment is delayed beyond what your procedure allows."
+        },
+        {
+          "type": "sort",
+          "title": "Tipping-off risk or safe practice?",
+          "prompt": "Sort each response to a suspicious customer.",
+          "buckets": [
+            "Tipping-off risk",
+            "Safe practice"
+          ],
+          "items": [
+            {
+              "text": "'Compliance has flagged you, so you might want to use another bank.'",
+              "bucket": 0
+            },
+            {
+              "text": "Telling the customer an STR has been filed so he isn't surprised",
+              "bucket": 0
+            },
+            {
+              "text": "Hinting that 'smaller deposits would attract less attention'",
+              "bucket": 0
+            },
+            {
+              "text": "Mentioning to the customer's relative that the account is being looked at",
+              "bucket": 0
+            },
+            {
+              "text": "Asking normal questions about the purpose of a transaction",
+              "bucket": 1
+            },
+            {
+              "text": "Following the procedure's standard script for a delayed payment",
+              "bucket": 1
+            },
+            {
+              "text": "Stopping further CDD questions that would alert him, and filing an STR",
+              "bucket": 1
+            },
+            {
+              "text": "Escalating to the MLRO and saying nothing more to the customer",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A hit on the list",
+          "setting": "Payments screening queue, 3:40 pm.",
+          "lines": [
+            {
+              "who": "anjali",
+              "text": "Our screening tool has stopped an outgoing transfer. The beneficiary's name and date of birth match a person on a list the CBB circulated.",
+              "mood": "worried"
+            },
+            {
+              "who": "david",
+              "text": "The customer is a trading firm I know well. Could it be a false positive?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "It could. That's why we check identifiers properly. But until we know, the payment does not move.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anjali",
+              "text": "Module FC says banks must not deal with persons the CBB designates and must report dealings using the STR procedure.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "And then we follow any directions the authorities give. Let's work through the decision.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The screening match",
+          "situation": "Pearlgate's screening holds an outgoing USD 120,000 transfer from a long-standing trading customer. The beneficiary's name, nationality and date of birth match an individual on a list of designated persons circulated by the CBB. The customer's finance director calls, asking why the payment is late and saying the deal will collapse.",
+          "choices": [
+            {
+              "text": "Keep the payment stopped, verify the match with the MLRO, and if it is confirmed report it through the STR procedure and follow the authorities' directions, telling the customer only what the procedure allows.",
+              "outcome": "Best. Module FC bars dealing with CBB-designated persons, requires reporting of any dealings through the FC-5.2 procedure and compliance with later directions. Careful wording avoids tipping off.",
+              "score": 2
+            },
+            {
+              "text": "Release the payment because the customer is long-standing and the match might be a coincidence.",
+              "outcome": "Poor. Releasing funds before the match is resolved risks making funds available to a designated person, which the sanctions rules are designed to prevent.",
+              "score": 0
+            },
+            {
+              "text": "Explain to the finance director that the beneficiary appears on a terrorist list so he can fix the paperwork.",
+              "outcome": "Poor. Disclosing the reason alerts the parties and may prejudice any action by the authorities.",
+              "score": 0
+            },
+            {
+              "text": "Cancel the payment and return the funds to the customer's account without escalating, since nothing left the bank.",
+              "outcome": "Partly right on stopping the payment, but it skips verification and reporting. The authorities need to know about attempted dealings with designated persons.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two kinds of sanctions screening",
+          "caption": "The CBB's TF guidance expects documented procedures for both types of screening, timely list updates and reporting of positive matches.",
+          "headers": [
+            "Customer screening",
+            "Transaction screening"
+          ],
+          "items": [
+            {
+              "label": "What is checked",
+              "left": "Customers, owners and related parties",
+              "right": "Payments and their parties"
+            },
+            {
+              "label": "When",
+              "left": "At onboarding and through the relationship",
+              "right": "Before the payment is processed"
+            },
+            {
+              "label": "Goal",
+              "left": "Find designated persons among customers",
+              "right": "Stop funds reaching designated persons"
+            },
+            {
+              "label": "Must stay current",
+              "left": "Lists updated for new listings and de-listings",
+              "right": "Lists updated for new listings and de-listings"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Sanctions and terrorist financing: key points",
+          "cards": [
+            {
+              "front": "UN designations",
+              "back": "Banks must implement UN Security Council resolutions on terrorism and freeze the funds of persons and entities designated under them, without delay."
+            },
+            {
+              "front": "CBB lists",
+              "back": "The CBB circulates lists of designated persons and entities; banks check for any dealings and report their findings."
+            },
+            {
+              "front": "Dealings found",
+              "back": "Report accounts or dealings with designated persons using the STR procedure and follow later directions."
+            },
+            {
+              "front": "TF offence (2017)",
+              "back": "Funding a terrorist group or individual, or holding their funds, knowing of their terrorist activity, carries life imprisonment or at least 10 years."
+            },
+            {
+              "front": "Fines for TF",
+              "back": "Decree-Law No. 36 of 2017 set fines from BD 100,000 to BD 500,000 for the offence."
+            },
+            {
+              "front": "Proliferation financing",
+              "back": "CBB guidance links PF risk to UN sanctions on the DPRK and Iran and to evasion through front companies."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Reporting rules at a glance",
+          "prompt": "Match each situation to what Module FC says about it.",
+          "pairs": [
+            {
+              "left": "Paper STR",
+              "right": "Not accepted: reports go through the online STR system"
+            },
+            {
+              "left": "Attempted transaction",
+              "right": "Must also be reported if suspicious, even if it never went through"
+            },
+            {
+              "left": "Tax-related suspicion",
+              "right": "Still reportable: the duty applies whether or not tax matters are involved"
+            },
+            {
+              "left": "MLRO decides not to report",
+              "right": "The reasons must be documented"
+            },
+            {
+              "left": "STR details",
+              "right": "Kept for at least five years"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Where must Pearlgate's MLRO send an external STR under Module FC?",
+          "options": [
+            "To the CBB's Consumer Protection Office by email",
+            "To the Public Prosecution in writing",
+            "Through the online STR system to the FIU at the Ministry of Interior and the CBB's Compliance Directorate",
+            "To the customer's relationship manager for sign-off first"
+          ],
+          "answer": 2,
+          "explanation": "Module FC sends external reports to the financial intelligence unit at the Ministry of Interior (named the Financial Intelligence Directorate in the Rulebook text) and to the CBB's Compliance Directorate through the online STR system. Paper reports are refused and no one else approves the MLRO's report."
+        },
+        {
+          "type": "example",
+          "title": "Worked example: the STR that nearly stalled",
+          "body": "Salman's internal report reaches Noora at 1 pm. She checks the customer's profile: a self-employed tailor with expected deposits of around BD 1,500 a month. Three cash deposits of BD 9,500 in a week, in old notes, with inconsistent explanations, do not fit.\n\nShe pulls the account history, the CDD file and the branch's notes. There is no new business, no property sale and no inheritance on file. She concludes suspicion remains and files through the online STR system the same afternoon.\n\nShe also:\n\n- records her reasoning and the evidence she reviewed,\n- reminds the branch not to discuss the matter with the customer,\n- asks HR to address the supervisor's attempt to block the report, as Module FC requires disciplinary arrangements for failures to report, and\n- adds the case to her figures for the annual review of internal and external reports.\n\nThis is the quest's fictional story."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Staff report knowledge or suspicion promptly to the MLRO; line-manager consultation can never block a report.",
+            "The MLRO decides independently, files online to the FIU and the CBB Compliance Directorate, and documents reasons when not filing.",
+            "Report attempted transactions too, whether or not tax is involved, and keep STR details for at least five years.",
+            "Never tip off; if CDD would alert the customer, stop it and file an STR.",
+            "Do not deal with UN or CBB-designated persons; freeze without delay, report through the STR procedure and follow the authorities' directions."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Imagine a customer asks you directly, 'Is there a problem with my account?' after you have escalated a suspicion. Write the words you would use that are honest, follow your bank's procedure and do not tip them off."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-aml-s4-q1",
+          "question": "Which staff does Module FC require to report knowledge or suspicion promptly to the MLRO?",
+          "options": [
+            "Only branch managers and above",
+            "Only staff in the compliance department",
+            "Staff who handle customer business, and those managerially responsible for them",
+            "Only staff who have completed a specialist AML qualification"
+          ],
+          "answer": 2,
+          "explanation": "Section FC-5.1 covers staff who handle customer business or manage such staff. Limiting reporting to compliance or senior staff would leave the front line, where suspicion usually arises, out of the process.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s4-q2",
+          "question": "What must a bank's internal reporting procedures include under Module FC, besides the route to the MLRO?",
+          "options": [
+            "A cap on the number of reports each branch may make",
+            "A requirement for two managers to approve each internal report",
+            "Arrangements for disciplining staff who fail to report without reasonable excuse",
+            "A rule that reports are only made after the customer is interviewed"
+          ],
+          "answer": 2,
+          "explanation": "Module FC requires internal procedures to include disciplinary arrangements for staff who fail to report without reasonable excuse. Approval layers or customer interviews could block or tip off.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s4-q3",
+          "question": "The MLRO reviews an internal report and decides not to file an STR. What must happen?",
+          "options": [
+            "The case must be sent to the CBB for a second opinion",
+            "The MLRO documents the reasons why no report was made",
+            "The member of staff who raised it must sign to agree",
+            "The report is deleted to protect the customer"
+          ],
+          "answer": 1,
+          "explanation": "Module FC requires the MLRO to document why no external report was made. These records also feed the review of internal reports that did not become STRs.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s4-q4",
+          "question": "A deputy general manager tells the MLRO that an STR on a major client needs the chief executive's approval. Is that right?",
+          "options": [
+            "No: the MLRO's report must not be subject to anyone else's consent or approval",
+            "Yes, if the client's balances exceed a set threshold",
+            "Yes: STRs on major clients always need chief executive approval",
+            "No: the board must approve it instead of the chief executive"
+          ],
+          "answer": 0,
+          "explanation": "Module FC requires banks to ensure that where the MLRO or delegate suspects ML or TF, the report is made without being subject to the consent or approval of any other person.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s4-q5",
+          "question": "A customer abandons a transfer when asked about its purpose, and the explanation offered was implausible. Must Pearlgate consider reporting it?",
+          "options": [
+            "Yes: Module FC requires reporting of suspicious attempted transactions as well as completed ones",
+            "No: abandoned transactions are only noted in the customer file",
+            "Only if the amount exceeds BD 6,000",
+            "No: only completed transactions can be reported"
+          ],
+          "answer": 0,
+          "explanation": "Section FC-5.2 requires banks to report all suspicious transactions or attempted transactions. The BD 6,000 figure is a monitoring rule, not a reporting threshold.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s4-q6",
+          "question": "While carrying out CDD, a relationship manager realises that further questions would alert the customer to a suspicion. What does Module FC allow?",
+          "options": [
+            "Close the account and explain the bank's concerns",
+            "Stop pursuing the CDD process and file an STR",
+            "Wait until the next periodic review to raise it",
+            "Continue the questions but tell the customer they are routine"
+          ],
+          "answer": 1,
+          "explanation": "Module FC lets the bank choose not to pursue CDD where it reasonably believes that doing so would tip off the customer, but it must then file an STR.",
+          "difficulty": 4
+        },
+        {
+          "id": "bh-aml-s4-q7",
+          "question": "Under Decree-Law No. 36 of 2017, which act is covered by the rewritten terrorist financing offence?",
+          "options": [
+            "Obtaining funds from a terrorist group's members to keep them safe on the group's behalf",
+            "Refusing to open an account for a charity without a ministry certificate",
+            "Failing to update a customer's address after a move",
+            "Filing an STR that later proves unfounded"
+          ],
+          "answer": 0,
+          "explanation": "The 2017 text covers collecting, contributing or allocating funds for terrorist groups or individuals, and obtaining their funds for safekeeping or use in their interest, with knowledge of their terrorist activity.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s4-q8",
+          "question": "What does Module FC require when a bank finds it has accounts or dealings with persons designated by the CBB?",
+          "options": [
+            "Close the account and pay the balance to the customer",
+            "Report the details using the STR procedures and comply with later directions from the authorities",
+            "Ask the customer to confirm in writing that he is not a terrorist",
+            "Continue the relationship but monitor it more closely"
+          ],
+          "answer": 1,
+          "explanation": "Section FC-8.3 requires banks not to deal with CBB-designated persons, to report accounts or dealings through the FC-5.2 procedure and to follow later directions. Paying out the balance could make funds available to a designated person.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s4-q9",
+          "question": "According to the CBB's TF guidance, what is the difference between customer screening and transaction screening?",
+          "options": [
+            "Customer screening is optional for retail banks; transaction screening is mandatory",
+            "Customer screening uses CBB lists; transaction screening uses only internal lists",
+            "There is no difference; the terms describe the same control",
+            "Customer screening finds designated persons at onboarding and through the relationship; transaction screening checks payments for designated parties"
+          ],
+          "answer": 3,
+          "explanation": "The guidance describes two main controls: customer screening at onboarding and through the lifecycle, and transaction screening to catch payments involving targeted persons. Both need current lists.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s4-q10",
+          "question": "How long must Pearlgate keep the relevant details of STRs it has submitted?",
+          "options": [
+            "At least one year",
+            "Until the customer relationship ends",
+            "Until the FIU closes its investigation",
+            "At least five years"
+          ],
+          "answer": 3,
+          "explanation": "Module FC requires banks to retain all relevant details of STRs submitted to the authorities for at least five years. The FIU's case status does not set the period.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Bank's Programme: MLRO, Governance, Records and CBB Enforcement",
+      "stage": "The Boardroom",
+      "summary": "Get Pearlgate ready for the CBB's examination: board-approved systems and controls, the MLRO and deputy MLRO, AML KPIs, the annual review of effectiveness, record keeping, staff awareness, the CBB's enforcement powers and what its annual reports say about enforcement.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the board's and senior management's responsibilities for the AML/CFT programme under Module FC",
+        "State the main requirements for appointing the MLRO and deputy MLRO and the MLRO's responsibilities",
+        "Apply Module FC's record-keeping periods and access requirements",
+        "Explain the CBB's enforcement powers for breaches of Module FC and how examinations test the programme"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Ten days to the examination",
+          "setting": "Executive floor, Pearlgate head office. 8:00 am.",
+          "lines": [
+            {
+              "who": "khalid",
+              "text": "I'm Khalid, chief executive. The CBB's Compliance Directorate arrives in ten days. Tell me plainly: what will they test, and where are we weak?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "They'll test whether our controls work, not just whether we have documents: CDD files, monitoring, STR decisions, records and governance.",
+              "mood": "neutral"
+            },
+            {
+              "who": "khalid",
+              "text": "And governance means me and the board?",
+              "mood": "worried"
+            },
+            {
+              "who": "noora",
+              "text": "It does. Module FC asks the board to approve and review our AML systems and controls every year, and to act on the annual review findings.",
+              "mood": "proud"
+            },
+            {
+              "who": "anjali",
+              "text": "We also need to show that AML performance counts in staff appraisals and pay. Module FC asks for KPIs.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "This is the final stage before the boss fight: the Boardroom. Let's make sure every piece of the programme stands up.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Pearlgate's programme in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "The board",
+              "narration": "The board approves the bank's documented AML and CFT systems and controls and reviews them every year. The CBB can ask to see that approval and review."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "The MLRO",
+              "narration": "An approved, senior MLRO, with at least one deputy, runs the policies, handles internal and external reports and reports on effectiveness."
+            },
+            {
+              "icon": "📊",
+              "heading": "Accountability",
+              "narration": "AML key performance indicators feed into staff appraisals and pay, so compliance breaches have consequences."
+            },
+            {
+              "icon": "🗂️",
+              "heading": "Records",
+              "narration": "Identity, transaction, compliance, report and training records are kept for at least five years and can be produced quickly."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Review and enforcement",
+              "narration": "Effectiveness is reviewed every year. If the bank breaches Module FC, the CBB can impose penalties and other enforcement measures."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who owns AML/CFT at Pearlgate",
+          "caption": "Responsibility for compliance stays with the bank and the designated MLRO even when tasks are delegated.",
+          "items": [
+            {
+              "label": "Board of directors",
+              "detail": "Approves and reviews the AML/CFT systems and controls every year and commissions remedial action."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Receives the MLRO's effectiveness reports and resources the programme."
+            },
+            {
+              "label": "MLRO and deputy MLRO",
+              "detail": "Run policies, decide on STRs, monitor high-risk accounts and keep records."
+            },
+            {
+              "label": "All staff",
+              "detail": "Apply CDD, monitor, report suspicion and meet their AML KPIs."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "The MLRO under Module FC",
+          "cards": [
+            {
+              "front": "Approval",
+              "back": "The MLRO is an approved person and must be approved by the CBB before appointment."
+            },
+            {
+              "front": "No conflicts",
+              "back": "The role must not be combined with conflicting functions such as internal auditor or business line head."
+            },
+            {
+              "front": "Outsourcing",
+              "back": "Not allowed: the MLRO must be a director or employee of the bank."
+            },
+            {
+              "front": "Seniority and access",
+              "back": "A member of senior management, free from business-line interference, with direct access to the board and full access to transaction and CDD data."
+            },
+            {
+              "front": "Residence",
+              "back": "The MLRO must be resident in Bahrain."
+            },
+            {
+              "front": "Deputy",
+              "back": "At least one deputy MLRO, also CBB-approved, must be appointed to act in the MLRO's absence."
+            },
+            {
+              "front": "Vacancy",
+              "back": "A permanent replacement, approved by the CBB, within 120 calendar days, with CBB-approved interim arrangements."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Pearlgate's MLRO resigns unexpectedly. What does Module FC require?",
+          "options": [
+            "Leave the post empty until the next board meeting",
+            "Ask the head of internal audit to take over permanently",
+            "Make immediate CBB-approved interim arrangements and appoint a CBB-approved permanent replacement within 120 calendar days",
+            "Outsource the role to a consultancy until a replacement is found"
+          ],
+          "answer": 2,
+          "explanation": "Module FC requires immediate interim arrangements, including an acting MLRO, approved by the CBB, and a permanent replacement within 120 calendar days after CBB approval. Internal audit is a conflicting function and outsourcing is not allowed."
+        },
+        {
+          "type": "concept",
+          "title": "Records Module FC expects you to keep",
+          "body": "Module FC builds on the record-keeping duties in the AML Law. Conventional banks must keep, for at least **five years**:\n\n- **Customer records:** identity evidence and relationship records, such as application forms, account files, correspondence and the results of any analysis of unusual transactions, counted from when the relationship ends.\n- **Transaction records:** documents, including customer instructions by letter, fax or email, that allow the transaction to be reconstructed, counted from when it was completed.\n- **Compliance records:** reports produced for the annual compliance review, reports made to or by the MLRO, and records of how each was dealt with.\n- **Training records:** dates of AML/CFT training, its nature and the names of staff who took it.\n\nAll of these must be available for **prompt and swift access** by the relevant authorities."
+        },
+        {
+          "type": "match",
+          "title": "When does the five-year clock start?",
+          "prompt": "Match each record to the event that starts its minimum five-year retention period.",
+          "pairs": [
+            {
+              "left": "Customer identity evidence",
+              "right": "When the customer relationship ends"
+            },
+            {
+              "left": "Transaction documents",
+              "right": "When the transaction was completed"
+            },
+            {
+              "left": "Investigation of a significant transaction",
+              "right": "When the transaction was completed"
+            },
+            {
+              "left": "STR details",
+              "right": "Kept for at least five years after they are submitted"
+            },
+            {
+              "left": "Annual compliance review reports",
+              "right": "Kept for at least five years as compliance records"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "HR's training question",
+          "setting": "Noora's office. 2:00 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "HR's training lead drops by with a spreadsheet of courses.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "Module FC has a chapter on staff training and recruitment, and the MLRO is responsible for keeping arrangements for staff awareness and training in place.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anjali",
+              "text": "Who decides which staff take what, and when?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noora",
+              "text": "Our board-approved policy does, based on our risk assessment and roles. The CBB's risk assessment guidance says training should reflect the findings of that assessment.",
+              "mood": "proud"
+            },
+            {
+              "who": "khalid",
+              "text": "And the examiners will ask for proof?",
+              "mood": "neutral"
+            },
+            {
+              "who": "noora",
+              "text": "They can. We keep records of dates, content and names for at least five years. And Module FC expects our systems to include adequate screening when we hire.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The branch with no reports",
+          "situation": "Noora's annual effectiveness figures show that the Riffa branch, one of Pearlgate's busiest for cash, made no internal suspicious transaction reports all year, while similar branches made several. The branch manager says this proves his customers are low risk and asks that the figure be left out of the board report.",
+          "choices": [
+            {
+              "text": "Keep the figure in the report, review a sample of Riffa's cash activity and CDD files, give the branch targeted awareness sessions and tell the board what was found and done.",
+              "outcome": "Best. Breaking figures down by branch exists to show whether a reasonable overall total hides under-reporting in one part of the bank. The board needs the facts so it can commission remedial measures.",
+              "score": 2
+            },
+            {
+              "text": "Leave the figure out, since zero reports is not a breach in itself.",
+              "outcome": "Poor. Hiding the figure defeats the purpose of the review and denies the board information it needs to act.",
+              "score": 0
+            },
+            {
+              "text": "Set a target of a minimum number of internal reports per branch each quarter.",
+              "outcome": "Partly right on the concern, but quotas encourage defensive, low-quality reports rather than real suspicion.",
+              "score": 1
+            },
+            {
+              "text": "Report the branch manager to the CBB immediately for failing to report.",
+              "outcome": "Poor. There is no evidence yet of a failure to report; the first step is to examine the branch's activity and controls.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "CBB enforcement by its conventional banking supervisors",
+          "caption": "All taken under Article 38 of the CBB Law. The reports do not name the banks or say how many concerned AML.",
+          "items": [
+            {
+              "label": "Actions in 2021",
+              "value": "10",
+              "detail": "Enforcement actions, including financial penalties, reported in the CBB's 2021 annual report."
+            },
+            {
+              "label": "Actions in 2022",
+              "value": "5",
+              "detail": "Enforcement actions against banks, including financial penalties, in the 2022 report."
+            },
+            {
+              "label": "Actions in 2023",
+              "value": "15",
+              "detail": "Enforcement actions against licensees, including penalties, in the 2023 report."
+            },
+            {
+              "label": "Actions in 2024",
+              "value": "2",
+              "detail": "Enforcement actions, including penalties, in the draft 2024 annual report."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Whose job is it?",
+          "prompt": "Sort each task to the person or body Module FC gives it to.",
+          "buckets": [
+            "Board",
+            "MLRO",
+            "All relevant staff"
+          ],
+          "items": [
+            {
+              "text": "Approving and annually reviewing the AML/CFT systems and controls",
+              "bucket": 0
+            },
+            {
+              "text": "Receiving the annual review reports and commissioning remedial measures",
+              "bucket": 0
+            },
+            {
+              "text": "Deciding whether an internal report becomes an external STR",
+              "bucket": 1
+            },
+            {
+              "text": "Producing annual reports on the effectiveness of AML/CFT controls",
+              "bucket": 1
+            },
+            {
+              "text": "Ongoing monitoring of what may be high-risk customer accounts",
+              "bucket": 1
+            },
+            {
+              "text": "Reporting suspicion promptly through the internal procedure",
+              "bucket": 2
+            },
+            {
+              "text": "Meeting AML key performance indicators that count in appraisals",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Without a court order, what fine can the CBB levy on a licensee that fails to comply with Module FC, under the copy of Section FC-9.1 that could be opened?",
+          "options": [
+            "Up to BD 20,000, at the CBB's discretion, in addition to other enforcement measures",
+            "Up to BD 1,000, and only after a court ruling",
+            "A fixed BD 100 a day until the breach ends, with nothing else",
+            "No fine: the CBB can only issue warnings"
+          ],
+          "answer": 0,
+          "explanation": "Section FC-9.1 allows the CBB, without a court order and at its discretion, to levy a fine of up to BD 20,000 for failure to comply with the module, without prejudice to penalties under the CBB Law, Decree-Law No. 4 or the Penal Code. Module EN sets out other measures."
+        },
+        {
+          "type": "example",
+          "title": "From the CBB's own reports: what enforcement looks like",
+          "body": "The CBB rarely names banks it penalises in its annual reports, but it describes the scale and basis of its work:\n\n- Its conventional banking supervision directorates reported **10 enforcement actions** in 2021, **5** in 2022 and **15** in 2023, including financial penalties, all under **Article 38 of the CBB Law**. The draft 2024 report records **two**.\n- The **Compliance Directorate** runs onsite AML/CFT examinations that test procedures, systems and internal controls against the AML Law, the CBB Law and Module FC.\n- Module FC itself allows the CBB to fine a licensee **up to BD 20,000** without a court order for breaching the module, and points to Module EN for other measures.\n\nThe lesson for Khalid's board: enforcement is a regular supervisory tool in Bahrain, and examinations look for evidence that controls work."
+        },
+        {
+          "type": "tip",
+          "title": "Getting ready for a CBB examination",
+          "body": "- Have the **board-approved** AML/CFT documents and the record of the last annual review ready.\n- Pull **sample CDD files** across risk levels, including PEPs, non-residents and corporates with beneficial owners.\n- Show the **monitoring** set-up, how alerts are cleared and the investigation records.\n- Produce the **internal and external report** figures, with reasons for every internal report not filed.\n- Show **training and awareness records** and AML KPIs in appraisals.\n- Check that every record can be retrieved **quickly**."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "The board approves and reviews the AML/CFT systems and controls every year and acts on review findings; the CBB can ask to see this.",
+            "The MLRO is a CBB-approved, Bahrain-resident senior manager with at least one approved deputy; the role cannot be outsourced or combined with conflicting duties.",
+            "AML KPIs must count in staff appraisals and pay, and systems and controls should include adequate screening when hiring.",
+            "Keep customer, transaction, compliance, report and training records for at least five years, ready for swift access.",
+            "The CBB can fine up to BD 20,000 for Module FC breaches without a court order and takes regular enforcement actions under Article 38 of the CBB Law."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a CBB examiner asked you tomorrow to show how you apply your bank's AML procedures in your role, what evidence could you produce, and where would it be stored?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-aml-s5-q1",
+          "question": "What does Module FC require of the board regarding the bank's AML/CFT systems and controls?",
+          "options": [
+            "They are approved by the MLRO alone and only noted by the board",
+            "They are approved by the CBB and adopted automatically by the bank",
+            "They must be documented, approved and reviewed annually by the board, with the documents available to the CBB on request",
+            "They are approved once at licensing and need no further board involvement"
+          ],
+          "answer": 2,
+          "explanation": "Section FC-2.1 requires the systems and controls to be documented and approved and reviewed annually by the board, and the documentation and board review to be available to the CBB on request.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s5-q2",
+          "question": "Which combination of roles does Module FC rule out for the MLRO?",
+          "options": [
+            "MLRO who is also a member of senior management",
+            "MLRO combined with the internal auditor role",
+            "MLRO who delegates some tasks within the bank",
+            "MLRO combined with the compliance officer role in a small bank"
+          ],
+          "answer": 1,
+          "explanation": "Module FC bars combining the MLRO with functions that create conflicts, such as internal auditor or business line head. It allows combining with the compliance officer role where the business is limited, and delegation within the bank.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s5-q3",
+          "question": "Which requirement applies to Pearlgate's MLRO under Module FC?",
+          "options": [
+            "The MLRO must be resident in Bahrain",
+            "The MLRO must be a Bahraini national",
+            "The MLRO must hold a law degree",
+            "The MLRO must report to the head of retail banking"
+          ],
+          "answer": 0,
+          "explanation": "Module FC requires the MLRO to be resident in Bahrain, part of senior management and free from business-line interference. Nationality and a law degree are not stated requirements, and reporting to a business head would undermine independence.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s5-q4",
+          "question": "How many deputy MLROs must a conventional bank appoint under Module FC?",
+          "options": [
+            "One for every branch the bank operates",
+            "At least one, or more depending on the scale and complexity of operations",
+            "None, unless the CBB asks for one",
+            "Exactly two, one for retail and one for corporate business"
+          ],
+          "answer": 1,
+          "explanation": "Module FC requires at least one deputy MLRO, with more where scale and complexity demand. The deputy is a controlled function and also needs CBB approval.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s5-q5",
+          "question": "Pearlgate's AML policy includes KPIs for staff. What does Module FC say about them?",
+          "options": [
+            "KPIs must be published in the bank's annual report",
+            "Performance against AML KPIs must be reflected in staff's annual performance evaluation and remuneration",
+            "KPIs apply only to the compliance department",
+            "KPIs are optional and should not affect pay"
+          ],
+          "answer": 1,
+          "explanation": "Section FC-2.1 requires KPIs to ensure compliance by all staff, with performance adequately reflected in annual evaluations and remuneration, and the guidance suggests adjusting bonuses for AML breaches.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s5-q6",
+          "question": "A customer's account was closed four years ago. A transaction investigation from the account's last month is requested by the authorities. Must Pearlgate still have the identity records?",
+          "options": [
+            "No: identity records can be destroyed when the account closes",
+            "Only if an STR was filed on the customer",
+            "Yes: identity and relationship records must be kept for at least five years after the relationship ended",
+            "No: only transaction records survive after closure"
+          ],
+          "answer": 2,
+          "explanation": "Module FC and Article 5 of the Decree-Law require identity evidence and relationship records for at least five years after the relationship ends, so four years after closure they must still exist.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s5-q7",
+          "question": "Which training-related record does Module FC require banks to keep for at least five years?",
+          "options": [
+            "Only the cost of external training courses",
+            "Each employee's personal test scores published to all staff",
+            "Copies of every trainer's CV",
+            "The dates of AML/CFT training, the nature of the training and the names of staff who received it"
+          ],
+          "answer": 3,
+          "explanation": "Section FC-7.1 requires records showing when AML/CFT training was given, what it covered and who received it, kept for at least five years.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s5-q8",
+          "question": "Which of these is the MLRO responsible for under Section FC-4.2 of Module FC?",
+          "options": [
+            "Producing annual reports on the effectiveness of the bank's AML/CFT controls for senior management",
+            "Approving the bank's credit facilities above a set limit",
+            "Signing off the bank's audited financial statements",
+            "Setting the bank's interest rates on deposits"
+          ],
+          "answer": 0,
+          "explanation": "The MLRO's listed responsibilities include policies and procedures, compliance with the AML Law, handling internal and external reports, staff awareness and training arrangements, annual effectiveness reports, monitoring high-risk accounts and records.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-aml-s5-q9",
+          "question": "Under the copy of Section FC-9.1 that could be opened, which statement about CBB penalties for breaching Module FC is correct?",
+          "options": [
+            "Fines for Module FC breaches are paid to the FIU",
+            "The CBB can fine only after the Public Prosecution obtains a conviction",
+            "A breach of Module FC can lead only to a private warning letter",
+            "The CBB may fine up to BD 20,000 without a court order, without prejudice to other legal penalties"
+          ],
+          "answer": 3,
+          "explanation": "Section FC-9.1 lets the CBB levy fines of up to BD 20,000 at its discretion without a court order, alongside penalties under the CBB Law, Decree-Law No. 4 and the Penal Code, and other measures in Module EN.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-aml-s5-q10",
+          "question": "What do Module FC's systems and controls requirements expect of hiring practices?",
+          "options": [
+            "Adequate screening procedures to ensure high standards when hiring employees",
+            "Hiring only staff who already hold AML qualifications",
+            "Rotation of all customer-facing staff every year",
+            "Approval of every new employee by the CBB"
+          ],
+          "answer": 0,
+          "explanation": "Section FC-2.1 says systems and controls should cover staff training and adequate screening procedures to ensure high standards when hiring. CBB approval applies to approved persons such as the MLRO, not every employee.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "bh",
+    "programs": [
+      1,
+      2,
+      5,
+      6,
+      9,
+      12,
+      15,
+      23,
+      24,
+      25,
+      26
+    ],
+    "classification": "competence",
+    "frequency": [
+      "induction",
+      "annual",
+      "periodic"
+    ],
+    "regulators": [
+      "Central Bank of Bahrain (CBB), Compliance Directorate",
+      "National Centre for Financial Intelligence, Ministry of Interior (Bahrain's FIU; Financial Intelligence Directorate in the Rulebook text)"
+    ],
+    "references": [
+      {
+        "title": "Decree-Law No. (4) of 2001 with respect to the Prevention and Prohibition of the Laundering of Money",
+        "issuer": "Kingdom of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2018/12/DECREE-LAW-NO.-4-OF-2001.pdf",
+        "provision": "Articles 1-7",
+        "note": "Money laundering and related offences, corporate liability, the Policy Committee and enforcement unit, institutions' duties (five-year records, reporting, controls, no anonymous accounts) and no secrecy plea before the magistrate or court.",
+        "effective": "2001",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Decree-Law No. (36) of 2017 amending Article (3) of Decree-Law No. (4) of 2001",
+        "issuer": "Kingdom of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2018/12/Decree-Law-no-36-2017-amending-article-3-of-decree-law-no-4-of-2001-money-laundering.pdf",
+        "provision": "Article 1 (Article 3(1-3) of Decree-Law 4/2001)",
+        "note": "Rewrites the terrorist financing offence: funding or holding funds for terrorist groups or individuals, knowing of their activity, carries life or at least 10 years and fines of BD 100,000-500,000.",
+        "effective": "2017-09-28",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB Rulebook Volume 1, Financial Crime Module (Module FC): copy issued with the 2023 consultation on amendments",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2023/06/Vol-1_FC_2023.pdf",
+        "provision": "FC-1.1.11 to FC-1.1.16, FC-1.2, FC-1.3, FC-2.2",
+        "note": "Incomplete CDD, non-resident customers, CDD information and verification, beneficial owners, enhanced due diligence measures and ongoing monitoring including the BD 6,000 significant-transaction rule.",
+        "effective": "2023",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB Rulebook Volume 1, Financial Crime Module (Module FC): August 2023 copy",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2023/08/FC_Vol-1_2023.pdf",
+        "provision": "Table of contents; FC-1.1.7 to FC-1.1.13H",
+        "note": "Contents list with dates last changed for every Module FC section, and rules on verifying customers, anonymous and nominee accounts, timing of verification and companies under formation.",
+        "effective": "2023",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB Rulebook Volume 1, Financial Crime Module (Module FC): 2021 consultation copy (E-KYC amendments)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2021/05/Consultation_Vol-1_FC_E-KYC.pdf",
+        "provision": "FC-1.5, FC-1.8 to FC-1.10, FC-2.1, FC-3.1, FC-4.1, FC-4.2, FC-5, FC-7, FC-8.3, FC-9.1",
+        "note": "Used only for sections whose date last changed matches the 2023 contents list (FC-1.5 used in general terms): PEPs, correspondents, shell banks, board approval and KPIs, wire transfers, MLRO, STRs, records, designated persons and fines up to BD 20,000.",
+        "effective": "2021",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB Rulebook Volume 1 (Conventional Banks)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://cbben.thomsonreuters.com/rulebook/volume-1-conventional-banks",
+        "provision": "Module FC",
+        "note": "The in-force consolidated Rulebook; the host refused automated access (403), so current wording was not re-read here."
+      },
+      {
+        "title": "Risk Assessment: Guidance for Financial Institutions (October 2021)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2021/10/Guidance-Paper-Risk-Assessment_3-Oct-2021.pdf",
+        "note": "Identifying, assessing, evaluating and mitigating ML, TF and PF risks; inherent and residual risk; the four risk categories; PF and trade indicators; training staff in line with the risk assessment.",
+        "effective": "2021-10-03",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Combating the Financing of Terrorism: Guidance for Financial Institutions (November 2020)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2021/10/Guidance-Paper-Combating-the-Financing-of-Terrorism_17-Nov-2020.pdf",
+        "provision": "Sections III-VI",
+        "note": "UN targeted financial sanctions and 'without delay', minimum TF measures including customer and transaction screening, and how TF differs from ML.",
+        "effective": "2020-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Beneficial Ownership: Guidance for Financial Institutions (November 2021)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2021/11/Guidance-Paper-Beneficial-Ownership.pdf",
+        "note": "Guidance on identifying and verifying beneficial owners of legal persons and arrangements, read with Module FC.",
+        "effective": "2021",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Compliance: Anti-Money Laundering and Combating the Financing of Terrorism",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/compliance/",
+        "note": "Role of the Compliance Directorate, Bahrain's AML legislation, MENAFATF membership and secretariat, and the mutual evaluation approved by FATF in June 2018.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Central Bank of Bahrain Annual Report 2021",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2022/07/CBB-Annual-Report-2021-English.pdf",
+        "note": "Compliance Directorate onsite AML examinations, monthly sanctions exposure reports, and 10 enforcement actions by conventional banking supervision under Article 38 of the CBB Law.",
+        "effective": "2022",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Central Bank of Bahrain Annual Report 2023",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2024/03/CBB-Annual-Report-2023-EnglishCBB-Finacial.pdf",
+        "note": "15 enforcement actions by conventional banking supervision in 2023 under Article 38 of the CBB Law (the 2022 report records 5 and the draft 2024 report 2).",
+        "effective": "2024",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "bh-aml-x1",
+        "question": "A Pearlgate customer moves funds she believes come from her brother's smuggling business into a property in her own name, but she never asked him directly. Which assessment fits Decree-Law No. 4 of 2001?",
+        "options": [
+          "She is protected, because property purchases are outside the definition of a transaction",
+          "She cannot commit the offence, because only her brother committed the underlying crime",
+          "She may commit money laundering, because believing or having reason to believe the funds are criminal is enough",
+          "She commits only a related offence, because she did not carry out the smuggling herself"
+        ],
+        "answer": 2,
+        "explanation": "Article 2 covers acquiring or using proceeds while knowing, believing or having reason to know or believe they are criminal, and a conviction for the underlying crime is not needed. Property purchases are transactions under the law's broad definition.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x2",
+        "question": "During an investigation, Pearlgate receives an order obtained by the enforcement unit to deliver account records. A branch officer delays because the customer is 'important'. What is the main legal risk for the officer?",
+        "options": [
+          "Only a CBB fine on the bank, since staff cannot commit offences under the AML law",
+          "Committing a related offence by failing to follow or obstructing an order linked to a money laundering investigation",
+          "None, because orders are addressed to the bank, not to individual staff",
+          "Breach of customer confidentiality if he does produce the records"
+        ],
+        "answer": 1,
+        "explanation": "Article 2.6(b) makes failing or refusing to follow, or obstructing, such an order a related offence, and Article 7 removes the secrecy plea. Individuals, not only the bank, can be liable.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x3",
+        "question": "A senior manager says that because the 2017 amendment dealt with terrorist financing, Decree-Law No. 4 of 2001 no longer governs money laundering. What is the correct position?",
+        "options": [
+          "Money laundering is now covered only by the CBB Rulebook, not by any law",
+          "The 2017 decree repealed the 2001 law and replaced it with a new combined AML/CFT law",
+          "The 2001 law now applies only to non-bank institutions",
+          "Decree-Law No. 4 of 2001 remains Bahrain's AML law; the 2017 decree replaced only the terrorist financing provisions in Article 3"
+        ],
+        "answer": 3,
+        "explanation": "Decree-Law No. 36 of 2017 replaced paragraph (1-3) of Article 3 of the 2001 law, covering the terrorist financing offence. The 2001 law, as amended, still sets the money laundering offence and institutions' duties.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x4",
+        "question": "Which statement best describes the legal status of Module FC for a conventional bank licensee?",
+        "options": [
+          "It is a Ministry of Interior regulation enforced by the FIU",
+          "It is voluntary best practice that banks may adopt if they choose",
+          "It applies only to banks that are listed on the stock exchange",
+          "It is a CBB directive issued under the CBB's powers in the CBB Law and binds all conventional bank licensees"
+        ],
+        "answer": 3,
+        "explanation": "Module FC describes itself as the CBB's directive on combating money laundering and terrorist financing, issued under Article 38 of the CBB Law and applicable to all conventional bank licensees.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x5",
+        "question": "Pearlgate's board asks which authority prosecutes money laundering cases in court under the Decree-Law. Which answer is correct?",
+        "options": [
+          "The CBB's Compliance Directorate",
+          "The Public Prosecution",
+          "The bank's MLRO, as the main contact point",
+          "The Policy Committee"
+        ],
+        "answer": 1,
+        "explanation": "Article 4.6 gives the Public Prosecution responsibility for proceedings before the courts. The CBB supervises, the Policy Committee sets policy and the MLRO reports suspicion.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x6",
+        "question": "Which statement about Article 5 of the Decree-Law and internal controls is accurate?",
+        "options": [
+          "Banks must follow the regulator's instructions on internal policies, procedures and controls, including management-level compliance officers and audit of those controls",
+          "Banks may choose whether to appoint compliance officers based on their size",
+          "Only the CBB's own staff may audit a bank's AML controls",
+          "Internal controls are a matter for each board and are not mentioned in the law"
+        ],
+        "answer": 0,
+        "explanation": "Article 5(e) and (g) require compliance with the relevant entities' instructions on policies, procedures, controls, management-level compliance officers and audit functions, and a procedure to audit compliance.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x7",
+        "question": "A Pearlgate trainee reads the 2023 CBB-hosted copy of Module FC and finds paragraphs dated 'XX 2023' next to text marked as deleted. What is the sensible approach?",
+        "options": [
+          "Ignore all paragraphs in that copy, because consultation copies have no value",
+          "Assume every paragraph in the copy is in force exactly as printed",
+          "Treat it as amendment text from the 2023 change process and confirm the current wording in the in-force Rulebook before relying on it",
+          "Apply whichever version of the paragraph is less strict"
+        ],
+        "answer": 2,
+        "explanation": "The CBB-hosted 2023 copy was issued with amendments and shows changed text. It is useful evidence of the rules, but the current Rulebook is the authority for in-force wording.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x8",
+        "question": "Which statement about Bahrain's role in the international AML system is supported by the CBB's compliance pages?",
+        "options": [
+          "Bahrain is a full individual member of FATF and chairs it permanently",
+          "Bahrain left MENAFATF when it joined the GCC",
+          "Bahrain has never been subject to a mutual evaluation",
+          "Bahrain is a founding member of MENAFATF and hosts its secretariat, and FATF approved its mutual evaluation in June 2018"
+        ],
+        "answer": 3,
+        "explanation": "The CBB states that Bahrain is a founding member of MENAFATF and hosts its secretariat, participates in FATF through the GCC's membership, and that its mutual evaluation was approved by FATF in June 2018.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x9",
+        "question": "Pearlgate plans to launch an app-only account. Under the CBB's risk-based approach, when should the ML/TF risks of this new delivery channel be assessed?",
+        "options": [
+          "At the next three-yearly review of the bank's risk assessment",
+          "Never, because digital channels are covered by cyber security rules instead",
+          "Only after the first suspicious transaction report on the product",
+          "Before launch, as part of developing the new product, and then kept under review"
+        ],
+        "answer": 3,
+        "explanation": "The CBB's guidance says risks should be assessed before new products, business practices or relationships are introduced and kept up to date. Waiting for an STR or a later review is too late.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x10",
+        "question": "Two banks rate the same customer type differently: one 'high', one 'medium'. According to the CBB's risk assessment guidance, is this necessarily wrong?",
+        "options": [
+          "No: the same risk can rate differently depending on each institution's context and controls",
+          "Yes: all banks must rate every customer type as high risk",
+          "Yes: the CBB publishes fixed ratings that every bank must use",
+          "No: ratings are irrelevant because CDD is the same for everyone"
+        ],
+        "answer": 0,
+        "explanation": "The guidance notes that the same risk may be high in one institution and low in another depending on context. Ratings drive proportionate controls, so CDD is not identical for everyone.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x11",
+        "question": "A retail customer's identity can be confirmed through the national E-KYC application. Under Module FC, what is the role of document copies?",
+        "options": [
+          "They replace E-KYC for Bahraini nationals",
+          "They are never allowed for retail banks",
+          "They are the fallback where using the E-KYC application is not practical",
+          "They are always required in addition to E-KYC for every customer"
+        ],
+        "answer": 2,
+        "explanation": "For retail banks, Module FC verifies name, date of birth and address through the national E-KYC application, and uses current official documents or statements where that is not practical.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x12",
+        "question": "A customer posts copies of his passport after an initial meeting, certified by a notary in a FATF member state. What else must Pearlgate do under Module FC?",
+        "options": [
+          "Check the certifier's identity, for example through a professional body, database or direct contact, using the contact details provided",
+          "Nothing more, because a notary's certification is conclusive",
+          "Reject the copies, because only bank staff may certify documents",
+          "Ask the CBB to confirm the notary's registration"
+        ],
+        "answer": 0,
+        "explanation": "Module FC allows certification by listed professionals from GCC or FATF states, who must give clear contact details, and requires the bank to verify the certifier's identity through membership checks, databases or direct contact.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x13",
+        "question": "A private company's structure shows a holding company owned 60% by a trust. What does Module FC expect Pearlgate to establish?",
+        "options": [
+          "The structure sufficient to identify the ultimate beneficial owner, the ultimate provider of funds and the ultimate controller, including the trust's settlor, trustees and beneficiaries",
+          "Only the name of the holding company, since it is the direct shareholder",
+          "Only the trustee, because trustees control trusts",
+          "Only the directors listed in the commercial registration"
+        ],
+        "answer": 0,
+        "explanation": "Module FC requires enquiries into the structure to identify the ultimate beneficial owner, provider and controller of funds, and for trusts the settlor, trustees and beneficiaries, including any other potential beneficiaries.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-aml-x14",
+        "question": "A company under formation opened an account at stage one and has not completed its KYC after the agreed period, and it is not cooperating. What does Module FC require?",
+        "options": [
+          "Classify the account as dormant and notify the Ministry responsible for commerce",
+          "Transfer the balance to the CBB for safekeeping",
+          "Close the account immediately and pay the balance to the founders in cash",
+          "Make the account fully operational, since six months have passed"
+        ],
+        "answer": 0,
+        "explanation": "Module FC requires the account of a non-cooperating company under formation that misses the agreed period to be classified as dormant, with notification to the Ministry of Industry and Commerce; closure is then at the bank's discretion.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x15",
+        "question": "Pearlgate cannot verify a new customer and has strong doubts about the funds he deposited. Which response best matches Module FC's incomplete-CDD rule?",
+        "options": [
+          "Ask the customer to sign an indemnity and proceed",
+          "Keep the account open and let the customer transact while documents are chased",
+          "Consider freezing the funds and filing an STR rather than simply sending the money back",
+          "Return the funds in any convenient form and close the file"
+        ],
+        "answer": 2,
+        "explanation": "Module FC lists freezing funds and filing an STR among the options where CDD cannot be completed. Where suspicion exists, returning funds without reporting could help the customer move criminal money.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x16",
+        "question": "A Pearlgate retail customer is non-resident. Which statement about the services offered is consistent with Module FC?",
+        "options": [
+          "The bank must tell the customer about services that may be restricted or limited because of non-resident status",
+          "Non-resident customers need no enhanced due diligence if they are salaried",
+          "Non-resident customers may only hold accounts in Bahraini dinars",
+          "Non-resident customers must be offered every product available to residents"
+        ],
+        "answer": 0,
+        "explanation": "Module FC requires banks to inform non-resident customers of services that may be restricted, such as loans, credit cards or cheque books, and requires enhanced due diligence for non-residents in the retail rules.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x17",
+        "question": "Pearlgate uses automated monitoring for most products. A manager argues that the BD 6,000 daily-report rule therefore has no relevance to the bank. What is the best response?",
+        "options": [
+          "The BD 6,000 daily report is the fallback where automated monitoring is absent; significant or abnormal transactions still need source of funds checks and documented findings",
+          "The BD 6,000 rule applies only to cash deposits at branches",
+          "Automated monitoring removes any need to examine large transactions",
+          "The rule applies to every bank regardless of its systems, so all transactions over BD 6,000 must be reported to the FIU"
+        ],
+        "answer": 0,
+        "explanation": "Module FC makes the BD 6,000 daily report the fallback without automated monitoring, but it still requires source of funds checks and documented examination of significant or abnormal transactions. It is not an FIU reporting threshold.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-aml-x18",
+        "question": "Which situation does the CBB's risk assessment guidance list as an indicator of higher customer risk?",
+        "options": [
+          "A customer who uses the bank's mobile app to check balances",
+          "A customer who pays a salary into the account every month",
+          "A customer whose company's ownership structure appears unusual or excessively complex for its business",
+          "A customer who has banked with Pearlgate for many years"
+        ],
+        "answer": 2,
+        "explanation": "The guidance lists unusual or excessively complex ownership structures, nominee shareholders, cash-intensive businesses, PEP links and negative news among higher-risk customer indicators. Regular salary payments or a long relationship are not.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x19",
+        "question": "A PEP customer's first deposit arrives from a third party's account abroad. Which EDD measure in Module FC is most directly engaged?",
+        "options": [
+          "Reporting the PEP to the CBB as a matter of routine",
+          "Identifying the source of the first payment and making sure there is a plausible explanation when it did not come from the customer's own account",
+          "Waiving the source of funds check because the PEP was approved by senior management",
+          "Converting the account to a non-resident account"
+        ],
+        "answer": 1,
+        "explanation": "Module FC's enhanced measures include specific steps to identify the source of the first payment and to ensure a plausible explanation where it was not received from the customer's own account.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x20",
+        "question": "Which measures does Module FC set as the minimum for higher-risk business relationships with PEPs?",
+        "options": [
+          "A personal reference from another customer and a home visit",
+          "A deposit guarantee and a reduced transaction limit",
+          "A written record of source of wealth and funds, senior management approval to continue, and ongoing monitoring by senior management such as the MLRO",
+          "A credit bureau report and an annual account statement"
+        ],
+        "answer": 2,
+        "explanation": "The copy of Section FC-1.5 that could be opened requires at a minimum the source of wealth and funds record, senior management approval and senior-level ongoing monitoring for higher-risk PEP relationships.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x21",
+        "question": "A private banking prospect is the business partner of a serving minister abroad and is not a public official himself. How does Module FC treat him?",
+        "options": [
+          "As a standard customer, because only office holders are PEPs",
+          "As covered by the PEP requirements, because they apply to close associates of PEPs as well as to family members",
+          "As covered only if the minister is a Bahraini official",
+          "As covered only if he shares a joint account with the minister"
+        ],
+        "answer": 1,
+        "explanation": "The copy of Section FC-1.5 that could be opened applies the requirements for all types of PEP to their family and close associates, and the CBB's guidance lists PEP links, including through beneficial owners, as a higher-risk customer factor.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x22",
+        "question": "A non-face-to-face applicant passes basic document checks. Which extra measure fits Module FC's approach to non-face-to-face business?",
+        "options": [
+          "Treating the applicant as low risk because technology was used",
+          "Skipping address verification for digital customers",
+          "Taking further steps to confirm the applicant is who they claim to be and that the address is genuinely theirs",
+          "Requiring the CBB to approve each digital account"
+        ],
+        "answer": 2,
+        "explanation": "Module FC requires specific procedures for non-face-to-face business and additional measures to ensure the customer is who they claim and the address is genuine, such as independent phone checks or employment confirmation.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x23",
+        "question": "A respondent bank asks Pearlgate for 'payable-through' access so its own customers can use the account directly. What must Pearlgate confirm under Module FC?",
+        "options": [
+          "That the third parties have accounts at Pearlgate as well",
+          "That the respondent has verified the identity of third parties who will have direct access to the account",
+          "That the third parties are all Bahraini residents",
+          "That the respondent will deposit a security bond"
+        ],
+        "answer": 1,
+        "explanation": "Among the correspondent banking factors, Module FC asks for confirmation that the respondent has verified the identity of any third parties with direct access, as in payable-through accounts.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x24",
+        "question": "Pearlgate discovers that a long-standing respondent bank now provides services to a shell bank. What does Module FC point to?",
+        "options": [
+          "Not knowingly continuing relations with a bank that has relations with shell banks, and considering an STR",
+          "Asking the respondent to sign an updated questionnaire and carrying on",
+          "Moving the relationship to a different currency",
+          "Continuing the relationship, since the shell bank is not Pearlgate's own customer"
+        ],
+        "answer": 0,
+        "explanation": "Module FC bars knowingly establishing relations with banks that have relations with shell banks and requires refusing to enter into or continue correspondent relationships with shell banks. A suspicion should be escalated.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x25",
+        "question": "Pearlgate sends a cross-border wire for a customer. Which information must always accompany it under Module FC?",
+        "options": [
+          "Only the beneficiary's name and the amount",
+          "The originator's name, account number or IBAN where used, address or an identifier, and the beneficiary's name and account number where used",
+          "Only a transaction reference, since names are private",
+          "The originator's name and employer's address"
+        ],
+        "answer": 1,
+        "explanation": "Module FC lists originator name, account number or IBAN where used, the originator's address, national identity number, customer identification number or date and place of birth, and the beneficiary's name and account number.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x26",
+        "question": "Which statement about the source of terrorist funds matches the CBB's TF guidance?",
+        "options": [
+          "Terrorist funds can be detected by looking only for large cash deposits",
+          "Terrorist funds always come from drug trafficking",
+          "Terrorist funds never pass through regulated banks",
+          "Most terrorism financing originates from ostensibly legitimate sources and activities, so a lawful source does not rule out TF"
+        ],
+        "answer": 3,
+        "explanation": "The guidance says that one significant difference between TF and other crimes is that most TF originates from ostensibly legitimate sources, which is why ML-style red flags are not enough.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x27",
+        "question": "Pearlgate's trade finance team handles a letter of credit for dual-use machinery where payment comes from a firm not named in the contract. Under the CBB's 2021 risk assessment guidance, how should this be viewed?",
+        "options": [
+          "As acceptable, provided the goods are insured",
+          "As a credit risk issue only, to be handled by the lending team",
+          "As routine, because trade finance is outside AML rules",
+          "As a potential proliferation financing or sanctions evasion risk indicator that needs escalation and enhanced checks"
+        ],
+        "answer": 3,
+        "explanation": "The guidance lists dual-use goods and payments by parties not involved in the trade or not named in the letter of credit among PF and sanctions evasion indicators in trade finance.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x28",
+        "question": "A relationship manager tells the MLRO that she 'knows' a client is laundering money, but her department head insists the matter is closed. Under Module FC, what must happen?",
+        "options": [
+          "The department head's decision ends the matter",
+          "The relationship manager must first gather proof acceptable to a court",
+          "The report must still reach the MLRO, because line-manager processes cannot be used to prevent it",
+          "The client must be asked to explain before any report is made"
+        ],
+        "answer": 2,
+        "explanation": "Where staff state they have knowledge or suspicion, internal consultation must not stop the report reaching the MLRO. Proof to a criminal standard is not required, and asking the client could tip him off.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x29",
+        "question": "A customer's suspicious transfers involve unpaid taxes abroad. The relationship manager thinks tax matters are not for the AML team. What does Module FC say?",
+        "options": [
+          "Tax-related matters are reported only to the tax authority",
+          "Suspicious transactions must be reported regardless of whether tax matters are involved",
+          "Tax matters are reported only if the amount exceeds BD 6,000",
+          "Tax-related matters are excluded from STR reporting in Bahrain"
+        ],
+        "answer": 1,
+        "explanation": "Module FC states that the duty to report suspicious transactions and attempts applies regardless of whether the transaction involves tax matters.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x30",
+        "question": "After an STR is filed, the customer's son, who works at another bank, asks a Pearlgate friend whether 'anything is going on' with his father's account. What should the friend do?",
+        "options": [
+          "Hint that the father should be careful with large transfers",
+          "Say nothing about the account or any report, and tell the MLRO about the approach",
+          "Confirm that compliance is reviewing the account, since the son is in banking",
+          "Ask the son to persuade his father to explain the transfers"
+        ],
+        "answer": 1,
+        "explanation": "Directors, officers and employees must not warn or inform customers or other subjects that information is being reported, and revealing an investigation can be a related offence. Telling the MLRO lets the bank manage the risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x31",
+        "question": "What penalty range does Decree-Law No. 36 of 2017 set for the terrorist financing offence in Article 3(1-3) of Decree-Law No. 4 of 2001?",
+        "options": [
+          "Up to seven years' imprisonment and a fine of up to BD 10,000",
+          "A fine of up to BD 20,000 imposed by the CBB without a court order",
+          "Up to two years' imprisonment or a fine of up to BD 50,000",
+          "Life imprisonment or at least 10 years, and a fine from BD 100,000 to BD 500,000"
+        ],
+        "answer": 3,
+        "explanation": "The 2017 decree sets life imprisonment or imprisonment of not less than 10 years and a fine of BD 100,000 to BD 500,000. The BD 20,000 figure is the CBB's administrative fine under Module FC.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x32",
+        "question": "Which person does the 2017 terrorist financing offence also cover, besides someone who collects funds for a terrorist group?",
+        "options": [
+          "Only someone who funds a group headquartered inside Bahrain",
+          "Only someone who personally takes part in a terrorist attack",
+          "Someone who obtains funds from such persons for safekeeping or to use in their interest, knowing of their terrorist activity",
+          "Anyone whose account receives a payment from a high-risk country"
+        ],
+        "answer": 2,
+        "explanation": "The 2017 text extends the same penalty to those who obtain funds from terrorist individuals or groups for safekeeping or use in their interest, and covers groups based inside or outside Bahrain. Attempts are punished too.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-aml-x33",
+        "question": "The CBB circulates an updated list of designated persons. What does Module FC expect of Pearlgate?",
+        "options": [
+          "Forward the list to all customers so they can avoid listed persons",
+          "Verify that it has no dealings with the listed persons and entities, report back its findings to the CBB, and report any dealings through the STR procedure",
+          "File the list for reference and check it at the next customer review",
+          "Only act if a listed person is a Bahraini national"
+        ],
+        "answer": 1,
+        "explanation": "Section FC-8.3 says the CBB issues lists, licensees verify they have no dealings and report back their findings, and any accounts or dealings are reported through the FC-5.2 procedure with later directions followed.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x34",
+        "question": "A sanctions alert on a payment turns out, after checks of date of birth and nationality, to be a different person with a similar name. What is the best practice?",
+        "options": [
+          "Record the checks and the reason the match was discounted, then release the payment under the bank's procedure",
+          "Block the customer permanently to avoid future alerts",
+          "Release the payment without recording anything, since it was a false match",
+          "File an STR anyway, because every alert must be reported"
+        ],
+        "answer": 0,
+        "explanation": "Documented procedures for screening and handling matches, as the CBB's TF guidance expects, include recording why a potential match was discounted. Reporting is for confirmed matches or remaining suspicion, not every alert.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x35",
+        "question": "Which statement about 'without delay' in UN terrorism sanctions is consistent with the CBB's TF guidance?",
+        "options": [
+          "It means only after the customer has been notified",
+          "It means at the next scheduled update of the screening system",
+          "It means within 30 days of the designation",
+          "For UN designations it ideally means within a matter of hours, to stop funds from being moved or dissipated"
+        ],
+        "answer": 3,
+        "explanation": "The CBB guidance repeats FATF's reading that 'without delay' ideally means within hours of a UN designation, to prevent the flight or dissipation of funds.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x36",
+        "question": "Pearlgate wants to appoint its head of corporate banking as MLRO to save costs. What does Module FC say?",
+        "options": [
+          "Allowed if the head of corporate banking holds an AML qualification",
+          "Allowed for up to 120 days while a permanent MLRO is found",
+          "Allowed, provided the CBB is informed after appointment",
+          "Not allowed: the MLRO role must not be combined with functions that create conflicts, such as a business line head"
+        ],
+        "answer": 3,
+        "explanation": "Module FC forbids combining the MLRO role with conflicting functions such as business line head or internal auditor, and requires CBB approval before appointment. The 120-day rule concerns vacancies, not conflicted appointments.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x37",
+        "question": "A group wants Pearlgate's MLRO to be an employee of its overseas parent who visits Bahrain quarterly. What does Module FC say?",
+        "options": [
+          "Allowed, since group functions may be shared freely",
+          "Allowed, if the parent is regulated in a FATF country",
+          "Not allowed: the MLRO must be a director or employee of the bank and resident in Bahrain",
+          "Allowed, provided a local deputy signs STRs"
+        ],
+        "answer": 2,
+        "explanation": "Module FC requires the MLRO to be a director or employee of the licensee, so the role cannot be outsourced, and to be resident in Bahrain. Delegation within a group is possible, but responsibility stays with the bank and its MLRO.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x38",
+        "question": "Which access must Pearlgate give its MLRO under Module FC?",
+        "options": [
+          "Access to CDD files only during the annual review",
+          "Access only to transactions over BD 6,000",
+          "Unrestricted access to transactional information and access to all customer due diligence information",
+          "Access to customer files only with the relationship manager's consent"
+        ],
+        "answer": 2,
+        "explanation": "Module FC requires the MLRO to have unrestricted access to transactional information, timely information to monitor accounts and access to all CDD information. Consent requirements would undermine independence.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x39",
+        "question": "The annual review of AML/CFT effectiveness finds weak CDD on corporate customers. Under Module FC, who receives the review reports and commissions remedial measures?",
+        "options": [
+          "The board, with copies to senior management",
+          "The relationship managers whose files were tested",
+          "The external auditor, who signs off the fixes",
+          "The CBB, which designs the remedial plan"
+        ],
+        "answer": 0,
+        "explanation": "Module FC requires the annual compliance review reports to go to the board, which reviews them and commissions any required remedial measures, with copies to senior management.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-aml-x40",
+        "question": "Which of these is a compliance record Module FC requires Pearlgate to keep for five years?",
+        "options": [
+          "Minutes of every branch staff meeting",
+          "Customer satisfaction surveys",
+          "Marketing campaign results for deposit products",
+          "Reports made to or by the MLRO under the internal and external reporting rules, and records of how they were handled"
+        ],
+        "answer": 3,
+        "explanation": "Module FC requires reports made to or by the MLRO, records of how they were dealt with and what action followed, and the annual compliance review reports to be kept for five years.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x41",
+        "question": "An examiner asks Pearlgate for records of a transaction completed six years ago. Under Module FC's minimum periods, what is the position?",
+        "options": [
+          "The bank must ask the customer for a copy",
+          "The minimum period has passed, though the bank may still hold the records under its own policy or other rules",
+          "The bank should never have kept them beyond one year",
+          "The bank must still hold them, because the minimum is ten years"
+        ],
+        "answer": 1,
+        "explanation": "Module FC's minimum for transaction records is at least five years after completion. After six years the minimum has passed, but banks can keep records longer under their own policies or other requirements.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-aml-x42",
+        "question": "Under which law do the CBB's annual reports say its conventional banking supervisors took enforcement actions, including financial penalties?",
+        "options": [
+          "Article 5 of Decree-Law No. 4 of 2001",
+          "Article 38 of the CBB Law",
+          "Decree-Law No. 36 of 2017",
+          "The Policy Committee's reporting guidelines"
+        ],
+        "answer": 1,
+        "explanation": "The CBB's annual reports for 2021 to 2024 state that enforcement actions by the conventional banking supervision directorates were taken as stipulated in Article 38 of the CBB Law.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-aml-x43",
+        "question": "Pearlgate's head of HR proposes dropping AML targets from annual appraisals to simplify reviews. What is the issue under Module FC?",
+        "options": [
+          "Module FC requires AML KPIs for all staff, with performance reflected in annual evaluations and remuneration",
+          "None, because AML KPIs apply only to the MLRO",
+          "None, because the board can waive any Module FC requirement",
+          "The CBB must first approve any change to appraisal forms"
+        ],
+        "answer": 0,
+        "explanation": "Section FC-2.1 requires banks to incorporate AML/CFT KPIs for all staff and reflect performance in annual evaluations and remuneration. Boards cannot waive CBB directives.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
