@@ -1,0 +1,3159 @@
+{
+  "slug": "gb-data-protection-resilience",
+  "title": "United Kingdom | UK GDPR, Data Protection and Operational Resilience for Banks",
+  "tagline": "Protect UK customers' data and services: UK GDPR, the DPA 2018, the 2025 reforms, breach notification and PRA/FCA resilience rules.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "UK retail and commercial banks",
+    "Building societies",
+    "Contact centres and operations teams in UK banks",
+    "Technology, cyber security and resilience teams in UK banks"
+  ],
+  "hours": 5,
+  "description": "A UK-specific quest on protecting customer data and keeping banking services running. It is based on the **UK GDPR** and the **Data Protection Act 2018**, as amended by the **Data (Use and Access) Act 2025** (including recognised legitimate interests, new subject access and automated decision rules and the **section 164A** complaints duty in force since 19 June 2026), enforced by the **Information Commission**, which replaced the Information Commissioner on 30 September 2026. It also covers the **PRA and FCA operational resilience** rules and the incident and third-party reporting regime in **FCA PS26/2** and **PRA PS7/26**, which applies from 18 March 2027.\n\nUK GDPR Article 39 makes awareness-raising and training of staff who process data part of the DPO's tasks, and the regulators expect staff to recognise, escalate and report breaches and incidents quickly. The quest is for everyone who handles customer data in a UK bank, with extra depth for incident, resilience and complaints teams. It uses real FCA and PRA enforcement cases.\n\nIt builds knowledge of the UK framework and does not replace your bank's own policies, procedures or role-specific training.",
+  "audience": [
+    "Branch, contact-centre and operations staff in UK banks who handle customer data every day",
+    "Customer relations and complaints staff handling rights requests and data protection complaints",
+    "Technology, cyber security and incident management teams",
+    "Business service owners and resilience teams working on important business services",
+    "Data protection officers, compliance staff and senior managers, including SMF24 teams"
+  ],
+  "outcomes": [
+    "Explain the UK GDPR, the DPA 2018, the 2025 Act and the roles of the Information Commission, FCA and PRA",
+    "Apply the Article 5 principles and choose the right lawful basis, including recognised legitimate interests",
+    "Protect customer confidentiality and avoid the DPA 2018 section 170 offence",
+    "Handle rights requests, automated decision safeguards and section 164A complaints on the correct timelines",
+    "Resist social engineering and run the Article 33 and 34 breach process",
+    "Apply impact tolerances and the 2027 FCA/PRA incident and third-party reporting rules"
+  ],
+  "quest": {
+    "name": "The Harrowfield Resilience Week",
+    "premise": "You have just joined the Data Protection and Resilience office of Harrowfield Bank plc, a UK bank headquartered in Leeds with a contact centre in Edinburgh and branches across the country. In one week you face a misdirected customer list, a suspicious police email, a furious data subject, a phished mailbox and a payments outage. With DPO Nadia Hussain, resilience head Kwame Mensah, contact-centre lead Eilidh Campbell, cyber analyst Tomasz Nowak and COO Helen Ashworth, clear five stages, then face the final boss: the regulators' questions.",
+    "badge": {
+      "name": "UK Data and Resilience Guardian",
+      "description": "Awarded to bank staff who can apply UK data protection law and PRA/FCA operational resilience and incident rules with confidence."
+    },
+    "color": "#3a5a98",
+    "cast": [
+      {
+        "id": "nadia",
+        "name": "Nadia Hussain",
+        "role": "Data Protection Officer, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#2b4c7e"
+        }
+      },
+      {
+        "id": "kwame",
+        "name": "Kwame Mensah",
+        "role": "Head of Operational Resilience",
+        "look": {
+          "skin": 5,
+          "hair": "short",
+          "color": "#1b998b"
+        }
+      },
+      {
+        "id": "eilidh",
+        "name": "Eilidh Campbell",
+        "role": "Contact Centre Team Leader, Edinburgh",
+        "look": {
+          "skin": 1,
+          "hair": "long",
+          "color": "#8e44ad"
+        }
+      },
+      {
+        "id": "tomasz",
+        "name": "Tomasz Nowak",
+        "role": "Cyber Security Analyst",
+        "look": {
+          "skin": 2,
+          "hair": "beard",
+          "color": "#c0392b"
+        }
+      },
+      {
+        "id": "helen",
+        "name": "Helen Ashworth",
+        "role": "Chief Operating Officer (SMF24)",
+        "look": {
+          "skin": 1,
+          "hair": "bun",
+          "color": "#495057"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The UK Data Rulebook: UK GDPR, DPA 2018 and the Principles",
+      "stage": "The Data Vault Door",
+      "summary": "Map the UK framework (UK GDPR, the Data Protection Act 2018, the Data (Use and Access) Act 2025 and the new Information Commission), learn the key terms and apply the seven principles to everyday banking.",
+      "minutes": 45,
+      "objectives": [
+        "Describe the UK GDPR, the DPA 2018, the 2025 Act and the role of the Information Commission, FCA and PRA",
+        "Recognise personal data, special category data, controllers and processors in a bank",
+        "Apply the six Article 5 principles and the accountability principle to banking situations",
+        "Explain why outsourcing or intra-group transfers do not move the controller's responsibility"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one: the spreadsheet on the train",
+          "setting": "Data Protection Office, Harrowfield Bank plc, Leeds. Monday, 8:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your visitor pass is still warm from the printer when a message flashes across the team screen: 'URGENT: laptop left on the 07:12 to York'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Welcome to Harrowfield. I'm Nadia Hussain, the bank's Data Protection Officer. Your quest starts now: by Friday you will know the UK data and resilience rules well enough to explain them to a regulator.",
+              "mood": "happy"
+            },
+            {
+              "who": "eilidh",
+              "text": "Nadia, it's Eilidh in Edinburgh. One of my contact-centre agents emailed a customer list to her personal address so she could 'work on it at home'. 2,300 names, account numbers and phone numbers.",
+              "mood": "worried"
+            },
+            {
+              "who": "tomasz",
+              "text": "Tomasz from cyber security. And the laptop on the York train belongs to a mortgage adviser. It's encrypted, but nobody knows yet whether the screen was locked.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Two incidents before coffee. Before we decide what to do, our new colleague needs the map: which UK laws apply, who the regulators are and what 'personal data' really means.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "So: what is the UK rulebook for customer data, and what principles does every person in this bank have to live by? That is Stage 1.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The UK data rulebook in five pieces",
+          "scenes": [
+            {
+              "icon": "📘",
+              "heading": "UK GDPR",
+              "narration": "The UK kept the EU's General Data Protection Regulation after Brexit and adapted it. It sets the principles, the lawful bases, people's rights and the security and breach duties."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Data Protection Act 2018",
+              "narration": "The 2018 Act sits beside the UK GDPR. It adds UK exemptions and conditions, the regulator's powers, fines and criminal offences, such as obtaining or disclosing personal data without the controller's consent."
+            },
+            {
+              "icon": "🔄",
+              "heading": "Data (Use and Access) Act 2025",
+              "narration": "The 2025 Act amended both. It added recognised legitimate interests, new rules on automated decisions and subject access, and a duty for organisations to handle data protection complaints themselves."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "The Information Commission",
+              "narration": "On 30 September 2026 the Information Commission took over from the Information Commissioner. It enforces data protection law, handles complaints and can fine. Older documents still say ICO."
+            },
+            {
+              "icon": "🏦",
+              "heading": "FCA and PRA",
+              "narration": "For banks, data security is also a conduct and prudential matter. The FCA and the PRA expect sound systems and controls, and they have fined firms for cyber and IT failures."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who answers for customer data at Harrowfield",
+          "caption": "The controller carries the legal duty, but every layer has a part to play.",
+          "items": [
+            {
+              "label": "The bank as controller",
+              "detail": "Decides why and how customer data is used, and must be able to prove it complies."
+            },
+            {
+              "label": "Board and senior managers",
+              "detail": "Set policy, fund controls and own the risk under the SM&CR."
+            },
+            {
+              "label": "Data Protection Officer",
+              "detail": "Advises, monitors compliance and leads awareness and training."
+            },
+            {
+              "label": "Processors and suppliers",
+              "detail": "Act only on the bank's written instructions."
+            },
+            {
+              "label": "Every member of staff",
+              "detail": "Handles data only as the bank instructs and reports problems fast."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Key words you must get right",
+          "body": "**Personal data** is any information about an identified or identifiable living person: a name, an account number, an IP address, a voice recording, even a note about a customer's mood.\n\n- **Processing** is almost anything you do with it: collecting, storing, viewing, sharing, deleting.\n- **Controller**: the organisation that decides the purposes and means. Harrowfield is the controller of its customer data.\n- **Processor**: a firm that processes data for the controller, such as a cloud provider or a mailing house.\n- **Special category data**: health, ethnic origin, religion, biometrics used for identification and similar sensitive types. It needs an extra condition and extra care.\n\nIn a bank, nearly every customer record is personal data, so the rules apply to nearly everything you touch."
+        },
+        {
+          "type": "check",
+          "question": "A customer's mobile number is held in the CRM with no name next to it, but it can be linked to the account through the phone banking log. Is it personal data?",
+          "options": [
+            "Yes, because the person can be identified by linking it with other information the bank holds",
+            "No, because personal data must include a name",
+            "Only if the customer has given consent to its use"
+          ],
+          "answer": 0,
+          "explanation": "Information is personal data if a living person can be identified from it directly or indirectly, including by combining it with other data the bank holds. A name is not required, and consent has nothing to do with the definition."
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The seven principles of UK GDPR Article 5",
+          "caption": "Article 5(2) adds the seventh: accountability. The controller must be able to demonstrate compliance with all six.",
+          "items": [
+            {
+              "label": "Lawful, fair, transparent",
+              "detail": "Have a lawful basis, treat people fairly and tell them what you do."
+            },
+            {
+              "label": "Purpose limitation",
+              "detail": "Collect for clear purposes; do not reuse in incompatible ways."
+            },
+            {
+              "label": "Data minimisation",
+              "detail": "Only what is adequate, relevant and necessary."
+            },
+            {
+              "label": "Accuracy",
+              "detail": "Keep it right and fix errors without delay."
+            },
+            {
+              "label": "Storage limitation",
+              "detail": "Keep it identifiable no longer than needed."
+            },
+            {
+              "label": "Integrity and confidentiality",
+              "detail": "Keep it secure against misuse, loss and damage."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Principle meets practice",
+          "prompt": "Match each Harrowfield habit to the principle it puts into practice.",
+          "pairs": [
+            {
+              "left": "Data minimisation",
+              "right": "The loan form no longer asks for marital status, because the credit model does not use it."
+            },
+            {
+              "left": "Storage limitation",
+              "right": "Closed-account records are deleted when the retention schedule says their purpose has ended."
+            },
+            {
+              "left": "Accuracy",
+              "right": "A returned letter triggers an address check before the next statement is sent."
+            },
+            {
+              "left": "Accountability",
+              "right": "The bank keeps records of processing and evidence of who was trained and when."
+            },
+            {
+              "left": "Purpose limitation",
+              "right": "Data collected for fraud checks is not passed to the marketing team for campaigns."
+            },
+            {
+              "left": "Integrity and confidentiality",
+              "right": "Customer files are encrypted and access is limited to staff who need them."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: 'we'll just keep everything'",
+          "setting": "Project room, Leeds. Monday, 2 pm.",
+          "lines": [
+            {
+              "who": "helen",
+              "text": "I'm Helen Ashworth, Chief Operating Officer. Nadia, the new analytics platform team wants to load every customer record since 2005. Storage is cheap. Why not?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Because cheap storage doesn't make it lawful. Old data we no longer need is a liability: if it leaks, we answer for every record.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kwame",
+              "text": "Kwame, operational resilience. And more data means a bigger blast radius in a cyber attack. We'd be enlarging the target.",
+              "mood": "worried"
+            },
+            {
+              "who": "helen",
+              "text": "So what do I tell the project team?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Tell them to define the purpose, take only the fields they need and follow the retention schedule. Then we document the decision. That's accountability in one sentence.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The analytics data load",
+          "situation": "The analytics team wants every customer record since 2005, including closed accounts, to 'see what patterns emerge'. No purpose has been written down, and some records are past their retention date. Helen asks you, as the DPO's analyst, what to advise.",
+          "choices": [
+            {
+              "text": "Advise defining a specific purpose first, loading only necessary fields, excluding data past retention, and recording the assessment and decision",
+              "outcome": "Best answer. This applies purpose limitation, minimisation and storage limitation, and the written record lets the bank demonstrate compliance, as accountability requires.",
+              "score": 2
+            },
+            {
+              "text": "Approve the load but restrict access to the analytics team",
+              "outcome": "Access controls help security, but they do not cure the lack of a purpose or the retention of data that should have been deleted.",
+              "score": 1
+            },
+            {
+              "text": "Approve the load because the bank already holds the data lawfully",
+              "outcome": "Holding data lawfully for one purpose does not make a new, undefined use lawful, and keeping expired data breaches storage limitation.",
+              "score": 0
+            },
+            {
+              "text": "Refuse all analytics projects that use customer data",
+              "outcome": "Too blunt. Analytics can be lawful with a defined purpose, a lawful basis and proper safeguards. The job is to make it compliant, not to ban it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Equifax Ltd, fined by the FCA (2023)",
+          "body": "In October 2023 the FCA fined **Equifax Ltd** about **GBP 11.2m** over the 2017 cyber attack on its US parent company.\n\n- Hackers reached the personal data of roughly **13.8 million UK consumers**, because Equifax Ltd sent UK data to its parent's servers in the US for processing.\n- The FCA found Equifax Ltd had **not treated the arrangement as outsourcing**, so it did not oversee how the data was protected, despite known weaknesses in the parent's security.\n- It learned that UK data was affected about **six weeks** after the parent discovered the hack.\n\n**The lesson for Harrowfield:** sending data to a group company or supplier does not hand over responsibility. The controller must know where its data is, who protects it and how, and be able to show that it checked."
+        },
+        {
+          "type": "flip",
+          "title": "Myth or fact?",
+          "cards": [
+            {
+              "front": "'If we got the data lawfully, we can use it for anything.'",
+              "back": "Myth. Purpose limitation means new uses must be compatible with the original purpose or have their own lawful basis."
+            },
+            {
+              "front": "'Data protection only applies to digital records.'",
+              "back": "Myth. Paper files in a structured filing system are covered too, and so are recorded calls."
+            },
+            {
+              "front": "'The DPO is personally liable for breaches.'",
+              "back": "Myth. The controller, the bank, carries the legal duty. The DPO advises and monitors."
+            },
+            {
+              "front": "'Accountability means proving it, not just doing it.'",
+              "back": "Fact. Article 5(2) requires the controller to be able to demonstrate compliance."
+            },
+            {
+              "front": "'Business contact details of a sole trader can be personal data.'",
+              "back": "Fact. A sole trader is a living individual, so data about them is personal data."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "What getting it wrong can cost",
+          "caption": "Maximums from UK GDPR Article 83 and DPA 2018 section 157. Bank regulators can fine separately for systems and controls failures.",
+          "items": [
+            {
+              "label": "Higher maximum",
+              "value": "GBP 17.5m",
+              "detail": "Or 4% of worldwide annual turnover if higher, e.g. for breaching the core principles."
+            },
+            {
+              "label": "Standard maximum",
+              "value": "GBP 8.7m",
+              "detail": "Or 2% of turnover if higher, e.g. for many security and record duties."
+            },
+            {
+              "label": "Equifax Ltd (FCA, 2023)",
+              "value": "GBP 11.2m",
+              "detail": "FCA penalty for failing to oversee outsourced UK data."
+            },
+            {
+              "label": "UK consumers affected",
+              "value": "13.8m",
+              "detail": "Approximate number in the Equifax case, per the FCA."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Harrowfield sends customer data to a group company in another country for processing. Which statement is correct?",
+          "options": [
+            "Responsibility passes to the group company once the data leaves the UK",
+            "Intra-group transfers are exempt from data protection rules",
+            "Harrowfield remains responsible as controller and must oversee how the data is protected",
+            "Only the group company's regulator can take action if data is lost"
+          ],
+          "answer": 2,
+          "explanation": "The controller stays accountable for data it sends to processors, including group companies. The Equifax case shows that failing to treat a parent company as an outsourcing provider, and failing to oversee it, can lead to enforcement."
+        },
+        {
+          "type": "tip",
+          "title": "Back to this morning's two incidents",
+          "body": "Both incidents from the opening scene are **personal data breaches in the making**: the emailed customer list is an unauthorised disclosure, and the lost laptop may be one.\n\n- Do not wait for proof of harm. Report to the DPO and the incident line at once.\n- Never forward customer data to personal email or devices, even 'to work on at home'.\n- Encryption may change the risk assessment, but only if the device was locked and the key is safe.\n\nYou will learn the breach rules in Stage 4."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "UK data protection law rests on the UK GDPR and the Data Protection Act 2018, both amended by the Data (Use and Access) Act 2025.",
+            "The Information Commission replaced the Information Commissioner (ICO) on 30 September 2026; the FCA and PRA also police data security as a systems and controls issue.",
+            "Personal data is any information about an identifiable living person; in a bank that is almost every record.",
+            "Article 5 sets six principles plus accountability: the bank must be able to prove compliance.",
+            "Sending data to a supplier or group company does not transfer the controller's responsibility."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one set of customer data you use every week. What is its purpose, which fields do you actually need, and when should it be deleted? Who could you ask if you do not know?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "gb-dp-s1-q1",
+          "question": "Which pair of laws forms the core of UK data protection law for a bank, as amended in 2025?",
+          "options": [
+            "The EU GDPR and the Data Protection Act 1998",
+            "The UK GDPR and the Data Protection Act 2018",
+            "The Data Protection Act 2018 and the Financial Services Act 2021",
+            "The Privacy and Electronic Communications Regulations alone"
+          ],
+          "answer": 1,
+          "explanation": "The UK GDPR and the DPA 2018 work together, and the Data (Use and Access) Act 2025 amended both. The 1998 Act was replaced, and the EU GDPR no longer applies directly in the UK.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s1-q2",
+          "question": "Since 30 September 2026, which body enforces UK data protection law?",
+          "options": [
+            "The Information Commissioner's Office, unchanged",
+            "The Financial Conduct Authority",
+            "The Department for Science, Innovation and Technology",
+            "The Information Commission"
+          ],
+          "answer": 3,
+          "explanation": "Commencement regulations under the Data (Use and Access) Act 2025 abolished the office of Information Commissioner and transferred its functions to the Information Commission from 30 September 2026.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s1-q3",
+          "question": "A branch keeps a CCTV recording in which customers' faces are visible. How should staff treat it?",
+          "options": [
+            "As personal data, because individuals can be identified from the images",
+            "As non-personal data, because no names are attached",
+            "As personal data only if the footage is shared outside the bank",
+            "As anonymous data once it is older than one month"
+          ],
+          "answer": 0,
+          "explanation": "Images from which people can be identified are personal data whether or not names are attached. Sharing and age do not change that.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s1-q4",
+          "question": "Harrowfield uses a cloud provider to host its mortgage system. The provider only acts on the bank's instructions. What is the provider's role?",
+          "options": [
+            "Joint controller",
+            "Data subject",
+            "Processor",
+            "Controller"
+          ],
+          "answer": 2,
+          "explanation": "A firm that processes personal data on behalf of, and on the instructions of, the controller is a processor. The bank decides the purposes and means, so it remains the controller.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s1-q5",
+          "question": "A credit team keeps the full application files of rejected applicants indefinitely 'in case they reapply'. Which principle is most at risk?",
+          "options": [
+            "Accuracy",
+            "Lawfulness of the original collection",
+            "Storage limitation",
+            "Transparency of the privacy notice"
+          ],
+          "answer": 2,
+          "explanation": "Keeping identifiable data for longer than the purpose requires breaches storage limitation. The files may be accurate and lawfully collected, but there is no defined need to keep them forever.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s1-q6",
+          "question": "What does the accountability principle in UK GDPR Article 5(2) add to the other principles?",
+          "options": [
+            "The controller must be responsible for compliance and able to demonstrate it",
+            "Each member of staff is personally fined for breaches",
+            "The DPO must sign off every processing activity in advance",
+            "The regulator must approve the bank's privacy policy"
+          ],
+          "answer": 0,
+          "explanation": "Accountability makes the controller responsible for, and able to demonstrate, compliance with the principles, for example through records, policies, assessments and training evidence. It does not create personal fines for staff or a pre-approval regime.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s1-q7",
+          "question": "The marketing team asks for the fraud team's list of customers flagged in fraud checks, to target them with a 'security upgrade' product. What is the main problem?",
+          "options": [
+            "The fraud team cannot share any data with any other team in any situation",
+            "The list is not personal data because it is internal",
+            "Marketing is never a lawful purpose for a bank",
+            "Using fraud-check data for marketing is likely incompatible with the purpose it was collected for"
+          ],
+          "answer": 3,
+          "explanation": "Purpose limitation stops data collected for one purpose from being reused in an incompatible way. Internal sharing can be lawful in other cases, and marketing can be lawful with the right basis, but this reuse is the issue.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s1-q8",
+          "question": "Which statement about special category data is correct?",
+          "options": [
+            "It means any financial data, such as balances and salaries",
+            "It covers sensitive types such as health data and needs an additional condition as well as a lawful basis",
+            "It can never be processed by a bank",
+            "It only applies to data about children"
+          ],
+          "answer": 1,
+          "explanation": "Special category data includes health, ethnic origin, religious belief and biometric data used for identification. It needs a lawful basis and a separate condition. Financial data is sensitive in practice but is not a special category in law.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s1-q9",
+          "question": "In the Equifax Ltd case (FCA, 2023), what was a central failing?",
+          "options": [
+            "It did not treat sending UK data to its US parent as outsourcing, so it failed to oversee its protection",
+            "It sold customer data to marketing firms without consent",
+            "It refused to answer subject access requests for two years",
+            "It kept paper files in an unlocked office"
+          ],
+          "answer": 0,
+          "explanation": "The FCA found that Equifax Ltd did not treat the arrangement with its parent as outsourcing and did not properly oversee the security of UK data sent to US servers, which hackers reached in 2017.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s1-q10",
+          "question": "Under UK GDPR Article 83, what is the higher maximum fine for an undertaking that breaches the core processing principles?",
+          "options": [
+            "GBP 8.7m or 2% of UK turnover, whichever is lower",
+            "GBP 500,000 per breach",
+            "GBP 17.5m or 4% of total worldwide annual turnover, whichever is higher",
+            "1% of the bank's capital requirement"
+          ],
+          "answer": 2,
+          "explanation": "Breaches of the basic principles fall under the higher maximum: GBP 17.5m or 4% of worldwide annual turnover for the preceding year, whichever is higher. The GBP 8.7m or 2% standard maximum applies to other provisions.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Lawful Bases, Recognised Legitimate Interests and Customer Confidentiality",
+      "stage": "The Gatehouse",
+      "summary": "Choose the right lawful basis, use the new recognised legitimate interests added by the 2025 Act, apply the banker's duty of confidentiality, and avoid the DPA 2018 section 170 offence.",
+      "minutes": 45,
+      "objectives": [
+        "Select the right Article 6 lawful basis for common banking activities",
+        "Distinguish recognised legitimate interests from ordinary legitimate interests",
+        "Apply the duty of confidentiality to third-party and authority requests",
+        "Explain the section 170 offence and why access logs matter"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The caller who 'just needs an address'",
+          "setting": "Contact centre, Harrowfield Bank, Edinburgh. Tuesday, 10:15 am.",
+          "lines": [
+            {
+              "who": "eilidh",
+              "text": "Nadia, a man on line 4 says he's the husband of one of our customers. She's moved out and he 'just needs her new address to send her post'. He knows her date of birth and account number.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Knowing her details doesn't make him her. And even a real husband has no right to her address.",
+              "mood": "neutral"
+            },
+            {
+              "who": "eilidh",
+              "text": "Then an hour ago a police officer emailed asking for a different customer's statements. Same answer?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Not necessarily. The police request may have a lawful route. The husband's request has none. The difference is the lawful basis, and our duty of confidentiality.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tomasz",
+              "text": "And note what happened: someone who isn't the customer already had her account number and date of birth. That's a warning sign in itself.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Stage 2, then: when can the bank use or share personal data at all, and when must it say no?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Seven doors to lawful processing",
+          "scenes": [
+            {
+              "icon": "🚪",
+              "heading": "One door is enough, but you need one",
+              "narration": "Under UK GDPR Article 6, processing is lawful only if at least one lawful basis applies. Pick it before you start, and record it."
+            },
+            {
+              "icon": "✍️",
+              "heading": "Consent and contract",
+              "narration": "Consent must be specific and freely given. Contract covers what is necessary to run an account or loan the customer asked for, including steps before signing."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Legal obligation and vital interests",
+              "narration": "Legal obligation covers what the law makes the bank do, such as anti-money laundering checks. Vital interests is for life-or-death situations."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Public task",
+              "narration": "Public task mainly serves public bodies carrying out official functions. Banks rarely rely on it for their own processing."
+            },
+            {
+              "icon": "🆕",
+              "heading": "Recognised legitimate interests",
+              "narration": "The 2025 Act added a new basis: a short list of purposes, such as crime prevention, safeguarding vulnerable people and emergencies, that Parliament has already judged legitimate."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Legitimate interests",
+              "narration": "Ordinary legitimate interests need a balancing test: the bank's interest must not be overridden by the person's rights, especially if they are a child."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Legitimate interests vs recognised legitimate interests",
+          "headers": [
+            "Legitimate interests",
+            "Recognised legitimate interests"
+          ],
+          "items": [
+            {
+              "label": "Where it comes from",
+              "left": "Article 6(1)(f)",
+              "right": "Article 6(1)(ea) and Annex 1, added by the 2025 Act"
+            },
+            {
+              "label": "Balancing test",
+              "left": "Needed: weigh the interest against the person's rights",
+              "right": "Not needed for the listed purposes"
+            },
+            {
+              "label": "What purposes",
+              "left": "Any genuine interest, e.g. direct marketing or network security",
+              "right": "Only listed ones, e.g. crime, safeguarding, emergencies, national security"
+            },
+            {
+              "label": "Necessity",
+              "left": "Processing must still be necessary",
+              "right": "Processing must still be necessary"
+            },
+            {
+              "label": "Right to object",
+              "left": "Applies",
+              "right": "Applies"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the 2025 changes, which of these purposes is listed in Annex 1 as a recognised legitimate interest?",
+          "options": [
+            "Processing necessary to send personalised mortgage offers",
+            "Processing necessary to improve the bank's app design",
+            "Processing necessary to share data with any group company",
+            "Processing necessary to detect, investigate or prevent crime"
+          ],
+          "answer": 3,
+          "explanation": "Annex 1 lists purposes including crime detection and prevention, safeguarding vulnerable individuals, emergencies, national security and certain disclosures to public bodies. Marketing and intra-group sharing are given as examples of ordinary legitimate interests, which still need a balancing test."
+        },
+        {
+          "type": "sort",
+          "title": "Which lawful basis fits best?",
+          "prompt": "Sort each Harrowfield activity to the lawful basis that fits it best.",
+          "buckets": [
+            "Contract",
+            "Legal obligation",
+            "Legitimate interests (incl. recognised)"
+          ],
+          "items": [
+            {
+              "text": "Processing a customer's standing order instruction",
+              "bucket": 0
+            },
+            {
+              "text": "Checking identity under the money laundering rules",
+              "bucket": 1
+            },
+            {
+              "text": "Running the fraud-detection model on card payments",
+              "bucket": 2
+            },
+            {
+              "text": "Sending a statement for the current account",
+              "bucket": 0
+            },
+            {
+              "text": "Answering a court order for account records",
+              "bucket": 1
+            },
+            {
+              "text": "Monitoring the network for malware",
+              "bucket": 2
+            },
+            {
+              "text": "Assessing a loan application the customer submitted",
+              "bucket": 0
+            },
+            {
+              "text": "Alerting social services about a vulnerable adult at risk of harm",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Customer confidentiality: the older, stricter duty",
+          "body": "Long before UK GDPR, UK banks owed customers a **duty of confidentiality** that comes from the banker-customer relationship itself. Data protection sits on top of it, not in place of it.\n\nIn practice this means:\n\n- A customer's affairs are not discussed with anyone else, including spouses, parents, employers or friends, unless the customer has authorised it or another recognised exception applies.\n- Exceptions are **narrow**: for example, where the law compels disclosure, or where the customer has clearly agreed. Your bank's policy lists them.\n- Requests from police or other authorities go to the **designated team**, which checks the legal basis, the scope and the paperwork.\n\nIf a request feels unusual, the safe answer is: 'I can't discuss any account, but I can pass your request to the right team.'"
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Handling a request for customer information",
+          "caption": "Never confirm or deny that someone is a customer until the first two steps are done.",
+          "items": [
+            {
+              "label": "Verify who is asking",
+              "detail": "Use the bank's verification steps; knowing details is not proof."
+            },
+            {
+              "label": "Check their authority",
+              "detail": "Is it the customer, an authorised third party or a body with a legal power?"
+            },
+            {
+              "label": "Identify the lawful route",
+              "detail": "Lawful basis, confidentiality exception and policy all need to line up."
+            },
+            {
+              "label": "Share the minimum",
+              "detail": "Only what is needed for that purpose."
+            },
+            {
+              "label": "Record the decision",
+              "detail": "Who asked, what was shared, why, and who approved it."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: the curious colleague",
+          "setting": "HR meeting room, Leeds. Tuesday, 3 pm.",
+          "lines": [
+            {
+              "who": "helen",
+              "text": "Bad news. An audit of system logs shows a payments clerk viewed his ex-partner's account 14 times last month. No business reason.",
+              "mood": "angry"
+            },
+            {
+              "who": "nadia",
+              "text": "Looking without a business reason is unauthorised processing. If he passed anything on, it could be a criminal offence for him personally.",
+              "mood": "worried"
+            },
+            {
+              "who": "kwame",
+              "text": "Under the Data Protection Act?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Section 170. Knowingly or recklessly obtaining or disclosing personal data without the controller's consent. The bank never consented to him browsing.",
+              "mood": "neutral"
+            },
+            {
+              "who": "eilidh",
+              "text": "My team must hear this. Some of them look up neighbours 'just out of curiosity'.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The police email",
+          "situation": "A message arrives at the Edinburgh contact centre from an address ending in .police.uk. It asks for six months of statements for a named customer 'urgently, for an ongoing fraud investigation' and gives an officer's name. The customer is not under any internal investigation.",
+          "choices": [
+            {
+              "text": "Do not send anything; log the request and pass it to the bank's designated disclosure team, which will verify it and check the legal basis and scope",
+              "outcome": "Best answer. Crime prevention can be a lawful purpose, but the bank must verify the requester, check the legal basis and confidentiality exception, and share only what is necessary. Specialist teams exist for exactly this.",
+              "score": 2
+            },
+            {
+              "text": "Send the statements, because crime prevention is a recognised legitimate interest",
+              "outcome": "The recognised legitimate interest still requires the processing to be necessary, and confidentiality and verification rules still apply. A contact-centre agent cannot make that judgement alone.",
+              "score": 0
+            },
+            {
+              "text": "Phone the customer to ask whether they agree to the disclosure",
+              "outcome": "Contacting the customer could prejudice a genuine investigation. The request should go to the specialist team, which knows how to handle it.",
+              "score": 1
+            },
+            {
+              "text": "Reply that the bank never shares data with police",
+              "outcome": "Wrong. The bank can lawfully share data with law enforcement in the right circumstances. The answer is a controlled process, not a blanket refusal.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Rules and their sources",
+          "prompt": "Match each rule to where it comes from.",
+          "pairs": [
+            {
+              "left": "Article 6(1) UK GDPR",
+              "right": "At least one lawful basis is needed for any processing."
+            },
+            {
+              "left": "Annex 1 UK GDPR",
+              "right": "Lists the recognised legitimate interests, such as safeguarding and crime."
+            },
+            {
+              "left": "Article 6(11) UK GDPR",
+              "right": "Gives examples of ordinary legitimate interests: direct marketing, intra-group admin, network security."
+            },
+            {
+              "left": "DPA 2018 section 170",
+              "right": "Offence of knowingly or recklessly obtaining or disclosing data without the controller's consent."
+            },
+            {
+              "left": "Duty of confidentiality",
+              "right": "Banker-customer duty not to disclose a customer's affairs except in narrow cases."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A payments clerk looks up his ex-partner's balance out of curiosity and tells a friend. Which statement is most accurate?",
+          "options": [
+            "It is only a disciplinary matter, because he had system access",
+            "He may have committed an offence under DPA 2018 section 170, and the bank should treat it as a breach",
+            "It is lawful because he did not change any data",
+            "Only the bank can be liable; staff never face personal consequences"
+          ],
+          "answer": 1,
+          "explanation": "Section 170 makes it an offence for a person knowingly or recklessly to obtain or disclose personal data without the controller's consent. Having system access is not consent to use it for private reasons. The bank must also assess it as a personal data breach."
+        },
+        {
+          "type": "flip",
+          "title": "Confidentiality quick answers",
+          "cards": [
+            {
+              "front": "A wife asks for her husband's balance 'because it's a joint mortgage'.",
+              "back": "Only discuss accounts she is party to or authorised on. A joint mortgage does not open his sole current account."
+            },
+            {
+              "front": "A caller knows the account number and date of birth.",
+              "back": "That is not verification. Fraudsters often hold such details. Use the bank's full verification steps."
+            },
+            {
+              "front": "An employer asks to confirm a salary deposit.",
+              "back": "Only with the customer's documented authority, through the agreed reference process."
+            },
+            {
+              "front": "A solicitor says they act for the customer.",
+              "back": "Ask for written authority signed by the customer and route it through the proper team."
+            },
+            {
+              "front": "Can I check a friend's account to help them?",
+              "back": "No. Access is for assigned work only. Ask the friend to contact the bank in the usual way."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case lesson: why access logs matter (FCA, Tesco Bank, 2018)",
+          "body": "Confidentiality failures are often found in the **logs**. In its October 2018 final notice against **Tesco Personal Finance plc**, fined about **GBP 16.4m** over a November 2016 cyber attack on debit cards, the FCA set out, hour by hour, what each team did and failed to do.\n\nThat case was about fraud, not snooping, and no customer personal data was lost. But it shows how closely a regulator examines **who did what, and when**. At Harrowfield, every look-up you make is logged with your user ID and the time.\n\nAt Harrowfield, regular access reviews flag unusual patterns, such as staff viewing colleagues', relatives' or celebrities' accounts. If you need to view an account where you have a personal link, declare it and ask a colleague to handle it."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Every processing activity needs at least one of the lawful bases in UK GDPR Article 6, chosen in advance and recorded.",
+            "The 2025 Act added recognised legitimate interests (Annex 1), such as crime prevention, safeguarding and emergencies, with no balancing test; necessity still applies.",
+            "Ordinary legitimate interests need a balancing test; direct marketing, intra-group admin and network security are listed examples.",
+            "Banks owe customers a duty of confidentiality on top of data protection law; exceptions are narrow and handled by designated teams.",
+            "Browsing or disclosing data without a business reason can be a criminal offence under DPA 2018 section 170."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which requests for customer information reach you most often? Write down how you verify the requester and which team you pass unusual requests to."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "gb-dp-s2-q1",
+          "question": "Which lawful basis best fits processing that a customer's current account cannot run without, such as making the payments they instruct?",
+          "options": [
+            "Consent",
+            "Vital interests",
+            "Public task",
+            "Performance of a contract"
+          ],
+          "answer": 3,
+          "explanation": "Processing that is necessary to perform a contract with the customer, or to take steps they ask for before entering one, falls under Article 6(1)(b). Consent would be the wrong basis because the customer cannot really refuse it and still have the account.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s2-q2",
+          "question": "Why is consent usually a poor lawful basis for identity checks required by money laundering law?",
+          "options": [
+            "The bank must do the checks anyway, so consent would not be freely given; legal obligation fits",
+            "Consent is not a lawful basis in the UK GDPR",
+            "Consent can only be given in writing on paper",
+            "Identity checks need no lawful basis at all"
+          ],
+          "answer": 0,
+          "explanation": "Where the law requires processing, the right basis is legal obligation. Asking for consent would be misleading, because the customer cannot refuse without losing the service, so consent would not be freely given.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s2-q3",
+          "question": "What is the key difference between a recognised legitimate interest and an ordinary legitimate interest?",
+          "options": [
+            "Recognised legitimate interests need the customer's written consent",
+            "Ordinary legitimate interests can be used only by public authorities",
+            "Recognised legitimate interests are listed purposes that need no balancing test, though the processing must still be necessary",
+            "Recognised legitimate interests remove the need to keep any records"
+          ],
+          "answer": 2,
+          "explanation": "Article 6(1)(ea) and Annex 1 list purposes, such as crime prevention and safeguarding, that do not need the balancing test of Article 6(1)(f). Necessity still applies, and the accountability duties are unchanged.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s2-q4",
+          "question": "Which of these does UK GDPR Article 6(11) give as an example of processing that may be necessary for an ordinary legitimate interest?",
+          "options": [
+            "Safeguarding a vulnerable individual",
+            "Ensuring the security of network and information systems",
+            "Responding to a national emergency",
+            "Complying with a court order"
+          ],
+          "answer": 1,
+          "explanation": "Article 6(11) lists direct marketing, intra-group transmission for internal administration and network and information security as examples of legitimate interests. Safeguarding and emergencies are recognised legitimate interests in Annex 1, and court orders fall under legal obligation.",
+          "difficulty": 4
+        },
+        {
+          "id": "gb-dp-s2-q5",
+          "question": "A caller gives a customer's full name, account number and date of birth and asks for her new address. He says he is her husband. What should the agent do?",
+          "options": [
+            "Decline to discuss the account, because knowing details is not verification and a spouse has no right to her data",
+            "Give the address, because he passed the security questions",
+            "Give the town but not the street",
+            "Confirm she is a customer but say nothing more"
+          ],
+          "answer": 0,
+          "explanation": "Holding someone's details does not prove identity or authority, and the duty of confidentiality covers spouses. Even confirming that she is a customer discloses information.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s2-q6",
+          "question": "Under DPA 2018 section 170, which act can be a criminal offence for an individual employee?",
+          "options": [
+            "Making a typing error in a customer's address",
+            "Following a manager's lawful instruction to share data with an auditor",
+            "Forgetting to read the privacy notice",
+            "Knowingly or recklessly disclosing personal data without the controller's consent"
+          ],
+          "answer": 3,
+          "explanation": "Section 170 targets knowingly or recklessly obtaining, disclosing, procuring or retaining personal data without the controller's consent. Honest mistakes and authorised sharing are not covered by the offence.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s2-q7",
+          "question": "A police officer emails a contact-centre agent asking for a customer's statements for a fraud inquiry. What is the right first step?",
+          "options": [
+            "Send the statements because crime prevention is always lawful",
+            "Pass the request to the designated disclosure team to verify it and check the legal basis",
+            "Call the customer to ask for permission",
+            "Delete the email, because the bank never shares data with the police"
+          ],
+          "answer": 1,
+          "explanation": "Disclosures to law enforcement can be lawful, but they need verification, a legal basis, a confidentiality exception and a minimal scope. Calling the customer could prejudice an investigation, and blanket refusal is also wrong.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s2-q8",
+          "question": "Which statement about the banker's duty of confidentiality is correct?",
+          "options": [
+            "It was abolished when the UK GDPR took effect",
+            "It applies only to business customers",
+            "It sits alongside data protection law and allows disclosure only in narrow circumstances",
+            "It allows disclosure to any family member"
+          ],
+          "answer": 2,
+          "explanation": "The duty of confidentiality comes from the banker-customer relationship and continues alongside UK GDPR and the DPA 2018. Exceptions, such as legal compulsion or the customer's agreement, are narrow.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s2-q9",
+          "question": "Harrowfield wants to share customer details with an adult social care team because a customer appears to be at risk of financial abuse. Which basis is most relevant after the 2025 changes?",
+          "options": [
+            "Performance of the customer's account contract",
+            "Consent from the person suspected of the abuse",
+            "No basis is needed for safeguarding",
+            "The recognised legitimate interest for safeguarding a vulnerable individual"
+          ],
+          "answer": 3,
+          "explanation": "Annex 1 includes processing necessary for safeguarding a vulnerable individual, which includes adults at risk. The bank must still judge necessity and share only what is needed, following its vulnerable customer and confidentiality policies.",
+          "difficulty": 4
+        },
+        {
+          "id": "gb-dp-s2-q10",
+          "question": "An adviser has to work on the account of her own cousin, who has walked into her branch. What is the best practice?",
+          "options": [
+            "Declare the personal link and ask a colleague to handle the account",
+            "Handle it herself, since she knows the cousin well",
+            "Handle it but avoid writing notes",
+            "Look at the account first to decide whether a conflict exists"
+          ],
+          "answer": 0,
+          "explanation": "Where staff have a personal connection, good practice is to declare it and pass the work to a colleague. Viewing the account first would itself be access without a clear business need.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Data Subject Rights, Automated Decisions and the New Complaints Duty",
+      "stage": "The Hall of Requests",
+      "summary": "Handle access, erasure, objection and other rights on the amended clocks, apply the new automated decision-making rules, and meet the DPA 2018 section 164A complaints duty in force since June 2026.",
+      "minutes": 50,
+      "objectives": [
+        "Explain each data subject right and its main limits for a bank",
+        "Apply the Article 12A response periods, extensions and clock pauses",
+        "Recognise solely automated significant decisions and provide the required safeguards",
+        "Handle data protection complaints in line with DPA 2018 section 164A"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The customer who wants 'everything'",
+          "setting": "Data Protection Office, Leeds. Wednesday, 9:05 am.",
+          "lines": [
+            {
+              "who": "eilidh",
+              "text": "Nadia, a customer whose loan was declined has emailed: 'Send me every piece of data you hold about me. And I want to know why a computer said no.'",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "That's a subject access request, and a question about automated decision-making. Both have clocks and rules.",
+              "mood": "neutral"
+            },
+            {
+              "who": "eilidh",
+              "text": "He's also furious. He says if he doesn't hear back he'll complain to the regulator and the newspapers.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Since June 2026 he has a legal right to complain to us first, and we must acknowledge it within 30 days. Let's not give him two reasons to be angry.",
+              "mood": "thinking"
+            },
+            {
+              "who": "helen",
+              "text": "Remind me: how long do we have for the data itself? And do we really need to search every inbox in the bank?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Good questions, and the 2025 Act changed some of the answers. Stage 3: people's rights, the clocks and the new complaints duty.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The rights every customer holds",
+          "scenes": [
+            {
+              "icon": "📢",
+              "heading": "To be informed",
+              "narration": "People must be told, in clear and plain language, who is using their data, why, on what basis, for how long and what their rights are. That is the privacy notice's job."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Of access",
+              "narration": "People can ask whether the bank processes their data and get a copy, plus key information such as purposes, recipients and how long it is kept."
+            },
+            {
+              "icon": "✏️",
+              "heading": "To rectification and erasure",
+              "narration": "They can have wrong data corrected, and in some cases deleted. But erasure has limits: data the law requires the bank to keep, such as money laundering records, stays."
+            },
+            {
+              "icon": "✋",
+              "heading": "To restrict and to object",
+              "narration": "They can ask the bank to pause use while a dispute is checked, and object to processing based on legitimate interests. An objection to direct marketing must always be obeyed."
+            },
+            {
+              "icon": "🤖",
+              "heading": "About automated decisions",
+              "narration": "Where a significant decision is made solely by automated means, the bank must offer safeguards: information, a way to make representations, human intervention and a way to contest it."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The clock on a rights request (UK GDPR Articles 12 and 12A)",
+          "caption": "Inserted by section 76 of the Data (Use and Access) Act 2025. Check your bank's procedure for how it counts days.",
+          "items": [
+            {
+              "label": "Relevant time",
+              "value": "Day 0",
+              "detail": "The latest of: request received, ID information received, or any allowed fee paid."
+            },
+            {
+              "label": "Ask for clarification",
+              "value": "Clock paused",
+              "detail": "For an access request, if the bank reasonably needs more detail to find the data, the clock stops until it arrives."
+            },
+            {
+              "label": "Standard deadline",
+              "value": "1 month",
+              "detail": "Respond without undue delay and within one month of the relevant time."
+            },
+            {
+              "label": "Extension notice",
+              "value": "Within month 1",
+              "detail": "If requests are complex or numerous, tell the person, with reasons, before the first month ends."
+            },
+            {
+              "label": "Extended deadline",
+              "value": "+2 months",
+              "detail": "The response period can be extended by two further months."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer submits an access request on 3 March. The bank has reasonable doubts about identity and asks for ID, which arrives on 10 March. When does the one-month period start?",
+          "options": [
+            "When the identity information arrives on 10 March",
+            "On 3 March, when the request arrived",
+            "When the DPO first reads the request",
+            "When the bank finishes its search"
+          ],
+          "answer": 0,
+          "explanation": "Article 12A starts the clock at the relevant time: the latest of receiving the request, receiving information requested to confirm identity, or payment of any allowed fee. Here that is 10 March."
+        },
+        {
+          "type": "concept",
+          "title": "Access requests: what the 2025 Act changed",
+          "body": "Subject access requests (SARs) are the most common right used against banks, often during disputes. Three points changed or were clarified in 2025:\n\n- **Reasonable and proportionate search.** People are entitled to what the bank can find through a reasonable and proportionate search. That is not a licence to skip obvious places such as the CRM, call recordings or the complaint file.\n- **Clarification.** If the bank holds a lot of data about the person, it may ask which information or activities the request covers, and the clock pauses until the answer arrives.\n- **Identity.** Where there is reasonable doubt, the bank may ask for ID and wait until identity is confirmed.\n\nUnchanged: the first copy is normally **free**. A request that is manifestly unfounded or excessive can be refused or charged a reasonable fee, but the bank must be able to prove that it is."
+        },
+        {
+          "type": "sort",
+          "title": "Can the bank refuse or delete?",
+          "prompt": "Sort each request: must the bank normally comply, or may it decline (with reasons)?",
+          "buckets": [
+            "Normally comply",
+            "May decline, with reasons"
+          ],
+          "items": [
+            {
+              "text": "Stop sending me marketing emails.",
+              "bucket": 0
+            },
+            {
+              "text": "Correct my misspelt surname.",
+              "bucket": 0
+            },
+            {
+              "text": "Delete my transaction history from last year while my account is open.",
+              "bucket": 1
+            },
+            {
+              "text": "Send me a copy of my personal data.",
+              "bucket": 0
+            },
+            {
+              "text": "Delete the identity documents you hold under money laundering law.",
+              "bucket": 1
+            },
+            {
+              "text": "Explain the logic of the automated decision that declined my card.",
+              "bucket": 0
+            },
+            {
+              "text": "Send me the 5th identical access request this month.",
+              "bucket": 1
+            },
+            {
+              "text": "Pause use of my address while you check whether it's wrong.",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Automated decisions after the 2025 Act (Articles 22A to 22D)",
+          "headers": [
+            "Rule",
+            "What it means"
+          ],
+          "items": [
+            {
+              "label": "When the rules bite",
+              "left": "Significant decision, solely automated",
+              "right": "Legal or similarly significant effect, no meaningful human involvement"
+            },
+            {
+              "label": "Ordinary personal data",
+              "left": "Allowed with safeguards",
+              "right": "Inform, allow representations, human intervention, contest"
+            },
+            {
+              "label": "Special category data",
+              "left": "Restricted",
+              "right": "Only with explicit consent, or contract or law plus a public interest condition"
+            },
+            {
+              "label": "Recognised legitimate interests",
+              "left": "Cannot be the basis",
+              "right": "Solely automated significant decisions cannot rely on Article 6(1)(ea)"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: the complaint form nobody could find",
+          "setting": "Customer Relations, Leeds. Wednesday, 2 pm.",
+          "lines": [
+            {
+              "who": "kwame",
+              "text": "Mystery shopping result: a tester tried to complain online that we'd shared her data wrongly. The only route was a phone line, open on weekdays.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "That's a problem. Section 164A of the 2018 Act now says controllers must make complaining easy, for example with a form that works electronically and by other means.",
+              "mood": "neutral"
+            },
+            {
+              "who": "eilidh",
+              "text": "And after the complaint comes in?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Acknowledge within 30 days, look into it properly, keep the person updated and tell them the outcome without undue delay.",
+              "mood": "neutral"
+            },
+            {
+              "who": "helen",
+              "text": "Our general complaints process already does most of that. Can we just plug data complaints into it?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Yes, if we tag them, involve my team, and track the 30-day acknowledgement. The regulator can fine for breaching section 164A.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Handling a data protection complaint under DPA 2018 s.164A",
+          "prompt": "Put the steps in order.",
+          "steps": [
+            "Make it easy to complain, with an electronic form and other routes",
+            "Log the complaint and tag it as a data protection complaint",
+            "Acknowledge receipt within 30 days of receiving it",
+            "Make appropriate enquiries into what happened",
+            "Keep the complainant informed of progress",
+            "Tell the complainant the outcome without undue delay"
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The angry declined applicant",
+          "situation": "The declined loan applicant from this morning has now emailed three times: an access request, a demand to know 'why the computer said no', and a complaint that the bank 'is hiding something'. Harrowfield's lending decision was made by a scoring engine with no human review. Eilidh asks you how to respond.",
+          "choices": [
+            {
+              "text": "Log the access request and the complaint, acknowledge the complaint, explain the decision safeguards and offer human review, then answer within the applicable time limits",
+              "outcome": "Best answer. A solely automated significant decision triggers safeguards: information, a chance to make representations, human intervention and a route to contest. The access request has its own clock and the complaint must be acknowledged within 30 days.",
+              "score": 2
+            },
+            {
+              "text": "Reply that scoring models are confidential and nothing can be shared",
+              "outcome": "Wrong. The person is entitled to meaningful information about the logic and to contest the decision. Trade secrets may limit detail, but not remove the safeguards.",
+              "score": 0
+            },
+            {
+              "text": "Treat it all as one complaint and answer within eight weeks",
+              "outcome": "Partly right in spirit, but each right has its own rules. The access request has a one-month clock, and the decision safeguards must be offered.",
+              "score": 1
+            },
+            {
+              "text": "Wait for him to complain to the Information Commission before acting",
+              "outcome": "Risky. Since June 2026 the bank must handle complaints itself, and delay could breach both the access and the complaint rules.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Rights: sharp edges",
+          "cards": [
+            {
+              "front": "Is the first copy of an access request free?",
+              "back": "Normally yes. A reasonable fee is possible for further copies, or for manifestly unfounded or excessive requests."
+            },
+            {
+              "front": "Can the bank refuse an access request because the person is in a dispute with it?",
+              "back": "Not on that ground alone. The right of access has no motive test, and the bank bears the burden of showing a request is manifestly unfounded or excessive."
+            },
+            {
+              "front": "Must an objection to direct marketing be obeyed?",
+              "back": "Yes. Data must no longer be processed for direct marketing once the person objects."
+            },
+            {
+              "front": "Does erasure override money laundering record-keeping?",
+              "back": "No. Erasure does not apply where processing is needed to comply with a legal obligation."
+            },
+            {
+              "front": "What must the bank say if it does not act on a request?",
+              "back": "Give its reasons and tell the person they can complain to the bank, to the Information Commission and seek a court remedy."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: complaints mishandled after a breach (FCA, Equifax Ltd, 2023)",
+          "body": "The FCA's 2023 penalty against **Equifax Ltd** was not only about security. It also found that:\n\n- Equifax Ltd was told about the incident only about **five minutes** before its US parent announced it, so it could not cope with the complaints that followed.\n- It made public statements that gave an **inaccurate impression of how many UK consumers** were affected.\n- It treated consumers unfairly by failing to keep **quality checks on complaints**, so complaints were mishandled.\n\n**The lesson for Harrowfield:** rights requests and complaints spike after an incident. A complaints process that works on a quiet Tuesday must also work on the worst day of the year. Since June 2026, handling data protection complaints is also a statutory duty under DPA 2018 section 164A."
+        },
+        {
+          "type": "check",
+          "question": "Under DPA 2018 section 164A, which is a duty of the bank when it receives a data protection complaint?",
+          "options": [
+            "Acknowledge receipt within 30 days and tell the complainant the outcome without undue delay",
+            "Resolve the complaint within 72 hours",
+            "Forward every complaint to the Information Commission",
+            "Respond only if the complaint is in writing on paper"
+          ],
+          "answer": 0,
+          "explanation": "Section 164A, in force from 19 June 2026, requires controllers to facilitate complaints (for example with an electronic form), acknowledge them within 30 days, make appropriate enquiries, keep the person informed and tell them the outcome without undue delay."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "Rights: to be informed, access, rectification, erasure, restriction, portability, objection and safeguards on solely automated significant decisions.",
+            "Rights requests: one month from the relevant time, extendable by two further months for complex or numerous requests with notice and reasons in the first month.",
+            "Access requests: a reasonable and proportionate search, the clock pauses for clarification, and the first copy is normally free.",
+            "Solely automated significant decisions need safeguards: information, representations, human intervention and a right to contest.",
+            "Since 19 June 2026, DPA 2018 s.164A requires an easy complaint route, acknowledgement within 30 days and an outcome without undue delay."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer phoned you today asking for 'all my data', what would you say, who would you pass it to, and how would you record the date?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "gb-dp-s3-q1",
+          "question": "What is the standard time limit for responding to a data subject's access request under the UK GDPR as amended?",
+          "options": [
+            "40 calendar days from receipt",
+            "72 hours from receipt",
+            "One month from the relevant time, extendable by two further months in some cases",
+            "Eight weeks, in line with general complaints"
+          ],
+          "answer": 2,
+          "explanation": "Article 12A sets one month from the relevant time, which can be extended by two further months where requests are complex or numerous, with notice and reasons given within the first month.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s3-q2",
+          "question": "Harrowfield receives a complex access request covering ten years of records. It wants more time. What must it do?",
+          "options": [
+            "Simply respond late, since complex requests have no deadline",
+            "Tell the customer before the first month ends, with reasons, that it is extending the period",
+            "Ask the Information Commission for permission to extend",
+            "Charge a fee before starting the search"
+          ],
+          "answer": 1,
+          "explanation": "The bank may extend by two further months for complexity or number of requests, but it must give notice with reasons within the first month of the relevant time.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s3-q3",
+          "question": "A long-standing customer asks for all the data the bank holds. Which statement about the search reflects the 2025 changes?",
+          "options": [
+            "The bank need only search the CRM system",
+            "The bank must search every system, archive and backup tape regardless of effort",
+            "The bank can refuse because it holds too much data",
+            "The customer is entitled to what the bank can find through a reasonable and proportionate search"
+          ],
+          "answer": 3,
+          "explanation": "Article 15(1A) limits entitlement to what a reasonable and proportionate search can find. That still covers the obvious places, but it does not require disproportionate effort, and volume alone is not a reason to refuse.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s3-q4",
+          "question": "A customer objects to the bank using her data for direct marketing. What must the bank do?",
+          "options": [
+            "Stop processing her data for direct marketing",
+            "Weigh its commercial interest against her objection",
+            "Continue until her next annual review",
+            "Ask her to give a reason before acting"
+          ],
+          "answer": 0,
+          "explanation": "An objection to direct marketing is absolute under Article 21(2) and (3). No balancing test or reason is needed.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s3-q5",
+          "question": "A customer asks the bank to erase the identity documents it collected when he opened an account two years ago. The account is still open. What is the best answer?",
+          "options": [
+            "The bank must erase them within one month",
+            "The bank may decline erasure because it must keep them under its legal obligations, and should explain this",
+            "The bank must erase them only if he pays a fee",
+            "The bank should erase them and ask him to send new copies later"
+          ],
+          "answer": 1,
+          "explanation": "Erasure does not apply where processing is needed to comply with a legal obligation, such as money laundering record-keeping. The bank must explain its reasons and the person's complaint and remedy options.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s3-q6",
+          "question": "Which situation triggers the safeguards for automated decision-making in Articles 22A to 22C?",
+          "options": [
+            "A human underwriter reviews a score and makes the final decision with real authority",
+            "A system sorts emails into folders for staff",
+            "A credit card is declined by a scoring engine with no meaningful human involvement",
+            "A customer uses an online calculator to estimate loan repayments"
+          ],
+          "answer": 2,
+          "explanation": "The safeguards apply to significant decisions, meaning those with legal or similarly significant effects, taken solely by automated processing, which means no meaningful human involvement. A genuine human decision-maker takes it outside the rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s3-q7",
+          "question": "Which safeguards must the bank provide for a solely automated significant decision?",
+          "options": [
+            "Information about it, a way to make representations, human intervention and a way to contest it",
+            "A refund of any fees charged",
+            "A guarantee that the decision will be reversed on request",
+            "Only a copy of the privacy notice"
+          ],
+          "answer": 0,
+          "explanation": "Article 22C requires measures that inform the person, let them make representations, obtain human intervention and contest the decision. It does not require the decision to be reversed.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s3-q8",
+          "question": "From 19 June 2026, how quickly must a controller acknowledge a data protection complaint under DPA 2018 section 164A?",
+          "options": [
+            "Within 72 hours",
+            "Within one month of the outcome",
+            "Within eight weeks",
+            "Within 30 days of receiving it"
+          ],
+          "answer": 3,
+          "explanation": "Section 164A(3) requires acknowledgement within the period of 30 days beginning when the complaint is received. The outcome must then follow without undue delay.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s3-q9",
+          "question": "A customer who is in a dispute with the bank makes an access request to gather evidence. The branch manager wants to refuse it as 'manifestly unfounded'. What is the best advice?",
+          "options": [
+            "Refuse, because access rights cannot be used during disputes",
+            "Do not refuse because of the dispute; the bank must be able to show the request is manifestly unfounded or excessive",
+            "Refuse, but only after the dispute is settled",
+            "Comply only if the customer drops the dispute"
+          ],
+          "answer": 1,
+          "explanation": "The right of access contains no motive test, so a dispute does not by itself make a request unfounded. Article 12(5) puts the burden of demonstrating that a request is manifestly unfounded or excessive on the controller.",
+          "difficulty": 4
+        },
+        {
+          "id": "gb-dp-s3-q10",
+          "question": "When the bank decides not to act on a rights request, what must it tell the person?",
+          "options": [
+            "Nothing, as long as it records the decision internally",
+            "Only that the request has been closed",
+            "Its reasons, and that they can complain to the bank, complain to the Information Commission and seek a judicial remedy",
+            "That they must wait 12 months before asking again"
+          ],
+          "answer": 2,
+          "explanation": "Article 12(4) requires the controller to explain why it is not acting and to tell the person about complaining to the controller under s.164A, complaining to the regulator under s.165 and seeking a judicial remedy.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Security, Social Engineering and Breach Notification",
+      "stage": "The Breach Bridge",
+      "summary": "Apply UK GDPR Article 32 security duties, resist phishing and pretexting, and run the Article 33 and 34 breach process: record every breach, notify the Information Commission within 72 hours where required and tell customers when risk is high.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the security measures UK GDPR Article 32 expects",
+        "Recognise phishing, pretexting and payment diversion attempts and respond safely",
+        "Decide whether a breach must be recorded, notified to the regulator or communicated to customers",
+        "Learn from the Tesco Bank and Equifax enforcement cases"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "16:52: the email from the 'COO'",
+          "setting": "Cyber Security Operations, Harrowfield Bank, Leeds. Thursday, 4:52 pm.",
+          "lines": [
+            {
+              "who": "tomasz",
+              "text": "Alert. Three staff in Finance got an email 'from Helen' asking them to open a 'board pack' link and log in. One of them did.",
+              "mood": "worried"
+            },
+            {
+              "who": "helen",
+              "text": "I sent nothing. And I never ask anyone to log in through a link.",
+              "mood": "angry"
+            },
+            {
+              "who": "tomasz",
+              "text": "The login page was fake. The attacker now has a valid password, and that mailbox holds customer complaint files with names, addresses and account details.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Then the clock may already be running. If personal data has been accessed, we have a possible notifiable breach.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kwame",
+              "text": "And if the attacker pivots into payment systems, it's an operational incident too. Two sets of rules, one bad afternoon.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Stage 4: security, social engineering, and what the law makes us do in the hours after a breach.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Security in the UK GDPR, Article 32",
+          "scenes": [
+            {
+              "icon": "🛡️",
+              "heading": "Appropriate to the risk",
+              "narration": "The bank must use technical and organisational measures that match the risk to people, taking account of cost, the state of the art and what the data is used for."
+            },
+            {
+              "icon": "🔐",
+              "heading": "Encryption and pseudonymisation",
+              "narration": "Encrypting data and replacing identifiers with codes are named examples. They make stolen data much less useful to a thief."
+            },
+            {
+              "icon": "⚙️",
+              "heading": "Confidentiality, integrity, availability, resilience",
+              "narration": "Systems must stay confidential, accurate, available and resilient on an ongoing basis, and the bank must be able to restore access to data quickly after an incident."
+            },
+            {
+              "icon": "🧪",
+              "heading": "Test it regularly",
+              "narration": "Controls must be tested, assessed and evaluated regularly. A control nobody has tested is a hope, not a control."
+            },
+            {
+              "icon": "👥",
+              "heading": "People act on instructions",
+              "narration": "Anyone with access to personal data may process it only on the controller's instructions. Training and clear rules turn that duty into daily habit."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Technical and organisational measures",
+          "caption": "Article 32 needs both: strong technology fails if people are tricked, and good people fail without tools.",
+          "axes": {
+            "x": "Prevent vs detect",
+            "y": "Technical vs organisational"
+          },
+          "items": [
+            {
+              "label": "Encryption",
+              "detail": "Laptops, emails with attachments and backups encrypted by default."
+            },
+            {
+              "label": "Access control",
+              "detail": "Least privilege, multi-factor login and regular access reviews."
+            },
+            {
+              "label": "Training and awareness",
+              "detail": "Phishing drills, clear desk rules and a no-blame reporting culture."
+            },
+            {
+              "label": "Procedures",
+              "detail": "Verification scripts, call-back rules and secure disposal of paper."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Social engineering: red flag or routine?",
+          "prompt": "Sort each message or call that reaches Harrowfield staff.",
+          "buckets": [
+            "Red flag: stop and verify",
+            "Routine"
+          ],
+          "items": [
+            {
+              "text": "An email from 'the CEO' asks you to log in via a link to read board papers",
+              "bucket": 0
+            },
+            {
+              "text": "A supplier emails new bank details for its next invoice payment",
+              "bucket": 0
+            },
+            {
+              "text": "A caller from 'IT support' asks for your one-time passcode to fix your account",
+              "bucket": 0
+            },
+            {
+              "text": "A text from 'the bank's fraud team' asks a customer to move money to a 'safe account'",
+              "bucket": 0
+            },
+            {
+              "text": "The IT service desk ticket you raised is updated in the official ticketing tool",
+              "bucket": 1
+            },
+            {
+              "text": "A colleague asks you to leave a door propped open because they forgot their pass",
+              "bucket": 0
+            },
+            {
+              "text": "Your manager reminds you in a team meeting about the annual policy attestation",
+              "bucket": 1
+            },
+            {
+              "text": "A new customer's documents arrive through the secure upload portal you sent them",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Five habits that beat phishing and pretexting",
+          "body": "Good practice, not a statutory checklist:\n\n- **Pause on urgency.** Pressure, secrecy and authority ('the CEO needs this now') are the attacker's tools.\n- **Verify out of band.** Call back on a number from the bank's directory, never one in the message.\n- **Never share codes or passwords.** No genuine colleague, supplier or bank team needs your one-time passcode.\n- **Check payment changes twice.** New bank details for a supplier or customer are confirmed by a call-back to a known contact.\n- **Report fast, without fear.** Clicking is a mistake; hiding it is the real damage. Use the phishing report button at once."
+        },
+        {
+          "type": "check",
+          "question": "A supplier emails to say its bank details have changed and asks Harrowfield to pay this month's invoice to the new account. What is the best response?",
+          "options": [
+            "Confirm the change by calling the supplier on a number already held on file before updating anything",
+            "Reply to the email asking the supplier to confirm",
+            "Update the details, because the email comes from the supplier's usual address",
+            "Pay half to the old account and half to the new one"
+          ],
+          "answer": 0,
+          "explanation": "Email accounts can be compromised or spoofed, so a reply goes to the attacker. Out-of-band verification with a known contact is the standard defence against payment diversion fraud."
+        },
+        {
+          "type": "concept",
+          "title": "What counts as a personal data breach",
+          "body": "A **personal data breach** is a security breach that leads to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data.\n\nIt is wider than hacking:\n\n- **Confidentiality**: a customer list emailed to the wrong person or a personal address; a phished mailbox.\n- **Integrity**: someone changes payment details or balances without authority.\n- **Availability**: ransomware locks customer files, or records are destroyed without a backup.\n\nNot every breach is reportable, but **every breach is recorded**. Article 33(5) requires the bank to document all personal data breaches: the facts, their effects and the remedial action, so the regulator can check its decisions."
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From incident to notification (Articles 33 and 34)",
+          "caption": "If notification to the regulator comes after 72 hours, it must give the reasons for the delay.",
+          "items": [
+            {
+              "label": "Security incident",
+              "detail": "Anything that might affect the security of data or systems."
+            },
+            {
+              "label": "Personal data breach",
+              "detail": "Personal data destroyed, lost, altered, disclosed or accessed without authority. Record it."
+            },
+            {
+              "label": "Risk to people",
+              "detail": "Notify the Information Commission without undue delay and, where feasible, within 72 hours of awareness."
+            },
+            {
+              "label": "High risk to people",
+              "detail": "Also tell the affected people without undue delay, in clear and plain language."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: 'let's wait until we're sure'",
+          "setting": "Incident bridge, Leeds. Thursday, 7:30 pm.",
+          "lines": [
+            {
+              "who": "tomasz",
+              "text": "The attacker read 340 complaint files before we locked the mailbox. Names, addresses, account numbers and some notes about customers' health.",
+              "mood": "worried"
+            },
+            {
+              "who": "helen",
+              "text": "Should we wait until forensics finishes next week? I don't want to report something we don't fully understand.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "We don't have to understand everything. Article 33 lets us notify in phases. The 72 hours runs from when we became aware, which was this afternoon.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kwame",
+              "text": "And with health notes and account numbers, the risk to customers looks high. That means telling them too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Agreed. Initial notice to the Commission tomorrow morning, then a clear message to the 340 customers with what to watch for.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The phished mailbox decision",
+          "situation": "Forensics confirm that 340 complaint files were viewed by the attacker. They include names, addresses, account numbers and, for some customers, notes about health conditions linked to financial difficulty. The files were not encrypted at rest. It is now 26 hours since the bank became aware.",
+          "choices": [
+            {
+              "text": "Notify the Information Commission now with what is known, follow up in phases, tell affected customers without undue delay and record everything",
+              "outcome": "Best answer. There is clearly a risk to people, so notification is needed within 72 hours where feasible, and phased updates are allowed. Health data and account numbers point to high risk, so customers must be told, with practical advice.",
+              "score": 2
+            },
+            {
+              "text": "Notify the Commission but not the customers, to avoid alarming them",
+              "outcome": "Partly right. Where the risk to people is high, Article 34 requires the bank to tell them without undue delay unless an exception applies. No exception applies to unencrypted files.",
+              "score": 1
+            },
+            {
+              "text": "Wait for the full forensic report next week, then decide",
+              "outcome": "Wrong. Waiting would almost certainly miss the 72-hour expectation. Notification can be made in phases as facts emerge.",
+              "score": 0
+            },
+            {
+              "text": "Treat it as an IT incident only, because no money was stolen",
+              "outcome": "Wrong. Unauthorised access to personal data is a personal data breach whether or not money moves.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Breach rules in one line each",
+          "cards": [
+            {
+              "front": "When does the 72-hour period start?",
+              "back": "When the controller becomes aware of the breach, not when the breach happened or when the investigation ends."
+            },
+            {
+              "front": "What if the bank needs longer than 72 hours?",
+              "back": "It notifies late with reasons for the delay, and may send information in phases."
+            },
+            {
+              "front": "What must a processor do?",
+              "back": "Tell the controller without undue delay after becoming aware of a breach."
+            },
+            {
+              "front": "When can the bank skip telling customers about a high-risk breach?",
+              "back": "If the data was made unintelligible (e.g. strong encryption), if later steps remove the high risk, or, with disproportionate effort, by a public notice instead."
+            },
+            {
+              "front": "Must small breaches be recorded?",
+              "back": "Yes. All personal data breaches are documented, including those not reported."
+            },
+            {
+              "front": "Is notifying the Commission enough for the FCA and PRA?",
+              "back": "No. Banks must also consider their FCA and PRA notification duties for operational incidents."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Tesco Bank cyber attack (FCA, 2018)",
+          "body": "In October 2018 the FCA fined **Tesco Personal Finance plc** about **GBP 16.4m** (about GBP 23.4m before a settlement discount) over a cyber attack on its debit cards in November 2016.\n\n- Attackers made thousands of unauthorised transactions over about **48 hours**, taking about **GBP 2.26m**. No customer personal data was lost.\n- The financial crime operations team **emailed a team inbox instead of phoning** the on-call fraud analyst, as procedures required. It took **21 hours** from the start of the attack to reach the fraud strategy team.\n- A first blocking rule failed because it used a **currency code instead of a country code**, and nobody checked that it worked.\n\n**The lesson for Harrowfield:** escalation routes, on-call duties and testing of fixes are as important as the technology."
+        },
+        {
+          "type": "check",
+          "question": "Harrowfield's mailing house tells the bank on Monday that it sent 200 statements to the wrong addresses the previous Wednesday. When does the bank's 72-hour period start?",
+          "options": [
+            "When the bank became aware, on Monday",
+            "On Wednesday, when the misdelivery happened",
+            "When the bank finishes its investigation",
+            "There is no period, because the processor made the error"
+          ],
+          "answer": 0,
+          "explanation": "The controller's 72-hour expectation runs from when it becomes aware of the breach. The processor should have told the bank without undue delay, which is a separate failing for the bank to address with its supplier."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Article 32: security appropriate to the risk, including encryption, ongoing confidentiality, integrity, availability and resilience, timely restoration and regular testing.",
+            "Social engineering targets people: pause on urgency, verify out of band, never share codes and report clicks at once.",
+            "A personal data breach covers loss of confidentiality, integrity or availability of personal data; every breach is documented.",
+            "Notify the Information Commission without undue delay and, where feasible, within 72 hours of awareness unless the breach is unlikely to cause risk; give reasons if late.",
+            "Tell affected people without undue delay when the risk to them is high, unless an Article 34(3) exception applies."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you clicked a phishing link tomorrow, exactly how would you report it, and to whom? If you do not know the button or number, find it today."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "gb-dp-s4-q1",
+          "question": "Which of these is named in UK GDPR Article 32 as an example of an appropriate security measure?",
+          "options": [
+            "Pseudonymisation and encryption of personal data",
+            "Publishing staff passwords in a secure binder",
+            "Annual deletion of all customer data",
+            "Removing all access controls to speed up service"
+          ],
+          "answer": 0,
+          "explanation": "Article 32(1)(a) names pseudonymisation and encryption. The article also covers ongoing confidentiality, integrity, availability and resilience, timely restoration and regular testing.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s4-q2",
+          "question": "A caller says he is from the bank's IT support and asks an agent for the one-time passcode just sent to her phone 'to fix her login'. What should she do?",
+          "options": [
+            "Give the code, because IT support has authority over systems",
+            "Give only the first half of the code",
+            "Refuse, end the call and report it, because no genuine colleague needs her passcode",
+            "Ask the caller for his staff number and then give the code"
+          ],
+          "answer": 2,
+          "explanation": "One-time passcodes must never be shared. A staff number is easy to fake. The right response is to refuse, end the call and report the attempt through the bank's channel.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s4-q3",
+          "question": "Which event is a personal data breach under the UK GDPR?",
+          "options": [
+            "A server is patched during a planned maintenance window",
+            "Ransomware makes customer records unavailable and there is no usable backup",
+            "A phishing email is blocked by the filter before anyone opens it",
+            "A customer forgets their own online banking password"
+          ],
+          "answer": 1,
+          "explanation": "A breach includes the loss of availability of personal data, not only disclosure. A blocked email or routine maintenance does not affect the security of personal data.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s4-q4",
+          "question": "Within what time should a controller notify the regulator of a notifiable personal data breach?",
+          "options": [
+            "Within 24 hours of the breach occurring",
+            "Within one month, together with any access requests",
+            "Only after the investigation is complete",
+            "Without undue delay and, where feasible, within 72 hours of becoming aware of it"
+          ],
+          "answer": 3,
+          "explanation": "Article 33(1) requires notification without undue delay and, where feasible, within 72 hours of awareness. Late notifications must give reasons, and information can be provided in phases.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s4-q5",
+          "question": "A breach exposed customer names and account numbers, but the bank judges it is unlikely to result in any risk to people. What must the bank still do?",
+          "options": [
+            "Notify the regulator within 72 hours anyway",
+            "Notify every customer by letter",
+            "Nothing, because unlikely-risk breaches are outside the law",
+            "Document the breach, its effects and the remedial action taken"
+          ],
+          "answer": 3,
+          "explanation": "Article 33(5) requires all breaches to be documented, including those that are not notified. The documentation must allow the regulator to check the decision.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s4-q6",
+          "question": "A laptop holding customer files is stolen. The files were protected with strong encryption and the key was not compromised. Why might the bank not need to tell customers?",
+          "options": [
+            "Stolen laptops are never personal data breaches",
+            "Article 34(3) exempts communication where measures made the data unintelligible to unauthorised people",
+            "Customers only need to be told if money is stolen",
+            "The police, not the bank, must inform customers"
+          ],
+          "answer": 1,
+          "explanation": "If effective measures such as encryption make the data unintelligible to anyone not authorised to access it, the high-risk communication is not required. The bank must still record the breach and assess whether the regulator needs notifying.",
+          "difficulty": 4
+        },
+        {
+          "id": "gb-dp-s4-q7",
+          "question": "Harrowfield's notification to the regulator is made 90 hours after it became aware of a breach. What must the notification include?",
+          "options": [
+            "Nothing extra, since 72 hours is only a guide",
+            "A request for permission to notify late",
+            "Reasons for the delay, in addition to the required breach information",
+            "Proof that customers have already been compensated"
+          ],
+          "answer": 2,
+          "explanation": "Where notification is not made within 72 hours, Article 33(1) requires it to be accompanied by reasons for the delay.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s4-q8",
+          "question": "In the Tesco Bank case (FCA, 2018), which failing helped the attack run for many hours?",
+          "options": [
+            "Staff emailed a team inbox instead of phoning the on-call fraud analyst as procedures required",
+            "The bank refused to block any transactions at all",
+            "Customers' personal data was sold online",
+            "The bank had no fraud detection system"
+          ],
+          "answer": 0,
+          "explanation": "The FCA found that the financial crime operations team emailed the fraud strategy inbox instead of phoning the on-call analyst, and it took 21 hours to reach the specialist team. The bank did have a detection system, and no personal data was lost.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s4-q9",
+          "question": "Which statement about notifying people affected by a breach is correct?",
+          "options": [
+            "They must always be told within 72 hours of any breach",
+            "They only need to be told if the regulator orders it",
+            "They must be told without undue delay when the breach is likely to result in a high risk to them",
+            "They must be told only if special category data is involved"
+          ],
+          "answer": 2,
+          "explanation": "Article 34(1) requires communication to individuals without undue delay when the risk is high. The regulator can also require it, but the duty applies on its own.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s4-q10",
+          "question": "What does UK GDPR Article 32(4) require for staff who have access to personal data?",
+          "options": [
+            "They must each register personally with the regulator",
+            "They process it only on the controller's instructions, unless the law requires otherwise",
+            "They may use it for any purpose that helps customers",
+            "They must sign a new contract every year"
+          ],
+          "answer": 1,
+          "explanation": "Article 32(4) requires controllers and processors to take steps so that people acting under their authority process personal data only on instructions, unless domestic law requires them to do otherwise.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Operational Resilience, Incident Reporting and Your Programme",
+      "stage": "The Control Tower",
+      "summary": "Apply PRA and FCA operational resilience rules (important business services, impact tolerances, mapping and testing), prepare for the 2027 incident and third-party reporting regime, and recap the bank's data and resilience programme for the final exam.",
+      "minutes": 55,
+      "objectives": [
+        "Explain important business services, impact tolerances, mapping, scenario testing and self-assessment",
+        "Apply the FCA PS26/2 and PRA PS7/26 incident reporting definition, thresholds and phases",
+        "Decide when one event triggers both data breach and operational incident reporting",
+        "Describe the roles of the DPO, SMF24, the board and staff, and learn from TSB and other cases"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Payments are down",
+          "setting": "Operational Resilience Centre, Harrowfield Bank, Leeds. Friday, 8:10 am.",
+          "lines": [
+            {
+              "who": "kwame",
+              "text": "Faster Payments outbound has failed since 7:20. A supplier's update broke the connection. About 60,000 customers can't send money.",
+              "mood": "worried"
+            },
+            {
+              "who": "helen",
+              "text": "Payments is one of our important business services. What's our impact tolerance?",
+              "mood": "thinking"
+            },
+            {
+              "who": "kwame",
+              "text": "We set it at four hours of disruption at peak. We're 50 minutes in, and the supplier has no fix yet.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Any personal data affected? If transaction data has been corrupted or exposed, my clock starts too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tomasz",
+              "text": "No sign of that so far. It's an availability problem, not a confidentiality one.",
+              "mood": "neutral"
+            },
+            {
+              "who": "helen",
+              "text": "Then let's get it back inside tolerance, and work out who we have to tell. Stage 5, everyone: resilience, reporting and our programme.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Operational resilience in five ideas",
+          "scenes": [
+            {
+              "icon": "🏦",
+              "heading": "Important business services",
+              "narration": "A bank identifies the services that, if disrupted, could cause intolerable harm to customers or risk the bank's safety and soundness or the wider system. Payments and access to accounts are typical examples."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Impact tolerances",
+              "narration": "For each important business service, the bank sets the maximum tolerable level of disruption, usually as a time limit. It is a line the bank commits not to cross, not a target to aim for."
+            },
+            {
+              "icon": "🗺️",
+              "heading": "Mapping",
+              "narration": "The bank maps the people, processes, technology, facilities, data and third parties that each service depends on, so it can find weak points."
+            },
+            {
+              "icon": "🌪️",
+              "heading": "Severe but plausible scenarios",
+              "narration": "The bank tests whether it can stay within tolerance in severe but plausible scenarios, such as a cyber attack or a key supplier failing, and fixes what it finds."
+            },
+            {
+              "icon": "📋",
+              "heading": "Self-assessment and board approval",
+              "narration": "The board approves the services and tolerances, and the bank keeps a self-assessment showing how it complies. Since 31 March 2025, banks must be able to stay within tolerance."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "UK operational resilience and incident reporting milestones",
+          "caption": "Until 18 March 2027, incidents are reported under existing duties, such as FCA Principle 11 and SUP 15, and PRA Fundamental Rule 7.",
+          "items": [
+            {
+              "label": "PRA and FCA rules published",
+              "value": "Mar 2021",
+              "detail": "PRA PS6/21 with SS1/21, and the FCA's rules in SYSC 15A."
+            },
+            {
+              "label": "Rules in force",
+              "value": "31 Mar 2022",
+              "detail": "Identify services, set tolerances, begin mapping and testing."
+            },
+            {
+              "label": "Transition ends",
+              "value": "31 Mar 2025",
+              "detail": "Banks must be able to remain within impact tolerances."
+            },
+            {
+              "label": "New reporting rules published",
+              "value": "18 Mar 2026",
+              "detail": "FCA PS26/2 and PRA PS7/26, with PRA SS1/26."
+            },
+            {
+              "label": "Reporting rules apply",
+              "value": "18 Mar 2027",
+              "detail": "Single incident and third-party reporting regime."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Harrowfield's impact tolerance for payments is four hours. A severe but plausible scenario test shows recovery would take seven hours. What does the framework expect?",
+          "options": [
+            "Raise the tolerance to seven hours so the test passes",
+            "Treat it as a vulnerability, plan and fund remediation, and report it through governance",
+            "Ignore the result because the scenario has never happened",
+            "Remove payments from the list of important business services"
+          ],
+          "answer": 1,
+          "explanation": "Impact tolerances reflect the harm customers and markets can bear, not what the bank can currently achieve. Tests that breach tolerance reveal vulnerabilities to fix and invest in, with the board informed."
+        },
+        {
+          "type": "concept",
+          "title": "The new incident reporting regime (from 18 March 2027)",
+          "body": "FCA **PS26/2** and PRA **PS7/26** create one regime for the FCA, PRA and Bank of England.\n\n- **Operational incident**: an event, or linked events, that disrupts a service to an end user outside the firm, or affects the availability, authenticity, integrity or confidentiality of their data. Near-misses are out of scope.\n- **Thresholds (FCA)**: a risk of intolerable harm to consumers, to the safety and soundness of the firm or others, or to market stability, integrity or confidence. The PRA's thresholds cover safety and soundness and, for the largest firms, financial stability.\n- **Three phases**: initial report as soon as practicable, expected at least within **24 hours** of deciding a threshold is met; intermediate updates after significant changes, including resolution; final report within **30 working days** of resolution, or at most **60** if impracticable.\n- **One form** through FCA Connect. Banks are **enhanced reporting firms**."
+        },
+        {
+          "type": "order",
+          "title": "Reporting an operational incident from March 2027",
+          "prompt": "Put Harrowfield's steps in order for a bank (an enhanced reporting firm).",
+          "steps": [
+            "Detect the disruption and escalate it to the incident manager",
+            "Assess whether it is an operational incident and whether a threshold is met",
+            "Submit the initial report, expected within 24 hours of deciding a threshold is met",
+            "Send intermediate updates after each significant change",
+            "Report that the incident has been resolved",
+            "Submit the final report within 30 working days of resolution"
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Who needs to hear about it?",
+          "prompt": "Sort each event at Harrowfield by the main reporting route to consider (more than one may apply in real life).",
+          "buckets": [
+            "Information Commission (personal data breach)",
+            "FCA and PRA (operational incident)",
+            "Record internally only"
+          ],
+          "items": [
+            {
+              "text": "Attacker reads 340 unencrypted complaint files with health notes",
+              "bucket": 0
+            },
+            {
+              "text": "Faster Payments fails for 60,000 customers for six hours",
+              "bucket": 1
+            },
+            {
+              "text": "A ransomware attack locks online banking and customer records",
+              "bucket": 1
+            },
+            {
+              "text": "One letter with a balance goes to the wrong address; the recipient returns it unopened",
+              "bucket": 2
+            },
+            {
+              "text": "A test backup restore fails in a non-production environment with no customer impact",
+              "bucket": 2
+            },
+            {
+              "text": "A supplier outage leaves customers unable to see balances for a day",
+              "bucket": 1
+            },
+            {
+              "text": "A misdirected email exposes 2,000 customers' account numbers",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: who signs the report?",
+          "setting": "Executive floor, Leeds. Friday, 11:30 am.",
+          "lines": [
+            {
+              "who": "helen",
+              "text": "Payments came back at 10:55, inside tolerance. But only just. Do I personally have to approve every regulatory report?",
+              "mood": "thinking"
+            },
+            {
+              "who": "kwame",
+              "text": "No. The PRA expects the Chief Operations function, SMF24, to own the incident reporting process, but not to sign off each report.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Speed matters more than polish. The report can be updated as facts change.",
+              "mood": "neutral"
+            },
+            {
+              "who": "helen",
+              "text": "And the supplier whose update broke everything?",
+              "mood": "angry"
+            },
+            {
+              "who": "kwame",
+              "text": "Under the new rules we keep a register of material third-party arrangements and notify the FCA of new ones or significant changes. Outsourcing doesn't outsource accountability. TSB learned that the hard way.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: TSB's IT migration (FCA and PRA, 2022)",
+          "body": "In December 2022 the FCA and PRA fined **TSB Bank plc** a total of about **GBP 48.65m** (FCA about GBP 29.75m; PRA about GBP 18.9m) for operational risk and governance failures in its 2018 IT migration.\n\n- After the April 2018 migration, the new platform failed. Branch, telephone, online and mobile banking were disrupted. **All branches** and a large share of TSB's **5.2 million customers** were affected at first.\n- It took until **December 2018** to return to business as usual. TSB paid about **GBP 32.7m** in redress.\n- Regulators found the programme was not adequately organised and controlled, and that TSB failed to manage the risks of outsourcing to its critical IT supplier.\n- In 2023 the PRA also fined TSB's former Chief Information Officer about **GBP 81,600** for failing to take reasonable steps over that outsourcing relationship."
+        },
+        {
+          "type": "scenario",
+          "title": "The supplier change window",
+          "situation": "A critical supplier plans a software update to Harrowfield's card authorisation platform this Friday at 6 pm, the busiest card period of the week. Testing has been shortened, the rollback plan is untested and the business owner wants it done 'to hit the quarter-end deadline'. Kwame asks for your view.",
+          "choices": [
+            {
+              "text": "Recommend postponing until rollback is tested and the change can run in a quieter window, and escalate the risk to the service owner and SMF",
+              "outcome": "Best answer. Changes are a common cause of incidents. An untested rollback at peak time puts an important business service at risk of breaching tolerance. Governance should weigh the deadline against customer harm.",
+              "score": 2
+            },
+            {
+              "text": "Let the change go ahead but put extra staff on the contact centre",
+              "outcome": "More call-handling helps customers cope, but it does nothing to prevent the outage or speed recovery.",
+              "score": 1
+            },
+            {
+              "text": "Approve it, because the supplier is responsible for its own software",
+              "outcome": "The bank remains accountable for its important business services when it relies on third parties, as the TSB case shows.",
+              "score": 0
+            },
+            {
+              "text": "Cancel the supplier contract immediately",
+              "outcome": "Disproportionate and itself disruptive. The issue is change management, not the relationship.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "When resilience fails: FCA and PRA outcomes",
+          "caption": "Figures from FCA and PRA final notices and Bank of England press releases.",
+          "items": [
+            {
+              "label": "TSB (FCA and PRA, 2022)",
+              "value": "GBP 48.65m",
+              "detail": "2018 IT migration failure; GBP 32.7m customer redress."
+            },
+            {
+              "label": "Tesco Bank (FCA, 2018)",
+              "value": "GBP 16.4m",
+              "detail": "2016 debit card cyber attack; slow escalation."
+            },
+            {
+              "label": "RBS, NatWest, Ulster (FCA, 2014)",
+              "value": "GBP 42m",
+              "detail": "June 2012 IT incident left customers unable to bank."
+            },
+            {
+              "label": "Former TSB CIO (PRA, 2023)",
+              "value": "GBP 81,620",
+              "detail": "Senior manager fined over outsourcing oversight."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Harrowfield's programme: who does what",
+          "prompt": "Match each role to its responsibility in the data and resilience programme.",
+          "pairs": [
+            {
+              "left": "Data Protection Officer",
+              "right": "Monitors compliance and leads awareness-raising and training of staff who process data."
+            },
+            {
+              "left": "SMF24 Chief Operations",
+              "right": "Owns operational resilience and the incident reporting process."
+            },
+            {
+              "left": "Board",
+              "right": "Approves important business services, impact tolerances and the self-assessment."
+            },
+            {
+              "left": "Service owners",
+              "right": "Map dependencies and run scenario tests for their services."
+            },
+            {
+              "left": "Every member of staff",
+              "right": "Spots incidents and breaches and reports them at once."
+            },
+            {
+              "left": "Internal audit",
+              "right": "Independently tests whether controls work and tracks fixes."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Final-boss revision cards",
+          "cards": [
+            {
+              "front": "72 hours",
+              "back": "Personal data breach notice to the Information Commission, where feasible, from awareness."
+            },
+            {
+              "front": "24 hours",
+              "back": "Expected outer limit for the initial operational incident report after deciding a threshold is met (from March 2027)."
+            },
+            {
+              "front": "30 working days",
+              "back": "Final operational incident report after resolution; up to 60 if impracticable."
+            },
+            {
+              "front": "30 days",
+              "back": "Acknowledge a data protection complaint under DPA 2018 s.164A."
+            },
+            {
+              "front": "One month (+2)",
+              "back": "Respond to a rights request from the relevant time; extend by two further months if complex or numerous."
+            },
+            {
+              "front": "31 March 2025",
+              "back": "Deadline for banks to be able to stay within impact tolerances."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the FCA and PRA incident reporting rules that apply from 18 March 2027 is correct?",
+          "options": [
+            "A bank submits one report through a single form, even when several regulators need it",
+            "Near-misses with no impact on end users must always be reported",
+            "The final report is due within 72 hours of the incident starting",
+            "The SMF24 must personally approve every report before submission"
+          ],
+          "answer": 0,
+          "explanation": "The regime uses a single submission for the FCA, PRA and Bank of England. Near-misses are out of scope, the final report is due within 30 working days of resolution, and the PRA does not expect the SMF24 to approve each report."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "Banks identify important business services, set impact tolerances, map dependencies and test severe but plausible scenarios; since 31 March 2025 they must be able to stay within tolerance.",
+            "From 18 March 2027, FCA PS26/2 and PRA PS7/26 set one incident reporting regime: initial report within 24 hours of a threshold decision, updates, and a final report in 30 working days.",
+            "A cyber incident can be both a personal data breach (Information Commission, 72 hours) and an operational incident (FCA and PRA); consider both.",
+            "Outsourcing never moves accountability: register and oversee material third parties, as the TSB and Equifax cases show.",
+            "The DPO leads data protection training and monitoring; SMF24 owns incident reporting; the board approves services and tolerances."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which important business service does your work support, and what would you do in the first ten minutes if it stopped working? Write down the escalation route you would use."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "gb-dp-s5-q1",
+          "question": "What is an impact tolerance in the UK operational resilience framework?",
+          "options": [
+            "The average time the bank currently takes to fix outages",
+            "The amount of capital set aside for operational losses",
+            "The number of complaints the bank accepts each month",
+            "The maximum tolerable level of disruption to an important business service"
+          ],
+          "answer": 3,
+          "explanation": "An impact tolerance sets the maximum disruption an important business service can suffer before causing intolerable harm, usually as a time limit. It is based on harm, not current capability or capital.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s5-q2",
+          "question": "By what date did banks have to be able to remain within impact tolerances for their important business services?",
+          "options": [
+            "31 March 2022",
+            "31 March 2025",
+            "18 March 2027",
+            "19 June 2026"
+          ],
+          "answer": 1,
+          "explanation": "The rules took effect on 31 March 2022, with a transition period ending on 31 March 2025, by which time firms had to be able to stay within tolerance in severe but plausible scenarios.",
+          "difficulty": 2
+        },
+        {
+          "id": "gb-dp-s5-q3",
+          "question": "Under PRA SS1/26, which event is outside the scope of operational incident reporting?",
+          "options": [
+            "A near-miss that caused no disruption to external end users and no data loss",
+            "A cloud outage that stops customers making payments",
+            "A cyber attack that compromises customers' data",
+            "A configuration error that delays many customer payments"
+          ],
+          "answer": 0,
+          "explanation": "The PRA treats a potential or uncrystallised event with no disruption to an external end user and no data loss as a near-miss outside the reporting scope. The others disrupt services or affect end users' data.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q4",
+          "question": "From 18 March 2027, when does the FCA expect an enhanced reporting firm to submit its initial operational incident report?",
+          "options": [
+            "Within 72 hours of the incident starting",
+            "Only after the root cause is known",
+            "As soon as practicable, and at least within 24 hours of determining that a threshold is met",
+            "Within 30 working days of the incident starting"
+          ],
+          "answer": 2,
+          "explanation": "SUP 15.18 requires the initial report as soon as practicable; the FCA's guidance expects it at least within 24 hours of determining that a notification threshold is met. The PRA has the same expectation.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q5",
+          "question": "A bank resolves an incident on 1 June. When is the final report due under the new rules if no exceptional difficulty arises?",
+          "options": [
+            "Within 30 working days of resolution",
+            "Within 72 hours of resolution",
+            "Within 60 calendar days of the incident starting",
+            "At the next annual regulatory return"
+          ],
+          "answer": 0,
+          "explanation": "The final phase is due within 30 working days of the incident being resolved, or as soon as practicable but within 60 working days where 30 is impracticable.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q6",
+          "question": "Ransomware locks Harrowfield's online banking and encrypts customer records that include personal data. Which reporting duties should the bank consider?",
+          "options": [
+            "Only the Information Commission, because personal data is involved",
+            "Only the FCA and PRA, because it is a cyber attack",
+            "Neither, if the bank pays the ransom and recovers quickly",
+            "Both a personal data breach notification to the Information Commission and an operational incident report to the FCA and PRA"
+          ],
+          "answer": 3,
+          "explanation": "The same event can be a personal data breach (loss of availability of personal data) and an operational incident (disruption to end users). Each regime has its own tests and timings, and paying a ransom does not remove either duty.",
+          "difficulty": 4
+        },
+        {
+          "id": "gb-dp-s5-q7",
+          "question": "Which senior management function does the PRA expect to hold overall responsibility for operational incident reporting, where it exists?",
+          "options": [
+            "The Chief Risk function, SMF4",
+            "The Chief Operations function, SMF24",
+            "The Data Protection Officer",
+            "The Head of Internal Audit"
+          ],
+          "answer": 1,
+          "explanation": "PRA SS1/26 expects SMF24 to hold overall responsibility for implementing the incident reporting outcomes, while not requiring that person to approve each report.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q8",
+          "question": "In the TSB case (FCA and PRA, 2022), what was a key regulatory finding?",
+          "options": [
+            "TSB sold customer data to its IT supplier",
+            "TSB failed to report a data breach within 72 hours",
+            "TSB failed to manage the operational risks of outsourcing to its critical IT supplier during the migration",
+            "TSB had no business continuity plan of any kind"
+          ],
+          "answer": 2,
+          "explanation": "Regulators found TSB did not adequately organise and control the migration programme and failed to manage the risks of its IT outsourcing arrangements. The fines totalled about GBP 48.65m.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q9",
+          "question": "Under UK GDPR Article 39, where a bank has a DPO, which task is part of the DPO's role?",
+          "options": [
+            "Monitoring compliance, including awareness-raising and training of staff involved in processing",
+            "Approving every customer's loan application",
+            "Personally paying any fine imposed on the bank",
+            "Replacing the board as the body accountable for data protection"
+          ],
+          "answer": 0,
+          "explanation": "Article 39(1)(b) includes monitoring compliance, with awareness-raising and training of staff involved in processing. Accountability remains with the bank as controller.",
+          "difficulty": 3
+        },
+        {
+          "id": "gb-dp-s5-q10",
+          "question": "What do the new third-party rules require of banks regarding material third-party arrangements?",
+          "options": [
+            "Obtain FCA approval before signing any supplier contract",
+            "Avoid all suppliers outside the UK",
+            "Transfer accountability for services to the supplier",
+            "Keep a register, submit it to the FCA annually, and notify new or significantly changed arrangements"
+          ],
+          "answer": 3,
+          "explanation": "PS26/2 requires firms to maintain a register of material third-party arrangements, submit it annually and notify the FCA of new arrangements or significant changes. Accountability stays with the firm.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "gb",
+    "programs": [
+      74,
+      66,
+      71,
+      72,
+      83,
+      84,
+      90,
+      112
+    ],
+    "classification": "competence",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Information Commission (formerly the Information Commissioner's Office, ICO)",
+      "Financial Conduct Authority (FCA)",
+      "Prudential Regulation Authority (PRA, Bank of England)"
+    ],
+    "references": [
+      {
+        "title": "United Kingdom General Data Protection Regulation, Article 5",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/eur/2016/679/article/5",
+        "provision": "Article 5",
+        "note": "The six processing principles and the accountability principle; Article 5(3), added in 2025, says compatibility alone does not make processing lawful.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "United Kingdom General Data Protection Regulation, Article 6 and Annex 1",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/eur/2016/679/article/6",
+        "provision": "Article 6(1), 6(5), 6(11); Annex 1",
+        "note": "Lawful bases, including the recognised legitimate interests added by the Data (Use and Access) Act 2025 and listed in Annex 1, and examples of ordinary legitimate interests.",
+        "effective": "2026-02-05",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Data (Use and Access) Act 2025, section 76",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/ukpga/2025/18/section/76",
+        "provision": "Section 76 (inserting UK GDPR Article 12A)",
+        "note": "Rights requests: one month from the relevant time, extendable by two further months for complexity or number with notice and reasons; clock pauses while clarification is sought.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "United Kingdom General Data Protection Regulation, Article 32",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/eur/2016/679/article/32",
+        "provision": "Article 32",
+        "note": "Security appropriate to the risk, including encryption, ongoing confidentiality, integrity, availability and resilience, timely restoration and regular testing; staff act only on instructions.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "United Kingdom General Data Protection Regulation, Articles 33 and 34",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/eur/2016/679/article/33",
+        "provision": "Articles 33 and 34",
+        "note": "Notify the regulator without undue delay and, where feasible, within 72 hours of awareness; document all breaches; tell individuals when risk is high unless an exception applies.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "United Kingdom General Data Protection Regulation, Article 39",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/eur/2016/679/article/39",
+        "provision": "Article 39(1)(b)",
+        "note": "DPO tasks include monitoring compliance, including awareness-raising and training of staff involved in processing.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Data Protection Act 2018, section 164A",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/ukpga/2018/12/section/164A",
+        "provision": "Section 164A",
+        "note": "Controllers must make it easy to complain about data protection infringements, acknowledge within 30 days and respond and report the outcome without undue delay; inserted by the Data (Use and Access) Act 2025.",
+        "effective": "2026-06-19",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Data Protection Act 2018, section 170",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/ukpga/2018/12/section/170",
+        "provision": "Section 170",
+        "note": "Offence of knowingly or recklessly obtaining, disclosing or retaining personal data without the controller's consent, and of selling such data, with limited defences.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Data (Use and Access) Act 2025 (Commencement No. 9 and Transitional and Saving Provisions) Regulations 2026",
+        "issuer": "UK Parliament (legislation.gov.uk)",
+        "url": "https://www.legislation.gov.uk/uksi/2026/1015/made",
+        "provision": "Regulation 2",
+        "note": "Abolishes the office of Information Commissioner and transfers its functions to the Information Commission from 30 September 2026.",
+        "effective": "2026-09-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "PS26/2: Operational incident and third party reporting",
+        "issuer": "FCA",
+        "url": "https://www.fca.org.uk/publications/policy-statements/ps26-2-operational-incident-third-party-reporting",
+        "provision": "SUP 15.18",
+        "note": "Single incident reporting regime: thresholds, initial report expected within 24 hours of a threshold decision, intermediate updates and final report within 30 working days for enhanced reporting firms such as banks; register of material third-party arrangements.",
+        "effective": "2027-03-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "SS1/26 Operational resilience: Incident reporting (published with PS7/26)",
+        "issuer": "PRA (Bank of England)",
+        "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/supervisory-statement/2026/ss126-march-2026",
+        "provision": "Chapters 2 to 5",
+        "note": "PRA definition of an operational incident, thresholds, phased reporting via FCA Connect and SMF24 responsibility.",
+        "effective": "2027-03-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "PS6/21 Operational resilience: Impact tolerances for important business services",
+        "issuer": "PRA (Bank of England)",
+        "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/policy-statement/2021/march/ps621.pdf",
+        "note": "Rules and SS1/21 on important business services, impact tolerances, mapping, scenario testing and self-assessment; firms had to be able to remain within tolerance by 31 March 2025.",
+        "effective": "2022-03-31",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "gb-dp-x1",
+        "question": "Harrowfield's compliance manual, written in 2025, says breaches must be reported 'to the ICO'. A new analyst asks whether that is still right in November 2026. What is the best answer?",
+        "options": [
+          "No, breaches must now be reported to the FCA instead of a data protection regulator",
+          "Yes, nothing has changed and the manual is fully current",
+          "Functionally yes, but the Information Commission took over the Commissioner's functions on 30 September 2026, so the manual should be updated",
+          "No, the 2025 Act removed the duty to report breaches to any regulator"
+        ],
+        "answer": 2,
+        "explanation": "Commencement regulations under the Data (Use and Access) Act 2025 abolished the office of Information Commissioner and transferred its functions to the Information Commission from 30 September 2026. The breach duty itself continues; only the regulator's name and form changed.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x2",
+        "question": "A data analyst argues that a spreadsheet of customer postcodes, ages and product holdings is not personal data because it has no names. The bank also holds the full customer database. What is the strongest response?",
+        "options": [
+          "It is likely personal data, because the bank can identify individuals by combining it with information it holds",
+          "It is not personal data, because names are essential to identification",
+          "It is personal data only if it is shared outside the bank",
+          "It is special category data because it includes age"
+        ],
+        "answer": 0,
+        "explanation": "Identifiability includes indirect identification, such as combining data sets the controller holds. Age is not a special category, and sharing is irrelevant to whether data is personal.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x3",
+        "question": "Harrowfield's privacy notice says customer data is used 'to run your account and for other business purposes'. Which principle is the vague wording most likely to breach?",
+        "options": [
+          "Accuracy, because the notice may contain typing errors",
+          "Storage limitation, because it does not mention backups",
+          "Integrity and confidentiality, because the notice is public",
+          "Lawfulness, fairness and transparency, together with purpose limitation"
+        ],
+        "answer": 3,
+        "explanation": "People must be told clearly what their data is used for, and purposes must be specified and explicit. 'Other business purposes' fails both. The other principles are not the main issue raised by vague purposes.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x4",
+        "question": "Which statement best describes the accountability principle in practice for a bank?",
+        "options": [
+          "The bank names one employee who is personally liable for every breach",
+          "The bank keeps evidence, such as records of processing, assessments, policies and training logs, that shows it complies",
+          "The bank sends its policies to the regulator for annual approval",
+          "The bank needs no records if no breach has ever happened"
+        ],
+        "answer": 1,
+        "explanation": "Article 5(2) makes the controller responsible for, and able to demonstrate, compliance. That is done through documentation and evidence, not personal liability or regulator pre-approval.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x5",
+        "question": "Harrowfield's US-based group company runs analytics on UK customer data. A manager says this is 'internal', so no supplier oversight is needed. Which real enforcement case most directly contradicts this view?",
+        "options": [
+          "Tesco Bank (FCA, 2018), where a debit card fraud rule used the wrong code",
+          "Equifax Ltd (FCA, 2023), where data sent to a parent company was not treated as outsourcing and was not overseen",
+          "TSB (FCA and PRA, 2022), where an IT migration failed",
+          "RBS, NatWest and Ulster Bank (FCA, 2014), where a batch job failed"
+        ],
+        "answer": 1,
+        "explanation": "The FCA found Equifax Ltd failed to treat its relationship with its US parent as outsourcing and so did not oversee the security of UK data it sent there. The other cases concerned fraud controls and IT change rather than intra-group data oversight.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x6",
+        "question": "Which combination is subject to the higher maximum fine of GBP 17.5m or 4% of worldwide turnover under UK GDPR Article 83?",
+        "options": [
+          "Late payment of the annual data protection fee only",
+          "Breaches of the duty to handle complaints under DPA 2018 section 164A",
+          "Minor errors in a privacy notice's formatting",
+          "Breaches of the basic processing principles, including the conditions for lawfulness"
+        ],
+        "answer": 3,
+        "explanation": "Article 83(5) places breaches of the basic principles, including lawfulness conditions, in the higher tier. Section 157(4A) of the DPA 2018 caps penalties for section 164A breaches at the standard maximum.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x7",
+        "question": "A team keeps customer call recordings for ten years 'because storage is cheap', although the retention schedule says two. Which statement is correct?",
+        "options": [
+          "Keeping identifiable data beyond its purpose breaches storage limitation, whatever the storage cost",
+          "The recordings are not personal data because they are audio",
+          "Retention is lawful as long as the files are encrypted",
+          "Storage limitation only applies to paper records"
+        ],
+        "answer": 0,
+        "explanation": "Storage limitation is about how long data is kept in identifiable form, not about cost. Voice recordings are personal data, and encryption addresses security, not retention.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x8",
+        "question": "Which statement about the DPO is correct under the UK GDPR?",
+        "options": [
+          "The DPO is the controller of all customer data",
+          "The DPO must personally approve every marketing campaign",
+          "The DPO advises and monitors compliance, including staff awareness and training, but the bank remains accountable",
+          "The DPO is employed by the Information Commission"
+        ],
+        "answer": 2,
+        "explanation": "Article 39 sets the DPO's tasks, including monitoring compliance with awareness-raising and training. The controller, the bank, keeps the legal accountability.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x9",
+        "question": "A colleague says the FCA and PRA 'have nothing to do with data protection, which is purely a matter for the Information Commission'. Which response is most accurate?",
+        "options": [
+          "Correct: the FCA and PRA can never act on data security failures",
+          "Incorrect: the FCA now enforces UK GDPR instead of the Information Commission",
+          "The Information Commission enforces data protection law, but the FCA and PRA also act on weak data security and systems as conduct and prudential failures",
+          "Correct: only criminal courts can act on data security in banks"
+        ],
+        "answer": 2,
+        "explanation": "The Equifax and Tesco Bank final notices show the FCA acting on data and cyber security failures under its Principles. Data protection enforcement itself stays with the Information Commission.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x10",
+        "question": "Harrowfield wants to use transaction data to spot customers who may be victims of financial abuse, so it can contact them and offer support. Which basis is most likely to fit after the 2025 changes?",
+        "options": [
+          "Consent from each customer before any monitoring starts",
+          "The recognised legitimate interest for safeguarding a vulnerable individual, if the processing is necessary",
+          "Performance of the customer's account contract",
+          "Vital interests, because any financial harm counts as a threat to life"
+        ],
+        "answer": 1,
+        "explanation": "Annex 1 includes safeguarding vulnerable individuals, including adults at risk, as a recognised legitimate interest. Necessity still applies. Vital interests is for life-or-death situations, and consent would be impractical and could alert an abuser.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x11",
+        "question": "Harrowfield sends customers emails promoting its savings accounts. On which basis does UK GDPR Article 6(11) suggest direct marketing may rest, and what does that require?",
+        "options": [
+          "Recognised legitimate interests, with no balancing test",
+          "Legal obligation, because banks must promote savings",
+          "Public task, because saving is in the public interest",
+          "Ordinary legitimate interests, which require a balancing test against customers' interests and rights"
+        ],
+        "answer": 3,
+        "explanation": "Article 6(11) lists direct marketing as an example of processing that may be necessary for a legitimate interest under Article 6(1)(f), which keeps the balancing test. Separate e-marketing rules can also require consent, so check bank policy.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x12",
+        "question": "Why can't Harrowfield rely on a recognised legitimate interest to make a solely automated decision to close an account for suspected fraud?",
+        "options": [
+          "Article 22B(4) bars solely automated significant decisions based on processing that relies on Article 6(1)(ea)",
+          "Recognised legitimate interests cannot be used for any fraud processing at all",
+          "Automated decisions are banned for all banks",
+          "Account closures are not significant decisions"
+        ],
+        "answer": 0,
+        "explanation": "Crime prevention can be a recognised legitimate interest, but Article 22B(4) prevents a significant decision being taken solely by automated means where the processing relies on Article 6(1)(ea). A human decision-maker or another basis is needed.",
+        "difficulty": 5
+      },
+      {
+        "id": "gb-dp-x13",
+        "question": "A branch customer's adult son phones, passes some security questions using details he knows and asks for her balance 'because she's confused and I handle her affairs'. There is no power of attorney or third-party mandate on file. What should the agent do?",
+        "options": [
+          "Disclose the balance, because he passed the security questions",
+          "Disclose only the last three transactions",
+          "Decline to disclose, explain how authority can be registered and, if worried about her, raise a vulnerability or safeguarding referral internally",
+          "Freeze the account immediately without telling anyone"
+        ],
+        "answer": 2,
+        "explanation": "Confidentiality and data protection prevent disclosure without the customer's authority or a legal basis. Concern for her wellbeing is handled through the bank's vulnerability and safeguarding route, not by informal disclosure.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x14",
+        "question": "Under DPA 2018 section 170, which defence may be available to an employee charged with disclosing personal data without the controller's consent?",
+        "options": [
+          "That the disclosure was necessary for preventing, investigating or detecting crime",
+          "That the data was already old",
+          "That the employee did not receive any money",
+          "That the customer was a public figure"
+        ],
+        "answer": 0,
+        "explanation": "Section 170(2) provides defences including necessity for preventing, investigating or detecting crime, legal requirement or authorisation, and justification in the public interest. Age of data, lack of payment and fame are not defences.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x15",
+        "question": "Harrowfield's AML team asks to use KYC data held under legal obligation for a new fraud model. Which question is most important before agreeing?",
+        "options": [
+          "Is the data stored on a UK server?",
+          "Is the new use compatible with the original purpose, or does it have its own lawful basis?",
+          "Has the data been accessed in the last year?",
+          "Does the fraud team sit on the same floor?"
+        ],
+        "answer": 1,
+        "explanation": "Purpose limitation requires that further processing is compatible with the original purpose or has its own lawful basis. Article 5(3) makes clear that compatibility alone does not make processing lawful.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x16",
+        "question": "An employee sells a list of customers' phone numbers he obtained by browsing accounts without authority. Which statement is correct?",
+        "options": [
+          "Only the bank can be prosecuted, never the employee",
+          "It is not an offence because phone numbers are public",
+          "It is only an offence if the customers complain",
+          "Selling data obtained in breach of section 170(1) is a separate offence under section 170(4)"
+        ],
+        "answer": 3,
+        "explanation": "Section 170(4) makes it an offence to sell personal data obtained in circumstances where an offence under section 170(1) was committed. Offering to sell it is also an offence under section 170(5).",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x17",
+        "question": "A journalist calls the press office asking whether a well-known footballer banks with Harrowfield. What is the correct approach?",
+        "options": [
+          "Confirm the relationship but give no balances",
+          "Confirm it if the footballer has mentioned the bank publicly",
+          "Neither confirm nor deny the relationship, and refer the call to the press team's standard confidentiality line",
+          "Deny it to protect the customer"
+        ],
+        "answer": 2,
+        "explanation": "Even confirming that someone is a customer discloses confidential information. A false denial is also inappropriate. The standard approach is neither to confirm nor deny.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x18",
+        "question": "A customer makes an access request on 1 April. The bank holds a large amount of data about her and on 4 April asks which accounts and years she is interested in. She replies on 14 April. How does this affect the deadline?",
+        "options": [
+          "The period restarts from 14 April with a fresh three months",
+          "Nothing changes; the response is still due by 1 May",
+          "The bank may now refuse the request as excessive",
+          "The days from 4 to 14 April do not count towards the one-month period"
+        ],
+        "answer": 3,
+        "explanation": "Article 12A(5) and (6) let the controller ask for further information where it processes a large amount of data, and the period between asking and receiving the answer does not count towards the time limit.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x19",
+        "question": "Which is a valid reason for extending the time to respond to a rights request by two further months?",
+        "options": [
+          "The DPO is on annual leave",
+          "The request is complex, or the person has made a number of requests",
+          "The bank is in a busy quarter-end period",
+          "The customer is in a dispute with the bank"
+        ],
+        "answer": 1,
+        "explanation": "Article 12A(3) allows extension only where necessary because of the complexity or number of requests, with notice and reasons given within the first month. Staffing and disputes are not grounds.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x20",
+        "question": "After a breach, the bank receives 4,000 access requests in a week. A manager proposes charging GBP 25 per request to 'manage demand'. What is the best advice?",
+        "options": [
+          "Lawful, because volume makes every request excessive",
+          "Lawful, if the fee is published on the website",
+          "Not lawful as a general approach: first copies are normally free and fees apply only to further copies or manifestly unfounded or excessive requests",
+          "Lawful, because breaches suspend access rights"
+        ],
+        "answer": 2,
+        "explanation": "Article 12(5) makes responses free, subject to limited exceptions where a request is manifestly unfounded or excessive, which the bank must demonstrate for each request. Article 15(3) allows a fee for further copies. Volume can justify an extension, not a blanket fee.",
+        "difficulty": 5
+      },
+      {
+        "id": "gb-dp-x21",
+        "question": "A customer asks Harrowfield to delete all her data after closing her account. The bank must keep some records for several years under money laundering rules. What is the correct response?",
+        "options": [
+          "Delete what is no longer needed, retain what the law requires, and explain which data is kept and why",
+          "Delete everything immediately, since erasure overrides other laws",
+          "Keep everything, since closing an account never triggers erasure",
+          "Ask her to make the request again after the retention period"
+        ],
+        "answer": 0,
+        "explanation": "Erasure applies where data is no longer needed, but not where processing is necessary to comply with a legal obligation. The bank must handle both parts and tell her its reasons.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x22",
+        "question": "Harrowfield's credit card limits are increased or reduced automatically by a model, and staff only see the result afterwards. A customer's limit is cut sharply. Which is the best description?",
+        "options": [
+          "Not an automated decision, because staff can see the result",
+          "A significant decision based solely on automated processing, so safeguards including human intervention must be available",
+          "Not significant, because the card remains open",
+          "Exempt, because credit decisions are outside the UK GDPR"
+        ],
+        "answer": 1,
+        "explanation": "Staff seeing the outcome afterwards is not meaningful human involvement in the decision. A sharp limit cut has a similarly significant effect, so Article 22C safeguards apply.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x23",
+        "question": "Which change in the rights regime took effect on 19 June 2026?",
+        "options": [
+          "Controllers must handle data protection complaints themselves under DPA 2018 section 164A",
+          "Access requests became chargeable at GBP 10 each",
+          "The right to object to direct marketing was removed",
+          "Banks became exempt from access requests"
+        ],
+        "answer": 0,
+        "explanation": "Section 103 of the 2025 Act inserted section 164A into the DPA 2018 and came fully into force on 19 June 2026. The other options are not real changes.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x24",
+        "question": "Harrowfield's only route for data protection complaints is a postal address. Is that likely to meet section 164A?",
+        "options": [
+          "Yes, any single route is enough",
+          "Yes, as long as the address is in the privacy notice",
+          "Unlikely: the bank must facilitate complaints, for example with a form that can be completed electronically and by other means",
+          "No, because complaints must only be taken by telephone"
+        ],
+        "answer": 2,
+        "explanation": "Section 164A(2) requires controllers to facilitate complaints by steps such as providing a complaint form that can be completed electronically and by other means. A single postal route is unlikely to be enough.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x25",
+        "question": "A complainant says Harrowfield has ignored her data protection complaint for six weeks without even acknowledging it. Which statement is correct?",
+        "options": [
+          "There is no breach until eight weeks have passed",
+          "The bank only needs to respond if she escalates to the regulator",
+          "The bank may close the complaint because she did not chase it",
+          "The bank has missed the 30-day acknowledgement duty and must now respond, investigate and report the outcome without undue delay"
+        ],
+        "answer": 3,
+        "explanation": "Section 164A(3) requires acknowledgement within 30 days. The bank must also take appropriate steps, keep her informed and tell her the outcome without undue delay. She can also complain to the Information Commission.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x26",
+        "question": "Under Article 32, what must the bank take into account when deciding what security is 'appropriate'?",
+        "options": [
+          "The state of the art, implementation costs, the nature, scope, context and purposes of processing, and the risks to people",
+          "Only the cost of the cheapest available tool",
+          "Only whether a competitor has suffered a breach",
+          "Only the size of the bank's IT budget"
+        ],
+        "answer": 0,
+        "explanation": "Article 32(1) lists these factors, so appropriate security is a risk-based judgement, not a cost-only or peer-based decision.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x27",
+        "question": "Harrowfield runs a phishing simulation. 12% of staff enter their password on the fake page; only 2% report the email. Which response best fits Article 32 and good practice?",
+        "options": [
+          "Dismiss everyone who clicked",
+          "Stop simulations because they upset staff",
+          "Target follow-up training, make reporting easier and recognised, and keep testing to measure improvement",
+          "Rely on technical filters and drop awareness training"
+        ],
+        "answer": 2,
+        "explanation": "Article 32(1)(d) requires regular testing and evaluation of measures, and awareness is a key organisational measure. Fear-based punishment discourages reporting, which is the behaviour the bank most needs.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x28",
+        "question": "A customer receives a text that seems to come from Harrowfield's fraud team, asking her to move her savings to a 'safe account' because her account is compromised. She phones the branch to check. What should staff tell her?",
+        "options": [
+          "Move the money quickly, as instructed in the text",
+          "Do not move any money; the bank never asks customers to move money to a 'safe account', and she should report the message",
+          "Move half to be safe until the fraud team calls back",
+          "Reply to the text to confirm her identity"
+        ],
+        "answer": 1,
+        "explanation": "Safe-account requests are a classic impersonation scam. Staff should stop the payment, reassure the customer and follow the bank's fraud reporting process.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x29",
+        "question": "Harrowfield discovers on Tuesday at 9 am that a misconfigured portal exposed 5,000 customers' statements online for a week. The investigation will take ten days. What is the correct notification approach?",
+        "options": [
+          "Wait ten days and notify once the investigation is complete",
+          "Notify within 72 hours of when the exposure began a week ago",
+          "Notify only if a customer complains",
+          "Notify the Information Commission without undue delay, where feasible by Friday 9 am, giving what is known and adding details in phases"
+        ],
+        "answer": 3,
+        "explanation": "The 72 hours runs from awareness. Article 33(4) allows information to be given in phases, so incomplete facts are no reason to wait.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x30",
+        "question": "A processor that prints Harrowfield's statements suffers a breach. Which statement about duties is correct?",
+        "options": [
+          "The processor must notify the Information Commission instead of the bank",
+          "Only the processor is responsible because the breach happened there",
+          "Neither has duties because statements are paper",
+          "The processor must tell Harrowfield without undue delay; Harrowfield then decides on notifying the regulator and customers"
+        ],
+        "answer": 3,
+        "explanation": "Article 33(2) requires the processor to notify the controller without undue delay. The controller carries the Article 33 and 34 duties. Paper statements are personal data too.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x31",
+        "question": "A breach is high risk, but contacting each of the 800,000 affected people individually would involve disproportionate effort. What does Article 34 allow?",
+        "options": [
+          "No communication at all, because of the effort involved",
+          "A public communication or similar measure that informs people in an equally effective way",
+          "A notice to the regulator only",
+          "Telling only customers who ask"
+        ],
+        "answer": 1,
+        "explanation": "Article 34(3)(c) removes the duty of individual communication where it would involve disproportionate effort, but requires instead a public communication or similar, equally effective measure.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x32",
+        "question": "Which statement best describes the information the regulator expects in an Article 33 breach notification?",
+        "options": [
+          "The nature of the breach, likely numbers affected, the DPO's or contact point's details, likely consequences and measures taken or proposed",
+          "Only the date of the breach and the name of the person responsible",
+          "A full forensic report, signed by external auditors",
+          "A statement of the bank's annual turnover"
+        ],
+        "answer": 0,
+        "explanation": "Article 33(3) sets the minimum content: nature, categories and approximate numbers of people and records, contact point, likely consequences and measures taken or proposed.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x33",
+        "question": "In the Tesco Bank case (FCA, 2018), the first rule written to block fraudulent Brazilian transactions did not work. Why, according to the FCA?",
+        "options": [
+          "It was blocked by the customers' own banks",
+          "It was never approved by the board",
+          "It used a currency code instead of the country code, and its operation was not monitored",
+          "It applied only to credit cards instead of debit cards"
+        ],
+        "answer": 2,
+        "explanation": "The final notice records that the Fraud Strategy Team used the Euro currency code instead of Brazil's country code and did not monitor the rule, so fraudulent attempts kept rising.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x34",
+        "question": "Which statement about important business services is correct?",
+        "options": [
+          "They are internal IT systems such as email and HR platforms",
+          "They are services provided to external end users whose disruption could cause intolerable harm or threaten the firm or the system",
+          "They are the bank's most profitable products",
+          "They are any service a regulator has complained about"
+        ],
+        "answer": 1,
+        "explanation": "Important business services are defined by the harm their disruption could cause to external end users, the firm or the wider system. Internal systems are mapped as dependencies, not listed as services.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x35",
+        "question": "Harrowfield's board is asked to approve impact tolerances. The technology team proposes setting each tolerance equal to current recovery capability 'so we never breach'. What is the problem?",
+        "options": [
+          "Tolerances must reflect the harm customers and markets can bear, not what the bank can currently achieve",
+          "There is no problem; that is the recommended method",
+          "Tolerances must always be set at exactly one hour",
+          "Boards are not allowed to approve tolerances"
+        ],
+        "answer": 0,
+        "explanation": "Impact tolerances are set by reference to intolerable harm. Setting them to match current capability hides vulnerabilities that the framework is designed to reveal and fix.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x36",
+        "question": "Which statement about severe but plausible scenario testing is correct?",
+        "options": [
+          "Tests only need to cover events the bank has already experienced",
+          "Tests are replaced by the annual audit",
+          "Tests only apply to insurers, not banks",
+          "Banks test whether they can stay within tolerance in severe but plausible disruptions, such as a cyber attack or a key supplier failure"
+        ],
+        "answer": 3,
+        "explanation": "The PRA and FCA frameworks require testing against severe but plausible scenarios, including ones the firm has not yet experienced, and remediation of weaknesses found.",
+        "difficulty": 3
+      },
+      {
+        "id": "gb-dp-x37",
+        "question": "A cloud provider's data centre fails and Harrowfield cannot fail over to another provider. Customers cannot see balances or make payments. Under PRA SS1/26, how is this best described?",
+        "options": [
+          "A near-miss, because the bank did not cause the original fault",
+          "Not reportable, because the fault was at a third party",
+          "An operational incident made up of linked events: the provider's fault and the bank's failure to fail over",
+          "Only a contractual dispute with the cloud provider"
+        ],
+        "answer": 2,
+        "explanation": "SS1/26 treats linked events with a cumulative impact as one operational incident, and gives this cloud example. Origin at a third party does not remove the bank's reporting duty.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x38",
+        "question": "Under the FCA's rules from March 2027, which is one of the notification thresholds for an operational incident?",
+        "options": [
+          "Any incident lasting more than ten minutes",
+          "A risk of causing intolerable levels of harm to consumers from which they cannot easily recover",
+          "Any incident that costs more than GBP 1m",
+          "Any incident reported in the press"
+        ],
+        "answer": 1,
+        "explanation": "SUP 15.18.6R sets three thresholds: intolerable harm to consumers, risk to the safety and soundness of the firm or other participants, and risk to market stability, integrity or confidence. There are no fixed time or cost triggers.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x39",
+        "question": "Harrowfield, an enhanced reporting firm, submits an initial incident report. Six hours later the incident spreads to a second service and the bank activates its disaster recovery plan. What must it do?",
+        "options": [
+          "Nothing until the final report",
+          "Withdraw the first report and start again",
+          "Wait 30 working days before saying anything more",
+          "Submit an intermediate update as soon as practicable because there has been a significant change"
+        ],
+        "answer": 3,
+        "explanation": "Intermediate updates are required after each significant change, such as a worsening impact or activation of a disaster recovery plan. Several updates may be needed before the final report.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x40",
+        "question": "Harrowfield expects the final report on a complex incident will take longer than 30 working days because its supplier has not yet found the root cause. What is the correct approach?",
+        "options": [
+          "Submit the final report as soon as practicable and no later than 60 working days, telling the regulator why it needs longer",
+          "Delay the final report until the supplier finishes, however long that takes",
+          "Submit an empty final report on day 30",
+          "Skip the final report, as the incident is resolved"
+        ],
+        "answer": 0,
+        "explanation": "The final report is due within 30 working days of resolution, or where that is impracticable as soon as practicable but within 60 working days. The PRA expects firms to explain why and when it will arrive.",
+        "difficulty": 5
+      },
+      {
+        "id": "gb-dp-x41",
+        "question": "Before the new regime starts on 18 March 2027, how should Harrowfield report a material operational incident to the FCA?",
+        "options": [
+          "It need not report anything until 18 March 2027",
+          "Only through the Information Commission's breach form",
+          "Under existing duties, such as Principle 11 and SUP 15, by contacting its supervisor or using the notification form",
+          "Only after the incident has been resolved"
+        ],
+        "answer": 2,
+        "explanation": "The FCA's guidance says firms should follow the current process until the new rules apply: notify material incidents under Principle 11 and SUP 15.3, via the supervisor or the notification form, and inform the PRA if dual-regulated.",
+        "difficulty": 4
+      },
+      {
+        "id": "gb-dp-x42",
+        "question": "In April 2023 the PRA fined TSB's former Chief Information Officer. What was the core finding?",
+        "options": [
+          "He personally caused the software defect in the new platform",
+          "He failed to take reasonable steps to ensure TSB managed its outsourcing arrangement for the 2018 IT migration",
+          "He failed to report a data breach to the regulator",
+          "He sold customer data to the IT supplier"
+        ],
+        "answer": 1,
+        "explanation": "The PRA found he breached Senior Manager Conduct Rule 2 by failing to take reasonable steps over the key outsourcing relationship, including giving the board assurance without sufficient evidence from the supplier.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
