@@ -1,0 +1,3226 @@
+{
+  "slug": "id-ojk-consumer-protection",
+  "title": "Indonesia | OJK Consumer Protection under POJK 22/2023",
+  "tagline": "Apply OJK's consumer protection rules at an Indonesian bank: fair products and sales, fair contracts and collection, complaints, secrecy and fraud awareness.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional commercial banks in Indonesia",
+    "Rural banks (Bank Perekonomian Rakyat)",
+    "Bank-led bancassurance and wealth distribution",
+    "Collection agencies serving banks"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the consumer protection rules that apply to conventional banks in Indonesia. It is based on **OJK Regulation (POJK) 22 of 2023 on consumer and public protection in the financial services sector**, issued by the Financial Services Authority (Otoritas Jasa Keuangan, OJK) under **Law 4 of 2023 on Financial Sector Development and Strengthening (the P2SK Law)**, together with **POJK 38 of 2025** on OJK lawsuits for consumers, the bank secrecy articles of the Banking Law as amended by the P2SK Law, and the consumer-facing parts of **POJK 12 of 2024** on anti-fraud strategy.\n\nArticle 91 of POJK 22/2023 requires banks to train staff on consumer protection: at least once a year for the consumer protection unit and at least once during employment for all other staff, covering complaint procedures, the unit's duties, product knowledge and ethical communication. This quest supports that duty for branch, sales, collections, complaint and operations staff and their managers.\n\nIn five stages you join a fictional Indonesian bank: principles and enforcement; product information, marketing and data; agreements and collection; complaints and disputes; and secrecy, fraud education and inspection readiness.\n\nThe quest builds knowledge and does not replace your bank's own consumer protection policies and procedures; always follow them and the latest OJK regulations.",
+  "audience": [
+    "All employees of conventional commercial and rural banks in Indonesia who need consumer protection training at least once during employment",
+    "Consumer protection unit and complaint handling staff who must be trained every year",
+    "Branch, sales, telemarketing and bancassurance staff, including outsourced sales agents",
+    "Collections staff, collection agency managers and vendor managers",
+    "Compliance, operations and senior managers who oversee conduct and report to OJK"
+  ],
+  "outcomes": [
+    "Explain how the P2SK Law, POJK 22/2023 and POJK 38/2025 fit together and how OJK supervises and sanctions market conduct",
+    "Design, describe and market products within OJK's rules on information, suitability, consent, contact hours and data",
+    "Draft and change agreements fairly, honour cooling-off periods and collect debts within Articles 60 to 66",
+    "Handle complaints within the regulation's deadlines and guide customers to OJK, the LAPS body or the courts",
+    "Protect depositor secrecy, educate customers against fraud and meet the Article 91 training and OJK reporting duties"
+  ],
+  "quest": {
+    "name": "The Fair Banking Mission",
+    "premise": "You have just joined Bank Arunika, a fictional conventional bank headquartered in Jakarta, as a consumer protection officer. A retired teacher in Yogyakarta has complained to OJK about an evening sales call, a product she did not understand, a branch that turned her son away and a collector who keeps phoning him. With Ratna, Bagus, Maria and Komang, clear five stages, then face the final boss: the examiner's exam.",
+    "badge": {
+      "name": "Fair Banking Guardian",
+      "description": "Awarded to bankers who can apply OJK's POJK 22/2023 consumer protection rules, from fair sales and collection to complaints, secrecy and fraud awareness."
+    },
+    "color": "#0e7490",
+    "cast": [
+      {
+        "id": "ratna",
+        "name": "Ratna Wulandari",
+        "role": "Head of Consumer Protection Unit, Jakarta, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "bagus",
+        "name": "Bagus Prasetyo",
+        "role": "Regional Sales Head, Surabaya",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#374151"
+        }
+      },
+      {
+        "id": "maria",
+        "name": "Maria Simanjuntak",
+        "role": "Collections Manager, Medan",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#7c2d12"
+        }
+      },
+      {
+        "id": "komang",
+        "name": "Komang Adi Putra",
+        "role": "Branch Manager, Denpasar",
+        "look": {
+          "skin": 4,
+          "hair": "short",
+          "color": "#065f46"
+        }
+      },
+      {
+        "id": "siti",
+        "name": "Ibu Siti Rahayu",
+        "role": "Retired teacher and customer, Yogyakarta",
+        "look": {
+          "skin": 3,
+          "hair": "bun",
+          "color": "#9d174d"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "POJK 22/2023 and the P2SK Law: Principles, Duties and Enforcement",
+      "stage": "The Charter Hall",
+      "summary": "Learn where Indonesia's consumer protection rules come from, who they bind, the seven principles, the basic conduct duties and how OJK supervises, sanctions and now sues under POJK 38/2025.",
+      "minutes": 50,
+      "objectives": [
+        "Explain how the P2SK Law and POJK 22/2023 fit together and which providers they cover",
+        "Apply the seven principles and the basic duties of good faith, non-discrimination and no dealings with unlicensed operators",
+        "Describe the bank's liability for staff and third parties and OJK's supervision and sanction tools",
+        "State what POJK 38/2025 changed in POJK 22/2023"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Bank Arunika",
+          "setting": "Consumer Protection Unit, Bank Arunika head office, Jakarta. Monday, 8:30 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "mood": "neutral",
+              "text": "You have just joined Bank Arunika, a fictional conventional commercial bank with offices from Medan to Denpasar, as a consumer protection officer."
+            },
+            {
+              "who": "ratna",
+              "mood": "happy",
+              "text": "Welcome! I'm Ratna Wulandari, head of the Consumer Protection Unit. Your first file arrived this morning through OJK's consumer complaint system."
+            },
+            {
+              "who": "ratna",
+              "mood": "worried",
+              "text": "Ibu Siti Rahayu, a retired teacher in Yogyakarta. A telemarketer rang her at half past seven in the evening and she ended up with an insurance-linked savings plan she says she never understood."
+            },
+            {
+              "who": "bagus",
+              "mood": "neutral",
+              "text": "Bagus Prasetyo, sales, Surabaya. That call came from our outsourced telesales vendor, not from our own staff. Surely the vendor answers for it?"
+            },
+            {
+              "who": "komang",
+              "mood": "worried",
+              "text": "Komang Adi Putra, branch manager in Denpasar. Worse: when her son phoned our Yogyakarta branch, someone told him complaints are only taken at head office."
+            },
+            {
+              "who": "maria",
+              "mood": "thinking",
+              "text": "Maria Simanjuntak, collections, Medan. And her credit card is overdue. Our collection agency has been ringing her son too."
+            },
+            {
+              "who": "ratna",
+              "mood": "proud",
+              "text": "One customer, five problems, one regulation: POJK 22/2023. Stage one is the Charter Hall. Learn who the rules cover and how OJK enforces them, then we open her file together."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Why POJK 22/2023 exists",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "A stronger regulator",
+              "narration": "In January 2023 Indonesia passed Law 4 of 2023 on Financial Sector Development and Strengthening, known as the P2SK Law. It gave the Financial Services Authority, OJK, an explicit role in protecting consumers and supervising market conduct."
+            },
+            {
+              "icon": "📘",
+              "heading": "One rulebook",
+              "narration": "OJK then issued POJK 22 of 2023 on consumer and public protection in the financial services sector. It was promulgated on 22 December 2023, took effect that day and replaced the earlier rule, POJK 6/POJK.07/2022."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Who it covers",
+              "narration": "It applies to every financial services business actor OJK licenses, called PUJK in Indonesian. Commercial banks and rural banks are on the list, alongside insurers, securities firms, finance companies and fintech lenders."
+            },
+            {
+              "icon": "🔍",
+              "heading": "What OJK watches",
+              "narration": "Market conduct means how a provider designs products, provides and delivers information, markets, writes agreements, serves customers and handles complaints and disputes."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Why you are here",
+              "narration": "Article 91 requires every provider to train its staff on consumer protection: at least once a year for the consumer protection unit, and at least once during employment for everyone else."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The seven consumer protection principles",
+          "caption": "Article 3 of POJK 22/2023 repeats the seven principles that Article 228 of the P2SK Law sets for the whole financial sector. Banks must apply them in every business activity.",
+          "items": [
+            {
+              "label": "1. Adequate education",
+              "detail": "Help people understand products, costs, risks and how to complain, from marketing to complaint handling."
+            },
+            {
+              "label": "2. Transparent information",
+              "detail": "Clear, accurate, honest, non-misleading information before, during and after use."
+            },
+            {
+              "label": "3. Fair treatment",
+              "detail": "Fair, non-discriminatory, responsible business; sales targets never outrank the customer's interest."
+            },
+            {
+              "label": "4. Protection of assets and data",
+              "detail": "Keep customers' assets, privacy and data safe and use them only as agreed and allowed by law."
+            },
+            {
+              "label": "5. Effective complaints",
+              "detail": "Simple, quick and affordable complaint handling and dispute resolution."
+            },
+            {
+              "label": "6. Compliance enforcement",
+              "detail": "The provider itself acts to make sure the rules are actually followed."
+            },
+            {
+              "label": "7. Healthy competition",
+              "detail": "Compete fairly; do not harm consumers to win market share."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Principles in practice",
+          "prompt": "Match each principle with something a bank does to live it.",
+          "pairs": [
+            {
+              "left": "Adequate education",
+              "right": "Running financial literacy activities and explaining risks before a sale"
+            },
+            {
+              "left": "Transparent information",
+              "right": "Giving a plain Bahasa Indonesia product summary before the customer decides"
+            },
+            {
+              "left": "Fair treatment",
+              "right": "Keeping a salesperson away from handling a complaint about his own sale"
+            },
+            {
+              "left": "Protection of data",
+              "right": "Refusing to pass customer data to a partner without a lawful basis"
+            },
+            {
+              "left": "Effective complaints",
+              "right": "Accepting complaints at every office, free of charge"
+            },
+            {
+              "left": "Compliance enforcement",
+              "right": "Having a consumer protection unit that monitors and reports to the directors"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these is NOT one of the seven consumer protection principles in POJK 22/2023?",
+          "options": [
+            "Healthy competition",
+            "Enforcement of compliance",
+            "Guaranteed protection of investment returns",
+            "Adequate education"
+          ],
+          "answer": 2,
+          "explanation": "The seven principles are adequate education, transparent information, fair treatment and responsible conduct, protection of assets, privacy and data, effective complaint handling and dispute resolution, compliance enforcement and healthy competition. Nothing in them guarantees investment returns."
+        },
+        {
+          "type": "concept",
+          "title": "The basic conduct duties",
+          "body": "Before any product rule applies, POJK 22/2023 sets **basic duties** for every provider:\n\n- **Good faith** in all dealings, and **no discrimination**, including by third parties acting for the bank (Article 4).\n- **No business with unlicensed operators.** A bank may not accept an application from, or partner with, an unlicensed financial business, must end any such partnership and must report a customer running one to OJK (Article 5).\n- **Written policies and procedures** covering design, information, marketing, agreements, service and complaints, including equal access and special services for customers with disabilities and older customers (Article 8).\n- A **code of ethics**, and controls that stop directors, staff and agents from enriching themselves or abusing their position to customers' cost (Article 9).\n- **Liability for losses** caused by the errors, negligence or rule breaches of directors, commissioners, staff or third parties working for the bank, unless the bank proves the customer's own involvement or fault (Article 10)."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "How OJK supervises market conduct",
+          "caption": "Articles 101 to 110 of POJK 22/2023. A thematic examination looks at products that may harm consumers; a special examination tests suspected violations.",
+          "headers": [
+            "Indirect supervision",
+            "Direct supervision"
+          ],
+          "items": [
+            {
+              "label": "Method",
+              "left": "Analysis of reports and information, plus field observation",
+              "right": "Thematic examinations and special examinations"
+            },
+            {
+              "label": "Trigger",
+              "left": "Routine: complaints, reports, adverts, market signals",
+              "right": "A theme OJK sets, or suspected breaches or consumer harm"
+            },
+            {
+              "label": "Bank's duty",
+              "left": "Supply documents and information by OJK's deadline",
+              "right": "Show books, files, data and premises; never obstruct or influence examiners"
+            },
+            {
+              "label": "Possible outcome",
+              "left": "Orders to take or stop specific actions",
+              "right": "Administrative sanctions and written orders, including to compensate consumers"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Required or not?",
+          "prompt": "Sort each statement about POJK 22/2023 duties for a commercial bank.",
+          "buckets": [
+            "Required",
+            "Not what the rule says"
+          ],
+          "items": [
+            {
+              "text": "Written consumer protection policies covering product design to complaints",
+              "bucket": 0
+            },
+            {
+              "text": "A consumer protection code of ethics set by the bank",
+              "bucket": 0
+            },
+            {
+              "text": "Reporting to OJK a customer who runs an unlicensed financial business",
+              "bucket": 0
+            },
+            {
+              "text": "Answering for losses caused by an outsourced agent's misconduct",
+              "bucket": 0
+            },
+            {
+              "text": "Literacy activities at least once every semester",
+              "bucket": 0
+            },
+            {
+              "text": "Ignoring the rules for products sold by a third-party vendor",
+              "bucket": 1
+            },
+            {
+              "text": "Partnering with an unlicensed lender if the customer signs a waiver",
+              "bucket": 1
+            },
+            {
+              "text": "Charging a fee to register a complaint",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Whose call was it?",
+          "setting": "Sales floor, Surabaya regional office. Video call with Jakarta.",
+          "lines": [
+            {
+              "who": "bagus",
+              "mood": "angry",
+              "text": "Our vendor's agent made that call, used his own script and earned his own commission. Why should Bank Arunika carry the blame?"
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "Because Article 10 makes the bank liable for losses caused by staff and by third parties working for the bank. The vendor sold our product, under our name."
+            },
+            {
+              "who": "bagus",
+              "mood": "worried",
+              "text": "So the only escape is to prove Ibu Siti did something wrong herself?"
+            },
+            {
+              "who": "ratna",
+              "mood": "neutral",
+              "text": "That is the exception: the bank is not liable where it proves the customer's own involvement, error or breach. Otherwise we answer to her, and then we deal with the vendor."
+            },
+            {
+              "who": "komang",
+              "mood": "thinking",
+              "text": "And Article 4 says the bank must make sure third parties acting for it treat customers without discrimination too. Outsourcing the call does not outsource the duty."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The partner nobody checked",
+          "situation": "A fast-growing digital lending company asks Bank Arunika to open a corporate account and sign a channeling partnership. Its pitch deck says it is 'licensing in progress'. A relationship manager wants to sign this week because the deal is large. The compliance check shows no OJK licence and no application on record.",
+          "choices": [
+            {
+              "text": "Sign now; the company says a licence is coming, so the risk is only on paper.",
+              "outcome": "Poor. Article 5 bars a bank from partnering with an unlicensed financial business. The exception covers parties that are genuinely in the licensing process with an authority; a claim in a pitch deck with nothing on record is not that.",
+              "score": 0
+            },
+            {
+              "text": "Decline the partnership, record the check, and escalate so the bank can consider reporting the company to OJK as an unlicensed operator.",
+              "outcome": "Best. The bank may not cooperate with an unlicensed operator, and where a customer or applicant runs unlicensed financial business, Article 5 requires a report to OJK's consumer protection function or regional office.",
+              "score": 2
+            },
+            {
+              "text": "Open the account but delay the partnership until the licence arrives.",
+              "outcome": "Partly right on the partnership, but the bank is also barred from approving product applications from unlicensed financial operators, so the account needs the same scrutiny and the report duty still applies.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Enforcement vocabulary",
+          "cards": [
+            {
+              "front": "Administrative sanctions in POJK 22/2023",
+              "back": "Written warning, restriction or freezing of products or business, removal of management, a fine, revocation of a product licence or revocation of the business licence."
+            },
+            {
+              "front": "Maximum fine for most breaches",
+              "back": "Up to Rp15 billion under the regulation's standard sanction clause; heavier steps can come with or without a prior warning."
+            },
+            {
+              "front": "Thematic examination",
+              "back": "Direct supervision on a theme OJK chooses, looking at products or services that may cause consumer losses."
+            },
+            {
+              "front": "Special examination",
+              "back": "Direct supervision to prove suspected rule breaches or consumer losses by a specific provider."
+            },
+            {
+              "front": "Written order (Perintah Tertulis)",
+              "back": "OJK can order a provider to replace managers, stop or fix activities, return consumer assets, change contracts or compensate consumers."
+            },
+            {
+              "front": "Objection to a sanction",
+              "back": "A bank may object in writing, in Bahasa Indonesia, within 10 working days of the sanction letter; OJK decides within 10 working days."
+            },
+            {
+              "front": "Publication",
+              "back": "OJK may announce administrative sanctions to the public, so a breach can become a reputational event."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the rulebook took shape",
+          "caption": "Dates as stated in the official texts published on ojk.go.id and by Bank Indonesia.",
+          "items": [
+            {
+              "label": "P2SK Law enacted",
+              "value": "12 Jan 2023",
+              "detail": "Law 4/2023 sets seven principles and gives OJK market conduct powers."
+            },
+            {
+              "label": "POJK 22/2023 in force",
+              "value": "22 Dec 2023",
+              "detail": "Replaces POJK 6/POJK.07/2022 on consumer protection."
+            },
+            {
+              "label": "POJK 12/2024 in force",
+              "value": "31 Oct 2024",
+              "detail": "Integrated anti-fraud strategy, including yearly education."
+            },
+            {
+              "label": "Standard contracts deadline",
+              "value": "31 Dec 2024",
+              "detail": "Older standard agreements had to be brought in line with POJK 22/2023."
+            },
+            {
+              "label": "POJK 38/2025 in force",
+              "value": "22 Dec 2025",
+              "detail": "OJK lawsuits for consumers; revokes Articles 98(1)(b), 99 and 100 of POJK 22/2023."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "POJK 38/2025 changed POJK 22/2023 when it took effect on 22 December 2025. What did it do?",
+          "options": [
+            "It revoked the whole of POJK 22/2023 and its training duty",
+            "It revoked the provisions on OJK lawsuits (Articles 98(1)(b), 99 and 100) and set new lawsuit rules",
+            "It removed OJK's power to order banks to resolve complaints",
+            "It moved complaint handling from banks to Bank Indonesia"
+          ],
+          "answer": 1,
+          "explanation": "POJK 38/2025 sets detailed rules for lawsuits OJK files to protect consumers and revokes only Article 98(1)(b) and Articles 99 and 100 of POJK 22/2023. The rest of POJK 22/2023, including OJK's power to order a provider to resolve a complaint and the Article 91 training duty, still applies."
+        },
+        {
+          "type": "example",
+          "title": "Real case: OJK's market conduct enforcement in 2026",
+          "body": "In its press release on the October 2026 Board of Commissioners meeting (SP 219/OJK/DKPU/XI/2026, 5 November 2026), OJK reported its consumer protection enforcement for the year:\n\n- From 1 January to 15 October 2026: **150 written warnings to 98 providers**, **6 written instructions** and **51 fines to 44 providers**.\n- **157 providers compensated consumers**, about **Rp84 billion** in total, from 1 January to 13 September 2026.\n- From 1 January to 28 October 2026, market conduct supervision produced **77 written warnings and 44 fines of about Rp8.8 billion**, including for advert content, collection officers and transparency. OJK also ordered providers to change or stop non-compliant adverts and fix policies.\n- Late or missing **self-assessment reports** for 2025 drew 8 fines (Rp570 million), and late **literacy and inclusion reports** drew 45 sanctions.\n\n**Lesson:** enforcement is routine, it covers paperwork as well as conduct, and compensation is part of the outcome."
+        },
+        {
+          "type": "tip",
+          "title": "Literacy and inclusion are duties too",
+          "body": "Article 11 and 12 require each provider to run **financial literacy** and **financial inclusion** activities as an annual programme, **at least once every semester**, and to document them.\n\n- Send the **plan report** for next year by **30 November**.\n- Send **realisation reports** each semester, by **31 July** and **31 January**.\n- Late reports draw daily fines; a commercial bank that fails to report faces a fine per report.\n\nIf your branch runs a school savings talk or a scam-awareness session, record it: it may count towards the programme."
+        },
+        {
+          "type": "keypoints",
+          "title": "Charter Hall: what to remember",
+          "items": [
+            "The P2SK Law (Law 4/2023) set seven consumer protection principles and gave OJK market conduct powers; POJK 22/2023 applies them to banks.",
+            "Basic duties: good faith, no discrimination, no business with unlicensed operators, written policies, a code of ethics.",
+            "The bank answers for losses caused by staff and third parties acting for it unless it proves the customer's own fault.",
+            "OJK supervises indirectly and through thematic and special examinations, and can sanction, order compensation and publish sanctions.",
+            "POJK 38/2025 now governs OJK lawsuits for consumers and revoked Articles 98(1)(b), 99 and 100 of POJK 22/2023."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one product your team sells through a third party, such as a vendor, agent or partner. If that party mistreated a customer tomorrow, how would Bank Arunika's liability under Article 10 play out, and what control would you want in place today?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-cp-s1-q1",
+          "question": "Which law gave OJK its strengthened consumer protection and market conduct mandate that POJK 22/2023 implements?",
+          "options": [
+            "Law 21 of 2011 on OJK in its original, unamended form",
+            "Law 4 of 2023 on Financial Sector Development and Strengthening (P2SK)",
+            "Bank Indonesia Regulation 3 of 2023",
+            "POJK 12 of 2024 on anti-fraud strategy"
+          ],
+          "answer": 1,
+          "explanation": "POJK 22/2023 opens by citing the P2SK Law, which strengthened OJK's consumer protection role and added market conduct supervision. BI Regulation 3/2023 governs consumer protection in activities Bank Indonesia supervises, not OJK's rulebook.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s1-q2",
+          "question": "A rural bank (BPR) officer says POJK 22/2023 is only for commercial banks. What is correct?",
+          "options": [
+            "It applies to rural banks only for their deposit products",
+            "Rural banks follow only Bank Indonesia's consumer rules",
+            "It applies to rural banks only from 2026",
+            "Rural banks are expressly listed among the providers the regulation covers"
+          ],
+          "answer": 3,
+          "explanation": "Article 2 lists commercial banks and rural banks (Bank Perekonomian Rakyat) among the financial services institutions bound by the regulation. The 2026 start date applies to cooperatives, not banks.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s1-q3",
+          "question": "Bank Arunika's vendor mis-sells a product by phone and the customer loses money. Under Article 10, when can the bank avoid liability?",
+          "options": [
+            "Whenever the misconduct was committed by an outside vendor's agent rather than by an employee on the bank's payroll",
+            "Only if it proves the customer's own involvement, error or breach caused the loss",
+            "Whenever the customer signed the application form",
+            "Only if OJK has not yet received a complaint"
+          ],
+          "answer": 1,
+          "explanation": "Article 10 makes the provider liable for losses from errors, negligence or rule breaches by directors, commissioners, staff or third parties working for it. The exception is where the provider proves the consumer's own involvement or fault. A signature alone does not prove that.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s1-q4",
+          "question": "Which list correctly names administrative sanctions available under POJK 22/2023?",
+          "options": [
+            "Written warning, product or business restriction or freeze, removal of management, fine, licence revocation",
+            "Written warning, imprisonment of directors, closure of all branches, public auction of assets",
+            "Verbal reminder, compulsory merger, customer refund levy, OJK management of the bank",
+            "Fine only, because warnings were abolished by the P2SK Law"
+          ],
+          "answer": 0,
+          "explanation": "The standard sanction clause lists a written warning, restriction or freezing of products, services or business, removal of management, an administrative fine, revocation of a product licence and revocation of the business licence. Criminal penalties come from laws, not from the POJK.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s1-q5",
+          "question": "A team leader thinks OJK must always issue a written warning before any fine. What does POJK 22/2023 say?",
+          "options": [
+            "Every fine must follow a written warning that the bank then failed to act on within the period set in the warning",
+            "Warnings are only used for rural banks",
+            "Fines require a court order first",
+            "Restrictions, fines and other heavier sanctions may be imposed with or without a prior written warning"
+          ],
+          "answer": 3,
+          "explanation": "The regulation states that sanctions from restriction to licence revocation may be imposed with or without first imposing a written warning. Planning on a 'first warning' is not a compliance strategy.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s1-q6",
+          "question": "OJK opens a special examination of Bank Arunika's telesales. A manager suggests sending examiners only the cleaner call samples. What is the risk?",
+          "options": [
+            "Obstructing an examination or influencing its results is prohibited and sanctionable",
+            "None, because the bank may choose which records to share",
+            "None, as long as all recordings are shared within a year",
+            "Only a reputational risk, since OJK cannot sanction obstruction"
+          ],
+          "answer": 0,
+          "explanation": "Article 108 requires the bank to show books, records, data and explanations within OJK's deadline and prohibits obstructing an examination or influencing examiners' findings. Breaches draw administrative sanctions and can lead to sanctions under the OJK Law as amended.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-cp-s1-q7",
+          "question": "Bank Arunika receives a sanction letter it believes is wrong. What is the correct route?",
+          "options": [
+            "File a civil lawsuit against OJK in the district court within 30 days, attaching the sanction letter and evidence",
+            "Ignore it until OJK publishes the sanction",
+            "File a written objection in Bahasa Indonesia with supporting evidence within 10 working days of the letter",
+            "Ask the LAPS financial services dispute body to review it"
+          ],
+          "answer": 2,
+          "explanation": "Article 115 lets a sanctioned provider object in writing within 10 working days of the sanction letter, with reasons and evidence. OJK grants, partly grants or rejects it within 10 working days, and payment of a fine is suspended while it decides.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s1-q8",
+          "question": "Which statement about POJK 38/2025 is correct?",
+          "options": [
+            "OJK lawsuits are class actions that need a power of attorney from each consumer",
+            "Consumers on OJK's lawsuit list bear no costs up to execution of the court decision",
+            "OJK sues only at a consumer's written request",
+            "It replaced POJK 22/2023 in full"
+          ],
+          "answer": 1,
+          "explanation": "POJK 38/2025 says OJK sues on legal standing given by law, not as a class action, based on its own assessment; consumers bear no costs, which come from OJK's budget. It revoked only Articles 98(1)(b), 99 and 100 of POJK 22/2023.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s1-q9",
+          "question": "A customer who runs an unlicensed online lending business applies for a business account. What does Article 5 require?",
+          "options": [
+            "Approve the application but monitor the account monthly and ask the customer to confirm in writing that a licence is pending",
+            "Approve it if the customer promises to apply for a licence",
+            "Do not approve the application, and report the customer's unlicensed activity to OJK",
+            "Report it only to the police, never to OJK"
+          ],
+          "answer": 2,
+          "explanation": "Article 5 bars approving product applications from unlicensed financial operators and requires the provider to report a consumer running unlicensed financial business to OJK's consumer protection function or a regional office. The exception covers parties genuinely in the licensing process.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s1-q10",
+          "question": "By when must a bank send OJK its plan for next year's financial literacy and inclusion activities?",
+          "options": [
+            "31 January of the activity year",
+            "30 September of the activity year",
+            "30 November of the year before the activities",
+            "10 July of the year before"
+          ],
+          "answer": 2,
+          "explanation": "Article 14 sets 30 November before the activity year for the plan report. Realisation reports follow each semester by 31 July and 31 January. 30 September is the deadline for the annual self-assessment report.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Product Design, Information, Marketing and Customer Data",
+      "stage": "The Glass Counter",
+      "summary": "Design products for a target market, give the right information at the right time, market within OJK's rules on consent, hours and suitability, and keep customer data within its limits.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the design, testing and pricing duties to a new product",
+        "Deliver the general and personal product summaries and confirm understanding",
+        "Run telemarketing and adverts within Articles 35 to 40",
+        "Use customer data only within the confidentiality and consent rules"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The evening call",
+          "setting": "Telesales vendor floor used by Bank Arunika, Surabaya. Replaying a recorded call.",
+          "lines": [
+            {
+              "who": "narrator",
+              "mood": "neutral",
+              "text": "You and Ratna listen to the recording of the call to Ibu Siti Rahayu. The time stamp reads 19:32 on a Tuesday."
+            },
+            {
+              "who": "siti",
+              "mood": "worried",
+              "text": "(on the recording) Who is this? How did you get my number? I only have a savings account with you."
+            },
+            {
+              "who": "bagus",
+              "mood": "neutral",
+              "text": "The vendor bought a list of pensioners from a data company. Conversion on that list was excellent, frankly."
+            },
+            {
+              "who": "ratna",
+              "mood": "worried",
+              "text": "The agent never said where her number came from, never checked she had agreed to marketing calls, and rang after six in the evening."
+            },
+            {
+              "who": "siti",
+              "mood": "thinking",
+              "text": "(on the recording) Is it a savings account? My granddaughter needs school fees in two years."
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "She told him her need and her horizon. He sold her a long-term insurance-linked plan anyway. Stage two is the Glass Counter: design, information, marketing and data."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "From drawing board to sales pitch",
+          "scenes": [
+            {
+              "icon": "🎯",
+              "heading": "Design for a target",
+              "narration": "Article 25 says a product must be designed for a target group, weighing their needs and ability to pay against the product's features, risks and costs, and the design work must be documented."
+            },
+            {
+              "icon": "🧪",
+              "heading": "Test before launch",
+              "narration": "Article 26 requires testing of new products to find risks that could harm consumers. If testing shows potential harm, the bank must review the product, and keep the test results."
+            },
+            {
+              "icon": "🏷️",
+              "heading": "Price with a method",
+              "narration": "Article 28 requires written guidelines for setting the price or fees of products and services."
+            },
+            {
+              "icon": "💬",
+              "heading": "Speak plainly",
+              "narration": "Article 29 requires information that is clear, accurate, honest, easy to access and not misleading, in simple Bahasa Indonesia, readable, with unfamiliar terms explained. Regional or foreign languages may be added, never substituted."
+            },
+            {
+              "icon": "📄",
+              "heading": "Summarise",
+              "narration": "Article 30 requires a product and service information summary covering the name and type, issuer, key features, benefits, risks, requirements, costs and, for products that collect, lend or manage funds, a simulation or performance data."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The information journey for a new customer",
+          "caption": "Articles 32 to 34 of POJK 22/2023. Information given at marketing and before signing must also be documented.",
+          "items": [
+            {
+              "label": "1. Marketing",
+              "detail": "Information must be clear, honest and not misleading; offers name the bank and say it is licensed and supervised by OJK."
+            },
+            {
+              "label": "2. Before deciding",
+              "detail": "Give the general version of the product summary before the customer decides to use the product."
+            },
+            {
+              "label": "3. Before signing",
+              "detail": "Give the personal version, tailored to this customer, before the agreement is signed."
+            },
+            {
+              "label": "4. Confirm understanding",
+              "detail": "Confirm the customer understood the personal summary and keep evidence of it."
+            },
+            {
+              "label": "5. Decision notice",
+              "detail": "Tell the applicant whether the application is accepted, delayed or rejected, with reasons for a delay or rejection."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Telesales call: allowed or not?",
+          "prompt": "Sort each practice for a marketing call to a customer's personal phone.",
+          "buckets": [
+            "Allowed",
+            "Not allowed"
+          ],
+          "items": [
+            {
+              "text": "Calling on Saturday at 10:00 local time after the customer agreed to offers",
+              "bucket": 0
+            },
+            {
+              "text": "Calling at 19:30 on a weekday without the customer asking for it",
+              "bucket": 1
+            },
+            {
+              "text": "Opening with the bank's name and the purpose of the call",
+              "bucket": 0
+            },
+            {
+              "text": "Telling the customer which company provided her number",
+              "bucket": 0
+            },
+            {
+              "text": "Making consent to marketing calls a condition of opening a savings account",
+              "bucket": 1
+            },
+            {
+              "text": "Recording the call and giving the customer access to it after she buys",
+              "bucket": 0
+            },
+            {
+              "text": "Calling again next week after she withdrew her consent",
+              "bucket": 1
+            },
+            {
+              "text": "Calling on a national holiday because she seemed interested",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Article 39, when may Bank Arunika make an offer through a customer's personal phone, absent the customer's own request or agreement to other times?",
+          "options": [
+            "Any day, 07:00 to 21:00",
+            "Monday to Saturday, except national holidays, 08:00 to 18:00 local time",
+            "Monday to Friday only, 09:00 to 17:00 Jakarta time",
+            "Monday to Saturday, except national holidays, 08:00 to 20:00 local time"
+          ],
+          "answer": 1,
+          "explanation": "Marketing through personal channels needs the consumer's prior consent and, unless the consumer agrees or asks otherwise, may only happen Monday to Saturday outside national holidays, 08:00 to 18:00 local time. The 08:00 to 20:00 window is the debt collection rule in Article 62."
+        },
+        {
+          "type": "concept",
+          "title": "The product summary, two versions",
+          "body": "Article 30 requires a **product and service information summary** in **two versions**:\n\n- A **general version**, which must reach the prospect **before they decide** to use a product (Article 33(1)).\n- A **personal version**, tailored to the individual, which must reach them **before the agreement is signed** (Article 33(2)).\n\nThe bank must **confirm the customer understood** the personal version and keep that confirmation in a document or other medium usable as evidence (Article 33(7) and (8)).\n\nThe summary may be delivered face to face or remotely, through print, electronic media or the customer's personal communication channels. For group products provided as an employee benefit, it can go to the employer.\n\nTwo exemptions: government or authority programmes, and products the customer uses repeatedly (Article 31).\n\nWhere a bank sells another provider's product under a **referral model**, each product owner is responsible for delivering and explaining its own summary (Article 33(6))."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "General versus personal summary",
+          "caption": "Both versions carry the same eight headings in Article 30(1); products that collect, lend or manage funds also need a simulation or historical performance.",
+          "headers": [
+            "General version",
+            "Personal version"
+          ],
+          "items": [
+            {
+              "label": "When",
+              "left": "Before the prospect decides to use the product",
+              "right": "Before the agreement is signed"
+            },
+            {
+              "label": "Content",
+              "left": "Standard features, benefits, risks, costs, requirements",
+              "right": "The same headings, tailored to this customer's figures"
+            },
+            {
+              "label": "Extra duty",
+              "left": "Available to anyone considering the product",
+              "right": "Customer's understanding confirmed and evidenced"
+            },
+            {
+              "label": "Where the gap shows",
+              "left": "Customer could not compare before choosing",
+              "right": "Customer signed terms nobody checked she understood"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The poster in Denpasar",
+          "setting": "Bank Arunika branch, Denpasar. Komang shows a new promotional poster.",
+          "lines": [
+            {
+              "who": "komang",
+              "mood": "happy",
+              "text": "Head office sent this loan poster. Big OJK logo in the corner, it makes customers feel safe."
+            },
+            {
+              "who": "ratna",
+              "mood": "worried",
+              "text": "That logo has to go. Article 35 says every offer, summary, promotion and advert must carry our name or logo and a statement that we are licensed and supervised by OJK, but the OJK logo itself is banned in that statement."
+            },
+            {
+              "who": "komang",
+              "mood": "thinking",
+              "text": "And the tiny line at the bottom that says 'terms apply'? Our customers in Ubud read English better than Indonesian."
+            },
+            {
+              "who": "ratna",
+              "mood": "neutral",
+              "text": "The main text must be in simple Bahasa Indonesia, legible, with symbols and terms explained. You may add English or Balinese, but never instead of Bahasa Indonesia."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The suitability shortcut",
+          "situation": "Ibu Siti told the agent she wanted savings for her granddaughter's school fees in two years and that she lives on a teacher's pension. The vendor's script had no suitability questions; it moved straight to a ten-year insurance-linked plan with charges taken from the cash value. Bagus asks you how to fix the process for next month's campaign.",
+          "choices": [
+            {
+              "text": "Add a disclaimer saying the customer is responsible for choosing the product.",
+              "outcome": "Poor. Article 37 puts the duty on the bank to consider whether the product fits the prospect's needs and ability, and a disclaimer that shifts responsibility to the consumer is the kind of clause Article 46 bans in standard agreements.",
+              "score": 0
+            },
+            {
+              "text": "Build a documented suitability step based on the bank's customer classification: background, job, finances and purpose. Stop the sale when the product does not fit.",
+              "outcome": "Best. Article 37 requires the bank to match products to the prospect's needs and ability using its own customer classification, considering background, occupation, finances and purpose, and to document the assessment.",
+              "score": 2
+            },
+            {
+              "text": "Keep the script but limit the campaign to customers under 60.",
+              "outcome": "Partly helpful, but an age filter is not a suitability assessment. Equal access must follow the bank's customer classification, and every sale still needs a documented needs-and-ability check.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Marketing rules by article",
+          "prompt": "Match each POJK 22/2023 article to its marketing rule.",
+          "pairs": [
+            {
+              "left": "Article 35",
+              "right": "Name or logo and 'licensed and supervised by OJK', without the OJK logo"
+            },
+            {
+              "left": "Article 36",
+              "right": "No exploiting people with no real choice; no selling unlicensed products"
+            },
+            {
+              "left": "Article 37",
+              "right": "Assess and document fit with the prospect's needs and ability"
+            },
+            {
+              "left": "Article 38",
+              "right": "Referral-model products: offer options from at least two providers, never force one"
+            },
+            {
+              "left": "Article 39",
+              "right": "Personal-channel offers need consent, set hours, disclosure of data source"
+            },
+            {
+              "left": "Article 40",
+              "right": "Disclose any conflict of interest when making an offer"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Customer data: the hard limits",
+          "cards": [
+            {
+              "front": "Confidentiality duty",
+              "back": "Keep consumers' data and information confidential and secure, applying the processing principles of the personal data protection law (Article 19)."
+            },
+            {
+              "front": "Giving data to others",
+              "back": "Prohibited unless the bank has a lawful processing basis under data protection law; exchanges need written consent or a legal duty (Articles 20, 22, 23)."
+            },
+            {
+              "front": "Former and rejected customers",
+              "back": "Do not use data of customers who ended their agreement, or of applicants who were rejected or withdrew, without a lawful basis (Article 22)."
+            },
+            {
+              "front": "Consent as a condition",
+              "back": "A bank may not require a prospect to agree to data sharing as a condition of getting a product (Article 22(2))."
+            },
+            {
+              "front": "Data bought from others",
+              "back": "Hold a written statement that the source obtained the person's consent, and tell the consumer where the data came from (Article 23(3))."
+            },
+            {
+              "front": "Customer's copy",
+              "back": "Give consumers access to a copy of their data and information as the law allows (Article 19(5))."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer was rejected for a credit card in March. In June the cards team wants to use her application data for a personal-loan campaign. There is no other lawful processing basis. What does POJK 22/2023 say?",
+          "options": [
+            "Allowed, because she once asked for a product",
+            "Allowed for six months after rejection",
+            "Not allowed: data of rejected applicants may not be used without a lawful basis",
+            "Allowed if the campaign is by email instead of phone"
+          ],
+          "answer": 2,
+          "explanation": "Article 22 bars using data of prospects whose application was rejected or withdrawn, and of customers who have ended their agreement, unless the bank has a processing basis under personal data protection law (Article 23(1)). Channel and elapsed time make no difference."
+        },
+        {
+          "type": "example",
+          "title": "Real case: OJK orders on non-compliant adverts (2026)",
+          "body": "OJK's November 2026 press release on its October Board meeting (SP 219/OJK/DKPU/XI/2026) reported that from 1 January to 28 October 2026 market conduct supervision led to **77 written warnings and 44 fines worth about Rp8.8 billion** for breaches of consumer protection rules. The breaches named include **information in advertisements**, collection officers and transparency.\n\nOJK did not stop at fines. It also ordered providers to take **specific actions**: to **adjust or stop publishing adverts** that broke the rules, and to fix their policies and procedures based on supervisory findings.\n\n**What this means at Bank Arunika:** every advert, brochure, social media post and poster is in scope. Check the bank's name or logo, the 'licensed and supervised by OJK' statement without the OJK logo, plain Bahasa Indonesia, and costs and risks shown as clearly as the benefits."
+        },
+        {
+          "type": "tip",
+          "title": "Suitability notes that stand up",
+          "body": "When OJK or a court looks at a sale, the question is whether the bank **considered** fit and **can prove it**.\n\n- Record the customer's **stated need and time horizon** in their words.\n- Note **income or pension, commitments and experience** with similar products.\n- Explain why the product **fits** or why you offered an alternative.\n- For long-term or complex products, note that the **cooling-off period** was explained.\n- Disclose **commissions or conflicts** the customer should know about.\n\nIf the notes would not convince a stranger, the assessment did not happen."
+        },
+        {
+          "type": "keypoints",
+          "title": "Glass Counter: what to remember",
+          "items": [
+            "Design products for a defined target, test new products for consumer harm and keep the evidence.",
+            "Give the general summary before the decision and the personal summary before signing, then confirm and record understanding.",
+            "Offers carry the bank's name and 'licensed and supervised by OJK', never the OJK logo, in plain Bahasa Indonesia.",
+            "Personal-channel offers need prior consent, Monday to Saturday 08:00-18:00 local time, recorded, and stop when consent is withdrawn.",
+            "Assess and document suitability; never exploit customers with no real choice; disclose conflicts.",
+            "Customer data is confidential: no sharing, no use of rejected or former customers' data, without a lawful basis."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one marketing channel your branch or team uses: posters, WhatsApp, calls or social media. Which of the Articles 35 to 40 rules would an OJK examiner test first, and what evidence could you show today?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-cp-s2-q1",
+          "question": "What must Article 25 product design consider?",
+          "options": [
+            "The bank's sales targets for the year, the expected market share and the distribution channels already available",
+            "Only the product's expected profitability",
+            "The target consumers' needs and ability, and how features, risks and costs fit them",
+            "The preferences of the bank's largest customers"
+          ],
+          "answer": 2,
+          "explanation": "Article 25 requires design for target consumers, weighing their needs and ability and the fit of features, risks and costs, and requires the design work to be documented.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s2-q2",
+          "question": "When must the personal version of the product summary reach the prospect?",
+          "options": [
+            "After the first payment is made",
+            "Within 30 days of signing",
+            "Before the agreement is signed",
+            "Only if the customer asks for it"
+          ],
+          "answer": 2,
+          "explanation": "Article 33(2) requires the personal version before signing; the general version must come before the customer decides to use the product. Understanding of the personal version must then be confirmed and evidenced.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s2-q3",
+          "question": "A brochure says 'Bank Arunika is licensed and supervised by OJK' next to the OJK logo. What is wrong?",
+          "options": [
+            "Nothing, it meets Article 35",
+            "The statement should say 'guaranteed by OJK'",
+            "The OJK logo may not be used in that statement",
+            "Brochures need no such statement"
+          ],
+          "answer": 2,
+          "explanation": "Article 35 requires the provider's name or logo and a statement that it is licensed and supervised by OJK in offers, summaries, promotions and adverts, but forbids putting the OJK logo in that statement.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s2-q4",
+          "question": "A vendor agent calls a customer at 18:45 on a Thursday. She had consented to offers but never asked for evening calls. Which rule is broken?",
+          "options": [
+            "Article 39's personal-channel hours of 08:00 to 18:00 local time",
+            "Article 62's collection hours of 08:00 to 20:00",
+            "No rule, because she consented to offers",
+            "Article 51's cooling-off period"
+          ],
+          "answer": 0,
+          "explanation": "Consent to offers does not lift the time window. Unless the consumer agrees to or asks for other times, personal-channel offers may only be made Monday to Saturday outside national holidays, 08:00 to 18:00 local time.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s2-q5",
+          "question": "Bank Arunika sells insurance from partner insurers under a referral model. What does Article 38 require?",
+          "options": [
+            "Offer products from at least two providers and never force the customer to choose one",
+            "Offer the one partner insurer that pays the highest commission, as long as its product is explained clearly to the customer",
+            "Offer one partner's product, if the customer signs a waiver",
+            "Leave all explanation to the insurer's own staff"
+          ],
+          "answer": 0,
+          "explanation": "Unless sector rules say otherwise, a provider selling referral-model products must offer choices from at least two providers, may not force the customer to buy from one, and each product owner is responsible for its product.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s2-q6",
+          "question": "The bank buys a list of phone numbers from a data company for a campaign. What must it have under Article 23?",
+          "options": [
+            "A written statement that the source obtained the people's consent, and it must tell consumers the data source",
+            "Nothing beyond an invoice, provided the data company is a registered Indonesian business and the list is less than a year old",
+            "Only an invoice showing the data was paid for",
+            "OJK's prior approval of the list"
+          ],
+          "answer": 0,
+          "explanation": "When a provider obtains people's data from another party, it must hold a written statement that the other party obtained consent to share it, and must tell the consumer where the data came from; Article 39 repeats the source disclosure for calls.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s2-q7",
+          "question": "A customer applies for a savings account. The form makes agreement to marketing calls and data sharing with partners compulsory. What is the problem?",
+          "options": [
+            "Only the marketing consent is a problem",
+            "Only the data-sharing consent is a problem",
+            "Both consents may not be made a condition of using a product",
+            "There is no problem if the form is in Bahasa Indonesia"
+          ],
+          "answer": 2,
+          "explanation": "Article 39(2) bars requiring consent to personal-channel offers as a condition of using a product, and Article 22(2) bars requiring agreement to data sharing as a condition. Both clauses must be optional.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-cp-s2-q8",
+          "question": "Which item is NOT on Article 30's list of contents for the product and service information summary?",
+          "options": [
+            "Risks",
+            "The salesperson's personal sales target",
+            "Costs",
+            "Requirements and procedures"
+          ],
+          "answer": 1,
+          "explanation": "Article 30(1) lists name and type, issuer, main features, benefits, risks, requirements and procedures, costs and additional information, plus a simulation or performance data for products that collect, lend or manage funds. Personal targets are not product information.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s2-q9",
+          "question": "A loan applicant is rejected. She asks why. What must the bank do under Article 34?",
+          "options": [
+            "Tell her of the rejection and give the reason, unless another law says otherwise",
+            "Say nothing, because credit decisions and the scoring behind them are confidential internal information of the bank",
+            "Give reasons only if she complains to OJK",
+            "Give reasons only for rejections above a set amount"
+          ],
+          "answer": 0,
+          "explanation": "Article 34 requires the provider to inform applicants whether their application is accepted, delayed or rejected and, for a delay or rejection, to give the reason unless other laws provide otherwise.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s2-q10",
+          "question": "A customer who agreed to phone offers by voice call later buys the product. What must the bank have done with the call?",
+          "options": [
+            "Deleted it once the sale closed, keeping only the agent's written summary of what the customer agreed to",
+            "Kept only the agent's written notes",
+            "Recorded it only if the customer asked",
+            "Recorded it, kept the recording and given the customer access to it"
+          ],
+          "answer": 3,
+          "explanation": "Article 39 requires voice or video recording of offers made through personal channels, documentation of the recording when the consumer accepts, and access to the recording for a consumer who uses the product.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Agreements, Servicing and Fair Collection",
+      "stage": "The Recovery Road",
+      "summary": "Write balanced agreements, change terms the right way, honour cooling-off, serve older and disabled customers well, and collect debts and repossess collateral within POJK 22/2023.",
+      "minutes": 55,
+      "objectives": [
+        "Spot banned exoneration clauses and meet the duties to explain and confirm before signing",
+        "Apply notice, consent and cooling-off rules to changes and complex products",
+        "Manage in-house and third-party collection within Articles 60 to 62",
+        "Follow the steps for repossessing and selling collateral"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Calls to the wrong person",
+          "setting": "Collections centre, Bank Arunika, Medan. Morning huddle.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "Ibu Siti's credit card is 40 days overdue. Our agency rang her four times yesterday, and twice they called her son's office in Semarang."
+            },
+            {
+              "who": "ratna",
+              "mood": "angry",
+              "text": "Her son is not the borrower. And four calls in a day is already 'continuous' contact."
+            },
+            {
+              "who": "maria",
+              "mood": "thinking",
+              "text": "The agency says it is licensed. But I have never seen certificates for its field staff."
+            },
+            {
+              "who": "siti",
+              "mood": "worried",
+              "text": "(voice message) I want to pay. Nobody ever sent me a letter telling me how much I owe or what the late charges are."
+            },
+            {
+              "who": "ratna",
+              "mood": "proud",
+              "text": "Then stage three is the Recovery Road: fair agreements, fair changes, fair service and fair collection. We start with what she signed."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What a fair agreement looks like",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "Balance",
+              "narration": "Article 44 requires agreements that are balanced, fair and reasonable, in writing, in Bahasa Indonesia, and never built on exploiting the consumer's situation."
+            },
+            {
+              "icon": "💰",
+              "heading": "Say what it costs",
+              "narration": "The agreement must state the costs the consumer pays and, where an agent or intermediary is paid commission out of the consumer's payments, that commission."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Choose the forum",
+              "narration": "It must record the agreed choice of dispute resolution, through the courts or outside them."
+            },
+            {
+              "icon": "🗣️",
+              "heading": "Explain and confirm",
+              "narration": "Article 45 requires the bank to explain costs, benefits, risks, rights and duties, give enough time to understand the clauses, and confirm understanding before signing, with evidence."
+            },
+            {
+              "icon": "🚫",
+              "heading": "No escape clauses",
+              "narration": "Article 46 bans exoneration clauses in standard agreements, and Article 47 gives customers access to a copy they can obtain or print."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers that shape servicing and collection",
+          "caption": "All figures from POJK 22/2023 and its elucidation (Articles 49 to 51, 54, 62 and 117).",
+          "items": [
+            {
+              "label": "Notice of changes",
+              "value": "30 working days",
+              "detail": "Minimum notice before a change to terms takes effect; for credit changes that add burdens, consent is sought too."
+            },
+            {
+              "label": "Cooling-off period",
+              "value": "2 working days",
+              "detail": "Minimum for long-term or complex products, counted from the consumer's agreement."
+            },
+            {
+              "label": "Collection hours",
+              "value": "08:00-20:00",
+              "detail": "Local time, Monday to Saturday, outside national holidays, unless agreed with the consumer."
+            },
+            {
+              "label": "Calls a day",
+              "value": "More than 3",
+              "detail": "The elucidation treats more than three contacts in one day as 'continuous' collection."
+            },
+            {
+              "label": "Older consumer",
+              "value": "60 years",
+              "detail": "Age from which the elucidation treats a person as an older consumer for special services."
+            },
+            {
+              "label": "Contract deadline",
+              "value": "31 Dec 2024",
+              "detail": "Standard agreements made before POJK 22/2023 had to be adjusted by this date."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Clause check",
+          "prompt": "Sort each clause in a standard credit card agreement.",
+          "buckets": [
+            "Allowed",
+            "Banned exoneration clause"
+          ],
+          "items": [
+            {
+              "text": "The cardholder must pay the annual fee stated in the fee schedule",
+              "bucket": 0
+            },
+            {
+              "text": "Disputes may be settled through the courts or the LAPS financial services body",
+              "bucket": 0
+            },
+            {
+              "text": "The bank may change any rule at any time and the cardholder is bound once signed",
+              "bucket": 1
+            },
+            {
+              "text": "The bank alone decides what any clause of this agreement means",
+              "bucket": 1
+            },
+            {
+              "text": "The bank is not liable for mistakes by its staff or its collection agents",
+              "bucket": 1
+            },
+            {
+              "text": "The cardholder waives the right to sue the bank over this agreement",
+              "bucket": 1
+            },
+            {
+              "text": "The cardholder must give accurate information and use the card in good faith",
+              "bucket": 0
+            },
+            {
+              "text": "The cardholder must prove any loss of service was not the bank's fault",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Bank Arunika sells a ten-year insurance-linked savings product through its branches. What does Article 51 require after the customer agrees?",
+          "options": [
+            "A cooling-off period of at least 2 working days to reconsider, without penalty if she cancels",
+            "A cooling-off period of at least 14 calendar days",
+            "No cooling-off, because bank customers can always close accounts",
+            "A cooling-off period only if the customer is over 60"
+          ],
+          "answer": 0,
+          "explanation": "Products that are long-term (over a year, per the elucidation) or complex need a cooling-off period of at least 2 working days from agreement, unless product-specific rules set their own. Cancelling in that period may not attract penalties."
+        },
+        {
+          "type": "concept",
+          "title": "Changing the terms",
+          "body": "Banks change products. POJK 22/2023 controls how.\n\n**Any change affecting the agreement (Article 49):** inform the consumer **at least 30 working days** before it takes effect, unless a product rule sets another period. A consumer who disagrees may **end** the product. If the consumer stays silent after the notice period, the bank may treat it as agreement.\n\n**Credit changes that add obligations or reduce rights (Article 50):** the bank must **notify**, **confirm the consumer's agreement or refusal**, and keep the confirmation as evidence, also **at least 30 working days** ahead. A consumer who refuses may end the product but must first settle what the agreement requires.\n\n**Exceptions to the notice period:** changes set by the government or an authority, changes in a pricing reference already written into the agreement and set by an authority, and changes negotiated and put into an addendum.\n\nThe same applies to **transfer of receivables**: it must be in the credit agreement and notified to, or approved by, the consumer, without causing loss (Article 52)."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Your own collectors versus a collection agency",
+          "caption": "Article 61 of POJK 22/2023. Conduct rules in Article 62 apply to both.",
+          "headers": [
+            "In-house collection",
+            "Third-party collection"
+          ],
+          "items": [
+            {
+              "label": "Contract",
+              "left": "Internal policy and job descriptions",
+              "right": "Written agreement with sufficient stamp duty (bermeterai cukup)"
+            },
+            {
+              "label": "Who qualifies",
+              "left": "Bank staff with adequate capacity",
+              "right": "Licensed legal entity whose staff hold collection certification"
+            },
+            {
+              "label": "Certification body",
+              "left": "Bank's own training",
+              "right": "Professional certification body or association registered with OJK"
+            },
+            {
+              "label": "Responsibility",
+              "left": "The bank",
+              "right": "Still the bank, for every impact of the arrangement"
+            },
+            {
+              "label": "Oversight",
+              "left": "Line management and QA",
+              "right": "Periodic evaluation of the partnership by the bank"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The agency file",
+          "setting": "Maria's office, Medan. Reviewing the agency contract.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "thinking",
+              "text": "The agency is a limited company with a business licence. But only three of its twelve field staff have collection certificates."
+            },
+            {
+              "who": "ratna",
+              "mood": "worried",
+              "text": "Article 61 says a third-party collector must be a legal entity, licensed, and have staff certified in collection by a body registered with OJK. Nine uncertified collectors are working our accounts."
+            },
+            {
+              "who": "maria",
+              "mood": "neutral",
+              "text": "The agency also keeps a 'contact list' script: if the debtor doesn't answer, call relatives and the office."
+            },
+            {
+              "who": "ratna",
+              "mood": "angry",
+              "text": "Collection may only be aimed at the consumer, at the billing address or domicile, without threats, pressure or humiliation. Spreading her debt to her contacts is humiliation."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Ninety days late",
+          "situation": "A borrower in Medan is 90 days overdue on a personal loan. He blocked the agency's number. The agency proposes: visit him on Sunday after church when he will surely be home, send a message to the WhatsApp group of his apartment block, and phone his employer's HR manager. Maria asks what to approve.",
+          "choices": [
+            {
+              "text": "Approve all three; he is clearly avoiding the debt.",
+              "outcome": "Poor. Sunday visits break the Monday-to-Saturday rule, posting to a group humiliates him and spreads his data, and calling the employer targets someone other than the consumer. The bank answers for all of it.",
+              "score": 0
+            },
+            {
+              "text": "Approve only the employer call, because HR can encourage him to pay.",
+              "outcome": "Still a breach. Article 62 bars collection aimed at anyone other than the consumer, and disclosing his debt to his employer harms him and his data rights.",
+              "score": 1
+            },
+            {
+              "text": "Reject all three. Send a warning letter with the required details and allow a weekday visit to his billing address, 08:00 to 20:00 local time, by certified staff.",
+              "outcome": "Best. Article 60 requires warning letters showing the due date, days late, outstanding principal, interest or margin and penalties. Article 62 limits collection to the consumer, at the billing address or domicile, Monday to Saturday outside holidays, 08:00 to 20:00, unless he agrees otherwise.",
+              "score": 2
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Taking back collateral, step by step",
+          "prompt": "Put the steps for repossessing and selling collateral in the order POJK 22/2023 requires.",
+          "steps": [
+            "Have an internal guideline on repossession that follows collateral law",
+            "Establish default: voluntary written handover, a court or LAPS decision, or another legal mechanism",
+            "Make sure the consumer received a warning letter and the bank holds the fiduciary, mortgage or hypothec certificate",
+            "Repossess under collateral law and record it in an official repossession report",
+            "Explain the outstanding principal, interest, penalties, repossession costs and the sale mechanism",
+            "Sell by public auction, or by private sale agreed with the consumer if that gets the best price",
+            "Explain the sale process and result, and return any surplus to the consumer"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Collection conduct: the rules",
+          "cards": [
+            {
+              "front": "Warning letter content",
+              "back": "Due date, number of days late, outstanding principal, the economic benefit of the financing (interest), and penalties or compensation owed (Article 60)."
+            },
+            {
+              "front": "Who may be contacted",
+              "back": "Only the consumer. Collection may not be directed at relatives, colleagues or other parties (Article 62)."
+            },
+            {
+              "front": "Where and when",
+              "back": "At the billing address or domicile, Monday to Saturday outside national holidays, 08:00-20:00 local time, unless the consumer agrees otherwise."
+            },
+            {
+              "front": "Humiliation examples",
+              "back": "Repossessing collateral in a public place, or spreading news of a late payment to the consumer's phone contacts (elucidation, Article 62)."
+            },
+            {
+              "front": "No pressure",
+              "back": "No threats, violence, physical or verbal pressure, and no continuous, disturbing contact."
+            },
+            {
+              "front": "Agency outsourcing",
+              "back": "Allowed, but the bank stays responsible for all consequences and must evaluate the agency regularly (Article 61)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Bank Arunika collector visits a debtor's home at 19:30 on a Saturday. The debtor had not agreed to anything special. Is the timing allowed?",
+          "options": [
+            "No, collection must end at 18:00",
+            "Yes, it is within Monday to Saturday, 08:00-20:00 local time, if it is not a national holiday",
+            "No, collection is only allowed on working days",
+            "Yes, collection may happen at any time once a warning letter was sent"
+          ],
+          "answer": 1,
+          "explanation": "Article 62 allows collection Monday to Saturday, outside national holidays, from 08:00 to 20:00 local time. The 18:00 limit applies to marketing offers through personal channels, not to collection."
+        },
+        {
+          "type": "example",
+          "title": "Real case: OJK sanctions a lender over third-party collection (2026)",
+          "body": "In April 2026 OJK summoned the online lender PT Indosaku Digital Teknologi and its industry association after a reported incident involving a debt collector in Semarang (press release SP 84/DKPU/OJK/IV/2026). OJK stressed that every provider is responsible for the third parties it appoints to collect, and cited POJK 22/2023.\n\nAfter a special examination, OJK announced on 8 May 2026 (SP 94/DKPU/OJK/V/2026) that it had found non-compliance in managing and supervising collection, especially by third parties. Sanctions:\n\n- an administrative **fine of Rp875 million**;\n- a **written warning to the president director**;\n- an **order to carry out a remediation plan**: better collection policies, stronger contracts with collection agencies covering conduct, oversight and sanctions, quality control, and **training, monitoring and evaluation of collectors**, including complaint handling.\n\nIndosaku is a fintech lender, not a bank, but the same POJK 22/2023 collection rules bind Bank Arunika."
+        },
+        {
+          "type": "tip",
+          "title": "Serving older customers and customers with disabilities",
+          "body": "Article 54 requires an information service, **equal access** for customers in the same classification, and support for **special services** for customers with disabilities and older customers (60 and over, per the elucidation).\n\nThe elucidation gives examples you can apply at a branch:\n\n- **Braille** forms and accessible app features\n- **Ramps** and **priority queues**\n- **Trained staff** for customers with disabilities and older customers\n- **Accessible ATMs** and information media\n\nWith someone like Ibu Siti, slow down, check understanding in your own words, and invite her to bring a trusted family member if she wishes."
+        },
+        {
+          "type": "keypoints",
+          "title": "Recovery Road: what to remember",
+          "items": [
+            "Agreements must be balanced, written, in Bahasa Indonesia, show costs and agent commissions, and record the chosen dispute forum.",
+            "Explain, allow time, and confirm understanding before signing; exoneration clauses in standard agreements are banned.",
+            "Give 30 working days' notice of changes; credit changes that add burdens need the consumer's confirmation too.",
+            "Long-term or complex products carry at least 2 working days' cooling-off with no penalty for cancelling.",
+            "Collect only from the consumer, at their address, Monday-Saturday 08:00-20:00, without threats or humiliation; agencies need certified staff and the bank stays liable."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Look at one standard agreement or collection script you use. Which sentence would you rewrite first after this stage, and why?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-cp-s3-q1",
+          "question": "Which clause is banned in a bank's standard agreement under Article 46?",
+          "options": [
+            "The customer must pay the fees in the fee schedule",
+            "Disputes may go to court or to an out-of-court body",
+            "The bank may interpret the agreement's meaning on its own",
+            "The customer must give accurate information"
+          ],
+          "answer": 2,
+          "explanation": "Article 46 bans exoneration clauses, including one giving the provider sole power to interpret the agreement. Fee duties, dispute-forum choices and duties of accurate information are normal terms.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s3-q2",
+          "question": "Bank Arunika plans to raise a credit card's annual fee. What notice does Article 49 require, absent a product-specific rule or an exception?",
+          "options": [
+            "At least 30 working days before the change takes effect",
+            "At least 7 calendar days before the change",
+            "Notice within 30 days after the change",
+            "No notice if the fee is in the published tariff"
+          ],
+          "answer": 0,
+          "explanation": "Article 49 requires informing consumers at least 30 working days before a change affecting the agreement takes effect. A consumer who disagrees may end the product.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s3-q3",
+          "question": "A bank changes a loan's terms so the borrower must provide extra collateral. What does Article 50 add beyond notice?",
+          "options": [
+            "The bank must obtain OJK's prior approval of the new term before it can apply it to any existing borrower",
+            "The bank must confirm the borrower's agreement or refusal and keep evidence of it",
+            "Nothing, notice alone is enough",
+            "The bank must waive interest for a month"
+          ],
+          "answer": 1,
+          "explanation": "For credit changes that add obligations or reduce benefits or rights, the bank must notify, confirm acceptance or refusal, and record the confirmation, at least 30 working days ahead. A borrower who refuses may exit after settling obligations.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s3-q4",
+          "question": "A customer cancels a long-term complex investment product on the first working day after signing. What may the bank NOT do?",
+          "options": [
+            "Deduct costs that genuinely arose from using the product",
+            "Account for investment gains or losses she approved",
+            "Process the cancellation",
+            "Charge a penalty for cancelling within the cooling-off period"
+          ],
+          "answer": 3,
+          "explanation": "Article 51 forbids penalties or sanctions for cancelling during the cooling-off period. Where no product rule sets the refund, the bank returns at least what was paid, less costs incurred, plus or minus approved investment results.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s3-q5",
+          "question": "Which conditions must a third-party collection agency meet under Article 61?",
+          "options": [
+            "Registered with Bank Indonesia, insured against misconduct claims, and owned by an Indonesian citizen with banking experience",
+            "Any firm with experience, if the bank trains it",
+            "A partnership with OJK approval of each collector",
+            "Legal entity, licensed by the competent agency, staff certified in collection by a body registered with OJK"
+          ],
+          "answer": 3,
+          "explanation": "Article 61 requires a written stamped agreement, a legal-entity collector licensed by the competent agency, and staff certified in collection by a professional certification body or association registered with OJK. The bank stays responsible and must evaluate the arrangement periodically.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s3-q6",
+          "question": "A collector calls a debtor five times in one afternoon. Which rule is engaged?",
+          "options": [
+            "None, because all five calls were made within the permitted collection hours of 08:00 to 20:00 local time on a weekday",
+            "The 30 working day notice rule",
+            "The ban on continuous, disturbing collection; the elucidation treats more than three contacts a day as continuous",
+            "None, because the calls were to the consumer"
+          ],
+          "answer": 2,
+          "explanation": "Article 62 bars continuous collection that disturbs the consumer, and its elucidation defines continuous as more than three times in one day. Being within permitted hours does not cure it.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s3-q7",
+          "question": "The bank wants to repossess a car under a fiduciary security. The borrower disputes the default and has not handed the car over. What must establish default?",
+          "options": [
+            "The collector's own written assessment on site, countersigned by the branch manager and attached to the loan file",
+            "A court or LAPS decision, or another legal mechanism, since there is no voluntary written handover",
+            "A letter from the branch manager",
+            "Three missed payments alone"
+          ],
+          "answer": 1,
+          "explanation": "Article 64 requires proof of default through a written agreement with voluntary handover, a court or LAPS financial services decision, or another legal mechanism, plus a prior warning letter and a fiduciary, mortgage or hypothec certificate.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-cp-s3-q8",
+          "question": "After an auction, collateral sells for more than the debt and costs. What must the bank do?",
+          "options": [
+            "Return the surplus to the consumer within the agreed time, or as its internal guideline sets",
+            "Keep the surplus as a recovery fee to cover the bank's internal collection costs, which the agreement allows it to charge",
+            "Hold it until the consumer complains",
+            "Transfer it to OJK"
+          ],
+          "answer": 0,
+          "explanation": "Article 66 requires the provider to explain the sale process and result and return any excess to the consumer within the period agreed or, failing agreement, set in its internal guideline.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s3-q9",
+          "question": "Which practice best meets Article 54 for an older customer who struggles with small print?",
+          "options": [
+            "Asking her to come back with a lawyer",
+            "Refusing service until she brings a family member",
+            "Offering trained staff, priority service and information in an accessible format",
+            "Sending her to the mobile app"
+          ],
+          "answer": 2,
+          "explanation": "Article 54 requires an information service, equal access and support for special services for customers with disabilities and older customers; the elucidation lists trained staff, priority queues, ramps and accessible media.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s3-q10",
+          "question": "A loan agreement allows the bank to sell the debt to another party. What does Article 52 require?",
+          "options": [
+            "Only OJK must be notified in advance; the consumer is told after the transfer, through the new creditor's first statement",
+            "The transfer must be in the credit agreement, notified to or approved by the consumer, and cause no loss",
+            "Nothing, debts can always be sold freely",
+            "The consumer must pay a transfer fee"
+          ],
+          "answer": 1,
+          "explanation": "Article 52 requires transfers of receivables to follow the legal procedure, to be included in the credit agreement, to be notified to or approved by the consumer, and not to cause the consumer loss.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Complaints, the Consumer Protection Unit and Dispute Resolution",
+      "stage": "The Hearing Room",
+      "summary": "Receive, acknowledge and resolve complaints on time, run the consumer protection unit with clear accountability, and guide unresolved cases to OJK, the LAPS body or the courts.",
+      "minutes": 55,
+      "objectives": [
+        "Handle oral and written complaints within the POJK 22/2023 deadlines",
+        "Explain the structure, staffing and tasks of the consumer protection function",
+        "Respond to complaints received through OJK's integrated system",
+        "Describe escalation routes, including OJK lawsuits under POJK 38/2025"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Turned away at the door",
+          "setting": "Bank Arunika branch, Yogyakarta. Ratna and Komang on a video call with the branch team.",
+          "lines": [
+            {
+              "who": "siti",
+              "mood": "angry",
+              "text": "(OJK complaint text) My son went to the branch. A staff member said complaints are only handled at head office in Jakarta. Nobody gave him a number or a receipt."
+            },
+            {
+              "who": "komang",
+              "mood": "worried",
+              "text": "I checked. The front desk thought only head office could log insurance-linked complaints."
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "Article 70 is plain: every office must accept complaints, oral or written, and record them. Article 67 says handling must be free."
+            },
+            {
+              "who": "bagus",
+              "mood": "neutral",
+              "text": "Can my sales team just phone her and sort it out? They know the product best."
+            },
+            {
+              "who": "ratna",
+              "mood": "worried",
+              "text": "No. A salesperson involved in the complaint must not handle it. Stage four is the Hearing Room: the complaint clock, the unit that runs it, and where a dispute goes next."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The life of a complaint",
+          "scenes": [
+            {
+              "icon": "📥",
+              "heading": "Receive",
+              "narration": "Every office accepts complaints, oral or written, free of charge, and records each one. If the service runs 24 hours, complaint intake must too."
+            },
+            {
+              "icon": "🧾",
+              "heading": "Acknowledge",
+              "narration": "An oral complaint gets a confirmation with a registration number and date. A written one gets a receipt with the number, date and a contact channel, issued by the consumer protection function."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Resolve on time",
+              "narration": "Oral complaints are settled within 5 working days. Written complaints are settled within 10 working days of complete documents, extendable once by 10 working days in set conditions, with written notice before the deadline."
+            },
+            {
+              "icon": "✉️",
+              "heading": "Respond",
+              "narration": "The answer is either an explanation, where the bank did nothing wrong, or a settlement offer, where it did. The consumer gets reasonable time to accept or reject."
+            },
+            {
+              "icon": "🚪",
+              "heading": "Escalate",
+              "narration": "If there is no agreement, the consumer can complain to OJK or take the dispute to the LAPS financial services alternative dispute resolution body or to court."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The complaint clock",
+          "caption": "Articles 71 to 75 of POJK 22/2023. Working days, not calendar days.",
+          "items": [
+            {
+              "label": "Complaint received",
+              "value": "Day 0",
+              "detail": "Record it; confirm an oral complaint or issue a written receipt."
+            },
+            {
+              "label": "Oral complaints",
+              "value": "+5 working days",
+              "detail": "Follow up and resolve, or ask for a written complaint with documents."
+            },
+            {
+              "label": "Missing documents",
+              "value": "+10 working days",
+              "detail": "Time the consumer gets to complete documents; extendable by 10 in set cases."
+            },
+            {
+              "label": "Written complaints",
+              "value": "+10 working days",
+              "detail": "Resolve from receipt of complete documents."
+            },
+            {
+              "label": "One extension",
+              "value": "+10 more",
+              "detail": "In set conditions only, with written notice before the first deadline ends."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Handling a written complaint",
+          "prompt": "Put the steps for a written complaint in the right order.",
+          "steps": [
+            "Receive and record the complaint at any office, free of charge",
+            "Issue a receipt with registration number, date and contact channel",
+            "Ask for any missing documents and allow 10 working days to supply them",
+            "Investigate and resolve within 10 working days of complete documents",
+            "If set conditions apply, notify a 10 working day extension in writing before the deadline",
+            "Send a written response: an explanation or a settlement offer with time to decide",
+            "If there is no agreement, tell the consumer about OJK, the LAPS body and the courts"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer phones Bank Arunika's call centre to complain about a double debit. No documents are needed. By when must the bank resolve it?",
+          "options": [
+            "Within 5 working days of receipt",
+            "Within 10 working days of receipt",
+            "Within 20 working days of receipt",
+            "Within 30 calendar days of receipt"
+          ],
+          "answer": 0,
+          "explanation": "Article 74 requires oral complaints to be followed up and resolved within 5 working days. Where documents are needed and that is not possible, the bank asks the consumer to complain in writing, which starts the 10 working day clock once documents are complete."
+        },
+        {
+          "type": "concept",
+          "title": "The consumer protection unit",
+          "body": "Article 88 requires every provider to have a **function or unit** to implement consumer protection.\n\n- It may be **combined** with another function, following sector rules, while **avoiding conflicts of interest**: the elucidation's example is a marketing employee who handles complaints and must not handle one he was involved in.\n- Its size reflects **assets, offices, product complexity, customer classifications and staff numbers**.\n- **Every office** must have the function for receiving, handling and resolving complaints, and the bank must **publicise** it.\n- Complaint staff need **knowledge** of the bank's products and of complaint handling, and the **authority** to handle complaints.\n\nArticle 89 lists its tasks, including informing all staff about consumer protection, coordinating compliance and monitoring, **reporting to the directors** with recommendations, coordinating reports to OJK, handling complaints, preparing complaint material for the annual report and website, and acting as **liaison with OJK**."
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who answers for consumer protection",
+          "caption": "Article 90 also requires a reporting mechanism for compliance with the regulation.",
+          "items": [
+            {
+              "label": "Board of Commissioners",
+              "detail": "Oversees how the directors carry out their compliance responsibility (Article 90(2))."
+            },
+            {
+              "label": "Board of Directors",
+              "detail": "Responsible for compliance with POJK 22/2023 (Article 90(1))."
+            },
+            {
+              "label": "Head office lead",
+              "detail": "A director, or an officer one level below, appointed to run the function and reporting directly to the directors."
+            },
+            {
+              "label": "Office officers",
+              "detail": "An officer or employee appointed at every office outside head office."
+            },
+            {
+              "label": "All staff",
+              "detail": "Trained at least once during employment; the unit at least yearly (Article 91)."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Complaint vocabulary",
+          "prompt": "Match each term in POJK 22/2023 with its meaning.",
+          "pairs": [
+            {
+              "left": "Complaint indicating a dispute",
+              "right": "Dissatisfaction from a real or potential loss because the bank did not honour the agreement"
+            },
+            {
+              "left": "Complaint indicating a violation",
+              "right": "Information that the bank may have broken financial sector rules"
+            },
+            {
+              "left": "Complaint response",
+              "right": "The bank's explanation of the problem, or its final settlement offer"
+            },
+            {
+              "left": "Dispute",
+              "right": "A disagreement that remains after the bank's own complaint process"
+            },
+            {
+              "left": "LAPS financial services body",
+              "right": "The out-of-court body that resolves disputes between consumers and providers"
+            },
+            {
+              "left": "Integrated consumer service system",
+              "right": "OJK's system for receiving complaints, which banks must monitor"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Who takes the call?",
+          "setting": "Consumer Protection Unit, Jakarta.",
+          "lines": [
+            {
+              "who": "bagus",
+              "mood": "neutral",
+              "text": "My salesperson has a good relationship with Ibu Siti. Let him call and offer a refund of the first premium."
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "He sold her the product; he is part of what she is complaining about. The unit handles it, so there is no conflict of interest."
+            },
+            {
+              "who": "komang",
+              "mood": "worried",
+              "text": "And OJK sent this complaint through its integrated system. Do we answer OJK or her?"
+            },
+            {
+              "who": "ratna",
+              "mood": "neutral",
+              "text": "Both, through the system. Article 96 says we must monitor complaints there, follow them up under Articles 70 to 78, and post our response there. She then has 10 working days to reply."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The deadline is close",
+          "situation": "A written complaint about an unauthorised loan instalment arrived at the Denpasar branch with complete documents eight working days ago. The account was opened in Medan and the Medan branch has not answered Komang's emails. The 10 working day deadline ends in two days.",
+          "choices": [
+            {
+              "text": "Wait for Medan; the deadline is internal guidance anyway.",
+              "outcome": "Poor. The 10 working day limit is in Article 75, and missing it is sanctionable.",
+              "score": 0
+            },
+            {
+              "text": "Notify the customer in writing now of an extension of up to 10 working days, citing the different office and the communication delay, and escalate to Medan's leadership.",
+              "outcome": "Best. Article 75 allows one extension of up to 10 working days in set conditions, including where the receiving office differs from the office where the problem arose and there are communication obstacles, if the consumer is told in writing before the first deadline ends.",
+              "score": 2
+            },
+            {
+              "text": "Phone the customer to say there will be a delay.",
+              "outcome": "Partly right, but the extension must be notified in writing before the first deadline ends, and the reason must fall within the permitted conditions.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "May the bank decline to handle it?",
+          "prompt": "Article 76 lists when a bank may refuse to handle a complaint. Sort each case.",
+          "buckets": [
+            "May decline",
+            "Must handle"
+          ],
+          "items": [
+            {
+              "text": "Consumer did not supply required documents within the set period",
+              "bucket": 0
+            },
+            {
+              "text": "The same complaint was already resolved under the regulation",
+              "bucket": 0
+            },
+            {
+              "text": "The matter is already in a civil court case",
+              "bucket": 0
+            },
+            {
+              "text": "Complaint is about another bank's product with no tie to Bank Arunika",
+              "bucket": 0
+            },
+            {
+              "text": "Consumer complained orally rather than in writing",
+              "bucket": 1
+            },
+            {
+              "text": "Complaint was lodged at a branch, not head office",
+              "bucket": 1
+            },
+            {
+              "text": "Complaint concerns a partner's product sold under a cooperation with the bank",
+              "bucket": 1
+            },
+            {
+              "text": "Consumer is angry and uses harsh language",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Where a dispute goes next",
+          "cards": [
+            {
+              "front": "OJK complaint service",
+              "back": "Consumers may complain to OJK through its integrated consumer and public service system; banks must monitor it and respond there (Article 96)."
+            },
+            {
+              "front": "Consumer's reply in OJK's system",
+              "back": "The consumer has 10 working days to respond to the bank's answer; with no response, OJK marks the complaint as finished."
+            },
+            {
+              "front": "LAPS financial services body",
+              "back": "An OJK-approved alternative dispute resolution body for disputes after the bank's own process."
+            },
+            {
+              "front": "Courts",
+              "back": "Consumers may go to court; in damages claims for unlawful acts, the bank bears the burden of proving it was not at fault (Article 82(4))."
+            },
+            {
+              "front": "OJK lawsuit (POJK 38/2025)",
+              "back": "OJK may sue on its own assessment; listed consumers can opt out in writing within 30 working days of the first announcement and pay no costs."
+            },
+            {
+              "front": "Contact OJK 157 and APPK",
+              "back": "OJK's phone line and its consumer protection portal, which OJK cites as complaint channels."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Ibu Siti's complaint arrives through OJK's integrated consumer service system. What must Bank Arunika do?",
+          "options": [
+            "Wait for OJK to forward a formal letter before acting",
+            "Handle it under Articles 70 to 78 and submit its response through the system",
+            "Respond only to OJK, never to the consumer",
+            "Pass it to the LAPS body, since OJK is involved"
+          ],
+          "answer": 1,
+          "explanation": "Article 96 requires providers to monitor complaints in OJK's system, follow them up under the bank's own complaint rules and deliver the response through the system. The consumer then has 10 working days to reply."
+        },
+        {
+          "type": "example",
+          "title": "Real case: OJK presses a bank to resolve customer fund losses (2026)",
+          "body": "On 18 April 2026 OJK announced (SP 77/DKPU/OJK/IV/2026) that it had summoned the directors and management of **PT Bank Negara Indonesia (Persero) Tbk** over a case of alleged misuse of customer funds at its **Aek Nabara sub-branch** in North Sumatra.\n\nOJK asked BNI to:\n\n- resolve the case **quickly, thoroughly and transparently**;\n- **verify** customers' claims fully, **fulfil their rights**, and report progress to OJK regularly;\n- carry out a full **internal investigation** of compliance, internal control and governance to find the root cause.\n\nBNI had verified claims and **returned Rp7 billion** to customers by then, and had secured assets linked to the case with law enforcement. OJK said it would monitor the remaining funds and act if breaches were found.\n\n**Link to the rules:** Article 10 makes a bank liable for losses caused by staff; Article 55 requires it to keep customers' funds safe."
+        },
+        {
+          "type": "tip",
+          "title": "Reporting the complaint picture",
+          "body": "Complaints also feed OJK reporting:\n\n- A **complaint service report every semester**, due by the **10th of the month after** the semester ends (10 January and 10 July). Late reports draw daily fines; a commercial bank that fails to report is fined per report.\n- The unit prepares **complaint material** for the annual report and website.\n- Recurring themes go to the **directors** with recommendations.\n\nLog the **channel, product, office, root cause and outcome** of every complaint. Good data turns complaints from a cost into an early warning."
+        },
+        {
+          "type": "keypoints",
+          "title": "Hearing Room: what to remember",
+          "items": [
+            "Every office accepts complaints, oral or written, free of charge, and records them.",
+            "Resolve oral complaints in 5 working days and written ones in 10 working days of complete documents, with one 10-day extension in set cases, notified in writing first.",
+            "A consumer protection function exists at every office, staffed by people with product knowledge and authority and free of conflicts.",
+            "Directors are responsible; commissioners oversee; a head office lead reports directly to the directors.",
+            "Unresolved cases go to OJK, the LAPS body or the courts; OJK may also sue under POJK 38/2025."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer walked into your office right now with a complaint about a product you did not sell, what would you say in the first two minutes, and what would you give them before they leave?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-cp-s4-q1",
+          "question": "A branch tells a customer that complaints are only accepted at head office. Which rule does this break?",
+          "options": [
+            "Complaints must be in writing",
+            "Every office must receive complaints submitted by consumers",
+            "Complaints must be filed with OJK first",
+            "None, if head office answers within 10 days"
+          ],
+          "answer": 1,
+          "explanation": "Article 70(3) requires every office of the provider to accept complaints, and Article 88(7) requires a complaint-handling function at every office.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s4-q2",
+          "question": "What must a receipt for a written complaint contain at minimum?",
+          "options": [
+            "Registration number, date received and a phone number or other contact channel",
+            "The customer's tax number and the product's interest rate",
+            "A signature from a director",
+            "The expected compensation amount"
+          ],
+          "answer": 0,
+          "explanation": "Article 73 requires a receipt with the registration number, date received and a phone number or other channel, signed or issued by staff of the consumer protection function.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s4-q3",
+          "question": "A written complaint's documents became complete on Monday 3 March. Under Article 75, before any extension, by when must it be resolved?",
+          "options": [
+            "Within 5 working days of 3 March",
+            "Within 20 working days of the first contact",
+            "Within 30 calendar days of 3 March",
+            "Within 10 working days of 3 March"
+          ],
+          "answer": 3,
+          "explanation": "The 10 working day clock for written complaints runs from receipt of complete documents. One extension of up to 10 working days is possible in set conditions, notified in writing before the first period ends.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q4",
+          "question": "Which situation allows the bank to extend the written complaint deadline under Article 75?",
+          "options": [
+            "The complaint handler is on annual leave",
+            "The complaint needs special examination of the bank's documents",
+            "The bank wants to wait for a quieter month",
+            "The customer is a large depositor"
+          ],
+          "answer": 1,
+          "explanation": "Article 75(3) allows an extension where the receiving office differs from where the problem arose and there are communication obstacles, where special research into documents is needed, or other matters outside the provider's control.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q5",
+          "question": "A salesperson who handled a sale asks to manage the customer's complaint about that sale. What is the right response?",
+          "options": [
+            "Allow it, since he knows the product best and the customer trusts him, provided his manager listens in to the call",
+            "Allow it if his manager supervises the call",
+            "Allow it if the customer agrees by phone",
+            "Refuse; the complaint goes to the consumer protection function to avoid a conflict of interest"
+          ],
+          "answer": 3,
+          "explanation": "Combined functions must avoid conflicts of interest; the elucidation gives the example of a marketing employee involved in a complaint who may not handle it. The fair-treatment principle makes the same point.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q6",
+          "question": "Who must the directors appoint to run the consumer protection function at head office?",
+          "options": [
+            "A director, or an officer one level below the directors, reporting directly to the directors",
+            "Any branch employee with at least five years' service and product knowledge, reporting to the regional sales head",
+            "The internal auditor",
+            "An external consultant approved by OJK"
+          ],
+          "answer": 0,
+          "explanation": "Article 90(3) requires the directors to appoint a director or an officer one level below them at head office, and officers or staff at every other office. The head office lead reports directly to the directors.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q7",
+          "question": "A customer rejects Bank Arunika's oral response to her complaint. What must the bank do?",
+          "options": [
+            "Confirm its position to her in writing",
+            "Close the file immediately",
+            "Refer her to the police",
+            "Offer double compensation automatically"
+          ],
+          "answer": 0,
+          "explanation": "Article 78(4) requires written confirmation where a consumer does not accept an oral complaint response. The bank should also tell her about OJK, the LAPS body and the courts.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q8",
+          "question": "How often must a bank report its complaint service to OJK, and by when?",
+          "options": [
+            "Every quarter, by the end of the following month",
+            "Once a year, by 30 September",
+            "Only when OJK asks",
+            "Every semester, by the 10th of the month after the semester ends"
+          ],
+          "answer": 3,
+          "explanation": "Article 79 requires a semester complaint service report by the 10th of the month after each semester. Quarterly reporting applied only until the first semester report under the new rule in July 2024.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s4-q9",
+          "question": "In a court claim for damages based on an unlawful act, who must prove whether the bank was at fault?",
+          "options": [
+            "The consumer",
+            "The bank",
+            "OJK",
+            "The LAPS body"
+          ],
+          "answer": 1,
+          "explanation": "Article 82(4) places the burden of proving the presence or absence of fault on the provider in damages claims based on unlawful acts.",
+          "difficulty": 4
+        },
+        {
+          "id": "id-cp-s4-q10",
+          "question": "OJK announces a lawsuit under POJK 38/2025 listing Bank Arunika's customers. A customer prefers to sue alone. What can she do?",
+          "options": [
+            "Nothing; once listed, customers are bound by OJK's lawsuit and any later judgment, and cannot bring their own claims",
+            "Ask the bank to remove her from the list",
+            "Send OJK a written opt-out within 30 working days of the first announcement, then sue separately",
+            "Opt out at any time before judgment"
+          ],
+          "answer": 2,
+          "explanation": "POJK 38/2025 lets consumers who do not want to be included submit a written opt-out within 30 working days of the first announcement. Those who opt out may sue on their own but do not share in what OJK recovers.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Bank Secrecy, Anti-Fraud Education, Training and OJK Readiness",
+      "stage": "The Vault and the Review",
+      "summary": "Protect depositor secrecy under the Banking Law as amended by the P2SK Law, educate customers against fraud under POJK 12/2024, meet the Article 91 training duty and keep the evidence OJK expects.",
+      "minutes": 50,
+      "objectives": [
+        "Apply bank secrecy and its exceptions after the P2SK Law",
+        "Explain the anti-fraud education duties of POJK 12/2024 that protect consumers",
+        "Plan consumer protection training under Article 91 and the P2SK Law",
+        "Prepare the reports and evidence OJK reviews"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A call from someone in uniform",
+          "setting": "Bank Arunika branch, Denpasar. 10:15 am.",
+          "lines": [
+            {
+              "who": "komang",
+              "mood": "worried",
+              "text": "A man phoned saying he is a police investigator. He wants Ibu Siti's son's balance and last month's transactions, today, by WhatsApp."
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "Did he send a written request with OJK's permission? Bank secrecy still applies after the P2SK Law, and criminal cases go through OJK."
+            },
+            {
+              "who": "komang",
+              "mood": "neutral",
+              "text": "No letter. Just a name and a badge number."
+            },
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "And this morning a customer in Medan lost Rp40 million to a fake 'bank officer' who asked for her one-time code."
+            },
+            {
+              "who": "ratna",
+              "mood": "proud",
+              "text": "Final stage: the Vault and the Review. Secrecy, anti-fraud education, training, and the evidence OJK expects. Then the final boss."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Bank secrecy after the P2SK Law",
+          "scenes": [
+            {
+              "icon": "🔐",
+              "heading": "The core duty",
+              "narration": "Article 14 of the P2SK Law rewrote the Banking Law's secrecy articles. Article 40 now says banks and affiliated parties must keep information about depositors and their deposits secret."
+            },
+            {
+              "icon": "👥",
+              "heading": "Borrowers who also deposit",
+              "narration": "If a customer is both a depositor and a borrower, the secrecy duty covers the information about them as a depositor."
+            },
+            {
+              "icon": "📋",
+              "heading": "Listed exceptions",
+              "narration": "Article 40A lists exceptions, such as civil cases involving the bank or customers, criminal cases, curators and liquidators, the customer's written request or consent, lawful heirs, tax, Bank Indonesia's and the deposit insurer's tasks, and reciprocal agreements between authorities."
+            },
+            {
+              "icon": "✅",
+              "heading": "OJK permission",
+              "narration": "Under Article 40B, OJK grants permission to open bank secrets for criminal cases and for mutual legal assistance, on a written request from the officials the law names."
+            },
+            {
+              "icon": "⚠️",
+              "heading": "Personal risk",
+              "narration": "Under amended Article 47, commissioners, directors, staff or affiliated parties who deliberately disclose protected information face prison of 2 to 4 years and a fine of Rp4 billion to Rp8 billion."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Opening bank secrets: who and how",
+          "caption": "Articles 40A, 40B and 42 of the Banking Law as amended by Article 14 of the P2SK Law. Anyone who receives the information must keep it confidential (Article 40C).",
+          "headers": [
+            "Who may receive it",
+            "What the bank needs"
+          ],
+          "items": [
+            {
+              "label": "Criminal case",
+              "left": "Police, prosecutors, judges or other authorised investigators",
+              "right": "Written request from the official named in the law, with OJK's written permission"
+            },
+            {
+              "label": "Customer request",
+              "left": "The depositor themself or someone they authorise",
+              "right": "Written request, consent or power of attorney from the depositor"
+            },
+            {
+              "label": "Death of depositor",
+              "left": "Lawful heirs",
+              "right": "Request from the lawful heirs"
+            },
+            {
+              "label": "Tax",
+              "left": "Tax authorities",
+              "right": "Request for financial information under tax law"
+            },
+            {
+              "label": "Insolvency",
+              "left": "Court-appointed curator or liquidator",
+              "right": "Request based on the court's bankruptcy decision or appointment"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Disclose or refuse?",
+          "prompt": "Sort each request for a depositor's information.",
+          "buckets": [
+            "May disclose under an exception",
+            "Refuse"
+          ],
+          "items": [
+            {
+              "text": "Written request signed by the depositor for a balance letter to her embassy",
+              "bucket": 0
+            },
+            {
+              "text": "Police request with OJK's written permission for a criminal investigation",
+              "bucket": 0
+            },
+            {
+              "text": "Lawful heirs of a deceased depositor asking about his savings",
+              "bucket": 0
+            },
+            {
+              "text": "Phone call from someone claiming to be a police officer, no letter",
+              "bucket": 1
+            },
+            {
+              "text": "A depositor's husband asking for her balance without her consent",
+              "bucket": 1
+            },
+            {
+              "text": "A journalist asking whether a celebrity banks with you",
+              "bucket": 1
+            },
+            {
+              "text": "Curator appointed under a bankruptcy decision asking for the debtor's deposits",
+              "bucket": 0
+            },
+            {
+              "text": "A collection agency asking for the borrower's savings balance",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Bank Arunika teller deliberately tells a neighbour how much another customer has on deposit. What penalty does the amended Banking Law set for this?",
+          "options": [
+            "Only an internal warning letter",
+            "Prison of 2 to 4 years and a fine of Rp4 billion to Rp8 billion",
+            "A fine of up to Rp15 billion on the bank only",
+            "Prison of up to 1 year, with no fine"
+          ],
+          "answer": 1,
+          "explanation": "Amended Article 47(2) sets 2 to 4 years' imprisonment and a fine of Rp4 billion to Rp8 billion for commissioners, directors, staff or other affiliated parties who deliberately disclose information protected by Article 40. The Rp15 billion cap is the administrative fine in POJK 22/2023."
+        },
+        {
+          "type": "concept",
+          "title": "Anti-fraud education that protects consumers",
+          "body": "**POJK 12/2024** on anti-fraud strategy for financial services institutions took effect on **31 October 2024** and replaced the 2019 rule for commercial banks.\n\n- The strategy must cover the parties involved in the business, at least **consumers**, **insiders** and **other parties**.\n- It rests on **four pillars**: prevention; detection; investigation, reporting and sanctions; and monitoring, evaluation and follow-up (Article 5).\n- **Article 7** requires **education and competence development for insiders** and **education or awareness for external parties** on the anti-fraud policy, **at least once a year**.\n- The attachment's prevention pillar expects an **anti-fraud awareness programme for consumers**, for example brochures, banners, posters, contract clauses or written explanations.\n- Fraud types include **extortion**, such as asking a debtor for money to ease a loan, and **leaking confidential information** about customers.\n\nFor consumers, this is the practical side of the data and asset protection principle in POJK 22/2023."
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The four anti-fraud pillars",
+          "caption": "Article 5 of POJK 12/2024. The cycle repeats as lessons from cases feed back into prevention.",
+          "items": [
+            {
+              "label": "Prevention",
+              "detail": "Anti-fraud awareness for staff and consumers, vulnerability mapping, know-your-employee."
+            },
+            {
+              "label": "Detection",
+              "detail": "Whistleblowing, surprise checks and surveillance systems."
+            },
+            {
+              "label": "Investigation, reporting, sanctions",
+              "detail": "Investigate, report fraud to OJK and apply sanctions."
+            },
+            {
+              "label": "Monitoring and follow-up",
+              "detail": "Evaluate cases and controls, then fix weaknesses."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The one-time code",
+          "setting": "Bank Arunika branch, Medan. Afternoon.",
+          "lines": [
+            {
+              "who": "maria",
+              "mood": "worried",
+              "text": "The customer says the caller knew her name and card number, so she trusted him and read out the code from her SMS."
+            },
+            {
+              "who": "ratna",
+              "mood": "thinking",
+              "text": "Report it through the bank into the Indonesia Anti-Scam Centre right away. Speed is what lets funds be blocked."
+            },
+            {
+              "who": "maria",
+              "mood": "neutral",
+              "text": "She asks why we never warned her. Do we?"
+            },
+            {
+              "who": "ratna",
+              "mood": "proud",
+              "text": "We should, at least yearly. POJK 12/2024 expects education for external parties, and the attachment names consumer awareness. Let's make our warnings impossible to miss."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Scam victim at the counter",
+          "situation": "A customer arrives distressed: twenty minutes ago she transferred Rp25 million to an account a caller said was a 'safe account' after fake 'fraud alerts'. She asks for help and is embarrassed. The queue is long.",
+          "choices": [
+            {
+              "text": "Tell her the transfer was authorised, so nothing can be done, and suggest she go to the police.",
+              "outcome": "Poor. It ignores the speed that matters for blocking funds, the bank's complaint duties and its anti-fraud awareness role.",
+              "score": 0
+            },
+            {
+              "text": "Move her to priority service, log her report straight away through the bank's scam process so it reaches the Indonesia Anti-Scam Centre, register a complaint, and explain next steps calmly.",
+              "outcome": "Best. OJK reports that the Anti-Scam Centre receives victims' reports both through banks and directly, and blocks funds in reported accounts. Logging a complaint starts the bank's own clock under POJK 22/2023.",
+              "score": 2
+            },
+            {
+              "text": "Ask her to come back tomorrow with a written statement.",
+              "outcome": "Partly right on documentation, but delay lowers the chance of blocking funds. Take the report now and request documents afterwards.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the Indonesia Anti-Scam Centre (2024-2026)",
+          "body": "OJK and the members of the Task Force for Eradicating Illegal Financial Activities (Satgas PASTI), supported by banking and payment industry associations, set up the **Indonesia Anti-Scam Centre (IASC)**, which began operating on **22 November 2024**.\n\nOJK's November 2026 press release (SP 219/OJK/DKPU/XI/2026) reported that by 28 October 2026 the IASC had:\n\n- received about **738,000 reports**, about 347,000 of them lodged by victims **through banks and payment providers** and the rest directly;\n- had about **1.47 million accounts reported** and about **744,000 accounts blocked**;\n- **blocked about Rp968 billion** of victims' funds and **returned about Rp209 billion** to victims from accounts at 24 banks.\n\n**Lesson:** front-line staff are part of the system. Fast logging and clear customer education decide whether money can be stopped."
+        },
+        {
+          "type": "match",
+          "title": "Training duties at a glance",
+          "prompt": "Match each training or education duty to its rule.",
+          "pairs": [
+            {
+              "left": "Consumer protection unit staff",
+              "right": "Consumer protection training at least once a year (POJK 22/2023, Art 91(3))"
+            },
+            {
+              "left": "All other employees",
+              "right": "Consumer protection training at least once during employment (Art 91(4))"
+            },
+            {
+              "left": "Front-line complaint staff in the unit",
+              "right": "Complaint-service training before placement (elucidation, Art 91)"
+            },
+            {
+              "left": "Training content",
+              "right": "Complaint procedures, the unit's duties, product knowledge, ethics and communication"
+            },
+            {
+              "left": "Insiders and external parties",
+              "right": "Anti-fraud education at least once a year (POJK 12/2024, Art 7)"
+            },
+            {
+              "left": "Every financial sector actor",
+              "right": "Fund continuous staff education and training each year (P2SK Law, Art 252)"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Bank Arunika's consumer protection reporting year",
+          "prompt": "Put these OJK deadlines in calendar order, starting in January.",
+          "steps": [
+            "10 January: complaint service report for the second semester",
+            "31 January: literacy and inclusion realisation report for the second semester",
+            "10 July: complaint service report for the first semester",
+            "31 July: literacy and inclusion realisation report for the first semester",
+            "30 September: annual consumer protection self-assessment report",
+            "30 November: literacy and inclusion plan for the next year"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Bank Arunika's new IT engineer never deals with customers. What does Article 91 of POJK 22/2023 require for her?",
+          "options": [
+            "Nothing, because she has no customer contact",
+            "Consumer protection training at least once a year",
+            "Consumer protection training at least once during her employment",
+            "Training only if she later moves to a branch"
+          ],
+          "answer": 2,
+          "explanation": "Article 91 covers all employees. Staff of the consumer protection function or unit are trained at least yearly; everyone else at least once during their employment. The bank must also evaluate the training and improve it."
+        },
+        {
+          "type": "tip",
+          "title": "Evidence an examiner will ask for",
+          "body": "OJK can examine any part of consumer protection, so keep proof ready:\n\n- **Training records** by employee, with dates, content and **evaluation results** (Article 91(6)-(7)).\n- Product **design and testing** files and **suitability** assessments.\n- **Product summaries**, understanding confirmations and **call recordings**.\n- Complaint logs, receipts, deadlines met and responses.\n- **Collection agency** contracts, certificates and evaluations.\n- **Self-assessment** (by 30 September), complaint and literacy reports, and anti-fraud education for staff and customers.\n\nIf it is not documented, OJK will assume it did not happen."
+        },
+        {
+          "type": "keypoints",
+          "title": "Vault and Review: what to remember",
+          "items": [
+            "Depositor information stays secret under amended Banking Law Article 40, with listed exceptions; OJK permits openings for criminal cases.",
+            "Deliberate disclosure by staff can mean 2 to 4 years' prison and a Rp4-8 billion fine.",
+            "POJK 12/2024 requires yearly anti-fraud education for insiders and external parties, including consumer awareness.",
+            "Article 91: the consumer protection unit is trained yearly, all other staff at least once in their employment, with evaluation.",
+            "Keep the evidence: training, suitability, recordings, complaints, agency oversight and the reports OJK expects."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which customer at your office is most exposed to scams or mis-selling, and what one habit will you change to protect them, starting this week?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "id-cp-s5-q1",
+          "question": "Under amended Banking Law Article 40, what must banks and affiliated parties keep secret?",
+          "options": [
+            "Every fact about every borrower's loan",
+            "Information about depositors and their deposits",
+            "Only balances above Rp2 billion",
+            "Only information the customer marks as confidential"
+          ],
+          "answer": 1,
+          "explanation": "Article 40 as amended by the P2SK Law protects information about depositors and their deposits. Where a customer is both depositor and borrower, the information about them as a depositor is protected.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s5-q2",
+          "question": "A police investigator needs a suspect's deposit details for a criminal case. What makes disclosure lawful?",
+          "options": [
+            "A phone call from the investigator giving his name and badge number, followed by a confirmation message on WhatsApp",
+            "Approval from the branch manager",
+            "A written request from the official named in the law and OJK's written permission",
+            "An email from the suspect's employer"
+          ],
+          "answer": 2,
+          "explanation": "Articles 40B and 42 give OJK power to permit disclosure for criminal cases, on a written request from officials such as the police chief, attorney general or court chief. Anyone receiving the information must keep it confidential.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q3",
+          "question": "Which is NOT an exception to bank secrecy listed in amended Article 40A?",
+          "options": [
+            "A written request or consent from the depositor",
+            "A request from a debt collection agency working for another lender",
+            "A request from the lawful heirs of a deceased depositor",
+            "A request for financial information for tax purposes"
+          ],
+          "answer": 1,
+          "explanation": "Article 40A lists court cases, curators and liquidators, written requests or consent from the depositor, lawful heirs, information exchange between banks, mutual legal assistance, tax, Bank Indonesia and deposit insurer tasks and reciprocal agreements. Collection agencies are not on the list.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q4",
+          "question": "How often does POJK 12/2024 require anti-fraud education for external parties such as customers?",
+          "options": [
+            "Once every three years",
+            "Only after a fraud incident",
+            "Only for corporate customers",
+            "At least once a year"
+          ],
+          "answer": 3,
+          "explanation": "Article 7 requires education and competence development for insiders and education or awareness for external parties on the anti-fraud policy at least once a year.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s5-q5",
+          "question": "A loan officer asks a borrower for 'an envelope' to speed up approval. How does POJK 12/2024 classify this?",
+          "options": [
+            "A conflict of interest only",
+            "Misappropriation of inventory",
+            "Not fraud, if the loan is repaid",
+            "Extortion, a form of corruption"
+          ],
+          "answer": 3,
+          "explanation": "POJK 12/2024 lists extortion under corruption and gives the example of asking a consumer or debtor for money to ease a credit or service process.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q6",
+          "question": "Which are the four pillars of an anti-fraud strategy under POJK 12/2024?",
+          "options": [
+            "Prevention; detection; investigation, reporting and sanctions; monitoring, evaluation and follow-up",
+            "Planning; selling; collecting; reporting, with a separate pillar for whistleblowing that sits outside the strategy",
+            "Identification; verification; screening; reporting",
+            "Governance; capital; liquidity; disclosure"
+          ],
+          "answer": 0,
+          "explanation": "Article 5 sets the four pillars. Consumer awareness programmes sit in the prevention pillar, whistleblowing in the detection pillar.",
+          "difficulty": 2
+        },
+        {
+          "id": "id-cp-s5-q7",
+          "question": "A customer loses money to a 'fake bank officer' scam and reports it at the branch within the hour. What is the best first action?",
+          "options": [
+            "Tell her to wait 24 hours in case the money comes back on its own, then file a written complaint at her home branch",
+            "Close her account without explanation",
+            "Advise her to contact the scammer to negotiate",
+            "Log the report immediately through the bank's scam process to the Indonesia Anti-Scam Centre and record a complaint"
+          ],
+          "answer": 3,
+          "explanation": "OJK reports that the Anti-Scam Centre takes victims' reports lodged through banks and directly, and blocks funds in reported accounts. Fast logging improves the chance of blocking. Recording a complaint also starts the bank's POJK 22/2023 obligations.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q8",
+          "question": "By when must Bank Arunika send OJK its annual consumer protection self-assessment report?",
+          "options": [
+            "31 January each year",
+            "30 September each year",
+            "10 July each year",
+            "30 November each year"
+          ],
+          "answer": 1,
+          "explanation": "Article 85 requires the self-assessment report once a year, by 30 September. 30 November is the literacy and inclusion plan deadline.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q9",
+          "question": "What must the training under Article 91 of POJK 22/2023 cover?",
+          "options": [
+            "Only the bank's sales targets, product pricing and cross-selling techniques, so that staff can serve customers efficiently",
+            "Only anti-money laundering rules",
+            "Only the history of OJK",
+            "Complaint procedures, the unit's main duties, product knowledge, and ethics and communication with consumers"
+          ],
+          "answer": 3,
+          "explanation": "Article 91(5) lists complaint service procedures, the duties of the consumer protection function, knowledge of the bank's products and services, and ethics and ways of communicating with consumers. The bank must evaluate the training and improve it.",
+          "difficulty": 3
+        },
+        {
+          "id": "id-cp-s5-q10",
+          "question": "Which statement about P2SK Law Article 252 is correct?",
+          "options": [
+            "Financial sector actors must develop staff competence through continuous education and fund it each year",
+            "It sets a fixed number of training hours for every employee each year and requires OJK to approve each course in advance",
+            "It applies only to OJK staff",
+            "It requires training only for directors"
+          ],
+          "answer": 0,
+          "explanation": "Article 252 makes financial sector actors responsible for developing staff competence through continuous education and training and requires them to provide training funds from the current year's budget.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "id",
+    "programs": [
+      51,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      64,
+      66,
+      67,
+      70
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "annual",
+      "induction",
+      "role"
+    ],
+    "regulators": [
+      "Otoritas Jasa Keuangan (OJK, Financial Services Authority)",
+      "Lembaga Alternatif Penyelesaian Sengketa Sektor Jasa Keuangan (LAPS, financial services alternative dispute resolution body)"
+    ],
+    "references": [
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (OJK Regulation 22/2023 on consumer and public protection in the financial services sector)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Article 91",
+        "note": "Banks must train staff on consumer protection: yearly for the consumer protection unit, at least once in their service for other staff, with set content and evaluation of results.",
+        "effective": "2023-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (OJK Regulation 22/2023 on consumer and public protection in the financial services sector)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 3 to 10 and 101 to 115",
+        "note": "Seven principles, basic conduct duties, liability for losses caused by staff and third parties, market conduct supervision, orders and administrative sanctions with fines of up to Rp15 billion.",
+        "effective": "2023-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (OJK Regulation 22/2023 on consumer and public protection in the financial services sector)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 19 to 23 and 25 to 40",
+        "note": "Data confidentiality and consent limits; product design and testing; clear Bahasa Indonesia information; general and personal product summaries; OJK statement in offers; suitability; consent and hours for personal-channel offers.",
+        "effective": "2023-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (OJK Regulation 22/2023 on consumer and public protection in the financial services sector)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 44 to 66",
+        "note": "Balanced written agreements, banned exoneration clauses, notice of changes, cooling-off, service duties, warning letters, certified third-party collectors, collection conduct and collateral repossession.",
+        "effective": "2023-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (OJK Regulation 22/2023 on consumer and public protection in the financial services sector)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 67 to 96",
+        "note": "Free complaint service at every office, acknowledgement, 5 and 10 working day resolution deadlines, semester complaint reports, escalation to OJK, LAPS or courts, the consumer protection unit and director responsibility.",
+        "effective": "2023-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 38 Tahun 2025 tentang Gugatan oleh Otoritas Jasa Keuangan untuk Pelindungan Konsumen di Sektor Jasa Keuangan (OJK Regulation 38/2025 on lawsuits by OJK for consumer protection)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/POJK-38-Tahun-2025-Gugatan-oleh-OJK-untuk-Pelindungan-Konsumen-di-Sektor-Jasa-Keuangan/POJK%2038%20Tahun%202025%20Gugatan%20oleh%20OJK%20untuk%20Pelindungan%20Konsumen%20di%20Sektor%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 3, 4, 8, 9, 16 and 20",
+        "note": "OJK sues on legal standing, not as a class action; it announces the consumer list, consumers may opt out in writing within 30 working days and pay no costs; revokes Articles 98(1)(b), 99 and 100 of POJK 22/2023.",
+        "effective": "2025-12-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Undang-Undang Nomor 4 Tahun 2023 tentang Pengembangan dan Penguatan Sektor Keuangan (Law 4/2023 on Financial Sector Development and Strengthening, P2SK)",
+        "issuer": "Republic of Indonesia (copy published by Bank Indonesia)",
+        "url": "https://www.bi.go.id/id/tentang-bi/profil/uu-bi/UndangUndang%20BI/UU-RI-04-2023.pdf",
+        "provision": "Article 14 (Banking Law Articles 40 to 40C, 42 and 47), Articles 228 to 245 and 252",
+        "note": "Depositor information stays secret with listed exceptions and OJK permission for criminal cases, with criminal penalties for deliberate disclosure; seven consumer protection principles; staff education and training funded each year.",
+        "effective": "2023-01-12",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Peraturan Otoritas Jasa Keuangan Nomor 12 Tahun 2024 tentang Penerapan Strategi Anti Fraud bagi Lembaga Jasa Keuangan (OJK Regulation 12/2024 on anti-fraud strategy for financial services institutions)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Penerapan-Strategi-Anti-Fraud-Bagi-Lembaga-Jasa-Keuangan/POJK%2012%20Tahun%202024%20Penerapan%20Strategi%20Anti%20Fraud%20bagi%20Lembaga%20Jasa%20Keuangan.pdf",
+        "provision": "Articles 2, 5, 7 and 8; Attachment I, prevention pillar",
+        "note": "Four-pillar anti-fraud strategy covering consumers, insiders and others; education for insiders and external parties at least yearly; consumer fraud-awareness programmes such as brochures and posters.",
+        "effective": "2024-10-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Siaran Pers SP 12/OJK/GKPB/I/2026: OJK Terbitkan Peraturan Gugatan untuk Pelindungan Konsumen (press release on POJK 38/2025)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/POJK-38-Tahun-2025-Gugatan-oleh-OJK-untuk-Pelindungan-Konsumen-di-Sektor-Jasa-Keuangan.aspx",
+        "note": "Confirms POJK 38/2025 took effect on promulgation on 22 December 2025, rests on legal standing rather than class action, and spares consumers the costs.",
+        "effective": "2026-01-20",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Siaran Pers SP 94/DKPU/OJK/V/2026: OJK Kenakan Sanksi Administratif kepada Indosaku atas Ketidakpatuhan dalam Pengelolaan Kegiatan Penagihan (press release on collection sanctions)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/OJK-Sanksi-Indosaku.aspx",
+        "note": "Real case: Rp875 million fine, written warning to the president director and a remediation order after a special examination of third-party debt collection.",
+        "effective": "2026-05-08",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Siaran Pers SP 77/DKPU/OJK/IV/2026: OJK Minta BNI Tuntaskan Penyelesaian Kasus Dugaan Penyimpangan Dana Nasabah KCP Aek Nabara (press release on a customer funds case)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/OJK-Minta-BNI-Tuntaskan-Penyelesaian-Kasus-Dugaan-Penyimpangan-Dana-Nasabah-KCP-Aek-Nabara.aspx",
+        "note": "Real case: OJK summoned BNI's directors over alleged misuse of customer funds at a sub-branch and required verification, restitution and an internal investigation; Rp7 billion returned at the time.",
+        "effective": "2026-04-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Siaran Pers SP 219/OJK/DKPU/XI/2026: RDK Oktober 2026 (press release on the October 2026 Board of Commissioners meeting)",
+        "issuer": "Otoritas Jasa Keuangan",
+        "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/RDKB-Oktober-2026.aspx",
+        "note": "Reports 2026 consumer protection enforcement (warnings, fines, compensation, advert orders, reporting sanctions) and Indonesia Anti-Scam Centre results.",
+        "effective": "2026-11-05",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "id-cp-x1",
+        "question": "Bank Arunika's head of retail says POJK 22/2023 covers only 'retail banking products'. Which description of market conduct supervision in the regulation is accurate?",
+        "options": [
+          "Supervision of how a provider designs, informs, markets, contracts, serves and handles complaints and disputes",
+          "Supervision of capital adequacy, liquidity and credit quality ratios to keep each provider financially sound and stable over time",
+          "Supervision of the bank's financial statements only",
+          "Supervision of payment systems run by the central bank"
+        ],
+        "answer": 0,
+        "explanation": "POJK 22/2023 defines market conduct supervision as supervision of provider behaviour in designing products, providing and delivering information, offering, drafting agreements, servicing and handling complaints and disputes. It contrasts this with prudential supervision of soundness.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x2",
+        "question": "An outsourced agent of Bank Arunika refuses to serve a customer because of her ethnicity. The agent is not a bank employee. Which duty has the bank failed?",
+        "options": [
+          "None, because POJK 22/2023 covers only the bank's own employees, and outside agents answer for themselves",
+          "Only a duty under labour law",
+          "The duty to run literacy programmes",
+          "To ensure third parties acting for it treat consumers without discrimination"
+        ],
+        "answer": 3,
+        "explanation": "Article 4 requires non-discriminatory treatment and requires the provider to ensure that third parties working for or representing it also treat consumers without discrimination.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x3",
+        "question": "A bank's compliance manual lists the consumer protection principles as 'education, transparency, fair treatment, data protection and complaints'. What is missing compared with POJK 22/2023 and the P2SK Law?",
+        "options": [
+          "Profitability and growth",
+          "Capital adequacy and liquidity",
+          "Product innovation and speed to market",
+          "Compliance enforcement and healthy competition"
+        ],
+        "answer": 3,
+        "explanation": "There are seven principles: adequate education; transparency; fair treatment and responsible conduct; protection of assets, privacy and data; effective complaint handling and dispute resolution; compliance enforcement; and healthy competition.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x4",
+        "question": "The fair-treatment principle in the elucidation gives an example about sales targets. What does it say?",
+        "options": [
+          "Sales targets must be approved by OJK every year and disclosed to customers in the product summary before they sign",
+          "Banks may not set sales targets at all",
+          "Targets are acceptable if commissions are disclosed",
+          "Marketing should focus on giving product details, not treat hitting sales targets as the main goal"
+        ],
+        "answer": 3,
+        "explanation": "The elucidation of Article 3 explains fair treatment with the example that marketing should not make sales targets its main aim but should prioritise the product information given to consumers, and that complaint handling should not be done by staff linked to the complaint.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x5",
+        "question": "OJK finds Bank Arunika in breach of Article 37 and imposes a fine and a deadline for remediation. The bank misses the deadline. What does the regulation provide?",
+        "options": [
+          "The original fine is automatically cancelled",
+          "OJK must restart with a written warning",
+          "The bank can then face sanctions under the P2SK Law",
+          "The matter passes to Bank Indonesia"
+        ],
+        "answer": 2,
+        "explanation": "Several articles, including Article 37, provide that if a provider fails to carry out an administrative sanction within the set period, it can be sanctioned under the law on financial sector development and strengthening.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x6",
+        "question": "OJK requests documents from Bank Arunika as part of indirect supervision. The bank replies after OJK's deadline. Which statement is correct?",
+        "options": [
+          "Indirect supervision requests are voluntary",
+          "Missing OJK's deadline for documents is itself a sanctionable breach",
+          "Only direct examinations carry deadlines",
+          "Late replies are fine if the documents are complete"
+        ],
+        "answer": 1,
+        "explanation": "Article 104 lets OJK request documents and information in indirect supervision and requires the provider to comply within OJK's deadline, with administrative sanctions for breach.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x7",
+        "question": "Which statement about OJK written orders under Article 110 of POJK 22/2023 is correct?",
+        "options": [
+          "Written orders can only require a provider to stop or correct advertising; compensation must always go through the courts",
+          "Written orders need a court judgment first",
+          "OJK can order a provider to compensate consumers or return their assets",
+          "Written orders apply only to non-bank lenders"
+        ],
+        "answer": 2,
+        "explanation": "Article 110 lets OJK issue written orders to replace managers, stop, limit or fix activities, return consumer assets, end or change harmful agreements, compensate consumers and other orders allowed by law.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x8",
+        "question": "Under POJK 38/2025, which of these can OJK sue to recover consumer losses?",
+        "options": [
+          "A provider whose licence was revoked and which is in liquidation",
+          "Only providers that currently hold a licence",
+          "Only parties that consumers name in a petition",
+          "Only parties already convicted of a crime"
+        ],
+        "answer": 0,
+        "explanation": "POJK 38/2025 lets OJK sue providers that hold or have held an OJK licence, explained as those whose licences were revoked and are in liquidation, and other parties acting in bad faith. Liquidation does not stop OJK's lawsuit.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x9",
+        "question": "A consumer reads that OJK will sue a failed investment firm and asks Bank Arunika how to add her name to OJK's list. What is accurate under POJK 38/2025?",
+        "options": [
+          "She can join by paying the court fee",
+          "She can join any time before judgment",
+          "OJK does not accept requests to be added to the announced list",
+          "The bank can add her through its complaint system"
+        ],
+        "answer": 2,
+        "explanation": "OJK announces a list of verified consumers before suing. It accepts written opt-outs within 30 working days of the first announcement but does not accept requests to be added to the list.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x10",
+        "question": "A new 'flexi-saver' product passes legal review, but product testing shows older customers often misread its bonus conditions. What does Article 26 require?",
+        "options": [
+          "Launch it and add a disclaimer",
+          "Review the product before launch and keep the test results",
+          "Launch it only to customers under 60",
+          "Report it to OJK and wait for approval"
+        ],
+        "answer": 1,
+        "explanation": "Article 26 requires testing new products for risks of consumer harm, a review of the product where testing shows potential harm, and documentation of the results.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x11",
+        "question": "Bank Arunika plans to send product summaries only in English to customers in Bali because many are expatriates. Which is correct?",
+        "options": [
+          "English alone is acceptable for foreign customers, provided the bank keeps an Indonesian copy on file for OJK examiners",
+          "Bahasa Indonesia is needed only for loans",
+          "Documents must be in Bahasa Indonesia; English may be added as a supplement",
+          "Any language is fine if the customer signs a waiver"
+        ],
+        "answer": 2,
+        "explanation": "Article 29 bans providing information or documents that do not use Bahasa Indonesia as the law requires, but allows regional or foreign languages in addition. Article 44 sets the same rule for agreements.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x12",
+        "question": "Which product is exempt from the duty to provide the product and service information summary under Article 31?",
+        "options": [
+          "A product the customer uses repeatedly",
+          "A credit card with a high limit",
+          "Any product sold online",
+          "Any product with fees below Rp1 million"
+        ],
+        "answer": 0,
+        "explanation": "Article 31 exempts products and services that are government or authority programmes and those used repeatedly by the consumer.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x13",
+        "question": "A relationship manager receives a higher commission from one partner insurer than another and recommends that insurer. What must the bank do under Article 40?",
+        "options": [
+          "Nothing, because commissions are confidential business information that the bank may keep from customers",
+          "Disclose the conflict of interest to the customer when making the offer",
+          "Stop selling partner products altogether",
+          "Ask OJK for permission for each sale"
+        ],
+        "answer": 1,
+        "explanation": "Article 40 requires a provider to tell prospects and customers about any conflict of interest when making an offer. Article 44 also requires agreements to show commissions paid to agents out of consumers' payments.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x14",
+        "question": "A vendor calls a customer who agreed to offers. Which opening meets Article 39?",
+        "options": [
+          "Starting the pitch at once to save her time, and explaining the bank's name and data source only if she asks for them",
+          "Saying the call is from OJK's partner programme",
+          "Asking for her PIN to verify her identity",
+          "Giving the bank's name, the purpose of the call and the source of her data if it came from another party"
+        ],
+        "answer": 3,
+        "explanation": "Before offering a product through a personal channel, the provider must state its name and explain the purpose, and must say where it got the person's data if it came from another party.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x15",
+        "question": "A small trader with no access to other credit, after a flood, is offered an emergency loan with very harsh terms because 'she has no other option'. Which rule is engaged most directly?",
+        "options": [
+          "The ban on offering harmful products by exploiting a consumer who has no other choice",
+          "The cooling-off period rule, because emergency loans are complex products that need at least 2 working days to reconsider",
+          "The rule on product summaries for repeat customers",
+          "The collection hours rule"
+        ],
+        "answer": 0,
+        "explanation": "Article 36 forbids offering products that harm or may harm prospects by exploiting the circumstances of people who have no other choice in making their decision.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x16",
+        "question": "Under Article 54, what does 'equal access' mean according to the elucidation?",
+        "options": [
+          "Every customer must be offered every product the bank sells, whatever their classification, income or stated purpose",
+          "All customers pay identical fees regardless of risk",
+          "Customers in the same classification get the same access to products and services",
+          "Branch hours must be the same everywhere"
+        ],
+        "answer": 2,
+        "explanation": "Article 54(2) requires equal access according to the customer classification in Article 37, and the elucidation explains it as the same access for consumers with the same classification.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x17",
+        "question": "Bank Arunika hands customer data to a vendor that runs its call centre. What does Article 19(4) require?",
+        "options": [
+          "The vendor becomes solely responsible for the data once the outsourcing contract is signed and approved",
+          "The bank must first obtain OJK's approval",
+          "The bank must ensure the vendor keeps the data confidential and secure",
+          "Nothing, if the vendor is in Indonesia"
+        ],
+        "answer": 2,
+        "explanation": "Where a provider works with another party to manage consumer data, it must make sure that party maintains confidentiality and security. The bank cannot pass the duty on.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x18",
+        "question": "A customer withdraws her consent to marketing calls by email. The campaign team says the system update will take three months. What does Article 39(3) require?",
+        "options": [
+          "The bank may continue until the system is updated",
+          "The bank may call once more to confirm her choice",
+          "Consent can only be withdrawn in person",
+          "The bank must stop offering products through her personal channels"
+        ],
+        "answer": 3,
+        "explanation": "If a consumer withdraws consent to offers through personal channels, the provider must stop the offers. Article 23(4) allows withdrawal of data consent in writing or electronically.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x19",
+        "question": "A standard loan contract states: 'The bank may change the rules after signing and the borrower agrees to be bound by any change.' What is the status of this clause?",
+        "options": [
+          "Valid if printed in bold",
+          "Banned: it is an exoneration clause allowing one-sided changes",
+          "Valid if the borrower initials it",
+          "Valid for loans under one year"
+        ],
+        "answer": 1,
+        "explanation": "Article 46 bans standard clauses letting the provider add, change or set further rules unilaterally after agreement, and clauses binding the consumer to such changes.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x20",
+        "question": "A customer signs a five-year life-insurance-linked plan on Monday through the bank. On Tuesday the bank says a cooling-off period does not apply because a two-week reading period was given before signing. When could that argument be right?",
+        "options": [
+          "Never; a cooling-off period always applies to every long-term bank product, whatever time was given before the customer signed",
+          "If the customer was genuinely given enough time, at least 2 working days, to study the clauses before signing",
+          "Always, once the customer signs",
+          "Only if the customer is under 60"
+        ],
+        "answer": 1,
+        "explanation": "Article 51(7) exempts from the cooling-off duty products where the prospect was already given enough time under Article 45(2), of at least 2 working days. Government programmes, repeat use and group employee products are also exempt. Specific product rules for insurance may still apply.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x21",
+        "question": "Bank Arunika's credit card terms let the bank raise the interest rate when a benchmark set by an authority changes, as written in the agreement. Does the 30 working day notice under Article 49 apply?",
+        "options": [
+          "Yes, every interest rate change needs 30 working days' notice, even when it follows a benchmark already named in the agreement and set by an authority",
+          "No, changes in a pricing reference already set in the agreement and fixed by an authority are exempt from the notice period",
+          "Yes, and OJK must also approve it",
+          "No, card terms are never covered by POJK 22/2023"
+        ],
+        "answer": 1,
+        "explanation": "Article 49(4) exempts from the notice period changes set by the government or an authority, changes in a pricing reference written into the agreement and set by an authority, and negotiated changes recorded in an addendum.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x22",
+        "question": "A borrower refuses a credit change that adds an obligation and wants to end the loan. What does Article 50 say?",
+        "options": [
+          "She may end it, but must first settle her obligations under the agreement",
+          "She may stop paying immediately",
+          "She must accept the change",
+          "The bank must waive the outstanding balance"
+        ],
+        "answer": 0,
+        "explanation": "Article 50(4) and (5) let a consumer who rejects the change end the product, but she must first meet the obligations set in the agreement.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x23",
+        "question": "Which warning letter meets Article 60?",
+        "options": [
+          "One showing the due date, days late, outstanding principal, interest and any penalties",
+          "One showing only the total amount due, the payment deadline and a warning that the account will be passed to an agency",
+          "One threatening to tell the borrower's employer",
+          "One sent only after collateral is taken"
+        ],
+        "answer": 0,
+        "explanation": "Article 60 requires warning letters, timed as the agreement sets, showing at least the due date, days late, outstanding principal, the economic benefit of the financing and penalties or compensation owed.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x24",
+        "question": "Bank Arunika's collection agency contract has no stamp duty and the agency's staff certificates come from an unregistered training firm. Which two Article 61 conditions fail?",
+        "options": [
+          "Bank Indonesia approval of the agency, and a minimum paid-up capital level set by OJK for collection companies",
+          "A court order, and an OJK licence for each collector",
+          "A written stamped agreement, and certification from a body registered with OJK",
+          "A deposit guarantee, and collectors on the bank's payroll"
+        ],
+        "answer": 2,
+        "explanation": "Article 61 requires the partnership to be in a written agreement with sufficient stamp duty and collectors' staff to hold collection certification from a professional certification body or association registered with OJK. The agency must also be a licensed legal entity.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x25",
+        "question": "A collector tows a borrower's car from a busy market car park in front of onlookers. The borrower is in default and agreed to hand over the car. Which rule is engaged?",
+        "options": [
+          "None, because the borrower agreed in writing to hand over the car and the bank holds a valid fiduciary certificate for it",
+          "Only the collection hours rule",
+          "Only the warning letter rule",
+          "The ban on humiliating collection; the elucidation lists repossessing collateral in public"
+        ],
+        "answer": 3,
+        "explanation": "Article 62 bars collection that humiliates the consumer, and its elucidation gives repossessing collateral in a public space as an example. Agreement to hand over does not permit a humiliating method.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x26",
+        "question": "Before repossessing collateral, which documents must the bank hold under Article 64?",
+        "options": [
+          "Only the original loan agreement, signed and stamped, together with the borrower's latest account statement",
+          "A police report and a court summons",
+          "OJK's written approval",
+          "Proof of default, a prior warning letter, and a fiduciary, mortgage or hypothec certificate"
+        ],
+        "answer": 3,
+        "explanation": "Article 64 requires proven default, a warning letter to the consumer, and the bank's fiduciary, mortgage or hypothec certificate, with the repossession recorded in an official report.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x27",
+        "question": "A customer complains orally about a disputed card transaction. The branch needs the merchant receipt, which she holds. What should happen?",
+        "options": [
+          "Ask her to file a written complaint with the supporting documents",
+          "Close the complaint as incomplete",
+          "Resolve it within 5 working days without the receipt",
+          "Send her directly to OJK"
+        ],
+        "answer": 0,
+        "explanation": "Article 74(2) says that where supporting documents are needed and the 5 working day oral deadline cannot be met, the provider asks the consumer to submit a written complaint with the documents.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x28",
+        "question": "A customer's written complaint lacks a copy of her ID. The bank asks for it. She lives abroad and the copy is with her lawyer in Jakarta. What may the bank do?",
+        "options": [
+          "Reject the complaint at once, because the documents were not attached when the complaint was first submitted to the branch",
+          "Give her unlimited time",
+          "Extend her time to supply documents by 10 working days, telling her before the first period ends",
+          "Ask OJK to decide"
+        ],
+        "answer": 2,
+        "explanation": "Article 71 gives consumers 10 working days to complete documents, extendable by 10 working days where documents are not at the consumer's domicile or for other matters beyond her control. The extension must be communicated before the period ends.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x29",
+        "question": "A complaint about a joint product needs input from a partner insurer. What does Article 75 require of the insurer?",
+        "options": [
+          "Respond within 30 working days",
+          "Respond to the bank's request within 10 working days",
+          "Nothing, the bank alone is responsible",
+          "Respond only if OJK asks"
+        ],
+        "answer": 1,
+        "explanation": "Where resolution depends on another party that is a provider, that party must deliver its follow-up within 10 working days of the receiving provider's request. Resolution beyond the normal time must be notified to the consumer in writing.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x30",
+        "question": "A Bank Arunika call centre handles complaints by phone. What does Article 78 require about those calls?",
+        "options": [
+          "Record only if the customer agrees to a settlement",
+          "Record the whole complaint process by voice or video",
+          "Recording is optional for complaints",
+          "Record only calls longer than five minutes"
+        ],
+        "answer": 1,
+        "explanation": "Article 78(5) requires voice or video recording of the whole oral complaint process conducted through consumers' personal communication channels, done in line with the law.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x31",
+        "question": "Bank Arunika decides to combine its consumer protection function with its compliance function. What must it ensure?",
+        "options": [
+          "That OJK approves each combined role in advance and that the combined unit stops handling complaints from branches",
+          "That the function stops handling complaints",
+          "That combining follows sector rules and avoids conflicts of interest for staff",
+          "Nothing, combination is always prohibited"
+        ],
+        "answer": 2,
+        "explanation": "Article 88 allows the function to be combined with another, following sector rules or, without them, as needed, while avoiding conflicts of interest for employees.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x32",
+        "question": "Which is a task of the consumer protection function under Article 89?",
+        "options": [
+          "Approving every loan application above the branch limit to make sure the product fits the customer's ability to pay",
+          "Setting the bank's sales targets",
+          "Auditing the financial statements",
+          "Acting as liaison with OJK and other authorities on consumer complaints"
+        ],
+        "answer": 3,
+        "explanation": "Article 89 lists tasks including staff awareness, coordinating compliance, monitoring, reporting to directors, coordinating reports, handling complaints, preparing complaint material and acting as liaison with OJK and other authorities.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x33",
+        "question": "Bank Arunika posts its response to a complaint in OJK's integrated system. The consumer does not respond. What happens?",
+        "options": [
+          "The complaint stays open indefinitely until the consumer confirms in writing that she accepts the bank's response",
+          "After 10 working days without a response, OJK treats the complaint as finished",
+          "The bank must pay compensation",
+          "The complaint transfers to the LAPS body"
+        ],
+        "answer": 1,
+        "explanation": "Article 96 gives the consumer 10 working days to respond to the provider's answer in OJK's system; if she does not, OJK deems the complaint finished.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x34",
+        "question": "After the bank's process, a customer and Bank Arunika still disagree. Where can the customer take the dispute under Article 82?",
+        "options": [
+          "Only to the bank's board of commissioners",
+          "Only to Bank Indonesia",
+          "Only to the police",
+          "To OJK's complaint service, an OJK-approved LAPS body, or the courts"
+        ],
+        "answer": 3,
+        "explanation": "Article 82 lets the consumer complain to OJK within its authority or bring the dispute to an OJK-approved LAPS financial services body or to court. The bank may defend itself and present evidence.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x35",
+        "question": "A bank employee shares a depositor's balance with a colleague at another bank as a 'favour'. Which statement is correct?",
+        "options": [
+          "It is allowed because both employees work for banks and the inter-bank exchange of information is a listed exception",
+          "It is allowed if the amount is small",
+          "It is allowed if the depositor is a borrower too",
+          "Only information exchange between banks within the rules is an exception; a personal favour is not"
+        ],
+        "answer": 3,
+        "explanation": "Article 40A allows exchange of information between banks as an exception, but that refers to the recognised inter-bank exchange, not an individual's private disclosure. Deliberate disclosure can trigger the criminal penalties in amended Article 47.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x36",
+        "question": "Someone without OJK permission or legal authority forces a bank employee to reveal a depositor's data. What does amended Banking Law Article 47(1) set for the person who forced it?",
+        "options": [
+          "A written warning to the person and an administrative fine on the bank of up to Rp15 billion under POJK 22/2023",
+          "A fine of up to Rp15 billion only",
+          "Prison of 2 to 4 years and a fine of Rp10 billion to Rp200 billion",
+          "No penalty, only the employee is liable"
+        ],
+        "answer": 2,
+        "explanation": "Amended Article 47(1) punishes anyone who, without OJK permission or legal authority, deliberately forces a bank or affiliated party to disclose protected information with 2 to 4 years' prison and a fine of Rp10 billion to Rp200 billion.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x37",
+        "question": "Who receiving depositor information under an Article 40A exception must keep it confidential?",
+        "options": [
+          "Only bank employees",
+          "Every person who obtains it under the exception",
+          "Only OJK",
+          "No one, once it has been lawfully disclosed"
+        ],
+        "answer": 1,
+        "explanation": "Article 40C requires anyone who obtains information about depositors and their deposits under the Article 40A exceptions to keep it confidential.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x38",
+        "question": "The head of Bank Arunika's anti-fraud unit asks what POJK 12/2024 requires of her role. Which is correct?",
+        "options": [
+          "The unit reports to a director and communicates directly with the Board of Commissioners; its head needs anti-fraud certification, experience or adequate sector experience",
+          "The unit reports to the sales director, who sets its annual targets, and its head needs no particular qualification",
+          "The unit must be outsourced",
+          "The head must be an OJK employee"
+        ],
+        "answer": 0,
+        "explanation": "Article 8 requires a unit or function for the anti-fraud strategy, responsible to a director with direct communication and reporting to the Board of Commissioners, led by someone with anti-fraud certification, anti-fraud experience or adequate sector experience.",
+        "difficulty": 5
+      },
+      {
+        "id": "id-cp-x39",
+        "question": "Which activity would count towards POJK 12/2024's anti-fraud awareness for consumers?",
+        "options": [
+          "Posters and written warnings explaining that bank staff never ask for one-time codes",
+          "An internal audit of head office cash handling, with findings reported to the Board of Commissioners at year end",
+          "A board meeting on fraud losses",
+          "A sales incentive for new accounts"
+        ],
+        "answer": 0,
+        "explanation": "The attachment's prevention pillar expects the institution to raise consumers' fraud awareness through brochures, banners, posters, clauses, written explanations or other means.",
+        "difficulty": 3
+      },
+      {
+        "id": "id-cp-x40",
+        "question": "Bank Arunika trained all branch staff on consumer protection in 2023. In 2026 the consumer protection unit has not been retrained since. Which statement is correct?",
+        "options": [
+          "Both groups are compliant, because the 2023 training satisfies a once-during-employment rule that applies to all staff",
+          "Branch staff may be compliant, but the unit should have been trained at least once a year",
+          "Both groups need yearly training",
+          "Only branch staff needed retraining"
+        ],
+        "answer": 1,
+        "explanation": "Article 91 requires training at least once a year for the consumer protection function or unit and at least once during employment for other staff. The unit has missed its yearly training.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x41",
+        "question": "After its Article 91 training, what else must Bank Arunika do?",
+        "options": [
+          "Evaluate the process and impact of the training and improve materials and methods",
+          "Send each participant's test score to OJK within 30 days so that OJK can certify the training for the next year",
+          "Repeat the same course unchanged",
+          "Ask the LAPS body to certify it"
+        ],
+        "answer": 0,
+        "explanation": "Article 91(6) and (7) require evaluation of the training's process and impact, for example staff understanding and fit of materials, and follow-up through better materials and methods.",
+        "difficulty": 4
+      },
+      {
+        "id": "id-cp-x42",
+        "question": "Bank Arunika misses the 30 September deadline for its self-assessment report. What does POJK 22/2023 provide?",
+        "options": [
+          "Fines apply; after 30 days late it is treated as not submitted but must still be sent",
+          "Nothing happens until OJK's next examination, when the bank can explain the delay and submit the report then",
+          "The bank must wait until next year",
+          "Only a verbal reminder from OJK"
+        ],
+        "answer": 0,
+        "explanation": "Articles 85 and 87 set fines for not submitting and daily fines for late submission. A report more than 30 days late is treated as not submitted, and the bank must still send it.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
