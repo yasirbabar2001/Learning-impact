@@ -892,11 +892,11 @@
           "question": "Which Joint Standard 2 requirement most directly limits the damage when an attacker steals an ordinary user's password for an internet-facing app holding sensitive data?",
           "options": [
             "Yearly review of firewall rules",
-            "MFA for accounts that reach applications with sensitive information over the internet",
             "A biennial review of the asset inventory",
-            "Board approval of the cyber strategy"
+            "Board approval of the cyber strategy",
+            "MFA for accounts that reach applications with sensitive information over the internet"
           ],
-          "answer": 1,
+          "answer": 3,
           "explanation": "With MFA, a stolen password alone is not enough to log in. Joint Standard 2 requires MFA for all user accounts used to access applications containing sensitive information through the internet."
         },
         {
@@ -1171,12 +1171,12 @@
           "type": "check",
           "question": "Which POPIA condition contains section 19, the duty to secure personal information, and section 22, the duty to notify compromises?",
           "options": [
-            "Openness",
             "Security safeguards",
+            "Openness",
             "Information quality",
             "Data subject participation"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Security safeguards is the seventh condition and covers sections 19 to 22: security measures, operators and notification of security compromises."
         },
         {
@@ -1206,7 +1206,7 @@
         {
           "type": "concept",
           "title": "May we use it at all? Grounds, minimality, purpose and retention",
-          "body": "Before security even comes up, POPIA asks whether processing is allowed:\n\n- **A valid ground (s 11):** consent; necessity for a contract with the person; a legal obligation (for example the bank's FIC Act customer due diligence); protecting the person's legitimate interest; a public law duty; or the legitimate interests of the bank or a third party. If the bank relies on consent, it must be able to prove it, and consent can be withdrawn.\n- **Objection:** people may object on reasonable grounds to processing based on legitimate interests, and may object to direct marketing.\n- **Minimality (s 10):** only information that is adequate, relevant and not excessive for the purpose.\n- **Purpose (s 13):** a specific, explicitly defined and lawful purpose, made known to the person.\n- **Retention (s 14):** keep records no longer than needed, unless the law, a contract, consent or a lawful need requires more; then destroy, delete or de-identify them so they cannot be reconstructed.\n- **Further use (s 15):** later uses must be compatible with the original purpose."
+          "body": "Before security even comes up, POPIA asks whether processing is allowed:\n\n- **A valid ground (s 11):** consent; necessity for a contract with the person; a legal obligation (for example the bank's FIC Act customer due diligence); protecting the person's legitimate interest; a public law duty; or the legitimate interests of the bank or a third party. If the bank relies on consent, it must be able to prove it, and consent can be withdrawn.\n- **Objection:** people may object on reasonable grounds to processing that relies on legitimate interests or a public law duty, and may object to direct marketing.\n- **Minimality (s 10):** only information that is adequate, relevant and not excessive for the purpose.\n- **Purpose (s 13):** a specific, explicitly defined and lawful purpose, made known to the person.\n- **Retention (s 14):** keep records no longer than needed, unless the law, a contract, consent or a lawful need requires more; then destroy, delete or de-identify them so they cannot be reconstructed.\n- **Further use (s 15):** later uses must be compatible with the original purpose."
         },
         {
           "type": "match",
@@ -1853,11 +1853,11 @@
           "question": "An operator tells Marula Bank that it suspects someone accessed the bank's customer data. Who must notify the Information Regulator and the affected customers under POPIA?",
           "options": [
             "The operator, because it held the data",
-            "The bank, as responsible party",
             "The police",
+            "The bank, as responsible party",
             "Nobody until the attacker is identified"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "The operator must tell the bank immediately (s 21). The bank, as responsible party, must notify the Regulator and the data subjects under section 22."
         },
         {
