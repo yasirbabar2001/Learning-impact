@@ -1,0 +1,3158 @@
+{
+  "slug": "bd-governance-conduct",
+  "title": "Bangladesh | Bank Governance, Compliance, Code of Conduct and Harassment Prevention",
+  "tagline": "Apply the Bank Company Act, BRPD board rules, Bangladesh Bank's 2026 internal control guidelines, its Code of Conduct and the 2026 Labour Act harassment duties.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Scheduled commercial banks in Bangladesh",
+    "Foreign bank branches in Bangladesh",
+    "State-owned and specialised banks"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the governance, compliance and conduct rules that apply to conventional scheduled banks in Bangladesh. It is based on the **Bank Company Act 1991** (as amended in 2023), **BRPD Circular 02 of 2024** on boards and directors with its 2025 follow-ups, Bangladesh Bank's **Guidelines on Internal Control Management System** (BRPD-2 Circular 03, July 2026), the **Guidelines on Foundation Training** (BRPD-1 Circular 10, May 2026), Bangladesh Bank's **Code of Conduct for Banks and NBFIs**, the **Public Interest Information Disclosure Act 2011** and the **Bangladesh Labour (Amendment) Act 2026** (new sections 332 and 332A).\n\nSection 5.4.3 of the 2026 internal control guidelines requires every bank's compliance function, with HR, to deliver a **mandatory, role-based compliance training programme** built on its compliance risk assessment, and banks must restructure to the new system by 31 December 2026. The Code requires staff training on integrity, and the amended Labour Act requires employers to train workers on violence and harassment. This quest supports those duties for staff, managers, ICMS, HR and compliance teams, company secretaries and directors.\n\nIn five stages you join the Compliance Division of a fictional Bangladeshi bank, from the boardroom to the branch.\n\nThe quest builds knowledge and does not replace your bank's own policies, code of conduct and procedures; always follow them and the latest Bangladesh Bank instructions.",
+  "audience": [
+    "All officers and staff of scheduled banks in Bangladesh who must complete role-based compliance and code of conduct training",
+    "Compliance, internal control and internal audit staff working under the 2026 ICMS guidelines",
+    "HR and training staff who design foundation, compliance and harassment-prevention training",
+    "Branch managers and supervisors who handle conduct issues, whistleblower concerns and harassment complaints",
+    "Company secretaries, directors and senior managers who apply the board and committee rules"
+  ],
+  "outcomes": [
+    "Explain how the Bank Company Act, section 45 directions, BRPD circulars and bank policies fit together",
+    "Apply the rules on board composition, fit and proper directors, Bangladesh Bank approvals and board committees",
+    "Describe the three lines of defence, the heads of audit and compliance, and the compliance risk management cycle",
+    "Design mandatory, role-based compliance training that meets section 5.4.3 of the 2026 ICMS guidelines",
+    "Apply the Code of Conduct to gifts, conflicts and confidentiality, and use the whistleblower framework safely",
+    "Meet the Labour Act 2026 duties on harassment training and the section 332A complaints committee"
+  ],
+  "quest": {
+    "name": "The Krishnachura Integrity Mission",
+    "premise": "You have just joined the Compliance Division of Krishnachura Bank PLC, a fictional conventional bank headquartered in Motijheel, Dhaka, with branches from Chattogram to Sylhet. Bangladesh Bank's new internal control system must be in place by 31 December 2026. With Head of Compliance Mitali Sarkar, company secretary Tanvir Ahmed Chowdhury, audit committee chair Professor Rokeya Begum, HR head Habibur Rahman and Agrabad branch manager Sharmin Akter, clear five stages, then face the final boss: the inspector's exam.",
+    "badge": {
+      "name": "Krishnachura Integrity Guardian",
+      "description": "Awarded to bankers who can apply Bangladesh's board rules, the 2026 ICMS guidelines, the Code of Conduct, whistleblower protection and the Labour Act harassment duties."
+    },
+    "color": "#b91c1c",
+    "cast": [
+      {
+        "id": "mitali",
+        "name": "Mitali Sarkar",
+        "role": "Head of Compliance, Dhaka, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "bun",
+          "color": "#b91c1c"
+        }
+      },
+      {
+        "id": "tanvir",
+        "name": "Tanvir Ahmed Chowdhury",
+        "role": "Company Secretary, secretary to the board committees",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "rokeya",
+        "name": "Prof. Rokeya Begum",
+        "role": "Independent director and audit committee chair",
+        "look": {
+          "skin": 4,
+          "hair": "long",
+          "color": "#6b21a8"
+        }
+      },
+      {
+        "id": "habib",
+        "name": "Habibur Rahman",
+        "role": "Head of HR and Training, Dhaka",
+        "look": {
+          "skin": 4,
+          "hair": "beard",
+          "color": "#065f46"
+        }
+      },
+      {
+        "id": "sharmin",
+        "name": "Sharmin Akter",
+        "role": "Branch Manager, Agrabad branch, Chattogram",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Legal Map: the Bank Company Act, Section 45 Directions and the Board",
+      "stage": "The Motijheel Charter",
+      "summary": "See how the Bank Company Act 1991 (as amended in 2023), Bangladesh Bank's binding directions under section 45 and the BRPD circulars fit together, how a bank board must be built, and the powers Bangladesh Bank holds over directors and boards.",
+      "minutes": 50,
+      "objectives": [
+        "Place the Bank Company Act, section 45 directions, BRPD circulars, guidelines and the bank's own policies in order",
+        "Apply the rules on board size, independent directors, family limits, tenure and retirement",
+        "Explain when Bangladesh Bank's prior approval is needed for directors and alternate directors",
+        "Describe Bangladesh Bank's powers to remove directors and dissolve a board"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "First day in the governance unit",
+          "setting": "Compliance Division, Krishnachura Bank PLC head office, Motijheel, Dhaka. 9:30 am.",
+          "lines": [
+            {
+              "who": "mitali",
+              "text": "Welcome to Policies and Governance. I'm Mitali Sarkar, Head of Compliance. From today you help me keep the board, the bank and every desk inside the rules.",
+              "mood": "happy"
+            },
+            {
+              "who": "tanvir",
+              "text": "Tanvir Ahmed Chowdhury, company secretary. Fair warning: the board meets next week and a sponsor family has just nominated a new director.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mitali",
+              "text": "Then the first question is not who the nominee is. It is which rules decide whether that person can sit on our board at all.",
+              "mood": "neutral"
+            },
+            {
+              "who": "tanvir",
+              "text": "The Bank Company Act, the BRPD circular on boards, the later circular letters... people mix them up all the time.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "That's our first stage: the Motijheel Charter. Learn the map and every later stage gets easier.",
+              "mood": "proud"
+            },
+            {
+              "who": "narrator",
+              "text": "Your mission: build Krishnachura's governance, compliance, ethics and harassment-prevention programme before Bangladesh Bank's 31 December 2026 deadline for the new internal control system.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Five layers of rules",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "The Act",
+              "narration": "The Bank Company Act 1991, amended most recently in 2023, sets the core rules on directors, board committees, internal audit and Bangladesh Bank's powers."
+            },
+            {
+              "icon": "📨",
+              "heading": "Section 45 directions",
+              "narration": "Section 45 lets Bangladesh Bank give binding directions to all banks or to one bank, for example in the public interest or to protect depositors. Banks must obey them."
+            },
+            {
+              "icon": "📘",
+              "heading": "Circulars and guidelines",
+              "narration": "Most governance rules arrive this way: BRPD Circular 02 of 2024 on boards, the July 2026 internal control guidelines and the 2026 foundation training guidelines were all issued under section 45."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Other laws",
+              "narration": "Banks are also employers and companies. The Labour Act's harassment duties and the whistleblower protection law apply alongside banking law."
+            },
+            {
+              "icon": "📗",
+              "heading": "The bank's own policies",
+              "narration": "Finally, the board approves the bank's own code of conduct, compliance policy and training policy. They may go further than the regulator, never below it."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Which rule wins?",
+          "items": [
+            {
+              "label": "Bank Company Act 1991",
+              "detail": "Parliament's law; sections 15, 15B, 15C, 45, 46 and 47 shape boards and control."
+            },
+            {
+              "label": "Section 45 directions",
+              "detail": "Binding circulars and circular letters, e.g. BRPD Circular 02/2024."
+            },
+            {
+              "label": "Bangladesh Bank guidelines",
+              "detail": "Issued by circular: ICMS 2026, Code of Conduct 2017, foundation training 2026."
+            },
+            {
+              "label": "Other national laws",
+              "detail": "Labour Act as amended in 2026; Public Interest Information Disclosure Act 2011."
+            },
+            {
+              "label": "Board-approved bank policies",
+              "detail": "Must meet every layer above; may set higher standards."
+            }
+          ],
+          "caption": "Top = highest legal force. A bank policy that conflicts with a direction or the Act gives way."
+        },
+        {
+          "type": "check",
+          "question": "Krishnachura's head of HR asks why the bank must follow BRPD Circular 02 of 2024 when it is 'only a circular'. What is the best answer?",
+          "options": [
+            "It was issued under sections 15 and 45 of the Bank Company Act, so it is a binding direction the bank must obey",
+            "It is guidance only; the bank may follow its own articles of association instead",
+            "It binds only state-owned banks, because they are directly supervised",
+            "It becomes binding only after the shareholders adopt it at the next AGM"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 15 of the circular says it was issued under sections 15 and 45 of the Act. Section 45 makes such directions binding on the banks they address, private or state-owned."
+        },
+        {
+          "type": "concept",
+          "title": "How a bank board is built",
+          "body": "The Act (section 15(9)-(10)) and BRPD Circular 02/2024 (paragraph 3) set the shape of every board:\n\n- **Members:** shareholder directors, representative directors of shareholder companies and **independent directors**; an approved alternate director may also sit.\n- **Size:** at most **20** directors.\n- **Independent directors:** at least **3** when the board has 20 members, at least **2** when it has fewer. An independent director is free of management and shareholders and has no past, present or future interest in the bank.\n- **Families:** no more than **3** members of one family at a time, plus at most **2** representative directors for companies that family controls.\n- **Representatives:** one company may send only **one** representative director; an individual shareholder cannot be represented by someone else.\n- **Tenure:** no more than **12 consecutive years** (section 15AA), then a **3-year** break.\n- **Rotation:** all directors retire at the first AGM; after that one-third retire each year by seniority and may stand again."
+        },
+        {
+          "type": "match",
+          "title": "Match the board rule to its number",
+          "prompt": "Each figure comes from section 15 of the Act or BRPD Circular 02/2024.",
+          "pairs": [
+            {
+              "left": "Maximum board size",
+              "right": "20 directors"
+            },
+            {
+              "left": "Independent directors on a 20-member board",
+              "right": "At least 3"
+            },
+            {
+              "left": "Independent directors on a smaller board",
+              "right": "At least 2"
+            },
+            {
+              "left": "Family members serving at the same time",
+              "right": "No more than 3"
+            },
+            {
+              "left": "Consecutive years a director may serve",
+              "right": "12, then a 3-year break"
+            },
+            {
+              "left": "Directors retiring at each later AGM",
+              "right": "One-third, by seniority"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Krishnachura's board check",
+          "items": [
+            {
+              "label": "Directors",
+              "detail": "Within the cap of 20 set by section 15(9).",
+              "value": "17"
+            },
+            {
+              "label": "Independent directors",
+              "detail": "A board under 20 needs at least 2; Krishnachura has 3.",
+              "value": "3"
+            },
+            {
+              "label": "Members of the Rahman family",
+              "detail": "The family limit is 3; a fourth nominee would breach it.",
+              "value": "3"
+            },
+            {
+              "label": "Longest-serving director",
+              "detail": "Must step down at 12 consecutive years.",
+              "value": "11 yrs"
+            }
+          ],
+          "caption": "A fictional snapshot the company secretary prepares before every nomination."
+        },
+        {
+          "type": "story",
+          "title": "The fourth family member",
+          "setting": "Company secretary's office, two days before the board meeting.",
+          "lines": [
+            {
+              "who": "tanvir",
+              "text": "The nominee is Farzana Rahman, daughter of our chairman. Strong CV, fifteen years in business.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mitali",
+              "text": "How many Rahmans sit on the board today?",
+              "mood": "thinking"
+            },
+            {
+              "who": "tanvir",
+              "text": "Three. And her nomination letter comes from Rahman Textiles, which already has a representative director.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "Then we have two problems before we even look at her experience: the family limit and the one-representative-per-company rule.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tanvir",
+              "text": "The chairman wants it on next week's agenda anyway. He says Bangladesh Bank can sort it out.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The nomination on the agenda",
+          "situation": "Krishnachura's chairman asks the company secretary to place his daughter's nomination as a representative director of Rahman Textiles on the next board agenda. Three members of the Rahman family already sit on the 17-member board, and Rahman Textiles already has one representative director. The chairman says Bangladesh Bank will reject it if there is a problem, so the bank need not worry.",
+          "choices": [
+            {
+              "text": "Advise the chairman in writing that the nomination would breach the three-family-member limit and the one-representative-per-company rule, and keep it off the agenda unless the facts change.",
+              "outcome": "Best. The bank, not Bangladesh Bank, is first responsible for meeting section 15(10) and paragraph 3 of BRPD Circular 02. Clear written advice protects the board and the company secretary.",
+              "score": 2
+            },
+            {
+              "text": "Place it on the agenda but attach a compliance note listing the two breaches so directors can decide.",
+              "outcome": "Partly right. Flagging the breaches is good, but asking the board to approve a nomination the law forbids invites a decision that cannot stand and wastes Bangladesh Bank's time.",
+              "score": 1
+            },
+            {
+              "text": "Send it straight to Bangladesh Bank for prior approval and let the regulator decide.",
+              "outcome": "Poor. Prior approval is the last check, not a substitute for the bank's own compliance. The application itself would show the bank ignoring the Act.",
+              "score": 0
+            },
+            {
+              "text": "Approve it subject to another Rahman director resigning within six months.",
+              "outcome": "Poor. The limit applies at all times. A future resignation does not make an appointment lawful today.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the rules arrived",
+          "items": [
+            {
+              "label": "Bank Company Act",
+              "detail": "Parliament's core banking law.",
+              "value": "1991"
+            },
+            {
+              "label": "12-year limit runs",
+              "detail": "Consecutive-term count starts from 28 January 2018 (BRPD 02/2024 para 3(j)).",
+              "value": "2018"
+            },
+            {
+              "label": "Amendment Act",
+              "detail": "Board, independent director and fitness rules reshaped; in force 26 June 2023.",
+              "value": "2023"
+            },
+            {
+              "label": "BRPD Circular 02",
+              "detail": "Board formation and directors' duties; replaced the 2013 circular.",
+              "value": "11 Feb 2024"
+            },
+            {
+              "label": "Alternate directors",
+              "detail": "BRPD Circular 01: Bangladesh Bank prior approval before they act.",
+              "value": "14 Jan 2025"
+            },
+            {
+              "label": "Minutes must show dissent",
+              "detail": "BRPD Circular Letter 14 on board and committee minutes.",
+              "value": "4 Aug 2025"
+            },
+            {
+              "label": "Foundation training",
+              "detail": "BRPD-1 Circular 10: 14-week course for new officers.",
+              "value": "7 May 2026"
+            },
+            {
+              "label": "ICMS guidelines",
+              "detail": "BRPD-2 Circular 03; banks restructure by 31 December 2026.",
+              "value": "21 Jul 2026"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Bangladesh Bank's powers over boards",
+          "cards": [
+            {
+              "front": "Section 15(4): appointments",
+              "back": "Except in specialised banks, directors and the MD/CEO need Bangladesh Bank's approval before appointment, and cannot be removed or dismissed without its prior approval."
+            },
+            {
+              "front": "Section 45: directions",
+              "back": "Bangladesh Bank may issue binding directions in the public interest, to protect depositors or to ensure proper management, and may remove or appoint a director under this power."
+            },
+            {
+              "front": "Section 46: removal",
+              "back": "Bangladesh Bank may remove a chairman, director or chief executive, after giving a chance to show cause, to stop harm to depositors, misuse of funds, money laundering or TF."
+            },
+            {
+              "front": "Section 47: dissolving a board",
+              "back": "If a board acts against the bank's or depositors' interests, Bangladesh Bank may dissolve it by written order for a set period, at most two years including extensions."
+            },
+            {
+              "front": "Alternate directors (2025)",
+              "back": "Since BRPD Circular 01 of 2025, an alternate director may not act or attend any board or committee meeting until Bangladesh Bank has approved the appointment."
+            },
+            {
+              "front": "Section 17: unpaid loans",
+              "back": "A director who fails to repay a loan within two months of a notice through Bangladesh Bank loses the seat and cannot rejoin any bank board for a year after repaying."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A director of Krishnachura will be abroad for four months. The board appoints an alternate, who wants to attend next Tuesday's audit committee. What do the rules say?",
+          "options": [
+            "He may not attend: alternates cannot sit on board committees, and he needs Bangladesh Bank's prior approval before acting at all",
+            "He may attend once the bank has informed Bangladesh Bank, since only notice is required",
+            "He may attend board and committee meetings for up to three months without any approval",
+            "He may attend if the absent director signs a written proxy for that meeting"
+          ],
+          "answer": 0,
+          "explanation": "BRPD Circular 02 (paragraph 6(e)) bars alternates from board committees, and BRPD Circular 01 of 2025 requires Bangladesh Bank's prior approval before an alternate acts or attends any board or committee meeting."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bangladesh Bank dissolves 15 bank boards (2025)",
+          "body": "In its Monetary Policy Statement for July-December 2025, Bangladesh Bank reported that it had looked for weaknesses in bank boards that had contributed to banks' financial deterioration. It said it had, so far, **dissolved the boards of directors of 15 banks and restructured them** to restore effective governance and sound management. It also described a circular of 8 May 2025 on **transactions with bank-related persons or institutions**, tightening limits on credit to current directors, MDs/CEOs, significant shareholders, their families, ultimate beneficial owners and linked entities.\n\n**Why it matters at your desk:** the powers in sections 45-47 are not theory. When a board fails, the regulator can replace it. The best defence is a board that is properly built, keeps out of day-to-day operations and gets honest reports from compliance and audit."
+        },
+        {
+          "type": "tip",
+          "title": "Reading a Bangladesh Bank circular",
+          "body": "- Many BRPD circulars are issued **in Bangla only**; the English title on the website is a summary. Read the original or an approved translation.\n- Check the **legal basis** paragraph (usually section 45) and the **effective date** (often 'immediately').\n- Read the **repeal paragraph**: it tells you which older circulars are gone.\n- Check later **circular letters** that amend it, such as BRPD Circular Letter 14 of 2025 on minutes.\n- Record each change in the bank's **regulatory obligations register** (Stage 3)."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "Directions under section 45 of the Bank Company Act, including BRPD circulars and guidelines, bind every bank they address.",
+            "A board has at most 20 directors, with at least 3 independent directors (at least 2 if the board is smaller).",
+            "No more than 3 family members may serve at once; directors may serve 12 consecutive years, then must wait 3.",
+            "Directors, the MD/CEO and alternate directors need Bangladesh Bank's prior approval before they act.",
+            "Bangladesh Bank can remove directors (section 46) and dissolve boards (section 47); in 2025 it reported dissolving 15 boards."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of a decision at your bank that depended on a Bangladesh Bank circular. Did the people involved know which layer of the rules it came from? How would you check it next time?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-gc-s1-q1",
+          "question": "Under which section of the Bank Company Act 1991 does Bangladesh Bank usually issue binding directions such as BRPD circulars?",
+          "options": [
+            "Section 17",
+            "Section 15AA",
+            "Section 45",
+            "Section 47"
+          ],
+          "answer": 2,
+          "explanation": "Section 45 empowers Bangladesh Bank to issue directions to all banks or a particular bank, and the banks must comply. Section 47 is about dissolving a board, not issuing directions.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s1-q2",
+          "question": "A bank board has 16 directors. What is the minimum number of independent directors?",
+          "options": [
+            "Three",
+            "One",
+            "Two",
+            "Four"
+          ],
+          "answer": 2,
+          "explanation": "Section 15(9) and paragraph 3(c) of BRPD Circular 02/2024 require at least 3 independent directors on a 20-member board and at least 2 where the board has fewer than 20.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q3",
+          "question": "Which of these is the correct maximum size of a bank board under the Bank Company Act as amended in 2023?",
+          "options": [
+            "20 directors",
+            "15 directors",
+            "13 directors",
+            "25 directors"
+          ],
+          "answer": 0,
+          "explanation": "Section 15(9) caps the board at 20 directors, including the independent directors.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s1-q4",
+          "question": "A sponsor family already has three members on a bank board. It nominates a fourth as a shareholder director. What is the position?",
+          "options": [
+            "It is allowed if the fourth member is an independent director",
+            "It is allowed if the family holds more than 10% of the shares",
+            "It is allowed once Bangladesh Bank waives the limit by letter",
+            "The nomination breaches the limit of three family members serving at the same time"
+          ],
+          "answer": 3,
+          "explanation": "Section 15(10) and paragraph 3(d) of BRPD Circular 02 allow no more than three members of one family as directors at the same time. Family members cannot be independent directors in any case.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q5",
+          "question": "A director has served 12 consecutive years on Krishnachura's board. When can he next be appointed to the same board?",
+          "options": [
+            "After a break of one year",
+            "After a break of three years",
+            "Immediately, if shareholders re-elect him",
+            "Never again at the same bank"
+          ],
+          "answer": 1,
+          "explanation": "Section 15AA limits consecutive service to 12 years; the person becomes eligible again at the same bank only after three years have passed.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q6",
+          "question": "What happens to directors at a bank company's annual general meetings after the first AGM?",
+          "options": [
+            "One-third retire each year by seniority and may stand for re-election",
+            "All directors retire every year and must be reappointed",
+            "Only independent directors retire, every three years",
+            "Directors serve until 12 years without retiring"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 3(i) of BRPD Circular 02/2024 says all directors retire at the first AGM and one-third retire at each later AGM by seniority, following the Companies Act schedule; they may be re-elected.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s1-q7",
+          "question": "Bangladesh Bank believes a board's actions are harming depositors. Which power lets it dissolve the board by written order?",
+          "options": [
+            "Section 15C of the Bank Company Act",
+            "Paragraph 14 of BRPD Circular 02/2024",
+            "Section 47 of the Bank Company Act",
+            "Section 332 of the Labour Act"
+          ],
+          "answer": 2,
+          "explanation": "Section 47 allows Bangladesh Bank to dissolve a board, with reasons recorded in writing, for a set period of no more than two years including extensions. Section 15C deals with internal audit.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q8",
+          "question": "Since January 2025, when may an alternate director first attend a board meeting?",
+          "options": [
+            "As soon as the bank has notified Bangladesh Bank",
+            "Only after Bangladesh Bank has given prior approval of the appointment",
+            "Once the absent director has been abroad for one month",
+            "After the company secretary records the appointment in the minutes"
+          ],
+          "answer": 1,
+          "explanation": "BRPD Circular 01 of 2025 ended the practice of alternates attending on notice alone: they may not act or attend board or committee meetings without Bangladesh Bank's prior approval.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q9",
+          "question": "Which of these may Bangladesh Bank do under section 46 of the Bank Company Act?",
+          "options": [
+            "Fine an individual director for a missed board meeting",
+            "Order a family to sell its shares within thirty days",
+            "Appoint the bank's external auditor directly",
+            "Remove a chairman, director or chief executive after giving a chance to show cause"
+          ],
+          "answer": 3,
+          "explanation": "Section 46 lets Bangladesh Bank remove a chairman, director or chief executive, with reasons recorded, to prevent harm to the bank or depositors, misuse of funds, money laundering or TF, after a reasonable chance to show cause.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s1-q10",
+          "question": "Krishnachura's draft board policy says the board may approve directors 'in line with the bank's articles even if a BRPD circular differs'. What should compliance advise?",
+          "options": [
+            "Keep it: the articles prevail because shareholders approved them",
+            "Keep it for private banks but not for state-owned banks",
+            "Keep it until Bangladesh Bank objects in an inspection",
+            "Delete it: directions under section 45 bind the bank regardless of its articles"
+          ],
+          "answer": 3,
+          "explanation": "Section 45 makes Bangladesh Bank's directions binding, and section 15(9)-(10) applies whatever a bank's articles say. A policy cannot permit what a binding direction forbids.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Fit and Proper Directors, Board Duties, Committees and Minutes",
+      "stage": "The Boardroom Gate",
+      "summary": "Apply the fitness tests for directors, the approval process with Bangladesh Bank, the duties of the board and chair under BRPD Circular 02/2024, the three permitted board committees, meeting rules and the 2025 requirement to minute dissent.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the fit and proper criteria for directors in section 15(6) and BRPD Circular 02/2024",
+        "Describe the board's duties and the limits on directors' involvement in credit and HR decisions",
+        "Explain the make-up and duties of the executive, audit and risk management committees",
+        "Apply the meeting and minuting rules, including BRPD Circular Letter 14 of 2025"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The nominee's file",
+          "setting": "Company secretary's office, Krishnachura Bank PLC, Motijheel.",
+          "lines": [
+            {
+              "who": "tanvir",
+              "text": "New nominee, different family this time: Mr. Aminul Haque, 34, managing director of a garments group. Twelve years in business.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mitali",
+              "text": "Good start. What does his CIB report say?",
+              "mood": "thinking"
+            },
+            {
+              "who": "tanvir",
+              "text": "A term loan to one of his group companies is classified as defaulted at another bank.",
+              "mood": "worried"
+            },
+            {
+              "who": "rokeya",
+              "text": "Professor Rokeya Begum, independent director and chair of the audit committee. If that is right, he cannot even be nominated. A default by an interested company counts.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tanvir",
+              "text": "And he wants a seat on the audit committee and the executive committee.",
+              "mood": "worried"
+            },
+            {
+              "who": "rokeya",
+              "text": "Welcome to the Boardroom Gate. Let's see who gets through it, and what they may do once inside.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Fit and proper in five questions",
+          "scenes": [
+            {
+              "icon": "🎓",
+              "heading": "Experienced enough?",
+              "narration": "A director needs at least ten years of management, business or professional experience, and must be at least thirty. Work done before the age of eighteen does not count."
+            },
+            {
+              "icon": "🧾",
+              "heading": "Clean record?",
+              "narration": "No criminal conviction, no involvement in fraud or financial crime, no adverse court remarks, and no punishment for breaking a financial regulator's rules."
+            },
+            {
+              "icon": "💳",
+              "heading": "Paying debts?",
+              "narration": "Not a loan defaulter, personally or through interested companies, not a tax defaulter, never declared bankrupt, and not listed as a wilful defaulter in the last five years."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Free of conflicts?",
+              "narration": "Not a director, adviser or paid office holder at another bank, finance company, insurer or their subsidiaries, and not this bank's auditor, lawyer or consultant."
+            },
+            {
+              "icon": "✅",
+              "heading": "Approved?",
+              "narration": "The bank applies to Bangladesh Bank within seven working days of the board meeting or AGM, with declarations and CIB reports. The appointment runs only from Bangladesh Bank's approval."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From nomination to the boardroom",
+          "items": [
+            {
+              "label": "Nomination",
+              "detail": "Board nominates or AGM elects a candidate."
+            },
+            {
+              "label": "Eligibility screen",
+              "detail": "Section 15(6) and BRPD 02/2024 para 4: age, experience, record, debts, conflicts."
+            },
+            {
+              "label": "Application",
+              "detail": "Within 7 working days, signed by the MD/CEO, with forms, declarations and CIB reports."
+            },
+            {
+              "label": "Bangladesh Bank review",
+              "detail": "Prior approval under section 15(4)."
+            },
+            {
+              "label": "Seat taken",
+              "detail": "Effective from the date of Bangladesh Bank's approval."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Mr. Haque's group company has a defaulted loan at another bank. What does that mean for his nomination?",
+          "options": [
+            "He is not eligible: a default by an interested company disqualifies him",
+            "He is eligible if his personal accounts are clean",
+            "He is eligible, but only as an independent director",
+            "He is eligible if the other bank reschedules the loan after he joins"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 4(7) of BRPD Circular 02/2024 and section 15(6) of the Act exclude anyone who is a defaulter in his own name or through an interested institution."
+        },
+        {
+          "type": "concept",
+          "title": "What the board must do, and must not do",
+          "body": "Under sections 15B-15C of the Act and paragraph 10 of BRPD Circular 02/2024 the board is accountable for policy, risk management, internal control and internal audit. In practice it:\n\n- Sets **strategy every year**, tracks it **quarterly** and sets KPIs for the CEO and the two tiers below.\n- Approves **credit, risk, HR and budget** policies and delegates loan approval to management.\n- Keeps **internal audit independent** and reviews the audit committee's report **quarterly**.\n- Gives **special importance to staff training** and IT/MIS in the annual work plan.\n- Adopts an **integrity policy, code of conduct and code of ethics** for all staff and sets high ethical standards.\n\n**Limits:** no director may influence officers on a loan approval; the chair and directors may not interfere in appointments, promotions, transfers or discipline (except for the CEO and the two tiers below, which belong to the board); the chair has **no individual executive power**."
+        },
+        {
+          "type": "sort",
+          "title": "Board business or management business?",
+          "prompt": "Sort each item by who decides it under BRPD Circular 02/2024.",
+          "buckets": [
+            "The board decides",
+            "Management decides alone"
+          ],
+          "items": [
+            {
+              "text": "Approving the bank's credit policy and delegation of loan powers",
+              "bucket": 0
+            },
+            {
+              "text": "Setting KPIs for the CEO and the two tiers below",
+              "bucket": 0
+            },
+            {
+              "text": "Adopting the code of conduct and code of ethics for all staff",
+              "bucket": 0
+            },
+            {
+              "text": "Promoting a branch's senior officer under the service rules",
+              "bucket": 1
+            },
+            {
+              "text": "Approving a specific SME loan within delegated powers",
+              "bucket": 1
+            },
+            {
+              "text": "Transferring a cash officer from Sylhet to Khulna",
+              "bucket": 1
+            },
+            {
+              "text": "Approving the purchase of land for a new branch",
+              "bucket": 0
+            },
+            {
+              "text": "Deciding the shortlist for a probationary officer recruitment",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "The three permitted committees",
+          "items": [
+            {
+              "label": "Maximum members",
+              "left": "Executive: 7. Audit: 5",
+              "right": "Risk management: 5"
+            },
+            {
+              "label": "Independent directors",
+              "left": "Audit: at least 2, and it is chaired by one",
+              "right": "Executive and risk: no minimum set"
+            },
+            {
+              "label": "Chair's term",
+              "left": "3 years; an ID cannot chair audit two terms in a row",
+              "right": "Risk: chair elected for 3 years"
+            },
+            {
+              "label": "Who cannot join",
+              "left": "No executive committee member on audit; no alternate on any",
+              "right": "Executive: at most one member of a family"
+            },
+            {
+              "label": "Meetings",
+              "left": "Audit and risk: at least 4 a year",
+              "right": "Executive: as needed; decisions ratified by the board"
+            }
+          ],
+          "caption": "Section 15B and BRPD Circular 02/2024 para 11 allow only these three committees; the company secretary is secretary to each.",
+          "headers": [
+            "Rule",
+            "Detail"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The chair's phone call",
+          "setting": "Audit committee chair's room, after a board meeting.",
+          "lines": [
+            {
+              "who": "rokeya",
+              "text": "The chairman phoned the Agrabad branch manager yesterday about a loan for a supplier. He says he only 'asked about progress'.",
+              "mood": "angry"
+            },
+            {
+              "who": "sharmin",
+              "text": "Sharmin Akter, Agrabad branch manager. He asked twice. The file is still with credit risk and my team felt pressure.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "Paragraph 10 is clear: no director may influence officers on a loan approval, and the chair has no executive power of his own.",
+              "mood": "thinking"
+            },
+            {
+              "who": "rokeya",
+              "text": "I want this minuted at the next board meeting. He will object, so I may have to record a note of dissent.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tanvir",
+              "text": "Since last August the minutes must record the discussion and any dissent in detail. I cannot leave it out.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Pressure on a loan file",
+          "situation": "Krishnachura's chairman has twice phoned the Agrabad branch manager about a supplier's loan that is still with credit risk. The branch manager has told compliance. At the next board meeting, the chairman says the matter is 'not for the minutes' and asks the company secretary to leave it out. The audit committee chair disagrees.",
+          "choices": [
+            {
+              "text": "The company secretary minutes the discussion, the audit committee chair's objection and any note of dissent in full, and compliance reports the contact to the audit committee.",
+              "outcome": "Best. BRPD Circular Letter 14 of 2025 requires minutes to record discussions, dissenting views and notes of dissent in detail. Paragraph 10 forbids directors influencing loan approvals, so it belongs with the audit committee.",
+              "score": 2
+            },
+            {
+              "text": "Leave it out of the minutes but keep a private file note in the company secretary's office.",
+              "outcome": "Poor. A private note does not meet the duty to record discussions and dissent in the minutes, and it hides the issue from Bangladesh Bank's review of minutes.",
+              "score": 0
+            },
+            {
+              "text": "Minute only the decision taken, with a line that 'members discussed a loan matter'.",
+              "outcome": "Partly right but weak. A one-line summary is exactly what the 2025 circular letter was issued to stop; dissent and observations must be recorded properly.",
+              "score": 1
+            },
+            {
+              "text": "Ask the branch manager to approve the loan quickly so the dispute ends.",
+              "outcome": "Poor. That rewards the interference and exposes the branch manager to a credit decision made under pressure.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Running a compliant board meeting",
+          "prompt": "Put the steps in the order BRPD Circular 02/2024 and Circular Letter 14/2025 expect.",
+          "steps": [
+            "Agenda items are fixed; nothing outside the agenda may be considered",
+            "Memos reach directors at least two days before the meeting",
+            "Only directors, the MD and the company secretary attend; officers join only to present their item",
+            "The board discusses and decides; any director may record a note of dissent",
+            "Minutes record the discussion, all observations, dissent in detail and any Bangladesh Bank observer's views",
+            "Executive committee decisions taken between meetings are ratified at the next board meeting"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Director conduct at a glance",
+          "items": [
+            {
+              "label": "Set strategy, approve policy",
+              "detail": "The board's job: plan yearly, monitor quarterly."
+            },
+            {
+              "label": "Oversee and ask questions",
+              "detail": "Chair may call for information or order an inquiry through the board."
+            },
+            {
+              "label": "Direct a loan or posting",
+              "detail": "Forbidden: influence on credit, HR or daily operations."
+            },
+            {
+              "label": "Act alone as 'executive chair'",
+              "detail": "Forbidden: the chair has no individual executive power."
+            }
+          ],
+          "axes": {
+            "x": "Collective (left) vs individual (right)",
+            "y": "Allowed (top) vs forbidden (bottom)"
+          }
+        },
+        {
+          "type": "check",
+          "question": "Krishnachura wants a 'board IT committee' to oversee its core banking upgrade. What does BRPD Circular 02/2024 allow?",
+          "options": [
+            "No: only the executive, audit and risk management committees may be formed",
+            "Yes, if at least two independent directors sit on it",
+            "Yes, as a temporary sub-committee for up to one year",
+            "Yes, if Bangladesh Bank is told within seven days"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 11 says the board forms an executive committee, an audit committee and a risk management committee, and no other permanent or temporary committee or sub-committee."
+        },
+        {
+          "type": "example",
+          "title": "Inside a fitness file at Krishnachura",
+          "body": "Before the board even nominates a candidate, Tanvir's team builds a file:\n\n- **CV and age proof:** at least 30 years old and 10 years' experience counted from age 18.\n- **CIB reports** on the person and every interested company (for a representative director, also the shareholder company).\n- **Declarations:** the candidate's declaration, a confidentiality declaration and, for independent directors, an extra declaration that he holds no shares and no interest in the bank.\n- **Bank's certificate:** no default; whether family members sit on the board; no post at another bank, finance company or insurer; not the bank's auditor, lawyer or consultant; any past link with management.\n- **Certified minutes** of the board meeting or AGM, signed off by the company secretary and the MD.\n\nThe MD signs the application and it goes to Bangladesh Bank within **seven working days**. After approval, the bank updates its director list, its website (with photos) and Bangladesh Bank's portal."
+        },
+        {
+          "type": "tip",
+          "title": "Director training: what the circular says",
+          "body": "Paragraph 14 of BRPD Circular 02/2024 says in-country training **may be arranged** for directors on banking law, related laws and changed regulations. The wording is permissive, so treat it as good practice, not a set course. The audit, executive and risk committees, though, must have members who **understand the Bank Company Act, banking law, risks and their own duties**, so a short induction for every new director is the simplest way to show that."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Directors need 10 years' experience, a minimum age of 30, a clean record, no defaults and no conflicting posts.",
+            "Appointments take effect only on Bangladesh Bank's approval; the bank applies within seven working days.",
+            "The board sets policy and strategy, keeps audit independent, prioritises training and adopts the code of conduct.",
+            "Directors may not influence loans, postings or discipline; the chair has no individual executive power.",
+            "Only three committees are allowed, and minutes must record discussion and dissent in detail."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a director contacted you directly about a customer's file, what would you say, and who would you tell? Write the two sentences you would use."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-gc-s2-q1",
+          "question": "What is the minimum age for a director of a bank company under BRPD Circular 02/2024?",
+          "options": [
+            "25 years",
+            "35 years",
+            "40 years",
+            "30 years"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 4(2) of BRPD Circular 02/2024 sets a minimum age of 30.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s2-q2",
+          "question": "A candidate has 11 years of business experience, but three of those years were before she turned 18. Does she meet the experience test?",
+          "options": [
+            "Yes: all 11 years count towards the 10-year minimum",
+            "No: work before age 18 does not count, leaving 8 years against a 10-year minimum",
+            "Yes, if the board certifies her as fit",
+            "No: the minimum is 15 years for any new director"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 4(1) requires at least 10 years of management, business or professional experience and says experience before age 18 is not considered.",
+          "difficulty": 4
+        },
+        {
+          "id": "bd-gc-s2-q3",
+          "question": "Within what time must a bank apply to Bangladesh Bank for approval after a board meeting or AGM nominates or elects a director?",
+          "options": [
+            "Within 7 working days",
+            "Within 30 days",
+            "Within 2 months",
+            "Before the next AGM"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 5 of BRPD Circular 02/2024 requires the application, signed by the MD/CEO, within seven working days of the board meeting or AGM.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s2-q4",
+          "question": "A former deputy managing director of Krishnachura retired two years ago and is now nominated to its board. What applies?",
+          "options": [
+            "He is eligible at once because he knows the bank well",
+            "He is eligible only as an independent director",
+            "He is not eligible until five years after his service with the bank ended",
+            "He is eligible if he gives up his pension"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 4(12) of BRPD Circular 02/2024 bars a person who worked in the same bank until five years have passed since that employment ended.",
+          "difficulty": 4
+        },
+        {
+          "id": "bd-gc-s2-q5",
+          "question": "Which committee may an executive committee member NOT join?",
+          "options": [
+            "The risk management committee",
+            "The audit committee",
+            "Any committee chaired by the board chair",
+            "The executive committee of a subsidiary"
+          ],
+          "answer": 1,
+          "explanation": "Section 15B(2) of the Act and paragraph 11.2 of BRPD Circular 02/2024 require the audit committee to be formed of directors who are not executive committee members.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s2-q6",
+          "question": "What is the maximum size of a bank's audit committee and its minimum number of independent directors?",
+          "options": [
+            "Seven members, at least one independent director",
+            "Five members, all of them independent directors",
+            "Three members, at least two independent directors",
+            "Five members, at least two of them independent directors"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.2(a) of BRPD Circular 02/2024 sets a maximum of five members including at least two independent directors, with the chair chosen from the independent directors.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s2-q7",
+          "question": "Who may attend a bank's board meeting besides the directors?",
+          "options": [
+            "Any senior executive the chair invites for the full meeting",
+            "Shareholders holding more than 5% of the shares",
+            "The bank's legal adviser and external auditor as observers",
+            "Only the managing director and the company secretary; an officer may attend only while presenting an item"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 12.1 of BRPD Circular 02/2024 limits attendance to directors, the MD and the company secretary; an officer may attend, not full-time, only to present a related matter, and outsiders may never attend.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s2-q8",
+          "question": "What did BRPD Circular Letter 14 of 4 August 2025 require?",
+          "options": [
+            "Board meetings must be held at least twice a month",
+            "Board and committee minutes must record discussions, dissent and any Bangladesh Bank observer's views",
+            "Every director must attend annual training on banking law",
+            "Alternate directors may attend audit committees with notice"
+          ],
+          "answer": 1,
+          "explanation": "The circular letter found minutes often omitted discussions and dissent, and directed banks to record discussions, all observations, notes of dissent in detail and the views of any Bangladesh Bank observer.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s2-q9",
+          "question": "The board chair wants to visit two branches to see how a new lending product works. Is that allowed?",
+          "options": [
+            "No, a chair may never visit a branch",
+            "Yes, and he may approve pending loans while there",
+            "Yes, as part of the board's oversight role, but he may not direct daily operations",
+            "Only if Bangladesh Bank gives prior approval"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 10.2 of BRPD Circular 02/2024 lets the chair visit branches or financing activities as part of oversight, while forbidding involvement or interference in daily administration.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s2-q10",
+          "question": "Paragraph 10 of BRPD Circular 02/2024 asks the board to give special importance to which item in its annual work plan?",
+          "options": [
+            "Training to build staff skills, along with modern IT and MIS",
+            "Branch expansion targets for each district",
+            "Annual salary increases for all staff",
+            "Sponsorship of sports and cultural events"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 10.1(d) says the board shall give special importance to training for officers' skill development and to modern technology and MIS, and include them in the annual work plan.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The 2026 Internal Control Guidelines: Three Lines, Compliance Risk and Role-Based Training",
+      "stage": "The Three Gates",
+      "summary": "Work through Bangladesh Bank's July 2026 Guidelines on Internal Control Management System: the three lines of defence, the heads of internal audit and compliance, the compliance risk management framework, observation tracking and the mandatory role-based compliance training in section 5.4.3.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the three lines of defence as the 2026 ICMS guidelines define them",
+        "Describe the reporting lines and safeguards for the Head of Internal Audit and Head of Compliance",
+        "Build the compliance risk management cycle: CRA, monitoring plan, change management, approvals and reporting",
+        "Design a mandatory, role-based compliance training programme that meets section 5.4.3"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A new rulebook with a deadline",
+          "setting": "Compliance Division, Krishnachura Bank PLC, the week the July 2026 circular arrived.",
+          "lines": [
+            {
+              "who": "mitali",
+              "text": "BRPD-2 Circular 03 is out. The 2016 internal control and compliance guidelines are repealed, and we must restructure by 31 December 2026.",
+              "mood": "worried"
+            },
+            {
+              "who": "habib",
+              "text": "Habibur Rahman, Head of HR and Training. I saw section 5.4.3. Compliance and HR must jointly run a mandatory, role-based compliance training programme. That's us.",
+              "mood": "thinking"
+            },
+            {
+              "who": "rokeya",
+              "text": "And my audit committee now gets a quarterly compliance report from Mitali, plus closure confirmations on every high-risk audit finding.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mitali",
+              "text": "Three gates to pass: who owns risk, who checks it and who gives independent assurance. Then the training programme.",
+              "mood": "thinking"
+            },
+            {
+              "who": "habib",
+              "text": "Where do we even start?",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "With the compliance risk assessment. Everything else, the training included, is built on it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Three lines of defence, the 2026 way",
+          "scenes": [
+            {
+              "icon": "🏦",
+              "heading": "First line: business units",
+              "narration": "Branches and business units own their compliance risks. They run the controls and follow internal policies and external rules in daily work."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Second line: compliance and risk",
+              "narration": "The compliance function gives independent oversight, challenge and expertise. It builds the compliance risk framework, policies and tools and tests whether first-line controls work."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Third line: internal audit",
+              "narration": "Internal audit gives independent, objective assurance to the board and its audit committee on governance, risk management and internal control, including the first two lines."
+            },
+            {
+              "icon": "📋",
+              "heading": "Formal adoption",
+              "narration": "The guidelines say banks must formally adopt and implement the three lines model so that accountability is clear."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Who reports to whom",
+          "items": [
+            {
+              "label": "Business units",
+              "detail": "First line: own the risks and run the controls."
+            },
+            {
+              "label": "Head of Compliance",
+              "detail": "Reports to the audit committee through the MD/CEO; may speak freely to the committee or board."
+            },
+            {
+              "label": "Head of Internal Audit",
+              "detail": "Reports directly to the audit committee, which also appraises the role."
+            },
+            {
+              "label": "Audit committee of the board",
+              "detail": "Reviews the compliance report at least quarterly."
+            },
+            {
+              "label": "Board of directors",
+              "detail": "Sets the tone from the top; reviews internal control effectiveness at least yearly."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Krishnachura branch manager says 'compliance is the Compliance Division's job, not mine'. How do the 2026 guidelines answer?",
+          "options": [
+            "Business units are the first line: they own and manage the compliance risks in their own activities",
+            "Correct: the second line carries all compliance responsibility",
+            "Correct, unless internal audit finds a breach at the branch",
+            "Branches share it only with internal audit, the third line"
+          ],
+          "answer": 0,
+          "explanation": "Section 1.4 makes management and staff in business units directly responsible for identifying, assessing and managing compliance risks and for executing controls."
+        },
+        {
+          "type": "concept",
+          "title": "Safeguards for the two heads",
+          "body": "Section 2.3 of the guidelines protects the independence of the Head of Internal Audit (HoIA) and Head of Compliance (HoC):\n\n- Both have a **charter** approved by the audit committee and the board.\n- The HoIA reports **directly to the audit committee**, which appraises him or her; complaints against the HoIA go to the committee through the MD/CEO.\n- The HoC reports to the committee **through the MD/CEO** but may disclose findings freely to the committee or board; the MD/CEO appraises the HoC.\n- Both should ideally be **no lower than two steps below the CEO**, hold the **same designation** and have **no other duties**.\n- ICMS staff have **unrestricted access** to records and people; no one punished for a major offence or under disciplinary proceedings may be posted there; auditors never audit their own past work.\n- ICMS staff take a **planned, confidential 10-day mandatory leave** each year.\n- The appointment, transfer or removal of the HoIA and HoC needs the **audit committee's approval**."
+        },
+        {
+          "type": "match",
+          "title": "Match the ICMS role to its duty",
+          "prompt": "Each pairing comes from the July 2026 guidelines.",
+          "pairs": [
+            {
+              "left": "Head of Compliance",
+              "right": "Maintains the compliance charter, annual CRA and risk-based monitoring plan"
+            },
+            {
+              "left": "Head of Internal Audit",
+              "right": "Confirms closure of critical or high-risk observations and reports it to the audit committee"
+            },
+            {
+              "left": "Senior management team",
+              "right": "Certifies yearly to the board how effective internal control has been"
+            },
+            {
+              "left": "Audit committee",
+              "right": "Reviews the Head of Compliance's comprehensive report at least quarterly"
+            },
+            {
+              "left": "Board of directors",
+              "right": "Sets a tone from the top that promotes honesty, integrity and compliance"
+            },
+            {
+              "left": "Compliance with HR",
+              "right": "Develop and deliver the mandatory, role-based compliance training programme"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The compliance risk management cycle",
+          "items": [
+            {
+              "label": "Compliance risk assessment",
+              "detail": "Bank-wide, at least yearly: inherent risk, control strength, residual risk."
+            },
+            {
+              "label": "Monitoring plan",
+              "detail": "Risk-based reviews testing key controls, drawn from the CRA."
+            },
+            {
+              "label": "Change and approvals",
+              "detail": "Track new rules; compliance approves new products in writing before launch."
+            },
+            {
+              "label": "Training and awareness",
+              "detail": "Mandatory, role-based, built on the CRA; effectiveness measured."
+            },
+            {
+              "label": "Reporting",
+              "detail": "HoC reports to the audit committee and senior management at least quarterly."
+            }
+          ],
+          "caption": "Sections 5.3-5.4. Findings feed the next year's assessment."
+        },
+        {
+          "type": "story",
+          "title": "What does 'role-based' mean?",
+          "setting": "HR and Training Division meeting room.",
+          "lines": [
+            {
+              "who": "habib",
+              "text": "Easy option: one e-learning module for all 4,000 staff, once a year, done.",
+              "mood": "happy"
+            },
+            {
+              "who": "mitali",
+              "text": "That isn't role-based, and it isn't built on our compliance risk assessment. Our CRA says trade finance and lending carry most of our compliance risk.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sharmin",
+              "text": "My tellers need different things from my credit officers. And nobody has ever checked if the training changed anything at Agrabad.",
+              "mood": "neutral"
+            },
+            {
+              "who": "habib",
+              "text": "So we need different paths by role, tied to the risks, and a way to measure effectiveness.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mitali",
+              "text": "And we report the results. The guideline says the effectiveness must be measured and reported.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Designing the programme",
+          "situation": "Krishnachura must meet section 5.4.3 of the ICMS guidelines before the 31 December 2026 deadline. The training budget allows either one generic annual e-learning course for all staff, or a smaller set of role-based modules with assessments. The CRA ranks trade finance, credit and branch cash operations as the highest compliance risks.",
+          "choices": [
+            {
+              "text": "Build role-based paths from the CRA (trade, credit, branch operations, ICMS staff, managers), make them mandatory, test learners and report completion and results to senior management and the audit committee.",
+              "outcome": "Best. This meets every element of section 5.4.3: compliance and HR together, mandatory, role-based, CRA-based curriculum, and measured and reported effectiveness.",
+              "score": 2
+            },
+            {
+              "text": "Run the generic e-learning course for everyone and add role-based modules next year.",
+              "outcome": "Partly right. A common baseline helps, but on its own it is not role-based or built on the CRA, so it would not meet the guideline by the deadline.",
+              "score": 1
+            },
+            {
+              "text": "Let each division head choose whatever training they like and report attendance.",
+              "outcome": "Poor. The guideline puts the programme on compliance and HR, and attendance alone is not a measure of effectiveness.",
+              "score": 0
+            },
+            {
+              "text": "Train only the Compliance Division, since compliance is the second line's job.",
+              "outcome": "Poor. The first line owns compliance risk; leaving branches and business units untrained ignores the three lines model.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Head of Internal Audit and Head of Compliance",
+          "items": [
+            {
+              "label": "Line of defence",
+              "left": "Third line: independent assurance",
+              "right": "Second line: oversight and challenge"
+            },
+            {
+              "label": "Reports to",
+              "left": "Audit committee, directly",
+              "right": "Audit committee through the MD/CEO, with free access"
+            },
+            {
+              "label": "Appraised by",
+              "left": "The audit committee",
+              "right": "Senior management / MD/CEO"
+            },
+            {
+              "label": "Charter",
+              "left": "Internal audit charter approved by committee and board",
+              "right": "Compliance policy charter approved by committee and board"
+            },
+            {
+              "label": "Shared rules",
+              "left": "Same designation; ideally within two steps of the CEO",
+              "right": "No other duties; moves need audit committee approval"
+            }
+          ],
+          "caption": "Sections 2.3.1 to 2.3.3 of the July 2026 ICMS guidelines.",
+          "headers": [
+            "Head of Internal Audit",
+            "Head of Compliance"
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Closing an audit observation",
+          "prompt": "Put the steps in the order section 5.5 requires.",
+          "steps": [
+            "The Head of Compliance logs the observation in the central register with an ID, risk rating, owner and target date",
+            "Management designs a SMART corrective action and reports progress to compliance",
+            "Compliance reviews evidence and talks to the process owner when management reports it closed",
+            "Internal audit re-tests the control to validate the fix",
+            "For a critical or high-risk observation, the Head of Internal Audit confirms closure and reports it to the audit committee"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Branch operations says an inspection finding is 'closed' because a new procedure was issued. When may it be treated as closed?",
+          "options": [
+            "When the action is implemented, internal audit's re-test confirms the risk is mitigated and no significant residual risk remains",
+            "When the branch manager signs the closure form",
+            "When the new procedure has been emailed to all branches",
+            "When ninety days have passed with no repeat finding"
+          ],
+          "answer": 0,
+          "explanation": "Section 5.5(e) sets three closure criteria; for critical or high-risk items the Head of Internal Audit must also confirm closure and report it to the audit committee."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bangladesh Bank moves to risk-based supervision (2026)",
+          "body": "Bangladesh Bank's Monetary Policy Statement for January-June 2026 says it implemented **risk-based supervision (RBS) from 4 January 2026**, to strengthen forward-looking risk assessment, risk governance and accountability. It reports that **more than 500 of its officials** were trained in RBS. The same statement notes new rules that bar banks from paying dividends while short of capital or provisions, and from paying staff bonuses unless the bank makes a profit under proper accounting.\n\nThe July 2026 ICMS guidelines say they were written to support the move to RBS. Under RBS, supervisors look at **how well a bank finds and controls its own risks**. A bank with a real CRA, a working monitoring plan and training that changes behaviour is far better placed than one that only collects attendance sheets."
+        },
+        {
+          "type": "tip",
+          "title": "Evidence that training works",
+          "body": "Section 5.4.3 asks for effectiveness to be **measured and reported**. Useful measures:\n\n- Completion by role and deadline, with escalation of overdue staff.\n- Pass rates on scenario-based tests, not just attendance.\n- Trends in audit and inspection findings in the trained areas.\n- Repeat findings, which show where training did not change practice.\n\nPut these in the Head of Compliance's quarterly report to the audit committee."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "The 2026 ICMS guidelines replace the 2016 ICC guidelines; banks must restructure by 31 December 2026.",
+            "Business units are the first line, compliance and risk the second, internal audit the third.",
+            "The HoIA reports directly to the audit committee; the HoC reports through the MD/CEO with free access to the committee.",
+            "A bank-wide compliance risk assessment at least yearly drives the monitoring plan and the training curriculum.",
+            "Compliance and HR must run mandatory, role-based compliance training and measure and report its effectiveness."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which compliance risks in your own role would a role-based programme need to cover? How would you show, with evidence, that the training changed what you do?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-gc-s3-q1",
+          "question": "Under the July 2026 ICMS guidelines, who forms the first line of defence?",
+          "options": [
+            "The compliance function",
+            "Internal audit",
+            "Management and staff in the business units",
+            "The audit committee of the board"
+          ],
+          "answer": 2,
+          "explanation": "Section 1.4 says business units own and are directly responsible for managing the compliance risks in their activities and for running controls.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s3-q2",
+          "question": "By what date must banks restructure to meet the 2026 ICMS guidelines?",
+          "options": [
+            "30 June 2026",
+            "31 December 2026",
+            "31 March 2027",
+            "21 July 2027"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3 of BRPD-2 Circular 03 of 21 July 2026 requires banks to complete the restructuring needed to align with ICMS by 31 December 2026.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s3-q3",
+          "question": "To whom does the Head of Internal Audit report under the 2026 guidelines?",
+          "options": [
+            "To the MD/CEO, who appraises the role",
+            "To the Head of Compliance",
+            "To the chair of the board in person",
+            "Directly to the audit committee of the board"
+          ],
+          "answer": 3,
+          "explanation": "Section 2.3.1.6 says the HoIA reports activities and findings directly to the audit committee and has full and free access to it; the committee also carries out the appraisal.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s3-q4",
+          "question": "What does section 5.4.3 of the ICMS guidelines require?",
+          "options": [
+            "Every employee must pass an external compliance certificate within one year",
+            "HR must run one compliance course a year for all staff together",
+            "Internal audit must design and deliver compliance training to branches",
+            "Compliance and HR must deliver mandatory, role-based compliance training based on the CRA, with effectiveness measured and reported"
+          ],
+          "answer": 3,
+          "explanation": "Section 5.4.3 puts the programme on the compliance function together with HR, makes it mandatory and role-based, ties the curriculum to the CRA and requires its effectiveness to be measured and reported.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s3-q5",
+          "question": "How often must a bank carry out its bank-wide compliance risk assessment?",
+          "options": [
+            "At least once every three years",
+            "At least once a year",
+            "Only before a Bangladesh Bank inspection",
+            "At least once a month"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.3.4.2 requires a bank-wide CRA at least annually, which then informs the compliance monitoring plan.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s3-q6",
+          "question": "Krishnachura plans to launch a new digital loan product next month. What must happen first under section 5.4.2?",
+          "options": [
+            "The audit committee must approve the product's pricing",
+            "Internal audit must audit the first 100 loans",
+            "The compliance function must be consulted and give written approval before launch",
+            "Bangladesh Bank must approve the product in writing"
+          ],
+          "answer": 2,
+          "explanation": "Section 5.4.2 requires compliance to be consulted and give written approval on all new products, processes and major initiatives before launch.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s3-q7",
+          "question": "Which officer may NOT be posted to the ICMS under the 2026 guidelines?",
+          "options": [
+            "An officer currently under disciplinary proceedings",
+            "An officer with an accounting degree",
+            "An officer who previously worked in a branch",
+            "An officer who joined less than three years ago"
+          ],
+          "answer": 0,
+          "explanation": "Section 2.3.3.5 says people punished for a major offence and people under disciplinary proceedings must not be posted to ICMS; track records must be checked first.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s3-q8",
+          "question": "How often must the Head of Compliance report to the audit committee and senior management?",
+          "options": [
+            "At least yearly",
+            "At least quarterly",
+            "At least monthly",
+            "Only when a significant breach occurs"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.4.4 requires comprehensive reports at least quarterly; significant breaches must also be reported immediately under section 5.3.3.6.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s3-q9",
+          "question": "An internal audit team finds an irregularity involving the MD/CEO. Under section 2.7, where must it be reported?",
+          "options": [
+            "To the MD/CEO first, so that he can respond",
+            "Only to the shareholders at the next AGM",
+            "To the bank's external auditor, who decides next steps",
+            "Confidentially and directly to BRPD-2 and the relevant supervision department of Bangladesh Bank"
+          ],
+          "answer": 3,
+          "explanation": "Section 2.7 says irregularities found against the board or MD/CEO during an audit are communicated confidentially and directly to Bangladesh Bank's BRPD-2 and the concerned bank supervision department.",
+          "difficulty": 4
+        },
+        {
+          "id": "bd-gc-s3-q10",
+          "question": "Krishnachura's HR head proposes measuring the new compliance training by attendance only. What is the strongest objection?",
+          "options": [
+            "Section 5.4.3 requires effectiveness to be measured, and attendance does not show learning or changed practice",
+            "Attendance records may not be kept under data protection law",
+            "Bangladesh Bank sets a fixed pass mark that attendance cannot meet",
+            "Training records belong to internal audit, not HR"
+          ],
+          "answer": 0,
+          "explanation": "The guideline asks for effectiveness to be measured and reported. Test results, audit trends and repeat findings show impact; attendance only shows presence.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The Code of Conduct, Ethics and the Whistleblower Framework",
+      "stage": "The Integrity Bridge",
+      "summary": "Apply Bangladesh Bank's Code of Conduct for banks to gifts, conflicts, outside work, inside information and confidentiality, see how a bank adopts and embeds its own code, and use the mandatory whistleblower framework in section 8.4 of the 2026 ICMS guidelines and the Public Interest Information Disclosure Act 2011.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the Code's rules on use of position, conflicts of interest, gifts, outside employment and insider trading",
+        "Explain how a bank adopts, circulates, signs off and enforces its own code of conduct",
+        "Use the whistleblower framework: who can report, what, through which channels and with what protection",
+        "Explain the protection the Public Interest Information Disclosure Act 2011 gives to people who report"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A gift basket and a quiet warning",
+          "setting": "Agrabad branch, Chattogram, the week before Eid.",
+          "lines": [
+            {
+              "who": "sharmin",
+              "text": "A large gift hamper has arrived for my credit officer from a garments customer whose limit renewal is on his desk.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "The Code is clear: no gift that puts you under an obligation to the giver, without the competent authority's permission. Anything delivered by courier goes straight to a senior for disposal.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sharmin",
+              "text": "There's more. One of my officers says a colleague has been splitting cash deposits for that same customer. She's afraid to say it openly.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "Then she needs the whistleblower channel, and she needs to know she is protected.",
+              "mood": "neutral"
+            },
+            {
+              "who": "habib",
+              "text": "Most staff signed the code on their first day and never looked at it again.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mitali",
+              "text": "Stage four: the Integrity Bridge. Let's make the code something people use.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What Bangladesh Bank's Code expects",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "One code for the industry",
+              "narration": "In 2017 Bangladesh Bank issued a Code of Conduct for banks and non-bank financial institutions, as a minimum standard for directors, staff and others who deal with them."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Every bank builds its own",
+              "narration": "Each bank must develop its own code in line with it and circulate it formally within sixty days, with the board and management responsible for putting it into practice."
+            },
+            {
+              "icon": "✍️",
+              "heading": "Everyone signs",
+              "narration": "New and existing employees commit to the code and sign a statement of compliance."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training and culture",
+              "narration": "Banks must train staff to act with integrity and hold seminars and workshops on ethics and compliance. An ethics committee runs a yearly work plan."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Fair discipline",
+              "narration": "Breaches go through a written disciplinary procedure that is fair, consistent and proportionate."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Embedding the code",
+          "items": [
+            {
+              "label": "Board adopts",
+              "detail": "BRPD 02/2024 para 10: code of conduct and ethics for all staff."
+            },
+            {
+              "label": "Circulate and sign",
+              "detail": "Formal circulation within 60 days; statement of compliance from each employee."
+            },
+            {
+              "label": "Train",
+              "detail": "Induction, foundation training and ethics workshops (Code s.4.2, s.32)."
+            },
+            {
+              "label": "Speak up",
+              "detail": "Channels and protection under the ICMS whistleblower framework."
+            },
+            {
+              "label": "Monitor and discipline",
+              "detail": "Ethics committee work plan; fair disciplinary procedure."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer offers Krishnachura's credit officer an expensive phone after a loan is approved. Under the Code, what should he do?",
+          "options": [
+            "Decline it, or if it arrives anyway, hand it to his superior for disposal and report it",
+            "Keep it, because the loan was already approved",
+            "Keep it if its value is declared in his annual asset statement",
+            "Give it to a family member so it is not a gift to him"
+          ],
+          "answer": 0,
+          "explanation": "Section 12 of the Code bars accepting gifts, personally or through family, that create an obligation to the giver without permission; items sent by post or courier are handed to higher authority for disposal. Section 8.2(j) also forbids gifts from people who benefit from the employee's office."
+        },
+        {
+          "type": "concept",
+          "title": "Conflicts, outside work and inside information",
+          "body": "Key duties in the Code (sections 7-13 and 31):\n\n- **Use of position (s.7):** using your post for private gain, or to favour your own people, is treated as abuse of power and corruption.\n- **Conflicts (s.8):** avoid any undue benefit for yourself, family or relatives; do not trade, hold business stakes or advise others in ways that harm the bank.\n- **Outside work (ss.9-10):** no other trade or job without the competent authority's prior permission; honorary social or charitable work is allowed if duties do not suffer.\n- **Political pressure (s.11):** never use a member of parliament, politician or director to win a posting, promotion or transfer.\n- **Suppliers (s.13):** disclose personal links with a vendor to top management before negotiations.\n- **Insider trading (s.31):** never trade, or tip others, on price-sensitive non-public information, including about your own bank.\n- **Confidentiality (ss.6, 27, 36):** customer information stays secret unless a court or lawful authority requires it, during and after employment."
+        },
+        {
+          "type": "sort",
+          "title": "Allowed, needs permission or prohibited?",
+          "prompt": "Sort each situation using Bangladesh Bank's Code of Conduct.",
+          "buckets": [
+            "Allowed",
+            "Needs prior permission or disclosure",
+            "Prohibited"
+          ],
+          "items": [
+            {
+              "text": "Volunteering on weekends at a local charity school",
+              "bucket": 0
+            },
+            {
+              "text": "Taking a paid evening job as a consultant to an accounting firm",
+              "bucket": 1
+            },
+            {
+              "text": "Negotiating a contract with a printing firm owned by your cousin",
+              "bucket": 1
+            },
+            {
+              "text": "Asking a director to help you get transferred to Dhaka",
+              "bucket": 2
+            },
+            {
+              "text": "Buying your bank's shares after hearing unpublished quarterly results",
+              "bucket": 2
+            },
+            {
+              "text": "Speaking to a newspaper about the bank's loan losses",
+              "bucket": 1
+            },
+            {
+              "text": "Accepting a foreign award or title",
+              "bucket": 1
+            },
+            {
+              "text": "Sharing a customer's balance with his brother who asks politely",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Whistleblower framework (ICMS 8.4)",
+          "items": [
+            {
+              "label": "Who is covered",
+              "detail": "All staff incl. contractual and temporary, the board, senior management, customers, vendors and agents."
+            },
+            {
+              "label": "What can be reported",
+              "detail": "Fraud, bribery, false records, policy or code breaches, regulatory or ESG non-compliance, retaliation."
+            },
+            {
+              "label": "How",
+              "detail": "Email or hotline, secure online system, or a sealed confidential letter to the HoC or audit committee chair."
+            },
+            {
+              "label": "Protection",
+              "detail": "Identity kept confidential; anonymous reports accepted; no demotion, suspension or harassment."
+            },
+            {
+              "label": "Investigation",
+              "detail": "Register, assess, refer for full investigation, report findings to the audit committee chair."
+            }
+          ],
+          "caption": "Section 5.3.3.3 also requires the mechanism to work effectively and free of retaliation."
+        },
+        {
+          "type": "story",
+          "title": "The officer who wants to speak up",
+          "setting": "A quiet meeting room at the Agrabad branch.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Junior officer Tania has seen a colleague break a large cash deposit into smaller amounts across several days for the same customer.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sharmin",
+              "text": "Tania is frightened. The colleague is popular, and she worries her appraisal will suffer.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "She can report through the hotline or in a sealed envelope marked as a confidential whistleblower report to me or the audit committee chair. She can even stay anonymous if she gives enough detail.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sharmin",
+              "text": "And if she's wrong?",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "If she reported in good faith, she is protected even if the allegation is not proved. And because it looks like structuring, the AML team must also look at it.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Handling a whistleblower report",
+          "situation": "A confidential letter reaches Krishnachura's Head of Compliance alleging that the Agrabad cash officer splits a customer's deposits to avoid reporting. The branch manager, who received a copy, wants to call the cash officer in, read him the letter and ask who wrote it 'to clear the air'.",
+          "choices": [
+            {
+              "text": "Register and acknowledge the report, keep the reporter's identity strictly need-to-know, do a preliminary assessment, refer it for investigation and alert the AML team without tipping off the customer.",
+              "outcome": "Best. This follows sections 8.4.3-8.4.5: confidentiality, assessment, referral and findings to the audit committee chair. Possible structuring also triggers the bank's AML escalation.",
+              "score": 2
+            },
+            {
+              "text": "Let the branch manager hold the meeting but ask him not to name the reporter.",
+              "outcome": "Poor. Reading the letter to the subject risks revealing the reporter and tipping off the customer, and it bypasses the investigation process.",
+              "score": 0
+            },
+            {
+              "text": "Wait to see if more letters arrive before acting.",
+              "outcome": "Poor. The framework requires a report to be registered and assessed; delay can let wrongdoing and evidence loss continue.",
+              "score": 0
+            },
+            {
+              "text": "Pass the letter to the cash officer's line manager to investigate quietly.",
+              "outcome": "Partly right in that someone acts, but the line manager is too close; the guidelines route cases to the assigned auditor, team or division, with findings to the audit committee chair.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Protection for people who speak up",
+          "cards": [
+            {
+              "front": "Identity",
+              "back": "Under ICMS 8.4.3 the whistleblower's identity is kept strictly confidential and case files are handled on a need-to-know basis."
+            },
+            {
+              "front": "Anonymous reports",
+              "back": "They must be taken up if they contain enough information to investigate."
+            },
+            {
+              "front": "Good faith, not proved",
+              "back": "Protection still applies if the allegation turns out unsubstantiated, as long as it was made in good faith."
+            },
+            {
+              "front": "Retaliation",
+              "back": "No demotion, suspension or harassment. Bangladesh Bank may act against a bank that retaliates, and credible reports may be rewarded."
+            },
+            {
+              "front": "PID Act 2011",
+              "back": "A person who discloses public-interest information to an appropriate authority is protected from criminal, civil and departmental cases for that disclosure."
+            },
+            {
+              "front": "PID Act and jobs",
+              "back": "An employee who discloses may not be demoted, given a harassing transfer, forced to retire or treated in a discriminatory way because of it."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Code and ethics numbers to remember",
+          "items": [
+            {
+              "label": "Days to circulate the bank's code",
+              "detail": "Code of Conduct s.37: formal circulation after adoption.",
+              "value": "60"
+            },
+            {
+              "label": "Ethics committee work plan",
+              "detail": "Plan each year and monitor progress against it (s.37).",
+              "value": "Annual"
+            },
+            {
+              "label": "Staff who sign the code",
+              "detail": "New and existing employees sign a statement of compliance (s.40).",
+              "value": "100%"
+            },
+            {
+              "label": "Whistleblower channels",
+              "detail": "Email/hotline, online system, sealed confidential letter (ICMS 8.4.2).",
+              "value": "3 kinds"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these does the ICMS whistleblower framework NOT list among the people it covers?",
+          "options": [
+            "Members of the public with no dealings with the bank",
+            "Contractual and temporary staff",
+            "Members of the board and senior management",
+            "Vendors and agents with official dealings with the bank"
+          ],
+          "answer": 0,
+          "explanation": "Section 8.4 covers all employees (permanent, contractual, temporary), the board and senior management, and external stakeholders such as customers, vendors, consultants and agents with official dealings with the bank."
+        },
+        {
+          "type": "example",
+          "title": "Building Krishnachura's speak-up line",
+          "body": "Mitali's team sets up the framework in four weeks:\n\n- A **dedicated email and hotline** answered by the issue handling unit, plus a page on the intranet for secure online reports.\n- A notice in every branch on sending a **sealed letter marked 'Confidential Whistleblower Report'** to the Head of Compliance or the audit committee chair.\n- A **case register** with access limited to two named officers; files stored securely, need-to-know only.\n- A rule that any report naming the MD/CEO or a director goes to the **audit committee chair**, and that audit irregularities against the board or MD/CEO go confidentially to Bangladesh Bank under section 2.7.\n- A one-page **'how we protect you'** note covering anonymity, good faith and no retaliation.\n- Quarterly **statistics** (number, type, age, outcome) in the compliance report, without names."
+        },
+        {
+          "type": "tip",
+          "title": "Speak up early",
+          "body": "The Code says that if fraud, theft or illegal activity comes to your notice you must report it at once to your superior or management, acting as a whistleblower (s.16). If the concern involves your own superior, use the confidential channels instead. Write down what you saw, when and where, but do not investigate on your own or confront the person."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Bangladesh Bank's 2017 Code is a minimum standard; each bank adopts its own code and circulates it within 60 days.",
+            "Every employee signs a statement of compliance; the board and management are responsible for implementation.",
+            "No obligating gifts, no use of position for private gain, no outside work without permission, no insider trading.",
+            "The ICMS whistleblower framework covers staff, directors and external parties, with confidential and anonymous channels.",
+            "Good-faith reporters are protected from retaliation, and the PID Act 2011 adds legal protection for public-interest disclosures."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you saw a colleague break the code tomorrow, which channel would you use at your bank, and what would make you confident you were protected?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-gc-s4-q1",
+          "question": "Within how many days must a bank formally circulate its own code of conduct developed in line with Bangladesh Bank's Code?",
+          "options": [
+            "30 days",
+            "90 days",
+            "180 days",
+            "60 days"
+          ],
+          "answer": 3,
+          "explanation": "Section 37(i) of the Code of Conduct for Banks and NBFIs requires formal circulation within 60 days.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s4-q2",
+          "question": "Which body does BRPD Circular 02/2024 make responsible for adopting a code of conduct and code of ethics for all bank staff?",
+          "options": [
+            "The Head of Compliance",
+            "The board of directors",
+            "The Ethics Committee of Bangladesh Bank",
+            "The Bangladesh Association of Banks"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 10.1(d) of BRPD Circular 02/2024 requires the board to formulate an integrity policy, code of conduct and code of ethics for all staff and to set high ethical standards.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s4-q3",
+          "question": "A courier delivers an expensive watch from a customer to a relationship manager's desk. What does the Code require?",
+          "options": [
+            "Return it to the customer by courier without telling anyone",
+            "Keep it if its value is below the bank's gift threshold",
+            "Receive it but hand it over immediately to higher authority for disposal",
+            "Donate it to charity in the bank's name the same day"
+          ],
+          "answer": 2,
+          "explanation": "Section 12(i) of the Code says gifts sent by post or courier may be received but must immediately be handed to higher authority for disposal.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q4",
+          "question": "What must every new and existing employee do under section 40 of the Code?",
+          "options": [
+            "Commit to the code and sign a statement of compliance",
+            "Pass a written ethics exam every year",
+            "Declare all relatives working in other banks",
+            "Attend a seminar organised by Bangladesh Bank"
+          ],
+          "answer": 0,
+          "explanation": "Section 40(i) requires all new and existing employees to commit to the code of conduct and sign a statement attesting compliance.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s4-q5",
+          "question": "An officer hears unpublished quarterly results and tells his brother to buy the bank's shares. Which part of the Code does this breach?",
+          "options": [
+            "The rules on outside employment",
+            "The ban on insider trading, which includes tipping others",
+            "The dress code and grooming standards",
+            "The rules on media interaction"
+          ],
+          "answer": 1,
+          "explanation": "Section 31 prohibits trading on material non-public information and expressly covers giving tips or encouraging others to deal.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q6",
+          "question": "Which of these is a reportable issue under ICMS section 8.4.1?",
+          "options": [
+            "A disagreement about annual leave dates",
+            "A customer's complaint about ATM downtime",
+            "A dispute between two branches over targets",
+            "Retaliation or harassment against a whistleblower"
+          ],
+          "answer": 3,
+          "explanation": "Section 8.4.1 lists fraud, bribery, record manipulation, breaches of policy or the code, regulatory or ESG non-compliance, and retaliation or harassment against any whistleblower.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q7",
+          "question": "Krishnachura receives an anonymous whistleblower email with dates, account numbers and names. What does the framework say?",
+          "options": [
+            "It must be taken up, because it contains enough information to investigate",
+            "It must be ignored until the sender identifies himself",
+            "It may be taken up only if two witnesses confirm it",
+            "It must be forwarded to the police before any review"
+          ],
+          "answer": 0,
+          "explanation": "Section 8.4.3 says anonymous complaints shall be entertained if they contain adequate information for investigation.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q8",
+          "question": "A whistleblower's allegation is investigated and not proved. She reported honestly. What protection does she keep?",
+          "options": [
+            "None, since the allegation was unsubstantiated",
+            "Protection only if she apologises to the person named",
+            "Full protection, because the report was made in good faith",
+            "Protection only for the first report she makes"
+          ],
+          "answer": 2,
+          "explanation": "Section 8.4.4 says protection extends even if the allegation is unsubstantiated, provided it was made in good faith.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q9",
+          "question": "Under the Public Interest Information Disclosure Act 2011, what may NOT be done to an employee because she disclosed public-interest information to an appropriate authority?",
+          "options": [
+            "Asking her to support her disclosure with documents",
+            "Keeping her identity confidential without her consent",
+            "Demotion, a harassing transfer or forced retirement",
+            "Recording the disclosure in writing"
+          ],
+          "answer": 2,
+          "explanation": "Section 5(3) of the Act bars demotion, harassing transfer, compulsory retirement, departmental action or discrimination because of the disclosure. Section 4 expects supporting documents where available.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s4-q10",
+          "question": "A relationship manager's brother-in-law owns a firm bidding for the bank's printing contract, and she sits on the evaluation panel. What should she do?",
+          "options": [
+            "Disclose the relationship to top management before negotiations and step away from the decision",
+            "Stay on the panel but score the firm slightly lower to be fair",
+            "Say nothing, since a brother-in-law is not close family",
+            "Ask the firm to withdraw so the issue disappears"
+          ],
+          "answer": 0,
+          "explanation": "Section 13 of the Code requires personal relationships with contractors and vendors to be disclosed to top management when negotiations begin, and they must not influence decisions; section 8 requires conflicts to be avoided.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Harassment Prevention, Foundation Training and Inspection Readiness",
+      "stage": "The Safe Workplace Summit",
+      "summary": "Apply the Labour (Amendment) Act 2026: the new definition of sexual harassment, the employer duties in the new section 332 (policy, risk assessment, information and training) and the complaints committee in section 332A; then bring the programme together with the 2026 foundation training rules and the evidence Bangladesh Bank will expect.",
+      "minutes": 60,
+      "objectives": [
+        "Recognise conduct the Labour Act 2026 defines as sexual harassment, including quid pro quo and hostile environment",
+        "List the employer duties in the new section 332, including information and training for workers",
+        "Set up a complaints committee that meets section 332A",
+        "Apply BRPD-1 Circular 10 of 2026 on foundation training and assemble the evidence of a complete programme"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A complaint with nowhere to go",
+          "setting": "HR and Training Division, Krishnachura Bank PLC, Motijheel.",
+          "lines": [
+            {
+              "who": "habib",
+              "text": "A trainee officer at Sylhet says a senior officer keeps sending her messages with sexual jokes and told her a good evaluation 'depends on being friendly'.",
+              "mood": "worried"
+            },
+            {
+              "who": "sharmin",
+              "text": "She called me because I was her mentor in Agrabad. She doesn't know who to complain to in Sylhet.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "Since April the Labour Act puts specific duties on us as an employer: a workplace policy, risk assessment, training and a complaints committee.",
+              "mood": "thinking"
+            },
+            {
+              "who": "habib",
+              "text": "Our old committee had three men and one woman from HR.",
+              "mood": "worried"
+            },
+            {
+              "who": "mitali",
+              "text": "Then it no longer fits the law. Stage five: the Safe Workplace Summit. Then we pull the whole programme together for the inspectors.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What changed in April 2026",
+          "scenes": [
+            {
+              "icon": "📕",
+              "heading": "A new definition",
+              "narration": "The Labour (Amendment) Act 2026 adds a legal definition of sexual harassment to the Labour Act. It covers unwelcome sexual conduct, quid pro quo demands and conduct that creates a hostile or humiliating workplace."
+            },
+            {
+              "icon": "🏢",
+              "heading": "Banks are covered",
+              "narration": "The Labour Act lists banks among commercial establishments, so a bank as employer carries these duties."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "A new section 332",
+              "narration": "Employers must prevent violence and harassment, publicise the prohibitions and penalties, adopt a workplace policy, assess the risks and give workers information and training."
+            },
+            {
+              "icon": "👩‍⚖️",
+              "heading": "A new section 332A",
+              "narration": "Every employer forms a five-member complaints committee, led by a woman, with a female majority from within and two members from outside organisations working on gender and sexual violence."
+            },
+            {
+              "icon": "🤝",
+              "heading": "The Code already agreed",
+              "narration": "Bangladesh Bank's Code of Conduct also requires banks to keep the workplace free from harassment and not to tolerate it from directors, managers or staff."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Employer duties under the new section 332(1)",
+          "items": [
+            {
+              "label": "Keep the workplace safe",
+              "detail": "Ensure the work environment is not hostile; prevent violence and harassment."
+            },
+            {
+              "label": "Publicise",
+              "detail": "Make the prohibitions and penalties widely known."
+            },
+            {
+              "label": "Policy",
+              "detail": "Adopt and apply a workplace policy against violence and harassment."
+            },
+            {
+              "label": "Assess risk",
+              "detail": "Identify and assess the risks, including psychosocial risks, and control them."
+            },
+            {
+              "label": "Inform and train",
+              "detail": "Give workers information and training on risks, protection, rights and duties."
+            },
+            {
+              "label": "Publish and support",
+              "detail": "Describe complaint handling on the website; help pursue legal action."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these does the 2026 definition of sexual harassment include?",
+          "options": [
+            "Linking a job decision, such as an evaluation, to accepting or rejecting sexual conduct",
+            "A manager's fair criticism of an officer's work in a private meeting",
+            "A one-off disagreement between colleagues about branch targets",
+            "An HR officer asking about leave plans for a rota"
+          ],
+          "answer": 0,
+          "explanation": "The new definition covers 'quid pro quo' harassment, where accepting or rejecting sexual conduct is used to influence a job decision, as well as conduct that creates a hostile or humiliating work environment."
+        },
+        {
+          "type": "concept",
+          "title": "The complaints committee under section 332A",
+          "body": "Every employer must form a **complaints committee on discrimination, violence and harassment**:\n\n- **Five members**.\n- A **majority of women** drawn from within the establishment.\n- **Headed by a woman**.\n- **Two members from organisations** that work on gender and sexual violence.\n\nHow it works:\n\n- It receives, investigates and handles every complaint or related report, following **zero tolerance** for discrimination, violence and harassment.\n- It acts with **confidentiality and respect for human dignity** and must not obstruct a complaint.\n- After a **written complaint**, it acts in the way the rules under the Act set out.\n\nSection 332(2) adds that no colleague or anyone else may behave towards a woman at work in a way that is obscene, indecent or against her dignity, whatever her rank."
+        },
+        {
+          "type": "match",
+          "title": "Harassment examples and the rule they meet",
+          "prompt": "Match each behaviour or duty to the 2026 provision it relates to.",
+          "pairs": [
+            {
+              "left": "Repeated sexual jokes by text message",
+              "right": "Definition in the new section 2(52A)"
+            },
+            {
+              "left": "'Your rating depends on being friendly'",
+              "right": "Quid pro quo harassment in the definition"
+            },
+            {
+              "left": "No complaint procedure on the bank's website",
+              "right": "Employer duty in section 332(1)"
+            },
+            {
+              "left": "Committee of three men and one woman",
+              "right": "Breaches the composition rule in section 332A"
+            },
+            {
+              "left": "No harassment module in staff training",
+              "right": "Duty to give information and training in section 332(1)"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Section 332A in numbers",
+          "items": [
+            {
+              "label": "Committee members",
+              "detail": "Fixed size of the complaints committee.",
+              "value": "5"
+            },
+            {
+              "label": "Committee head",
+              "detail": "The committee must be led by a woman.",
+              "value": "Woman"
+            },
+            {
+              "label": "External members",
+              "detail": "From organisations working on gender and sexual violence.",
+              "value": "2"
+            },
+            {
+              "label": "Women from within",
+              "detail": "Must form the majority of the committee.",
+              "value": "Majority"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The trainee's choice",
+          "setting": "Video call between Sylhet and Dhaka.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "The trainee officer is in week nine of her fourteen-week foundation course, doing practical training at the Sylhet branch.",
+              "mood": "neutral"
+            },
+            {
+              "who": "habib",
+              "text": "Her supervisor writes part of her practical assessment. She worries a complaint will cost her the Foundation Training Certificate, and with it her confirmation.",
+              "mood": "worried"
+            },
+            {
+              "who": "sharmin",
+              "text": "She also asked if she could just change branches quietly.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mitali",
+              "text": "She can ask for that, but moving her alone puts the burden on the person who complained. The committee should handle it, and her assessment must be protected.",
+              "mood": "thinking"
+            },
+            {
+              "who": "habib",
+              "text": "So what do we do today?",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Responding to the trainee's complaint",
+          "situation": "A trainee officer at Krishnachura's Sylhet branch says her supervisor sends sexual jokes and hinted her evaluation depends on 'being friendly'. Completing foundation training is required for her confirmation, and the supervisor writes part of her assessment. Krishnachura has just rebuilt its complaints committee to meet section 332A.",
+          "choices": [
+            {
+              "text": "Take her written complaint to the complaints committee, keep it confidential, have another officer assess her practical training meanwhile, and keep the screenshots and messages as evidence.",
+              "outcome": "Best. The committee investigates under section 332A with confidentiality and zero tolerance, and removing the supervisor from her assessment protects her from quid pro quo pressure.",
+              "score": 2
+            },
+            {
+              "text": "Move the trainee to another branch at once and close the matter without a complaint.",
+              "outcome": "Poor. It burdens the complainant, leaves the behaviour unexamined and ignores the employer's duty to prevent harassment.",
+              "score": 0
+            },
+            {
+              "text": "Ask the branch manager to speak informally to the supervisor and report back.",
+              "outcome": "Partly right. Quick action matters, but an informal chat is no substitute for the committee, and it may expose her before the case is handled properly.",
+              "score": 1
+            },
+            {
+              "text": "Wait until her foundation course ends so her certificate is not put at risk.",
+              "outcome": "Poor. Delay leaves her exposed for weeks and lets the supervisor keep shaping her assessment.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Foundation training under BRPD-1 Circular 10 (2026)",
+          "items": [
+            {
+              "label": "Who",
+              "left": "All newly recruited officers, by any title",
+              "right": "Promoted officers who never had foundation training"
+            },
+            {
+              "label": "Length",
+              "left": "At least 14 weeks in total",
+              "right": "At least 8 weeks theory and 6 weeks practice"
+            },
+            {
+              "label": "Legal and ethics content",
+              "left": "Bank Company Act, MLPA and other banking laws",
+              "right": "The bank's code of conduct, ethics and integrity"
+            },
+            {
+              "label": "Policy",
+              "left": "Board-approved policy and modules",
+              "right": "Guidelines are a minimum; banks may go further"
+            },
+            {
+              "label": "Outcome",
+              "left": "Foundation Training Certificate",
+              "right": "Completion required for confirmation in service"
+            }
+          ],
+          "headers": [
+            "Requirement",
+            "Detail"
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Assembling the evidence pack for 31 December",
+          "prompt": "Put Krishnachura's readiness steps in a sensible order.",
+          "steps": [
+            "Complete the bank-wide compliance risk assessment",
+            "Map each role to its required training: board, senior managers, ICMS staff, new officers, branches",
+            "Adopt board-approved policies: code of conduct, whistleblowing, harassment and training",
+            "Deliver the role-based modules, foundation course and harassment training",
+            "Measure results: completion, test scores, audit and inspection trends",
+            "Report results to senior management and the audit committee and keep the records"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A new probationary officer has finished 10 weeks of classroom training and 2 weeks at a branch. Can the bank confirm her in service now?",
+          "options": [
+            "No: she needs at least 14 weeks in total, with at least 6 weeks of practical training",
+            "Yes: 12 weeks is enough if she passed all her tests",
+            "Yes: the 14-week figure is only a recommendation",
+            "No: she must also work two years before confirmation"
+          ],
+          "answer": 0,
+          "explanation": "BRPD-1 Circular 10 sets a minimum of 14 weeks, with at least 8 weeks of theory and 6 weeks of practice, and makes completion mandatory for confirmation of service."
+        },
+        {
+          "type": "example",
+          "title": "Krishnachura's training map, December 2026",
+          "body": "Mitali and Habib finish the year with one table the inspectors can follow:\n\n| Audience | Training | Source |\n|---|---|---|\n| Directors | Induction on banking law and duties | BRPD 02/2024 para 14 (may be arranged) |\n| All staff by role | Role-based compliance modules with tests | ICMS 5.4.3 (mandatory) |\n| ICMS staff | Advanced local and foreign training | ICMS 2.3.3.11 |\n| New officers | 14-week foundation course incl. code and ethics | BRPD-1 Circ. 10/2026 |\n| All workers | Violence and harassment risks, rights, duties | Labour Act s.332 (2026) |\n| All staff | Ethics workshops; signed code | Code of Conduct ss.32, 40 |\n\nEach line has an owner, a schedule, completion data and a quarterly report line."
+        },
+        {
+          "type": "tip",
+          "title": "Make harassment training real",
+          "body": "Use short scenarios set in your own branches: messages after hours, comments at a training centre, pressure linked to evaluations. Tell people exactly **who sits on the committee, how to complain in writing and how confidentiality works**. Train managers separately on how to respond on day one without investigating alone or blaming the complainant."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "The Labour Act now defines sexual harassment, including quid pro quo and hostile-environment conduct.",
+            "Under the new section 332, employers adopt a policy, assess risks and give workers information and training.",
+            "Section 332A requires a five-member complaints committee led by a woman, with a female majority and two outside members.",
+            "Foundation training lasts at least 14 weeks (8 theory, 6 practice) and is required for confirmation.",
+            "A ready bank can show its CRA, role map, policies, delivery records, results and reports to the audit committee."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Who would you contact today if you faced harassment at work? If you do not know the answer, what does that tell you about your bank's programme?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-gc-s5-q1",
+          "question": "Which Act added a legal definition of sexual harassment to the Bangladesh Labour Act 2006?",
+          "options": [
+            "The Bangladesh Labour (Amendment) Act 2026",
+            "The Bank Company (Amendment) Act 2023",
+            "The Public Interest Information Disclosure Act 2011",
+            "The Personal Data Protection Act 2026"
+          ],
+          "answer": 0,
+          "explanation": "Act No. 43 of 2026, dated 10 April 2026, inserted a new definition of sexual harassment as section 2(52A) of the Labour Act.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s5-q2",
+          "question": "How many members must the complaints committee under the new section 332A have?",
+          "options": [
+            "Three",
+            "Five",
+            "Seven",
+            "Nine"
+          ],
+          "answer": 1,
+          "explanation": "Section 332A(1) requires a five-member committee.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s5-q3",
+          "question": "Who must head the complaints committee under section 332A?",
+          "options": [
+            "The head of HR",
+            "The managing director",
+            "A member from an outside organisation",
+            "A woman"
+          ],
+          "answer": 3,
+          "explanation": "Section 332A(1) requires the committee to be headed by a woman, with a female majority from within the establishment.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s5-q4",
+          "question": "How many members of the section 332A committee must come from organisations working on gender and sexual violence?",
+          "options": [
+            "Two",
+            "One",
+            "Three",
+            "None, all must be employees"
+          ],
+          "answer": 0,
+          "explanation": "Section 332A(1) requires two members from organisations that work on gender and sexual abuse.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s5-q5",
+          "question": "Which of these is an employer duty under the new section 332(1)?",
+          "options": [
+            "Paying every complainant a fixed compensation within one month",
+            "Reporting every complaint to Bangladesh Bank within seven days",
+            "Giving workers information and training on violence and harassment risks, protection, rights and duties",
+            "Requiring complainants to bring two witnesses before acting"
+          ],
+          "answer": 2,
+          "explanation": "Section 332(1)(g) requires information and training on identified risks and hazards, prevention and protection measures, and workers' rights and duties.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s5-q6",
+          "question": "Why do the Labour Act's harassment duties apply to a bank?",
+          "options": [
+            "Bangladesh Bank adopted the Labour Act as a circular",
+            "Only state-owned banks are covered, as public bodies",
+            "Banks are listed as commercial establishments under the Labour Act",
+            "The duties apply only if the bank has a trade union"
+          ],
+          "answer": 2,
+          "explanation": "Section 2 of the Labour Act 2006 lists banks and banking companies among commercial establishments, so employer duties reach them.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s5-q7",
+          "question": "What is the minimum length of foundation training for newly recruited officers under BRPD-1 Circular 10 of 2026?",
+          "options": [
+            "14 weeks: at least 8 of theory and 6 of practice",
+            "10 weeks: at least 6 of theory and 4 of practice",
+            "6 months of classroom training only",
+            "4 weeks of induction plus 1 year on the job"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 4 of the guidelines sets a minimum total of 14 weeks, with at least 8 weeks of theoretical and 6 weeks of practical training.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-gc-s5-q8",
+          "question": "Which legal and regulatory topics must foundation training cover at a minimum?",
+          "options": [
+            "Only the bank's product manuals and sales targets",
+            "Only international standards such as Basel and FATF",
+            "Only the Labour Act and the Companies Act",
+            "Major banking laws and the bank's own code of conduct, staff rules and ethics"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 5(E) lists major banking laws (including the Bank Company Act and MLPA) and Bangladesh Bank circulars, the bank's code of conduct, staff regulations and HR policy, its risk management guidelines, and ethics and professional integrity.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s5-q9",
+          "question": "An officer was promoted into an officer grade but never attended foundation training. What does BRPD-1 Circular 10 require?",
+          "options": [
+            "Nothing, because he is not newly recruited",
+            "The bank must make sure he takes part in foundation training",
+            "He must resign and be re-recruited",
+            "He must pass a Bangladesh Bank exam instead"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3 says that for officials promoted to equivalent positions who have not had foundation training, banks shall ensure their participation.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-gc-s5-q10",
+          "question": "A supervisor tells a trainee that her evaluation depends on 'being friendly' after hours. How does the 2026 definition treat this?",
+          "options": [
+            "As quid pro quo harassment: a job decision is linked to accepting sexual conduct",
+            "As a performance issue for HR, not harassment",
+            "As harassment only if physical contact occurs",
+            "As harassment only if the trainee is a permanent employee"
+          ],
+          "answer": 0,
+          "explanation": "The definition covers using acceptance or rejection of sexual conduct, explicitly or implicitly, as a basis for decisions about a person's job.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "bd",
+    "programs": [
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      28,
+      31,
+      159,
+      160
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "role",
+      "periodic"
+    ],
+    "regulators": [
+      "Bangladesh Bank (BB)",
+      "Bangladesh Securities and Exchange Commission (BSEC), for listed banks"
+    ],
+    "references": [
+      {
+        "title": "Bank-Company Act, 1991 (Act No. 14 of 1991, as amended up to 2023)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-751.html",
+        "provision": "Sections 15(4)-(12), 15AA, 15AAA, 15B, 15C, 17, 45, 46 and 47",
+        "note": "Bangladesh Bank approval of directors and CEOs; fitness bars; at most 20 directors with at least 3 independent (2 if fewer than 20); 3-family-member cap; 12-year limit; alternates; board accountability and audit/risk committees; binding directions; removal of directors; board dissolution for up to two years.",
+        "effective": "1991",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD Circular No. 02: Formation of Board and Responsibilities of Directors of a Bank-Company",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd/feb112024brpd02.pdf",
+        "provision": "Paragraphs 3-12 and 14",
+        "note": "Board composition and rotation; fit and proper criteria; prior approval within 7 working days; alternates; vacancy and removal; board and chair duties incl. staff training and a code of conduct and ethics; only executive, audit and risk committees; meeting rules; permissive director training.",
+        "effective": "2024-02-11",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD Circular No. 01: Taking Prior Approval of Bangladesh Bank to Appoint Alternate Director in Bank Companies",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd/jan142025brpd01.pdf",
+        "provision": "Paragraph 3",
+        "note": "An alternate director may not act or attend board or committee meetings without Bangladesh Bank's prior approval; issued under section 15AAA(3).",
+        "effective": "2025-01-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD Circular Letter No. 14: Formation of Board and Responsibilities of Directors of a Bank-Company",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd/aug042025brpdl14.pdf",
+        "note": "Board and committee minutes must record discussions, all observations, notes of dissent in detail and any Bangladesh Bank observer's views; other BRPD Circular 02/2024 instructions are unchanged.",
+        "effective": "2025-08-04",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD-2 Circular No. 03: Guidelines on Internal Control Management System in Banks (July 2026)",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd-2/jul212026brpd-203.pdf",
+        "provision": "Sections 1.4, 2.2-2.4, 2.7, 5.3-5.5 and 8.4; circular paragraphs 3-5",
+        "note": "Three lines of defence; HoIA and HoC roles and safeguards; board, audit committee and SMT duties; compliance risk management; mandatory role-based compliance training (5.4.3); observation closure; whistleblower framework; restructure by 31 December 2026.",
+        "effective": "2026-07-21",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD-1 Circular No. 10: Guidelines on Foundation Training for the Newly Recruited Scheduled Bank Officials",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd/may072026brpd-110e.pdf",
+        "provision": "Circular paragraphs 3-4; Guidelines paragraphs 2-12",
+        "note": "Minimum standard: board-approved policy; at least 14 weeks (8 theory, 6 practice); completion required for confirmation; content includes banking laws, the bank's code of conduct and ethics; five-day rural field stay; certificate.",
+        "effective": "2026-05-07",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Code of Conduct for Banks and Non-Bank Financial Institutions",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/aboutus/regulationguideline/brpd/nov062017_guideline_code_of_conduct.pdf",
+        "provision": "Sections 4.2, 7-13, 16, 23, 24, 27, 30-32, 36, 37, 40 and 41",
+        "note": "Minimum standard for banks: integrity training, use of position, conflicts, outside work, gifts, insider trading, confidentiality, harassment, speak-up, own code circulated within 60 days, ethics committee work plan, signed statement of compliance.",
+        "effective": "2017-11-06",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bangladesh Labour (Amendment) Act, 2026 (Act No. 43 of 2026)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-1672.html",
+        "provision": "Section 4 (new s.2(52A)), section 82 (new s.332) and section 83 (new s.332A)",
+        "note": "Defines sexual harassment incl. quid pro quo; employers must prevent violence and harassment, publicise penalties, adopt a policy, assess risks, inform and train workers, publish complaint procedures; five-member complaints committee led by a woman with two outside members.",
+        "effective": "2026-04-10",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bangladesh Labour Act, 2006 (Act No. 42 of 2006)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-952.html",
+        "provision": "Section 2 (definition of commercial establishment)",
+        "note": "Banks and banking companies are listed as commercial establishments, so the Act's workplace duties reach bank employers.",
+        "effective": "2006",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Public Interest Information Disclosure (Provide Protection) Act, 2011 (Act No. 7 of 2011)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-1072.html",
+        "provision": "Sections 4-5",
+        "note": "Good-faith disclosure of public-interest information to an appropriate authority; identity protected without consent; no criminal, civil or departmental case; no demotion, harassing transfer or forced retirement for the discloser.",
+        "effective": "2011-06-22",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Monetary Policy Statement, July-December 2025",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/monetaryactivity/mps/mps_h1fy26.pdf",
+        "provision": "Section 4.1 (Upholding Good Governance)",
+        "note": "Reports that Bangladesh Bank dissolved and restructured the boards of 15 banks and issued a May 2025 circular tightening transactions with bank-related persons.",
+        "effective": "2025",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Monetary Policy Statement, January-June 2026",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/monetaryactivity/mps/mps_h2fy26.pdf",
+        "provision": "Introduction and section 4.1",
+        "note": "Reports risk-based supervision from 4 January 2026 with more than 500 Bangladesh Bank officials trained, and new limits on dividends and staff bonuses.",
+        "effective": "2026",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "bd-gc-x1",
+        "question": "Krishnachura's 20-member board has two independent directors. A shareholder says this meets the law because 'two is the minimum'. What is correct?",
+        "options": [
+          "It is fine: two is the minimum for every board size",
+          "It falls short: a 20-member board needs at least three independent directors",
+          "It is fine if both chair a board committee",
+          "It falls short: every board needs at least five independent directors"
+        ],
+        "answer": 1,
+        "explanation": "Section 15(9) requires at least three independent directors where there are 20 directors; the minimum of two applies only to boards of fewer than 20.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x2",
+        "question": "Rahman Textiles and Rahman Leather, both controlled by the Rahman family, each want a representative director on a board where two Rahmans already sit as shareholder directors. Under paragraph 3 of BRPD Circular 02/2024, what is the position?",
+        "options": [
+          "Neither may be appointed, since the family already has two seats",
+          "Only one may be appointed, since families get one company seat",
+          "Both may be appointed only if the family drops a shareholder director",
+          "Both may be appointed: besides family members, up to two representative directors may come from family-controlled companies"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 3(e) allows, in addition to family members, no more than two representative directors for companies that the family controls; the separate three-member family limit still applies to the individuals.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-gc-x3",
+        "question": "A company holding Krishnachura shares wants two of its executives on the board as its representatives. What does BRPD Circular 02/2024 allow?",
+        "options": [
+          "Only one representative director per company or institution",
+          "Two, if the company holds more than 10% of the shares",
+          "Two, provided one is an independent director",
+          "As many as its shareholding justifies, up to five"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 3(f) says no more than one person may be appointed as representative director on behalf of any company or institution.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x4",
+        "question": "An individual shareholder who lives abroad asks Krishnachura to appoint his nephew as his 'representative director'. What applies?",
+        "options": [
+          "Allowed if the nephew passes the fitness tests",
+          "Allowed for up to three months a year",
+          "Not allowed: no one may be a representative director for a natural-person shareholder",
+          "Allowed once Bangladesh Bank receives notice"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 3(g) of BRPD Circular 02/2024 bars appointing anyone as a representative director on behalf of an individual shareholder. The nephew could only join on his own merits and shareholding.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x5",
+        "question": "A director wants an alternate because he will spend five weeks abroad. What is the position under section 15AAA and BRPD Circular 02/2024?",
+        "options": [
+          "An alternate may serve for five weeks after notifying Bangladesh Bank",
+          "An alternate may serve if the board approves by majority",
+          "No alternate is possible: the director must be abroad continuously for at least three months",
+          "An alternate is possible for any absence longer than one month"
+        ],
+        "answer": 2,
+        "explanation": "An alternate may be appointed only for a director who is continuously abroad for at least three months, once a year, for up to three months, and since 2025 only with Bangladesh Bank's prior approval.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x6",
+        "question": "A director received a notice through Bangladesh Bank under section 17 for an unpaid loan and resigns before the deadline passes. What is the effect?",
+        "options": [
+          "The resignation does not take effect while the notice proceedings are pending",
+          "The resignation ends the matter and the loan becomes the bank's problem",
+          "The resignation takes effect if the board accepts it",
+          "The resignation converts the loan into a director's guarantee"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 8(b) of BRPD Circular 02/2024 says a director who has received a section 17 notice cannot transfer his shares until dues are paid, and a resignation during the notice proceedings is not effective.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-gc-x7",
+        "question": "Bangladesh Bank dissolves a bank's board under section 47 for six months and later extends the order. What is the longest the order can last in total?",
+        "options": [
+          "One year including extensions",
+          "Three years including extensions",
+          "Until the next AGM elects a new board",
+          "Two years including extensions"
+        ],
+        "answer": 3,
+        "explanation": "Section 47(2) allows Bangladesh Bank to extend the order from time to time, but the total period including extensions may not exceed two years.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x8",
+        "question": "Krishnachura's board wants to remove a director it finds disruptive. What must it do under section 15(4) and paragraph 9 of BRPD Circular 02/2024?",
+        "options": [
+          "Pass a special resolution at an EGM; no approval is needed",
+          "Obtain Bangladesh Bank's prior approval, filing the reasons, the board decision and a list of directors",
+          "Inform Bangladesh Bank within seven days after removal",
+          "Ask the director to resign; removal is never allowed"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 9(a) requires prior approval to remove a director of any bank other than a specialised bank, with reasons, the board decision and a director list sent to BRPD-2; removal takes effect from Bangladesh Bank's approval.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x9",
+        "question": "According to Bangladesh Bank's Monetary Policy Statement for July-December 2025, how many bank boards had it dissolved and restructured?",
+        "options": [
+          "15",
+          "5",
+          "10",
+          "25"
+        ],
+        "answer": 0,
+        "explanation": "The statement reported that Bangladesh Bank had so far dissolved the boards of directors of 15 banks and restructured them to restore effective governance.",
+        "difficulty": 2
+      },
+      {
+        "id": "bd-gc-x10",
+        "question": "A candidate was listed as a wilful defaulter by a finance company and was released from the list three years ago. Can he be nominated as a bank director now?",
+        "options": [
+          "Yes: release from the list removes the bar at once",
+          "Yes, if he repays any remaining balance first",
+          "No: he becomes eligible only five years after release from the list",
+          "No: a past wilful defaulter is barred for life"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 4(13) of BRPD Circular 02/2024 makes a listed wilful defaulter ineligible until five years have passed after release from the list.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x11",
+        "question": "A nominee is a director of a general insurance company. Can he become a director of Krishnachura?",
+        "options": [
+          "Yes, because insurers are not banks",
+          "No: a director or paid office holder of an insurer is not eligible",
+          "Yes, if the insurer is not a subsidiary of the bank",
+          "Yes, if he declares the conflict in the minutes"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4(8) excludes anyone serving as director, adviser, consultant or in another paid post at another bank, finance company, insurance company or any of their subsidiaries.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x12",
+        "question": "Krishnachura's external audit firm's senior partner is nominated as an independent director of Krishnachura. What applies?",
+        "options": [
+          "Eligible once the audit engagement ends at the year end",
+          "Eligible as a shareholder director but not independent",
+          "Eligible if the audit committee approves it",
+          "Not eligible: the bank's own external auditor, lawyer, adviser or consultant cannot be a director"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 4(9) bars anyone engaged as the same bank's external auditor, legal adviser, adviser, consultant or in another paid post.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x13",
+        "question": "Under BRPD Circular 02/2024, for whom does the board itself decide appointments, promotions, transfers and discipline?",
+        "options": [
+          "All officers at head office",
+          "All branch managers",
+          "Only the company secretary",
+          "The CEO's direct reports and the next tier: the two tiers immediately below the CEO"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 10.1(d) leaves HR actions to management under the service rules, except for officers in the two tiers immediately below the CEO, which the board decides.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x14",
+        "question": "Krishnachura's chair receives a complaint alleging misconduct by the MD/CEO. Under paragraph 10.2 of BRPD Circular 02/2024, how must it be handled?",
+        "options": [
+          "The chair investigates alone and suspends the CEO",
+          "Through the board, informing Bangladesh Bank with the CEO's statement",
+          "The chair forwards it to the police and waits",
+          "The audit committee decides it without informing the board"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 10.2(d) says that if a complaint is raised about the CEO, it must be reported to Bangladesh Bank through the board together with the CEO's statement.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x15",
+        "question": "Can the board chair also chair the executive committee under BRPD Circular 02/2024?",
+        "options": [
+          "No, the executive committee must be chaired by an independent director",
+          "No, the board chair may not sit on any committee",
+          "Yes, the board chair may also chair the executive committee",
+          "Yes, but only for the first year of a term"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11.1(a) allows the board chair to be chair of the executive committee. By contrast, the audit committee chair must be an independent director.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x16",
+        "question": "An independent director has just finished a three-year term as audit committee chair. Can she be chosen again for the next term?",
+        "options": [
+          "No: an independent director cannot chair the audit committee for two consecutive terms",
+          "Yes, if the board votes unanimously",
+          "Yes, because only the board chair's term is limited",
+          "No: she must also leave the board for three years"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 11.2(a) of BRPD Circular 02/2024, repeated in the ICMS guidelines, sets a three-year term and bars an independent director from chairing the audit committee for two consecutive terms.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x17",
+        "question": "Krishnachura becomes a digital bank. What extra rule applies to its board committees?",
+        "options": [
+          "Committees may meet only online",
+          "Each committee must include at least one member with ICT expertise",
+          "The risk committee must be chaired by the CTO",
+          "An ICT committee becomes the fourth permitted committee"
+        ],
+        "answer": 1,
+        "explanation": "BRPD Circular 02/2024 and the ICMS guidelines require at least one member with ICT expertise on the committees of a digital bank; the three-committee limit still applies.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x18",
+        "question": "The board wants to hold a two-day meeting at a resort outside the head office city. What does paragraph 12.1 of BRPD Circular 02/2024 require?",
+        "options": [
+          "Nothing, if the bank pays the costs from its training budget",
+          "Informing Bangladesh Bank within seven days after the meeting",
+          "Approval from the shareholders at the next AGM",
+          "Applying for Bangladesh Bank's prior approval at least seven working days before, with the reasons, attendees and costs"
+        ],
+        "answer": 3,
+        "explanation": "Board and committee meetings must be held in the head office city; an exceptional meeting elsewhere needs a prior approval application seven working days in advance, and needless costs must be avoided.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-gc-x19",
+        "question": "At least how many meetings a year must the audit committee and the risk management committee each hold?",
+        "options": [
+          "Four",
+          "Two",
+          "Six",
+          "Twelve"
+        ],
+        "answer": 0,
+        "explanation": "Both BRPD Circular 02/2024 (for the risk committee) and the ICMS guidelines (section 2.4.2.4, for the audit committee) require at least four meetings a year, with more as needed.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x20",
+        "question": "Who certifies to the board each year on the effectiveness of the bank's internal control policy, practice and procedure under the ICMS guidelines?",
+        "options": [
+          "The Head of Internal Audit",
+          "The external auditor",
+          "The senior management team led by the MD/CEO",
+          "The chair of the risk management committee"
+        ],
+        "answer": 2,
+        "explanation": "Section 2.4.3.5 requires the SMT to review the control system's effectiveness yearly and give the board a yearly certification.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x21",
+        "question": "The Head of Internal Audit wants to join Krishnachura's senior management team as a full member. What do the guidelines say?",
+        "options": [
+          "The HoIA must be a full SMT member to understand the business",
+          "The HoIA may join if the audit committee agrees",
+          "The HoIA may not be an SMT member but must attend SMT meetings as an observer",
+          "The HoIA may neither join nor attend SMT meetings"
+        ],
+        "answer": 2,
+        "explanation": "Section 2.4.3.2 says the HoIA shall not be a member of the SMT but must attend its meetings as an observer.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x22",
+        "question": "Under section 2.3.3.8, how much planned mandatory leave must ICMS officials take each year, and why?",
+        "options": [
+          "Ten days, planned confidentially, to help prevent and detect fraud and money laundering",
+          "Five days, to allow training",
+          "Fifteen days, as a wellbeing benefit",
+          "Twenty days, split across the year at the employee's choice"
+        ],
+        "answer": 0,
+        "explanation": "Unit heads prepare a confidential mandatory annual leave plan of 10 days per year for ICMS staff, in the spirit of AML and fraud prevention; the management may change it but the employee cannot claim a change.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x23",
+        "question": "An auditor moved from the Credit Division to internal audit six months ago. The audit plan assigns her to review the Credit Division's work from her time there. What applies?",
+        "options": [
+          "She may audit it because she knows the process best",
+          "She may audit it with her new manager's approval",
+          "She may audit it after one year in internal audit",
+          "She must not audit work she performed in her previous department"
+        ],
+        "answer": 3,
+        "explanation": "Section 2.3.3.6 says internal audit officials shall not audit their own work from their previous departments or offices.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x24",
+        "question": "Which of these does the Compliance Function's 'Policies and Governance' division handle under section 2.2.2.1?",
+        "options": [
+          "Conducting surprise branch audits",
+          "Supporting the code of conduct, compliance culture and ethical standards, and keeping policies aligned with regulation",
+          "Approving loans above the CEO's limit",
+          "Running the bank's treasury dealing desk"
+        ],
+        "answer": 1,
+        "explanation": "Section 2.2.2.1(c) gives this division compliance policies and SOPs, alignment with regulation and support for governance frameworks such as the code of conduct, compliance culture and ethics.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x25",
+        "question": "A compliance breach could lead to a large Bangladesh Bank fine. Under section 5.3.3.6, when must it reach the board or audit committee?",
+        "options": [
+          "Immediately",
+          "At the next quarterly compliance report",
+          "At the year-end internal control review",
+          "Only after the fine is imposed"
+        ],
+        "answer": 0,
+        "explanation": "Significant compliance breaches must be reported immediately to the board or audit committee where there is a significant risk of legal or regulatory sanctions, financial loss or reputational damage.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x26",
+        "question": "Section 5.4.1 requires a formal regulatory change management process. Which of these is part of it?",
+        "options": [
+          "Waiting for Bangladesh Bank to explain each new circular in a meeting",
+          "Sending new circulars only to the branches that ask for them",
+          "Assessing a new rule's impact and updating policies, procedures and systems",
+          "Asking internal audit to rewrite policies after each circular"
+        ],
+        "answer": 2,
+        "explanation": "Banks must identify and track new and amended rules, assess their impact, disseminate them to the business, and ensure policies, procedures and systems are updated.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x27",
+        "question": "Krishnachura's compliance team runs one generic annual quiz for all staff and calls it the 'role-based programme'. In an inspection, what is the most likely gap against section 5.4.3?",
+        "options": [
+          "The training was not delivered by Bangladesh Bank trainers",
+          "The curriculum is not built on the compliance risk assessment or tailored to roles",
+          "The quiz was not translated into English",
+          "The training was not approved by shareholders"
+        ],
+        "answer": 1,
+        "explanation": "Section 5.4.3 requires a mandatory programme that is role-based, with a curriculum based on the CRA and measured effectiveness. A single generic quiz for all staff misses the first two.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x28",
+        "question": "Which statement best describes the relationship of the three ICMS functions in section 1.7.4?",
+        "options": [
+          "Audit sets the rules, compliance measures risk and risk management approves products",
+          "All three functions report to the MD/CEO and share one head",
+          "Compliance replaces internal audit in banks using the three lines model",
+          "Risk management identifies the risks, compliance sets and checks the rules, and audit gives independent assurance on both"
+        ],
+        "answer": 3,
+        "explanation": "Section 1.7.4 describes risk management, compliance and audit as linked pillars: risk sets what to manage, compliance the rules, and audit validates how well both work.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x29",
+        "question": "A branch officer asks a member of parliament to call the MD about her transfer request. Which part of the Code does this breach?",
+        "options": [
+          "The rules on accepting foreign awards",
+          "The rule on post-employment confidentiality",
+          "The rules on dress and grooming",
+          "The ban on using political or board influence for postings, promotions or transfers"
+        ],
+        "answer": 3,
+        "explanation": "Section 11 of the Code forbids any employee, directly or indirectly, from approaching a member of parliament or using political or board influence for employment, promotion, transfer or other personal gain.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x30",
+        "question": "Under section 37 of the Code, what must a bank's ethics committee do?",
+        "options": [
+          "Approve every gift staff receive",
+          "Have an annual work plan and periodically monitor progress against it",
+          "Investigate every whistleblower report itself",
+          "Sign each employee's statement of compliance"
+        ],
+        "answer": 1,
+        "explanation": "Section 37(ii) says the ethics committee shall have an annual work plan and monitor progress against it, promote the code and lead by example.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x31",
+        "question": "A former Krishnachura officer joins a competitor and shares a list of large depositors with his new employer. Which Code duty has he broken?",
+        "options": [
+          "The duty to circulate the code within 60 days",
+          "The duty to seek permission for outside employment",
+          "The duty to keep confidential information secret after leaving the bank",
+          "No duty, since the Code ends when employment ends"
+        ],
+        "answer": 2,
+        "explanation": "Sections 27 and 36 require information obtained in employment to stay confidential and secure even after the employee leaves.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x32",
+        "question": "Which channels does section 8.4.2 of the ICMS guidelines expect a bank to offer whistleblowers?",
+        "options": [
+          "A dedicated email or hotline, a secure online system, and sealed confidential letters to the HoC or audit committee chair",
+          "A suggestion box at each branch, emptied by the branch manager",
+          "Reports through the line manager only, to keep the chain of command",
+          "A public social media page where staff can post concerns"
+        ],
+        "answer": 0,
+        "explanation": "Section 8.4.2 lists multiple confidential channels: email or hotline, a secure online reporting system, and sealed letters marked confidential to the HoC, the audit committee chair or Bangladesh Bank.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x33",
+        "question": "After the preliminary assessment of a whistleblower report, to whom are the investigation's findings and recommendations submitted under section 8.4.5?",
+        "options": [
+          "The MD/CEO",
+          "The chair of the audit committee",
+          "The head of HR",
+          "The person named in the report"
+        ],
+        "answer": 1,
+        "explanation": "Section 8.4.5 says the findings and recommendations are documented for submission to the chair of the audit committee.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x34",
+        "question": "Krishnachura's HR head proposes to lower a whistleblower's annual rating because 'her report caused disruption'. What is the position?",
+        "options": [
+          "Permitted if the report was not proved",
+          "Permitted if the rating reflects other work issues as well",
+          "Permitted after one year has passed",
+          "Prohibited: retaliation is barred, and Bangladesh Bank may act against a bank that retaliates"
+        ],
+        "answer": 3,
+        "explanation": "Section 8.4.4 bars demotion, suspension, harassment or any retaliation, protects good-faith reports even if unproved, and says Bangladesh Bank may act against retaliating banks.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x35",
+        "question": "Under the Public Interest Information Disclosure Act 2011, may a person's identity be revealed after a protected disclosure?",
+        "options": [
+          "Not without that person's consent",
+          "Yes, once the investigation starts",
+          "Yes, if the accused asks the court",
+          "Yes, to the person's employer only"
+        ],
+        "answer": 0,
+        "explanation": "Section 5(1) of the Act says the identity of a person who makes a public-interest disclosure shall not be revealed without his or her consent.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x36",
+        "question": "An officer spots possible fraud by her own branch manager. Which route best fits the Code and the ICMS framework?",
+        "options": [
+          "Report it to the branch manager first, as the Code says to tell your superior",
+          "Investigate quietly and collect evidence herself before reporting",
+          "Report through a confidential whistleblower channel, since the usual route runs through the manager involved",
+          "Post it anonymously on social media to warn customers"
+        ],
+        "answer": 2,
+        "explanation": "Section 16 of the Code expects fraud to be reported, and the ICMS framework offers confidential channels to the HoC or audit committee chair, which suit cases involving the superior. Social media posting breaches the confidentiality and media rules.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-gc-x37",
+        "question": "Under the new section 332(1), what must an employer publish on its website?",
+        "options": [
+          "The names of all complainants and accused persons",
+          "The minutes of every complaints committee meeting",
+          "Reports on violence and harassment matters and a description of the complaint-handling procedure",
+          "The salaries of complaints committee members"
+        ],
+        "answer": 2,
+        "explanation": "Section 332(1)(h) requires the workplace website to provide related reports and a description of the complaint management procedure; confidentiality of individuals still applies.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x38",
+        "question": "Krishnachura's complaints committee has five members: a woman chair from HR, three male officers and one member from a women's rights organisation. What is wrong under section 332A?",
+        "options": [
+          "Women are not in the majority, and only one outside member has been appointed",
+          "Nothing: five members led by a woman is enough",
+          "The chair must come from an outside organisation",
+          "A committee may not include any men"
+        ],
+        "answer": 0,
+        "explanation": "Section 332A needs five members, a majority of women from within the establishment, a woman as head and two members from organisations working on gender and sexual violence. This committee has three men out of five and only one external member.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-gc-x39",
+        "question": "Which of these does the 2026 definition of sexual harassment expressly list?",
+        "options": [
+          "Assigning a fair workload based on job grade",
+          "Giving negative but accurate performance feedback",
+          "Refusing a leave request because of staffing needs",
+          "Taking still or video images for blackmail or to damage someone's reputation"
+        ],
+        "answer": 3,
+        "explanation": "The new section 2(52A) lists conduct such as unwelcome physical contact, sexual remarks, showing pornography, sexually suggestive messages and taking images for blackmail or character assassination.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x40",
+        "question": "Under the new section 332(1), the employer must consider violence and harassment in which management system?",
+        "options": [
+          "Credit risk management",
+          "Occupational safety and health management, including psychosocial risks",
+          "IT change management",
+          "Asset-liability management"
+        ],
+        "answer": 1,
+        "explanation": "Section 332(1)(e) requires employers to take necessary steps in occupational safety and health management, considering violence, harassment and related psychosocial risks.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x41",
+        "question": "Who must approve a scheduled bank's own foundation training policy and modules under BRPD-1 Circular 10?",
+        "options": [
+          "The bank's board of directors (or local highest authority for a foreign bank)",
+          "Bangladesh Bank's training academy",
+          "The Bangladesh Institute of Bank Management",
+          "The Head of Compliance alone"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2 of the guidelines requires banks to prepare their own policies and modules aligned with the guidelines, approved by the board or, for foreign banks, the local highest authority.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-gc-x42",
+        "question": "Which practical element does BRPD-1 Circular 10 require in foundation training?",
+        "options": [
+          "A month posted at Bangladesh Bank's head office",
+          "A week of foreign exchange dealing on a live desk",
+          "A field stay of at least five days to study the rural economy, followed by a report",
+          "An overseas study visit to a regional bank"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7(a)(c) requires practical exposure to the rural economy through a minimum five-day field stay, focusing on SME and agricultural projects, with a report and presentation.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-gc-x43",
+        "question": "Which set of documents best shows Bangladesh Bank that Krishnachura's compliance training meets section 5.4.3 of the ICMS guidelines?",
+        "options": [
+          "A signed attendance sheet from the annual town-hall meeting",
+          "The CRA, a role-to-module map, completion and test results, and the quarterly report to the audit committee",
+          "The trainers' CVs and the training centre's floor plan",
+          "Copies of the circulars emailed to all staff"
+        ],
+        "answer": 1,
+        "explanation": "Section 5.4.3 requires a mandatory role-based programme built on the CRA, with effectiveness measured and reported. The evidence must show each element, not just attendance.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
