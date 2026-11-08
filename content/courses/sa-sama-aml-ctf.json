@@ -1,0 +1,3397 @@
+{
+  "slug": "sa-sama-aml-ctf",
+  "title": "Saudi Arabia | SAMA AML/CTF Compliance and Targeted Financial Sanctions",
+  "tagline": "Saudi AML and CTF Laws, SAMA's AML/CTF Guide and the 2025 sanctions rules in practice: CDD, FIU reporting, freezing and your bank's programme.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional banks licensed and supervised by SAMA",
+    "Retail, corporate and private banking",
+    "Payments, remittances and operations",
+    "Sanctions screening and transaction monitoring",
+    "Compliance, risk and internal audit"
+  ],
+  "hours": 6,
+  "description": "A country-specific quest for staff of **conventional banks supervised by the Saudi Central Bank (SAMA)**. It is built on the **Anti-Money Laundering Law (Royal Decree M/20, 2017)** and its Implementing Regulation, the **Law on Combating Terrorism Crimes and its Financing (Royal Decree M/21)** and its Implementing Regulations, **SAMA's AML/CTF Guide (2019)**, SAMA's **Account Opening Rules**, the **Rules for the Implementation of Targeted Financial Sanctions (December 2025)** and SAMA's **Guidance on Assessing Business Risks related to ML, TF and Proliferation Financing (December 2025)**, with reporting to the **General Directorate of Financial Intelligence (Saudi FIU)**.\n\nArticle 14/1(e) of the AML Implementing Regulation and Article 18 of the CTF Implementing Regulations require ongoing employee training, and Section 11 of SAMA's Guide expects every employee to be trained before starting work, refreshed regularly and tested at least once a year. This quest is therefore for everyone from tellers to board members. You will learn the offences, the risk-based approach, CDD, beneficial ownership and PEP rules, how to escalate and report without tipping off, ten-year record keeping, sanctions screening and freezing, proliferation financing risk, the compliance and audit functions, and the penalties SAMA and the courts can impose.\n\nThis quest builds knowledge of the Saudi framework; it does not replace your bank's own AML/CTF and sanctions policies and procedures, which you must always follow.",
+  "audience": [
+    "All employees of SAMA-supervised conventional banks who need AML/CTF induction or annual refresher training",
+    "Tellers, customer service and call-centre staff who must complete KYC and AML/CFT training before taking up their roles",
+    "Onboarding, KYC, transaction monitoring and sanctions screening teams who apply CDD, EDD and TFS controls",
+    "Payments, remittance and trade staff exposed to wire transfer, sanctions evasion and proliferation financing risks",
+    "Compliance officers, internal auditors, senior managers and board members accountable for the AML/CTF programme"
+  ],
+  "outcomes": [
+    "Explain the Saudi AML/CTF framework, the money laundering and terrorist financing offences and the roles of SAMA, the Saudi FIU and the permanent committees",
+    "Apply the risk-based approach to CDD, beneficial ownership, simplified and enhanced measures and PEPs under the AML Implementing Regulation and SAMA's Guide",
+    "Escalate and report suspicious transactions to the Saudi FIU, avoid tipping off and keep records for at least ten years",
+    "Screen, handle alerts, freeze without delay and notify SAMA under the December 2025 Targeted Financial Sanctions Rules",
+    "Describe the business risk assessment, the compliance and audit functions, SAMA's training rules and the supervisory and criminal penalties"
+  ],
+  "quest": {
+    "name": "Guardians of the Oasis",
+    "premise": "You have just joined the Financial Crime Compliance team of Wahat Bank, a fictional conventional bank supervised by SAMA, with its head office in Riyadh and branches in Jeddah and Dammam. SAMA has announced a review of AML/CTF and sanctions controls, and its new December 2025 sanctions rules and business risk guidance are in force. With compliance head Noura Al-Qahtani, branch manager Faisal Al-Harbi, sanctions specialist Arjun Menon and customer service officer Sara Al-Dossary, clear five stages, then face the final boss: briefing chief executive Majed Al-Shehri before SAMA arrives.",
+    "badge": {
+      "name": "Saudi AML Guardian",
+      "description": "Awarded to bank staff who can apply Saudi AML/CTF law and SAMA's rules: know the customer, report right, freeze fast and run a sound programme."
+    },
+    "color": "#0b6e4f",
+    "cast": [
+      {
+        "id": "noura",
+        "name": "Noura Al-Qahtani",
+        "role": "Head of AML/CTF Compliance, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#1d3557"
+        }
+      },
+      {
+        "id": "faisal",
+        "name": "Faisal Al-Harbi",
+        "role": "Branch Manager, Al-Hamra, Jeddah",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#8d5524"
+        }
+      },
+      {
+        "id": "arjun",
+        "name": "Arjun Menon",
+        "role": "Sanctions Screening Specialist, Riyadh",
+        "look": {
+          "skin": 4,
+          "hair": "short",
+          "color": "#6a4c93"
+        }
+      },
+      {
+        "id": "sara",
+        "name": "Sara Al-Dossary",
+        "role": "Customer Service Officer, Dammam",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#2a9d8f"
+        }
+      },
+      {
+        "id": "majed",
+        "name": "Majed Al-Shehri",
+        "role": "Chief Executive Officer",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#264653"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Saudi Framework: Laws, Offences and Who Does What",
+      "stage": "The Rulebook Gate",
+      "summary": "Map the Saudi AML/CTF framework: the 2017 Anti-Money Laundering Law, the Combating Terrorism Crimes and its Financing Law, their implementing regulations, SAMA's AML/CTF Guide and the 2025 sanctions and risk instruments, the authorities involved, the two offences and your own training duty.",
+      "minutes": 50,
+      "objectives": [
+        "Name the laws, implementing regulations and SAMA instruments that make up the Saudi AML/CTF framework for banks",
+        "Describe the roles of SAMA, the Saudi FIU, the permanent committees and the Public Prosecution",
+        "Explain the money laundering offence under Article 2 of the AML Law and the terrorist financing offence under Article 47 of the CTF Law",
+        "Explain why every bank employee must be trained before starting work and tested at least once a year"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Wahat Bank",
+          "setting": "AML/CTF Compliance floor, Wahat Bank head office, King Fahd Road, Riyadh. 8:30 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your new badge says Wahat Bank, Financial Crime Compliance. Before you reach your desk, a message pops up: 'Meeting room 4. Now. Noura.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "Welcome! I'm Noura Al-Qahtani, head of AML/CTF compliance. You picked a lively month to join us.",
+              "mood": "happy"
+            },
+            {
+              "who": "noura",
+              "text": "SAMA has announced a thematic review of AML/CTF and targeted financial sanctions controls across banks, and the new sanctions rules from December 2025 are on the list.",
+              "mood": "thinking"
+            },
+            {
+              "who": "faisal",
+              "text": "(on screen from Jeddah) Faisal here, Al-Hamra branch. My new tellers ask why they sat an AML course before they were even allowed near a counter.",
+              "mood": "worried"
+            },
+            {
+              "who": "arjun",
+              "text": "And my screening team keeps asking which rule is a law, which is a regulation and which is a SAMA instruction. It matters when we write procedures.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "Both fair questions. Today we climb the Rulebook Gate: the laws, the authorities, the two offences and why training comes first.",
+              "mood": "proud"
+            },
+            {
+              "who": "noura",
+              "text": "By the end of this stage you will be able to answer Faisal's tellers yourself. Ready?",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The Saudi framework in six scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The AML Law",
+              "narration": "The Anti-Money Laundering Law, issued by Royal Decree M/20 in 2017, defines the offence, sets the preventive duties of financial institutions and creates the penalties. It replaced the earlier 2012 law."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "The CTF Law",
+              "narration": "The Law on Combating Terrorism Crimes and its Financing, issued by Royal Decree M/21 in the same year, does the same for terrorist financing, with its own reporting and tipping-off articles."
+            },
+            {
+              "icon": "⚙️",
+              "heading": "Implementing regulations",
+              "narration": "Each law has an implementing regulation that adds detail. For example, Article 14/1 of the AML regulation lists what a bank's internal controls must contain, including ongoing employee training."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "SAMA's instruments",
+              "narration": "SAMA supervises banks and publishes its instructions in the SAMA Rulebook: the 2019 AML/CTF Guide, the Account Opening Rules, and two new texts from December 2025 on targeted sanctions and on business risk assessment."
+            },
+            {
+              "icon": "📡",
+              "heading": "Where reports go",
+              "narration": "Suspicious transaction reports go to the General Directorate of Financial Intelligence, the Saudi FIU, which works under the oversight of the President of State Security with operational independence."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Your bank's policies",
+              "narration": "Wahat Bank turns all of this into policies approved by senior management. Those policies bind every employee, from the board to the newest teller."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Layers of the Saudi AML/CTF framework",
+          "caption": "Each layer must fit the one above it. Your daily procedures sit at the bottom and must respect every layer.",
+          "items": [
+            {
+              "label": "AML Law and CTF Law",
+              "detail": "Royal Decrees M/20 and M/21 of 2017: offences, preventive duties, FIU, supervision and penalties."
+            },
+            {
+              "label": "Implementing regulations",
+              "detail": "Detail on risk assessment, CDD, PEPs, reporting, internal controls and training."
+            },
+            {
+              "label": "SAMA AML/CTF Guide",
+              "detail": "Circular of November 2019: how SAMA expects banks to meet the legal duties, section by section."
+            },
+            {
+              "label": "SAMA rules and guidance",
+              "detail": "Account Opening Rules, TFS Rules (Dec 2025), business risk guidance (Dec 2025)."
+            },
+            {
+              "label": "Wahat Bank policies",
+              "detail": "Approved by senior management, applied to all branches and majority-owned subsidiaries."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who does what in Saudi Arabia?",
+          "prompt": "Match each authority to its role in the AML/CTF system.",
+          "pairs": [
+            {
+              "left": "SAMA",
+              "right": "Supervises banks for AML/CTF, inspects them, issues instructions and can impose measures and fines"
+            },
+            {
+              "left": "Saudi FIU (General Directorate of Financial Intelligence)",
+              "right": "Receives and analyses suspicious transaction reports and shares results with competent authorities"
+            },
+            {
+              "left": "Anti-Money Laundering Permanent Committee",
+              "right": "Can identify high-risk countries and set countermeasures that banks must apply (Article 11)"
+            },
+            {
+              "left": "Permanent Counter Terrorism Committee",
+              "right": "Handles UN counter-terrorism sanctions mechanisms under the Presidency of State Security"
+            },
+            {
+              "left": "Public Prosecution",
+              "right": "Investigates and prosecutes ML and TF crimes and can order records, searches and provisional seizure"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Wahat Bank analyst decides a customer's transfers are suspicious. Under Article 15 of the AML Law, who receives the report?",
+          "options": [
+            "SAMA's banking supervision department",
+            "The General Directorate of Financial Intelligence (the Saudi FIU)",
+            "The Public Prosecution office nearest the branch",
+            "The Anti-Money Laundering Permanent Committee"
+          ],
+          "answer": 1,
+          "explanation": "Article 15 requires suspicious transactions to be reported promptly and directly to the General Directorate of Financial Intelligence. SAMA supervises the bank but is not the recipient of suspicious transaction reports, and the Public Prosecution acts later, on the FIU's dissemination."
+        },
+        {
+          "type": "concept",
+          "title": "Money laundering under Article 2",
+          "body": "The AML Law treats four kinds of conduct as money laundering when the person **knows** the funds are proceeds of crime:\n\n- **Converting or transferring** them, or carrying out any transaction on them, to disguise their origin or help an offender escape the consequences.\n- **Acquiring, possessing or using** them.\n- **Concealing or disguising** their nature, source, movement, ownership or location.\n- **Attempting, assisting, abetting, advising or facilitating** any of the above.\n\nThree further points matter for bankers:\n\n- **Separate offence (Article 4):** no conviction for the predicate crime is needed, wherever it happened.\n- **Intent can be inferred** from objective facts, so 'I did not ask' is no defence when the circumstances were obvious.\n- **Legal persons are liable (Article 3)**, and that does not shield board members, managers or employees who acted for the bank."
+        },
+        {
+          "type": "sort",
+          "title": "Is this money laundering under Article 2?",
+          "prompt": "Decide whether each act, done knowingly with criminal proceeds, falls within Article 2 of the AML Law.",
+          "buckets": [
+            "Money laundering",
+            "Not money laundering on these facts"
+          ],
+          "items": [
+            {
+              "text": "Splitting fraud proceeds across relatives' accounts to hide who owns them",
+              "bucket": 0
+            },
+            {
+              "text": "Buying a car with money the buyer knows came from drug dealing",
+              "bucket": 0
+            },
+            {
+              "text": "A friend advising a fraudster how to route funds through a trading company",
+              "bucket": 0
+            },
+            {
+              "text": "Trying to deposit bribe money that the bank refuses to accept",
+              "bucket": 0
+            },
+            {
+              "text": "Depositing a documented end-of-service payment from a known employer",
+              "bucket": 1
+            },
+            {
+              "text": "Receiving a salary transfer that matches the customer's employment contract",
+              "bucket": 1
+            },
+            {
+              "text": "Moving smuggling proceeds abroad to put them out of investigators' reach",
+              "bucket": 0
+            },
+            {
+              "text": "Paying a supplier invoice that matches goods actually delivered",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The donation question",
+          "setting": "Video call between Riyadh and Jeddah, 11:15 am.",
+          "lines": [
+            {
+              "who": "faisal",
+              "text": "Here is one from my branch. A customer collects cash donations from colleagues every month and sends them abroad. The money is clean salary money. That can't be terrorist financing, can it?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Under Article 47 of the CTF Law it can. The source of the money does not matter: legitimate or illegitimate, it is caught if it is meant for a terrorist act, a terrorist or a terrorist entity.",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "And it doesn't need the attack to happen, or even the money to be spent?",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Correct. The offence is complete even if the crime never takes place or the funds are never used. That is why we look at purpose and destination, not just origin.",
+              "mood": "thinking"
+            },
+            {
+              "who": "faisal",
+              "text": "So my tellers need to think about where money is going, not only where it came from.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Exactly. Let's test that instinct.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Clean money, troubling destination",
+          "situation": "Hamad, a long-standing customer at Faisal's branch, deposits about SAR 18,000 in cash each month and transfers it to a newly opened account abroad in the name of a charity nobody at the branch has heard of. He says his colleagues contributed from their salaries. When the teller asks about the charity's work, Hamad becomes vague and says the organisers 'prefer not to publicise'.",
+          "choices": [
+            {
+              "text": "Process it: the money comes from salaries, so there is no criminal source to worry about",
+              "outcome": "This misreads the CTF Law. Article 47 covers funds from legitimate sources too, so a clean origin does not settle the question. Ignoring the destination could leave the bank facilitating terrorist financing.",
+              "score": 0
+            },
+            {
+              "text": "Refuse the transfer and tell Hamad the bank suspects his charity of funding terrorism",
+              "outcome": "Refusing may be right, but telling him about the suspicion breaches the tipping-off ban in Article 71 of the CTF Law and could damage an investigation.",
+              "score": 0
+            },
+            {
+              "text": "Complete the transaction steps the policy allows, record the facts and escalate internally to the AML/CTF unit without saying anything to Hamad",
+              "outcome": "Best choice. The unusual destination and vague answers are grounds for an internal report. The AML/CTF unit can screen the recipient, assess the case and, if suspicion is confirmed, report promptly to the FIU.",
+              "score": 2
+            },
+            {
+              "text": "Ask Hamad to bring a letter from the charity next month and decide then",
+              "outcome": "Waiting a month while transfers continue delays a report that may be needed now. Gathering information is useful, but escalation should not wait.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two offences side by side",
+          "caption": "The preventive duties are almost identical in both laws; the offences differ in what they look at.",
+          "headers": [
+            "Money laundering",
+            "Terrorist financing"
+          ],
+          "items": [
+            {
+              "label": "Law",
+              "left": "AML Law, Royal Decree M/20",
+              "right": "CTF Law, Royal Decree M/21"
+            },
+            {
+              "label": "Key article",
+              "left": "Article 2",
+              "right": "Article 47"
+            },
+            {
+              "label": "Source of funds",
+              "left": "Proceeds of a predicate crime",
+              "right": "Legitimate or illegitimate sources"
+            },
+            {
+              "label": "What it targets",
+              "left": "Hiding or using criminal proceeds",
+              "right": "Funds for terrorist acts, terrorists or entities"
+            },
+            {
+              "label": "Needs an outcome?",
+              "left": "No predicate conviction needed",
+              "right": "No attack or use of funds needed"
+            },
+            {
+              "label": "Reporting article",
+              "left": "Article 15",
+              "right": "Article 70"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Key terms in the Saudi laws",
+          "cards": [
+            {
+              "front": "Predicate offence",
+              "back": "Any crime under Saudi law, or an act abroad that is a crime there and would be one in the Kingdom, that generates proceeds."
+            },
+            {
+              "front": "Proceeds of crime",
+              "back": "Funds obtained directly or indirectly from a predicate offence, including funds converted into other assets."
+            },
+            {
+              "front": "Beneficial owner",
+              "back": "The natural person who ultimately owns or controls a customer, or on whose behalf a transaction is made."
+            },
+            {
+              "front": "Supervisory authority",
+              "back": "The body that checks compliance with the law; for banks this is SAMA."
+            },
+            {
+              "front": "Shell bank",
+              "back": "A bank licensed in a country where it has no physical presence and no regulated group behind it. Saudi banks may not deal with one."
+            },
+            {
+              "front": "Provisional seizure",
+              "back": "A temporary ban on moving or using funds, ordered by a court or competent authority."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the terrorist financing offence in Article 47 of the CTF Law is correct?",
+          "options": [
+            "It applies only if the funds come from a crime",
+            "It applies only once a terrorist act has taken place",
+            "It can apply to lawfully earned money intended for a terrorist entity",
+            "It applies only to transfers sent outside the Kingdom"
+          ],
+          "answer": 2,
+          "explanation": "Article 47 covers funds from legitimate or illegitimate sources, inside or outside the Kingdom, and applies even if the terrorist crime never occurs or the funds are not used."
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Why you were trained before your first day",
+          "caption": "Account Opening Rule 9 adds that tellers and customer service staff may not be assigned before KYC, AML/CFT and ethics courses.",
+          "items": [
+            {
+              "label": "AML regulation 14/1(e)",
+              "detail": "Internal controls must include ongoing employee training programmes."
+            },
+            {
+              "label": "CTF regulations Art. 18(1)(f)",
+              "detail": "CFT policies must include continuing employee training."
+            },
+            {
+              "label": "SAMA Guide 11.2(a)",
+              "detail": "Train current staff, and new staff before they start work, then repeat."
+            },
+            {
+              "label": "SAMA Guide 11.4",
+              "detail": "Test staff knowledge and training quality at least once a year."
+            },
+            {
+              "label": "SAMA Guide 11.5",
+              "detail": "Keep records of training given, attendance and dates."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA suspends an exchange company (2017)",
+          "body": "In November 2017 SAMA announced that it had suspended a licensed money exchange company, Saleh Hussain Al-Amoudi Sons, from money changing business until it put its affairs in order and obtained SAMA's approval to restart.\n\nAccording to SAMA's statement, the company had not complied with SAMA's regulatory and supervisory requirements, including measures communicated to financial institutions under the AML/CTF rules then in force. SAMA said it had already issued **several warnings** asking the company to fix the problems, and that the suspension would stay until full compliance, including with AML/CTF instructions, was proven.\n\n**Lessons for a bank:**\n\n- SAMA treats AML/CTF failures as a licensing matter, not just a paperwork issue.\n- Warnings are a stage, not the end: ignoring them escalates the response.\n- 'We were going to fix it' is not a defence once the supervisor has asked."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "The framework has layers: the 2017 AML Law and CTF Law, their implementing regulations, SAMA's AML/CTF Guide and newer SAMA rules, then your bank's policies.",
+            "SAMA supervises banks; suspicious transaction reports go only to the General Directorate of Financial Intelligence (Saudi FIU).",
+            "Money laundering (Article 2) is a separate offence: no predicate conviction is needed and intent can be inferred from the facts.",
+            "Terrorist financing (Article 47) covers clean money too, and the offence exists even if no attack happens.",
+            "Training is a legal control: before you start work, repeated over time, tested at least annually and recorded."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the first customer interaction you will have in your role. Which part of the framework you met today would apply to it, and who in your bank would you call if something felt wrong?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-aml-s1-q1",
+          "question": "Which instrument contains Article 14/1(e), requiring ongoing employee training programmes as part of a bank's AML controls?",
+          "options": [
+            "SAMA's Rules for the Implementation of Targeted Financial Sanctions",
+            "The Banking Control Law issued in 1966",
+            "The Saudi Central Bank Law",
+            "The Implementing Regulation to the Anti-Money Laundering Law"
+          ],
+          "answer": 3,
+          "explanation": "Article 14 of the AML Law leaves the content of internal controls to the implementing regulation, and paragraph 14/1(e) lists ongoing employee training. The TFS Rules have their own training chapter, but 14/1(e) is in the AML regulation.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s1-q2",
+          "question": "Under Article 4 of the AML Law, what is needed before someone can be convicted of money laundering?",
+          "options": [
+            "Proof that the funds are proceeds of crime, without a predicate conviction",
+            "A report from the bank that handled the funds",
+            "A confession from the person who committed the predicate crime",
+            "A final conviction for the predicate offence in Saudi Arabia"
+          ],
+          "answer": 0,
+          "explanation": "Article 4 makes money laundering a separate offence; neither a conviction for the predicate offence nor a bank report is a precondition, and intent may be inferred from objective circumstances.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s1-q3",
+          "question": "A teller asks why she had to complete AML/CFT and KYC courses before being posted to the counter. Which SAMA text requires this for tellers and customer service staff?",
+          "options": [
+            "Article 47 of the CTF Law",
+            "Rule 9 of SAMA's Account Opening Rules",
+            "Article 25 of the AML Law",
+            "Section 13 of SAMA's AML/CTF Guide"
+          ],
+          "answer": 1,
+          "explanation": "Rule 9 of the Account Opening Rules says banks should not assign tellers or customer service staff until they have attended KYC, AML/CFT and professional ethics courses. Section 13 of the Guide deals with correspondent relationships and Article 25 with supervisory measures.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s1-q4",
+          "question": "A customer sends his own salary savings abroad to a group he knows is planning an attack. The attack is later foiled and the money is never spent. Under the CTF Law, what is the position?",
+          "options": [
+            "Only an attempt, because the funds were never used",
+            "No offence, because the money was lawfully earned",
+            "The terrorist financing offence may still be complete",
+            "No offence, because the attack did not take place"
+          ],
+          "answer": 2,
+          "explanation": "Article 47 covers funds from legitimate sources and applies even if the crime does not occur or the funds are not used. Lawful origin and a foiled plot do not remove the offence.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s1-q5",
+          "question": "What does SAMA's AML/CTF Guide (paragraph 11.4) require regarding staff knowledge?",
+          "options": [
+            "A written examination before each promotion",
+            "Testing only for compliance staff and internal auditors",
+            "An external certificate renewed every three years",
+            "Testing of staff knowledge and training quality, at least annually"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.4 asks institutions to test employees' knowledge of AML/CTF requirements and the quality of training periodically, at least once a year. It is not limited to specialists or tied to promotion.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s1-q6",
+          "question": "Wahat Bank is prosecuted for money laundering committed in its name. Which statement reflects Article 3 of the AML Law?",
+          "options": [
+            "The bank's liability does not shield the staff and directors involved",
+            "Only the bank can be punished, never its employees",
+            "Directors are liable only if SAMA consents",
+            "Employees are liable only if they personally gained"
+          ],
+          "answer": 0,
+          "explanation": "Article 3 makes a legal person criminally liable while keeping the liability of chairmen, board members, employees and others who acted in its name or for its account.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s1-q7",
+          "question": "Who exercises oversight over the General Directorate of Financial Intelligence under Article 17 of the AML Law?",
+          "options": [
+            "The Capital Market Authority",
+            "The President of State Security",
+            "The Minister of Finance",
+            "The Governor of SAMA"
+          ],
+          "answer": 1,
+          "explanation": "Article 17 places the Directorate under the oversight of the President of State Security, with adequate operational independence. SAMA is the banks' supervisor, not the FIU's overseer.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s1-q8",
+          "question": "A Saudi bank officer receives proceeds of a fraud committed in another country, where fraud is a crime. Can that fraud be a predicate offence under the AML Law?",
+          "options": [
+            "No, only crimes committed inside the Kingdom count",
+            "Only if the foreign country has convicted someone",
+            "Yes, if it would also be an offence had it been committed in the Kingdom",
+            "Only if the funds exceed a set value threshold"
+          ],
+          "answer": 2,
+          "explanation": "Article 1 defines a predicate offence to include acts abroad that are crimes where committed and would be offences under Saudi law. No foreign conviction or minimum amount is required.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s1-q9",
+          "question": "Which pair of SAMA instruments was issued in December 2025?",
+          "options": [
+            "The Banking Control Law and its implementation rules",
+            "The Counter-Fraud Framework and the Cyber Security Framework",
+            "The Targeted Financial Sanctions Rules and the business risk assessment guidance",
+            "The AML/CTF Guide and the Account Opening Rules"
+          ],
+          "answer": 2,
+          "explanation": "SAMA issued the Rules for the Implementation of Targeted Financial Sanctions on 7 December 2025 and the Guidance on Assessing Business Risks related to ML, TF and PF on 31 December 2025. The AML/CTF Guide dates from 2019.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s1-q10",
+          "question": "A relationship manager says: 'I only processed the transfers; I never knew the money was dirty.' The circumstances made the criminal origin obvious. Why may that not help him?",
+          "options": [
+            "Bank staff are liable without any knowledge at all",
+            "Knowledge and intent can be inferred from objective factual circumstances",
+            "The burden is on the employee to prove innocence",
+            "Employees are always presumed to know the source"
+          ],
+          "answer": 1,
+          "explanation": "Article 4(2) allows intent, knowledge or purpose to be inferred from objective facts. It is not strict liability and there is no reversed burden, but obvious circumstances can establish knowledge.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Risk Assessment, CDD, Beneficial Owners and PEPs",
+      "stage": "The Onboarding Hall",
+      "summary": "Apply the Saudi risk-based approach at the front door: the documented risk assessment, when due diligence is required, what must be verified, the 25% beneficial ownership test, simplified and enhanced measures, PEPs and their families, and what to do when due diligence cannot be completed.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the documented ML/TF risk assessment required by Article 5 of the AML Law and Section 1 of SAMA's Guide",
+        "List the five moments when due diligence is required under Article 7/1 of the AML Implementing Regulation",
+        "Identify beneficial owners using the 25% test and the control fallbacks, without relying on the customer's word",
+        "Apply enhanced measures to high-risk customers and PEPs, and know when simplified measures are allowed"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A busy morning in Dammam",
+          "setting": "Customer service hall, Wahat Bank, Al-Faisaliyah branch, Dammam. 9:10 am.",
+          "lines": [
+            {
+              "who": "sara",
+              "text": "Three new customers already this morning: a contracting company, a retired official and a visitor who just wants to send money home.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "(on a video call) Perfect timing, Sara. Each one needs a different level of due diligence. Shall we take them one by one?",
+              "mood": "happy"
+            },
+            {
+              "who": "sara",
+              "text": "The contracting company's manager handed me a signed letter naming the owners. Isn't that enough?",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "SAMA's Guide says we must not rely mainly on the customer's written statement for beneficial ownership. We understand the structure from the records.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sara",
+              "text": "And the retired official? He was a deputy minister abroad until last year.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Then he is a foreign PEP. That means senior management approval and questions about source of wealth before we open anything.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "Welcome to the Onboarding Hall. Everything here starts from one idea: risk decides how deep we go.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The risk-based approach in five scenes",
+          "scenes": [
+            {
+              "icon": "🗺️",
+              "heading": "Know your own risks",
+              "narration": "Article 5 of the AML Law requires each bank to identify, assess and document its ML risks, looking at customers, countries, products, services, transactions and delivery channels."
+            },
+            {
+              "icon": "📅",
+              "heading": "Keep it current",
+              "narration": "SAMA's Guide asks for the assessment to be updated regularly and approved by senior management. New products and technologies must be assessed before launch."
+            },
+            {
+              "icon": "🏷️",
+              "heading": "Rate every customer",
+              "narration": "Every customer is classified, for example high, medium or low. A high-risk classification needs senior management approval, based on reasoned information."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Match effort to risk",
+              "narration": "Higher risk means enhanced measures. Lower risk can mean simplified measures, but never when there is a suspicion of money laundering."
+            },
+            {
+              "icon": "🚫",
+              "heading": "Manage, don't flee",
+              "narration": "SAMA's Guide stresses that banks are not banned from high-risk customers. The aim is to control risk, not to exclude whole groups of people."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Wahat Bank's risk cycle",
+          "caption": "SAMA's December 2025 guidance adds a separate business risk assessment covering ML, TF and proliferation financing (see Stage 5).",
+          "items": [
+            {
+              "label": "Identify",
+              "detail": "Customers, beneficial owners, products, channels and geographies, plus national risk findings."
+            },
+            {
+              "label": "Assess and document",
+              "detail": "Written assessment approved by senior management, shared with SAMA on request."
+            },
+            {
+              "label": "Set risk appetite",
+              "detail": "Decide which risks the bank will accept before writing controls (Guide 1.2)."
+            },
+            {
+              "label": "Mitigate",
+              "detail": "Policies, CDD levels, monitoring and limits that match the risk found."
+            },
+            {
+              "label": "Review",
+              "detail": "Update regularly, and before new products, technologies or business practices."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Article 5/5 of the AML Implementing Regulation, when are simplified measures NOT allowed?",
+          "options": [
+            "When the customer is a salaried Saudi national",
+            "When there is a suspicion of money laundering",
+            "When the account is opened through a digital channel",
+            "When the customer has banked with Wahat Bank for years"
+          ],
+          "answer": 1,
+          "explanation": "Simplified measures are possible for lower risks but are expressly ruled out where money laundering is suspected. Nationality, channel or tenure alone do not decide the question."
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "When due diligence is required (Regulation 7/1)",
+          "caption": "SAMA's Guide (3.2) adds a sixth trigger: when a customer's transaction does not fit their known behaviour or information.",
+          "items": [
+            {
+              "label": "New relationship or account",
+              "detail": "Before the relationship starts or the account opens."
+            },
+            {
+              "label": "Occasional transaction",
+              "detail": "For a non-customer, whether one transaction or several that appear linked."
+            },
+            {
+              "label": "Occasional wire transfer",
+              "detail": "Before a transfer for someone with no established relationship."
+            },
+            {
+              "label": "Suspicion of ML",
+              "detail": "Whenever money laundering is suspected, whatever the amount."
+            },
+            {
+              "label": "Doubts about data",
+              "detail": "When earlier identification data looks untrue or inadequate."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What CDD must cover",
+          "body": "Regulation 7/2 and Guide 3.3 set the minimum:\n\n- **Natural person:** full legal name from official documents, residential or national address, date and place of birth, nationality, and (per the Guide) source of income.\n- **Legal person:** name, legal form and proof of existence, the powers that bind it, all directors and senior managers, registered address and main place of business, and its sources of revenue.\n- **Anyone acting for the customer:** confirm they are authorised and verify their identity.\n- **Beneficial owner:** identify and take reasonable steps to verify.\n- **Purpose and intended nature** of the relationship, and the ownership and control structure of legal persons.\n\nVerification must use a **reliable, independent source**: never the customer alone, and never the bank's own records. Government-issued data counts as independent. SAMA's Guide (3.9) lets customers update their details without visiting a branch when electronic authentication approved by the National Information Center is used, unless the risk calls for more."
+        },
+        {
+          "type": "order",
+          "title": "Find the beneficial owner of a company",
+          "prompt": "Put the steps in the order Wahat Bank follows for a corporate customer under Regulation 7/2(c) and Guide 3.18-3.19.",
+          "steps": [
+            "Understand the ownership and control structure from records such as the commercial register and articles of association",
+            "Identify any natural person who owns or controls 25% or more of the shares",
+            "If nobody reaches 25%, or the controlling holder may not be the real owner, identify who controls the company by other means",
+            "As a last resort, identify the natural person holding the senior managing official position",
+            "Verify the identities from reliable sources and record the steps and any reasons for doubt"
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Enhanced, standard or simplified?",
+          "prompt": "Sort each situation into the level of due diligence the Saudi rules point to.",
+          "buckets": [
+            "Enhanced",
+            "Standard",
+            "Simplified may be possible"
+          ],
+          "items": [
+            {
+              "text": "A former foreign deputy minister opening a private banking account",
+              "bucket": 0
+            },
+            {
+              "text": "A customer from a country the AML Permanent Committee lists as high risk",
+              "bucket": 0
+            },
+            {
+              "text": "A company with layered holding companies in several jurisdictions",
+              "bucket": 0
+            },
+            {
+              "text": "An applicant another bank refused because of suspected ML",
+              "bucket": 0
+            },
+            {
+              "text": "A salaried employee opening a current account to receive wages",
+              "bucket": 1
+            },
+            {
+              "text": "A small family shop opening a business account with clear ownership",
+              "bucket": 1
+            },
+            {
+              "text": "A low-risk payroll product with tight limits and no suspicion",
+              "bucket": 2
+            },
+            {
+              "text": "A visitor paying a utility bill at the counter, with no red flags",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The retired deputy minister",
+          "setting": "Private banking lounge, Wahat Bank, Riyadh. 2:00 pm.",
+          "lines": [
+            {
+              "who": "sara",
+              "text": "(on the phone) Noura, the retired official wants to deposit SAR 6 million from the sale of a property abroad. He is in a hurry and politely says he 'has nothing to hide'.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Under Regulation 8/5, a foreign PEP needs senior management approval before we establish the relationship, reasonable measures to establish source of wealth and source of funds, and enhanced ongoing monitoring.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sara",
+              "text": "His wife and his brother-in-law also want accounts.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Family up to the second degree by blood or marriage count under Regulation 8/3, and SAMA's Guide applies the same enhanced measures to them.",
+              "mood": "thinking"
+            },
+            {
+              "who": "majed",
+              "text": "(joining) If he is a good client, I'll approve quickly. But I want the file to show where the wealth came from.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "That is exactly the balance the rules expect: we can bank him, with our eyes open.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The SAR 6 million deposit",
+          "situation": "The retired foreign deputy minister offers a sale contract for a villa abroad and a bank letter confirming receipt of the proceeds. He asks Sara to open the account today and says paperwork 'can follow'. His brother-in-law, a local businessman, wants a separate account to receive part of the funds.",
+          "choices": [
+            {
+              "text": "Open both accounts today and complete PEP checks within the month",
+              "outcome": "Regulation 8/5 requires senior management approval before establishing the relationship with a foreign PEP. Opening first and checking later breaks that order.",
+              "score": 0
+            },
+            {
+              "text": "Decline both because foreign PEPs are too risky for Wahat Bank",
+              "outcome": "The Guide does not ask banks to avoid whole groups of customers. Refusing may be possible under risk appetite, but blanket refusal is not the expected response.",
+              "score": 1
+            },
+            {
+              "text": "Verify the sale documents, assess source of wealth and funds, obtain senior management approval, then open with enhanced monitoring; treat the brother-in-law as a family member under the same measures",
+              "outcome": "Best choice. This follows Regulation 8/5 and Guide 4.13-4.14: approval first, source of wealth and funds established, enhanced ongoing monitoring, and the same measures for family and close associates.",
+              "score": 2
+            },
+            {
+              "text": "Open the account for the brother-in-law only, because he is not a PEP himself",
+              "outcome": "A relative by marriage within the second degree is a family member of the PEP under Regulation 8/3, so he cannot be treated as an ordinary customer, and routing funds through him is a classic concealment pattern.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "PEP measures in Saudi Arabia",
+          "caption": "Family members (up to second degree) and close associates receive the same treatment. A decision that a domestic PEP is not high risk needs documented grounds.",
+          "headers": [
+            "Foreign PEP",
+            "Domestic PEP"
+          ],
+          "items": [
+            {
+              "label": "Status check",
+              "left": "Always, with appropriate systems",
+              "right": "Always, with appropriate systems"
+            },
+            {
+              "label": "Risk rating",
+              "left": "Always high risk (Guide 4.13)",
+              "right": "Assessed case by case (Guide 4.15)"
+            },
+            {
+              "label": "Senior management approval",
+              "left": "Always, before opening or continuing",
+              "right": "When risk is high"
+            },
+            {
+              "label": "Source of wealth and funds",
+              "left": "Always, reasonable measures",
+              "right": "When risk is high"
+            },
+            {
+              "label": "Ongoing monitoring",
+              "left": "Always enhanced",
+              "right": "Enhanced when risk is high"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "PEP and EDD vocabulary",
+          "cards": [
+            {
+              "front": "Politically exposed person",
+              "back": "Someone entrusted with a prominent public function in the Kingdom or abroad, or a senior position in an international organisation."
+            },
+            {
+              "front": "Family member",
+              "back": "Anyone related to the PEP by blood or marriage up to the second degree (Regulation 8/3)."
+            },
+            {
+              "front": "Close associate",
+              "back": "Someone with joint beneficial ownership or a close business relationship with the PEP, or who owns an entity set up for the PEP's benefit."
+            },
+            {
+              "front": "Source of wealth",
+              "back": "How the customer built their overall fortune over time."
+            },
+            {
+              "front": "Source of funds",
+              "back": "Where the specific money used in the relationship or transaction comes from."
+            },
+            {
+              "front": "Refused elsewhere",
+              "back": "If another institution refused the customer, Guide 4.5 asks you to apply EDD and find out why."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A company's manager gives Sara a signed letter naming its owners. What does SAMA's Guide (3.19) say?",
+          "options": [
+            "Accept it, since the manager signed it",
+            "Do not rely mainly on it; understand the structure from records",
+            "Accept it if a notary has stamped it",
+            "Ask the owners to sign a second letter"
+          ],
+          "answer": 1,
+          "explanation": "Guide 3.19 says the institution should not rely primarily on the customer's written statement and should understand the ownership and control structure using records such as the commercial register, shareholder register and articles of association."
+        },
+        {
+          "type": "tip",
+          "title": "When you cannot finish CDD",
+          "body": "- **Cannot complete due diligence?** Regulation 7/8: do not open the account, start the relationship or carry out the transaction. For an existing customer, end the relationship. In every case, consider a suspicious transaction report.\n- **Worried that CDD questions will tip off a suspect?** Regulation 7/9 and Guide 8.7 let the bank stop the CDD and file a report to the FIU instead, stating why CDD was not done.\n- **Occasional customers:** Guide 5.8 limits exchange, transfers and cheque cashing for non-customers to SAR 5,000 per transaction and SAR 50,000 a year.\n- **No anonymous, numbered or fictitious-name accounts** (AML Law Article 6)."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Risk drives everything: a documented, senior-approved risk assessment and a risk rating for every customer.",
+            "Due diligence is needed at five moments in Regulation 7/1, and SAMA adds behaviour that does not fit the customer.",
+            "Beneficial owners: 25% ownership, then control by other means, then the senior managing official, verified from records, not the customer's letter.",
+            "Foreign PEPs are always high risk: senior approval first, source of wealth and funds, enhanced monitoring; family to the second degree too.",
+            "If CDD cannot be completed, do not proceed, and consider reporting; if CDD would tip off a suspect, report instead."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which part of the onboarding process in your team is most likely to be rushed under customer pressure? What would you say to a valued customer who wants the account opened before the checks are done?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-aml-s2-q1",
+          "question": "Which list correctly states three of the five due diligence triggers in Regulation 7/1 of the AML Implementing Regulation?",
+          "options": [
+            "Any cash deposit, any transfer, any cheque",
+            "Suspicion of ML, salary increase, change of address",
+            "New relationship, suspicion of ML, doubts about earlier data",
+            "New relationship, annual review, change of branch"
+          ],
+          "answer": 2,
+          "explanation": "Regulation 7/1 lists a new relationship or account, occasional transactions, occasional wire transfers, suspicion of ML and doubts about earlier data. Annual reviews or a change of branch are not on that list.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s2-q2",
+          "question": "Under Regulation 7/2(c), which natural person must a bank first look for when identifying the beneficial owner of a company?",
+          "options": [
+            "Anyone owning at least 10% of the shares",
+            "The person who signs the account application",
+            "The largest corporate shareholder",
+            "Anyone owning or controlling 25% or more of the shares"
+          ],
+          "answer": 3,
+          "explanation": "The first test is a natural person owning or controlling 25% or more. If none exists or there is doubt, the bank looks to control by other means and, last, to the senior managing official. A corporate shareholder is never the end point.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s2-q3",
+          "question": "A customer is a former foreign minister. Under Regulation 8/5, which measure is required before the relationship is established?",
+          "options": [
+            "Approval from senior management",
+            "A guarantee from his embassy",
+            "A notification to the FIU",
+            "Approval from SAMA"
+          ],
+          "answer": 0,
+          "explanation": "For foreign PEPs the bank needs senior management approval, reasonable measures on source of wealth and funds, and enhanced monitoring. No SAMA approval or FIU notification is required simply because of PEP status.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s2-q4",
+          "question": "How far does the definition of a PEP's family member reach under Regulation 8/3?",
+          "options": [
+            "Relatives by blood only, up to the third degree",
+            "Relatives by blood or marriage up to the second degree",
+            "Anyone living in the same household",
+            "Spouse and children only"
+          ],
+          "answer": 1,
+          "explanation": "Regulation 8/3 covers relatives by blood or marriage up to the second degree, so in-laws such as a brother-in-law can be included.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s2-q5",
+          "question": "A new account holder's details cannot be verified because his documents conflict and he refuses to explain. What does Regulation 7/8 require?",
+          "options": [
+            "Refer him to another branch for a second try",
+            "Do not open the account and consider filing a suspicious transaction report",
+            "Open it with a low limit until he explains",
+            "Open it and verify within ninety days"
+          ],
+          "answer": 1,
+          "explanation": "If due diligence cannot be completed, the bank must not open the account, establish the relationship or carry out the transaction, and must consider reporting to the FIU.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s2-q6",
+          "question": "An occasional customer with no account asks to cash cheques. Under SAMA Guide 5.8, what limits apply to cheque cashing, transfers and exchange for occasional customers?",
+          "options": [
+            "SAR 5,000 per transaction and SAR 50,000 a year",
+            "SAR 60,000 per transaction and SAR 500,000 a year",
+            "SAR 3,000 per transaction with no annual limit",
+            "SAR 10,000 per transaction and SAR 100,000 a year"
+          ],
+          "answer": 0,
+          "explanation": "Guide 5.8 allows occasional customers to exchange currency, transfer money and cash cheques up to SAR 5,000 per transaction and no more than SAR 50,000 (or equivalents) in one year.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s2-q7",
+          "question": "Sara suspects a would-be customer is laundering money, and believes that asking detailed CDD questions will alert him. What do Regulation 7/9 and Guide 8.7 allow?",
+          "options": [
+            "Complete full CDD anyway and decide on a report later",
+            "Open the account so that monitoring can gather evidence",
+            "Stop the CDD and file a report to the FIU explaining why",
+            "Ask him to come back with a family member"
+          ],
+          "answer": 2,
+          "explanation": "Where suspicion exists and CDD may tip off the customer, the bank may choose not to carry out CDD and must file a suspicious transaction report stating why CDD was not applied.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s2-q8",
+          "question": "Wahat Bank's compliance team rates a customer as high risk. Under SAMA Guide 1.9, what must happen?",
+          "options": [
+            "The account is closed after twelve months",
+            "The customer is told and may appeal the rating",
+            "SAMA approves the classification within five days",
+            "Senior management approves the classification, based on reasoned information"
+          ],
+          "answer": 3,
+          "explanation": "Guide 1.9 requires senior management approval of a high-risk classification, supported by acceptable and reasoned information. There is no SAMA approval step and no duty to inform the customer.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s2-q9",
+          "question": "Wahat Bank plans to launch a new instant cross-border transfer app. When must it assess the ML/TF risks of the new product?",
+          "options": [
+            "Before launching it",
+            "Only if SAMA asks for it",
+            "Within a year of launch",
+            "After the first suspicious report"
+          ],
+          "answer": 0,
+          "explanation": "Article 5 of the AML Law, Regulation 5/6 and Guide 1.7 require risks from new products, practices and technologies to be assessed before launch or first use.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s2-q10",
+          "question": "A domestic PEP's relationship manager wants to rate him as standard risk. What does SAMA Guide 4.16 require?",
+          "options": [
+            "Approval from the Saudi FIU",
+            "Nothing, since domestic PEPs are always low risk",
+            "Sufficient, documented grounds based on the risk assessment",
+            "Written consent from the PEP himself"
+          ],
+          "answer": 2,
+          "explanation": "Domestic PEPs are not automatically high risk, but Guide 4.16 requires sufficient, reasonable and documented grounds, based on the risk assessment, for deciding that a local PEP, their family or associates are not high risk.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Monitoring, Suspicious Transaction Reporting and Tipping Off",
+      "stage": "The Signal Room",
+      "summary": "Learn how Saudi banks monitor accounts, escalate unusual activity, report to the Saudi FIU promptly and regardless of amount, protect the confidentiality of reports, keep records for ten years and respond to requests from the FIU and the Public Prosecution.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the monitoring duties in Article 13 of the AML Law and SAMA's expectation of electronic monitoring systems",
+        "Follow the internal escalation and reporting route to the Saudi FIU under Articles 15 and 70 and Section 8 of SAMA's Guide",
+        "Apply the tipping-off ban and the good-faith protection in Articles 16 and 71",
+        "State the ten-year record-keeping rule and how to respond to FIU and Public Prosecution requests"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A pattern on the screen",
+          "setting": "Transaction monitoring room, Wahat Bank head office, Riyadh. 10:05 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "Noura, look at this. A dental clinic account in Jeddah: forty cash deposits of just under SAR 50,000 over three weeks, then transfers to three trading firms in different countries.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Does the clinic's turnover explain it?",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "Its CDD file says monthly revenue of about SAR 200,000. This is ten times that.",
+              "mood": "worried"
+            },
+            {
+              "who": "faisal",
+              "text": "(joining from Jeddah) The owner's brother came in yesterday asking why one transfer was delayed. My teller nearly told him that compliance was looking at it.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Nearly is the important word. Let's walk through what the law expects from each of us, from the teller to the person who files the report.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Welcome to the Signal Room. Our job is to notice, escalate, report and stay silent.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "From alert to report in six scenes",
+          "scenes": [
+            {
+              "icon": "🖥️",
+              "heading": "Monitor",
+              "narration": "Article 13 of the AML Law requires ongoing scrutiny of transactions so they match what the bank knows about the customer, their business, risk profile and, where needed, source of funds."
+            },
+            {
+              "icon": "❓",
+              "heading": "Examine",
+              "narration": "Complex, unusually large transactions and unusual patterns with no clear economic or legal purpose must be examined, with closer monitoring for higher-risk customers."
+            },
+            {
+              "icon": "📨",
+              "heading": "Escalate",
+              "narration": "Staff raise concerns through the internal channel to the officer responsible for reporting. SAMA's Guide asks for board-approved reporting procedures."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Investigate",
+              "narration": "The AML/CTF unit investigates, with set levels of review and approval, and documents every decision, including decisions not to report."
+            },
+            {
+              "icon": "📡",
+              "heading": "Report",
+              "narration": "If there are reasonable grounds to suspect, the bank reports promptly and directly to the Saudi FIU, whatever the amount, and includes attempted transactions."
+            },
+            {
+              "icon": "🤐",
+              "heading": "Stay silent",
+              "narration": "Nobody may tell the customer or anyone else that a report is planned, made or under investigation. Good-faith reporters are protected from liability."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Escalate or explainable?",
+          "prompt": "Decide whether each observation should be escalated to the AML/CTF unit or is explained by what the bank knows.",
+          "buckets": [
+            "Escalate internally",
+            "Explained, no escalation"
+          ],
+          "items": [
+            {
+              "text": "Repeated cash deposits just below an internal review level, with no business reason",
+              "bucket": 0
+            },
+            {
+              "text": "A customer cancels a transfer when asked about its purpose",
+              "bucket": 0
+            },
+            {
+              "text": "A student account suddenly receives large transfers from many unrelated people",
+              "bucket": 0
+            },
+            {
+              "text": "Funds arrive and leave within a day through several countries",
+              "bucket": 0
+            },
+            {
+              "text": "A monthly salary credit followed by normal bill payments",
+              "bucket": 1
+            },
+            {
+              "text": "A seasonal rise in a retailer's takings during Ramadan, in line with past years",
+              "bucket": 1
+            },
+            {
+              "text": "A documented home sale followed by a payment to the buyer's lender",
+              "bucket": 1
+            },
+            {
+              "text": "A company with a sudden spike in trade payments to a high-risk country, unlike its history",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The jeweller's account shows an attempted SAR 300,000 transfer that the customer cancelled when asked for documents. Does SAMA's Guide expect a report?",
+          "options": [
+            "No, because the money never left the bank",
+            "Yes, if there are reasonable grounds for suspicion, even though it was only attempted",
+            "Only if the amount is above SAR 500,000"
+          ],
+          "answer": 1,
+          "explanation": "Article 15 of the AML Law and Guide 8.4 require reports on suspicious transactions including unsuccessful attempts, regardless of value, where there are reasonable grounds to suspect."
+        },
+        {
+          "type": "concept",
+          "title": "What SAMA expects in a report",
+          "body": "**Reasonable grounds, not speculation.** Guide 8.6 says reports should not be based on guesswork or lack of information; they rest on what the bank knows or on sufficient information linking the activity to suspicion.\n\n**Minimum content (Regulation 15/4):** names, addresses and phone numbers of those involved; a description of the transaction, the parties, how it was detected and its status; the amount and accounts; and the reasons for suspicion. The FIU's own form and channel are used (Guide 8.8).\n\n**Supporting technical report (Guide 8.9):** an account statement for **six months**, the CDD documents, and a technical analysis of the account or contract.\n\n**Decisions not to report (Guide 8.10):** the reporting officer documents the reasons in detail, with the required review and approval levels.\n\n**Records (Guide 8.11 and 6.7):** copies of reports to the FIU and of internal reports that were closed are kept confidentially for at least ten years, with named people allowed access."
+        },
+        {
+          "type": "order",
+          "title": "The Wahat Bank reporting route",
+          "prompt": "Put the steps in the order Wahat Bank's board-approved procedure follows.",
+          "steps": [
+            "A front-line employee notices unusual activity and records the facts",
+            "The employee raises an internal report through the channel to the reporting officer",
+            "The AML/CTF unit investigates, reviewing CDD, transactions and context",
+            "The case goes through the set review and approval levels",
+            "If there are reasonable grounds, the reporting officer files the report with the Saudi FIU on its form",
+            "The bank sends the technical report and answers any FIU request for further information promptly"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The brother at the counter",
+          "setting": "Al-Hamra branch, Jeddah. 12:40 pm.",
+          "lines": [
+            {
+              "who": "faisal",
+              "text": "The clinic owner's brother is back. He says the family will move all its accounts unless someone explains the delay right now.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "(on the phone) What has the teller said so far?",
+              "mood": "neutral"
+            },
+            {
+              "who": "faisal",
+              "text": "Only that the transfer is 'being processed'. He wants to know if there is 'a problem with the authorities'.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "Article 16 of the AML Law and Article 71 of the CTF Law forbid disclosing that a report will be, is being or has been made, or that an investigation is under way. That applies to you, the teller, me and the board.",
+              "mood": "thinking"
+            },
+            {
+              "who": "faisal",
+              "text": "But I can't lie to him either.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "You don't need to. Say you can't discuss internal reviews, offer to take his contact details, and pass any new information to us. Let's look at the options.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Tipping off at the counter",
+          "situation": "The clinic owner's brother demands to know whether 'the government' is looking at the family's money. He is not the account holder but says he manages the clinic's finances. He threatens to close all accounts and complain to SAMA if nobody explains the held transfer.",
+          "choices": [
+            {
+              "text": "Tell him quietly that compliance has flagged the account, so he understands it is not the branch's fault",
+              "outcome": "This is tipping off. Revealing that the account has been flagged breaches Article 16 and could alert the suspects. Good intentions do not change that.",
+              "score": 0
+            },
+            {
+              "text": "Explain that the bank cannot discuss internal reviews or third-party accounts, note his concerns and contact details, and inform the AML/CTF unit straight away",
+              "outcome": "Best choice. It is truthful, discloses nothing about a report, respects customer confidentiality and gives the AML/CTF unit useful information.",
+              "score": 2
+            },
+            {
+              "text": "Release the transfer to calm him down and avoid a complaint",
+              "outcome": "Releasing funds to avoid a confrontation can facilitate laundering and undermine the FIU's analysis. Decisions on the transaction belong to the AML/CTF unit.",
+              "score": 0
+            },
+            {
+              "text": "Refuse to speak to him and ask security to escort him out",
+              "outcome": "This avoids tipping off but escalates the situation and loses the chance to record useful information. A calm, scripted response is better.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Allowed and not allowed under the tipping-off ban",
+          "caption": "Articles 16 and 71 protect the confidentiality of reports and investigations while allowing the communications the bank needs to work.",
+          "headers": [
+            "Disclosure to customer or outsiders",
+            "Internal and official channels"
+          ],
+          "items": [
+            {
+              "label": "Telling the customer a report was filed",
+              "left": "Never",
+              "right": "Not applicable"
+            },
+            {
+              "label": "Discussing the case with colleagues who need to know",
+              "left": "Not the issue",
+              "right": "Allowed between directors and employees"
+            },
+            {
+              "label": "Asking the bank's lawyers for advice",
+              "left": "Not the issue",
+              "right": "Allowed"
+            },
+            {
+              "label": "Answering SAMA or the FIU",
+              "left": "Not the issue",
+              "right": "Allowed: competent authorities"
+            },
+            {
+              "label": "Hinting that 'the authorities' are interested",
+              "left": "Prohibited",
+              "right": "Not allowed"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Protection, powers and timelines",
+          "cards": [
+            {
+              "front": "Good-faith protection",
+              "back": "Staff and directors who report suspicions in good faith are protected from criminal, civil, contractual, disciplinary and administrative liability (Regulation 16/1)."
+            },
+            {
+              "front": "Even if the crime is unclear",
+              "back": "Protection applies even if the reporter did not know the exact crime, and whether or not a crime actually happened."
+            },
+            {
+              "front": "FIU stop power",
+              "back": "The FIU may stop a suspicious transaction for up to 72 hours from receiving the report (Regulation 17/1(q))."
+            },
+            {
+              "front": "FIU requests",
+              "back": "If the request relates to the bank's own report, the FIU asks the bank directly; otherwise it asks through SAMA (Regulation 18/1)."
+            },
+            {
+              "front": "Provisional seizure",
+              "back": "The Public Prosecution may order seizure for up to 60 days, without prior notice; a court can extend it (Article 44)."
+            },
+            {
+              "front": "Failure to report terrorism",
+              "back": "Knowing of an attempt to commit or finance a terrorist crime and not reporting it, when able to, can mean up to five years in prison (CTF Law Article 54)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Article 12 of the AML Law, how long must CDD records and account files be kept?",
+          "options": [
+            "At least five years after the account closes",
+            "At least ten years after the relationship ends",
+            "Until the customer asks for deletion",
+            "For as long as SAMA's inspection cycle lasts"
+          ],
+          "answer": 1,
+          "explanation": "Article 12 requires transaction records and CDD records to be kept for at least ten years from the transaction or the end of the relationship. The Public Prosecution may require a longer period in specific cases."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers to remember in the Signal Room",
+          "items": [
+            {
+              "label": "Minimum record retention",
+              "value": "10 years",
+              "detail": "Transactions, CDD files, reports and investigations (Art. 12, Guide 6.1, 6.7)."
+            },
+            {
+              "label": "FIU stop power",
+              "value": "72 hours",
+              "detail": "Maximum period the FIU may stop a suspicious transaction (Reg. 17/1(q))."
+            },
+            {
+              "label": "Statement in the technical report",
+              "value": "6 months",
+              "detail": "Account statement period sent to the FIU with a report (Guide 8.9)."
+            },
+            {
+              "label": "Provisional seizure",
+              "value": "60 days",
+              "detail": "Maximum Public Prosecution seizure without a court extension (Art. 44)."
+            },
+            {
+              "label": "Reporting threshold",
+              "value": "SAR 0",
+              "detail": "There is none: reports are due whatever the amount (Art. 15, Reg. 15/2)."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Monitoring is people plus systems",
+          "body": "- SAMA's Guide (7.5) and Account Opening Rule 8 say **manual monitoring alone is not enough**: banks need electronic systems integrated with core banking and linked to customer risk ratings.\n- But Guide 7.8 also says the bank must **train staff** and not rely only on systems. Your judgment at the counter still matters.\n- Monitoring tools must be **tested at least once a year** (Guide 7.6) and indicators updated using internal cases and FIU feedback (Guide 8.12).\n- **Wire transfers:** if required originator or beneficiary information is missing, the transfer must not be executed (AML Law Article 10)."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "Monitor every customer against what you know about them; examine complex, large or unusual activity with no clear purpose.",
+            "Escalate internally first; the bank reports to the Saudi FIU promptly and directly, whatever the amount, including attempts.",
+            "Reports need reasonable grounds, a supporting technical report with six months of statements, and documented reasons when a case is closed without a report.",
+            "Never tip off: no hints to the customer or anyone else. Internal, legal and official communications are allowed, and good-faith reporters are protected.",
+            "Keep records for at least ten years, and answer FIU and Public Prosecution requests accurately and without disclosure."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Imagine a customer asks you directly whether 'something is wrong' with their account. Write down the exact words you would use to stay truthful without tipping them off."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-aml-s3-q1",
+          "question": "What reporting threshold applies to suspicious transaction reports under Article 15 of the AML Law and Regulation 15/2?",
+          "options": [
+            "Any amount above the customer's declared income",
+            "None: the duty applies regardless of the amount",
+            "SAR 50,000 per transaction or linked series",
+            "SAR 100,000 in a single month"
+          ],
+          "answer": 1,
+          "explanation": "Article 15 and Regulation 15/2 make the reporting duty apply whatever the amount involved. There is no monetary threshold for suspicion.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s3-q2",
+          "question": "Which of these may a Wahat Bank employee lawfully do after an internal report has been made?",
+          "options": [
+            "Let the customer know so they can explain themselves",
+            "Warn a friend at another bank about the customer",
+            "Hint to the customer's relative that the authorities are interested",
+            "Discuss the case with the bank's lawyers for advice"
+          ],
+          "answer": 3,
+          "explanation": "Article 16 allows communications between directors and employees and with lawyers or competent authorities. Disclosing to the customer, relatives or outsiders is prohibited.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s3-q3",
+          "question": "How long may the Saudi FIU stop a suspicious transaction after receiving a report, under Regulation 17/1(q)?",
+          "options": [
+            "Up to 72 hours",
+            "Up to 30 days",
+            "Until a court rules",
+            "Up to 24 hours"
+          ],
+          "answer": 0,
+          "explanation": "The implementing regulation lets the Directorate stop a suspicious transaction, if necessary, for up to 72 hours from receipt of the report. Longer restraint needs the Public Prosecution's seizure power.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s3-q4",
+          "question": "Which documents does SAMA Guide 8.9 expect in the technical report sent to the FIU?",
+          "options": [
+            "A signed statement from the customer explaining the activity",
+            "The customer's tax returns for three years and a credit report",
+            "A six-month account statement, CDD documents and a technical analysis",
+            "The teller's personnel file and branch CCTV footage"
+          ],
+          "answer": 2,
+          "explanation": "Guide 8.9 lists an account statement or contract transactions for six months, the CDD documents and a technical report examining the account. Asking the customer for a statement could tip them off.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s3-q5",
+          "question": "The AML/CTF unit investigates an internal report and decides not to report to the FIU. What does SAMA Guide 8.10 require?",
+          "options": [
+            "Detailed documentation of the reasons, with the set review levels",
+            "Asking SAMA to confirm the decision in writing",
+            "Telling the employee who raised it to drop the matter",
+            "Deleting the internal report to protect the customer"
+          ],
+          "answer": 0,
+          "explanation": "Guide 8.10 requires the reporting officer to document the reasons for not reporting in sufficient detail, following the approval and review levels. Guide 8.11 requires those internal reports to be kept.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s3-q6",
+          "question": "A teller reports a suspicion in good faith. The FIU later finds no crime occurred. Is the teller exposed to disciplinary action for the report?",
+          "options": [
+            "Yes, if the customer complains about the report",
+            "Only if the bank's lawyers approved the report",
+            "Yes, unless the teller named the exact predicate crime",
+            "No: good-faith reporters are protected even if no crime occurred"
+          ],
+          "answer": 3,
+          "explanation": "Regulation 16/1 extends the protection to criminal, civil, contractual, disciplinary and administrative liability, even when the reporter did not know the exact crime and whether or not illegal activity actually occurred.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s3-q7",
+          "question": "The FIU contacts Wahat Bank asking for information about a customer the bank has never reported. Under Regulation 18/1, how should the request reach the bank?",
+          "options": [
+            "Through the Anti-Money Laundering Permanent Committee",
+            "Through SAMA, as the supervisory authority",
+            "Directly by phone to the branch manager",
+            "Through the customer's lawyer"
+          ],
+          "answer": 1,
+          "explanation": "The FIU may request information directly only when it relates to a report the bank filed. In other cases the request goes through the supervisory authority, SAMA.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s3-q8",
+          "question": "A wire transfer arrives at Wahat Bank's payments team for onward sending, but the required originator information is missing and cannot be obtained. What does Article 10 of the AML Law require of the ordering institution in this situation?",
+          "options": [
+            "Execute it if the amount is small",
+            "Execute it and ask for the data within a month",
+            "Not to execute the wire transfer",
+            "Execute it and report it to SAMA at quarter end"
+          ],
+          "answer": 2,
+          "explanation": "Article 10 says an institution unable to obtain the required originator or beneficiary information must not permit the transfer. Receiving and intermediary banks also need risk-based procedures for transfers missing information.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s3-q9",
+          "question": "Under Article 54 of the CTF Law, what can happen to someone who knew of an attempt to finance a terrorist crime and, though able to, did not report it?",
+          "options": [
+            "A prison term of up to five years",
+            "No penalty, as reporting is voluntary",
+            "A fine of up to SAR 10,000",
+            "Only a written warning from SAMA"
+          ],
+          "answer": 0,
+          "explanation": "Article 54 sets a prison term of up to five years for failing to report a known attempt to commit or finance a terrorist crime when able to do so.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s3-q10",
+          "question": "Why does SAMA's Guide (7.5) say Wahat Bank cannot rely on staff checking statements by hand?",
+          "options": [
+            "SAMA bans staff from reviewing customer statements",
+            "Manual checks breach customer data protection rules",
+            "Electronic systems remove the need for trained staff",
+            "Manual monitoring alone is not sufficient; electronic systems are needed"
+          ],
+          "answer": 3,
+          "explanation": "Guide 7.5 and Account Opening Rule 8 require effective electronic monitoring integrated with core systems. Guide 7.8 still requires trained staff, so systems complement people rather than replace them.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Targeted Financial Sanctions and Proliferation Financing",
+      "stage": "The Freeze Vault",
+      "summary": "Apply SAMA's December 2025 Rules for the Implementation of Targeted Financial Sanctions: what to screen and when, how to handle alerts with maker-checker review, freezing without delay and without prior notice, notifying SAMA, lifting freezes, confidentiality, records, role-based training, and how proliferation financing fits in.",
+      "minutes": 60,
+      "objectives": [
+        "Explain which UN Security Council regimes the TFS Rules implement and what 'without delay' means",
+        "Describe who and what must be screened, and the six screening moments in the TFS Rules",
+        "Handle a screening alert from review to freeze, notification to SAMA and record keeping",
+        "Recognise sanctions evasion and proliferation financing risks and know when a report goes to the FIU"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A new name at midnight",
+          "setting": "Sanctions unit, Wahat Bank head office, Riyadh. 7:45 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "Noura, the UN Security Council added several names overnight. The official channels published the update at 11 pm and our list loaded at 6 am.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Seven hours. The TFS Rules define 'without delay' as within hours of a listing. Did the overnight batch screen against the new names?",
+              "mood": "thinking"
+            },
+            {
+              "who": "arjun",
+              "text": "Yes, and we have one strong match: a trading company customer whose 60% owner looks like a newly listed individual.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "Then this is a test of everything SAMA asked for in December 2025: screening, alert handling, freezing and confidentiality.",
+              "mood": "neutral"
+            },
+            {
+              "who": "majed",
+              "text": "(joining) Shouldn't legal and the executive committee approve before we freeze a big corporate client?",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "No, and the Rules say so explicitly. Let's open the Freeze Vault and I'll show you why.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's TFS Rules in six scenes",
+          "scenes": [
+            {
+              "icon": "🌐",
+              "heading": "What they implement",
+              "narration": "The Rules apply UN Security Council measures against terrorism and its financing, including resolutions 1267, 1989, 2253, 1988 and 1373, and against proliferation of weapons of mass destruction, including 1718 and 1737."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Without delay",
+              "narration": "SAMA defines 'without delay' as within hours of a person being listed or delisted. Freezing does not wait for committees, legal reviews or management sign-off once a match is confirmed."
+            },
+            {
+              "icon": "🏗️",
+              "heading": "Governance",
+              "narration": "Each bank needs a sanctions compliance programme, a specialised TFS unit linked to the AML/CTF unit, a competent officer, board-approved policies and an annual independent test."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Screening",
+              "narration": "Customers, beneficial owners, directors, authorised signatories and related parties such as correspondent banks and remittance beneficiaries are all screened, at set moments."
+            },
+            {
+              "icon": "🧊",
+              "heading": "Freeze and notify",
+              "narration": "Funds of listed persons, and of those they own, control or act for, are frozen without prior notice. The bank then notifies SAMA through its dedicated sanctions channel."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Train for it",
+              "narration": "Chapter Eight requires risk-based, role-tailored training: simulations for specialists, in-person workshops for the sanctions unit, e-learning for others and focused awareness for the board."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "When Wahat Bank must screen (TFS Rules 3.5-3.6)",
+          "caption": "After a new listing, the bank also reviews its transactions from the previous twelve months for past dealings with the listed person (3.4).",
+          "items": [
+            {
+              "label": "Before onboarding",
+              "detail": "Before a new relationship, account, wallet or remittance membership."
+            },
+            {
+              "label": "Before any transaction",
+              "detail": "Outgoing items before execution; incoming items as soon as received."
+            },
+            {
+              "label": "On every list update",
+              "detail": "Screen the whole database against the update and record the result."
+            },
+            {
+              "label": "On data updates",
+              "detail": "Whenever customer information is updated or reviewed."
+            },
+            {
+              "label": "Every quarter",
+              "detail": "Comprehensive screening at least once every three months."
+            },
+            {
+              "label": "On trigger events",
+              "detail": "Ownership changes, new high-risk countries, risk upgrades, adverse media."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What does 'without delay' mean in SAMA's Rules for the Implementation of Targeted Financial Sanctions?",
+          "options": [
+            "Within five business days of a listing",
+            "By the end of the next working day",
+            "Within hours of a listing or delisting",
+            "As soon as the board has approved"
+          ],
+          "answer": 2,
+          "explanation": "The Rules define 'without delay' as within hours of a designation or delisting. Paragraph 5.5 adds that freezing must not wait for internal committees, legal review or senior management approval once a match is confirmed."
+        },
+        {
+          "type": "sort",
+          "title": "Must Wahat Bank screen this party?",
+          "prompt": "Decide which parties the TFS Rules (3.1 and 3.4) require the bank to screen against the sanctions lists.",
+          "buckets": [
+            "Screen",
+            "Not required by the Rules"
+          ],
+          "items": [
+            {
+              "text": "The customer's beneficial owner",
+              "bucket": 0
+            },
+            {
+              "text": "A director of a corporate customer",
+              "bucket": 0
+            },
+            {
+              "text": "An authorised signatory acting for the customer",
+              "bucket": 0
+            },
+            {
+              "text": "A correspondent bank in the payment chain",
+              "bucket": 0
+            },
+            {
+              "text": "The beneficiary of an outgoing remittance",
+              "bucket": 0
+            },
+            {
+              "text": "An intermediary in a trade transaction",
+              "bucket": 0
+            },
+            {
+              "text": "A competitor bank that is not part of the transaction",
+              "bucket": 1
+            },
+            {
+              "text": "A customer's neighbour with no link to the account",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Alert handling under Chapter Five",
+          "body": "**Two specialists (maker-checker).** Every alert is reviewed by two people with enough TFS knowledge, using CDD data, public records and open sources (5.3).\n\n**False match?** The specialists may close it after following the procedure, keeping a **written justification** (5.4). Repeated false matches may go on an internal 'whitelist', but that list needs board or senior management approval, periodic review and is still screened (5.8).\n\n**Cannot close it?** Escalate straight to a senior manager with the right expertise. If there are sufficient grounds of a direct or indirect link to a listed person, **freeze without delay**, with no wait for committees, legal review or management approval (5.5).\n\n**Document everything (5.6):** time received, time processed and escalated, list source, type of match, action and reasons, names of the specialists, outcome and freeze details.\n\n**Confidentiality (5.7):** never reveal a match, an intended freeze or an ongoing review to the customer or anyone else, except reports to SAMA and the FIU."
+        },
+        {
+          "type": "story",
+          "title": "The 60% owner",
+          "setting": "Sanctions unit, 8:20 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "Maker-checker is done. Date of birth, nationality and passport number match the listing. My checker agrees: true match.",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "The listed individual owns 60% of the trading company. The company itself is not named on the list.",
+              "mood": "thinking"
+            },
+            {
+              "who": "majed",
+              "text": "So we only freeze his personal account? The company has payroll due tomorrow for 200 workers.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Paragraph 6.6 is clear: entities owned or controlled by a listed person are covered even if they are not named. The company's funds are frozen too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "majed",
+              "text": "And the payroll?",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "We freeze now and notify SAMA. We never release frozen funds on our own initiative; any question about them is raised with SAMA.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Freeze the company too?",
+          "situation": "Wahat Bank confirms that a newly listed individual owns 60% of a corporate customer. The company's general manager, who is not listed, calls to ask why a supplier payment has not gone through. The executive committee meets tomorrow, and the corporate banking head suggests waiting for its view because the client is profitable.",
+          "choices": [
+            {
+              "text": "Wait for tomorrow's executive committee before acting on the company's accounts",
+              "outcome": "Paragraph 5.5 forbids delaying a freeze for committee, legal or management approval once a match is confirmed. A day's wait could let funds leave.",
+              "score": 0
+            },
+            {
+              "text": "Freeze the individual's and the company's funds now, without prior notice, block new services, notify SAMA, and tell the manager only that the payment cannot be processed at present",
+              "outcome": "Best choice. The freeze covers entities owned or controlled by the listed person (6.1, 6.6), must be immediate and unannounced, must be notified to SAMA (5.9), and nothing is disclosed about the match (5.7).",
+              "score": 2
+            },
+            {
+              "text": "Freeze only the individual's personal account, because the company is not named on the list",
+              "outcome": "The Rules extend freezing to funds owned or controlled directly or indirectly by the listed person, including companies not formally named (6.3, 6.6).",
+              "score": 0
+            },
+            {
+              "text": "Freeze both accounts and explain to the manager that his owner has been listed by the UN",
+              "outcome": "Freezing is right, but explaining the match to the manager breaches the confidentiality required by paragraphs 5.7 and 9.2. Public listings exist, but the bank must not disclose its own match or actions.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Freezing and lifting a freeze",
+          "caption": "Joint funds with a non-listed person are frozen in full; the non-listed share may be dealt with only after consulting SAMA (6.4).",
+          "headers": [
+            "Freeze (Chapter Six)",
+            "Lift the freeze"
+          ],
+          "items": [
+            {
+              "label": "Trigger",
+              "left": "Confirmed match with a listed person",
+              "right": "Delisting by the UN sanctions committee"
+            },
+            {
+              "label": "Speed",
+              "left": "Without delay, no prior notice",
+              "right": "Without delay, no prior notice"
+            },
+            {
+              "label": "Scope",
+              "left": "Owned, controlled or agent funds, joint accounts",
+              "right": "Funds frozen under that listing"
+            },
+            {
+              "label": "Exception",
+              "left": "Pre-freeze contract earnings credited but frozen",
+              "right": "Not if a 1373 instruction or SAMA says otherwise"
+            },
+            {
+              "label": "Notify",
+              "left": "SAMA, with details and value",
+              "right": "SAMA immediately, in writing"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Sanctions terms you must know",
+          "cards": [
+            {
+              "front": "Listed person",
+              "back": "A natural or legal person, group or organisation on a sanctions list issued under the UN mechanisms."
+            },
+            {
+              "front": "Indirect match",
+              "back": "A party that is not itself listed but is owned, controlled by or acting for a listed person."
+            },
+            {
+              "front": "Sanctions evasion",
+              "back": "Attempts to get round sanctions, for example through front companies, relatives or complex structures; if suspected, a report goes to the FIU (5.10)."
+            },
+            {
+              "front": "Internal whitelist",
+              "back": "Names confirmed as repeated false matches, excluded from alerts only with approval, review and continued screening."
+            },
+            {
+              "front": "Twelve-month lookback",
+              "back": "After a new listing, transactions of the previous twelve months are reviewed for past dealings (3.4)."
+            },
+            {
+              "front": "Fuzzy matching",
+              "back": "Systems must catch aliases, spelling variants, similar-sounding names and transliterations (3.7)."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Where does each action go?",
+          "prompt": "Match each situation to the right recipient or action under SAMA's rules.",
+          "pairs": [
+            {
+              "left": "Funds frozen after a confirmed match",
+              "right": "Notify SAMA through its dedicated sanctions channel with the freeze details"
+            },
+            {
+              "left": "Signs of an attempt to evade sanctions",
+              "right": "Submit a suspicious activity report to the Saudi FIU"
+            },
+            {
+              "left": "Funds of a listed person held elsewhere that you discover",
+              "right": "Notify SAMA in writing with the details"
+            },
+            {
+              "left": "Freeze lifted after a UN delisting",
+              "right": "Notify SAMA immediately in writing"
+            },
+            {
+              "left": "New list update published",
+              "right": "Update internal lists immediately and screen all data"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A listed person and his non-listed wife hold a joint savings account. What do the TFS Rules (6.4) require?",
+          "options": [
+            "Freeze only the husband's half",
+            "Freeze the whole account; the wife's share is released only after consulting SAMA",
+            "Leave the account open because the wife is not listed",
+            "Close the account and pay the balance to the wife"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 6.4 extends the freeze to funds held jointly with a non-listed person, including that person's share, which may only be dealt with after consulting SAMA."
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Proliferation financing in the risk cycle",
+          "caption": "SAMA's December 2025 business risk guidance requires the assessment to distinguish clearly between ML, TF and PF risks.",
+          "items": [
+            {
+              "label": "Assess PF risk",
+              "detail": "Identify, assess and document PF risk separately from ML and TF (TFS 2.1, 2025 guidance)."
+            },
+            {
+              "label": "Screen for PF regimes",
+              "detail": "Include UN lists on weapons of mass destruction, such as those under resolutions 1718 and 1737."
+            },
+            {
+              "label": "Watch trade and payments",
+              "detail": "Look for evasion through intermediaries, front companies and complex ownership."
+            },
+            {
+              "label": "Freeze and notify",
+              "detail": "Apply the same freeze-without-delay rules and notify SAMA."
+            },
+            {
+              "label": "Learn and update",
+              "detail": "Feed cases into indicators, training and the business risk assessment."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Seven habits of a good sanctions screener",
+          "body": "- Check the official sources: the PCTC site under the Presidency of State Security, the MOFA site for Chapter VII resolutions and the UN committees (9.6, 9.7).\n- Record when each list update arrived and when it went live (4.1).\n- Never close an alert without a written reason.\n- Look beyond names: ownership, control and agents.\n- Never delay a confirmed freeze for sign-offs.\n- Say nothing outside official channels.\n- Keep TFS records for at least **ten years** (7.3), including the record of training given."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "SAMA's December 2025 TFS Rules apply UN counter-terrorism and counter-proliferation sanctions; 'without delay' means within hours.",
+            "Screen customers, beneficial owners, directors, signatories and related parties at onboarding, before every transaction, on every list update, on data updates, quarterly and on trigger events.",
+            "Alerts get maker-checker review; false matches need a written reason; confirmed matches are frozen at once, with no wait for approvals.",
+            "Freezing covers owned, controlled and joint funds, without prior notice; notify SAMA after freezing and after lifting a freeze, and report evasion to the FIU.",
+            "Confidentiality, ten-year records and role-based training with simulations are part of the Rules, not extras."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Where in your role could a sanctioned person reach Wahat Bank indirectly: through an owner, a signatory, a beneficiary or an intermediary? What would you check first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-aml-s4-q1",
+          "question": "Which UN Security Council resolutions do SAMA's TFS Rules name for proliferation of weapons of mass destruction?",
+          "options": [
+            "Resolutions 1718 and 1737 and later related resolutions",
+            "Resolutions 2253 and 1988 only",
+            "Resolution 1373 only",
+            "Resolutions 1267 and 1989 only"
+          ],
+          "answer": 0,
+          "explanation": "The Rules list 1267, 1989, 2253, 1988 and 1373 for terrorism and its financing, and 1718 and 1737 for proliferation of weapons of mass destruction and its financing.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s4-q2",
+          "question": "How often must Wahat Bank run a comprehensive screening of its whole customer base under TFS Rule 3.6(b)?",
+          "options": [
+            "Only when SAMA requests it",
+            "At least once every three months",
+            "At least once every six months",
+            "At least once a year"
+          ],
+          "answer": 1,
+          "explanation": "Rule 3.6(b) requires comprehensive screening of customer data, transactions, beneficial owners, directors, signatories and related parties at least once every three months, on top of screening at onboarding, before transactions and after list updates.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s4-q3",
+          "question": "An incoming international transfer arrives at 10 am. When must it be screened under TFS Rule 3.6(a)?",
+          "options": [
+            "Only if the amount is large",
+            "Within three working days",
+            "As soon as it is received",
+            "At the end-of-day batch run"
+          ],
+          "answer": 2,
+          "explanation": "Outgoing transactions are screened before execution and incoming ones as soon as they are received, without waiting for the end of the day or another period.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s4-q4",
+          "question": "Who must review a sanctions screening alert under TFS Rule 5.3?",
+          "options": [
+            "The external auditor",
+            "The customer's relationship manager alone",
+            "Any branch employee on duty",
+            "Two specialists with TFS knowledge, as maker and checker"
+          ],
+          "answer": 3,
+          "explanation": "Rule 5.3 requires dual review by two specialists with sufficient TFS experience and knowledge. A relationship manager alone would lack independence and specialist knowledge.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s4-q5",
+          "question": "A screening specialist confirms a true match on a customer late on a Thursday. The legal department is closed until Sunday. What does TFS Rule 5.5 require?",
+          "options": [
+            "Freeze only if senior management agrees on Sunday",
+            "Freeze the funds without delay, without waiting for legal review",
+            "Ask the customer to explain before freezing",
+            "Wait for the legal department's opinion on Sunday"
+          ],
+          "answer": 1,
+          "explanation": "Rule 5.5 says freezing must not be delayed pending an internal committee, legal review, senior management approval or any other reason once the match is confirmed.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s4-q6",
+          "question": "After freezing funds, whom must Wahat Bank notify under TFS Rule 5.9?",
+          "options": [
+            "The bank's external auditor",
+            "The customer, in writing",
+            "SAMA, through its dedicated sanctions email channel",
+            "The Capital Market Authority"
+          ],
+          "answer": 2,
+          "explanation": "Rule 5.9 requires notification to SAMA after the freeze, with customer and transaction details, the nature and value of the funds and the listing information. The customer is not notified in advance.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s4-q7",
+          "question": "A company is not on any sanctions list, but a newly listed individual controls it through his minor son's shareholding. What do the TFS Rules require?",
+          "options": [
+            "Do nothing, since the company is not named",
+            "Close the account and return the funds",
+            "Freeze only if the son is also listed",
+            "Freeze the company's funds, as it is controlled by a listed person"
+          ],
+          "answer": 3,
+          "explanation": "Rules 6.3 and 6.6 extend the freeze to entities owned or controlled by a listed person, including through minor children or spouses, even if not named on the list.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s4-q8",
+          "question": "The UN delists a person whose funds Wahat Bank froze. No instruction under resolution 1373 or from SAMA says otherwise. What should the bank do?",
+          "options": [
+            "Lift the freeze without delay and notify SAMA immediately",
+            "Ask the customer to apply to a court",
+            "Lift it after the next quarterly screening",
+            "Keep the freeze for twelve months as a precaution"
+          ],
+          "answer": 0,
+          "explanation": "Rule 6.9 requires the freeze to be lifted without delay and without prior notice on delisting, unless instructed otherwise; Rule 6.10 requires immediate written notification to SAMA.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s4-q9",
+          "question": "The sanctions team sees a customer routing payments through a chain of new front companies after a relative was listed. No listed name appears. What does TFS Rule 5.10 require if there are signs of evasion?",
+          "options": [
+            "Wait for the quarterly screening",
+            "Submit a suspicious activity report to the Saudi FIU",
+            "Close the case because no listed name matched",
+            "Notify the customer's other banks"
+          ],
+          "answer": 1,
+          "explanation": "Rule 5.10 requires checks for circumvention through ownership structures, intermediaries and transaction patterns, and a suspicious activity report to the FIU where there are indications of evasion.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-aml-s4-q10",
+          "question": "How long must TFS records, including alerts, freezes and training records, be kept under TFS Rule 7.3?",
+          "options": [
+            "Until the listed person is delisted",
+            "Three years after the next SAMA inspection",
+            "At least five years from the alert date",
+            "At least ten years from completing the transaction or procedure"
+          ],
+          "answer": 3,
+          "explanation": "Rule 7.3 sets a minimum of ten years from the completion of the transaction or procedure; Rule 7.1(k) includes a statement of training and awareness activities.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Bank's Programme: Governance, Training, Audit and Penalties",
+      "stage": "The Supervisor's Visit",
+      "summary": "Prepare for SAMA's review: the business risk assessment under the December 2025 guidance, the AML/CTF compliance function, independent audit, staff screening, the training duties in Section 11 of SAMA's Guide, record keeping, and the supervisory and criminal penalties for failure, illustrated by SAMA's own enforcement announcements.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the six stages of a business risk assessment and the difference between inherent and residual risk",
+        "Explain the role, independence and duties of the AML/CTF compliance officer and the independent audit function",
+        "Apply SAMA's training requirements: who is trained, when, how deeply, how knowledge is tested and what is recorded",
+        "Summarise SAMA's supervisory measures, the criminal penalties in the AML and CTF Laws, and what SAMA's enforcement announcements show"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Two weeks to the review",
+          "setting": "Board meeting room, Wahat Bank head office, Riyadh. 4:00 pm.",
+          "lines": [
+            {
+              "who": "majed",
+              "text": "SAMA's review team arrives in two weeks. I want a straight answer: are we ready?",
+              "mood": "neutral"
+            },
+            {
+              "who": "noura",
+              "text": "Mostly. Our business risk assessment needs updating to the December 2025 guidance, which asks for ML, TF and proliferation financing to be assessed separately.",
+              "mood": "thinking"
+            },
+            {
+              "who": "arjun",
+              "text": "And the sanctions unit's simulation exercises are done, but I still need to document the comprehension test results for senior management.",
+              "mood": "neutral"
+            },
+            {
+              "who": "faisal",
+              "text": "Two of my new tellers started before their AML course was recorded in the system. The course happened, but the record is missing.",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Then we fix the record honestly and check why it happened. Section 11.5 of SAMA's Guide expects training documents, attendance and dates to be kept.",
+              "mood": "neutral"
+            },
+            {
+              "who": "majed",
+              "text": "Good. Walk me through what SAMA will look for, and what happens to banks that fail.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What SAMA looks for in six scenes",
+          "scenes": [
+            {
+              "icon": "📊",
+              "heading": "A real risk assessment",
+              "narration": "A written business risk assessment built for the bank itself, separating ML, TF and PF risk, approved by the board or senior management and updated at least once a year."
+            },
+            {
+              "icon": "👤",
+              "heading": "A senior, independent officer",
+              "narration": "An AML/CTF compliance officer at senior management level who works independently, reports to the board and its committees, and can see any data needed."
+            },
+            {
+              "icon": "🔬",
+              "heading": "Independent testing",
+              "narration": "An audit function, separate from compliance, that tests the AML/CTF programme on a risk basis and reports to the board."
+            },
+            {
+              "icon": "🧑‍🏫",
+              "heading": "Trained, tested people",
+              "narration": "Training for everyone before they start and repeatedly after, deeper training for due diligence staff, specialist training for compliance and audit, and annual knowledge tests."
+            },
+            {
+              "icon": "🗂️",
+              "heading": "Evidence",
+              "narration": "Records kept for at least ten years, and files that let SAMA reconstruct transactions, decisions and training."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Consequences",
+              "narration": "Where controls fail, SAMA can warn, order corrections, fine up to SAR 5 million per violation, remove managers or restrict and revoke licences."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Stages of a business risk assessment (Dec 2025 guidance)",
+          "caption": "Profitability must not influence risk ratings, and a group member must assess its own risks rather than rely only on the group assessment.",
+          "items": [
+            {
+              "label": "1. Collect data",
+              "detail": "National risk assessment, committee findings, SAMA instructions, internal customer and transaction data."
+            },
+            {
+              "label": "2. Analyse inherent risk",
+              "detail": "Structural, customer, product, channel, geographic, technology and emerging risks."
+            },
+            {
+              "label": "3. Assess mitigation",
+              "detail": "Test the controls: automated or manual, preventive or detective, independently tested?"
+            },
+            {
+              "label": "4. Respond to residual risk",
+              "detail": "Compare with risk appetite and build an action plan for gaps."
+            },
+            {
+              "label": "5. Endorse",
+              "detail": "Document, approve and share results with staff through continuous training."
+            },
+            {
+              "label": "6. Follow up and review",
+              "detail": "Update on trigger events and at least annually; notify SAMA of new risks."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between inherent and residual risk in SAMA's December 2025 business risk guidance?",
+          "options": [
+            "Inherent risk is before mitigation measures; residual risk is what remains after them",
+            "Inherent risk applies to customers; residual risk applies to products",
+            "Inherent risk is set by SAMA; residual risk is set by the bank",
+            "They mean the same thing in the Saudi guidance"
+          ],
+          "answer": 0,
+          "explanation": "The guidance defines inherent risk as the level before preventive and mitigation measures and residual risk as what remains after they are effectively applied. Residual risk is then compared with the bank's risk appetite."
+        },
+        {
+          "type": "match",
+          "title": "Who is responsible for what?",
+          "prompt": "Match each function to its duty in SAMA's AML/CTF Guide.",
+          "pairs": [
+            {
+              "left": "Board of directors",
+              "right": "Provides sufficient resources and receives regular reports on AML/CTF and risk assessment"
+            },
+            {
+              "left": "AML/CTF compliance officer",
+              "right": "Senior-level officer who works independently and reports to the board and its committees"
+            },
+            {
+              "left": "AML/CTF unit staff",
+              "right": "Specialised team, solely Saudi nationals, with the competence to run the programme"
+            },
+            {
+              "left": "Independent auditor",
+              "right": "Tests the programme on a risk basis, separate from the functions it audits"
+            },
+            {
+              "left": "Senior management",
+              "right": "Approves policies and high-risk classifications and fixes audit findings"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "SAMA's training rules in one place",
+          "body": "Section 11 of SAMA's AML/CTF Guide builds on Article 14/1(e) of the AML regulation and Article 18 of the CTF regulations:\n\n- **Budget:** allocate enough budget to train senior management and staff.\n- **Content:** inspired by real experiences, covering new ML/TF methods and the bank's own controls.\n- **Everyone (11.2):** from board members, committees and executives to all staff, matched to role and level.\n- **Before starting work:** new joiners are trained before they start, and training is repeated.\n- **Deeper for some:** fuller training for staff doing due diligence; specialised training for compliance and internal audit.\n- **Penalties awareness:** all staff and directors learn their duties and the penalties for failure.\n- **External trainers (11.3):** check suitability, trainer background and trainee feedback.\n- **Testing (11.4):** assess knowledge and training quality at least annually.\n- **Records (11.5):** documents, attendance and dates of training."
+        },
+        {
+          "type": "sort",
+          "title": "Which training rule is this?",
+          "prompt": "Sort each requirement by the SAMA text that sets it.",
+          "buckets": [
+            "AML/CTF Guide Section 11",
+            "TFS Rules Chapter Eight",
+            "Account Opening Rules"
+          ],
+          "items": [
+            {
+              "text": "Test staff knowledge at least once a year",
+              "bucket": 0
+            },
+            {
+              "text": "Train new employees before they start work",
+              "bucket": 0
+            },
+            {
+              "text": "Check an external trainer's academic and work history",
+              "bucket": 0
+            },
+            {
+              "text": "Run simulation exercises for sanctions specialists",
+              "bucket": 1
+            },
+            {
+              "text": "Hold in-person workshops for the TFS unit",
+              "bucket": 1
+            },
+            {
+              "text": "Give the board focused awareness on sanctions responsibilities",
+              "bucket": 1
+            },
+            {
+              "text": "Do not assign a teller before KYC, AML/CFT and ethics courses",
+              "bucket": 2
+            },
+            {
+              "text": "Include extensive training on the account opening rules",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Majed's hard question",
+          "setting": "Chief executive's office, 5:30 pm.",
+          "lines": [
+            {
+              "who": "majed",
+              "text": "What actually happens to an institution that gets this wrong? Give me real examples, not theory.",
+              "mood": "thinking"
+            },
+            {
+              "who": "noura",
+              "text": "SAMA publishes its decisions on exchange companies. In 2019 it cancelled the licence of an exchange company after inspections, follow-up visits and meetings with its management, because it could not fix its AML/CFT deficiencies.",
+              "mood": "neutral"
+            },
+            {
+              "who": "majed",
+              "text": "A whole licence?",
+              "mood": "worried"
+            },
+            {
+              "who": "noura",
+              "text": "Yes. And since 2017 SAMA has required banks to publish SAMA's punitive decisions in their annual reports, with a category for AML/CTF due diligence violations. Shareholders see it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "arjun",
+              "text": "So the cost is not only the fine. It is the disclosure, the remediation and the trust.",
+              "mood": "neutral"
+            },
+            {
+              "who": "majed",
+              "text": "Then we fix the training records this week, not next month.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real cases: SAMA acts on AML/CFT failures (2019)",
+          "body": "SAMA's own announcements show how supervisory action escalates:\n\n- **March 2019, Mohamed Mounir Halawani Sons Exchange Company:** SAMA cancelled the company's exchange licence. Its fund transfer activity had been suspended in September 2017. SAMA said it had carried out inspection visits on AML/CFT compliance, follow-up visits on the corrective action plan and meetings with senior management, and in the end found the company unable to fix all the deficiencies. The decision relied on SAMA's powers under the AML Law, the terrorism financing law and the money changing rules.\n- **2019, Saeed Mohammed Ali Al-Amoudi & Co:** SAMA revoked the company's licence to transfer funds inside and outside the Kingdom, citing violations of the AML Law, the CTF Law, their regulations and the AML/CTF rules, while allowing its other licensed activities to continue.\n\n**For a bank:** corrective action plans are tested, deadlines matter, and SAMA can remove specific activities as well as whole licences."
+        },
+        {
+          "type": "scenario",
+          "title": "The missing training records",
+          "situation": "Two days before SAMA's visit, Faisal confirms that two new tellers attended the AML/CFT course before starting, but the learning system lost their completion records. One teller also missed this year's knowledge test while on leave. A colleague suggests backdating the records and marking the test as passed 'since they clearly know the material'.",
+          "choices": [
+            {
+              "text": "Backdate the records and mark the test as passed to avoid a finding",
+              "outcome": "Falsifying records is a serious integrity breach and would make any finding far worse. SAMA expects honest, auditable training records.",
+              "score": 0
+            },
+            {
+              "text": "Rebuild the records from genuine evidence such as attendance sheets and trainer confirmations, record the gap and its cause, schedule the missed test now and tell SAMA's team openly if asked",
+              "outcome": "Best choice. It restores real evidence for Guide 11.5, meets the annual testing expectation in 11.4 and shows a control that finds and fixes its own gaps.",
+              "score": 2
+            },
+            {
+              "text": "Say nothing and hope the sample SAMA chooses does not include those tellers",
+              "outcome": "Hoping for luck leaves a known gap unfixed and undermines trust if it is discovered.",
+              "score": 0
+            },
+            {
+              "text": "Remove the two tellers from the counter until they repeat the course",
+              "outcome": "This is cautious but unnecessary if genuine evidence shows they attended. Fixing the record and the missed test is the right remedy.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Supervisory measures and criminal penalties",
+          "caption": "Figures are from the 2017 AML Law as published in the SAMA Rulebook. Amendments to the law were reported in 2026: always check the current official text.",
+          "headers": [
+            "Supervisory (administrative)",
+            "Criminal (AML Law)"
+          ],
+          "items": [
+            {
+              "label": "Who decides",
+              "left": "SAMA as supervisory authority (Art. 25)",
+              "right": "The competent court"
+            },
+            {
+              "label": "Against whom",
+              "left": "Bank, directors, board, executives",
+              "right": "Individuals and legal persons"
+            },
+            {
+              "label": "Money",
+              "left": "Fine up to SAR 5m per violation",
+              "right": "Individuals: up to SAR 5m (7m aggravated)"
+            },
+            {
+              "label": "Other measures",
+              "left": "Warnings, orders, bans, removal, licence action",
+              "right": "Prison 2-10 years (3-15 aggravated)"
+            },
+            {
+              "label": "Legal persons",
+              "left": "Restrict or revoke the licence",
+              "right": "Fine up to SAR 50m, at least double the funds"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Penalties and consequences",
+          "cards": [
+            {
+              "front": "Written warning",
+              "back": "The first of nine supervisory measures in Article 25; others include orders to comply and regular progress reports."
+            },
+            {
+              "front": "Individual bans",
+              "back": "SAMA can ban individuals from working in the sectors it supervises, for a period it sets."
+            },
+            {
+              "front": "Removal of managers",
+              "back": "SAMA can restrict the powers of, dismiss or replace directors and executives, or appoint temporary controllers."
+            },
+            {
+              "front": "Saudi nationals after prison",
+              "back": "A travel ban for a period equal to the prison term served for money laundering (Art. 28)."
+            },
+            {
+              "front": "Non-Saudis after prison",
+              "back": "Deportation, with no possibility of return to the Kingdom (Art. 28)."
+            },
+            {
+              "front": "CTF Law, legal persons",
+              "back": "Fine of SAR 3m to SAR 10m where a TF crime is committed in its name (Art. 49)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about SAMA's AML/CTF compliance function is correct under Section 9 of its Guide?",
+          "options": [
+            "The officer reports to the head of retail banking",
+            "The officer is at senior management level and reports to the board and its committees",
+            "The function may be fully outsourced to the external auditor",
+            "The function only needs staff during SAMA inspections"
+          ],
+          "answer": 1,
+          "explanation": "Guide 9.1 requires a senior-level officer working independently and reporting administratively and technically to the board and its committees, with timely access to all needed information."
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Milestones in the Saudi framework",
+          "items": [
+            {
+              "label": "AML Law and CTF Law",
+              "value": "2017",
+              "detail": "Royal Decrees M/20 and M/21 replace the earlier laws."
+            },
+            {
+              "label": "Penalty publication",
+              "value": "Dec 2017",
+              "detail": "Banks must publish SAMA punitive decisions in annual reports."
+            },
+            {
+              "label": "CTF regulations, Guide, rules",
+              "value": "2019",
+              "detail": "CTF implementing regulations, Account Opening Rules and the AML/CTF Guide."
+            },
+            {
+              "label": "Licence cancelled",
+              "value": "Mar 2019",
+              "detail": "SAMA cancels an exchange company licence over AML/CFT deficiencies."
+            },
+            {
+              "label": "TFS Rules",
+              "value": "Dec 2025",
+              "detail": "New Rules for the Implementation of Targeted Financial Sanctions."
+            },
+            {
+              "label": "Business risk guidance",
+              "value": "Dec 2025",
+              "detail": "ML, TF and PF business risk assessment guidance."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Your exam checklist",
+          "body": "Before the final boss, make sure you can:\n\n- Name the laws, regulations and SAMA texts and what each adds.\n- List the CDD triggers, the 25% test and the PEP measures.\n- Describe the reporting route, the technical report and the tipping-off ban.\n- Recite the screening moments, alert handling and freeze rules.\n- Explain the business risk assessment stages, the compliance and audit roles, the training rules, ten-year records and the penalties."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "The December 2025 guidance requires a bank-specific business risk assessment that separates ML, TF and PF risk, is audited independently and is updated at least annually.",
+            "The AML/CTF officer is senior and independent and reports to the board; the AML/CTF unit is specialised and adequately resourced; audit tests it independently.",
+            "Training: everyone, before starting and repeatedly; deeper for CDD staff; specialist for compliance and audit; tested at least annually; recorded.",
+            "SAMA can warn, order, fine up to SAR 5 million per violation, ban or remove people and restrict or revoke licences; courts impose prison and large fines for the crimes.",
+            "SAMA's own announcements show escalation from warnings and corrective plans to suspension and licence cancellation."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a SAMA inspector sat with your team tomorrow, which record or decision would you be least comfortable explaining? What would make it easier to defend?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-aml-s5-q1",
+          "question": "How often must the business risk assessment be updated under SAMA's December 2025 guidance, if no trigger event occurs first?",
+          "options": [
+            "At least once every three years",
+            "At least once a year",
+            "Only when SAMA requests it",
+            "At least once every five years"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 2.11(g) of the guidance requires ongoing updates at least annually, and paragraph 2.5 requires an immediate update when new or increasing risk elements appear.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q2",
+          "question": "Wahat Bank belongs to a regional group that already has a group-wide business risk assessment. What does SAMA's guidance (2.8) require?",
+          "options": [
+            "The group assessment is enough on its own",
+            "SAMA prepares the assessment for group members",
+            "Only the parent bank's board must approve it",
+            "Wahat Bank must also assess its own risks individually"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 2.8 says a financial institution in a group must carry out its own individual assessment and not rely solely on the group assessment.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q3",
+          "question": "Which of these is NOT allowed to influence a customer or business risk rating under SAMA's December 2025 guidance (3.2.4)?",
+          "options": [
+            "The profitability of the relationship",
+            "The customer's transaction patterns",
+            "The delivery channel used",
+            "The country the customer trades with"
+          ],
+          "answer": 0,
+          "explanation": "The guidance says economic or profitability considerations must not influence the risk classification. Country, channel and transaction patterns are legitimate risk factors.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q4",
+          "question": "To whom does the AML/CTF compliance officer report under SAMA Guide 9.1?",
+          "options": [
+            "The Saudi FIU",
+            "The external auditor",
+            "The board of directors and its committees",
+            "The head of the largest business line"
+          ],
+          "answer": 2,
+          "explanation": "Guide 9.1 requires the officer to work independently and report administratively and technically to the board and its committees.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s5-q5",
+          "question": "What is the maximum fine SAMA may impose as a supervisory measure under Article 25 of the AML Law, as published in the SAMA Rulebook?",
+          "options": [
+            "SAR 5 million per violation",
+            "SAR 1 million per year",
+            "SAR 500,000 per violation",
+            "SAR 50 million per violation"
+          ],
+          "answer": 0,
+          "explanation": "Article 25 allows a fine of up to SAR 5 million per violation, alongside warnings, orders, bans, removal of managers and licence measures. SAR 50 million is the criminal ceiling for legal persons in Article 31.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s5-q6",
+          "question": "Which staff does SAMA Guide 11.2(c) single out for specialised and adequate AML/CTF training?",
+          "options": [
+            "Only IT staff who run monitoring systems",
+            "Only staff based at head office",
+            "Compliance function staff and independent audit staff",
+            "Only branch managers and tellers"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 11.2(c) requires specialised training for the AML/CTF compliance function and the independent audit function; 11.2(b) adds fuller training for staff doing due diligence.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-aml-s5-q7",
+          "question": "Wahat Bank hires an external institute to deliver AML training. What does SAMA Guide 11.3 expect?",
+          "options": [
+            "Accept any institute with an international licence",
+            "Use only institutes that SAMA owns",
+            "Let the institute set and approve the bank's AML policy",
+            "Check the training's fit and the trainer's background, and survey trainees"
+          ],
+          "answer": 3,
+          "explanation": "Guide 11.3 asks the bank to verify the training suits AML/CTF requirements and its risks, check the trainer's academic and work history, and poll trainees on the materials and trainer.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q8",
+          "question": "Under SAMA's 2017 instructions on publishing banking penalties, where must a bank disclose SAMA's punitive decisions?",
+          "options": [
+            "Only in a confidential letter to SAMA",
+            "In its annual report, by type of violation, number and total fines",
+            "Nowhere, as SAMA decisions are confidential",
+            "On a notice board in each branch"
+          ],
+          "answer": 1,
+          "explanation": "The instructions require banks to publish SAMA punitive decisions in their annual reports, with the type of violation (including AML/CTF due diligence), the number of decisions and the total fines, and SAMA republishes them.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q9",
+          "question": "What did SAMA cite when it cancelled Mohamed Mounir Halawani Sons Exchange Company's licence in March 2019?",
+          "options": [
+            "The partners asked SAMA to cancel the licence",
+            "It could not fix all identified AML/CFT deficiencies after inspections and follow-up",
+            "The company had merged with a bank",
+            "The company failed a capital adequacy test"
+          ],
+          "answer": 1,
+          "explanation": "SAMA's announcement said inspection and follow-up visits and meetings with management took place, and SAMA found the company unable to address all AML/CFT deficiencies. A partner-requested cancellation was a different 2019 case.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-aml-s5-q10",
+          "question": "A non-Saudi convicted of money laundering finishes his prison term. What does Article 28 of the AML Law provide?",
+          "options": [
+            "A fine equal to the laundered amount",
+            "A travel ban equal to the prison term",
+            "Supervision by SAMA for five years",
+            "Deportation with no possibility of returning to the Kingdom"
+          ],
+          "answer": 3,
+          "explanation": "Article 28 provides for deportation of non-Saudis after the penalty, with no return. The travel ban equal to the prison term applies to Saudi nationals.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "sa",
+    "programs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      23,
+      24,
+      26
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "annual",
+      "periodic"
+    ],
+    "regulators": [
+      "Saudi Central Bank (SAMA)",
+      "General Directorate of Financial Intelligence (Saudi FIU, SAFIU)"
+    ],
+    "references": [
+      {
+        "title": "Implementing Regulation to the Anti-Money Laundering Law",
+        "issuer": "Government of Saudi Arabia (SAMA Rulebook copy)",
+        "url": "https://rulebook.sama.gov.sa/en/node/1428",
+        "provision": "Articles 5/1-5/6, 7/1-7/9, 8/1-8/5, 14/1(e), 15/1-15/4, 16/1, 17/1(q) and 18/1",
+        "note": "Risk assessment, due diligence triggers and content, beneficial ownership, PEPs, internal controls including ongoing employee training, report content, good-faith protection and FIU powers.",
+        "effective": "2017-11-08",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering Law (Royal Decree No. M/20)",
+        "issuer": "Government of Saudi Arabia (SAMA Rulebook copy)",
+        "url": "https://rulebook.sama.gov.sa/en/anti-money-laundering-law",
+        "provision": "Articles 2-7, 10, 12-17, 25-28, 31 and 44",
+        "note": "Money laundering offence, preventive duties, record keeping for ten years, reporting to the FIU, tipping-off ban, supervisory measures and criminal penalties.",
+        "effective": "2017-10-25",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Law on Combating Terrorism Crimes and its Financing (Royal Decree No. M/21, as amended)",
+        "issuer": "Government of Saudi Arabia (SAMA Rulebook copy)",
+        "url": "https://rulebook.sama.gov.sa/en/law-combating-financing-terrorism",
+        "provision": "Articles 47, 49, 54, 63-71 and 83",
+        "note": "Terrorist financing offence covering funds from any source, preventive duties, reporting to the FIU, tipping-off ban, failure to report and supervisory measures.",
+        "effective": "2017-11-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Implementing Regulations of the Law of Combating Terrorist Crimes and its Financing",
+        "issuer": "Council of Ministers (SAMA Rulebook copy)",
+        "url": "https://rulebook.sama.gov.sa/en/node/150",
+        "provision": "Article 18(1)(f)",
+        "note": "CFT policies and procedures must include continuing employee training programmes, staff screening and an independent audit procedure.",
+        "effective": "2019-01-08",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Anti-Money Laundering and Counter-Terrorism Financing (AML/CTF) Guide",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/section-11-amlctf-training",
+        "provision": "Chapter IX, Section 11 (11.1-11.5)",
+        "note": "Training for all staff and for new staff before they start, repeated over time; deeper training for due diligence staff; specialised training for compliance and audit; board included; knowledge testing at least annually; training records kept.",
+        "effective": "2019-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Anti-Money Laundering and Counter-Terrorism Financing (AML/CTF) Guide",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/section-1-mltf-risk-assessment",
+        "provision": "Section 1: ML/TF Risk Assessment",
+        "note": "Documented risk assessment approved by senior management, customer risk classification with senior approval for high risk, and assessment of new products before launch.",
+        "effective": "2019-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Anti-Money Laundering and Counter-Terrorism Financing (AML/CTF) Guide",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/due-diligence-measures-0",
+        "provision": "Section 3A: Due Diligence Measures (3.1-3.13)",
+        "note": "Customer acceptance policy, due diligence triggers and minimum content, independent verification sources, ongoing due diligence and sanctions list checks.",
+        "effective": "2019-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Anti-Money Laundering and Counter-Terrorism Financing (AML/CTF) Guide",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/b-politically-exposed-persons-peps",
+        "provision": "Section 4B: Politically Exposed Persons (4.9-4.18)",
+        "note": "Tools to identify PEPs, foreign PEPs always high risk, same measures for family and close associates, and documented grounds for rating a local PEP below high risk.",
+        "effective": "2019-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Anti-Money Laundering and Counter-Terrorism Financing (AML/CTF) Guide",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/section-8-reporting-suspicious-transactions",
+        "provision": "Section 8: Reporting of Suspicious Transactions (8.1-8.15)",
+        "note": "Board-approved reporting procedures, prompt reports to the FIU including attempts, technical report with six months of statements, documented decisions not to report, and staff awareness.",
+        "effective": "2019-11-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Rules for the Implementation of Targeted Financial Sanctions",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/rules-implementation-targeted-financial-sanctions",
+        "provision": "Chapters Two to Eight",
+        "note": "Governance, screening moments, list management, maker-checker alert handling, freezing without delay and without prior notice, notifying SAMA, lifting freezes, ten-year records and role-based training with simulations.",
+        "effective": "2025-12-07",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guidance on Assessing Business Risks Related to Money Laundering, Terrorist Financing, and Proliferation Financing",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/guidance-assessing-business-risks-related-money-laundering-terrorist-financing-and-proliferation",
+        "provision": "Chapters Two and Three",
+        "note": "Bank-specific business risk assessment separating ML, TF and PF risk, six stages from data collection to review, annual update and independent audit, and staff awareness of results.",
+        "effective": "2025-12-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Account Opening Rules",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/node/1690",
+        "provision": "Chapter II, Rule 9 (Training as a Key Principle for these Rules)",
+        "note": "Banks may not assign teller or customer service staff until they have attended courses on KYC, AML/CFT and banker ethics, and must run continuing on-the-job training covering these rules.",
+        "effective": "2019-07-03",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "sa-aml-x1",
+        "question": "A compliance trainee says the SAMA AML/CTF Guide is 'the law' on money laundering. Which correction is most accurate?",
+        "options": [
+          "The Guide applies only to exchange companies, not banks",
+          "The Guide is optional advice with no supervisory weight",
+          "The Guide replaced the AML Law in 2019, so the trainee is right",
+          "The offences and core duties are in the AML Law; the Guide sets SAMA's expectations for meeting them"
+        ],
+        "answer": 3,
+        "explanation": "The 2017 AML Law and its implementing regulation create the offences and duties; SAMA's 2019 Guide, issued as a circular, explains how SAMA expects institutions it supervises to comply. It does not replace the law and is not optional.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x2",
+        "question": "A customer converts proceeds of a fraud into gold to hide their origin. The fraudster has not yet been tried. Can the bank's suspicion and a money laundering case proceed?",
+        "options": [
+          "Only if the fraud happened inside the Kingdom",
+          "Yes: money laundering is a separate offence needing no prior predicate conviction",
+          "Only if the gold is worth over SAR 1 million",
+          "No: the fraud must be proven in court first"
+        ],
+        "answer": 1,
+        "explanation": "Article 4 of the AML Law makes money laundering independent of a predicate conviction, wherever the predicate crime occurred, and the reporting duty applies whatever the amount.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x3",
+        "question": "Which combination correctly describes the Saudi FIU?",
+        "options": [
+          "It receives and analyses reports, has operational independence and is overseen by the President of State Security",
+          "It is part of the Public Prosecution and prosecutes ML cases",
+          "It is a committee of bank compliance officers chaired by SAMA",
+          "It is a SAMA department that also inspects banks and imposes fines"
+        ],
+        "answer": 0,
+        "explanation": "Article 17 establishes the General Directorate of Financial Intelligence as the national centre for receiving and analysing reports, operationally independent and overseen by the President of State Security. Inspection and fines are SAMA's role; prosecution belongs to the Public Prosecution.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x4",
+        "question": "A relative of a customer collects cash from a mosque congregation and sends it abroad to an entity tied to a terrorist group. He says the donors earned the money honestly. How does Article 47 of the CTF Law treat the honest origin?",
+        "options": [
+          "It reduces the offence to an administrative breach",
+          "It matters only if the donors knew the purpose",
+          "It is irrelevant; funds from legitimate sources are covered",
+          "It is a full defence to terrorist financing"
+        ],
+        "answer": 2,
+        "explanation": "Article 47 expressly covers funds from legitimate or illegitimate sources provided or collected with the intention or knowledge that they will be used for terrorism or by a terrorist entity.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x5",
+        "question": "A board member of Wahat Bank argues that, because the bank as a legal person is liable for money laundering in its name, directors cannot be prosecuted personally. What does the AML Law say?",
+        "options": [
+          "Directors are liable only for supervisory measures, not crimes",
+          "Directors are immune while the bank remains licensed",
+          "Corporate liability does not exclude directors' and employees' personal liability",
+          "Only the chairman can be held personally liable"
+        ],
+        "answer": 2,
+        "explanation": "Article 3 states that a legal person's criminal liability does not exclude that of chairmen, board members, owners, employees and others who acted in its name or for its account.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x6",
+        "question": "Which SAMA text requires training on AML/CTF to draw on real experiences and include new ML/TF methods, with a sufficient budget?",
+        "options": [
+          "Chapter Six of the TFS Rules",
+          "Section 6 of SAMA's AML/CTF Guide",
+          "Article 25 of the AML Law",
+          "Section 11 of SAMA's AML/CTF Guide"
+        ],
+        "answer": 3,
+        "explanation": "The introduction to Section 11 asks institutions to budget for training and to base it on real experiences, new ML/TF methods and internal controls. Section 6 deals with record keeping and Chapter Six of the TFS Rules with freezing.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x7",
+        "question": "A new hire at Wahat Bank's call centre will answer customer queries about accounts from next week. Which approach best matches SAMA's expectations?",
+        "options": [
+          "Complete AML/CTF training before she starts, then refresh and test it at least annually",
+          "Let her start now and train her within her first year",
+          "Train her only if she later moves to a branch",
+          "Give her the policy to read and skip formal training"
+        ],
+        "answer": 0,
+        "explanation": "Guide 11.2(a) requires training for new staff before they start work, repeated over time, and 11.4 requires knowledge testing at least annually. Customer service roles are also covered by Account Opening Rule 9.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x8",
+        "question": "SAMA suspended an exchange company in 2017 for not complying with regulatory requirements, including AML/CTF measures. According to SAMA's statement, what had happened before the suspension?",
+        "options": [
+          "The FIU had frozen all its accounts",
+          "SAMA had already issued several warnings asking it to rectify its status",
+          "The company had been convicted of money laundering",
+          "The company's partners had asked for the suspension"
+        ],
+        "answer": 1,
+        "explanation": "SAMA's November 2017 statement on Saleh Hussain Al-Amoudi Sons said several warnings had been issued before the suspension, which would remain until full compliance was proven.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x9",
+        "question": "An act of bribery took place in another country where bribery is a crime. The bribe is later moved through a Saudi bank. Which condition must also hold for it to be a predicate offence under the AML Law?",
+        "options": [
+          "The act would also be an offence under Saudi law had it occurred in the Kingdom",
+          "The bribe must exceed a threshold set by SAMA",
+          "The foreign country must have requested assistance",
+          "A Saudi national must have paid the bribe"
+        ],
+        "answer": 0,
+        "explanation": "Article 1(4) includes acts abroad that are crimes where committed and would have been offences in the Kingdom. No foreign request, nationality link or threshold is needed.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x10",
+        "question": "A long-standing customer, a teacher, suddenly receives large transfers from a trading company and sends them on the same day. Her CDD file is two years old. Under SAMA Guide 3.2, why must Wahat Bank apply due diligence now?",
+        "options": [
+          "The trading company is a new customer of another bank",
+          "Her transactions are inconsistent with her known behaviour and information",
+          "Teachers are a high-risk occupation",
+          "Her CDD file is older than one year"
+        ],
+        "answer": 1,
+        "explanation": "Guide 3.2 adds a trigger when a customer's transaction does not fit their behaviour or information, alongside suspicion and doubts about earlier data. File age alone is handled by risk-based review cycles.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x11",
+        "question": "A corporate applicant has four shareholders with 24% each and a fifth with 4%. Nobody reaches 25%. What should Wahat Bank do next under Regulation 7/2(c) and Guide 3.18?",
+        "options": [
+          "Accept the applicant's letter naming a beneficial owner",
+          "Treat the largest shareholder company as the owner",
+          "Record that the company has no beneficial owner",
+          "Identify who controls the company by other means, then the senior managing official if needed"
+        ],
+        "answer": 3,
+        "explanation": "Where no natural person reaches 25%, the bank identifies the natural persons exercising control by other means and, as a last resort, the senior managing official, while not relying primarily on the customer's statement.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x12",
+        "question": "A Saudi customer is a serving deputy governor of a provincial authority. The bank's assessment finds low corruption risk, a short, transparent career and salary-based wealth. What do SAMA's rules allow?",
+        "options": [
+          "He may be rated low risk without recording reasons",
+          "He must always be rated high risk, like foreign PEPs",
+          "Rating him below high risk, with sufficient documented grounds",
+          "He is not a PEP because the role is domestic"
+        ],
+        "answer": 2,
+        "explanation": "Foreign PEPs are always high risk (Guide 4.13), but local PEPs are assessed using factors in 4.15; a decision that a local PEP is not high risk needs sufficient, reasonable and documented grounds (4.16).",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-aml-x13",
+        "question": "Wahat Bank learns that another bank refused an applicant because of suspected money laundering. What does SAMA Guide 4.5 expect?",
+        "options": [
+          "Open the account and inform the other bank",
+          "Apply EDD, find out the reasons and take additional measures",
+          "Automatically refuse the applicant",
+          "Ignore it, as other banks' decisions are confidential"
+        ],
+        "answer": 1,
+        "explanation": "Guide 4.5 requires enhanced due diligence when another institution has refused a customer, an effort to understand why, and additional measures where the reason was ML/TF suspicion.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x14",
+        "question": "Which measure is NOT among the enhanced due diligence examples listed in SAMA Guide 4.2?",
+        "options": [
+          "Verifying the customer's job, activity or profession",
+          "Establishing source of funds at the start and for transactions",
+          "Conducting on-site visits to verify the business",
+          "Requiring the customer to keep a minimum balance"
+        ],
+        "answer": 3,
+        "explanation": "Guide 4.2 lists verifying occupation, identifying source of funds or income, obtaining information on assets and transactions, on-site visits and additional documents. A minimum balance is a commercial term, not an EDD measure.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x15",
+        "question": "Wahat Bank wants to let a low-risk customer use the account before identity verification is complete, to avoid disrupting payroll. What conditions do Regulation 7/3 and Guide 5.5 attach?",
+        "options": [
+          "Low risk, genuine need, verification as soon as practicable and controls on use meanwhile",
+          "Written permission from SAMA in each case",
+          "None, as long as the customer signs a declaration",
+          "A guarantee from the customer's employer"
+        ],
+        "answer": 0,
+        "explanation": "Delayed verification is allowed only where risk is low, delay is essential to avoid interrupting normal business, verification follows as soon as practicable and risk management measures cover use of the relationship before verification.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x16",
+        "question": "A customer's brother-in-law and a business partner who co-owns a company with a foreign PEP both want accounts. How should Wahat Bank treat them?",
+        "options": [
+          "Only the business partner needs enhanced measures",
+          "As ordinary customers, because neither holds public office",
+          "As a family member and a close associate, applying the same enhanced measures",
+          "Only the brother-in-law needs enhanced measures"
+        ],
+        "answer": 2,
+        "explanation": "Regulation 8/3 covers relatives by blood or marriage up to the second degree; 8/4 covers people with joint beneficial ownership or close business relationships. Guide 4.14 applies the same EDD to family members and close associates.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x17",
+        "question": "Wahat Bank's risk assessment is approved and filed. A year later it launches a new remote onboarding channel without reassessing risk. Which requirement has it breached?",
+        "options": [
+          "Assessing ML/TF risks of new delivery mechanisms before launch",
+          "Obtaining FIU approval for new channels",
+          "Publishing the risk assessment on its website",
+          "Updating the risk assessment every ten years"
+        ],
+        "answer": 0,
+        "explanation": "Regulation 5/6 and Guide 1.7 require the risks of new products, practices, delivery mechanisms and technologies to be assessed before launch or first use.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x18",
+        "question": "A customer refuses to provide the information needed to complete CDD for an existing account after several requests. What do Regulation 7/8 and Guide 3.11 require?",
+        "options": [
+          "Keep the account but block new products",
+          "Freeze the account until he cooperates",
+          "Ask SAMA to collect the information",
+          "End the relationship and consider reporting to the FIU"
+        ],
+        "answer": 3,
+        "explanation": "If CDD cannot be completed for an existing customer, the bank must terminate the relationship and consider a suspicious transaction report. Freezing is a sanctions or court measure, not the CDD remedy.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x19",
+        "question": "An internal report reaches the reporting officer. She thinks the activity is odd but has no information linking it to crime and no reasonable grounds. What does SAMA Guide 8.6 say?",
+        "options": [
+          "Ask the customer for an explanation first",
+          "Report anyway, since the FIU prefers more reports",
+          "Do not report on speculation; document the review and the reasons for closing it",
+          "Escalate to SAMA instead of the FIU"
+        ],
+        "answer": 2,
+        "explanation": "Guide 8.6 says reports should not rest on speculation or lack of reasonable grounds, and 8.10-8.11 require the decision not to report and its reasons to be documented and kept.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x20",
+        "question": "A teller tells the AML/CTF unit about a customer's odd cash deposits, then mentions to a friend at another bank that 'compliance is looking at' that customer. Which rule did the teller breach?",
+        "options": [
+          "The risk assessment duty in Article 5",
+          "The tipping-off ban in Article 16 of the AML Law",
+          "The record-keeping rule in Article 12",
+          "The wire transfer rule in Article 10"
+        ],
+        "answer": 1,
+        "explanation": "Article 16 forbids employees from disclosing to the customer or any other person that a report will be, is being or has been made. The exceptions cover communications within the bank and with lawyers or competent authorities, not friends at other banks.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x21",
+        "question": "The FIU stops a suspicious transfer at Wahat Bank for 72 hours. Investigators need longer. Which authority can order a provisional seizure, and for how long before a court extension is needed?",
+        "options": [
+          "The Public Prosecution, for up to 60 days",
+          "The FIU, for up to 90 days",
+          "The bank's board, for up to 12 months",
+          "SAMA, for up to 30 days"
+        ],
+        "answer": 0,
+        "explanation": "Regulation 17/1(q) limits the FIU's stop to 72 hours. Article 44 lets the Public Prosecution order provisional seizure for up to 60 days without prior notice, extendable by court order.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x22",
+        "question": "Which of these is part of the minimum content of a suspicious transaction report under Regulation 15/4?",
+        "options": [
+          "SAMA's approval of the report",
+          "The reasons for suspicion on which the employee based the report",
+          "The customer's written agreement to the report",
+          "An estimate of the predicate crime's penalty"
+        ],
+        "answer": 1,
+        "explanation": "Regulation 15/4 requires names, addresses and phone numbers, a description of the transaction and parties, the amount and accounts, and the reasons for suspicion. Customer agreement would amount to tipping off.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x23",
+        "question": "Wahat Bank filed a report on a customer last month. The FIU now asks the bank directly for six more months of statements on that customer. How should the bank respond?",
+        "options": [
+          "Refuse until SAMA forwards the request",
+          "Provide it only after the next board meeting",
+          "Provide the information promptly and fully, as the request relates to its own report",
+          "Ask the customer for consent first"
+        ],
+        "answer": 2,
+        "explanation": "Article 15(2) and Regulation 18/1 require prompt and full answers, and the FIU may ask directly when the request concerns a report the bank filed. Asking the customer would breach the tipping-off ban.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x24",
+        "question": "A customer closed her account eight years ago. The Public Prosecution now asks for her CDD file. What do the rules say about retention?",
+        "options": [
+          "Records are kept only while the account is open",
+          "The file may already be destroyed after five years",
+          "Only transaction records must be kept, not CDD files",
+          "The file should still exist: CDD records are kept at least ten years after the relationship ends"
+        ],
+        "answer": 3,
+        "explanation": "Article 12(2) requires CDD records, account files and correspondence to be kept for at least ten years after the relationship ends, and records must be readily available to competent authorities.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x25",
+        "question": "Wahat Bank's monitoring system has not been tested since installation three years ago. Which SAMA expectation does this miss?",
+        "options": [
+          "Replacing the system every three years",
+          "Obtaining FIU certification of the system",
+          "Testing monitoring tools periodically, at least once a year, and documenting results",
+          "Running all monitoring manually as a back-up"
+        ],
+        "answer": 2,
+        "explanation": "Guide 7.6 requires periodic testing of monitoring tools, at least annually, with documented results used to improve them. SAMA does not require replacement or FIU certification.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x26",
+        "question": "A suspected launderer's lawyer asks a branch manager whether a report has been filed about his client. What is the correct response?",
+        "options": [
+          "Deny it to avoid alarming the client",
+          "Confirm it, since lawyers are an allowed exception",
+          "Confirm it if the lawyer shows a power of attorney",
+          "Decline to confirm or deny, and inform the AML/CTF unit of the request"
+        ],
+        "answer": 3,
+        "explanation": "The Article 16 exception covers communications with the bank's own lawyers, not disclosure to the customer's lawyer, who acts for the customer. Lying is not needed; the manager simply cannot discuss it.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-aml-x27",
+        "question": "A UN listing is published at 9 pm. Wahat Bank's internal list updates the next afternoon because the vendor feed runs once a day. Which TFS Rule does this most directly breach?",
+        "options": [
+          "Running comprehensive screening quarterly",
+          "Updating internal lists immediately and monitoring official sources daily",
+          "Testing screening tools annually",
+          "Keeping records for ten years"
+        ],
+        "answer": 1,
+        "explanation": "Rule 4.1 requires internal lists to be updated immediately on a listing and monitored daily through official channels, with records of receipt and application times; reliance on tools does not guarantee compliance (4.2).",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x28",
+        "question": "After a new UN listing, Wahat Bank screens its current customers but not past transactions. What else does TFS Rule 3.4 require?",
+        "options": [
+          "Review transactions from the previous twelve months for dealings with the listed person",
+          "Ask SAMA to run the historic check",
+          "Notify every customer that the list has changed",
+          "Close all accounts in the listed person's country"
+        ],
+        "answer": 0,
+        "explanation": "Rule 3.4 requires a documented, auditable review of transactions in the previous twelve months, or longer where risk and resources allow, to find past dealings with newly listed persons.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x29",
+        "question": "A screening alert matches a customer's name but the dates of birth and nationality differ. Both specialists agree it is a false match. What must they do to close it?",
+        "options": [
+          "Follow the internal procedure and keep a written justification for closure",
+          "Ask the customer to prove he is not the listed person",
+          "Close it verbally and move on",
+          "Freeze the account until SAMA confirms"
+        ],
+        "answer": 0,
+        "explanation": "Rule 5.4 allows specialists to close a false match after the required procedure, keeping a written justification. Contacting the customer about the alert would breach confidentiality under 5.7.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x30",
+        "question": "Wahat Bank's head of payments proposes using manual screening for a new remittance product to save costs. What do the TFS Rules say?",
+        "options": [
+          "Manual screening is allowed if staff are trained",
+          "Manual tools need SAMA's written non-objection, and the exception does not apply to payment or transfer products",
+          "SAMA must be told after six months of use",
+          "Manual screening is always acceptable for small banks"
+        ],
+        "answer": 1,
+        "explanation": "Rule 3.9 allows robust manual tools only with SAMA's written non-objection and conditions, and paragraph 3.9(f) excludes institutions offering payment or transfer products or services.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-aml-x31",
+        "question": "A frozen account of a listed person receives an interest payment due under a contract signed before the freeze. What does TFS Rule 6.8 allow?",
+        "options": [
+          "It may be paid out to the customer in cash",
+          "It must be returned to the payer",
+          "It must be paid to the FIU",
+          "The payment may be credited, but it stays frozen and SAMA is notified in writing"
+        ],
+        "answer": 3,
+        "explanation": "Rule 6.8 allows payments, interest or earnings due under pre-freeze contracts, and certain inheritance or compensation funds, to be added, provided they remain frozen and SAMA is notified in writing.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x32",
+        "question": "Which training element do the TFS Rules (8.3) require for the bank's sanctions unit?",
+        "options": [
+          "Shadowing the FIU for one week",
+          "An annual e-learning module only",
+          "In-person workshops by specialist TFS trainers",
+          "A university degree in international law"
+        ],
+        "answer": 2,
+        "explanation": "Rule 8.3 requires in-person workshops by trainers specialising in TFS for the relevant unit, while other units may use e-learning. Rule 8.2 adds simulation exercises for specialists.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x33",
+        "question": "SAMA's December 2025 business risk guidance asks for one important distinction in the assessment. Which?",
+        "options": [
+          "A clear distinction between ML, TF and proliferation financing risks",
+          "A distinction between paper and digital records",
+          "A distinction between Saudi and expatriate staff",
+          "A distinction between retail and corporate profits"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2.11(d) requires the business risk assessment to distinguish clearly between money laundering, terrorist financing and proliferation financing risks.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x34",
+        "question": "Wahat Bank wants to add repeated false matches to an internal whitelist so they stop generating alerts. Which condition applies under TFS Rule 5.8?",
+        "options": [
+          "Deletion of the names after one year",
+          "Notification to the UN sanctions committee",
+          "Board or senior management approval, periodic review and continued screening of the list",
+          "Approval from the customer named on the list"
+        ],
+        "answer": 2,
+        "explanation": "Rule 5.8 allows a justified internal whitelist only with board or senior management approval and periodic review, and the whitelist remains subject to comprehensive, post-update and event-based screening.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x35",
+        "question": "Wahat Bank's risk team overrides an automated customer risk rating from high to medium. What does SAMA's December 2025 guidance (3.2.4) require?",
+        "options": [
+          "SAMA's prior approval of every override",
+          "Automatic reversal after thirty days",
+          "No record, since overrides are a business decision",
+          "Governance of the override, with the decision and rationale documented"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 3.2.4(e) requires governance of any decision to override an automated rating, with decisions and their rationale documented. Profitability must not drive ratings.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x36",
+        "question": "Who must audit the business risk assessment, and how often, under SAMA's December 2025 guidance (2.6)?",
+        "options": [
+          "The AML/CTF officer who prepared it, every two years",
+          "An independent auditor, at least once a year, reporting to the board or senior management",
+          "SAMA inspectors, every three years",
+          "The external auditor, only when the bank lists shares"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2.6 requires ongoing independent audit at least annually, covering methodology, data quality and control effectiveness, with results submitted to the board or senior management.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x37",
+        "question": "The head of AML/CTF compliance at Wahat Bank also supervises the branch sales targets. Which SAMA principle is most at risk?",
+        "options": [
+          "The independence of the AML/CTF compliance function",
+          "The ten-year record-keeping rule",
+          "The quarterly sanctions screening rule",
+          "The twelve-month transaction lookback"
+        ],
+        "answer": 0,
+        "explanation": "Guide 9.1 requires the AML/CTF officer to work independently and report to the board and its committees. Combining the role with sales targets creates a conflict that undermines that independence.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-aml-x38",
+        "question": "SAMA's Guide 12.6 asks banks to ensure employees take leave regularly and do not work during it. What is the AML/CTF purpose?",
+        "options": [
+          "It improves the bank's customer satisfaction scores",
+          "It reduces the risk of staff hiding misconduct or circumventing controls",
+          "It is required to calculate end-of-service benefits",
+          "It allows the FIU to audit staff accounts"
+        ],
+        "answer": 1,
+        "explanation": "Section 12 aims at staff integrity: background checks, possible job rotation and regular leave help expose collusion or concealment that depends on one person being always present.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x39",
+        "question": "A director of Wahat Bank repeatedly ignored SAMA's AML findings. Which supervisory measure in Article 25 targets individuals directly?",
+        "options": [
+          "Imprisonment for up to ten years",
+          "Deportation from the Kingdom",
+          "Banning individuals from working in sectors SAMA supervises",
+          "Confiscation of the director's personal property"
+        ],
+        "answer": 2,
+        "explanation": "Article 25 lets SAMA ban individuals, restrict powers and dismiss or replace directors and executives. Prison, confiscation and deportation are criminal consequences imposed by courts, not supervisory measures.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x40",
+        "question": "Under Article 31 of the AML Law, what fine can a court impose on a legal person convicted of money laundering?",
+        "options": [
+          "Up to SAR 5 million per violation",
+          "Exactly the value of the funds involved",
+          "Up to SAR 7 million in aggravated cases",
+          "Up to SAR 50 million and not less than double the value of the funds involved"
+        ],
+        "answer": 3,
+        "explanation": "Article 31 sets a fine of up to SAR 50 million and at least double the full value of the funds for legal persons. SAR 5 million per violation is SAMA's supervisory ceiling; SAR 7 million is the aggravated ceiling for individuals.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x41",
+        "question": "In 2019 SAMA revoked Saeed Mohammed Ali Al-Amoudi & Co's licence to transfer funds. Which feature of that decision is most relevant for bank risk managers?",
+        "options": [
+          "The decision was based only on capital shortfalls",
+          "SAMA fined the company SAR 50 million",
+          "SAMA removed one activity while allowing the company's other licensed activities to continue",
+          "The company's partners requested the revocation"
+        ],
+        "answer": 2,
+        "explanation": "SAMA's announcement said it revoked the fund transfer licence and reclassified the company, while its other licensed activities continued, citing AML and CTF violations. It shows SAMA can target specific activities.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-aml-x42",
+        "question": "SAMA's review finds Wahat Bank's training records show attendance but no knowledge tests for two years. Which requirement is most clearly unmet?",
+        "options": [
+          "Keeping training records for ten years",
+          "Training new joiners before they start work",
+          "Allocating a training budget to senior management",
+          "Periodic testing of staff knowledge and training quality, at least annually"
+        ],
+        "answer": 3,
+        "explanation": "Guide 11.4 requires knowledge and training-quality testing at least annually. Attendance records satisfy part of 11.5 but do not show that staff understood the material.",
+        "difficulty": 3
+      }
+    ]
+  }
+}

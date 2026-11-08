@@ -1,0 +1,3068 @@
+{
+  "slug": "ca-fcac-consumer-protection",
+  "title": "Canada | Bank Act Financial Consumer Protection Framework and FCAC",
+  "tagline": "Apply Part XII.2 of the Bank Act in a Canadian bank: fair sales, consent, disclosure, basic banking, complaints, whistleblowing and FCAC enforcement.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Federally regulated banks and authorized foreign banks",
+    "Federal credit unions",
+    "Retail branches and contact centres",
+    "Consumer lending, cards and deposits",
+    "Bank compliance, complaints and learning functions"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the market conduct rules that the **Financial Consumer Agency of Canada (FCAC)** supervises in federally regulated banks. It is built on **Part XII.2 of the Bank Act** (the Financial Consumer Protection Framework, in force since 30 June 2022), the **Financial Consumer Protection Framework Regulations**, the **whistleblowing provisions in sections 979.1 to 979.4**, the **Financial Consumer Agency of Canada Act** and FCAC's guidelines on appropriate products and services, complaint handling and whistleblowing.\n\nSection **627.02** of the Bank Act requires every bank to train its officers and employees in Canada, and anyone who offers or sells its products in Canada, on the policies and procedures it uses to comply with the consumer provisions. This quest is designed as that periodic training for all staff and third-party sellers, with extra depth for sales, complaint and compliance roles. It also explains the **consumer-targeted fraud duty in section 627.134**, which has been enacted but is **not yet in force**.\n\nYou follow a fictional team at Aurora Ridge Bank in Toronto, Montréal, Winnipeg, Mississauga and Vancouver, and study real FCAC enforcement decisions.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own policies, procedures or advice from your compliance team.",
+  "audience": [
+    "All officers and employees in Canada of banks, authorized foreign banks and federal credit unions",
+    "Branch, contact centre and digital staff who open accounts and sell deposit, card and credit products",
+    "Third parties who offer or sell bank products, such as brokers, dealers and retail partners",
+    "Complaint handlers, designated complaint employees and whistleblowing report handlers",
+    "Product, incentive, compliance and learning teams who design and evidence the training programme"
+  ],
+  "outcomes": [
+    "Explain Part XII.2 of the Bank Act, FCAC's role and the section 627.02 training duty for staff and third-party sellers",
+    "Apply the rules on undue pressure, coercive tied selling, appropriate products, remuneration and express consent",
+    "Apply disclosure rules and the right to a retail deposit account, including the narrow grounds for refusal",
+    "Handle complaints within the 56-day period, explain escalation to OBSI and apply the whistleblowing protections",
+    "Describe the consumer-targeted fraud duty in section 627.134 and its not-yet-in-force status accurately",
+    "Explain FCAC's enforcement tools and the evidence a bank needs to show an effective training programme"
+  ],
+  "quest": {
+    "name": "The Aurora Ridge Promise",
+    "premise": "You have just joined Aurora Ridge Bank, a fictional federally regulated Canadian bank headquartered in Toronto, as its consumer protection training coordinator. With Chief Compliance Officer Nadia Haddad, Montréal branch manager Étienne Gagnon, complaints lead Priya Raman, fraud and contact centre manager Kevin Morningstar and products manager Mei Chen, you must turn Part XII.2 of the Bank Act into everyday decisions before FCAC comes asking for evidence.",
+    "badge": {
+      "name": "Fair Banking Guardian (Canada)",
+      "description": "Awarded for demonstrating working knowledge of the Bank Act Financial Consumer Protection Framework, whistleblowing rules and FCAC enforcement."
+    },
+    "color": "#b91c1c",
+    "cast": [
+      {
+        "id": "nadia",
+        "name": "Nadia Haddad",
+        "role": "Chief Compliance Officer, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#b91c1c"
+        }
+      },
+      {
+        "id": "etienne",
+        "name": "Étienne Gagnon",
+        "role": "Branch manager, Montréal",
+        "look": {
+          "skin": 1,
+          "hair": "beard",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "priya",
+        "name": "Priya Raman",
+        "role": "Complaints lead and senior designated employee",
+        "look": {
+          "skin": 4,
+          "hair": "bun",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "kevin",
+        "name": "Kevin Morningstar",
+        "role": "Contact centre and fraud operations manager, Winnipeg",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "mei",
+        "name": "Mei Chen",
+        "role": "Products and sales incentives manager, Vancouver",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#c2410c"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Financial Consumer Protection Framework and the training duty",
+      "stage": "The Framework Gate",
+      "summary": "Meet Part XII.2 of the Bank Act, the Financial Consumer Agency of Canada and the section 627.02 duty to train every officer, employee and third-party seller on the bank's consumer protection policies.",
+      "minutes": 45,
+      "objectives": [
+        "Describe how Part XII.2 of the Bank Act and the Financial Consumer Protection Framework Regulations fit together",
+        "Explain FCAC's role and how it differs from OSFI's",
+        "Apply the section 627.02 training duty to officers, employees and third parties who offer or sell bank products",
+        "Recognise the intermediary and affiliate rule in section 627.15",
+        "Explain why weak procedures and training sit behind recent FCAC penalties"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the binder on Nadia's desk",
+          "setting": "Consumer Protection Office, Aurora Ridge Bank head office, Bay Street, Toronto. 8:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your first morning as consumer protection training coordinator at Aurora Ridge Bank, a fictional federally regulated bank with branches from Halifax to Vancouver.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Welcome! I'm Nadia Haddad, Chief Compliance Officer. This binder is our map of Part XII.2 of the Bank Act. Your job is to make every page of it real for 4,000 people.",
+              "mood": "happy"
+            },
+            {
+              "who": "etienne",
+              "text": "Étienne Gagnon, branch manager in Montréal. Honest question: my tellers already do AML and privacy modules. Why another one?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Because the Bank Act itself says so. Section 627.02 requires us to train officers, employees and anyone who sells our products on the policies we use to meet the consumer provisions.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "Mei Chen, products and incentives, Vancouver. Does that include the mortgage brokers and the retail partner that sells our co-branded card?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Good question. Hold it. By the end of this stage you'll know who is in scope, who checks, and what happens when training fails.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Canada's consumer protection framework in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "One Act, one Part",
+              "narration": "Since 30 June 2022, Part XII.2 of the Bank Act, called Dealings with Customers and the Public, holds the main federal consumer rules for banks and authorized foreign banks."
+            },
+            {
+              "icon": "📘",
+              "heading": "Regulations add detail",
+              "narration": "The Financial Consumer Protection Framework Regulations fill in details the Act leaves to regulation, such as the 56-day period for dealing with complaints and the prescribed debt collection practices."
+            },
+            {
+              "icon": "🔍",
+              "heading": "FCAC supervises",
+              "narration": "The Financial Consumer Agency of Canada supervises banks' compliance with these consumer provisions. OSFI looks after safety and soundness; FCAC looks after how customers are treated."
+            },
+            {
+              "icon": "📏",
+              "heading": "Guidelines explain expectations",
+              "narration": "FCAC guidelines on appropriate products, complaint handling and whistleblowing say how FCAC expects banks to meet the law. Where an older guideline conflicts with the framework, the framework prevails."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training ties it together",
+              "narration": "Section 627.02 requires the bank to train its officers, employees and third-party sellers on the policies and procedures it set up to comply. Policies nobody knows about protect nobody."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "How Part XII.2 is organised",
+          "caption": "Five divisions. Most of what front-line staff do every day sits in Divisions 2 and 3.",
+          "items": [
+            {
+              "label": "Division 1: Interpretation",
+              "detail": "Definitions such as complaint, undue pressure and retail deposit account"
+            },
+            {
+              "label": "Division 2: Fair and equitable dealings",
+              "detail": "Training, prohibited conduct, appropriateness, consent, basic banking, credit, complaints and the external complaints body"
+            },
+            {
+              "label": "Division 3: Disclosure and transparency",
+              "detail": "Clear, simple, not misleading information, information boxes, advertising, branch closure notices"
+            },
+            {
+              "label": "Division 4: Redress",
+              "detail": "Credit or refund of charges imposed without agreement or consent"
+            },
+            {
+              "label": "Division 5: Regulations",
+              "detail": "Power to make the detailed rules found in the Framework Regulations"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A teller at Aurora Ridge Bank asks which body supervises whether the bank follows the Bank Act consumer provisions. What is the best answer?",
+          "options": [
+            "The Financial Consumer Agency of Canada (FCAC)",
+            "The Office of the Superintendent of Financial Institutions (OSFI)",
+            "FINTRAC, Canada's financial intelligence unit",
+            "The provincial securities commission where the branch is located"
+          ],
+          "answer": 0,
+          "explanation": "The FCAC Act makes supervising financial institutions' compliance with the consumer provisions one of FCAC's objects. OSFI is the prudential supervisor and FINTRAC deals with money laundering and terrorist financing."
+        },
+        {
+          "type": "concept",
+          "title": "Section 627.02: who must be trained, on what",
+          "body": "The training duty is short but wide.\n\n- **Who:** officers and employees **in Canada**, plus **any person who offers or sells** the bank's products or services in Canada. That reaches brokers, agents and retail partners, not only staff.\n- **On what:** the bank's own **policies and procedures** for complying with the **consumer provisions**, so the content must follow the bank's real processes, not a generic slide deck.\n- **How often:** the Act sets no cycle. The map classifies this programme as mandatory with a periodic refresh, and FCAC guidelines expect **initial and ongoing** training for selling, complaint handling and whistleblowing.\n\nSection 627.15 adds that a bank may only use representatives, agents, intermediaries or certain affiliates to sell its products if they follow the consumer provisions, give customers access to the bank's complaint process and give their employees access to whistleblowing procedures."
+        },
+        {
+          "type": "sort",
+          "title": "In scope for section 627.02 training?",
+          "prompt": "Decide whether each person must be trained on Aurora Ridge Bank's consumer protection policies.",
+          "buckets": [
+            "In scope",
+            "Not in scope"
+          ],
+          "items": [
+            {
+              "text": "A part-time teller in the Halifax branch",
+              "bucket": 0
+            },
+            {
+              "text": "A mortgage specialist who works from home in Calgary",
+              "bucket": 0
+            },
+            {
+              "text": "Staff of a retail partner that sells the bank's co-branded credit card in Canada",
+              "bucket": 0
+            },
+            {
+              "text": "A senior vice-president in Toronto who approves new fee structures",
+              "bucket": 0
+            },
+            {
+              "text": "A contact centre agent in Winnipeg who opens accounts by phone",
+              "bucket": 0
+            },
+            {
+              "text": "A bank employee working only at its London, England office on non-Canadian business",
+              "bucket": 1
+            },
+            {
+              "text": "A customer's own accountant who reviews their bank statements",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A turn: the rebate nobody entered",
+          "setting": "Nadia's office. Mid-morning.",
+          "lines": [
+            {
+              "who": "nadia",
+              "text": "Before we design anything, read this. FCAC summary of proceeding number 2, posted in November 2024.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Priya Raman, complaints lead. I remember it. Card customers did not get the annual fee rebate they were entitled to.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "FCAC said employees did not enter the rebate properly because procedures were inadequate. About 256,000 customers over roughly 22 years.",
+              "mood": "neutral"
+            },
+            {
+              "who": "etienne",
+              "text": "So a manual step, done wrong by people who were never shown how, turned into a penalty?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Exactly. That is why section 627.02 matters. Procedures and training are controls, not paperwork.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: TD and the missing card fee rebate (2024)",
+          "body": "FCAC's **Summary of proceeding #2** (posted November 2024) reports that on 11 July 2024 **the Toronto-Dominion Bank** paid a **$6.5 million** penalty.\n\n- TD was deemed to have violated the Cost of Borrowing (Banks) Regulations (2001 to June 2022) and then the **Financial Consumer Protection Framework Regulations** (June 2022 to October 2023).\n- Monthly card statements were wrong because **employees did not properly enter the annual fee rebate**, owing to **inadequate procedures**.\n- FCAC estimated about **255,886 customers** affected, with a financial impact of about **$71.7 million**; TD was reimbursing customers.\n- FCAC said the penalty reflected negligence in failing to put in place controls and compliance monitoring for over 20 years, the harm caused and TD's history of violations.\n\n**Lesson:** a step that depends on staff needs a clear procedure, training on it and monitoring that would catch errors."
+        },
+        {
+          "type": "scenario",
+          "title": "The partner who wants to skip training",
+          "situation": "Mei is launching a co-branded credit card with a national electronics retailer. The retailer's sales staff will take card applications at the checkout. The retailer's manager says: 'Our people are sales experts. We'll hand out your brochure, but we don't have time for your bank's training.' The launch date is in three weeks.",
+          "choices": [
+            {
+              "text": "Require the retailer's sellers to complete the bank's training on its consumer policies before they take applications, and build this into the partner agreement with completion tracking.",
+              "outcome": "Best choice. The retailer's staff offer and sell the bank's product in Canada, so section 627.02 reaches them, and section 627.15 requires intermediaries to follow the consumer provisions. Tracking completion gives the bank evidence.",
+              "score": 2
+            },
+            {
+              "text": "Let them start, but send the training link and ask them to complete it within six months.",
+              "outcome": "Partly right. Training will eventually happen, but months of sales by untrained sellers create exactly the consent and pressure risks the framework targets.",
+              "score": 1
+            },
+            {
+              "text": "Accept the manager's view: the brochure carries the disclosures, so training adds little.",
+              "outcome": "Poor choice. Disclosure documents do not replace training. The Act requires anyone who offers or sells the bank's products in Canada to be trained on the bank's policies.",
+              "score": 0
+            },
+            {
+              "text": "Ask the retailer to sign a statement that its staff know Canadian consumer law.",
+              "outcome": "Weak. A statement is not training on the bank's own policies and procedures, and it gives FCAC no evidence of what sellers were taught.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "FCAC and OSFI: two federal supervisors of a bank",
+          "caption": "Both supervise the same federally regulated bank, through different lenses.",
+          "headers": [
+            "FCAC",
+            "OSFI"
+          ],
+          "items": [
+            {
+              "label": "Main focus",
+              "left": "Market conduct and treatment of consumers",
+              "right": "Safety, soundness and prudential risk"
+            },
+            {
+              "label": "Key law",
+              "left": "Bank Act Part XII.2 and the FCAC Act",
+              "right": "Bank Act prudential parts and the OSFI Act"
+            },
+            {
+              "label": "Typical topics",
+              "left": "Disclosure, consent, complaints, sales practices",
+              "right": "Capital, liquidity, governance, operational risk"
+            },
+            {
+              "label": "Whistleblowing",
+              "left": "Employees may report wrongdoing to the Commissioner",
+              "right": "Employees may report wrongdoing to the Superintendent"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Key terms of the framework",
+          "cards": [
+            {
+              "front": "Consumer provisions",
+              "back": "The provisions of the Bank Act and other laws that FCAC supervises for the protection of consumers, including Part XII.2."
+            },
+            {
+              "front": "Institution",
+              "back": "In Part XII.2, a bank or an authorized foreign bank. FCAC's guidelines note that banks include federal credit unions."
+            },
+            {
+              "front": "Complaint",
+              "back": "Dissatisfaction, whether justified or not, expressed to the bank about a product or service or how it was offered, sold or provided."
+            },
+            {
+              "front": "Undue pressure",
+              "back": "Pressure, through a practice, a communication or otherwise, that could reasonably be considered excessive or persistent in the circumstances."
+            },
+            {
+              "front": "Financial Consumer Protection Framework Regulations",
+              "back": "Regulations made under the Bank Act, in force since 30 June 2022, that set the detailed rules, such as the 56-day complaint period."
+            },
+            {
+              "front": "FCAC guideline",
+              "back": "FCAC's statement of how it expects banks to meet a legal requirement, for example the Guideline on Appropriate Products and Services."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Aurora Ridge Bank uses an independent mortgage broker firm to bring in mortgage customers in Ontario. Under section 627.15, what must be true before the bank may cooperate with such an intermediary to sell its products?",
+          "options": [
+            "The intermediary follows the consumer provisions as if it were the bank, and its customers can use the bank's complaint procedures",
+            "The intermediary has its own licence, so the bank's consumer rules no longer apply to those sales",
+            "Only the bank's own staff are covered, so the intermediary needs no arrangements",
+            "The intermediary must send all complaints directly to FCAC for resolution"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.15 lets the bank use representatives, agents, intermediaries and certain affiliates only if they comply with the consumer provisions that apply to them, customers have access to the bank's complaint procedures, and their employees can use the whistleblowing procedures. FCAC does not resolve individual complaints."
+        },
+        {
+          "type": "example",
+          "title": "Real case: BMO and the fee waiver start date (2025)",
+          "body": "FCAC's **Summary of proceeding #4** (posted February 2026) reports that on 22 April 2025 the **Bank of Montreal** paid a **$4 million** penalty for two violations of its **Bank Act disclosure obligations** on personal deposit accounts.\n\n- Customers in discounted banking programs for newcomers, medical and dental students, Indigenous banking clients and a home financing promotion who applied **in branch** got written confirmation with the **wrong start date** for their fee waiver, so they paid fees that should have been waived or discounted.\n- FCAC said the root cause was **inconsistent employee adherence to procedures** and monitoring and controls that failed to detect it.\n- BMO estimated about **101,091 customers** were financially affected and refunded about **$3.0 million**.\n- The penalty reflected BMO's negligence, **despite over 500 customer complaints** about the fees.\n\n**Lesson:** training is only effective if people follow it, and monitoring checks that they do."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "Part XII.2 of the Bank Act, Dealings with Customers and the Public, has been in force since 30 June 2022, with detail in the Financial Consumer Protection Framework Regulations.",
+            "FCAC supervises banks' compliance with the consumer provisions; OSFI supervises prudential soundness.",
+            "Section 627.02 requires training of officers and employees in Canada and anyone who offers or sells the bank's products in Canada, on the bank's own consumer policies and procedures.",
+            "Section 627.15 extends consumer, complaint and whistleblowing protections to intermediaries and certain affiliates that sell the bank's products.",
+            "Recent FCAC penalties against TD and BMO trace back to inadequate procedures, staff not following them and weak monitoring."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "List the products you offer or support. For each, which bank policy or procedure tells you how to treat the customer, and when were you last trained on it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-cp-s1-q1",
+          "question": "Since what date has Part XII.2 of the Bank Act (the Financial Consumer Protection Framework) applied to banks?",
+          "options": [
+            "1 January 2020",
+            "30 June 2018",
+            "23 June 2027",
+            "30 June 2022"
+          ],
+          "answer": 3,
+          "explanation": "FCAC's guidelines page and the Framework Regulations confirm that the framework came into force on 30 June 2022. 23 June 2027 is the effective date of the revised complaint-handling guideline, not of the framework.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s1-q2",
+          "question": "Which statement best describes the training duty in section 627.02 of the Bank Act?",
+          "options": [
+            "The bank must train its officers and employees in Canada, and anyone selling its products in Canada, on its consumer compliance policies",
+            "Only branch staff who open deposit accounts must complete an FCAC-approved course every year",
+            "Each employee must personally pass an FCAC examination before dealing with customers",
+            "Only the Chief Compliance Officer must be trained, and must then brief the board each year"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.02 covers officers and employees in Canada and any person who offers or sells the bank's products or services in Canada. FCAC does not approve courses or examine individual staff.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s1-q3",
+          "question": "A product manager at Aurora Ridge Bank says: 'Section 627.02 only covers people with customer-facing jobs, so I'm exempt.' What is the best response?",
+          "options": [
+            "Correct, the duty only applies to people who meet customers face to face in a branch",
+            "The section covers all officers and employees in Canada, so product staff must be trained on the consumer policies too",
+            "Correct, but only if the product manager earns sales commissions on the products",
+            "The section covers product staff only if they hold a provincial licence"
+          ],
+          "answer": 1,
+          "explanation": "The text refers to the institution's officers and employees in Canada, without limiting it to customer-facing roles. Product managers design fees, disclosures and sales processes that the consumer provisions govern.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s1-q4",
+          "question": "What is the main difference between FCAC's and OSFI's roles towards a federally regulated bank?",
+          "options": [
+            "FCAC supervises capital and liquidity; OSFI handles customer complaints",
+            "FCAC resolves individual customer complaints; OSFI writes the consumer provisions",
+            "FCAC supervises market conduct and the consumer provisions; OSFI supervises prudential safety and soundness",
+            "There is no difference; the two agencies share every task equally"
+          ],
+          "answer": 2,
+          "explanation": "FCAC's objects include supervising compliance with the consumer provisions. OSFI is the prudential regulator. FCAC itself says it does not resolve individual complaints.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s1-q5",
+          "question": "Aurora Ridge Bank pays a car dealership to offer its auto loans to customers in Canada. The dealership's finance staff have never seen the bank's consumer policies. Which provisions are most directly engaged?",
+          "options": [
+            "Only the Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+            "None, because the dealership is not a bank and is outside the Bank Act",
+            "Sections 627.02 and 627.15: sellers must be trained, and the intermediary must comply with the consumer provisions",
+            "Only section 979.4, which bans retaliation against whistleblowers"
+          ],
+          "answer": 2,
+          "explanation": "The dealership offers and sells the bank's product in Canada, so its staff fall within section 627.02, and section 627.15 requires such intermediaries to comply with the consumer provisions. The anti-retaliation rule is a separate duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s1-q6",
+          "question": "An older FCAC guideline says one thing and the Framework Requirements in the Bank Act and the Framework Regulations say another. According to FCAC, which prevails for a bank's conduct after 30 June 2022?",
+          "options": [
+            "The older guideline prevails because it is more detailed",
+            "The Framework Requirements prevail over the older guideline",
+            "The bank may choose whichever is more convenient",
+            "Neither applies until FCAC issues a ruling to that bank"
+          ],
+          "answer": 1,
+          "explanation": "FCAC's guidelines page states that from 30 June 2022 the affected guidelines must be read with, and subject to, the Framework Requirements, which prevail in case of inconsistency.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s1-q7",
+          "question": "In FCAC's 2024 summary of proceeding about TD's credit card annual fee rebate, what did FCAC identify as the cause of the error?",
+          "options": [
+            "Employees did not properly enter the rebate because procedures were inadequate",
+            "A cyber attack that changed rebate amounts on statements",
+            "Customers who failed to ask for the rebate on time",
+            "A change in federal tax law that removed the rebate"
+          ],
+          "answer": 0,
+          "explanation": "FCAC said the statements were wrong because employees did not properly enter the annual fee rebate due to inadequate procedures, and noted the absence of effective controls and monitoring for over 20 years.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s1-q8",
+          "question": "Which body of rules gives the detailed requirements under Part XII.2, such as the period for dealing with complaints?",
+          "options": [
+            "The Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations",
+            "OSFI's Guideline E-21 on operational risk",
+            "The Canada Labour Code",
+            "The Financial Consumer Protection Framework Regulations"
+          ],
+          "answer": 3,
+          "explanation": "The Financial Consumer Protection Framework Regulations (SOR/2021-181) set detailed rules under Part XII.2, for example the 56-day period for dealing with complaints.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s1-q9",
+          "question": "Mei proposes to train the co-branded card partner's sellers using a generic 'Canadian consumer law' video bought online. What is the main weakness?",
+          "options": [
+            "Videos are not allowed as a training format under the Bank Act",
+            "Partner sellers need no training, so any content is unnecessary",
+            "FCAC requires all training to be delivered face to face in a classroom",
+            "Section 627.02 requires training on the bank's own policies and procedures, which a generic video will not cover"
+          ],
+          "answer": 3,
+          "explanation": "The duty is to train people on the policies and procedures the bank has established to comply with the consumer provisions. Generic content may help, but it cannot show sellers how the bank's own processes work. The Act does not prescribe a format.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-cp-s1-q10",
+          "question": "In the BMO fee waiver case (FCAC summary of proceeding #4), which factor did FCAC highlight when explaining the penalty?",
+          "options": [
+            "BMO had refused to refund any customer",
+            "BMO had deliberately set the wrong start dates to raise revenue",
+            "BMO had no complaint-handling procedures at all",
+            "BMO's controls failed to detect the error despite more than 500 customer complaints about the fees"
+          ],
+          "answer": 3,
+          "explanation": "FCAC pointed to BMO's negligence in failing to implement adequate controls and monitoring, despite receiving over 500 complaints about the monthly plan fees. BMO did refund affected customers.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Fair dealing: appropriate products, undue pressure, tied selling and consent",
+      "stage": "The Fair Sale Desk",
+      "summary": "Apply the Bank Act rules on misleading information, undue pressure and coercive tied selling, appropriate products, remuneration and express consent, together with FCAC's Guideline on Appropriate Products and Services and its training expectations.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise undue pressure, coercion, coercive tied selling and taking advantage of a person under section 627.04",
+        "Distinguish lawful preferential pricing (section 627.05) from coercive tied selling",
+        "Apply the appropriateness duty in section 627.06 using FCAC's know your consumer, know your product, assess and inform steps",
+        "Explain how remuneration must not interfere with appropriateness (section 627.07) and the training FCAC expects (paragraphs 17-18)",
+        "Apply the express consent rules in sections 627.08 and 627.09"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the month-end push",
+          "setting": "Aurora Ridge Bank branch, Avenue du Mont-Royal, Montréal. 4:15 pm on the second-last day of the month.",
+          "lines": [
+            {
+              "who": "etienne",
+              "text": "We're three credit cards short of the monthly target. The regional office has called twice.",
+              "mood": "worried"
+            },
+            {
+              "who": "narrator",
+              "text": "At the counter, a student, Lucas, has come in to renew his line of credit. He looks tired and keeps checking his phone.",
+              "mood": "neutral"
+            },
+            {
+              "who": "etienne",
+              "text": "Our adviser told him the renewal 'goes faster' if he also takes the new travel card. He's hesitating.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mei",
+              "text": "Étienne, careful. That sounds like making one product a condition for another.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "And a card a student may not need, sold under deadline pressure. Let's walk through what the Bank Act actually allows before anyone presses send.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The fair-dealing rules in Division 2",
+          "scenes": [
+            {
+              "icon": "🚫",
+              "heading": "No false or misleading information",
+              "narration": "Section 627.03 bans giving false or misleading information to a customer, the public or the Commissioner. That covers what staff say, not only what is printed."
+            },
+            {
+              "icon": "✋",
+              "heading": "No undue pressure, coercion or taking advantage",
+              "narration": "Section 627.04 bans undue pressure, coercion and taking advantage of a person. Undue pressure means pressure that could reasonably be considered excessive or persistent in the circumstances."
+            },
+            {
+              "icon": "🔗",
+              "heading": "No coercive tied selling",
+              "narration": "The bank must not pressure or coerce someone to buy a product from the bank, an affiliate or anyone else as a condition for getting another product. A better price for a bundle is allowed under section 627.05."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Appropriate products",
+              "narration": "Section 627.06 requires policies and procedures so that products offered or sold to individuals for non-business purposes are appropriate to their circumstances, including their financial needs."
+            },
+            {
+              "icon": "✅",
+              "heading": "Express consent first",
+              "narration": "Section 627.08 says no product or service without the person's express consent and an agreement first. Using a product is not consent, and oral consent must be confirmed in writing without delay."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Tied selling: lawful bundle or coercion?",
+          "caption": "The test: is the second product a reward or a condition imposed by pressure or coercion?",
+          "headers": [
+            "Allowed",
+            "Prohibited"
+          ],
+          "items": [
+            {
+              "label": "Pricing",
+              "left": "Lower rate on a loan if the customer also opens an account",
+              "right": "Loan refused unless the customer also buys insurance from an affiliate"
+            },
+            {
+              "label": "Customer's choice",
+              "left": "Customer can still get the loan at the normal price",
+              "right": "Customer is told there is no loan without the second product"
+            },
+            {
+              "label": "Legal basis",
+              "left": "Expressly allowed by section 627.05",
+              "right": "Banned by section 627.04(a)"
+            },
+            {
+              "label": "Security exception",
+              "left": "Bank may require its approval of security, not unreasonably withheld",
+              "right": "Bank insists on its own product when a suitable one exists elsewhere"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer is told: 'You can have this mortgage at our posted rate, or at a lower rate if you also move your chequing account to us.' The customer is free to take either option. How does the Bank Act treat this?",
+          "options": [
+            "It is allowed: section 627.05 lets a bank offer more favourable terms on condition that the customer obtains another product",
+            "It is prohibited coercive tied selling under section 627.04",
+            "It is allowed only if FCAC approves each bundle in advance",
+            "It is allowed only for business customers, never for individuals"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.05 confirms that offering better terms on condition of buying another product is permitted. Section 627.04 targets undue pressure or coercion to obtain a product as a condition for another, which is different from a genuine choice."
+        },
+        {
+          "type": "concept",
+          "title": "FCAC's appropriateness guideline in five steps",
+          "body": "FCAC's **Guideline on Appropriate Products and Services** (in effect since 30 June 2022) explains section 627.06. A bank should:\n\n1. **Know your consumer:** collect and assess information on the person's circumstances and financial needs.\n2. **Know your product:** understand features, charges, risks and benefits, through an approval process across the product's life cycle.\n3. **Assess appropriateness** when offering or selling, **even when the customer asked for the product**.\n4. **Inform consumers** when a product was assessed as not appropriate, or the assessment could not be done, in clear, simple and not misleading language.\n5. **Align remuneration** so pay, incentives and benefits do not interfere with appropriateness (section 627.07 and paragraphs 23-24).\n\nThe guideline adds that consumers are diverse and **some have financial vulnerabilities**, and that senior management and the responsible board committee should oversee the policies."
+        },
+        {
+          "type": "order",
+          "title": "Put the appropriateness journey in order",
+          "prompt": "Arrange the steps a bank follows under FCAC's guideline when a customer wants a product.",
+          "steps": [
+            "Product passes the bank's internal assessment, review and approval process",
+            "Employee collects and verifies the customer's circumstances and financial needs",
+            "Employee assesses whether the product is appropriate for this customer",
+            "If it is not appropriate, employee tells the customer clearly so they can decide",
+            "Bank keeps records showing the assessment was done and its outcome"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A turn: the outbound sales unit",
+          "setting": "Mei's desk, Vancouver, by video call.",
+          "lines": [
+            {
+              "who": "mei",
+              "text": "I found an FCAC decision that worries me. Decision 142, Scotiabank, posted December 2021.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "The outbound sales unit. Customers received credit cards, lines of credit or optional insurance without express consent.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "FCAC staff listed the causes: inadequate procedures, lack of training, inappropriate incentive programs and unclear roles.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "So training and incentives were part of the root cause, not just bad luck on one team.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Exactly. And that is why the framework now ties training (627.02), appropriateness (627.06) and remuneration (627.07) together.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Scotiabank, consent and an outbound sales unit (2021)",
+          "body": "In **Decision #142** (posted December 2021), FCAC staff alleged that **the Bank of Nova Scotia** breached the **Negative Option Billing Regulations**, the pre-framework consent rule, by providing credit cards, lines of credit or optional insurance without customers' **express consent**.\n\n- Staff proposed an **$80,000** penalty and said the control deficiencies included **inadequate policies and procedures, lack of training, inappropriate incentive programs** and unclear roles, which weakened senior management oversight.\n- The Commissioner found a violation from **February to June 2018**, when the unit was closed. Because of the shorter period and other mitigating factors, the Commissioner imposed **no penalty**, but decided to name the bank.\n\n**Lesson:** sales incentives, training and clear roles are part of consent compliance. Today, sections 627.02, 627.07 and 627.08 of the Bank Act deal with them directly."
+        },
+        {
+          "type": "scenario",
+          "title": "Lucas and the travel card",
+          "situation": "Back in Montréal. The adviser tells Étienne that Lucas, a full-time student with a part-time job, now says he will 'take the card if it gets the line of credit renewed today'. The renewal does not depend on the card. The card has an annual fee and Lucas mentioned he never travels. The adviser is two cards short of a bonus threshold.",
+          "choices": [
+            {
+              "text": "Stop the card sale: tell Lucas plainly that the renewal does not depend on the card, finish the renewal, and only discuss the card if he raises it and it suits his needs.",
+              "outcome": "Best choice. It removes the coercive link (section 627.04), avoids a product that looks inappropriate for his circumstances (section 627.06), and puts the customer ahead of the bonus (section 627.07).",
+              "score": 2
+            },
+            {
+              "text": "Sell the card but waive the first year's fee so Lucas is not harmed.",
+              "outcome": "Partly right on harm but wrong on the law. Lucas still thinks the card is a condition of renewal, and a product that does not meet his needs remains inappropriate.",
+              "score": 1
+            },
+            {
+              "text": "Sell the card: Lucas agreed, and his signature is express consent.",
+              "outcome": "Poor. Consent obtained by implying a condition that does not exist is tainted by undue pressure and misleading information, and the appropriateness duty still applies.",
+              "score": 0
+            },
+            {
+              "text": "Let the adviser decide; it's his customer and his target.",
+              "outcome": "Poor. The manager has a duty to stop conduct that breaches the bank's policies. Incentives that drive such sales are exactly what section 627.07 targets.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Is the sale safe? Need and pressure",
+          "caption": "Appropriateness and freedom from pressure are separate tests. A sale must pass both.",
+          "axes": {
+            "x": "Customer's free choice",
+            "y": "Fit with needs"
+          },
+          "items": [
+            {
+              "label": "Fits needs, pressured",
+              "detail": "Still a breach risk: pressure or coercion is banned even for a suitable product"
+            },
+            {
+              "label": "Fits needs, free choice",
+              "detail": "The target: appropriate product, express consent, no pressure"
+            },
+            {
+              "label": "Poor fit, pressured",
+              "detail": "Highest risk: likely inappropriate and undue pressure; stop the sale"
+            },
+            {
+              "label": "Poor fit, free choice",
+              "detail": "Inform the customer it is not appropriate; follow policy if they still want it"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Consent facts every seller needs",
+          "cards": [
+            {
+              "front": "Is using a product the same as consenting to it?",
+              "back": "No. Section 627.08(3) says use of a product or service is not express consent."
+            },
+            {
+              "front": "What if the customer agrees by phone?",
+              "back": "Oral consent is allowed, but the bank must send written confirmation of that consent without delay."
+            },
+            {
+              "front": "What comes before providing an ongoing product?",
+              "back": "Express consent, an agreement, and a copy of the agreement for products provided on an ongoing basis."
+            },
+            {
+              "front": "How must the request for consent be worded?",
+              "back": "In a manner and language that is clear, simple and not misleading (section 627.09)."
+            },
+            {
+              "front": "Can the bank charge a fee the customer never agreed to?",
+              "back": "No. Section 627.12 requires express consent, an agreement providing for the charge and proper disclosure."
+            },
+            {
+              "front": "What if a charge was imposed without consent?",
+              "back": "Division 4 (section 627.997) requires the bank to credit or refund it."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under FCAC's Guideline on Appropriate Products and Services, what training should a bank require for people who offer or sell its products?",
+          "options": [
+            "Initial and ongoing training on the bank's appropriateness obligations and on the features, charges, risks and benefits of the products they sell",
+            "A single induction module on general banking history, with no refresher",
+            "Training only for staff who sell investment products, not deposits or credit",
+            "Training only after a customer has complained about a sale"
+          ],
+          "answer": 0,
+          "explanation": "Paragraphs 17-18 expect initial and ongoing training covering the bank's appropriateness obligations and the products sold, including how to explain them, with the bank monitoring completion and regularly reviewing and updating the training."
+        },
+        {
+          "type": "example",
+          "title": "Real case: RBC, credit limit increases and training material (2021)",
+          "body": "In **Decision #139** (posted February 2021), the FCAC Commissioner found that the **Royal Bank of Canada** failed to obtain cardholders' **express consent** before applying **pre-approved credit card limit increases** between 2015 and 2017, under the regulations in force at the time, and imposed a **$350,000** penalty.\n\n- RBC argued **due diligence** and pointed to its phone-channel training manual.\n- The Commissioner found the defence unproven. Reviewing the **training material**, call recordings and other documents, the decision found the bank had **not consistently presented consent as a regulatory requirement** in both sales channels and had **not clearly set out how employees were to show** they had obtained it.\n\n**Lesson:** to rely on training as a defence, it must teach the actual legal requirement and the exact steps staff take to meet it, in every channel."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "Sections 627.03 and 627.04 ban misleading information, undue pressure, coercion (including coercive tied selling) and taking advantage of a person.",
+            "Section 627.05 allows genuine bundled pricing; coercion makes a bundle unlawful.",
+            "Section 627.06 requires appropriateness policies; FCAC expects know your consumer, know your product, assessment, informing and aligned remuneration.",
+            "FCAC expects initial and ongoing training for anyone who offers or sells bank products, with completion monitored and content reviewed (paragraphs 17-18).",
+            "Express consent and an agreement must come first; use is not consent, and oral consent needs prompt written confirmation."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the last product you recommended. What did you know about the customer's needs, and could anything you said have sounded like a condition or a deadline?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-cp-s2-q1",
+          "question": "How does Part XII.2 of the Bank Act define undue pressure?",
+          "options": [
+            "Any mention of a product the customer did not ask about",
+            "Any sales call made outside business hours",
+            "Pressure that could reasonably be considered excessive or persistent in the circumstances",
+            "Pressure that causes the customer a proven financial loss"
+          ],
+          "answer": 2,
+          "explanation": "Section 627.01 defines undue pressure as pressure, through a practice, communication or otherwise, that could reasonably be considered excessive or persistent in the circumstances. No financial loss is needed.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s2-q2",
+          "question": "An adviser tells a customer: 'We can only approve your car loan if you also buy creditor insurance from our affiliate.' The customer could easily get equivalent cover elsewhere. Which provision is most directly breached?",
+          "options": [
+            "Section 627.13, the low-balance alert rule",
+            "Section 627.04, the ban on coercive tied selling",
+            "Section 627.47, annual complaint information",
+            "Section 979.3, whistleblowing procedures"
+          ],
+          "answer": 1,
+          "explanation": "Imposing pressure or coercion to obtain a product from a particular person, including an affiliate, as a condition for another product is prohibited by section 627.04(a).",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s2-q3",
+          "question": "A customer gets a lower mortgage rate because she also opens a chequing account, and she was offered the mortgage at the regular rate too. Why is this lawful?",
+          "options": [
+            "Section 627.05 allows better terms on condition that the customer obtains another product",
+            "FCAC has granted all banks a blanket exemption for mortgages",
+            "Mortgages are outside Part XII.2 altogether",
+            "Bundling is only illegal when the product comes from a third party"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.05 confirms that preferential terms tied to another product are allowed. What is banned is undue pressure or coercion to obtain a product as a condition for another.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s2-q4",
+          "question": "According to FCAC's appropriateness guideline, when should a bank assess whether a product is appropriate?",
+          "options": [
+            "Only when the bank itself recommends the product",
+            "When it offers or sells a product, even when the customer asked for it",
+            "Only for credit products above a set dollar amount",
+            "Only after the customer has complained"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 19 expects an appropriateness assessment whenever the bank offers or sells products, including those requested by consumers.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s2-q5",
+          "question": "Mei designs a bonus that pays advisers per credit card sold, with no check on whether cards suit customers. Which Bank Act section is most at risk?",
+          "options": [
+            "Section 627.993, which requires notice of branch closures",
+            "Section 627.44, which sets complaint record contents",
+            "Section 627.07, which requires remuneration that does not interfere with appropriateness policies",
+            "Section 627.19, which covers refusals to open an account"
+          ],
+          "answer": 2,
+          "explanation": "Section 627.07 requires the bank to ensure remuneration and benefits do not interfere with staff's ability to follow appropriateness policies. FCAC also expects remuneration metrics to align with appropriateness (paragraph 23).",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s2-q6",
+          "question": "A customer agrees by phone to add overdraft protection to her account. What must the bank do under section 627.08?",
+          "options": [
+            "Provide written confirmation of her oral consent without delay",
+            "Nothing more, because oral consent is not permitted at all",
+            "Wait 30 days before activating, then send a survey",
+            "Ask her to visit a branch to sign before any confirmation is sent"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.08(2) allows oral consent but requires the bank to give written confirmation of it without delay.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s2-q7",
+          "question": "A customer used a credit card that arrived in the mail without his request. The bank says his use proves he consented. Is that right?",
+          "options": [
+            "Yes. Activation and use are a valid form of express consent",
+            "No. Use of a product is not express consent under section 627.08(3)",
+            "Yes, provided the card's annual fee is below a set amount",
+            "No, but only because cards may never be mailed to customers"
+          ],
+          "answer": 1,
+          "explanation": "Section 627.08(3) says use of the product or service does not constitute express consent. The bank needed express consent and an agreement first.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s2-q8",
+          "question": "Under FCAC's appropriateness guideline, what should happen when a bank assesses a product as not appropriate for a customer who still wants it?",
+          "options": [
+            "The bank must sell it anyway, since the customer has the final say",
+            "The bank must report the customer to FCAC",
+            "The bank informs the customer clearly and follows its policy on how to proceed",
+            "The bank must close all of the customer's accounts"
+          ],
+          "answer": 2,
+          "explanation": "Paragraphs 21-22 expect policies on how to proceed when a customer wants a product assessed as not appropriate, and clear, simple, not misleading information so the customer can make an informed decision.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-cp-s2-q9",
+          "question": "In Decision #142 about Scotiabank's outbound sales unit, which control deficiencies did FCAC staff identify?",
+          "options": [
+            "A cyber breach that exposed customer passwords",
+            "Mortgage rates that were too high for the market",
+            "Failure to file suspicious transaction reports",
+            "Inadequate procedures, lack of training, inappropriate incentives and unclear roles"
+          ],
+          "answer": 3,
+          "explanation": "FCAC staff linked the lack of express consent to inadequate policies and procedures, lack of training, inappropriate incentive programs and unclear roles and responsibilities.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s2-q10",
+          "question": "In Decision #139, why did RBC's due diligence defence fail?",
+          "options": [
+            "RBC did not have any training manual of any kind",
+            "Its training material and procedures did not consistently present consent as a legal requirement or show staff how to prove it",
+            "Due diligence is never available in FCAC proceedings",
+            "RBC raised the defence after the 30-day limit had passed"
+          ],
+          "answer": 1,
+          "explanation": "Due diligence is a defence under the FCAC Act, but the Commissioner found RBC's evidence insufficient: training materials and procedures did not consistently treat consent as a regulatory requirement or set out how employees should demonstrate it.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Disclosure, access to basic banking and the coming fraud duty",
+      "stage": "The Clear Window",
+      "summary": "Apply the disclosure rules in Division 3 of Part XII.2, the right to open a retail deposit account and the limited grounds for refusal, branch closure notices, and the new consumer-targeted fraud duty in section 627.134, which is NOT YET IN FORCE.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the clear, simple and not misleading standard to disclosures, advertisements and consent requests",
+        "Open or refuse a retail deposit account in line with sections 627.17 to 627.19",
+        "Describe low-balance alerts, renewal notices and branch closure notice periods",
+        "Explain what section 627.134 will require on consumer-targeted fraud, including initial and recurrent training, and that it is not yet in force",
+        "Draw lessons from FCAC penalties for inaccurate statements and disclosures"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the man with two documents",
+          "setting": "Aurora Ridge Bank branch, North Main Street, Winnipeg. 10:05 am.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "Kevin Morningstar, contact centre and fraud operations, Winnipeg. I'm covering the branch floor this morning.",
+              "mood": "neutral"
+            },
+            {
+              "who": "narrator",
+              "text": "A man named Daniel asks to open a basic chequing account. He has a provincial health card and a recent utility bill, no credit history and $20 in cash.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "The new teller whispers: 'We usually need a minimum deposit, and he's just come out of bankruptcy. Can we say no?'",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "On a video call: Kevin, the Bank Act gives people a right to a retail deposit account. The grounds to refuse are narrow, and bankruptcy alone isn't one of them.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "Then I need my team to know the rules cold. And I keep hearing about a new fraud training duty. Is that in force?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Not yet. Let's sort what applies today from what's coming.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Disclosure that customers can actually use",
+          "scenes": [
+            {
+              "icon": "🪟",
+              "heading": "Clear, simple, not misleading",
+              "narration": "When Division 3 requires disclosure, section 627.55 says it must be clear, simple and not misleading, and in writing unless the Division says otherwise."
+            },
+            {
+              "icon": "📦",
+              "heading": "The information box",
+              "narration": "For some products, key information must sit in one prominent information box on the application or before the agreement. On phone sales, staff must point it out orally."
+            },
+            {
+              "icon": "📣",
+              "heading": "Advertising",
+              "narration": "Section 627.14 requires every advertisement in Canada to be accurate, clear and not misleading. A footnote cannot fix a misleading headline."
+            },
+            {
+              "icon": "🔔",
+              "heading": "Alerts and renewals",
+              "narration": "Banks must send electronic alerts when a personal account balance or available credit falls below a set amount, $100 by default, unless the customer opts out. Renewal notices come before a term ends."
+            },
+            {
+              "icon": "🏚️",
+              "heading": "Branch closures",
+              "narration": "Before closing a retail deposit-taking branch, the bank must give FCAC, customers and the public written notice: four months, or six months in a rural area with no other branch within 10 km."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Opening a retail deposit account under section 627.17",
+          "caption": "The duty applies to member banks (CDIC members). A refusal must be in writing with complaint information (section 627.19).",
+          "items": [
+            {
+              "label": "Request in person",
+              "detail": "Natural person asks at a branch or point of service that opens retail deposit accounts"
+            },
+            {
+              "label": "Identification",
+              "detail": "Two documents from a reliable source, or one plus confirmation by a customer or person of good standing"
+            },
+            {
+              "label": "Consent to checks",
+              "detail": "If asked, the person consents to verification of documents and refusal grounds"
+            },
+            {
+              "label": "Photo ID if doubt",
+              "detail": "If identity misrepresentation is reasonably suspected, government photo ID with signature"
+            },
+            {
+              "label": "Open with no minimum",
+              "detail": "No initial minimum deposit or minimum balance may be required"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Valid ground to refuse a retail deposit account?",
+          "prompt": "Decide whether each reason can justify refusing Daniel's request under section 627.18.",
+          "buckets": [
+            "Valid ground",
+            "Not a valid ground"
+          ],
+          "items": [
+            {
+              "text": "Reasonable grounds to believe the account will be used for fraud",
+              "bucket": 0
+            },
+            {
+              "text": "A history of fraud against financial service providers within the past seven years",
+              "bucket": 0
+            },
+            {
+              "text": "Reasonable grounds to believe he knowingly made a material misrepresentation to open it",
+              "bucket": 0
+            },
+            {
+              "text": "Refusal is needed to protect staff or customers from physical harm or harassment",
+              "bucket": 0
+            },
+            {
+              "text": "He has been bankrupt, with no evidence of fraud",
+              "bucket": 1
+            },
+            {
+              "text": "He cannot make an opening deposit of $100",
+              "bucket": 1
+            },
+            {
+              "text": "He is unemployed and has no credit history",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Aurora Ridge Bank decides not to open an account for a person who meets one of the refusal grounds. What does section 627.19 require?",
+          "options": [
+            "A written statement that the account will not be opened, plus information on the bank's complaint process and how to contact FCAC and the external complaints body",
+            "An oral explanation only, so that no record exists",
+            "A report to FINTRAC in every case of refusal",
+            "Nothing: refusals need no explanation"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.19 requires a written statement that the bank will not open the account and the information referred to in section 627.65(a) to (c), which covers how to complain and whom to contact."
+        },
+        {
+          "type": "tip",
+          "title": "Bankruptcy is not a red flag on its own",
+          "body": "Section 627.18(2) is explicit: the fact that a person **is or has been bankrupt** does not, without evidence of fraud or other illegal activity linked to the bankruptcy, give reasonable grounds to believe the account will be used for illegal or fraudulent purposes.\n\nTrain tellers to separate **credit risk** (relevant for loans) from **access to a basic account** (a right, with narrow exceptions). If in doubt, escalate to a supervisor rather than turning the person away."
+        },
+        {
+          "type": "story",
+          "title": "A turn: credits that never moved",
+          "setting": "Kevin's fraud operations room, Winnipeg. Afternoon.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "When a customer reports card fraud, we close the card and open a new account. FCAC fined RBC $4.25 million over that exact process.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Summary of proceeding 5, posted June 2026. Credits on the old account were not moved to the new one, so statements were wrong.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kevin",
+              "text": "And CIBC was fined $3 million in 2023 for a very similar problem with deactivated cards.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Fraud processes are disclosure processes too. Every statement after a fraud claim must still be accurate.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "So when the new fraud duty arrives, our training must cover both: stopping fraud and getting the follow-up right.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real cases: statements after fraud at RBC (2026) and CIBC (2023)",
+          "body": "**RBC.** FCAC's **Summary of proceeding #5** (posted June 2026) reports that the **Royal Bank of Canada** paid a **$4.25 million** penalty on 17 April 2026 for one violation of its **Bank Act disclosure obligations** on monthly credit card statements. From 2001 to 2024, when a card account was deactivated and moved to a new account after fraud was reported, certain credits were not transferred. About **227,947 accounts** were affected and RBC transferred and refunded about **$22.4 million**. FCAC cited inadequate control and oversight procedures.\n\n**CIBC.** In **Decision #144** (posted June 2023), the Commissioner found that the **Canadian Imperial Bank of Commerce** violated the Cost of Borrowing (Banks) Regulations by not carrying some transactions to the new statement after a lost, stolen or defrauded card was deactivated, and imposed a **$3.0 million** penalty.\n\n**Lesson:** customer remedies after fraud must flow through to accurate statements."
+        },
+        {
+          "type": "concept",
+          "title": "Section 627.134: consumer-targeted fraud (NOT YET IN FORCE)",
+          "body": "Amendments made by the **Budget 2025 Implementation Act, No. 1** (S.C. 2026, c. 3, s. 334) add section 627.134 to the Bank Act. The official consolidation lists it under **amendments not in force**: it applies only from a date to be fixed. Once in force, a bank must:\n\n- **Adopt and follow policies and procedures** to detect and prevent consumer-targeted fraud and mitigate its impacts.\n- Set out **criteria** for when a transaction is suspicious; when to suspend, cancel or otherwise act on it; whether a person is a victim and a remedy is available; and what remedies exist, plus how each decision is communicated.\n- Give **initial and recurrent training** on detecting and preventing consumer-targeted fraud and on these policies to **employees, representatives, agents and other intermediaries who deal with customers in Canada**.\n- Send FCAC an **annual report** on consumer-targeted fraud.\n\nThe new definition covers transactions that are **unauthorized**, or **authorized as a result of coercion or deception**, such as a scam."
+        },
+        {
+          "type": "scenario",
+          "title": "The pre-emptive fraud module",
+          "situation": "Kevin wants to launch a consumer-targeted fraud module next month for contact centre and branch staff, covering scams where customers are tricked into authorising payments. His director asks whether the bank should state in its board report that it 'now complies with section 627.134 of the Bank Act'.",
+          "choices": [
+            {
+              "text": "Launch the module as good practice under existing risk management, but describe section 627.134 accurately: enacted, not yet in force, and coming into force on a date still to be fixed.",
+              "outcome": "Best choice. Early training helps customers now and prepares for the duty, and the board receives an accurate picture of the law's status.",
+              "score": 2
+            },
+            {
+              "text": "Delay all fraud training until the government fixes the coming-into-force date.",
+              "outcome": "Partly defensible on legal grounds, but it leaves staff unprepared for scams that already harm customers and makes the eventual rollout rushed.",
+              "score": 1
+            },
+            {
+              "text": "Tell the board the bank is now compliant with section 627.134 in force.",
+              "outcome": "Poor. The section is not in force, so stating compliance with it as current law is inaccurate, and the content of required criteria may still be set by regulation.",
+              "score": 0
+            },
+            {
+              "text": "Tell staff the section is in force so they take the module seriously.",
+              "outcome": "Poor. Giving staff false information about the law undermines trust and accuracy. Motivate the training with real customer harm instead.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "From framework to fraud duty",
+          "caption": "Check the current status on the Justice Laws Website before you describe a provision as in force.",
+          "items": [
+            {
+              "label": "Framework in force",
+              "value": "30 Jun 2022",
+              "detail": "Part XII.2 and the Framework Regulations apply to banks"
+            },
+            {
+              "label": "Fraud duty enacted",
+              "value": "26 Mar 2026",
+              "detail": "Budget 2025 Implementation Act, No. 1 adds sections 627.131 to 627.135"
+            },
+            {
+              "label": "Revised complaint guideline",
+              "value": "23 Jun 2027",
+              "detail": "FCAC's revised complaint-handling guideline takes effect"
+            },
+            {
+              "label": "Fraud duty in force",
+              "value": "Date to be fixed",
+              "detail": "Section 627.134 applies only once brought into force"
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Match the disclosure rule to the situation",
+          "prompt": "Link each Bank Act rule to the situation it governs.",
+          "pairs": [
+            {
+              "left": "Section 627.14",
+              "right": "A billboard advertising a savings rate must be accurate, clear and not misleading"
+            },
+            {
+              "left": "Section 627.13",
+              "right": "An electronic alert when a personal account balance drops below the threshold"
+            },
+            {
+              "left": "Section 627.57",
+              "right": "Key cost information shown in a single prominent information box"
+            },
+            {
+              "left": "Section 627.993",
+              "right": "Written notice before closing a retail deposit-taking branch"
+            },
+            {
+              "left": "Section 627.55",
+              "right": "Required disclosure must be clear, simple, not misleading and generally in writing"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about section 627.134 of the Bank Act (consumer-targeted fraud) is accurate as of November 2026?",
+          "options": [
+            "It has been enacted but is not yet in force; it will apply from a date to be fixed",
+            "It has been in force since 30 June 2022 as part of the original framework",
+            "It is only an FCAC consultation paper with no legal text",
+            "It applies only to credit unions regulated by provinces"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.134 was added by the Budget 2025 Implementation Act, No. 1 and appears among the amendments not in force in the official consolidation. It was not part of the 2022 framework."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Required disclosure must be clear, simple and not misleading; advertisements must be accurate, clear and not misleading.",
+            "Member banks must open retail deposit accounts for eligible individuals without a minimum deposit or balance; refusal grounds are narrow and must be explained in writing.",
+            "Bankruptcy alone, with no evidence of fraud, is not a ground to refuse an account.",
+            "Branch closures need written notice: four months, or six months in rural areas with no other branch within 10 km.",
+            "Section 627.134 will require fraud policies, initial and recurrent training and annual reporting, but it is NOT YET IN FORCE."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "When you explain a fee, rate or refusal to a customer, what do you do to check they understood it? What would make your explanation clearer?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-cp-s3-q1",
+          "question": "What standard does section 627.55 set for disclosure required under Division 3?",
+          "options": [
+            "Clear, simple and not misleading, and in writing unless the Division provides otherwise",
+            "Brief enough to fit on one page, in any format",
+            "Approved in advance by FCAC for every product",
+            "Provided orally, with a written copy only on request"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.55(1) requires disclosure in a manner and language that is clear, simple and not misleading, and in writing unless Division 3 provides otherwise.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s3-q2",
+          "question": "A person asks to open a retail deposit account at a member bank branch, presenting two acceptable documents. The teller asks for a $50 minimum opening deposit. Is that allowed?",
+          "options": [
+            "No. Section 627.17(4) bars requiring an initial minimum deposit or a minimum balance",
+            "Yes, a minimum of up to $100 is allowed for new customers",
+            "Yes, if the branch posts the requirement prominently",
+            "No, but only if the person is receiving government benefits"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.17(4) prohibits requiring an initial minimum deposit or the maintenance of a minimum balance for such accounts.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q3",
+          "question": "Which of these is a valid ground under section 627.18 for refusing to open a retail deposit account?",
+          "options": [
+            "The person has no credit history",
+            "The person was bankrupt two years ago, with no evidence of fraud",
+            "The person lives in a different province from the branch",
+            "Reasonable grounds to believe the person knowingly made a material misrepresentation to open the account"
+          ],
+          "answer": 3,
+          "explanation": "Section 627.18(1)(c) covers knowing material misrepresentation. Lack of credit history and residence are not grounds, and section 627.18(2) says bankruptcy alone is not evidence of illegal or fraudulent purpose.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q4",
+          "question": "A person who wants to open an account has only one document showing name and date of birth. Under section 627.17, how can the bank still open the account?",
+          "options": [
+            "Only if the person deposits at least $1,000",
+            "Only after FCAC confirms the person's identity",
+            "If a customer in good standing or a person of good standing in the community confirms the person's identity",
+            "It cannot; two documents are always required"
+          ],
+          "answer": 2,
+          "explanation": "Section 627.17(1)(a)(ii) allows one reliable document showing name and date of birth if identity is also confirmed by a customer in good standing with the bank or a person of good standing in the community.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q5",
+          "question": "Aurora Ridge Bank plans to close its only branch in a rural Saskatchewan town; the nearest other branch is 40 km away. What notice must it give customers and the public?",
+          "options": [
+            "Written notice at least 30 days before closure",
+            "Written notice at least six months before closure, including to the local mayor or similar official",
+            "Notice at least four months before closure, by email only",
+            "No notice, as long as online banking remains available"
+          ],
+          "answer": 1,
+          "explanation": "Section 627.993(1)(c) requires six months' written notice to customers, the public and the local government head when the branch is rural with no other retail deposit-taking branch within 10 km.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q6",
+          "question": "Unless the customer sets another amount or opts out, at what level does section 627.13 require an electronic low-balance alert on a personal deposit account (absent a prescribed amount)?",
+          "options": [
+            "$100",
+            "$0",
+            "$500",
+            "$1,000"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.13(1) requires an alert when the balance falls below the amount the person sets, or the prescribed amount, or, if none is prescribed, $100.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s3-q7",
+          "question": "Under the coming section 627.134, which group will have to receive initial and recurrent consumer-targeted fraud training?",
+          "options": [
+            "Only members of the board of directors",
+            "Only staff in the fraud investigations unit",
+            "Employees, representatives, agents and other intermediaries who deal with customers in Canada",
+            "Only customers who report a fraud"
+          ],
+          "answer": 2,
+          "explanation": "Section 627.134(3), once in force, requires training for employees, representatives, agents or mandataries and other intermediaries who deal with customers who are in Canada.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q8",
+          "question": "How does the amended Bank Act define consumer-targeted fraud (in the provisions not yet in force)?",
+          "options": [
+            "Only transactions made with a stolen physical card",
+            "Only frauds above an amount set by FCAC each year",
+            "Only frauds committed by bank employees against customers",
+            "It includes transactions that are unauthorized or authorized as a result of coercion or deception"
+          ],
+          "answer": 3,
+          "explanation": "The new definition in section 627.01(1) covers transactions that are unauthorized or that are authorized as a result of coercion or deception, so authorised push-payment scams are included.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-cp-s3-q9",
+          "question": "In FCAC's 2026 summary of proceeding about RBC, what went wrong?",
+          "options": [
+            "Credits were not transferred to new card accounts opened after fraud was reported, so statements were inaccurate",
+            "RBC refused to open basic accounts for newcomers to Canada",
+            "RBC charged a fee to close branches in rural areas",
+            "RBC retaliated against employees who reported wrongdoing"
+          ],
+          "answer": 0,
+          "explanation": "FCAC found a violation of RBC's Bank Act disclosure obligations: after fraud-related account migrations, some credits were not carried over, producing inaccurate monthly statements and extra charges for some customers.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s3-q10",
+          "question": "Kevin's director wants to write that Aurora Ridge Bank 'complies with section 627.134 as currently in force'. What is the accurate position?",
+          "options": [
+            "The statement is accurate because the section took effect on assent",
+            "The statement is accurate because FCAC guidelines made it binding in 2024",
+            "The section was repealed, so the board report should not mention fraud",
+            "The section is enacted but not yet in force, so the bank can only describe its preparations"
+          ],
+          "answer": 3,
+          "explanation": "Section 627.134 appears among the amendments not in force; it applies from a date to be fixed. The bank can describe voluntary training and readiness, not compliance with a provision in force.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Complaints, the external complaints body and whistleblowing",
+      "stage": "The Listening Post",
+      "summary": "Handle complaints under sections 627.43 to 627.54 and the 56-day period, explain escalation to the Ombudsman for Banking Services and Investments, apply FCAC's complaint-handling training expectations (current and revised guideline), and use the Bank Act whistleblowing protections in sections 979.1 to 979.4.",
+      "minutes": 55,
+      "objectives": [
+        "Recognise a complaint as defined in the Bank Act and start the 56-day clock correctly",
+        "Describe the bank's complaint duties: procedures, designated employees, acknowledgement, records, reporting and public information",
+        "Explain when and how a customer can go to the external complaints body (OBSI) and what OBSI must do",
+        "Apply FCAC's expectations for complaint-handling training, including the changes in the guideline revised in June 2026",
+        "Apply the whistleblowing rules: what wrongdoing is, where employees can report, confidentiality and the ban on retaliation"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: 'This isn't a complaint, is it?'",
+          "setting": "Complaints office, Aurora Ridge Bank, Mississauga. 9:20 am.",
+          "lines": [
+            {
+              "who": "priya",
+              "text": "Priya Raman, complaints lead and our senior designated employee. Listen to this call note from yesterday.",
+              "mood": "neutral"
+            },
+            {
+              "who": "narrator",
+              "text": "A customer told a contact centre agent she was 'really annoyed' that her mortgage payment changed without warning. The agent explained the change and logged it as an 'enquiry'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "She didn't say the word 'complaint'. Isn't an enquiry fine?",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "The Bank Act defines a complaint as dissatisfaction, whether justified or not, about a product or service or how it was provided. No magic word needed.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "And the 56-day period started when she first told us. If we mislabel it, we miss the clock, the record and the report to FCAC.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "So the agent needs training, not blame. Let's map the whole path.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The complaint journey under the Bank Act",
+          "scenes": [
+            {
+              "icon": "👂",
+              "heading": "Recognise it",
+              "narration": "A complaint is any expressed dissatisfaction, justified or not, about a product or service or how it was offered, sold or provided. Any channel counts."
+            },
+            {
+              "icon": "📝",
+              "heading": "Acknowledge and record",
+              "narration": "The bank gives the person a written acknowledgement of the date it received the complaint, and keeps a record with the details the Act lists for at least seven years."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Deal with it within 56 days",
+              "narration": "The Framework Regulations set 56 days after the day the complaint is received as the period for dealing with it. Designated employees handle complaints that cannot be settled at first contact."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Escalate to OBSI",
+              "narration": "If the customer is not satisfied, or 56 days pass, they can go to the external complaints body. FCAC's consumer pages name it as the Ombudsman for Banking Services and Investments, OBSI."
+            },
+            {
+              "icon": "📊",
+              "heading": "Report and learn",
+              "narration": "The bank reports complaints to FCAC quarterly, publishes annual complaint information and analyses data to find systemic issues."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Key complaint deadlines",
+          "caption": "Figures from Bank Act sections 627.44 to 627.49 and section 14 of the Framework Regulations.",
+          "items": [
+            {
+              "label": "Bank deals with complaint",
+              "value": "56 days",
+              "detail": "From the day the complaint is received (Framework Regulations, s. 14)"
+            },
+            {
+              "label": "OBSI out-of-scope reasons",
+              "value": "30 days",
+              "detail": "Written reasons if a complaint is outside its terms of reference"
+            },
+            {
+              "label": "Quarterly report to FCAC",
+              "value": "60 days",
+              "detail": "After each quarter, records of complaints handled by designated employees"
+            },
+            {
+              "label": "OBSI final recommendation",
+              "value": "120 days",
+              "detail": "After OBSI has all the information it needs"
+            },
+            {
+              "label": "Annual public information",
+              "value": "135 days",
+              "detail": "After financial year end, on the bank's websites"
+            },
+            {
+              "label": "Complaint record kept",
+              "value": "7 years",
+              "detail": "Minimum retention under section 627.44"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer tells a teller on 3 March that she is unhappy her account fee went up. On what day does the 56-day period start?",
+          "options": [
+            "When the bank received the complaint, here 3 March, whatever the channel",
+            "When she puts the complaint in writing",
+            "When a designated employee first reviews the file",
+            "When the bank sends its written acknowledgement"
+          ],
+          "answer": 0,
+          "explanation": "Section 14 of the Framework Regulations sets the period as 56 days after the day the complaint is received. FCAC's revised guideline adds that the clock starts on first communication by any channel and is not paused."
+        },
+        {
+          "type": "concept",
+          "title": "What the bank must have in place",
+          "body": "Sections 627.43 to 627.47 require the bank to:\n\n- **Set up complaint procedures** satisfactory to the Commissioner, **file them with FCAC** and keep them updated.\n- **Designate** one officer or employee in Canada to implement the procedures, and one or more to **receive and deal with** complaints.\n- **Avoid misleading names:** no term suggesting the internal process is independent, such as **'ombudsman'**.\n- Give the complainant a **written acknowledgement** of the date received, plus information on its procedures, the external complaints body and FCAC.\n- Keep a **record** of each complaint for at least **seven years**, accessible to FCAC.\n- **Report** complaints handled by designated employees to FCAC within **60 days** after each quarter.\n- Publish annual information on complaints handled by its most senior designated employee within **135 days** after year end.\n\nEvery bank must be a **member of the external complaints body** and give it all relevant information **without delay** when notified of a complaint."
+        },
+        {
+          "type": "order",
+          "title": "Put a complaint's path in order",
+          "prompt": "Arrange the steps Aurora Ridge Bank follows for a complaint that is not resolved at first contact.",
+          "steps": [
+            "Employee recognises the customer's dissatisfaction as a complaint and logs it",
+            "Bank sends a written acknowledgement with the date received and process information",
+            "Complaint is referred to a designated employee who investigates",
+            "Bank gives its final written response within the 56-day period",
+            "Customer who is still unhappy takes the complaint to OBSI",
+            "Bank gives OBSI all relevant information without delay"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Training on complaints: today and from June 2027",
+          "body": "FCAC's **Guideline on Complaint-Handling Procedures** expects:\n\n- **Initial and ongoing formal training** for all employees who deal with complaints.\n- A **system to monitor** training status and ways to **measure and test** whether training works.\n- **Regular review and timely updates**, especially when laws or internal procedures change.\n- **Role-specific** training for designated employees.\n\nThe current version applies until **22 June 2027** (training at paragraphs 18-19). FCAC published a **revised guideline in June 2026, effective 23 June 2027** (training at paragraphs 19-21). The revision adds, among other things:\n\n- Referral to a designated employee within **14 calendar days** to be timely.\n- The 56-day period is **not paused for any reason**.\n- A written **Notice of Final Decision** that tells the customer about OBSI.\n- Stronger expectations on **systemic issues, redress and remediation**."
+        },
+        {
+          "type": "sort",
+          "title": "Complaint or not?",
+          "prompt": "Under the Bank Act definition, sort each customer statement.",
+          "buckets": [
+            "Complaint",
+            "Not a complaint"
+          ],
+          "items": [
+            {
+              "text": "'I'm fed up that your app charged me twice.'",
+              "bucket": 0
+            },
+            {
+              "text": "'The adviser pushed a card on me that I didn't want.'",
+              "bucket": 0
+            },
+            {
+              "text": "'Honestly, I think your new fee is unfair, even if it's in the contract.'",
+              "bucket": 0
+            },
+            {
+              "text": "'It took three visits to get my address changed. Not impressed.'",
+              "bucket": 0
+            },
+            {
+              "text": "'What are your branch hours on Saturday?'",
+              "bucket": 1
+            },
+            {
+              "text": "'Can you send me a copy of last month's statement?'",
+              "bucket": 1
+            },
+            {
+              "text": "'Please increase my e-transfer limit for a house deposit.'",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A turn: the employee who spotted the pattern",
+          "setting": "A quiet meeting room, Toronto. Late afternoon.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A teller in Halifax emails Nadia privately. She has seen a colleague open overdraft protection on elderly customers' accounts without asking them.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "She's worried her manager will find out she reported it. The manager is the colleague's friend.",
+              "mood": "neutral"
+            },
+            {
+              "who": "etienne",
+              "text": "Can she go straight to FCAC instead of us?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Yes. Section 979.2 lets an employee report to the bank, to the FCAC Commissioner, to OSFI, to another financial regulator or to law enforcement. And her identity must be kept confidential.",
+              "mood": "proud"
+            },
+            {
+              "who": "priya",
+              "text": "And if her manager punishes her?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Section 979.4 bans dismissing, suspending, demoting, disciplining, harassing or otherwise disadvantaging her for a report made on reasonable belief.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Whistleblowing under Part XVI.1 of the Bank Act",
+          "caption": "FCAC's whistleblowing guideline also expects anonymous reporting to be possible and regular training for all employees.",
+          "items": [
+            {
+              "label": "Wrongdoing",
+              "detail": "Breach of the Act or regulations, a bank code or public commitment, or a bank policy (s. 979.1)"
+            },
+            {
+              "label": "Report",
+              "detail": "To the bank, FCAC Commissioner, OSFI, another regulator or law enforcement (s. 979.2(1))"
+            },
+            {
+              "label": "Confidentiality",
+              "detail": "Identity protected; limited disclosure for investigations, with the employee informed (s. 979.2)"
+            },
+            {
+              "label": "Procedures",
+              "detail": "Bank must establish and implement procedures to deal with reports (s. 979.3)"
+            },
+            {
+              "label": "No retaliation",
+              "detail": "No dismissal, demotion, discipline, harassment or other disadvantage (s. 979.4)"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The Halifax teller's report",
+          "situation": "The teller from Halifax tells you she wants to report anonymously, through the bank's whistleblowing hotline, that a colleague added overdraft protection to elderly customers' accounts without consent. Her branch manager, who is close to the colleague, asks you who made the report 'so I can sort it out at branch level'.",
+          "choices": [
+            {
+              "text": "Decline to reveal anything that could identify her, handle the report through the bank's whistleblowing procedures, and record it so any consumer breach is assessed for reporting to FCAC.",
+              "outcome": "Best choice. Section 979.2 requires confidentiality, section 979.3 requires the bank to deal with reports through its procedures, and FCAC's guideline expects consumer breaches found this way to be assessed for reporting.",
+              "score": 2
+            },
+            {
+              "text": "Tell the manager in confidence, since managers need to know to fix problems.",
+              "outcome": "Poor. Disclosure to the manager is not one of the permitted exceptions and exposes her to the retaliation that section 979.4 prohibits.",
+              "score": 0
+            },
+            {
+              "text": "Ask the teller to raise it with her manager first, as a courtesy.",
+              "outcome": "Poor. Employees may report directly to the bank's channel or to regulators; sending her back to a conflicted manager undermines the process.",
+              "score": 0
+            },
+            {
+              "text": "Treat it as a customer complaint and pass it to the complaints team without telling her.",
+              "outcome": "Partly right: affected customers may need redress. But a staff report of wrongdoing must also go through whistleblowing procedures with its confidentiality safeguards.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Whistleblowing myths and facts",
+          "cards": [
+            {
+              "front": "Myth: wrongdoing means a crime.",
+              "back": "Fact: it also covers breaches of the Bank Act or regulations, of a voluntary code or public commitment, and of the bank's own policies or procedures."
+            },
+            {
+              "front": "Myth: staff must report internally first.",
+              "back": "Fact: an employee may report to the bank or directly to the FCAC Commissioner, OSFI, another financial regulator or law enforcement."
+            },
+            {
+              "front": "Myth: a report must be signed.",
+              "back": "Fact: FCAC's guideline expects the bank's procedures to allow anonymous reports."
+            },
+            {
+              "front": "Myth: only compliance staff need whistleblowing training.",
+              "back": "Fact: FCAC expects regular, ongoing training for all employees, plus tailored training for those who handle reports."
+            },
+            {
+              "front": "Myth: protection depends on the report being proven.",
+              "back": "Fact: section 979.4 protects employees who acted on reasonable belief."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the external complaints body is correct?",
+          "options": [
+            "Every bank must be a member, and the body must give a final written recommendation within 120 days of having all the information it needs",
+            "Membership is voluntary, and the body may charge customers a filing fee",
+            "FCAC itself acts as the external complaints body and resolves each complaint",
+            "Customers can only go to it after a court has ruled on their case"
+          ],
+          "answer": 0,
+          "explanation": "Section 627.48(3) makes membership mandatory and section 627.49 requires free services to complainants and a final recommendation within 120 days. FCAC says it does not resolve individual complaints."
+        },
+        {
+          "type": "example",
+          "title": "Real case: 500 complaints as an early warning (BMO, 2025)",
+          "body": "Revisit FCAC's **Summary of proceeding #4**. When setting BMO's **$4 million** penalty for inaccurate fee waiver disclosures, FCAC pointed to BMO's negligence in failing to put in place adequate controls and effective monitoring **despite over 500 customer complaints** about the monthly plan fees.\n\nWhat this means for complaint handlers:\n\n- A complaint is often the **first sign of a systemic issue**. Both versions of FCAC's guideline expect banks to analyse complaint data, and the revised one expects banks to look for **root causes** that may affect other customers.\n- Front-line staff who resolve each complaint one by one, with a refund and an apology, may fix the symptom while the **root cause keeps harming** thousands of others.\n- Training should show staff **how to flag** repeated complaints on the same issue.\n\n**Lesson:** handle the individual complaint and feed the pattern into the bank's systemic issue process."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "A complaint is any expressed dissatisfaction, justified or not; no special words or channel are needed.",
+            "Banks must deal with complaints within 56 days, acknowledge them in writing, keep records for seven years, report quarterly to FCAC and publish annual information.",
+            "Customers can escalate to the external complaints body, OBSI, which is free; every bank must be a member and share information without delay.",
+            "FCAC expects initial and ongoing formal complaint-handling training with monitoring and testing; the revised guideline takes effect on 23 June 2027.",
+            "Employees may report wrongdoing internally or to FCAC, OSFI, other regulators or police; identity is confidential and retaliation is banned."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the last time a customer sounded unhappy with you. Did you treat it as a complaint? What would you do differently with the 56-day clock in mind?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-cp-s4-q1",
+          "question": "How does the Bank Act define a complaint?",
+          "options": [
+            "Any written letter addressed to the bank's president",
+            "A grievance a customer files with FCAC that FCAC accepts",
+            "Dissatisfaction, whether justified or not, expressed to the bank about a product or service or how it was offered, sold or provided",
+            "Dissatisfaction that the bank agrees is justified"
+          ],
+          "answer": 2,
+          "explanation": "Section 627.01 defines a complaint broadly as dissatisfaction, justified or not, expressed to an institution about a product or service or the way it is offered, sold or provided.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s4-q2",
+          "question": "What period do the Framework Regulations prescribe for a bank to deal with a complaint?",
+          "options": [
+            "30 days after the bank acknowledges it",
+            "56 days after the day the complaint is received",
+            "90 days after the customer puts it in writing",
+            "120 days after the complaint is escalated internally"
+          ],
+          "answer": 1,
+          "explanation": "Section 14 of the Financial Consumer Protection Framework Regulations sets 56 days after the day on which the complaint is received.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s4-q3",
+          "question": "Aurora Ridge Bank wants to call its senior internal complaints unit the 'Customer Ombudsman Office'. What does the Bank Act say?",
+          "options": [
+            "It may, as long as the unit reports to the board",
+            "It may, provided FCAC approves the name",
+            "It must, because the Act requires an internal ombudsman",
+            "It may not use a term such as 'ombudsman' that suggests its internal procedures are independent"
+          ],
+          "answer": 3,
+          "explanation": "Section 627.43(2) bans misleading terms about complaint procedures or designated employees, including any term like 'ombudsman' that suggests independence from the bank.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s4-q4",
+          "question": "How long must a bank keep its record of a complaint under section 627.44?",
+          "options": [
+            "At least two years",
+            "At least seven years",
+            "At least five years",
+            "Until the complaint is resolved"
+          ],
+          "answer": 1,
+          "explanation": "Section 627.44 requires a complaint record retained for at least seven years, accessible to the Commissioner.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s4-q5",
+          "question": "A customer's complaint has been open 56 days without a final response from the bank. What can the customer do?",
+          "options": [
+            "Nothing until the bank issues its final response",
+            "Ask FCAC to investigate and order compensation",
+            "Take the complaint to the external complaints body, OBSI, free of charge",
+            "Pay a filing fee to have OBSI review it"
+          ],
+          "answer": 2,
+          "explanation": "FCAC's consumer information says a customer may go to OBSI once 56 days have passed or the bank has given its final written response. Section 627.49 requires the body's services to be free for complainants. FCAC does not resolve individual complaints.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s4-q6",
+          "question": "Which of these does FCAC's complaint-handling guideline expect a bank's training program to include?",
+          "options": [
+            "A system to monitor employees' training status and ways to test whether training is effective",
+            "Training only for designated employees, never for front-line staff",
+            "One induction session with no updates for later legal changes",
+            "An FCAC certificate for each employee before handling complaints"
+          ],
+          "answer": 0,
+          "explanation": "Both the current and revised guidelines expect initial and ongoing formal training for all employees who deal with complaints, monitoring of training status, measuring and testing effectiveness, and regular updates.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s4-q7",
+          "question": "Under FCAC's revised complaint-handling guideline, effective 23 June 2027, what is the expected maximum time to refer a complaint not resolved at first contact to a designated employee?",
+          "options": [
+            "3 business days from acknowledgement",
+            "30 calendar days from the written acknowledgement",
+            "56 days, the same as the full complaint period",
+            "14 calendar days from when the complaint is first communicated"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 30 of the revised guideline says referral should not exceed 14 calendar days from the date the complaint is first communicated to the bank. This expectation applies from 23 June 2027.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-cp-s4-q8",
+          "question": "Which of these is wrongdoing under section 979.1 of the Bank Act?",
+          "options": [
+            "A disagreement over the colour of a new branch sign",
+            "A breach of the bank's own policy on obtaining customer consent",
+            "A colleague's personal opinion about a product's price",
+            "A customer's decision to move accounts to another bank"
+          ],
+          "answer": 1,
+          "explanation": "Wrongdoing includes contraventions of the Act or regulations, of a voluntary code or public commitment, and of a policy or procedure established by the bank.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s4-q9",
+          "question": "A teller reasonably believes a colleague is adding products without consent. To whom may she report under section 979.2?",
+          "options": [
+            "To the bank, the FCAC Commissioner, OSFI, another financial regulator or a law enforcement agency",
+            "Only to her direct manager, in writing",
+            "Only to the bank's external auditor",
+            "Only to the media, if internal reporting fails"
+          ],
+          "answer": 0,
+          "explanation": "Section 979.2(1) lists the bank, the Commissioner, the Superintendent, a government body that regulates or supervises financial institutions, and law enforcement.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s4-q10",
+          "question": "Two months after an employee reported wrongdoing in good faith, her manager removes her from a promised promotion list 'for being disloyal'. What does the Bank Act say?",
+          "options": [
+            "It is allowed because promotions are at management's discretion",
+            "It is allowed if the report turns out to be unfounded",
+            "Section 979.4 bans disadvantaging an employee, or denying a benefit of employment, because of such a report",
+            "It is a matter only for provincial employment law"
+          ],
+          "answer": 2,
+          "explanation": "Section 979.4(1) prohibits dismissing, suspending, demoting, disciplining, harassing or otherwise disadvantaging an employee, or denying a benefit of employment, because of a report made on reasonable belief.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "FCAC enforcement and assessment readiness",
+      "stage": "The Commissioner's Table",
+      "summary": "Learn how FCAC supervises and enforces: notices of violation, the penalty criteria and maximums in the FCAC Act, publication, due diligence and compliance agreements. Then assemble the bank's consumer protection training programme, with roles, records and evidence FCAC will expect.",
+      "minutes": 50,
+      "objectives": [
+        "Describe FCAC's enforcement process from notice of violation to payment, representations or decision",
+        "Apply the penalty criteria and maximum penalties in sections 19 and 20 of the FCAC Act",
+        "Explain publication, the due diligence defence and compliance agreements",
+        "Design a section 627.02 training programme with governance, audience mapping, completion tracking, effectiveness testing and updates",
+        "Recall the main regulator expectations tested in the final exam"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the letter from Ottawa",
+          "setting": "Board room, Aurora Ridge Bank, Toronto. 8:00 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "An FCAC supervisory letter has arrived. FCAC wants evidence of how Aurora Ridge Bank trains staff and third parties on its consumer policies.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "This is where our work becomes evidence. FCAC will ask what we teach, to whom, how we know it worked and how we keep it current.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "And if they find gaps, what's the worst case?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "A notice of violation, a penalty of up to $10 million per violation for a financial institution, and our name published with it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "etienne",
+              "text": "Then let's walk in with a programme we can defend, not a pile of attendance sheets.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How FCAC enforcement works",
+          "scenes": [
+            {
+              "icon": "🔎",
+              "heading": "Supervision first",
+              "narration": "FCAC supervises banks through reporting, reviews and investigations. Banks report complaints and compliance issues, and FCAC uses this information to find problems."
+            },
+            {
+              "icon": "📨",
+              "heading": "Notice of violation",
+              "narration": "If the Commissioner believes on reasonable grounds that a violation occurred, a notice of violation is served, naming the violation and the proposed penalty."
+            },
+            {
+              "icon": "⏳",
+              "heading": "Pay or respond",
+              "narration": "The bank has 30 days, or a longer period the Commissioner sets, to pay or make representations. Paying means the bank is deemed to have committed the violation."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Decision",
+              "narration": "If the bank makes representations, the Commissioner decides on a balance of probabilities and may impose the proposed penalty, a lesser one or none. Due diligence is a defence."
+            },
+            {
+              "icon": "📢",
+              "heading": "Publication",
+              "narration": "The Commissioner makes public the nature of the violation, who committed it and the penalty, and may publish the reasons."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "FCAC penalties against banks, 2023 to 2026",
+          "caption": "Source: FCAC Decisions and summaries of proceedings. Amounts are penalties, separate from customer refunds.",
+          "items": [
+            {
+              "value": "$6.5M",
+              "label": "TD, card rebates (2024)",
+              "detail": "Summary of proceeding #2: about 255,886 customers affected"
+            },
+            {
+              "value": "$5.5M",
+              "label": "TD, loan payments (2024)",
+              "detail": "Summary #3: amortization extended after payment frequency changes"
+            },
+            {
+              "value": "$4.25M",
+              "label": "RBC, card statements (2026)",
+              "detail": "Summary #5: credits not moved after fraud-related account changes"
+            },
+            {
+              "value": "$4M",
+              "label": "BMO, fee waivers (2025)",
+              "detail": "Summary #4: wrong waiver start dates; over 500 complaints"
+            },
+            {
+              "value": "$3.0M",
+              "label": "CIBC, card statements (2023)",
+              "detail": "Decision #144: transactions not carried to new statements"
+            },
+            {
+              "value": "$1.6M",
+              "label": "Community Trust (2023)",
+              "detail": "Decision #145: mortgage discharge fee not disclosed; compliance agreement"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under section 20 of the FCAC Act, which of these is a factor in setting a penalty amount?",
+          "options": [
+            "The degree of intention or negligence, the harm done and the duration of the violation",
+            "The bank's share price on the day of the notice",
+            "Whether the bank's CEO apologised in public",
+            "The number of branches the bank has in Quebec"
+          ],
+          "answer": 0,
+          "explanation": "Section 20 lists intention or negligence, harm, duration, ability to pay, history of violations in the previous five years and any prescribed criteria. Section 20.1 says the purpose is to promote compliance, not to punish."
+        },
+        {
+          "type": "concept",
+          "title": "Penalties, purpose and publication",
+          "body": "The **Financial Consumer Agency of Canada Act** sets the enforcement tools:\n\n- **Maximum penalty:** **$10 million** per violation for a financial institution and **$1 million** for a natural person (section 19(2)).\n- **Criteria** (section 20): intention or negligence, harm, duration, ability to pay, **history** of violations or convictions in the previous **five years**, and prescribed criteria.\n- **Purpose** (section 20.1): to **promote compliance**, not to punish.\n- **Paying** the proposed penalty means the bank is **deemed to have committed** the violation (section 23).\n- **Due diligence** is a defence (section 28), but the bank must show it took **all reasonable steps**. In Decision #139 RBC's training material did not meet that bar.\n- **Publication** (section 31): the nature of the violation, the name and the penalty are made public.\n\nIn Decision #145 the Commissioner combined a **$1.6 million** penalty on Community Trust Company with a **compliance agreement** to address outstanding issues and remediation."
+        },
+        {
+          "type": "match",
+          "title": "Match the FCAC Act tool to what it does",
+          "prompt": "Link each provision to its effect.",
+          "pairs": [
+            {
+              "left": "Section 19(2)",
+              "right": "Caps penalties at $10 million per violation for a financial institution"
+            },
+            {
+              "left": "Section 20",
+              "right": "Lists criteria such as negligence, harm, duration and five-year history"
+            },
+            {
+              "left": "Section 20.1",
+              "right": "States that penalties aim to promote compliance, not to punish"
+            },
+            {
+              "left": "Section 23(1)",
+              "right": "Paying the proposed penalty means the violation is deemed committed"
+            },
+            {
+              "left": "Section 28",
+              "right": "Makes due diligence a defence to a violation"
+            },
+            {
+              "left": "Section 31",
+              "right": "Requires publication of the violation, the name and the penalty"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A turn: what counts as evidence?",
+          "setting": "Nadia's office, the day before the FCAC meeting.",
+          "lines": [
+            {
+              "who": "mei",
+              "text": "We have 97% completion on the consumer protection module. Isn't that enough?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Completion is one line. FCAC's guidelines also expect us to measure whether training works, review it regularly and update it when the law or our procedures change.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "And to tailor it: designated complaint employees and whistleblowing report handlers need role-specific training.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "Plus third-party sellers. Our card partner's staff and the mortgage brokers have to be on the list too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "Exactly. Let's build the programme map.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Layers of Aurora Ridge Bank's consumer protection training",
+          "caption": "A layered programme meets section 627.02 for everyone and the guidelines' role-specific expectations.",
+          "items": [
+            {
+              "label": "Board committee and senior management",
+              "detail": "Oversee consumer policies; receive training and complaint metrics"
+            },
+            {
+              "label": "Designated complaint and whistleblowing roles",
+              "detail": "Role-specific training on investigation, redress, confidentiality"
+            },
+            {
+              "label": "Sales, lending and product staff",
+              "detail": "Appropriateness, products' features and risks, consent, remuneration rules"
+            },
+            {
+              "label": "All officers and employees in Canada",
+              "detail": "Core Part XII.2 policies, complaints, whistleblowing, disclosure"
+            },
+            {
+              "label": "Third parties who offer or sell",
+              "detail": "Same core content, bank's procedures, completion tracked in agreements"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The FCAC meeting",
+          "situation": "During the meeting, FCAC staff ask: 'How do you know your section 627.02 training works?' The bank's head of learning starts to answer: 'Everyone clicked through the module, and we have a 97% completion rate.'",
+          "choices": [
+            {
+              "text": "Step in and present completion data with test results, call and file reviews linked to training topics, complaint trends, and the log of updates made after legal and procedural changes.",
+              "outcome": "Best choice. FCAC's guidelines expect completion monitoring plus testing of effectiveness and regular review. Linking training to outcomes is the evidence supervisors look for.",
+              "score": 2
+            },
+            {
+              "text": "Offer to send the module's slide deck after the meeting.",
+              "outcome": "Partly helpful: content matters. But it does not answer the question of effectiveness or show the training is kept current.",
+              "score": 1
+            },
+            {
+              "text": "Point out that the Bank Act does not define 'effective', so completion should be enough.",
+              "outcome": "Poor. FCAC's guidelines expect measurement and testing of training effectiveness, and a defensive answer weakens any later due diligence defence.",
+              "score": 0
+            },
+            {
+              "text": "Promise that every employee will repeat the module next week.",
+              "outcome": "Poor. Repeating the same module shows activity, not effectiveness, and does not address gaps.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Good evidence or weak evidence?",
+          "prompt": "Sort what Aurora Ridge Bank could show FCAC about its training.",
+          "buckets": [
+            "Strong evidence",
+            "Weak on its own"
+          ],
+          "items": [
+            {
+              "text": "Training records for staff and third-party sellers, mapped to roles",
+              "bucket": 0
+            },
+            {
+              "text": "Assessment results and follow-up for people who failed",
+              "bucket": 0
+            },
+            {
+              "text": "A log showing modules updated after the revised complaint guideline",
+              "bucket": 0
+            },
+            {
+              "text": "Call reviews showing staff obtain and confirm express consent",
+              "bucket": 0
+            },
+            {
+              "text": "A poster in the staff room saying 'Treat customers fairly'",
+              "bucket": 1
+            },
+            {
+              "text": "A slide deck last updated in 2021",
+              "bucket": 1
+            },
+            {
+              "text": "An email asking staff to read the Bank Act",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Aurora Ridge Bank receives a notice of violation and pays the proposed penalty within the time allowed. What follows under the FCAC Act?",
+          "options": [
+            "The bank is deemed to have committed the violation and proceedings in respect of it end",
+            "The violation is erased and nothing is published",
+            "FCAC must take the bank to court to confirm the violation",
+            "The penalty is refunded if the bank fixes the problem"
+          ],
+          "answer": 0,
+          "explanation": "Section 23(1) says paying the proposed penalty means the person is deemed to have committed the violation and the proceedings end. Section 31 requires publication of the violation, the name and the amount."
+        },
+        {
+          "type": "flip",
+          "title": "Readiness checklist: what FCAC expects to see",
+          "cards": [
+            {
+              "front": "Governance",
+              "back": "Senior management and the board committee responsible for consumer provisions oversee the policies, as FCAC's guidelines expect."
+            },
+            {
+              "front": "Audience",
+              "back": "Every officer and employee in Canada plus third parties who offer or sell, mapped to role-specific content."
+            },
+            {
+              "front": "Content",
+              "back": "The bank's own policies on appropriateness, consent, pressure, disclosure, complaints, whistleblowing and access."
+            },
+            {
+              "front": "Monitoring",
+              "back": "Completion tracked for staff and third parties, with follow-up on gaps."
+            },
+            {
+              "front": "Effectiveness",
+              "back": "Testing, quality reviews and complaint data used to judge whether training changes behaviour."
+            },
+            {
+              "front": "Updates",
+              "back": "Training refreshed when laws, guidelines or procedures change, such as the June 2027 complaint guideline and, later, section 627.134."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Community Trust and a compliance agreement (2023)",
+          "body": "In **Decision #145** (posted November 2023), FCAC staff alleged that **Community Trust Company**, a federally regulated trust company, committed two violations of the Cost of Borrowing (Trust and Loan Companies) Regulations by failing to disclose a fee to discharge a fixed-rate mortgage.\n\n- The Commissioner found both violations occurred and imposed **$1.6 million** for the first and **no penalty** for the second.\n- The Commissioner directed FCAC to address outstanding issues, including **more complete remediation**, through a **compliance agreement** with the company.\n- The Commissioner considered the penalty, the agreement and the changes already made sufficient to deter and to promote compliance.\n\n**Lesson:** enforcement is not only about fines. FCAC can require structured remediation, and training is often one of the commitments a bank must then deliver and evidence."
+        },
+        {
+          "type": "keypoints",
+          "title": "Final stage take-aways",
+          "items": [
+            "FCAC can issue notices of violation with penalties of up to $10 million per violation for a financial institution and $1 million for an individual.",
+            "Penalties weigh negligence, harm, duration, ability to pay and five-year history, and aim to promote compliance, not to punish.",
+            "Paying a proposed penalty means the violation is deemed committed; FCAC publishes the violation, the name and the amount.",
+            "Due diligence is a defence only if the bank proves it took all reasonable steps, including training that teaches the real requirement.",
+            "A defensible programme covers everyone in scope, is role-specific, tracks completion, tests effectiveness and is updated when the law changes."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If FCAC asked you tomorrow to show how you were trained on the bank's consumer policies, what could you show, and what would you add?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-cp-s5-q1",
+          "question": "What is the maximum penalty under the FCAC Act for a single violation committed by a financial institution?",
+          "options": [
+            "$10 million",
+            "$1 million",
+            "$500,000",
+            "$50 million"
+          ],
+          "answer": 0,
+          "explanation": "Section 19(2) sets the maximum at $10 million for a violation by a financial institution or payment card network operator and $1 million for a natural person.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s5-q2",
+          "question": "After a notice of violation is served, how long does a bank normally have to pay or make representations?",
+          "options": [
+            "7 days, with no extension",
+            "90 days after the next quarterly report",
+            "Until FCAC files the matter in Federal Court",
+            "30 days after service, or any longer period the Commissioner specifies"
+          ],
+          "answer": 3,
+          "explanation": "Under section 22(3) of the FCAC Act, the notice sets out the right to pay or make representations within 30 days after service, or a longer period the Commissioner specifies.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q3",
+          "question": "According to section 20.1 of the FCAC Act, what is the purpose of an administrative monetary penalty?",
+          "options": [
+            "To compensate each affected customer directly",
+            "To fund FCAC's financial literacy programs",
+            "To promote compliance with the consumer provisions, not to punish",
+            "To punish senior executives personally"
+          ],
+          "answer": 2,
+          "explanation": "Section 20.1 states that the purpose of the penalty is to promote compliance and not to punish. Customer redress is dealt with separately.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q4",
+          "question": "In setting a penalty, FCAC considers a bank's history of prior violations within what period before the violation?",
+          "options": [
+            "One year",
+            "Five years",
+            "Ten years",
+            "Since the bank was incorporated"
+          ],
+          "answer": 1,
+          "explanation": "Section 20(e) refers to prior violations or convictions under an Act listed in Schedule 1 within the five-year period immediately before the violation.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q5",
+          "question": "A bank makes representations after a notice of violation. What can the Commissioner decide?",
+          "options": [
+            "Only whether to double the penalty for contesting it",
+            "Only to refer the matter to OSFI",
+            "Only to accept the bank's view without review",
+            "Whether the violation occurred, on a balance of probabilities, and impose the proposed penalty, a lesser one or none"
+          ],
+          "answer": 3,
+          "explanation": "Section 23(2) requires the Commissioner to decide on a balance of probabilities and allows the proposed penalty, a lesser penalty or no penalty.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q6",
+          "question": "What does FCAC make public after a violation is established?",
+          "options": [
+            "The nature of the violation, the name of the person who committed it and the penalty amount",
+            "Only an anonymous statistic in its annual report",
+            "Only the names of the employees involved",
+            "Nothing, since enforcement is confidential"
+          ],
+          "answer": 0,
+          "explanation": "Section 31 requires the Commissioner to make public the nature of the violation, the name of the person who committed it and the penalty, and allows publication of reasons.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-cp-s5-q7",
+          "question": "In Decision #145, what did the Commissioner add to the $1.6 million penalty imposed on Community Trust Company?",
+          "options": [
+            "A ban on the company offering mortgages for five years",
+            "A referral to the RCMP for criminal charges",
+            "A direction to address outstanding issues, including fuller remediation, through a compliance agreement",
+            "An order to close all of its branches"
+          ],
+          "answer": 2,
+          "explanation": "The Commissioner directed FCAC to address outstanding issues, including more complete remediation for the second violation, through a compliance agreement.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q8",
+          "question": "Mei reports 97% completion of the consumer protection module. What else do FCAC's guidelines expect the bank to be able to show?",
+          "options": [
+            "Nothing more: completion above 90% is the FCAC standard",
+            "That training effectiveness is measured and tested, and content is reviewed and updated regularly",
+            "That each employee signed a statement of agreement with FCAC",
+            "That the module was approved by OSFI before launch"
+          ],
+          "answer": 1,
+          "explanation": "The appropriateness and complaint-handling guidelines expect monitoring of completion, measuring and testing effectiveness (complaints), and regular review and updates. FCAC sets no completion percentage.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-cp-s5-q9",
+          "question": "Which group should receive role-specific training under FCAC's complaint-handling and whistleblowing guidelines, beyond the core programme?",
+          "options": [
+            "Only external auditors who review the bank",
+            "Designated complaint employees and the employees who deal with reports of wrongdoing",
+            "Only customers who have filed more than one complaint",
+            "Only the bank's shareholders at the annual meeting"
+          ],
+          "answer": 1,
+          "explanation": "The complaint guideline expects training for designated employees to reflect their roles, and the whistleblowing guideline expects specific, tailored training for employees who deal with reports of wrongdoing.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-cp-s5-q10",
+          "question": "A bank wants to rely on due diligence in an FCAC proceeding over consent failures. What will it most need to show?",
+          "options": [
+            "That it took all reasonable steps, including procedures and training that taught the legal requirement and how to meet it",
+            "That the violation affected fewer than 100 customers",
+            "That its staff did not intend to breach the law",
+            "That a competitor had made the same mistake"
+          ],
+          "answer": 0,
+          "explanation": "Section 28 makes due diligence a defence, and FCAC decisions say the bank must provide affirmative proof that it took all reasonable steps. In Decision #139, weak training material and procedures defeated the defence.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "ca",
+    "programs": [
+      51,
+      29,
+      40,
+      55,
+      59,
+      61,
+      64,
+      70
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "periodic"
+    ],
+    "regulators": [
+      "Financial Consumer Agency of Canada (FCAC)",
+      "Office of the Superintendent of Financial Institutions (OSFI), as a whistleblowing channel",
+      "Ombudsman for Banking Services and Investments (OBSI), external complaints body"
+    ],
+    "references": [
+      {
+        "title": "Bank Act (S.C. 1991, c. 46)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html",
+        "provision": "Section 627.02 (training)",
+        "note": "Banks must ensure that officers and employees in Canada, and anyone who offers or sells their products or services, are trained on the policies and procedures the bank has set up to comply with the consumer provisions.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Act (S.C. 1991, c. 46)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html",
+        "provision": "Sections 627.03-627.09, 627.14-627.15, 627.17-627.19, 627.55, 627.57 and 627.993 (fair dealing, consent, intermediaries, basic banking, disclosure, branch closures)",
+        "note": "Bans misleading information, undue pressure, coercion and taking advantage; requires appropriateness policies, aligned remuneration, express consent, access to retail deposit accounts, clear disclosure and branch closure notices.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Act (S.C. 1991, c. 46)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html",
+        "provision": "Sections 627.43-627.54 (complaints and external complaints body)",
+        "note": "Complaint procedures, designated employees, written acknowledgement, seven-year records, quarterly reports to FCAC within 60 days, annual information within 135 days, mandatory membership of the sole external complaints body.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Act (S.C. 1991, c. 46)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html",
+        "provision": "Sections 979.1-979.4 (whistleblowing)",
+        "note": "Defines wrongdoing, lets employees report it internally or to regulators or police, requires confidentiality and procedures, and bans retaliation.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Act (S.C. 1991, c. 46)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html",
+        "provision": "Section 627.134 (consumer-targeted fraud), added by S.C. 2026, c. 3, s. 334 (not yet in force)",
+        "note": "Once in force, banks must adopt fraud detection, prevention and mitigation policies with set criteria, give customer-facing staff and intermediaries initial and recurrent training, and report annually to FCAC.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Consumer Protection Framework Regulations (SOR/2021-181)",
+        "issuer": "Governor in Council (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2021-181/FullText.html",
+        "provision": "Section 14 (56-day complaint period)",
+        "note": "Detailed rules under the framework, in force since 30 June 2022, including the 56-day period for dealing with complaints.",
+        "effective": "2022-06-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Consumer Agency of Canada Act (S.C. 2001, c. 9)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/F-11.1/FullText.html",
+        "provision": "Sections 3, 19-23, 28 and 31 (objects, penalties, notices of violation, due diligence, publication)",
+        "note": "FCAC supervises compliance with the consumer provisions; penalties up to $10 million per violation for a financial institution and $1 million for a natural person, set by listed criteria to promote compliance; violations and penalties are published.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guideline on Appropriate Products and Services for Banks and Authorized Foreign Banks",
+        "issuer": "FCAC",
+        "url": "https://www.canada.ca/en/financial-consumer-agency/services/industry/commissioner-guidance/guideline-appropriate-products-services-banks.html",
+        "provision": "Paragraphs 10, 17-18 (training), 19-22 and 23-24 (remuneration)",
+        "note": "Know your consumer, know your product, assessment, informing consumers and aligned remuneration; initial and ongoing training for anyone who offers or sells bank products, with completion monitored and content reviewed.",
+        "effective": "2022-06-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guideline on Complaint-Handling Procedures for Banks and Authorized Foreign Banks",
+        "issuer": "FCAC",
+        "url": "https://www.canada.ca/en/financial-consumer-agency/services/industry/commissioner-guidance/complaint-handling-procedures-banks.html",
+        "provision": "Paragraphs 19-21 (training); 2022 version paragraphs 18-19 apply until 22 June 2027",
+        "note": "Revised guideline published June 2026: initial and ongoing formal training for all employees who deal with complaints, monitoring and testing, 14-day referral, Notice of Final Decision and systemic issue remediation.",
+        "effective": "2027-06-23",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guideline on Whistleblowing Procedures for Banks and Authorized Foreign Banks",
+        "issuer": "FCAC",
+        "url": "https://www.canada.ca/en/financial-consumer-agency/services/industry/commissioner-guidance/whistleblowing-procedures.html",
+        "provision": "Paragraphs 12-13 (training), 20, 24 and 32",
+        "note": "Regular and ongoing training for all employees, tailored training for report handlers, anonymous reporting and external reporting options.",
+        "effective": "2022-06-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "FCAC Decisions and summaries of proceedings",
+        "issuer": "FCAC",
+        "url": "https://www.canada.ca/en/financial-consumer-agency/services/industry/commissioner-decisions.html",
+        "note": "Source of the real cases used: Decisions #139, #140, #142, #144 and #145 and summaries of proceeding #1 to #5.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "How to file a complaint with your bank",
+        "issuer": "FCAC",
+        "url": "https://www.canada.ca/en/financial-consumer-agency/services/complaints/file-complaint-financial-institution.html",
+        "note": "Names the Ombudsman for Banking Services and Investments as the body to which customers can escalate after 56 days or a final response; OBSI has 30 days to give out-of-scope reasons and 120 days for a final recommendation.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "ca-cp-x1",
+        "question": "Aurora Ridge Bank's internal auditor finds that the training on consumer policies reaches all employees but none of the 300 independent mortgage brokers who sell the bank's mortgages in Canada. What is the most accurate finding?",
+        "options": [
+          "No gap, because section 627.02 only covers the bank's own employees",
+          "A gap against section 627.02, which covers any person who offers or sells the bank's products in Canada",
+          "No gap, because brokers are supervised only by provincial regulators",
+          "A gap only if the brokers earn more than half their income from the bank"
+        ],
+        "answer": 1,
+        "explanation": "Section 627.02 extends the training duty to any person who offers or sells the institution's products or services in Canada. Provincial licensing of brokers does not remove the bank's own duty.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x2",
+        "question": "Which statement best describes how FCAC guidelines relate to the Bank Act consumer provisions?",
+        "options": [
+          "They replace the Bank Act wherever the two differ",
+          "They are optional suggestions with no supervisory weight",
+          "They set out FCAC's expectations for meeting the law; where an older guideline conflicts with the framework, the framework prevails",
+          "They apply only to provincially regulated credit unions"
+        ],
+        "answer": 2,
+        "explanation": "FCAC describes guidelines as its expectations for meeting market conduct obligations, and states that after 30 June 2022 the Framework Requirements prevail over any inconsistent guideline.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x3",
+        "question": "A product manager in Toronto changes the fee rules for a chequing account but never attends any consumer protection training because she 'never talks to customers'. Which response is most accurate?",
+        "options": [
+          "She is an officer or employee in Canada, so section 627.02 requires her to be trained on the bank's consumer policies",
+          "She is exempt because only customer-facing staff are named in section 627.02",
+          "She needs training only if FCAC names her in a notice of violation",
+          "She is exempt as long as her manager has been trained"
+        ],
+        "answer": 0,
+        "explanation": "Section 627.02 covers officers and employees in Canada without limiting the duty to customer-facing roles. Staff who design fees and disclosures directly shape compliance.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x4",
+        "question": "Which pair of agencies supervises a Canadian federally regulated bank for consumer conduct and for prudential soundness respectively?",
+        "options": [
+          "OSFI for consumer conduct and FCAC for prudential soundness",
+          "FINTRAC for consumer conduct and OSFI for prudential soundness",
+          "OBSI for consumer conduct and FCAC for prudential soundness",
+          "FCAC for consumer conduct and OSFI for prudential soundness"
+        ],
+        "answer": 3,
+        "explanation": "FCAC supervises compliance with the consumer provisions; OSFI is the prudential supervisor. FINTRAC handles AML/ATF and OBSI is the external complaints body, not a supervisor.",
+        "difficulty": 2
+      },
+      {
+        "id": "ca-cp-x5",
+        "question": "Aurora Ridge Bank uses an affiliate that is a finance entity to sell its credit cards. Under section 627.15, which arrangement must be in place?",
+        "options": [
+          "Affiliate staff must report wrongdoing only to the affiliate's own auditors",
+          "The affiliate must register separately with FCAC as a bank",
+          "The affiliate's customers must complain only to the affiliate, never to the bank",
+          "Affiliate staff can report wrongdoing and use the bank's whistleblowing procedures, and the affiliate observes the anti-retaliation rule"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.15 requires, among other things, that the affiliate's employees can report under section 979.2 and access the procedures under section 979.3, and that the affiliate complies with section 979.4. Customers must also have access to the bank's complaint procedures.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x6",
+        "question": "In the TD card rebate case (FCAC summary of proceeding #2, 2024), which regulations had TD breached for the period after 30 June 2022?",
+        "options": [
+          "The Negative Option Billing Regulations",
+          "The Cost of Borrowing (Trust and Loan Companies) Regulations",
+          "The Financial Consumer Protection Framework Regulations",
+          "The Access to Basic Banking Services Regulations"
+        ],
+        "answer": 2,
+        "explanation": "FCAC said TD violated the Cost of Borrowing (Banks) Regulations up to 29 June 2022 and the Financial Consumer Protection Framework Regulations from 30 June 2022 to 5 October 2023, showing the framework replaced the older regulations.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x7",
+        "question": "A compliance lead argues: 'If a procedure is written down, we have met our obligations, even if staff don't follow it.' Which FCAC case most directly contradicts this view?",
+        "options": [
+          "BMO (2025), where FCAC cited inconsistent employee adherence to procedures and controls that failed to detect it",
+          "Scotiabank (2021), where no penalty was imposed for a short violation",
+          "Community Trust (2023), where FCAC required a compliance agreement",
+          "National Bank (2023), where systems failed to process interest on non-business days"
+        ],
+        "answer": 0,
+        "explanation": "In summary of proceeding #4, FCAC identified inconsistent employee adherence with procedures, and monitoring that failed to detect it, as root causes of BMO's violations.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x8",
+        "question": "Which description of section 627.02 of the Bank Act is most accurate?",
+        "options": [
+          "It sets a mandatory eight-hour annual course approved by FCAC",
+          "It requires training on the bank's own consumer compliance policies, without setting a fixed course length or frequency",
+          "It requires a provincial licence for every bank employee",
+          "It requires training only when FCAC asks for it in writing"
+        ],
+        "answer": 1,
+        "explanation": "Section 627.02 requires training on the policies and procedures the institution has established for complying with the consumer provisions. It does not prescribe hours, frequency or FCAC approval; FCAC guidelines add expectations of initial and ongoing training.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x9",
+        "question": "A contact centre agent calls the same customer five times in a week about a credit card offer after she has said no twice. Which Bank Act concept is most clearly engaged?",
+        "options": [
+          "Undue pressure, meaning pressure that is reasonably considered excessive or persistent in the circumstances",
+          "Preferential pricing, which section 627.05 expressly allows",
+          "The information box, which section 627.57 requires",
+          "The renewal notice, which section 627.6 requires"
+        ],
+        "answer": 0,
+        "explanation": "Persistent contact after a clear refusal fits the definition of undue pressure in section 627.01, which section 627.04 prohibits.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x10",
+        "question": "A borrower must provide home insurance as security for a mortgage. The bank says it must approve the insurer. When is that lawful?",
+        "options": [
+          "Never: any requirement about security is coercive tied selling",
+          "Only if the borrower buys the insurance from the bank's affiliate",
+          "Only if FCAC approves each insurer in advance",
+          "When the bank's approval of the product is not unreasonably withheld, as section 627.05(3) allows"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.05(3) lets the bank require that a product obtained as security for a loan meet its approval, provided approval is not unreasonably withheld. Requiring the affiliate's product would risk coercive tied selling.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x11",
+        "question": "A customer asks for a specific high-fee premium credit card. Under FCAC's appropriateness guideline, what should the adviser do?",
+        "options": [
+          "Sell it without assessment, because the customer asked for it",
+          "Refuse it outright, because premium cards are never appropriate",
+          "Still assess appropriateness and, if it is not appropriate, tell the customer clearly so they can decide",
+          "Ask FCAC to approve the sale before proceeding"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 19 expects an assessment even when consumers request the product, and paragraph 22 expects the bank to inform them when a product is assessed as not appropriate.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x12",
+        "question": "Mei redesigns the sales scorecard. Which design best fits section 627.07 and paragraphs 23-24 of FCAC's appropriateness guideline?",
+        "options": [
+          "Bonuses based only on the number of products sold per customer",
+          "Bonuses doubled for products with the highest fees",
+          "Bonuses that combine sales with quality measures such as appropriateness reviews and complaints, reviewed regularly",
+          "No review of incentives once they are approved by sales leaders"
+        ],
+        "answer": 2,
+        "explanation": "Section 627.07 requires remuneration that does not interfere with appropriateness policies, and FCAC expects remuneration metrics to align with appropriateness and to be reviewed regularly.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x13",
+        "question": "Under FCAC's appropriateness guideline, which of the following should be covered when a bank trains people who offer or sell its products?",
+        "options": [
+          "The features, charges, risks and benefits of the products and how to explain them to consumers",
+          "The bank's share price history and dividend policy",
+          "Techniques for closing sales before the customer reads the agreement",
+          "Only the bank's internal IT systems, without product content"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 17 expects training on the bank's appropriateness obligations and on the products sold, including their features, charges, risks and benefits and how to explain them.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x14",
+        "question": "Rogers Bank (Decision #140, 2021) was penalised for credit card sales. What did the regulations then in force require that Rogers Bank failed to do?",
+        "options": [
+          "Publish its complaint statistics within 135 days",
+          "Obtain express consent before providing cards and confirm oral consent in writing",
+          "Give six months' notice before closing a rural branch",
+          "Open accounts without a minimum deposit"
+        ],
+        "answer": 1,
+        "explanation": "The Commissioner found two violations of the Negative Option Billing Regulations: providing credit cards without express consent and failing to confirm oral consent in writing. The penalties totalled $250,000.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x15",
+        "question": "Which statement about consent under sections 627.08 and 627.09 is correct?",
+        "options": [
+          "Consent may be inferred if the customer does not object within 30 days",
+          "A request for consent must be clear, simple and not misleading, and the agreement comes before the product",
+          "Consent requests may use any wording as long as they are in writing",
+          "A product may be provided first and the agreement signed later"
+        ],
+        "answer": 1,
+        "explanation": "Section 627.08 requires express consent and an agreement before providing a product, and section 627.09 requires consent requests to be clear, simple and not misleading. Silence or use is not consent.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x16",
+        "question": "A bank charges a customer an annual fee that her agreement does not provide for. Once this is discovered, what does Division 4 of Part XII.2 require?",
+        "options": [
+          "The bank may keep the fee if it was disclosed on a website",
+          "The customer must take the matter to court to recover it",
+          "The bank need only apologise if the fee was small",
+          "The bank must credit or refund the charge"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.997 requires the bank to credit or refund a charge or penalty that was not provided for in an agreement, or the excess where it was greater than agreed.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x17",
+        "question": "Under section 627.06, which customers and products does the appropriateness duty cover?",
+        "options": [
+          "Only products sold to corporations with more than 500 employees",
+          "Only investment products sold outside Canada",
+          "Products or services offered or sold in Canada to a natural person other than for business purposes",
+          "Every product, including those sold to large businesses"
+        ],
+        "answer": 2,
+        "explanation": "Section 627.06 applies to products or services in Canada that the bank offers or sells to a natural person other than for business purposes.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x18",
+        "question": "A teller refuses a retail deposit account to a newcomer to Canada who presents a foreign passport and a recent Canadian utility bill showing name and address. What is the best assessment?",
+        "options": [
+          "The refusal is correct, because a foreign passport is never acceptable",
+          "The refusal is correct, because newcomers must wait six months",
+          "The refusal is correct, because the person lacks a Canadian credit history",
+          "The refusal is likely wrong: these can be two reliable documents under section 627.17, and no listed refusal ground is evident"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.17(1)(a)(i) lists foreign passports and recent Canadian utility bills among documents from a reliable source. Credit history and recent arrival are not refusal grounds under section 627.18.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x19",
+        "question": "Which document must a member bank give a person whose request for a retail deposit account it refuses?",
+        "options": [
+          "A copy of the person's credit report",
+          "A FINTRAC suspicious transaction report",
+          "A written statement that it will not open the account, with its complaint procedures and contact details for OBSI and FCAC",
+          "A referral letter to a provincial credit union"
+        ],
+        "answer": 2,
+        "explanation": "Section 627.19 requires a written statement that the account will not be opened and the information in section 627.65(a) to (c): complaint procedures, the external complaints body's name and contact, and FCAC's contact details.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x20",
+        "question": "A rural branch has another retail deposit-taking branch 6 km away by road. How much notice must the bank give customers and the public before closing it?",
+        "options": [
+          "At least six months' written notice plus a newspaper notice",
+          "At least four months' written notice",
+          "At least 30 days' notice on the bank's website",
+          "No notice, because another branch is nearby"
+        ],
+        "answer": 1,
+        "explanation": "Section 627.993(1)(b) requires four months' notice for urban branches or rural branches with another branch within 10 km travelling distance. Six months applies only when no such branch exists.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x21",
+        "question": "A savings advertisement shows '5% interest' in large type; small print says the rate applies for 30 days only on new deposits over $250,000. Which provision is most at risk?",
+        "options": [
+          "Section 627.17, which requires basic accounts to be opened",
+          "Section 627.14, which requires advertisements to be accurate, clear and not misleading",
+          "Section 979.4, which prohibits retaliation",
+          "Section 627.46, which requires quarterly complaint reports"
+        ],
+        "answer": 1,
+        "explanation": "Section 627.14 requires any advertisement in Canada by the bank to be accurate, clear and not misleading. A headline rate that most savers cannot get is a classic misleading-advertising risk.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x22",
+        "question": "Once section 627.134 is in force, which of the following must a bank's consumer-targeted fraud policies set out?",
+        "options": [
+          "A fixed reimbursement percentage set by FCAC for all fraud",
+          "A promise never to suspend any customer transaction",
+          "A list of the names of all fraud victims, published yearly",
+          "The criteria for deciding whether a transaction is suspicious and whether a fraud victim has a remedy"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.134(2) will require criteria for suspicious transactions, for suspending or cancelling them, for deciding whether a person is a victim and what remedies are available, and how decisions are communicated. Victim identities in reports are confidential.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x23",
+        "question": "A customer is tricked by a scammer posing as police into authorising a transfer from his account. Under the amended Bank Act definition (not yet in force), is this consumer-targeted fraud?",
+        "options": [
+          "Yes, because the definition includes transactions authorized as a result of coercion or deception",
+          "No, because the customer authorised the transfer himself",
+          "No, because only card transactions are covered",
+          "Yes, but only if the amount exceeds $10,000"
+        ],
+        "answer": 0,
+        "explanation": "The definition added to section 627.01(1) covers transactions that are unauthorized or authorized as a result of coercion or deception, which captures this kind of impersonation scam.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x24",
+        "question": "What is the legal status of the Bank Act's consumer-targeted fraud training duty in November 2026?",
+        "options": [
+          "Enacted in 2026 but not yet in force, pending a coming-into-force date",
+          "In force since the framework began on 30 June 2022",
+          "In force since FCAC's revised complaint guideline was published",
+          "Withdrawn before Royal Assent and never enacted"
+        ],
+        "answer": 0,
+        "explanation": "Section 627.134 was added by S.C. 2026, c. 3 (assented 26 March 2026) and appears among the amendments not in force in the official consolidation.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x25",
+        "question": "In which situation does section 627.57 require staff to draw attention orally to the information box?",
+        "options": [
+          "When a customer visits a branch to ask for branch hours",
+          "When the bank sends a monthly statement by mail",
+          "When the bank solicits an application for the product by telephone or the customer phones to apply",
+          "Whenever the customer opens the bank's mobile app"
+        ],
+        "answer": 2,
+        "explanation": "Section 627.57(2) requires the bank to orally draw attention to the information box when it solicits applications by telephone or a person phones to apply.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x26",
+        "question": "In TD's 2024 loan payment case (FCAC summary of proceeding #3), what was the disclosure problem?",
+        "options": [
+          "TD advertised mortgage rates that were never available",
+          "TD refused to open accounts for people who had been bankrupt",
+          "TD failed to report complaints to FCAC each quarter",
+          "Changing the payment frequency extended loan amortization without the financial effect being made clear to customers"
+        ],
+        "answer": 3,
+        "explanation": "FCAC found that a calculation error after payment frequency changes extended amortization, with financial implications not disclosed. TD paid a $5.5 million penalty.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x27",
+        "question": "A customer posts on the bank's social media page, under a nickname, that a branch charged him a fee he never agreed to. Under FCAC's complaint-handling guideline, what should the bank do?",
+        "options": [
+          "Ignore it, because only signed letters count as complaints",
+          "Respond and offer access to its complaint process; if he stays unnamed, still record the complaint",
+          "Delete the post and report the account to FCAC",
+          "Ask OBSI to deal with it directly"
+        ],
+        "answer": 1,
+        "explanation": "FCAC's guideline expects banks to respond to complainants who have not given their name, offer access to the process and, if they remain unidentified, create a record with the information available.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x28",
+        "question": "Within what time after the end of each quarter must a bank report to FCAC on complaints dealt with by its designated employees?",
+        "options": [
+          "60 days",
+          "10 days",
+          "30 days",
+          "135 days"
+        ],
+        "answer": 0,
+        "explanation": "Section 627.46 requires the quarterly submission within 60 days after the end of each quarter. 135 days is the deadline for annual public complaint information under section 627.47.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x29",
+        "question": "OBSI decides that part of a complaint falls outside its terms of reference. What must it do under section 627.49?",
+        "options": [
+          "Return the complaint to the bank without telling the customer",
+          "Refer the complaint to the Federal Court within 90 days",
+          "Charge the customer a fee to review it anyway",
+          "Give the complainant written reasons, and the name of any entity to complain to, within 30 days of receiving the complaint"
+        ],
+        "answer": 3,
+        "explanation": "Section 627.49(e) requires written reasons and the name of any other entity to approach within 30 days after the external complaints body receives the complaint.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x30",
+        "question": "A front-line employee who cannot settle a complaint asks a designated employee for help. Under FCAC's revised complaint-handling guideline, what is the consequence?",
+        "options": [
+          "Nothing changes until the customer writes to the bank",
+          "The 56-day period stops while the designated employee reviews it",
+          "The complaint is treated as referred to a designated employee and must be reported to FCAC",
+          "The complaint must go straight to OBSI"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 34 of the revised guideline says input or assistance from a designated employee means the complaint is considered referred, so the bank must report it. The 56-day period is not paused.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-cp-x31",
+        "question": "Under FCAC's revised complaint-handling guideline (effective 23 June 2027), what must a Notice of Final Decision include?",
+        "options": [
+          "The bank's final decision with its reasons and the customer's right to take the complaint to the external complaints body",
+          "A waiver of the customer's right to go to OBSI",
+          "A copy of the bank's annual report",
+          "An FCAC approval stamp for the decision"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 52 expects the notice to include the facts, the timeframe, the final decision and how it was reached, the redress method if any, and information on the customer's right to go to the external complaints body.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x32",
+        "question": "Priya discovers that 40 complaints in a month concern the same incorrect overdraft fee. What do FCAC's complaint-handling expectations call for beyond fixing each complaint?",
+        "options": [
+          "Close each complaint quickly so the quarterly numbers look better",
+          "Analyse the root cause, check whether other customers were harmed and provide redress to all affected",
+          "Wait until OBSI identifies a systemic issue",
+          "Refund only those customers who complained"
+        ],
+        "answer": 1,
+        "explanation": "FCAC expects complaint data to be analysed for recurring and systemic issues; the revised guideline expects root cause analysis and redress or remediation for all affected consumers.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x33",
+        "question": "Under section 979.2, when may the bank disclose a whistleblower's identity to FCAC, OSFI, another regulator or law enforcement?",
+        "options": [
+          "When that body considers the disclosure necessary for an investigation, and the bank must make every reasonable effort to tell the employee",
+          "Whenever the employee's manager requests it",
+          "Only after the employee leaves the bank",
+          "Never, under any circumstances"
+        ],
+        "answer": 0,
+        "explanation": "Section 979.2(3) allows disclosure when the receiving authority considers it necessary for an investigation, and section 979.2(5) requires every reasonable effort to inform the employee.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-cp-x34",
+        "question": "FCAC's whistleblowing guideline expects training to be focused in particular on which employees?",
+        "options": [
+          "Only employees who have filed a report before",
+          "Those with a greater opportunity to witness, detect or contribute to wrongdoing because of their role",
+          "Only new hires in their first week",
+          "Only staff based outside Canada"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 12 of the guideline expects regular and ongoing training for all employees, tailored training for those who handle reports, and a focus on employees whose roles give greater opportunity to witness, detect or contribute to wrongdoing.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x35",
+        "question": "An investigation of a whistleblowing report reveals a breach of a consumer provision. What does FCAC's whistleblowing guideline expect?",
+        "options": [
+          "The bank keeps the breach internal to protect the whistleblower",
+          "The bank waits for a customer complaint before acting",
+          "The bank assesses whether to report the breach to FCAC and, if it reports, says it learned of it through whistleblowing",
+          "The bank reports the employee's name to FCAC in every case"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 32 expects the bank to assess reporting the breach under FCAC's regulatory reporting guide and, when reporting, to identify that it became aware of it through a whistleblowing report.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x36",
+        "question": "A bank neither pays the proposed penalty nor makes representations within the time in a notice of violation. What follows under the FCAC Act?",
+        "options": [
+          "It is deemed to have committed the violation, and the Commissioner may impose the proposed penalty, a lesser one or none",
+          "The notice lapses and the matter is closed",
+          "FCAC must start criminal proceedings instead",
+          "The penalty is automatically doubled"
+        ],
+        "answer": 0,
+        "explanation": "Section 23(3) says a person who neither pays nor makes representations is deemed to have committed the violation, and the Commissioner may impose the proposed penalty, a lesser one or none.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x37",
+        "question": "An individual employee, not the bank, commits a violation of a consumer provision designated under the FCAC Act. What is the maximum penalty?",
+        "options": [
+          "$100,000",
+          "$1 million",
+          "$10 million",
+          "$25,000"
+        ],
+        "answer": 1,
+        "explanation": "Section 19(2) sets a maximum of $1 million for a violation by a natural person and $10 million for a financial institution.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x38",
+        "question": "FCAC is setting a penalty for a bank whose card statements were wrong for two decades and affected many customers, with an earlier violation three years before. Which factors under section 20 weigh most heavily?",
+        "options": [
+          "Only the bank's ability to pay, since the purpose is to punish",
+          "Only whether the bank's staff intended the error",
+          "Negligence, the harm done, the long duration and the history of prior violations within five years",
+          "Only the number of customers who complained to OBSI"
+        ],
+        "answer": 2,
+        "explanation": "Section 20 lists negligence or intention, harm, duration, ability to pay and five-year history. FCAC's summaries for TD and RBC cited long duration, harm and history. Section 20.1 says the purpose is not to punish.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-cp-x39",
+        "question": "Which record would best support a bank's due diligence defence in a consent-related FCAC proceeding?",
+        "options": [
+          "A board resolution stating that the bank values its customers",
+          "Evidence that the bank's competitors had similar problems",
+          "A statement that no customer has sued the bank",
+          "Training material and scripts that teach the consent requirement in every channel, with monitoring results showing staff follow them"
+        ],
+        "answer": 3,
+        "explanation": "Due diligence requires proof that the bank took all reasonable steps. Decision #139 shows that FCAC reviews training material, scripts and call recordings to see whether consent requirements were clearly taught and followed.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-cp-x40",
+        "question": "Which of the following is the best summary of how FCAC expects banks to manage consumer protection training across its guidelines?",
+        "options": [
+          "One mandatory module at hiring, with no further obligations",
+          "Training only after FCAC issues a notice of violation",
+          "Training only for staff who sell credit products",
+          "Initial and ongoing training, completion monitoring, effectiveness testing, regular updates and role-specific content"
+        ],
+        "answer": 3,
+        "explanation": "The appropriateness, complaint-handling and whistleblowing guidelines all expect initial and ongoing or regular training, with completion monitoring, review and updating. The complaint guideline adds effectiveness testing, and the complaint and whistleblowing guidelines add role-specific training.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x41",
+        "question": "Under the FCAC guidelines on appropriate products, complaint handling and whistleblowing, which body is expected to oversee the bank's policies and procedures?",
+        "options": [
+          "The external complaints body, OBSI",
+          "The bank's largest shareholders",
+          "Senior management and the board committee responsible for compliance with the consumer provisions",
+          "FCAC's Consumer Information Centre"
+        ],
+        "answer": 2,
+        "explanation": "Each guideline says the bank's senior management and the board committee responsible for consumer provision compliance (or senior management of an authorized foreign bank) should oversee the policies and procedures.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-cp-x42",
+        "question": "Aurora Ridge Bank must update its training plan for 2027. Which change is required to keep content accurate?",
+        "options": [
+          "Update complaint training for the revised FCAC guideline effective 23 June 2027 and track the status of section 627.134",
+          "Remove all whistleblowing content because the rules were repealed in 2026",
+          "Replace the 56-day complaint period with 90 days",
+          "Stop training third-party sellers, who were removed from section 627.02"
+        ],
+        "answer": 0,
+        "explanation": "FCAC's revised complaint-handling guideline takes effect on 23 June 2027 and both versions expect training to be updated when requirements change. Section 627.134 is enacted but not yet in force. The other changes are not in the law.",
+        "difficulty": 4
+      }
+    ]
+  }
+}

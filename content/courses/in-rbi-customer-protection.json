@@ -1,0 +1,3101 @@
+{
+  "slug": "in-rbi-customer-protection",
+  "title": "India | RBI Customer Service, Fair Practices and Grievance Redress",
+  "tagline": "Handle complaints, the Internal Ombudsman and the RBI Ombudsman, sell fairly, recover dues decently and protect customers from electronic fraud under RBI's rules.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Commercial banks in India",
+    "Foreign banks operating branches in India",
+    "Card issuers and digital banking teams",
+    "Recovery agencies and direct selling agents working for banks"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the Reserve Bank of India's customer protection rules for commercial banks. It is based on the **RBI (Commercial Banks - Internal Ombudsman) Directions, 2026**, the **Reserve Bank - Integrated Ombudsman Scheme, 2026**, the **Responsible Business Conduct Directions, 2025** and its 2026 amendments on mis-selling, fraudulent electronic transactions and recovery agents (all effective from 1 January 2027), the certification rule in the **Miscellaneous Directions, 2025** and the card Directions.\n\nRBI expects banks to use complaint analysis to train frontline staff, to train card call-centre staff to handle and escalate complaints, to certify staff before posting them to third-party product sales, and to use only IIBF-certified recovery agents. The quest supports those duties for branch, contact-centre, grievance, sales, collections and digital banking staff and their managers.\n\nIn five stages you join the grievance team of a fictional Indian bank: complaints and the Internal Ombudsman, the RBI Ombudsman, fair sales, fair lending and recovery, and electronic fraud liability with inspection readiness.\n\nThe quest builds knowledge and does not replace your bank's own customer service, grievance, sales and recovery policies; always follow them and the latest RBI text.",
+  "audience": [
+    "Branch, contact-centre and grievance redress staff at commercial banks in India who receive and resolve complaints",
+    "Staff in the Internal Ombudsman's secretariat and the customer service and compliance functions",
+    "Relationship managers and sales staff who sell own or third-party products, and managers of DSAs and DMAs",
+    "Collections staff and managers who oversee recovery agencies",
+    "Digital banking, card and fraud operations staff who handle fraudulent electronic transaction complaints"
+  ],
+  "outcomes": [
+    "Classify, escalate and close complaints as the Internal Ombudsman Directions 2026 require, within the 30-day limit",
+    "Explain when and how a customer can go to the RBI Ombudsman under RB-IOS 2026, and what the bank must tell them",
+    "Apply RBI's 2027 rules on explicit consent, suitability, bundling, dark patterns and refunds for mis-selling",
+    "Confirm staff certification before posting to third-party product sales and identify regulator-prescribed qualifications",
+    "Recover dues within RBI's conduct rules for recovery agents, contact hours, call records and device locking",
+    "Decide customer liability in fraudulent electronic banking transactions and meet RBI's reversal and response timelines"
+  ],
+  "quest": {
+    "name": "The Fair Redress Mission",
+    "premise": "You have just joined Deccan Lotus Bank, a fictional commercial bank headquartered in Mumbai with branches across India, as its Customer Protection Officer. A Nashik trader says she was sold insurance she never wanted, a recovery agent called her at night, and then fraudsters emptied her account. New RBI rules start on 1 January 2027. With Meera, Harpreet, Arjun and Farhan, clear five stages, then face the final boss: the RBI inspector's exam.",
+    "badge": {
+      "name": "Fair Redress Guardian",
+      "description": "Awarded to bankers who can apply RBI's complaint, ombudsman, fair sales, recovery and electronic fraud liability rules."
+    },
+    "color": "#0f766e",
+    "cast": [
+      {
+        "id": "meera",
+        "name": "Meera Krishnan",
+        "role": "Head of Customer Service and Grievance Redress, Mumbai, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "bun",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "harpreet",
+        "name": "Harpreet Kaur Sandhu",
+        "role": "Internal Ombudsman, a retired GM from another bank",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#7c2d12"
+        }
+      },
+      {
+        "id": "arjun",
+        "name": "Arjun Malhotra",
+        "role": "Regional Head, Retail and Third-Party Sales, Delhi",
+        "look": {
+          "skin": 2,
+          "hair": "short",
+          "color": "#374151"
+        }
+      },
+      {
+        "id": "farhan",
+        "name": "Farhan Qureshi",
+        "role": "Head of Collections and Recovery, Hyderabad",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#065f46"
+        }
+      },
+      {
+        "id": "sunita",
+        "name": "Sunita Patil",
+        "role": "Customer, owner of a small textile shop, Nashik",
+        "look": {
+          "skin": 4,
+          "hair": "long",
+          "color": "#9d174d"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "Complaints and the Internal Ombudsman: RBI's 2026 Directions",
+      "stage": "The Grievance Desk",
+      "summary": "Learn what RBI counts as a complaint, how a commercial bank must record, escalate and decide it within 30 days, and how the Internal Ombudsman reviews every partly resolved or rejected complaint before the customer hears no.",
+      "minutes": 55,
+      "objectives": [
+        "Define a complaint, deficiency in service and a customer as the Internal Ombudsman Directions 2026 do",
+        "Apply the three decision categories, auto-escalation and the 30-day limit to a live complaint",
+        "Describe who can be the Internal Ombudsman, to whom the IO reports and what the IO may not do",
+        "Explain how the Board's Customer Service Committee, internal audit and RBI oversee the IO framework"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Deccan Lotus Bank",
+          "setting": "Central Grievance Redress Cell, Deccan Lotus Bank head office, Lower Parel, Mumbai. 9:15 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "You have just joined Deccan Lotus Bank, a fictional commercial bank with branches across India, as its Customer Protection Officer.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meera",
+              "text": "Welcome! Your first file is on the screen. Sunita Patil, a textile trader in Nashik, wrote to the branch three weeks ago.",
+              "mood": "happy"
+            },
+            {
+              "who": "sunita",
+              "text": "(from her letter) I asked for a working-capital loan. Somebody added an insurance policy I never asked for, and the premium came out of my loan.",
+              "mood": "angry"
+            },
+            {
+              "who": "meera",
+              "text": "The branch marked it 'closed, customer explained'. No reply went to her. Nobody escalated it.",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "And I never saw it. If a branch quietly rejects a complaint, my office never gets the chance to review it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meera",
+              "text": "Stage one of your mission: learn how RBI wants complaints recorded, escalated and decided. Then tell me what went wrong in Nashik.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Why RBI created the Internal Ombudsman",
+          "scenes": [
+            {
+              "icon": "📨",
+              "heading": "Every complaint counts",
+              "narration": "RBI treats a complaint as any representation, in writing or another mode, that alleges a deficiency in the bank's service. The customer does not have to ask for anything specific."
+            },
+            {
+              "icon": "🔍",
+              "heading": "A second look inside",
+              "narration": "Before a bank tells a customer no, or only partly yes, an independent Internal Ombudsman reviews the case. That is the IO's whole job."
+            },
+            {
+              "icon": "⚙️",
+              "heading": "Automatic, not optional",
+              "narration": "The bank's complaint system must send every partly resolved or wholly rejected complaint to the IO automatically. Staff cannot choose to skip it."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Thirty days",
+              "narration": "The bank must give the customer its final decision within thirty days of receiving the complaint, including the IO's review."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Then the RBI Ombudsman",
+              "narration": "If the answer is still no, the bank must tell the customer how to approach the RBI Ombudsman. You will explore that route in stage two."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "A complaint's path inside the bank",
+          "caption": "From the Internal Ombudsman Directions 2026, paragraph 14.",
+          "items": [
+            {
+              "label": "Register and acknowledge",
+              "detail": "Record it in the fully automated Complaints Management System."
+            },
+            {
+              "label": "Examine and decide",
+              "detail": "Fully Resolved, Partially Resolved or Wholly Rejected: the only three categories."
+            },
+            {
+              "label": "Senior review",
+              "detail": "A partly resolved or rejected case is reviewed at a fairly senior level, not closed by the same touch point."
+            },
+            {
+              "label": "Auto-escalate to the IO",
+              "detail": "Within 20 days of receipt, or early enough for 10 days of IO review where RBI, NPCI or card network timelines apply."
+            },
+            {
+              "label": "IO's reasoned decision",
+              "detail": "The IO records reasons and may recommend compensation."
+            },
+            {
+              "label": "Reply within 30 days",
+              "detail": "Say the IO reviewed it and explain the RBI Ombudsman option."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sunita's letter alleges a service failure but asks for nothing specific. Is it a complaint under the IO Directions 2026?",
+          "options": [
+            "No, because a complaint must state the relief the customer wants",
+            "Yes, because a representation alleging deficiency in service counts with or without a request for relief",
+            "Only if she files it on the bank's official complaint form"
+          ],
+          "answer": 1,
+          "explanation": "The Directions define a complaint as a representation, in writing or through other modes, alleging deficiency in service, with or without seeking relief. The form and the request for relief do not matter."
+        },
+        {
+          "type": "concept",
+          "title": "Who the Directions cover and the key terms",
+          "body": "**Who:** commercial banks with **10 or more banking outlets in India** as on 31 March 2025, whether incorporated in India or abroad. Small finance banks, payments banks and local area banks have their own Directions. A bank that crosses the threshold later must comply six months after it qualifies.\n\n**Key terms**\n- **Complaint:** a representation in writing or another mode alleging deficiency in service, with or without a request for relief.\n- **Deficiency in service:** a shortcoming in a service the bank must provide, by law or otherwise, whether or not it causes financial loss.\n- **Customer:** anyone who uses, or applies for, a bank service. Sunita counts as a customer for her loan application as well as her account.\n- **Competent Authority:** the whole-time director or executive director in charge of customer service.\n\nMost provisions applied on issue (14 January 2026). The rules on the number of IOs, the three categories and senior review applied from 30 June 2026."
+        },
+        {
+          "type": "sort",
+          "title": "Can the Internal Ombudsman take it?",
+          "prompt": "Sort each matter: is it within the IO's review, or outside the Directions?",
+          "buckets": [
+            "IO reviews it",
+            "Outside the IO's purview"
+          ],
+          "items": [
+            {
+              "text": "A rejected complaint about a wrong charge on a savings account",
+              "bucket": 0
+            },
+            {
+              "text": "A partly resolved complaint about a delayed loan statement",
+              "bucket": 0
+            },
+            {
+              "text": "A service failure arising from a credit decision, such as an unanswered loan application",
+              "bucket": 0
+            },
+            {
+              "text": "An employee's grievance about pay and promotion",
+              "bucket": 1
+            },
+            {
+              "text": "A dispute already decided by a consumer commission",
+              "bucket": 1
+            },
+            {
+              "text": "A suggestion that the bank open on Sundays",
+              "bucket": 1
+            },
+            {
+              "text": "A credit report dispute with a remedy under section 18 of the CIC Act",
+              "bucket": 1
+            },
+            {
+              "text": "A wholly rejected complaint about a failed card refund",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The quiet closure",
+          "setting": "Video call with the Nashik branch. 11:40 am.",
+          "lines": [
+            {
+              "who": "meera",
+              "text": "Your branch closed Sunita's complaint as 'customer explained'. Which of the three categories is that?",
+              "mood": "thinking"
+            },
+            {
+              "who": "narrator",
+              "text": "The branch manager explains that the old system had a free-text field and a 'closed' button.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "Then the system is the problem. The Directions allow only Fully Resolved, Partially Resolved or Wholly Rejected.",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "And the same branch should never close its own rejected complaint. A senior reviewer looks first, then it goes to Harpreet automatically.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sunita",
+              "text": "(on the line) I just want someone to tell me why money left my loan account for a policy I never signed.",
+              "mood": "angry"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Day 19 of Sunita's complaint",
+          "situation": "Sunita's complaint arrived 19 days ago. The branch now proposes to refund half the premium and keep the policy running, because she signed a loan form. No RBI, NPCI or card network timeline applies. You must decide what happens next in the Complaints Management System.",
+          "choices": [
+            {
+              "text": "Record it as Partially Resolved, send it for senior review and let the system escalate it to the IO now",
+              "outcome": "Right. A partial refund is a partial resolution. It must be reviewed at a senior level and reach the IO within 20 days of receipt, leaving time for a reasoned decision before day 30.",
+              "score": 2
+            },
+            {
+              "text": "Record it as Fully Resolved, since the bank is giving her some money back",
+              "outcome": "Mislabelling a partial outcome as full avoids the IO review the Directions require. Internal audit checks auto-escalation every year and RBI supervisors review grievance handling.",
+              "score": 0
+            },
+            {
+              "text": "Reply to Sunita with the partial refund today and escalate to the IO only if she complains again",
+              "outcome": "Partly right on speed, but the IO must review partly resolved complaints before the final reply. Asking the customer to complain twice defeats the auto-escalation rule.",
+              "score": 1
+            },
+            {
+              "text": "Wait for the insurer's view before classifying the complaint",
+              "outcome": "Delay puts the 30-day limit at risk and the 20-day escalation point is tomorrow. Gather facts in parallel, but classify and escalate on time.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who oversees the IO framework",
+          "items": [
+            {
+              "label": "Board's Customer Service Committee",
+              "detail": "Sets IO numbers and pay, approves removals, receives IO reports and reviews overruled decisions."
+            },
+            {
+              "label": "Competent Authority",
+              "detail": "Whole-time or executive director for customer service; IO's administrative boss; only one who can overrule the IO."
+            },
+            {
+              "label": "Internal Ombudsman and Deputy IO",
+              "detail": "Review partly resolved and rejected complaints and analyse complaint patterns."
+            },
+            {
+              "label": "Bank's grievance machinery",
+              "detail": "Branches, contact centre and grievance cell that decide complaints first."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "The IO's rulebook",
+          "prompt": "Match each rule to what the Directions say.",
+          "pairs": [
+            {
+              "left": "Eligibility",
+              "right": "Retired or serving GM-equivalent officer with at least seven years of relevant experience; never employed by the bank or its group"
+            },
+            {
+              "left": "Tenure",
+              "right": "Contractual, a fixed term of at least three years, and no more than five years in total"
+            },
+            {
+              "left": "Reporting lines",
+              "right": "Administratively to the Competent Authority; functionally to the Board's Customer Service Committee"
+            },
+            {
+              "left": "Overruling the IO",
+              "right": "Only with the Competent Authority's approval, and every such case goes to the Customer Service Committee"
+            },
+            {
+              "left": "Public contact details",
+              "right": "Not published, because the IO does not take complaints directly from customers"
+            },
+            {
+              "left": "Legal cases",
+              "right": "The IO does not represent the bank before any court or forum"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The head of retail disagrees with the IO's decision to award Sunita compensation. Who can overrule the IO?",
+          "options": [
+            "The head of retail, if the business line bears the cost",
+            "The Competent Authority, with the case then placed before the Customer Service Committee",
+            "The branch manager, because the branch knows the customer best",
+            "Nobody inside the bank; only the RBI Ombudsman"
+          ],
+          "answer": 1,
+          "explanation": "An IO or Deputy IO decision can be overruled only with the approval of the Competent Authority (the whole-time or executive director in charge of customer service). All overruled cases must be placed before the Board's Customer Service Committee for review."
+        },
+        {
+          "type": "flip",
+          "title": "Numbers worth remembering",
+          "cards": [
+            {
+              "front": "10 outlets",
+              "back": "Commercial banks with 10 or more banking outlets in India as on 31 March 2025 must follow the IO Directions."
+            },
+            {
+              "front": "20 days",
+              "back": "Default deadline to auto-escalate a partly resolved or rejected complaint to the IO, counted from receipt."
+            },
+            {
+              "front": "10 days",
+              "back": "Minimum IO review time where RBI, NPCI or card network rules set a resolution timeline."
+            },
+            {
+              "front": "30 days",
+              "back": "The bank must communicate its final decision within 30 days of receiving the complaint."
+            },
+            {
+              "front": "5 working days",
+              "back": "Time to send RBI's Consumer Education and Protection Department the details of a newly appointed IO or Deputy IO."
+            },
+            {
+              "front": "15th of the month",
+              "back": "Quarterly IO report to RBI is due by the 15th of the month after the quarter ends."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: RBL Bank penalty (RBI, 2023)",
+          "body": "**What happened.** By an order dated 6 March 2023, RBI imposed a penalty of about **₹2.27 crore** on RBL Bank Limited. The order covered RBI directions on the Internal Ombudsman Scheme 2018, the Fair Practices Code for Lenders, credit card operations, outsourcing and recovery agents.\n\n**What RBI found.** Reviewing complaints against recovery agents, RBI found among other things that the bank had **not properly communicated its Internal Ombudsman's decision** in certain cases. Other findings concerned recovery agents, which you will meet in stage four.\n\n**Why it matters.** The IO review only protects customers if its outcome actually reaches them. Today's Directions spell this out: the reply must say the IO reviewed the case and must explain the RBI Ombudsman option.\n\nRBI said the penalty addressed regulatory compliance and did not rule on the validity of any customer transaction.\n\n*Source: RBI press release 2022-2023/1891.*"
+        },
+        {
+          "type": "tip",
+          "title": "Write the reply the IO rules expect",
+          "body": "When the IO upholds a rejection or partial resolution, the reply to the customer should:\n\n- Say clearly that the **Internal Ombudsman has reviewed** the complaint.\n- Give the **reasons**, matching the IO's reasoned decision.\n- Explain the option of going to the **RBI Ombudsman**, with the CMS portal address (cms.rbi.org.in) and the CRPC's postal and email address.\n- Reach the customer **within 30 days** of the bank receiving the complaint.\n\nNever put the IO's own contact details in the reply. The IO does not take complaints directly."
+        },
+        {
+          "type": "keypoints",
+          "title": "Grievance Desk take-aways",
+          "items": [
+            "A complaint is any representation alleging deficiency in service, with or without a request for relief.",
+            "Use only three outcomes: Fully Resolved, Partially Resolved or Wholly Rejected. Partly resolved and rejected cases go to the IO automatically.",
+            "Escalate within 20 days by default, give the IO at least 10 days where external timelines apply, and reply within 30 days.",
+            "The IO is independent: never employed by the bank, on a fixed contract, and can be overruled only by the Competent Authority.",
+            "The Customer Service Committee, annual internal audit and RBI supervision all oversee the framework."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about how complaints reach your team. Where could a partly resolved or rejected complaint get closed without senior review or escalation? What would you change first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "in-cp-s1-q1",
+          "question": "Which commercial banks must follow the RBI (Commercial Banks - Internal Ombudsman) Directions, 2026?",
+          "options": [
+            "Every commercial bank licensed in India, whatever its size",
+            "Only banks incorporated in India with 100 or more branches",
+            "Commercial banks with 10 or more banking outlets in India as on 31 March 2025",
+            "Only public sector banks and the State Bank of India"
+          ],
+          "answer": 2,
+          "explanation": "The Directions apply to commercial banks with 10 or more banking outlets in India as on 31 March 2025, whether incorporated in India or abroad. Small finance, payments and local area banks have separate Directions.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s1-q2",
+          "question": "A customer emails the branch saying her cheque book request was ignored for six weeks. She does not ask for compensation. How should the bank treat the email?",
+          "options": [
+            "As a query, because no relief is sought",
+            "As a complaint, since it alleges a deficiency in service",
+            "As feedback for the branch manager only",
+            "As a complaint only once she uses the bank's form"
+          ],
+          "answer": 1,
+          "explanation": "A complaint is a representation in writing or other modes alleging deficiency in service, with or without seeking relief. Asking for nothing does not turn it into a query.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s1-q3",
+          "question": "Which set of decision categories may a bank's Complaints Management System offer before a complaint goes to the Internal Ombudsman?",
+          "options": [
+            "Fully Resolved, Partially Resolved and Wholly Rejected",
+            "Resolved, Closed and Referred",
+            "Accepted, Rejected and Withdrawn by customer",
+            "Closed with explanation, Refunded and Pending"
+          ],
+          "answer": 0,
+          "explanation": "The Directions allow only three categories: Fully Resolved, Partially Resolved and Wholly Rejected. Partly resolved and rejected complaints are then auto-escalated to the IO.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s1-q4",
+          "question": "A debit card complaint falls under a resolution timeline set by a card network. When must the bank escalate it to the IO if it plans to reject it?",
+          "options": [
+            "Early enough that the IO has at least 10 days to review it within the external timeline",
+            "Within 20 days of receipt, whatever the network timeline",
+            "Only after the network timeline has expired",
+            "Within 30 days, at the same time as the final reply"
+          ],
+          "answer": 0,
+          "explanation": "Where RBI, NPCI or card network guidelines set a timeline, escalation must be early enough to give the IO at least 10 days. The 20-day rule applies only to other complaints.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s1-q5",
+          "question": "Ravi complained to Deccan Lotus Bank on 1 March about a wrong charge. No external timeline applies. By when must the bank communicate its final decision?",
+          "options": [
+            "Within 30 days of the bank receiving the complaint",
+            "Within 45 days of the complaint",
+            "Within 20 days of the complaint",
+            "Within 30 days of the Internal Ombudsman's decision"
+          ],
+          "answer": 0,
+          "explanation": "The bank must communicate the final decision within 30 days of receiving the complaint. Twenty days is the default escalation point to the IO, not the reply deadline.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s1-q6",
+          "question": "Which person could be appointed as Deccan Lotus Bank's Internal Ombudsman?",
+          "options": [
+            "Deccan Lotus Bank's own retired head of retail banking",
+            "A serving GM of another bank who keeps that job part-time",
+            "A retired GM-rank officer of another bank with eight years of relevant experience",
+            "A 69-year-old former regulator appointed for a three-year term"
+          ],
+          "answer": 2,
+          "explanation": "The IO must be a retired or serving GM-equivalent officer with at least seven years' relevant experience, must never have worked for the bank or its group, must give up any serving post, and must not pass 70 before the tenure ends.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s1-q7",
+          "question": "To whom does the Internal Ombudsman report?",
+          "options": [
+            "Administratively and functionally to the Chief Compliance Officer",
+            "Administratively to the Competent Authority and functionally to the Board's Customer Service Committee",
+            "To the head of retail banking for both purposes",
+            "Directly to RBI's Consumer Education and Protection Department"
+          ],
+          "answer": 1,
+          "explanation": "The IO reports administratively to the Competent Authority (the whole-time or executive director in charge of customer service) and functionally to the Customer Service Committee of the Board.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s1-q8",
+          "question": "A customer writes directly to the Internal Ombudsman's office about a new problem with her account. What should happen?",
+          "options": [
+            "The IO decides it at once to save time",
+            "The IO forwards it to RBI's Ombudsman",
+            "The IO rejects it and closes the matter",
+            "The bank's grievance machinery handles it first, since the IO reviews only complaints already examined by the bank"
+          ],
+          "answer": 3,
+          "explanation": "The IO office does not handle complaints received directly from complainants. It deals only with complaints the bank has examined and partly resolved or rejected.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s1-q9",
+          "question": "Which matter is outside the Internal Ombudsman's purview under the 2026 Directions?",
+          "options": [
+            "A complaint already pending before a consumer disputes commission",
+            "A rejected complaint about a delayed pension credit",
+            "A partly resolved complaint about wrong loan interest",
+            "A service lapse linked to a commercial decision of the bank"
+          ],
+          "answer": 0,
+          "explanation": "Matters decided by or pending before courts, consumer commissions or arbitration are excluded. Service deficiencies within commercial decisions remain valid complaints for the IO.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s1-q10",
+          "question": "What must internal audit cover in its annual audit of the IO Directions?",
+          "options": [
+            "Whether each IO decision was correct on the merits",
+            "Only the number of complaints the IO decided",
+            "The IO's personal performance rating for the Board",
+            "Appointment process, IO resources, timely auto-escalation and reporting, but not whether IO decisions were correct"
+          ],
+          "answer": 3,
+          "explanation": "The annual audit covers appointment, resources, auto-escalation within timelines, analysis, staff awareness and reporting to RBI. It expressly excludes assessing the correctness of IO decisions.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Beyond the Bank: the RBI Ombudsman under RB-IOS 2026",
+      "stage": "The Chandigarh Gate",
+      "summary": "Follow a complaint out of the bank to the RBI Ombudsman: who is covered by the Reserve Bank - Integrated Ombudsman Scheme 2026, when a customer can file, which complaints are not maintainable, how settlement, awards and appeals work, and what the bank must do.",
+      "minutes": 50,
+      "objectives": [
+        "Explain what RB-IOS 2026 is, when it took effect and which banks it covers",
+        "Apply the 30-day and 90-day filing windows and the main non-maintainability grounds",
+        "Describe settlement, awards, compensation limits and appeals under the Scheme",
+        "State what the bank must tell customers and send to the RBI Ombudsman"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Sunita goes to RBI",
+          "setting": "Central Grievance Redress Cell, Mumbai. Thursday, 4:00 pm.",
+          "lines": [
+            {
+              "who": "meera",
+              "text": "Harpreet reviewed Sunita's complaint. She ordered a full premium refund, but the policy question is still disputed with the insurer.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sunita",
+              "text": "(on the phone) My nephew says I can go to the RBI Ombudsman. Do I need a lawyer? Do I have to travel to Mumbai?",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "Our reply must explain that route clearly. If she files, the bank must also send my decision to the RBI Ombudsman.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meera",
+              "text": "Stage two: learn the RBI Ombudsman route well enough to answer Sunita honestly, without discouraging her.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "RB-IOS 2026 in five scenes",
+          "scenes": [
+            {
+              "icon": "🆓",
+              "heading": "Free and non-adversarial",
+              "narration": "The Reserve Bank - Integrated Ombudsman Scheme 2026 is RBI's cost-free, quick and non-adversarial alternate route for complaints about deficiency in service."
+            },
+            {
+              "icon": "📅",
+              "heading": "New since July 2026",
+              "narration": "It came into force on the first of July 2026 and replaced the 2021 Scheme. Complaints received before that date stay under the 2021 Scheme."
+            },
+            {
+              "icon": "🇮🇳",
+              "heading": "One Nation One Ombudsman",
+              "narration": "Complaints are handled jurisdiction-neutrally. A customer does not need to approach a particular Ombudsman office; RBI allocates the case."
+            },
+            {
+              "icon": "💻",
+              "heading": "Three ways to file",
+              "narration": "Online on the CMS portal at cms dot rbi dot org dot in, by email to the CRPC, or by post to the Centralised Receipt and Processing Centre in Chandigarh."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Settle, award or reject",
+              "narration": "The Ombudsman first tries to settle. If that fails and there is a deficiency, it can pass an award. Only awards can be appealed."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "When Sunita can file",
+          "caption": "Based on RBI's RB-IOS 2026 FAQs. The higher of 30 days or any RBI, NPCI or card network timeline applies.",
+          "items": [
+            {
+              "label": "Complaint to the bank",
+              "value": "Day 0",
+              "detail": "She must approach the bank first and keep proof of it."
+            },
+            {
+              "label": "Bank's reply or silence",
+              "value": "Day 30",
+              "detail": "She can file if no reply by then, or earlier if she gets a reply and is unhappy with it."
+            },
+            {
+              "label": "Filing window closes",
+              "value": "+90 days",
+              "detail": "Within 90 days from the expiry of that timeline or the bank's last communication, whichever is later."
+            },
+            {
+              "label": "Award accepted",
+              "value": "+30 days",
+              "detail": "If an award is passed, she sends an acceptance letter to the bank within 30 days, unless she appeals."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sunita got the bank's reply on day 22 and disagrees with it. When can she approach the RBI Ombudsman?",
+          "options": [
+            "Only after day 30, whatever the bank said",
+            "Now, because she has received a reply and is not satisfied",
+            "Only after the Internal Ombudsman has met her in person"
+          ],
+          "answer": 1,
+          "explanation": "A customer can file once the bank has replied and she is dissatisfied, or if there is no reply within 30 days (or the higher RBI, NPCI or card network timeline)."
+        },
+        {
+          "type": "concept",
+          "title": "Who is covered and what it costs",
+          "body": "**Covered entities (RBI's FAQ, Q13)**\n- **Banks:** all commercial banks, regional rural banks, state and central co-operative banks, scheduled urban co-operative banks, and non-scheduled urban co-operative banks with deposits of ₹50 crore or more.\n- **NBFCs** that take deposits or have customer interface and assets of ₹100 crore or more, with listed exclusions.\n- Non-bank prepaid payment instrument issuers and credit information companies.\n\n**Cost:** nothing. No fee for filing or resolving, and no need to pay any agent.\n\n**Representation:** a customer may use an authorised representative, but not an advocate unless the advocate is the aggrieved person.\n\n**Language:** the CMS portal accepts Hindi and English, and the description may be in any language. Email and paper complaints may be in any language.\n\n**Help line:** RBI's Contact Centre (14448) guides customers but cannot take complaints."
+        },
+        {
+          "type": "sort",
+          "title": "Maintainable or not?",
+          "prompt": "Sort each complaint under RB-IOS 2026, using RBI's FAQ list of non-maintainable complaints.",
+          "buckets": [
+            "Can proceed",
+            "Not maintainable"
+          ],
+          "items": [
+            {
+              "text": "Customer complained to the bank 40 days ago and got no reply",
+              "bucket": 0
+            },
+            {
+              "text": "Customer got a rejection last week and files through her son as authorised representative",
+              "bucket": 0
+            },
+            {
+              "text": "Customer never complained to the bank first",
+              "bucket": 1
+            },
+            {
+              "text": "Customer files 200 days after the bank's last reply",
+              "bucket": 1
+            },
+            {
+              "text": "Same grievance is already pending in a civil court",
+              "bucket": 1
+            },
+            {
+              "text": "Complaint challenges the bank's commercial decision to decline a loan, with no service lapse",
+              "bucket": 1
+            },
+            {
+              "text": "Customer emails her bank and only copies RBI",
+              "bucket": 1
+            },
+            {
+              "text": "Police are investigating the fraud, and she complains to the Ombudsman about the bank's handling",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The awkward call",
+          "setting": "Nashik branch, Saturday morning.",
+          "lines": [
+            {
+              "who": "sunita",
+              "text": "The branch officer told me the RBI Ombudsman takes years and that I would need a lawyer. Is that true?",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "No, and I apologise. The Scheme is free, and an advocate cannot represent you unless they are the aggrieved person. You can file online yourself.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "Discouraging a customer from the Ombudsman is exactly the behaviour our complaint analysis should catch and feed into frontline training.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meera",
+              "text": "Let's turn this into a training case for the branches next month.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Replying to the RBI Ombudsman",
+          "situation": "Sunita has filed on the CMS portal. The RBI Ombudsman forwards her complaint to Deccan Lotus Bank for its response. A second complaint from another customer, Mr Joseph D'Souza in Goa, also arrives from the Ombudsman; the bank never escalated his case to the IO because the branch had marked it 'resolved'.",
+          "choices": [
+            {
+              "text": "Send Harpreet's reasoned decision with Sunita's file, and get Harpreet's comments on Mr D'Souza's case before replying",
+              "outcome": "Correct. The IO's decision must be included where the IO reviewed the complaint. Where the IO did not, the bank must seek the IO's comments and submit them.",
+              "score": 2
+            },
+            {
+              "text": "Reply on both cases from the legal department without involving the IO",
+              "outcome": "This breaks paragraph 14(13): the IO decision or IO comments must form part of the bank's submission to the RBI Ombudsman.",
+              "score": 0
+            },
+            {
+              "text": "Send the IO decision for Sunita, and for Mr D'Souza explain that the branch had resolved it",
+              "outcome": "Half right. For a complaint the IO never saw, the bank must seek the IO's comments. The mislabelled case also needs internal review.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "How the RBI Ombudsman deals with a complaint",
+          "items": [
+            {
+              "label": "Maintainability check",
+              "detail": "Non-maintainable complaints are closed with a reason."
+            },
+            {
+              "label": "Forwarded to the bank",
+              "detail": "The bank responds, with the IO's decision or comments."
+            },
+            {
+              "label": "Settlement",
+              "detail": "Facilitation, advisory or conciliation, in person or online."
+            },
+            {
+              "label": "Award or rejection",
+              "detail": "Award if deficiency is found and no settlement; rejection with reasons otherwise."
+            },
+            {
+              "label": "Appeal on awards only",
+              "detail": "To the Appellate Authority within 30 days."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "From award to compliance",
+          "prompt": "Put the steps after an RBI Ombudsman award in the right order.",
+          "steps": [
+            "The RBI Ombudsman passes an award against the bank after hearing both sides",
+            "The complainant receives a copy of the award",
+            "Within 30 days, the complainant sends the bank a letter accepting the award in full and final settlement",
+            "Within 30 days of that letter, the bank complies and informs the Ombudsman, or appeals where permitted"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The RBI Ombudsman rejected a complaint because it found no deficiency in service. Can the customer appeal to the Appellate Authority under RB-IOS 2026?",
+          "options": [
+            "Yes, any decision can be appealed within 30 days",
+            "No, under the 2026 Scheme an appeal lies only against an award",
+            "Yes, but only with the bank's consent"
+          ],
+          "answer": 1,
+          "explanation": "RBI's FAQ (Q31) says that under RB-IOS 2026 an appeal is available only against an award passed by the RBI Ombudsman."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "RB-IOS 2026 in numbers",
+          "items": [
+            {
+              "label": "Filing fee",
+              "value": "₹0",
+              "detail": "The Scheme is cost-free for customers."
+            },
+            {
+              "label": "Consequential loss",
+              "value": "₹30 lakh",
+              "detail": "Maximum compensation for consequential loss; no cap on the amount in dispute."
+            },
+            {
+              "label": "Time, expense, harassment",
+              "value": "₹3 lakh",
+              "detail": "Extra compensation the Ombudsman may award."
+            },
+            {
+              "label": "Appeal window",
+              "value": "30 days",
+              "detail": "For a complainant, from receipt of the award; up to 30 more days for sufficient cause."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Ombudsman vocabulary",
+          "cards": [
+            {
+              "front": "CMS",
+              "back": "RBI's Complaint Management System portal (cms.rbi.org.in), used to file and track complaints online."
+            },
+            {
+              "front": "CRPC",
+              "back": "Centralised Receipt and Processing Centre in Chandigarh; receives email and paper complaints."
+            },
+            {
+              "front": "AGR Framework",
+              "back": "RBI's Alternate Grievance Redress set-up: Ombudsman offices, CRPC, Consumer Education and Protection Cells and CEPD."
+            },
+            {
+              "front": "Award",
+              "back": "A direction to the bank to act and/or pay compensation, passed when there is a deficiency and no settlement."
+            },
+            {
+              "front": "Appellate Authority",
+              "back": "Hears appeals against awards; may dismiss, allow, remand or modify."
+            },
+            {
+              "front": "Contact Centre 14448",
+              "back": "Guidance and status help; it cannot register complaints."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Never discourage the Ombudsman route",
+          "body": "Frontline staff sometimes try to talk customers out of escalating. Don't.\n\n- Explain the route accurately: free, online or by post, no lawyer needed.\n- Give the CMS portal address and the CRPC details, as the IO Directions require in rejection or partial-resolution replies.\n- Respond to RBI's forwarded complaints fully and on time. An award can follow if the bank fails to give information.\n- Treat every Ombudsman case as a lesson. Complaints the RBI Ombudsman decides in the customer's favour go to the Customer Service Committee every quarter."
+        },
+        {
+          "type": "keypoints",
+          "title": "Chandigarh Gate take-aways",
+          "items": [
+            "RB-IOS 2026 took effect on 1 July 2026, replacing the 2021 Scheme; it is free and covers all commercial banks.",
+            "Customers must go to the bank first, then may file after 30 days (or the higher external timeline) or after an unsatisfactory reply, within 90 days.",
+            "Commercial judgments, matters before courts and complaints never raised with the bank are among those not maintainable.",
+            "The Ombudsman settles where it can; awards may include up to ₹30 lakh for consequential loss plus up to ₹3 lakh for time, expense and harassment.",
+            "Only awards can be appealed, and the bank must include the IO's decision or comments in its response."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer asked you tomorrow how to go to the RBI Ombudsman, could you explain it in under a minute? Write down the three things you would say."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "in-cp-s2-q1",
+          "question": "When did the Reserve Bank - Integrated Ombudsman Scheme, 2026 come into force?",
+          "options": [
+            "16 January 2026",
+            "1 July 2026",
+            "1 January 2027",
+            "28 November 2025"
+          ],
+          "answer": 1,
+          "explanation": "RBI issued the Scheme on 16 January 2026 and it came into force on 1 July 2026, replacing RB-IOS 2021. Complaints received before 1 July 2026 stay under the 2021 Scheme.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s2-q2",
+          "question": "A customer complained to her bank on 1 August 2026 and has heard nothing. No external timeline applies. From when can she file with the RBI Ombudsman?",
+          "options": [
+            "Immediately, on the day she complained",
+            "After 30 days pass without a reply",
+            "Only after 60 days without a reply",
+            "Only after the bank formally rejects it"
+          ],
+          "answer": 1,
+          "explanation": "Under RB-IOS 2026 she can file if there is no reply within 30 days (or the higher RBI, NPCI or card network timeline), or earlier if she gets an unsatisfactory reply.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s2-q3",
+          "question": "The bank's last letter to a customer was dated 10 April. Which limit applies to his RBI Ombudsman complaint?",
+          "options": [
+            "Within one year from the original transaction",
+            "Within 30 days of the bank's last letter",
+            "Within 90 days from the later of the expiry of the bank's timeline or the bank's last communication",
+            "There is no time limit once the bank has replied"
+          ],
+          "answer": 2,
+          "explanation": "RBI's FAQ says the complaint must be made within 90 days from the date the applicable timeline expires or the date of the bank's last communication, whichever is later.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s2-q4",
+          "question": "Which complaint is NOT maintainable under RB-IOS 2026?",
+          "options": [
+            "A grievance against named senior executives of the bank",
+            "A complaint about an unexplained account charge",
+            "A complaint filed by a customer's authorised daughter",
+            "A complaint where police are investigating the related fraud"
+          ],
+          "answer": 0,
+          "explanation": "Grievances against the management or executives of a regulated entity are not maintainable. A police investigation is not treated as the same grievance, and authorised representatives are allowed.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s2-q5",
+          "question": "A customer wants an advocate he has hired to file his RBI Ombudsman complaint. What does the Scheme allow?",
+          "options": [
+            "Any advocate may file on his behalf",
+            "He must always file in person at an Ombudsman office",
+            "He may use an authorised representative, but not an advocate unless the advocate is the aggrieved person",
+            "Only a chartered accountant may represent him"
+          ],
+          "answer": 2,
+          "explanation": "RB-IOS 2026 allows an authorised representative but excludes advocates unless the advocate is the aggrieved person.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s2-q6",
+          "question": "What compensation can the RBI Ombudsman award for consequential loss under RB-IOS 2026?",
+          "options": [
+            "Up to ₹30 lakh, plus up to ₹3 lakh for time, expenses and harassment",
+            "Up to ₹20 lakh, with nothing extra for harassment",
+            "Up to ₹10 lakh in total for all heads of loss",
+            "Up to ₹1 crore, depending on the bank's size"
+          ],
+          "answer": 0,
+          "explanation": "RBI's FAQ (Q22-23): there is no limit on the disputed amount, but consequential loss compensation is capped at ₹30 lakh, with up to ₹3 lakh more for time, expenses and harassment or mental anguish.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s2-q7",
+          "question": "Which channel can a customer NOT use to lodge an RB-IOS 2026 complaint?",
+          "options": [
+            "The CMS portal at cms.rbi.org.in",
+            "A call to RBI's Contact Centre on 14448",
+            "Email to crpc@rbi.org.in",
+            "A signed letter posted to the CRPC in Chandigarh"
+          ],
+          "answer": 1,
+          "explanation": "The Contact Centre guides customers and gives status updates but cannot register complaints. Complaints go through CMS, email to the CRPC, or post.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s2-q8",
+          "question": "When Deccan Lotus Bank responds to an RBI Ombudsman complaint that its IO never reviewed, what must it do?",
+          "options": [
+            "Seek the IO's comments and submit them to the RBI Ombudsman",
+            "Submit only the branch's original reply",
+            "Ask the RBI Ombudsman to send the case to the IO",
+            "Reopen the complaint internally and ask the customer to withdraw"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 14(13) of the IO Directions: include the IO's decision if the IO reviewed the complaint; if not, the bank must seek the IO's comments and submit them.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s2-q9",
+          "question": "A customer is unhappy that the RBI Ombudsman rejected his complaint as not maintainable. What further recourse does RB-IOS 2026 itself provide?",
+          "options": [
+            "An appeal to the Appellate Authority within 30 days",
+            "None within the Scheme, as appeals lie only against awards",
+            "A review by the bank's Internal Ombudsman",
+            "A fresh complaint to a different Ombudsman office"
+          ],
+          "answer": 1,
+          "explanation": "Under RB-IOS 2026, an appeal is available only against an award. Re-filing the same grievance is also non-maintainable.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s2-q10",
+          "question": "An award goes against Deccan Lotus Bank and the customer sends a letter accepting it. What must the bank do?",
+          "options": [
+            "Comply within 90 days of the award",
+            "Wait for the customer to file a fresh complaint",
+            "Appeal in every case, since appeal is automatic",
+            "Comply and inform the Ombudsman, or appeal where permitted, within 30 days of the acceptance letter"
+          ],
+          "answer": 3,
+          "explanation": "RBI's FAQ (Q29): the bank must comply with the award and inform the Ombudsman, or appeal where allowed, within 30 days of receiving the complainant's acceptance letter.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fair Sales: Mis-selling, Third-Party Products and Certification",
+      "stage": "The Sales Floor",
+      "summary": "Prepare for RBI's comprehensive sales rules that start on 1 January 2027: what counts as mis-selling, explicit consent, suitability, bundling, dark patterns, DSAs and refunds, plus the certification staff need before they sell third-party products.",
+      "minutes": 55,
+      "objectives": [
+        "Identify the five forms of mis-selling in the Responsible Business Conduct Second Amendment Directions",
+        "Apply the rules on explicit consent, suitability, compulsory bundling and loan-funded purchases",
+        "Spot dark patterns in digital sales journeys and explain the duties for DSAs, DMAs and third-party representatives",
+        "Explain the certification required before posting staff to third-party product sales and the refund rule for proven mis-selling"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "How the policy got there",
+          "setting": "Regional sales office, Connaught Place, New Delhi. Monday, 10:00 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "My team hit 140 percent of the insurance target last quarter. The Nashik branch was our star.",
+              "mood": "proud"
+            },
+            {
+              "who": "meera",
+              "text": "One of those policies went to Sunita Patil. The premium was debited from her working-capital loan. She says nobody asked her.",
+              "mood": "worried"
+            },
+            {
+              "who": "arjun",
+              "text": "It was on page four of the loan form. She signed the form.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "A signature on a combined form is not the same as explicit consent for each product. From January, RBI says so in plain terms.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meera",
+              "text": "Stage three: rebuild our sales practices before 1 January 2027, starting with the definition of mis-selling.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What RBI calls mis-selling",
+          "scenes": [
+            {
+              "icon": "🎯",
+              "heading": "Not suitable",
+              "narration": "Selling a product that is neither suitable nor appropriate for the customer's profile is mis-selling, even if the customer gave explicit consent."
+            },
+            {
+              "icon": "🙊",
+              "heading": "Wrong or missing information",
+              "narration": "Selling without correct and complete information, or with misleading information, is mis-selling."
+            },
+            {
+              "icon": "✋",
+              "heading": "No explicit consent",
+              "narration": "Selling a product without the customer's explicit consent is mis-selling. Explicit means specific, informed, unambiguous and recorded."
+            },
+            {
+              "icon": "🔗",
+              "heading": "Compulsory bundling",
+              "narration": "Making one product conditional on buying another, own or third-party, is mis-selling."
+            },
+            {
+              "icon": "📋",
+              "heading": "Other regulators' tests",
+              "narration": "Anything the relevant financial regulator, such as SEBI or the insurance regulator, defines as mis-selling also counts."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Before and after 1 January 2027",
+          "headers": [
+            "Common old habit",
+            "RBI's 2027 rule"
+          ],
+          "items": [
+            {
+              "label": "Consent",
+              "left": "One signature on a multi-product form",
+              "right": "Explicit consent for each product; default choice is 'No'"
+            },
+            {
+              "label": "Fit",
+              "left": "Sell what earns the target",
+              "right": "Suitability and appropriateness checked against the customer profile"
+            },
+            {
+              "label": "Bundling",
+              "left": "Loan approved if insurance bought from us",
+              "right": "No compulsory bundling; a required risk cover can be bought from any provider"
+            },
+            {
+              "label": "Funding",
+              "left": "Premium deducted from the loan",
+              "right": "No funding of a purchase from a loan without explicit consent"
+            },
+            {
+              "label": "Redress",
+              "left": "Partial refund after argument",
+              "right": "Full refund where mis-selling is established, plus compensation"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer explicitly consents to a complex market-linked insurance plan that is unsuitable for her age and risk tolerance. Under the 2027 rules, is it mis-selling?",
+          "options": [
+            "No, because she gave explicit consent",
+            "Yes, because unsuitable sales are mis-selling despite explicit consent",
+            "Only if the insurer later rejects a claim"
+          ],
+          "answer": 1,
+          "explanation": "The definition covers the sale of a product that is neither suitable nor appropriate for the customer's profile, notwithstanding her explicit consent."
+        },
+        {
+          "type": "concept",
+          "title": "Consent, disclosure and documents",
+          "body": "From **1 January 2027** (paragraphs 85G-85T):\n\n- **Explicit consent** may be a signed declaration, an OTP approval, a recorded confirmation or a clearly separate section of the agreement. On a multi-product form, list each product and let the customer choose only what she wants.\n- **Keep consent records** until one year after the contract ends.\n- **Disclose key features prominently**: fees, interest rate, risks, commitments, lock-in and exit penalties. Use RBI's or another regulator's format where one exists, such as the KFS or MITC.\n- **Digital journeys:** the customer must go through the terms before consenting, and the default must be 'No' or 'I do not agree'.\n- Use a **specific application form** for each product, showing its nature (loan, deposit, insurance, mutual fund, etc.).\n- Provide documents in the regional language or one the customer understands, **acknowledge** each application, and give a **copy of the signed terms** after the sale."
+        },
+        {
+          "type": "sort",
+          "title": "Allowed or bundling?",
+          "prompt": "Sort each practice under the 2027 rules on compulsory bundling.",
+          "buckets": [
+            "Allowed",
+            "Not allowed"
+          ],
+          "items": [
+            {
+              "text": "Home loan requires property insurance as a risk mitigant, and the customer may buy it from any insurer",
+              "bucket": 0
+            },
+            {
+              "text": "A free accident cover included with a card at no extra cost to the customer",
+              "bucket": 0
+            },
+            {
+              "text": "A package of account, card and locker that the customer chooses voluntarily",
+              "bucket": 0
+            },
+            {
+              "text": "Car loan approved only if the customer buys the bank's partner insurer's policy",
+              "bucket": 1
+            },
+            {
+              "text": "Insurance premium added to the loan amount without the customer's explicit consent",
+              "bucket": 1
+            },
+            {
+              "text": "Fixed deposit opened only if the customer also takes a mutual fund",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The incentive question",
+          "setting": "Video call between Delhi and Mumbai. 3:00 pm.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "The insurer pays my top sellers a travel bonus. It's their money, not the bank's.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meera",
+              "text": "From January, no bank employee may receive any incentive, directly or indirectly, from a third-party product provider.",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "And our own pay structures must not create incentives for mis-selling. My complaint analysis shows the spikes follow the contests.",
+              "mood": "thinking"
+            },
+            {
+              "who": "arjun",
+              "text": "Then I need a new scorecard, and I need it before the new year.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The pre-approved loan pop-up",
+          "situation": "The digital team shows Arjun a new mobile app journey for pre-approved personal loans. A countdown timer says the rate rises in 10 minutes. A loan protection insurance box is ticked by default. Closing the pop-up after login opens the loan page anyway. Launch is planned for 15 January 2027.",
+          "choices": [
+            {
+              "text": "Stop the launch, remove the timer, the pre-ticked box and the forced pop-up, and send the journey for user testing and internal audit",
+              "outcome": "Right. These match RBI's illustrative dark patterns: false urgency, basket sneaking and forced action. User interfaces must be user-tested and audited periodically for dark patterns.",
+              "score": 2
+            },
+            {
+              "text": "Keep the timer but untick the insurance box",
+              "outcome": "Better, but a countdown suggesting the rate will rise is RBI's own example of false urgency, and the forced pop-up remains.",
+              "score": 1
+            },
+            {
+              "text": "Launch as designed, since customers can still read the terms",
+              "outcome": "From 1 January 2027 the bank and its DSAs must not deploy dark patterns at all. Disclosure elsewhere does not cure a manipulative design.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Name the dark pattern",
+          "prompt": "Match each design to the dark pattern in RBI's illustrative list (Annex IIA).",
+          "pairs": [
+            {
+              "left": "False urgency",
+              "right": "'Offer ends soon' timers or warnings that rates will rise to rush a decision"
+            },
+            {
+              "left": "Basket sneaking",
+              "right": "Fraud or loan protection cover added by default to an application"
+            },
+            {
+              "left": "Confirm shaming",
+              "right": "Opt-out button reading 'No, I don't want extra security for my account'"
+            },
+            {
+              "left": "Bait and switch",
+              "right": "Advertising a low loan rate, then charging a higher one at application"
+            },
+            {
+              "left": "Subscription trap",
+              "right": "Easy sign-up for a card, but cancellation hidden behind many steps"
+            },
+            {
+              "left": "Trick wording",
+              "right": "'Uncheck this box if you do not want to receive offers'"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Who may sell, and how they must behave",
+          "caption": "Paragraphs 85B-85O of the Second Amendment, and paragraphs 59-60 of the Miscellaneous Directions.",
+          "items": [
+            {
+              "label": "Certify before posting",
+              "detail": "A certificate course is mandatory before staff are posted to third-party retail and wealth product sales."
+            },
+            {
+              "label": "Meet other regulators' rules",
+              "detail": "Staff and DSA sub-agents must hold any qualification SEBI, IRDAI or PFRDA prescribe."
+            },
+            {
+              "label": "Sign the code of conduct",
+              "detail": "Employees, DSAs, DMAs, sub-agents and third-party representatives give an undertaking."
+            },
+            {
+              "label": "Be identifiable",
+              "detail": "Agents and third-party staff in a branch wear clear identification distinct from bank staff."
+            },
+            {
+              "label": "Contact properly",
+              "detail": "Calls and visits normally 09:00-19:00, home visits only with explicit consent, no coercion."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Deccan Lotus Bank wants to post a new officer to its wealth management desk to sell third-party mutual funds next week. What must happen first?",
+          "options": [
+            "Nothing, provided a certified colleague supervises her",
+            "She must complete the required certificate course, including the certification SEBI prescribes for mutual fund sales",
+            "She must pass the bank's internal product quiz only"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 59 of the Miscellaneous Directions makes a certificate mandatory before posting staff to marketing of third-party retail products and wealth management, and certifications prescribed by other regulators must be met. For mutual funds, SEBI requires NISM certification."
+        },
+        {
+          "type": "flip",
+          "title": "Sales terms decoded",
+          "cards": [
+            {
+              "front": "TPPS",
+              "back": "Third-party product or service: offered by the bank for another provider under an agency or referral arrangement. Never advertise it as the bank's own."
+            },
+            {
+              "front": "DSA / DMA",
+              "back": "Anyone other than a bank employee engaged to sell or promote products, whatever the contract calls them, including BCs and loan service providers."
+            },
+            {
+              "front": "Explicit consent",
+              "back": "A specific, informed and unambiguous choice, recorded through a statement or clear affirmative action."
+            },
+            {
+              "front": "Post-sale feedback",
+              "back": "Within 30 days of a sale, by a unit not involved in selling; findings reported every six months."
+            },
+            {
+              "front": "Mis-selling complaint window",
+              "back": "Within the timeline set by the product's regulator, otherwise within 30 days of receiving the signed terms."
+            },
+            {
+              "front": "Refund rule",
+              "back": "If mis-selling is established: refund the full amount paid, tell the customer about cancellation, and compensate any loss under the bank's policy."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: HDFC Bank penalty (RBI, 2024)",
+          "body": "**What happened.** By an order dated 3 September 2024, RBI imposed a penalty of **₹1 crore** on HDFC Bank Limited. The order covered RBI directions on interest rates on deposits, recovery agents, customer service in banks read with the BCSBI Code, and outsourcing.\n\n**What RBI found.** Among the sustained charges, the bank had:\n- **paid the first-year premium for a complimentary life insurance cover** as a gift costing more than ₹250 to depositors when accepting certain deposits;\n- opened certain savings accounts for ineligible entities; and\n- **failed to ensure customers were not contacted after 7 pm and before 7 am.**\n\n**Lessons.** Tying insurance benefits to deposits and contacting customers at odd hours are conduct risks RBI inspects. The 2027 sales rules make both areas stricter.\n\n*Source: RBI press release 2024-2025/1075.*"
+        },
+        {
+          "type": "keypoints",
+          "title": "Sales Floor take-aways",
+          "items": [
+            "From 1 January 2027 mis-selling covers unsuitable sales, wrong or incomplete information, no explicit consent, compulsory bundling and other regulators' definitions.",
+            "Get explicit consent for each product, with 'No' as the default, and keep the records until one year after the contract ends.",
+            "No compulsory bundling, no loan-funded purchases without explicit consent, no dark patterns and no third-party incentives to staff.",
+            "Certify staff before posting them to third-party or wealth sales, and meet SEBI, IRDAI or PFRDA qualifications.",
+            "Where mis-selling is established, refund the full amount paid and compensate any loss under the bank's policy."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Look at one sales journey you use or approve. Where is consent recorded for each product, and is 'No' really the default? What would you fix before 1 January 2027?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "in-cp-s3-q1",
+          "question": "From when do the Responsible Business Conduct Second Amendment Directions on advertising, marketing and sale apply?",
+          "options": [
+            "15 June 2026",
+            "1 July 2026",
+            "1 January 2027",
+            "1 April 2027"
+          ],
+          "answer": 2,
+          "explanation": "The Second Amendment Directions were issued on 15 June 2026 and come into effect from 1 January 2027.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s3-q2",
+          "question": "Which practice is defined as compulsory bundling?",
+          "options": [
+            "Offering a free cover with a card at no extra cost",
+            "A package of products the customer chooses voluntarily",
+            "Approving a loan only if the customer buys another product the bank offers",
+            "Requiring property insurance that may be bought from any insurer"
+          ],
+          "answer": 2,
+          "explanation": "Compulsory bundling makes one product conditional on buying another offered by the bank. Voluntary packages, complimentary covers and a required risk cover bought from any provider are not bundling.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q3",
+          "question": "An RM sells a customer a product after giving her an incomplete picture of the lock-in and exit penalties. She signed every page. Is this mis-selling under the 2027 rules?",
+          "options": [
+            "No, because she signed every page of the form",
+            "No, unless she suffers a financial loss",
+            "Yes, because selling without correct and complete information is mis-selling",
+            "Only if the product is a third-party product"
+          ],
+          "answer": 2,
+          "explanation": "Sale without correct or complete information is one of the five forms of mis-selling, whatever the customer signed, and it applies to own and third-party products.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q4",
+          "question": "In a digital consent journey, what must the default choice be under the 2027 rules?",
+          "options": [
+            "'Yes', provided the customer can change it",
+            "Whatever the product team prefers",
+            "Blank, with a pop-up suggesting 'Yes'",
+            "'No' or 'I do not agree'"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 85I requires the default consent choice to be 'No' / 'I do not agree', and the customer must go through the terms before consenting.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s3-q5",
+          "question": "Mis-selling of a third-party insurance product is established. The customer paid ₹48,000 in premiums. What must Deccan Lotus Bank do?",
+          "options": [
+            "Refund the unexpired part of the premium only",
+            "Ask the insurer to decide whether a refund is due",
+            "Refund the full ₹48,000, inform her of cancellation, and compensate any loss under its policy",
+            "Offer a different policy with the same insurer"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 85Z: where mis-selling is established, the bank refunds the entire amount paid, tells the customer about cancellation, and compensates any loss under its approved policy.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q6",
+          "question": "Before posting staff to marketing of third-party retail products, what does paragraph 59 of the Miscellaneous Directions require?",
+          "options": [
+            "A three-month apprenticeship with a senior RM",
+            "A mandatory certificate course, plus any certification other financial regulators prescribe",
+            "An annual refresher only, after the first year",
+            "Approval from the Internal Ombudsman"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 59 makes acquiring a certificate course mandatory before posting staff to third-party retail and wealth sales, and certifications other regulators prescribe must also be met.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q7",
+          "question": "An insurer offers Deccan Lotus Bank's branch staff gift vouchers for every policy sold. What do the 2027 rules say?",
+          "options": [
+            "No bank employee may directly or indirectly receive incentives from a third-party product provider",
+            "Vouchers are allowed below a set value",
+            "Allowed if the bank discloses them on its website",
+            "Allowed if the branch manager approves them"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 85U requires that no incentive is directly or indirectly received by bank employees from the third-party provider, and bank policies must not create incentives for mis-selling.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q8",
+          "question": "Within what time must a bank seek post-sale feedback to check customers understood a product and its risks?",
+          "options": [
+            "Within 7 days, through the selling RM",
+            "Within 90 days, by the insurer",
+            "Within 30 days of the sale, through a unit not associated with sales",
+            "Within one year, at annual review"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 85Y requires a feedback mechanism within 30 days of sale, which may use random call-backs or surveys by a unit not involved in selling, with a half-yearly report.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s3-q9",
+          "question": "A DSA sub-agent sits in a branch selling the bank's credit cards. Which requirement applies?",
+          "options": [
+            "She must be clearly identifiable as distinct from bank employees and must sign up to the bank's code of conduct",
+            "She may wear the bank's uniform to build trust",
+            "She may call customers at any hour they answer",
+            "She is outside RBI rules as she is not an employee"
+          ],
+          "answer": 0,
+          "explanation": "Paragraphs 85E-85F: DSA sub-agents in branches must be distinguishable from bank employees with clear identification, and the bank must obtain undertakings that they follow its code of conduct.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s3-q10",
+          "question": "A mobile app shows 'No thanks, I don't want extra security' as the opt-out from a fraud cover. Which dark pattern is this?",
+          "options": [
+            "Confirm shaming",
+            "Drip pricing",
+            "Nagging",
+            "Disguised advertisement"
+          ],
+          "answer": 0,
+          "explanation": "Confirm shaming uses guilt or fear to push a choice. RBI's Annex IIA gives this very wording as an illustration.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Fair Lending, Digital Channels and Recovery Conduct",
+      "stage": "The Collections Room",
+      "summary": "Lend and collect fairly: the principles behind RBI's responsible lending conduct and digital lending rules, then the detailed recovery rules from 1 January 2027, covering IIBF-certified agents, notice, contact hours, call records, harsh practices, device locking and recovery grievances.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the fair practices principles that run through RBI's responsible lending conduct rules, including for digital lending",
+        "Apply the 2027 rules on recovery policy, agency due diligence, IIBF certification and the code of conduct",
+        "Conduct or supervise recovery contacts within RBI's hours, notice, recording and decency rules",
+        "Apply the conditions and safeguards for locking a financed mobile device"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The 9:40 pm call",
+          "setting": "Collections hub, Gachibowli, Hyderabad. Tuesday, 9:00 am.",
+          "lines": [
+            {
+              "who": "sunita",
+              "text": "(voice note) A man called me at 9:40 at night about my loan instalment. He said he would tell my suppliers I am a defaulter.",
+              "mood": "angry"
+            },
+            {
+              "who": "farhan",
+              "text": "That call came from an agency we hired in August. I don't even know if the caller is certified.",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "Sunita missed one instalment because the insurance debit drained her loan account. Our own mis-sale caused this default.",
+              "mood": "thinking"
+            },
+            {
+              "who": "harpreet",
+              "text": "Then this is a recovery complaint and a mis-selling complaint at once. Both feed my quarterly analysis.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meera",
+              "text": "Stage four: learn how RBI expects us to lend and collect, especially under the new rules from 1 January 2027.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Fair lending in four ideas",
+          "scenes": [
+            {
+              "icon": "📄",
+              "heading": "Clear terms",
+              "narration": "RBI's responsible lending conduct rules, now in Chapter Eight of the Responsible Business Conduct Directions, expect borrowers to understand the cost, terms and consequences before they sign."
+            },
+            {
+              "icon": "🧾",
+              "heading": "Prescribed formats",
+              "narration": "Where RBI prescribes a disclosure format, such as a Key Facts Statement, the bank must use it when it obtains consent."
+            },
+            {
+              "icon": "📱",
+              "heading": "Digital is still the bank",
+              "narration": "Loan service providers and apps that sell for the bank count as its direct selling agents, whatever the contract calls them. Their screens must avoid dark patterns."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Decent recovery",
+              "narration": "A borrower in default keeps the right to be treated with dignity. The 2027 rules set out exactly what decency means in recovery."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Engaging a recovery agency from 2027",
+          "caption": "Section L of the Responsible Business Conduct Directions, inserted by the Fourth Amendment (6 August 2026).",
+          "items": [
+            {
+              "label": "Recovery policy in place",
+              "detail": "Triggers, escalation matrix, code of conduct, deceased borrowers, financial distress and compensation."
+            },
+            {
+              "label": "Due diligence",
+              "detail": "Under the outsourcing Directions; verify agents' antecedents before engagement and periodically."
+            },
+            {
+              "label": "IIBF certificate",
+              "detail": "Agencies may use only agents certified by IIBF after its Debt Recovery Agents training."
+            },
+            {
+              "label": "Code of conduct undertaking",
+              "detail": "The agency undertakes that its agents will follow the bank's code."
+            },
+            {
+              "label": "Publish the list",
+              "detail": "Agency list on the website, updated within seven calendar days of any change."
+            },
+            {
+              "label": "Notify the borrower",
+              "detail": "Agency details at least one day before the first in-person visit."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Farhan's new agency wants to deploy a field agent who has years of experience but no IIBF certificate. What does the 2027 rule say?",
+          "options": [
+            "Experience of more than five years can substitute for the certificate",
+            "The agency may engage only agents who hold the IIBF Debt Recovery Agents certificate",
+            "The bank may allow it for six months while the agent studies"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 454I: the bank must ensure the agency engages only agents who have the IIBF certificate after completing the Debt Recovery Agents training from IIBF or an institute tied up with it."
+        },
+        {
+          "type": "concept",
+          "title": "Contact rules for employees and agents",
+          "body": "From **1 January 2027** (paragraphs 454P and 454X-454Y), anyone collecting for the bank must:\n\n- **Identify themselves** with a bank or agency ID card. Agents also carry an authorisation letter and the bank's notice, both showing the agency's phone number and the bank's grievance officer.\n- Discuss the dues **only with the borrower or guarantor**, civilly and with decency.\n- Call or visit **only between 08:00 and 19:00**, unless the borrower asks otherwise, and honour requests to avoid certain times.\n- Meet at the **borrower's chosen place**. Home or work is allowed only if no place is chosen or the borrower misses two or more meetings there.\n- Avoid **bereavements, medical emergencies, weddings** and similar occasions.\n- Send only bank-approved written messages, and **give a receipt** for every payment.\n\nThe bank must **log and record recovery calls**, tell borrowers they are recorded, and keep recordings for **six months** (longer if the matter is in court)."
+        },
+        {
+          "type": "sort",
+          "title": "Harsh or acceptable?",
+          "prompt": "Sort each recovery action under paragraph 454Z and the conduct rules.",
+          "buckets": [
+            "Acceptable",
+            "Harsh: prohibited"
+          ],
+          "items": [
+            {
+              "text": "A polite reminder call at 10:30 am, recorded after telling the borrower",
+              "bucket": 0
+            },
+            {
+              "text": "Meeting the borrower at the café she chose, with an ID card and authorisation letter",
+              "bucket": 0
+            },
+            {
+              "text": "Giving a receipt immediately for a cash part-payment",
+              "bucket": 0
+            },
+            {
+              "text": "Posting the borrower's photo and loan details on social media",
+              "bucket": 1
+            },
+            {
+              "text": "Telling the borrower's suppliers she is a defaulter",
+              "bucket": 1
+            },
+            {
+              "text": "Twenty calls a day from different numbers",
+              "bucket": 1
+            },
+            {
+              "text": "Saying the borrower will be arrested tomorrow if she does not pay",
+              "bucket": 1
+            },
+            {
+              "text": "Calling at 9:40 pm without any request from the borrower",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The phone lock request",
+          "setting": "Product committee, Mumbai. Friday, 2:30 pm.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "Our partner wants us to finance smartphones and lock the phone on day one of default. It works, apparently.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farhan",
+              "text": "And they want to read the borrower's contacts to find relatives who can pay.",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "From January, RBI allows device locking only for loans that financed that device, only gradually, and never using the borrower's personal data.",
+              "mood": "thinking"
+            },
+            {
+              "who": "harpreet",
+              "text": "Get it wrong and the bank pays ₹250 an hour in compensation. Let's read the conditions carefully.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Device locking for a financed phone",
+          "caption": "Paragraphs 454S-454U. Essential functions such as incoming calls, SMS and emergency SOS are never blocked.",
+          "items": [
+            {
+              "label": "Loan agreement",
+              "value": "Day 0",
+              "detail": "Must expressly permit restrictions and set out the procedure; mechanism certified by the device maker or OS platform where available."
+            },
+            {
+              "label": "No restriction yet",
+              "value": "1-30 DPD",
+              "detail": "No restriction until the loan is 30 days past due and notices have gone unpaid."
+            },
+            {
+              "label": "Gradual restrictions",
+              "value": "After 30 DPD",
+              "detail": "Step-by-step, after notice; outgoing calls stay open."
+            },
+            {
+              "label": "Full restrictions",
+              "value": "After 60 DPD",
+              "detail": "Full set, including outgoing calls, only after 60 days past due."
+            },
+            {
+              "label": "Unlock",
+              "value": "Within 1 hour",
+              "detail": "Reverse restrictions within an hour of receiving the dues."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The partner's lock-and-trace plan",
+          "situation": "A device-financing partner proposes: lock the whole phone on the first missed instalment, read the borrower's contact list to call relatives, and unlock 'by the next working day' after payment. Arjun wants to sign by December.",
+          "choices": [
+            {
+              "text": "Reject the plan; allow only gradual restrictions after 30 days past due, full ones after 60, no personal data access, and unlocking within one hour",
+              "outcome": "Correct. Paragraphs 454S-454U set those limits, protect essential functions and the borrower's work, and ban any use of contacts, SMS, photos or location data.",
+              "score": 2
+            },
+            {
+              "text": "Accept the lock but drop the contact-list access",
+              "outcome": "Better, but locking on the first missed instalment and unlocking the next day both breach the rules. Wrongful or late restrictions cost ₹250 an hour in compensation, capped at the loan amount.",
+              "score": 1
+            },
+            {
+              "text": "Accept it, since the partner runs the technology",
+              "outcome": "The bank stays responsible for its third-party service provider. Every element of this plan breaches the 2027 rules.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Recovery rules and their numbers",
+          "prompt": "Match each 2027 recovery rule to its figure.",
+          "pairs": [
+            {
+              "left": "Contact window",
+              "right": "08:00 to 19:00, unless the borrower asks otherwise"
+            },
+            {
+              "left": "Notice of agency",
+              "right": "At least one day before the first in-person visit"
+            },
+            {
+              "left": "Call recordings kept",
+              "right": "Six months, or until a court case is disposed of"
+            },
+            {
+              "left": "Agency list updated",
+              "right": "Within seven calendar days of a change"
+            },
+            {
+              "left": "Late unlocking compensation",
+              "right": "₹250 per hour, capped at the loan amount disbursed"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sunita asked the agent to meet her at her shop, but she missed two arranged meetings there. Where may the agent now contact her?",
+          "options": [
+            "Only at the branch, never elsewhere",
+            "At her residence or her place of business",
+            "At her supplier's office, to apply pressure"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 454Y(5): contact is ordinarily at the borrower's chosen place; if she fails to appear there on two or more successive occasions, the agent may contact her at her residence or business."
+        },
+        {
+          "type": "example",
+          "title": "Real case: RBL Bank recovery findings (RBI, 2023)",
+          "body": "**What RBI found.** The same 2023 order against RBL Bank (penalty about **₹2.27 crore**) found failures with recovery agents in the years under review. The bank had failed to:\n\n- ensure its recovery agents did **not intimidate or harass** borrowers;\n- ensure agents had completed the training course and obtained the **IIBF certificate** before onboarding;\n- carry out **pre-employment police verification** of agents; and\n- **inform borrowers of the recovery agency's details** when forwarding their cases.\n\n**Why it matters.** Each failure maps onto a 2027 rule: IIBF certification (454I), antecedent verification (454H), prior notice to the borrower (454L) and the ban on harsh practices (454Z). The new rules make these duties more detailed, not lighter.\n\n*Source: RBI press release 2022-2023/1891.*"
+        },
+        {
+          "type": "tip",
+          "title": "Put the grievance officer on every page",
+          "body": "From 2027 every recovery communication must name the bank's **grievance redressal officer**, with name, email, phone and address. Also:\n\n- Set up a **dedicated recovery grievance mechanism** and describe it in the loan agreement and the agency notice.\n- Make sure **targets and incentives** for staff and agencies do not push agents toward harsh practices.\n- Share borrower data with agencies **only as far as needed**, with penalties for misuse.\n- Have a **compensation provision** in the recovery policy for losses caused by non-compliant recovery."
+        },
+        {
+          "type": "keypoints",
+          "title": "Collections Room take-aways",
+          "items": [
+            "Lending conduct rules sit in Chapter VIII of the Responsible Business Conduct Directions; use prescribed formats such as the KFS where RBI sets them.",
+            "Loan service providers and apps selling for the bank are DSAs under the 2027 sales rules, and their screens must avoid dark patterns.",
+            "From 1 January 2027 recovery agencies may use only IIBF-certified agents, after due diligence and a code of conduct undertaking.",
+            "Contact 08:00-19:00, notify agency details a day ahead, record calls for six months and never use harsh methods.",
+            "Device locks apply only to financed devices, gradually after 30 and 60 days past due, never using personal data, and must be lifted within one hour of payment."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Imagine you are the borrower on the other end of a recovery call your bank makes. Which of the 2027 rules would matter most to you, and is your bank ready to prove it follows them?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "in-cp-s4-q1",
+          "question": "From 1 January 2027, which agents may a recovery agency engaged by a commercial bank use?",
+          "options": [
+            "Any agent with three years' collections experience",
+            "Agents certified by the bank's own training team",
+            "Any agent who signs the code of conduct",
+            "Only agents holding the IIBF certificate after its Debt Recovery Agents training"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454I limits agencies to agents with the IIBF certificate earned through the Debt Recovery Agents programme of IIBF or an institute tied up with it.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s4-q2",
+          "question": "Between what hours may a bank employee or recovery agent normally contact a borrower about overdue dues under the 2027 rules?",
+          "options": [
+            "09:00 to 19:00",
+            "07:00 to 21:00",
+            "08:00 to 20:00",
+            "08:00 to 19:00"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454Y(4) sets 08:00 to 19:00 for recovery contact, unless the borrower asks otherwise. The 09:00-19:00 window applies to sales calls under the Second Amendment.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s4-q3",
+          "question": "Deccan Lotus Bank assigns Sunita's account to a recovery agency for a home visit. What must the bank do before the first visit?",
+          "options": [
+            "Nothing, since the agent will carry an ID card",
+            "Publish her name on the defaulters list",
+            "Inform her guarantor's employer",
+            "Give her the agency's details at least one day before the first visit"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454L requires the bank to send the recovery agency's details to the borrower or guarantor at least one day before the first in-person visit.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s4-q4",
+          "question": "How long must a bank keep recordings of recovery calls under the 2027 rules?",
+          "options": [
+            "Three months from the call",
+            "Six months from the call, or until a sub judice case is disposed of",
+            "One year after the loan is closed",
+            "Eight years, as for KYC records"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 454P requires call recordings to be kept for six months from the date of the call, or until disposal where the matter is sub judice.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s4-q5",
+          "question": "Which act is listed as a harsh recovery practice in paragraph 454Z?",
+          "options": [
+            "Sending a bank-approved reminder letter",
+            "Visiting at 11 am at the borrower's chosen place",
+            "Making false statements about what will happen if the borrower does not pay",
+            "Calling once a week during permitted hours"
+          ],
+          "answer": 2,
+          "explanation": "False or misleading representations about the debt or the consequences of non-payment are expressly harsh, along with abuse, threats, social media shaming and excessive calls.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s4-q6",
+          "question": "A bank financed a borrower's laptop. When may it first start restricting the laptop's functions?",
+          "options": [
+            "On the first day an instalment is missed",
+            "Only after the loan is 90 days past due",
+            "Whenever the loan agreement allows it",
+            "After the loan is 30 days past due and notices have gone unpaid"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454S(3): no restriction until the loan is 30 days past due and unpaid despite notices; gradual restrictions after that, full restrictions only after 60 days past due.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s4-q7",
+          "question": "A financed phone stays locked for five hours after the borrower clears her dues, because of the bank's error. What compensation applies?",
+          "options": [
+            "A flat ₹500, whatever the delay",
+            "Nothing, if the phone is unlocked within one working day",
+            "₹250 per hour until it is remedied, capped at the loan amount disbursed",
+            "Only what the RBI Ombudsman later awards"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 454T(5)-(6): restrictions must be reversed within one hour of payment; for wrongful or delayed reversal the bank pays ₹250 per hour, capped at the loan amount disbursed.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s4-q8",
+          "question": "A device-financing partner wants to use the borrower's contact list to trace relatives for repayment. What do the 2027 rules say?",
+          "options": [
+            "It is allowed if the loan agreement says so",
+            "It is allowed after the loan is 60 days past due",
+            "It is allowed if only the borrower's spouse is called",
+            "Neither the bank nor its provider may access or use personal data on the device for any purpose"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454U bans the bank and its provider from accessing or using personal data on the device, such as contacts, SMS, photos or location, for recovery or any other purpose.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s4-q9",
+          "question": "A fintech app, contracted as a 'technology partner', markets Deccan Lotus Bank's personal loans to customers. How do the 2027 sales rules treat it?",
+          "options": [
+            "As a DSA/DMA, so the bank's sales code, dark pattern ban and listing duties apply",
+            "As outside RBI's rules, since it is a technology partner",
+            "As a bank employee for all purposes",
+            "As a third-party product provider"
+          ],
+          "answer": 0,
+          "explanation": "The DSA/DMA definition covers any entity other than an employee engaged to sell or promote products, whatever the contract calls it, including loan service providers.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s4-q10",
+          "question": "Which item must appear in every recovery-related communication from the bank from 2027?",
+          "options": [
+            "The borrower's credit score",
+            "The recovery agent's commission rate",
+            "The names of the borrower's guarantors",
+            "The name, email, phone and address of the bank's grievance redressal officer"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 454AA requires all recovery communications to contain the name, email address, telephone number and address of the relevant grievance redressal officer.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Fraudulent Electronic Transactions, Oversight and Inspection Readiness",
+      "stage": "The Inspection Room",
+      "summary": "Decide who bears the loss when fraudsters empty an account, using RBI's customer protection rules for electronic banking transactions from 1 January 2027, then pull the quest together: training duties, Board oversight, audit, records and what RBI inspectors look for.",
+      "minutes": 60,
+      "objectives": [
+        "Classify a fraudulent electronic banking transaction as bank negligence, customer negligence or third-party breach and decide liability",
+        "Apply the alert, reporting, acknowledgement, reversal and 45/60-day response rules",
+        "Explain the one-time small-value compensation for bona fide victims",
+        "Assemble the training, oversight, audit and record evidence RBI expects across complaints, sales, recovery and fraud"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "₹42,000 gone",
+          "setting": "Central Grievance Redress Cell, Mumbai. Monday, 8:50 am.",
+          "lines": [
+            {
+              "who": "sunita",
+              "text": "(phone) Someone called pretending to be from the bank, sent me a link, and ₹42,000 left my account on Saturday night. I called your helpline at once.",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "We'll block further debits now and register this as a complaint. Please also report it to the National Cyber Crime Helpline, 1930.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "Under the rules for transactions from January 2027, the burden of proving customer liability is on the bank, not on Sunita.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meera",
+              "text": "Final stage. Learn the liability rules, then get the bank ready for the RBI inspection team arriving in the new year.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who pays for a fraudulent transaction?",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "The bank proves it",
+              "narration": "For electronic banking transactions on or after the first of January 2027, the bank carries the burden of proving that the customer is liable."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Bank at fault",
+              "narration": "If the fraud happened because of the bank's negligence or deficiency, the customer has zero liability and gets the money back, whether or not she reported it."
+            },
+            {
+              "icon": "🌐",
+              "heading": "Somewhere else in the system",
+              "narration": "If the weak point was a third party, such as a payment app or telecom provider, the customer has zero liability if she reports within five calendar days."
+            },
+            {
+              "icon": "🔑",
+              "heading": "Customer negligence",
+              "narration": "If she shared her OTP or PIN, she bears the loss until she reports it. Anything after the report is the bank's loss."
+            },
+            {
+              "icon": "⏳",
+              "heading": "Answer on time",
+              "narration": "The bank must examine the complaint, decide liability and respond within forty-five days for domestic frauds and sixty for cross-border ones."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Liability map from 1 January 2027",
+          "axes": {
+            "x": "Where the fault lies",
+            "y": "When the customer reported"
+          },
+          "items": [
+            {
+              "label": "Bank negligence, any time",
+              "detail": "Zero liability and reversal, reported or not (76L)."
+            },
+            {
+              "label": "Third-party breach, within 5 days",
+              "detail": "Zero liability and reversal (76M)."
+            },
+            {
+              "label": "Customer negligence, before report",
+              "detail": "Customer bears the loss until reporting, less any small-value compensation (76N, 76T)."
+            },
+            {
+              "label": "Third-party breach, after 5 days",
+              "detail": "Liability as set in the bank's own policy (76M)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Deccan Lotus Bank failed to send an SMS alert for a fraudulent UPI debit. The customer noticed it only after three weeks. What is her liability under the 2027 rules?",
+          "options": [
+            "Her liability depends on the bank's policy because she reported late",
+            "Zero, because not sending mandatory alerts is bank negligence, whatever the reporting date",
+            "Full liability, because she did not check her account"
+          ],
+          "answer": 1,
+          "explanation": "Not sending mandatory alerts is listed as bank negligence. Where the fraud is due to bank negligence, the customer has zero liability and a reversal, whether or not she reported it."
+        },
+        {
+          "type": "concept",
+          "title": "What the bank must have in place",
+          "body": "Paragraphs 76A-76J, for transactions on or after **1 January 2027**:\n\n- A **published customer protection policy**: alert channels, customer rights and obligations, resolution timelines and awareness.\n- Registered **mobile number** for electronic banking (except ATM cash withdrawals), verified at onboarding and at intervals the policy sets.\n- **Instant SMS alerts** for every transaction above **₹500**, and **email alerts** where an email is registered. Alerts show account or card, amount, date, time, channel and beneficiary.\n- **24x7 reporting** channels, a reply-to number in the SMS alert, and a direct link on the website and app home page.\n- Each report is **registered as a complaint** with an immediate acknowledgement giving the complaint number, date and time.\n- Prompt steps to **stop further unauthorised debits**, and advice to report on the **National Cyber Crime Reporting Portal or 1930**.\n- **No SMS charges** for alerts sent under regulation."
+        },
+        {
+          "type": "sort",
+          "title": "Whose negligence?",
+          "prompt": "Sort each cause using the definitions in paragraphs 4(20B), 4(20C) and 4(26.1A).",
+          "buckets": [
+            "Bank negligence",
+            "Customer negligence",
+            "Third-party breach"
+          ],
+          "items": [
+            {
+              "text": "The bank had no 24x7 channel to report a lost card",
+              "bucket": 0
+            },
+            {
+              "text": "An internal fraud by a bank employee led to the debit",
+              "bucket": 0
+            },
+            {
+              "text": "The customer gave his OTP to a caller posing as bank staff",
+              "bucket": 1
+            },
+            {
+              "text": "The customer ignored the bank's specific warning that this payment looked like a scam",
+              "bucket": 1
+            },
+            {
+              "text": "The customer kept his PIN written on the card",
+              "bucket": 1
+            },
+            {
+              "text": "A payment gateway's systems were breached",
+              "bucket": 2
+            },
+            {
+              "text": "A telecom provider issued a duplicate SIM to a fraudster",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Sunita's classification",
+          "setting": "Fraud operations, Navi Mumbai. Wednesday, 4:30 pm.",
+          "lines": [
+            {
+              "who": "meera",
+              "text": "The logs show Sunita entered her credentials on a fake link. That points to customer negligence, so she bears the loss up to her report.",
+              "mood": "thinking"
+            },
+            {
+              "who": "harpreet",
+              "text": "Then check the small-value compensation. Her loss is under ₹50,000, she's an individual, and she reported to us and to 1930 the same night.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meera",
+              "text": "85 percent of ₹42,000 is ₹35,700, so the ₹25,000 cap applies. It's once in a lifetime, so we confirm she has never claimed before.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sunita",
+              "text": "So I get ₹25,000 back, and more if the police recover the money?",
+              "mood": "worried"
+            },
+            {
+              "who": "meera",
+              "text": "Yes. If money is recovered, we recalculate on the net loss and pay you the difference.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Responding to the fraud complaint",
+          "situation": "It is 2027. A customer, Mr D'Souza, reports a domestic fraudulent card-not-present transaction on his credit card. The investigation will take weeks, and the insurer has not yet responded. The fraud team proposes to tell him to wait for the insurance outcome before doing anything.",
+          "choices": [
+            {
+              "text": "Give a shadow reversal within five calendar days, investigate, and respond within 45 days of receiving the complaint",
+              "outcome": "Correct. For credit card frauds the bank must give a shadow reversal within five calendar days, and respond to domestic fraud complaints within 45 days, without waiting for insurance.",
+              "score": 2
+            },
+            {
+              "text": "Respond within 45 days, but reverse nothing until the insurer pays",
+              "outcome": "The timeline is right, but credit card frauds need a shadow reversal within five calendar days of notification, before investigation or insurance settlement ends.",
+              "score": 1
+            },
+            {
+              "text": "Wait for the insurer, then decide",
+              "outcome": "Insurance has no bearing on the customer's rights. Waiting risks breaching both the five-day shadow reversal and the 45-day response limit.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Fraud liability rules by the numbers",
+          "items": [
+            {
+              "label": "Third-party breach report",
+              "value": "5 days",
+              "detail": "Calendar days for zero liability in third-party breach cases."
+            },
+            {
+              "label": "Domestic response limit",
+              "value": "45 days",
+              "detail": "To examine, establish liability and respond; 60 days for cross-border."
+            },
+            {
+              "label": "Small-value compensation",
+              "value": "85% or ₹25,000",
+              "detail": "Whichever is less, once in a lifetime, for losses up to ₹50,000."
+            },
+            {
+              "label": "SMS alert threshold",
+              "value": "Above ₹500",
+              "detail": "Instant SMS for every electronic transaction above ₹500."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Handling a fraud report, step by step",
+          "prompt": "Put the bank's steps for a reported fraudulent transaction in order.",
+          "steps": [
+            "Register the report as a complaint and send an acknowledgement with the number, date and time",
+            "Stop further unauthorised debits and advise the customer to report to 1930 or the cyber crime portal",
+            "Classify the case: bank negligence, third-party breach or customer negligence",
+            "Reverse the transaction value-dated to the original date where the customer has zero liability",
+            "Respond within 45 days (domestic) or 60 days (cross-border), with reasons if liability is established"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real cases: Union Bank and Central Bank (RBI, 2024 and 2026)",
+          "body": "Both penalties concerned the **current rules on limiting customer liability**, which apply to transactions before 1 January 2027.\n\n**Union Bank of India (March 2026, ₹95.40 lakh).** RBI found that the bank had not given a **shadow credit within 10 working days** of customers reporting unauthorised transactions, and had not given **24x7 access through multiple channels** to report them. A third charge concerned asset classification.\n\n**Central Bank of India (June 2024, about ₹1.46 crore).** RBI found that in a few cases the bank had **not given the shadow credit within 10 working days**, and had not **resolved complaints and paid compensation within 90 days**. Another charge concerned a working capital loan.\n\n**Lesson.** Reversal clocks and reporting channels are inspection targets. The 2027 rules tighten the clocks to 45 and 60 days for complaints and five calendar days for credit card shadow reversals.\n\n*Sources: RBI press releases 2025-2026/2338 and 2024-2025/506.*"
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The training loop RBI expects",
+          "items": [
+            {
+              "label": "Analyse complaints",
+              "detail": "The IO analyses complaint patterns every quarter and finds root causes."
+            },
+            {
+              "label": "Train frontline staff",
+              "detail": "IO analysis feeds training on patterns, root causes and remedies (IO Directions 14(14))."
+            },
+            {
+              "label": "Certify sellers and agents",
+              "detail": "Certificates before third-party sales postings; IIBF for recovery agents; train DSA sub-agents."
+            },
+            {
+              "label": "Check and audit",
+              "detail": "Mystery shopping of card agents, annual IO audit, post-sale feedback, dark-pattern audits."
+            },
+            {
+              "label": "Report to the Board",
+              "detail": "Customer Service Committee reviews IO reports, Ombudsman losses and fraud complaints."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "What the inspector will ask for",
+          "cards": [
+            {
+              "front": "Complaint records",
+              "back": "CMS showing three categories only, auto-escalation dates, IO reasoned decisions and replies within 30 days."
+            },
+            {
+              "front": "IO reporting",
+              "back": "Appointment details sent to RBI within five working days, and quarterly reports by the 15th after each quarter."
+            },
+            {
+              "front": "Sales evidence",
+              "back": "Consent records kept until a year after the contract ends, staff certificates, DSA list and the code of conduct undertakings."
+            },
+            {
+              "front": "Recovery evidence",
+              "back": "IIBF certificates, antecedent checks, published agency list, call logs and six months of recordings."
+            },
+            {
+              "front": "Fraud evidence",
+              "back": "Alert and response timestamps, acknowledgements, classification and compensation records kept for audit."
+            },
+            {
+              "front": "Board oversight",
+              "back": "Customer Service Committee minutes on IO reports, overruled decisions, Ombudsman outcomes and fraud complaints."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which is a training duty RBI has written into its Directions for commercial banks?",
+          "options": [
+            "Annual refresher on the RB-IOS for every employee, set by the Scheme",
+            "Using the IO's complaint analysis in training for frontline staff",
+            "A national exam on fair practices for all branch managers",
+            "Mandatory IIBF certification for every bank employee"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 14(14) of the IO Directions requires banks to use the analysis of IO-handled complaints in training and conferences for frontline staff. IIBF certification applies to recovery agents, not all staff."
+        },
+        {
+          "type": "keypoints",
+          "title": "Inspection Room take-aways",
+          "items": [
+            "For transactions from 1 January 2027 the bank must prove customer liability; bank negligence means zero liability whether or not the customer reported.",
+            "Third-party breaches give zero liability if reported within five calendar days; customer negligence leaves the loss with the customer until reporting.",
+            "Respond within 45 days (domestic) or 60 days (cross-border); credit card shadow reversals within five calendar days; reversals value-dated.",
+            "Bona fide individual victims with losses up to ₹50,000 may get 85% or ₹25,000, whichever is less, once in a lifetime.",
+            "Show evidence: complaint analysis in training, certificates, IIBF agents, records, audits and Customer Service Committee oversight."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If an RBI inspector arrived tomorrow, which piece of evidence from this quest would your team find hardest to produce? Who would you ask to fix it, and by when?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "in-cp-s5-q1",
+          "question": "For electronic banking transactions on or after 1 January 2027, who bears the burden of proving customer liability in a fraud complaint?",
+          "options": [
+            "The bank",
+            "The customer",
+            "The beneficiary bank",
+            "The RBI Ombudsman"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 76K places the burden of proving customer liability in complaints about fraudulent electronic banking transactions on the bank.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s5-q2",
+          "question": "A fraudulent debit resulted from a breach at a payment gateway. The customer reported it on the third day. What is her liability?",
+          "options": [
+            "Up to the limit in the bank's policy",
+            "Full liability until the gateway pays",
+            "Half the loss, shared with the bank",
+            "Zero, with reversal, because she reported a third-party breach within five calendar days"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 76M: in a third-party breach reported within five calendar days, the customer has zero liability and the transaction is reversed. After five days the bank's policy decides.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s5-q3",
+          "question": "Which is defined as negligence by a customer in the 2027 rules?",
+          "options": [
+            "Not having a smartphone banking app",
+            "Ignoring a specific, clear warning from the bank that the payment is likely a scam",
+            "Reporting a fraud on the sixth day",
+            "Using a debit card for online shopping"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 4(20C) lists ignoring specific, directed and clear warnings as customer negligence, along with sharing credentials, late reporting, malicious apps and not updating contact details.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s5-q4",
+          "question": "A customer shared his OTP with a fraudster at 10 pm and reported the fraud at 11 pm. A further debit occurred at 11:30 pm. Who bears the 11:30 pm loss?",
+          "options": [
+            "The customer, as the original negligence was his",
+            "The beneficiary bank alone",
+            "Split equally between the customer and the bank",
+            "The bank, since losses after the customer's report fall on the bank"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 76O: loss from any unauthorised transaction after the customer reports the fraud is borne by the bank. The customer bears losses from his own negligence only until he reports.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s5-q5",
+          "question": "What is the maximum time for a bank to examine, establish liability and respond to a complaint about a domestic fraudulent electronic transaction from 2027?",
+          "options": [
+            "45 calendar days from receipt of the complaint",
+            "30 calendar days from the transaction",
+            "90 days from receipt of the complaint",
+            "10 working days from notification"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 76Q sets a ceiling of 45 calendar days for domestic and 60 calendar days for cross-border frauds. The 10-working-day and 90-day figures belong to the pre-2027 rules.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s5-q6",
+          "question": "For a credit card fraud complaint under the 2027 rules, within what time must the bank give a shadow reversal?",
+          "options": [
+            "Within ten working days of the investigation ending",
+            "Within five calendar days of the customer's notification",
+            "Within 45 days, together with the final response",
+            "Only after the insurer settles the claim"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 76R requires a shadow reversal equal to the disputed amount within five calendar days of notification for credit card frauds.",
+          "difficulty": 3
+        },
+        {
+          "id": "in-cp-s5-q7",
+          "question": "Above what value must a bank send instant SMS alerts for every electronic banking transaction from 2027?",
+          "options": [
+            "₹1,000",
+            "₹500",
+            "₹5,000",
+            "₹100"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 76D requires instant SMS alerts for all electronic transactions above ₹500. For smaller ones the bank may send SMS under its policy, without charge.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s5-q8",
+          "question": "A bona fide individual victim of customer-negligence fraud lost ₹20,000 and reported it to the bank and 1930 within five days. No recovery is made. What compensation applies?",
+          "options": [
+            "₹25,000, the fixed compensation amount",
+            "₹17,000, which is 85 percent of the net loss",
+            "₹20,000, the full loss",
+            "Nothing, because the customer was negligent"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 76T: 85 percent of the net loss or ₹25,000, whichever is less, once in a lifetime, for losses up to ₹50,000. Here 85 percent of ₹20,000 is ₹17,000.",
+          "difficulty": 4
+        },
+        {
+          "id": "in-cp-s5-q9",
+          "question": "Under the IO Directions, how must Deccan Lotus Bank use the IO's analysis of complaints?",
+          "options": [
+            "Only in the annual report to shareholders",
+            "In training and conferences for frontline staff on complaint patterns, root causes and remedies",
+            "To set individual sales targets",
+            "To decide which customers to decline"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 14(14) requires the bank to use the analysis of IO-handled complaints in training to raise frontline awareness of patterns, root causes and remedies, with the IO involved where needed.",
+          "difficulty": 2
+        },
+        {
+          "id": "in-cp-s5-q10",
+          "question": "What information on RBI Ombudsman outcomes must go to the Board's Customer Service Committee each quarter?",
+          "options": [
+            "Only complaints where the bank won",
+            "The names of all complainants who filed",
+            "Complaints decided for complainants, with an analysis of at least the top five categories and remedies",
+            "Only complaints worth more than ₹30 lakh"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 13(5): complaints the RBI Ombudsman resolved for the complainant go to the Customer Service Committee quarterly, with an analysis of at least the top five categories and remedial measures.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "in",
+    "programs": [
+      51,
+      52,
+      54,
+      55,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      67,
+      70
+    ],
+    "classification": "mandatory-role",
+    "frequency": [
+      "role",
+      "periodic"
+    ],
+    "regulators": [
+      "Reserve Bank of India (RBI)",
+      "RBI Ombudsman (Reserve Bank - Integrated Ombudsman Scheme, 2026)",
+      "Securities and Exchange Board of India (SEBI)"
+    ],
+    "references": [
+      {
+        "title": "Reserve Bank of India (Commercial Banks - Internal Ombudsman) Directions, 2026",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13271",
+        "provision": "Paragraphs 3-16, incl. 14(1), 14(9), 14(12)-(14) (escalation, 30-day decision, RBI Ombudsman advice, staff training)",
+        "note": "Banks with 10 or more outlets must appoint an Internal Ombudsman, auto-escalate partly resolved or rejected complaints for review, decide within 30 days, tell customers about the RBI Ombudsman, and use complaint analysis to train frontline staff.",
+        "effective": "2026-01-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2026: Frequently Asked Questions",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/FAQDisplay.aspx?Id=153",
+        "provision": "Questions 1, 9-10, 13, 16-17, 20-22, 24, 29, 31-32",
+        "note": "RBI's own explanation of the 2026 Scheme: coverage, filing channels, when a complaint can be filed, non-maintainable complaints, compensation limits, settlement, awards and appeals.",
+        "effective": "2026-07-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2026",
+        "issuer": "Reserve Bank of India",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOOS01072026OB_E.pdf",
+        "note": "The Scheme itself, in force from 1 July 2026 and replacing the 2021 Scheme (announced in RBI press release of 16 January 2026). The PDF host blocks automated access, so the text was not opened; facts in this quest come from RBI's FAQ page.",
+        "effective": "2026-07-01"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13140",
+        "note": "Consolidates RBI's customer service, grievance redress and responsible lending conduct instructions for commercial banks. Published only as a PDF on rbidocs.rbi.org.in, which blocks automated access, so it was not opened.",
+        "effective": "2025-11-28"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Second Amendment Directions, 2026",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13485&Mode=0",
+        "provision": "New paragraphs 85A-85ZA and Annex IIA (effective 1 January 2027)",
+        "note": "Defines mis-selling and compulsory bundling; requires a sales policy, explicit consent with a default of no, suitability checks, regulator-prescribed qualifications for sellers, a code of conduct, post-sale feedback, no dark patterns, and full refunds where mis-selling is established.",
+        "effective": "2027-01-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Third Amendment Directions, 2026",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13543&Mode=0",
+        "provision": "New section DA, paragraphs 76A-76V (transactions on or after 1 January 2027)",
+        "note": "Replaces the limited-liability rules for unauthorised electronic banking transactions: bank bears the burden of proof, zero liability for bank negligence and for third-party breaches reported within five calendar days, 45/60-day response limits, and a one-time small-value compensation scheme.",
+        "effective": "2027-01-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Fourth Amendment Directions, 2026",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13665&Mode=0",
+        "provision": "New Section L, paragraphs 454A-454AB, incl. 454I (IIBF certificate) and 454Z (harsh practices) (effective 1 January 2027)",
+        "note": "Recovery conduct: a recovery policy, IIBF-certified agents only, a code of conduct, published agency lists, prior notice to borrowers, contact between 08:00 and 19:00, call recording, limits on device locking and a dedicated recovery grievance mechanism.",
+        "effective": "2027-01-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks – Miscellaneous) Directions, 2025",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13136",
+        "provision": "Paragraphs 59-60 (certifications)",
+        "note": "A certificate course is mandatory before staff are posted to marketing of third-party retail products and wealth management, among other areas, to curb mis-selling; certifications prescribed by other financial regulators must also be met.",
+        "effective": "2025-11-28",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reserve Bank of India (Commercial Banks – Credit Cards and Debit Cards: Issuance and Conduct) Directions, 2025",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13155",
+        "provision": "Paragraphs 43-44 (conduct of agents) and 84-85 (grievance redressal)",
+        "note": "Card issuers must check agents through random checks and mystery shopping, stop mis-selling of cards, train call-centre staff to handle and escalate complaints, and compensate customers for their own faults and delays.",
+        "effective": "2025-11-28",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Certification Programme for sale and/or distribution of mutual fund products (SEBI Circular Cir/IMD/DF/5/2010)",
+        "issuer": "Securities and Exchange Board of India",
+        "url": "https://www.sebi.gov.in/sebi_data/attachdocs/1288005503621.pdf",
+        "provision": "Certification Regulations 2007, regulation 3(1) and 4(3)",
+        "note": "Anyone selling or distributing mutual fund products must pass the NISM certification examination and keep it current through continuing professional education.",
+        "effective": "2010-06-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "RBI press release: RBI issues Reserve Bank - Integrated Ombudsman Scheme, 2026 (16 January 2026)",
+        "issuer": "Reserve Bank of India",
+        "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62052",
+        "note": "Announces the RB-IOS 2026, finalised after public feedback on the October 2025 draft, in force from 1 July 2026.",
+        "effective": "2026-01-16",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "in-cp-x1",
+        "question": "A Deccan Lotus Bank branch rejects a complaint about a wrong locker charge. Under the IO Directions 2026, who may close the rejected complaint at branch level?",
+        "options": [
+          "The branch manager, after recording reasons in the system",
+          "Nobody at that branch; it is reviewed at a fairly senior level and auto-escalated to the IO",
+          "The officer who handled it, if the customer agrees",
+          "The regional office, without IO involvement, if the charge is under ₹1,000"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 14(4): a complaint may not be closed by the same branch or touch point. A rejection or partial resolution is reviewed at a fairly senior level and then goes to the IO.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x2",
+        "question": "The bank's Customer Service Committee wants to replace the IO after 18 months because his decisions are 'too generous'. What do the Directions require?",
+        "options": [
+          "The Competent Authority may remove the IO at any time without reasons",
+          "The IO may be removed only with RBI's prior approval",
+          "Removal before the contracted term needs the Customer Service Committee's approval, and IO terms are at least three years",
+          "Removal is allowed after one year if the IO has overruled the bank often"
+        ],
+        "answer": 2,
+        "explanation": "The IO has a fixed term of at least three years. Removal before completion needs the Customer Service Committee's approval. Committees also review overruled decisions, so 'generous' decisions are not a removal ground.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x3",
+        "question": "The IO resigns unexpectedly on 1 September. What must Deccan Lotus Bank do?",
+        "options": [
+          "Inform RBI within 10 working days and appoint a new eligible IO within three months",
+          "Inform RBI within 30 days and appoint within six months",
+          "Leave the post vacant until the next Board meeting",
+          "Ask the head of retail banking to act as IO until a new one is found"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 8(6): for a vacancy beyond the bank's control, inform RBI within 10 working days and appoint a new IO within three months. The post must never be vacant; the Deputy IO acts meanwhile.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x4",
+        "question": "Both the IO and the Deputy IO are away for three weeks. What may the bank do?",
+        "options": [
+          "Designate a serving GM-rank official as IO for up to one month, with Customer Service Committee approval and no reporting line to business",
+          "Suspend escalations until they return",
+          "Ask the Chief Compliance Officer to decide complaints under her own authority",
+          "Send all rejected complaints straight to the RBI Ombudsman"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 8(3) allows, in rare cases, a serving GM-rank official to be designated as IO for up to one month with Committee approval, without reporting to business verticals during that period.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x5",
+        "question": "What may the IO recommend beyond the compensation set by RBI rules or the bank's policy?",
+        "options": [
+          "Compensation under the RB-IOS for consequential loss, lost time, expenses and harassment",
+          "Disciplinary action against named employees",
+          "A waiver of all the customer's future fees",
+          "Nothing; the IO cannot recommend compensation"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 12(5) lets the IO recommend extra compensation in line with the RB-IOS for consequential loss, loss of time, expenses and harassment or mental agony.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x6",
+        "question": "Which statement about the IO's access to RBI systems is correct?",
+        "options": [
+          "The IO can file complaints on RBI's CMS for customers",
+          "The IO decides RBI Ombudsman cases about the bank",
+          "The IO has read-only access to RBI's Complaint Management System to follow Ombudsman and Appellate Authority decisions",
+          "The IO has no access to any RBI system"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 12(8): the IO and Deputy IO have read-only access to RBI's CMS so they can keep up with decisions of the RBI Ombudsman and the Appellate Authority. The bank requests it from CEPD.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x7",
+        "question": "How often must the IO analyse the pattern of complaints and report to the Customer Service Committee?",
+        "options": [
+          "Analyse and report once a year",
+          "Analyse monthly; report only when asked",
+          "Analyse half-yearly; report annually",
+          "Analyse quarterly; report preferably quarterly and at least half-yearly"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 12(6) requires quarterly analysis by product, category, customer group and location. Paragraph 13(2) requires reports to the Committee preferably quarterly but not less than half-yearly.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x8",
+        "question": "When assessing the IO's performance, what must the Customer Service Committee also analyse?",
+        "options": [
+          "Cases where the IO's decision differed substantially from the RBI Ombudsman's later decision",
+          "The amount of money the IO saved the bank",
+          "How many complaints the IO rejected",
+          "Customer satisfaction scores for the branches"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 14(15): besides pendency and work towards uniform redress, the Committee analyses cases with a substantive difference between the IO's decision and the RBI Ombudsman's.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x9",
+        "question": "Deccan Lotus Bank appointed a new Deputy IO on Monday. When must it send her details to RBI?",
+        "options": [
+          "Within 30 days, with the quarterly report",
+          "Only at the next annual return",
+          "Within 10 working days, to the Department of Supervision",
+          "Within five working days, to RBI's Consumer Education and Protection Department"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 16(1) requires details of a newly appointed IO or Deputy IO within five working days, to CEPD at RBI's Central Office.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x10",
+        "question": "A customer complained to his bank on 20 June 2026, and the bank rejected it in July. Which Scheme governs a complaint he files with the RBI Ombudsman in August 2026?",
+        "options": [
+          "RB-IOS 2021, since his first complaint to the bank was before 1 July",
+          "RB-IOS 2026, since his complaint to the RBI Ombudsman is received after 1 July 2026",
+          "Neither, as complaints from the changeover period are excluded",
+          "Whichever Scheme the customer prefers"
+        ],
+        "answer": 1,
+        "explanation": "RBI's FAQ says complaints received before 1 July 2026 continue under RB-IOS 2021. A complaint received by the RBI Ombudsman in August 2026 falls under RB-IOS 2026.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x11",
+        "question": "A card dispute falls under a card network rule giving the issuer 45 days to resolve it. When can the cardholder approach the RBI Ombudsman without any reply?",
+        "options": [
+          "After 30 days, as the Scheme overrides network timelines",
+          "After 45 days, as the higher of 30 days and the network timeline applies",
+          "After 60 days in all card cases",
+          "Only after the network itself decides the dispute"
+        ],
+        "answer": 1,
+        "explanation": "RBI's FAQ (Q17): a customer may file if there is no reply within 30 days or the time set by RBI, NPCI or card network guidelines, whichever is higher.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x12",
+        "question": "Which complaint is maintainable under RB-IOS 2026?",
+        "options": [
+          "A dispute between two banks over an interbank settlement",
+          "A bank employee's complaint about his transfer",
+          "A complaint by a vendor about an unpaid invoice from the bank",
+          "A complaint about a bank's failure to act on a stop-payment instruction, raised with the bank and rejected two weeks ago"
+        ],
+        "answer": 3,
+        "explanation": "Disputes between regulated entities, employer-employee matters and vendor disputes are not maintainable. A customer's service complaint, raised first with the bank and rejected, may proceed.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x13",
+        "question": "During the RBI Ombudsman's examination, the complainant files a civil suit on the same cause of action. What can happen?",
+        "options": [
+          "The Ombudsman must wait for the court and then decide",
+          "The bank must settle at once",
+          "The RBI Ombudsman may reject the complaint at that stage",
+          "The complaint moves automatically to the Appellate Authority"
+        ],
+        "answer": 2,
+        "explanation": "RBI's FAQ (Q26) lists a case on the same cause of action filed before a court, tribunal, arbitrator or other forum during the examination as a ground for rejection at any stage.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x14",
+        "question": "A customer claims ₹80 lakh in consequential loss after a bank wrongly dishonoured a large cheque. What does RB-IOS 2026 allow?",
+        "options": [
+          "The Ombudsman can award the full ₹80 lakh",
+          "Complaints above ₹30 lakh are not maintainable at all",
+          "The Ombudsman can award only ₹3 lakh in total",
+          "No limit on the disputed amount, but consequential loss compensation is capped at ₹30 lakh"
+        ],
+        "answer": 3,
+        "explanation": "There is no limit on the amount in dispute, but compensation for consequential loss is capped at ₹30 lakh (plus up to ₹3 lakh for time, expenses and harassment). A claim beyond the Ombudsman's power can be a rejection ground.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x15",
+        "question": "A bank wants to appeal an award passed because it failed to give the Ombudsman the documents requested. What does RB-IOS 2026 say?",
+        "options": [
+          "The bank may appeal within 30 days with prior sanction",
+          "The bank may appeal within 60 days",
+          "The bank may appeal only if the customer agrees",
+          "No appeal lies for the bank against an award passed for its failure to furnish information"
+        ],
+        "answer": 3,
+        "explanation": "RBI's FAQ (Q31): a regulated entity may appeal an award with prior sanction, but not one passed because it failed to furnish required information or documents.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x16",
+        "question": "Under RBI's alternate grievance redress framework, what does the Centralised Receipt and Processing Centre do?",
+        "options": [
+          "Hears appeals against Ombudsman awards",
+          "Supervises banks' Internal Ombudsmen",
+          "Runs RBI's 24x7 IVRS contact line",
+          "Receives and processes email and physical complaints filed under the Scheme"
+        ],
+        "answer": 3,
+        "explanation": "The CRPC in Chandigarh receives and processes complaints sent by email or post. Online complaints are registered on the CMS portal; appeals go to the Appellate Authority.",
+        "difficulty": 2
+      },
+      {
+        "id": "in-cp-x17",
+        "question": "A Hindi-speaking customer from Odisha wants to describe her complaint in Odia on the CMS portal. What does RBI's FAQ say?",
+        "options": [
+          "She must translate it into Hindi or English",
+          "Only paper complaints are accepted in regional languages",
+          "She must use the Contact Centre to file in Odia",
+          "The portal works in Hindi and English, but the description may be typed in any language"
+        ],
+        "answer": 3,
+        "explanation": "RBI's FAQ (Q37): CMS works in Hindi and English, and the facts may be entered in any language within the character limit. Email and paper complaints may be in any language.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x18",
+        "question": "A customer took a loan in March 2027 and was charged for a loan protection policy funded from the loan, with no separate explicit consent. Which rule does this break?",
+        "options": [
+          "The ban on funding any product from a loan without the customer's explicit consent",
+          "The ban on any insurance sold with loans",
+          "The 09:00-19:00 contact window",
+          "The rule that third-party products may only be sold online"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 85W bars a bank from funding a customer's purchase of any product out of a loan without explicit consent. Insurance alongside a loan is not banned as such.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x19",
+        "question": "Arjun proposes keeping signed consent forms for six months after each sale. What do the 2027 rules require?",
+        "options": [
+          "Six months after the sale is enough",
+          "Keep consent records until one year after the contract for the product ends",
+          "Five years from the date of sale",
+          "Only until the free-look period expires"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 85G requires the bank to preserve consent and related records until one year from the date the contractual agreement for the product ends.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x20",
+        "question": "Deccan Lotus Bank adds a new DSA for credit card sales. What must it do with its public DSA list?",
+        "options": [
+          "Nothing until the annual list update",
+          "Report it to RBI within 30 days instead",
+          "Update the website list, with type, address, period and products, within seven calendar days",
+          "Publish only the DSA's name, as the other details are confidential"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 85C requires an up-to-date list of DSAs/DMAs on the website, showing type, address, period of engagement and products, updated within seven calendar days of any change.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x21",
+        "question": "A customer complains of mis-selling of a bank fixed deposit product 25 days after receiving the signed terms. No other regulator's timeline applies. Is the complaint in time under the 2027 rules?",
+        "options": [
+          "No, as mis-selling complaints must be made within 15 days",
+          "Yes, as there is no time limit for mis-selling",
+          "Yes, as the default window is 30 days from receiving the signed terms",
+          "No, as the window runs from the application date"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 85Z: where the product's regulator sets no timeline, the customer can complain within 30 days of receiving the signed copy of the terms or agreement.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x22",
+        "question": "Which practice breaks the 2027 rules for staff, DSAs and third-party representatives in a branch?",
+        "options": [
+          "Telling the customer the fees and interest rate upfront",
+          "Calling a customer at 6 pm about a product she asked about",
+          "Visiting a customer's home without her explicit consent to follow up a lead",
+          "Giving the grievance officer's details when asked"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 85N(8) bars visits to a customer's home, business or office without explicit consent. Upfront disclosure, calls within 09:00-19:00 and sharing grievance details are required conduct.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x23",
+        "question": "Under paragraph 59 of the Miscellaneous Directions, which posting does NOT require a certificate course before the staff member starts?",
+        "options": [
+          "Branch teller handling cash deposits",
+          "Treasury dealer",
+          "Credit appraisal officer",
+          "Wealth management relationship manager"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 59 lists treasury operations, risk management, accounting, credit management and marketing of third-party retail products and wealth management. Cash teller roles are not listed.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x24",
+        "question": "A new RM already holds a relevant diploma from a reputed university. How does paragraph 59 treat it?",
+        "options": [
+          "It replaces every certification, including SEBI's",
+          "It has no value; only IBA-recognised courses count",
+          "It may be considered as certification, though certifications prescribed by other regulators must still be met for third-party sales",
+          "It counts only if RBI approves it individually"
+        ],
+        "answer": 2,
+        "explanation": "The proviso lets relevant graduate, diploma and certificate courses from reputed universities count, but for third-party sales the certifications other financial regulators prescribe must still be complied with.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x25",
+        "question": "An app shows a savings rate of 7 percent in large type, while the minimum-balance condition for that rate sits in small grey text deep in the terms. Which dark pattern is closest?",
+        "options": [
+          "Bait and switch",
+          "Nagging",
+          "Basket sneaking",
+          "Subscription trap"
+        ],
+        "answer": 0,
+        "explanation": "RBI's Annex IIA gives advertising a higher savings rate without stating the minimum balance requirement as an example of bait and switch.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x26",
+        "question": "What must a bank do before selling a non-standard product to an individual customer, under paragraph 85P?",
+        "options": [
+          "Obtain a guarantor's consent",
+          "Assess suitability and appropriateness against her age, income, financial literacy and risk tolerance",
+          "Get the IO's prior approval",
+          "Check only that she has enough balance to pay"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 85P requires a suitability and appropriateness assessment, comparing product features, risk-return, horizon, complexity and fees with the customer's profile, unless the product is deemed suitable for all.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x27",
+        "question": "Under the 2027 recovery rules, which items must the bank's collection and recovery policy cover?",
+        "options": [
+          "Only the commission payable to agencies",
+          "Only the list of borrowers to be called each day",
+          "Triggers, an escalation matrix, a code of conduct, deceased borrowers and a framework for financial distress",
+          "Only the legal remedies under the SARFAESI Act"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 454D lists triggers for recovery, graded actions under an escalation matrix, a code of conduct, recovery on a borrower's death and a structured framework for financial distress, among others.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x28",
+        "question": "Deccan Lotus Bank ends its contract with a recovery agency mid-way through several cases. What must it do for the affected borrowers?",
+        "options": [
+          "Nothing, as borrowers deal only with the bank",
+          "Ask the agency to tell the borrowers itself",
+          "Wait until the new agency's first visit",
+          "Notify them immediately so they stop dealing with that agency, and update the website list"
+        ],
+        "answer": 3,
+        "explanation": "Paragraphs 454K and 454N: on termination the bank must immediately notify the borrowers concerned and promptly update its published list of recovery agencies.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x29",
+        "question": "A recovery agent plans to visit a borrower on the day of a family funeral, as she is sure to be home. What do the 2027 rules say?",
+        "options": [
+          "Allowed, if within 08:00-19:00",
+          "Agents must avoid occasions such as bereavements, medical emergencies and weddings",
+          "Allowed, if the agent carries ID",
+          "Allowed, if the loan is more than 90 days overdue"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 454Y(6) requires employees and agents to avoid inappropriate occasions such as bereavement, medical emergencies, calamities and marriage functions.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x30",
+        "question": "A microfinance borrower failed twice to come to the agreed central collection place. Where may field staff now collect?",
+        "options": [
+          "Only at the branch",
+          "At her residence or place of work",
+          "At her relatives' homes",
+          "At any public place of the staff's choosing"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 454Y(7): microfinance collection is at a mutually agreed designated place, but field staff may collect at the borrower's home or work if she fails to appear there on two or more successive occasions.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x31",
+        "question": "Farhan wants to set agency fees purely as a percentage of amounts collected within seven days of assignment. What must he check under paragraph 454Q?",
+        "options": [
+          "That the targets and incentives do not induce harsh recovery practices",
+          "That the fee is below an RBI-set cap",
+          "That the IO approves the fee schedule",
+          "That borrowers consent to the fee"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 454Q requires recovery targets and incentive structures for staff and agencies not to induce the harsh practices listed in 454Z.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x32",
+        "question": "Which function must stay available on a financed phone even under full restrictions?",
+        "options": [
+          "Outgoing calls to any number",
+          "Incoming calls, SMS and emergency SOS features",
+          "Social media and messaging apps",
+          "Mobile banking for other lenders"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 454T(2) bars restricting essential functions such as incoming calls, SMS and emergency SOS. Outgoing calls may be restricted only after 60 days past due.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x33",
+        "question": "A borrower with a locked financed phone wants to prepay half the loan now. What do the 2027 rules say?",
+        "options": [
+          "Prepayment is barred while restrictions apply",
+          "Only full prepayment is allowed",
+          "The borrower may prepay partly or fully at any stage",
+          "Prepayment is allowed only before 30 days past due"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 454T(8) gives the borrower the right to prepay the loan, partly or fully, at any stage.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x34",
+        "question": "Which RBI finding against RBL Bank in 2023 matches today's rule on notifying borrowers?",
+        "options": [
+          "The bank sent agents to borrowers' weddings",
+          "The bank locked borrowers' financed phones",
+          "The bank published agents' names on social media",
+          "The bank failed to inform borrowers of the recovery agency's details when forwarding their cases"
+        ],
+        "answer": 3,
+        "explanation": "RBI's 2023 press release found RBL Bank had not informed borrowers of agency details when forwarding cases. The 2027 rules require this at least one day before the first visit.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x35",
+        "question": "A fraud occurred because a bank employee misused customer data. The customer reports it after 40 days. What is the customer's liability for transactions in 2027?",
+        "options": [
+          "Zero, because internal fraud is bank negligence, whatever the reporting date",
+          "Decided by the bank's policy, since she reported after five days",
+          "Full, since she reported late",
+          "Limited to 15 percent of the loss"
+        ],
+        "answer": 0,
+        "explanation": "Internal frauds leading to unauthorised transactions are bank negligence under 4(20B). Paragraph 76L then gives zero liability and reversal whether or not the customer reported.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x36",
+        "question": "Where a bank must reverse a fraudulent transaction, how must the reversal be made?",
+        "options": [
+          "Dated on the day the bank finishes its investigation",
+          "Paid as a goodwill credit with no interest adjustment",
+          "Credited only after a police report is filed",
+          "Value-dated to the original transaction date, so the customer loses no interest and pays no extra charges"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 76R requires reversals to be value-dated to the original date, so the customer suffers no loss of interest and bears no extra interest or charges.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x37",
+        "question": "A bank rejects a fraud complaint because it finds the customer liable. What must it tell the customer?",
+        "options": [
+          "Only that the complaint is closed",
+          "The reason for the rejection, with any supporting details",
+          "Nothing more, as the burden lies on the customer",
+          "The fraudster's identity"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 76S: where customer liability is established, the bank must disclose the reasons for rejection and any supporting details.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x38",
+        "question": "A bona fide victim lost ₹40,000 through customer negligence and ₹15,000 was recovered before compensation. What compensation is payable under paragraph 76T?",
+        "options": [
+          "₹21,250, being 85 percent of the ₹25,000 net loss",
+          "₹25,000, as the cap applies",
+          "₹34,000, being 85 percent of ₹40,000",
+          "₹12,750, being 85 percent of ₹15,000"
+        ],
+        "answer": 0,
+        "explanation": "Compensation is 85 percent of the net loss (gross loss less recoveries) or ₹25,000, whichever is less. Net loss is ₹25,000, so 85 percent is ₹21,250. RBI's own illustration uses these figures.",
+        "difficulty": 5
+      },
+      {
+        "id": "in-cp-x39",
+        "question": "Within what time must the customer's bank pay small-value fraud compensation after receiving the customer's application?",
+        "options": [
+          "Within five calendar days of receiving the application",
+          "Within 45 days, with the complaint response",
+          "Within 30 days after the quarter ends",
+          "After RBI reimburses its share"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 76T(5): the customer's bank compensates within five calendar days of receiving the application. The bank later claims reimbursement from RBI and the beneficiary bank quarterly.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x40",
+        "question": "For how long is the small-value compensation mechanism in paragraph 76T available?",
+        "options": [
+          "Permanently, with no end date",
+          "For losses on frauds occurring up to one year from the Directions' effective date",
+          "Only for frauds reported in 2026",
+          "Until RBI's fund is exhausted"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 76U makes compensation payable for losses on fraudulent transactions occurring up to one year from the effective date, with records kept for two years after the mechanism closes.",
+        "difficulty": 4
+      },
+      {
+        "id": "in-cp-x41",
+        "question": "Which body must periodically review fraudulent electronic transactions reported by customers, the action taken and the compensation mechanism?",
+        "options": [
+          "The Internal Ombudsman alone",
+          "The Board or a Board committee identified for the purpose",
+          "The branch managers' forum",
+          "The RBI Ombudsman"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 76V requires periodic reporting of fraud complaints to the Board or an identified committee, which reviews them, the action taken and grievance and compensation functioning.",
+        "difficulty": 3
+      },
+      {
+        "id": "in-cp-x42",
+        "question": "An RBI inspector asks for proof that the bank meets the card Directions' complaint handling rules for its call centre. Which evidence fits best?",
+        "options": [
+          "The IO's personal contact list",
+          "The bank's annual advertising budget",
+          "Training records for call-centre staff on handling and escalating complaints, plus automatic escalation logs",
+          "A list of recovery agencies"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 84 of the card Directions requires call-centre staff to be adequately trained to handle and escalate complaints, automatic escalation of unresolved complaints, and complaint or docket numbers.",
+        "difficulty": 3
+      }
+    ]
+  }
+}

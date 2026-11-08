@@ -1,0 +1,3200 @@
+{
+  "slug": "ca-fintrac-pcmltfa",
+  "title": "Canada | PCMLTFA Compliance Program and FINTRAC Reporting",
+  "tagline": "Run a Canadian bank's PCMLTFA program: KYC, PEPs, STRs, cash and EFT reports, directives, sanctions and FINTRAC's 2026 penalty regime.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Banks and federally regulated deposit-taking institutions",
+    "Retail, business and commercial banking",
+    "Payments, wire transfer and correspondent operations",
+    "Bank compliance, financial intelligence and internal audit functions"
+  ],
+  "hours": 6,
+  "description": "This quest teaches staff at Canadian banks how the **Proceeds of Crime (Money Laundering) and Terrorist Financing Act (PCMLTFA)** and its **Regulations** work in practice, as supervised and enforced by **FINTRAC**, Canada's financial intelligence unit. It also covers the **Ministerial directives** issued by the Minister of Finance, the reporting links to Canada's **sanctions laws**, information sharing under **section 11.01**, and the changes made on **26 March 2026** by the Strengthening Canada's Immigration System and Borders Act: effective, risk-based programs, much higher penalties, and mandatory compliance agreements and public compliance orders.\n\nThe Regulations require every bank to keep a **written, ongoing compliance training program** for its employees and agents, with a documented plan for delivering it (paragraphs 156(1)(d) and (e)). This quest is built for that audience: front-line and branch staff, onboarding teams, payments operations, financial intelligence analysts, compliance officers, auditors and senior managers.\n\nAcross five stages you follow a fictional team at Maplecrest Bank in Toronto, Richmond and Montréal, and study real FINTRAC penalty notices against Canadian banks.\n\nThis quest builds knowledge of the law and FINTRAC's expectations; it does not replace your institution's own AML/ATF policies, procedures or advice from your compliance team.",
+  "audience": [
+    "Branch, teller and contact centre staff at Canadian banks who deal with clients or handle cash",
+    "Account opening and onboarding teams handling individuals, corporations, trusts and PEPs",
+    "Payments, wire transfer and correspondent operations staff who file EFT reports and apply directives",
+    "Financial intelligence analysts and investigators who decide on suspicious transaction reports",
+    "Compliance officers, internal auditors and senior managers who own or test the PCMLTFA program"
+  ],
+  "outcomes": [
+    "Explain the PCMLTFA framework, FINTRAC's role and the three offences behind suspicious transaction reporting",
+    "Describe the five compliance program elements, including the written, ongoing training program and plan and the two-year review",
+    "Apply Canadian identity verification, beneficial ownership, PEP, HIO and third-party determination rules",
+    "Decide when an STR, large cash report or EFT report is due, meet the deadlines and avoid tipping off",
+    "Apply Ministerial directives and sanctions-related reporting, and share information lawfully under section 11.01",
+    "Explain FINTRAC's administrative monetary penalties and the 2026 compliance agreement and order regime"
+  ],
+  "quest": {
+    "name": "The Maplecrest Mandate",
+    "premise": "You have just joined the financial crime team at Maplecrest Bank, a mid-sized Canadian bank headquartered in Toronto, ten weeks before a FINTRAC examination and months after the 2026 reforms raised the stakes. With CAMLO Nadia Bouchard, investigator Harpreet Sandhu, branch manager Mei Chen, payments head Kwame Mensah and auditor Élise Tremblay, you must make the PCMLTFA work at the counter, in the signal room and in the boardroom.",
+    "badge": {
+      "name": "Maplecrest Sentinel",
+      "description": "Awarded for demonstrating working knowledge of Canada's PCMLTFA compliance program, FINTRAC reporting and the 2026 penalty regime."
+    },
+    "color": "#b91c1c",
+    "cast": [
+      {
+        "id": "nadia",
+        "name": "Nadia Bouchard",
+        "role": "Chief Anti-Money Laundering Officer",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#b91c1c"
+        }
+      },
+      {
+        "id": "harpreet",
+        "name": "Harpreet Sandhu",
+        "role": "Financial intelligence unit investigator",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "mei",
+        "name": "Mei Chen",
+        "role": "Branch manager, Richmond, BC",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "kwame",
+        "name": "Kwame Mensah",
+        "role": "Head of payments and correspondent operations",
+        "look": {
+          "skin": 5,
+          "hair": "short",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "elise",
+        "name": "Élise Tremblay",
+        "role": "Senior internal auditor",
+        "look": {
+          "skin": 1,
+          "hair": "curly",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "title": "The PCMLTFA framework, FINTRAC and the 2026 reforms",
+      "stage": "The Rulebook Vault",
+      "summary": "Map Canada's AML/ATF regime: the Act and Regulations, FINTRAC's role, the three offences behind reporting, Ministerial directives and the 2026 reforms, with real bank penalties.",
+      "minutes": 45,
+      "objectives": [
+        "Explain how the PCMLTFA, the Regulations, directives and FINTRAC guidance fit together",
+        "Identify the bodies a Canadian bank deals with for AML, sanctions and information sharing",
+        "Describe money laundering, terrorist activity financing and sanctions evasion offences in reporting terms",
+        "Summarise what the March 2026 amendments changed"
+      ],
+      "id": "s1",
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the rulebook vault",
+          "setting": "Financial crime office, Maplecrest Bank head office, King Street West, Toronto. 8:45 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your new badge opens the glass door to the bank's financial crime floor. A whiteboard reads: 'FINTRAC exam window opens in 10 weeks.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Welcome aboard. I'm Nadia Bouchard, Chief Anti-Money Laundering Officer. In Canada the law calls my role the compliance officer, and I answer to FINTRAC for our program.",
+              "mood": "happy"
+            },
+            {
+              "who": "harpreet",
+              "text": "Harpreet Sandhu, financial intelligence unit. I decide which files become suspicious transaction reports. Spoiler: that is where most banks get fined.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mei",
+              "text": "(on video from Richmond, BC) Mei Chen, branch manager. My tellers ask me every week which rules are FINTRAC's and which are OSFI's. I'd love a straight answer.",
+              "mood": "worried"
+            },
+            {
+              "who": "kwame",
+              "text": "(from Montréal) Kwame Mensah, payments and correspondent operations. And since March 2026 the penalties have a lot more zeros. My board is nervous.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "So your first mission is the map: the Act, the Regulations, who enforces them, which crimes they target and what changed in 2026.",
+              "mood": "proud"
+            },
+            {
+              "who": "nadia",
+              "text": "Five stages, then the exam. By the end you should be able to brief a teller, an investigator and a director. Let's open the vault.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Canada's AML/ATF rulebook in one minute",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "One Act",
+              "narration": "The core law is the Proceeds of Crime (Money Laundering) and Terrorist Financing Act, usually shortened to the PCMLTFA. Banks are reporting entities under it."
+            },
+            {
+              "icon": "📚",
+              "heading": "Detailed Regulations",
+              "narration": "The Act sets the duties. The Regulations fill in the detail: when to verify identity, what to record, which transactions to report and what a compliance program must contain."
+            },
+            {
+              "icon": "🛰️",
+              "heading": "One supervisor and intelligence unit",
+              "narration": "FINTRAC, the Financial Transactions and Reports Analysis Centre of Canada, receives reports, analyses them and supervises compliance. It can examine a bank and impose penalties."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Three target crimes",
+              "narration": "Reporting duties aim at money laundering, terrorist activity financing and, since 2024, sanctions evasion. Each is defined by reference to other Canadian laws."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Finance sets policy",
+              "narration": "The Minister of Finance owns AML policy and can issue Ministerial directives that require extra measures for transactions linked to high-risk foreign states."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "2026 brought sharper teeth",
+              "narration": "In March 2026 Parliament required programs to be effective, raised penalty ceilings sharply and added compliance agreements and public compliance orders."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "How the rules stack up",
+          "caption": "Law at the top, your own procedures at the base. If guidance and law differ, the law wins.",
+          "items": [
+            {
+              "label": "The PCMLTFA (the Act)",
+              "detail": "Duties in law: keep records, verify identity, report, run a compliance program, follow directives."
+            },
+            {
+              "label": "PCMLTF Regulations",
+              "detail": "The detail: thresholds, methods, timing, records and the compliance program elements."
+            },
+            {
+              "label": "Ministerial directives",
+              "detail": "Extra measures for transactions tied to named states, issued under Part 1.1 of the Act."
+            },
+            {
+              "label": "FINTRAC guidance",
+              "detail": "How FINTRAC reads the rules and what examiners expect to see in practice."
+            },
+            {
+              "label": "Your bank's policies",
+              "detail": "Written, senior-officer-approved policies and procedures that apply it all to your business."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which body receives suspicious transaction reports from Canadian banks and supervises their PCMLTFA compliance?",
+          "options": [
+            "OSFI, the prudential regulator",
+            "FINTRAC, the financial intelligence unit",
+            "The RCMP's financial crime unit",
+            "The Department of Finance"
+          ],
+          "answer": 1,
+          "explanation": "FINTRAC is both Canada's financial intelligence unit and the AML/ATF supervisor under the PCMLTFA. OSFI supervises prudential soundness; it is not where STRs go."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who does what for a Canadian bank's AML duties",
+          "caption": "A simple map of the bodies a compliance team deals with most.",
+          "headers": [
+            "Task",
+            "Lead body"
+          ],
+          "items": [
+            {
+              "label": "Receives STRs, LCTRs, EFTRs",
+              "left": "FINTRAC",
+              "right": "Not OSFI or police directly"
+            },
+            {
+              "label": "Examines AML compliance",
+              "left": "FINTRAC examiners",
+              "right": "OSFI looks at wider integrity and risk"
+            },
+            {
+              "label": "Issues Ministerial directives",
+              "left": "Minister of Finance",
+              "right": "FINTRAC explains and enforces them"
+            },
+            {
+              "label": "Administers sanctions lists",
+              "left": "Global Affairs Canada",
+              "right": "Banks screen and report holdings"
+            },
+            {
+              "label": "Approves info-sharing codes",
+              "left": "Privacy Commissioner",
+              "right": "Under section 11.01 and the Regulations"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Three offences behind every report",
+          "body": "Section 7 of the Act ties suspicious transaction reporting to three kinds of offence:\n\n- **Money laundering offence**: dealing with proceeds of crime to conceal or convert them, as defined through the Criminal Code and related laws.\n- **Terrorist activity financing offence**: offences in the Criminal Code's terrorism financing provisions, including providing or collecting property for terrorist activity and dealing in property of listed terrorists.\n- **Sanctions evasion offence**: added to the reporting duty in 2024. It means breaking a prohibition in a regulation made under the **United Nations Act**, **Part 1 of the Special Economic Measures Act** or the **Sergei Magnitsky Law**.\n\nYou never need to prove which offence happened. The reporting test is whether there are reasonable grounds to suspect a link to one of them. Stage four covers that test in detail."
+        },
+        {
+          "type": "match",
+          "title": "Match the term to its meaning",
+          "prompt": "Pair each Canadian AML term with what it means.",
+          "pairs": [
+            {
+              "left": "PCMLTFA",
+              "right": "The federal Act that sets record-keeping, identity, reporting and program duties"
+            },
+            {
+              "left": "Reporting entity",
+              "right": "A business covered by section 5 of the Act, such as a bank"
+            },
+            {
+              "left": "FINTRAC",
+              "right": "The centre that receives reports, analyses them and supervises compliance"
+            },
+            {
+              "left": "Sanctions evasion offence",
+              "right": "Breaching a prohibition under the UN Act, SEMA or the Magnitsky Law"
+            },
+            {
+              "left": "Ministerial directive",
+              "right": "An order from the Finance Minister adding measures for a high-risk state"
+            },
+            {
+              "left": "Compliance officer",
+              "right": "The person appointed to implement the bank's compliance program"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A turning point at the board",
+          "setting": "Board risk committee pre-meeting, 40th floor, Toronto.",
+          "lines": [
+            {
+              "who": "elise",
+              "text": "Élise Tremblay, internal audit. I lead our two-year effectiveness review, so I read every FINTRAC penalty notice. The pattern is not subtle.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kwame",
+              "text": "The board's question is simple. Is a FINTRAC penalty a finding that the bank laundered money?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "No. The notices say it plainly: these are administrative violations of the Act and Regulations, not criminal findings. But they are public, and the reputational damage is real.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "And the biggest bank penalties all start the same way: suspicious transaction reports that should have been filed and weren't.",
+              "mood": "worried"
+            },
+            {
+              "who": "elise",
+              "text": "Which is why the board wants a briefing on the 2026 changes before Thursday. Who's drafting it?",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Briefing the board on enforcement",
+          "situation": "Kwame asks you to draft one line for the board on what a FINTRAC administrative monetary penalty means for Maplecrest. Which line do you send?",
+          "choices": [
+            {
+              "text": "A penalty is an administrative sanction for breaking the PCMLTFA or its Regulations. It is published, and it is not a criminal conviction for money laundering.",
+              "outcome": "Exactly how FINTRAC describes it in its public notices. It is accurate and still makes clear that the reputational cost is serious.",
+              "score": 2
+            },
+            {
+              "text": "A penalty means FINTRAC has found that the bank was used to launder money and has referred it for prosecution.",
+              "outcome": "Wrong. A penalty concerns compliance failures. Proceeding by violation and by offence are alternatives under the Act, and FINTRAC's notices stress that penalties are not criminal findings.",
+              "score": 0
+            },
+            {
+              "text": "A penalty is a confidential supervisory matter that only the bank and FINTRAC will know about.",
+              "outcome": "Wrong. The Act requires FINTRAC to make public the nature of the violation, the name and the amount once a violation is established.",
+              "score": 0
+            },
+            {
+              "text": "A penalty is mostly a cost of doing business; paying quickly ends all further obligations.",
+              "outcome": "Partly true that paying ends the proceedings on that notice, but since 2026 the Act also requires a compliance agreement afterwards, and ignoring it leads to a public compliance order.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Milestones a Canadian bank should know",
+          "caption": "Directive dates from FINTRAC's directives page; Act history from the Justice Laws Website.",
+          "items": [
+            {
+              "label": "Act passed",
+              "value": "2000",
+              "detail": "The PCMLTFA (S.C. 2000, c. 17) establishes FINTRAC and the core reporting duties."
+            },
+            {
+              "label": "DPRK directive",
+              "value": "Dec 2017",
+              "detail": "First Ministerial directive in force: North Korea-linked transactions treated as high risk."
+            },
+            {
+              "label": "Iran directive",
+              "value": "Jul 2020",
+              "detail": "Ministerial directive on transactions linked to Iran."
+            },
+            {
+              "label": "Russia directive",
+              "value": "Feb 2024",
+              "detail": "Ministerial directive on transactions linked to Russia, with a focus on sanctions evasion."
+            },
+            {
+              "label": "Sanctions evasion added",
+              "value": "2024",
+              "detail": "Section 7 STR duty extended to sanctions evasion offences."
+            },
+            {
+              "label": "2026 reforms",
+              "value": "26 Mar 2026",
+              "detail": "Effective, risk-based programs; higher penalties; compliance agreements and orders."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Myth or fact?",
+          "cards": [
+            {
+              "front": "Myth: OSFI is where a bank files its STRs.",
+              "back": "Fact: suspicious transaction reports go to FINTRAC. OSFI is the prudential supervisor of federally regulated banks."
+            },
+            {
+              "front": "Myth: an employee is personally responsible for the bank's PCMLTFA compliance.",
+              "back": "Fact: the Regulations make the employer, not the employee, responsible for compliance. Staff still have to follow the bank's procedures."
+            },
+            {
+              "front": "Myth: sanctions are only Global Affairs Canada's problem.",
+              "back": "Fact: since 2024, suspected sanctions evasion must be reported to FINTRAC through an STR."
+            },
+            {
+              "front": "Myth: FINTRAC guidance is the law.",
+              "back": "Fact: the Act and Regulations are the law. Guidance shows how FINTRAC interprets them and what examiners expect."
+            },
+            {
+              "front": "Myth: penalties are private.",
+              "back": "Fact: the Act requires FINTRAC to publish the name, the nature of the violation and the amount."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Since 2024, which new category of suspicion must Canadian banks report to FINTRAC through a suspicious transaction report?",
+          "options": [
+            "Suspected tax evasion by any client",
+            "Suspected sanctions evasion",
+            "Suspected consumer fraud against the bank",
+            "Suspected breaches of privacy law"
+          ],
+          "answer": 1,
+          "explanation": "Section 7(c) of the PCMLTFA now covers transactions linked to a sanctions evasion offence under the UN Act, SEMA or the Magnitsky Law. Fraud or tax crime may still lead to an STR, but only through a money laundering link."
+        },
+        {
+          "type": "example",
+          "title": "Real case: The Toronto-Dominion Bank (FINTRAC, 2024)",
+          "body": "On 9 April 2024 FINTRAC imposed an administrative monetary penalty of **CAD 9,185,000** on The Toronto-Dominion Bank for **five violations** found in a 2023 compliance examination.\n\nAccording to FINTRAC's public notice:\n\n- The bank did not file **20 suspicious transaction reports** out of 178 case files reviewed.\n- It did not identify its full high-risk client population: **96 clients** were missing from its high-risk program.\n- High-risk clients went without the special measures the Regulations require, and enhanced measures under a **Ministerial directive** were not applied to 11 clients.\n- Ongoing monitoring and the records of those measures fell short.\n\nFINTRAC stressed that the penalty was for administrative violations, not criminal money laundering offences. The lesson for you: one weak link, here client risk rating, can cascade into four other violations."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Royal Bank of Canada (FINTRAC, 2023)",
+          "body": "On 3 November 2023 FINTRAC imposed a penalty of **CAD 7,475,000** on Royal Bank of Canada for **three violations** found in a 2022 examination.\n\nThe public notice describes:\n\n- **16 suspicious transaction reports** not filed out of 130 files reviewed, including files where the bank had been served with **production orders** but did not escalate them for an STR decision.\n- STRs that bundled transactions from several branch locations into one report, contrary to FINTRAC's reporting instructions.\n- Policies that pointed staff to **reasonable grounds to believe**, a higher bar than the legal test of **reasonable grounds to suspect**.\n\nThe lesson: a single wrong word in a procedure can quietly raise the reporting threshold across a whole bank."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "The PCMLTFA and its Regulations are the core of Canada's AML/ATF regime for banks.",
+            "FINTRAC receives reports, supervises compliance and imposes administrative monetary penalties.",
+            "Reporting targets money laundering, terrorist activity financing and, since 2024, sanctions evasion.",
+            "The Finance Minister can issue directives for high-risk states; Russia, Iran and the DPRK are in force.",
+            "Since 26 March 2026, programs must be reasonably designed, risk-based and effective, and penalties are far higher.",
+            "Penalties are administrative, not criminal convictions, but they are published."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about your own role at a Canadian bank. Which of the three target offences are you most likely to meet, and who in your bank decides whether a report goes to FINTRAC?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-aml-s1-q1",
+          "question": "What is the main federal statute that sets AML/ATF duties for Canadian banks?",
+          "options": [
+            "The Bank Act's consumer protection framework",
+            "The Special Economic Measures Act",
+            "The Proceeds of Crime (Money Laundering) and Terrorist Financing Act",
+            "The Personal Information Protection and Electronic Documents Act"
+          ],
+          "answer": 2,
+          "explanation": "The PCMLTFA sets record-keeping, identity, reporting and compliance program duties. The other laws matter, but none is the core AML statute.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s1-q2",
+          "question": "A teller at Maplecrest asks where suspicious transaction reports are sent. What is the correct answer?",
+          "options": [
+            "To FINTRAC, which analyses them as Canada's financial intelligence unit",
+            "To OSFI, which supervises the bank's prudential soundness",
+            "To the local police service that covers the branch",
+            "To Global Affairs Canada if any foreign party is involved"
+          ],
+          "answer": 0,
+          "explanation": "STRs go to FINTRAC. OSFI is the prudential regulator, and police receive FINTRAC disclosures, not the bank's STRs.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s1-q3",
+          "question": "Which three kinds of offence does the section 7 suspicious transaction duty now cover?",
+          "options": [
+            "Money laundering, tax evasion and securities fraud",
+            "Money laundering, terrorist activity financing and sanctions evasion",
+            "Terrorist financing, bribery and insider trading",
+            "Sanctions evasion, cybercrime and identity theft"
+          ],
+          "answer": 1,
+          "explanation": "Section 7(a)-(c) names money laundering, terrorist activity financing and, since 2024, sanctions evasion offences.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s1-q4",
+          "question": "A client wires funds that appear designed to get around a SEMA asset freeze on a listed Russian company. Under the PCMLTFA, how is this best described?",
+          "options": [
+            "A matter only for Global Affairs Canada, outside the PCMLTFA",
+            "A terrorist financing offence because sanctions are involved",
+            "A breach of the bank's privacy obligations under PIPEDA",
+            "A possible sanctions evasion offence that can trigger an STR to FINTRAC"
+          ],
+          "answer": 3,
+          "explanation": "A sanctions evasion offence means breaching a prohibition under the UN Act, Part 1 of SEMA or the Magnitsky Law, and section 7(c) requires an STR where there are reasonable grounds to suspect it.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s1-q5",
+          "question": "Who issues Ministerial directives under Part 1.1 of the PCMLTFA?",
+          "options": [
+            "The Director of FINTRAC",
+            "The Superintendent of Financial Institutions",
+            "The Minister of Finance",
+            "The Minister of Foreign Affairs"
+          ],
+          "answer": 2,
+          "explanation": "Directives are issued by the Minister of Finance. FINTRAC informs reporting entities, explains them and examines compliance with them.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s1-q6",
+          "question": "Kwame's board asks what the 2026 amendment to subsection 9.6 added. Which answer is accurate?",
+          "options": [
+            "Banks must now file STRs within three business days",
+            "Compliance officers must be approved by FINTRAC",
+            "Training must be delivered at least once every quarter",
+            "The program must be reasonably designed, risk-based and effective"
+          ],
+          "answer": 3,
+          "explanation": "New subsection 9.6(1.1), in force 26 March 2026, requires the program to be reasonably designed, risk-based and effective. The other options are invented.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s1-q7",
+          "question": "A director says FINTRAC's 2024 penalty on TD proves the bank committed money laundering. How should you respond?",
+          "options": [
+            "That is correct, because penalties follow criminal convictions",
+            "That is correct, because only laundering cases are published",
+            "The penalty related only to privacy breaches, not AML",
+            "FINTRAC stated it was for administrative violations, not criminal money laundering offences"
+          ],
+          "answer": 3,
+          "explanation": "FINTRAC's notice says the penalty was for administrative violations of the Act and Regulations, not for criminal money laundering or terrorist financing offences.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s1-q8",
+          "question": "Which statement about FINTRAC guidance is correct?",
+          "options": [
+            "It overrides the Regulations whenever the two conflict",
+            "It applies only to money services businesses, not banks",
+            "It explains how FINTRAC interprets the law, but the Act and Regulations are the binding rules",
+            "It is optional reading with no role in examinations"
+          ],
+          "answer": 2,
+          "explanation": "Guidance shows FINTRAC's interpretation and expectations, which examiners use, but the legal obligations come from the Act and Regulations.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s1-q9",
+          "question": "In RBC's 2023 penalty, FINTRAC criticised policies that referred to 'reasonable grounds to believe'. Why was that a problem?",
+          "options": [
+            "It set a higher bar than the legal test of reasonable grounds to suspect",
+            "It set a lower bar than the legal test, causing too many reports",
+            "It copied wording from the Criminal Code without permission",
+            "It applied only to terrorist financing and not to laundering"
+          ],
+          "answer": 0,
+          "explanation": "The STR test is reasonable grounds to suspect. Pointing staff to reasonable grounds to believe raises the threshold and leads to missed reports.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s1-q10",
+          "question": "Which set of Ministerial directives is in force according to FINTRAC's directives page?",
+          "options": [
+            "Russia, Belarus and Myanmar",
+            "Iran, Syria and Afghanistan",
+            "The DPRK, Venezuela and Russia",
+            "Russia, Iran and the Democratic People's Republic of Korea"
+          ],
+          "answer": 3,
+          "explanation": "FINTRAC lists three directives in force: Russia (2024), Iran (2020) and the DPRK (2017).",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "The compliance program, training plan and effectiveness review",
+      "stage": "The Program Forge",
+      "summary": "Build the five compliance program elements in section 156, including the written ongoing training program and plan, the risk assessment, new technology reviews and the two-year effectiveness review.",
+      "minutes": 50,
+      "objectives": [
+        "List the compliance program elements in section 156 of the Regulations",
+        "Describe what FINTRAC expects in a training program and training plan",
+        "Apply the risk assessment factors and the pre-launch rule for new technologies",
+        "Explain the two-year effectiveness review and reporting to a senior officer"
+      ],
+      "id": "s2",
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the program forge",
+          "setting": "Nadia's office, Toronto. A FINTRAC examination notice sits on the desk.",
+          "lines": [
+            {
+              "who": "nadia",
+              "text": "FINTRAC's notice asks for our compliance program documents. Everything starts with section 9.6 of the Act and section 156 of the Regulations.",
+              "mood": "neutral"
+            },
+            {
+              "who": "elise",
+              "text": "And since March 2026, 'we have a binder' is not enough. The Act now says the program must be reasonably designed, risk-based and effective.",
+              "mood": "thinking"
+            },
+            {
+              "who": "harpreet",
+              "text": "Effective means examiners will test outcomes: did we actually catch and report what we should have?",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "From the branch side, the bit I own is training. My new teller started Monday. Is she covered by the training rules from day one?",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Good question, and the answer lives in our training plan. Let's build the program piece by piece so you can answer FINTRAC's first request.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The compliance program, element by element",
+          "scenes": [
+            {
+              "icon": "👤",
+              "heading": "Someone in charge",
+              "narration": "The bank must appoint a person responsible for implementing the program. At a large bank this is usually the Chief Anti-Money Laundering Officer, supported by a dedicated team."
+            },
+            {
+              "icon": "📝",
+              "heading": "Written policies",
+              "narration": "Policies and procedures must be written, kept up to date and, for an entity, approved by a senior officer. They turn the law into steps staff can follow."
+            },
+            {
+              "icon": "🗺️",
+              "heading": "A documented risk assessment",
+              "narration": "The bank assesses and documents its money laundering and terrorist financing risk, looking at clients, products, channels, geography, affiliates and any other relevant factor."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training program and plan",
+              "narration": "Paragraphs 156(1)(d) and (e) require a written, ongoing compliance training program for employees and agents, plus a documented plan for delivering it."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Two-year effectiveness review",
+              "narration": "An auditor tests the program at least every two years, and the findings go to a senior officer in writing within 30 days of completing the review."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The five elements as a living cycle",
+          "caption": "FINTRAC describes these as the elements every reporting entity must implement under section 156 of the Regulations.",
+          "items": [
+            {
+              "label": "Compliance officer",
+              "detail": "Owns implementation and reports to senior management."
+            },
+            {
+              "label": "Policies and procedures",
+              "detail": "Written, current and approved by a senior officer."
+            },
+            {
+              "label": "Risk assessment",
+              "detail": "Documented view of ML/TF risk across the business."
+            },
+            {
+              "label": "Training program and plan",
+              "detail": "Written, ongoing, delivered to the right people."
+            },
+            {
+              "label": "Effectiveness review",
+              "detail": "Tested every two years; findings drive the next update."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which pair of provisions requires a written, ongoing compliance training program and a documented plan to deliver it?",
+          "options": [
+            "Section 7 and section 8 of the Act",
+            "Paragraphs 156(1)(d) and (e) of the Regulations",
+            "Section 123.1 of the Regulations",
+            "Part 1.1 of the Act"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 156(1)(d) requires the written, ongoing training program; paragraph 156(1)(e) requires a documented plan and delivery of the training."
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Risk factors the assessment must weigh",
+          "caption": "Paragraph 156(1)(c) lists these factors. New technologies or developments must be assessed before launch (subsection 156(2)).",
+          "axes": {
+            "x": "Who and what",
+            "y": "Where and how"
+          },
+          "items": [
+            {
+              "label": "Clients and relationships",
+              "detail": "Including business and correspondent banking relationships."
+            },
+            {
+              "label": "Products, services, channels",
+              "detail": "How clients reach you: branch, online, agents, cards."
+            },
+            {
+              "label": "Geography",
+              "detail": "Where the bank and its clients operate and transact."
+            },
+            {
+              "label": "Affiliates and other factors",
+              "detail": "Risks from affiliated entities, plus anything else relevant."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What a good training program contains",
+          "body": "FINTRAC's compliance program guidance says the training program should help people understand:\n\n- the requirements of the **Act and Regulations**;\n- background on money laundering and terrorist financing and the **methods** criminals use;\n- how **your business** could be exposed, with indicators and examples;\n- your **policies and procedures** for reporting, record keeping and know-your-client;\n- each person's **role** in detecting and escalating suspicious activity.\n\nThe **training plan** should set out recipients, topics and materials, delivery methods and frequency. FINTRAC lists recipients such as front-line staff, people involved in client transactions, cash handlers, the compliance officer, senior management, IT staff and internal audit. Training should be tailored to the bank's size, complexity and exposure to ML, TF and sanctions evasion risk, and the bank should keep a record of who was trained, when and on what."
+        },
+        {
+          "type": "sort",
+          "title": "Program element or not?",
+          "prompt": "Sort each item: is it one of the compliance program elements in section 156, or something else?",
+          "buckets": [
+            "Program element",
+            "Something else"
+          ],
+          "items": [
+            {
+              "text": "Appointing the person responsible for the program",
+              "bucket": 0
+            },
+            {
+              "text": "Senior-officer-approved written policies",
+              "bucket": 0
+            },
+            {
+              "text": "A documented ML/TF risk assessment",
+              "bucket": 0
+            },
+            {
+              "text": "A written, ongoing training program and plan",
+              "bucket": 0
+            },
+            {
+              "text": "A two-year effectiveness review plan",
+              "bucket": 0
+            },
+            {
+              "text": "Filing a large cash transaction report",
+              "bucket": 1
+            },
+            {
+              "text": "Quarterly approval of each STR by the board",
+              "bucket": 1
+            },
+            {
+              "text": "Registering the bank as a money services business",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The new-product question",
+          "setting": "Product committee, Toronto. Kwame presents a pilot.",
+          "lines": [
+            {
+              "who": "kwame",
+              "text": "We want to launch instant cross-border payouts through a fintech partner's app next quarter. Marketing has the launch date already.",
+              "mood": "happy"
+            },
+            {
+              "who": "nadia",
+              "text": "Then we have a regulatory step first. Subsection 156(2) says new developments and new technologies get a documented risk assessment before we introduce them.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kwame",
+              "text": "Before? Not after we see how it performs?",
+              "mood": "thinking"
+            },
+            {
+              "who": "elise",
+              "text": "Before. And I will test whether that assessment existed when I do the effectiveness review.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Launching the payout app",
+          "situation": "The fintech payout pilot is scheduled to go live in six weeks. No ML/TF risk assessment has been documented yet. What should Kwame do?",
+          "choices": [
+            {
+              "text": "Document an ML/TF risk assessment of the new channel and product before launch, and update controls and training to match.",
+              "outcome": "Correct. Subsection 156(2) requires the assessment before introducing a new technology or development, and the result should feed monitoring, policies and training.",
+              "score": 2
+            },
+            {
+              "text": "Launch on time and run the risk assessment at the next annual review cycle.",
+              "outcome": "This breaches subsection 156(2), which requires the assessment before the change. An examiner would treat it as a program gap.",
+              "score": 0
+            },
+            {
+              "text": "Ask the fintech partner to confirm in writing that the app is low risk.",
+              "outcome": "A partner's comfort letter may be useful input, but the bank itself must assess and document the risk.",
+              "score": 0
+            },
+            {
+              "text": "Launch for staff accounts only and assess the risk once external clients join.",
+              "outcome": "Better than a full launch, but it still introduces the technology before the documented assessment the Regulations require.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Running the two-year effectiveness review",
+          "prompt": "Put the steps of the effectiveness review in a sensible order.",
+          "steps": [
+            "Document a plan for reviewing the compliance program",
+            "Have an internal or external auditor test the program's effectiveness",
+            "Document the findings of the review",
+            "Report findings, policy updates and implementation status to a senior officer within 30 days",
+            "Track remediation and feed lessons into policies, risk assessment and training"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Program terms, decoded",
+          "cards": [
+            {
+              "front": "Reasonably designed, risk-based and effective",
+              "back": "The 2026 test in subsection 9.6(1.1): the program must fit the bank's risks and must actually work, not just exist on paper."
+            },
+            {
+              "front": "Senior officer approval",
+              "back": "Policies and procedures of an entity must be approved by a senior officer, not only by the compliance team."
+            },
+            {
+              "front": "Special measures",
+              "back": "Section 157: written policies for enhanced identity checks and other enhanced steps, such as more frequent updates and monitoring, for high-risk clients."
+            },
+            {
+              "front": "Training plan",
+              "back": "The documented plan covering who is trained, on what, how and how often, and how delivery is recorded."
+            },
+            {
+              "front": "Effectiveness review",
+              "back": "A test of the whole program every two years by an auditor, or by the entity itself if it has no auditor."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Within what time must an entity report the findings of its two-year effectiveness review to a senior officer?",
+          "options": [
+            "Within 30 days after the review is completed",
+            "Within 5 working days after the review starts",
+            "Within 90 days after the year end",
+            "Only when FINTRAC requests it"
+          ],
+          "answer": 0,
+          "explanation": "Subsection 156(4) requires a written report of the findings, policy updates and implementation status to a senior officer within 30 days after the review is completed."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "What weak programs cost (FINTRAC public notices)",
+          "caption": "Amounts rounded from FINTRAC's public notices of administrative monetary penalties.",
+          "items": [
+            {
+              "label": "Exchange Bank of Canada",
+              "value": "CAD 2.46m",
+              "detail": "Imposed Nov 2024 for 3 violations; Federal Court confirmed the violations and varied the amount to about CAD 1.03m."
+            },
+            {
+              "label": "First Nations Bank of Canada",
+              "value": "CAD 601k",
+              "detail": "Imposed Sept 2025 for 5 violations, including policies, risk assessment and special measures."
+            },
+            {
+              "label": "The Toronto-Dominion Bank",
+              "value": "CAD 9.19m",
+              "detail": "Imposed Apr 2024; 96 high-risk clients missed by client risk rating."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Exchange Bank of Canada (FINTRAC, 2024)",
+          "body": "On 5 November 2024 FINTRAC imposed a penalty of **CAD 2,457,750** on Exchange Bank of Canada for **three violations** found in an examination between December 2022 and April 2024. FINTRAC said the bank had not built an **effective compliance program for its business model and global reach**, with gaps in oversight by its chief AML officer, transaction monitoring, investigations and ongoing monitoring of high-risk clients.\n\nThe notice lists **5 missed STRs out of 26 files**, about 20%, and a monitoring system that did not cover all products, did not flag volume swings well and lacked enough ML/TF indicators, linked to weak testing and tuning.\n\nThe bank appealed. On **18 December 2025 the Federal Court confirmed the violations** and varied the penalty to **CAD 1,027,975**. The lesson: the right of appeal exists, but the findings on program design stood."
+        },
+        {
+          "type": "example",
+          "title": "Real case: First Nations Bank of Canada (FINTRAC, 2025)",
+          "body": "On 22 September 2025 FINTRAC imposed a penalty of **CAD 601,139.80** on First Nations Bank of Canada for **five violations**.\n\nFINTRAC's notice explains that:\n\n- the bank's **written policies and procedures** were inadequate on identity verification, unusual transaction review, the reasonable grounds to suspect threshold, and triage of high-risk alerts and production orders (classed as a **serious** violation);\n- its **client risk assessment** lacked a holistic view and documented handling for each risk category (**serious**);\n- six high-risk clients received **no special measures** (**serious**);\n- ongoing monitoring gaps were classed as **minor**;\n- missed STRs in 5 of 16 files were classed as **very serious**.\n\nThe lesson: each program element is tested separately, and each gap can be its own violation."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "Section 9.6 of the Act and section 156 of the Regulations set the compliance program.",
+            "The elements: compliance officer, approved written policies, documented risk assessment, written ongoing training program and plan, two-year effectiveness review.",
+            "Since 26 March 2026, the program must be reasonably designed, risk-based and effective.",
+            "Assess and document the risk of a new technology or development before launch.",
+            "Review findings go to a senior officer in writing within 30 days of completing the review.",
+            "High-risk clients need the special measures in section 157 of the Regulations."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Look at your bank's AML training plan, or imagine one for your team. Does it name who is trained, on which topics, by which method and how often? What would an examiner see as missing?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-aml-s2-q1",
+          "question": "Which provision requires a Canadian reporting entity to establish and implement a compliance program?",
+          "options": [
+            "Section 7 of the PCMLTFA",
+            "Section 148 of the Regulations",
+            "Subsection 9.6(1) of the PCMLTFA",
+            "Section 11.01 of the PCMLTFA"
+          ],
+          "answer": 2,
+          "explanation": "Subsection 9.6(1) requires the program; section 156 of the Regulations sets out how it is implemented.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s2-q2",
+          "question": "Who must approve an entity's written compliance policies and procedures under paragraph 156(1)(b)?",
+          "options": [
+            "FINTRAC's compliance branch",
+            "A senior officer of the entity",
+            "The bank's external auditor",
+            "Each branch manager for their own branch"
+          ],
+          "answer": 1,
+          "explanation": "The Regulations require written policies kept up to date and, for an entity, approved by a senior officer.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s2-q3",
+          "question": "Mei's branch hires three tellers. Under paragraphs 156(1)(d) and (e), what must the bank have in place for them?",
+          "options": [
+            "A written, ongoing training program and a documented plan for delivering it",
+            "A one-off certificate from FINTRAC before they serve clients",
+            "An annual exam set and marked by OSFI",
+            "A signed statement that they have read the Act"
+          ],
+          "answer": 0,
+          "explanation": "The Regulations require a written, ongoing training program for employees and agents, plus a documented plan and delivery. FINTRAC does not certify individual tellers.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q4",
+          "question": "Which item does FINTRAC say a training plan should cover?",
+          "options": [
+            "Each employee's salary band and bonus targets",
+            "Recipients, topics and materials, delivery methods and frequency",
+            "The names of clients reported in STRs",
+            "The bank's capital ratios and liquidity buffers"
+          ],
+          "answer": 1,
+          "explanation": "FINTRAC's guidance says the plan should set out who is trained, on what, how and how often, and the bank should keep records of delivery.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q5",
+          "question": "Maplecrest plans to launch a new digital onboarding app. When must the ML/TF risk of the app be assessed and documented?",
+          "options": [
+            "Within 30 days after launch",
+            "At the next two-year effectiveness review",
+            "Only if FINTRAC asks for it",
+            "Before the app is introduced"
+          ],
+          "answer": 3,
+          "explanation": "Subsection 156(2) requires the assessment before carrying out a new development or introducing a new technology.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q6",
+          "question": "Which factor is NOT one of those listed in paragraph 156(1)(c) for the risk assessment?",
+          "options": [
+            "Clients, business relationships and correspondent relationships",
+            "Products, services and delivery channels",
+            "The personal credit scores of the bank's employees",
+            "The geographic location of the bank's activities"
+          ],
+          "answer": 2,
+          "explanation": "The listed factors are clients and relationships, products, services and channels, geography, affiliates and any other relevant factor. Staff credit scores are not among them.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q7",
+          "question": "Who carries out the two-year effectiveness review at a bank that has an internal audit function?",
+          "options": [
+            "FINTRAC examiners",
+            "The bank's compliance officer acting alone",
+            "A committee of front-line staff",
+            "An internal or external auditor of the bank"
+          ],
+          "answer": 3,
+          "explanation": "Subsection 156(3) requires the review by an internal or external auditor; the entity itself may do it only if it has no auditor.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q8",
+          "question": "Élise finished the effectiveness review on 1 June. By when must the written report go to a senior officer?",
+          "options": [
+            "Within 30 days after 1 June",
+            "Within 15 days after 1 June",
+            "Within 90 days after 1 June",
+            "By the end of the next financial year"
+          ],
+          "answer": 0,
+          "explanation": "Subsection 156(4) sets 30 days after the review is completed for reporting findings, updates and implementation status to a senior officer.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s2-q9",
+          "question": "Which statement best describes the special measures in section 157 of the Regulations?",
+          "options": [
+            "An automatic exit of every client rated high risk within 30 days",
+            "A requirement to report every high-risk client to FINTRAC monthly",
+            "A ban on opening accounts for any non-resident",
+            "Written policies for enhanced identity checks and other enhanced steps, such as more frequent updates and monitoring"
+          ],
+          "answer": 3,
+          "explanation": "Section 157 requires written policies for enhanced verification and other enhanced mitigation, including more frequent updating and ongoing monitoring at a risk-appropriate frequency.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s2-q10",
+          "question": "In the Exchange Bank of Canada case, what did the Federal Court decide in December 2025?",
+          "options": [
+            "It overturned all violations and cancelled the penalty",
+            "It confirmed the violations and varied the penalty amount",
+            "It sent the case back to FINTRAC for a new exam",
+            "It converted the penalty into a criminal charge"
+          ],
+          "answer": 1,
+          "explanation": "FINTRAC's notice records that the Federal Court confirmed the violations and varied the penalty to CAD 1,027,975.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "title": "Know your client: identity, beneficial ownership, PEPs and third parties",
+      "stage": "The Onboarding Gate",
+      "summary": "Verify identity using the prescribed methods, collect and confirm beneficial ownership, apply PEP and HIO rules, make third-party determinations and keep monitoring relationships.",
+      "minutes": 55,
+      "objectives": [
+        "Apply identity verification triggers and methods for persons",
+        "Collect and confirm beneficial ownership and report registry discrepancies",
+        "Distinguish foreign PEPs, domestic PEPs and HIOs and apply the right measures",
+        "Make and record third-party determinations and set ongoing monitoring"
+      ],
+      "id": "s3",
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the onboarding gate",
+          "setting": "Maplecrest Bank, No. 3 Road branch, Richmond, BC. 10:15 am.",
+          "lines": [
+            {
+              "who": "mei",
+              "text": "Busy morning. A numbered company wants a business account, a walk-in wants to wire CAD 1,500 to Manila, and a client's nephew is depositing cash 'for his uncle'.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "(on video) Three classic know-your-client moments: identity, beneficial ownership and third-party determination. Let's take them one at a time.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "The numbered company says its owner prefers to stay private. Can we open the account anyway?",
+              "mood": "thinking"
+            },
+            {
+              "who": "nadia",
+              "text": "We can't open an anonymous account, and for an entity we must collect who owns or controls it. Privacy preferences don't change the Regulations.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "And the account opening form says the director is an ambassador's daughter. That's a PEP question too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mei",
+              "text": "Okay. Teach me the gate, then.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Know your client, the Canadian way",
+          "scenes": [
+            {
+              "icon": "🪪",
+              "heading": "Verify identity",
+              "narration": "At account opening, and for certain non-account transactions, the bank verifies identity using a method set out in the Regulations, such as government photo ID, a credit file or the dual-process method."
+            },
+            {
+              "icon": "🏢",
+              "heading": "Look through entities",
+              "narration": "For a corporation, the bank collects the names of directors and of everyone who owns or controls 25% or more, plus the ownership, control and structure, and takes reasonable measures to confirm it."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Ask the PEP question",
+              "narration": "The bank determines whether a client is a foreign or domestic politically exposed person, a head of an international organization, or a family member or close associate."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Spot the third party",
+              "narration": "When opening an account, or receiving CAD 10,000 or more in cash, the bank takes reasonable measures to find out whether someone else is behind the client."
+            },
+            {
+              "icon": "🔄",
+              "heading": "Keep watching",
+              "narration": "Throughout the relationship, ongoing monitoring keeps information current, reassesses risk and checks that activity fits what the bank knows."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Accepted ways to verify a person's identity (section 105)",
+          "caption": "Wording simplified. Follow your bank's procedures for the exact checks and records.",
+          "items": [
+            {
+              "label": "Government photo ID",
+              "detail": "Valid federal, provincial or foreign government photo ID; confirm name and photo match the person."
+            },
+            {
+              "label": "Credit file",
+              "detail": "A Canadian credit file at least three years old, from more than one source; confirm name, address and date of birth."
+            },
+            {
+              "label": "Dual-process",
+              "detail": "Two different reliable sources confirming two of: name and address, name and date of birth, name and an account."
+            },
+            {
+              "label": "Other prescribed methods",
+              "detail": "Such as reliance on another entity or an agent, under the conditions the Regulations set."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A walk-in, non-account client asks Mei's branch to send an international wire of CAD 1,500. Must the bank verify the person's identity?",
+          "options": [
+            "No, only account holders are ever verified",
+            "Yes, international EFT requests of CAD 1,000 or more trigger verification",
+            "Only if the amount reaches CAD 10,000",
+            "Only if the destination is under a Ministerial directive"
+          ],
+          "answer": 1,
+          "explanation": "Section 86 of the Regulations requires a financial entity to verify the identity of a person who requests an international EFT of CAD 1,000 or more. A directive country would add more measures, but the CAD 1,000 trigger applies anyway."
+        },
+        {
+          "type": "concept",
+          "title": "Beneficial ownership, step by step",
+          "body": "When it verifies an entity, the bank must obtain (section 138):\n\n- **Corporations:** names of all directors, and names and addresses of everyone who owns or controls, directly or indirectly, **25% or more** of the shares.\n- **Trusts:** names and addresses of all trustees and all known beneficiaries and settlors.\n- **Other entities:** names and addresses of everyone who owns or controls 25% or more.\n- **In all cases:** information establishing ownership, control and structure.\n\nThe bank takes **reasonable measures to confirm** the information when first obtained and during ongoing monitoring, and keeps a record. If it **cannot** obtain or confirm it, it must take reasonable measures to verify the identity of the **chief executive officer** (or equivalent) and apply **special measures**.\n\nFor federally incorporated corporations, a **material discrepancy** with the public federal registry must be reported to the Director under the Canada Business Corporations Act **within 30 days**, unless it is resolved within that time."
+        },
+        {
+          "type": "match",
+          "title": "Who counts as what?",
+          "prompt": "Match each person to the right Canadian category.",
+          "pairs": [
+            {
+              "left": "A serving minister in a foreign government",
+              "right": "Politically exposed foreign person"
+            },
+            {
+              "left": "A Canadian provincial premier",
+              "right": "Politically exposed domestic person"
+            },
+            {
+              "left": "The head of an organization set up by governments of states",
+              "right": "Head of an international organization"
+            },
+            {
+              "left": "A Canadian mayor",
+              "right": "Politically exposed domestic person (municipal office)"
+            },
+            {
+              "left": "A known business partner of a foreign ambassador",
+              "right": "Close associate of a politically exposed foreign person"
+            },
+            {
+              "left": "The president of a foreign state-owned bank",
+              "right": "Politically exposed foreign person"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "PEP measures for account holders (section 121)",
+          "caption": "The bank must also make the PEP determination for international EFTs of CAD 100,000 or more (section 116).",
+          "headers": [
+            "Foreign PEP side",
+            "Domestic PEP and HIO side"
+          ],
+          "items": [
+            {
+              "label": "Who",
+              "left": "Foreign PEP, family member or close associate",
+              "right": "Domestic PEP or HIO, family or associate"
+            },
+            {
+              "label": "When measures apply",
+              "left": "Always, once determined",
+              "right": "Only if the bank assesses high ML/TF risk"
+            },
+            {
+              "label": "Source of funds and wealth",
+              "left": "Reasonable measures to establish both",
+              "right": "Same, when high risk"
+            },
+            {
+              "label": "Approval",
+              "left": "Senior management approval to keep the account open",
+              "right": "Same, when high risk"
+            },
+            {
+              "label": "Ongoing",
+              "left": "Special measures under section 157",
+              "right": "Same, when high risk"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The nephew at the counter",
+          "setting": "Teller window 4, Richmond branch. 11:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A young man places a thick envelope on the counter: CAD 12,400 in fifties and hundreds.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "He says it's for his uncle's account, and he is not on that account.",
+              "mood": "thinking"
+            },
+            {
+              "who": "harpreet",
+              "text": "That is a third-party determination under section 134, and the amount is over the CAD 10,000 large cash line, so there is a report too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "And if he insists it's his own money but everything says otherwise?",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "Then we record what he told us and why we have reasonable grounds to suspect a third party. And we ask whether this belongs with my team as unusual activity.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Cash for 'my uncle'",
+          "situation": "The young man deposits CAD 12,400 in cash into his uncle's account. He first says it is his uncle's money, then says it is his own savings. He will not give his uncle's occupation. What should the teller do?",
+          "choices": [
+            {
+              "text": "Process the deposit, take reasonable measures on the third-party question, record the client's statement and the grounds to suspect a third party, ensure the large cash report is captured, and escalate the unusual activity internally.",
+              "outcome": "Best answer. Section 134 requires the third-party record when the bank cannot determine but has reasonable grounds to suspect; the cash triggers a large cash report; and the shifting story is an indicator for the FIU to assess for an STR.",
+              "score": 2
+            },
+            {
+              "text": "Refuse the deposit and tell him the bank suspects money laundering.",
+              "outcome": "Refusing may be a business choice, but telling him about suspicion risks tipping off and does not replace the recording and escalation duties.",
+              "score": 0
+            },
+            {
+              "text": "Accept the deposit as his own money because he said so in the end.",
+              "outcome": "The Regulations require reasonable measures, not blind acceptance. Where grounds to suspect a third party remain, the bank must record them.",
+              "score": 0
+            },
+            {
+              "text": "Accept the deposit, file nothing now, and ask the uncle to call the branch next week.",
+              "outcome": "Following up with the account holder can help, but the large cash report and third-party record arise at the time of the transaction.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Which duty does it trigger?",
+          "prompt": "Sort each situation into the main know-your-client duty it raises.",
+          "buckets": [
+            "Identity verification",
+            "Beneficial ownership",
+            "Third-party determination"
+          ],
+          "items": [
+            {
+              "text": "A person opens a personal chequing account",
+              "bucket": 0
+            },
+            {
+              "text": "A walk-in asks to buy a CAD 3,500 money order",
+              "bucket": 0
+            },
+            {
+              "text": "A numbered company opens a business account",
+              "bucket": 1
+            },
+            {
+              "text": "A family trust names three beneficiaries",
+              "bucket": 1
+            },
+            {
+              "text": "Corporate registry shows a different 25% owner than the client declared",
+              "bucket": 1
+            },
+            {
+              "text": "Someone deposits CAD 11,000 cash into another person's account",
+              "bucket": 2
+            },
+            {
+              "text": "A new account will be used by the client's employer",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Opening an account for a corporation",
+          "prompt": "Put the onboarding steps for a corporate client in a sensible order.",
+          "steps": [
+            "Confirm the corporation's existence and verify its identity",
+            "Collect the names of directors and of owners or controllers of 25% or more",
+            "Obtain information on ownership, control and structure",
+            "Take reasonable measures to confirm the beneficial ownership information",
+            "Determine whether any relevant person is a PEP, HIO, family member or close associate",
+            "Assess the client's ML/TF risk and apply special measures if high",
+            "Set the ongoing monitoring frequency based on that risk"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Maplecrest cannot obtain or confirm the beneficial ownership of a corporate client. What must it do under subsection 138(4)?",
+          "options": [
+            "Close the account immediately and file an STR",
+            "Take reasonable measures to verify the CEO's identity and apply special measures",
+            "Ask the client to sign a declaration and take no further step",
+            "Report the client to Corporations Canada within 5 days"
+          ],
+          "answer": 1,
+          "explanation": "Subsection 138(4) requires reasonable measures to verify the identity of the CEO (or person in that function) and the special measures in section 157. An STR is required only if there are reasonable grounds to suspect."
+        },
+        {
+          "type": "tip",
+          "title": "Common onboarding mistakes",
+          "body": "- **Treating the 25% line as the whole job.** You also need information on control and structure, and you must try to confirm it.\n- **Forgetting family and close associates.** The PEP determination covers them too.\n- **Forgetting the five-year rule.** Domestic PEP and HIO status continues for five years after leaving office; foreign PEP status never lapses.\n- **Assuming a domestic PEP is automatically high risk.** For domestic PEPs and HIOs the extra measures depend on your risk assessment; for foreign PEPs they always apply.\n- **Leaving 'third party: unknown' blank.** If you cannot determine but have grounds to suspect, the record must say why.\n- **Opening first, verifying later.** No anonymous accounts: if identity cannot be verified, the account cannot be opened."
+        },
+        {
+          "type": "example",
+          "title": "Real case: a foreign PEP without source of wealth (TD, 2024)",
+          "body": "FINTRAC's 2024 notice on The Toronto-Dominion Bank describes a **politically exposed foreign person** who was allowed to transact for **more than two years** without the bank obtaining the required details, including **source of funds, source of wealth** and the nature and purpose of transactions.\n\nThe same notice found that **96 clients** were never entered into the bank's high-risk program because of weaknesses in its client risk rating tools during a system transition, so **85** of them received no special measures at all.\n\nFor onboarding teams, the lesson is that a PEP flag or a high-risk rating is not a label. It is a trigger for specific steps the Regulations require, and the bank must be able to show they happened."
+        },
+        {
+          "type": "example",
+          "title": "Real case: special measures not applied (FNBC, 2025)",
+          "body": "FINTRAC's 2025 notice on First Nations Bank of Canada found **six high-risk clients** in the sample who received **none of the special measures** the Regulations require. The bank ran alert-based transaction monitoring, but FINTRAC did not see ongoing monitoring of high-risk clients that matched their risk level.\n\nA separate violation recorded **five instances** where the bank did not reassess client risk ratings or keep client information up to date, against its own policy.\n\nThe lesson for front-line and onboarding staff: enhanced measures must be **visible in the file**. If a client is high risk, the record should show the extra identity checks, the more frequent updates and the closer monitoring."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Verify identity using a method in section 105; international EFTs of CAD 1,000 or more trigger it for non-account clients.",
+            "No anonymous accounts: if identity cannot be verified, the account is not opened.",
+            "Entities: collect directors, 25%+ owners or controllers, trust parties and structure, and try to confirm them.",
+            "Federal registry discrepancies go to the CBCA Director within 30 days unless resolved.",
+            "Foreign PEPs always need source of funds and wealth, senior approval and special measures; domestic PEPs and HIOs need them when high risk.",
+            "Third-party determination applies at account opening and to cash of CAD 10,000 or more."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall the last unusual onboarding you saw or heard about. Which of today's checks (identity, beneficial ownership, PEP, third party) would have helped most, and how would you document it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-aml-s3-q1",
+          "question": "Which of these is an accepted method in section 105 to verify a person's identity?",
+          "options": [
+            "A selfie emailed by the client with no other check",
+            "A valid government-issued photo ID, confirming the name and photo match the person",
+            "A utility bill alone, without any second source",
+            "A verbal confirmation from a colleague who knows the client"
+          ],
+          "answer": 1,
+          "explanation": "Section 105 lists government photo ID, credit file, dual-process and other prescribed methods. A single utility bill or an informal confirmation is not enough.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s3-q2",
+          "question": "Under the credit file method, how old must the Canadian credit file be?",
+          "options": [
+            "At least three years",
+            "At least six months",
+            "At least one year",
+            "At least ten years"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 105(1)(c) requires a credit file located in Canada that has existed for at least three years and draws on more than one source.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s3-q3",
+          "question": "For a corporate client, what ownership level triggers collection of an owner's name and address under section 138?",
+          "options": [
+            "Owning or controlling, directly or indirectly, 25% or more of the shares",
+            "Owning 10% or more of the voting shares only",
+            "Owning more than 50% of the shares",
+            "Holding any shares at all, however small"
+          ],
+          "answer": 0,
+          "explanation": "Section 138 sets the line at 25% or more, held directly or indirectly, and also requires all directors' names.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s3-q4",
+          "question": "Maplecrest finds a material discrepancy between the beneficial owners a CBCA corporation declared and the federal registry. What does section 138.1 require?",
+          "options": [
+            "Report it to FINTRAC as an STR within 24 hours",
+            "Close the account and notify the client in writing",
+            "Report it to the CBCA Director within 30 days, unless resolved within 30 days",
+            "Ignore it if the client says the registry is out of date"
+          ],
+          "answer": 2,
+          "explanation": "Section 138.1 requires a discrepancy report to the Director under the Canada Business Corporations Act within 30 days, unless the discrepancy is resolved within that period.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s3-q5",
+          "question": "A new account holder is a former ambassador of another country who left office many years ago. How does the Act treat this person?",
+          "options": [
+            "No longer a PEP because they left office",
+            "Still a politically exposed foreign person, because the foreign PEP definition has no end date",
+            "A domestic PEP because they now live in Canada",
+            "A head of an international organization"
+          ],
+          "answer": 1,
+          "explanation": "The Act defines a politically exposed foreign person as someone who holds or has held the listed offices, with no prescribed period. Domestic PEP and HIO status, by contrast, lasts only for the prescribed period, which section 2 of the Regulations sets at five years.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s3-q6",
+          "question": "The bank determines that a new account holder is a domestic PEP. Its risk assessment rates the client as low risk. What does section 121 require?",
+          "options": [
+            "Only the PEP determination and normal measures; the extra PEP measures apply if the risk is high",
+            "Senior management approval and source of wealth checks in every case",
+            "Refusal of the account because domestic PEPs are prohibited",
+            "A report to FINTRAC that a domestic PEP has opened an account"
+          ],
+          "answer": 0,
+          "explanation": "For domestic PEPs and HIOs (and their family or associates), the source of funds and wealth, senior approval and special measures apply when the bank considers the risk high.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s3-q7",
+          "question": "Which three steps apply to an account held by a politically exposed foreign person?",
+          "options": [
+            "Establish source of funds and wealth, get senior management approval to keep the account open, apply special measures",
+            "File a monthly STR, freeze the account, notify Global Affairs",
+            "Collect two photo IDs, call the embassy, close within a year",
+            "Notify the client's government, cap deposits, block wires"
+          ],
+          "answer": 0,
+          "explanation": "Subsection 121(1) sets these three measures for foreign PEPs, their family members and close associates who are account holders.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s3-q8",
+          "question": "A man deposits CAD 10,500 cash and you cannot tell whether he acts for someone else, but there are reasonable grounds to suspect he does. What must you record?",
+          "options": [
+            "Nothing, because the third party could not be identified",
+            "Only the cash amount and his account number",
+            "His employer's name and his salary",
+            "Whether he says he acts only for himself, and the grounds to suspect a third party"
+          ],
+          "answer": 3,
+          "explanation": "Subsection 134(3) requires a record of what the person said about acting on their own behalf and a description of the reasonable grounds to suspect a third party.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s3-q9",
+          "question": "What is the purpose of ongoing monitoring under section 123.1 of the Regulations?",
+          "options": [
+            "Detect reportable transactions, keep information current, reassess risk and check activity fits the client",
+            "Confirm that clients pay their fees on time",
+            "Decide each client's credit limit for the year",
+            "Collect marketing consent for new products"
+          ],
+          "answer": 0,
+          "explanation": "Section 123.1 lists four purposes: detecting reportable transactions, keeping identity and beneficial ownership information current, reassessing risk and checking consistency with what the bank knows.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s3-q10",
+          "question": "What transaction size triggers the PEP determination for a person who asks a bank to initiate an international EFT?",
+          "options": [
+            "CAD 1,000 or more",
+            "CAD 10,000 or more",
+            "CAD 100,000 or more",
+            "CAD 50,000 or more"
+          ],
+          "answer": 2,
+          "explanation": "Section 116 requires reasonable measures to determine PEP or HIO status for a person who requests an international EFT of CAD 100,000 or more, and for the beneficiary of one.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "title": "STRs, large cash and EFT reports, records and information sharing",
+      "stage": "The Signal Room",
+      "summary": "Decide when reasonable grounds to suspect exist, file STRs as soon as practicable without tipping off, meet cash and EFT reporting deadlines, keep records and share information lawfully.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the reasonable grounds to suspect threshold, including for attempted transactions",
+        "Meet large cash and EFT report thresholds, the 24-hour rule and deadlines",
+        "Keep and produce records within the required periods",
+        "Use section 11.01 information sharing within its conditions"
+      ],
+      "id": "s4",
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: the signal room",
+          "setting": "Financial intelligence unit, Maplecrest Bank, Toronto. 2:10 pm.",
+          "lines": [
+            {
+              "who": "harpreet",
+              "text": "Welcome to the signal room. Every alert, branch referral and production order lands here. My job is to decide: is there reasonable grounds to suspect?",
+              "mood": "neutral"
+            },
+            {
+              "who": "narrator",
+              "text": "A screen shows a branch referral from Richmond: the cash deposit for 'the uncle', plus three similar deposits at other branches this month.",
+              "mood": "neutral"
+            },
+            {
+              "who": "harpreet",
+              "text": "Pattern across branches, cash just above and below CAD 10,000, a shifting story. I don't need proof of a crime. I need reasonable grounds to suspect.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kwame",
+              "text": "And separately my team owes FINTRAC electronic funds transfer reports on yesterday's international wires. Different clock, different rules.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Today you learn every report, every clock and the one thing you must never say to a client.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "From hunch to report",
+          "scenes": [
+            {
+              "icon": "🤔",
+              "heading": "Simple suspicion",
+              "narration": "A gut feeling that something is off, with no facts yet. It is a cue to look closer, not yet the reporting threshold."
+            },
+            {
+              "icon": "🧩",
+              "heading": "Reasonable grounds to suspect",
+              "narration": "Facts, context and indicators that make a link to money laundering, terrorist financing or sanctions evasion a real possibility. This is the STR threshold. You do not need to prove the offence."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Not 'reasonable grounds to believe'",
+              "narration": "Believing is a higher bar than the law sets for STRs. Writing it into bank procedures, as one big bank's policies did, causes missed reports."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "As soon as practicable",
+              "narration": "Once the bank's measures establish reasonable grounds to suspect, the STR must be completed and sent as a priority. There is no money threshold."
+            },
+            {
+              "icon": "🤐",
+              "heading": "No tipping off",
+              "narration": "Section 8 makes it an offence to disclose that a report was made, or its contents, with intent to prejudice a criminal investigation."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "How a signal becomes an STR",
+          "caption": "FINTRAC's notices show banks failing in the middle steps: closing files without checking indicators.",
+          "items": [
+            {
+              "label": "Signals",
+              "detail": "Alerts, branch referrals, production orders, negative news, directive hits."
+            },
+            {
+              "label": "Triage",
+              "detail": "Is there anything unusual about the client or transaction?"
+            },
+            {
+              "label": "Investigation",
+              "detail": "Review all relevant accounts and transactions against ML/TF indicators."
+            },
+            {
+              "label": "Reasonable grounds to suspect?",
+              "detail": "Facts, context and indicators support a possible link to an offence."
+            },
+            {
+              "label": "STR to FINTRAC",
+              "detail": "Filed as soon as practicable, including attempted transactions."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which threshold must be reached before a Canadian bank files a suspicious transaction report?",
+          "options": [
+            "Proof beyond reasonable doubt",
+            "Reasonable grounds to believe",
+            "Reasonable grounds to suspect",
+            "A police request for information"
+          ],
+          "answer": 2,
+          "explanation": "FINTRAC's guidance describes reasonable grounds to suspect as a step above simple suspicion and below reasonable grounds to believe. You do not need to verify the facts or prove an offence."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Prescribed reports at a glance",
+          "caption": "Thresholds and deadlines from sections 7 and 132 of the Regulations and section 7.1 of the Act.",
+          "headers": [
+            "Trigger",
+            "Deadline"
+          ],
+          "items": [
+            {
+              "label": "Suspicious transaction report",
+              "left": "Reasonable grounds to suspect; any amount; attempted too",
+              "right": "As soon as practicable"
+            },
+            {
+              "label": "Large cash transaction report",
+              "left": "Cash of CAD 10,000 or more received",
+              "right": "Within 15 days"
+            },
+            {
+              "label": "EFT report",
+              "left": "International EFT of CAD 10,000 or more, sent or finally received",
+              "right": "Within 5 working days"
+            },
+            {
+              "label": "Terrorist or listed person property report",
+              "left": "When a disclosure is required under the Criminal Code or sanctions laws",
+              "right": "Also sent to FINTRAC (section 7.1)"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "The 24-hour rule and record keeping",
+          "body": "**24-hour rule.** If the bank receives cash amounts that total **CAD 10,000 or more** in two or more transactions within **24 consecutive hours**, they count as one large cash transaction when the bank knows they are by or for the same person or entity, or for the same beneficiary (section 126). A parallel rule applies to international EFTs (section 127).\n\n**Records.** The Act requires records to be kept as the Regulations set out. Most records must be kept for **at least five years**, measured from:\n\n- account closure, for signature cards, account agreements and applications;\n- the last business transaction, for records such as entity existence documents and beneficial ownership records;\n- the date created, for all other records (section 148).\n\nRecords must be retrievable so they can be given to FINTRAC **within 30 days** of a request (section 149)."
+        },
+        {
+          "type": "sort",
+          "title": "Which report, if any?",
+          "prompt": "Sort each event into the report it triggers at Maplecrest (assume no suspicion unless stated).",
+          "buckets": [
+            "Large cash report",
+            "EFT report",
+            "Suspicious transaction report"
+          ],
+          "items": [
+            {
+              "text": "A client deposits CAD 14,000 in cash to a business account",
+              "bucket": 0
+            },
+            {
+              "text": "Three cash deposits for the same client total CAD 10,600 within 20 hours",
+              "bucket": 0
+            },
+            {
+              "text": "Maplecrest sends a CAD 25,000 wire to Germany at a client's request",
+              "bucket": 1
+            },
+            {
+              "text": "Maplecrest is the final recipient of a CAD 18,000 wire from Brazil for a client",
+              "bucket": 1
+            },
+            {
+              "text": "A client abandons a CAD 3,000 transfer when asked about its purpose, after a story that does not add up",
+              "bucket": 2
+            },
+            {
+              "text": "Indicators suggest a client is routing payments to dodge a SEMA asset freeze",
+              "bucket": 2
+            },
+            {
+              "text": "A production order arrives and the client's activity matches ML indicators",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The question at the counter",
+          "setting": "Richmond branch, the next morning.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "The young man from yesterday returns with another envelope of cash.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "He just asked me straight out: 'Are you reporting me to the government?' My teller froze.",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "Section 8 targets disclosure with intent to prejudice an investigation, but our policy is stricter: we never confirm or discuss whether a report exists.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Large cash reporting is routine and public knowledge. Anything about suspicion stays inside the bank.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "'Are you reporting me?'",
+          "situation": "The client asks the teller directly whether the bank has reported him to FINTRAC. The FIU is reviewing his activity for an STR. What should the teller say?",
+          "choices": [
+            {
+              "text": "Explain that the bank follows federal reporting rules for many routine transactions, such as large cash, without discussing his file, and pass the conversation to the branch manager and FIU as procedure requires.",
+              "outcome": "Best answer. It is truthful about routine reporting, discloses nothing about suspicion or any STR, and keeps the escalation path intact.",
+              "score": 2
+            },
+            {
+              "text": "Reassure him that nothing is wrong and no report has been made.",
+              "outcome": "This is false and could also become a disclosure about the STR process. Never deny or confirm a suspicious transaction report.",
+              "score": 0
+            },
+            {
+              "text": "Tell him a suspicious transaction report is being considered so he can explain himself.",
+              "outcome": "This discloses information about an STR and risks prejudicing an investigation. It also falls outside the teller's role.",
+              "score": 0
+            },
+            {
+              "text": "Say nothing at all and refuse to serve him further.",
+              "outcome": "Avoiding disclosure is right, but abruptly refusing service without following procedure can itself alert him. Escalate through the proper channel.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Reporting facts to remember",
+          "cards": [
+            {
+              "front": "Is there a money threshold for STRs?",
+              "back": "No. Any amount can be reported, and attempted transactions count too."
+            },
+            {
+              "front": "When is an STR due?",
+              "back": "As soon as practicable after the bank's measures establish reasonable grounds to suspect; FINTRAC expects it treated as a priority."
+            },
+            {
+              "front": "Good-faith protection",
+              "back": "FINTRAC's guidance says no one will be prosecuted for sending an STR in good faith."
+            },
+            {
+              "front": "Large cash report deadline",
+              "back": "Within 15 days after receiving the cash (section 132)."
+            },
+            {
+              "front": "EFT report deadline",
+              "back": "Within 5 working days after initiating or finally receiving the transfer (section 132)."
+            },
+            {
+              "front": "Record retention",
+              "back": "At least five years, and records must be producible to FINTRAC within 30 days of a request."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Sharing information between reporting entities (section 11.01)",
+          "body": "Since 2024, section **11.01** of the Act lets one reporting entity disclose a person's personal information to another **without the person's knowledge or consent**, if:\n\n- the information was collected in the course of its activities;\n- the disclosure is reasonable for **detecting or deterring** money laundering, terrorist financing or sanctions evasion;\n- asking for consent would risk compromising that purpose; and\n- the disclosure follows the Regulations.\n\nThe Regulations (Part 8) require a **code of practice approved by the Privacy Commissioner** before relying on this power, and the applicant must notify **FINTRAC** and give it a copy. Anyone who discloses, collects or uses information in **good faith** under section 11.01 is protected from criminal or civil proceedings.\n\nAt Maplecrest, staff never share client information with another bank on their own initiative: requests go through the FIU under the approved code."
+        },
+        {
+          "type": "check",
+          "question": "Kwame's team initiated a CAD 40,000 international wire for a client on Monday. By when must the EFT report reach FINTRAC?",
+          "options": [
+            "Within 24 hours",
+            "Within 5 working days",
+            "Within 15 days",
+            "Within 30 days"
+          ],
+          "answer": 1,
+          "explanation": "Subsection 132(1) requires EFT reports within five working days after the day the bank initiates or finally receives the transfer. Fifteen days applies to large cash reports."
+        },
+        {
+          "type": "example",
+          "title": "Real case: CIBC (FINTRAC, 2023)",
+          "body": "On 23 October 2023 FINTRAC imposed a penalty of **CAD 1,329,150** on Canadian Imperial Bank of Commerce for **two violations** found in a 2021 examination.\n\n- **A missed STR.** A client had been **arrested and charged** with criminal offences. The bank knew and reviewed the transactions, but decided no report was needed because the activity looked normal for the client's profile, despite ML/TF indicators and the context it held.\n- **Unreported EFTs.** In a sample of 20,000 incoming SWIFT payments, FINTRAC found **1,003** international EFTs the bank should have reported as the last Canadian financial institution to receive them, linked to a gap in its process for incomplete name or address data and in its testing.\n\nThe lesson: 'normal for this client' does not cancel known context, and reporting systems need testing as much as policies do."
+        },
+        {
+          "type": "example",
+          "title": "Real case: missed STRs at FNBC (FINTRAC, 2025)",
+          "body": "FINTRAC's 2025 notice on First Nations Bank of Canada found missed STRs in **5 of 16** case files, about 31%, and classed the violation as **very serious**. The bank had not considered:\n\n- activity **out of line** with the client's financial standing;\n- transfers with **unrelated parties**, where the client seemed to act for someone else;\n- signs of **untruthfulness** when the branch asked about source of funds;\n- amounts that looked **structured** to avoid identification or reporting thresholds.\n\nThe bank filed the STRs after FINTRAC found them. The lesson: each of these is a classic indicator, and front-line questions about source of funds produce exactly the evidence the FIU needs."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "STR threshold: reasonable grounds to suspect a link to ML, TF or sanctions evasion; no money threshold; attempts count.",
+            "File STRs as soon as practicable once your measures establish the threshold.",
+            "Never disclose that an STR was made or its contents; section 8 targets disclosure intended to prejudice an investigation.",
+            "Large cash: CAD 10,000 or more, within 15 days. International EFTs: CAD 10,000 or more, within 5 working days. The 24-hour rule aggregates.",
+            "Keep records at least five years and produce them to FINTRAC within 30 days of a request.",
+            "Section 11.01 sharing needs a Privacy Commissioner-approved code of practice."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of a time a client's story changed when you asked a simple question. What would you write in an internal referral so the FIU could judge reasonable grounds to suspect without having to call you back?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-aml-s4-q1",
+          "question": "Which description best matches 'reasonable grounds to suspect' in FINTRAC's guidance?",
+          "options": [
+            "A step above simple suspicion: facts, context or indicators suggest a possible offence",
+            "Proof that a money laundering offence has occurred",
+            "A hunch with no facts or indicators behind it",
+            "A police officer's belief that a crime was committed"
+          ],
+          "answer": 0,
+          "explanation": "FINTRAC places reasonable grounds to suspect above simple suspicion and below reasonable grounds to believe. You do not need to prove or verify an offence.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s4-q2",
+          "question": "A client attempts a CAD 2,000 transfer, then cancels it when asked about the purpose, after giving contradictory answers. The FIU finds reasonable grounds to suspect. What applies?",
+          "options": [
+            "No report, because the transaction was not completed",
+            "File an STR, because attempted transactions count and there is no money threshold",
+            "No report, because it is under CAD 10,000",
+            "Only a large cash report, if cash was involved"
+          ],
+          "answer": 1,
+          "explanation": "Section 7 covers transactions that occur or are attempted, and FINTRAC confirms there is no monetary threshold for STRs.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s4-q3",
+          "question": "When must Maplecrest send an STR?",
+          "options": [
+            "Within 30 days after the first alert, whatever the investigation status",
+            "At the end of each calendar quarter in a batch",
+            "As soon as practicable after its measures establish reasonable grounds to suspect",
+            "Only after the client has been told and given a chance to explain"
+          ],
+          "answer": 2,
+          "explanation": "FINTRAC's guidance requires STRs as soon as practicable after the bank completes the measures that establish reasonable grounds to suspect, treated as a priority.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s4-q4",
+          "question": "Under section 8 of the PCMLTFA, what is prohibited?",
+          "options": [
+            "Any discussion of FINTRAC with clients, including routine reporting rules",
+            "Disclosing that an STR was made, or its contents, with intent to prejudice a criminal investigation",
+            "Filing an STR without first telling the client's lawyer",
+            "Sharing STR data with FINTRAC more than once"
+          ],
+          "answer": 1,
+          "explanation": "Section 8 bars disclosing that a report was made or its contents with intent to prejudice a criminal investigation, whether or not one has started. Bank policy usually goes further.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s4-q5",
+          "question": "A client makes cash deposits of CAD 6,000 at 9 am and CAD 5,000 at 4 pm the same day at two branches of the same bank. The bank knows both are by the same client. What is the effect?",
+          "options": [
+            "Each is under CAD 10,000, so neither is reportable",
+            "They are treated as a single cash transaction of CAD 10,000 or more under the 24-hour rule",
+            "Only the second deposit is reported",
+            "They are reportable only if the client is a PEP"
+          ],
+          "answer": 1,
+          "explanation": "Section 126 deems cash amounts totalling CAD 10,000 or more within 24 consecutive hours to be one transaction when the bank knows they are by or for the same person or entity, or for the same beneficiary.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s4-q6",
+          "question": "What is the deadline for a large cash transaction report?",
+          "options": [
+            "Within 5 working days after the cash is received",
+            "As soon as practicable, like an STR",
+            "Within 30 days after month end",
+            "Within 15 days after the cash is received"
+          ],
+          "answer": 3,
+          "explanation": "Subsection 132(3) requires cash reports within 15 days. Five working days applies to EFT reports.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s4-q7",
+          "question": "For how long must a bank keep a signature card for an account?",
+          "options": [
+            "At least five years after the day the account is opened",
+            "At least two years after the last transaction",
+            "At least five years after the day the account is closed",
+            "Until FINTRAC's next examination ends"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 148(1)(a) measures the five years from account closure for signature cards, account operating agreements and applications.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s4-q8",
+          "question": "Another Canadian bank asks Maplecrest for personal information about a shared client it suspects of laundering. Under section 11.01 and the Regulations, what must be true before Maplecrest shares it without consent?",
+          "options": [
+            "A FINTRAC officer must approve each individual disclosure in advance",
+            "The client must have been convicted of an offence",
+            "The sharing must follow a code of practice approved by the Privacy Commissioner and meet the section 11.01 conditions",
+            "Both banks must have filed an STR on the client first"
+          ],
+          "answer": 2,
+          "explanation": "Section 11.01 sets the conditions, and Part 8 of the Regulations requires an approved code of practice. No prior conviction or STR is required.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s4-q9",
+          "question": "In the CIBC case, why did FINTRAC say an STR should have been filed for the client who had been charged?",
+          "options": [
+            "The client was a foreign PEP who had not been approved",
+            "The client deposited over CAD 10,000 in cash",
+            "ML/TF indicators and known context were present, even though activity looked normal for the profile",
+            "The client had asked the bank to close the account"
+          ],
+          "answer": 2,
+          "explanation": "FINTRAC found the bank relied on the activity appearing normal while ignoring indicators and context it held, including the criminal charges.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s4-q10",
+          "question": "Which statement about reports to FINTRAC under section 7.1 of the Act is correct?",
+          "options": [
+            "Section 7.1 replaces STRs for any client on a sanctions list",
+            "Section 7.1 applies only to money services businesses",
+            "Section 7.1 reports are sent to the RCMP instead of FINTRAC",
+            "If a bank must disclose property under the Criminal Code or sanctions laws, it must also report to FINTRAC"
+          ],
+          "answer": 3,
+          "explanation": "Section 7.1 requires a report to FINTRAC when the entity must make a disclosure under section 83.1 of the Criminal Code, the UN Act, Part 1 of SEMA or the Magnitsky Law.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "title": "Sanctions, Ministerial directives, penalties and exam readiness",
+      "stage": "The Examination Room",
+      "summary": "Link sanctions duties to FINTRAC reporting, apply the Russia, Iran and DPRK directives, understand the 2026 penalty, compliance agreement and order regime, and prepare evidence for an examination.",
+      "minutes": 55,
+      "objectives": [
+        "Connect sanctions disclosures and sanctions evasion to FINTRAC reporting",
+        "Apply the measures required by Ministerial directives",
+        "Explain notices of violation, penalties, appeals, compliance agreements and orders",
+        "Prepare the evidence that shows an effective, risk-based program"
+      ],
+      "id": "s5",
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the examination room",
+          "setting": "Boardroom, Maplecrest Bank, Toronto. Two weeks before FINTRAC arrives.",
+          "lines": [
+            {
+              "who": "nadia",
+              "text": "Final stage. FINTRAC's examiners will test sanctions evasion controls, our handling of Ministerial directives and whether the program is effective.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kwame",
+              "text": "My payments team found a wire to a trading company with a Vladivostok address. Is that a sanctions issue, a directive issue or both?",
+              "mood": "worried"
+            },
+            {
+              "who": "harpreet",
+              "text": "Probably both. The Russia directive applies to transactions from or to Russia regardless of amount. Sanctions laws apply if listed persons are involved.",
+              "mood": "thinking"
+            },
+            {
+              "who": "elise",
+              "text": "And the board wants to know the worst case under the 2026 penalty rules. I have the numbers.",
+              "mood": "neutral"
+            },
+            {
+              "who": "nadia",
+              "text": "Then let's walk the examination room: sanctions, directives, penalties and the readiness checklist.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Sanctions and directives: two systems that meet at the bank",
+          "scenes": [
+            {
+              "icon": "🚫",
+              "heading": "Sanctions laws prohibit dealings",
+              "narration": "Canadian sanctions come mainly from the Special Economic Measures Act, the Magnitsky Law and the United Nations Act, plus the Criminal Code for listed terrorist entities. They ban dealings with listed persons."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Banks keep checking",
+              "narration": "Regulations under these laws require banks to determine on a continuing basis whether they hold property of listed persons, and to disclose it without delay to the authorities the law names."
+            },
+            {
+              "icon": "📨",
+              "heading": "FINTRAC hears too",
+              "narration": "When a bank must make such a disclosure, section 7.1 of the PCMLTFA requires a report to FINTRAC as well. Suspected evasion goes to FINTRAC as an STR."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Directives add measures",
+              "narration": "Ministerial directives do not freeze anything. They make every transaction linked to a named state high risk and add identity, due diligence and record-keeping steps."
+            },
+            {
+              "icon": "📋",
+              "heading": "Examined and penalised",
+              "narration": "FINTRAC examines compliance with directives, and breaches can lead to administrative penalties or prosecution, but not both for the same breach."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "What the Russia and DPRK directives require",
+          "caption": "Summarised from FINTRAC's guidance on the Russia (2024) and DPRK (2017) directives. The Iran directive (2020) is also in force; read its guidance for detail.",
+          "items": [
+            {
+              "label": "Treat as high risk",
+              "detail": "Every transaction originating from or bound for the state, whatever the amount, is high risk under subsection 9.6(3)."
+            },
+            {
+              "label": "Verify identity",
+              "detail": "Verify anyone requesting or benefiting from the transaction, regardless of amount."
+            },
+            {
+              "label": "Enhanced due diligence",
+              "detail": "Focus on sanctions evasion: source of funds, purpose and beneficial ownership or control."
+            },
+            {
+              "label": "Keep the record",
+              "detail": "Keep a record of the transaction regardless of amount, as the Regulations set out."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A client asks Maplecrest to send CAD 900 to a supplier in Russia. Which statement is correct under the Russia directive?",
+          "options": [
+            "The directive does not apply below CAD 10,000",
+            "The transaction is high risk and needs identity verification, enhanced due diligence and a record regardless of amount",
+            "The bank must freeze the funds and report to the RCMP",
+            "Only an EFT report is required"
+          ],
+          "answer": 1,
+          "explanation": "The directive applies to every transaction from or to Russia regardless of amount. Freezing applies only where sanctions laws are engaged."
+        },
+        {
+          "type": "sort",
+          "title": "Sanctions law, directive or both?",
+          "prompt": "Sort each situation by the regime it mainly engages.",
+          "buckets": [
+            "Sanctions laws",
+            "Ministerial directive",
+            "Both"
+          ],
+          "items": [
+            {
+              "text": "A Canadian client pays a listed person in a third country",
+              "bucket": 0
+            },
+            {
+              "text": "The bank finds it holds an account of a person newly listed under SEMA",
+              "bucket": 0
+            },
+            {
+              "text": "A client receives a CAD 700 family transfer from a relative in Russia",
+              "bucket": 1
+            },
+            {
+              "text": "A small wire from a Canadian client to a Russian online retailer",
+              "bucket": 1
+            },
+            {
+              "text": "A wire to a Russian company owned by a person listed under SEMA",
+              "bucket": 2
+            },
+            {
+              "text": "An attempt to route payments to Iran through a third-country front company tied to a listed entity",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Penalties after the 2026 reforms",
+          "body": "Part 4.1 of the Act, as rebuilt by the **Strengthening Canada's Immigration System and Borders Act** (S.C. 2026, c. 4, in force 26 March 2026), sets:\n\n- **Per violation:** up to **CAD 4 million** for a person and **CAD 20 million** for an entity.\n- **Per notice, all violations together:** for an entity, the greater of **CAD 20 million** and **3% of gross global revenue** in the prior financial year, using the whole affiliated group's revenue.\n- **Classes:** violations remain classed as minor, serious or very serious by regulation.\n- **Purpose:** penalties aim to **encourage compliance, not punish**; FINTRAC weighs the harm done and the ability to pay.\n- **Compliance agreement:** after a violation is established, FINTRAC **must** require a compliance agreement with measures and a deadline.\n- **Compliance order:** if the entity refuses or misses the deadline, the Director **must** issue a **public** order, and the entity must publish its remedial measures. Breaching it can cost an entity the greater of **CAD 30 million** and **3%** of gross global revenue."
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "From examination to compliance order",
+          "caption": "Based on sections 73.14 to 73.22 of the PCMLTFA as in force since 26 March 2026.",
+          "items": [
+            {
+              "label": "Examination",
+              "detail": "FINTRAC reviews records, files and systems on site or at a desk."
+            },
+            {
+              "label": "Notice of violation",
+              "detail": "Names the violation and proposed penalty; 30 days to pay or make representations."
+            },
+            {
+              "label": "Director's decision",
+              "detail": "On a balance of probabilities: the proposed penalty, a lesser one or none."
+            },
+            {
+              "label": "Appeal",
+              "detail": "Federal Court, within 30 days, for serious, very serious or compliance order violations."
+            },
+            {
+              "label": "Publication",
+              "detail": "FINTRAC publishes the name, the violation and the amount."
+            },
+            {
+              "label": "Compliance agreement",
+              "detail": "Required once the violation is established, with measures and a deadline."
+            },
+            {
+              "label": "Compliance order",
+              "detail": "Made public if the agreement is refused or not met in time."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The board's worst case",
+          "setting": "Board risk committee, 40th floor.",
+          "lines": [
+            {
+              "who": "elise",
+              "text": "Before 2026 the per-violation caps were much lower. Now a single violation by an entity can reach CAD 20 million.",
+              "mood": "worried"
+            },
+            {
+              "who": "kwame",
+              "text": "And for a group our size, 3% of global revenue is a much bigger number than CAD 20 million.",
+              "mood": "worried"
+            },
+            {
+              "who": "nadia",
+              "text": "Which is why 'effective' is now in the Act. FINTRAC will ask whether our controls work, not just whether they exist.",
+              "mood": "neutral"
+            },
+            {
+              "who": "elise",
+              "text": "And if we get a penalty, the compliance agreement is mandatory. If we miss it, the order is public and says what we failed to fix.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Responding to a notice of violation",
+          "situation": "Months later, FINTRAC serves Maplecrest with a notice of violation proposing a penalty for missed STRs. The board chair wants to 'pay it quietly and move on'. What do you advise?",
+          "choices": [
+            {
+              "text": "Decide within 30 days whether to pay or make representations to the Director, plan for publication, and prepare now for the compliance agreement FINTRAC must require.",
+              "outcome": "Best answer. It reflects the 30-day window, the public nature of penalties and the 2026 duty to enter a compliance agreement with measures and a deadline.",
+              "score": 2
+            },
+            {
+              "text": "Pay quietly; payment keeps the matter confidential and ends all obligations.",
+              "outcome": "Paying ends the proceedings on the notice, but the violation is deemed committed, FINTRAC publishes it and a compliance agreement still follows.",
+              "score": 0
+            },
+            {
+              "text": "Ignore the notice until FINTRAC follows up, since nothing happens without a court order.",
+              "outcome": "If the bank neither pays nor makes representations within the period, it is deemed to have committed the violation and the penalty is imposed.",
+              "score": 0
+            },
+            {
+              "text": "Appeal straight to the Federal Court before the Director decides.",
+              "outcome": "The appeal right applies to the Director's decision on serious or very serious violations, or if no decision is issued within 90 days of representations. Representations come first.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Roles in a ready bank",
+          "prompt": "Match each role to its main PCMLTFA responsibility at Maplecrest.",
+          "pairs": [
+            {
+              "left": "Compliance officer (CAMLO)",
+              "right": "Implements the compliance program and keeps it current"
+            },
+            {
+              "left": "Senior officer",
+              "right": "Approves the written compliance policies and procedures"
+            },
+            {
+              "left": "Internal audit",
+              "right": "Tests program effectiveness at least every two years"
+            },
+            {
+              "left": "Front-line staff",
+              "right": "Verify identity, ask questions and escalate unusual activity"
+            },
+            {
+              "left": "Financial intelligence unit",
+              "right": "Investigates referrals and files STRs as soon as practicable"
+            },
+            {
+              "left": "Payments operations",
+              "right": "Files EFT reports on time and applies directive measures"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Exam-day reminders",
+          "cards": [
+            {
+              "front": "Five program elements",
+              "back": "Compliance officer, approved written policies, documented risk assessment, written ongoing training program and plan, two-year effectiveness review."
+            },
+            {
+              "front": "Where do STRs go?",
+              "back": "To FINTRAC, as soon as practicable once reasonable grounds to suspect are established."
+            },
+            {
+              "front": "Directives in force",
+              "back": "Russia (2024), Iran (2020) and the DPRK (2017); FINTRAC updated its guidance on each in 2025."
+            },
+            {
+              "front": "Maximum per violation, entity",
+              "back": "CAD 20 million since 26 March 2026."
+            },
+            {
+              "front": "Violation or offence?",
+              "back": "One or the other: proceeding with a violation precludes prosecuting the same act as an offence, and vice versa."
+            },
+            {
+              "front": "Coming next",
+              "back": "An enrolment requirement for all reporting entities was enacted in 2026 but takes effect on a date to be set by order."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the 2026 compliance agreement rule is correct?",
+          "options": [
+            "It is optional and only offered to first-time violators",
+            "FINTRAC must require one after a violation is established",
+            "It replaces the penalty, so no money is paid",
+            "It is kept secret from the public in all cases"
+          ],
+          "answer": 1,
+          "explanation": "Subsection 73.16(1) says FINTRAC shall require a compliance agreement as soon as feasible after proceedings on the violation end. Refusing or missing the deadline leads to a public compliance order."
+        },
+        {
+          "type": "example",
+          "title": "Real case: smaller banks are examined too (VersaBank, 2026)",
+          "body": "FINTRAC's public notices show that examinations are not limited to the largest banks. On **23 February 2026**, FINTRAC imposed a penalty of **CAD 42,075** on **VersaBank**, a bank headquartered in London, Ontario, for **two violations**. The penalty was paid in full and the case closed.\n\nIn **2025**, First Nations Bank of Canada received a penalty of about **CAD 601,000** for five violations, and in **2024** Exchange Bank of Canada received one of about **CAD 2.46 million**, later varied by the Federal Court.\n\nThe lesson for a mid-sized bank like Maplecrest: size does not protect you, and a public notice names the bank whatever the amount."
+        },
+        {
+          "type": "example",
+          "title": "Real case: one root cause, five violations (TD, 2024)",
+          "body": "FINTRAC's notice on The Toronto-Dominion Bank traced a chain of failures back to **client risk rating**. Weak oversight of the bank's risk rating tools during a system transition meant **96** clients were never treated as high risk. As a result:\n\n- the **risk assessment** violation followed (paragraph 156(1)(c));\n- **special measures** were not applied, including enhanced measures required by a **Ministerial directive** for 11 clients (subsection 9.6(3), section 157);\n- **ongoing monitoring** fell short (section 123.1);\n- **records** of special measures were missing (section 6 of the Act, subsection 146(1));\n- and **20 STRs** were missed.\n\nThe lesson for readiness: test the plumbing that feeds every control. One broken data flow can show up in five places in an examination."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "Sanctions laws ban dealings and require continuing checks and disclosure; section 7.1 adds a report to FINTRAC.",
+            "Suspected sanctions evasion is reported to FINTRAC through an STR.",
+            "Directives on Russia, Iran and the DPRK make linked transactions high risk regardless of amount.",
+            "Since 26 March 2026: up to CAD 20 million per violation for an entity, a cap per notice of the greater of CAD 20 million and 3% of group revenue.",
+            "A compliance agreement is mandatory after a violation; missing it brings a public compliance order.",
+            "Readiness means evidence: approved policies, current risk assessment, training records, review reports and filed reports."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If FINTRAC examined your team next month, which piece of evidence would be hardest to produce: training records, risk assessment updates, investigation notes or report timeliness? What would you fix first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ca-aml-s5-q1",
+          "question": "Which laws are the main sources of Canadian sanctions referred to in the PCMLTFA definition of a sanctions evasion offence?",
+          "options": [
+            "The Bank Act, the Criminal Code and PIPEDA",
+            "The Customs Act, the Excise Act and the Income Tax Act",
+            "The United Nations Act, Part 1 of SEMA and the Sergei Magnitsky Law",
+            "The Competition Act, the Investment Canada Act and SEMA Part 2"
+          ],
+          "answer": 2,
+          "explanation": "The Act defines a sanctions evasion offence as breaching a restriction under the UN Act, Part 1 of SEMA or the Magnitsky Law.",
+          "difficulty": 2
+        },
+        {
+          "id": "ca-aml-s5-q2",
+          "question": "Maplecrest discovers that an account belongs to a person newly listed under a SEMA regulation and makes the disclosure the sanctions regulation requires. What else does the PCMLTFA require?",
+          "options": [
+            "Nothing further, because sanctions are outside the PCMLTFA",
+            "A report to FINTRAC under section 7.1",
+            "A large cash report for the account balance",
+            "A notice to the client explaining the freeze and the report"
+          ],
+          "answer": 1,
+          "explanation": "Section 7.1 requires reporting entities that must disclose under the Criminal Code, UN Act regulations, SEMA Part 1 regulations or the Magnitsky Law to report to FINTRAC as well.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s5-q3",
+          "question": "A client sends CAD 400 to a relative in North Korea. What does the DPRK directive require?",
+          "options": [
+            "Nothing, because it is below the CAD 1,000 verification threshold",
+            "Block it and report it to the RCMP within 24 hours",
+            "File an EFT report only",
+            "Treat it as high risk, verify identity, apply enhanced due diligence focused on sanctions evasion and keep a record"
+          ],
+          "answer": 3,
+          "explanation": "FINTRAC's guidance on the DPRK directive applies its measures to every transaction from or to North Korea regardless of amount.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s5-q4",
+          "question": "How often must Ministerial directives be reviewed, according to FINTRAC's directives page?",
+          "options": [
+            "At least every three years from the day they take effect",
+            "Every year at the federal budget",
+            "Only when the FATF changes its lists",
+            "Every five years by Parliament"
+          ],
+          "answer": 0,
+          "explanation": "FINTRAC states that directives remain in force until revoked, suspended or amended and are reviewed at least every three years.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s5-q5",
+          "question": "Since 26 March 2026, what is the maximum penalty for a single prescribed violation committed by an entity?",
+          "options": [
+            "CAD 500,000",
+            "CAD 20 million",
+            "CAD 4 million",
+            "CAD 30 million"
+          ],
+          "answer": 1,
+          "explanation": "Subsection 73.1(2) sets CAD 20 million per violation for an entity and CAD 4 million for a person. CAD 30 million is the floor of the compliance order violation cap.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s5-q6",
+          "question": "For an entity in an affiliated group, how is the 3% cumulative cap per notice of violation calculated?",
+          "options": [
+            "On the gross global revenue of the whole affiliated group in the prior financial year",
+            "On the Canadian revenue of the branch that committed the violation",
+            "On the bank's net profit in the year of the violation",
+            "On the total value of the unreported transactions"
+          ],
+          "answer": 0,
+          "explanation": "Subsection 73.1(4) deems the entity's gross global revenue to be that of the affiliated group for the prior financial year.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s5-q7",
+          "question": "What must the Director do if an entity refuses to enter into a compliance agreement?",
+          "options": [
+            "Cancel the original penalty",
+            "Make a compliance order and make it public",
+            "Refer the entity directly for criminal prosecution",
+            "Extend the deadline by two years automatically"
+          ],
+          "answer": 1,
+          "explanation": "Section 73.17 requires a compliance order, which must be made public and require the entity to publish its measures.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s5-q8",
+          "question": "Which criteria must FINTRAC consider when setting a penalty under section 73.11?",
+          "options": [
+            "The bank's share price and credit rating",
+            "That penalties aim to encourage compliance, the harm done, and the ability to pay",
+            "Only the number of transactions affected",
+            "The salary of the compliance officer"
+          ],
+          "answer": 1,
+          "explanation": "Section 73.11 lists the compliance-not-punishment purpose, the harm done, the ability to pay and any prescribed criteria.",
+          "difficulty": 3
+        },
+        {
+          "id": "ca-aml-s5-q9",
+          "question": "A bank makes representations on a notice of violation. What standard does the Director apply?",
+          "options": [
+            "Beyond reasonable doubt",
+            "Reasonable grounds to suspect",
+            "Clear and convincing evidence",
+            "Balance of probabilities"
+          ],
+          "answer": 3,
+          "explanation": "Subsection 73.15(2) requires the Director to decide on a balance of probabilities and allows the proposed penalty, a lesser one or none.",
+          "difficulty": 4
+        },
+        {
+          "id": "ca-aml-s5-q10",
+          "question": "What is the status of the 2026 enrolment requirement for all reporting entities?",
+          "options": [
+            "Enacted in 2026 but coming into force on a date to be fixed by order",
+            "In force since 26 March 2026 for every bank",
+            "Applies only to money services businesses already registered",
+            "Withdrawn before royal assent"
+          ],
+          "answer": 0,
+          "explanation": "The Strengthening Canada's Immigration System and Borders Act added enrolment provisions, but they come into force on a day fixed by order of the Governor in Council.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "ca",
+    "programs": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      23,
+      24,
+      25,
+      26
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "periodic"
+    ],
+    "regulators": [
+      "Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)",
+      "Department of Finance Canada (Ministerial directives)",
+      "Global Affairs Canada (sanctions)",
+      "Office of the Privacy Commissioner of Canada (codes of practice under section 11.01)"
+    ],
+    "references": [
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations (SOR/2002-184)",
+        "issuer": "Governor in Council (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-184/FullText.html",
+        "provision": "Section 156(1)(d) and (e) (training program and plan); 156(3) (two-year review)",
+        "note": "The compliance program must include a written, ongoing compliance training program for employees, agents and others authorised to act for the entity, a documented plan for delivering that training, and a documented effectiveness review at least every two years.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Act (S.C. 2000, c. 17)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/P-24.501/FullText.html",
+        "provision": "Section 9.6(1) and (1.1) (compliance program); 9.6(3) (special measures for high risk)",
+        "note": "Every reporting entity must establish and implement a compliance program in line with the Regulations; since March 2026 the program must also be reasonably designed, risk-based and effective.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Compliance program requirements",
+        "issuer": "FINTRAC",
+        "url": "https://fintrac-canafe.canada.ca/guidance-directives/compliance-conformite/guide4/4-eng",
+        "note": "FINTRAC expects the training program to explain the Act's requirements, the entity's policies on reporting, record keeping and know-your-client, and each person's role in detecting ML/TF; the plan should name recipients, topics, methods and frequency, tailored to ML, TF and sanctions evasion risk.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Act (S.C. 2000, c. 17)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/P-24.501/FullText.html",
+        "provision": "Sections 7 (suspicious transactions), 7.1 (property disclosures), 8 (no disclosure), 9.2 (anonymous accounts) and 9.3 (PEPs)",
+        "note": "Report completed or attempted transactions where there are reasonable grounds to suspect ML, TF or sanctions evasion; report to FINTRAC when a sanctions or terrorist property disclosure is required; do not disclose reports to prejudice an investigation.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Act (S.C. 2000, c. 17)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/P-24.501/FullText.html",
+        "provision": "Part 4.1, sections 73.1-73.22 (penalties, compliance agreements and orders, appeals, publication)",
+        "effective": "2026-03-26",
+        "note": "Since March 2026: up to $4 million per violation for a person and $20 million for an entity; per-notice cap of the greater of $20 million and 3% of group gross global revenue; mandatory compliance agreements and public compliance orders.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Act (S.C. 2000, c. 17)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/P-24.501/FullText.html",
+        "provision": "Section 11.01 (disclosure, collection and use of personal information)",
+        "note": "Reporting entities may share personal information with each other without consent to detect or deter ML, TF or sanctions evasion when the statutory conditions are met; good-faith sharing is protected.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations (SOR/2002-184)",
+        "issuer": "Governor in Council (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-184/FullText.html",
+        "provision": "Sections 7, 126-127, 132, 148-149 (reports, 24-hour rule, deadlines, record retention)",
+        "note": "Report cash and international EFTs of $10,000 or more (aggregated over 24 hours), cash within 15 days and EFTs within 5 working days; keep records at least five years and produce them within 30 days.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Proceeds of Crime (Money Laundering) and Terrorist Financing Regulations (SOR/2002-184)",
+        "issuer": "Governor in Council (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-184/FullText.html",
+        "provision": "Sections 2, 86, 105, 116, 121-122, 134-135, 138-138.1, 157 and 159-165",
+        "note": "Identity verification triggers and methods, PEP and HIO rules (five-year period for domestic PEPs and HIOs), third-party determination, beneficial ownership and discrepancy reports, special measures, and codes of practice for information sharing.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Ministerial directives and transaction restrictions",
+        "issuer": "FINTRAC",
+        "url": "https://fintrac-canafe.canada.ca/obligations/directives-eng",
+        "note": "Lists Ministerial directives under Part 1.1 of the Act for Russia (2024), Iran (2020) and the DPRK (2017); linked guidance requires treating covered transactions as high risk regardless of amount.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Reporting suspicious transactions to FINTRAC",
+        "issuer": "FINTRAC",
+        "url": "https://fintrac-canafe.canada.ca/guidance-directives/transaction-operation/str-dod/str-dod-eng",
+        "note": "Explains reasonable grounds to suspect, the as-soon-as-practicable deadline, the absence of a monetary threshold and how to avoid tipping off.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Public notice of administrative monetary penalties",
+        "issuer": "FINTRAC",
+        "url": "https://fintrac-canafe.canada.ca/pen/4-eng",
+        "note": "Lists penalties imposed, including on The Toronto-Dominion Bank (2024), Royal Bank of Canada (2023), CIBC (2023), Exchange Bank of Canada (2024) and First Nations Bank of Canada (2025).",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Strengthening Canada's Immigration System and Borders Act (S.C. 2026, c. 4)",
+        "issuer": "Parliament of Canada (Justice Laws Website)",
+        "url": "https://laws-lois.justice.gc.ca/eng/AnnualStatutes/2026_4/FullText.html",
+        "provision": "Part 9 (amendments to the PCMLTFA); section 124 (coming into force)",
+        "effective": "2026-03-26",
+        "note": "Added the effective-program requirement, rebuilt the penalty regime and enacted an enrolment requirement whose provisions come into force on a day fixed by order.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "ca-aml-x1",
+        "question": "A new analyst says Maplecrest's AML duties come mainly from OSFI guidelines. Which correction is most accurate?",
+        "options": [
+          "The duties come from the PCMLTFA and its Regulations, supervised by FINTRAC",
+          "The duties come from the Bank Act and are supervised by FCAC",
+          "The duties come from FATF Recommendations, which apply directly in Canada",
+          "The duties come from provincial securities law and each province's regulator"
+        ],
+        "answer": 0,
+        "explanation": "Canadian banks' AML/ATF duties are set by the PCMLTFA and Regulations and supervised by FINTRAC. FATF standards shape the law but do not apply directly.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x2",
+        "question": "Under the Regulations, who is responsible for complying with the Regulations when a teller performs a covered transaction for the bank?",
+        "options": [
+          "The teller personally, with the bank as guarantor",
+          "The branch manager personally for each branch",
+          "The bank as employer, rather than the individual teller",
+          "FINTRAC, which supervises the transaction in real time"
+        ],
+        "answer": 2,
+        "explanation": "Subsection 133(1) makes the employer, not the employee, responsible for complying with the Regulations. Staff still follow the bank's procedures.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x3",
+        "question": "Which description of a 'terrorist activity financing offence' matches the PCMLTFA definition?",
+        "options": [
+          "Any transaction with a person from a country under a Ministerial directive",
+          "Any cash deposit over CAD 10,000 by a non-resident",
+          "Any breach of the Special Economic Measures Act",
+          "Offences under the Criminal Code's terrorist financing provisions, including dealing in listed terrorist property"
+        ],
+        "answer": 3,
+        "explanation": "The Act defines it by reference to sections 83.02 to 83.04 of the Criminal Code and section 83.12 arising from section 83.08 (dealing in terrorist property). SEMA breaches are sanctions evasion offences.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x4",
+        "question": "Kwame's team sees payments that seem designed to help a person listed under the Magnitsky Law move money out of Canada. Which PCMLTFA duty is most directly engaged?",
+        "options": [
+          "A large cash transaction report under the Regulations",
+          "An STR for a suspected sanctions evasion offence under section 7(c)",
+          "A beneficial ownership discrepancy report to Corporations Canada",
+          "An effectiveness review by internal audit within 30 days"
+        ],
+        "answer": 1,
+        "explanation": "Breaching a prohibition under the Magnitsky Law is a sanctions evasion offence, so reasonable grounds to suspect trigger an STR under section 7(c).",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x5",
+        "question": "Which change did the 2026 amendments make to subsection 9.6 of the PCMLTFA?",
+        "options": [
+          "Removed the need for a documented risk assessment",
+          "Required all STRs to be approved by the board",
+          "Added a duty to ensure the compliance program is reasonably designed, risk-based and effective",
+          "Moved AML supervision from FINTRAC to OSFI"
+        ],
+        "answer": 2,
+        "explanation": "New subsection 9.6(1.1), in force 26 March 2026, adds the reasonably designed, risk-based and effective standard. FINTRAC remains the supervisor.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x6",
+        "question": "Which of these is the official name of the 2026 statute that rebuilt FINTRAC's penalty regime?",
+        "options": [
+          "Strengthening Canada's Immigration System and Borders Act (S.C. 2026, c. 4)",
+          "Financial Crime Accountability Act (S.C. 2026, c. 1)",
+          "Proceeds of Crime Modernization Act (S.C. 2026, c. 7)",
+          "Anti-Money Laundering Enforcement Act (S.C. 2026, c. 2)"
+        ],
+        "answer": 0,
+        "explanation": "Part 9 of S.C. 2026, c. 4, the Strengthening Canada's Immigration System and Borders Act, amended the PCMLTFA's penalty, compliance order and program provisions. The other titles are invented.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x7",
+        "question": "A board member asks whether FINTRAC can both prosecute and impose an administrative penalty for the same failure. What is correct?",
+        "options": [
+          "No; proceeding with it as a violation precludes proceeding as an offence, and vice versa",
+          "Yes; both always run in parallel",
+          "Yes, but only for very serious violations",
+          "No; FINTRAC can only prosecute, never penalise"
+        ],
+        "answer": 0,
+        "explanation": "Section 73.12 says that proceeding in one manner precludes the other. FINTRAC's directives page makes the same point.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x8",
+        "question": "In the RBC case, FINTRAC found STRs that combined transactions from several branch locations. Why did that matter?",
+        "options": [
+          "It made each report too short to be useful",
+          "It meant reports were filed before the 24-hour window",
+          "It exposed client names to other branches",
+          "FINTRAC's instructions require separate reports by location, so location data reported was wrong"
+        ],
+        "answer": 3,
+        "explanation": "FINTRAC found 29 of 34 sampled STRs mixed locations, so the location in the report was incorrect, contrary to its published reporting instructions.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x9",
+        "question": "What does FINTRAC say about the length of time notices of administrative monetary penalties stay on its website?",
+        "options": [
+          "They are removed once the penalty is paid",
+          "They remain on the public website for five years",
+          "They stay for one year after the appeal period",
+          "They are never published unless the entity agrees"
+        ],
+        "answer": 1,
+        "explanation": "FINTRAC's public notice page states that notices remain on its website for five years.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x10",
+        "question": "Which list correctly states the compliance program elements in subsection 156(1) of the Regulations?",
+        "options": [
+          "Board charter, annual STR quota, client exit policy, quarterly audit, FINTRAC certificate",
+          "Risk appetite, capital plan, liquidity plan, recovery plan, resolution plan",
+          "Responsible person, approved written policies, documented risk assessment, written ongoing training program and plan, effectiveness review plan",
+          "Compliance officer, sanctions list, privacy notice, complaints process, whistleblowing line"
+        ],
+        "answer": 2,
+        "explanation": "Paragraphs 156(1)(a) to (f) set these elements. FINTRAC groups the training program and its plan together as one element.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x11",
+        "question": "Maplecrest's training plan says only branch staff receive AML training. Based on FINTRAC's guidance, which gap would an examiner most likely raise?",
+        "options": [
+          "Other recipients such as the compliance officer, senior management, IT and internal audit are missing",
+          "Branch staff should not receive AML training at all",
+          "Training should be given only by FINTRAC staff",
+          "Training records should not show attendees' names"
+        ],
+        "answer": 0,
+        "explanation": "FINTRAC's guidance lists recipients beyond front-line staff, including the compliance officer, senior management, IT and internal audit, depending on duties.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x12",
+        "question": "Which statement about training frequency matches FINTRAC's guidance?",
+        "options": [
+          "It must be exactly once every calendar year for every employee",
+          "The bank sets it in the plan, using regular intervals, event triggers or both, tailored to its risks",
+          "It is required only when FINTRAC issues new guidance",
+          "It must be monthly for front-line staff and never for managers"
+        ],
+        "answer": 1,
+        "explanation": "FINTRAC says training can be at regular intervals, on events such as a new hire or procedure change, or both, tailored to the entity's size, complexity and risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x13",
+        "question": "Mei's new teller will serve clients from her second day. What does FINTRAC's guidance suggest about timing her AML training?",
+        "options": [
+          "She can wait until the next annual session, whenever it falls",
+          "She must first pass a FINTRAC-run certification exam",
+          "Event-based training, such as before a new employee deals with clients, is an example FINTRAC gives",
+          "Training is not needed if she shadows an experienced teller"
+        ],
+        "answer": 2,
+        "explanation": "FINTRAC gives 'before a new employee deals with clients' as an example of event-driven training timing.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x14",
+        "question": "What should a bank keep to show that its ongoing training program is actually delivered?",
+        "options": [
+          "Copies of each employee's performance appraisal",
+          "A list of clients each employee onboarded",
+          "Only the vendor's invoice for the training",
+          "Records of delivery, such as dates, attendees and topics covered"
+        ],
+        "answer": 3,
+        "explanation": "FINTRAC's guidance says the training program should include a record of training delivered, such as dates, attendees and topics.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x15",
+        "question": "Kwame wants to add a new correspondent relationship in a high-risk region. Which risk assessment factor in paragraph 156(1)(c) most directly covers this?",
+        "options": [
+          "The effectiveness review plan",
+          "Clients, business relationships and correspondent banking relationships",
+          "The training methods for delivery",
+          "The approval of policies by a senior officer"
+        ],
+        "answer": 1,
+        "explanation": "Subparagraph 156(1)(c)(i) explicitly names correspondent banking relationships among the risk factors; geography under (iii) would also apply.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x16",
+        "question": "A bank with no internal or external auditor must run its two-year effectiveness review. Who carries it out?",
+        "options": [
+          "FINTRAC's examiners",
+          "The entity itself",
+          "OSFI's supervisory team",
+          "A peer bank chosen by FINTRAC"
+        ],
+        "answer": 1,
+        "explanation": "Subsection 156(3) allows the entity itself to do the review only if it has no auditor. Banks normally use internal audit.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x17",
+        "question": "Which three items must the written report to a senior officer contain after the effectiveness review?",
+        "options": [
+          "The names of all STR subjects, their balances and their addresses",
+          "The training scores of each employee, their grades and their managers",
+          "The review findings, policy updates in the period, and the status of implementing them",
+          "The board minutes, the budget and the bank's credit rating"
+        ],
+        "answer": 2,
+        "explanation": "Subsection 156(4) requires findings, updates made to policies and procedures in the reporting period, and the status of their implementation.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x18",
+        "question": "In the First Nations Bank of Canada case, how did FINTRAC classify the failure to report suspicious transactions?",
+        "options": [
+          "As a minor violation",
+          "As a serious violation",
+          "As a very serious violation",
+          "As a compliance order violation"
+        ],
+        "answer": 2,
+        "explanation": "FINTRAC's notice classified the STR failure as very serious; the policy, risk assessment and special measures failures as serious; and ongoing monitoring as minor.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x19",
+        "question": "A client cannot be identified using any method in the Regulations, but insists on opening a savings account. What does the Act say?",
+        "options": [
+          "Open the account but block withdrawals for 90 days",
+          "Open the account and file an STR the same day",
+          "Open the account if a branch manager signs off",
+          "The bank must not open an anonymous account or one for an anonymous client"
+        ],
+        "answer": 3,
+        "explanation": "Section 9.2 prohibits opening an anonymous account or an account for a client whose identity cannot be verified as the Regulations require.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x20",
+        "question": "Under the dual-process method, which combination would be acceptable?",
+        "options": [
+          "One photo of the client plus their own written statement of address",
+          "Two documents from the same source, both showing name and address",
+          "A source confirming name and address plus a different source confirming name and date of birth",
+          "A social media profile plus the client's business card"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 105(1)(d) requires two of the listed confirmations, and subsection 105(4) says the information must not come from the same source, nor from the client or the bank itself.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x21",
+        "question": "A walk-in client asks to exchange CAD 3,200 into euros. What does section 86 require?",
+        "options": [
+          "Verify the person's identity, because foreign exchange of CAD 3,000 or more triggers it",
+          "Nothing, because only account openings require verification",
+          "Verify identity only above CAD 10,000",
+          "File a large cash report regardless of how the client pays"
+        ],
+        "answer": 0,
+        "explanation": "Section 86 requires verification for foreign currency exchanges of CAD 3,000 or more by non-account clients.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x22",
+        "question": "Maplecrest is onboarding a family trust. Which information must it obtain under section 138?",
+        "options": [
+          "Only the name of the lawyer who drafted the trust deed",
+          "Only beneficiaries who own 25% or more of the trust assets",
+          "Only the name of the trust and its tax number",
+          "Names and addresses of all trustees and all known beneficiaries and settlors"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 138(1)(b) requires names and addresses of all trustees and all known beneficiaries and settlors, plus ownership, control and structure.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x23",
+        "question": "Which discrepancy would NOT be treated as material under section 138.1?",
+        "options": [
+          "A different person shown as a 25% owner in the registry",
+          "A minor spelling variation in a beneficial owner's name",
+          "A director missing from the client's declaration",
+          "An extra controlling shareholder listed in the registry"
+        ],
+        "answer": 1,
+        "explanation": "Subsection 138.1(3) excludes spelling errors and minor name or address variations from material discrepancies.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x24",
+        "question": "A new account holder is the brother of a serving foreign head of state. What follows under the Regulations?",
+        "options": [
+          "He is outside the PEP rules because he holds no office",
+          "He is a domestic PEP because he lives in Canada",
+          "Only an EFT report is required for his transfers",
+          "He is a family member of a foreign PEP, so source of funds and wealth, senior approval and special measures apply"
+        ],
+        "answer": 3,
+        "explanation": "Section 121(1) applies the foreign PEP measures to prescribed family members and close associates of a politically exposed foreign person.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x25",
+        "question": "Maplecrest finally receives an international EFT of CAD 150,000 for a beneficiary it determines is a foreign PEP. What must happen?",
+        "options": [
+          "A member of senior management must review the transaction",
+          "The funds must be returned to the sender",
+          "The beneficiary's account must be closed within 30 days",
+          "Nothing beyond the EFT report"
+        ],
+        "answer": 0,
+        "explanation": "Subsection 122(3) requires senior management review where the beneficiary of a CAD 100,000-plus international EFT is a foreign PEP, family member or close associate.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-aml-x26",
+        "question": "When opening a business account, the signer says employees of a related company will also use it. Which duty is engaged?",
+        "options": [
+          "Large cash reporting, because business accounts handle cash",
+          "A section 11.01 disclosure to the related company's bank",
+          "Third-party determination: take reasonable measures to find out who will use the account and record the details",
+          "A Ministerial directive review"
+        ],
+        "answer": 2,
+        "explanation": "Section 135 requires reasonable measures at account opening to determine whether the account will be used by or on behalf of a third party, and records of the information.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x27",
+        "question": "Which purpose is NOT part of ongoing monitoring under section 123.1?",
+        "options": [
+          "Detecting transactions that must be reported",
+          "Keeping beneficial ownership information up to date",
+          "Reassessing the risk level of the client's activity",
+          "Setting the client's interest rate for the next term"
+        ],
+        "answer": 3,
+        "explanation": "Section 123.1 covers detecting reportable transactions, updating information, reassessing risk and checking consistency. Pricing is a business decision.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x28",
+        "question": "Harpreet's team closed an alert because 'there is no proof the funds came from crime'. What is wrong with that reasoning?",
+        "options": [
+          "Proof is required, but only for terrorist financing cases",
+          "Alerts can be closed only by FINTRAC",
+          "The test is reasonable grounds to believe, which was not met",
+          "The STR test is reasonable grounds to suspect; proof of an offence is not required"
+        ],
+        "answer": 3,
+        "explanation": "FINTRAC's guidance says you do not need to verify facts or prove an offence to reach reasonable grounds to suspect.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x29",
+        "question": "A production order arrives for a client, and the client's activity shows several ML indicators. Based on the RBC and TD cases, what should the bank's procedure ensure?",
+        "options": [
+          "The order is filed with legal and no further review is needed",
+          "The client is told about the order so they can respond",
+          "The file is escalated so the FIU can decide whether an STR is required",
+          "The account is closed and the STR question is dropped"
+        ],
+        "answer": 2,
+        "explanation": "Both notices criticised failures to escalate or review production order files for STR decisions. Telling the client risks tipping off.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x30",
+        "question": "Which information must NOT be requested from a client purely because you are preparing an STR, according to FINTRAC's guidance?",
+        "options": [
+          "Information you would not normally ask for, if asking could tip the client off",
+          "Information that you normally collect for that type of transaction",
+          "Identity details required by the Regulations",
+          "Information already held within the bank's own systems"
+        ],
+        "answer": 0,
+        "explanation": "FINTRAC warns against requesting information you would not normally request if it might tip off the client, and expects you to report what you already hold.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x31",
+        "question": "A client deposits CAD 9,000 cash in the morning and CAD 1,500 cash in the afternoon to an account for the same beneficiary, and the bank knows this. Which report is due, and by when?",
+        "options": [
+          "An EFT report, within 5 working days",
+          "No report, because each deposit is below CAD 10,000",
+          "An STR, within 24 hours",
+          "A large cash transaction report, within 15 days"
+        ],
+        "answer": 3,
+        "explanation": "The 24-hour rule in section 126 aggregates the deposits into one CAD 10,500 cash transaction, and subsection 132(3) gives 15 days. An STR is separate and depends on suspicion.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x32",
+        "question": "CIBC's 2023 penalty included unreported incoming EFTs. What role did FINTRAC say the bank played in those transfers?",
+        "options": [
+          "It was the last Canadian financial institution to receive the international EFTs",
+          "It was the ordering institution sending funds abroad",
+          "It was an intermediary that never handled client funds",
+          "It was the correspondent of a foreign shell bank"
+        ],
+        "answer": 0,
+        "explanation": "FINTRAC found 1,003 instances where CIBC was the last Canadian financial institution to receive the international EFT and should have reported it.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x33",
+        "question": "An entity record proving a corporation's existence was collected when the client relationship began. How long must it be kept?",
+        "options": [
+          "At least five years after the day of the last business transaction",
+          "At least five years after the day it was created",
+          "At least five years after the account opened",
+          "Until the corporation is dissolved"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 148(1)(b) measures the five years from the last business transaction for records that prove an entity's existence.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-aml-x34",
+        "question": "FINTRAC asks to examine records held in an archive. How quickly must they be provided?",
+        "options": [
+          "Within 24 hours",
+          "Within 30 days after the request",
+          "Within 5 working days",
+          "Within 90 days"
+        ],
+        "answer": 1,
+        "explanation": "Section 149 requires records to be kept so they can be provided within 30 days of a request under section 62 of the Act.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x35",
+        "question": "Which condition is part of section 11.01 for disclosing personal information to another reporting entity without consent?",
+        "options": [
+          "Disclosing with the person's knowledge or consent would risk compromising detection or deterrence",
+          "The person has been convicted of a money laundering offence",
+          "FINTRAC has asked both entities to share the information",
+          "The information was bought from a third-party data broker"
+        ],
+        "answer": 0,
+        "explanation": "Section 11.01 requires, among other things, that disclosure with knowledge or consent would risk compromising the ability to detect or deter ML, TF or sanctions evasion.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x36",
+        "question": "Who approves the code of practice that a reporting entity needs before using section 11.01?",
+        "options": [
+          "The Privacy Commissioner of Canada",
+          "The Director of FINTRAC",
+          "The Superintendent of Financial Institutions",
+          "The Minister of Finance"
+        ],
+        "answer": 0,
+        "explanation": "Section 159 and following in the Regulations require a code of practice approved by the Privacy Commissioner; FINTRAC is notified and may comment.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x37",
+        "question": "Under the Russia directive, which factor does FINTRAC say can indicate that a transaction is bound for or from Russia?",
+        "options": [
+          "Any transaction by a client with a Slavic-sounding name",
+          "Any payment made by card while the client travels in Europe",
+          "A transfer with a Russian originating or destination address, or ruble deposits or exchanges",
+          "Any transfer in US dollars"
+        ],
+        "answer": 2,
+        "explanation": "FINTRAC's guidance points to facts such as Russian addresses, Russian government representatives and ruble deposits or exchanges. Names alone are not an indicator.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x38",
+        "question": "What does the Russia directive require the bank to focus on when it exercises customer due diligence for a covered transaction?",
+        "options": [
+          "The client's credit history and repayment capacity",
+          "The risk of a sanctions evasion offence, including source of funds, purpose and beneficial ownership or control",
+          "The client's tax residency for CRS reporting",
+          "The client's marketing preferences and consent"
+        ],
+        "answer": 1,
+        "explanation": "The directive requires due diligence with particular attention to sanctions evasion, including source of funds, purpose and the beneficial ownership or control of entities.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x39",
+        "question": "Maplecrest pays a penalty proposed in a notice of violation. What is the legal effect?",
+        "options": [
+          "It is deemed to have committed the violation and proceedings on that notice end",
+          "The violation is withdrawn and nothing is published",
+          "The penalty is held in trust until an appeal is decided",
+          "The bank is exempt from examination for two years"
+        ],
+        "answer": 0,
+        "explanation": "Subsection 73.15(1) deems the violation committed and ends proceedings. FINTRAC then publishes it and requires a compliance agreement.",
+        "difficulty": 3
+      },
+      {
+        "id": "ca-aml-x40",
+        "question": "A bank neither pays nor makes representations within the period in the notice of violation. What happens?",
+        "options": [
+          "The notice lapses and FINTRAC must start again",
+          "The case goes automatically to the Federal Court",
+          "The penalty is halved for late response",
+          "It is deemed to have committed the violation and FINTRAC imposes the proposed penalty"
+        ],
+        "answer": 3,
+        "explanation": "Subsection 73.15(3) deems the violation committed and requires FINTRAC to impose the proposed penalty.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x41",
+        "question": "Within what period may an entity appeal the Director's decision on a serious violation to the Federal Court?",
+        "options": [
+          "Within 5 working days after the examination ends",
+          "Within 90 days after the penalty is paid",
+          "Within one year after publication",
+          "Within 30 days after the notice of decision is served, or a longer period the Court allows"
+        ],
+        "answer": 3,
+        "explanation": "Subsection 73.21(1) sets 30 days after service, or any longer period the Court allows, for serious, very serious and compliance order violations.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x42",
+        "question": "What maximum penalty applies to a compliance order violation by an entity?",
+        "options": [
+          "A flat CAD 20 million with no revenue-based alternative",
+          "The greater of CAD 30 million and 3% of gross global revenue in the prior financial year",
+          "The greater of CAD 4 million and 1% of Canadian revenue",
+          "Twice the penalty in the original notice of violation"
+        ],
+        "answer": 1,
+        "explanation": "Subsection 73.18(2) caps a compliance order violation by an entity at the greater of CAD 30 million and 3% of gross global revenue, using group revenue for affiliates.",
+        "difficulty": 5
+      },
+      {
+        "id": "ca-aml-x43",
+        "question": "What must a compliance order require of the entity, besides complying with the provision by a deadline?",
+        "options": [
+          "That it replace its entire board within 90 days",
+          "That it make public the measures taken or to be taken to comply",
+          "That it stop accepting new clients until FINTRAC re-examines it",
+          "That it pay the costs of FINTRAC's examination"
+        ],
+        "answer": 1,
+        "explanation": "Subsection 73.17(2) requires the order to include compliance with the provision, public disclosure of the measures, and a deadline.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x44",
+        "question": "The TD case showed one root cause producing several violations. What was that root cause, according to FINTRAC?",
+        "options": [
+          "A cyber attack that deleted transaction records",
+          "Weak oversight of client risk rating, so high-risk clients were not identified",
+          "A shortage of tellers in branches",
+          "A failure to register with FINTRAC"
+        ],
+        "answer": 1,
+        "explanation": "FINTRAC traced the risk assessment, special measures, ongoing monitoring and record-keeping failures to weak oversight of client risk rating solutions during a transition.",
+        "difficulty": 4
+      },
+      {
+        "id": "ca-aml-x45",
+        "question": "Elise prepares the examination evidence pack. Which set of documents best shows an effective, risk-based program in FINTRAC's eyes?",
+        "options": [
+          "The bank's annual report, its marketing plan and its share register",
+          "A FINTRAC certificate, an OSFI rating and a privacy notice",
+          "Approved policies, a current risk assessment, training plan and records, the latest review report, and timely filed reports",
+          "Branch opening hours, product brochures and fee schedules"
+        ],
+        "answer": 2,
+        "explanation": "Examiners test each program element and whether it works, so evidence of each element plus timely reporting is what demonstrates effectiveness.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
