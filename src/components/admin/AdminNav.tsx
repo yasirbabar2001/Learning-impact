@@ -14,6 +14,7 @@ const LINKS = [
   { href: "/admin/users", label: "Users" },
   { href: "/admin/learners", label: "Manage learners" },
   { href: "/admin/certifications", label: "Certifications" },
+  { href: "/admin/library", label: "Regulatory library" },
   { href: "/admin/programs", label: "Programs" },
   { href: "/admin/settings", label: "Site settings" },
 ];

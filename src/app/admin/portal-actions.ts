@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
-import { catalogEntry, formatPkr, saveCourseSettings, TOPICS } from "@/lib/courses/catalog";
+import { catalogEntry, formatPkr, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
 import { now, one, run } from "@/lib/db";
 import { createPasswordReset, currentUser } from "@/lib/portal/auth";
 import { approveOrder, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
@@ -52,7 +52,7 @@ export async function rejectOrderAction(fd: FormData) {
 export async function saveCourseSettingsAction(fd: FormData) {
   await requireAdmin();
   const slug = String(fd.get("slug"));
-  if (!TOPICS.some((t) => t.slug === slug)) return;
+  if (!isTopic(slug)) return;
   const price = Math.max(0, Math.min(10_000_000, Math.round(Number(fd.get("price")) || 0)));
   saveCourseSettings(slug, price, fd.get("published") === "on" && price > 0);
   revalidatePath("/", "layout");
@@ -74,7 +74,7 @@ export async function adminEnrollAction(_: AdminFormState, fd: FormData): Promis
   const email = z.email().safeParse(String(fd.get("email") ?? "").trim().toLowerCase());
   const slug = String(fd.get("slug"));
   if (!email.success) return { message: "Enter the learner's account e-mail." };
-  if (!TOPICS.some((t) => t.slug === slug)) return { message: "Choose a certification." };
+  if (!isTopic(slug)) return { message: "Choose a certification." };
   const user = one<{ id: string }>("SELECT id FROM users WHERE email = ?", email.data);
   if (!user) return { message: "No learner account uses that e-mail. Ask them to register first." };
   enroll(user.id, slug, "admin", null, null);

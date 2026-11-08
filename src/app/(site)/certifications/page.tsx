@@ -4,7 +4,7 @@ import { CertCatalog } from "@/components/portal/CertCatalog";
 import { Reveal } from "@/components/Reveal";
 import Link from "next/link";
 import { cookies } from "next/headers";
-import { catalog, formatPkr } from "@/lib/courses/catalog";
+import { catalog, formatPkr, regulatoryCatalog } from "@/lib/courses/catalog";
 import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals";
 
 export const metadata: Metadata = {
@@ -38,6 +38,7 @@ export default async function CertificationsPage() {
     stages: c.course?.sessions.length ?? null,
     questName: c.available ? (c.course?.quest.name ?? null) : null,
   }));
+  const regulatory = regulatoryCatalog().filter((q) => q.available).length;
   return (
     <>
       <PageHero eyebrow="Professional certifications" title="Certifications you play" highlight="like a quest.">
@@ -70,6 +71,14 @@ export default async function CertificationsPage() {
           ))}
         </ol>
       </section>
+      {regulatory > 0 && (
+        <section className="container section--tight">
+          <Link href="/regulatory" className="auth__invite reg-banner">
+            🌍 <strong>Global Banking Regulatory Training:</strong> {regulatory} country-specific compliance quest{regulatory === 1 ? "" : "s"} for banking
+            staff. Browse by country →
+          </Link>
+        </section>
+      )}
       <section className="container section section--tight">
         <Reveal>
           <CertCatalog items={items} />

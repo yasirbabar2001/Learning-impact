@@ -2,7 +2,7 @@ import { grantAttemptAction, markVerifiedAction, revokeCertificateAction, setAdm
 import { currentUser, isOwnerEmail } from "@/lib/portal/auth";
 import { EnrollForm, ResetLinkButton, TestEmailForm } from "@/components/admin/PortalAdminForms";
 import { mailConfigured } from "@/lib/portal/mail";
-import { catalogEntry, TOPICS } from "@/lib/courses/catalog";
+import { allTopics, catalogEntry } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
 import { levelFor } from "@/lib/portal/game";
 
@@ -51,7 +51,7 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
       </section>
       <section className="settings__group glass">
         <h2>Enrol a learner manually</h2>
-        <EnrollForm courses={TOPICS.map((t) => ({ slug: t.slug, title: t.title }))} />
+        <EnrollForm courses={allTopics()} />
       </section>
       <ul className="req-list">
         {users.map((u) => (

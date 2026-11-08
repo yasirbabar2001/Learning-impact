@@ -22,8 +22,10 @@ export const TOPICS = [
   { slug: "conflict-management", title: "Conflict Management", category: "Professional Skills", color: "#fb5607", tagline: "Turn disagreement into better decisions and stronger teams." },
 ] as const;
 
-export type Topic = (typeof TOPICS)[number];
+export type Topic = { slug: string; title: string; category: string; color: string; tagline: string };
 export type CatalogEntry = Topic & {
+  /** Jurisdiction code for Global Banking Regulatory Training quests; null for the general certifications. */
+  jurisdiction: string | null;
   course: Course | null;
   pricePkr: number;
   published: boolean;
@@ -63,20 +65,46 @@ export function getCourse(slug: string): Course | null {
 
 type SettingsRow = { slug: string; price_pkr: number; published: number };
 
+const settingsMap = () => new Map(all<SettingsRow>("SELECT slug, price_pkr, published FROM course_settings").map((r) => [r.slug, r]));
+
+function entry(t: Topic, jurisdiction: string | null, settings: Map<string, SettingsRow>): CatalogEntry {
+  const course = getCourse(t.slug);
+  const s = settings.get(t.slug);
+  const pricePkr = s?.price_pkr ?? 0;
+  const published = Boolean(s?.published);
+  return { ...t, jurisdiction, course, pricePkr, published, available: Boolean(course && published && pricePkr > 0) };
+}
+
+/** The general professional certifications (the original roadmap). */
 export function catalog(): CatalogEntry[] {
-  const settings = new Map(all<SettingsRow>("SELECT slug, price_pkr, published FROM course_settings").map((r) => [r.slug, r]));
-  return TOPICS.map((t) => {
-    const course = getCourse(t.slug);
-    const s = settings.get(t.slug);
-    const pricePkr = s?.price_pkr ?? 0;
-    const published = Boolean(s?.published);
-    return { ...t, course, pricePkr, published, available: Boolean(course && published && pricePkr > 0) };
-  });
+  const settings = settingsMap();
+  return TOPICS.map((t) => entry(t, null, settings));
+}
+
+/**
+ * Global Banking Regulatory Training quests: every course file that carries jurisdiction metadata.
+ * New files appear here as drafts (unpublished, no price) until an administrator publishes them.
+ */
+export function regulatoryCatalog(): CatalogEntry[] {
+  const settings = settingsMap();
+  return [...courses().values()]
+    .filter((c) => c.jurisdiction)
+    .sort((a, b) => a.title.localeCompare(b.title))
+    .map((c) => entry({ slug: c.slug, title: c.title, category: c.category, color: c.quest.color, tagline: c.tagline }, c.jurisdiction!.code, settings));
 }
 
 export function catalogEntry(slug: string): CatalogEntry | null {
-  return catalog().find((c) => c.slug === slug) ?? null;
+  return catalog().find((c) => c.slug === slug) ?? regulatoryCatalog().find((c) => c.slug === slug) ?? null;
 }
+
+/** True for any certification slug (general or regulatory). */
+export const isTopic = (slug: string) => TOPICS.some((t) => t.slug === slug) || Boolean(getCourse(slug)?.jurisdiction);
+
+/** Every certification (for admin pickers). */
+export const allTopics = (): { slug: string; title: string }[] => [
+  ...TOPICS.map((t) => ({ slug: t.slug, title: t.title })),
+  ...regulatoryCatalog().map((t) => ({ slug: t.slug, title: t.title })),
+];
 
 export function saveCourseSettings(slug: string, pricePkr: number, published: boolean) {
   const exists = one<{ slug: string }>("SELECT slug FROM course_settings WHERE slug = ?", slug);

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { CLASSIFICATIONS, FREQUENCIES, referenceSchema } from "../regulatory/schema.ts";
 
 /**
  * Format of a certification course ("quest"). Courses are written as JSON files in
@@ -145,6 +146,22 @@ export const courseSchema = z.object({
     cast: z.array(castSchema).max(6).default([]),
   }),
   sessions: z.array(sessionSchema).min(4).max(7),
+  /**
+   * Global Banking Regulatory Training library: the country or regional jurisdiction this quest is written for,
+   * the master programs (1-202) it covers and the official sources it relies on. Absent on general quests.
+   */
+  jurisdiction: z
+    .object({
+      code: z.string().regex(/^[a-z]{2,6}$/),
+      programs: z.array(z.number().int().min(1).max(202)).min(1).max(15),
+      classification: z.enum(CLASSIFICATIONS),
+      frequency: z.array(z.enum(FREQUENCIES)).min(1).max(3),
+      regulators: z.array(text(2, 140)).min(1).max(8),
+      references: z.array(referenceSchema).min(1).max(12),
+      /** When the content was last checked against the references (YYYY-MM-DD). */
+      reviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    })
+    .optional(),
   exam: z.object({
     questionsPerAttempt: z.number().int().min(30).max(50),
     passMark: z.number().int().min(60).max(90),

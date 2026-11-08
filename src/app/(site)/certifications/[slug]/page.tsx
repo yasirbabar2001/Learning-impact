@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { RegulatoryBasis } from "@/components/portal/RegulatoryBasis";
 import { Reveal } from "@/components/Reveal";
 import { SplitWords } from "@/components/Text";
 import { catalogEntry, courseMinutes, formatPkr } from "@/lib/courses/catalog";
@@ -153,6 +154,8 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
           <p className="muted cert__sectors">Relevant for: {c.sectors.join(" · ")}</p>
         </Reveal>
       </section>
+
+      <RegulatoryBasis course={c} />
 
       <section className="container section section--tight">
         <Reveal>
