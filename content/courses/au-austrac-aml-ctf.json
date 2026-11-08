@@ -1,0 +1,3193 @@
+{
+  "slug": "au-austrac-aml-ctf",
+  "title": "Australia | AUSTRAC AML/CTF Compliance (2026 reforms)",
+  "tagline": "Master Australia's reformed AML/CTF regime: risk assessment, CDD, PEPs, SMRs, tipping off, sanctions and correspondent banking for banks.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Banks and authorised deposit-taking institutions",
+    "Business, institutional and private banking",
+    "Payments, remittance and correspondent banking teams",
+    "Bank compliance, risk and internal audit functions"
+  ],
+  "hours": 6,
+  "description": "This quest teaches Australian bank staff the AML/CTF regime as it applies **from 31 March 2026**: the **Anti-Money Laundering and Counter-Terrorism Financing Act 2006** as rebuilt by the **2024 amending Act**, the **AML/CTF Rules 2025**, and the sanctions laws administered by the **Australian Sanctions Office**. It is built around **AUSTRAC**, Australia's AML/CTF regulator and financial intelligence unit.\n\nThe reformed Rules require a bank's AML/CTF policies to provide initial and ongoing training, suited to each role, for people who perform AML/CTF functions. This quest is designed for that audience: frontline and branch staff, onboarding and KYC teams, payments and correspondent banking staff, financial crime analysts, managers and directors.\n\nAcross five stages you will work through the ML/TF/PF risk assessment and AML/CTF policies, governing body and compliance officer duties, outcome-based CDD, enhanced CDD and PEPs, suspicious matter reports and their deadlines, threshold and international transfer reports, tipping off, record keeping, sanctions screening, correspondent banking and personnel due diligence, following a fictional team at Banksia Harbour Bank in Sydney, Parramatta and Melbourne.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own AML/CTF policies, procedures or advice from your compliance team.",
+  "audience": [
+    "Branch, contact centre and frontline staff at Australian banks who provide designated services",
+    "Onboarding, KYC and enhanced due diligence teams handling individuals, companies, trusts and PEPs",
+    "Payments, international transfers, correspondent banking and sanctions screening staff",
+    "Financial crime analysts and investigators who review alerts and prepare SMRs",
+    "Managers, senior managers and directors with AML/CTF approval or oversight duties"
+  ],
+  "outcomes": [
+    "Explain the 2024 reforms, the AML/CTF Rules 2025, the key dates and the roles of AUSTRAC and the Australian Sanctions Office",
+    "Describe the ML/TF/PF risk assessment, the AML/CTF policies and the duties of the governing body, senior managers and compliance officer",
+    "Apply initial, ongoing and enhanced CDD, including beneficial ownership and PEP rules",
+    "Recognise when an SMR is due, meet the 24-hour and 3-business-day deadlines and avoid tipping off",
+    "Apply threshold, international transfer and record-keeping requirements",
+    "Handle sanctions matches, correspondent banking due diligence and personnel due diligence and training in line with the Act and Rules"
+  ],
+  "quest": {
+    "name": "Harbour Watch",
+    "premise": "You have just joined the financial crime team at Banksia Harbour Bank in Sydney, months after Australia's AML/CTF reforms went live for banks. With compliance officer Priya Raman, analyst Tom Nguyen, branch manager Jarrah Collins, board risk chair Grace O'Connell and FI banking head Daniel Okafor, you must turn the new rulebook into everyday decisions at the counter, in the payments room and in the boardroom.",
+    "badge": {
+      "name": "Harbour Watch Keeper",
+      "description": "Awarded for demonstrating working knowledge of Australia's reformed AML/CTF and sanctions obligations for banks."
+    },
+    "color": "#0f766e",
+    "cast": [
+      {
+        "id": "priya",
+        "name": "Priya Raman",
+        "role": "AML/CTF compliance officer",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "tom",
+        "name": "Tom Nguyen",
+        "role": "Financial crime analyst",
+        "look": {
+          "skin": 2,
+          "hair": "short",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "jarrah",
+        "name": "Jarrah Collins",
+        "role": "Branch manager, Parramatta",
+        "look": {
+          "skin": 4,
+          "hair": "curly",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "grace",
+        "name": "Grace O'Connell",
+        "role": "Chair, board risk committee",
+        "look": {
+          "skin": 1,
+          "hair": "bun",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "daniel",
+        "name": "Daniel Okafor",
+        "role": "Head of financial institutions banking",
+        "look": {
+          "skin": 5,
+          "hair": "beard",
+          "color": "#be123c"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The 2026 reforms, regulators and offences",
+      "stage": "The Harbour Briefing",
+      "summary": "Meet the reformed AML/CTF regime: the 2006 Act as rebuilt in 2024, the AML/CTF Rules 2025, the key dates, AUSTRAC and the Australian Sanctions Office, and how AUSTRAC enforces the law.",
+      "minutes": 50,
+      "objectives": [
+        "Explain how the 2024 amending Act and the AML/CTF Rules 2025 reshaped the AML/CTF Act 2006",
+        "Recall the key reform dates for banks, new sectors and the tipping-off offence",
+        "Distinguish the roles of AUSTRAC, the Australian Sanctions Office, APRA and ASIC",
+        "Describe AUSTRAC's enforcement tools and the lessons of major bank cases"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the new rulebook",
+          "setting": "Financial crime team, Banksia Harbour Bank head office, Barangaroo, Sydney. 8:50 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your access pass works on the second try. On your desk: a laptop, a lanyard and a thick binder labelled 'AML/CTF reforms: what changed on 31 March 2026'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "Morning! I'm Priya Raman, the bank's AML/CTF compliance officer. Welcome to the team that keeps dirty money out of Banksia Harbour.",
+              "mood": "happy"
+            },
+            {
+              "who": "tom",
+              "text": "Tom Nguyen, financial crime analyst. Fair warning: half the bank still talks about the old 'Part A and Part B' program. That world is gone.",
+              "mood": "thinking"
+            },
+            {
+              "who": "jarrah",
+              "text": "(on a video call from the Parramatta branch) Jarrah Collins, branch manager. My tellers keep asking me what actually changed for them. I need answers I can repeat.",
+              "mood": "worried"
+            },
+            {
+              "who": "grace",
+              "text": "Grace O'Connell, chair of the board risk committee. And the board wants to know what the reforms mean for us as directors, not just for the tellers.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "So your first mission is the map: which laws apply, who the regulators are, what changed and what happens when a bank gets it wrong.",
+              "mood": "proud"
+            },
+            {
+              "who": "priya",
+              "text": "Five stages, one final exam. By the end, you should be able to explain our AML/CTF obligations to a teller, an analyst and a director. Ready?",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What the 2024 reforms changed",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "One Act, rebuilt",
+              "narration": "Australia's main law is still the Anti-Money Laundering and Counter-Terrorism Financing Act 2006. A 2024 amending Act rebuilt large parts of it, and new AML/CTF Rules made in 2025 replaced the 2007 Rules."
+            },
+            {
+              "icon": "📅",
+              "heading": "When it bit",
+              "narration": "For banks and other existing reporting entities, most of the new obligations started on 31 March 2026. Newly regulated sectors, such as many lawyers, accountants and real estate agents, followed on 1 July 2026."
+            },
+            {
+              "icon": "🧭",
+              "heading": "A new program shape",
+              "narration": "The old two-part program has gone. A bank now needs a documented ML/TF risk assessment and a set of AML/CTF policies, procedures, systems and controls that manage those risks."
+            },
+            {
+              "icon": "☢️",
+              "heading": "Three risks, not two",
+              "narration": "The risk assessment must now cover proliferation financing as well as money laundering and terrorism financing. That is the funding of weapons of mass destruction programs."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Outcomes over checklists",
+              "narration": "Customer due diligence is now framed as outcomes the bank must establish on reasonable grounds, scaled to the customer's risk, rather than a fixed checklist of identification steps."
+            },
+            {
+              "icon": "🤐",
+              "heading": "A sharper tipping-off rule",
+              "narration": "A redesigned tipping-off offence started a year earlier, on 31 March 2025. It focuses on disclosures that could prejudice an investigation."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The reform timeline",
+          "caption": "Dates from the amending Act and AUSTRAC's reform material. Banks moved on 31 March 2026.",
+          "items": [
+            {
+              "label": "Amending Act passed",
+              "detail": "Parliament passes the AML/CTF Amendment Act 2024, reshaping programs, CDD and reporting.",
+              "value": "Dec 2024"
+            },
+            {
+              "label": "New tipping-off offence",
+              "detail": "The redesigned offence for disclosing suspicious matter information takes effect.",
+              "value": "31 Mar 2025"
+            },
+            {
+              "label": "AML/CTF Rules 2025 made",
+              "detail": "AUSTRAC's new Rules replace the 2007 Rules and fill in the detail of the reformed Act.",
+              "value": "2025"
+            },
+            {
+              "label": "Banks switch over",
+              "detail": "Existing reporting entities, including banks, must meet the new obligations.",
+              "value": "31 Mar 2026"
+            },
+            {
+              "label": "New sectors join",
+              "detail": "Tranche two professions, such as many lawyers, accountants and real estate agents, are regulated.",
+              "value": "1 Jul 2026"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which body receives suspicious matter reports from Australian banks?",
+          "options": [
+            "The Australian Sanctions Office in DFAT",
+            "AUSTRAC, through its CEO",
+            "APRA, as prudential supervisor",
+            "The Australian Federal Police directly"
+          ],
+          "answer": 1,
+          "explanation": "Suspicious matter reports go to the AUSTRAC CEO. AUSTRAC is both the AML/CTF regulator and Australia's financial intelligence unit, and it shares intelligence with partner agencies such as the AFP. The ASO handles sanctions, and APRA is the prudential regulator."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who does what",
+          "caption": "AUSTRAC is the main AML/CTF regulator; sanctions sit with the ASO.",
+          "headers": [
+            "Body",
+            "Role in AML/CTF and sanctions"
+          ],
+          "items": [
+            {
+              "label": "AUSTRAC",
+              "left": "AML/CTF regulator and financial intelligence unit",
+              "right": "Receives SMRs and other reports, supervises banks, takes enforcement action"
+            },
+            {
+              "label": "Australian Sanctions Office",
+              "left": "Sits in the Department of Foreign Affairs and Trade",
+              "right": "Administers UN and autonomous sanctions, keeps the Consolidated List, issues permits"
+            },
+            {
+              "label": "APRA",
+              "left": "Prudential regulator of banks",
+              "right": "Looks at governance and risk culture; AML/CTF failures can become prudential concerns"
+            },
+            {
+              "label": "ASIC",
+              "left": "Conduct and licensing regulator",
+              "right": "Oversees how banks treat customers and run financial services licences"
+            },
+            {
+              "label": "Law enforcement partners",
+              "left": "Such as the AFP and state police",
+              "right": "Use AUSTRAC intelligence to investigate and prosecute crime"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Reporting entities and designated services",
+          "body": "The Act does not regulate 'banks' as such. It regulates **reporting entities**: businesses that provide **designated services** listed in the Act.\n\n- Opening an account, taking deposits, making loans and sending money are all designated services.\n- A bank provides dozens of them, so it is a reporting entity with the full set of obligations.\n- Obligations attach to the service: CDD before you **start** providing a designated service, reporting when a designated service involves a suspicious matter or a threshold transaction.\n\nThe reformed Act groups those obligations into a few pillars: a **risk assessment**, **AML/CTF policies**, **customer due diligence**, **reporting** to AUSTRAC, **record keeping** and governance duties for the **governing body** and the **AML/CTF compliance officer**. Sanctions duties run alongside, under separate sanctions laws, and the new Rules require the AML/CTF policies to deal with them too."
+        },
+        {
+          "type": "match",
+          "title": "Match the law to its job",
+          "prompt": "Link each Australian law or instrument to what it does for a bank.",
+          "pairs": [
+            {
+              "left": "AML/CTF Act 2006",
+              "right": "The core statute: risk assessment, policies, CDD, reporting, records and offences"
+            },
+            {
+              "left": "AML/CTF Amendment Act 2024",
+              "right": "The amending law that rebuilt programs and CDD and added proliferation financing"
+            },
+            {
+              "left": "AML/CTF Rules 2025",
+              "right": "AUSTRAC's detailed rules, including personnel due diligence and training"
+            },
+            {
+              "left": "Autonomous Sanctions Act 2011",
+              "right": "Australia's own sanctions regime, with a strict liability offence for companies"
+            },
+            {
+              "left": "Charter of the United Nations Act 1945",
+              "right": "Gives effect in Australia to UN Security Council sanctions"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The board asks the hard question",
+          "setting": "Board risk committee pre-meeting, level 30, Barangaroo. 4:15 pm.",
+          "lines": [
+            {
+              "who": "grace",
+              "text": "Priya, be blunt. If we get AML/CTF wrong, what actually happens to Banksia Harbour?",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "AUSTRAC has a toolkit. It can direct us to fix a breach, make us commission an external audit, accept an enforceable undertaking or go to the Federal Court for civil penalty orders.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "And the big Australian bank cases were civil penalty proceedings. Commonwealth Bank settled in 2018, Westpac in 2020. Both were about systems that failed at scale.",
+              "mood": "neutral"
+            },
+            {
+              "who": "grace",
+              "text": "Systems failing at scale. That's what keeps directors awake.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Which is why the reformed Act gives the governing body its own oversight duty. It's not just a compliance team problem any more.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "'The reforms are for lawyers, not us'",
+          "situation": "At a team meeting, a senior colleague in operations says: 'Relax. The reforms were about bringing lawyers, accountants and real estate agents into the system. Banks were already regulated, so we can keep the old program until the next review cycle.' Several junior staff nod. What do you do?",
+          "choices": [
+            {
+              "text": "Agree; banks have had AML/CTF programs since 2006, so the reforms are mostly someone else's problem.",
+              "outcome": "Risky. Banks were regulated before, but the reformed obligations applied to existing reporting entities like Banksia Harbour from 31 March 2026. Keeping the old program design would leave gaps against the new Act.",
+              "score": 0
+            },
+            {
+              "text": "Politely correct it: banks had to meet the reformed obligations from 31 March 2026, and new sectors joined on 1 July 2026. Offer to share Priya's briefing.",
+              "outcome": "Best. You fix the misunderstanding with the right dates and point people to the official internal briefing. A shared, accurate picture is the start of a working program.",
+              "score": 2
+            },
+            {
+              "text": "Say nothing in the meeting but email the compliance officer later to complain about the colleague.",
+              "outcome": "Partly right. Telling compliance is sensible, but the team leaves the meeting with a wrong idea. A brief, respectful correction in the moment helps everyone.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "AUSTRAC's enforcement toolkit",
+          "caption": "Top = most serious. AUSTRAC chooses the tool that fits the breach; the Federal Court can also grant injunctions.",
+          "items": [
+            {
+              "label": "Civil penalty orders",
+              "detail": "AUSTRAC applies to the Federal Court; penalties can be very large for systemic failures."
+            },
+            {
+              "label": "Enforceable undertakings",
+              "detail": "A binding promise to fix problems, enforceable in court if broken."
+            },
+            {
+              "label": "Remedial directions and external audits",
+              "detail": "AUSTRAC can direct a fix, or require an independent audit of compliance."
+            },
+            {
+              "label": "Supervision and engagement",
+              "detail": "Compliance assessments, information requests and guidance, day to day."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Myth or fact?",
+          "cards": [
+            {
+              "front": "Myth: AUSTRAC is only a regulator.",
+              "back": "Fact: it is both the AML/CTF regulator and Australia's financial intelligence unit, analysing the reports banks send."
+            },
+            {
+              "front": "Myth: proliferation financing is a sanctions issue only.",
+              "back": "Fact: since the reforms, the ML/TF risk assessment must also cover proliferation financing risk."
+            },
+            {
+              "front": "Myth: the new tipping-off offence began on 31 March 2026.",
+              "back": "Fact: it started a year earlier, on 31 March 2025."
+            },
+            {
+              "front": "Myth: a bank's program still has Part A and Part B.",
+              "back": "Fact: it now has an ML/TF risk assessment plus AML/CTF policies, procedures, systems and controls."
+            },
+            {
+              "front": "Myth: sanctions are handled by AUSTRAC.",
+              "back": "Fact: the Australian Sanctions Office in DFAT administers sanctions; the AML/CTF policies must still deal with targeted financial sanctions."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A colleague asks when the redesigned tipping-off offence took effect. What is the correct answer?",
+          "options": [
+            "31 March 2025",
+            "31 March 2026",
+            "1 July 2026",
+            "When the 2007 Rules were repealed"
+          ],
+          "answer": 0,
+          "explanation": "The new tipping-off offence commenced on 31 March 2025, a year before most other changes for banks on 31 March 2026. 1 July 2026 is when newly regulated sectors came in."
+        },
+        {
+          "type": "example",
+          "title": "Real cases: two banks, two lessons",
+          "body": "AUSTRAC has taken two of Australia's largest banks to the Federal Court in civil penalty proceedings.\n\n- **Commonwealth Bank (2018).** The case centred on reporting and monitoring failures linked to its intelligent deposit machines, including large numbers of late threshold transaction reports. It ended with a court-approved penalty.\n- **Westpac (2020).** The case centred on failures to report international funds transfers and weaknesses in monitoring for risky payment patterns. It also ended with a court-ordered penalty.\n\n**The lessons for you:**\n- Small control gaps repeated millions of times become systemic breaches.\n- Reporting failures are not just 'paperwork': they deprive AUSTRAC and police of intelligence.\n- Boards and senior managers were asked hard questions about oversight, which the reformed Act now makes explicit."
+        },
+        {
+          "type": "tip",
+          "title": "Speak the new language",
+          "body": "Old habits show up in words. Use the reformed terms:\n- **ML/TF risk assessment** (not 'Part A risk section')\n- **AML/CTF policies** (the policies, procedures, systems and controls)\n- **Governing body** (the board, for a bank)\n- **AML/CTF compliance officer**\n- **Initial and ongoing CDD**, with **enhanced CDD** where triggered\n\nWhen staff use the new words, they start thinking in the new structure."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "Australia's AML/CTF regime rests on the AML/CTF Act 2006, rebuilt by the 2024 amending Act, and the AML/CTF Rules 2025.",
+            "Banks had to meet the reformed obligations from 31 March 2026; new sectors joined on 1 July 2026; the new tipping-off offence began on 31 March 2025.",
+            "AUSTRAC is both regulator and financial intelligence unit; sanctions are administered by the Australian Sanctions Office in DFAT.",
+            "A bank's program is now an ML/TF risk assessment plus AML/CTF policies, covering money laundering, terrorism financing and proliferation financing.",
+            "AUSTRAC can use remedial directions, external audits, enforceable undertakings and Federal Court civil penalty proceedings."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of your own role. Which designated services do you help provide, and which of the reform changes (risk assessment, outcome-based CDD, PF, governance, tipping off) touches your daily work most?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-aml-s1-q1",
+          "question": "Which statement best describes how the 2024 reforms changed the structure of a bank's AML/CTF program?",
+          "options": [
+            "It now consists of an ML/TF risk assessment plus AML/CTF policies, procedures, systems and controls",
+            "It is now written by AUSTRAC and adopted unchanged by each bank",
+            "It keeps the familiar Part A and Part B structure but adds a third part that deals only with proliferation financing risk",
+            "It is replaced by a single annual compliance report lodged with AUSTRAC"
+          ],
+          "answer": 0,
+          "explanation": "The reformed Act requires an ML/TF risk assessment and AML/CTF policies that manage the risks it identifies. The old Part A/Part B design was replaced, not extended, and each bank must still design its own program.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s1-q2",
+          "question": "From what date did existing reporting entities such as banks have to meet most of the reformed AML/CTF obligations?",
+          "options": [
+            "31 March 2025",
+            "10 December 2024",
+            "1 July 2026",
+            "31 March 2026"
+          ],
+          "answer": 3,
+          "explanation": "Most reformed obligations applied to existing reporting entities from 31 March 2026. 31 March 2025 was the start of the new tipping-off offence and 1 July 2026 the start date for newly regulated sectors.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s1-q3",
+          "question": "A trade finance manager says proliferation financing is 'just a DFAT sanctions matter' and does not belong in the AML/CTF risk assessment. How should you respond?",
+          "options": [
+            "Disagree, because AUSTRAC now administers the sanctions Consolidated List",
+            "Agree, unless the bank finances weapons manufacturers directly",
+            "The risk assessment must now cover proliferation financing as well as ML and TF",
+            "Agree, because proliferation financing is regulated only under the Autonomous Sanctions Act"
+          ],
+          "answer": 2,
+          "explanation": "Since the reforms, the risk assessment must identify and assess money laundering, terrorism financing and proliferation financing risks. Sanctions laws still apply in parallel, but the Consolidated List is kept by the ASO, not AUSTRAC.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s1-q4",
+          "question": "Why is a bank a 'reporting entity' under the AML/CTF Act?",
+          "options": [
+            "Because its board chooses to opt in to the AML/CTF regime",
+            "Because it lodges suspicious matter reports with AUSTRAC",
+            "Because APRA licenses it as an authorised deposit-taking institution under the Banking Act, which brings in AUSTRAC rules",
+            "Because it provides designated services listed in the Act, such as accounts, loans and transfers"
+          ],
+          "answer": 3,
+          "explanation": "The Act applies to businesses that provide designated services. A bank provides many of them, so it is a reporting entity. Lodging reports is a consequence of being a reporting entity, not the reason it is one.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s1-q5",
+          "question": "Banksia Harbour's sanctions screening flags a payment beneficiary as a possible match to the DFAT Consolidated List. Which body administers that list and the sanctions regime behind it?",
+          "options": [
+            "ASIC, through its licensing of financial services",
+            "AUSTRAC, as part of its financial intelligence role",
+            "The Australian Sanctions Office in the Department of Foreign Affairs and Trade",
+            "APRA, through its prudential standards on risk"
+          ],
+          "answer": 2,
+          "explanation": "The ASO in DFAT administers Australia's UN and autonomous sanctions and keeps the Consolidated List. AUSTRAC is the AML/CTF regulator; the AML/CTF policies must deal with targeted financial sanctions, but the list itself is DFAT's.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s1-q6",
+          "question": "AUSTRAC finds that a bank has broken a civil penalty provision but the bank is cooperating. Which response is AUSTRAC able to use without going to court?",
+          "options": [
+            "Give the bank a remedial direction to fix the breach",
+            "Order the bank to close all affected accounts",
+            "Cancel the bank's banking authority",
+            "Impose a criminal conviction on the compliance officer"
+          ],
+          "answer": 0,
+          "explanation": "The Act lets the AUSTRAC CEO give remedial directions and accept enforceable undertakings without court proceedings. Banking authorisation is APRA's domain, and criminal convictions require a court.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s1-q7",
+          "question": "What do the Commonwealth Bank (2018) and Westpac (2020) AUSTRAC cases most usefully teach frontline and operations staff?",
+          "options": [
+            "Reporting failures matter only if the customer is later convicted",
+            "Penalties only arise where staff knowingly help criminals launder money through customer accounts or branches",
+            "Only the compliance team is accountable when reports are late",
+            "Control gaps repeated across many transactions can become systemic breaches with serious consequences"
+          ],
+          "answer": 3,
+          "explanation": "Both cases were civil penalty proceedings about systems and reporting failures at scale, not about staff knowingly laundering money. Missed reports deny intelligence to AUSTRAC and police regardless of any later conviction.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s1-q8",
+          "question": "Which instrument contains the detailed requirements on personnel due diligence and AML/CTF training for banks after the reforms?",
+          "options": [
+            "The AML/CTF Rules 2025, together with the Act",
+            "APRA's prudential standard on fit and proper",
+            "The Banking Code of Practice",
+            "The AML/CTF Rules 2007, as amended in 2024"
+          ],
+          "answer": 0,
+          "explanation": "The Act requires the AML/CTF policies to deal with personnel due diligence and training, and the AML/CTF Rules 2025 set the detail. The 2007 Rules were replaced, and the other instruments deal with different subjects.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s1-q9",
+          "question": "A new graduate says AUSTRAC 'just collects forms'. Which reply is most accurate?",
+          "options": [
+            "It is both the AML/CTF regulator and the financial intelligence unit that analyses reports",
+            "AUSTRAC only collects forms; ASIC then analyses them and passes the intelligence on to law enforcement",
+            "AUSTRAC is a law enforcement agency that arrests suspects",
+            "AUSTRAC only supervises casinos and remitters, not banks"
+          ],
+          "answer": 0,
+          "explanation": "AUSTRAC regulates reporting entities and, as the FIU, turns their reports into intelligence for partner agencies. It does not make arrests, and it supervises banks as well as other sectors.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s1-q10",
+          "question": "Which pair correctly names the two Australian laws that create sanctions obligations for a bank?",
+          "options": [
+            "The Autonomous Sanctions Act 2011 and the Foreign Acquisitions and Takeovers Act 1975",
+            "The Autonomous Sanctions Act 2011 and the Charter of the United Nations Act 1945",
+            "The AML/CTF Act 2006 and the Proceeds of Crime Act 2002",
+            "The Banking Act 1959 and the Corporations Act 2001"
+          ],
+          "answer": 1,
+          "explanation": "UN Security Council sanctions are given effect through the Charter of the United Nations Act 1945, and Australia's own sanctions through the Autonomous Sanctions Act 2011. The AML/CTF Rules require the AML/CTF policies to deal with both.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The AML/CTF program, risk assessment and governing body",
+      "stage": "The Risk Engine Room",
+      "summary": "Build the reformed program: the ML/TF/PF risk assessment, the AML/CTF policies, review triggers, and the roles of the governing body, senior managers and the AML/CTF compliance officer.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the four risk lenses of the ML/TF risk assessment and its review triggers",
+        "Explain why a designated service cannot start without an up-to-date risk assessment",
+        "Allocate duties between the governing body, designated senior managers and the compliance officer",
+        "Describe the compliance officer's standing, functions, AUSTRAC notification and annual board report"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the app that changed the risk",
+          "setting": "Product committee room, Banksia Harbour Bank, Sydney. Monday, 10:00 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "On the screen: a launch plan for 'Banksia Send', an app feature letting customers pay family in the Pacific and South-East Asia in seconds.",
+              "mood": "neutral"
+            },
+            {
+              "who": "tom",
+              "text": "It's a great product. It's also a new service, a new channel and new countries, all at once.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Which means our ML/TF risk assessment has a significant change to deal with before we switch it on.",
+              "mood": "neutral"
+            },
+            {
+              "who": "grace",
+              "text": "The business wants to launch in two weeks. Does the board need to be involved?",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "The board doesn't approve every product, Grace. But the governing body must keep overseeing our risk and compliance, and I report to you at least every twelve months.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "So who signs off the updated risk assessment and policies? Not me, I hope.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Senior managers designated in our policies. Stage two is about exactly that: the risk engine, the policies, and who owns what.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How the risk engine works",
+          "scenes": [
+            {
+              "icon": "🔍",
+              "heading": "Start with your own risks",
+              "narration": "Every bank must carry out an ML/TF risk assessment that identifies and assesses the money laundering, terrorism financing and proliferation financing risks it may reasonably face in providing its services."
+            },
+            {
+              "icon": "🧩",
+              "heading": "Four lenses",
+              "narration": "For services provided in Australia, the assessment must consider the kinds of services, the kinds of customers, the delivery channels including new technologies, and the countries the bank deals with."
+            },
+            {
+              "icon": "🔄",
+              "heading": "Keep it current",
+              "narration": "The assessment must be reviewed when something significant changes, when AUSTRAC shares relevant risk information, and in any event at least once every three years."
+            },
+            {
+              "icon": "🚫",
+              "heading": "No assessment, no service",
+              "narration": "A bank must not start providing a designated service if its risk assessment is not up to date for that service. Each service provided while out of date can be a separate contravention."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Policies that match",
+              "narration": "The AML/CTF policies, procedures, systems and controls must manage the risks the assessment finds, ensure compliance with the law, and suit the bank's nature, size and complexity."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The AML/CTF program cycle",
+          "caption": "A loop, not a one-off document: each review feeds the next assessment.",
+          "items": [
+            {
+              "label": "Assess ML/TF/PF risk",
+              "detail": "Services, customers, channels and countries"
+            },
+            {
+              "label": "Design policies and controls",
+              "detail": "Proportionate to the risks and to the bank's size and complexity"
+            },
+            {
+              "label": "Approve",
+              "detail": "Designated senior managers approve the risk assessment and policies"
+            },
+            {
+              "label": "Apply and monitor",
+              "detail": "Staff follow the policies; the compliance officer oversees day to day"
+            },
+            {
+              "label": "Inform the governing body",
+              "detail": "Compliance officer reports at least every 12 months"
+            },
+            {
+              "label": "Review and update",
+              "detail": "On significant change, AUSTRAC input, and at least every 3 years"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "At a minimum, how often must a bank review its ML/TF risk assessment even if nothing significant changes?",
+          "options": [
+            "Every 12 months",
+            "At least once every 3 years",
+            "Only when AUSTRAC asks",
+            "Every 7 years"
+          ],
+          "answer": 1,
+          "explanation": "The Act sets a backstop of at least once every three years, on top of event-driven reviews when there is a significant change or AUSTRAC communicates relevant risk information. The 12-month figure is the compliance officer's reporting cycle to the governing body."
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who owns what",
+          "caption": "Each layer has its own legal role under the reformed Act and Rules.",
+          "items": [
+            {
+              "label": "Governing body",
+              "detail": "The board: ongoing oversight of risk and compliance; takes reasonable steps to ensure the bank manages risk."
+            },
+            {
+              "label": "Designated senior managers",
+              "detail": "Approve the ML/TF risk assessment and the AML/CTF policies."
+            },
+            {
+              "label": "AML/CTF compliance officer",
+              "detail": "Management level; oversees day-to-day compliance and talks to AUSTRAC."
+            },
+            {
+              "label": "Business lines and personnel",
+              "detail": "Apply the policies in every account, payment and review."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Whose duty is it?",
+          "prompt": "Sort each duty to the role the reformed Act or Rules give it.",
+          "buckets": [
+            "Governing body",
+            "Senior manager",
+            "Compliance officer"
+          ],
+          "items": [
+            {
+              "text": "Exercise ongoing oversight of the bank's risk identification and compliance",
+              "bucket": 0
+            },
+            {
+              "text": "Take reasonable steps to ensure the bank manages its ML/TF/PF risks",
+              "bucket": 0
+            },
+            {
+              "text": "Approve the ML/TF risk assessment",
+              "bucket": 1
+            },
+            {
+              "text": "Approve the AML/CTF policies",
+              "bucket": 1
+            },
+            {
+              "text": "Oversee and coordinate day-to-day compliance with the Act and Rules",
+              "bucket": 2
+            },
+            {
+              "text": "Communicate with AUSTRAC on the bank's behalf",
+              "bucket": 2
+            },
+            {
+              "text": "Report on compliance and risk management at least every 12 months",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "The AML/CTF compliance officer",
+          "body": "Every reporting entity must designate an individual as its **AML/CTF compliance officer**. For a bank, the reformed Act and Rules expect a lot from that role:\n\n- **Management level**, with enough **authority, independence and resources** to do the job.\n- Functions include overseeing **day-to-day compliance** with the Act and Rules, overseeing the operation of the **AML/CTF policies** and **communicating with AUSTRAC**.\n- The bank must **notify AUSTRAC** who its compliance officer is within **14 days** of designating them.\n- The policies must provide for the compliance officer to **report to the governing body** on compliance and risk management **at least once every 12 months**.\n\nA compliance officer buried three levels below the business, without budget or a line to the board, does not meet the spirit or the letter of the reforms."
+        },
+        {
+          "type": "story",
+          "title": "Two weeks to launch",
+          "setting": "Open-plan floor, Barangaroo. Thursday, 6:40 pm.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "Priya, the product owner says Banksia Send goes live Monday. The risk assessment update is still a draft and no senior manager has approved the new controls.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Then it can't go live Monday. Starting a designated service without an up-to-date risk assessment is a contravention in its own right.",
+              "mood": "angry"
+            },
+            {
+              "who": "grace",
+              "text": "(on the phone) I've had the business on to me, Priya. They say it's only a few weeks' delay in the assessment.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Grace, the board's job is oversight. I'll give you the facts tonight: what's missing, what it would take and the new date.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Launch now, assess later?",
+          "situation": "The product owner proposes launching Banksia Send on Monday with ordinary transaction monitoring, and finishing the updated risk assessment and policy changes 'within the quarter'. The new feature introduces new corridors to Pacific and South-East Asian countries and a new instant channel. You are asked for compliance's view.",
+          "choices": [
+            {
+              "text": "Support the launch: the existing monitoring will catch anything serious, and the paperwork can follow.",
+              "outcome": "Poor. The Act prohibits starting a designated service if the risk assessment is not up to date for it, and each service provided can be a separate contravention. Monitoring alone does not cure that.",
+              "score": 0
+            },
+            {
+              "text": "Advise delaying launch until the risk assessment is updated for the new services, channel and countries, controls are adjusted and designated senior managers approve.",
+              "outcome": "Best. You tie the advice to the legal requirement, cover all four risk lenses and route approval to the right people. The governing body is informed through the compliance officer.",
+              "score": 2
+            },
+            {
+              "text": "Allow a soft launch to staff and friends-and-family customers only, while the assessment is finished.",
+              "outcome": "Partly right. Limiting exposure is sensible, but if the service is provided to customers at all, it still needs an up-to-date risk assessment first.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Old program versus reformed program",
+          "caption": "The reformed design ties every control back to an assessed risk.",
+          "headers": [
+            "Before 31 March 2026",
+            "From 31 March 2026"
+          ],
+          "items": [
+            {
+              "label": "Shape",
+              "left": "Part A (general) and Part B (customer identification)",
+              "right": "ML/TF risk assessment plus AML/CTF policies"
+            },
+            {
+              "label": "Risks covered",
+              "left": "Money laundering and terrorism financing",
+              "right": "ML, TF and proliferation financing"
+            },
+            {
+              "label": "Approval",
+              "left": "Board and senior management oversight",
+              "right": "Named senior managers approve; governing body has a statutory oversight duty"
+            },
+            {
+              "label": "Review",
+              "left": "Kept up to date",
+              "right": "Event-driven reviews plus a 3-year backstop for both assessment and policies"
+            },
+            {
+              "label": "Training",
+              "left": "Risk awareness training program",
+              "right": "Personnel due diligence and role-based training inside the policies"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Updating the program for a new product",
+          "prompt": "Put the steps in a sensible order for bringing a new product into the AML/CTF program.",
+          "steps": [
+            "Identify the significant change: new service, channel, customers or countries",
+            "Assess the ML/TF/PF risks the change brings",
+            "Update the ML/TF risk assessment",
+            "Adjust the AML/CTF policies, procedures, systems and controls",
+            "Designated senior managers approve the updated assessment and policies",
+            "Train affected staff and switch on monitoring before launch",
+            "Report the change and its risks to the governing body through the compliance officer"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Key governance terms",
+          "cards": [
+            {
+              "front": "Governing body",
+              "back": "The individual or group with primary responsibility for governance and oversight; for a bank, its board."
+            },
+            {
+              "front": "ML/TF risk assessment",
+              "back": "The bank's documented assessment of the ML, TF and PF risks it may reasonably face in providing its services."
+            },
+            {
+              "front": "AML/CTF policies",
+              "back": "The policies, procedures, systems and controls that manage those risks and ensure compliance."
+            },
+            {
+              "front": "Designated senior manager",
+              "back": "A senior manager named in the policies as responsible for approving the risk assessment and policies."
+            },
+            {
+              "front": "Proportionate",
+              "back": "Controls must suit the nature, size and complexity of the business."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Banksia Harbour designates a new AML/CTF compliance officer on 2 June. What must the bank do?",
+          "options": [
+            "Nothing, unless AUSTRAC asks",
+            "Notify AUSTRAC within 14 days of the designation",
+            "Get APRA's approval before the appointment",
+            "Publish the name in its annual report"
+          ],
+          "answer": 1,
+          "explanation": "The Act requires a reporting entity to notify AUSTRAC of its designated compliance officer within 14 days. APRA approval and publication are not AML/CTF Act requirements."
+        },
+        {
+          "type": "example",
+          "title": "Inside Banksia Harbour's board paper",
+          "body": "Priya's annual report to the board risk committee (a fictional example) is short and specific:\n\n- **Risk picture:** the updated risk assessment rates Banksia Send corridors as higher risk because of speed, new countries and limited payee information.\n- **Controls:** a new payee-screening step, lower first-month limits and a monitoring scenario for rapid fan-out payments.\n- **Compliance:** two late international transfer reports caused by a file error, fixed and reviewed; no SMR deadline breaches.\n- **People:** completion rates for role-based AML/CTF training, by team, with overdue staff named to their managers.\n- **Asks:** budget for a second sanctions analyst.\n\nGrace's committee challenges the monitoring scenario and asks for a follow-up in six months. That challenge and follow-up is what ongoing oversight looks like in practice."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "The ML/TF risk assessment covers ML, TF and PF risk through four lenses: services, customers, channels and countries.",
+            "Review it on significant change, on AUSTRAC risk information, and at least every 3 years; the policies also need a review at least every 3 years.",
+            "A bank must not start a designated service without an up-to-date risk assessment for it.",
+            "The governing body oversees; designated senior managers approve; the compliance officer runs day-to-day compliance and reports at least every 12 months.",
+            "The compliance officer must be at management level with authority, independence and resources, and AUSTRAC must be told who it is within 14 days."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which product, channel or customer group in your area changed in the last year? Was the risk assessment updated before the change went live, and who approved it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-aml-s2-q1",
+          "question": "Which four matters must a bank providing services in Australia have regard to in its ML/TF risk assessment?",
+          "options": [
+            "Its customers, complaints, products and branch locations",
+            "Its staff, premises, suppliers and auditors",
+            "Its services, customers, delivery channels and the countries it deals with",
+            "Its capital, liquidity, earnings and market share"
+          ],
+          "answer": 2,
+          "explanation": "The Act directs the assessment to the kinds of services, kinds of customers, delivery channels (including new technologies) and countries. The other lists mix prudential or operational factors that are not the statutory lenses.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s2-q2",
+          "question": "Banksia Harbour plans to start offering accounts to a new class of non-resident customers through a fully digital channel. What must happen before it starts providing the service?",
+          "options": [
+            "The board must approve the product terms",
+            "AUSTRAC must approve the new product in writing",
+            "The ML/TF risk assessment must be reviewed and up to date for the new service",
+            "The compliance officer must lodge a notice with APRA"
+          ],
+          "answer": 2,
+          "explanation": "A significant change to customers or channels triggers a review, and the bank must not start the service if the assessment is out of date. AUSTRAC does not pre-approve products, and the board's role is oversight rather than product approval.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s2-q3",
+          "question": "Who must approve a bank's ML/TF risk assessment and AML/CTF policies under the reformed Act?",
+          "options": [
+            "AUSTRAC's supervision team",
+            "The bank's external auditor",
+            "One or more senior managers designated in the AML/CTF policies",
+            "The AML/CTF compliance officer acting alone"
+          ],
+          "answer": 2,
+          "explanation": "The policies must designate senior managers responsible for approving both the risk assessment and the policies. The compliance officer oversees compliance but is not the statutory approver, and AUSTRAC does not approve programs.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s2-q4",
+          "question": "What is the governing body's own duty under the reformed Act?",
+          "options": [
+            "Ongoing oversight of risk and compliance, and reasonable steps to ensure risks are managed",
+            "To act as the AML/CTF compliance officer whenever that role is vacant or the officer is on leave",
+            "To approve each new high-risk customer personally",
+            "To review every suspicious matter report before it is lodged"
+          ],
+          "answer": 0,
+          "explanation": "The governing body must oversee the risk assessment process and compliance, and take reasonable steps to ensure risks are managed. It is not expected to review SMRs or approve individual customers.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s2-q5",
+          "question": "How often must the AML/CTF policies provide for the compliance officer to report to the governing body?",
+          "options": [
+            "At least once every 12 months",
+            "Only after a significant breach",
+            "Every quarter",
+            "At least once every 3 years"
+          ],
+          "answer": 0,
+          "explanation": "The Rules require the policies to provide for compliance officer reporting to the governing body at least every 12 months. Three years is the backstop for reviewing the risk assessment and policies.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s2-q6",
+          "question": "A small Banksia Harbour subsidiary copies the parent bank's 400-page policies word for word, although it offers only two simple products. Which requirement is most at risk?",
+          "options": [
+            "Policies must be approved by AUSTRAC before use",
+            "Policies must be identical across a corporate group",
+            "Policies must be appropriate to the nature, size and complexity of the business",
+            "Policies must be reviewed every 12 months"
+          ],
+          "answer": 2,
+          "explanation": "The Act requires AML/CTF policies to suit the entity's nature, size and complexity and to manage its own assessed risks. There is no AUSTRAC pre-approval, no rule that group policies must be identical, and the policy review backstop is three years.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s2-q7",
+          "question": "AUSTRAC publishes a risk assessment highlighting a new laundering method through instant payment apps, which Banksia Harbour offers. What does the Act expect?",
+          "options": [
+            "Report the AUSTRAC publication to the governing body only, and leave the risk assessment as it is until the next review",
+            "Wait for the next three-yearly review",
+            "Lodge an SMR on all instant-payment customers",
+            "Review the bank's ML/TF risk assessment, because AUSTRAC has communicated relevant risk information"
+          ],
+          "answer": 3,
+          "explanation": "When AUSTRAC communicates information that identifies or assesses risks relevant to the bank's services, a review is triggered. Waiting for the backstop ignores the trigger, and blanket SMRs without suspicion are inappropriate.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s2-q8",
+          "question": "Which description best fits the reformed position of the AML/CTF compliance officer?",
+          "options": [
+            "A management-level individual with sufficient authority, independence and resources",
+            "Any employee who has completed AML/CTF training",
+            "An external consultant engaged for the annual review",
+            "A board director who chairs the risk committee"
+          ],
+          "answer": 0,
+          "explanation": "The Act requires the compliance officer to be at management level with enough authority, independence and resources. The role is distinct from the governing body and is not filled simply by training completion.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s2-q9",
+          "question": "Banksia Harbour launched a new service without updating its risk assessment and provided it to 300 customers over ten days. How does the Act treat this?",
+          "options": [
+            "There is no breach if no suspicious activity occurred",
+            "Each service provided while the assessment was out of date can be a separate contravention",
+            "It is treated as one single breach, however many customers received the service during those ten days",
+            "It is a breach only if AUSTRAC warned the bank first"
+          ],
+          "answer": 1,
+          "explanation": "The Act provides that a separate contravention occurs for each designated service provided, and on each day, while the requirement is not met. The breach does not depend on suspicious activity or a prior warning.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-aml-s2-q10",
+          "question": "Which change is the clearest example of the 'significant change' that should trigger a review of the risk assessment?",
+          "options": [
+            "Replacing the colour scheme of the internet banking site",
+            "Moving a branch to a new address in the same suburb",
+            "Renaming a savings account and refreshing its brochure without changing any features",
+            "Launching payments to several new countries through a new mobile channel"
+          ],
+          "answer": 3,
+          "explanation": "New countries and new delivery channels are two of the four lenses the risk assessment must consider, so this change is significant. Cosmetic or minor location changes do not alter the ML/TF/PF risk profile.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Customer due diligence, enhanced CDD and PEPs",
+      "stage": "The Onboarding Gate",
+      "summary": "Work through outcome-based initial CDD, ongoing CDD, the section 32 enhanced CDD triggers and the rules for domestic, foreign and international organisation PEPs.",
+      "minutes": 60,
+      "objectives": [
+        "List the matters initial CDD must establish on reasonable grounds before a service starts",
+        "Apply ongoing CDD when a customer's behaviour changes",
+        "Identify the section 32 triggers for mandatory enhanced CDD",
+        "Handle foreign, domestic and international organisation PEPs, including senior manager approval"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the customer at the gate",
+          "setting": "Business banking desk, Banksia Harbour Bank, Parramatta branch. 11:20 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A well-dressed visitor wants to open a business account for 'Coral Bay Holdings Pty Ltd', a new import company.",
+              "mood": "neutral"
+            },
+            {
+              "who": "jarrah",
+              "text": "Priya, quick one. The director is pleasant, the ID is fine, but the company's shares are held by a trust, and the trust's beneficiary is a Fijian-registered company.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "So who actually owns and controls Coral Bay? Until we've established that on reasonable grounds, we don't start providing the service.",
+              "mood": "neutral"
+            },
+            {
+              "who": "jarrah",
+              "text": "There's more. The director mentioned his uncle is a sitting minister in another country's government, and the uncle 'helps with introductions'.",
+              "mood": "worried"
+            },
+            {
+              "who": "tom",
+              "text": "If the uncle is a beneficial owner or acts for the company, that's a foreign PEP, and enhanced CDD is mandatory.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Stage three, everyone: initial CDD, ongoing CDD, enhanced CDD and PEPs. Let's open Coral Bay's file properly.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Initial CDD: what you must establish",
+          "scenes": [
+            {
+              "icon": "🪪",
+              "heading": "Who is the customer?",
+              "narration": "Before starting a designated service, the bank must establish on reasonable grounds who the customer is. For an individual, that means reasonable steps to confirm they are who they claim to be."
+            },
+            {
+              "icon": "👥",
+              "heading": "Who else is involved?",
+              "narration": "It must also establish who the customer is acting for, who is acting on the customer's behalf and their authority, and, for a company or trust, the beneficial owners."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "PEP or sanctioned?",
+              "narration": "The bank must establish whether the customer, a beneficial owner, or anyone acting for or on behalf of the customer is a politically exposed person or a person designated for targeted financial sanctions."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Why are they here?",
+              "narration": "It must understand the nature and purpose of the business relationship or occasional transaction."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Scaled to risk",
+              "narration": "The bank rates the customer's ML/TF risk, collects KYC information appropriate to that risk, and verifies it using reliable and independent data, more for higher risk."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The initial CDD path",
+          "caption": "Outcome-based: the Act sets what must be established, the bank's policies set how.",
+          "items": [
+            {
+              "label": "Collect KYC information",
+              "detail": "Identity, ownership, agents, purpose; more for higher risk"
+            },
+            {
+              "label": "Identify the customer's ML/TF risk",
+              "detail": "Based on KYC information reasonably available before service starts"
+            },
+            {
+              "label": "Verify with reliable, independent data",
+              "detail": "Documents or electronic sources, scaled to the risk"
+            },
+            {
+              "label": "Screen for PEP and sanctions status",
+              "detail": "Customer, beneficial owners, agents and anyone the customer acts for"
+            },
+            {
+              "label": "Decide: standard or enhanced CDD",
+              "detail": "Apply enhanced measures where a trigger applies"
+            },
+            {
+              "label": "Start the service or decline",
+              "detail": "Only once each matter is established on reasonable grounds"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the reformed Act, when must initial CDD be completed for a new customer?",
+          "options": [
+            "Within 10 business days of opening the account",
+            "Before the bank starts providing the designated service, subject to limited exceptions",
+            "Only if the customer deposits AUD 10,000 or more",
+            "Within the first 12 months of the relationship"
+          ],
+          "answer": 1,
+          "explanation": "The bank must not start providing a designated service until it has established the required matters on reasonable grounds, apart from exceptions the Act and Rules allow. Ten business days is a reporting deadline, and AUD 10,000 is the threshold transaction figure, not a CDD trigger."
+        },
+        {
+          "type": "match",
+          "title": "Enhanced CDD triggers",
+          "prompt": "Match each trigger in section 32 of the Act to an example at Banksia Harbour.",
+          "pairs": [
+            {
+              "left": "Customer's ML/TF risk is high",
+              "right": "A cash-intensive business with complex offshore ownership rated high risk"
+            },
+            {
+              "left": "SMR obligation and service continues",
+              "right": "The bank formed a suspicion, lodged an SMR and decides to keep the account open"
+            },
+            {
+              "left": "Foreign PEP involved",
+              "right": "The beneficial owner is a serving minister in another country"
+            },
+            {
+              "left": "FATF high-risk jurisdiction link",
+              "right": "A company formed in a country FATF has called on members to apply enhanced due diligence to"
+            },
+            {
+              "left": "Nested services relationship",
+              "right": "An overseas remitter uses the bank's services to serve its own customers abroad"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Politically exposed persons in Australia",
+          "body": "The Act recognises three kinds of **politically exposed person (PEP)**:\n\n- **Domestic PEPs:** people holding prominent public positions in Australia.\n- **Foreign PEPs:** people holding prominent positions in or for a foreign government, such as heads of state, ministers, senior judges, ambassadors, senior military officers, and heads or board members of state-owned companies.\n- **International organisation PEPs:** senior people in bodies such as UN agencies.\n\n**What the bank must do:**\n- Establish, during CDD, whether the customer, a beneficial owner, anyone the customer acts for, or anyone acting for the customer is a PEP.\n- **Foreign PEP:** enhanced CDD is always required, and the Rules require **senior manager approval** before serving them.\n- **Domestic or international organisation PEP:** enhanced CDD and senior manager approval where the ML/TF risk is high.\n\nBeing a PEP is not an accusation. It is a risk position that needs more care."
+        },
+        {
+          "type": "story",
+          "title": "A familiar customer, a new pattern",
+          "setting": "Transaction monitoring hub, Barangaroo. Two months later, 3:05 pm.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "Remember Bilby Logistics? Low-risk freight customer for six years. This month, round-sum transfers in from twelve unrelated people, then straight out to a crypto exchange.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "That's ongoing CDD in action. The Act expects us to monitor for unusual transactions and behaviours and to review the customer's risk when they appear.",
+              "mood": "thinking"
+            },
+            {
+              "who": "jarrah",
+              "text": "The owner told my team they've 'diversified into consulting'. Nothing on file supports it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Then we review and update Bilby's risk rating, refresh the KYC information and decide whether an SMR is due. A six-year history doesn't freeze the risk rating.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The minister's nephew",
+          "situation": "Coral Bay Holdings' file shows the director's uncle, a serving foreign minister, holds 40% of the trust's beneficiary company. The relationship manager says: 'He's a big introducer and the account is only for imports. Can we treat it as a normal small-business account and tidy up the PEP paperwork later?'",
+          "choices": [
+            {
+              "text": "Agree; the account purpose is ordinary trade, so standard CDD is proportionate.",
+              "outcome": "Poor. A foreign PEP who is a beneficial owner triggers enhanced CDD under section 32 whatever the account purpose, and the Rules require senior manager approval before the bank serves them.",
+              "score": 0
+            },
+            {
+              "text": "Apply enhanced CDD: establish source of wealth and funds, understand the ownership chain, and obtain senior manager approval before opening.",
+              "outcome": "Best. You apply the mandatory trigger, look deeper at where the money comes from and route approval to a senior manager as the Rules require. The account may still open if the risk is acceptable.",
+              "score": 2
+            },
+            {
+              "text": "Decline the customer immediately; PEP accounts are not allowed.",
+              "outcome": "Partly right on caution, but wrong on the law. PEPs are not banned; they need enhanced CDD and senior approval. Blanket refusal can also be unfair to legitimate customers.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Initial versus ongoing CDD",
+          "caption": "Both feed the same customer risk picture.",
+          "headers": [
+            "Initial CDD (s 28)",
+            "Ongoing CDD (s 30)"
+          ],
+          "items": [
+            {
+              "label": "When",
+              "left": "Before the bank starts providing the designated service",
+              "right": "Throughout the business relationship"
+            },
+            {
+              "label": "Core task",
+              "left": "Establish identity, ownership, agents, PEP and sanctions status, and purpose",
+              "right": "Monitor for unusual transactions and behaviours"
+            },
+            {
+              "label": "Risk rating",
+              "left": "Set from KYC information available at the start",
+              "right": "Reviewed and updated when things change or look unusual"
+            },
+            {
+              "label": "Information",
+              "left": "Collected and verified in line with risk",
+              "right": "Kept up to date, refreshed when needed"
+            },
+            {
+              "label": "Output",
+              "left": "Decision to provide the service, with standard or enhanced measures",
+              "right": "Updated rating, enhanced measures, possible SMR or exit"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Enhanced or standard?",
+          "prompt": "Sort each customer at Banksia Harbour: does a section 32 trigger make enhanced CDD mandatory, or can the bank apply standard, risk-based CDD?",
+          "buckets": [
+            "Enhanced CDD mandatory",
+            "Standard risk-based CDD"
+          ],
+          "items": [
+            {
+              "text": "A beneficial owner is a foreign ambassador",
+              "bucket": 0
+            },
+            {
+              "text": "The customer is rated high ML/TF risk",
+              "bucket": 0
+            },
+            {
+              "text": "An SMR has been lodged and the bank keeps serving the customer",
+              "bucket": 0
+            },
+            {
+              "text": "A company formed in a jurisdiction on FATF's call-for-action list",
+              "bucket": 0
+            },
+            {
+              "text": "An overseas bank customer in a nested services relationship",
+              "bucket": 0
+            },
+            {
+              "text": "A local café owner with a modest, steady turnover",
+              "bucket": 1
+            },
+            {
+              "text": "A retiree opening a term deposit with pension funds",
+              "bucket": 1
+            },
+            {
+              "text": "A domestic PEP assessed as low risk",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "CDD vocabulary",
+          "cards": [
+            {
+              "front": "Beneficial owner",
+              "back": "The individual who ultimately owns or controls a company, trust or other customer, directly or indirectly."
+            },
+            {
+              "front": "Reliable and independent data",
+              "back": "Verification sources the customer does not control, such as government records or trusted electronic databases."
+            },
+            {
+              "front": "Person acting on behalf",
+              "back": "An agent, signatory or representative; the bank must establish who they are and their authority."
+            },
+            {
+              "front": "Nested services relationship",
+              "back": "Where an overseas financial institution, remitter or virtual asset provider uses the bank's services to serve its own customers abroad, outside a correspondent relationship."
+            },
+            {
+              "front": "Reasonable grounds",
+              "back": "The standard the bank must meet: an objective basis, not a hunch or a box ticked."
+            },
+            {
+              "front": "KYC information",
+              "back": "Information about the customer used to identify them and assess their ML/TF risk."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Tom's alert shows a long-standing low-risk customer suddenly receiving funds from many unrelated people. What does ongoing CDD require first?",
+          "options": [
+            "Close the account immediately",
+            "Review and, where appropriate, update the customer's risk assessment and KYC information",
+            "Wait for the scheduled annual review",
+            "Tell the customer the account is under investigation"
+          ],
+          "answer": 1,
+          "explanation": "Unusual transactions and behaviours that may give rise to an SMR are a specific trigger to review and update the customer's ML/TF risk. Closing the account or telling the customer are not the first step, and telling them could tip them off."
+        },
+        {
+          "type": "example",
+          "title": "Coral Bay Holdings: the file",
+          "body": "In this fictional case, Banksia Harbour's enhanced CDD on Coral Bay Holdings went like this:\n\n- **Ownership:** the team mapped the chain from Coral Bay to the trust, to the Fijian company and to three individuals, including the minister uncle at 40%.\n- **Verification:** company and trust records from official registers; identity verified electronically for each beneficial owner.\n- **Source of wealth and funds:** declared business income, checked against public information on the uncle's role and assets.\n- **Approval:** the file went to a designated senior manager, who approved with conditions: lower limits, quarterly reviews and monitoring of payments to the uncle's home country.\n\nSix months later, monitoring caught payments to a consultancy linked to a government tender. The team reviewed the relationship and lodged an SMR."
+        },
+        {
+          "type": "tip",
+          "title": "Don't open first and ask later",
+          "body": "The most common CDD mistake is commercial pressure: 'open it now, we'll chase the documents'. Under the reformed Act the starting point is the reverse: **establish the required matters first**, then start the service, using only the exceptions your bank's policies allow. If you can't establish ownership or purpose, escalate. Don't improvise."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Initial CDD: establish identity, who the customer acts for, agents and their authority, beneficial owners, PEP and sanctions status, and purpose, before the service starts.",
+            "Collect and verify KYC information with reliable, independent data, scaled to the customer's ML/TF risk.",
+            "Ongoing CDD means monitoring for unusual activity and reviewing the customer's risk when things change.",
+            "Enhanced CDD is mandatory for high risk, continued service after an SMR, foreign PEPs, FATF high-risk jurisdiction links and nested services relationships.",
+            "Foreign PEPs always need enhanced CDD and senior manager approval; domestic and international organisation PEPs need them where the risk is high."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of a customer file you handled recently. Could you show, on reasonable grounds, who really owns and controls the customer and why they want the service?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-aml-s3-q1",
+          "question": "A new customer wants an account today, but the bank has not yet identified the beneficial owners of the company. What does the reformed Act require?",
+          "options": [
+            "Open the account now and identify the beneficial owners at any point within the first 12 months",
+            "Open the account if the director's identity is verified",
+            "Open the account and lodge a threshold transaction report",
+            "The bank must not start the service until the owners are established, subject to exceptions"
+          ],
+          "answer": 3,
+          "explanation": "Section 28 prohibits starting a designated service before the required matters, including beneficial owners, are established on reasonable grounds, subject to exceptions in the Act and Rules. Verifying only the director is not enough.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s3-q2",
+          "question": "Which of these is NOT one of the matters a bank must establish during initial CDD?",
+          "options": [
+            "Whether a beneficial owner is a politically exposed person",
+            "Whether the customer is designated for targeted financial sanctions",
+            "The customer's credit score and ability to repay",
+            "The nature and purpose of the business relationship"
+          ],
+          "answer": 2,
+          "explanation": "Initial CDD covers identity, persons acting for or on behalf of the customer, beneficial owners, PEP and sanctions status, and purpose. Creditworthiness is a lending question, not an AML/CTF CDD matter.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s3-q3",
+          "question": "A beneficial owner of a new corporate customer is a serving ambassador of another country. What follows?",
+          "options": [
+            "The bank must refuse the customer",
+            "Enhanced CDD is mandatory and a senior manager must approve the relationship",
+            "Standard CDD applies unless the account is rated high risk",
+            "The bank must lodge an SMR before opening the account"
+          ],
+          "answer": 1,
+          "explanation": "A foreign PEP who is a beneficial owner triggers enhanced CDD under section 32, and the Rules require senior manager approval. PEPs are not banned, and being a PEP is not, on its own, grounds for suspicion.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s3-q4",
+          "question": "Banksia Harbour lodged an SMR on a customer last week and decides to keep the account open. What does the Act require?",
+          "options": [
+            "Close the account within 3 business days",
+            "Tell the customer that a report has been lodged",
+            "Nothing further until AUSTRAC responds",
+            "Apply enhanced CDD measures appropriate to the customer's risk"
+          ],
+          "answer": 3,
+          "explanation": "Where an SMR obligation has arisen and the bank proposes to continue providing services, section 32 makes enhanced CDD mandatory. There is no automatic closure duty, and telling the customer could be tipping off.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s3-q5",
+          "question": "A domestic PEP, a local councillor with a small salary account, is assessed as low risk. What is the correct approach?",
+          "options": [
+            "Treat the councillor as a foreign PEP",
+            "Always apply enhanced CDD to any PEP",
+            "Refuse service, because any PEP relationship creates reputational risk that the bank cannot manage",
+            "Apply risk-based CDD; enhanced CDD and senior approval are needed only if the risk is high"
+          ],
+          "answer": 3,
+          "explanation": "For domestic and international organisation PEPs, enhanced CDD and senior manager approval apply where the ML/TF risk is high. Only foreign PEPs trigger enhanced CDD automatically.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s3-q6",
+          "question": "What does ongoing CDD require when a long-standing customer starts behaving unusually in a way that may give rise to an SMR?",
+          "options": [
+            "Restart initial CDD from the beginning",
+            "Ask the customer to explain the activity in writing before doing anything else at all",
+            "Review and, where appropriate, update the customer's ML/TF risk assessment",
+            "Wait until the next scheduled periodic review"
+          ],
+          "answer": 2,
+          "explanation": "Section 30 lists unusual transactions and behaviours that may give rise to an SMR as a trigger to review and update the customer's risk. Waiting ignores the trigger, and questioning the customer carelessly could tip them off.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s3-q7",
+          "question": "Which verification approach best meets the reformed CDD standard for a higher-risk customer?",
+          "options": [
+            "Verifying only the information the customer volunteers",
+            "Verifying more of the KYC information using reliable and independent data sources",
+            "Accepting the customer's own spreadsheet of ownership",
+            "Relying only on a reference letter from the customer's long-standing external accountant"
+          ],
+          "answer": 1,
+          "explanation": "The Act requires verification with reliable and independent data, in proportion to risk, so a higher-risk customer needs more verification. Customer-prepared documents or a single reference are not independent.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s3-q8",
+          "question": "An overseas remittance company asks Banksia Harbour for an account that it will use to send its own customers' payments abroad. There is no correspondent banking relationship. How should this be treated?",
+          "options": [
+            "As an ordinary business account with standard CDD",
+            "As a nested services relationship, which requires enhanced CDD",
+            "As a threshold transaction that must be reported",
+            "As a correspondent banking relationship needing a vostro assessment"
+          ],
+          "answer": 1,
+          "explanation": "A nested services relationship is one where a remitter, VASP or financial institution uses the bank's services to serve its own customers in another country, outside correspondent banking. Section 32 makes enhanced CDD mandatory.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-aml-s3-q9",
+          "question": "During CDD, a customer appoints her financial adviser to operate the account. What must the bank establish about the adviser?",
+          "options": [
+            "The adviser's identity and their authority to act for the customer",
+            "Nothing, because only the customer is the bank's customer",
+            "The adviser's own source of wealth",
+            "Only the adviser's professional licence number"
+          ],
+          "answer": 0,
+          "explanation": "The Act requires the bank to establish the identity of any person acting on behalf of the customer and their authority to act. A licence number alone does not do that, and source of wealth is not the standard requirement for an agent.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s3-q10",
+          "question": "Which situation triggers enhanced CDD because of a link to a FATF high-risk jurisdiction?",
+          "options": [
+            "The customer holds a foreign passport from any non-FATF member",
+            "The customer is a company formed in a jurisdiction for which FATF has called for enhanced due diligence",
+            "The customer once visited a country on FATF's increased monitoring list during a family holiday some years ago",
+            "The customer's payments are made in a foreign currency"
+          ],
+          "answer": 1,
+          "explanation": "Section 32 covers individuals physically present in, and bodies formed in, a high-risk jurisdiction for which FATF has called for enhanced due diligence. A past visit, nationality or foreign currency are not the statutory trigger.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Suspicious matter reports, tipping off and records",
+      "stage": "The Signal Room",
+      "summary": "Know when an SMR obligation arises and its 24-hour and 3-business-day deadlines, the threshold and international transfer reports, the tipping-off offence and the 7-year record rules.",
+      "minutes": 55,
+      "objectives": [
+        "Recognise when an SMR obligation arises and apply the correct deadline",
+        "Distinguish SMRs from threshold transaction and international value transfer reports",
+        "Avoid tipping off when customers or third parties ask questions",
+        "Apply the record retention periods for transaction and CDD records"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: the signal in the noise",
+          "setting": "Financial crime hub, Barangaroo, Sydney. Tuesday, 9:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Tom's screen shows a cluster: nine cash deposits of between AUD 9,000 and AUD 9,900 into one account, across four branches, in three days.",
+              "mood": "neutral"
+            },
+            {
+              "who": "tom",
+              "text": "Each deposit is just under the AUD 10,000 threshold. Different branches, same account. That's not a coincidence.",
+              "mood": "thinking"
+            },
+            {
+              "who": "jarrah",
+              "text": "Two of those deposits were at Parramatta. My teller remembers the depositor asking what the 'reporting limit' was.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "And there's a second alert: small transfers from several customers to an overseas 'charity' with no registration we can find, in a region with known terrorist activity.",
+              "mood": "worried"
+            },
+            {
+              "who": "tom",
+              "text": "If we suspect terrorism financing, the clock is 24 hours, not 3 business days.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Exactly. Stage four is the signal room: suspicious matter reports, the other reports we owe AUSTRAC, tipping off and the records that prove it all.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "When an SMR obligation arises",
+          "scenes": [
+            {
+              "icon": "🚪",
+              "heading": "A service moment",
+              "narration": "The obligation can arise when the bank starts or proposes to provide a designated service, when a person asks for one, or even when a person just asks whether the bank would provide one."
+            },
+            {
+              "icon": "🤔",
+              "heading": "A suspicion on reasonable grounds",
+              "narration": "It then needs a suspicion on reasonable grounds, for example that the person is not who they claim to be, or that information may be relevant to tax evasion, a crime, proceeds of crime or terrorism financing."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Two clocks",
+              "narration": "If the suspicion relates to terrorism financing, the report is due within 24 hours of forming it. For most other suspicions, within 3 business days."
+            },
+            {
+              "icon": "📨",
+              "heading": "To AUSTRAC",
+              "narration": "The report goes to the AUSTRAC CEO. The bank keeps serving or exits according to its policies, and applies enhanced CDD if the relationship continues."
+            },
+            {
+              "icon": "🙊",
+              "heading": "Then silence",
+              "narration": "Information that a report has been made, or is required, must not be disclosed in a way that could prejudice an investigation."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers every banker should know",
+          "caption": "All from the AML/CTF Act as amended. Check your bank's procedures for internal deadlines, which are often tighter.",
+          "items": [
+            {
+              "label": "SMR: terrorism financing",
+              "detail": "From forming the suspicion",
+              "value": "24 hours"
+            },
+            {
+              "label": "SMR: other suspicions",
+              "detail": "After the day the suspicion is formed",
+              "value": "3 business days"
+            },
+            {
+              "label": "Threshold transaction",
+              "detail": "Physical currency at or above this amount",
+              "value": "AUD 10,000"
+            },
+            {
+              "label": "TTR and transfer reports",
+              "detail": "Deadline for threshold and international value transfer reports",
+              "value": "10 business days"
+            },
+            {
+              "label": "Record retention",
+              "detail": "Transaction records from creation; CDD records after the relationship ends",
+              "value": "7 years"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Banksia Harbour's analyst forms a suspicion at 2 pm Wednesday that a customer is sending funds to finance terrorism. By when must the SMR reach AUSTRAC?",
+          "options": [
+            "Within 24 hours of forming the suspicion",
+            "Within 3 business days",
+            "Within 10 business days",
+            "By the end of the month"
+          ],
+          "answer": 0,
+          "explanation": "For suspected terrorism financing, section 41 requires the SMR within 24 hours after the suspicion is formed. Three business days applies to most other suspicions, and ten business days is the deadline for threshold and transfer reports."
+        },
+        {
+          "type": "concept",
+          "title": "The other reports banks owe AUSTRAC",
+          "body": "SMRs are triggered by suspicion. Two other regular reports are triggered by **facts**, with no suspicion needed:\n\n- **Threshold transaction reports (TTRs):** when a designated service involves a transfer of **physical currency of AUD 10,000 or more**, the bank must report it within **10 business days** after the transaction.\n- **International value transfer reports:** when the bank sends or receives an international transfer of value through its Australian operations, it must report within **10 business days** after passing on or receiving the transfer message. Many staff still call these IFTIs.\n\n**Watch out for structuring.** Customers who split cash into amounts just under AUD 10,000, or ask about the 'reporting limit', are a classic red flag. A TTR is not required for each small deposit, but the pattern may well need an SMR."
+        },
+        {
+          "type": "sort",
+          "title": "Which report?",
+          "prompt": "Sort each situation into the report it most clearly triggers.",
+          "buckets": [
+            "SMR",
+            "Threshold transaction report",
+            "International transfer report"
+          ],
+          "items": [
+            {
+              "text": "A customer deposits AUD 15,000 in cash for a car purchase, with documents that check out",
+              "bucket": 1
+            },
+            {
+              "text": "A customer splits AUD 38,000 in cash into deposits just under AUD 10,000 across branches",
+              "bucket": 0
+            },
+            {
+              "text": "A business sends USD 50,000 from Sydney to a supplier in Vietnam",
+              "bucket": 2
+            },
+            {
+              "text": "An applicant's passport photo does not match the person in front of you",
+              "bucket": 0
+            },
+            {
+              "text": "A customer withdraws AUD 12,000 in cash from their own account",
+              "bucket": 1
+            },
+            {
+              "text": "Banksia Harbour receives an incoming transfer from a bank in Singapore for a customer",
+              "bucket": 2
+            },
+            {
+              "text": "Small transfers from many customers to an unregistered overseas charity in a conflict zone",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The phone call",
+          "setting": "Parramatta branch, back office. Wednesday, 10:15 am.",
+          "lines": [
+            {
+              "who": "jarrah",
+              "text": "The customer from the cash deposits just rang. He's angry his transfer is 'stuck' and asked if we've 'reported him to the government'.",
+              "mood": "worried"
+            },
+            {
+              "who": "jarrah",
+              "text": "My newest teller nearly said, 'Compliance is looking at your account because of the cash.' I stopped her mid-sentence.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Good catch, Jarrah. Telling him we're reviewing or reporting could prejudice an investigation. That's what the tipping-off offence is about.",
+              "mood": "proud"
+            },
+            {
+              "who": "tom",
+              "text": "So what do we say? We can't just hang up on him.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Ordinary, true service language: the payment is being processed under our usual checks, and we'll contact him when it's done. No hints, no lies, no speculation.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "'Have you reported me?'",
+          "situation": "A customer whose account is the subject of an SMR lodged yesterday visits the branch. He demands to know why a large transfer was delayed and asks directly: 'Has the bank reported me to AUSTRAC?' You are at the counter.",
+          "choices": [
+            {
+              "text": "Reassure him: 'Don't worry, we only report people the police are already investigating.'",
+              "outcome": "Poor. It is false, it hints at the reporting process and it could still prejudice an investigation. Never comment on whether a report exists.",
+              "score": 0
+            },
+            {
+              "text": "Use neutral service language: the transaction is going through the bank's standard checks and he will be contacted; then escalate the interaction to compliance.",
+              "outcome": "Best. You do not confirm or deny any report, you give an honest, ordinary answer and you tell compliance about the contact, which may itself be useful information.",
+              "score": 2
+            },
+            {
+              "text": "Tell him you are not allowed to discuss whether a report was lodged, because the law forbids it.",
+              "outcome": "Partly right. You avoided confirming it, but saying the law forbids discussing a report strongly signals one exists. Neutral service language is safer.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Tipping off: what the offence covers",
+          "cards": [
+            {
+              "front": "Who can commit it?",
+              "back": "The bank and its officers, employees and agents, among others, including former staff."
+            },
+            {
+              "front": "What information is covered?",
+              "back": "That an SMR has been or must be given, the report or a copy, information from it such as the suspicion, and certain AUSTRAC notices."
+            },
+            {
+              "front": "When is it an offence?",
+              "back": "When the disclosure would or could reasonably be expected to prejudice an investigation."
+            },
+            {
+              "front": "Must an investigation have started?",
+              "back": "No. The Act says it does not matter whether an investigation has begun."
+            },
+            {
+              "front": "How serious is it?",
+              "back": "A criminal offence carrying up to 2 years' imprisonment, a fine, or both."
+            },
+            {
+              "front": "Can you tell AUSTRAC?",
+              "back": "Yes. Disclosures to AUSTRAC entrusted persons are outside the offence, and other exceptions exist in the Act."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "From red flag to report",
+          "prompt": "Put the steps a frontline officer and the bank should follow in order.",
+          "steps": [
+            "Notice the unusual activity or behaviour",
+            "Record the facts objectively, without alerting the customer",
+            "Escalate through the bank's internal unusual-activity channel",
+            "Investigator reviews the customer, history and related accounts",
+            "Bank decides whether a suspicion is formed on reasonable grounds",
+            "Lodge the SMR with AUSTRAC within 24 hours (TF) or 3 business days",
+            "Apply enhanced CDD if the relationship continues and keep the records"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Records and how long to keep them",
+          "caption": "From Part 10 of the Act. Your bank's policies may require more.",
+          "headers": [
+            "What to keep",
+            "How long"
+          ],
+          "items": [
+            {
+              "label": "Transaction records",
+              "left": "Enough to reconstruct each transaction",
+              "right": "7 years from the day the record is made"
+            },
+            {
+              "label": "CDD records",
+              "left": "Records showing how the bank met its CDD obligations",
+              "right": "7 years after the relationship ends or the occasional transaction completes"
+            },
+            {
+              "label": "Correspondent banking records",
+              "left": "Due diligence assessments and related records",
+              "right": "7 years after the record is prepared"
+            },
+            {
+              "label": "Language",
+              "left": "Records must be in English or readily convertible",
+              "right": "Applies to CDD records"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer relationship ended on 1 May 2026. Until when must Banksia Harbour keep the records showing how it met its CDD obligations?",
+          "options": [
+            "Until 1 May 2033",
+            "Until 1 May 2031",
+            "For 7 years from when each record was made",
+            "Until AUSTRAC confirms they can be destroyed"
+          ],
+          "answer": 0,
+          "explanation": "CDD records must be kept until the end of the 7-year period that begins when the business relationship ends, so to 1 May 2033. The 'from creation' rule applies to transaction records."
+        },
+        {
+          "type": "example",
+          "title": "A strong SMR narrative",
+          "body": "In this fictional case, Tom's SMR on the structured cash deposits answered the questions an AUSTRAC analyst would ask:\n\n- **Who:** the account holder, the four depositors identified on CCTV records and teller notes, and linked accounts.\n- **What:** nine cash deposits totalling about AUD 86,000, each between AUD 9,000 and AUD 9,900.\n- **When and where:** three days, four branches, with times.\n- **Why suspicious:** amounts kept below the threshold, a depositor asking about the 'reporting limit', no business reason on file and immediate outward transfers.\n- **What the bank did:** enhanced CDD started; account restricted under bank policy; no customer contact about the report.\n\nA clear narrative turns a single alert into intelligence other agencies can use."
+        },
+        {
+          "type": "tip",
+          "title": "Words to avoid at the counter",
+          "body": "Never say 'compliance is looking at you', 'we have to report this', 'it's for AUSTRAC', or 'keep it under 10k and it won't be reported'. The last one could help a customer avoid reporting and is a serious breach. Use ordinary, true service language, then escalate."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "An SMR obligation arises around a designated service (provided, requested or asked about) plus a suspicion on reasonable grounds.",
+            "Deadline: 24 hours for suspected terrorism financing; 3 business days for most other suspicions.",
+            "Threshold transaction reports (physical currency of AUD 10,000 or more) and international value transfer reports are due within 10 business days.",
+            "Tipping off is a criminal offence where disclosure could prejudice an investigation, whether or not one has begun.",
+            "Keep transaction records 7 years from creation and CDD records 7 years after the relationship ends."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Rehearse it: what exact words would you use if a customer asked you, face to face, whether the bank had reported them?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-aml-s4-q1",
+          "question": "A person phones Banksia Harbour to ask whether it would open an account for his company. The call raises a strong suspicion that he is using a false identity. Can an SMR obligation arise even though no account was opened?",
+          "options": [
+            "Yes; an inquiry about a service the bank ordinarily provides can be enough, together with the suspicion",
+            "No; suspicions about a false identity raised at the enquiry stage are reported to state police, not to AUSTRAC",
+            "Yes, but only if the person later becomes a customer",
+            "No; the obligation arises only once the bank provides a service"
+          ],
+          "answer": 0,
+          "explanation": "Section 41 covers people who inquire whether the bank would provide a designated service of a kind it ordinarily provides. A suspicion that the person is not who they claim to be is one of the listed grounds.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-aml-s4-q2",
+          "question": "An analyst forms a suspicion of tax evasion on Monday. Under the Act, what is the latest the SMR may be lodged, assuming normal business days?",
+          "options": [
+            "Tuesday, within 24 hours",
+            "The Monday of the following fortnight",
+            "The end of the calendar month",
+            "Thursday, 3 business days after the day the suspicion was formed"
+          ],
+          "answer": 3,
+          "explanation": "For suspicions other than terrorism financing, the deadline is 3 business days after the day the suspicion is formed. The 24-hour clock is for terrorism financing.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s4-q3",
+          "question": "A customer deposits AUD 11,500 in cash from the sale of a boat, with a signed sale contract. Nothing else is unusual. What does the bank need to lodge?",
+          "options": [
+            "A threshold transaction report within 10 business days",
+            "A suspicious matter report within 3 business days",
+            "Both a TTR and an SMR",
+            "No report, because the source is documented"
+          ],
+          "answer": 0,
+          "explanation": "A transfer of physical currency of AUD 10,000 or more is a threshold transaction, reported within 10 business days whether or not anything is suspicious. Without a suspicion, no SMR is needed.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s4-q4",
+          "question": "A customer asks the teller: 'What's the most I can deposit in cash without the bank reporting it?' then deposits AUD 9,500. What is the best response from the bank?",
+          "options": [
+            "Lodge a threshold transaction report for the AUD 9,500 deposit",
+            "Refuse the deposit and tell the customer why",
+            "Escalate internally so an SMR can be considered, without discussing reporting with the customer",
+            "Explain the AUD 10,000 threshold clearly so the customer understands how the reporting rules work"
+          ],
+          "answer": 2,
+          "explanation": "Asking how to avoid reporting is a structuring red flag. The teller should escalate without coaching the customer. A TTR does not apply below AUD 10,000, and explaining why the deposit is refused risks tipping off.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s4-q5",
+          "question": "Which disclosure is most likely to be the tipping-off offence?",
+          "options": [
+            "The compliance officer discusses the details of the SMR and the customer's history by phone with an AUSTRAC entrusted person",
+            "An investigator records the SMR reference number in the bank's case file",
+            "A teller tells a customer that a payment is going through standard checks",
+            "A relationship manager tells a client that 'compliance flagged your transfers to AUSTRAC, so be careful'"
+          ],
+          "answer": 3,
+          "explanation": "Revealing that a report was made to the subject could prejudice an investigation. Disclosure to AUSTRAC is outside the offence, internal case records are part of the bank's own process, and neutral service language reveals nothing.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s4-q6",
+          "question": "A colleague argues that discussing an SMR with the customer is fine because 'no police investigation has started yet'. Why is this wrong?",
+          "options": [
+            "Tipping off applies only once a court case is filed",
+            "The Act makes it irrelevant whether an investigation has commenced",
+            "Only AUSTRAC can decide when an investigation begins",
+            "Police investigations always start the day an SMR is lodged"
+          ],
+          "answer": 1,
+          "explanation": "Section 123 expressly provides that it does not matter whether an investigation has started; the question is whether disclosure would or could reasonably be expected to prejudice one.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s4-q7",
+          "question": "Banksia Harbour receives an international transfer message from a bank in London for a customer's account in Sydney. What report does this usually trigger, and by when?",
+          "options": [
+            "A threshold transaction report within 3 business days, because the money came from an overseas bank account",
+            "An SMR within 24 hours",
+            "An international value transfer report within 10 business days after receiving the transfer message",
+            "No report, because the money came into Australia"
+          ],
+          "answer": 2,
+          "explanation": "Section 46 requires a report about an international value transfer service within 10 business days after passing on or receiving the transfer message, in either direction. No suspicion is needed, so no SMR follows automatically.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s4-q8",
+          "question": "Which record-keeping statement is correct under the amended Act?",
+          "options": [
+            "Records may be kept in any language the bank chooses",
+            "Transaction records must be kept for 7 years from the day they are made",
+            "CDD records may be destroyed when the customer dies",
+            "Transaction records must be kept for 5 years after the account closes"
+          ],
+          "answer": 1,
+          "explanation": "Section 107 sets a 7-year period from the day a transaction record is made. CDD records run 7 years from the end of the relationship and must be in English or readily convertible into English.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s4-q9",
+          "question": "An analyst suspects terrorism financing at 4 pm on a Friday before a long weekend. What does the Act require?",
+          "options": [
+            "Lodge the SMR within 24 hours of forming the suspicion, even over the weekend",
+            "Lodge it by close of business on the next business day",
+            "Wait for the compliance officer to return and decide",
+            "Lodge it within 3 business days, so by Wednesday or Thursday after the long weekend"
+          ],
+          "answer": 0,
+          "explanation": "The terrorism financing deadline is 24 hours, counted in hours rather than business days, so banks need arrangements to report outside office hours.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-aml-s4-q10",
+          "question": "Why does a well-written SMR narrative matter?",
+          "options": [
+            "It allows the bank to close the customer's account without notice and without any further review",
+            "It turns the bank's observation into intelligence that AUSTRAC and partner agencies can act on",
+            "It replaces the need for enhanced CDD",
+            "It protects the customer's privacy from AUSTRAC"
+          ],
+          "answer": 1,
+          "explanation": "AUSTRAC analyses reports and shares them with partner agencies; a clear who-what-when-where-why narrative makes that possible. An SMR does not replace enhanced CDD where the relationship continues.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Sanctions, correspondent banking, people and readiness",
+      "stage": "The Final Watch",
+      "summary": "Handle sanctions matches under Australia's UN and autonomous sanctions laws, meet the correspondent banking and shell bank rules, apply personnel due diligence and training, and prepare for AUSTRAC scrutiny.",
+      "minutes": 60,
+      "objectives": [
+        "Handle a potential sanctions match and explain the reasonable precautions defence",
+        "Apply the shell bank prohibition and vostro due diligence and approval rules",
+        "Explain personnel due diligence and role-based training under the Act and Rules",
+        "Assemble evidence that the bank's AML/CTF program is working"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the final watch",
+          "setting": "Institutional banking floor, Banksia Harbour Bank, Collins Street, Melbourne. 8:30 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Final stage. Daniel Okafor, head of financial institutions banking, has two files on the table and a coffee going cold.",
+              "mood": "neutral"
+            },
+            {
+              "who": "daniel",
+              "text": "File one: Lagoon Pacific Bank wants a vostro account with us so it can clear AUD payments for its customers. Big opportunity.",
+              "mood": "happy"
+            },
+            {
+              "who": "daniel",
+              "text": "File two: last night our screening stopped an outgoing payment. The beneficiary's name is a close match to a company on the DFAT Consolidated List.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Two classic final-stage problems: correspondent banking and sanctions. And both depend on people who know what they're doing.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "Speaking of people: payments has three new contractors starting Monday. Has anyone checked them, or trained them?",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "Then that's stage five: sanctions, correspondent banking, personnel due diligence and training. Get this right and you're ready for the final exam.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How Australian sanctions bite",
+          "scenes": [
+            {
+              "icon": "🌐",
+              "heading": "Two sources",
+              "narration": "Australia applies UN Security Council sanctions through the Charter of the United Nations Act 1945 and its own autonomous sanctions through the Autonomous Sanctions Act 2011."
+            },
+            {
+              "icon": "📋",
+              "heading": "The Consolidated List",
+              "narration": "The Australian Sanctions Office in DFAT keeps the Consolidated List of designated persons and entities, and administers permits and guidance."
+            },
+            {
+              "icon": "🧊",
+              "heading": "Don't deal, don't make available",
+              "narration": "In broad terms, it is an offence to deal with the assets of a designated person or entity, or to make assets available to them, unless a permit allows it."
+            },
+            {
+              "icon": "⚠️",
+              "heading": "Strict liability for companies",
+              "narration": "For a body corporate, the autonomous sanctions offence is strict liability. The defence is to prove it took reasonable precautions and exercised due diligence to avoid the conduct."
+            },
+            {
+              "icon": "🔗",
+              "heading": "Linked to AML/CTF",
+              "narration": "Since 31 March 2026, the AML/CTF Rules require a bank's AML/CTF policies to deal with targeted financial sanctions, and CDD must establish whether a customer or related person is designated."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Handling a potential sanctions match",
+          "caption": "Your bank's sanctions procedure sets the detail; escalate to the sanctions team at the first hit.",
+          "items": [
+            {
+              "label": "Screen",
+              "detail": "Customers, owners, agents and payment parties against the Consolidated List"
+            },
+            {
+              "label": "Hold the payment or activity",
+              "detail": "Do not process while the match is assessed"
+            },
+            {
+              "label": "Investigate the match",
+              "detail": "Compare identifiers: dates of birth, addresses, registration numbers"
+            },
+            {
+              "label": "If true: freeze and do not make assets available",
+              "detail": "No release without an ASO permit"
+            },
+            {
+              "label": "Notify and report",
+              "detail": "Contact the ASO as its guidance directs; consider an SMR to AUSTRAC"
+            },
+            {
+              "label": "Record the decision",
+              "detail": "Keep the evidence, reasoning and approvals"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What protects a company that breaches an autonomous sanction law despite its efforts?",
+          "options": [
+            "Showing it did not know the person was designated",
+            "Proving it took reasonable precautions and exercised due diligence to avoid the conduct",
+            "Showing the amount involved was small",
+            "Reporting the breach to AUSTRAC within 3 business days"
+          ],
+          "answer": 1,
+          "explanation": "The offence is strict liability for bodies corporate, so lack of knowledge is not a defence. The statutory defence is proving reasonable precautions and due diligence, which is why screening, procedures and staff training matter."
+        },
+        {
+          "type": "match",
+          "title": "Correspondent banking duties",
+          "prompt": "Match each obligation in Part 8 and Part 10 of the Act to what it requires.",
+          "pairs": [
+            {
+              "left": "Shell bank prohibition",
+              "right": "Never enter a correspondent relationship with a shell bank or a bank that lets shell banks use its accounts"
+            },
+            {
+              "left": "Due diligence before entry",
+              "right": "Assess a vostro respondent under the Rules and record it in writing"
+            },
+            {
+              "left": "Senior officer approval",
+              "right": "A senior officer approves before the vostro relationship begins"
+            },
+            {
+              "left": "Responsibilities record",
+              "right": "Within 20 business days, document each institution's responsibilities"
+            },
+            {
+              "left": "Ongoing assessments",
+              "right": "Reassess the respondent at the times the Rules set, with written records"
+            },
+            {
+              "left": "Record retention",
+              "right": "Keep the assessment records for 7 years after preparing them"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Personnel due diligence and training",
+          "body": "The reforms put people inside the AML/CTF policies. Under **section 26F(4)(d) and (e)** of the Act and **sections 5-8 and 5-9** of the Rules, the policies must deal with:\n\n- **Personnel due diligence:** checks on people who are, or will be, employed or engaged in roles relevant to the bank's AML/CTF obligations, including contractors.\n- **Training:** for those people, **initial training** when they join and **ongoing training** during their employment or engagement.\n\nThe training must:\n- suit the person's **function**, the **ML/TF/PF risks** of that function and their **responsibilities** under the policies;\n- cover the bank's risks and its obligations under the Act, regulations and Rules;\n- be **readily understandable**.\n\nAUSTRAC expects banks to identify which roles need this, tailor it, refresh it as risks and laws change, and **keep completion records**. This quest is part of that training. It does not replace your bank's own policies."
+        },
+        {
+          "type": "story",
+          "title": "The contractors",
+          "setting": "Payments operations, Collins Street. Friday, 4:50 pm.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "The three payments contractors start Monday with full access to payment release. Procurement says vetting is 'the agency's job'.",
+              "mood": "worried"
+            },
+            {
+              "who": "daniel",
+              "text": "We need them, Tom. Month-end volumes are brutal.",
+              "mood": "thinking"
+            },
+            {
+              "who": "priya",
+              "text": "Releasing payments is an AML/CTF function. Our policies have to cover due diligence on contractors in those roles, not just employees.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "And they need role-specific training before they release anything: red flags, sanctions holds and how to escalate.",
+              "mood": "proud"
+            },
+            {
+              "who": "daniel",
+              "text": "Fine. Read-only access until the checks and training are done. I'll tell the agency.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Lagoon Pacific Bank's vostro",
+          "situation": "Daniel's team wants to open Lagoon Pacific Bank's vostro account next week to win a mandate. The due diligence questionnaire came back incomplete: Lagoon will not say whether it provides accounts to other banks, and one of its own respondents is reportedly an unaffiliated bank with no physical presence in the country where it is licensed. No senior officer has signed off.",
+          "choices": [
+            {
+              "text": "Open the account now and finish due diligence in the first month; the mandate is valuable.",
+              "outcome": "Poor. The Act requires a due diligence assessment and senior officer approval before entering a vostro relationship, and prohibits relationships with institutions that let shell banks use their accounts.",
+              "score": 0
+            },
+            {
+              "text": "Pause: complete the due diligence assessment, resolve the shell bank question, and seek senior officer approval only if the risk is acceptable.",
+              "outcome": "Best. You meet the entry requirements in section 96 and address the section 95 shell bank prohibition before any relationship begins. If the answers stay unclear, the relationship should not proceed.",
+              "score": 2
+            },
+            {
+              "text": "Open the account but block payments until the questionnaire is complete.",
+              "outcome": "Partly right in limiting exposure, but opening the vostro account still enters the relationship before the required assessment and approval.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Correspondent versus nested services",
+          "caption": "The Act defines a nested services relationship as one that is not correspondent banking.",
+          "headers": [
+            "Correspondent banking",
+            "Nested services relationship"
+          ],
+          "items": [
+            {
+              "label": "What it is",
+              "left": "Banking services from one financial institution to another, such as a vostro account",
+              "right": "An overseas FI, remitter or VASP uses the bank's services to serve its own customers abroad"
+            },
+            {
+              "label": "Key Act rules",
+              "left": "Shell bank prohibition; due diligence and senior officer approval before vostro entry",
+              "right": "Enhanced CDD is mandatory under section 32"
+            },
+            {
+              "label": "Records",
+              "left": "Assessment records kept for 7 years after preparation",
+              "right": "CDD records kept for 7 years after the relationship ends"
+            },
+            {
+              "label": "Typical owner",
+              "left": "Financial institutions or correspondent banking team",
+              "right": "Business banking, payments or FI teams"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Sanctions law, AML/CTF law, or both?",
+          "prompt": "Sort each duty by where it mainly comes from.",
+          "buckets": [
+            "Sanctions laws (ASO)",
+            "AML/CTF Act and Rules (AUSTRAC)",
+            "Both"
+          ],
+          "items": [
+            {
+              "text": "Do not make assets available to a designated person without a permit",
+              "bucket": 0
+            },
+            {
+              "text": "Apply for a permit to deal with a frozen asset",
+              "bucket": 0
+            },
+            {
+              "text": "Lodge an SMR within 3 business days of a suspicion",
+              "bucket": 1
+            },
+            {
+              "text": "Report threshold cash transactions of AUD 10,000 or more",
+              "bucket": 1
+            },
+            {
+              "text": "Train staff who screen and escalate sanctions matches",
+              "bucket": 2
+            },
+            {
+              "text": "Establish during CDD whether a customer is designated for targeted financial sanctions",
+              "bucket": 1
+            },
+            {
+              "text": "Keep evidence that the bank took reasonable precautions and due diligence",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Final exam recap: roles and numbers",
+          "cards": [
+            {
+              "front": "Who oversees the bank's ML/TF risk and compliance?",
+              "back": "The governing body (the board), as an ongoing duty under the Act."
+            },
+            {
+              "front": "Who approves the risk assessment and policies?",
+              "back": "Senior managers designated in the AML/CTF policies."
+            },
+            {
+              "front": "How often does the compliance officer report to the board?",
+              "back": "At least once every 12 months."
+            },
+            {
+              "front": "Backstop for reviewing the risk assessment and policies?",
+              "back": "At least once every 3 years."
+            },
+            {
+              "front": "SMR deadlines?",
+              "back": "24 hours for suspected terrorism financing; 3 business days for most others."
+            },
+            {
+              "front": "Who must approve a foreign PEP relationship?",
+              "back": "A senior manager, with enhanced CDD applied."
+            },
+            {
+              "front": "Who approves a new vostro correspondent relationship?",
+              "back": "A senior officer, after a written due diligence assessment."
+            },
+            {
+              "front": "Which staff need AML/CTF training?",
+              "back": "People in roles relevant to the AML/CTF obligations, including contractors: initial and ongoing, role-based."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about AML/CTF training under the reformed Rules is correct?",
+          "options": [
+            "One generic e-learning module a year for all staff is always enough",
+            "Training must be initial and ongoing, suited to each person's function and its risks, and readily understandable",
+            "Only the compliance team needs AML/CTF training",
+            "Training is optional if the staff member has passed personnel due diligence"
+          ],
+          "answer": 1,
+          "explanation": "Rules section 5-9 requires initial and ongoing training suited to the person's function, its ML/TF/PF risks and their responsibilities, delivered in a readily understandable way. A single generic module may not meet that, and personnel due diligence does not replace training."
+        },
+        {
+          "type": "example",
+          "title": "Banksia Harbour's readiness check",
+          "body": "Before AUSTRAC's next compliance assessment, Priya runs a fictional readiness check:\n\n- **Risk assessment:** updated for Banksia Send; approved by the designated senior manager; next backstop review diarised.\n- **Policies:** cover CDD, enhanced CDD, PEPs, reporting, targeted financial sanctions, correspondent banking, personnel due diligence and training.\n- **Governance:** annual compliance officer report delivered to the board; minutes show challenge and follow-up.\n- **Reporting:** SMR timeliness tracked, with a weekend roster for terrorism financing suspicions; TTR and transfer report errors reconciled.\n- **Records:** retention rules tested by retrieving a closed customer's CDD file.\n- **People:** contractor checks completed; role-based training records by team.\n\nThe gaps found (two overdue trainees, one unsigned correspondent review) go into a dated action plan."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "Sanctions come from the Charter of the United Nations Act 1945 and the Autonomous Sanctions Act 2011, administered by the ASO in DFAT.",
+            "Companies face strict liability for autonomous sanctions breaches; the defence is reasonable precautions and due diligence.",
+            "Vostro correspondent relationships need a written due diligence assessment and senior officer approval before entry; shell banks are prohibited; records are kept 7 years.",
+            "AML/CTF policies must cover personnel due diligence and initial and ongoing, role-based, understandable training, with records kept.",
+            "A ready bank can show its risk assessment, policies, board reporting, reporting timeliness, records and training in evidence."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If AUSTRAC asked you tomorrow to show how your role meets the bank's AML/CTF policies, what evidence could you produce, and what is missing?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-aml-s5-q1",
+          "question": "A Banksia Harbour payment is stopped because the beneficiary closely matches an entity on the DFAT Consolidated List. What should happen first?",
+          "options": [
+            "Return the funds to the sender with an explanation of the match",
+            "Keep the payment on hold and escalate so the match can be investigated against full identifiers",
+            "Release the payment and lodge an SMR afterwards",
+            "Release the payment as soon as the customer confirms in writing that the beneficiary is a different company"
+          ],
+          "answer": 1,
+          "explanation": "A potential match should be held and investigated before any processing. Releasing on the customer's word, or after the fact, risks making assets available to a designated person, and explaining the match could alert the parties.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s5-q2",
+          "question": "Why are screening systems, written procedures and staff training so important to a bank's sanctions compliance in Australia?",
+          "options": [
+            "They make the bank exempt from the Consolidated List",
+            "They transfer liability for breaches to individual staff",
+            "They are needed before the Australian Sanctions Office will issue or renew an Australian banking licence",
+            "They are the evidence a body corporate needs for the reasonable precautions and due diligence defence"
+          ],
+          "answer": 3,
+          "explanation": "The autonomous sanctions offence is strict liability for companies, with a defence for reasonable precautions and due diligence. Controls and training are how a bank proves that. Banking licences come from APRA.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s5-q3",
+          "question": "Before entering a correspondent banking relationship involving a vostro account, what does the Act require?",
+          "options": [
+            "Approval from AUSTRAC and the ASO",
+            "A signed questionnaire from the respondent only",
+            "A written due diligence assessment under the Rules and approval by a senior officer",
+            "Board approval of the respondent's AML/CTF policies"
+          ],
+          "answer": 2,
+          "explanation": "Section 96 requires the bank to carry out and record a due diligence assessment in line with the Rules, and a senior officer to approve, before entry. A questionnaire is an input to the assessment, not a substitute for it.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s5-q4",
+          "question": "A prospective respondent bank lets an unaffiliated bank, licensed abroad but with no physical presence in its country of incorporation, use its accounts. What does the Act say?",
+          "options": [
+            "The relationship is allowed if the shell bank is in a FATF member country",
+            "The relationship is allowed with senior officer approval",
+            "The bank must not enter into a correspondent relationship with that respondent",
+            "The relationship is allowed with enhanced CDD"
+          ],
+          "answer": 2,
+          "explanation": "Section 95 prohibits correspondent relationships with shell banks and with financial institutions that permit their accounts to be used by shell banks. No level of approval or extra diligence makes it permissible.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s5-q5",
+          "question": "How long must a bank keep a correspondent banking due diligence assessment record?",
+          "options": [
+            "7 years after the record is prepared",
+            "5 years after the relationship ends",
+            "Until the next assessment replaces it",
+            "10 years from the start of the relationship"
+          ],
+          "answer": 0,
+          "explanation": "Section 117 requires correspondent banking records prepared under section 96 to be kept for 7 years after their preparation.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s5-q6",
+          "question": "Three contractors will release payments at Banksia Harbour. Which approach fits the reformed AML/CTF Rules?",
+          "options": [
+            "Give them the same generic module as head office staff at some point after their first month in the role",
+            "Rely on the agency's general checks and skip training for temporary staff",
+            "Exempt them because they are not employees",
+            "Apply personnel due diligence and give them role-based AML/CTF training before they perform the function"
+          ],
+          "answer": 3,
+          "explanation": "The policies must deal with due diligence and training for people employed or otherwise engaged in relevant roles, so contractors are covered. Training must suit their function and its risks.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-aml-s5-q7",
+          "question": "Which feature is required of AML/CTF training under section 5-9 of the Rules?",
+          "options": [
+            "It must be identical for every employee",
+            "It must be readily understandable by the people receiving it",
+            "It must be completed once, on joining",
+            "It must be delivered by AUSTRAC-accredited trainers"
+          ],
+          "answer": 1,
+          "explanation": "The Rules require training that suits the person's role and risks and is readily understandable, delivered both initially and on an ongoing basis. There is no AUSTRAC accreditation requirement, and identical training for all would not be tailored.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s5-q8",
+          "question": "Which duty comes mainly from Australian sanctions laws rather than the AML/CTF Act?",
+          "options": [
+            "Reporting physical currency transactions of AUD 10,000 or more",
+            "Not making assets available to a designated person without a permit",
+            "Reporting a suspicion to AUSTRAC within 3 business days",
+            "Keeping CDD records for 7 years after a relationship ends"
+          ],
+          "answer": 1,
+          "explanation": "The prohibition on dealing with or making assets available to designated persons comes from the sanctions laws administered by the ASO. The others are AML/CTF Act duties.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-aml-s5-q9",
+          "question": "A financial institutions team says correspondent banking and nested services are 'the same thing'. Which reply is correct?",
+          "options": [
+            "They are the same and both need only standard CDD",
+            "A nested services relationship excludes correspondent banking and triggers enhanced CDD",
+            "Nested services are banned in Australia",
+            "Correspondent banking is just one type of nested services relationship, so the same rules apply"
+          ],
+          "answer": 1,
+          "explanation": "The Act defines a nested services relationship as one that is not a correspondent banking relationship, and section 32 makes enhanced CDD mandatory for it. Correspondent banking has its own Part 8 rules.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-aml-s5-q10",
+          "question": "Which piece of evidence would best show AUSTRAC that Banksia Harbour's governing body exercises ongoing oversight?",
+          "options": [
+            "Board minutes showing the compliance officer's annual report was discussed, challenged and followed up",
+            "A list of SMRs lodged during the year",
+            "A signed copy of the approved AML/CTF policies, stored safely in the compliance team's shared network drive",
+            "An email from the CEO saying the bank takes AML/CTF seriously"
+          ],
+          "answer": 0,
+          "explanation": "Ongoing oversight is shown by the board receiving the compliance officer's report at least every 12 months and engaging with it. Policies, statements and SMR counts do not show the board's own oversight.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "au",
+    "programs": [
+      1,
+      2,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Australian Transaction Reports and Analysis Centre (AUSTRAC)",
+      "Australian Sanctions Office, Department of Foreign Affairs and Trade (ASO)"
+    ],
+    "references": [
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+        "provision": "Section 26F(4)(d) (personnel due diligence) and 26F(4)(e) (personnel training)",
+        "note": "As amended by the 2024 reforms, the AML/CTF policies must deal with due diligence on people in AML/CTF-relevant roles and with training them on the entity's ML/TF/PF risks and legal obligations.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+        "provision": "Sections 26C-26E (risk assessment), 26F(3)-(4), 26H (governing body), 26J-26M (compliance officer)",
+        "note": "Risk assessment covering ML/TF/PF with review on triggers and at least every 3 years; no new service without a current assessment; policies reviewed at least every 3 years; governing body oversight; compliance officer notified to AUSTRAC within 14 days.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+        "provision": "Sections 28 and 30 (initial and ongoing CDD) and 32 (enhanced CDD triggers)",
+        "note": "Initial CDD matters must be established on reasonable grounds before service starts; ongoing monitoring and risk review; enhanced CDD for high risk, continued service after an SMR, foreign PEPs, FATF high-risk jurisdictions and nested services.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+        "provision": "Sections 41(2) (SMR deadlines), 43 (threshold transactions), 46 (international value transfers) and 123 (tipping off)",
+        "note": "SMRs within 24 hours for terrorism financing, otherwise 3 business days; physical currency of AUD 10,000 or more and international value transfers reported within 10 business days; disclosure that could prejudice an investigation is an offence.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+        "provision": "Sections 95-96 (correspondent banking), 107, 111 and 117 (record retention)",
+        "note": "No correspondent relationships involving shell banks; vostro due diligence and senior officer approval before entry; transaction records 7 years from creation, CDD records 7 years after the relationship ends, correspondent records 7 years.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Amendment Act 2024",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2024A00110/asmade/2024-12-10/text/original/pdf",
+        "note": "Amending Act that restructured programs into a risk assessment plus AML/CTF policies, added proliferation financing and modernised CDD; most changes from 31 March 2026, tipping off from 31 March 2025, new sectors from 1 July 2026.",
+        "effective": "2024-12-10",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025",
+        "issuer": "AUSTRAC CEO (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+        "provision": "Sections 5-3 (targeted financial sanctions), 5-5 (PEP approval), 5-7 (reports to governing body), 5-8 and 5-9 (personnel due diligence and training)",
+        "note": "Policies must deal with targeted financial sanctions, require senior manager approval for foreign PEPs (and other PEPs where risk is high), provide compliance officer reports to the governing body at least every 12 months, and provide initial and ongoing role-based training.",
+        "effective": "2026-03-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Autonomous Sanctions Act 2011",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2011A00038/latest/text",
+        "provision": "Section 16(5)-(8) (body corporate offence, reasonable precautions defence)",
+        "note": "A body corporate commits a strict liability offence if its conduct contravenes a sanction law, unless it proves it took reasonable precautions and exercised due diligence.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Suspicious matter reports",
+        "issuer": "AUSTRAC",
+        "url": "https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/your-amlctf-program/reporting-us/suspicious-matter-reports",
+        "note": "Explains SMR triggers and deadlines: 24 hours for suspected terrorism financing and 3 business days for other suspicions."
+      },
+      {
+        "title": "AML/CTF training",
+        "issuer": "AUSTRAC",
+        "url": "https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/your-amlctf-program/personnel-due-diligence-and-training/amlctf-training",
+        "note": "AUSTRAC expects training to cover the entity's obligations and risks, to be tailored by role, refreshed often enough to keep pace with risk and legal change, and recorded."
+      },
+      {
+        "title": "Governing body",
+        "issuer": "AUSTRAC",
+        "url": "https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/your-amlctf-program/develop-your-amlctf-programs/step-1-establish-your-governance-framework/governing-body",
+        "note": "The governing body must exercise ongoing oversight of ML/TF risk and compliance and receive compliance officer reports at least every 12 months."
+      },
+      {
+        "title": "Sanctions Compliance Toolkit",
+        "issuer": "Department of Foreign Affairs and Trade (Australian Sanctions Office)",
+        "url": "https://www.dfat.gov.au/international-relations/security/sanctions/guidance/sanctions-compliance-toolkit",
+        "note": "ASO guidance listing ongoing staff training as a core element of a sanctions compliance program and as evidence of reasonable precautions and due diligence."
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "au-aml-x1",
+        "question": "In April 2026 a Banksia Harbour manager argues that, because the bank's last program review was in 2025, it can keep its Part A/Part B program until 2028. What is the best response?",
+        "options": [
+          "The manager is right, unless AUSTRAC issues a remedial direction first",
+          "The manager is right, because existing programs continue unchanged until the next three-yearly review",
+          "Banks moved to the reformed obligations on 31 March 2026, so the new design already applies",
+          "The old program can continue until 1 July 2026, when the new sectors join"
+        ],
+        "answer": 2,
+        "explanation": "Existing reporting entities such as banks moved to the reformed obligations on 31 March 2026. The three-year backstop governs reviews of a compliant program, not a transition period, and 1 July 2026 is the date for new sectors.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x2",
+        "question": "Which statement correctly describes how AUSTRAC and the Australian Sanctions Office divide responsibilities?",
+        "options": [
+          "The ASO supervises banks' CDD; AUSTRAC issues sanctions permits",
+          "Both bodies jointly approve each bank's AML/CTF policies",
+          "AUSTRAC maintains the Consolidated List, while the ASO receives suspicious matter and threshold reports from banks",
+          "AUSTRAC regulates AML/CTF and receives reports; the ASO administers sanctions and the Consolidated List"
+        ],
+        "answer": 3,
+        "explanation": "AUSTRAC is the AML/CTF regulator and FIU, receiving SMRs and other reports. The ASO in DFAT administers UN and autonomous sanctions, keeps the Consolidated List and issues permits. Neither approves bank policies.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x3",
+        "question": "Banksia Harbour's trade finance team has never considered whether its letters of credit could fund weapons programs. Which reformed requirement does this gap most directly breach?",
+        "options": [
+          "Letters of credit automatically require enhanced CDD",
+          "The governing body must personally approve every trade finance transaction above a set limit",
+          "Trade finance must be reported as threshold transactions",
+          "The ML/TF risk assessment must identify and assess proliferation financing risk"
+        ],
+        "answer": 3,
+        "explanation": "Since the reforms, the risk assessment must cover proliferation financing as well as ML and TF, so a trade finance PF blind spot is a gap. The other options describe obligations that do not exist.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x4",
+        "question": "AUSTRAC considers that a bank's breaches are serious and systemic, and that the bank's remediation has been slow. Which outcome can only be imposed by a court?",
+        "options": [
+          "A civil penalty order requiring the bank to pay a pecuniary penalty",
+          "A remedial direction to fix the contravention",
+          "Acceptance of an enforceable undertaking",
+          "A requirement to appoint an external auditor"
+        ],
+        "answer": 0,
+        "explanation": "Pecuniary penalties for civil penalty provisions are ordered by the Federal Court on AUSTRAC's application. Remedial directions, enforceable undertakings and external audits are tools AUSTRAC uses without first going to court.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x5",
+        "question": "Which change is NOT part of the 2024 reforms as they apply to banks?",
+        "options": [
+          "A requirement that AUSTRAC approve each bank's AML/CTF policies before use",
+          "Framing initial CDD as a set of matters to be established on reasonable grounds",
+          "Giving the governing body an explicit oversight duty",
+          "Adding proliferation financing to the risk assessment"
+        ],
+        "answer": 0,
+        "explanation": "The reforms added PF, outcome-based CDD and an explicit governing body duty. AUSTRAC does not pre-approve policies; designated senior managers in the bank approve them.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x6",
+        "question": "A new employee asks why the AML/CTF Act applies to her role in a branch that only sells home loans. What is the most accurate answer?",
+        "options": [
+          "The Act applies to her only if she lodges SMRs",
+          "The Act applies only to the specific roles that are named in APRA's prudential standards for authorised banks",
+          "Making loans is a designated service, so the obligations attach to the services she helps provide",
+          "The Act applies only to staff who handle cash"
+        ],
+        "answer": 2,
+        "explanation": "The Act's obligations attach to designated services, which include lending. Staff involved in providing those services are covered by the bank's AML/CTF policies, whether or not they handle cash.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x7",
+        "question": "Which lesson from the Commonwealth Bank (2018) and Westpac (2020) civil penalty cases is most relevant to the reformed governing body duty?",
+        "options": [
+          "Boards should delegate AML/CTF entirely to the compliance officer and simply note the annual report",
+          "Oversight matters only after AUSTRAC starts court proceedings",
+          "Directors must oversee whether AML/CTF systems actually work, not just whether policies exist",
+          "Directors are personally liable for every late report"
+        ],
+        "answer": 2,
+        "explanation": "Both cases involved systems that failed at scale, raising questions about oversight. The reformed Act now requires the governing body to exercise ongoing oversight and take reasonable steps, which cannot be fully delegated.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x8",
+        "question": "On which date did newly regulated professions, such as many lawyers and real estate agents, become subject to the reformed AML/CTF obligations?",
+        "options": [
+          "31 March 2026",
+          "31 March 2025",
+          "1 July 2026",
+          "10 December 2024"
+        ],
+        "answer": 2,
+        "explanation": "Tranche two sectors joined on 1 July 2026. 31 March 2026 was the date for existing reporting entities like banks, and 31 March 2025 the start of the new tipping-off offence.",
+        "difficulty": 2
+      },
+      {
+        "id": "au-aml-x9",
+        "question": "Banksia Harbour's risk assessment was last reviewed in May 2024. No significant change has occurred and AUSTRAC has sent no relevant information. By when, at the latest, must the next review happen?",
+        "options": [
+          "Only when a significant change occurs",
+          "By May 2025, under an annual cycle",
+          "By May 2031, aligned with record retention",
+          "By May 2027, under the three-year backstop"
+        ],
+        "answer": 3,
+        "explanation": "The Act requires review on triggers and in any event at least once every three years. With no trigger, the backstop is three years from the last review.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x10",
+        "question": "The board risk committee wants to sign off the ML/TF risk assessment itself instead of a senior manager. What does the reformed Act require?",
+        "options": [
+          "The compliance officer must approve it alone",
+          "The policies must designate senior managers to approve the assessment and policies",
+          "Only the governing body may approve the risk assessment, because it carries ultimate accountability",
+          "No approval is needed if AUSTRAC has reviewed it"
+        ],
+        "answer": 1,
+        "explanation": "Section 26F(4)(c) requires the policies to designate senior managers responsible for approving the risk assessment and policies. The governing body's statutory role is oversight, although it may of course review them.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x11",
+        "question": "Banksia Harbour's compliance officer reports to a mid-level operations manager, has no budget and needs business approval to contact AUSTRAC. Which requirement is most clearly not met?",
+        "options": [
+          "The compliance officer must be a board member",
+          "The compliance officer must hold a law degree",
+          "The compliance officer must be approved by APRA under the fit and proper standard before starting in the role",
+          "The compliance officer must be at management level with sufficient authority, independence and resources"
+        ],
+        "answer": 3,
+        "explanation": "The Act requires a management-level compliance officer with sufficient authority, independence and resources, whose functions include communicating with AUSTRAC. There are no board-membership, degree or APRA-approval requirements.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x12",
+        "question": "Which pair of duties belongs to the governing body under section 26H?",
+        "options": [
+          "Notifying AUSTRAC of the compliance officer and keeping records",
+          "Approving the risk assessment and lodging SMRs",
+          "Designating senior managers and verifying customers",
+          "Ongoing oversight of risk and compliance, and taking reasonable steps to ensure risks are managed"
+        ],
+        "answer": 3,
+        "explanation": "Section 26H requires the governing body to exercise appropriate ongoing oversight and take reasonable steps to ensure the bank manages its risks and complies. Approval sits with senior managers, and notifications and records are entity duties.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x13",
+        "question": "Banksia Harbour appoints a new compliance officer on 1 September. On 25 September nobody has told AUSTRAC. What is the position?",
+        "options": [
+          "Notification is required only at the annual compliance report",
+          "No notification is needed, because the previous compliance officer was already notified to AUSTRAC",
+          "The bank has 30 days, so it is still on time",
+          "The bank is late: AUSTRAC must be notified within 14 days of the designation"
+        ],
+        "answer": 3,
+        "explanation": "Section 26M requires notification of the designated compliance officer within 14 days. By 25 September that period has passed.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x14",
+        "question": "Banksia Harbour acquires a small fintech that offers instant cross-border payments to Asia and plans to offer the service to bank customers next month. Which step must come before the launch?",
+        "options": [
+          "Lodge a threshold transaction report for the acquisition price paid for the fintech business",
+          "Update the risk assessment for the new service, channel and countries before launch",
+          "Have the governing body approve each new customer",
+          "Notify APRA and wait for its approval"
+        ],
+        "answer": 1,
+        "explanation": "A bank must not start providing a designated service without an up-to-date risk assessment, and new services, channels and countries are significant changes. APRA approval and TTRs are not the relevant requirement.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x15",
+        "question": "Which statement about the AML/CTF policies is correct under section 26F?",
+        "options": [
+          "They may cover CDD procedures only, because reporting obligations are handled by AUSTRAC itself directly",
+          "They must follow an AUSTRAC template and be re-approved every year",
+          "Manage assessed risks, ensure compliance, suit the business and be reviewed at least every 3 years",
+          "They apply only to staff who deal with customers face to face"
+        ],
+        "answer": 2,
+        "explanation": "Section 26F requires policies that manage the risks, ensure compliance, are proportionate, and are reviewed at least every three years. There is no mandatory template or annual re-approval, and reporting duties sit with the bank.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x16",
+        "question": "The compliance officer's annual report shows recurring late international transfer reports. The board notes the report without discussion. Which risk does this create?",
+        "options": [
+          "The report must be lodged with AUSTRAC as an SMR",
+          "The bank must re-do its risk assessment within 24 hours",
+          "The compliance officer becomes personally liable for the late reports",
+          "The governing body may not be exercising the appropriate ongoing oversight the Act requires"
+        ],
+        "answer": 3,
+        "explanation": "Ongoing oversight means engaging with reported problems and taking reasonable steps to ensure they are fixed. Merely noting a report of recurring breaches risks falling short of the section 26H duty.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x17",
+        "question": "AUSTRAC sends banks a typology alert about criminals using business accounts to move scam proceeds through payment apps. Banksia Harbour offers both. What is the right response?",
+        "options": [
+          "Treat it as a trigger to review the risk assessment and adjust policies and monitoring where needed",
+          "File the alert and consider it at the next three-yearly review",
+          "Ask AUSTRAC to confirm in writing whether the bank is actually affected before taking any action at all",
+          "Lodge SMRs on all business customers using payment apps"
+        ],
+        "answer": 0,
+        "explanation": "AUSTRAC communicating risk information relevant to the bank's services is a statutory review trigger. Blanket SMRs without suspicion are inappropriate, and the bank must act rather than wait.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x18",
+        "question": "A customer applies for a business account for a family trust. The trustee is verified, but the bank has not worked out who controls the trust or why it needs the account. What should happen?",
+        "options": [
+          "Hold off until the beneficial owners and purpose are established on reasonable grounds",
+          "Open the account with a lower transaction limit",
+          "Open the account now, because the trustee has already been fully verified with photo ID",
+          "Open the account and lodge an SMR to be safe"
+        ],
+        "answer": 0,
+        "explanation": "Initial CDD requires the beneficial owners and the nature and purpose of the relationship to be established on reasonable grounds before service starts. Limits or an SMR do not cure missing CDD.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x19",
+        "question": "During onboarding, a customer's authorised signatory turns out to be a person designated on the DFAT Consolidated List. Which CDD matter has the bank just established?",
+        "options": [
+          "That a threshold transaction has occurred",
+          "That a person acting on behalf of the customer is designated for targeted financial sanctions",
+          "That the customer is a domestic politically exposed person",
+          "That the customer's ML/TF risk is low"
+        ],
+        "answer": 1,
+        "explanation": "Initial CDD must establish whether anyone acting on behalf of the customer is a person designated for targeted financial sanctions. This finding requires immediate escalation under the sanctions procedure.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x20",
+        "question": "Which customer does NOT trigger mandatory enhanced CDD under section 32, as long as the bank's risk rating is not high?",
+        "options": [
+          "A foreign remitter using the bank's account to serve its customers abroad",
+          "An Australian state government minister holding a personal savings account",
+          "An individual physically present in a jurisdiction on FATF's call-for-action list",
+          "A company whose beneficial owner is a deputy minister of a foreign country"
+        ],
+        "answer": 1,
+        "explanation": "A domestic PEP needs enhanced CDD only where the risk is high. Foreign PEPs, people in FATF call-for-action jurisdictions and nested services relationships are automatic section 32 triggers.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x21",
+        "question": "Under the Rules, who must approve before Banksia Harbour begins serving a foreign PEP?",
+        "options": [
+          "A senior manager",
+          "AUSTRAC",
+          "The customer's relationship manager",
+          "The governing body"
+        ],
+        "answer": 0,
+        "explanation": "The Rules require the policies to provide for senior manager approval before serving foreign PEPs. The board's role is oversight, and relationship managers are not the approvers.",
+        "difficulty": 2
+      },
+      {
+        "id": "au-aml-x22",
+        "question": "A low-risk customer of eight years starts receiving large payments from a newly formed offshore company and immediately wires them to third parties. The relationship manager says the customer is 'known to us'. What does the Act expect?",
+        "options": [
+          "Rely on the long history and take no action until the scheduled review",
+          "Close the account immediately and tell the customer why",
+          "Ask the customer to sign a statutory declaration that all the funds are legitimate and then continue as normal, given the history",
+          "Monitor and act on the unusual behaviour: review and update the risk rating, refresh KYC and consider whether an SMR is due"
+        ],
+        "answer": 3,
+        "explanation": "Ongoing CDD requires monitoring for unusual transactions and reviewing the customer's risk when they appear. History does not freeze the rating, a declaration is not verification, and explaining a closure could tip off.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x23",
+        "question": "Banksia Harbour verifies a high-risk customer's identity using only a utility bill and a letter the customer's company prepared. What is the main weakness?",
+        "options": [
+          "Utility bills may never be used for any verification",
+          "Higher-risk customers need verification using reliable, independent data, in proportion to risk",
+          "The bank should have checked the customer's social media profile and company website instead of documents",
+          "Verification is not required for corporate customers"
+        ],
+        "answer": 1,
+        "explanation": "The Act requires verification of KYC information using reliable and independent data appropriate to the customer's risk. A self-prepared letter is not independent, and a high-risk customer needs stronger verification.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x24",
+        "question": "Banksia Harbour decides to continue serving a customer after lodging an SMR about him. A colleague says nothing changes because 'the report is AUSTRAC's problem now'. Why is this wrong?",
+        "options": [
+          "Continuing service after an SMR obligation arises makes enhanced CDD mandatory under section 32",
+          "The bank must close every account that is the subject of an SMR",
+          "The bank must tell the customer that monitoring has increased",
+          "AUSTRAC must approve any continued service after an SMR"
+        ],
+        "answer": 0,
+        "explanation": "Section 32 makes enhanced CDD mandatory where an SMR obligation has arisen and the bank proposes to keep providing services. There is no automatic closure or AUSTRAC approval, and telling the customer risks tipping off.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x25",
+        "question": "A customer is the head of a UN agency's regional office and is rated high risk because of large unexplained transfers. What applies?",
+        "options": [
+          "Enhanced CDD only if she is also a foreign national",
+          "Standard CDD, because international organisation PEPs are always low risk",
+          "Enhanced CDD and senior manager approval, because she is an international organisation PEP and the risk is high",
+          "Refusal, because international organisation PEPs are not permitted to hold personal accounts with Australian banks"
+        ],
+        "answer": 2,
+        "explanation": "International organisation PEPs need enhanced CDD and senior manager approval where the risk is high, and the high rating is also a section 32 trigger in its own right. Nationality is not the test.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-aml-x26",
+        "question": "Which situation best illustrates the 'reasonable grounds' standard in initial CDD?",
+        "options": [
+          "The customer has signed a statement that all information is true",
+          "The bank holds objective, verified information that supports its conclusion about each required matter",
+          "A senior staff member feels comfortable with the customer after a long face-to-face meeting at the branch",
+          "The customer has banked with another Australian bank for years"
+        ],
+        "answer": 1,
+        "explanation": "Reasonable grounds means an objective basis supported by information the bank has collected and verified in proportion to risk. Self-declarations, gut feeling or another bank's relationship are not enough on their own.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x27",
+        "question": "A customer withdraws AUD 9,800 in cash on Monday and AUD 9,700 on Tuesday, refusing to say what it is for and asking whether 'under ten' avoids paperwork. What should the bank consider?",
+        "options": [
+          "Two threshold transaction reports, one for each withdrawal",
+          "An SMR, as the pattern and question suggest structuring though neither withdrawal hits the threshold",
+          "No report, because neither withdrawal reaches AUD 10,000",
+          "A single threshold transaction report for the combined AUD 19,500, lodged within 10 business days of Tuesday"
+        ],
+        "answer": 1,
+        "explanation": "Each withdrawal is below AUD 10,000, so the TTR rules are not met, but splitting cash and asking how to avoid reporting is a classic structuring red flag that can found a suspicion and an SMR.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x28",
+        "question": "An analyst forms a suspicion on Thursday that a customer is laundering drug proceeds. Assuming Friday, Monday and Tuesday are business days, when is the SMR due at the latest?",
+        "options": [
+          "By the second Thursday after",
+          "By the end of Monday",
+          "By the end of Tuesday",
+          "By Friday at the same time"
+        ],
+        "answer": 2,
+        "explanation": "For non-terrorism suspicions the deadline is 3 business days after the day the suspicion is formed: Friday, Monday and Tuesday. Twenty-four hours applies only to terrorism financing.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x29",
+        "question": "Which situation can give rise to the 24-hour SMR deadline?",
+        "options": [
+          "A suspicion that funds may relate to financing terrorism",
+          "A suspicion that a customer is evading tax",
+          "A suspicion that a customer is using a false name",
+          "Any transaction over AUD 10,000 in cash"
+        ],
+        "answer": 0,
+        "explanation": "Section 41 sets 24 hours where the suspicion relates to terrorism financing. Tax evasion and identity suspicions follow the 3 business day deadline, and cash over the threshold is a TTR matter.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x30",
+        "question": "Two weeks after an SMR, the customer's accountant calls Banksia Harbour's relationship manager to ask whether 'anything has been sent to AUSTRAC'. What should the relationship manager do?",
+        "options": [
+          "Confirm the report, because the customer's accountant is bound by strict professional confidentiality rules",
+          "Give no information about any report, use neutral service language and tell compliance about the call",
+          "Deny any report exists, to protect the investigation",
+          "Explain that the law prevents discussion of reports to AUSTRAC"
+        ],
+        "answer": 1,
+        "explanation": "Disclosing that an SMR was made could prejudice an investigation, whoever asks. A false denial is not needed, and mentioning the legal prohibition signals that a report exists. The call itself is useful information for compliance.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-aml-x31",
+        "question": "Which statement about the tipping-off offence in section 123 is correct?",
+        "options": [
+          "It applies only to disclosures made after a police investigation formally opens",
+          "It applies only to the compliance officer who lodged the report",
+          "It covers SMR information where disclosure could prejudice an investigation",
+          "It was introduced on 31 March 2026 with the other reforms"
+        ],
+        "answer": 2,
+        "explanation": "The offence covers disclosures of SMR-related information that would or could reasonably be expected to prejudice an investigation, whether or not one has commenced. It covers officers, employees and agents, and started on 31 March 2025.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x32",
+        "question": "Banksia Harbour sends a customer's payment from Brisbane to a supplier in Japan. Separately, it has no suspicion about the customer. Which report is due?",
+        "options": [
+          "A threshold transaction report within 10 business days, because the payment is well over AUD 10,000",
+          "No report, because the customer is low risk",
+          "An international value transfer report within 10 business days of passing on the transfer message",
+          "A suspicious matter report within 3 business days"
+        ],
+        "answer": 2,
+        "explanation": "International transfers through the bank's Australian operations trigger a report under section 46 within 10 business days, regardless of suspicion or customer risk. TTRs relate to physical currency.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x33",
+        "question": "A customer relationship ended on 30 June 2026. A transaction record for that customer was made on 15 March 2020. Which retention dates apply?",
+        "options": [
+          "The CDD records until 30 June 2033; the 2020 transaction record until 15 March 2027",
+          "Both records until 30 June 2033",
+          "Both records until 15 March 2027",
+          "The CDD records until 30 June 2031; the transaction record until 30 June 2033"
+        ],
+        "answer": 0,
+        "explanation": "CDD records are kept for 7 years after the relationship ends (to 30 June 2033), while transaction records are kept for 7 years from the day they were made (to 15 March 2027).",
+        "difficulty": 5
+      },
+      {
+        "id": "au-aml-x34",
+        "question": "A teller, trying to be helpful, tells a cash customer that 'deposits under AUD 10,000 don't get reported'. Why is this a serious problem?",
+        "options": [
+          "It is fine because the threshold is public information",
+          "It is a problem only because the threshold is actually AUD 5,000",
+          "It can help the customer avoid reporting, and smaller deposits in a suspicious pattern may still be reported",
+          "It is a problem only if the customer later deposits more than AUD 10,000 in a single transaction at any branch"
+        ],
+        "answer": 2,
+        "explanation": "Coaching customers around the threshold can facilitate structuring, and smaller deposits can still lead to an SMR when they form a suspicious pattern. The threshold for physical currency is AUD 10,000.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x35",
+        "question": "Screening confirms that a corporate customer is owned by a person newly designated on the DFAT Consolidated List. The customer asks to withdraw its balance today. What is the correct approach?",
+        "options": [
+          "Close the account and send the balance to the customer by cheque",
+          "Do not release; freeze and escalate, as dealing with the assets needs an ASO permit",
+          "Release the funds and lodge an SMR afterwards",
+          "Release the funds, because the customer company itself is not named on the Consolidated List"
+        ],
+        "answer": 1,
+        "explanation": "Assets owned or controlled by a designated person are generally caught, so releasing or paying out the balance risks dealing with them or making them available. Any dealing needs an ASO permit. Paying by cheque is still a release.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-aml-x36",
+        "question": "Banksia Harbour breaches an autonomous sanctions law because a payment slipped past screening. Which fact would most help its defence?",
+        "options": [
+          "Evidence that it lodged an SMR within 24 hours",
+          "Evidence that no employee at any level knew the beneficiary had been designated at the time the payment was sent",
+          "Evidence that the payment was below AUD 10,000",
+          "Evidence that it had reasonable precautions in place, such as tested screening, procedures and trained staff"
+        ],
+        "answer": 3,
+        "explanation": "For a body corporate the offence is strict liability, so lack of knowledge is not a defence; proving reasonable precautions and due diligence is. The payment's size and SMR timing do not establish that defence.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x37",
+        "question": "Banksia Harbour entered a vostro relationship on 1 March. On 10 April it still has no document setting out each institution's responsibilities. What is the problem?",
+        "options": [
+          "The written record of responsibilities was due within 20 business days of entering the relationship",
+          "Nothing, because the responsibilities record is due only at the time of the first ongoing assessment",
+          "The record must be lodged with AUSTRAC, not kept by the bank",
+          "The record is needed only for nostro relationships"
+        ],
+        "answer": 0,
+        "explanation": "Section 96 requires a written record of both institutions' responsibilities within 20 business days after entering a vostro relationship. By 10 April that period has passed.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x38",
+        "question": "A senior officer approved a correspondent relationship before any due diligence assessment was prepared, saying 'the respondent is a well-known bank'. What is wrong?",
+        "options": [
+          "A written due diligence assessment must come before entry and before approval",
+          "Well-known banks are exempt from correspondent due diligence",
+          "The governing body, not a senior officer, must approve",
+          "Nothing, because a senior officer's approval is the only requirement the Act imposes for entry"
+        ],
+        "answer": 0,
+        "explanation": "Section 96 requires both a due diligence assessment carried out under the Rules with a written record and senior officer approval before entry. Reputation does not replace the assessment.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x39",
+        "question": "Which group most clearly needs personnel due diligence and role-based training under section 26F(4) and Rules ss 5-8 and 5-9?",
+        "options": [
+          "Only board directors and senior managers",
+          "Staff and contractors in roles relevant to AML/CTF obligations, such as payment release",
+          "Only permanent employees who work in the compliance department, including the compliance officer",
+          "Only staff who have previously breached a policy"
+        ],
+        "answer": 1,
+        "explanation": "The policies must cover due diligence and training for people employed or otherwise engaged in functions relevant to the AML/CTF obligations, which includes contractors in roles like payment release.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x40",
+        "question": "Banksia Harbour gives all 4,000 staff the same 20-minute module every two years, and nobody records completion. Which two weaknesses stand out against the Rules and AUSTRAC's expectations?",
+        "options": [
+          "The module should be in a language other than English",
+          "The training is not tailored to each role's function and risks, and completion is not recorded",
+          "The module is too short and should be delivered by AUSTRAC",
+          "Staff should be trained only on joining, not every two years"
+        ],
+        "answer": 1,
+        "explanation": "The Rules require training suited to each person's function, its risks and their responsibilities, and AUSTRAC expects completion records. AUSTRAC does not deliver bank training, and ongoing training is required.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-aml-x41",
+        "question": "Which piece of evidence would best support Banksia Harbour's claim that its CDD records meet the Act?",
+        "options": [
+          "A list of all accounts opened in the last year",
+          "A short policy statement saying that all customer records are kept 'for as long as needed' by the business",
+          "A screenshot of the customer's latest transaction",
+          "A closed customer's CDD file retrieved in English, within the 7-year period after the relationship ended"
+        ],
+        "answer": 3,
+        "explanation": "Testing retrieval of a closed customer's CDD file shows records are kept for the required period after the relationship ends and are in English or readily convertible. A vague policy or account list proves neither.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-aml-x42",
+        "question": "AUSTRAC asks Banksia Harbour to demonstrate its AML/CTF program. Which set of documents best covers the core of the reformed regime?",
+        "options": [
+          "The risk assessment, approved policies, board reports, reporting data, records and training evidence",
+          "The Banking Code of Practice and the complaints register",
+          "The bank's annual report, capital management plan, credit policies and the latest external audit opinion",
+          "A list of SMRs lodged and the names of reported customers"
+        ],
+        "answer": 0,
+        "explanation": "The reformed regime centres on the risk assessment, policies, governance, reporting, records and personnel due diligence and training. Capital, credit and complaints documents belong to other regimes.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
