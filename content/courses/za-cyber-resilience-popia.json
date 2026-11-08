@@ -5,7 +5,7 @@
   "category": "Banking & Compliance",
   "level": "Intermediate",
   "sectors": [
-    "South African banks, branches of foreign banks and mutual banks",
+    "Banks, foreign bank branches and mutual banks",
     "Bank controlling companies and their groups",
     "Contact centres and outsourced service partners",
     "Bank IT, security operations and incident response",
@@ -507,7 +507,7 @@
           "options": [
             "Board members are exempt because they do not use bank systems",
             "Only the chair of the risk committee must be trained",
-            "Board training is optional if the CISO reports every quarter",
+            "Board training is optional as long as the CISO reports to the board every quarter on cyber risk",
             "The governing body must be trained on technology risk and cyber risk management"
           ],
           "answer": 3,
@@ -531,10 +531,10 @@
           "id": "za-cy-s1-q6",
           "question": "A small mutual bank argues that because it is small, Joint Standard 2 does not apply to it. What is the best response?",
           "options": [
-            "It applies, but the bank may implement it in a way that fits its size and risk",
+            "It applies, but implementation may reflect the bank's size and risk",
             "It is correct: the standard covers only large banks",
             "It applies only if the bank uses cloud services",
-            "It applies only after the PA grants written approval"
+            "It applies only after the PA grants the mutual bank a written approval to start implementing it"
           ],
           "answer": 0,
           "explanation": "Mutual banks are listed as financial institutions under the standard. Proportionality affects how the requirements are implemented, not whether they apply.",
@@ -547,7 +547,7 @@
             "It must be approved by the Information Regulator",
             "It must be delivered only in a classroom",
             "It must be reviewed periodically to keep its content current",
-            "It must be identical for every financial institution"
+            "It must be identical for every financial institution so that supervisors can compare results"
           ],
           "answer": 2,
           "explanation": "The programme must be reviewed periodically, taking into account changes in security policy, emerging risks and the evolving threat landscape.",
@@ -558,8 +558,8 @@
           "question": "A staff member installs an unapproved file-sharing app and uploads a customer list by mistake, with no malicious intent. Under the standard's definitions, is this a cyber incident?",
           "options": [
             "No, because no attacker was involved",
-            "No, because only events affecting availability count",
-            "Yes, because breaking security or acceptable use policy counts even without malice",
+            "No, because the standard only counts events that affect the availability of a system or service",
+            "Yes: breaching security or acceptable use policy counts even without malice",
             "Only if the Information Regulator says so"
           ],
           "answer": 2,
@@ -583,7 +583,7 @@
           "id": "za-cy-s1-q10",
           "question": "Which statement correctly compares the two Joint Standards?",
           "options": [
-            "Joint Standard 1 covers POPIA; Joint Standard 2 covers anti-money laundering",
+            "Joint Standard 1 covers POPIA compliance, while Joint Standard 2 covers anti-money laundering and sanctions controls",
             "Both cover only insurers and pension funds",
             "Joint Standard 1 covers IT governance and risk; Joint Standard 2 covers cybersecurity and cyber resilience",
             "Joint Standard 2 replaced Joint Standard 1 on 1 June 2025"
@@ -927,7 +927,7 @@
           "options": [
             "The SARB does not hold accounts or cross-border transfers for the public",
             "The SARB routinely calls bank agents for customer data",
-            "The request is valid if the caller knows the customer's name",
+            "The request is valid as long as the caller already knows the customer's full name and home branch",
             "Such requests must be answered within ten minutes"
           ],
           "answer": 0,
@@ -964,8 +964,8 @@
           "id": "za-cy-s2-q4",
           "question": "A supplier emails new banking details and asks the accounts team to update them before today's payment run. What is the best response?",
           "options": [
-            "Update the details because the email uses the supplier's logo",
-            "Verify the change with the supplier through contact details already on file before acting",
+            "Update the details at once because the email carries the supplier's logo and usual signature block",
+            "Verify the change with the supplier using contact details already on file",
             "Reply to the email asking if it is genuine",
             "Pay half to the old account and half to the new one"
           ],
@@ -1006,7 +1006,7 @@
             "Equal access for all staff to avoid complaints",
             "Access for life once granted",
             "Least privilege and segregation of duties, based on the user's role",
-            "Access decided by the user's own manager only, with no reviews"
+            "Access decided by each user's own manager alone, with no later reviews by system or asset owners"
           ],
           "answer": 2,
           "explanation": "Access must follow segregation of duties and least privilege according to roles and responsibilities, with periodic user access reviews by system and asset owners.",
@@ -1032,7 +1032,7 @@
             "Leave it to the supplier to monitor",
             "Give it permanent administrator rights to save time",
             "Subject it to the same monitoring and access restrictions as employees",
-            "Exclude it from access reviews because the person is not staff"
+            "Exclude it from user access reviews, because the person is not on the bank's own payroll or staff list"
           ],
           "answer": 2,
           "explanation": "The standard requires third-party providers and contractors with access to be subject to the same monitoring and access restrictions as the bank's own employees.",
@@ -1439,7 +1439,7 @@
           "options": [
             "Further processing limitation: is the new use compatible with the original purpose?",
             "Openness: is the bank's PAIA manual up to date?",
-            "Information quality: is the income figure still accurate?",
+            "Information quality: is the income figure collected at account opening still complete and accurate?",
             "Data subject participation: has anyone asked for access?"
           ],
           "answer": 0,
@@ -1450,7 +1450,7 @@
           "id": "za-cy-s3-q4",
           "question": "Which of these is part of the section 19 duty to secure personal information?",
           "options": [
-            "Publishing customers' details to prove transparency",
+            "Publishing customers' details on the bank's website to prove that processing is transparent",
             "Regularly verifying that safeguards are effectively implemented",
             "Keeping every record permanently",
             "Letting operators set their own security rules"
@@ -1531,7 +1531,7 @@
             "Yes: intent must always be proved",
             "No: liability can arise whether or not there was intent or negligence",
             "Yes: only the Regulator can sue",
-            "No: but only criminal courts may hear it"
+            "No, but only the criminal courts may hear such a claim, after the Regulator has prosecuted the bank"
           ],
           "answer": 1,
           "explanation": "Section 99 allows a civil action for damages whether or not there is intent or negligence. The Act lists specific defences, such as vis major or that compliance was not reasonably practicable.",
@@ -1689,7 +1689,7 @@
         {
           "type": "concept",
           "title": "What Joint Notice 2 of 2026 changed",
-          "body": "The PA and FSCA signed **Joint Notice 2 of 2026** on 31 August 2026. It sets the form, manner and period for notifying **material IT and cyber incidents** under paragraph 15.1 of Joint Standard 1 and paragraph 9.1 of Joint Standard 2, and took effect on **1 September 2026**.\n\n- **Form:** the 'Reporting of Material IT and Cyber Incident Template', attached as Annexure A.\n- **Manner for banks:** banks, branches of foreign banks, controlling companies and mutual banks complete and submit the template on the PA's secure **Umoja portal** as a notification. Other institutions, such as fund managers, use the FSCA's Joint Standards Submission Portal.\n- **Period:** set out on the template's cover page (see the clock above).\n\nThe template asks for much more than 'what broke': detection time, attack type (phishing, vishing, ransomware and others), whether customer data was leaked, how customers were told and supported, whether the incident went to the board, whether other authorities such as the **Information Regulator** were told, root cause and lessons learnt. Good records from minute one make it possible to answer."
+          "body": "The PA and FSCA signed **Joint Notice 2 of 2026** on 31 August 2026. It sets the form, manner and period for notifying **material IT and cyber incidents** under paragraph 15.1 of Joint Standard 1 and paragraph 9.1 of Joint Standard 2, and took effect on **1 September 2026**.\n\n- **Form:** the 'Reporting of Material IT and Cyber Incident Template', attached as Annexure A.\n- **Manner for banks:** banks, branches of foreign banks, controlling companies and mutual banks complete and submit the template on the PA's secure **Umoja portal** as a notification. Other institutions, such as fund managers, use the FSCA's Joint Standards Submission Portal.\n- **Period:** set out on the template's cover page (see the clock above).\n\nThe template asks far more than 'what broke': detection time, attack type (phishing, ransomware and others), leaked customer data, customer support, board escalation, whether the **Information Regulator** was told, root cause and lessons. Keep records from minute one."
         },
         {
           "type": "sort",
@@ -1770,7 +1770,7 @@
               "score": 0
             },
             {
-              "text": "File the PA notification on Umoja within 24 hours of classification, notify the Information Regulator and affected customers as soon as reasonably possible, and record any written law enforcement request to delay customer notice.",
+              "text": "File on Umoja within 24 hours of classification, notify the Information Regulator and affected customers as soon as reasonably possible, and record any written police request to delay customer notice.",
               "outcome": "Best answer. Each regime is met on its own terms. Section 22 lets the bank take account of law enforcement needs and scoping, and allows delaying customer notice only when a public body or the Regulator decides it would impede a criminal investigation.",
               "score": 2
             },
@@ -1863,7 +1863,7 @@
         {
           "type": "example",
           "title": "Real case: how the Justice department handled its 2021 ransomware attack",
-          "body": "After ransomware struck on 6 September 2021, the Department of Justice and Constitutional Development published updates on gov.za. Its first statement said it had **activated its business continuity plan**, used manual recording so courts could keep sitting, issued documents to bereaved families by hand, and was working with state agencies. At that point it said no data compromise had been detected.\n\nBy 10 October 2021 the picture had moved on. The department reported that the malware had been contained and services were being restored step by step. After a high-level assessment of a **possible leak of personal information**, and in line with POPIA, it **issued a notice on its website to its data subjects**. It also said it had upgraded its ICT security infrastructure and tightened electronic and physical access control.\n\n**Lessons:** a first assessment can change; keep re-assessing whether personal information was reached. A website notice is one of the channels section 22 allows. And the fixes it named (security tooling and access control) are exactly the controls Joint Standard 2 expects before an attack.\n\n*Sources: department statements on gov.za, 20 September and 10 October 2021.*"
+          "body": "After ransomware struck on 6 September 2021, the Department of Justice and Constitutional Development posted updates on gov.za. First it said it had **activated its business continuity plan**, used manual recording so courts could sit, and was working with state agencies; no data compromise had been detected yet.\n\nBy 10 October 2021 the picture had moved on. The department reported that the malware had been contained and services were being restored step by step. After a high-level assessment of a **possible leak of personal information**, and in line with POPIA, it **issued a notice on its website to its data subjects**. It also said it had upgraded its ICT security infrastructure and tightened electronic and physical access control.\n\n**Lessons:** first assessments change, so keep checking whether personal information was reached. A website notice is a channel section 22 allows. The fixes it named are controls Joint Standard 2 expects before an attack.\n\n*Sources: department statements on gov.za, 20 September and 10 October 2021.*"
         },
         {
           "type": "keypoints",
@@ -1912,8 +1912,8 @@
           "id": "za-cy-s4-q3",
           "question": "What is the trigger for a POPIA section 22 notification?",
           "options": [
-            "Proof that stolen data has been published online",
-            "Reasonable grounds to believe personal information was accessed or acquired by an unauthorised person",
+            "Proof that the stolen data has been published online or offered for sale by the attackers on the dark web",
+            "Reasonable grounds to believe information was accessed or acquired without authority",
             "A system outage of more than one day",
             "A complaint from at least ten customers"
           ],
@@ -1938,8 +1938,8 @@
           "id": "za-cy-s4-q5",
           "question": "When may a bank delay notifying affected customers of a compromise under POPIA?",
           "options": [
-            "Whenever the bank fears media coverage",
-            "When a public body investigating offences or the Regulator decides notice would impede a criminal investigation",
+            "Whenever the bank's communications team fears negative media coverage or reputational harm",
+            "When police or the Regulator decide notice would impede a criminal investigation",
             "Until the bank's share price recovers",
             "Until the end of the financial year"
           ],
@@ -1991,7 +1991,7 @@
           "question": "What must a POPIA section 22 notice to a customer include?",
           "options": [
             "The bank's internal incident ticket number only",
-            "A waiver of the customer's right to claim damages",
+            "A waiver of the customer's right to claim damages from the bank in exchange for free credit monitoring",
             "The names of the staff involved",
             "A recommendation on steps the customer can take to reduce the possible harm"
           ],
@@ -2003,9 +2003,9 @@
           "id": "za-cy-s4-q10",
           "question": "Which Joint Standard 2 requirement deals with keeping customers informed during a cyber attack?",
           "options": [
-            "A clear communication strategy for affected customers, including the recourse available",
+            "A clear communication strategy for affected customers, including their recourse",
             "A rule that customers must sign a non-disclosure agreement",
-            "A ban on any customer communication until the attack ends",
+            "A ban on any communication with customers until the attack has fully ended and been investigated",
             "A requirement to publish all forensic reports"
           ],
           "answer": 0,
@@ -2253,7 +2253,7 @@
         {
           "type": "example",
           "title": "Real case: Transnet's port systems, July 2021",
-          "body": "On the morning of 22 July 2021 Transnet, the state-owned port and rail operator, suffered an IT security breach that disrupted its port systems. Government's statement on gov.za a week later reported:\n\n- **Manual fallback:** bulk, break-bulk and automotive operations that used the general cargo system switched to manual processes immediately, limiting disruption. Rail kept running to plan.\n- **Prioritised recovery:** the main container terminal operating system was fully restored, with remaining systems brought back in stages to reduce further risk.\n- **Customer engagement:** the minister and Transnet set up a platform for regular meetings with affected customers' senior representatives.\n- **Data:** the preliminary assessment indicated that Transnet and customer data had not been compromised, with investigations under way.\n\n**Lessons for a bank under Directive 4 and Joint Standard 2:** map critical operations and their dependencies, pre-plan manual workarounds, restore in a planned order, and communicate with customers throughout.\n\n*Source: Ministry of Public Enterprises statement on gov.za, 29 July 2021.*"
+          "body": "On the morning of 22 July 2021 Transnet, the state-owned port and rail operator, suffered an IT security breach that disrupted its port systems. Government's statement on gov.za a week later reported:\n\n- **Manual fallback:** bulk, break-bulk and automotive operations that used the general cargo system switched to manual processes immediately, limiting disruption. Rail kept running to plan.\n- **Prioritised recovery:** the main container terminal operating system was fully restored, with remaining systems brought back in stages to reduce further risk.\n- **Customer engagement:** the minister and Transnet set up a platform for regular meetings with affected customers' senior representatives.\n- **Data:** the preliminary assessment indicated that Transnet and customer data had not been compromised, with investigations under way.\n\n**Lessons for banks:** map critical operations and dependencies, pre-plan manual workarounds, restore in a planned order and keep customers informed.\n\n*Source: Ministry of Public Enterprises statement on gov.za, 29 July 2021.*"
         },
         {
           "type": "scenario",
@@ -2416,7 +2416,7 @@
             "Immediate closure of all branches",
             "Additional capital, or alignment of policies with the bank's risk exposure",
             "A criminal prosecution of the board",
-            "A transfer of the licence to the FSCA"
+            "A compulsory transfer of the bank's licence and supervision from the PA to the FSCA"
           ],
           "answer": 1,
           "explanation": "The directive notes that regulation 38(4) lets the PA require extra capital or require the bank to align its resilience policies with its risk exposure.",
@@ -2427,7 +2427,7 @@
           "question": "Under Joint Standard 2, when must penetration testing be done on systems directly accessible from the internet?",
           "options": [
             "Whenever they undergo major changes, and at least yearly if there are none",
-            "Only once, when the system is first launched",
+            "Only once, when the system is first launched, unless the PA asks for another test in writing",
             "Every five years",
             "Only after a material incident"
           ],
@@ -2494,7 +2494,7 @@
             "The critical functions and shared services in recovery and resolution plans",
             "The bank's staff social calendar",
             "Its marketing campaign plans",
-            "The Information Regulator's annual plan"
+            "The Information Regulator's annual performance plan and its list of priority sectors for inspections"
           ],
           "answer": 0,
           "explanation": "Paragraph 2.1.5 asks banks to consider whether their resilience approach is harmonised with the actions, mappings and critical functions in their recovery and resolution plans.",
@@ -2504,9 +2504,9 @@
           "id": "za-cy-s5-q10",
           "question": "Which statement best describes how Joint Standard 1 of 2023 relates to Joint Standard 2 of 2024?",
           "options": [
-            "Joint Standard 1 sets IT governance and risk rules; Joint Standard 2 adds specific cyber requirements",
+            "JS1 sets IT governance and risk rules; JS2 adds specific cyber requirements",
             "Joint Standard 1 applies only to insurers",
-            "Joint Standard 2 repealed Joint Standard 1",
+            "Joint Standard 2 repealed Joint Standard 1 when it came into force on 1 June 2025, so only JS2 applies now",
             "They are voluntary industry guidelines"
           ],
           "answer": 0,
@@ -2659,7 +2659,7 @@
         "id": "za-cy-x1",
         "question": "A foreign bank operates a branch in Johannesburg. Its head office argues that the group's global cyber policy is enough and that Joint Standard 2 does not reach a branch. Which view is correct?",
         "options": [
-          "The branch is exempt because the parent is supervised abroad",
+          "The branch is exempt because its parent bank is already supervised by its home-country regulator",
           "The branch is a financial institution under the standard and must meet it",
           "Only the FSCA's conduct standards apply to the branch",
           "The branch must comply only once it has 500 staff"
@@ -2672,10 +2672,10 @@
         "id": "za-cy-x2",
         "question": "During the PA's review, the bank shows that its cyber framework was last independently reviewed 20 months ago. What is the problem?",
         "options": [
-          "Nothing, because a review every two years is allowed",
+          "Nothing, because the standard allows the framework to be reviewed every two years like the inventory",
           "The framework must be reviewed monthly by the board",
           "Only the strategy needs review; the framework is fixed",
-          "The framework must be reviewed at least annually through an independent review"
+          "The framework needs an independent review at least once a year"
         ],
         "answer": 3,
         "explanation": "Joint Standard 2 requires the cybersecurity framework to be reviewed regularly but at least annually for adequacy and effectiveness through an independent review. Two years applies to the asset inventory.",
@@ -2699,7 +2699,7 @@
         "question": "Marula Bank's learning team proposes moving the cyber awareness refresher to every 18 months to save time, while sending monthly tips. Is this compliant?",
         "options": [
           "No: refresher training must happen at least yearly, whatever tips are added",
-          "Yes, because monthly tips replace the formal refresher",
+          "Yes, because frequent monthly tips are accepted as a replacement for the formal yearly refresher",
           "Yes, if the board approves the longer cycle",
           "No, because refresher training must happen every quarter"
         ],
@@ -2712,9 +2712,9 @@
         "question": "A board member says the board can hand the whole cyber topic to its risk committee and stop worrying about it. What does Joint Standard 2 allow?",
         "options": [
           "Transferring all responsibility to the committee",
-          "Delegating primary oversight work to a committee while the board stays ultimately responsible",
+          "Delegating primary oversight to a committee; the board stays ultimately responsible",
           "Transferring responsibility to the CISO by resolution",
-          "Removing cyber from the board agenda once a committee exists"
+          "Removing cyber from the full board's agenda once a committee has been set up to deal with it"
         ],
         "answer": 1,
         "explanation": "The governing body may delegate primary oversight activities to an existing or new committee, but it remains ultimately responsible for compliance and for cyber risk oversight.",
@@ -2724,7 +2724,7 @@
         "id": "za-cy-x6",
         "question": "Which pair of documents must the governing body approve under Joint Standard 2?",
         "options": [
-          "The firewall rule set and the patch schedule",
+          "The firewall rule set, the patch schedule and the list of approved software for all staff devices",
           "The cybersecurity strategy and the cybersecurity framework",
           "Each staff member's training record",
           "Every penetration test report"
@@ -2750,10 +2750,10 @@
         "id": "za-cy-x8",
         "question": "The cyber function at a bank reports to the head of IT operations, who decides its budget and whose systems it audits. What governance concern does Joint Standard 2 raise?",
         "options": [
-          "None, because reporting lines are a matter for HR",
+          "None, because reporting lines inside the IT division are purely a matter for HR to decide",
           "The function must report to the Information Regulator",
           "The function must be outsourced to an external firm",
-          "Oversight must be structured to keep segregation of duties and avoid conflicts"
+          "Oversight must keep segregation of duties and avoid conflicts"
         ],
         "answer": 3,
         "explanation": "The standard requires the cyber function to have adequate resources, authority and access to the governing body, structured to ensure segregation of duties and avoid conflicts of interest.",
@@ -2765,7 +2765,7 @@
         "options": [
           "Wait for the October refresher to cover it",
           "Add training on the new content regularly, without waiting for the refresher",
-          "Do nothing unless the threat causes an incident",
+          "Do nothing unless the new threat actually causes an incident at the bank or at a peer bank",
           "Ask the FSCA to approve new material first"
         ],
         "answer": 1,
@@ -2791,8 +2791,8 @@
         "options": [
           "Biennial review of the asset inventory",
           "Yearly review of the cyber strategy",
-          "MFA for accounts that access applications with sensitive information through the internet",
-          "Notification of material incidents to the authority"
+          "MFA for internet access to applications holding sensitive information",
+          "Notification of material incidents to the responsible authority within the template timelines"
         ],
         "answer": 2,
         "explanation": "The standard requires MFA for all user accounts used to access applications containing sensitive information through the internet, and strong authentication for remote access.",
@@ -2815,7 +2815,7 @@
         "id": "za-cy-x13",
         "question": "Which statement about the SARB's warning on advance-fee scams is accurate?",
         "options": [
-          "The SARB confirms it holds foreign funds for individuals on request",
+          "The SARB confirms that it holds foreign funds for individuals and businesses when they ask it to",
           "The SARB says such scams only arrive by post",
           "Scammers have used the SARB's logo and employee names to make lures look real",
           "The SARB tells victims to pay the fees and then complain"
@@ -2829,7 +2829,7 @@
         "question": "A staff member clicked a phishing link and entered her password, then felt embarrassed and waited a day before telling anyone. Why is this delay the biggest problem?",
         "options": [
           "The bank can no longer find out who clicked",
-          "Joint Standard 2 requires dismissal after any click",
+          "Joint Standard 2 requires dismissal of any staff member who clicks a phishing link, so she should hide it",
           "It gives the attacker time to use the credentials before they are reset",
           "Reporting is only possible on the same day"
         ],
@@ -2854,10 +2854,10 @@
         "id": "za-cy-x16",
         "question": "A caller to the contact centre says he is from IT support and asks the agent to read out the one-time PIN just sent to her phone 'to fix the login'. What should the agent do?",
         "options": [
-          "Refuse, end the call and report it, because no genuine helper needs a one-time PIN",
+          "Refuse, end the call and report it: no genuine helper needs a one-time PIN",
           "Share the PIN because IT support is internal",
           "Share half the PIN to test the caller",
-          "Ask the caller for his employee number and then share it"
+          "Ask the caller for his employee number and department, check it sounds right, and then share the PIN"
         ],
         "answer": 0,
         "explanation": "A one-time PIN is a second factor. Sharing it hands the attacker the account. An employee number can also be faked; verify through trusted channels instead.",
@@ -2867,7 +2867,7 @@
         "id": "za-cy-x17",
         "question": "Which design choice reflects the Joint Standard 2 requirement to reduce exposure from web browsing?",
         "options": [
-          "Allowing browsing only on administrator accounts",
+          "Allowing internet browsing only on administrator and privileged accounts, which are better protected",
           "Blocking the bank's own website",
           "Running browsing on the core banking server",
           "Separating internet browsing from sensitive systems physically or logically"
@@ -2880,10 +2880,10 @@
         "id": "za-cy-x18",
         "question": "Under Joint Standard 2, who should perform periodic user access reviews to confirm that privileges are still appropriate?",
         "options": [
-          "Appropriate parties such as the owners of the IT systems and information assets",
+          "Appropriate parties such as system and information asset owners",
           "Each user for their own access",
           "The Information Regulator",
-          "The external auditor only, every five years"
+          "The external auditor only, once every five years as part of the statutory audit of the bank"
         ],
         "answer": 0,
         "explanation": "The standard requires appropriate parties such as system and information asset owners to perform periodic user access reviews.",
@@ -2893,8 +2893,8 @@
         "id": "za-cy-x19",
         "question": "A loan officer asks applicants for their religion and political affiliation 'to understand them better'. Which POPIA problems arise?",
         "options": [
-          "It is excessive for the purpose and touches special personal information",
-          "None, if the applicant answers voluntarily on a form",
+          "It is excessive and touches special personal information",
+          "None, as long as the applicant answers voluntarily on a printed form and signs the declaration",
           "Only an information quality problem",
           "Only an openness problem, solved by a privacy notice"
         ],
@@ -2906,10 +2906,10 @@
         "id": "za-cy-x20",
         "question": "Marula Bank uses a card processor that handles customer card data. The contract does not mention security. What does section 21 of POPIA require?",
         "options": [
-          "Nothing, because operators are separately licensed",
+          "Nothing, because card processors are separately licensed and supervised by the payment authorities",
           "Only an annual phone call to the processor",
           "A notice to the Regulator naming the processor",
-          "A written contract ensuring the operator establishes and maintains section 19 security measures"
+          "A written contract making the operator keep section 19 security measures"
         ],
         "answer": 3,
         "explanation": "Section 21(1) requires the responsible party, by written contract, to ensure the operator establishes and maintains the security measures in section 19.",
@@ -2920,7 +2920,7 @@
         "question": "A bank keeps closed-account files for many years because a law requires certain records to be kept. Does POPIA's retention condition stop this?",
         "options": [
           "Yes: all records must be deleted on account closure",
-          "Yes: unless the customer consents in writing each year",
+          "Yes, unless every affected customer consents in writing each year to the bank keeping the records",
           "No: retention is allowed when the law requires or authorises it",
           "No: POPIA has no retention rule at all"
         ],
@@ -2932,8 +2932,8 @@
         "id": "za-cy-x22",
         "question": "Which statement about personal information under POPIA is correct?",
         "options": [
-          "It can include information about an identifiable existing juristic person, such as a company",
-          "It covers only information about individuals over 18",
+          "It can cover an identifiable existing juristic person, such as a company",
+          "It covers only information about natural persons over 18 who hold an account with the bank",
           "It excludes ID numbers and account numbers",
           "It covers only information stored on paper"
         ],
@@ -2972,7 +2972,7 @@
         "question": "A bank processes customer information for FIC Act customer due diligence without asking for consent. Which section 11 ground most clearly supports this?",
         "options": [
           "The bank's marketing interest",
-          "The customer's implied consent by walking into a branch",
+          "The customer's implied consent, given simply by walking into a branch and asking to open an account",
           "Processing complies with an obligation imposed by law on the bank",
           "No ground is needed for regulated banks"
         ],
@@ -2985,8 +2985,8 @@
         "question": "Under section 19(3), what must a bank have due regard to when designing security safeguards for personal information?",
         "options": [
           "Only the cheapest available technology",
-          "Generally accepted information security practices and any industry rules that apply to it",
-          "The preferences of the bank's largest customer",
+          "Accepted information security practice and any industry rules that apply",
+          "The preferences of the bank's largest corporate customers, as set out in their service agreements",
           "Whatever its operators propose"
         ],
         "answer": 1,
@@ -2999,7 +2999,7 @@
         "options": [
           "Both require risk-based safeguards, and the bank must meet each in full",
           "Joint Standard 2 replaces POPIA for banks",
-          "POPIA replaces Joint Standard 2 for customer data",
+          "POPIA replaces Joint Standard 2 for any system that holds customer personal information",
           "Only one applies, chosen by the board each year"
         ],
         "answer": 0,
@@ -3024,9 +3024,9 @@
         "question": "During a material incident, investigators find that attackers copied 3,000 customers' payslips. The police ask in writing for customer notices to wait five days. Which approach is correct?",
         "options": [
           "Notify nobody until the police finish",
-          "Notify customers immediately, ignoring the police",
+          "Notify customers immediately and ignore the police request, because POPIA allows no delay at all for any reason",
           "Notify only the PA, because the police are involved",
-          "Notify the PA and the Regulator, record the police request, and notify customers when the delay ends"
+          "Notify the PA and the Regulator, record the request, and tell customers once the delay ends"
         ],
         "answer": 3,
         "explanation": "The PA notice follows the Joint Notice timelines. Under section 22, the Regulator is still notified, and only the customer notice may be delayed where a public body investigating offences decides notice would impede its investigation.",
@@ -3051,8 +3051,8 @@
         "options": [
           "The PA must be notified within 24 hours anyway",
           "The incident can be deleted from the records",
-          "The Information Regulator must always be notified",
-          "No PA notice is needed, but the bank still manages and learns from it under its plan"
+          "The Information Regulator must always be notified of every phishing incident, whatever the outcome",
+          "No PA notice is needed, but the bank still handles and learns from it"
         ],
         "answer": 3,
         "explanation": "Notification under paragraph 9.1 follows classification as material. Non-material incidents are still handled, investigated and used for lessons under the response plan. POPIA s 22 applies only if personal information was reached.",
@@ -3089,7 +3089,7 @@
         "question": "Joint Standard 2 requires backups of sensitive information to be protected. Which practice meets the standard best?",
         "options": [
           "Encrypted backups stored offline or offsite, including suitable cloud storage",
-          "Unencrypted backups on the same server as production",
+          "Unencrypted backups kept on the same server as production, so that restoring them is as fast as possible",
           "Backups kept only on staff laptops",
           "No backups, relying on the vendor's goodwill"
         ],
@@ -3103,8 +3103,8 @@
         "options": [
           "It paid the ransom and restored all systems in one day",
           "It shut down the courts for a month",
-          "It reported that no personal information was involved at any stage",
-          "It activated its business continuity plan and later notified data subjects on its website"
+          "It reported that no personal information was involved at any stage and closed the matter within a week",
+          "It activated its continuity plan and later notified data subjects on its website"
         ],
         "answer": 3,
         "explanation": "Its statements said it activated its business continuity plan, kept courts running manually, and after assessing a possible leak issued a POPIA notice to data subjects on its website.",
@@ -3140,10 +3140,10 @@
         "id": "za-cy-x38",
         "question": "The board asks why operational resilience is a matter of capital, not only of IT. Which point from Directive 4 answers best?",
         "options": [
-          "Resilience costs are deducted from capital automatically",
+          "Resilience spending is deducted from regulatory capital automatically under the Banks Act regulations",
           "The FSCA sets capital for IT projects",
           "POPIA fines are paid out of regulatory capital",
-          "Regulation 38(4) lets the PA require additional capital if resilience policies are inadequate"
+          "Regulation 38(4) lets the PA require extra capital if resilience is inadequate"
         ],
         "answer": 3,
         "explanation": "Directive 4 explains that where the PA considers a bank's resilience policies inadequate, regulation 38(4) allows it to require extra capital or alignment of policies with risk exposure.",
@@ -3179,8 +3179,8 @@
         "id": "za-cy-x41",
         "question": "Which piece of evidence best shows the PA that Marula meets the paragraph 7.2.7 training duty?",
         "options": [
-          "A copy of the cyber policy on the intranet",
-          "Completion records for all users, board training records and the latest programme review",
+          "A copy of the cyber policy on the intranet, with a note that all staff were told to read it this year",
+          "Completion records for all users, board training records and the latest review",
           "A single email reminding staff to be careful",
           "The vendor's brochure for the e-learning tool"
         ],
@@ -3192,9 +3192,9 @@
         "id": "za-cy-x42",
         "question": "Joint Standard 2 requires banks to take part in cyber threat information sharing. What is the main aim?",
         "options": [
-          "To share and receive timely, actionable information on threats, vulnerabilities and incidents",
+          "To share and receive timely, actionable information on threats and incidents",
           "To publish customers' personal information",
-          "To replace the bank's own monitoring",
+          "To replace the bank's own security monitoring with information supplied by other banks and agencies",
           "To advertise the bank's security products"
         ],
         "answer": 0,
@@ -3205,9 +3205,9 @@
         "id": "za-cy-x43",
         "question": "A data scientist wants to test a new model using a full copy of production customer data in a development environment without production-level controls. What does Joint Standard 2 require?",
         "options": [
-          "Restrict it unless equivalent controls exist; exceptions need safeguards and senior management approval",
+          "Restrict it unless equivalent controls exist; exceptions need safeguards and senior approval",
           "Allow it, because development is internal",
-          "Allow it if the data scientist signs a POPIA declaration",
+          "Allow it if the data scientist signs a POPIA confidentiality declaration and deletes the copy within a year",
           "Allow it only on weekends"
         ],
         "answer": 0,
@@ -3220,8 +3220,8 @@
         "options": [
           "Only POPIA, because it is an Act",
           "Only Joint Standard 2, because it is the newest",
-          "Only the FIC Act, because it covers all bank risk",
-          "Directive 4 resilience, Joint Standards 1 and 2 governance and cyber controls, and POPIA privacy safeguards"
+          "Only the FIC Act, because its risk management and compliance programme covers all risks a bank faces",
+          "Directive 4 resilience, both Joint Standards' controls, and POPIA safeguards"
         ],
         "answer": 3,
         "explanation": "Each instrument has its own scope and authority: the PA's directive, the joint PA and FSCA standards, and POPIA enforced by the Information Regulator. The bank must evidence each on its own terms.",

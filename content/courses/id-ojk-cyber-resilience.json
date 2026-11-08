@@ -11,7 +11,7 @@
     "Bank contractors and consultants with system access"
   ],
   "hours": 6,
-  "description": "This quest teaches the information technology, cyber security and data rules that the Financial Services Authority (Otoritas Jasa Keuangan, OJK) sets for conventional commercial banks in Indonesia. It is based on **OJK Regulation (POJK) 11/POJK.03/2022** on the use of information technology by commercial banks, **OJK Board Member Regulation (PADK) 1 of 2026** on IT operation by commercial banks (in force 1 March 2026), **OJK Circular (SEOJK) 29/SEOJK.03/2022** on cyber resilience and security, the bank secrecy articles of the Banking Law as amended by **Law 4 of 2023 (the P2SK Law)**, and, in general terms, **Law 27 of 2022 on Personal Data Protection**.\n\nPADK 1/2026 expects the security policy to include training and an awareness programme and requires security training or briefings for employees, consultants, temporary staff and IT provider staff according to their roles. SEOJK 29/2022 expects a cyber awareness programme at least once a year, checked by phishing simulation at least yearly. This quest supports those duties for all staff, with deeper material for IT, risk, cyber and data protection teams.\n\nIn five stages at a fictional Indonesian bank you cover IT governance, people and access, cyber resilience, incident reporting to OJK, providers and disaster recovery, and secrecy, personal data and audit readiness.\n\nThe quest builds knowledge and does not replace your bank's own information security, IT and data protection policies; always follow them and the current official OJK texts.",
+  "description": "This quest teaches the information technology, cyber security and data rules that the Financial Services Authority (Otoritas Jasa Keuangan, OJK) sets for conventional commercial banks in Indonesia. It is based on **OJK Regulation (POJK) 11/POJK.03/2022** on the use of information technology by commercial banks, **OJK Board Member Regulation (PADK) 1 of 2026** on IT operation by commercial banks (in force 1 March 2026), **OJK Circular (SEOJK) 29/SEOJK.03/2022** on cyber resilience and security, the bank secrecy articles of the Banking Law as amended by **Law 4 of 2023 (the P2SK Law)**, and, in general terms, **Law 27 of 2022 on Personal Data Protection**.\n\nPADK 1/2026 expects the security policy to include training and an awareness programme and requires security training or briefings for employees, consultants, temporary staff and IT provider staff according to their roles. SEOJK 29/2022 expects a cyber awareness programme at least once a year, checked by phishing simulation at least yearly. This quest supports those duties.\n\nThe quest builds knowledge and does not replace your bank's own information security, IT and data protection policies; always follow them and the current official OJK texts.",
   "audience": [
     "All employees of conventional commercial banks in Indonesia who need yearly security and cyber awareness",
     "Consultants, temporary staff and IT service provider staff with access to bank systems or information",
@@ -38,7 +38,7 @@
       {
         "id": "andreas",
         "name": "Andreas Wijaya",
-        "role": "Head of Cyber Resilience and Security Unit, Jakarta, your mentor",
+        "role": "Head of Cyber Security Unit, Jakarta, your mentor",
         "look": {
           "skin": 2,
           "hair": "short",
@@ -502,9 +502,9 @@
           "id": "id-cy-s1-q3",
           "question": "Under POJK 11/2022, who must at least sit on the IT steering committee?",
           "options": [
-            "The president commissioner, the internal audit head and the IT head",
-            "Every director and the head of each branch region",
-            "The compliance director, an external auditor and the IT head",
+            "The president commissioner, the head of internal audit and the head of the IT unit",
+            "Every director of the bank plus the head of each regional branch network",
+            "The compliance director, an external IT auditor and the head of the IT unit",
             "The IT director, the risk director and the heads of the IT unit and of the IT user unit"
           ],
           "answer": 3,
@@ -554,10 +554,10 @@
           "id": "id-cy-s1-q7",
           "question": "A regional bank wants to host its core banking system in a data centre in Singapore. What does POJK 11/2022 say?",
           "options": [
-            "It is allowed if the provider is ISO 27001 certified",
-            "It is allowed if customers are told in the terms and conditions",
-            "Systems sit in Indonesia; placing them abroad needs OJK permission and must meet set criteria",
-            "It is banned outright with no exceptions"
+            "It is allowed if the Singapore provider holds a current ISO 27001 security certificate",
+            "It is allowed if customers are told about it in the account terms and conditions",
+            "It must stay in Indonesia unless OJK grants a permit for a listed kind of system",
+            "It is banned outright, with no exceptions for any kind of system at any bank"
           ],
           "answer": 2,
           "explanation": "Article 35 puts data centres and DR centres in Indonesia by default, with offshore placement only by OJK permit for listed kinds of systems such as group risk or AML systems. Certification or customer notice alone does not replace the permit.",
@@ -567,9 +567,9 @@
           "id": "id-cy-s1-q8",
           "question": "Which statement best describes how PADK 1/2026 relates to POJK 11/2022?",
           "options": [
-            "It replaces POJK 11 entirely from March 2026",
-            "It applies only to Sharia business units",
-            "It is a voluntary industry code with no legal force",
+            "It replaces POJK 11 entirely from 1 March 2026 and becomes the main regulation",
+            "It applies only to Sharia business units and not to conventional banks",
+            "It is a voluntary industry code agreed by bank associations, with no legal force",
             "It implements POJK 11 with detailed guidance, report formats and permit procedures"
           ],
           "answer": 3,
@@ -581,9 +581,9 @@
           "question": "POJK 11/2022 says information security must cover four aspects of IT operation. Which list is correct?",
           "options": [
             "Human resources, process, technology and the physical or environmental side",
-            "Hardware, software, network and data only",
-            "Confidentiality, integrity, availability and privacy",
-            "Front office, back office, IT and audit"
+            "Hardware, software, network equipment and stored data, and nothing else",
+            "Confidentiality, integrity, availability and privacy of customer information",
+            "Front office, back office, the IT unit and the internal audit unit"
           ],
           "answer": 0,
           "explanation": "Article 16(2) lists human resources, process, technology and physical or environmental aspects. Confidentiality, integrity and availability are the goals of security, not the four aspects.",
@@ -593,10 +593,10 @@
           "id": "id-cy-s1-q10",
           "question": "A director asks why tellers need IT security training when the IT unit runs the systems. Which point from POJK 11 answers best?",
           "options": [
-            "Tellers are legally IT staff because they use terminals",
-            "Good IT governance applies to every IT user unit as well as the IT unit itself",
-            "OJK tests every teller personally each year",
-            "Only tellers handle customer passwords"
+            "Tellers are legally classed as IT staff because they use terminals every day",
+            "IT governance covers IT user units, not only the IT unit",
+            "OJK examines every teller personally on security each year during inspections",
+            "Only tellers handle customer passwords, so only they need the training"
           ],
           "answer": 1,
           "explanation": "Article 2(4) applies good IT governance to IT managing units and IT user units. Article 16 adds that security covers people. Tellers are users, which is why they are in scope; OJK does not test individual tellers.",
@@ -957,10 +957,10 @@
           "id": "id-cy-s2-q2",
           "question": "A vendor's engineer works on site with access to bank data. Under PADK 1/2026, what should be in place besides the bank-vendor contract?",
           "options": [
-            "Nothing more, because the contract binds the vendor's staff",
-            "A deposit paid by the engineer as security",
-            "The engineer's own signed confidentiality agreement and a role-based security briefing",
-            "Approval from OJK for each vendor engineer"
+            "Nothing more, because the bank-vendor contract already binds all vendor staff",
+            "A cash deposit paid by the engineer as security against any data leak",
+            "A personal confidentiality agreement and a role-based security briefing",
+            "Written approval from OJK for each vendor engineer who works on site"
           ],
           "answer": 2,
           "explanation": "PADK 1/2026 asks for NDA clauses in the provider contract and for every provider employee assigned to the bank with data access to sign a confidentiality agreement; provider staff also receive security training or briefings by role.",
@@ -983,10 +983,10 @@
           "id": "id-cy-s2-q4",
           "question": "A consultant's contract ends on 31 May, but HR only learns of it in July. What control did the bank miss?",
           "options": [
-            "An annual penetration test of the consultant's laptop",
-            "A procedure to return assets and change or close access when duties or contracts end",
-            "A disaster recovery test including the consultant",
-            "A data protection impact assessment"
+            "An annual penetration test of the consultant's laptop by an outside firm",
+            "A procedure to close access and recover assets when contracts end",
+            "A disaster recovery test that includes the consultant's systems and accounts",
+            "A data protection impact assessment of the consultant's whole project"
           ],
           "answer": 1,
           "explanation": "PADK 1/2026 requires procedures to return assets and change or close access for employees, consultants, temporary staff and provider staff when duties change or contracts end. The other tests do not address leaver access.",
@@ -1009,10 +1009,10 @@
           "id": "id-cy-s2-q6",
           "question": "Which authentication approach fits PADK 1/2026 for a high-risk administrator console?",
           "options": [
-            "Use a shared team password so nobody gets locked out",
-            "Rely on the network firewall and skip user authentication",
-            "Combine factors chosen by risk analysis, such as a password plus a hardware token",
-            "Use the device's default administrator account"
+            "Use a shared team password so nobody gets locked out during an emergency",
+            "Rely on the network firewall and skip individual user authentication",
+            "Combine factors chosen by risk, such as password plus token",
+            "Use the device's default administrator account, which the vendor supports"
           ],
           "answer": 2,
           "explanation": "PADK 1/2026 asks banks to choose identification and authentication methods by risk, using one or a combination of what you know, what you have and what you are. Shared and default accounts break accountability and default credentials must be changed.",
@@ -1049,9 +1049,9 @@
           "question": "Which statement about the security policy matches PADK 1/2026?",
           "options": [
             "It is communicated regularly to all personnel and relevant external parties",
-            "It is a confidential board document shown only to the IT head",
-            "It is written once and never changed",
-            "It is the same for every bank and issued by OJK"
+            "It is a confidential board document shown only to the head of the IT unit",
+            "It is written once at the bank's licensing and never needs to be changed",
+            "It is a standard text issued by OJK and must be identical at every bank"
           ],
           "answer": 0,
           "explanation": "PADK 1/2026 says the policy must suit the bank's risk appetite, be communicated regularly to all personnel and relevant outside parties, and be evaluated regularly and after important changes.",
@@ -1061,10 +1061,10 @@
           "id": "id-cy-s2-q10",
           "question": "A bank trains permanent staff on security every year but excludes the IT service provider's helpdesk engineers working at the bank, because they are the vendor's employees. Assess this under PADK 1/2026.",
           "options": [
-            "It is fine, because the vendor carries the risk",
-            "It is fine if the vendor holds an ISO certificate",
-            "It falls short only if the engineers handle cash",
-            "It falls short: provider staff must also receive security training or briefings suited to their role"
+            "It is fine, because the IT vendor carries all the risk for its own employees",
+            "It is fine as long as the vendor holds an international ISO security certificate",
+            "It falls short only if the engineers also handle cash or customer deposits",
+            "It falls short: provider staff must also get role-based security training"
           ],
           "answer": 3,
           "explanation": "PADK 1/2026 names IT provider staff, consultants and temporary staff alongside employees for security training or briefings. A certificate or contract does not move the bank's duty to the vendor.",
@@ -1415,10 +1415,10 @@
           "id": "id-cy-s3-q1",
           "question": "Which four processes does POJK 11/2022 Article 21 require a bank to carry out to keep cyber resilience?",
           "options": [
-            "Identify assets, threats and weaknesses; protect assets; detect incidents; respond and recover",
-            "Plan, build, run and monitor IT systems",
-            "Prevent, insure, outsource and audit cyber risk",
-            "Classify, encrypt, back up and delete data"
+            "Identify, protect, detect, and respond and recover",
+            "Plan, build, run and monitor IT systems and applications",
+            "Prevent, insure, outsource and audit all cyber risk exposure",
+            "Classify, encrypt, back up and delete customer and bank data"
           ],
           "answer": 0,
           "explanation": "Article 21(2) lists identification of assets, threats and vulnerabilities; protection of assets; detection of cyber incidents; and response and recovery. Plan, build, run and monitor are the activities of IT management under Article 8.",
@@ -1428,10 +1428,10 @@
           "id": "id-cy-s3-q2",
           "question": "Which factors does SEOJK 29/2022 use to assess inherent cyber risk?",
           "options": [
-            "Capital, assets, management and earnings",
-            "Technology, bank products, organisational characteristics and cyber incident record",
-            "Governance, framework, process and controls",
-            "Customers, geography, channels and products"
+            "Capital, asset quality, management, earnings and liquidity",
+            "Technology, products, organisation and incident record",
+            "Governance, framework, process and people, and controls",
+            "Customers, geography, delivery channels and product types"
           ],
           "answer": 1,
           "explanation": "The circular assesses inherent cyber risk from technology, bank products, organisational characteristics and the cyber incident track record. Governance, framework, process and controls are the aspects of cyber risk management quality used in the maturity assessment.",
@@ -1454,10 +1454,10 @@
           "id": "id-cy-s3-q4",
           "question": "How should results of penetration tests done in March, July and November be submitted to OJK?",
           "options": [
-            "Each within 10 working days of the test",
-            "Each within 24 hours as an incident notice",
-            "Only on request during an OJK examination",
-            "Compiled in the report on the current condition of IT operation after the year ends"
+            "Each one within 10 working days after the test is completed",
+            "Each one within 24 hours, using the incident notice format",
+            "Only when OJK asks for them during an on-site examination",
+            "Compiled in the yearly IT condition report"
           ],
           "answer": 3,
           "explanation": "Vulnerability-based test results go to OJK as part of the yearly report on the current condition of IT operation, within 15 working days after the reporting year. The 10-working-day rule is for scenario-based tests.",
@@ -1493,10 +1493,10 @@
           "id": "id-cy-s3-q7",
           "question": "A bank's awareness programme has used the same slides since 2022. Which SEOJK 29 expectation does this miss?",
           "options": [
-            "Running the programme at least every three years",
-            "Translating the slides into English",
-            "Reviewing and updating the programme so it covers relevant and emerging cyber threats",
-            "Having OJK approve the slides in advance"
+            "Running the programme at least once every three years for all staff",
+            "Translating the slides into English for the foreign shareholders",
+            "Keeping the content updated for current and emerging threats",
+            "Having OJK approve the slides in advance before every session"
           ],
           "answer": 2,
           "explanation": "The circular expects the awareness programme to be reviewed regularly and updated so its content matches current and emerging threats. There is no OJK pre-approval or English requirement.",
@@ -1519,10 +1519,10 @@
           "id": "id-cy-s3-q9",
           "question": "Which topics does SEOJK 29/2022 suggest for cyber capacity building of relevant staff?",
           "options": [
-            "Social engineering such as phishing and impersonation calls, safe handling of sensitive data and accidental data leaks",
-            "Only firewall configuration for network engineers",
-            "Only the bank's marketing of digital products",
-            "Only physical security of branches"
+            "Social engineering, safe handling of sensitive data and accidental leaks",
+            "Only firewall configuration and routing for the network engineering team",
+            "Only the bank's marketing campaigns for its new digital products",
+            "Only physical security of branches, vaults and the data centre"
           ],
           "answer": 0,
           "explanation": "The listed topics include current threats and social engineering (phishing, scam phone and impersonation calls), attack tactics, secure authentication and handling of sensitive data, accidental leaks, data protection, secure coding and incident response, matched to each role.",
@@ -1532,10 +1532,10 @@
           "id": "id-cy-s3-q10",
           "question": "A director says the cyber awareness programme is for staff, not the board. Which response reflects SEOJK 29/2022?",
           "options": [
-            "Directors are exempt if they hold a risk management certificate",
-            "Board awareness is optional for banks below a certain size",
-            "Capacity building should reach relevant staff including directors, commissioners and management",
-            "Only commissioners need it, because they supervise"
+            "Directors are exempt if they already hold a risk management certificate",
+            "Board awareness is optional for banks below a certain asset size",
+            "Capacity building should reach relevant staff up to the boards",
+            "Only commissioners need it, because they supervise and do not manage"
           ],
           "answer": 2,
           "explanation": "The circular expects a continuing cyber capacity programme for relevant staff including the boards and management, and expects directors and commissioners to understand cyber risk management. No exemption by certificate or size is given.",
@@ -1760,7 +1760,7 @@
           "situation": "Your payment switch provider admits attackers reached a server with customer names and account numbers four days ago and told the bank only today. The bank is also handling a DDoS attack. What is the right course?",
           "choices": [
             {
-              "text": "Treat it as a significant incident: send OJK the initial notice within 24 hours of the bank learning of it, report the provider condition to OJK within 3 working days, decide follow-up including possible termination, and enforce the contract's reporting clause.",
+              "text": "Notify OJK within 24 hours of the bank learning of it, report the provider breach to OJK within 3 working days, decide follow-up including possible exit, and enforce the reporting clause.",
               "outcome": "Best. The bank's 24-hour clock runs from when the bank knew, the provider breach is a listed condition requiring a report within 3 working days under Article 32, and the bank must decide its response.",
               "score": 2
             },
@@ -1878,10 +1878,10 @@
           "id": "id-cy-s4-q1",
           "question": "How does POJK 11/2022 define an IT incident?",
           "options": [
-            "Any IT problem a customer complains about",
-            "Only an attack by an outside hacker",
-            "Any system downtime longer than one hour",
-            "A critical event, misuse or crime in IT operation, either cyber or non-cyber"
+            "Any IT problem that a customer complains about through any channel",
+            "Only an attack on the bank's systems carried out by an outside hacker",
+            "Any system downtime longer than one hour, whatever its cause or effect",
+            "A critical event, misuse or crime in IT, cyber or non-cyber"
           ],
           "answer": 3,
           "explanation": "The elucidation of Article 60 defines an IT incident as a critical event, misuse and/or crime in IT operation, split into cyber and non-cyber incidents. Reporting duties then depend on significant loss or disruption.",
@@ -1904,10 +1904,10 @@
           "id": "id-cy-s4-q3",
           "question": "Where does a bank send the initial notice of a significant cyber incident?",
           "options": [
-            "To the national police cyber unit only",
-            "To its OJK supervisors, in writing by electronic means such as official email",
-            "To customers through a press release",
-            "To Bank Indonesia, which forwards it to OJK"
+            "To the national police cyber crime unit only, not to OJK directly",
+            "To its OJK supervisors in writing, for example by official email",
+            "To customers through a press release and the bank's social media",
+            "To Bank Indonesia, which then forwards the notice on to OJK"
           ],
           "answer": 1,
           "explanation": "POJK 11 and SEOJK 29 direct the initial notice to the bank's supervising unit at OJK, in writing through electronic means; the elucidation gives official email as an example.",
@@ -1956,10 +1956,10 @@
           "id": "id-cy-s4-q7",
           "question": "An IT provider tells the bank it is about to be declared bankrupt. What must the bank do under POJK 11/2022?",
           "options": [
-            "Wait until the court ruling before acting",
-            "Report to OJK within 3 working days of knowing and decide follow-up, including ending the arrangement if needed",
-            "Report it in the next yearly IT condition report",
-            "Ask OJK to appoint a replacement provider"
+            "Wait until the court rules on the bankruptcy before taking any action",
+            "Report to OJK within 3 working days and decide follow-up",
+            "Report it in the next yearly report on the current condition of IT",
+            "Ask OJK to appoint a replacement provider and transfer the contract"
           ],
           "answer": 1,
           "explanation": "Article 32 lists provider insolvency, liquidation or bankruptcy among conditions requiring action: report to OJK within 3 working days, decide follow-up, and report within 3 working days if the contract is ended early.",
@@ -1982,10 +1982,10 @@
           "id": "id-cy-s4-q9",
           "question": "What does the business impact analysis in a disaster recovery plan determine, according to PADK 1/2026?",
           "options": [
-            "The bank's yearly IT budget",
-            "The order in which staff take annual leave",
-            "Which customers receive compensation first",
-            "Criticality of processes and limits such as maximum tolerable downtime, recovery time and recovery point"
+            "The bank's yearly IT budget and the planned spend on new hardware",
+            "The order in which IT and business staff may take their annual leave",
+            "Which customers receive compensation first after a long system outage",
+            "Process criticality and limits such as MTD, RTO and RPO"
           ],
           "answer": 3,
           "explanation": "PADK 1/2026 lists the analysis of process criticality, dependencies, provider reliance, MTD, RTO and RPO, minimum resources, communication paths and legal impacts such as customer data confidentiality.",
@@ -1995,10 +1995,10 @@
           "id": "id-cy-s4-q10",
           "question": "During a DDoS attack, the team wants to restore service by switching to an untested backup route without telling management. What does PADK 1/2026 expect?",
           "options": [
-            "Solutions are applied after management approval, with escalation to crisis procedures if the incident cannot be contained",
-            "The team may act alone because speed is all that matters",
-            "The team must first obtain OJK's written approval",
-            "The team should wait for the provider to fix it"
+            "Fixes need management approval; uncontained incidents escalate to crisis",
+            "The team may act alone and tell management later, because speed is everything",
+            "The team must first obtain OJK's written approval before changing the routing",
+            "The team should stop and wait for the network provider to fix the attack"
           ],
           "answer": 0,
           "explanation": "PADK 1/2026 says the response team implements solutions with prior management approval and escalates to management to activate crisis handling if the incident cannot be controlled. OJK approval is not needed for operational fixes.",
@@ -2176,7 +2176,7 @@
         {
           "type": "concept",
           "title": "Personal data in bank IT: what PADK 1/2026 adds",
-          "body": "POJK 11 Articles 43-45 require **effective data management**, **personal data protection principles**, an **impact assessment** where risk rises, and set rules for **data exchange**. PADK 1/2026 gives the detail:\n\n- **Consent** before processing customers' personal data: explicit and documented; **no pre-ticked boxes**; plain language; purpose stated; **separate choices** for different purposes; legal basis explained; customers told they can **withdraw** or **refuse**; consent to unrelated uses is not a condition of service; data deleted after retention ends.\n- **Impact assessment** when risk rises, for example **new technology**, **tracking location and behaviour**, **large-scale monitoring of public places**, or **sensitive data on ethnicity, religion, race or inter-group relations**. It describes the processing, tests necessity and proportionality, assesses risks to customers' rights and sets safeguards.\n- **Data exchange** rules: policies, agreements (scope, purpose, data types, roles, security, emergencies) and data classes.\n- The bank **may appoint an officer** responsible for applying data protection principles."
+          "body": "POJK 11 Articles 43-45 require **effective data management**, **personal data protection principles**, an **impact assessment** where risk rises, and set rules for **data exchange**. PADK 1/2026 gives the detail:\n\n- **Consent** before processing customers' personal data: explicit and documented; **no pre-ticked boxes**; plain language; purpose stated; **separate choices** per purpose; right to **withdraw** or **refuse**; unrelated consent is not a condition of service; deletion after retention ends.\n- **Impact assessment** when risk rises, for example **new technology**, **tracking location and behaviour**, **large-scale monitoring of public places**, or **sensitive data on ethnicity, religion, race or inter-group relations**. It describes the processing, tests necessity and proportionality, assesses risks to customers' rights and sets safeguards.\n- **Data exchange** rules: policies, agreements (scope, purpose, data types, roles, security, emergencies) and data classes.\n- The bank **may appoint an officer** responsible for applying data protection principles."
         },
         {
           "type": "match",
@@ -2238,7 +2238,7 @@
           "situation": "With one quarter until OJK's IT examination, the bank finds: no IT internal audit for 18 months, an external review of the IT audit function four years old, short audit-log retention, and scattered training records. What do you recommend?",
           "choices": [
             {
-              "text": "Schedule the yearly IT internal audit now, commission the overdue independent external review, fix log retention to support investigations, and build one training register covering employees, consultants, temps and provider staff; disclose the gaps honestly.",
+              "text": "Run the overdue IT internal audit and external review now, fix log retention, build one training register for employees, consultants, temps and provider staff, and disclose the gaps honestly.",
               "outcome": "Best. POJK 11 requires IT internal audit at least yearly, an independent external review of that function at least every three years, and audit trails for supervision and investigation; a single register proves role-based training reached everyone PADK 1/2026 names.",
               "score": 2
             },
@@ -2282,7 +2282,7 @@
             },
             {
               "label": "Cyber ratings and test results",
-              "value": "In the IT condition report",
+              "value": "With IT condition report",
               "detail": "Inherent risk, maturity, risk level and vulnerability tests."
             },
             {
@@ -2292,7 +2292,7 @@
             },
             {
               "label": "Incidents",
-              "value": "24 hours / 5 working days",
+              "value": "24 hours, 5 work days",
               "detail": "Initial notice and incident report (Art. 60)."
             }
           ]
@@ -2405,10 +2405,10 @@
           "id": "id-cy-s5-q4",
           "question": "Which consent design is in line with PADK 1/2026?",
           "options": [
-            "One pre-ticked box covering all current and future purposes",
-            "Consent implied when the customer keeps using the app",
-            "Consent to marketing required before an account can be opened",
-            "Separate unticked choices for each purpose, in plain language, with the right to withdraw explained"
+            "One pre-ticked box covering all current and any future purposes",
+            "Consent implied whenever the customer keeps using the mobile app",
+            "Consent to marketing required before any account can be opened",
+            "Separate unticked choices per purpose, in plain language"
           ],
           "answer": 3,
           "explanation": "PADK 1/2026 rules out automatic or pre-ticked consent, asks for plain language, separate options for different purposes, information on the right to withdraw and refuse, and bars making unrelated consent a condition of service.",
@@ -2444,10 +2444,10 @@
           "id": "id-cy-s5-q7",
           "question": "Why must a bank keep audit trails of IT activity under POJK 11/2022?",
           "options": [
-            "Only to calculate staff overtime",
-            "To support supervision, law enforcement, dispute resolution, verification and testing",
-            "Only to meet tax filing rules",
-            "Only for marketing analytics"
+            "Only to calculate staff overtime and attendance for the payroll",
+            "For supervision, law enforcement, disputes and verification",
+            "Only to meet the tax office's filing rules for the bank's income",
+            "Only to support marketing analytics on customer app behaviour"
           ],
           "answer": 1,
           "explanation": "Article 54(2) requires audit trails of all IT activity for supervision, law enforcement, settling disputes, verification, testing and other examinations. Short log retention undermines this.",
@@ -2470,10 +2470,10 @@
           "id": "id-cy-s5-q9",
           "question": "A bank shares customers' transaction data with a fintech partner. Which document does PADK 1/2026 expect?",
           "options": [
-            "A data-exchange agreement covering scope, purpose, data types, roles, security and emergencies",
-            "A press release announcing the partnership",
-            "A single email from the partner promising care",
-            "OJK's prior written approval for each file sent"
+            "A data-exchange agreement covering purpose, roles and security",
+            "A joint press release announcing the partnership and its benefits",
+            "A single email from the partner promising to take good care of the data",
+            "OJK's prior written approval for each data file sent to the partner"
           ],
           "answer": 0,
           "explanation": "PADK 1/2026 asks for adequate cooperation agreements for data exchange with third parties, covering scope and duration, nature and purpose, data types, rights and duties of the parties, security and emergency exchange. POJK 11 Article 45 also requires customer consent to be considered.",
@@ -2483,10 +2483,10 @@
           "id": "id-cy-s5-q10",
           "question": "Which record best proves to OJK that the bank met PADK 1/2026's training expectation for information security?",
           "options": [
-            "The vendor's marketing brochure about its training courses",
-            "Board minutes approving the training budget",
-            "A register showing role-based training or briefings for employees, consultants, temps and provider staff",
-            "A copy of OJK's regulation on the intranet"
+            "The vendor's marketing brochure describing its security training courses",
+            "Board minutes approving next year's budget for security training",
+            "A per-person register of role-based training for all four groups",
+            "A copy of OJK's regulation published on the bank's staff intranet"
           ],
           "answer": 2,
           "explanation": "PADK 1/2026 expects training or briefings for all four groups by role. Only a record per person shows it happened; budgets and copies of rules show intent, not delivery.",
@@ -2612,10 +2612,10 @@
         "id": "id-cy-x2",
         "question": "Which pair correctly describes the IT roles of the Board of Directors and the Board of Commissioners under POJK 11/2022?",
         "options": [
-          "Directors set the IT strategic plan and policies; commissioners evaluate, direct and monitor the plan and IT governance",
-          "Commissioners set IT policies; directors only approve the budget",
-          "Both boards run the IT unit jointly day to day",
-          "Directors monitor; commissioners write the IT strategic plan"
+          "Directors set IT strategy and policy; commissioners oversee both",
+          "Commissioners set IT policies; directors only approve the IT budget",
+          "Both boards run the IT unit jointly and share day-to-day decisions",
+          "Directors only monitor; commissioners write the IT strategic plan"
         ],
         "answer": 0,
         "explanation": "Article 5 gives directors the IT strategic plan, policies, standards and procedures and monitoring of IT; Article 6 gives commissioners evaluation, direction and monitoring of the plan and of IT governance.",
@@ -2625,9 +2625,9 @@
         "id": "id-cy-x3",
         "question": "An IT steering committee includes the IT director (chair), the head of the IT unit and the heads of two user units. What is missing under POJK 11/2022?",
         "options": [
-          "An independent commissioner",
-          "The head of internal audit",
-          "A representative of the IT provider",
+          "An independent commissioner chosen by the shareholders",
+          "The head of internal audit as a voting member",
+          "A senior representative of the bank's main IT provider",
           "The director in charge of the risk management unit"
         ],
         "answer": 3,
@@ -2638,10 +2638,10 @@
         "id": "id-cy-x4",
         "question": "A bank plans to have an overseas provider process its card transactions outside Indonesia. What does POJK 11/2022 require?",
         "options": [
-          "Only notice to customers in the card terms",
-          "OJK permission, meeting conditions such as prudence, provider rules and keeping supporting documents in Indonesia",
-          "Only the provider's ISO certification",
-          "A Bank Indonesia licence instead of OJK's"
+          "Only notice to cardholders in the card terms and conditions",
+          "OJK permission, granted only if set conditions are met",
+          "Only the overseas provider's ISO security certification",
+          "A Bank Indonesia licence, which replaces any OJK permission"
         ],
         "answer": 1,
         "explanation": "Article 39 keeps IT-based transaction processing in Indonesia, allowing processing by a provider abroad only with OJK permission and set conditions, including that supporting financial documents are kept at the bank's office in Indonesia.",
@@ -2651,10 +2651,10 @@
         "id": "id-cy-x5",
         "question": "OJK grants a bank permission to place a group risk system in a data centre abroad. Eight months later the bank still has not moved it. What happens?",
         "options": [
-          "Nothing, permits have no deadline",
-          "The bank pays a daily fine until it moves",
-          "The permission lapses, because implementation was due within six months",
-          "OJK automatically extends the permit by a year"
+          "Nothing happens, because OJK permits have no time limit",
+          "The bank pays a daily fine until the system is moved",
+          "The permit lapses after six months without implementation",
+          "OJK automatically extends the permit for another year"
         ],
         "answer": 2,
         "explanation": "Article 41 requires implementation within six months of permission; otherwise the permission is no longer valid.",
@@ -2664,10 +2664,10 @@
         "id": "id-cy-x6",
         "question": "Which statement about OJK's IT rule set is accurate as of November 2026?",
         "options": [
-          "POJK 11/2022 is in force, implemented by PADK 1/2026, with SEOJK 29/2022 as the cyber circular",
-          "SEOJK 21/2017 is still the main IT risk guide",
-          "PADK 1/2026 revoked POJK 11/2022 and SEOJK 29/2022",
-          "POJK 38/2016 is still in force alongside POJK 11/2022"
+          "POJK 11 is in force, implemented by PADK 1, with SEOJK 29 for cyber",
+          "SEOJK 21/2017 is still the main IT risk management guide for banks",
+          "PADK 1/2026 revoked both POJK 11/2022 and SEOJK 29/2022 in March",
+          "POJK 38/2016 is still in force and applies alongside POJK 11/2022"
         ],
         "answer": 0,
         "explanation": "PADK 1/2026 (from 1 March 2026) revoked only SEOJK 21/2017. POJK 11/2022 revoked POJK 38/2016 and its 2020 amendment. SEOJK 29/2022 still covers cyber resilience.",
@@ -2703,10 +2703,10 @@
         "id": "id-cy-x9",
         "question": "According to its own preamble, why was PADK 1/2026 issued?",
         "options": [
-          "To replace the Banking Law's secrecy provisions",
-          "To carry out several articles of POJK 11/2022 and support continuity of bank IT operations and services",
-          "To regulate payment systems run by Bank Indonesia",
-          "To set rules only for Sharia business units"
+          "To replace the bank secrecy provisions in the Banking Law",
+          "To implement listed POJK 11 articles and support IT continuity",
+          "To regulate payment systems operated by Bank Indonesia",
+          "To set IT rules that apply only to Sharia business units"
         ],
         "answer": 1,
         "explanation": "PADK 1/2026 says it implements fifteen listed articles of POJK 11/2022 and supports continuity of operations and bank services that use IT. Payment systems are Bank Indonesia's field.",
@@ -2716,10 +2716,10 @@
         "id": "id-cy-x10",
         "question": "A temporary staff member in IT support is given an administrator account with no signed acceptance of responsibility. Which PADK 1/2026 control is missing?",
         "options": [
-          "A yearly penetration test of the temp's computer",
-          "OJK approval of the temp's appointment",
-          "A disaster recovery test that includes the temp",
-          "A signed statement or agreement accepting responsibility for the user-ID and password when it is issued"
+          "A yearly penetration test of the temporary worker's computer",
+          "OJK approval of the temporary worker's appointment to IT",
+          "A disaster recovery test that includes the temporary worker",
+          "A signed acceptance of responsibility for the account"
         ],
         "answer": 3,
         "explanation": "PADK 1/2026 says user-ID owners, especially employees, temporary staff and provider staff, sign a statement of responsibility or usage agreement when they receive the account and initial password or PIN.",
@@ -2729,10 +2729,10 @@
         "id": "id-cy-x11",
         "question": "Which reason best explains why PADK 1/2026 asks banks to link role changes to access changes?",
         "options": [
-          "To reduce the number of software licences",
-          "Access must follow business need with minimum rights, so old rights are removed when duties change or end",
-          "To let staff keep useful access after transfers",
-          "To make audits shorter"
+          "To reduce the number of software licences the bank pays for",
+          "Access must match current duties, with minimum rights",
+          "To let staff keep useful access after transfers for continuity",
+          "To make internal audits of user accounts shorter and cheaper"
         ],
         "answer": 1,
         "explanation": "PADK 1/2026 bases access on business need with the least access possible, and requires procedures to change or close access when duties change or contracts end.",
@@ -2742,10 +2742,10 @@
         "id": "id-cy-x12",
         "question": "A branch shares a network folder of customer files with no password. Which PADK 1/2026 rule applies?",
         "options": [
-          "File or folder sharing must at least be restricted by password or PIN and limited to authorised people",
-          "Shared folders are banned outright in all banks",
-          "Shared folders need OJK's permission",
-          "Only folders holding public data need protection"
+          "Restrict it by password or PIN and to authorised people",
+          "Shared folders are banned outright at every bank in Indonesia",
+          "Shared folders need OJK's written permission before any use",
+          "Only shared folders holding public data need any protection"
         ],
         "answer": 0,
         "explanation": "PADK 1/2026 says banks using file or folder sharing must restrict access at least through a password or PIN and by setting who is authorised.",
@@ -2768,10 +2768,10 @@
         "id": "id-cy-x14",
         "question": "A provider employee notices he can open a system he should not have access to. Under PADK 1/2026, what is expected of him?",
         "options": [
-          "Use the access carefully until the contract ends",
-          "Tell only his own employer and wait",
-          "Post the weakness on a public forum to warn others",
-          "Report it to the bank's designated point of contact as a possible security incident"
+          "Keep using the access carefully until his contract with the bank ends",
+          "Tell only his own employer and wait for the vendor to decide what to do",
+          "Post details of the weakness on a public forum to warn other banks",
+          "Report it to the bank's point of contact for security incidents"
         ],
         "answer": 3,
         "explanation": "PADK 1/2026 gives unauthorised access as an example of a security incident and expects employees, temporary staff and provider staff to report any sign of one to the point of contact. Banks may even consider rewarding such reports.",
@@ -2794,10 +2794,10 @@
         "id": "id-cy-x16",
         "question": "A system administrator role is being filled. HR proposes skipping background checks to save time. Which response fits PADK 1/2026?",
         "options": [
-          "Keep the checks: high-impact security roles need adequate controls before hiring",
-          "Skip them if the candidate has a university degree",
-          "Skip them for contract hires",
-          "Run them only after the probation period"
+          "Keep the checks for this high-impact role",
+          "Skip them if the candidate has a strong university degree in IT",
+          "Skip them for anyone hired on a fixed-term contract basis",
+          "Run them only after the candidate has passed probation"
         ],
         "answer": 0,
         "explanation": "PADK 1/2026 expects adequate controls before employing permanent, contract or temporary IT staff, consultants or provider staff in positions with high security impact, giving criminal-record checks for network or system administrators as an example.",
@@ -2807,10 +2807,10 @@
         "id": "id-cy-x17",
         "question": "A user forgets her password and the help desk resets it to 'Bank12345' for everyone. Which PADK 1/2026 expectation is broken?",
         "options": [
-          "Passwords must be at least twenty characters",
-          "Resets must be approved by OJK",
-          "Initial passwords should be unique, random, hard to guess and changed at first login",
-          "Passwords must contain only numbers"
+          "Every password must be at least twenty characters long at all times",
+          "Every password reset must be approved in advance by OJK supervisors",
+          "Initial passwords must be unique, random and changed at first login",
+          "Passwords must contain only numbers so tellers can type them quickly"
         ],
         "answer": 2,
         "explanation": "PADK 1/2026 sets initial password or PIN controls: changed at first login, delivered securely, random and unique to each user, and not easy to guess. A shared standard reset password fails all of these.",
@@ -2820,10 +2820,10 @@
         "id": "id-cy-x18",
         "question": "What does PADK 1/2026 allow a bank to consider to encourage staff to report security weaknesses?",
         "options": [
-          "Waiving training for staff who report",
-          "Publishing reporters' names in the press",
-          "Allowing reporters to test the weakness on live systems",
-          "Incentives for employees, temporary staff and provider staff who report exploitable incidents or weaknesses"
+          "Waiving the yearly security training for anyone who reports a weakness",
+          "Publishing the names of reporters in the press to encourage others",
+          "Allowing reporters to test the weakness on live systems to prove it",
+          "Incentives for staff and provider employees who report weaknesses"
         ],
         "answer": 3,
         "explanation": "PADK 1/2026 says the bank may consider incentives for those who report IT incidents or vulnerabilities at risk of exploitation, to strengthen information security.",
@@ -2833,10 +2833,10 @@
         "id": "id-cy-x19",
         "question": "A bank's IT team says penetration tests are optional because POJK 11 only says 'regularly'. Which reading is correct?",
         "options": [
-          "Testing is optional if no incident happened last year",
-          "Vulnerability-based testing is mandatory and periodic, with frequency set by the bank based on factors like criticality and change",
-          "Testing is needed only every five years",
-          "Only scenario tests are required; vulnerability tests are voluntary"
+          "Testing is optional for any bank that had no cyber incident in the previous year",
+          "Vulnerability testing is mandatory and periodic; the bank sets frequency by risk",
+          "Testing is needed only once every five years, aligned with the IT strategic plan",
+          "Only scenario tests are required; vulnerability tests are voluntary good practice"
         ],
         "answer": 1,
         "explanation": "Article 24 requires vulnerability-based testing periodically; the elucidation and SEOJK 29 let the bank set frequency based on system criticality and changes, and expect penetration tests especially for banks with digital or online services.",
@@ -2859,10 +2859,10 @@
         "id": "id-cy-x21",
         "question": "A bank hires a third party to run its scenario-based cyber test. What does SEOJK 29/2022 require?",
         "options": [
-          "Transfer responsibility for the test to the third party",
-          "Ask OJK to appoint the third party",
-          "Keep the results secret from the directors",
-          "Ensure the third party is competent, for example through recognised certification, and stay responsible for the test"
+          "Transfer legal responsibility for the test to the third-party tester",
+          "Ask OJK to choose and appoint the third-party tester for the bank",
+          "Keep the test results away from the directors to protect secrecy",
+          "Check the tester's competence and remain responsible for the test"
         ],
         "answer": 3,
         "explanation": "The circular allows testing in-house or by third parties, but the bank must ensure adequate competence, shown for instance by certification or recognition, and remains responsible. Results go to the directors.",
@@ -2872,10 +2872,10 @@
         "id": "id-cy-x22",
         "question": "Which SEOJK 29/2022 inherent-risk indicator relates to staff behaviour on devices?",
         "options": [
-          "The number of branches with air-conditioning",
-          "The bank's dividend payout ratio",
+          "The number of branches with air-conditioning in the server room",
+          "The bank's dividend payout ratio over the last three financial years",
           "The share of employees who access the bank's network through personal devices",
-          "The number of customers over sixty"
+          "The number of customers aged over sixty who use mobile banking"
         ],
         "answer": 2,
         "explanation": "Among technology indicators the circular lists the number of employees with bring-your-own-device access and which applications personal devices can reach; more such access means higher inherent risk.",
@@ -2885,10 +2885,10 @@
         "id": "id-cy-x23",
         "question": "What should a bank do with the results of its cyber security tests besides reporting them to OJK, according to SEOJK 29/2022?",
         "options": [
-          "Publish them on the bank's website",
-          "Give them to the directors as a basis to improve governance, controls and staff capacity and awareness",
-          "Share them with all customers by email",
-          "Delete them after OJK receives the report"
+          "Publish them in full on the bank's website for transparency",
+          "Use them with the directors to improve controls and awareness",
+          "Share them with all customers by email after each test",
+          "Delete them once OJK has confirmed receipt of the report"
         ],
         "answer": 1,
         "explanation": "The circular says test results go to the directors as the basis for improving governance, policies, internal control, and staff capacity and awareness, and that results must be documented and kept confidential.",
@@ -2898,10 +2898,10 @@
         "id": "id-cy-x24",
         "question": "Who should take part in a scenario-based cyber test according to SEOJK 29/2022?",
         "options": [
-          "Relevant parties including executives, business and corporate communications, the crisis team, providers and technical staff",
-          "Only the cyber unit's own analysts",
-          "Only the external testers",
-          "Only OJK supervisors"
+          "Executives, business and communications teams, providers and technical staff",
+          "Only the cyber unit's own analysts, to keep the scenario secret from others",
+          "Only the external testers, so that bank staff are tested without warning",
+          "Only OJK supervisors, who observe and score the bank's response directly"
         ],
         "answer": 0,
         "explanation": "The circular says the bank must involve relevant parties, including executive officers, business functions, corporate communications, the crisis management team, service providers and technical staff responsible for detection, response and recovery.",
@@ -2911,10 +2911,10 @@
         "id": "id-cy-x25",
         "question": "Which task does SEOJK 29/2022 give to the cyber resilience and security unit?",
         "options": [
-          "Approving the IT budget on behalf of the directors",
-          "Operating the core banking system day to day",
-          "Auditing the internal audit function",
-          "Coordinating or carrying out the resilience processes, cyber self-assessments, the risk level and cyber testing"
+          "Approving the IT budget on behalf of the Board of Directors",
+          "Operating the core banking system and data centre day to day",
+          "Auditing the internal audit function on behalf of commissioners",
+          "Coordinating resilience processes, self-assessments and testing"
         ],
         "answer": 3,
         "explanation": "The circular lists coordination or execution of the four resilience processes, inherent risk and maturity self-assessments, setting the cyber risk level and cyber testing; the unit is independent of IT operations.",
@@ -2924,10 +2924,10 @@
         "id": "id-cy-x26",
         "question": "A bank's phishing simulation shows a high click rate in one region. Which follow-up best matches SEOJK 29/2022?",
         "options": [
-          "Dismiss everyone who clicked",
-          "Stop running simulations to protect morale",
-          "Use a gap analysis of staff knowledge to plan targeted capacity building and update the awareness programme",
-          "Report each clicker's name to OJK"
+          "Dismiss every employee who clicked the link in the simulated email",
+          "Stop running simulations for a year to protect staff morale and trust",
+          "Run a gap analysis and target capacity building at the weak spots",
+          "Report each clicker's name and branch to OJK in the next IT report"
         ],
         "answer": 2,
         "explanation": "The circular expects a gap analysis of staff cyber knowledge to drive capacity plans, and an awareness programme reviewed and updated for current threats. It does not ask for names to OJK.",
@@ -2963,10 +2963,10 @@
         "id": "id-cy-x29",
         "question": "A non-cyber incident, a failed overnight batch, stopped transfers for six hours and drew negative press. Is it reportable?",
         "options": [
-          "No: only cyber attacks are reportable",
-          "No: only losses above a fixed rupiah threshold count",
-          "Only if a customer files a formal complaint",
-          "Yes: a non-cyber incident with significant disruption or non-financial loss such as reputational harm must be reported"
+          "No, because only cyber attacks need to be reported to OJK at all",
+          "No, because only losses above a fixed rupiah threshold are reportable",
+          "Only if a customer files a formal written complaint about the outage",
+          "Yes, significant disruption or reputational harm makes it reportable"
         ],
         "answer": 3,
         "explanation": "Article 60 covers IT incidents, cyber and non-cyber, that cause or may cause significant loss or disrupt operations. Loss includes non-financial loss such as negative news; PADK 1/2026 sets the non-cyber procedure.",
@@ -2989,10 +2989,10 @@
         "id": "id-cy-x31",
         "question": "What must an initial incident notice to OJK contain?",
         "options": [
-          "A completed root-cause analysis",
-          "The final cost of the incident",
-          "The initial information available about the incident, in OJK's set format",
-          "Approval from the bank's commissioners"
+          "A completed root-cause analysis of the incident",
+          "The final total cost of the incident to the bank",
+          "The initial facts available, in OJK's format",
+          "Written approval from the bank's commissioners"
         ],
         "answer": 2,
         "explanation": "The initial notice is based on the information available and uses the circular's or PADK's format; the fuller incident report follows within five working days with more complete information.",
@@ -3002,10 +3002,10 @@
         "id": "id-cy-x32",
         "question": "A bank's main IT provider is acquired and reorganised. What does POJK 11/2022 require?",
         "options": [
-          "Reassess the provider's materiality after the significant organisational change",
-          "Nothing until the contract expires",
-          "Automatically terminate the contract",
-          "Ask OJK to audit the provider first"
+          "Reassess the provider's materiality",
+          "Do nothing until the current contract expires",
+          "Automatically terminate the contract that week",
+          "Ask OJK to audit the new owner before any review"
         ],
         "answer": 0,
         "explanation": "Article 31 requires a materiality reassessment when the provider's organisation changes significantly; Article 32 then lists conditions that require reporting and action.",
@@ -3015,10 +3015,10 @@
         "id": "id-cy-x33",
         "question": "Before ending an IT provider contract early, what must the bank do under POJK 11/2022?",
         "options": [
-          "Notify customers 90 days in advance",
-          "Obtain the provider's written consent",
-          "Delete all data held by the provider at once",
-          "Prepare an exit plan, assess and test continuity of services and data, and ensure operations are not disrupted"
+          "Notify every customer at least 90 days before the contract ends",
+          "Obtain the provider's written consent to the early termination",
+          "Delete all data held by the provider immediately and in full",
+          "Plan the exit, test continuity and avoid any disruption"
         ],
         "answer": 3,
         "explanation": "Article 32(4) requires a termination plan, an assessment of service and data continuity with testing or simulation, and assurance that ending the arrangement does not disrupt the bank.",
@@ -3029,9 +3029,9 @@
         "question": "Which disaster recovery test meets POJK 11/2022?",
         "options": [
           "A yearly test of one non-critical application chosen at random",
-          "A yearly test of all critical applications and infrastructure from the business impact analysis, involving IT users",
-          "A desk review of the plan with no testing",
-          "A test every three years run only by the IT unit"
+          "A yearly test of all critical systems, with IT users involved",
+          "A desk review of the written plan each year, with no live testing",
+          "A test every three years run only by the IT unit, without users"
         ],
         "answer": 1,
         "explanation": "Article 18(3) requires testing at least yearly on all critical applications and infrastructure per the business impact analysis, with IT users involved; Article 18(4) adds a yearly review.",
@@ -3054,10 +3054,10 @@
         "id": "id-cy-x36",
         "question": "During a ransomware attack the response team copies infected server data onto a USB stick without any chain of custody. What does PADK 1/2026 expect instead?",
         "options": [
-          "Wipe the servers immediately to stop the spread",
-          "Let the provider take the servers away for repair",
-          "Pay the ransom quickly to limit downtime",
-          "Collect and preserve information meant as digital evidence using forensically sound methods"
+          "Wipe the affected servers immediately to stop the spread",
+          "Let the provider take the servers away for repair at once",
+          "Pay the ransom quickly to limit the length of the downtime",
+          "Preserve evidence with forensically sound methods"
         ],
         "answer": 3,
         "explanation": "PADK 1/2026 says that where information may become digital evidence, its collection and preservation must be done in a digitally forensically sound way, after documenting and isolating affected systems.",
@@ -3106,10 +3106,10 @@
         "id": "id-cy-x40",
         "question": "What must a personal data protection impact assessment contain, according to PADK 1/2026?",
         "options": [
-          "A description and purpose of processing, a necessity and proportionality test, a risk assessment for data subjects and safeguards",
-          "Only the cost of the new system",
-          "Only the customer's signature",
-          "Only the vendor's marketing claims"
+          "Purpose, necessity and proportionality, risks to individuals and safeguards",
+          "Only the expected cost of the new system and its payback period for the bank",
+          "Only the customer's signature on a general data processing consent form",
+          "Only the vendor's marketing claims about the security of its product"
         ],
         "answer": 0,
         "explanation": "PADK 1/2026 lists a description and purpose of processing including the bank's interest, a necessity and proportionality assessment, a risk assessment for data subjects' rights and steps to protect them.",
@@ -3120,9 +3120,9 @@
         "question": "What does PADK 1/2026 say about appointing someone for personal data protection?",
         "options": [
           "The bank must appoint an OJK-certified officer for every branch",
-          "Only the IT provider may hold the role",
-          "The bank may appoint an official or officer to ensure data protection principles are applied, considering competence",
-          "The role is banned because it duplicates compliance"
+          "Only the bank's IT service provider may hold that role",
+          "The bank may appoint a competent officer for it",
+          "The role is banned because it would duplicate compliance"
         ],
         "answer": 2,
         "explanation": "PADK 1/2026 says the bank can appoint an official or officer responsible for applying personal data protection principles, chosen with regard to competence. It is an option in that text, not a per-branch duty.",
@@ -3158,10 +3158,10 @@
         "id": "id-cy-x44",
         "question": "How often must a bank self-assess its digital maturity under POJK 11/2022, and where is it reported?",
         "options": [
-          "At least once a year, reported as part of the report on the current condition of IT operation",
+          "At least yearly, inside the IT condition report",
           "Every three years, in a separate letter to the commissioners",
-          "Only when launching a digital bank",
-          "Monthly, in the bank's financial statements"
+          "Only once, when the bank launches a digital banking service",
+          "Every month, as a note to the bank's financial statements"
         ],
         "answer": 0,
         "explanation": "Article 66 requires a periodic digital maturity self-assessment at least once a year, reported within the IT condition report.",
@@ -3171,10 +3171,10 @@
         "id": "id-cy-x45",
         "question": "An OJK examiner asks how the bank knows its IT internal audit is effective. Which evidence best answers under POJK 11/2022?",
         "options": [
-          "The IT unit's own statement that audits are fine",
-          "A list of IT audit staff and their salaries",
-          "The independent external review of the IT audit function within the last three years and audit results reported to OJK",
-          "The bank's annual advertising report"
+          "The IT unit's own written statement that all audits are fine",
+          "A list of IT audit staff with their grades and their salaries",
+          "A recent independent external review of the IT audit function",
+          "The bank's annual report on advertising and brand awareness"
         ],
         "answer": 2,
         "explanation": "Article 55 requires an IT internal audit guide, an independent external review of the function at least every three years, and reporting of review and audit results to OJK.",
