@@ -10,7 +10,7 @@
     "Microfinance banks"
   ],
   "hours": 6,
-  "description": "This quest teaches the anti-money laundering, counter-terrorist financing and counter-proliferation financing rules that apply to conventional banks in Pakistan. It is based on the **Anti-Money Laundering Act 2010** (as amended), the **State Bank of Pakistan's AML/CFT/CPF Regulations** and risk-based approach guidelines, the **Financial Monitoring Unit's** STR and CTR Reporting Regulations 2025 and goAML guidance, the **Anti-Terrorism Act 1997** and SBP's FAQs on targeted financial sanctions, and the AML/CFT Sanctions Rules 2020.\n\nSBP's regulations require every regulated bank to run an annual, needs-based AML/CFT/CPF training programme for its sponsor shareholders, board, senior and line management and field staff, and to test staff knowledge periodically. Section 7G of the AML Act also requires training programmes. This quest is designed to support that duty for branch, operations, compliance, trade and treasury staff and for managers who oversee them.\n\nAcross five stages you follow the compliance team of a fictional Pakistani bank: mapping the law and the authorities, onboarding customers with the right level of due diligence, reporting suspicion on goAML without tipping off, freezing sanctioned funds without delay, and building a programme an SBP inspector would accept.\n\nThe quest builds knowledge and does not replace your bank's own AML/CFT/CPF policies, procedures and training records. Always follow your institution's current procedures and the latest SBP and FMU instructions.",
+  "description": "This quest teaches the anti-money laundering, counter-terrorist financing and counter-proliferation financing rules that apply to conventional banks in Pakistan. It is based on the **Anti-Money Laundering Act 2010** (as amended), the **State Bank of Pakistan's AML/CFT/CPF Regulations** and risk-based approach guidelines, the **Financial Monitoring Unit's** STR and CTR Reporting Regulations 2025 and goAML guidance, the **Anti-Terrorism Act 1997** and SBP's FAQs on targeted financial sanctions, and the AML/CFT Sanctions Rules 2020.\n\nSBP requires every bank to run an annual, needs-based AML/CFT/CPF training programme for its sponsor shareholders, board, management and field staff, with periodic testing, and section 7G of the AML Act requires training programmes. This quest supports that duty for branch, operations, compliance, trade and treasury staff and their managers.\n\nIn five stages you join the compliance team of a fictional Pakistani bank: mapping the law, onboarding with the right due diligence, reporting on goAML without tipping off, freezing sanctioned funds and building a programme SBP would accept.\n\nThe quest builds knowledge and does not replace your bank's own AML/CFT/CPF policies and procedures; always follow them and the latest SBP and FMU instructions.",
   "audience": [
     "Branch, account-opening and teller staff at conventional banks in Pakistan who carry out CDD, handle cash and escalate concerns",
     "Compliance, AML monitoring and sanctions screening staff who review alerts and file STRs and CTRs on goAML",
@@ -649,7 +649,7 @@
           "options": [
             "The Anti-Terrorism Act 1997",
             "An order of the National Executive Committee",
-            "A delegation from the FMU's Director General",
+            "A delegation of rule-making powers from the FMU's Director General under section 6 of the Act",
             "Its role as AML/CFT regulatory authority under section 6A of the AML Act"
           ],
           "answer": 3,
@@ -676,7 +676,7 @@
             "Intent can be inferred from facts, and no predicate conviction is required",
             "The offence applies only to amounts above the CTR threshold",
             "Only a confession can prove knowledge",
-            "The accused must first be convicted of the predicate offence"
+            "The accused must first be convicted of the predicate offence in a separate trial before any ML charge"
           ],
           "answer": 0,
           "explanation": "Explanations I and II to section 3 allow knowledge to be inferred from the circumstances and remove the need for a predicate conviction. There is no monetary threshold for the offence.",
@@ -712,8 +712,8 @@
           "id": "pk-aml-s1-q7",
           "question": "Branch staff learn that a long-time customer is receiving funds from a cousin under a corruption inquiry and paying them on to third parties. The branch manager says: 'Nothing is proven, so there's nothing to escalate.' Why is this wrong?",
           "options": [
-            "The law turns on reason to believe or suspect, not proof, so staff should escalate internally",
-            "Only SBP inspectors can decide whether funds are suspicious",
+            "Section 3 and the STR duty turn on reason to believe or suspect, not proof",
+            "Only SBP inspectors can decide whether funds are suspicious, so the branch should wait for them",
             "Escalation is needed only if the cousin has already been convicted",
             "The branch should freeze the account immediately"
           ],
@@ -738,7 +738,7 @@
           "id": "pk-aml-s1-q9",
           "question": "A bank officer worries that filing an STR breaches the customer's banking secrecy and could lead to a lawsuit. Which pair of AML Act provisions answers this?",
           "options": [
-            "Section 4 sets penalties, and section 6 creates the FMU",
+            "Section 4 on penalties for laundering, and section 6 on the FMU's power to call for records",
             "Section 34 on tipping off, and section 37 on legal persons",
             "Section 7(5) overrides secrecy, and section 12 protects good-faith reporting",
             "Section 7C on records, and section 7E on anonymous accounts"
@@ -751,9 +751,9 @@
           "id": "pk-aml-s1-q10",
           "question": "A new trainee says terrorist financing is just money laundering in reverse, so the same red flags always apply. What is the best correction?",
           "options": [
-            "TF can use clean money, so links to listed persons and the purpose of funds matter as much as their source",
+            "TF can use clean money, so links to listed persons and the purpose of funds matter too",
             "TF is not covered by any Pakistani law that applies to banks",
-            "TF only matters for amounts above the CTR threshold",
+            "TF only matters for transactions above the CTR threshold, so smaller payments can be cleared without screening",
             "TF is handled entirely by MoFA, so banks need no CFT controls"
           ],
           "answer": 0,
@@ -1196,7 +1196,7 @@
             "Continue SDD because the product was approved as low risk",
             "Stop applying SDD, since it is barred once suspicion arises, and escalate for CDD/EDD and a possible STR",
             "Ask the customer to sign a declaration and continue",
-            "Close the account and tell the customer it was flagged as suspicious"
+            "Close the account at once and explain to the customer that the transfers were flagged as suspicious by compliance"
           ],
           "answer": 1,
           "explanation": "Regulation 2(19) forbids SDD whenever ML, TF or PF is suspected, and section 7D may require an STR. Telling the customer about the suspicion would risk tipping off, which section 34 makes an offence.",
@@ -1221,7 +1221,7 @@
           "options": [
             "An appeal to the AML/CFT regulatory authority, allowed within 90 days under section 7J",
             "A tipping-off offence by the bank",
-            "A complaint SBP must reject because CDD refusals are final",
+            "A complaint SBP must reject, because a bank's decision to refuse an account on CDD grounds is final under the Act",
             "A matter only the FMU can decide"
           ],
           "answer": 0,
@@ -1258,10 +1258,10 @@
           "id": "pk-aml-s2-q10",
           "question": "A welfare society advertises for donations using an account number at your branch. The account is titled in its president's personal name. What does Regulation 6 require?",
           "options": [
-            "Mark a caution on the account and consider filing an STR, since personal accounts can't collect donations",
+            "Mark a caution and consider an STR, as personal accounts can't collect donations",
             "Nothing, provided the president completed CDD",
             "Freeze the account and notify NACTA",
-            "Rename the account after the society without further checks"
+            "Rename the account in the society's name and let the president keep operating it without further checks"
           ],
           "answer": 0,
           "explanation": "Regulation 6 bars personal accounts for charity collections and requires a caution and consideration of an STR when the account title differs from the soliciting entity. Freezing applies to sanctions matches, not to this mismatch on its own.",
@@ -1634,7 +1634,7 @@
         {
           "type": "example",
           "title": "Karakoram case: 'Can we stop CTRs for our biggest client?'",
-          "body": "Farhan's wholesale client, a large cash-based distributor, deposits cash every day. Each deposit above the threshold creates a CTR, and Farhan asks compliance to 'switch them off'.\n\n**What the 2025 Regulations say.**\n\n- **Automatic exemptions** apply only to cash transactions with federal or provincial government departments or agencies, local governments, statutory bodies, and payments of utility bills issued by utility entities.\n- **Discretionary exemptions** can be granted only by the **FMU's Director General**, with National Executive Committee approval and after consulting the regulator. They cover a 'qualified business customer': one with an established relationship, frequent reportable cash transactions and proven low ML/TF risk.\n- The bank must **review exempted customers at least 30 days before the exemption expires**, and must tell the FMU promptly if the information turns out to be false or the customer no longer qualifies.\n\n**Outcome.** Compliance tells Farhan that no one inside the bank can switch off CTRs. If the client qualifies, the bank can apply to the FMU with evidence."
+          "body": "Farhan's wholesale client, a cash-based distributor, deposits cash daily. Each deposit above the threshold creates a CTR, and Farhan asks compliance to 'switch them off'.\n\n**What the 2025 Regulations say.**\n\n- **Automatic exemptions** apply only to cash transactions with federal or provincial government departments or agencies, local governments, statutory bodies, and payments of utility bills issued by utility entities.\n- **Discretionary exemptions** can be granted only by the **FMU's Director General**, with National Executive Committee approval and after consulting the regulator. They cover a 'qualified business customer': one with an established relationship, frequent reportable cash transactions and proven low ML/TF risk.\n- The bank must **review exempted customers at least 30 days before the exemption expires**, and must tell the FMU promptly if the information turns out to be false or the customer no longer qualifies.\n\n**Outcome.** Compliance tells Farhan that no one inside the bank can switch off CTRs. If the client qualifies, the bank can apply to the FMU with evidence."
         },
         {
           "type": "tip",
@@ -1704,7 +1704,7 @@
             "None, provided all STRs are filed within the same quarter",
             "STRs must be filed promptly once suspicion forms, so batching to month-end breaches the rule",
             "Batching is required by goAML for efficiency",
-            "STRs need SBP approval before filing, so the delay is unavoidable"
+            "STRs need prior approval from SBP's supervisors before filing on goAML, so some delay is unavoidable"
           ],
           "answer": 1,
           "explanation": "Section 7(1) and Regulation 4(2) of the 2025 Regulations require the STR to be filed promptly after suspicion forms. A deliberate delay for convenience is inconsistent with that, and SBP does not pre-approve STRs.",
@@ -1754,7 +1754,7 @@
           "question": "A bank closed a corporate account in 2018. In 2026, the FIA asks for the account opening documents, and the bank is not involved in any litigation. Under SBP's Regulation 8, what is the position?",
           "options": [
             "Records are needed only if an STR was filed",
-            "The bank could lawfully have destroyed them in 2023 under section 7C",
+            "The bank could lawfully have destroyed them in 2023, because section 7C of the Act only requires five years",
             "Only the FMU can ask for these records",
             "The bank should still hold them, since CDD records are kept 10 years after the relationship ends"
           ],
@@ -1781,7 +1781,7 @@
           "options": [
             "PEP reports must be filed as CTRs",
             "PEP status alone is not suspicious; another indicator must state the actual suspicion",
-            "PEPs must be reported through SBP, not goAML",
+            "PEP-related STRs must be filed with SBP's supervision department rather than with the FMU on goAML",
             "PEP STRs can only be filed by the CEO"
           ],
           "answer": 1,
@@ -2217,7 +2217,7 @@
             "His personal accounts are liable to be frozen, as he is treated as acting on the entity's behalf",
             "He must be offered the chance to move his funds first",
             "Only the company's accounts can be frozen",
-            "His account can be frozen only after a court order"
+            "His personal account can be frozen only after a court order naming him individually as a proscribed person"
           ],
           "answer": 0,
           "explanation": "SBP's FAQ 14 says a member of a designated or proscribed entity who works in it as a director or member falls within 'a person acting on behalf of' it, so his personal accounts are liable to be frozen. Prior notice is never given.",
@@ -2229,8 +2229,8 @@
           "options": [
             "File a CTR and continue normal operations",
             "Ignore it until all identifiers are available",
-            "Ask the customer to confirm his identity before acting",
-            "Place an immediate temporary freeze and inform SBP for verification with the Ministry of Interior focal point"
+            "Ask the customer to visit the branch and confirm his identity documents before taking any action",
+            "Place an immediate temporary freeze and inform SBP so the match can be verified"
           ],
           "answer": 3,
           "explanation": "FAQ 7 says a potential match leads to an immediate temporary freeze, with SBP passing it to the Ministry of Interior focal point for verification. Asking the customer first would give prior notice.",
@@ -2253,7 +2253,7 @@
           "id": "pk-aml-s4-q7",
           "question": "A designated person has an exemption SRO allowing a fixed monthly withdrawal. Last month he took nothing; this month he asks for double. What should the bank do?",
           "options": [
-            "Allow double, since the total stays within the exemption",
+            "Allow double, because the total over the two months still stays within the exempted amount",
             "Ask MoFA to approve the extra amount by phone",
             "Refuse both months, because exemptions lapse if unused",
             "Allow only the monthly exempted amount, as cumulative withdrawals are not permitted"
@@ -2280,7 +2280,7 @@
           "question": "After due diligence, a frozen account turns out to belong to someone with the same name as a listed person, with a different CNIC and date of birth. What does Regulation 4 require?",
           "options": [
             "Unfreeze after confirming no other freezing authority applies, and report the unfreezing to SBP",
-            "Unfreeze it and tell no one, as it was a mistake",
+            "Unfreeze it at once and record nothing further, since a false positive was never a real freeze under the law",
             "Keep it frozen until the listed person is delisted",
             "Ask NACTA to remove the customer's name from its list"
           ],
@@ -2293,8 +2293,8 @@
           "question": "An inward remittance from abroad gives only the originator's name, which partly matches a Fourth Schedule entry. The foreign bank cannot provide more data. What do SBP's FAQs say?",
           "options": [
             "Always reject and freeze the beneficiary's account",
-            "Always execute, since foreign banks aren't bound by ATA lists",
-            "Decide to execute or reject under the bank's wire-transfer policies, and document the decision and its basis",
+            "Always execute it, since foreign banks are not bound by Pakistan's domestic ATA lists anyway",
+            "Decide under the bank's wire-transfer policies and document the decision and its basis",
             "Return it unprocessed with a message naming the list"
           ],
           "answer": 2,
@@ -2701,7 +2701,7 @@
           "question": "Which statement about testing staff knowledge is consistent with Regulation 13?",
           "options": [
             "SBP runs the tests for all bank staff",
-            "Testing is optional if attendance is recorded",
+            "Testing is optional for any staff member whose attendance at the annual session has been recorded in training MIS",
             "Banks must test relevant staff periodically and provide online training and tests for front-end staff",
             "Only compliance staff need to be tested"
           ],
@@ -2729,7 +2729,7 @@
             "SBP approves policies; the board approves procedures",
             "Senior management approves both",
             "The board approves policies; senior management approves controls and procedures",
-            "Compliance approves policies; audit approves procedures"
+            "Compliance approves the policies, and internal audit approves the controls and procedures"
           ],
           "answer": 2,
           "explanation": "Regulation 1(12) splits the approvals: the board approves policies, and senior management approves controls, procedures and preventive measures. The board keeps ultimate responsibility under Regulation 1(13).",
@@ -2742,7 +2742,7 @@
             "The case must be referred to the FMU instead",
             "The regulator may not impose a sanction where it is satisfied all reasonable steps were taken",
             "Only the compliance officer may be sanctioned",
-            "A sanction must always be imposed for any breach"
+            "A sanction must always be imposed for any breach, whatever steps the bank had taken beforehand to comply"
           ],
           "answer": 1,
           "explanation": "Rule 4(2) says the regulator may not sanction a person if it is satisfied the entity took all reasonable steps and exercised all due diligence. This rewards genuine programmes, not paper ones.",
@@ -2768,7 +2768,7 @@
             "All employees, permanent, contractual or outsourced, are screened against the lists on an ongoing basis",
             "Screening is needed only at hiring, not afterwards",
             "Only permanent staff with system access need screening",
-            "Outsourcing companies screen their own staff, so the bank need not"
+            "Outsourcing companies are responsible for screening their own staff, so the bank itself need not do it at all"
           ],
           "answer": 0,
           "explanation": "Regulation 13(9) covers all employees, whether contractual, permanent or outsourced, and requires ongoing screening against designated and proscribed lists, with records. Regulation 4(11) also extends TFS compliance to vendors and employees.",
@@ -2778,10 +2778,10 @@
           "id": "pk-aml-s5-q9",
           "question": "Which of these must SBP-regulated entities keep under Regulation 13(3)?",
           "options": [
-            "Records of accounts rejected by compliance, risk ratings challenged or revised, and accounts closed for ML/TF/PF risk",
+            "Records of rejected accounts, revised risk ratings and accounts closed for ML/TF/PF risk",
             "Copies of every SBP circular",
             "Staff attendance at all non-AML training",
-            "A list of all customers who complained to the Banking Mohtasib"
+            "A list of all customers who complained to the Banking Mohtasib about account refusals or closures"
           ],
           "answer": 0,
           "explanation": "Regulation 13(3) requires banks to record rejected cases, cases where a business unit's risk rating was challenged or revised, and relationships closed because of ML/TF/PF risk. These are key evidence for inspectors.",
@@ -2839,8 +2839,8 @@
         "question": "A trader receives cash he has reason to believe comes from smuggling and uses it to buy prize bonds in his wife's name. He has not been involved in the smuggling. Which statement is correct?",
         "options": [
           "This is only a tax matter for the FBR",
-          "He may be guilty of money laundering, since acquiring or converting property while having reason to believe it is criminal is covered",
-          "He cannot be guilty because he did not commit the smuggling",
+          "He may be guilty: acquiring or converting property with reason to believe it is criminal is covered",
+          "He cannot be guilty, because only the person who committed the smuggling offence can launder its proceeds",
           "He is guilty only if the smuggler is convicted first"
         ],
         "answer": 1,
@@ -2854,7 +2854,7 @@
           "He can be deemed guilty where the offence occurred with his consent, connivance or knowledge",
           "None, because only the bank as a legal person is liable",
           "Liability only if he personally signed the transactions",
-          "Only SBP's administrative sanctions, never criminal liability"
+          "Only SBP's administrative sanctions under the 2020 rules apply to directors, never criminal liability"
         ],
         "answer": 0,
         "explanation": "Section 37(2) makes directors and officers guilty where a legal person's offence happened with their consent, connivance or knowledge. Section 4(2) also lets guilty directors, officers and employees be punished. Signing the transactions is not required.",
@@ -2866,7 +2866,7 @@
         "options": [
           "Terrorism, kidnapping, arms trafficking, piracy and counterfeiting",
           "Insider trading, environmental crime, theft, robbery and forgery",
-          "Narcotics, human trafficking, fraud, cyber crime and extortion",
+          "Narcotics trafficking, human trafficking and migrant smuggling, fraud and forgery, and cyber crime",
           "Corruption and bribery, illegal MVTS/hundi/hawala, tax crimes, smuggling and cash smuggling"
         ],
         "answer": 3,
@@ -2890,10 +2890,10 @@
         "id": "pk-aml-x7",
         "question": "A branch manager argues that the bank should not report a customer because doing so would breach the customer's confidentiality agreement and expose the bank to a damages claim. What is the best response?",
         "options": [
-          "Confidentiality agreements take priority unless SBP orders disclosure",
+          "Confidentiality agreements take priority unless SBP or a court specifically orders the bank to disclose",
           "The bank should ask the customer's consent before filing",
           "Only reports approved by the CEO are protected from lawsuits",
-          "The STR duty applies despite secrecy obligations, and good-faith reporting is protected from civil, criminal or disciplinary action"
+          "The STR duty overrides secrecy, and good-faith reporting is protected from legal action"
         ],
         "answer": 3,
         "explanation": "Section 7(5) makes the reporting duty override secrecy rules in other laws or documents, and section 12 protects good-faith reporting. Asking the customer's consent would tip him off.",
@@ -2943,9 +2943,9 @@
         "question": "A bank wants to open an account for a customer whose identity it has only partly verified, finishing the rest within the week. What does Regulation 2 allow?",
         "options": [
           "Verification only if the customer is high risk",
-          "Verification before or during the establishment of the relationship; if CDD can't be completed, section 7D applies",
+          "Verify before or while establishing the relationship; if CDD can't be completed, section 7D applies",
           "No verification for customers introduced by staff",
-          "Verification at any time within a year"
+          "Verification can be completed at any time within the first year, provided the account stays low risk"
         ],
         "answer": 1,
         "explanation": "Regulation 2(15) requires verification before, or during the course of, establishing the relationship. If it cannot be completed, section 7D requires the bank not to proceed, or to end the relationship, and to consider an STR.",
@@ -2957,8 +2957,8 @@
         "options": [
           "Only the person who signs the account opening form",
           "Only the beneficiaries who receive money this year",
-          "Only the trustee company, as the legal owner",
-          "The settlor, the trustees, any protector, the beneficiaries or class of beneficiaries, and anyone else with ultimate effective control"
+          "Only the trustee company, because it is the legal owner of the trust's assets and signs for the trust in all dealings",
+          "The settlor, trustees, any protector, the beneficiaries and anyone else with ultimate effective control"
         ],
         "answer": 3,
         "explanation": "Regulation 2(11) requires the settlor, trustees, protector (if any), beneficiaries or class of beneficiaries, and any other natural person with ultimate effective control to be identified. Where any of them is a legal person, its own beneficial owner must be traced.",
@@ -2968,9 +2968,9 @@
         "id": "pk-aml-x13",
         "question": "Which situation requires EDD under Regulation 2(16), regardless of the customer's other characteristics?",
         "options": [
-          "A salaried customer with a credit card",
+          "A salaried customer who also applies for a credit card and a personal loan on the same day",
           "A customer who prefers digital banking",
-          "A business relationship with persons from a country under the Counter Measures for High Risk Jurisdictions Rules 2020",
+          "Persons from a country under the Counter Measures for High Risk Jurisdictions Rules 2020",
           "A first-time customer from another province"
         ],
         "answer": 2,
@@ -2981,9 +2981,9 @@
         "id": "pk-aml-x14",
         "question": "An existing customer is appointed a provincial minister. What must the bank do under Regulation 5?",
         "options": [
-          "Obtain senior management approval to continue, establish source of wealth and funds, and apply enhanced monitoring",
+          "Get senior management approval to continue, establish source of wealth and funds, monitor more closely",
           "Close the account, because PEPs are prohibited",
-          "Nothing, because the relationship started before he became a PEP",
+          "Nothing further, because the relationship began before he became a PEP and existing customers are exempt",
           "Report him to the FMU as a matter of routine"
         ],
         "answer": 0,
@@ -2997,7 +2997,7 @@
           "Block debits after serving one month's prior notice until a valid document is provided and verified",
           "Close the account immediately without notice",
           "Freeze the account under TFS rules",
-          "Do nothing until the customer next visits"
+          "Do nothing until the customer next visits the branch, then ask him to update the document at his convenience"
         ],
         "answer": 0,
         "explanation": "Regulation 2(23) requires debit blocking of accounts without a valid identity document after one month's prior notice, lifted once a valid document is submitted and verified. TFS freezing is unrelated.",
@@ -3022,7 +3022,7 @@
         "options": [
           "Beneficial owners need only be recorded for listed companies",
           "The senior managing official is a last resort, used only if no person controls through ownership or other means",
-          "Senior managing officials can never be beneficial owners",
+          "Senior managing officials can never be recorded as beneficial owners under any circumstances in SBP's regulations",
           "The FMU must name the beneficial owner, not the bank"
         ],
         "answer": 1,
@@ -3036,7 +3036,7 @@
           "Requiring the customer to bank only at the head office",
           "Requiring the first payment to come from an account in the customer's name at a bank with similar CDD standards",
           "Requiring a guarantee from the FMU",
-          "Requiring the customer to keep a minimum balance of PKR 1 million"
+          "Requiring the customer to keep a minimum balance set by SBP for all high-risk accounts at all times during the relationship"
         ],
         "answer": 1,
         "explanation": "Regulation 2(17)(h) includes requiring the first payment to come through the customer's own account at a bank with similar CDD standards, where available. The other options are not in the regulation.",
@@ -3059,9 +3059,9 @@
         "id": "pk-aml-x20",
         "question": "A bank suspects that an account is about to be emptied of laundered funds and wants the FMU to act urgently. What do the 2025 Regulations provide?",
         "options": [
-          "The bank may immediately inform the FMU's Director General in writing, with grounds, so a freezing order can be considered",
+          "Inform the FMU's Director General in writing at once, with grounds, so a freeze order can be considered",
           "The bank must ask the customer to keep the funds in place",
-          "The bank may freeze the account itself for 180 days",
+          "The bank may freeze the account itself for up to 180 days and notify the FMU and SBP afterwards in its monthly return",
           "The bank must wait for an SBP direction"
         ],
         "answer": 0,
@@ -3086,9 +3086,9 @@
         "question": "An analyst must choose goAML indicators for an STR based only on an LEA inquiry into a customer for tax evasion. What do the FMU's guidelines expect?",
         "options": [
           "File a CTR instead of an STR",
-          "Select only the LEA inquiry indicator",
+          "Select only the LEA inquiry indicator, since the inquiry itself fully explains the reason for suspicion",
           "Leave indicators blank, as they are optional",
-          "Select the LEA inquiry indicator plus another indicator for the underlying offence, and state whether information was shared with the LEA"
+          "Pair the LEA inquiry indicator with one for the underlying offence and state whether the LEA was informed"
         ],
         "answer": 3,
         "explanation": "The guidelines say the LEA inquiry indicator does not express a suspicion alone, so a second indicator for the underlying offence (such as tax evasion) is needed. For LEA-based STRs, the 'action taken' field must say whether information was shared with the LEA.",
@@ -3111,7 +3111,7 @@
         "id": "pk-aml-x24",
         "question": "A bank's group head office abroad asks the Pakistani branch for details of STRs it filed, for group risk management. Under section 34 and Regulation 15, which statement is most accurate?",
         "options": [
-          "STRs may never be mentioned to anyone, including group compliance",
+          "STRs may never be mentioned to anyone at all, including group compliance under a formal agreement",
           "Any group entity may receive STR details without restriction",
           "Only SBP can share STRs with the group",
           "Sharing is possible only under proper group arrangements with safeguards against tipping off"
@@ -3124,9 +3124,9 @@
         "id": "pk-aml-x25",
         "question": "A customer's account shows round-figure cash deposits just under the bank's internal sign-off level at several branches, then same-day transfers to unrelated individuals. The customer says it is 'family money'. Which combination best describes the bank's duties?",
         "options": [
-          "Treat it as possible structuring and layering, analyse it, and if suspicion forms file an STR-F promptly; CTRs are still due on any cash at or above the threshold",
+          "Analyse it as possible structuring and layering, file an STR-F promptly if suspicion forms, and still file CTRs where due",
           "File CTRs only, since cash is involved",
-          "Close the account immediately and tell the customer why",
+          "Close the account immediately and explain to the customer that the deposits looked like structuring, so he understands the decision",
           "Ignore it, since the customer gave an explanation"
         ],
         "answer": 0,
@@ -3139,7 +3139,7 @@
         "options": [
           "Only in paper form, signed by the branch manager",
           "So that individual transactions can be reconstructed, in a form admissible as evidence",
-          "As summary monthly totals only",
+          "As summary monthly totals per account, which is enough for regulators to follow the money",
           "Only for customers who have been reported"
         ],
         "answer": 1,
@@ -3166,7 +3166,7 @@
           "Review the customer at least 30 days before expiry and resubmit the request if needed",
           "Ask SBP to extend the exemption",
           "Nothing; exemptions renew automatically",
-          "File back-dated CTRs for the exempt period"
+          "File back-dated CTRs for the entire exempt period as soon as the exemption expires, then reapply"
         ],
         "answer": 0,
         "explanation": "Regulation 8(2) of the 2025 Regulations requires a review of qualified business customers at least 30 days before the exemption expires, and resubmission if required. The bank must also tell the FMU promptly if the customer no longer qualifies.",
@@ -3191,8 +3191,8 @@
         "options": [
           "Nothing, because only the company is the customer",
           "Remove the signatory and continue as normal without reporting",
-          "Treat it as a TFS concern: entity accounts must not have signatories, directors or owners linked to DPs or PPs, so freeze and report as applicable",
-          "Ask the company to confirm in writing that the signatory is not the listed person"
+          "Treat it as a TFS case: signatories, directors and owners of entity accounts must not be linked to DPs or PPs",
+          "Ask the company to confirm in writing that the signatory is not the listed person, and carry on until the confirmation arrives"
         ],
         "answer": 2,
         "explanation": "Regulation 4(4) requires banks to ensure that beneficial owners, directors, members, trustees and authorised signatories of entity accounts are not linked to DPs or PPs. A confirmed link triggers the freeze and reporting duties in Regulation 4(7).",
@@ -3216,7 +3216,7 @@
         "question": "A designated person's account was frozen. He asks the bank to set off his overdue loan against the frozen balance 'to reduce his debt'. What do SBP's FAQs say?",
         "options": [
           "Set-off is allowed because the bank benefits",
-          "Set-off is allowed if the customer signs a consent",
+          "Set-off is allowed as long as the designated person signs a written consent to the debit from his account",
           "Set-off is not allowed, since debits from frozen funds need permission under the relevant laws",
           "Set-off is allowed after 48 hours"
         ],
@@ -3268,9 +3268,9 @@
         "question": "A trade customer asks Karakoram to confirm an LC for 'industrial controllers' to a new consignee via a transhipment hub. One shipping-party name partly matches an entity on a UN proliferation-related list given effect by MoFA. What is the strongest response?",
         "options": [
           "Proceed if the customer provides an end-user certificate",
-          "Proceed, because proliferation sanctions don't apply to trade finance",
+          "Proceed, because proliferation sanctions apply to designated persons' accounts, not to trade finance transactions",
           "Reject the LC and tell the customer it hit a UN list",
-          "Halt processing, screen every party, treat a potential match as a temporary freeze with SBP verification, and escalate for EDD and a possible STR"
+          "Halt it, screen every party, apply a temporary freeze for any potential match with SBP verification, and escalate"
         ],
         "answer": 3,
         "explanation": "Regulation 4 applies TFS to persons designated under the UNSC Act, including proliferation regimes. Potential matches get a temporary freeze and verification through SBP. Telling the customer which list was hit risks tipping off, and paperwork alone does not clear a match.",
@@ -3293,10 +3293,10 @@
         "id": "pk-aml-x38",
         "question": "SBP's RBA guidelines describe the qualities of effective AML/CFT training. Which set matches them?",
         "options": [
-          "High quality, obligatory for relevant staff, tailored by business line, effective, ongoing, complemented by updates, with feedback",
+          "High quality, obligatory, tailored, effective, ongoing, updated and improved through feedback",
           "Delivered once at hiring, with a signed acknowledgement",
           "Focused on compliance staff only, with an annual test",
-          "Short, voluntary, generic, annual only, and untested"
+          "Short, voluntary, generic, delivered once a year only, and untested so that staff are not discouraged"
         ],
         "answer": 0,
         "explanation": "The RBA guidelines list training that is high quality, obligatory, tailored, effective (for example, checked through tests), ongoing rather than one-off, complemented by information updates, and improved through formal feedback.",
@@ -3333,7 +3333,7 @@
         "question": "Under the Sanctions Rules 2020, against whom can an AML/CFT regulatory authority impose sanctions under section 6A(2)(h)?",
         "options": [
           "Only the compliance officer",
-          "Only the reporting entity as a legal person",
+          "Only the reporting entity as a legal person, never its directors, managers or individual officers",
           "Any customer involved in the transaction",
           "The reporting entity, its directors, senior management and officers in similar positions"
         ],
@@ -3359,7 +3359,7 @@
         "question": "An inspection finds Karakoram's IRAR is current, but the board receives only a one-page annual compliance summary and no data on STR timeliness, screening or training. Which requirement is most clearly unmet?",
         "options": [
           "The board's duty to ensure adequate, reliable, periodic MIS for oversight under Regulation 1(13)",
-          "The duty to file CTRs within seven working days",
+          "The duty to file CTRs within seven working days, since the board lacks the data on cash reporting volumes",
           "The ban on numbered accounts",
           "The requirement for Form-B notices"
         ],
@@ -3373,8 +3373,8 @@
         "options": [
           "Section 11OO of the ATA on exemptions",
           "Regulation 2(24) on dormant accounts",
-          "Section 7J of the AML Act on customer appeals",
-          "Regulation 13(2), which requires timely access to all customer records for compliance officers and their staff"
+          "Section 7J of the AML Act, which lets aggrieved customers appeal CDD decisions and delays to the regulator within 90 days",
+          "Regulation 13(2), which gives compliance officers and their staff timely access to all customer records"
         ],
         "answer": 3,
         "explanation": "Regulation 13(2) requires compliance officers, and those assisting them, to have timely access to all customer records and relevant information. Data protection does not override this internal compliance access.",
