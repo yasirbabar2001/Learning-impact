@@ -48,7 +48,7 @@ when the official text was opened and expressly supports it (✓ checked). No qu
 
 - India: RBI consolidated its circulars into bank-type Directions (Nov 2025); new cyber, fraud, compliance and audit
   Directions (31 July 2026); Integrated Ombudsman Scheme 2026; recovery-agent certification from 1 January 2027.
-- Canada: Strong Borders Act (26 March 2026) — effective compliance programs, penalties up to $20 million per
+- Canada: Strengthening Canada's Immigration System and Borders Act (S.C. 2026, c. 4, 26 March 2026) — effective compliance programs, penalties up to $20 million per
   violation or 3% of global income; new Bank Act fraud-training duty passed but not yet in force.
 - Malaysia: AMLA amended (Act A1761, 1 March 2026) — duties bind directors, officers and employees personally.
 - Bangladesh: Personal Data Protection Act 2026, Cyber Security Act 2026, Deposit Protection Act 2026.

@@ -494,7 +494,7 @@
           "question": "What is the maximum prison term for active laundering under Article 3 of Law 8/2010?",
           "options": [
             "5 years",
-            "15 years",
+            "15 years, the same as the terrorism financing offence",
             "10 years",
             "20 years"
           ],
@@ -519,10 +519,10 @@
           "id": "id-aml-s1-q4",
           "question": "Which knowledge standard do the laundering offences in Law 8/2010 use?",
           "options": [
-            "The person must have been convicted of the predicate crime first",
+            "The person must already have been convicted of the predicate crime by a court",
             "The prosecution must prove the person planned the predicate crime",
             "The person must have admitted knowing where the money came from",
-            "The person knew or should reasonably have suspected the assets were proceeds of crime"
+            "They knew or should reasonably have suspected the assets were proceeds"
           ],
           "answer": 3,
           "explanation": "Articles 3 to 5 apply to assets the person knew or should reasonably have suspected ('patut diduga') were proceeds. The other options add requirements the law does not state.",
@@ -559,7 +559,7 @@
           "question": "What is the maximum principal fine for a corporation convicted of laundering under Law 8/2010?",
           "options": [
             "IDR 10 billion",
-            "IDR 1 billion",
+            "IDR 1 billion, the same as for an individual's passive laundering",
             "IDR 25 billion",
             "IDR 100 billion"
           ],
@@ -571,7 +571,7 @@
           "id": "id-aml-s1-q8",
           "question": "What did POJK 8/2023 add compared with the 2017 OJK regulation it replaced?",
           "options": [
-            "Prevention of proliferation financing of weapons of mass destruction",
+            "Proliferation financing of weapons of mass destruction",
             "The first rules on customer due diligence",
             "The creation of PPATK as the FIU",
             "Criminal penalties for money laundering"
@@ -1024,9 +1024,9 @@
           "id": "id-aml-s2-q4",
           "question": "Which of these is a duty for PEP relationships under POJK 8/2023?",
           "options": [
-            "Approval from a designated senior officer to open or continue the relationship",
+            "A designated senior officer's approval to open or continue it",
             "Approval from OJK before the account is opened",
-            "A report to PPATK every time the PEP deposits money",
+            "A separate report to PPATK every single time the PEP deposits or withdraws money",
             "Closing the account when the PEP leaves office"
           ],
           "answer": 0,
@@ -1063,10 +1063,10 @@
           "id": "id-aml-s2-q7",
           "question": "During CDD the bank comes to suspect laundering and believes that continuing CDD would alert the customer. What does POJK 8/2023 require?",
           "options": [
-            "Finish all CDD steps first, then report",
+            "Finish every CDD step first, however long it takes, and only then decide whether to report",
             "Tell the customer the bank needs more time for checks",
             "Close the account immediately without reporting",
-            "Stop the CDD process and report the suspicious transaction to PPATK"
+            "Stop CDD and report the suspicious transaction to PPATK"
           ],
           "answer": 3,
           "explanation": "Article 49(3) says that where CDD would breach the anti-tipping-off rule, the bank stops CDD and files an LTKM with PPATK.",
@@ -1076,9 +1076,9 @@
           "id": "id-aml-s2-q8",
           "question": "Which customers must a bank keep in a separate list under POJK 8/2023?",
           "options": [
-            "Customers and beneficial owners that meet the bank's high-risk criteria",
+            "Customers and beneficial owners meeting high-risk criteria",
             "Every customer with a balance over IDR 500 million",
-            "Customers who have closed their accounts",
+            "Every customer whose combined balances exceed IDR 500 million at the end of any month",
             "Customers who used non face-to-face onboarding"
           ],
           "answer": 0,
@@ -1495,8 +1495,8 @@
           "id": "id-aml-s3-q3",
           "question": "What is the deadline for filing a cash transaction report (LTKT) with PPATK?",
           "options": [
-            "Three working days from the transaction",
-            "Fourteen working days from the date of the transaction",
+            "Three working days from the transaction, the same as for suspicious reports",
+            "Fourteen working days from the transaction",
             "Twenty-four hours from the transaction",
             "The end of the following month"
           ],
@@ -1521,7 +1521,7 @@
           "id": "id-aml-s3-q5",
           "question": "A bank postpones a transaction because the customer seems to be using a forged document. Within what time must it report the postponement to PPATK?",
           "options": [
-            "Within three working days, with the LTKM",
+            "Within three working days, attached to the suspicious transaction report on goAML",
             "Within fourteen working days",
             "Only if the customer complains",
             "Within 24 hours, attaching the postponement minutes"
@@ -1574,7 +1574,7 @@
           "question": "OJK asks a bank for CDD records on a customer during an inspection. How quickly must the bank provide them under POJK 8/2023?",
           "options": [
             "As soon as possible and no later than three working days",
-            "Within fourteen working days",
+            "Within fourteen working days, the same period as for cash transaction reports",
             "Within thirty days",
             "At the next annual report"
           ],
@@ -1965,7 +1965,7 @@
           "options": [
             "15 years",
             "5 years",
-            "20 years",
+            "20 years, the maximum for active money laundering",
             "10 years"
           ],
           "answer": 0,
@@ -2015,10 +2015,10 @@
           "id": "id-aml-s4-q5",
           "question": "When must a bank freeze funds after confirming a DTTOT match?",
           "options": [
-            "Within three working days, after writing to the customer",
+            "Within three working days, after writing to the customer to explain the reason for the freeze",
             "After the police send a separate court order to the bank",
             "After OJK approves the freeze",
-            "Immediately, without delay and without notifying the customer first"
+            "Immediately, without delay and without warning the customer"
           ],
           "answer": 3,
           "explanation": "Article 53(4) requires immediate freezing without delay and without prior notice. The three-working-day period applies to the freeze report, not to the freeze itself.",
@@ -2028,7 +2028,7 @@
           "id": "id-aml-s4-q6",
           "question": "A listed person believes the freeze of his account is wrong. Under Law 9/2013, to whom does he first send a written objection?",
           "options": [
-            "The bank's branch manager",
+            "The manager of the branch where the frozen account is held",
             "The Chief of the Indonesian National Police",
             "OJK's banking supervisors",
             "PPATK's head"
@@ -2054,7 +2054,7 @@
           "id": "id-aml-s4-q8",
           "question": "How long does a freeze on a DTTOT-listed person's funds last?",
           "options": [
-            "Thirty working days, then it ends by law",
+            "Thirty working days, after which the freeze ends automatically by law",
             "For as long as the person remains on the list",
             "Five working days, like a postponement",
             "Until the bank's next annual review"
@@ -2499,7 +2499,7 @@
           "id": "id-aml-s5-q3",
           "question": "Under POJK 8/2023, who approves the bank's AML/CFT/CPF policies and procedures?",
           "options": [
-            "The head of the AML unit alone",
+            "The head of the AML unit alone, as the person responsible for the programme",
             "OJK, before they take effect",
             "The Board of Commissioners, on the directors' proposal",
             "PPATK, during its compliance audit"
@@ -2527,7 +2527,7 @@
           "options": [
             "Within six months of the review result",
             "Within three working days",
-            "Before the next review a year later",
+            "Before the next yearly review, so changes can be made all at once",
             "Within thirty working days"
           ],
           "answer": 0,
@@ -2553,7 +2553,7 @@
           "options": [
             "Sales techniques for high-value products",
             "Typologies of ML, TF and PF, and each employee's role",
-            "The bank's dividend policy",
+            "The bank's dividend policy and its targets for growing customer deposits",
             "Personal tax planning for staff"
           ],
           "answer": 1,
@@ -2566,7 +2566,7 @@
           "options": [
             "IDR 10 million, because any late report counts as not submitted",
             "IDR 100,000 per working day late, up to IDR 3 million for that report",
-            "IDR 1 billion, as for a TF reporting failure",
+            "IDR 1 billion, the same as the administrative fine for a deliberate TF reporting failure",
             "No fine, only a written warning"
           ],
           "answer": 1,
@@ -2798,7 +2798,7 @@
         "options": [
           "Indonesia was admitted as an observer for the first time",
           "Indonesia was placed on the FATF list of high-risk jurisdictions",
-          "Indonesia became the 40th member after completing all items in its action plan",
+          "It became the 40th member after completing its action plan",
           "Indonesia joined after the FATF waived its mutual evaluation"
         ],
         "answer": 2,
@@ -2849,9 +2849,9 @@
         "question": "A state-owned enterprise with majority government ownership opens an account. Its ownership information is publicly available and reliable. What does POJK 8/2023 allow?",
         "options": [
           "Beneficial owner checks do not apply to state-owned enterprises at all",
-          "The bank must always collect a full beneficial owner declaration from the customer",
+          "Beneficial owner checks simply do not apply to state-owned enterprises, government bodies or listed companies",
           "The bank must ask OJK to verify the owner",
-          "The bank need not ask the customer again for beneficial owner identity data it can rely on publicly"
+          "The bank may rely on reliable public owner information instead of asking again"
         ],
         "answer": 3,
         "explanation": "Article 34 still applies beneficial owner verification to state bodies, majority state-owned companies and listed companies, but lets the bank rely on adequate and reliable public information; if in doubt it must ask the customer.",
@@ -2926,7 +2926,7 @@
         "id": "id-aml-x17",
         "question": "What must the directors approve in connection with updating customer data under POJK 8/2023?",
         "options": [
-          "The data-updating plan report and the report on its realisation",
+          "The data-updating plan and its realisation report",
           "Every individual change to a customer's address",
           "Each customer's annual risk score",
           "The list of dormant accounts closed each month"
@@ -2953,8 +2953,8 @@
         "question": "Which cash transactions are exempt from the LTKT duty under Law 8/2010?",
         "options": [
           "All cash deposits by companies with an account over five years old",
-          "Transactions with the government and the central bank, and salary or pension payments",
-          "Any cash transaction below IDR 1 billion",
+          "Dealings with the government and central bank, and salary or pension payments",
+          "Any cash transaction below IDR 1 billion made by a customer whose risk rating is low",
           "Cash deposits by PEPs approved by a senior officer"
         ],
         "answer": 1,
@@ -3121,7 +3121,7 @@
         "id": "id-aml-x32",
         "question": "Who notifies a person in writing that he has been placed on the DTTOT, and within what time?",
         "options": [
-          "The bank, within three working days",
+          "The bank holding the account, within three working days of the freeze",
           "PPATK, within twenty-four hours",
           "The police chief, within ten working days",
           "OJK, within thirty days"
@@ -3174,9 +3174,9 @@
         "question": "What does POJK 8/2023 require the bank's individual risk assessment to refer to?",
         "options": [
           "The bank's marketing plan for the year",
-          "The previous year's LTKM count only",
+          "Only the bank's own count of suspicious transaction reports from the previous year",
           "The risk assessments of competitor banks",
-          "Indonesia's national and sectoral ML/TF/PF risk assessments"
+          "Indonesia's national and sectoral risk assessments"
         ],
         "answer": 3,
         "explanation": "Article 4(4) requires the bank's assessment to refer to Indonesia's national and sectoral risk assessments.",
@@ -3186,8 +3186,8 @@
         "id": "id-aml-x37",
         "question": "When must a bank assess the ML/TF/PF risk of a new product or new technology under POJK 8/2023?",
         "options": [
-          "Before the product or technology is launched or used",
-          "Within six months after launch",
+          "Before it is launched or used",
+          "Within six months after launch, once real transaction data is available",
           "At the next yearly risk assessment",
           "Only if OJK asks for it"
         ],
@@ -3199,8 +3199,8 @@
         "id": "id-aml-x38",
         "question": "A commercial bank submits a required report to OJK 35 working days after the deadline. How does POJK 8/2023 treat it?",
         "options": [
-          "As not submitted, with a fine of IDR 10 million for that report",
-          "As late, with a fine of IDR 100,000 per day without limit",
+          "As not submitted: a fine of IDR 10 million for that report",
+          "As late, with a fine of IDR 100,000 per working day and no upper limit at all",
           "As on time, because it was eventually submitted",
           "As late, with a fine capped at IDR 3 million"
         ],
@@ -3238,7 +3238,7 @@
         "id": "id-aml-x41",
         "question": "OJK fines a commercial bank under POJK 8/2023, but the bank made a loss the previous year. What happens to the fine calculation?",
         "options": [
-          "It is cancelled permanently",
+          "It is cancelled permanently, because fines can only be taken from profit",
           "It is replaced by a fixed IDR 5 billion fine",
           "It is doubled the following year",
           "It is deferred until the bank makes a profit"
@@ -3251,9 +3251,9 @@
         "id": "id-aml-x42",
         "question": "Who, by law, is responsible for making sure a financial conglomerate applies the programme across all its offices and subsidiaries at home and abroad?",
         "options": [
-          "The financial institution that is the conglomerate's parent",
+          "The conglomerate's parent financial institution",
           "Each subsidiary separately, with no group role",
-          "PPATK, through its foreign cooperation",
+          "PPATK, through its cooperation agreements with foreign financial intelligence units",
           "The host country regulator only"
         ],
         "answer": 0,
