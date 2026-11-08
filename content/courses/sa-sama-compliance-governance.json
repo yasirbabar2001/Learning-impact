@@ -1,0 +1,3137 @@
+{
+  "slug": "sa-sama-compliance-governance",
+  "title": "Saudi Arabia | SAMA Compliance Function, Governance and Whistleblowing",
+  "tagline": "Run compliance, board governance, senior appointments and speak-up channels the way SAMA expects at a conventional Saudi bank.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional commercial banks in Saudi Arabia",
+    "Foreign bank branches in Saudi Arabia",
+    "Bank boards, board committees and company secretaries",
+    "Compliance, internal audit and risk functions"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the compliance and governance rules the **Saudi Central Bank (SAMA)** sets for conventional banks. It is based on SAMA's **Principles of Compliance for Commercial Banks Operating in the Kingdom of Saudi Arabia** (2020), the **Key Principles of Governance in Financial Institutions** (version 2, 2024), the **Requirements for Appointments to Senior Positions**, the **Whistle Blowing Policy for Financial Institutions** (2019) and SAMA's professional certification circulars, all published in the SAMA Rulebook.\n\nParagraph 72 of the compliance principles requires an annual compliance training and awareness programme for all employees, compliance training for new joiners before they start, and periodic reminders for staff who deal with the public. The governance principles require an induction for every board member, and the whistleblowing policy requires awareness programmes on reporting channels and protection. This quest supports those duties for all bank staff, and in depth for compliance, audit, governance and senior staff.\n\nThe quest builds knowledge and does not replace your bank's own policies, procedures or the latest SAMA instructions; always follow them. It covers conventional banking only.",
+  "audience": [
+    "All employees of conventional banks in Saudi Arabia, including new joiners before they start their duties",
+    "Compliance officers, compliance unit staff and staff of violation reports units",
+    "Board members, board committee members, board secretaries and governance staff",
+    "Senior executives and candidates for posts that need SAMA's non-objection",
+    "Internal auditors and risk managers who review compliance and governance"
+  ],
+  "outcomes": [
+    "Explain how SAMA's compliance principles divide duties between the board, senior management, the compliance unit and every employee",
+    "Apply the independence, reporting, non-objection, pay and delegation rules for the Chief Compliance Officer and compliance unit",
+    "Describe board composition, independence, induction and committee rules in SAMA's Key Principles of Governance",
+    "Apply SAMA's fit and proper criteria and non-objection rule for senior positions",
+    "Handle a violation report under SAMA's Whistle Blowing Policy, protecting the reporter and following the processing stages",
+    "Plan training under paragraph 72 and assemble the evidence a SAMA review expects"
+  ],
+  "quest": {
+    "name": "The Compliance Charter",
+    "premise": "You have just joined Durrah Bank, a fictional conventional bank headquartered in Riyadh with branches in Jeddah and Al-Khobar, as a Compliance Officer. A fee has been charged that SAMA's rules do not allow, a new director wants to start before SAMA's letter arrives, and a branch employee has just blown the whistle. With Chief Compliance Officer Hind Al-Subaie, board secretary Turki Al-Mutlaq, audit head Grace Mwangi, branch manager Khalid Al-Ghamdi and reports officer Dana Al-Shehri, clear five stages, then face the final boss: SAMA's review.",
+    "badge": {
+      "name": "Compliance Charter Keeper",
+      "description": "Awarded to bankers who can apply SAMA's compliance, governance, senior appointment and whistleblowing rules in daily work."
+    },
+    "color": "#14532d",
+    "cast": [
+      {
+        "id": "hind",
+        "name": "Hind Al-Subaie",
+        "role": "Chief Compliance Officer, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "turki",
+        "name": "Turki Al-Mutlaq",
+        "role": "Board Secretary and Director of Governance",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#3f3f46"
+        }
+      },
+      {
+        "id": "grace",
+        "name": "Grace Mwangi",
+        "role": "Head of Internal Audit, Riyadh",
+        "look": {
+          "skin": 5,
+          "hair": "curly",
+          "color": "#9d174d"
+        }
+      },
+      {
+        "id": "khalid",
+        "name": "Khalid Al-Ghamdi",
+        "role": "Branch Manager, Al-Khobar",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#92400e"
+        }
+      },
+      {
+        "id": "dana",
+        "name": "Dana Al-Shehri",
+        "role": "Officer, Violation Reports Unit",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#0f766e"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "SAMA's Principles of Compliance: Compliance Starts at the Top",
+      "stage": "The Compliance Charter",
+      "summary": "Meet SAMA's Principles of Compliance for Commercial Banks (2020): what non-compliance risk is, how the board, senior management and the compliance unit share the work, the yearly cycle of risk assessment, reporting and the annual compliance report, and why every employee owns compliance.",
+      "minutes": 50,
+      "objectives": [
+        "Explain what SAMA means by compliance risk and the areas its compliance principles cover",
+        "Distinguish the compliance duties of the board, senior management and the compliance unit",
+        "Describe the yearly cycle of risk assessment, board reporting and the annual compliance report to SAMA",
+        "Recognise when a compliance failure must be escalated to the board and to SAMA at once"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one in the Compliance Division",
+          "setting": "Durrah Bank head office, King Fahd Road, Riyadh. Sunday morning.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "You join Durrah Bank, a fictional conventional bank, as a new Compliance Officer. Chief Compliance Officer Hind Al-Subaie meets you at the lift.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hind",
+              "text": "Welcome. Before you get a laptop, you get this: SAMA's Principles of Compliance for Commercial Banks. Our policy is built on them.",
+              "mood": "happy"
+            },
+            {
+              "who": "turki",
+              "text": "And the board will ask you about them. The annual compliance report goes to the board before it goes to SAMA.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hind",
+              "text": "Turki is our Board Secretary and Director of Governance. He keeps us honest about deadlines.",
+              "mood": "happy"
+            },
+            {
+              "who": "khalid",
+              "text": "Hind, quick one from Al-Khobar: a product team wants to launch a new card next month. Do they still need us?",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "They do, and so does every team. Compliance is not a department. It is everyone's job, starting with the board.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hind",
+              "text": "Your quest has five stages. Stage one: the Compliance Charter. Who owns compliance at a Saudi bank?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's compliance principles in six scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The instrument",
+              "narration": "SAMA issued its Principles of Compliance for Commercial Banks in September 2020, updating the older compliance manual for banks. They set a minimum, and SAMA expects better practice where possible."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Who they cover",
+              "narration": "Local commercial banks and branches of foreign banks licensed in the Kingdom, including their branches and offices abroad unless local law conflicts."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Compliance risk",
+              "narration": "The risk of regulatory penalties, serious financial loss or reputational damage because the bank fails to follow laws, SAMA instructions, or ethical and conduct standards."
+            },
+            {
+              "icon": "🔝",
+              "heading": "Tone from the top",
+              "narration": "Compliance starts with the chairman, the board and senior management, who should lead by example."
+            },
+            {
+              "icon": "👥",
+              "heading": "Everyone's job",
+              "narration": "Compliance is part of the bank's culture and not limited to the compliance unit. Each employee carries responsibility for it."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Three layers",
+              "narration": "The board approves the policy and oversees, senior management manages the risk, and the compliance unit coordinates, advises, monitors and reports."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Governance of compliance at a Saudi bank",
+          "items": [
+            {
+              "label": "Board of directors",
+              "detail": "Approves the compliance policy, oversees non-compliance risk, evaluates effectiveness at least yearly."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Owns and manages non-compliance risk; prepares the policy, applies sanctions, reports to the board."
+            },
+            {
+              "label": "Compliance unit",
+              "detail": "Independent unit led by the Chief Compliance Officer: advises, monitors, tests and reports."
+            },
+            {
+              "label": "Every employee",
+              "detail": "First line of defence: knows the rules for their job and reports violations."
+            }
+          ],
+          "caption": "Built from the governance framework described in the introduction to SAMA's compliance principles (paragraph 22)."
+        },
+        {
+          "type": "check",
+          "question": "Under SAMA's compliance principles, who bears the responsibility for effectively managing non-compliance risk in a local bank?",
+          "options": [
+            "The compliance unit, because it is the expert function",
+            "Senior management, with the compliance unit assisting it",
+            "The internal audit unit, through its periodic reviews",
+            "Each business unit alone, without central coordination"
+          ],
+          "answer": 1,
+          "explanation": "Principle 2 places responsibility for managing non-compliance risk on senior management. The compliance unit helps through advice, monitoring and oversight, and the board oversees. Internal audit reviews compliance; it does not manage it."
+        },
+        {
+          "type": "concept",
+          "title": "What 'compliance' covers in SAMA's eyes",
+          "body": "SAMA defines **compliance risk** broadly: penalties or regulatory action, significant financial loss, or damage to reputation caused by failing to follow regulations, instructions and standards, **including ethical and conduct codes**.\n\nThe sources of the rules are wide too:\n\n- laws and SAMA instructions (regulations, rules, principles, frameworks, guides and mandatory circulars);\n- rules of other Saudi authorities and of host countries where the bank operates;\n- sound banking practice, internal codes of conduct and integrity standards;\n- standards from international bodies such as the Basel Committee.\n\nTopics named in the principles include fair market practice, conflicts of interest, treating customers fairly, suitable advice, AML/CTF, proliferation, KYC, fraud, corruption and **handling reports of violations**.\n\nThe principles also warn that an action can hurt the bank's reputation even when no rule is broken. Ask: is it lawful, and is it right?"
+        },
+        {
+          "type": "sort",
+          "title": "Board or senior management?",
+          "prompt": "Sort each duty to the party SAMA's compliance principles give it to in a local bank.",
+          "buckets": [
+            "Board (or its committee)",
+            "Senior management"
+          ],
+          "items": [
+            {
+              "text": "Approve the compliance policy and its updates",
+              "bucket": 0
+            },
+            {
+              "text": "Evaluate the effectiveness of non-compliance risk management at least once a year",
+              "bucket": 0
+            },
+            {
+              "text": "Approve the annual compliance report and give SAMA a copy",
+              "bucket": 0
+            },
+            {
+              "text": "Prepare and update the compliance policy and communicate it to all sectors",
+              "bucket": 1
+            },
+            {
+              "text": "Make sure corrective and disciplinary action follows policy breaches",
+              "bucket": 1
+            },
+            {
+              "text": "Identify the main non-compliance risks and plan how to manage them at least annually",
+              "bucket": 1
+            },
+            {
+              "text": "Commit to giving the compliance unit adequate resources on a continuing basis",
+              "bucket": 0
+            },
+            {
+              "text": "Build and develop a permanent, independent compliance unit",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The silent quarter",
+          "setting": "Durrah Bank, executive floor. Wednesday afternoon.",
+          "lines": [
+            {
+              "who": "grace",
+              "text": "Hind, my audit team found something. Retail has been charging a fee SAMA's instructions do not allow. It started three months ago.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "How many customers?",
+              "mood": "thinking"
+            },
+            {
+              "who": "grace",
+              "text": "Thousands, across all regions. Retail says they planned to mention it in the year-end report.",
+              "mood": "worried"
+            },
+            {
+              "who": "turki",
+              "text": "Year-end? The board meets in five months.",
+              "mood": "angry"
+            },
+            {
+              "who": "hind",
+              "text": "This cannot wait for a routine report. Let's look at what the principles say about significant failures.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "A significant failure, discovered mid-year",
+          "situation": "Internal audit has found that a retail fee breaching SAMA instructions has been charged to thousands of customers for three months. The head of retail wants to fix the system quietly, refund customers next quarter and include the matter in the annual compliance report. You are drafting Hind's next step.",
+          "choices": [
+            {
+              "text": "Report it in writing to the board (or its delegated committee) straight away, start correction and refunds, and assess with Hind whether SAMA must be told directly.",
+              "outcome": "Best. Senior management, helped by compliance, must report significant failures to the board immediately and in writing. Where the impact could reach the banking sector's reputation, the Chief Compliance Officer must also notify SAMA directly and promptly.",
+              "score": 2
+            },
+            {
+              "text": "Accept the retail plan, but log the issue in the compliance unit's register so it appears in the annual report.",
+              "outcome": "Partly right: logging matters, but a failure that can lead to penalties and reputational harm must reach the board immediately, not at year end.",
+              "score": 1
+            },
+            {
+              "text": "Tell retail to fix it and leave reporting to internal audit, since audit found the issue.",
+              "outcome": "Poor. Audit informs the head of compliance of its findings, but reporting significant compliance failures to the board is a senior management and compliance duty, not something to hand back to audit.",
+              "score": 0
+            },
+            {
+              "text": "Wait until the fee is fully refunded so the board receives a closed issue rather than an open one.",
+              "outcome": "Poor. Delaying escalation to present a tidy picture defeats the purpose. The board must decide with accurate information while the problem is live.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Durrah Bank's yearly compliance cycle",
+          "items": [
+            {
+              "label": "Assess the risks",
+              "detail": "Senior management, with compliance, identifies the main non-compliance risks and plans, at least annually."
+            },
+            {
+              "label": "Monitor and test",
+              "detail": "The compliance unit monitors and tests compliance continuously, with representative tests."
+            },
+            {
+              "label": "Report in writing",
+              "detail": "Written reports to the board or its committee at least annually; significant failures at once."
+            },
+            {
+              "label": "Board evaluates",
+              "detail": "The board or a delegated committee evaluates effectiveness at least once a year."
+            },
+            {
+              "label": "Annual report to SAMA",
+              "detail": "Board-approved annual compliance report sent to SAMA by the end of April, signed off by the chairman."
+            }
+          ],
+          "caption": "Paragraphs 33, 35, 39, 76 and 80 of SAMA's compliance principles."
+        },
+        {
+          "type": "flip",
+          "title": "Words from the compliance principles",
+          "cards": [
+            {
+              "front": "Compliance function",
+              "back": "An independent function at the first managerial level that identifies, assesses, advises on, monitors and reports on non-compliance risk."
+            },
+            {
+              "front": "Compliance unit",
+              "back": "The unit whose head and staff do only compliance work, at group, sector or department level depending on the bank's structure."
+            },
+            {
+              "front": "Compliance officer",
+              "back": "An employee in another business unit whom the Chief Compliance Officer designates to handle set compliance tasks in that unit."
+            },
+            {
+              "front": "Compliance policy",
+              "back": "The board-approved policy setting compliance responsibilities, the unit's authority and the bank's method for managing compliance risk."
+            },
+            {
+              "front": "Instructions",
+              "back": "Everything SAMA issues as regulator: regulations, rules, principles, frameworks, guides and mandatory circulars."
+            },
+            {
+              "front": "Conflict of interest (compliance)",
+              "back": "When a compliance person has an interest or relationship in a matter they review that could stop, or seem to stop, an impartial decision."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "By when must SAMA receive Durrah Bank's board-approved annual compliance report?",
+          "options": [
+            "Within ten working days of the board meeting",
+            "By the end of April each year",
+            "Together with the audited financial statements",
+            "By the end of the first quarter of each year"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 80 says SAMA should receive the board-approved annual compliance report by the end of April each year, sent by the chairman of a local bank (or the head of a foreign bank branch), as part of the bank's compliance self-assessment."
+        },
+        {
+          "type": "example",
+          "title": "Real cases: when compliance risk becomes a SAMA penalty (2017 and 2020)",
+          "body": "SAMA's own statements show how breaches of its instructions turn into penalties and public naming.\n\n- **September 2017:** SAMA said it had established that the **National Commercial Bank** deducted more from customers' salaries than the percentages its rules allow. SAMA fined the bank, pointed out the violation and required corrective action.\n- **November 2020:** SAMA announced penalty decisions against **30 financial institutions**, several banks among them, for breaching its principles of responsible financing for individuals (the share of a customer's monthly income taken by credit obligations). It ordered corrections, published the list of names and said it could stop an institution offering the product if violations continued.\n\n**The compliance lesson:** each case began as a business practice that drifted from a SAMA instruction. Monitoring, testing and escalation are how a bank catches drift before the regulator does.\n\n*Sources: SAMA news statements of 12 September 2017 and 24 November 2020.*"
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who fixes, who advises?",
+          "items": [
+            {
+              "label": "Managing non-compliance risk",
+              "left": "Senior management and business heads",
+              "right": "Advises, monitors, oversees"
+            },
+            {
+              "label": "Correcting a deficiency",
+              "left": "Head of the unit where it occurred",
+              "right": "Follows up and reports gaps"
+            },
+            {
+              "label": "Explaining a new SAMA instruction",
+              "left": "Applies it in policies and processes",
+              "right": "Communicates it promptly, gets confirmation"
+            },
+            {
+              "label": "Compliance policy",
+              "left": "Prepares it; the board approves",
+              "right": "Helps draft and keeps it current"
+            }
+          ],
+          "caption": "Paragraphs 29, 63 and 64: the compliance unit supports; it does not take ownership away from the business.",
+          "headers": [
+            "Business and senior management",
+            "Compliance unit"
+          ]
+        },
+        {
+          "type": "keypoints",
+          "title": "Compliance Charter take-aways",
+          "items": [
+            "SAMA's Principles of Compliance (2020) apply to local commercial banks and foreign bank branches in the Kingdom and set a minimum standard.",
+            "Compliance risk covers penalties, financial loss and reputational damage, including from breaches of ethical and conduct codes.",
+            "The board approves the policy and evaluates effectiveness at least yearly; senior management manages the risk; the compliance unit coordinates and advises.",
+            "Significant failures go to the board in writing immediately, and to SAMA directly when the sector's reputation is at stake.",
+            "The board-approved annual compliance report reaches SAMA by the end of April each year."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one rule that applies to your own job. Who in your bank owns compliance with it, who checks it, and who would tell the board if it broke down?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-gv-s1-q1",
+          "question": "Which institutions do SAMA's Principles of Compliance for Commercial Banks apply to?",
+          "options": [
+            "Only local commercial banks listed on the Saudi stock exchange",
+            "Only foreign bank branches, since local banks have separate governance rules",
+            "Local commercial banks and foreign bank branches licensed in the Kingdom, including their branches and offices abroad",
+            "All institutions SAMA supervises, including insurers and finance companies"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 30 applies the principles to all commercial banks in the Kingdom and their foreign branches and offices, unless host-country law conflicts. Insurers and finance companies are not the subject of this instrument.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s1-q2",
+          "question": "A business head says compliance is 'the compliance team's problem'. Which statement in SAMA's principles contradicts this most directly?",
+          "options": [
+            "Compliance staff must sign off every customer transaction",
+            "Only the board may decide which rules the bank applies",
+            "Business heads may delegate compliance entirely to compliance officers",
+            "Each individual in the bank carries responsibility for compliance, which must be part of the bank's culture"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 20 says compliance is part of the culture and not limited to the compliance unit; every individual carries responsibility. The other options are not in the principles.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s1-q3",
+          "question": "Under the principles, how often must the board or a delegated committee evaluate the effectiveness of the bank's non-compliance risk management?",
+          "options": [
+            "Every quarter, at each regular board meeting",
+            "Only when SAMA requests it after an inspection",
+            "At least once a year",
+            "Every three years, alongside the external review"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 33 requires the board, or a committee it delegates, to evaluate the effectiveness of non-compliance risk management at least once a year.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s1-q4",
+          "question": "Durrah Bank's compliance unit finds a failure that could bring heavy regulatory penalties. What do the principles require?",
+          "options": [
+            "Inform the business head and close the matter once fixed",
+            "Report it in writing to the board or its delegated committee immediately",
+            "Wait for internal audit to confirm it before reporting",
+            "Include it in the next annual compliance report"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 39 requires immediate written reporting to the board or its delegated committee of significant failures or violations, and paragraph 78 repeats this. Waiting for the annual report or for audit is too late.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s1-q5",
+          "question": "When must the Chief Compliance Officer notify SAMA directly and promptly?",
+          "options": [
+            "On strong indicators of significant compliance failures that affect the banking sector's reputation",
+            "Only after the board has approved the notification",
+            "Every quarter, with a summary of all minor findings",
+            "Whenever any customer complaint is upheld by the bank"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 59 requires the CCO to notify SAMA's bank supervision promptly and directly on strong indicators of significant or serious failures affecting the sector's reputation. Board approval is not a precondition.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s1-q6",
+          "question": "Which body approves Durrah Bank's compliance policy?",
+          "options": [
+            "The board of directors",
+            "SAMA's bank supervision department",
+            "The internal audit unit",
+            "The Chief Compliance Officer"
+          ],
+          "answer": 0,
+          "explanation": "Principle 1 makes the board responsible for approving and overseeing an effective compliance policy, prepared by senior management (Principle 3). For a foreign bank branch, the branch's chief officer takes the board's role.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s1-q7",
+          "question": "A product manager argues that a practice is legal, so reputational concerns raised by compliance are irrelevant. Which point from SAMA's principles best answers him?",
+          "options": [
+            "The bank must weigh actions that could provoke strong negative reactions and harm its reputation even without an actual violation",
+            "Reputation is a matter for marketing, not for compliance",
+            "Only written SAMA instructions can be considered by compliance",
+            "Compliance may veto any product it considers unpopular"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 20 asks the bank to consider the impact of its actions on shareholders, customers, employees and the market that could damage reputation even if no rule is broken. Compliance advises; it does not hold a general veto.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-gv-s1-q8",
+          "question": "Who sends the board-approved annual compliance report of a local bank to SAMA?",
+          "options": [
+            "The chief financial officer",
+            "The chairman of the board",
+            "The head of internal audit",
+            "The Chief Compliance Officer"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 80 says the chairman of a local bank (or the chief of a foreign bank branch) sends the board-approved report to SAMA by the end of April each year.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s1-q9",
+          "question": "Which of these is listed among the topics that compliance rules and standards cover under SAMA's principles?",
+          "options": [
+            "Approving the annual marketing budget",
+            "Setting the bank's dividend policy",
+            "Choosing the bank's external auditor",
+            "Handling reports of violations"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 24 lists fair market practice, conflicts of interest, fair treatment, suitable advice, AML/CTF, KYC, fraud, corruption and handling reports of violations. The others are not compliance topics in the principles.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s1-q10",
+          "question": "Senior management at Durrah Bank discovers that a manager breached the compliance policy. What duty do the principles give senior management?",
+          "options": [
+            "Refer the matter to SAMA for a decision on discipline",
+            "Make sure appropriate corrective and disciplinary action is taken",
+            "Leave discipline to the compliance unit",
+            "Record it and act only if it happens again"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 38 gives senior management the duty to ensure adherence to the compliance policy and that corrective and disciplinary action follows any violation.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "An Independent, Resourced Compliance Function",
+      "stage": "The Independent Desk",
+      "summary": "Inside SAMA's compliance unit principles: the four elements of independence, the Chief Compliance Officer's level, reporting line and rights, SAMA's non-objection, pay rules, resources and training, the unit's duties from new circulars to testing and reporting, its separation from internal audit, and limits on delegation.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the four elements of compliance independence and the Chief Compliance Officer's reporting line",
+        "Apply the rules on SAMA non-objection, conflicts of interest and remuneration for compliance staff",
+        "Describe the compliance unit's duties: communicating instructions, approving new products, monitoring, testing and reporting",
+        "Distinguish the roles of the compliance unit and internal audit and the limits on delegating compliance tasks"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A tidy new org chart",
+          "setting": "Durrah Bank, CEO's office. Monday, 9:00.",
+          "lines": [
+            {
+              "who": "turki",
+              "text": "The CEO wants a leaner chart. One idea: compliance reports to the Chief Operating Officer, and Hind also takes over branch operations.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hind",
+              "text": "Branch operations? Then I would be checking my own work.",
+              "mood": "worried"
+            },
+            {
+              "who": "grace",
+              "text": "And pay? HR suggested linking compliance bonuses to retail revenue so everyone 'pulls in the same direction'.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hind",
+              "text": "Three problems in one proposal. Turki, can you get us ten minutes with the CEO?",
+              "mood": "thinking"
+            },
+            {
+              "who": "turki",
+              "text": "Yes. Bring the principles. He respects paragraph numbers.",
+              "mood": "happy"
+            },
+            {
+              "who": "hind",
+              "text": "Stage two: the Independent Desk. Let's find out what independence really means.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Four elements of independence",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Official status",
+              "narration": "The compliance unit has a formal standing, written into the compliance policy or a related document, and all staff are told about it."
+            },
+            {
+              "icon": "🎖️",
+              "heading": "A senior head",
+              "narration": "In a local bank the unit is headed by an executive at the first managerial level, with overall responsibility for coordinating compliance risk management."
+            },
+            {
+              "icon": "🚧",
+              "heading": "No conflicting roles",
+              "narration": "Compliance staff, and above all the head of compliance, must not hold other duties that could conflict with their compliance work."
+            },
+            {
+              "icon": "🔑",
+              "heading": "Free access",
+              "narration": "Every compliance staff member may access any relevant information, record or file and speak to any employee needed to do the job."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Not isolation",
+              "narration": "Independence means freedom from interference, not distance. The unit should work closely with the business to spot risks early."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Independence: what it means and what it does not",
+          "items": [
+            {
+              "label": "Reporting line",
+              "left": "CCO reports to the CEO only",
+              "right": "Not via the COO or a business head"
+            },
+            {
+              "label": "Other duties",
+              "left": "Compliance responsibilities only",
+              "right": "No banking or business activity"
+            },
+            {
+              "label": "Pay",
+              "left": "May reflect the whole bank's results",
+              "right": "Not tied to the business line checked"
+            },
+            {
+              "label": "Board contact",
+              "left": "Direct access to the board or committee",
+              "right": "Not filtered by management"
+            },
+            {
+              "label": "Cooperation",
+              "left": "Works closely with business units",
+              "right": "Is not a silo that avoids them"
+            }
+          ],
+          "caption": "Paragraphs 45, 50, 57, 58 and 59 of SAMA's compliance principles.",
+          "headers": [
+            "What SAMA expects",
+            "What it rules out"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under SAMA's principles, to whom should the Chief Compliance Officer of a local bank report administratively?",
+          "options": [
+            "The chief operating officer",
+            "The chair of the audit committee",
+            "The CEO or managing director only",
+            "The head of risk management"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 50 links the first-level compliance officer directly to the chief executive only (CEO, managing director or general manager). Paragraph 59 adds a right of direct access to the board or its delegated committee."
+        },
+        {
+          "type": "match",
+          "title": "The CCO's rights and duties",
+          "prompt": "Match each point to what SAMA's compliance principles say about it.",
+          "pairs": [
+            {
+              "left": "Board access",
+              "right": "May communicate directly with the board or its committee, bypassing usual lines when needed."
+            },
+            {
+              "left": "Yearly board meeting",
+              "right": "Meets the board or its delegated committee at least once a year."
+            },
+            {
+              "left": "Investigations",
+              "right": "May investigate possible breaches and call on legal, audit or external experts."
+            },
+            {
+              "left": "Appointment",
+              "right": "Needs SAMA's non-objection, and so does the CCO leaving the post."
+            },
+            {
+              "left": "Delegation",
+              "right": "May delegate tasks, but stays accountable for all compliance work."
+            },
+            {
+              "left": "Meetings",
+              "right": "May hold regular, documented meetings with senior management and business heads."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Pay, conflicts and who appoints",
+          "body": "SAMA protects compliance independence through people rules as well as structure:\n\n- **Only compliance work.** The CCO and compliance unit staff hold only compliance responsibilities (paragraph 57). Compliance officers placed in other units must avoid and disclose conflicts.\n- **Pay.** Rewards must not depend on the financial performance of the business the person checks. They may reflect the bank's overall results, and the **board or a board committee** gives final approval (paragraph 58).\n- **Appointment.** Choosing the head and staff of compliance follows SAMA's Requirements for Appointments to Senior Positions. The head of compliance selects the unit's staff (paragraph 43).\n- **Changes.** The board is told of any appointment or change of CCO, with reasons; SAMA's **non-objection** is needed for the appointment and when the CCO leaves the post (paragraphs 51-52).\n- **Reporting lines.** All compliance unit staff report to the CCO. Compliance officers in other units keep a mandatory compliance line to the CCO, which prevails (paragraph 54)."
+        },
+        {
+          "type": "story",
+          "title": "The shortcut to SAMA",
+          "setting": "Durrah Bank, Product Development. Thursday, 16:30.",
+          "lines": [
+            {
+              "who": "khalid",
+              "text": "The cards team has already emailed SAMA asking for approval of the new travel card. They said compliance would slow them down.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "Who signed the email?",
+              "mood": "thinking"
+            },
+            {
+              "who": "khalid",
+              "text": "The product director. They also signed with an outsourced call centre for card activation.",
+              "mood": "worried"
+            },
+            {
+              "who": "grace",
+              "text": "Did compliance see the outsourcing contract?",
+              "mood": "thinking"
+            },
+            {
+              "who": "khalid",
+              "text": "Nobody asked.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "Two principles skipped in one afternoon. Let's decide how to put this right.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The product team went straight to SAMA",
+          "situation": "Durrah Bank's cards team sent its own request to SAMA for approval of a new card without compliance review. It also signed an outsourcing agreement for card activation without involving compliance. The launch date is in three weeks and the CEO is keen to keep it.",
+          "choices": [
+            {
+              "text": "Ask the product director to withdraw the request, review the product and the outsourcing deal, then let the CCO submit a single request to SAMA; report the process breach to senior management.",
+              "outcome": "Best. Paragraph 66 requires compliance approval before any request to SAMA for a new product, and only the CCO submits such requests. Paragraph 67 requires compliance to take part in decisions to assign work to third parties. Reporting the breach lets senior management correct the process.",
+              "score": 2
+            },
+            {
+              "text": "Let the request stand to save time, and review the product in parallel while SAMA considers it.",
+              "outcome": "Partly right: reviewing helps, but the request reached SAMA through the wrong channel and without compliance approval. Repairing the route matters as much as the content.",
+              "score": 1
+            },
+            {
+              "text": "Approve the product informally by email so the record shows compliance agreed.",
+              "outcome": "Poor. Backdating approval hides a control failure and still leaves the request with SAMA from the wrong sender.",
+              "score": 0
+            },
+            {
+              "text": "Leave it: product approvals are the business's responsibility, not compliance's.",
+              "outcome": "Poor. The principles give compliance an explicit gatekeeping role for new products and for outsourcing decisions.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "What the compliance unit does all year",
+          "items": [
+            {
+              "label": "Communicate",
+              "detail": "Pass new laws and SAMA instructions to senior management and units promptly; keep a database."
+            },
+            {
+              "label": "Identify and measure",
+              "detail": "Spot compliance risks in new products and practices; use indicators such as complaints and fraud cases."
+            },
+            {
+              "label": "Monitor and test",
+              "detail": "Continuous monitoring with adequate, representative compliance tests."
+            },
+            {
+              "label": "Report",
+              "detail": "Regular written CCO reports to senior management: risks, changes, breaches, fixes and dates."
+            },
+            {
+              "label": "Advise and train",
+              "detail": "Answer staff questions and help senior management run awareness and training."
+            }
+          ],
+          "caption": "Principle 7, paragraphs 63-86, in five steps."
+        },
+        {
+          "type": "order",
+          "title": "From a new SAMA circular to daily practice",
+          "prompt": "Put the compliance unit's steps for a new SAMA instruction in order, as paragraphs 29 and 65 describe them.",
+          "steps": [
+            "Receive the new circular from SAMA",
+            "Record it in the compliance database that all staff can use",
+            "Explain it promptly to senior management and the business units concerned",
+            "Obtain the units' confirmation that they have received and understood it",
+            "Check the requirement is built into policies, procedures and products",
+            "Monitor and test that it is applied, and report gaps"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Compliance unit and internal audit",
+          "cards": [
+            {
+              "front": "Are they the same unit?",
+              "back": "No. Principle 8 requires the two to be separate and independent within the bank."
+            },
+            {
+              "front": "Who reviews whom?",
+              "back": "Internal audit periodically reviews the compliance unit's activities and the bank's compliance risks."
+            },
+            {
+              "front": "Different viewpoints",
+              "back": "Compliance identifies the rules, builds them into policy and checks they work; audit tests controls across all units by sampling or full review."
+            },
+            {
+              "front": "Sharing results",
+              "back": "Internal audit informs the head of compliance of audit findings that relate to compliance."
+            },
+            {
+              "front": "Compliance watching audit",
+              "back": "The compliance unit also checks that internal audit carries out what SAMA requires of it, in the set manner and time."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Durrah Bank wants to outsource part of its compliance testing to a consultancy. What do the principles require?",
+          "options": [
+            "Nothing, provided the consultancy is a licensed audit firm",
+            "Board approval only, as delegation is an internal matter",
+            "Internal audit must take over responsibility for the outsourced work",
+            "SAMA's non-objection before the agreement, with the CCO still responsible"
+          ],
+          "answer": 3,
+          "explanation": "Principle 10 allows some activities to be delegated, but they remain under the CCO's supervision and responsibility, the arrangement must not hinder supervision, and SAMA's non-objection is needed before entering any delegation agreement."
+        },
+        {
+          "type": "tip",
+          "title": "Red flags the compliance programme must watch",
+          "body": "Paragraph 86 asks the compliance programme to include **warning signs** that the bank may be exposed to non-compliance, such as:\n\n- rapid growth of the bank;\n- opening new branches;\n- high staff turnover;\n- changes in programmes;\n- bringing automated systems into workflows.\n\nThe same principle must **protect whistleblowers** and include incentives in line with SAMA's whistle blowing policy. When you see one of these signs, raise the testing level in that area."
+        },
+        {
+          "type": "keypoints",
+          "title": "Independent Desk take-aways",
+          "items": [
+            "Independence has four elements: official status, a first-level head, no conflicting roles, and free access to information and people.",
+            "The CCO reports to the CEO only, holds no business duties, meets the board at least yearly and can go to the board or SAMA directly.",
+            "SAMA's non-objection is needed to appoint the CCO and when the CCO leaves; compliance pay must not depend on the business line checked.",
+            "New product requests reach SAMA only through the CCO after compliance approval; compliance takes part in outsourcing decisions.",
+            "Compliance and internal audit stay separate; audit reviews compliance, and delegating compliance work needs SAMA's non-objection."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Look at how your bank's compliance unit is set up. Which of the four elements of independence is strongest, and which would you want to strengthen first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-gv-s2-q1",
+          "question": "Which of these is one of the four elements of compliance independence in SAMA's principles?",
+          "options": [
+            "All compliance staff can access relevant information and records and talk to employees as needed",
+            "The compliance unit approves the bank's annual budget",
+            "Compliance staff are chosen by the business units they monitor",
+            "The compliance unit reports to the external auditor"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 46 lists official status, a first-level head, no conflicts of interest, and the right to access information and communicate with staff. The other options are not elements of independence.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s2-q2",
+          "question": "HR proposes that compliance staff bonuses depend on the retail division's profits. What do the principles say?",
+          "options": [
+            "Compliance staff may not receive any performance-related reward",
+            "Linking bonuses to retail profit is fine if the CEO approves it",
+            "Bonus rules for compliance are for HR alone to decide",
+            "Rewards must not be tied to the performance of the business the staff check, and the board or its committee gives final approval"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 58 forbids tying compliance rewards to the business line they monitor, allows links to the bank's overall performance, and requires final approval by the board or a board committee.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q3",
+          "question": "Durrah Bank's CCO resigns. What does SAMA require in addition to informing the board?",
+          "options": [
+            "Nothing further, as departures are an internal matter",
+            "Only a notice in the bank's next annual report",
+            "Approval from the bank's general assembly",
+            "SAMA's non-objection to the departure, with documentation and reasons"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 52 requires SAMA's non-objection for the CCO's appointment and also when the CCO leaves the post, with documents and reasons. Paragraph 51 requires the board to be told.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q4",
+          "question": "The CEO asks Hind to also lead branch operations to save a salary. Why is this a problem under the principles?",
+          "options": [
+            "It is allowed if the board records the decision in its minutes",
+            "The CCO and compliance staff should hold only compliance responsibilities, with no banking activity duties",
+            "It is a problem only if the CCO's pay rises as a result",
+            "It is allowed for one year while a replacement is found"
+          ],
+          "answer": 1,
+          "explanation": "Paragraphs 50 and 57 say the CCO must not hold direct or indirect responsibility for banking activities, and compliance staff hold only compliance duties, to protect independence.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q5",
+          "question": "A compliance officer works inside the Treasury unit. Which reporting line prevails for compliance matters?",
+          "options": [
+            "The line to the internal audit unit",
+            "The line to the head of Treasury only",
+            "The line to the Chief Compliance Officer, which is controlling and mandatory",
+            "Whichever manager is more senior"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 54 says compliance officers in other units have a functional line to their unit but a compliance line to the CCO; to avoid dual hierarchy, the line to the CCO is controlling and mandatory.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q6",
+          "question": "Who may submit a request to SAMA for approval of a new product at Durrah Bank?",
+          "options": [
+            "Only the Chief Compliance Officer, after compliance approval",
+            "Any senior executive with the CEO's consent",
+            "The head of the business unit that owns the product",
+            "The board secretary on behalf of the board"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 66 requires business units to obtain compliance approval first, and requests for SAMA approval or non-objection are submitted only by the CCO.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q7",
+          "question": "How often must the CCO meet the board or its delegated committee under the principles?",
+          "options": [
+            "At least once a year",
+            "Only when a significant failure occurs",
+            "Every two years, at the board evaluation",
+            "At every board meeting"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 59 says the CCO should meet the board or its delegated committee at least once a year to help it assess the bank's management of non-compliance risk.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s2-q8",
+          "question": "A business head says compliance should fix the gap it found in his unit's procedure. What does paragraph 64 say?",
+          "options": [
+            "Internal audit decides who fixes it",
+            "Senior management and the unit's head correct it; compliance advises, follows up and reports any shortfall",
+            "Compliance must rewrite the procedure itself within a month",
+            "The board must approve every correction before work starts"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 64 places correction on senior management and the heads of the units concerned. Compliance's role is limited to advice, follow-up and reporting failures to correct.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q9",
+          "question": "Which statement about the compliance unit and internal audit is correct?",
+          "options": [
+            "They may be merged in smaller banks to save cost",
+            "They must be separate and independent, and internal audit periodically reviews compliance",
+            "Compliance reviews internal audit's work and not the other way round",
+            "Internal audit approves the compliance programme each year"
+          ],
+          "answer": 1,
+          "explanation": "Principle 8 requires the two units to be separate and independent, with internal audit reviewing the compliance unit's activities periodically. Compliance also checks audit meets SAMA's requirements, but that does not replace audit's review.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s2-q10",
+          "question": "A bank misreads a SAMA circular and applies it wrongly. According to paragraph 65, what follows?",
+          "options": [
+            "SAMA must reissue the circular before taking any action",
+            "The penalty is waived if the bank acted in good faith",
+            "The bank is not exempt from regulatory penalties because of the incorrect application",
+            "Only the employee who misread it can be penalised"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 65 stresses understanding instructions and seeking clarification from compliance or SAMA if needed, because incorrect application does not exempt the bank from penalties.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Board Governance, Committees and Senior Appointments",
+      "stage": "The Boardroom",
+      "summary": "SAMA's Key Principles of Governance (version 2, 2024): board qualifications, size and independence, the induction every member receives, meetings, the board's duties towards control functions, and the executive, audit, nomination and remuneration, and risk committees. Then the fit and proper rules and SAMA non-objection for senior positions, and a real governance penalty.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the board qualifications, composition and independence tests in SAMA's Key Principles of Governance",
+        "Explain the induction programme each board member must receive and the board's duties towards control functions",
+        "Compare the make-up and roles of the four main board committees",
+        "Apply SAMA's fit and proper criteria and the non-objection rule for senior positions"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A new face at the board table",
+          "setting": "Durrah Bank boardroom, 22nd floor. Tuesday evening.",
+          "lines": [
+            {
+              "who": "turki",
+              "text": "The general assembly elected Dr Nasser last month. The chairman wants him on the audit committee at Thursday's meeting.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hind",
+              "text": "Has SAMA's no-objection letter arrived?",
+              "mood": "thinking"
+            },
+            {
+              "who": "turki",
+              "text": "Not yet. And he has not had his induction either.",
+              "mood": "worried"
+            },
+            {
+              "who": "grace",
+              "text": "There's more. His wife holds a SAR 3 million finance facility with us. Is he still independent?",
+              "mood": "thinking"
+            },
+            {
+              "who": "turki",
+              "text": "The chairman says it's a formality.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hind",
+              "text": "In governance, formalities are the point. Stage three: the Boardroom.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's Key Principles of Governance",
+          "scenes": [
+            {
+              "icon": "📘",
+              "heading": "One rulebook for boards",
+              "narration": "SAMA's Key Principles of Governance in Financial Institutions set minimum governance requirements. Version 2 was issued in May 2024."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Mandatory for banks",
+              "narration": "They apply on a mandatory basis to local banks, finance companies and real estate refinancing companies, and as guidance to several other licensed sectors."
+            },
+            {
+              "icon": "✂️",
+              "heading": "Chair and CEO apart",
+              "narration": "Effective governance needs the roles of board chairman and chief executive to be separate, with clear powers for each."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "A control framework",
+              "narration": "The board relies on risk management, internal audit and compliance departments, internal controls and an external auditor."
+            },
+            {
+              "icon": "🗂️",
+              "heading": "Seven principles",
+              "narration": "Board qualifications; formation and board affairs; board duties; executive management duties; committees; shareholder rights; disclosure and transparency."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Board numbers in the Key Principles",
+          "items": [
+            {
+              "label": "Board size",
+              "detail": "Any covered institution: 5 to 11 members. Banks: 9 to 11 as best practice.",
+              "value": "9 to 11"
+            },
+            {
+              "label": "Independent members",
+              "detail": "At least two members or one third of the board, whichever is greater.",
+              "value": "≥ 1/3"
+            },
+            {
+              "label": "Executive members",
+              "detail": "No more than two executive members on the board.",
+              "value": "≤ 2"
+            },
+            {
+              "label": "Board meetings",
+              "detail": "At least four a year, one every three months, plus extra meetings when needed.",
+              "value": "4+ a year"
+            },
+            {
+              "label": "Term of office",
+              "detail": "Elected by the general assembly for a term of no more than three years; re-election allowed.",
+              "value": "≤ 3 years"
+            }
+          ],
+          "caption": "Principle 2, paragraphs 7, 8 and 22, with the footnote for banks."
+        },
+        {
+          "type": "check",
+          "question": "What must every new Durrah Bank board member receive under paragraph 19 of the Key Principles of Governance?",
+          "options": [
+            "A copy of the bank's audited accounts for the last five years",
+            "An induction programme on the bank's mission, strategy and activities, with a memorandum on the duties of membership",
+            "A certificate from SAMA confirming they passed a governance examination",
+            "A meeting with the external auditor before their first board meeting"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 19 requires an induction programme explaining the institution's mission, strategic objectives and activities, plus a memorandum explaining the duties and responsibilities of membership."
+        },
+        {
+          "type": "sort",
+          "title": "Independent or not?",
+          "prompt": "Using the definition of an independent member in the Key Principles, sort each board candidate.",
+          "buckets": [
+            "Independence affected",
+            "No listed factor"
+          ],
+          "items": [
+            {
+              "text": "Holds 6% of the bank's shares",
+              "bucket": 0
+            },
+            {
+              "text": "Worked for the bank's external auditor until last year",
+              "bucket": 0
+            },
+            {
+              "text": "Has served 10 years in total on the bank's board",
+              "bucket": 0
+            },
+            {
+              "text": "Spouse holds a SAR 3 million credit facility with the bank",
+              "bucket": 0
+            },
+            {
+              "text": "Is the brother of a senior executive of the bank",
+              "bucket": 0
+            },
+            {
+              "text": "Retired professor with no shares, ties or contracts with the bank",
+              "bucket": 1
+            },
+            {
+              "text": "Holds a small personal account and no credit with the bank",
+              "bucket": 1
+            },
+            {
+              "text": "Sits on the board of an unrelated manufacturing company",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Four board committees",
+          "prompt": "Match each committee to a rule the Key Principles set for it.",
+          "pairs": [
+            {
+              "left": "Executive committee",
+              "right": "Three to five members, may not be chaired by the CEO, at least six meetings a year."
+            },
+            {
+              "left": "Audit committee",
+              "right": "For banks all members independent; chaired by an independent member, never by the board chairman."
+            },
+            {
+              "left": "Nomination and remuneration",
+              "right": "At least two independent members; proposes board and executive candidates and the pay policy."
+            },
+            {
+              "left": "Risk committee",
+              "right": "Members know risk management and include an expert in cyber and technical risk."
+            },
+            {
+              "left": "Committee membership",
+              "right": "A member should preferably sit on no more than two committees."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Induction, learning and the control functions",
+          "body": "The Key Principles treat board knowledge as a duty, not a courtesy:\n\n- **Competence** includes education, experience and a **willingness to keep learning**; members need financial literacy to read statements and ratios (paragraph 5).\n- **Induction** for every member on the bank's mission, strategy and activities, with a written memorandum of duties (paragraph 19).\n- Members must **know the rules and instructions** that apply to the bank and keep up with changes (paragraph 21), and develop their knowledge of its activities (paragraph 6).\n- The board must make sure **compliance, internal audit and risk management** exist, are independent from business units, have enough powers and resources, and that their **staff are trained** (paragraph 36).\n- The board approves policies on conduct and ethics, on **reporting violations and protecting whistleblowers**, on complaints and on confidentiality (paragraph 46).\n- The board tells SAMA in writing of penalties from any authority that may affect the bank within **ten working days** (paragraph 40)."
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA fines Banque Saudi Fransi over governance failings (2017)",
+          "body": "In **October 2017** SAMA issued a statement that it was following the steps the board of **Banque Saudi Fransi** had taken to address deficiencies in applying sound governance and control policies.\n\nIn **November 2017** SAMA added details. After receiving information about an employee incentives programme for past years, it sent **inspectors** to verify it and review the bank's policies, controls and authority manual. It held several meetings with the board, which took urgent decisions: appointing an **independent examination team** reporting to SAMA and the board, **stopping the incentives programme**, reviewing the authority table, changing the organisation structure and making new management appointments. The bank was filing court cases to recover amounts paid outside the programme or the powers granted.\n\nSAMA found the bank had committed violations of sound governance and supervisory policies and **imposed fines**, and passed matters outside its remit to the competent authorities.\n\n*Sources: SAMA statements of 11 October and 23 November 2017.*"
+        },
+        {
+          "type": "scenario",
+          "title": "Start on Thursday?",
+          "situation": "The chairman wants Dr Nasser to join Thursday's audit committee meeting and be named in a press release. SAMA's written non-objection for his board and committee membership has not yet arrived, and his independence questionnaire shows that his wife holds a SAR 3 million finance facility with the bank.",
+          "choices": [
+            {
+              "text": "Advise the chairman that Dr Nasser cannot act or be announced until SAMA's non-objection arrives, and that the facility above SAR 1 million means he cannot be treated as independent for audit committee purposes.",
+              "outcome": "Best. SAMA's non-objection must come before nomination to the board and committees, and the senior appointments rules bar candidates from taking up roles or announcing them first. A credit relationship above SAR 1 million in a relative's name removes independence, and a bank's audit committee must be fully independent.",
+              "score": 2
+            },
+            {
+              "text": "Let him attend as an observer without voting, and hold the press release until the letter arrives.",
+              "outcome": "Partly right on the announcement, but sitting in a committee before non-objection still risks him exercising the role. The independence problem also remains unaddressed.",
+              "score": 1
+            },
+            {
+              "text": "Let him attend and vote, then send SAMA the papers afterwards, since the general assembly has already elected him.",
+              "outcome": "Poor. Election by the general assembly does not replace SAMA's prior written non-objection.",
+              "score": 0
+            },
+            {
+              "text": "Ask the external auditor to confirm his independence instead of applying the bank's own test.",
+              "outcome": "Poor. The definition of independence is set in the Key Principles, and the board is responsible for applying it each year.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Filling a senior position at Durrah Bank",
+          "items": [
+            {
+              "label": "Policy and assessment",
+              "detail": "Board-approved fit and proper policy; the bank assesses the candidate and checks certificates."
+            },
+            {
+              "label": "Tell the candidate",
+              "detail": "Job offers state that the post needs SAMA's written non-objection."
+            },
+            {
+              "label": "Request non-objection",
+              "detail": "Bank sends SAMA the fit and proper form, assessment results and required documents."
+            },
+            {
+              "label": "Wait for SAMA",
+              "detail": "No starting, acting or announcing until SAMA's written non-objection arrives."
+            },
+            {
+              "label": "Reassess yearly",
+              "detail": "Fit and proper reassessed at least annually; material concerns reported to SAMA at once."
+            },
+            {
+              "label": "Report changes",
+              "detail": "Start dates, resignations and departures notified to SAMA within the time the rules set."
+            }
+          ],
+          "caption": "SAMA's Requirements for Appointments to Senior Positions. The English page says it is not the latest version: check the Arabic text for current details."
+        },
+        {
+          "type": "flip",
+          "title": "SAMA's fit and proper criteria",
+          "cards": [
+            {
+              "front": "Honesty, integrity and reputation",
+              "back": "Personal honesty, fairness and good reputation; no conviction for a crime touching honour or integrity unless rehabilitated."
+            },
+            {
+              "front": "Competence and capability",
+              "back": "The qualifications or experience and skills for the role, and an understanding of the business, its risks and management."
+            },
+            {
+              "front": "Financial soundness",
+              "back": "Able to manage personal financial obligations prudently. It is about conduct, not the size of a person's wealth."
+            },
+            {
+              "front": "Independence",
+              "back": "No interests, obligations or relationships that could create a conflict or impair independent performance of the role."
+            },
+            {
+              "front": "Who is responsible?",
+              "back": "The bank's board must ensure candidates for senior positions are fit and proper, under the bank's own policy."
+            },
+            {
+              "front": "Which posts need SAMA?",
+              "back": "Board and committee members and listed senior posts, including the CEO, CFO, CRO, CCO, head of internal audit and AML director."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about SAMA's Requirements for Appointments to Senior Positions is correct?",
+          "options": [
+            "Once SAMA gives non-objection, the bank never needs to reassess the person",
+            "The general assembly, not the board, is responsible for fit and proper checks",
+            "A candidate may start work while SAMA reviews the request if the CEO agrees",
+            "The bank must reassess the fitness and propriety of senior position holders at least annually"
+          ],
+          "answer": 3,
+          "explanation": "The requirements ask the bank to assess senior position holders periodically and at least annually, and report material concerns to SAMA immediately. Candidates may not take up their roles before written non-objection, and the board is responsible for fit and proper assessments."
+        },
+        {
+          "type": "keypoints",
+          "title": "Boardroom take-aways",
+          "items": [
+            "SAMA's Key Principles of Governance (version 2, May 2024) are mandatory for local banks; the chair and CEO roles must be separate.",
+            "Banks should have 9 to 11 board members as best practice, at least a third independent, and no more than two executives; the board meets at least four times a year.",
+            "Every member receives an induction and a memorandum of duties, must know the applicable rules, and keeps learning.",
+            "The board ensures compliance, audit and risk functions are independent, resourced and trained, and approves the whistleblowing policy.",
+            "Board members and listed senior posts need SAMA's written non-objection before acting; fit and proper status is reassessed at least yearly."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you joined a board tomorrow, what would you want your induction to cover first, and what could you only learn by asking the control functions directly?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-gv-s3-q1",
+          "question": "To which institutions do SAMA's Key Principles of Governance apply on a mandatory basis?",
+          "options": [
+            "Only foreign bank branches licensed in the Kingdom",
+            "Only banks listed on the Saudi stock exchange",
+            "Local banks, finance companies and real estate refinancing companies",
+            "All companies registered in Saudi Arabia"
+          ],
+          "answer": 2,
+          "explanation": "Section 3 of the principles makes them mandatory for local banks, finance companies and real estate refinancing companies, and guidance for several other licensed sectors.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s3-q2",
+          "question": "A Saudi bank's board has 11 members, 3 of them independent. Does this meet the independence rule?",
+          "options": [
+            "No: a bank's board must be entirely independent",
+            "Yes: two independent members are always enough",
+            "No: at least one third of the board must be independent, so 4 are needed",
+            "Yes: independence rules apply only to committees"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 7 requires at least two independent members or one third of the board, whichever is greater. One third of 11 is more than 3, so 4 independent members are needed.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-gv-s3-q3",
+          "question": "What does the induction programme in paragraph 19 explain to a new board member?",
+          "options": [
+            "The personal financial records of the other board members",
+            "The institution's mission, strategic objectives and activities, with a memorandum on the duties of membership",
+            "Only the bank's IT and cyber security architecture",
+            "SAMA's internal inspection manual and examination procedures"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 19 requires an induction programme on mission, strategic objectives and activities, plus a memorandum explaining the member's duties and responsibilities.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s3-q4",
+          "question": "Who may chair a bank's audit committee under the Key Principles?",
+          "options": [
+            "An independent member who is not the board chairman",
+            "The CEO, who knows the bank's operations best",
+            "The board chairman, to give the committee authority",
+            "The head of internal audit"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 78 requires the audit committee to be chaired by an independent member and not by the board chairman; for banks all members must be independent.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s3-q5",
+          "question": "Which committee must include an expert in cyber and technical risks?",
+          "options": [
+            "The risk committee",
+            "The executive committee",
+            "The nomination and remuneration committee",
+            "The audit committee"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 89 requires risk committee members to know risk management and to include an expert in cyber and technical risks.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s3-q6",
+          "question": "Within what period must the board notify SAMA in writing of a penalty from another authority that may affect the bank's functioning?",
+          "options": [
+            "Thirty days from the date of the penalty",
+            "Ten working days from the date of the penalty",
+            "In the next annual report",
+            "Five working days from the date of the penalty"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 40 requires written notice to SAMA within ten working days of any penalty from a supervisory, regulatory or judicial authority that may affect the institution's functioning.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s3-q7",
+          "question": "A board member's son, a sole trader, has a SAR 1.5 million credit facility with the bank. What follows under the Key Principles?",
+          "options": [
+            "The member cannot be classed as independent, as a relative's credit exceeds SAR 1 million",
+            "Nothing, because the facility is in the son's name",
+            "The facility must be cancelled before the next meeting",
+            "The member must resign from the board immediately"
+          ],
+          "answer": 0,
+          "explanation": "The independence definition lists a credit relationship above SAR 1,000,000 in the member's name or a relative's name. Children are relatives. It affects independence; it does not require resignation from the board.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-gv-s3-q8",
+          "question": "Under SAMA's senior appointment requirements, which is one of the minimum fit and proper criteria?",
+          "options": [
+            "Having worked at SAMA for at least five years",
+            "Financial soundness in handling personal financial obligations",
+            "Being a shareholder of the bank",
+            "Holding a minimum personal net worth"
+          ],
+          "answer": 1,
+          "explanation": "The four minimum criteria are honesty, integrity and reputation; competence and capability; financial soundness; and independence. Financial soundness is about prudence, not wealth.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s3-q9",
+          "question": "A newly hired Chief Risk Officer wants to start next week while SAMA reviews the request. What is the rule?",
+          "options": [
+            "He may start if the board approves an interim role",
+            "He may start but not sign documents for 30 days",
+            "He may start because the CRO is not a post that needs SAMA's non-objection",
+            "Candidates may not take up their role, act in it or announce it before SAMA's written non-objection"
+          ],
+          "answer": 3,
+          "explanation": "The requirements bar candidates for senior positions from assuming their duties or announcing the appointment before SAMA's written non-objection. The CRO is listed among bank posts needing it.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s3-q10",
+          "question": "What did SAMA say it found at Banque Saudi Fransi in November 2017?",
+          "options": [
+            "A failure to file suspicious transaction reports",
+            "Breaches of capital adequacy ratios",
+            "No violations, only weaknesses in customer service",
+            "Violations of sound governance and supervisory policies, for which it imposed fines"
+          ],
+          "answer": 3,
+          "explanation": "SAMA's statement of 23 November 2017 said that, after its inspection and the independent examination, the bank had committed violations of sound governance and supervisory policies, and SAMA imposed financial fines.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Speaking Up: SAMA's Whistle Blowing Policy for Financial Institutions",
+      "stage": "The Speak-Up Gate",
+      "summary": "SAMA's 2019 Whistle Blowing Policy: who may report and what, the board-approved policy and the independent unit reporting to compliance, minimum reporting channels, confidentiality and protection from retaliation, the duties of whistleblowers and of the bank, the processing stages, automated reporting and performance indicators.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the purpose, scope and key definitions of SAMA's Whistle Blowing Policy",
+        "Describe the bank's general obligations, including the independent unit, the minimum channels and awareness programmes",
+        "Apply the duties of whistleblowers and the bank's duties on receiving a report, including confidentiality and protection",
+        "Order the processing stages and name what the automated system and performance indicators must show"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "A message to the speak-up line",
+          "setting": "Durrah Bank, Violation Reports Unit, Riyadh. Sunday, 8:15.",
+          "lines": [
+            {
+              "who": "dana",
+              "text": "Hind, an email arrived overnight on the speak-up address. It says a procurement manager steered a contract to his brother-in-law's firm.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "Who sent it?",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "It's signed by a branch employee in Al-Khobar. She attached two invoices.",
+              "mood": "neutral"
+            },
+            {
+              "who": "khalid",
+              "text": "I know her. She's nervous. She asked me if she'll lose her job for this.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "Then our first job is to make sure she won't. Dana, log it and acknowledge receipt today.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hind",
+              "text": "Stage four: the Speak-Up Gate. SAMA has a policy for exactly this.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's Whistle Blowing Policy in five scenes",
+          "scenes": [
+            {
+              "icon": "📣",
+              "heading": "Why it exists",
+              "narration": "In August 2019 SAMA issued a policy setting the minimum controls for receiving and processing reports of violations, so that people can report without being harmed."
+            },
+            {
+              "icon": "🔐",
+              "heading": "Secure channels",
+              "narration": "Its purpose is secure communication between whistleblowers and the units that handle reports, to fight fraud, embezzlement and corruption and unlawful, unethical or unprofessional conduct."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Who it covers",
+              "narration": "Banks, foreign bank branches, insurers, finance companies, finance lease registration companies and credit bureaus supervised by SAMA."
+            },
+            {
+              "icon": "👥",
+              "heading": "Who may report",
+              "narration": "Employees in the widest sense, from board and committee members to contract staff, consultants and third-party staff, and stakeholders such as customers and suppliers."
+            },
+            {
+              "icon": "⚠️",
+              "heading": "What a violation is",
+              "narration": "Any act or concealment of fraud, corruption, collusion, coercion, misconduct, financial mismanagement, accounting irregularities, conflicts of interest or other breaches of laws and instructions."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Processing stages every bank must define",
+          "items": [
+            {
+              "label": "Reception",
+              "detail": "The report arrives through any channel and is logged."
+            },
+            {
+              "label": "Initial assessment",
+              "detail": "Is it a violation within scope, and how serious is it?"
+            },
+            {
+              "label": "Verification plan",
+              "detail": "Decide how the facts will be checked and by whom."
+            },
+            {
+              "label": "Documented rationale",
+              "detail": "Record the reasons supporting how the report is handled."
+            },
+            {
+              "label": "Decision",
+              "detail": "Decide on the processing and any corrective action."
+            },
+            {
+              "label": "Follow-up",
+              "detail": "Track that the decision is carried out."
+            },
+            {
+              "label": "Record keeping",
+              "detail": "Keep reports and documents for the periods laws and instructions set."
+            }
+          ],
+          "caption": "Section III.g.5 of the policy: working procedures must name inputs, outputs, forms, systems and authorised people for each stage."
+        },
+        {
+          "type": "check",
+          "question": "Under SAMA's policy, to which department must the independent unit that receives and processes violation reports report?",
+          "options": [
+            "Human resources",
+            "The compliance department",
+            "The business unit concerned",
+            "The external auditor"
+          ],
+          "answer": 1,
+          "explanation": "Section III.b requires financial institutions to set up an independent administrative unit to receive and process violation reports and to report to the compliance department. SAMA's compliance principles also list handling violation reports among compliance's duties."
+        },
+        {
+          "type": "sort",
+          "title": "Whose duty is it?",
+          "prompt": "Sort each duty under SAMA's Whistle Blowing Policy.",
+          "buckets": [
+            "Whistleblower",
+            "Bank"
+          ],
+          "items": [
+            {
+              "text": "Report as soon as possible, with the details and documents available",
+              "bucket": 0
+            },
+            {
+              "text": "Avoid rumours and malicious reports meant to defame or take revenge",
+              "bucket": 0
+            },
+            {
+              "text": "Keep the report confidential",
+              "bucket": 0
+            },
+            {
+              "text": "Treat every report seriously, whatever its language or level of detail",
+              "bucket": 1
+            },
+            {
+              "text": "Acknowledge receipt and, where possible, tell the reporter the decision",
+              "bucket": 1
+            },
+            {
+              "text": "Refer the report to the unit responsible for control and investigation",
+              "bucket": 1
+            },
+            {
+              "text": "Take corrective action if the violation is proven",
+              "bucket": 1
+            },
+            {
+              "text": "Bear responsibility for malicious allegations that cause damage",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "The bank's general obligations",
+          "prompt": "Match each element of the policy to what it requires of the bank.",
+          "pairs": [
+            {
+              "left": "Policy approval",
+              "right": "A whistleblowing policy approved by the board of directors."
+            },
+            {
+              "left": "Board reporting",
+              "right": "Periodic reports to the board and audit committee on cases received and actions taken."
+            },
+            {
+              "left": "Minimum channels",
+              "right": "A direct telephone number, a website, postal service and an email address."
+            },
+            {
+              "left": "Awareness",
+              "right": "Programmes that encourage staff and stakeholders to report and explain their responsibilities."
+            },
+            {
+              "left": "Good-faith reports",
+              "right": "No action against a reporter whose good-faith claim is not proven in the investigation."
+            },
+            {
+              "left": "Disclosure of identity",
+              "right": "Only to competent authorities such as investigation and judicial bodies."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The cold shoulder",
+          "setting": "Durrah Bank, Al-Khobar branch. Two weeks later.",
+          "lines": [
+            {
+              "who": "khalid",
+              "text": "Hind, the procurement manager found out someone from my branch reported him. He's asking around who it was.",
+              "mood": "angry"
+            },
+            {
+              "who": "dana",
+              "text": "Nobody in my unit shared her name. But her supervisor has just moved her to the night shift.",
+              "mood": "worried"
+            },
+            {
+              "who": "khalid",
+              "text": "The supervisor says it's routine rota planning.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hind",
+              "text": "Routine or not, the timing looks like retaliation. We need to act, and we need to be careful how.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Protecting the reporter",
+          "situation": "The Al-Khobar employee who reported the procurement manager has been moved to night shifts two weeks after her report. The manager under investigation is asking colleagues who reported him. The investigation is not finished, and the evidence so far is mixed.",
+          "choices": [
+            {
+              "text": "Ask HR to pause the shift change pending review, remind the manager and supervisor in writing of the bank's duty to protect reporters and keep identities confidential, and log the events for the investigation.",
+              "outcome": "Best. The policy requires the bank to protect good-faith whistleblowers from retaliation by its employees and to keep their identity confidential at all stages. Acting quickly and recording the facts protects her and the integrity of the investigation.",
+              "score": 2
+            },
+            {
+              "text": "Wait for the investigation to finish: if the report is proven, then review the shift change.",
+              "outcome": "Partly right on keeping records, but protection does not depend on the report being proven. A good-faith report that is not established still attracts no action against the reporter.",
+              "score": 1
+            },
+            {
+              "text": "Tell the manager who made the report so he can answer her directly and settle the matter.",
+              "outcome": "Poor. The bank may disclose a whistleblower's identity only to competent authorities such as investigation and judicial bodies.",
+              "score": 0
+            },
+            {
+              "text": "Advise the employee to withdraw her report to avoid further trouble.",
+              "outcome": "Poor. This discourages reporting, which the policy requires the bank to encourage, and leaves the possible violation unaddressed.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Good faith versus malicious reporting",
+          "items": [
+            {
+              "label": "Evidence",
+              "left": "Real, reasonable information suggesting a violation",
+              "right": "Rumours or claims with no basis"
+            },
+            {
+              "label": "Aim",
+              "left": "Correct errors, detect violations, protect values",
+              "right": "Defame, take revenge or damage trust"
+            },
+            {
+              "label": "If not proven",
+              "left": "No action against the reporter",
+              "right": "Reporter bears responsibility for damage"
+            },
+            {
+              "label": "Protection",
+              "left": "Protected from retaliation by employees",
+              "right": "No shield for malicious allegations"
+            }
+          ],
+          "caption": "Sections III.a, III.d and III.f of SAMA's Whistle Blowing Policy.",
+          "headers": [
+            "Good-faith report",
+            "Malicious report"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Speak-up myths and facts",
+          "cards": [
+            {
+              "front": "Myth: only employees can report.",
+              "back": "Fact: stakeholders such as shareholders, creditors, customers and suppliers are covered too."
+            },
+            {
+              "front": "Myth: I need proof before I report.",
+              "back": "Fact: staff should not hold back just because they are unsure a report can be proven; real and reasonable information is enough to report."
+            },
+            {
+              "front": "Myth: reports must be in Arabic and fully documented.",
+              "back": "Fact: the bank must treat every report seriously whatever its language, detail, impact or importance."
+            },
+            {
+              "front": "Myth: only violations inside the bank count.",
+              "back": "Fact: the bank encourages reports of violations inside or outside it, within the scope of the reporter's work."
+            },
+            {
+              "front": "Myth: anonymous reporters get the same protection claim.",
+              "back": "Fact: a reporter whose identity was not revealed and could not be discovered cannot claim protection from retaliation, as no one could target them."
+            },
+            {
+              "front": "Myth: whistleblowing is only about fraud.",
+              "back": "Fact: the cases include misuse of assets, abuse of power, conflicts of interest, leaks of confidential data, safety risks and serious negligence."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which information must the bank's automated whistleblowing system be able to show, at a minimum?",
+          "options": [
+            "The names of all reporters, sorted by department",
+            "Each reporter's performance rating and salary grade",
+            "The channel used, the total reports, reports by subject, reports processed and in progress, and the type of processing",
+            "Only the reports that were proven after investigation"
+          ],
+          "answer": 2,
+          "explanation": "Section III.g.4 requires an automated system showing at least the receiving channel, total reports, reports by subject, numbers processed and in progress, and the type of processing, able to produce reports SAMA requests."
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA announces the whistleblowing policy (2019)",
+          "body": "On **7 August 2019** SAMA announced that it had issued a policy document on reporting violations at financial institutions operating in the Kingdom.\n\nSAMA said the document sets the **minimum controls** for receiving and processing reports, so that employees of financial institutions and stakeholders can report violations easily and **without any negative impact** on them. Its aim, SAMA said, was secure channels between reporters and the higher management of financial institutions for violations committed or about to be committed, to combat **fraud, embezzlement and corruption**.\n\nThe policy itself gave institutions **three months** to implement it and asked them to give SAMA a **compliance plan within one month**.\n\n**Lesson for you:** the policy is a supervisory requirement with a timeline, not a poster. A SAMA review can ask for the board approval, the unit's set-up, the channels, the case statistics and the awareness programme.\n\n*Sources: SAMA news statement of 7 August 2019; Whistle Blowing Policy for Financial Institutions, SAMA Rulebook.*"
+        },
+        {
+          "type": "keypoints",
+          "title": "Speak-Up Gate take-aways",
+          "items": [
+            "SAMA's 2019 policy sets minimum controls so employees and stakeholders can report violations without being harmed.",
+            "Each bank needs a board-approved policy, an independent reports unit reporting to compliance, and periodic reports to the board and audit committee.",
+            "Minimum channels are a direct phone line, a website, post and email, backed by awareness programmes that encourage reporting.",
+            "Identity and content stay confidential at every stage; good-faith reporters are protected, malicious reporters bear responsibility.",
+            "Reports go through defined stages from reception to record keeping, tracked by an automated system and performance indicators."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Would a colleague in your team know how to report a violation today, and would they trust that nothing bad would happen to them? What would make the difference?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-gv-s4-q1",
+          "question": "What is the stated objective of SAMA's Whistle Blowing Policy?",
+          "options": [
+            "To let customers complain directly to SAMA about service quality",
+            "To set the penalties SAMA imposes on employees who commit fraud",
+            "To set the minimum controls for receiving and processing reports so people can report without being negatively affected",
+            "To replace suspicious transaction reporting to the Financial Intelligence Unit"
+          ],
+          "answer": 2,
+          "explanation": "Section I.b says the policy provides the minimum controls to receive and process reports so that employees and stakeholders can report violations without being negatively affected.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s4-q2",
+          "question": "Which of these people counts as a 'financial institution employee' under the policy?",
+          "options": [
+            "A supplier's sales representative",
+            "A consultant working for the bank through a third-party firm",
+            "A shareholder with 2% of the bank's shares",
+            "A customer who holds a savings account"
+          ],
+          "answer": 1,
+          "explanation": "The definition covers board and committee members, executives, permanent and contract staff, consultants and people working through a third party. Customers, suppliers and shareholders are stakeholders, who may also report.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s4-q3",
+          "question": "Which channels must the bank publicise for whistleblowing, at a minimum?",
+          "options": [
+            "A direct telephone number, a website, postal service and an email address",
+            "An email address only, monitored by the HR department",
+            "A suggestion box in every branch and an annual staff survey",
+            "A meeting with the line manager, then a written letter to the CEO"
+          ],
+          "answer": 0,
+          "explanation": "Section III.a lists the minimum channels: a direct telephone number, website, postal service and email address.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s4-q4",
+          "question": "An employee reports in good faith, but the investigation cannot establish the violation. What does the policy say?",
+          "options": [
+            "The report is deleted and the employee is not told the outcome",
+            "No action will be taken against the whistleblower",
+            "The employee receives a formal warning for wasting resources",
+            "The employee must pay the cost of the investigation"
+          ],
+          "answer": 1,
+          "explanation": "Section III.a says that if a claim made in good faith is not established in the investigation, no action will be taken against the whistleblower.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s4-q5",
+          "question": "To whom may Durrah Bank disclose information about a whistleblower?",
+          "options": [
+            "To the media if the case becomes public",
+            "Only to competent authorities such as investigation and judicial bodies",
+            "To any manager who asks for a business reason",
+            "To the person reported, so he can respond"
+          ],
+          "answer": 1,
+          "explanation": "Section III.f says institutions shall not disclose information about a whistleblower except to competent authorities, such as investigation and judicial authorities.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s4-q6",
+          "question": "A report arrives in English, poorly written and with few details. How must the bank treat it?",
+          "options": [
+            "Return it until the reporter adds documents",
+            "Discard it unless the reporter gives a name",
+            "Seriously, whatever its language, adequacy of information, impact or importance",
+            "Log it but process it only if it is in Arabic"
+          ],
+          "answer": 2,
+          "explanation": "Section III.e requires the bank to treat every report with the necessary seriousness regardless of its nature, language, adequacy of information, impact or importance.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s4-q7",
+          "question": "Which is the correct order of the first three processing stages in the policy?",
+          "options": [
+            "Reception, decision, verification plan",
+            "Initial assessment, reception, decision",
+            "Verification plan, reception, record keeping",
+            "Reception, initial assessment, identification of a verification plan"
+          ],
+          "answer": 3,
+          "explanation": "Section III.g.5 lists reception, initial assessment, identification of the verification plan, documentation of the rationale, decision, follow-up and record keeping.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s4-q8",
+          "question": "Who must approve a bank's whistleblowing policy?",
+          "options": [
+            "The board of directors",
+            "The Chief Compliance Officer",
+            "The head of human resources",
+            "SAMA's consumer protection department"
+          ],
+          "answer": 0,
+          "explanation": "Section III.a requires a whistleblowing policy approved by the board of directors. The Key Principles of Governance also make the board responsible for a policy on reporting violations and protecting whistleblowers.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s4-q9",
+          "question": "A whistleblower deliberately makes false claims to damage a colleague. What does the policy say?",
+          "options": [
+            "Nothing, as all reporters are protected equally",
+            "The bank must still protect the reporter from any consequence",
+            "The bank must publish the reporter's name as a warning",
+            "The whistleblower bears responsibility for malicious allegations that defame or damage others"
+          ],
+          "answer": 3,
+          "explanation": "Section III.d makes the whistleblower responsible for malicious allegations that defame or damage the institution, its staff or stakeholders. Protection under III.f covers non-malicious reports.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s4-q10",
+          "question": "What must each processing stage have under the policy's performance section?",
+          "options": [
+            "An indicator measuring how far the stage meets the procedure's requirements",
+            "A target for the number of reports proven each year",
+            "A separate board approval for each case",
+            "A fee charged to the business unit reported"
+          ],
+          "answer": 0,
+          "explanation": "Section III.h requires a key performance indicator for each stage of the working procedures, measuring the extent to which each procedure's requirements are met.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Training, Certification and Readiness for a SAMA Review",
+      "stage": "The Review Room",
+      "summary": "Bring it together: paragraph 72's annual compliance training and awareness programme for all staff, training new joiners before they start, periodic reminders for public-facing staff, SAMA's professional certificates in general terms, the risk-based compliance programme, documentation and the evidence a SAMA review will ask for.",
+      "minutes": 55,
+      "objectives": [
+        "Apply paragraph 72: the annual programme for all staff, training before new joiners start, and reminders for public-facing staff",
+        "Describe in general terms SAMA's professional certification requirement for front-line and credit staff",
+        "Explain the risk-based compliance programme, the compliance database and documentation duties",
+        "Assemble the governance, compliance, whistleblowing and training evidence a SAMA review expects"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Three weeks to the review",
+          "setting": "Durrah Bank, Compliance Division. Monday, 7:45.",
+          "lines": [
+            {
+              "who": "hind",
+              "text": "SAMA's team arrives in three weeks. They want our compliance programme, training records and the last annual compliance report.",
+              "mood": "neutral"
+            },
+            {
+              "who": "khalid",
+              "text": "Al-Khobar hired twelve people last month. Four started at the counter before they did any compliance training. We were short-staffed.",
+              "mood": "worried"
+            },
+            {
+              "who": "grace",
+              "text": "My audit sample shows the same gap in two other branches. And the annual programme hasn't changed since the new circulars came out.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Speak-up awareness was last run eighteen months ago.",
+              "mood": "worried"
+            },
+            {
+              "who": "hind",
+              "text": "Then we have work to do. Final stage: the Review Room.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Paragraph 72: guidance and awareness",
+          "scenes": [
+            {
+              "icon": "🎯",
+              "heading": "Why train?",
+              "narration": "Training all staff on the rules for their own jobs is how senior management builds a compliance culture and encourages staff to report violations to compliance."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "First line of defence",
+              "narration": "The compliance unit helps senior management raise awareness, treating employees as the first line of defence, and answers their compliance questions."
+            },
+            {
+              "icon": "📗",
+              "heading": "Written guidance",
+              "narration": "Compliance helps produce written guidance: policies and procedures, compliance manuals, internal codes of conduct and practical guides."
+            },
+            {
+              "icon": "📅",
+              "heading": "Annual programme",
+              "narration": "There must be an annual training and awareness programme for all employees, planned to meet ongoing needs and quickly adjusted for new rules, findings or high staff turnover."
+            },
+            {
+              "icon": "🚪",
+              "heading": "Before day one",
+              "narration": "New employees learn the compliance requirements of their banking work before they start their duties."
+            },
+            {
+              "icon": "🔔",
+              "heading": "Regular reminders",
+              "narration": "Staff who deal directly with the public get periodic reminders on sales and marketing rules, AML/CTF, due diligence, suspicious transaction reporting and internal violations."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "A Durrah Bank teller's compliance learning path",
+          "items": [
+            {
+              "label": "Before the first shift",
+              "detail": "Compliance requirements of the job, taught before duties start.",
+              "value": "Day 0"
+            },
+            {
+              "label": "First months",
+              "detail": "Work towards the professional certificate SAMA requires for the role, within the period it sets.",
+              "value": "Early"
+            },
+            {
+              "label": "Every year",
+              "detail": "The bank's annual compliance training and awareness programme for all staff.",
+              "value": "Annual"
+            },
+            {
+              "label": "Through the year",
+              "detail": "Reminders on sales, AML/CTF, due diligence, suspicious reports and internal violations.",
+              "value": "Periodic"
+            },
+            {
+              "label": "When rules change",
+              "detail": "Programme adjusted for new circulars, audit findings or high turnover.",
+              "value": "As needed"
+            }
+          ],
+          "caption": "Paragraph 72 of SAMA's compliance principles, with the professional certification circulars."
+        },
+        {
+          "type": "check",
+          "question": "A new relationship officer joins Durrah Bank on Sunday. When must she learn the compliance requirements of her work under paragraph 72?",
+          "options": [
+            "Before she starts her duties",
+            "Within her first year",
+            "At the next annual training session",
+            "Only after her probation ends"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 72 asks for training, especially for new employees, so they know the compliance requirements of their banking work before starting their duties."
+        },
+        {
+          "type": "sort",
+          "title": "Which part of paragraph 72?",
+          "prompt": "Sort each training activity under the part of paragraph 72 it fulfils.",
+          "buckets": [
+            "Annual programme for all",
+            "New joiners",
+            "Public-facing reminders"
+          ],
+          "items": [
+            {
+              "text": "Yearly compliance e-learning and quiz for every employee",
+              "bucket": 0
+            },
+            {
+              "text": "Updating the year's plan after a wave of resignations",
+              "bucket": 0
+            },
+            {
+              "text": "Compliance module completed before a new teller serves customers",
+              "bucket": 1
+            },
+            {
+              "text": "Induction briefing on the code of conduct before a new hire's first day",
+              "bucket": 1
+            },
+            {
+              "text": "Monthly huddle reminding branch staff about sales and marketing rules",
+              "bucket": 2
+            },
+            {
+              "text": "Short refresher for call-centre agents on reporting suspicious transactions",
+              "bucket": 2
+            },
+            {
+              "text": "Adding a new SAMA circular to this year's programme",
+              "bucket": 0
+            },
+            {
+              "text": "Reminder to tellers on due diligence and reporting internal violations",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Professional certificates, in general terms",
+          "body": "Alongside the bank's own training, SAMA requires **professional certificates** for certain roles. Its circulars currently ask, in outline, that:\n\n- **front-line bank staff** who deal directly with customers (branch staff and their managers, call centres, customer care) hold the **fundamentals of retail banking** certificate;\n- staff **directly involved in granting credit to individuals**, and branch managers, hold the **credit adviser** certificate;\n- staff of bank remittance centres hold the relevant **banking and money transfer** certificate;\n- staff **contracted through third parties** are included.\n\nCertificates must be obtained **within a set period after joining**, and SAMA expects a **minimum share** of the target staff to hold them at all times. The bank's training plan should track who needs which certificate and when.\n\nThe exact roles, periods and percentages are set by SAMA's current circulars, which are updated from time to time. Always check the latest circular in the SAMA Rulebook. The consumer protection quest covers how certificates fit front-line conduct duties."
+        },
+        {
+          "type": "story",
+          "title": "Who trains, who signs?",
+          "setting": "Durrah Bank, Learning and Development. Tuesday afternoon.",
+          "lines": [
+            {
+              "who": "khalid",
+              "text": "HR says onboarding has always been 'two weeks at the counter, then the classroom'. It's faster.",
+              "mood": "neutral"
+            },
+            {
+              "who": "grace",
+              "text": "Faster, but it breaks paragraph 72. And nobody can show me who approved that design.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hind",
+              "text": "Senior management owns the training effort. Compliance helps design it and checks it works. Let's fix it properly.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "New joiners at the counter",
+          "situation": "Four new tellers at Al-Khobar served customers for two weeks before any compliance training, because of staff shortages. Two other branches show the same pattern. The SAMA review starts in three weeks.",
+          "choices": [
+            {
+              "text": "Train the affected tellers now, change onboarding so no one serves customers before compliance training, record the gap and the fix, and report it to senior management with the root cause.",
+              "outcome": "Best. Paragraph 72 requires new staff to learn the compliance requirements of their work before starting. Fixing the process, documenting it and reporting it shows a working compliance function, which matters more to a reviewer than a perfect record.",
+              "score": 2
+            },
+            {
+              "text": "Train the four tellers this week and leave the onboarding design as it is, since staffing is tight.",
+              "outcome": "Partly right: it closes today's gap but the same breach will repeat with the next hires.",
+              "score": 1
+            },
+            {
+              "text": "Backdate the training records to their start dates so the files look complete for SAMA.",
+              "outcome": "Poor. Falsifying records is a serious violation and destroys trust with the supervisor. It is also exactly the kind of conduct the whistleblowing policy asks staff to report.",
+              "score": 0
+            },
+            {
+              "text": "Explain to SAMA that the rule does not apply to tellers on temporary contracts.",
+              "outcome": "Poor. Paragraph 72 covers new employees generally, and SAMA's certification and conduct rules expressly reach staff contracted through third parties.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From compliance programme to evidence",
+          "items": [
+            {
+              "label": "Risk-based compliance programme",
+              "detail": "Planned activities overseen by the CCO, covering compliance, AML/CTF, fraud, corruption and violation reports."
+            },
+            {
+              "label": "Policies, risk assessment, testing",
+              "detail": "Review policies, assess non-compliance risk, run compliance tests."
+            },
+            {
+              "label": "Awareness and training",
+              "detail": "Annual programme, new joiner training, reminders, speak-up awareness."
+            },
+            {
+              "label": "Documentation",
+              "detail": "Policies, plans, events and work papers documented; database of rules open to all staff."
+            },
+            {
+              "label": "Evidence for SAMA",
+              "detail": "Reports, minutes, statistics and records that show it all works."
+            }
+          ],
+          "caption": "Paragraphs 83 to 85 of SAMA's compliance principles."
+        },
+        {
+          "type": "match",
+          "title": "Evidence a SAMA review may ask for",
+          "prompt": "Match each piece of evidence to the SAMA instrument behind it.",
+          "pairs": [
+            {
+              "left": "Annual compliance report and board approval",
+              "right": "Principles of Compliance: approved by the board, sent to SAMA by the end of April."
+            },
+            {
+              "left": "Board member induction file",
+              "right": "Key Principles of Governance: induction programme and memorandum of duties."
+            },
+            {
+              "left": "Speak-up case statistics by channel and subject",
+              "right": "Whistle Blowing Policy: the automated reporting system."
+            },
+            {
+              "left": "Fit and proper assessment of the new CRO",
+              "right": "Requirements for Appointments to Senior Positions."
+            },
+            {
+              "left": "Training records showing new joiners trained before starting",
+              "right": "Principles of Compliance, paragraph 72."
+            },
+            {
+              "left": "Certificate status of front-line and credit staff",
+              "right": "SAMA's professional certification circulars."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "The annual compliance report cycle",
+          "prompt": "Put Durrah Bank's yearly steps in the order SAMA's compliance principles imply.",
+          "steps": [
+            "Senior management, with compliance, assesses the main non-compliance risks for the year",
+            "The CCO runs the risk-based compliance programme, including tests and training",
+            "The CCO sends regular written reports to senior management on risks, breaches and fixes",
+            "Senior management prepares the annual compliance report for the board",
+            "The board approves the report",
+            "The chairman sends the approved report to SAMA by the end of April"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the compliance database in SAMA's principles is correct?",
+          "options": [
+            "Only compliance staff may access it, to protect confidentiality",
+            "It must hold all compliance rules and standards, kept up to date and available to all employees",
+            "It replaces the need to explain new circulars to business units",
+            "It is optional for banks with fewer than ten branches"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 84 requires a continuously updated database of all compliance regulations, rules and standards that all bank employees can access. Paragraph 65 still requires prompt communication to units."
+        },
+        {
+          "type": "tip",
+          "title": "Your final boss checklist",
+          "body": "Before the exam, make sure you can explain:\n\n- **who** owns compliance (board, senior management, compliance unit, every employee);\n- the CCO's **independence**: reporting line, rights, pay, SAMA non-objection;\n- the **yearly** duties: risk assessment, board evaluation, annual report by end of April;\n- **paragraph 72**: annual programme, training before starting, reminders for public-facing staff;\n- **board rules**: size, independence, induction, committees, notifying penalties;\n- **fit and proper** criteria and acting only after SAMA's non-objection;\n- the **whistleblowing** policy: unit, channels, confidentiality, protection, stages."
+        },
+        {
+          "type": "keypoints",
+          "title": "Review Room take-aways",
+          "items": [
+            "Paragraph 72 requires an annual compliance training and awareness programme for all staff, adjusted for new rules and turnover.",
+            "New employees learn the compliance requirements of their job before they start; public-facing staff get periodic reminders.",
+            "SAMA's professional certificates apply to front-line and credit staff, including third-party staff, within set periods; check the current circular.",
+            "The compliance programme is risk-based, documented and supported by a database of rules all staff can use.",
+            "A good SAMA review file shows policies, board approvals, reports, training and speak-up records that prove the system works."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one piece of evidence from this stage that your own unit would struggle to produce tomorrow. What would you change this month so it is ready?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-gv-s5-q1",
+          "question": "Under paragraph 72, who should receive an annual compliance training and awareness programme?",
+          "options": [
+            "Only new joiners in their first year",
+            "Only staff in customer-facing roles",
+            "Only compliance and internal audit staff",
+            "All employees of the bank"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 72 asks for an annual training and awareness programme for all employees, with extra emphasis on new joiners and public-facing staff.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s5-q2",
+          "question": "Which event should prompt Durrah Bank to adjust its annual training programme during the year, according to paragraph 72?",
+          "options": [
+            "The appointment of a new external auditor",
+            "A drop in branch footfall during holidays",
+            "High staff turnover or significant regulatory changes",
+            "A change in the bank's share price"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 72 says the plan must meet ongoing needs and be adjusted promptly for new issues, observations, significant changes or updates in regulations, or high employee turnover.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s5-q3",
+          "question": "Which topic does paragraph 72 name for periodic reminders to staff who deal directly with the public?",
+          "options": [
+            "Capital adequacy calculations",
+            "Board remuneration policy",
+            "Investment portfolio strategy",
+            "Suspicious transaction reporting"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 72 lists sales and marketing instructions, AML/CTF, due diligence, reporting suspicious transactions and internal violations as reminder topics for public-facing staff.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s5-q4",
+          "question": "Who leads the training effort under paragraph 72, and what is compliance's role?",
+          "options": [
+            "Senior management leads, and the compliance unit continuously and proactively assists it",
+            "The board designs the courses, and compliance delivers them",
+            "Compliance leads alone, and senior management is only informed",
+            "HR leads alone, and compliance has no role in training"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 72 describes training as a fundamental part of senior management's effort to build a compliance culture, with the compliance unit assisting proactively.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s5-q5",
+          "question": "Which staff does SAMA's professional certification requirement expressly include, in general terms?",
+          "options": [
+            "Front-line bank staff, including staff contracted through third parties",
+            "Only board members and senior executives",
+            "Only IT and cyber security staff",
+            "Only staff of the bank's overseas branches"
+          ],
+          "answer": 0,
+          "explanation": "SAMA's certification circulars cover front-line staff dealing with customers and staff granting credit to individuals, including people contracted through a third party.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s5-q6",
+          "question": "Which certificate do SAMA's circulars require, in general terms, for staff directly involved in granting credit to individuals?",
+          "options": [
+            "The board director certificate",
+            "The treasury dealer certificate",
+            "The credit adviser certificate",
+            "The internal audit certificate"
+          ],
+          "answer": 2,
+          "explanation": "The certification circulars require staff directly involved in granting credit to individuals, and branch managers, to hold the credit adviser certificate.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s5-q7",
+          "question": "What must Durrah Bank's compliance programme be, according to paragraph 83?",
+          "options": [
+            "Risk-based and overseen by the Chief Compliance Officer",
+            "Identical for every bank in the Kingdom",
+            "Approved by SAMA before it starts each year",
+            "Run by internal audit with compliance advice"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 83 says the compliance programme should be risk-based and overseen by the CCO, covering compliance monitoring, AML/CTF, fraud, corruption and violation reports.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s5-q8",
+          "question": "What does paragraph 85 require the compliance unit to document?",
+          "options": [
+            "Only matters escalated to SAMA",
+            "Policies, procedures, plans, events and work papers",
+            "Only the final annual compliance report",
+            "Only staff complaints about compliance"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 85 requires the compliance unit to document policies, procedures, plans, events and work papers to fulfil its duties.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-gv-s5-q9",
+          "question": "A branch manager wants to run onboarding as 'two weeks at the counter, then training'. What is the best response?",
+          "options": [
+            "Accept if the new staff shadow an experienced teller",
+            "Refuse: new staff must learn the compliance requirements of their job before starting their duties",
+            "Accept for temporary staff only",
+            "Accept if the training happens within the first month"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 72 requires new employees to be familiar with the compliance requirements of their work before they start their duties. Shadowing or later training does not meet that.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-gv-s5-q10",
+          "question": "According to paragraph 72, what does training all staff aim to encourage besides a compliance culture?",
+          "options": [
+            "Higher sales of new products",
+            "Reporting of violations to the compliance unit",
+            "Fewer meetings with SAMA",
+            "Less use of the compliance database"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 72 links training to instilling a compliance culture and encouraging staff to report violations to the compliance unit.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "sa",
+    "programs": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      40,
+      43,
+      44,
+      48
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "annual",
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Saudi Central Bank (SAMA)"
+    ],
+    "references": [
+      {
+        "title": "Principles of Compliance for Commercial Banks Operating in the Kingdom of Saudi Arabia",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/principles-compliance-commercial-banks-operating-kingdom-saudi-arabia",
+        "provision": "Circular No. 42005223; Principles 1-10, paragraphs 17-99, esp. paragraph 72",
+        "note": "Board, senior management and compliance unit duties; independence, rights and pay of the CCO and SAMA non-objection; annual report to SAMA by end of April; annual training programme for all staff, training before new joiners start and reminders for public-facing staff.",
+        "effective": "2020-09-15",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Key Principles of Governance in Financial Institutions Subject to Saudi Central Bank's Oversight and Supervision",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/key-principles-governance-financial-institutions-2",
+        "provision": "Version 2 (Circular No. 45068000, May 2024); Principles 1-5, incl. paragraphs 7, 19, 21, 36, 40, 43, 46 and 69-92",
+        "note": "Board qualifications, size and independence, induction programme and memorandum of duties for every member, board duties towards control functions and whistleblowing policy, and the executive, audit, nomination and remuneration and risk committees.",
+        "effective": "2021-06-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Requirements for Appointments to Senior Positions",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/requirements-appointments-senior-positions-2",
+        "provision": "Chapters 2-5 and Appendix 1",
+        "note": "SAMA written non-objection before board members and listed senior post holders act; minimum fit and proper criteria; at least annual reassessment; succession policy with training for Saudi candidates. The English page states it is not the latest version.",
+        "effective": "2019-09-09",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Whistle Blowing Policy for Financial Institutions",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/whistle-blowing-policy-financial-institutions",
+        "provision": "Sections I-III",
+        "note": "Board-approved policy, independent unit reporting to compliance, minimum channels, confidentiality and protection, awareness programmes, duties on receipt, processing stages, automated system and indicators.",
+        "effective": "2019-08-05",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Ensuring Continuous Fulfilment of the Professional Certification Requirement",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/node/2885",
+        "provision": "Circular No. 44029338",
+        "note": "Front-line bank staff need the retail banking fundamentals certificate and staff granting credit to individuals and branch managers the credit adviser certificate, including third-party staff, within a set period after employment.",
+        "effective": "2022-10-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Professional Certificates of Financial Institution Employees",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/node/4982",
+        "provision": "Circular No. 41025433",
+        "note": "Earlier circular making the updated professional certificates compulsory for front-line, sales, call-centre and customer care staff, including third-party staff.",
+        "effective": "2019-12-09",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Explanatory Statement by the Saudi Arabian Monetary Authority (Banque Saudi Fransi)",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news11102017.aspx",
+        "note": "SAMA followed the board's steps to address deficiencies in applying sound governance and control policies.",
+        "effective": "2017-10-11",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Addendum statement from the Saudi Arabian Monetary Authority regarding Saudi Fransi Bank",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news23112017.aspx",
+        "note": "Inspection, independent examination team, end of an employee incentives programme, and fines for violations of sound governance and supervisory policies.",
+        "effective": "2017-11-23",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Statement by the Saudi Arabian Monetary Authority (National Commercial Bank salary deductions)",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news12092017.aspx",
+        "note": "Fine on a bank that deducted more from salaries than permitted, with corrective action required.",
+        "effective": "2017-09-12",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "SAMA imposes penalties on 30 financial institutions for violating the principles of responsible financing for individuals",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news-628.aspx",
+        "note": "Penalties on 30 named institutions, corrective action ordered, and a warning that the product could be stopped if violations continued.",
+        "effective": "2020-11-24",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "SAMA announces the whistleblowing policy of financial institutions",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news007082019.aspx",
+        "note": "Announcement of the policy setting minimum controls so staff and stakeholders can report violations without negative impact.",
+        "effective": "2019-08-07",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "sa-gv-x1",
+        "question": "Durrah Bank's board has delegated compliance oversight to its audit committee. Which yearly duty can that committee perform on the board's behalf under SAMA's compliance principles?",
+        "options": [
+          "Appointing the Chief Compliance Officer without SAMA's non-objection",
+          "Approving its own exemption from the compliance policy",
+          "Evaluating the effectiveness of the bank's non-compliance risk management",
+          "Sending the annual compliance report to SAMA in place of the chairman"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 33 allows the board or a committee it delegates to evaluate effectiveness at least once a year. The report goes to SAMA from the chairman, and the CCO's appointment needs SAMA's non-objection.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x2",
+        "question": "A Saudi bank has a branch in another country whose law conflicts with one of SAMA's compliance principles. What do the principles say?",
+        "options": [
+          "SAMA's principles always override host-country law",
+          "They apply to the foreign branch unless they conflict with that country's rules",
+          "They never apply outside the Kingdom",
+          "The branch may choose which rules to follow"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 30 applies the principles to banks' branches and offices abroad unless they conflict with the host country's regulations; Principle 9 requires compliance with host-country law.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x3",
+        "question": "Senior management at Durrah Bank sends the board a compliance report only every two years. Which requirement does this breach?",
+        "options": [
+          "Monthly reports by the CCO to the general assembly",
+          "Quarterly reports to SAMA on every compliance test",
+          "A requirement to publish compliance reports on the bank's website",
+          "Written reports to the board or its delegated committee on non-compliance risk management at least once a year"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 39 requires senior management, helped by compliance, to give the board or its delegated committee written reports on non-compliance risk management at least annually.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x4",
+        "question": "Which statement best describes the compliance unit's role under paragraph 29 of SAMA's principles?",
+        "options": [
+          "It performs internal audits of every branch on a sampling basis",
+          "It owns all controls in every business unit and corrects deficiencies itself",
+          "It approves every customer transaction above a set amount",
+          "It compiles, communicates and explains rules, confirms they are built into policies, monitors and assesses risk, and reports"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 29 places managing non-compliance risk and controls on senior management and business units; the compliance unit communicates and explains rules, confirms inclusion in policies, monitors, assesses and reports.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x5",
+        "question": "A bank's retail team keeps applying a practice that breaches SAMA instructions after compliance has flagged it twice. Based on SAMA's 2017 and 2020 statements on salary deductions and responsible financing, what is the most realistic regulatory outcome?",
+        "options": [
+          "A private warning letter that is never published",
+          "Fines, public naming and an order to correct, with stronger measures if violations continue",
+          "Automatic loss of the bank's licence",
+          "No action, because consumer matters are handled only by courts"
+        ],
+        "answer": 1,
+        "explanation": "SAMA fined the National Commercial Bank in 2017 and named 30 penalised institutions in 2020, ordering corrective action and warning that it could stop the product if violations continued.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x6",
+        "question": "Which is NOT one of the sources of compliance rules and standards listed in SAMA's principles?",
+        "options": [
+          "Internal sales targets set by business units",
+          "Instructions of other Saudi authorities with jurisdiction",
+          "Requirements issued by bodies such as the Basel Committee",
+          "Internal conduct rules applied to bank employees"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 25 lists laws and SAMA instructions, other authorities' rules, host-country rules, banking practice, internal conduct rules, integrity standards and international standard setters. Sales targets are not a source of compliance rules.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x7",
+        "question": "Who prepares the annual compliance report presented to the board under paragraph 79?",
+        "options": [
+          "The external auditor",
+          "SAMA's supervision team",
+          "Senior management",
+          "The general assembly"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 79 says senior management prepares the annual compliance report and presents it to the board, covering at least what SAMA requires from time to time.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x8",
+        "question": "For a branch of a foreign bank in the Kingdom, who takes on the role the compliance principles give to the board of a local bank?",
+        "options": [
+          "The home-country regulator",
+          "SAMA's bank supervision department",
+          "The branch's Chief Compliance Officer",
+          "The branch's chief officer"
+        ],
+        "answer": 3,
+        "explanation": "The definitions say the primary officer of a foreign bank branch assumes the board's tasks and responsibilities wherever the principles refer to the board.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x9",
+        "question": "Durrah Bank's compliance staff are asked to also approve loans in the retail credit unit during peak periods. Why does this conflict with SAMA's principles?",
+        "options": [
+          "Compliance staff are not allowed to hold banking qualifications",
+          "It is fine if the loans are below a set amount",
+          "Loan approvals may only be made by board members",
+          "Compliance staff should hold only compliance responsibilities, to avoid conflicts of interest"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 57 restricts the CCO and compliance unit staff to compliance responsibilities only; element three of independence rules out conflicting roles.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x10",
+        "question": "A business head refuses to give compliance access to a customer file during an investigation, saying the data is sensitive. What do the principles say?",
+        "options": [
+          "Compliance has the right to access any information, records and files it needs, without waiting for instructions",
+          "Only internal audit may access customer files",
+          "Compliance must obtain the business head's written consent first",
+          "Compliance must ask SAMA for permission to see the file"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 59 gives the compliance unit the right to communicate with any employee and access any information, records and files it needs, without waiting for orders or instructions.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x11",
+        "question": "The CCO wants to delegate compliance tasks in the bank's overseas office to a local employee. What remains true after delegation?",
+        "options": [
+          "Accountability passes to internal audit",
+          "Accountability passes to the head of the overseas office",
+          "The CCO stays accountable for all compliance-related tasks",
+          "Accountability passes to the local employee"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 56 allows the CCO to delegate some authority, but delegation does not exempt the CCO, who remains accountable for all compliance tasks.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x12",
+        "question": "Durrah Bank has a New Products Committee. What do the compliance principles expect?",
+        "options": [
+          "Representatives of the compliance unit should take part in the committee",
+          "Compliance must chair the committee and hold a veto",
+          "Compliance must be kept out to preserve independence",
+          "Only internal audit may sit on the committee"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 73 says that where a bank has a New Products Committee, compliance unit representatives should participate in it, as part of identifying risks early.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x13",
+        "question": "Which list matches the regulatory responsibilities paragraph 81 gives the compliance unit?",
+        "options": [
+          "Compliance oversight, AML/CTF, anti-fraud, anti-corruption, self-supervision and handling violation reports",
+          "Credit approval, treasury dealing, AML/CTF and marketing",
+          "Internal audit, external audit, legal affairs and HR",
+          "Financial reporting, tax filing, AML/CTF and IT security"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 81 lists compliance oversight, AML/CTF, anti-fraud, anti-corruption, self-supervision and handling violation reports.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x14",
+        "question": "The compliance unit wants to measure non-compliance risk. Which approach matches paragraph 74?",
+        "options": [
+          "Using quantitative and qualitative indicators, such as trends in complaints, fraud cases and penalties",
+          "Counting the circulars SAMA issues each quarter",
+          "Relying only on the number of training hours completed",
+          "Asking business units to rate their own compliance once a year"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 74 asks the unit to measure non-compliance risk quantitatively and qualitatively, for example through indicators like rising complaints, fraud cases, reports and penalties.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x15",
+        "question": "Which content must the CCO's regular written reports to senior management include under paragraph 77?",
+        "options": [
+          "Only matters that SAMA has already raised",
+          "The personal performance ratings of business heads",
+          "Risk assessment for the period, changes in risk level, breaches found, proposed fixes and due dates, and actions taken",
+          "Only the number of staff trained during the period"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 77 lists the assessment of non-compliance risk, changes shown by indicators, a summary of violations and deficiencies, proposed corrective actions with dates, and actions already taken.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x16",
+        "question": "Who gives final approval of the Chief Compliance Officer's rewards?",
+        "options": [
+          "The board of directors or one of its committees",
+          "SAMA's supervision department",
+          "The head of the retail division",
+          "The chief executive alone"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 58 requires the final approval of rewards for the CCO and compliance unit staff to come from the board or a committee derived from it.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x17",
+        "question": "Which document must set out the compliance unit's official status, so that all employees are told about it?",
+        "options": [
+          "The compliance policy or an official document related to it",
+          "The employment contract of each compliance officer",
+          "The external auditor's management letter",
+          "The bank's annual financial statements"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 47 requires the unit's official status to be set out in the compliance policy or a related official document, and all employees to be informed of it. Paragraph 48 lists its minimum contents.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x18",
+        "question": "A bank's board has 10 members: two executive members, the CEO as chairman, and four independent members. Which feature breaches SAMA's Key Principles of Governance?",
+        "options": [
+          "Having four independent members",
+          "Having two executive members",
+          "The CEO serving as chairman",
+          "Having ten members in total"
+        ],
+        "answer": 2,
+        "explanation": "The principles require separation of the chairman and CEO roles, and the chairman and deputy must be non-executive. Two executives, ten members and four independents (more than one third) are within the limits.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x19",
+        "question": "A non-executive director missed three board meetings this year without a valid reason. What do the Key Principles provide?",
+        "options": [
+          "He loses his vote for the rest of the term",
+          "Another member is to be appointed to replace him",
+          "He receives a written warning from SAMA",
+          "Nothing, as attendance by technology is optional"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 24 says that if a member fails to attend three meetings a year without a valid reason, another member shall be appointed to replace him.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x20",
+        "question": "A director wants to join the board of another Saudi bank while staying on Durrah Bank's board. What do the Key Principles say?",
+        "options": [
+          "It is allowed if both boards approve",
+          "It is allowed for up to five similar institutions",
+          "A member may not sit on the board of a similar financial institution operating in the Kingdom",
+          "It is allowed if he resigns from all committees"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 13 bars a member from being on the board of a similar financial institution operating inside the Kingdom. The five-company limit in paragraph 14 relates to listed joint stock companies.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x21",
+        "question": "Which committee should coordinate with HR on the replacement and succession policy?",
+        "options": [
+          "The audit committee",
+          "The nomination and remuneration committee",
+          "The executive committee",
+          "The risk committee"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 87 lists coordinating with HR on the replacement and succession policy among the nomination and remuneration committee's tasks.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x22",
+        "question": "The audit committee reviews a SAMA inspection report. Which task under the 'compliance' heading of paragraph 82 does this fulfil?",
+        "options": [
+          "Approving new products before SAMA sees them",
+          "Setting the pay of the Chief Compliance Officer",
+          "Reviewing the findings of supervisory reports and making sure the bank takes the necessary measures",
+          "Deciding which whistleblowing reports to investigate"
+        ],
+        "answer": 2,
+        "explanation": "Under paragraph 82(d), the audit committee reviews supervisory authorities' report findings, ensures the bank acts on them, reports issues to the board and works to improve regulatory compliance.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x23",
+        "question": "Durrah Bank enters into a transaction with a company owned by a board member's wife, worth 1.5% of the bank's total revenues in its latest audited statements. What do the Key Principles require?",
+        "options": [
+          "Only a note in the next annual report",
+          "A commercial basis, and notifying the public and SAMA without delay",
+          "Approval from SAMA before the board can discuss it",
+          "Nothing, since the member is not personally a party"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 43(f) requires related-party transactions to be on a commercial basis, and the public and SAMA to be notified without delay if the transaction equals or exceeds 1% of total revenues. A company owned by a member's relative is a related party.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-gv-x24",
+        "question": "Under the senior appointment requirements, which of these Durrah Bank posts needs SAMA's written non-objection?",
+        "options": [
+          "Director of Customer Care",
+          "Regional marketing coordinator",
+          "Call-centre team leader",
+          "Branch teller supervisor"
+        ],
+        "answer": 0,
+        "explanation": "Appendix 1 lists senior posts in banks needing SAMA's non-objection, including the Director of Customer Care, alongside the CEO, CFO, CRO, CCO, head of internal audit and others.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x25",
+        "question": "After SAMA has granted non-objection for a CFO, the bank learns he is under investigation abroad. What should it do?",
+        "options": [
+          "Wait for the investigation to end before telling SAMA",
+          "Disclose the information to SAMA in writing promptly, as the requirements set a short deadline for such changes",
+          "Do nothing, since SAMA's non-objection already covers him",
+          "Mention it at the next annual fit and proper review"
+        ],
+        "answer": 1,
+        "explanation": "The requirements oblige the bank to disclose to SAMA in writing any information relevant to fitness and propriety, even after non-objection, within a short set period, and to report material findings immediately.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x26",
+        "question": "Why must Durrah Bank check the Arabic text of SAMA's Requirements for Appointments to Senior Positions before relying on detailed timelines?",
+        "options": [
+          "The English version was withdrawn in 2019",
+          "The Arabic version applies only to Saudi candidates",
+          "SAMA publishes no English translation of the requirements",
+          "The English page in the SAMA Rulebook states that it is not the latest updated version"
+        ],
+        "answer": 3,
+        "explanation": "The English page itself notes that the version displayed is not the last updated version and refers readers to the Arabic text.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x27",
+        "question": "Which part of SAMA's 2017 statements about Banque Saudi Fransi best shows the board's role in fixing governance failures?",
+        "options": [
+          "The board asked the external auditor to replace management",
+          "The board waited for the courts before making any change",
+          "The board left all corrective steps to SAMA's inspectors",
+          "The board took urgent decisions, including an independent examination team and stopping the incentives programme"
+        ],
+        "answer": 3,
+        "explanation": "SAMA said it held several meetings with the board, which took urgent corrective decisions: an independent examination team, stopping the programme, reviewing the authority table, restructuring and new appointments.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x28",
+        "question": "A customer emails Durrah Bank's speak-up address about a staff member who seems to be misusing bank property. Is the customer covered by SAMA's Whistle Blowing Policy?",
+        "options": [
+          "No: only employees may use whistleblowing channels",
+          "No: customers must use the complaints process only",
+          "Yes: stakeholders such as customers may report violations under the policy",
+          "Only if the customer has an account above a set balance"
+        ],
+        "answer": 2,
+        "explanation": "The policy's scope covers employees and stakeholders, defined as anyone with an interest in the institution, including shareholders, creditors, customers and suppliers.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x29",
+        "question": "Which of the following is listed among the whistleblowing cases in SAMA's policy?",
+        "options": [
+          "Disagreement with a manager's leave decision",
+          "Unlawful disclosure of confidential information",
+          "A late delivery from an office supplier",
+          "A customer's dislike of a product's design"
+        ],
+        "answer": 1,
+        "explanation": "The cases include unlawful disclosure of confidential information, misuse of assets, abuse of power, conflicts of interest, breaches of law and policy, and others. The other options are not violations.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x30",
+        "question": "Dana's unit receives a report and confirms the violation. Which action is the bank's duty under section III.e of the policy?",
+        "options": [
+          "Publish the reporter's name to show the system works",
+          "Take corrective action for the proven violation and keep the report and documents for the required periods",
+          "Close the case without telling the reporter anything",
+          "Ask the person reported to approve the corrective action"
+        ],
+        "answer": 1,
+        "explanation": "Section III.e requires the bank to take corrective action if a violation is proven, notify the reporter of receipt and if possible the decision, refer for investigation, keep records and prepare reports.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x31",
+        "question": "An anonymous report arrives with no way to identify the sender. Later the sender claims retaliation protection. What does the policy say?",
+        "options": [
+          "The bank must pay compensation to all anonymous reporters",
+          "Anonymous reports must be rejected on arrival",
+          "The bank must reveal who sent it to confirm the claim",
+          "A whistleblower whose identity was not revealed and could not be discovered may not claim the protection described"
+        ],
+        "answer": 3,
+        "explanation": "Section III.f says a whistleblower whose identity was not revealed and could not be discovered by the institution cannot claim protection as described, since no one could have targeted them.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-gv-x32",
+        "question": "Who must receive periodic reports on whistleblowing cases received and actions taken?",
+        "options": [
+          "Every employee, through the intranet",
+          "The general assembly and the external auditor",
+          "The board of directors and the audit committee",
+          "SAMA's consumer protection department only"
+        ],
+        "answer": 2,
+        "explanation": "Section III.a requires the institution to submit a periodic report on cases received and actions taken to its board of directors and audit committee.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x33",
+        "question": "How does SAMA's compliance principles document connect to the whistleblowing policy?",
+        "options": [
+          "The compliance principles replace the whistleblowing policy for banks",
+          "Handling violation reports is a compliance unit responsibility, and the red flags principle must protect whistleblowers and include incentives",
+          "Whistleblowing is handled only by HR and is outside compliance",
+          "Compliance may decide not to process reports about senior staff"
+        ],
+        "answer": 1,
+        "explanation": "Paragraphs 27 and 81 list handling violation reports among compliance's duties, and paragraph 86 asks the warning-signs principle to protect whistleblowers and include incentives in line with SAMA's policy.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x34",
+        "question": "Which statement about the timeline SAMA set when it issued the whistleblowing policy in 2019 is correct?",
+        "options": [
+          "Institutions had three months to implement it and one month to give SAMA a compliance plan",
+          "It took effect only after each bank's general assembly approved it",
+          "Institutions had one year to implement it and no plan was required",
+          "It applied only to banks that had a whistleblowing case that year"
+        ],
+        "answer": 0,
+        "explanation": "The policy's cover note asked institutions to implement it within three months of its date and to provide SAMA with a compliance plan within one month.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x35",
+        "question": "A manager tells his team: 'Only report something if you are sure you can prove it.' Why is this message inconsistent with SAMA's policy?",
+        "options": [
+          "The policy forbids managers from discussing whistleblowing",
+          "Proof is required, but only for reports about managers",
+          "Staff must report only to SAMA, not to the bank",
+          "The bank must encourage staff not to hold back because they are unsure whether a report can be supported with facts"
+        ],
+        "answer": 3,
+        "explanation": "Section III.a asks institutions to encourage employees not to hesitate to report because they are uncertain whether it can be supported, while avoiding rumours and false allegations.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x36",
+        "question": "Durrah Bank's annual training plan was set in January. In June, SAMA issues a major new circular and branch turnover doubles. What does paragraph 72 expect?",
+        "options": [
+          "Cancel the annual programme and replace it with reminders",
+          "Wait for SAMA to send its own training materials",
+          "Keep the plan unchanged until next January",
+          "Adjust the programme promptly to cover the new circular and the turnover"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 72 requires the annual plan to meet ongoing needs and be adjusted promptly for significant changes in regulation or high employee turnover.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x37",
+        "question": "Which statement about SAMA's professional certificates is accurate in general terms?",
+        "options": [
+          "They are optional for staff who completed the bank's own induction",
+          "They replace paragraph 72's annual compliance programme",
+          "They apply to front-line and credit staff, including third-party staff, within a set period after joining",
+          "They apply only to staff hired before 2019"
+        ],
+        "answer": 2,
+        "explanation": "The certification circulars require certificates for front-line and credit staff, including third-party contractors, within a set period after employment. They add to, not replace, the bank's own compliance training.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x38",
+        "question": "SAMA's reviewers ask how Durrah Bank makes sure staff can always find current rules. Which evidence best answers under the compliance principles?",
+        "options": [
+          "A list of SAMA circulars filed in the CEO's office",
+          "The annual report's list of board committees",
+          "The compliance database of all rules and standards, kept up to date and open to all employees",
+          "The external auditor's letter on financial controls"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 84 requires a continuously updated database of all compliance rules and standards that all employees can access at any time.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x39",
+        "question": "Which combination best shows SAMA reviewers that Durrah Bank meets paragraph 72 for new joiners?",
+        "options": [
+          "Onboarding design requiring compliance training before duties start, plus records of each joiner's training date and start date",
+          "The total training budget for the year",
+          "The number of courses in the learning catalogue",
+          "A signed statement from HR that onboarding is adequate"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 72 requires training before new staff start; the strongest evidence links a process that enforces it to individual records comparing training and start dates.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x40",
+        "question": "A reviewer asks who should drive the annual compliance training and awareness programme. Which answer reflects SAMA's documents?",
+        "options": [
+          "The compliance unit alone decides and delivers it without management involvement",
+          "Internal audit designs and approves it",
+          "Each employee chooses whether to attend",
+          "Senior management leads it, compliance assists, and the board oversees training and awareness efforts"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 72 frames training as senior management's effort assisted by compliance, and paragraph 32 asks the board to oversee efforts in training and awareness under the compliance policy.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x41",
+        "question": "Durrah Bank relies heavily on staff supplied by an agency in its call centre. Which statement is correct?",
+        "options": [
+          "Agency staff need certificates only if they work in branches",
+          "SAMA's certification and conduct rules expressly reach staff contracted through third parties",
+          "Only the agency, not the bank, answers for their training",
+          "Agency staff are outside all SAMA training rules"
+        ],
+        "answer": 1,
+        "explanation": "SAMA's certification circulars include staff contracted through a third party, and the whistleblowing policy and conduct principles include third-party staff in their definitions of employees.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-gv-x42",
+        "question": "Which item would a SAMA reviewer most likely use to test the board's role in governance training?",
+        "options": [
+          "The canteen menu for training days",
+          "The induction programme and memorandum of duties given to each new board member",
+          "The number of compliance posters in branches",
+          "The marketing plan for the new card"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 19 of the Key Principles requires an induction programme and a memorandum of duties for each member, which a reviewer can check directly.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-gv-x43",
+        "question": "Which statement about paragraph 72's reminder duty is correct?",
+        "options": [
+          "It targets staff who deal directly with the public and covers sales, AML/CTF, due diligence, suspicious reports and internal violations",
+          "It targets board members and covers only strategy",
+          "It targets IT staff and covers only cyber security",
+          "It applies only in a staff member's first month"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 72 asks for periodic reminders to staff who deal directly with the public on sales and marketing instructions, AML/CTF, due diligence, suspicious transaction reporting and internal violations.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
