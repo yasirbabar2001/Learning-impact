@@ -1,0 +1,3290 @@
+{
+  "slug": "us-bsa-aml",
+  "title": "United States | Bank Secrecy Act (BSA) and AML Compliance",
+  "tagline": "Know the US rulebook: BSA program pillars, CIP and beneficial ownership, EDD, SARs, CTRs, records and OFAC sanctions for bank staff.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Commercial banking",
+    "Retail banking",
+    "Correspondent banking",
+    "Private banking",
+    "Payments and wire operations"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the **US Bank Secrecy Act (BSA)** framework as it applies to banks, built on the FinCEN rules in 31 CFR Chapter X, the Federal Reserve's BSA program rule (12 CFR 208.63) and the parallel OCC and FDIC rules, OFAC's sanctions guidance and the FFIEC BSA/AML Examination Manual that examiners work from.\n\nYou will work through the five pillars of a bank's BSA/AML program, the Customer Identification Program, customer due diligence and beneficial ownership, special due diligence for foreign correspondent and private banking accounts, the shell bank ban, suspicious activity reports and their confidentiality, currency transaction reports, BSA records, OFAC blocking and reporting, and the April 2026 **proposed** AML/CFT program rule (not final at the time of review).\n\nIt is meant for staff of US banks whose work the BSA touches: branch, onboarding, operations, payments, correspondent and private banking, BSA/AML and sanctions teams, and managers who oversee them. The BSA program rules require training for appropriate personnel, and examiners check it. This quest builds knowledge and does not replace your bank's own BSA/AML and sanctions policies and procedures.",
+  "audience": [
+    "Branch, account opening and digital onboarding staff at US banks",
+    "Wire room, payments and cash operations staff",
+    "Correspondent banking and private banking relationship teams",
+    "BSA/AML analysts, investigators and sanctions screening staff",
+    "Managers, BSA officers and board members who oversee the BSA/AML program"
+  ],
+  "outcomes": [
+    "Explain who writes, examines and enforces US BSA/AML and sanctions rules and name the five pillars of a bank's program",
+    "Apply CIP, CDD and beneficial ownership rules correctly when opening accounts for individuals and legal entities",
+    "Decide when correspondent and private banking accounts need enhanced due diligence and recognise the shell bank ban",
+    "Escalate unusual activity, apply SAR and CTR thresholds and deadlines, and protect SAR confidentiality",
+    "Handle an OFAC match from block or reject to report, and support testing, training and exam readiness",
+    "Describe what the April 2026 proposed AML/CFT program rule would change, and that it is not yet final"
+  ],
+  "quest": {
+    "name": "The Examiner's Visit",
+    "premise": "You have just joined the BSA/AML team of Bramblecove Bank, N.A., a fictional national bank headquartered in Columbus, Ohio, with branches in Chicago, Houston and Miami and a correspondent and private banking desk in Miami. The OCC has announced its BSA/AML examination. BSA Officer Dana Whitfield wants you ready: with investigator Marcus Bell, branch manager Elena Ruiz, correspondent banking head Kevin Nguyen and sanctions manager Amina Yusuf, clear five stages and then face the final boss: the examiner's questions.",
+    "badge": {
+      "name": "BSA Gatekeeper",
+      "description": "Awarded to US bank staff who can apply the BSA program, CIP and CDD, EDD, SAR, CTR, records and OFAC rules with confidence."
+    },
+    "color": "#1d4ed8",
+    "cast": [
+      {
+        "id": "dana",
+        "name": "Dana Whitfield",
+        "role": "BSA Officer, Columbus, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "marcus",
+        "name": "Marcus Bell",
+        "role": "Senior BSA/AML Investigator",
+        "look": {
+          "skin": 5,
+          "hair": "beard",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "elena",
+        "name": "Elena Ruiz",
+        "role": "Branch Manager, Miami",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#b91c1c"
+        }
+      },
+      {
+        "id": "kevin",
+        "name": "Kevin Nguyen",
+        "role": "Head of Correspondent and Private Banking",
+        "look": {
+          "skin": 2,
+          "hair": "short",
+          "color": "#4b5563"
+        }
+      },
+      {
+        "id": "amina",
+        "name": "Amina Yusuf",
+        "role": "Sanctions Compliance Manager",
+        "look": {
+          "skin": 4,
+          "hair": "hijab",
+          "color": "#7c3aed"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The BSA Framework, Regulators and the Program Pillars",
+      "stage": "The Charter Room",
+      "summary": "Who writes, examines and enforces US BSA/AML rules, and the five pillars every bank's board-approved BSA/AML program must contain.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the roles of FinCEN, the OCC, the Federal Reserve, the FDIC, OFAC and the FFIEC manual",
+        "List the minimum elements of a bank's BSA/AML program under 31 CFR 1020.210 and the agency rules",
+        "Describe the board's role in approving and resourcing the program",
+        "Recognise why monitoring must follow risk rather than staffing"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one: the letter from the OCC",
+          "setting": "BSA/AML department, Bramblecove Bank head office, Columbus, Ohio. 8:45 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your access badge works on the second try. On your desk: a laptop, a binder labelled BSA PROGRAM, and a printed letter.",
+              "mood": "neutral"
+            },
+            {
+              "who": "dana",
+              "text": "Welcome. I'm Dana Whitfield, the bank's BSA Officer. That letter is from the OCC. They are coming to examine our BSA/AML program.",
+              "mood": "happy"
+            },
+            {
+              "who": "marcus",
+              "text": "Marcus Bell, investigations. Before you ask: yes, the OCC examines us, but FinCEN writes most of the rules we follow. It confuses everyone at first.",
+              "mood": "neutral"
+            },
+            {
+              "who": "kevin",
+              "text": "Kevin Nguyen, correspondent and private banking. My only question is whether this exam slows down my foreign bank onboarding.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "It will if our program has gaps. Examiners don't just read our policy. They test whether each pillar actually works.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Stage one is the Charter Room: who makes the rules, who checks them, and the five pillars every bank program needs. Ready?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The US BSA system in five scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The law",
+              "narration": "The Bank Secrecy Act is the main US anti-money laundering law. Congress wrote it and later strengthened it, for example through the USA PATRIOT Act. It tells banks to keep records, file reports and run an anti-money laundering program."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "FinCEN writes the rules",
+              "narration": "The Financial Crimes Enforcement Network, a bureau of the Treasury, administers the BSA. Its rules for banks sit in Title 31 of the Code of Federal Regulations, Chapter X, mostly in Parts 1010 and 1020."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Your supervisor examines",
+              "narration": "Your bank's federal supervisor examines BSA compliance under authority delegated by FinCEN and under its own banking law powers. National banks have the OCC, state member banks the Federal Reserve, and state non-member banks the FDIC."
+            },
+            {
+              "icon": "📘",
+              "heading": "The FFIEC manual guides examiners",
+              "narration": "The FFIEC BSA/AML Examination Manual tells examiners how to assess a program. It is guidance for examiners, not a regulation, but it shows you what they will look for."
+            },
+            {
+              "icon": "🚫",
+              "heading": "OFAC runs sanctions",
+              "narration": "Sanctions are a separate Treasury office, OFAC. Its rules apply to all US persons, banks included, and its penalties can apply even when nobody knew they were breaking a sanction."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who does what in US BSA/AML",
+          "headers": [
+            "Body",
+            "Role for a bank like Bramblecove"
+          ],
+          "items": [
+            {
+              "label": "FinCEN",
+              "left": "FinCEN (Treasury)",
+              "right": "Administers the BSA, writes 31 CFR Chapter X rules, receives SARs and CTRs, enforces civil penalties"
+            },
+            {
+              "label": "OCC",
+              "left": "OCC",
+              "right": "Supervises national banks such as Bramblecove; examines BSA compliance and has its own BSA program rule"
+            },
+            {
+              "label": "Federal Reserve",
+              "left": "Federal Reserve",
+              "right": "Supervises state member banks and holding companies; BSA program rule in 12 CFR 208.63"
+            },
+            {
+              "label": "FDIC",
+              "left": "FDIC",
+              "right": "Supervises state non-member banks; BSA program rule in 12 CFR 326.8"
+            },
+            {
+              "label": "OFAC",
+              "left": "OFAC (Treasury)",
+              "right": "Administers and enforces sanctions; publishes the SDN List; receives blocked and rejected transaction reports"
+            },
+            {
+              "label": "FFIEC",
+              "left": "FFIEC",
+              "right": "Publishes the interagency BSA/AML Examination Manual that examiners use"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Bramblecove Bank is a national bank. Which agency will lead its BSA/AML examination?",
+          "options": [
+            "The FDIC, because it insures the bank's deposits",
+            "The OCC, because it supervises national banks",
+            "FinCEN, because it writes the BSA rules",
+            "OFAC, because the exam covers sanctions"
+          ],
+          "answer": 1,
+          "explanation": "The OCC supervises national banks and examines their BSA compliance under authority delegated by FinCEN and its own powers. FinCEN writes the rules and can enforce them, but day-to-day examination of a national bank is the OCC's job."
+        },
+        {
+          "type": "concept",
+          "title": "The program rule: five pillars and a board signature",
+          "body": "FinCEN's rule for banks, **31 CFR 1020.210**, says a bank with a federal regulator meets the BSA program duty if its program includes, at a minimum:\n\n- a **system of internal controls** to assure ongoing compliance\n- **independent testing**, by bank personnel or an outside party\n- a **designated individual** (the BSA officer) coordinating and monitoring day-to-day compliance\n- **training for appropriate personnel**\n- **risk-based ongoing customer due diligence**\n\nThe bank must also comply with its own supervisor's program rule. The Federal Reserve's rule, **12 CFR 208.63**, requires a **written** program, **approved by the board** and **noted in the minutes**, with the same four core elements. The OCC (12 CFR 21.21) and the FDIC (12 CFR 326.8) have their own rules for the banks they supervise.\n\nThe CIP and the special due diligence rules for correspondent and private banking accounts all sit inside this program."
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Building a BSA/AML program",
+          "caption": "The board-approved written program sits on top; each pillar below must work in practice.",
+          "items": [
+            {
+              "label": "Written, board-approved program",
+              "detail": "Approved by the board and noted in the minutes (Fed rule 12 CFR 208.63(b)(1))"
+            },
+            {
+              "label": "Internal controls",
+              "detail": "Policies, procedures and systems such as CIP, monitoring, reporting and records"
+            },
+            {
+              "label": "Independent testing",
+              "detail": "Tests the program; done by bank staff independent of the function or by an outside party"
+            },
+            {
+              "label": "BSA officer",
+              "detail": "Named person coordinating and monitoring day-to-day compliance"
+            },
+            {
+              "label": "Training",
+              "detail": "For appropriate personnel, matched to their roles"
+            },
+            {
+              "label": "Ongoing CDD",
+              "detail": "Customer risk profiles, ongoing monitoring and updating customer information on a risk basis"
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Match the pillar to the evidence",
+          "prompt": "An examiner asks for evidence of each pillar. Match each pillar to the document that best proves it works.",
+          "pairs": [
+            {
+              "left": "Internal controls",
+              "right": "Alert-handling procedures and system rules, with logs showing alerts were worked on time"
+            },
+            {
+              "left": "Independent testing",
+              "right": "A report by an auditor outside the BSA function, with findings and management responses"
+            },
+            {
+              "left": "BSA officer",
+              "right": "A board resolution naming the BSA officer, plus reports showing their authority and resources"
+            },
+            {
+              "left": "Training",
+              "right": "Role-based materials, attendance records and assessment results for staff and directors"
+            },
+            {
+              "left": "Ongoing CDD",
+              "right": "Customer risk profiles that were updated when activity or ownership changed"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Kevin's shortcut",
+          "setting": "Leadership huddle, 4th floor, Columbus. The alert queue screen shows 3,400 open alerts.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "Our monitoring system is flooding the team. Why not cap it at 200 alerts a day? Whatever is in the queue after that can wait.",
+              "mood": "neutral"
+            },
+            {
+              "who": "marcus",
+              "text": "Because the riskiest customer might be alert 201. A cap decides what we look at based on staffing, not risk.",
+              "mood": "worried"
+            },
+            {
+              "who": "kevin",
+              "text": "Then we tune the system so it generates fewer alerts. Same thing, right?",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Not the same. Tuning based on tested risk analysis, documented and approved, is fine. A cap set by headcount is not. And hiring is a board-level resourcing question.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Let's think it through properly. What would you do?",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The alert cap",
+          "situation": "Bramblecove's transaction monitoring backlog has grown to 3,400 alerts. Kevin proposes a daily cap of 200 alerts, with excess alerts suppressed until volumes fall. Two analysts have resigned. The OCC exam starts in six weeks. You are asked for your recommendation.",
+          "choices": [
+            {
+              "text": "Support the cap for now; the backlog will look smaller before the exam",
+              "outcome": "Capping alerts by headcount means high-risk activity may never be reviewed and suspicious activity goes unreported. Regulators have penalised banks for exactly this. It also hides the problem from the board.",
+              "score": 0
+            },
+            {
+              "text": "Reject the cap, report the backlog and staffing gap to senior management and the board, and request resources and a documented, risk-based tuning review",
+              "outcome": "Best answer. The board approves the program and must know it lacks resources. Tuning based on documented risk analysis is legitimate; suppressing alerts to match staffing is not.",
+              "score": 2
+            },
+            {
+              "text": "Ask analysts to close older alerts quickly without full review so the queue clears",
+              "outcome": "This trades one failure for another: poorly reviewed alerts can mean missed SARs, and examiners test alert decisions, not only queue sizes.",
+              "score": 0
+            },
+            {
+              "text": "Reject the cap and ask the team to work overtime until the exam, without escalating",
+              "outcome": "Partly right: you avoided the cap. But overtime is not a sustainable control, and the board and senior management need to know about a resourcing gap in a required program.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: U.S. Bank's alert caps and a personal penalty",
+          "body": "In **2020 FinCEN** assessed a civil money penalty of **USD 450,000** against **Michael LaFontaine**, a former Chief Compliance Officer and later Chief Operational Risk Officer at U.S. Bank National Association.\n\nFinCEN found that the bank had **capped the number of alerts** its automated transaction monitoring system produced, so some high-risk customers did not generate alerts simply because others scored even higher. The caps let the bank hire fewer investigators. The OCC had repeatedly warned bank officials against numerical caps. FinCEN also found the BSA compliance function was not adequately staffed, and that he shared responsibility for the bank's failures to maintain an effective program and file SARs on time.\n\n**Lessons for you:**\n- monitoring must follow risk, not available headcount\n- people in charge of a BSA program can be held personally responsible\n- resourcing gaps belong in front of senior management and the board\n\nSource: FinCEN enforcement action 2020-01 (fincen.gov)."
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "How a BSA rule reaches your desk",
+          "items": [
+            {
+              "label": "Statute",
+              "detail": "Congress passes the BSA and later amendments"
+            },
+            {
+              "label": "FinCEN rule",
+              "detail": "Treasury's FinCEN writes the detailed rules in 31 CFR Chapter X"
+            },
+            {
+              "label": "Agency rule",
+              "detail": "OCC, Fed and FDIC program rules apply to the banks each supervises"
+            },
+            {
+              "label": "Exam guidance",
+              "detail": "The FFIEC manual shows examiners how to test the program"
+            },
+            {
+              "label": "Bank policy",
+              "detail": "Your board-approved BSA/AML program turns rules into bank policy"
+            },
+            {
+              "label": "Your procedure",
+              "detail": "Desk procedures tell you exactly what to do in your role"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Charter Room myths",
+          "cards": [
+            {
+              "front": "Myth: the FFIEC manual is a regulation.",
+              "back": "Fact: it is interagency guidance for examiners. The binding duties come from the BSA and the FinCEN and agency rules, but the manual shows how examiners judge compliance."
+            },
+            {
+              "front": "Myth: OFAC is part of FinCEN.",
+              "back": "Fact: both are in the Treasury, but OFAC is a separate office that administers and enforces sanctions programs."
+            },
+            {
+              "front": "Myth: training is nice to have.",
+              "back": "Fact: training for appropriate personnel is a required element of every bank's BSA program."
+            },
+            {
+              "front": "Myth: the board only needs a yearly summary.",
+              "back": "Fact: the board approves the written program (noted in the minutes under the Fed rule) and should get enough information to oversee it."
+            },
+            {
+              "front": "Myth: independent testing must be done by an outside firm.",
+              "back": "Fact: the rules allow testing by bank personnel or an outside party; what matters is that testers are independent of the BSA function."
+            },
+            {
+              "front": "Myth: CFT is a separate program.",
+              "back": "Fact: countering terrorist financing runs through the same BSA program, for example the CIP check against government terrorist lists."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these is NOT one of the minimum program elements listed in the Federal Reserve's BSA program rule?",
+          "options": [
+            "Independent testing by bank personnel or an outside party",
+            "A designated person responsible for day-to-day compliance",
+            "An annual BSA audit by an external accounting firm",
+            "Training for appropriate personnel"
+          ],
+          "answer": 2,
+          "explanation": "The rule requires independent testing but lets the bank use its own personnel or an outside party. It does not require an external accounting firm or set an annual frequency. The other three are listed elements."
+        },
+        {
+          "type": "tip",
+          "title": "Keep your own rule map",
+          "body": "Rules move. In 2025 and 2026 alone FinCEN issued SAR FAQs, relief on beneficial ownership and a proposed program rule.\n\n- Read rules in **official copies**: FinCEN's site and the Federal Reserve Regulatory Service publish the 31 CFR text.\n- Note **which rule** your procedure comes from, so you can check it when it changes.\n- Treat proposals as proposals until a **final rule** is published."
+        },
+        {
+          "type": "keypoints",
+          "title": "Charter Room cleared",
+          "items": [
+            "FinCEN administers the BSA and writes the bank rules in 31 CFR Chapter X; your federal supervisor examines you.",
+            "National banks: OCC. State member banks: Federal Reserve. State non-member banks: FDIC. Sanctions: OFAC.",
+            "Five pillars: internal controls, independent testing, a BSA officer, training and risk-based ongoing CDD.",
+            "The program is written and board-approved; resourcing gaps must reach senior management and the board.",
+            "Alert caps set by staffing, not risk, have led to penalties for banks and for individuals."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about your own role. Which BSA pillar does your daily work feed into most, and what evidence of your work would an examiner ask to see?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-bsa-s1-q1",
+          "question": "Which US body administers the Bank Secrecy Act and writes the bank rules in 31 CFR Chapter X?",
+          "options": [
+            "The OCC, as the national bank supervisor",
+            "FinCEN, a bureau of the Treasury",
+            "OFAC, as the Treasury sanctions office",
+            "The FFIEC, through its examination manual"
+          ],
+          "answer": 1,
+          "explanation": "FinCEN administers the BSA and issues its implementing rules in 31 CFR Chapter X. The OCC examines national banks, OFAC handles sanctions, and the FFIEC manual is examiner guidance.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s1-q2",
+          "question": "A state-chartered bank is a member of the Federal Reserve System. Which program rule sets its BSA compliance program requirements alongside FinCEN's rule?",
+          "options": [
+            "12 CFR 326.8, the FDIC's rule",
+            "12 CFR 21.21, the OCC's rule",
+            "31 CFR 501.603, the OFAC rule",
+            "12 CFR 208.63, the Federal Reserve's rule"
+          ],
+          "answer": 3,
+          "explanation": "State member banks are supervised by the Federal Reserve, whose BSA program rule is 12 CFR 208.63. The FDIC rule covers state non-member banks, the OCC rule national banks, and 31 CFR 501.603 is an OFAC reporting rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s1-q3",
+          "question": "Under the Federal Reserve's rule, what must happen to a state member bank's BSA compliance program?",
+          "options": [
+            "It must be in writing, approved by the board of directors and noted in the minutes",
+            "It must be approved by FinCEN before use",
+            "It must be filed with the FFIEC each year and countersigned by the bank's external auditor before use",
+            "It must be signed by the external auditor"
+          ],
+          "answer": 0,
+          "explanation": "12 CFR 208.63(b)(1) requires a written program approved by the board and noted in the minutes. There is no FinCEN pre-approval or annual filing with the FFIEC.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s1-q4",
+          "question": "Which list contains only elements that 31 CFR 1020.210 requires in a bank's AML program?",
+          "options": [
+            "Internal controls, a compliance committee, an annual external audit, training for all staff and a whistleblower hotline",
+            "Independent testing, a sanctions officer, quarterly board reports and customer exit procedures",
+            "Internal controls, independent testing, a designated compliance individual, training and risk-based ongoing CDD",
+            "Training, transaction monitoring software, a fraud team and an ethics code"
+          ],
+          "answer": 2,
+          "explanation": "The rule lists internal controls, independent testing, designation of a person for day-to-day compliance, training for appropriate personnel and risk-based ongoing CDD. The other lists add items the rule does not name.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s1-q5",
+          "question": "Bramblecove's head of audit proposes that a senior analyst from the BSA team test the BSA program this year to save money. What is the main problem?",
+          "options": [
+            "The rule requires that independent testing be performed by an outside accounting firm, not bank staff",
+            "Testing may only be done by the OCC",
+            "The tester would not be independent of the function being tested",
+            "Analysts may not see audit reports"
+          ],
+          "answer": 2,
+          "explanation": "The rules let testing be done by bank personnel or an outside party, so internal staff are acceptable, but the people testing must be independent of the BSA function. An analyst testing their own team's work is not independent.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s1-q6",
+          "question": "A board member says, 'The FFIEC manual is just a book; we only need to follow FinCEN.' What is the best reply?",
+          "options": [
+            "The manual is examiner guidance, not a rule, but it shows how examiners will judge whether the program meets the rules",
+            "The manual is a binding regulation issued by FinCEN",
+            "The manual is a binding interagency regulation, so any difference from it is a violation of law in itself, whatever the rules say",
+            "The manual applies only to the Federal Reserve's banks"
+          ],
+          "answer": 0,
+          "explanation": "The FFIEC BSA/AML Examination Manual is interagency guidance for examiners. It does not create new legal duties, but it tells banks what examiners expect to see.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s1-q7",
+          "question": "Bramblecove's monitoring team wants to cap alerts at the number analysts can clear each day. Why do examiners and FinCEN treat this as a failure?",
+          "options": [
+            "Caps are only allowed for banks below a set asset size",
+            "Caps are acceptable as long as the board approves them and the cap level is written into the minutes each year",
+            "Caps breach OFAC rules rather than BSA rules",
+            "It lets staffing, not risk, decide which activity is reviewed, so suspicious activity can go unreported"
+          ],
+          "answer": 3,
+          "explanation": "In the U.S. Bank matter, FinCEN found that alert caps tied to staffing meant high-risk customers might never alert. Monitoring must follow risk; resourcing gaps must be fixed, not hidden.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-bsa-s1-q8",
+          "question": "In the 2020 FinCEN action against Michael LaFontaine, what was notable?",
+          "options": [
+            "The bank's charter was revoked",
+            "A civil money penalty was imposed on an individual former compliance and risk officer",
+            "OFAC imposed the penalty for sanctions breaches",
+            "The case concerned a credit union that failed to verify identities under its Customer Identification Program"
+          ],
+          "answer": 1,
+          "explanation": "FinCEN assessed USD 450,000 against a former Chief Compliance Officer and Chief Operational Risk Officer of U.S. Bank, showing that individuals can be held responsible for BSA program failures.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s1-q9",
+          "question": "A new employee asks why counter-terrorist financing is part of Bramblecove's BSA program rather than a separate program. Which answer is accurate?",
+          "options": [
+            "The same BSA program, including the CIP check against government terrorist lists, covers both AML and CFT",
+            "CFT is handled only by OFAC, so the BSA program ignores it",
+            "CFT applies only to banks with foreign branches",
+            "The BSA program will only cover terrorist financing once the April 2026 proposal to rename it an AML/CFT program becomes final"
+          ],
+          "answer": 0,
+          "explanation": "Terrorist financing is in scope of the existing BSA program; for example, the CIP must check customers against federal lists of known or suspected terrorists. The 2026 proposal would rename the program but does not create CFT duties from scratch.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s1-q10",
+          "question": "The BSA officer reports that the team cannot keep up with alerts. Senior management decides not to tell the board until after the OCC exam. What is the main weakness?",
+          "options": [
+            "Nothing is wrong, since staffing and resourcing are management matters that the board does not need to hear about",
+            "The OCC must be told first, before the board",
+            "The board, which approves the program, is denied information it needs to oversee and resource it",
+            "The BSA officer should have capped the alerts instead"
+          ],
+          "answer": 2,
+          "explanation": "The board approves the BSA program and is expected to oversee and resource it. Hiding a resourcing gap undermines oversight and is a pattern seen in enforcement actions such as U.S. Bank and Shinhan.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CIP, Customer Due Diligence and Beneficial Ownership",
+      "stage": "The Front Door",
+      "summary": "Identify and verify customers under the CIP, identify the beneficial owners of legal entity customers, and keep customer risk profiles current.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the CIP's minimum information, verification, list-check, notice and record rules",
+        "Identify beneficial owners under the 25% ownership and control prongs",
+        "Know when the bank may rely on a customer's certification and when it may not",
+        "Explain ongoing CDD and the 2026 changes to beneficial ownership"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Two customers at the Miami branch",
+          "setting": "Bramblecove Bank, Brickell branch, Miami. 10:20 am.",
+          "lines": [
+            {
+              "who": "elena",
+              "text": "(video call) Dana, two tricky ones. A man wants a checking account but has no photo ID with him, only a utility bill and a bank card.",
+              "mood": "worried"
+            },
+            {
+              "who": "elena",
+              "text": "And Brightwater Logistics LLC wants a business account. The signer says the owners are 'a group of investors' and he'd rather not list them.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Two different rules. The first is the Customer Identification Program. The second adds the beneficial ownership rule for legal entity customers.",
+              "mood": "neutral"
+            },
+            {
+              "who": "marcus",
+              "text": "And after both are open, customer due diligence keeps going: what is the account for, and does the activity match?",
+              "mood": "neutral"
+            },
+            {
+              "who": "dana",
+              "text": "Stage two is the Front Door. Get this right and half of every later investigation gets easier.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The Customer Identification Program",
+          "scenes": [
+            {
+              "icon": "📝",
+              "heading": "Collect before opening",
+              "narration": "Before opening an account, the bank collects at least four items: name, date of birth for an individual, an address, and an identification number. For a US person that number is a taxpayer identification number."
+            },
+            {
+              "icon": "🪪",
+              "heading": "Verify within a reasonable time",
+              "narration": "The bank then verifies identity within a reasonable time after opening, using documents, non-documentary methods or both, so it can form a reasonable belief that it knows who the customer really is."
+            },
+            {
+              "icon": "❓",
+              "heading": "When verification fails",
+              "narration": "The CIP must say when not to open an account, what the customer may do while verification is pending, when to close the account, and when to file a SAR."
+            },
+            {
+              "icon": "📋",
+              "heading": "Check government lists",
+              "narration": "The CIP must check whether the customer appears on any federal list of known or suspected terrorists designated by Treasury, and follow any directives that come with those lists."
+            },
+            {
+              "icon": "📢",
+              "heading": "Notice and records",
+              "narration": "Customers get adequate notice that the bank asks for identifying information, before the account is opened. The bank records what it collected, how it verified, and how it resolved any discrepancy."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "CIP minimum requirements (31 CFR 1020.220)",
+          "items": [
+            {
+              "label": "Collect identifying information",
+              "detail": "Name, date of birth (individuals), address, identification number, before opening"
+            },
+            {
+              "label": "Verify identity",
+              "detail": "Documents, non-documentary methods or both, within a reasonable time after opening"
+            },
+            {
+              "label": "Handle failed verification",
+              "detail": "When not to open, terms while pending, when to close, when to file a SAR"
+            },
+            {
+              "label": "Compare with government lists",
+              "detail": "Federal lists of known or suspected terrorists designated by Treasury"
+            },
+            {
+              "label": "Give customer notice",
+              "detail": "Adequate notice before the account is opened, e.g. lobby, website or application"
+            },
+            {
+              "label": "Keep records",
+              "detail": "Identifying data, documents relied on, methods and results, discrepancy resolution"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A non-US individual opens an account at Bramblecove. Which identification number may the CIP accept?",
+          "options": [
+            "Only a US taxpayer identification number",
+            "A taxpayer identification number, a passport number with country of issuance, an alien identification card number, or another qualifying government ID number",
+            "Any number the customer provides, verified later",
+            "No number is needed if the customer shows a photo ID"
+          ],
+          "answer": 1,
+          "explanation": "For a non-US person the CIP rule lists several acceptable numbers: a taxpayer identification number, a passport number and issuing country, an alien identification card number, or the number and issuing country of another government document with a photograph or similar safeguard."
+        },
+        {
+          "type": "sort",
+          "title": "Documentary or non-documentary?",
+          "prompt": "Sort each verification method into the type the CIP rule describes.",
+          "buckets": [
+            "Documentary",
+            "Non-documentary"
+          ],
+          "items": [
+            {
+              "text": "Unexpired passport",
+              "bucket": 0
+            },
+            {
+              "text": "Unexpired driver's license",
+              "bucket": 0
+            },
+            {
+              "text": "Certified articles of incorporation for a company",
+              "bucket": 0
+            },
+            {
+              "text": "Government-issued business license",
+              "bucket": 0
+            },
+            {
+              "text": "Comparing the customer's data with a consumer reporting agency",
+              "bucket": 1
+            },
+            {
+              "text": "Checking references with another financial institution",
+              "bucket": 1
+            },
+            {
+              "text": "Contacting the customer",
+              "bucket": 1
+            },
+            {
+              "text": "Obtaining a financial statement",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Beneficial ownership: who really owns and controls",
+          "body": "Under **31 CFR 1010.230**, banks must identify and verify the **beneficial owners** of each **legal entity customer** when a new account is opened. A beneficial owner is:\n\n- **Ownership prong:** each individual who directly or indirectly owns **25% or more** of the equity interests (there may be none)\n- **Control prong:** **one** individual with significant responsibility to control, manage or direct the entity, such as a CEO, CFO, managing member or president\n\nIf a **trust** owns 25% or more, the **trustee** is treated as the owner. Some customers are excluded (for example regulated financial institutions and SEC-registered issuers), and certain entities such as nonprofits are subject only to the control prong.\n\nThe person opening the account certifies the information. The bank verifies each beneficial owner's identity with risk-based procedures that include the CIP elements, and may use photocopies of documents. It may **rely** on the customer's information unless it knows of facts that reasonably call it into question."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "CIP versus beneficial ownership",
+          "headers": [
+            "CIP (1020.220)",
+            "Beneficial ownership (1010.230)"
+          ],
+          "items": [
+            {
+              "label": "Who",
+              "left": "Every customer opening an account",
+              "right": "Individuals behind each legal entity customer"
+            },
+            {
+              "label": "What",
+              "left": "Name, date of birth, address, ID number",
+              "right": "Each 25%+ owner and one control person"
+            },
+            {
+              "label": "How",
+              "left": "Documents and/or non-documentary methods",
+              "right": "Certification by the opener, then risk-based verification"
+            },
+            {
+              "label": "Records",
+              "left": "Identifying data kept 5 years after account closes",
+              "right": "Identification records kept 5 years after account closes"
+            },
+            {
+              "label": "Verification records",
+              "left": "Kept 5 years after the record is made",
+              "right": "Kept 5 years after the record is made"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Opening Brightwater Logistics LLC",
+          "prompt": "Put the beneficial ownership steps for a new legal entity account in a sensible order.",
+          "steps": [
+            "Confirm Brightwater is a legal entity customer and not an excluded type",
+            "Run CIP on the entity itself: name, address, identification number and entity documents",
+            "Obtain the certification of each 25%+ owner and one control person from the person opening the account",
+            "Verify each beneficial owner's identity using the bank's risk-based CIP procedures",
+            "Resolve discrepancies or escalate if facts call the certification into question",
+            "Record the certification, verification methods and results, and build the customer risk profile"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Who owns Brightwater?",
+          "setting": "Brickell branch, Miami. The next morning.",
+          "lines": [
+            {
+              "who": "elena",
+              "text": "The signer came back. He certified: Rosa Delgado 30%, two brothers with 24% each, and a family trust with 22%. CEO is Paul Marsh.",
+              "mood": "neutral"
+            },
+            {
+              "who": "marcus",
+              "text": "So the ownership prong gives us one name, and the control prong one more. The trust is under 25%, so no trustee needed for this rule.",
+              "mood": "thinking"
+            },
+            {
+              "who": "elena",
+              "text": "Here's the snag. Our onboarding analyst found a local news story saying the brothers sold their stakes last month to a Panama company.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "Then we know of facts that call the certification into question. Reliance is gone for now. What do we do?",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Brightwater is owned 30% by Rosa, 24% each by two brothers and 22% by a family trust; Paul Marsh is CEO. Under the CDD rule, whom must the bank identify as beneficial owners?",
+          "options": [
+            "All four owners and Paul Marsh",
+            "Rosa (ownership prong) and Paul Marsh (control prong)",
+            "Rosa only, because she is the only owner above 25%",
+            "Paul Marsh only, because the control person replaces the owners"
+          ],
+          "answer": 1,
+          "explanation": "Only individuals owning 25% or more meet the ownership prong, so Rosa qualifies and the brothers do not. A single control person, here the CEO, must also be identified. The trust is under 25%, so its trustee is not a beneficial owner under the ownership prong."
+        },
+        {
+          "type": "scenario",
+          "title": "The certification that no longer fits",
+          "situation": "Brightwater's signer certified its owners, but a news report says two owners recently sold their stakes to a Panama company. The signer says the paperwork 'is still being finalised' and asks Elena to open the account today with the original certification.",
+          "choices": [
+            {
+              "text": "Open the account today; the certification is signed and the bank may rely on it",
+              "outcome": "Reliance only holds when the bank has no knowledge of facts reasonably calling the information into question. The news report is such a fact, so relying on it now is a mistake.",
+              "score": 0
+            },
+            {
+              "text": "Ask for an updated certification covering the new Panama company's owners, verify them, and escalate to BSA/AML if the customer refuses or the picture stays unclear",
+              "outcome": "Best answer. The bank must identify the individuals who now own 25% or more, even through a foreign company, and follow its CIP and escalation procedures if it cannot.",
+              "score": 2
+            },
+            {
+              "text": "Open the account but flag it for review in a year",
+              "outcome": "Partly better than ignoring it, but the beneficial ownership duty applies at account opening, and a year is too late to resolve a known discrepancy.",
+              "score": 1
+            },
+            {
+              "text": "Refuse the account and tell the signer you suspect money laundering",
+              "outcome": "Refusing may become right if the customer will not cooperate, but telling him you suspect laundering could tip him off and is not how the bank handles a discrepancy.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Ongoing CDD and what changed in 2026",
+          "body": "The program rule requires **risk-based ongoing CDD**: understand the **nature and purpose** of each relationship to build a **customer risk profile**, and **monitor** on an ongoing basis to identify and report suspicious transactions and, on a risk basis, **update customer information**, including beneficial owners.\n\nTwo recent changes matter at the front door:\n\n- **February 2026 exceptive relief:** FinCEN said banks generally need not re-identify and re-verify the beneficial owners of an **existing** legal entity customer each time it opens a **new account**, unless risk calls for it.\n- **Corporate Transparency Act:** FinCEN's 2026 final rule made permanent the exemption of US companies and US persons from BOI reporting, so only foreign reporting companies file. This does **not** remove the bank's own duty under 31 CFR 1010.230."
+        },
+        {
+          "type": "match",
+          "title": "Front door vocabulary",
+          "prompt": "Match each term to its meaning in US BSA rules.",
+          "pairs": [
+            {
+              "left": "Legal entity customer",
+              "right": "A corporation, LLC or other entity created by a filing with a Secretary of State or similar office, a general partnership, or a similar foreign entity"
+            },
+            {
+              "left": "Control prong",
+              "right": "One individual with significant responsibility to control, manage or direct the entity"
+            },
+            {
+              "left": "Customer risk profile",
+              "right": "The bank's understanding of the nature and purpose of the relationship, used to judge whether activity is unusual"
+            },
+            {
+              "left": "CIP reliance",
+              "right": "Relying on another regulated institution's CIP, when reasonable and backed by a contract with annual certification"
+            },
+            {
+              "left": "Customer notice",
+              "right": "Telling customers, before opening, that the bank asks for information to verify identity"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers that matter at the front door",
+          "items": [
+            {
+              "label": "CIP data items",
+              "value": "4",
+              "detail": "Name, date of birth (individuals), address and identification number, before opening"
+            },
+            {
+              "label": "Ownership prong",
+              "value": "25%+",
+              "detail": "Each individual owning 25% or more of the equity interests"
+            },
+            {
+              "label": "Control prong",
+              "value": "1 person",
+              "detail": "A single individual who controls, manages or directs the entity"
+            },
+            {
+              "label": "Identifying records",
+              "value": "5 years",
+              "detail": "Kept for five years after the account is closed"
+            },
+            {
+              "label": "Verification records",
+              "value": "5 years",
+              "detail": "Kept for five years after the record is made"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Front door puzzles",
+          "cards": [
+            {
+              "front": "The man has no photo ID with him. Must Elena refuse?",
+              "back": "Not automatically. The CIP must have non-documentary procedures for customers without unexpired photo ID; she follows them or the failed-verification steps."
+            },
+            {
+              "front": "A US company is exempt from filing BOI with FinCEN. Is it exempt from the bank's beneficial ownership check?",
+              "back": "No. The bank's duty under 31 CFR 1010.230 is separate and continues."
+            },
+            {
+              "front": "Does every legal entity have a 25% owner?",
+              "back": "No. There may be no individual at 25% or more, but the bank must still identify one control person."
+            },
+            {
+              "front": "Can the bank verify a beneficial owner from a photocopy of a driver's license?",
+              "back": "Yes. For beneficial owners, documentary verification may use photocopies or other reproductions."
+            },
+            {
+              "front": "When must the terrorist list check happen?",
+              "back": "Within a reasonable period after opening, or earlier if another federal law, regulation or directive requires it."
+            }
+          ]
+        },
+        {
+          "type": "keypoints",
+          "title": "Front Door unlocked",
+          "items": [
+            "CIP: collect four core items before opening, verify within a reasonable time, check government lists, give notice and keep records.",
+            "Beneficial owners: every 25%+ owner plus one control person for each legal entity customer at account opening.",
+            "You may rely on the certification unless you know facts that reasonably call it into question.",
+            "Ongoing CDD means a risk profile, ongoing monitoring and risk-based updates, including beneficial owners.",
+            "CTA BOI filing now covers only foreign reporting companies; the bank's own beneficial ownership duty remains."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall a customer or account you handled where the paperwork was complete but something did not fit. What fact would have taken away your right to rely on what the customer told you?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-bsa-s2-q1",
+          "question": "Which four items must Bramblecove obtain, at a minimum, from an individual US customer before opening an account under the CIP rule?",
+          "options": [
+            "Name, address, phone number and employer",
+            "Name, passport number, email and source of funds",
+            "Name, date of birth, occupation and expected activity",
+            "Name, date of birth, address and taxpayer identification number"
+          ],
+          "answer": 3,
+          "explanation": "The CIP rule requires name, date of birth for individuals, an address and an identification number, which for a US person is a taxpayer identification number.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s2-q2",
+          "question": "When must the bank verify a new customer's identity under the CIP rule?",
+          "options": [
+            "Within a reasonable time after the account is opened",
+            "Before collecting any identifying information",
+            "Only if the account becomes suspicious",
+            "Within one year of opening"
+          ],
+          "answer": 0,
+          "explanation": "The CIP requires procedures to verify identity within a reasonable time after opening. The identifying information itself is collected before opening.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s2-q3",
+          "question": "A customer opens an account online and cannot present any photo ID in person. What must the CIP provide for?",
+          "options": [
+            "Automatic refusal of all remote applicants",
+            "Acceptance of the customer's own statement of identity until the account produces activity serious enough for a SAR",
+            "Non-documentary verification procedures for situations such as accounts opened without appearing in person",
+            "Verification only by a notary"
+          ],
+          "answer": 2,
+          "explanation": "The rule says non-documentary procedures must address customers who cannot present unexpired photo ID, accounts opened without documents, and customers who do not appear in person.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s2-q4",
+          "question": "An LLC customer certifies three owners at 40%, 35% and 25%, and a managing member who controls the business. How many beneficial owners must the bank identify, assuming the managing member owns nothing?",
+          "options": [
+            "Two: the largest owner and the managing member",
+            "Four: the three owners and the managing member",
+            "Three: only the three owners",
+            "One: only the managing member"
+          ],
+          "answer": 1,
+          "explanation": "Every individual at 25% or more meets the ownership prong, so all three owners qualify; one control person is added. The 25% owner meets the threshold because it is 25% or more.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s2-q5",
+          "question": "A family trust owns 30% of a legal entity customer. Under the beneficial ownership rule, who is the beneficial owner for that stake?",
+          "options": [
+            "Each beneficiary of the trust",
+            "The trustee",
+            "The person who created the trust",
+            "No one, because trusts are excluded"
+          ],
+          "answer": 1,
+          "explanation": "Where a trust owns 25% or more, the rule treats the trustee as the beneficial owner under the ownership prong.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s2-q6",
+          "question": "The person opening an account certifies the beneficial owners. The next day Elena learns from public records that an undisclosed company owns 60% of the customer. What should she do?",
+          "options": [
+            "Rely on the signed certification, because the bank may always rely on whatever the person opening the account certifies in good faith, whatever it later learns",
+            "Open the account and note the issue for the annual review",
+            "Close the file without telling anyone",
+            "Stop relying on the certification, obtain correct information and verify the individuals behind the 60% owner, escalating if needed"
+          ],
+          "answer": 3,
+          "explanation": "Reliance on the customer's information holds only if the bank has no knowledge of facts that reasonably call it into question. Here it does, so the bank must resolve the discrepancy.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-bsa-s2-q7",
+          "question": "Under FinCEN's February 2026 exceptive relief, what generally changed for existing legal entity customers?",
+          "options": [
+            "Banks generally need not re-identify and re-verify beneficial owners each time the customer opens a new account, unless risk calls for it",
+            "Banks no longer need to identify beneficial owners at all",
+            "Banks must now re-verify owners every year",
+            "Banks may now rely entirely on FinCEN's beneficial ownership registry instead of collecting and verifying owner information from customers themselves"
+          ],
+          "answer": 0,
+          "explanation": "The relief removed routine repeat identification and verification at each new account opening for existing legal entity customers, subject to risk-based exceptions. The underlying duty remains.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s2-q8",
+          "question": "A US-formed company tells Bramblecove it no longer has to report beneficial ownership to FinCEN, so the bank shouldn't ask. What is accurate?",
+          "options": [
+            "The customer is right; banks now rely on FinCEN's registry",
+            "The bank may skip the ownership prong for exempt US companies but must still identify and verify one control person for the account",
+            "Its BOI filing exemption under the Corporate Transparency Act rules does not remove the bank's own beneficial ownership duty",
+            "The exemption applies to banks as well as companies"
+          ],
+          "answer": 2,
+          "explanation": "FinCEN's 2026 final rule limits BOI reporting to foreign reporting companies, but banks still must identify and verify beneficial owners under 31 CFR 1010.230.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s2-q9",
+          "question": "For how long must Bramblecove keep the identifying information it obtained under its CIP?",
+          "options": [
+            "Five years after the account is opened",
+            "Three years after the last transaction",
+            "Ten years after the record is made",
+            "Five years after the account is closed"
+          ],
+          "answer": 3,
+          "explanation": "Identifying information is kept for five years after the account is closed. Descriptions of documents, methods and discrepancy resolution are kept five years after the record is made.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s2-q10",
+          "question": "Which statement about ongoing customer due diligence under the bank program rule is correct?",
+          "options": [
+            "It means re-running the full Customer Identification Program on every customer every year and recording the results again in each customer's file",
+            "It includes understanding the nature and purpose of relationships to build a risk profile and monitoring to report suspicious transactions",
+            "It applies only to legal entity customers",
+            "It is optional guidance in the FFIEC manual"
+          ],
+          "answer": 1,
+          "explanation": "The program rule requires risk-based ongoing CDD: a customer risk profile based on the nature and purpose of the relationship, ongoing monitoring, and risk-based updating of customer information including beneficial owners.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Enhanced Due Diligence: Correspondent and Private Banking",
+      "stage": "The Correspondent Desk",
+      "summary": "Due diligence for foreign correspondent accounts, enhanced due diligence for higher-risk foreign banks, the shell bank ban and private banking for senior foreign political figures.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the risk factors and periodic review for foreign correspondent accounts",
+        "Identify which foreign banks require enhanced due diligence and what it involves",
+        "Apply the shell bank prohibition and certification safe harbor",
+        "Apply private banking due diligence and enhanced scrutiny for senior foreign political figures"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Kevin's two big wins",
+          "setting": "Correspondent and private banking desk, Bramblecove Bank, Miami. 9:00 am.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "Big week. Banco Isla Verde wants a US dollar correspondent account with us, and a new private banking client is moving USD 6m across.",
+              "mood": "happy"
+            },
+            {
+              "who": "amina",
+              "text": "Isla Verde holds an offshore banking license. That alone changes the due diligence we owe.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kevin",
+              "text": "And the private client is a holding company. The real owner is Mr. Arturo Calden, a serving foreign finance minister.",
+              "mood": "neutral"
+            },
+            {
+              "who": "dana",
+              "text": "So we have a foreign correspondent account that needs enhanced due diligence, and a private banking account with a senior foreign political figure behind it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "marcus",
+              "text": "And we need to be sure Isla Verde isn't a shell, or a doorway for other banks we've never met.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "Stage three: the Correspondent Desk. These are some of the highest-risk accounts a US bank keeps.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Due diligence for foreign correspondent accounts",
+          "scenes": [
+            {
+              "icon": "🏦",
+              "heading": "Every foreign correspondent account",
+              "narration": "Under 31 CFR 1010.610, a US bank needs a risk-based due diligence program for every correspondent account it keeps for a foreign financial institution, as part of its AML program."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Assess the risk",
+              "narration": "The bank weighs the foreign institution's business and markets, the account's type, purpose and expected activity, the length of the relationship, the home country's AML and supervisory regime, and the institution's AML record."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Review the activity",
+              "narration": "Controls include a periodic review of account activity to check it still matches the stated type, purpose and anticipated activity."
+            },
+            {
+              "icon": "🚨",
+              "heading": "Enhanced due diligence",
+              "narration": "Foreign banks with an offshore banking license, or licensed in a country designated as non-cooperative or as warranting special measures, get enhanced due diligence: their AML program, transaction monitoring, nested banks and, if not publicly traded, their owners."
+            },
+            {
+              "icon": "🛑",
+              "heading": "When you cannot do it",
+              "narration": "If due diligence cannot be performed, the bank's procedures must say when to refuse to open the account, suspend activity, file a SAR or close the account."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From all correspondents to enhanced scrutiny",
+          "items": [
+            {
+              "label": "All foreign correspondent accounts",
+              "detail": "Risk-based due diligence program for every account kept for a foreign financial institution"
+            },
+            {
+              "label": "Risk assessment of each account",
+              "detail": "Business, account purpose, relationship, home regime, AML record"
+            },
+            {
+              "label": "Foreign banks in the EDD categories",
+              "detail": "Offshore license, non-cooperative country designation, or special measures designation"
+            },
+            {
+              "label": "Enhanced due diligence",
+              "detail": "AML program review, monitoring, nested bank checks, owners of non-public banks"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Banco Isla Verde operates under an offshore banking license. What does that mean for Bramblecove's correspondent account?",
+          "options": [
+            "Nothing extra, if the bank is profitable",
+            "The account must receive enhanced due diligence under 31 CFR 1010.610(b)",
+            "The account is prohibited outright",
+            "Only OFAC screening is required"
+          ],
+          "answer": 1,
+          "explanation": "A foreign bank operating under an offshore banking license is one of the categories that require enhanced due diligence. It is not banned outright; the shell bank prohibition is a different test."
+        },
+        {
+          "type": "match",
+          "title": "Risk factors and the questions behind them",
+          "prompt": "Match each risk factor in 1010.610 to the question Kevin's team should ask.",
+          "pairs": [
+            {
+              "left": "Nature of the business and markets",
+              "right": "Who are Isla Verde's customers and where do they operate?"
+            },
+            {
+              "left": "Type, purpose and anticipated activity",
+              "right": "What payments will flow, in what volumes and for what reason?"
+            },
+            {
+              "left": "Nature and duration of the relationship",
+              "right": "Have we or our affiliates dealt with this bank before, and for how long?"
+            },
+            {
+              "left": "Home jurisdiction's AML regime",
+              "right": "How strong are AML laws and supervision where Isla Verde is licensed and where its owners are incorporated?"
+            },
+            {
+              "left": "AML record",
+              "right": "What is known or reasonably available about its past AML failures or enforcement?"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "The shell bank ban (31 CFR 1010.630)",
+          "body": "A US bank **must not** establish, maintain, administer or manage a correspondent account in the United States **for a foreign shell bank**. It must also take **reasonable steps** so that a foreign bank's correspondent account is **not used indirectly** to provide banking services to a shell bank. The rule does not stop services to a shell's **regulated affiliate**.\n\nFor each foreign bank correspondent, the US bank keeps records in the United States of the **owners** (if its shares are not publicly traded) and of a **US-resident agent** authorised to accept legal process.\n\n**Safe harbor:** the bank is treated as compliant if it obtains a **certification or recertification** from the foreign bank **at least once every three years**. If it later knows or suspects that certified information is wrong, it must ask the foreign bank to verify or correct it, or take other steps."
+        },
+        {
+          "type": "sort",
+          "title": "Prohibited, enhanced or general?",
+          "prompt": "Sort each foreign correspondent request by the level of response the rules call for.",
+          "buckets": [
+            "Prohibited",
+            "Enhanced due diligence",
+            "General due diligence"
+          ],
+          "items": [
+            {
+              "text": "A bank with no physical presence anywhere and no regulated affiliate",
+              "bucket": 0
+            },
+            {
+              "text": "A respondent that would let a shell bank use our account through its own account",
+              "bucket": 0
+            },
+            {
+              "text": "A bank operating under an offshore banking license",
+              "bucket": 1
+            },
+            {
+              "text": "A bank licensed in a country Treasury designated as warranting special measures",
+              "bucket": 1
+            },
+            {
+              "text": "A bank licensed in a country designated non-cooperative by a body the US belongs to, with US concurrence",
+              "bucket": 1
+            },
+            {
+              "text": "A large, publicly traded bank in a well-supervised country, outside the EDD categories",
+              "bucket": 2
+            },
+            {
+              "text": "A regional bank in a well-supervised country seeking a trade-payments account",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The minister's holding company",
+          "setting": "Private banking suite, Miami. Mr. Calden's lawyer is on speakerphone.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "The lawyer says the USD 6m comes from 'family investments' and the account will be used for property purchases in Florida.",
+              "mood": "neutral"
+            },
+            {
+              "who": "amina",
+              "text": "Mr. Calden is a serving finance minister. For a private banking account, the rule asks us to find out if an owner is a senior foreign political figure, and he is.",
+              "mood": "thinking"
+            },
+            {
+              "who": "kevin",
+              "text": "So we refuse? He's a great client.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "Not automatically. We apply enhanced scrutiny designed to detect proceeds of foreign corruption. If we can't do proper due diligence, our procedures tell us what's next.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Private banking accounts (31 CFR 1010.620)",
+          "body": "For private banking accounts, the bank's due diligence program must take reasonable steps to:\n\n- identify **all nominal and beneficial owners**\n- find out whether any of them is a **senior foreign political figure**\n- establish the **source of funds** and the **purpose and expected use** of the account\n- **review activity** against that information and report suspicious activity\n\nWhere a senior foreign political figure is a nominal or beneficial owner, the bank applies **enhanced scrutiny** designed to detect and report the **proceeds of foreign corruption**: assets gained through misappropriation of public funds, unlawful conversion of state property, bribery or extortion.\n\nIf due diligence cannot be performed, procedures must say when to refuse, suspend, file a SAR or close.\n\nFor other politically exposed customers, a **2020 joint statement** by the agencies and FinCEN explains that PEP status alone does not trigger extra requirements: due diligence follows the customer's actual risk."
+        },
+        {
+          "type": "scenario",
+          "title": "Mr. Calden's account",
+          "situation": "The holding company's beneficial owner is a serving foreign finance minister. The lawyer describes the USD 6m as 'family investments' but will not provide documents, saying the minister's privacy must be protected. Kevin is under pressure to open the account before quarter end.",
+          "choices": [
+            {
+              "text": "Open the account; the minister is a public figure, so the risk is known",
+              "outcome": "Being well known is not due diligence. The rule requires the source of funds and enhanced scrutiny for proceeds of foreign corruption; neither has been done.",
+              "score": 0
+            },
+            {
+              "text": "Ask for documented evidence of the source of funds and wealth, apply enhanced scrutiny, and if the client will not provide it, follow procedures to refuse and consider a SAR",
+              "outcome": "Best answer. This applies 1010.620: identify owners, establish source of funds and purpose, apply enhanced scrutiny, and use the procedures for when due diligence cannot be performed.",
+              "score": 2
+            },
+            {
+              "text": "Open the account but limit deposits to USD 1m until documents arrive",
+              "outcome": "Partly right in spirit, but the account would be operating without the required due diligence and enhanced scrutiny, and the limit has no basis in the facts.",
+              "score": 1
+            },
+            {
+              "text": "Refuse because the bank should never bank foreign politicians",
+              "outcome": "The rules do not ban these clients. They require risk-based enhanced scrutiny, and blanket refusals are not what the agencies expect.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Correspondent versus private banking due diligence",
+          "headers": [
+            "Foreign correspondent (1010.610)",
+            "Private banking (1010.620)"
+          ],
+          "items": [
+            {
+              "label": "Who",
+              "left": "Accounts kept for foreign financial institutions",
+              "right": "Private banking accounts kept in the US"
+            },
+            {
+              "label": "Core steps",
+              "left": "Risk assessment on five factors plus periodic activity review",
+              "right": "Owners, political figure check, source of funds, purpose, activity review"
+            },
+            {
+              "label": "Enhanced trigger",
+              "left": "Offshore license, non-cooperative or special measures country",
+              "right": "A senior foreign political figure as nominal or beneficial owner"
+            },
+            {
+              "label": "Enhanced focus",
+              "left": "AML program, monitoring, nested banks, owners at 10% or more",
+              "right": "Detecting proceeds of foreign corruption"
+            },
+            {
+              "label": "If you can't",
+              "left": "Refuse, suspend, file a SAR or close",
+              "right": "Refuse, suspend, file a SAR or close"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank of America, 2026",
+          "body": "On **13 October 2026 FinCEN** assessed a **USD 1.2 billion** civil money penalty against **Bank of America, N.A.** for failing to mitigate and report priority national security risks, including Chinese money laundering networks and illicit finance along the southwest border. The **OCC** assessed a **USD 750 million** penalty the same day for a deficient BSA/AML program, and **OFAC** announced a separate sanctions settlement.\n\nIn its resolution with FinCEN, the bank admitted it **willfully** violated the BSA by failing to:\n\n- implement and maintain an AML program meeting the minimum requirements\n- conduct **due diligence for correspondent accounts** of foreign financial institutions\n- file **Suspicious Activity Reports**\n\n**Lesson:** correspondent due diligence is not paperwork at onboarding; it is a live control examined alongside monitoring and SAR filing.\n\nSource: FinCEN press release and consent order 2026-03 (fincen.gov)."
+        },
+        {
+          "type": "flip",
+          "title": "Correspondent Desk terms",
+          "cards": [
+            {
+              "front": "Payable-through account",
+              "back": "A correspondent account through which a foreign bank lets its own customers carry out US banking activity directly or through subaccounts. EDD includes learning who can direct transactions through it."
+            },
+            {
+              "front": "Nested correspondent use",
+              "back": "When the foreign bank lets other foreign banks use its account with you. EDD asks you to find out and assess those banks."
+            },
+            {
+              "front": "Owner (for EDD on a non-public foreign bank)",
+              "back": "Anyone who directly or indirectly owns, controls or can vote 10% or more of any class of the foreign bank's securities."
+            },
+            {
+              "front": "Foreign shell bank",
+              "back": "A foreign bank without a physical presence in any country. US banks may not keep correspondent accounts for one, except via a regulated affiliate."
+            },
+            {
+              "front": "Proceeds of foreign corruption",
+              "back": "Assets a senior foreign political figure gains by misappropriating public funds, converting state property, or through bribery or extortion."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Onboarding a foreign correspondent",
+          "prompt": "Put Kevin's onboarding steps for Banco Isla Verde in order.",
+          "steps": [
+            "Determine whether Isla Verde falls into an enhanced due diligence category",
+            "Assess the account's money laundering risk across the required factors",
+            "Obtain the shell bank certification and record owners and the US agent for legal process",
+            "Review Isla Verde's AML program and ask whether it lets other foreign banks use the account",
+            "Approve with monitoring set to the expected activity, or refuse if diligence cannot be done",
+            "Review activity periodically against the stated purpose and recertify within three years"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Bramblecove holds a shell bank certification from a foreign bank obtained two years ago. Marcus now has reason to suspect a key fact in it is wrong. What should the bank do?",
+          "options": [
+            "Nothing until the three-year recertification is due",
+            "Ask the foreign bank to verify or correct the information, or take other steps to establish the facts",
+            "Close the account immediately without contacting the bank",
+            "Ask the respondent's customers directly"
+          ],
+          "answer": 1,
+          "explanation": "The certification safe harbor depends on interim verification: when the bank knows or suspects information is no longer correct, it must ask the foreign bank to verify or correct it, or take other appropriate measures. Waiting for the three-year cycle loses the safe harbor."
+        },
+        {
+          "type": "keypoints",
+          "title": "Correspondent Desk secured",
+          "items": [
+            "Every foreign correspondent account needs risk-based due diligence and periodic activity review.",
+            "Offshore licenses and non-cooperative or special measures countries trigger enhanced due diligence.",
+            "No correspondent accounts for foreign shell banks, directly or indirectly; certify at least every three years.",
+            "Private banking: owners, political figures, source of funds, purpose; enhanced scrutiny for senior foreign political figures.",
+            "If due diligence cannot be done, follow procedures to refuse, suspend, file a SAR or close."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you work near correspondent or private banking, where does commercial pressure most often meet due diligence in your team? How would you raise a concern before an account is opened rather than after?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-bsa-s3-q1",
+          "question": "Which foreign bank requires enhanced due diligence on its correspondent account under 31 CFR 1010.610(c)?",
+          "options": [
+            "One operating under an offshore banking license",
+            "Any foreign bank with more than ten branches",
+            "Any foreign bank that is publicly traded",
+            "Any foreign bank opening a US dollar account"
+          ],
+          "answer": 0,
+          "explanation": "The EDD categories are banks with an offshore banking license, banks licensed in countries designated non-cooperative by a body the US belongs to (with US concurrence), and banks licensed in countries designated for special measures.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s3-q2",
+          "question": "For a foreign bank in an EDD category whose shares are not publicly traded, whose identity must Bramblecove determine?",
+          "options": [
+            "Every shareholder of the foreign bank, however small the holding, together with each director and senior officer",
+            "Only the chief executive",
+            "Each owner who owns, controls or can vote 10% or more of any class of its securities",
+            "Only owners above 50%"
+          ],
+          "answer": 2,
+          "explanation": "EDD includes identifying each owner of a non-publicly traded foreign bank and the extent of their interest; 'owner' means 10% or more of any class of securities, with family members treated as one person.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s3-q3",
+          "question": "A foreign respondent bank lets five smaller foreign banks send payments through its account at Bramblecove. Under EDD, what must Bramblecove do?",
+          "options": [
+            "Nothing further, because the due diligence duty covers only the direct respondent bank and not any banks that use its account",
+            "Close the account immediately",
+            "Report each smaller bank to OFAC",
+            "Find out about those banks' use of the account and take reasonable steps to assess and mitigate the risk"
+          ],
+          "answer": 3,
+          "explanation": "EDD requires the bank to determine whether the foreign bank provides correspondent accounts to other foreign banks that use the US account and, if so, to obtain information to assess and mitigate those risks.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s3-q4",
+          "question": "What does the shell bank rule prohibit?",
+          "options": [
+            "Any account for a foreign bank's regulated affiliate",
+            "Keeping a US correspondent account for a foreign bank that has no physical presence in any country",
+            "All correspondent accounts for offshore-licensed banks",
+            "Any account for a company with no employees"
+          ],
+          "answer": 1,
+          "explanation": "A US bank may not keep a correspondent account for a foreign shell bank, and must take reasonable steps to stop indirect use. Services to a shell's regulated affiliate are not prohibited.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s3-q5",
+          "question": "How often must Bramblecove obtain a certification or recertification from a foreign respondent bank to stay within the shell bank safe harbor?",
+          "options": [
+            "Every year",
+            "Every five years",
+            "At least once every three years",
+            "Only at account opening"
+          ],
+          "answer": 2,
+          "explanation": "The safe harbor applies when the bank obtains a certification or recertification at least once every three years, plus interim verification when it suspects information is wrong.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s3-q6",
+          "question": "A private banking client's beneficial owner is a serving foreign minister. What does 31 CFR 1010.620 require in addition to standard private banking due diligence?",
+          "options": [
+            "Enhanced scrutiny reasonably designed to detect and report transactions that may involve proceeds of foreign corruption",
+            "Automatic refusal of the account",
+            "Approval from the State Department",
+            "Monthly reporting of the account's activity to FinCEN, together with a copy of the client's source of wealth evidence and tax returns"
+          ],
+          "answer": 0,
+          "explanation": "Where a senior foreign political figure is a nominal or beneficial owner, the program must include enhanced scrutiny designed to detect and report proceeds of foreign corruption. The rule does not ban such accounts.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s3-q7",
+          "question": "Mr. Calden's lawyer refuses to document the source of USD 6m for a private banking account, citing privacy. Kevin wants to open the account anyway. What should the bank's procedures lead to?",
+          "options": [
+            "Open it, since the client is a public figure",
+            "Treat it as due diligence that cannot be performed: consider refusing the account and whether to file a SAR",
+            "Open it with a lower deposit limit and no further steps, then complete the source-of-funds review after the quarter-end deadline",
+            "Ask OFAC for permission to open it"
+          ],
+          "answer": 1,
+          "explanation": "1010.620 requires the source of funds and enhanced scrutiny; where due diligence cannot be performed, procedures must say when to refuse, suspend, file a SAR or close.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-bsa-s3-q8",
+          "question": "A relationship manager says, 'Every PEP must automatically get enhanced due diligence under US rules.' What is the most accurate response?",
+          "options": [
+            "Correct; every politically exposed person, foreign or domestic, must receive the same enhanced due diligence in all account types",
+            "Wrong; US rules never mention political figures",
+            "Correct, but only for customers above USD 1m",
+            "Enhanced scrutiny is required for senior foreign political figures in private banking; otherwise diligence follows risk"
+          ],
+          "answer": 3,
+          "explanation": "The explicit duty is in 1010.620 for private banking accounts with a senior foreign political figure. The 2020 joint statement says PEP status alone does not create extra requirements; due diligence is risk-based.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-bsa-s3-q9",
+          "question": "Which factor must Bramblecove consider when assessing the money laundering risk of a foreign correspondent account?",
+          "options": [
+            "The AML and supervisory regime of the country that licensed the foreign bank",
+            "The foreign bank's credit rating only",
+            "Whether the foreign bank uses US software",
+            "The nationality of the relationship manager"
+          ],
+          "answer": 0,
+          "explanation": "The rule's factors include the foreign institution's business and markets, the account's type and purpose, the relationship, the licensing country's AML and supervisory regime, and the institution's AML record.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s3-q10",
+          "question": "In the 2026 FinCEN action against Bank of America, which failure linked to this stage did the bank admit?",
+          "options": [
+            "Opening accounts for foreign shell banks",
+            "Failing to file CTRs on teller cash",
+            "Failing to conduct due diligence for correspondent accounts of foreign financial institutions",
+            "Breaching the Corporate Transparency Act by failing to report its own beneficial owners to FinCEN's registry"
+          ],
+          "answer": 2,
+          "explanation": "Bank of America admitted it willfully failed to maintain a compliant AML program, conduct due diligence for foreign correspondent accounts and file SARs. FinCEN's penalty was USD 1.2 billion.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "SARs, CTRs, Records and Confidentiality",
+      "stage": "The Reporting Room",
+      "summary": "When and how to file suspicious activity reports and currency transaction reports, how to keep BSA records, and how to protect SAR confidentiality.",
+      "minutes": 55,
+      "objectives": [
+        "Apply the SAR threshold, suspicion categories and filing deadlines",
+        "Apply CTR thresholds, aggregation and filing rules, and recognise structuring",
+        "Protect SAR confidentiality, including when subpoenaed or asked by a customer",
+        "Know the main BSA record and retention rules"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Nine deposits under ten thousand",
+          "setting": "Investigations room, Columbus, with the Houston and Miami branches on screen. 2:15 pm.",
+          "lines": [
+            {
+              "who": "marcus",
+              "text": "Alert on Coastal Tile Supply. Nine cash deposits in four days, each between USD 9,000 and USD 9,800, spread over three branches.",
+              "mood": "thinking"
+            },
+            {
+              "who": "elena",
+              "text": "My teller says the depositor asked her, 'Does the bank report anything under ten?' Then he took back two bills.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "That question matters. Amounts near the threshold alone don't require a SAR. Information that someone is trying to avoid the report does.",
+              "mood": "thinking"
+            },
+            {
+              "who": "marcus",
+              "text": "Also, a lawyer emailed asking for 'any suspicious activity reports filed on my client.' Different client, same week.",
+              "mood": "neutral"
+            },
+            {
+              "who": "dana",
+              "text": "Stage four is the Reporting Room: SARs, CTRs, records and the secrecy that protects them.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The SAR rule for banks (31 CFR 1020.320)",
+          "scenes": [
+            {
+              "icon": "💵",
+              "heading": "When a SAR is required",
+              "narration": "A bank must report a transaction conducted or attempted by, at or through it that involves or adds up to at least 5,000 dollars, if it knows, suspects or has reason to suspect it is suspicious."
+            },
+            {
+              "icon": "🧩",
+              "heading": "Three kinds of suspicion",
+              "narration": "Funds from illegal activity or hiding them; a transaction designed to evade BSA requirements, such as structuring; or a transaction with no business or apparent lawful purpose that is unusual for the customer, with no reasonable explanation after review."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Thirty days",
+              "narration": "File no later than 30 calendar days after first detecting facts that may justify a SAR. If no suspect is identified, the bank may take another 30 days, but never more than 60 days in total."
+            },
+            {
+              "icon": "📞",
+              "heading": "Urgent cases",
+              "narration": "For violations that need immediate attention, such as ongoing money laundering schemes, the bank also notifies law enforcement by telephone straight away, and still files the SAR on time."
+            },
+            {
+              "icon": "🔒",
+              "heading": "Keep it secret, keep it safe",
+              "narration": "A SAR and anything that would reveal it are confidential. The bank keeps a copy and the supporting documents for five years from filing, and is protected from liability for the report."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The SAR clock",
+          "caption": "Continuing-activity timing is optional guidance: the October 2025 FAQs confirm banks are not required to run separate continuing activity reviews.",
+          "items": [
+            {
+              "label": "Initial detection",
+              "value": "Day 0",
+              "detail": "Facts that may be a basis for filing are first detected"
+            },
+            {
+              "label": "SAR due",
+              "value": "Day 30",
+              "detail": "Deadline when a suspect is identified"
+            },
+            {
+              "label": "Latest possible filing",
+              "value": "Day 60",
+              "detail": "Only if no suspect was identified at detection"
+            },
+            {
+              "label": "End of 90-day period",
+              "value": "Day 120",
+              "detail": "Under optional continuing-activity guidance, after a Day 30 filing"
+            },
+            {
+              "label": "Continuing activity SAR",
+              "value": "Day 150",
+              "detail": "Optional timing if the bank follows that guidance"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Marcus first detects facts that may justify a SAR on 1 March and has identified the suspect. By when must Bramblecove file?",
+          "options": [
+            "Within 15 days",
+            "No later than 30 calendar days after 1 March",
+            "Within 60 days, because complex cases get extra time",
+            "By the end of the quarter"
+          ],
+          "answer": 1,
+          "explanation": "With a suspect identified, the deadline is 30 calendar days after initial detection. The extra 30 days (60 in total) is only available when no suspect was identified on the date of detection. Fifteen days is the CTR filing period."
+        },
+        {
+          "type": "concept",
+          "title": "Currency transaction reports and structuring",
+          "body": "Banks file a **CTR** for each deposit, withdrawal, exchange or other payment or transfer involving **currency of more than USD 10,000** (31 CFR 1010.311).\n\n- **Aggregation:** multiple cash transactions count as one if the bank knows they are by or for the same person and total **more than USD 10,000 cash-in or cash-out in one business day**. All domestic branches count as one bank. Night, weekend and holiday deposits count on the next business day.\n- **Deadline:** file within **15 days** after the transaction and keep a copy for **five years**.\n- **Exemptions:** the rules let banks exempt certain customers from CTRs under conditions in 31 CFR 1020.315; follow your bank's procedures.\n\n**Structuring**, breaking up cash in any manner to evade a CTR, is unlawful. The **October 2025 FAQs** confirm that activity near the threshold is not on its own enough to require a SAR; a SAR is required when the bank knows, suspects or has reason to suspect the transactions are **designed to evade** reporting."
+        },
+        {
+          "type": "sort",
+          "title": "SAR, CTR or neither?",
+          "prompt": "Based only on these facts, sort each event by the report Bramblecove must file.",
+          "buckets": [
+            "CTR",
+            "SAR",
+            "Neither required"
+          ],
+          "items": [
+            {
+              "text": "A customer deposits USD 12,500 in cash in one visit, for a normal business reason",
+              "bucket": 0
+            },
+            {
+              "text": "The same person deposits USD 6,000 cash in Houston and USD 5,000 in Chicago on one business day, and the bank knows it",
+              "bucket": 0
+            },
+            {
+              "text": "A depositor asks how to avoid a report, then splits USD 18,000 into amounts below USD 10,000 over several days",
+              "bucket": 1
+            },
+            {
+              "text": "A USD 40,000 wire unusual for the customer, with no business or apparent lawful purpose found after review",
+              "bucket": 1
+            },
+            {
+              "text": "A restaurant deposits USD 9,700 cash, in line with years of similar deposits, with no sign of evasion",
+              "bucket": 2
+            },
+            {
+              "text": "A branch robbery that has been reported to law enforcement",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The lawyer's request",
+          "setting": "Legal and BSA conference room, Columbus. The next morning.",
+          "lines": [
+            {
+              "who": "marcus",
+              "text": "The lawyer has now sent a subpoena in a private lawsuit asking for 'all SARs and SAR drafts' about his client.",
+              "mood": "worried"
+            },
+            {
+              "who": "elena",
+              "text": "Meanwhile the Coastal Tile owner phoned the branch: 'Did you report me to the government?'",
+              "mood": "angry"
+            },
+            {
+              "who": "dana",
+              "text": "Two tests of the same principle. Nobody at this bank discloses a SAR or anything that reveals one exists, to the customer or to a private litigant.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Let's work out exactly how each person should respond.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Subpoenaed for a SAR",
+          "situation": "A private litigant's subpoena asks Bramblecove for all SARs about a customer. The bank did file a SAR. A junior paralegal suggests sending the SAR 'because subpoenas must be obeyed', while another colleague suggests replying 'no SAR exists' to end the matter.",
+          "choices": [
+            {
+              "text": "Produce the SAR, because a subpoena overrides bank policy",
+              "outcome": "Wrong. The SAR rule requires the bank to decline to produce a SAR or information revealing one, even when subpoenaed.",
+              "score": 0
+            },
+            {
+              "text": "Reply that no SAR exists",
+              "outcome": "Wrong. A false denial is not the answer; the bank declines without confirming or denying, and must not mislead.",
+              "score": 0
+            },
+            {
+              "text": "Decline to produce any SAR or information revealing one, cite the SAR confidentiality rule, notify FinCEN of the request and the response, and involve legal counsel",
+              "outcome": "Best answer. This follows 31 CFR 1020.320(e): decline, cite the rule and the statute, and notify FinCEN.",
+              "score": 2
+            },
+            {
+              "text": "Decline the request but do not tell FinCEN, since nothing was disclosed",
+              "outcome": "Partly right: declining is correct, but the rule also requires the bank to notify FinCEN of the request and its response.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "SAR confidentiality and the 2025 FAQs",
+          "cards": [
+            {
+              "front": "May Bramblecove share a SAR with its examining regulator?",
+              "back": "Yes. Disclosure to FinCEN, law enforcement or the federal or state regulator examining BSA compliance is permitted, as long as no person involved is notified."
+            },
+            {
+              "front": "May Bramblecove share the underlying facts with another bank?",
+              "back": "Yes, the underlying facts and documents may be shared to prepare a joint SAR, without revealing a SAR to anyone involved in the activity."
+            },
+            {
+              "front": "Must the bank document every decision not to file a SAR?",
+              "back": "No. The 2025 FAQs say there is no requirement to document it, though a short note is often sensible under the bank's procedures."
+            },
+            {
+              "front": "Must the bank run a separate review after each SAR to see if activity continued?",
+              "back": "No. The 2025 FAQs say risk-based monitoring may be relied on instead; the 90-day continuing activity approach is optional."
+            },
+            {
+              "front": "Is the bank liable to the customer for filing a SAR?",
+              "back": "The rule gives a safe harbor from liability to any person for the disclosure, to the extent the statute provides."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "When a customer asks 'Did you report me?'",
+          "body": "- Do **not** confirm, deny or hint. 'We follow federal rules for all customers' is enough.\n- Do **not** say 'compliance is looking at your account' or change your manner in a way that signals a report.\n- Answer factual CTR questions with the standard script if your bank has one; never coach a customer on avoiding a report.\n- Log the conversation and tell the investigator. A question about reporting can itself be a red flag."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Reporting Room numbers",
+          "items": [
+            {
+              "label": "SAR threshold for banks",
+              "value": "USD 5,000",
+              "detail": "Involves or aggregates at least this amount, plus suspicion"
+            },
+            {
+              "label": "SAR deadline",
+              "value": "30 days",
+              "detail": "After initial detection; up to 60 if no suspect identified"
+            },
+            {
+              "label": "CTR trigger",
+              "value": "> USD 10,000",
+              "detail": "Currency in or out, aggregated per person per business day"
+            },
+            {
+              "label": "CTR filing",
+              "value": "15 days",
+              "detail": "After the day of the reportable transaction"
+            },
+            {
+              "label": "Funds transfer records",
+              "value": "USD 3,000+",
+              "detail": "Originator, amount, date, instructions, beneficiary's bank"
+            },
+            {
+              "label": "BSA record retention",
+              "value": "5 years",
+              "detail": "General period for records, SARs with supporting documents and CTR copies"
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "What record, kept how?",
+          "prompt": "Match each BSA record to its rule.",
+          "pairs": [
+            {
+              "left": "SAR and supporting documents",
+              "right": "Kept five years from filing; supporting documents are treated as filed with the SAR"
+            },
+            {
+              "left": "CTR copy",
+              "right": "Kept five years from the date of the report"
+            },
+            {
+              "left": "Funds transfer of USD 3,000 or more",
+              "right": "Originator's bank keeps originator name and address, amount, date, instructions and beneficiary's bank"
+            },
+            {
+              "left": "CIP identifying information",
+              "right": "Kept five years after the account is closed"
+            },
+            {
+              "left": "Records required by 31 CFR Chapter X generally",
+              "right": "Kept five years and accessible within a reasonable time"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: USAA Federal Savings Bank, 2022",
+          "body": "In **March 2022 FinCEN** imposed a **USD 140 million** civil money penalty on **USAA Federal Savings Bank**, crediting a **USD 60 million** OCC penalty for the same conduct. The bank admitted willful violations.\n\nFinCEN found that the bank:\n\n- **willfully failed to timely and accurately file at least 3,873 SARs**\n- let backlogs build to around **90,000 un-reviewed alerts** and **6,900 un-reviewed cases** by the end of 2021, because it had not hired enough staff\n- moved to a new monitoring system that failed to flag cases the old system caught, cases that had led to SARs\n\n**Lessons:** the 30-day SAR clock only works if alerts are reviewed; system changes need testing against the old results; and staffing is part of the program, not an afterthought.\n\nSource: FinCEN enforcement action 2022-01 (fincen.gov)."
+        },
+        {
+          "type": "check",
+          "question": "Elena's teller is asked by Coastal Tile's owner whether the bank 'filed something with the government' about him. A SAR has been filed. What is the right response?",
+          "options": [
+            "Confirm it, because the customer has a right to know",
+            "Deny it, to keep the customer calm",
+            "Neither confirm nor deny, give a neutral answer and report the conversation to BSA/AML",
+            "Tell him a CTR was filed instead"
+          ],
+          "answer": 2,
+          "explanation": "No bank employee may disclose a SAR or information that would reveal one. A false denial or a misleading statement is not the answer either. A neutral reply and escalation protects the report and the investigation."
+        },
+        {
+          "type": "keypoints",
+          "title": "Reporting Room decoded",
+          "items": [
+            "SAR: USD 5,000 or more plus knowledge or suspicion; file within 30 days of detection, 60 at most if no suspect.",
+            "SARs and anything revealing them are confidential; decline subpoenas, cite the rule and notify FinCEN.",
+            "CTR: cash of more than USD 10,000, aggregated per person per business day; file within 15 days.",
+            "Near-threshold cash alone is not a SAR; information showing intent to evade reporting is.",
+            "Most BSA records, SAR files and CTR copies are kept five years; funds transfers of USD 3,000+ need originator records."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of a question a customer might ask you about cash or reporting. How would you answer it in your own words without coaching them or revealing anything, and whom would you tell afterwards?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-bsa-s4-q1",
+          "question": "What is the dollar amount at which a bank's suspicious activity reporting duty begins under 31 CFR 1020.320, where the bank knows or suspects the transaction is suspicious?",
+          "options": [
+            "Transactions over USD 10,000",
+            "Transactions of USD 3,000 or more",
+            "Transactions involving or aggregating at least USD 5,000",
+            "Any amount, without exception"
+          ],
+          "answer": 2,
+          "explanation": "Banks must report transactions that involve or aggregate at least USD 5,000 where the bank knows, suspects or has reason to suspect they fall in a suspicious category. Banks may also file voluntarily below that.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s4-q2",
+          "question": "Bramblecove detects suspicious facts but has not identified any suspect. What is the latest it may file the SAR?",
+          "options": [
+            "30 calendar days after initial detection",
+            "60 calendar days after initial detection",
+            "90 calendar days after initial detection",
+            "15 days after the transaction"
+          ],
+          "answer": 1,
+          "explanation": "If no suspect is identified at detection, the bank may take an extra 30 days to identify one, but reporting may not be delayed more than 60 calendar days after initial detection.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s4-q3",
+          "question": "A customer deposits USD 9,000 in cash at the Houston branch in the morning and USD 2,000 at the Chicago branch that afternoon. Bramblecove's systems link both to her. What must the bank file?",
+          "options": [
+            "A CTR, because the cash deposits by the same person exceed USD 10,000 in one business day",
+            "Nothing, because each deposit is under USD 10,000",
+            "A SAR only, because deposits made at different branches on the same day are never added together for currency reporting",
+            "A CTR only if she asks for one"
+          ],
+          "answer": 0,
+          "explanation": "Multiple cash transactions known to be by or for the same person are aggregated across all domestic branches; together they exceed USD 10,000 in one business day, so a CTR is required.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q4",
+          "question": "A grocery store deposits USD 9,600 in cash twice a week, matching years of history. There is no sign of evasion. According to the October 2025 FAQs, is a SAR required?",
+          "options": [
+            "Yes; any deposit near USD 10,000 is structuring",
+            "Yes, but only after three months",
+            "No, because grocery stores are exempt from SARs",
+            "No; amounts at or near the CTR threshold alone are not enough to require a SAR"
+          ],
+          "answer": 3,
+          "explanation": "The FAQs confirm that the mere presence of transactions near the threshold does not require a SAR. A SAR is required if the bank knows, suspects or has reason to suspect the transactions are designed to evade reporting.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q5",
+          "question": "A depositor asks a teller, 'How much can I bring in without the bank reporting it?' and then splits cash across days. Which report should the teller's escalation lead to?",
+          "options": [
+            "No report at all, because each separate deposit stayed below the currency transaction reporting threshold",
+            "A CTR only for the largest deposit",
+            "An OFAC report through the OFAC Reporting System",
+            "A SAR, because information suggests the transactions are designed to evade CTR reporting"
+          ],
+          "answer": 3,
+          "explanation": "Structuring to evade a CTR is unlawful, and a SAR is required when the bank knows, suspects or has reason to suspect transactions are designed to evade reporting. The customer's question is key information.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q6",
+          "question": "Bramblecove receives a subpoena from a private litigant requesting any SARs on a customer. What does the SAR rule require?",
+          "options": [
+            "Produce the SAR under seal",
+            "Decline to produce the SAR or information revealing it, cite the rule and statute, and notify FinCEN",
+            "Produce the SAR if the judge signed the subpoena",
+            "Confirm to the court that a SAR exists but withhold its content, since only the narrative itself is protected"
+          ],
+          "answer": 1,
+          "explanation": "Under 31 CFR 1020.320(e), a bank subpoenaed for a SAR or information revealing one must decline, cite the rule and statute, and notify FinCEN of the request and its response.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q7",
+          "question": "Which disclosure of SAR-related information is permitted, provided nobody involved in the activity is notified?",
+          "options": [
+            "Telling the customer, to give them a chance to explain",
+            "Sending the SAR to the customer's accountant",
+            "Sharing the underlying facts with another financial institution to prepare a joint SAR",
+            "Mentioning the SAR in a public court filing for a debt claim, because court filings are protected by litigation privilege"
+          ],
+          "answer": 2,
+          "explanation": "The rule allows disclosure of a SAR to FinCEN, law enforcement and BSA examiners, and of the underlying facts to another institution for a joint SAR. Disclosure to the customer or third parties is prohibited.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q8",
+          "question": "A customer sends a USD 4,000 wire from Bramblecove. Which BSA rule requires Bramblecove, as the originator's bank, to record the originator's name and address, the amount and the beneficiary's bank?",
+          "options": [
+            "The funds transfer recordkeeping rule for transfers of USD 3,000 or more",
+            "The CTR rule",
+            "The SAR rule",
+            "The OFAC reporting rule"
+          ],
+          "answer": 0,
+          "explanation": "31 CFR 1020.410(a) requires records for funds transfers of USD 3,000 or more, including originator name and address, amount, execution date, payment instructions and the beneficiary's bank.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s4-q9",
+          "question": "How long must Bramblecove keep a copy of a filed SAR and its supporting documentation?",
+          "options": [
+            "Five years after the account closes",
+            "Five years from the date of filing",
+            "Ten years from the transaction",
+            "Until law enforcement confirms receipt"
+          ],
+          "answer": 1,
+          "explanation": "The SAR rule requires a copy of each SAR and its supporting documents to be kept for five years from filing; the documents are treated as filed with the SAR.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s4-q10",
+          "question": "USAA Federal Savings Bank's 2022 FinCEN penalty followed which kind of failure?",
+          "options": [
+            "Opening accounts for foreign shell banks",
+            "Processing payments through blocked Russian banks because its sanctions filter was updated late after new designations",
+            "Failing to verify beneficial owners of trusts",
+            "Willful failure to timely and accurately file thousands of SARs, with large alert backlogs"
+          ],
+          "answer": 3,
+          "explanation": "FinCEN found at least 3,873 SARs were not timely and accurately filed and that alert and case backlogs had grown to around 90,000 alerts and 6,900 cases, linked to understaffing.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "OFAC Sanctions, Testing, Training, Enforcement and the Proposed Rule",
+      "stage": "The Examiner's Table",
+      "summary": "Handle OFAC matches, support independent testing, the BSA officer and training, learn from enforcement actions, and understand the April 2026 proposed AML/CFT program rule.",
+      "minutes": 60,
+      "objectives": [
+        "Apply OFAC blocking, rejecting, reporting and recordkeeping duties under strict liability",
+        "Describe the five components of OFAC's Framework for Compliance Commitments",
+        "Explain what examiners expect of independent testing, the BSA officer and training",
+        "Describe the April 2026 proposed AML/CFT program rule and its status"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "10:40 pm: a designation lands",
+          "setting": "Sanctions operations, Columbus, late evening. The exam starts on Monday.",
+          "lines": [
+            {
+              "who": "amina",
+              "text": "OFAC just designated eight companies and two banks. Our filter vendor updates tomorrow morning. There are wires queued for 6 am.",
+              "mood": "worried"
+            },
+            {
+              "who": "marcus",
+              "text": "One queued wire routes through a bank on tonight's list as the intermediary.",
+              "mood": "thinking"
+            },
+            {
+              "who": "amina",
+              "text": "And our 'auto-close repeat alert' rule would release that wire if an analyst cleared the same name last month.",
+              "mood": "worried"
+            },
+            {
+              "who": "dana",
+              "text": "Then we load the new names manually tonight and switch that suppression rule off for blocked banks. OFAC liability doesn't wait for vendor schedules.",
+              "mood": "thinking"
+            },
+            {
+              "who": "dana",
+              "text": "Stage five, the Examiner's Table: sanctions, testing, the BSA officer, training, enforcement and the rule FinCEN has proposed. Last stage before the final boss.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "OFAC sanctions compliance for banks",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "Strict liability",
+              "narration": "OFAC may impose civil penalties on a strict liability basis. In many cases a US person can be liable even without knowing, or having reason to know, that the activity was prohibited."
+            },
+            {
+              "icon": "🧊",
+              "heading": "Block or reject",
+              "narration": "Funds in which a blocked person has an interest are blocked and placed in a segregated, interest-bearing account. Where a program prohibits a transaction but does not require blocking, the bank rejects it instead."
+            },
+            {
+              "icon": "📨",
+              "heading": "Report within ten business days",
+              "narration": "Both blocked and rejected transactions are reported to OFAC through the OFAC Reporting System within 10 business days."
+            },
+            {
+              "icon": "🗄️",
+              "heading": "Keep records for ten years",
+              "narration": "Records of transactions subject to OFAC rules are kept for 10 years, and for blocked property 10 years after it is unblocked."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Five components",
+              "narration": "OFAC's 2019 Framework for Compliance Commitments names five components of a sanctions compliance program: management commitment, risk assessment, internal controls, testing and auditing, and training."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "OFAC's five compliance components",
+          "caption": "From A Framework for OFAC Compliance Commitments (2019). OFAC may weigh an effective program when deciding penalties.",
+          "items": [
+            {
+              "label": "Management commitment",
+              "detail": "Approves the program, gives it authority, resources and a culture of compliance"
+            },
+            {
+              "label": "Risk assessment",
+              "detail": "Customers, products, geographies and counterparties assessed for sanctions risk"
+            },
+            {
+              "label": "Internal controls",
+              "detail": "Screening, escalation, list updates, blocking and reporting procedures"
+            },
+            {
+              "label": "Testing and auditing",
+              "detail": "Independent checks, with fixes for root causes of any weakness"
+            },
+            {
+              "label": "Training",
+              "detail": "Periodic and at least annual, job-specific, with assessments"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Bramblecove wire to a newly designated company went out two hours after the designation, before the filter was updated. Nobody knew. What does OFAC's strict liability standard mean here?",
+          "options": [
+            "No violation is possible because nobody knew",
+            "The bank may still face civil liability, though OFAC weighs all facts and the bank's compliance program",
+            "Only the employee who released the wire is liable",
+            "Liability applies only if the bank profited"
+          ],
+          "answer": 1,
+          "explanation": "Under strict liability, OFAC may hold a US person civilly liable even without knowledge or reason to know. OFAC then considers the totality of facts, including an effective risk-based program and remediation, when choosing its response."
+        },
+        {
+          "type": "sort",
+          "title": "Block, reject or process?",
+          "prompt": "Sort each payment by the right sanctions action, based only on the facts given.",
+          "buckets": [
+            "Block",
+            "Reject",
+            "Process"
+          ],
+          "items": [
+            {
+              "text": "A wire to an account owned by a company on the SDN List",
+              "bucket": 0
+            },
+            {
+              "text": "A wire routed through an intermediary bank that OFAC has just blocked",
+              "bucket": 0
+            },
+            {
+              "text": "A payment prohibited by a sanctions program that has no blocked person's interest in it",
+              "bucket": 1
+            },
+            {
+              "text": "A screening hit on a common name, cleared with documented date-of-birth and address mismatches",
+              "bucket": 2
+            },
+            {
+              "text": "A domestic payroll payment with no sanctions nexus and no alert",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank of America and OFAC, 2026",
+          "body": "On **13 October 2026 OFAC** announced that **Bank of America, N.A.** agreed to pay **USD 11,662,930** to settle **475 apparent violations** of several sanctions programs, including Russia, Belarus, Iran, narcotics and global terrorism.\n\nOFAC described four issues, including:\n\n- a third-party **routing directory** that still contained **blocked banks**, so payments went through them\n- payments processed **before the screening filter was updated** after new designations\n- payments released by an **alert suppression rule** that auto-cleared alerts resembling past false positives\n- **human error** in clearing true matches and in handling accounts linked to blocked persons\n\nOFAC found the violations **non-egregious** but largely **not voluntarily self-disclosed**, and gave **no reduction** for remediation or cooperation.\n\n**Lesson:** list updates, suppression logic and vendor data are controls, and OFAC tests them.\n\nSource: OFAC enforcement release, 13 October 2026 (ofac.treasury.gov)."
+        },
+        {
+          "type": "concept",
+          "title": "Independent testing and the BSA officer",
+          "body": "**Independent testing** checks whether the program is designed well and works in practice. The rules let the bank use its **own personnel or an outside party**, but testers must be independent of the BSA function they test. Findings go to senior management and the board, and the bank fixes **root causes**, not just individual files.\n\n**The BSA officer** is the individual designated to **coordinate and monitor day-to-day compliance**. Examiners look at whether this person has the **authority, independence, expertise and resources** to do the job, and reports directly enough to senior management and the board to raise problems.\n\nOFAC's framework notes that a bank may have **one person** oversee both BSA and sanctions compliance, depending on its size and complexity.\n\n**Training** must reach appropriate personnel, matched to their roles, including directors, and be updated when rules change, with records kept."
+        },
+        {
+          "type": "match",
+          "title": "What an examiner asks, and who answers",
+          "prompt": "Match each examiner question to the pillar or role that should answer it.",
+          "pairs": [
+            {
+              "left": "BSA officer",
+              "right": "Who coordinates day-to-day compliance, and do they have the authority and staff to do it?"
+            },
+            {
+              "left": "Independent testing",
+              "right": "Who tested the alert scenarios last year, and were they independent of the team that runs them?"
+            },
+            {
+              "left": "Training",
+              "right": "What did tellers, wire staff and the board each learn this year, and how do you know they understood it?"
+            },
+            {
+              "left": "Internal controls",
+              "right": "How are new OFAC designations loaded into screening the same day?"
+            },
+            {
+              "left": "Board oversight",
+              "right": "When did the board approve the program, and what reports has it received since?"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The training plan",
+          "setting": "Dana's office, Friday afternoon. The board's risk committee meets on Tuesday.",
+          "lines": [
+            {
+              "who": "kevin",
+              "text": "Can't we buy a 20-minute annual video for everyone and call training done?",
+              "mood": "neutral"
+            },
+            {
+              "who": "dana",
+              "text": "A shared foundation is fine. But tellers need cash and structuring, Elena's team needs CIP, your desk needs correspondent EDD, and Amina's analysts need screening.",
+              "mood": "thinking"
+            },
+            {
+              "who": "amina",
+              "text": "And OFAC's framework expects training at least annually, job-specific, with assessments that hold people accountable.",
+              "mood": "neutral"
+            },
+            {
+              "who": "marcus",
+              "text": "Remember the bank that put staff from other departments into alert review with no AML training? The examiners did.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Shinhan Bank America, 2023",
+          "body": "In **September 2023 FinCEN** imposed a **USD 15 million** civil money penalty on **Shinhan Bank America**, crediting a **USD 5 million** FDIC penalty. The bank admitted willful violations of the BSA.\n\nFinCEN described an under-resourced program:\n\n- the bank did not hire enough compliance staff, which caused overload and **high turnover**\n- it filled compliance roles with employees from other parts of the bank who had **no prior BSA or AML experience**\n- **eight months** after a new monitoring system went live, compliance staff had **not been trained on it**\n- some analysts lacked the training to reach well-supported alert decisions\n- the bank **struggled to retain a BSA officer**\n\n**Lesson:** the training and BSA officer pillars are tested by results. Untrained people working alerts is a program failure, not a staffing detail.\n\nSource: FinCEN enforcement action 2023-03 (fincen.gov)."
+        },
+        {
+          "type": "scenario",
+          "title": "Designing next year's BSA/AML training",
+          "situation": "Dana asks you to propose Bramblecove's training plan for next year. Budget is limited. The board wants evidence it works, and the OCC will review training records.",
+          "choices": [
+            {
+              "text": "One generic 20-minute annual video for everyone, with completion tracked",
+              "outcome": "Easy to evidence, but it does not match content to roles or test understanding. Examiners and OFAC's framework expect tailoring and assessment.",
+              "score": 0
+            },
+            {
+              "text": "A shared foundation for all staff plus role modules for tellers, onboarding, wires, correspondent and sanctions teams and the board, with assessments, updates for rule changes and complete records",
+              "outcome": "Best answer. It reaches appropriate personnel, fits each role, includes directors, tests understanding and leaves the records examiners ask for.",
+              "score": 2
+            },
+            {
+              "text": "Train only the BSA/AML department in depth, since they file the SARs",
+              "outcome": "Front-line staff spot and escalate most unusual activity. Leaving them out weakens the program at its first line.",
+              "score": 0
+            },
+            {
+              "text": "Role modules for front-line teams only, without records of who attended",
+              "outcome": "Partly right on content, but without records the bank cannot show the pillar works, and the board is left out.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Today's rule versus the April 2026 PROPOSAL",
+          "caption": "The proposal was not final as of November 2026. Follow the current rules until a final rule takes effect.",
+          "headers": [
+            "Current bank program rules",
+            "FinCEN proposal (April 2026, not final)"
+          ],
+          "items": [
+            {
+              "label": "Name",
+              "left": "Anti-money laundering (AML) program",
+              "right": "AML/CFT program"
+            },
+            {
+              "label": "Risk assessment",
+              "left": "Expected by examiners; not required uniformly in the rule text",
+              "right": "Required risk assessment processes, reviewing the government's AML/CFT Priorities"
+            },
+            {
+              "label": "Pillars",
+              "left": "Internal controls, independent testing, BSA officer, training, plus ongoing CDD",
+              "right": "Four pillars, with ongoing CDD moved under internal controls"
+            },
+            {
+              "label": "Officer",
+              "left": "A designated individual for day-to-day compliance",
+              "right": "An AML/CFT officer located in the United States"
+            },
+            {
+              "label": "Training",
+              "left": "Training for appropriate personnel",
+              "right": "Ongoing employee training program, tailored to risk and roles"
+            },
+            {
+              "label": "Supervision",
+              "left": "Agencies examine and enforce under their powers",
+              "right": "Establish vs maintain test; 30 days' notice to FinCEN before significant supervisory actions"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "The proposed rule: what to know",
+          "cards": [
+            {
+              "front": "Is the April 2026 AML/CFT program rule in force?",
+              "back": "No. It is a proposal. Comments closed on 9 June 2026, and no final rule had been issued as of November 2026."
+            },
+            {
+              "front": "What did it replace?",
+              "back": "It fully superseded FinCEN's July 2024 proposal, which FinCEN withdrew."
+            },
+            {
+              "front": "Establish versus maintain?",
+              "back": "Design gaps (establishing the program) would be separated from failures to run it in practice (maintaining it), to focus action on significant or systemic failures."
+            },
+            {
+              "front": "Would training survive?",
+              "back": "Yes. An ongoing employee training program stays one of four pillars, with frequency and content tailored to the bank's risk and staff roles."
+            },
+            {
+              "front": "Do the bank regulators follow?",
+              "back": "The OCC, FDIC, NCUA and Federal Reserve said they would issue their own aligned proposals for the institutions they supervise."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "From OFAC match to report",
+          "prompt": "Put Amina's steps for a confirmed sanctions match on an incoming wire in order.",
+          "steps": [
+            "Stop the payment in the queue before release",
+            "Confirm the match against the SDN List details, not just the name",
+            "Determine whether the program requires blocking or rejection",
+            "Block the funds into a segregated interest-bearing account, or reject the payment",
+            "Report the blocked or rejected transaction through the OFAC Reporting System within 10 business days",
+            "Keep the records for 10 years and review the root cause of the alert"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "What failure cost: verified US actions",
+          "caption": "Figures from FinCEN and OFAC enforcement documents and press releases.",
+          "items": [
+            {
+              "label": "Bank of America (FinCEN, 2026)",
+              "value": "USD 1.2bn",
+              "detail": "AML program, correspondent due diligence and SAR failures"
+            },
+            {
+              "label": "Bank of America (OCC, 2026)",
+              "value": "USD 750m",
+              "detail": "Deficient and ineffective BSA/AML program"
+            },
+            {
+              "label": "Bank of America (OFAC, 2026)",
+              "value": "USD 11.7m",
+              "detail": "475 apparent sanctions violations"
+            },
+            {
+              "label": "USAA FSB (FinCEN, 2022)",
+              "value": "USD 140m",
+              "detail": "Including a credited USD 60m OCC penalty; thousands of late SARs"
+            },
+            {
+              "label": "Shinhan Bank America (2023)",
+              "value": "USD 15m",
+              "detail": "Including a credited USD 5m FDIC penalty; staffing and training gaps"
+            },
+            {
+              "label": "Former U.S. Bank officer (2020)",
+              "value": "USD 450k",
+              "detail": "Personal penalty linked to alert caps and understaffing"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Kevin reads a news story and says, 'FinCEN changed the rules in April, so we now need a US-based AML/CFT officer and a new risk assessment process.' What is the accurate response?",
+          "options": [
+            "He is right; the April 2026 rule took effect immediately",
+            "Those are features of a proposed rule that was not final as of November 2026; current rules still apply",
+            "The proposal was withdrawn in June 2026",
+            "The proposal applies only to the Federal Reserve's banks"
+          ],
+          "answer": 1,
+          "explanation": "The April 2026 rule is a proposal: comments closed in June 2026 and no final rule had been issued by November 2026. Banks must follow the current program rules while monitoring for a final rule."
+        },
+        {
+          "type": "check",
+          "question": "According to OFAC's Framework for Compliance Commitments, how often should sanctions training be provided to appropriate employees?",
+          "options": [
+            "Only at induction",
+            "On a periodic basis and at a minimum annually",
+            "Every three years",
+            "Only when OFAC issues new designations"
+          ],
+          "answer": 1,
+          "explanation": "The framework expects periodic training, at a minimum annually, that gives job-specific knowledge, communicates each employee's responsibilities and holds employees accountable through assessments."
+        },
+        {
+          "type": "keypoints",
+          "title": "Examiner's Table ready",
+          "items": [
+            "OFAC: strict liability; block or reject; report within 10 business days; keep records 10 years.",
+            "OFAC's framework: management commitment, risk assessment, internal controls, testing and auditing, at least annual training.",
+            "Independent testing must be independent of the BSA function; the BSA officer needs authority, expertise and resources.",
+            "Training should be role-based, include directors, test understanding and leave records.",
+            "The April 2026 AML/CFT program rule is a PROPOSAL; current rules apply until a final rule takes effect."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If an OCC examiner sat at your desk tomorrow and asked you to walk through one BSA or sanctions task you do, what would you show, and which step would you most want to tighten first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-bsa-s5-q1",
+          "question": "What does OFAC mean when it says civil penalties may be imposed on a strict liability basis?",
+          "options": [
+            "Only intentional violations can be penalised",
+            "A US person may be liable even without knowing, or having reason to know, the activity was prohibited",
+            "Only the board can be penalised",
+            "Penalties can apply only after a criminal court has convicted the bank of knowingly breaching a sanctions program"
+          ],
+          "answer": 1,
+          "explanation": "OFAC's introduction to its work explains that in many cases a US person can be civilly liable without knowledge or reason to know. OFAC still considers all facts and circumstances.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s5-q2",
+          "question": "Within what time must a bank report a blocked or rejected transaction to OFAC?",
+          "options": [
+            "Within 10 business days, through the OFAC Reporting System",
+            "Within 30 calendar days, through FinCEN",
+            "Within 15 days, with the CTR",
+            "Within 24 hours, by telephone"
+          ],
+          "answer": 0,
+          "explanation": "OFAC's FAQs say blocked and rejected transactions are reported through the OFAC Reporting System within 10 business days under 31 CFR 501.603 and 501.604.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s5-q3",
+          "question": "A payment is prohibited under a sanctions program, but no blocked person has an interest in it. What should the bank generally do?",
+          "options": [
+            "Block the funds in a segregated account",
+            "Process it, since no blocked person is involved",
+            "File a SAR instead of any OFAC report",
+            "Reject the payment and report the rejection to OFAC"
+          ],
+          "answer": 3,
+          "explanation": "Where a program prohibits a transaction but there is no blockable interest, the bank rejects it rather than blocks it, and reports the rejected transaction to OFAC.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s5-q4",
+          "question": "How long must a bank keep records of transactions subject to OFAC regulations?",
+          "options": [
+            "Five years from the transaction",
+            "Three years after the account closes",
+            "Ten years, and for blocked property ten years after it is unblocked",
+            "Until OFAC confirms the report"
+          ],
+          "answer": 2,
+          "explanation": "OFAC requires records to be kept for 10 years after the transaction or, for blocked property, 10 years after it is unblocked. Note the difference from the five-year BSA period.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s5-q5",
+          "question": "Which of these is one of the five essential components in OFAC's Framework for Compliance Commitments?",
+          "options": [
+            "Management commitment",
+            "Customer profitability review",
+            "Annual FinCEN certification",
+            "External legal opinion on each payment"
+          ],
+          "answer": 0,
+          "explanation": "The five components are management commitment, risk assessment, internal controls, testing and auditing, and training.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s5-q6",
+          "question": "Amina's team uses a rule that auto-closes an alert if an analyst cleared an alert on the same criteria before. After a new designation, what does the Bank of America case suggest?",
+          "options": [
+            "Suppression rules are always prohibited",
+            "Suppression rules matter only for BSA, not OFAC",
+            "Suppression rules are fine without further review if a reputable vendor designed them and the bank has used them for years",
+            "Suppression rules must be reviewed so they cannot release payments involving newly blocked parties"
+          ],
+          "answer": 3,
+          "explanation": "OFAC's 2026 settlement with Bank of America described payments released by an alert suppression rule that auto-cleared alerts resembling past false positives. Such logic must be controlled and tested.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-bsa-s5-q7",
+          "question": "In the 2023 Shinhan Bank America case, which finding relates most directly to the training pillar?",
+          "options": [
+            "The bank processed payments for blocked banks",
+            "The bank kept correspondent accounts for foreign shell banks and failed to obtain certifications from respondents",
+            "Compliance staff had not been trained on a new monitoring system eight months after it went live",
+            "The bank failed to file CTRs for cash deposits"
+          ],
+          "answer": 2,
+          "explanation": "FinCEN found that eight months after implementing a new monitoring system, compliance staff had not been trained on it, and that some analysts lacked the training to make well-supported alert decisions.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s5-q8",
+          "question": "What is the status of FinCEN's April 2026 AML/CFT program rule as of November 2026?",
+          "options": [
+            "A final rule in force since April 2026",
+            "A proposed rule whose comment period closed in June 2026; it is not yet final",
+            "A withdrawn proposal replaced by the 2024 rule",
+            "Guidance with no rulemaking"
+          ],
+          "answer": 1,
+          "explanation": "FinCEN issued the proposal in April 2026, with comments due by 9 June 2026. It superseded the withdrawn 2024 proposal. No final rule had been issued as of November 2026.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-bsa-s5-q9",
+          "question": "Under the April 2026 proposal, which change would apply to the compliance officer?",
+          "options": [
+            "The officer would have to be a board member",
+            "The officer role would be abolished",
+            "The AML/CFT officer would have to be located in the United States",
+            "The officer would need FinCEN approval before appointment"
+          ],
+          "answer": 2,
+          "explanation": "The proposal would require a designated AML/CFT officer located in the United States and accessible to FinCEN and regulators, though staff abroad could still perform some functions. It is not yet final.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-bsa-s5-q10",
+          "question": "Dana must choose a training approach for next year. Which best matches the BSA rules, OFAC's framework and the lessons of enforcement cases?",
+          "options": [
+            "Role-based training for staff and directors, at least annually for sanctions, with assessments and records",
+            "A single generic video for all staff each year, with completion tracked but no assessment or role-specific content",
+            "Training only for the BSA department",
+            "Training only when a regulator finds a problem"
+          ],
+          "answer": 0,
+          "explanation": "The program rules require training for appropriate personnel; OFAC expects at least annual, job-specific training with assessments; and cases like Shinhan show untrained staff are a program failure.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "us",
+    "programs": [
+      1,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      14,
+      15,
+      16,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Financial Crimes Enforcement Network (FinCEN)",
+      "Office of the Comptroller of the Currency (OCC)",
+      "Board of Governors of the Federal Reserve System",
+      "Federal Deposit Insurance Corporation (FDIC)",
+      "Office of Foreign Assets Control (OFAC)",
+      "Federal Financial Institutions Examination Council (FFIEC)"
+    ],
+    "references": [
+      {
+        "title": "31 CFR 1020.210 Anti-money laundering program requirements for banks (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1020210-anti-money-laundering-program-requirements-for-banks.htm",
+        "provision": "31 CFR 1020.210(a)(2)",
+        "note": "Minimum program elements: internal controls, independent testing, a designated compliance individual, training for appropriate personnel and risk-based ongoing CDD.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR 208.63 Procedures for monitoring Bank Secrecy Act compliance (Federal Reserve Regulatory Service)",
+        "issuer": "Federal Reserve Board",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-20863-procedures-for-monitoring-bank-secrecy-act-compliance.htm",
+        "provision": "12 CFR 208.63(b)-(c)",
+        "note": "Written program approved by the board and noted in the minutes, including the CIP, with four minimum elements including training.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1020.220 Customer identification program requirements for banks (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1020220-customer-identification-program-requirements-for-banks.htm",
+        "provision": "31 CFR 1020.220",
+        "note": "Identifying information, verification, failed-verification procedures, records, government list checks, customer notice and reliance.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1010.230 Beneficial ownership requirements for legal entity customers (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1010230-beneficial-ownership-requirements-for-legal-entity-customers.htm",
+        "provision": "31 CFR 1010.230",
+        "note": "Identify and verify each 25% owner and one control person of legal entity customers at account opening; reliance and record retention.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1010.610 Due diligence programs for correspondent accounts for foreign financial institutions (FRRS copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1010610-due-diligence-programs-for-correspondent-accounts-for-foreign-financial-institutions.htm",
+        "provision": "31 CFR 1010.610(a)-(d)",
+        "note": "Risk-based due diligence for foreign correspondent accounts, enhanced due diligence for three categories of foreign bank, and steps when diligence fails.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1010.620 Due diligence programs for private banking accounts (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1010620-due-diligence-programs-for-private-banking-accounts.htm",
+        "provision": "31 CFR 1010.620",
+        "note": "Owners, senior foreign political figure check, source of funds, purpose and activity review; enhanced scrutiny for proceeds of foreign corruption.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1010.630 Prohibition on correspondent accounts for foreign shell banks (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1010630-prohibition-on-correspondent-accounts-for-foreign-shell-banks.htm",
+        "provision": "31 CFR 1010.630",
+        "note": "No correspondent accounts for foreign shell banks, reasonable steps against indirect use, owner and agent records, certification at least every three years.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1020.320 Reports by banks of suspicious transactions (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1020320-reports-by-banks-of-suspicious-transactions.htm",
+        "provision": "31 CFR 1020.320",
+        "note": "USD 5,000 threshold, 30-day deadline (60 if no suspect), five-year retention, SAR confidentiality and safe harbor.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "31 CFR 1010.311 Filing obligations for reports of transactions in currency (Federal Reserve Regulatory Service copy)",
+        "issuer": "FinCEN",
+        "url": "https://www.federalreserve.gov/frrs/regulations/section-1010311-filing-obligations-for-reports-of-transactions-in-currency.htm",
+        "provision": "31 CFR 1010.311; see also 1010.306 and 1010.313",
+        "note": "CTR for currency transactions of more than USD 10,000, aggregated per person per business day, filed within 15 days with five-year retention.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "A Framework for OFAC Compliance Commitments",
+        "issuer": "OFAC",
+        "url": "https://ofac.treasury.gov/media/16331/download?inline=",
+        "note": "Five components of a sanctions compliance program; training periodic and at least annual, job-specific, with assessments.",
+        "effective": "2019-05-02",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Introduction to the Office of Foreign Assets Control",
+        "issuer": "OFAC",
+        "url": "https://ofac.treasury.gov/media/935656/download?inline",
+        "note": "Explains strict liability for civil penalties, reporting of blocked and rejected transactions and the ten-year recordkeeping period.",
+        "effective": "2026-06-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Fact Sheet: Proposed Rule to Fundamentally Reform Financial Institution AML/CFT Programs",
+        "issuer": "FinCEN",
+        "url": "https://www.fincen.gov/system/files/2026-04/Program-NPRM-FactSheet.pdf",
+        "note": "Proposed AML/CFT program rule (not final at review): four pillars, risk assessment processes, US-located officer, ongoing employee training.",
+        "effective": "2026-04-07",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "us-bsa-x1",
+        "question": "An OCC examiner finds that Bramblecove's written BSA program was last approved by the board four years ago, even though new products and an alert-tuning project have changed it since. Which concern is best founded?",
+        "options": [
+          "There is no concern, because board approval is needed only once, when the program is first adopted after the bank is chartered",
+          "The program must be approved by FinCEN after each change",
+          "The board-approved program no longer reflects how the bank actually manages BSA risk, weakening board oversight",
+          "Only the FFIEC can approve changes to a bank's program"
+        ],
+        "answer": 2,
+        "explanation": "The program must be written and board-approved, and it should reflect current risks and controls. A stale approval means the board is overseeing a program that no longer matches reality. FinCEN does not pre-approve bank programs.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x2",
+        "question": "A state non-member bank's compliance head says only FinCEN's 31 CFR 1020.210 applies to it. What has she missed?",
+        "options": [
+          "The FDIC's own BSA compliance rule, 12 CFR 326.8, which FinCEN's rule requires the bank to follow",
+          "The Federal Reserve's 12 CFR 208.63, which applies to every insured bank regardless of its charter or membership",
+          "The OCC's rule, which covers all insured banks",
+          "Nothing; FinCEN's rule replaces agency rules"
+        ],
+        "answer": 0,
+        "explanation": "FinCEN's bank program rule says the bank must also comply with its federal functional regulator's program rule. For a state non-member bank that is the FDIC's 12 CFR 326.8.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x3",
+        "question": "A bank designates a BSA officer but gives her no staff, no access to the board and requires all SAR decisions to be approved by the head of sales. Which pillar is most clearly undermined?",
+        "options": [
+          "Customer identification",
+          "Currency transaction reporting",
+          "Independent testing",
+          "The designated individual responsible for coordinating and monitoring day-to-day compliance"
+        ],
+        "answer": 3,
+        "explanation": "A BSA officer exists to coordinate and monitor day-to-day compliance. Without resources, access or independence from business pressure, the designation is a formality and the pillar fails.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x4",
+        "question": "Which statement about independent testing under the current bank program rules is correct?",
+        "options": [
+          "It must be performed every year by an external accounting firm that also audits the bank's annual financial statements",
+          "It may be performed by bank personnel or an outside party, provided the testers are independent of the function",
+          "It is performed by the bank's examiners on the bank's behalf",
+          "It is optional for banks under a certain size"
+        ],
+        "answer": 1,
+        "explanation": "The rules allow testing by bank personnel or an outside party. They do not prescribe an external firm or a fixed frequency in the rule text; independence from the BSA function is the key test.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x5",
+        "question": "Bramblecove's business line wants to reduce monitoring alerts. Which approach is most defensible to examiners?",
+        "options": [
+          "Set a daily ceiling on alerts equal to analyst capacity",
+          "Tune scenarios using documented analysis of risk and alert outcomes, with independent validation and approval",
+          "Turn off the scenarios that rarely lead to SARs, since low conversion rates prove they add no value, without further analysis",
+          "Raise all thresholds by the same percentage to cut volume"
+        ],
+        "answer": 1,
+        "explanation": "Tuning based on documented, tested risk analysis is acceptable. Capping alerts to match capacity, or cutting scenarios without analysis, lets staffing rather than risk drive monitoring, the failure FinCEN penalised in the U.S. Bank matter.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x6",
+        "question": "Which body's publication do examiners use to plan and conduct BSA/AML examinations across the federal banking agencies?",
+        "options": [
+          "OFAC's Framework for Compliance Commitments",
+          "FinCEN's SAR Electronic Filing Instructions",
+          "The Federal Reserve Regulatory Service",
+          "The FFIEC BSA/AML Examination Manual"
+        ],
+        "answer": 3,
+        "explanation": "The FFIEC manual is the interagency guide examiners use. OFAC's framework is sanctions guidance, and the Federal Reserve Regulatory Service is a publication of regulations, not an exam manual.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x7",
+        "question": "FinCEN imposes a penalty on a former chief compliance officer personally. What does this tell bank staff about BSA accountability?",
+        "options": [
+          "Individuals who oversee a BSA program can be held responsible for program failures, not only the bank",
+          "Only banks can be penalised under the BSA",
+          "Personal penalties apply only to criminal fraud",
+          "Only board members can face personal BSA penalties, because they approve the program; compliance staff cannot"
+        ],
+        "answer": 0,
+        "explanation": "In 2020 FinCEN assessed a USD 450,000 penalty against Michael LaFontaine for his role in U.S. Bank's BSA failures, showing personal accountability for those overseeing compliance.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x8",
+        "question": "A national bank's BSA examination is conducted by the OCC, but the BSA rules are FinCEN's. Which statement best explains the relationship?",
+        "options": [
+          "The OCC enforces only its own Title 12 safety and soundness rules and has no role at all in examining compliance with the BSA",
+          "FinCEN examines national banks directly each year",
+          "The OCC examines under authority delegated by FinCEN and its own powers; FinCEN keeps overall BSA enforcement authority",
+          "The FFIEC delegates BSA authority to the OCC"
+        ],
+        "answer": 2,
+        "explanation": "FinCEN has overall authority for BSA enforcement and compliance and delegates examination authority to the federal banking agencies, which also have separate Title 12 powers. This is described in FinCEN's consent orders.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x9",
+        "question": "A legal entity customer certifies: Ms. Park 25%, Mr. Osei 24%, an SEC-registered listed company 51%, and a CEO with no ownership. The listed company is an excluded entity under the rule. Whom must the bank identify?",
+        "options": [
+          "Ms. Park, Mr. Osei and the CEO",
+          "The listed company's directors and the CEO",
+          "Only the CEO, because the largest owner is excluded",
+          "Ms. Park and the CEO"
+        ],
+        "answer": 3,
+        "explanation": "Ms. Park meets the 25% threshold; Mr. Osei does not. Where an excluded entity owns 25% or more, no individual need be identified for that stake. One control person, the CEO, is always required.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x10",
+        "question": "A nonprofit corporation registered with its state opens an account. Which beneficial ownership requirement applies?",
+        "options": [
+          "Both prongs, like any LLC",
+          "Only the control prong: one individual who controls, manages or directs it",
+          "Neither prong, because nonprofit corporations are fully excluded from the definition of legal entity customer",
+          "Only the ownership prong"
+        ],
+        "answer": 1,
+        "explanation": "The rule makes nonprofit corporations that have filed with the appropriate state authority subject only to the control prong, because they have no equity owners in the usual sense.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x11",
+        "question": "Bramblecove wants to rely on an affiliated broker-dealer's CIP for a shared customer. Which condition is required?",
+        "options": [
+          "The affiliate verbally confirms it ran CIP",
+          "The customer signs a waiver of CIP",
+          "Reliance is reasonable, the affiliate is subject to an AML program rule and a federal functional regulator, and it certifies annually by contract",
+          "FinCEN pre-approves the reliance"
+        ],
+        "answer": 2,
+        "explanation": "The CIP rule permits reliance when it is reasonable, the other institution is subject to a BSA program rule and regulated by a federal functional regulator, and it contracts to certify annually that it performs the specified CIP steps.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x12",
+        "question": "A customer gives Bramblecove an address and ID number, but non-documentary checks show his date of birth does not match any public record. What should the CIP's failed-verification procedures address?",
+        "options": [
+          "When not to open, the terms of use while verifying, when to close after failed attempts, and when to file a SAR",
+          "Only when to file a CTR",
+          "Automatic account closure without review",
+          "Allowing full use of the account indefinitely while verification continues, as long as the opening deposit is relatively small"
+        ],
+        "answer": 0,
+        "explanation": "The CIP must include procedures for when the bank cannot form a reasonable belief it knows the customer's identity, covering refusal, interim terms, closure and SAR filing.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x13",
+        "question": "Bramblecove's CIP list check found no match at opening, but a federal directive later requires an earlier check for a certain list. What applies?",
+        "options": [
+          "The bank checks within a reasonable period after opening, or earlier where another federal law, regulation or directive requires it",
+          "The bank checks only at the annual review",
+          "The bank never rechecks after opening",
+          "The bank checks only if the customer is foreign"
+        ],
+        "answer": 0,
+        "explanation": "The CIP rule requires the list comparison within a reasonable period after opening, or earlier if required by another federal law, regulation or directive, and the bank must follow directives issued with the lists.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x14",
+        "question": "An existing legal entity customer, verified in 2024, opens a second account in 2026. Nothing about its ownership or risk has changed. What does FinCEN's February 2026 relief generally permit?",
+        "options": [
+          "Skipping all further customer due diligence on the customer from now on, including monitoring and risk profile updates",
+          "Removing the customer's beneficial owner records",
+          "Not re-identifying and re-verifying the beneficial owners for the new account, unless risk calls for it",
+          "Relying on FinCEN's BOI registry instead"
+        ],
+        "answer": 2,
+        "explanation": "The exceptive relief means banks generally need not repeat identification and verification of beneficial owners at each new account for existing customers, subject to risk-based exceptions. Ongoing CDD and records remain.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x15",
+        "question": "A KYC analyst wants to keep beneficial ownership verification records only until the account closes. What does the rule require?",
+        "options": [
+          "All records are kept until the account closes",
+          "Verification records are kept five years after the record is made, and identification records five years after the account closes",
+          "All records are kept for ten years",
+          "Only the certification needs to be kept"
+        ],
+        "answer": 1,
+        "explanation": "31 CFR 1010.230(i) sets two retention periods: identification information, including the certification, five years after closure; verification descriptions and discrepancy resolution five years after the record is made.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x16",
+        "question": "A small business's activity jumps from local card sales to large international wires. Its risk profile says 'local retail'. Which duty is most directly engaged?",
+        "options": [
+          "The Customer Identification Program, which must be repeated in full whenever a customer's account activity changes significantly",
+          "The shell bank prohibition",
+          "The CTR exemption rules",
+          "Risk-based ongoing CDD: monitor for suspicious activity and update customer information, including the risk profile"
+        ],
+        "answer": 3,
+        "explanation": "Ongoing CDD requires understanding the relationship's nature and purpose, monitoring to identify and report suspicious transactions, and updating customer information on a risk basis. A large mismatch should trigger review and possibly a SAR.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x17",
+        "question": "Which customer is a 'legal entity customer' under the CDD rule?",
+        "options": [
+          "An individual sole proprietor",
+          "A bank regulated by a federal functional regulator",
+          "A general partnership opening a business account",
+          "An issuer with securities registered with the SEC"
+        ],
+        "answer": 2,
+        "explanation": "The definition covers corporations, LLCs and other entities formed by a public filing, general partnerships and similar foreign entities. Regulated banks and SEC-registered issuers are excluded; sole proprietors are individuals.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x18",
+        "question": "A foreign bank holds a license from a country Treasury has designated as warranting special measures for money laundering concerns. It is publicly traded. Which EDD step does NOT apply?",
+        "options": [
+          "Identifying each 10% owner of the foreign bank",
+          "Enhanced scrutiny of the account, including its AML program",
+          "Monitoring transactions through the account",
+          "Finding out whether other foreign banks use the account"
+        ],
+        "answer": 0,
+        "explanation": "The owner identification step applies to foreign banks whose shares are not publicly traded. The other EDD steps apply to any correspondent account for a foreign bank in an EDD category.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x19",
+        "question": "A foreign respondent offers its own customers direct access to its US dollar account at Bramblecove through subaccounts. What is this, and what does EDD require?",
+        "options": [
+          "A nested account; no extra steps are required",
+          "A private banking account; 1010.620 applies instead",
+          "A shell bank account; it must be closed",
+          "A payable-through account; EDD includes obtaining information on who can direct transactions and the sources and beneficial owners of funds"
+        ],
+        "answer": 3,
+        "explanation": "A payable-through account lets the foreign bank's customers carry out US banking activity directly. For such accounts in EDD categories, the bank obtains information on those with authority to direct transactions and on the sources and beneficial owners of funds.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x20",
+        "question": "Bramblecove cannot obtain the information it needs for enhanced due diligence on a correspondent account. What must its procedures address?",
+        "options": [
+          "Only when to inform the customer of the gap",
+          "When to refuse to open the account, suspend activity, file a SAR or close the account",
+          "When to transfer the account to an affiliate",
+          "How to waive EDD with board approval"
+        ],
+        "answer": 1,
+        "explanation": "Both 1010.610(d) and 1010.620(d) require procedures for when due diligence cannot be performed, including refusal, suspension, SAR filing and closure.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x21",
+        "question": "Which arrangement is consistent with the shell bank rule?",
+        "options": [
+          "Keeping an account for a foreign bank with no physical presence anywhere, provided it certifies it has a good AML program",
+          "Providing a correspondent account to a foreign bank's regulated affiliate that lacks its own physical presence",
+          "Ignoring evidence that a respondent passes services to a shell bank",
+          "Accepting a shell bank certification that is six years old"
+        ],
+        "answer": 1,
+        "explanation": "The rule does not prohibit services to a regulated affiliate. It bans accounts for foreign shell banks, requires reasonable steps against indirect use, and the safe harbor needs certification at least every three years.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x22",
+        "question": "A foreign respondent's 2025 certification lists its US agent for legal process. Bramblecove learns in 2026 that the agent has died. What should it do?",
+        "options": [
+          "Wait for the 2028 recertification",
+          "Close the account without contacting the bank",
+          "Report the bank to OFAC",
+          "Ask the foreign bank to verify or correct the information, or take other steps to obtain correct information"
+        ],
+        "answer": 3,
+        "explanation": "The interim verification duty applies whenever the bank knows or suspects certified information is no longer correct. Waiting for recertification would lose the safe harbor.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x23",
+        "question": "A private banking client is a company formed for the benefit of a serving foreign defence minister's brother. Is this within the senior foreign political figure definition for 1010.620?",
+        "options": [
+          "Yes; the definition includes immediate family members and entities formed for their benefit",
+          "No; only the official personally is covered",
+          "No; relatives and companies are covered only if they themselves hold a senior office in the foreign government",
+          "Only if the company is listed on an exchange"
+        ],
+        "answer": 0,
+        "explanation": "FinCEN's definition of a senior foreign political figure includes the official, entities formed by or for the benefit of such an individual, immediate family members and widely known close associates.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x24",
+        "question": "Which statement best describes the purpose of enhanced scrutiny for senior foreign political figures under 1010.620(c)?",
+        "options": [
+          "To prevent foreign officials and their families from holding or controlling any private banking account in the US",
+          "To report every transaction to the State Department",
+          "To detect and report transactions that may involve proceeds of foreign corruption",
+          "To apply OFAC blocking to all foreign officials"
+        ],
+        "answer": 2,
+        "explanation": "The enhanced scrutiny is designed to detect and report transactions that may involve proceeds of foreign corruption, such as embezzled public funds or bribes. It does not ban accounts or replace sanctions screening.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x25",
+        "question": "A correspondent account was approved for trade payments for a mid-sized foreign bank. Two years later, most flows are round-sum transfers to newly formed companies. Which control should have caught this?",
+        "options": [
+          "The CIP list check at account opening",
+          "The shell bank certification",
+          "The CTR aggregation rule",
+          "Periodic review of account activity against the stated type, purpose and anticipated activity"
+        ],
+        "answer": 3,
+        "explanation": "1010.610(a)(3) requires risk-based controls including a periodic review of correspondent account activity to check consistency with the information obtained about the account's type, purpose and expected activity.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x26",
+        "question": "On 3 May Marcus identifies the facts behind a suspicious wire pattern but cannot identify who controls the receiving accounts. On 20 June he identifies the suspect. What is the latest compliant filing date?",
+        "options": [
+          "20 July, 30 days after identifying the suspect",
+          "2 July, 60 calendar days after initial detection",
+          "2 June, 30 days after detection, regardless of the suspect",
+          "1 August, 90 days after detection"
+        ],
+        "answer": 1,
+        "explanation": "With no suspect at detection, the bank may delay up to an additional 30 days, but reporting may not be delayed beyond 60 calendar days after initial detection. 3 May plus 60 days is 2 July.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x27",
+        "question": "An ongoing money laundering scheme is moving funds through Bramblecove accounts today. Besides filing a SAR on time, what does the SAR rule expect?",
+        "options": [
+          "Freezing all the accounts under OFAC rules",
+          "Telling the customers to stop",
+          "Immediate notification by telephone to an appropriate law enforcement authority",
+          "Waiting for FinCEN to call the bank"
+        ],
+        "answer": 2,
+        "explanation": "For violations requiring immediate attention, such as ongoing money laundering schemes, the bank must immediately notify an appropriate law enforcement authority by telephone in addition to filing a timely SAR.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x28",
+        "question": "A teller notices a customer deposited USD 9,900 in cash on Friday night after closing and USD 600 in cash on Monday morning. Monday is the next business day. How are these treated for CTR purposes?",
+        "options": [
+          "The Friday-night deposit counts on Monday, so the two total more than USD 10,000 on one business day and a CTR is required",
+          "They are separate days, so no CTR is required",
+          "A CTR is required only for the Friday deposit, because night and weekend deposits are reported on the calendar day they are made",
+          "A SAR is required instead of a CTR"
+        ],
+        "answer": 0,
+        "explanation": "Deposits made at night, over a weekend or on a holiday are treated as received on the next business day. If the bank knows both are by the same person, they aggregate to over USD 10,000 on Monday.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x29",
+        "question": "Which statement about structuring is accurate?",
+        "options": [
+          "It can occur in any amount, at one or more institutions, on one or more days, if done to evade CTR reporting",
+          "It requires a single transaction over USD 10,000",
+          "It is legal if each deposit is below USD 10,000",
+          "It applies only to deposits split at a single branch on a single day, because aggregation covers one location only"
+        ],
+        "answer": 0,
+        "explanation": "FinCEN defines structuring broadly: any transactions in currency, in any amount, at one or more institutions, on one or more days, in any manner, for the purpose of evading CTR requirements.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x30",
+        "question": "A former Bramblecove teller was the subject of a SAR the bank filed about her conduct. Another bank now asks Bramblecove for an employment reference about her. What governs what may be shared?",
+        "options": [
+          "Nothing; references are outside BSA rules",
+          "The SAR may be shared because both are banks",
+          "SAR confidentiality: nothing may reveal the SAR, though some underlying facts may be shared as the statute allows",
+          "The SAR may be shared if the former employee consents in writing, since the confidentiality rule protects the subject"
+        ],
+        "answer": 2,
+        "explanation": "The rule protects the SAR and any information revealing it. It allows certain underlying facts in employment references only to the extent authorised by statute, never revealing the SAR itself.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x31",
+        "question": "A compliance manager wants every 'no SAR' decision documented in a multi-page memo because 'the rule requires it'. What did the October 2025 FAQs say?",
+        "options": [
+          "Every decision must be documented in full",
+          "There is no BSA requirement to document a decision not to file; a short statement usually suffices if the bank chooses to document",
+          "No documentation is ever allowed",
+          "Documentation is required only for CTRs"
+        ],
+        "answer": 1,
+        "explanation": "The FAQs state there is no requirement or expectation to document a decision not to file a SAR. Banks may document under their own procedures, and a brief statement will usually suffice.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x32",
+        "question": "After filing a SAR, must Bramblecove run a separate manual review of the account after 90 days to see whether the activity continued?",
+        "options": [
+          "Yes; the 90-day review is a regulatory requirement",
+          "Yes, but only for business accounts",
+          "No, because once a SAR has been filed, continuing activity on the same account can never be the subject of another SAR",
+          "No; the 2025 FAQs say it may rely on risk-based monitoring instead of a separate review"
+        ],
+        "answer": 3,
+        "explanation": "The FAQs confirm a separate continuing-activity review is not required. Banks may rely on reasonably designed risk-based monitoring and may follow the optional 90-day continuing-activity filing approach.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x33",
+        "question": "A wire operator processes a USD 3,500 payment for a walk-in non-customer who pays in person. Which additional step does the funds transfer rule require before accepting it?",
+        "options": [
+          "Filing a CTR because the amount exceeds USD 3,000",
+          "Filing a SAR for every non-customer wire",
+          "Verifying the identity of the person placing the payment order",
+          "Blocking the funds pending OFAC review"
+        ],
+        "answer": 2,
+        "explanation": "For originators who are not established customers, 31 CFR 1020.410(a)(2) adds steps; where the order is made in person, the originator's bank verifies the identity of the person placing it before acceptance.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x34",
+        "question": "Which pair of retention periods is correct?",
+        "options": [
+          "SAR and supporting documents: five years from filing. OFAC transaction records: ten years",
+          "SAR: ten years. OFAC records: five years",
+          "SAR: three years. OFAC records: three years",
+          "SAR: five years from account closure. OFAC records: five years from the transaction, the same as other BSA records"
+        ],
+        "answer": 0,
+        "explanation": "The SAR rule requires five years from filing. OFAC requires records to be kept for ten years after the transaction, or ten years after unblocking for blocked property.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x35",
+        "question": "A wire to a company designated by OFAC at 9 pm is released at 7 am the next day because the vendor update had not been loaded. Which response best reflects OFAC's expectations?",
+        "options": [
+          "Treat it as no violation, because the bank did not know of the designation and OFAC penalties always require knowledge or intent",
+          "Report it to FinCEN as a SAR only",
+          "Wait to see whether OFAC notices",
+          "Treat it as an apparent violation, investigate and remediate the update gap, and consider a voluntary self-disclosure"
+        ],
+        "answer": 3,
+        "explanation": "OFAC can impose penalties on a strict liability basis and weighs compliance programs, remediation and self-disclosure. Bank of America's 2026 settlement included payments processed before its filter was updated.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x36",
+        "question": "Under OFAC's framework, who should approve the sanctions compliance program and ensure it has adequate resources?",
+        "options": [
+          "The sanctions vendor",
+          "Senior management, which may include senior executives and the board",
+          "OFAC's compliance office",
+          "The external auditor"
+        ],
+        "answer": 1,
+        "explanation": "Management commitment is the first component: senior management, which typically includes senior leadership and the board, reviews and approves the program and gives it authority and resources.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-bsa-x37",
+        "question": "Bramblecove's sanctions training is a single module offered every two years, with no test. Measured against OFAC's framework, what is missing?",
+        "options": [
+          "Approval of the module by OFAC",
+          "Training at least annually, tailored to roles, with assessments that hold employees accountable",
+          "Translation into every language",
+          "Training only for senior management"
+        ],
+        "answer": 1,
+        "explanation": "OFAC's framework expects periodic training, at a minimum annually, giving job-specific knowledge, communicating responsibilities and holding employees accountable through assessments.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x38",
+        "question": "Under the April 2026 proposal, how would FinCEN distinguish program failures?",
+        "options": [
+          "Between large and small banks only",
+          "Between failures in anti-money laundering controls and failures in sanctions controls, which would move to OFAC supervision",
+          "Between federal and state supervisors",
+          "Between failures to establish a reasonably designed program and failures to maintain it in practice"
+        ],
+        "answer": 3,
+        "explanation": "The proposal separates design deficiencies (establishment) from implementation failures (maintenance), aiming to focus action on significant or systemic failures. It was not final as of November 2026.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x39",
+        "question": "Under the April 2026 proposal, what would a federal banking supervisor have to do before a significant AML/CFT supervisory action, absent urgent circumstances?",
+        "options": [
+          "Give FinCEN's Director at least 30 days' advance written notice",
+          "Obtain the bank board's consent",
+          "Publish the action for public comment",
+          "Ask OFAC to review it"
+        ],
+        "answer": 0,
+        "explanation": "The proposal would introduce a notice and consultation framework requiring supervisors to give FinCEN's Director at least 30 days' advance written notice before significant AML/CFT supervisory actions. It remains a proposal.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x40",
+        "question": "Under the April 2026 proposal, what would a bank's risk assessment processes have to do?",
+        "options": [
+          "Be approved by FinCEN before use",
+          "Be performed only every five years",
+          "Evaluate risks across products, services, channels, customers and geographies, review the AML/CFT Priorities, and be updated promptly after significant changes",
+          "Cover sanctions risk only"
+        ],
+        "answer": 2,
+        "explanation": "The proposal would require risk assessment processes that evaluate ML/TF risks of business activities, review and incorporate the government's AML/CFT Priorities as appropriate, and update promptly after significant risk changes.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-bsa-x41",
+        "question": "What was notable about the mitigation OFAC gave Bank of America in its 2026 settlement?",
+        "options": [
+          "OFAC waived the penalty entirely after self-disclosure",
+          "OFAC found the violations egregious and doubled the base penalty because the bank had not voluntarily self-disclosed them",
+          "OFAC transferred the case to FinCEN",
+          "OFAC gave no reduction to the base penalty, including none for remedial measures or cooperation"
+        ],
+        "answer": 3,
+        "explanation": "OFAC said the violations were non-egregious but largely not voluntarily self-disclosed, and the settlement reflected no reduction to the base penalty, including no mitigation for remediation or cooperation.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-bsa-x42",
+        "question": "A mid-sized bank asks whether its BSA officer may also serve as its OFAC sanctions compliance officer. What does OFAC's framework say?",
+        "options": [
+          "Never; the roles must be separate by law",
+          "One person may oversee both, depending on the bank's size and complexity",
+          "Only with OFAC's written approval",
+          "Only if the bank has no foreign customers"
+        ],
+        "answer": 1,
+        "explanation": "OFAC's framework notes the sanctions compliance officer may be the same person as the BSA officer, as many institutions designate one person for financial crimes compliance, depending on size and complexity.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
