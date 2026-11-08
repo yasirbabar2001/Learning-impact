@@ -1,0 +1,564 @@
+{
+  "code": "gb",
+  "name": "United Kingdom",
+  "region": "Europe",
+  "kind": "country",
+  "summary": "UK banks are dual-regulated: the PRA (part of the Bank of England) supervises safety and soundness and operational resilience, while the FCA sets conduct, financial crime and consumer rules and supervises compliance with the Money Laundering Regulations. OFSI (HM Treasury) runs financial sanctions, the NCA receives suspicious activity reports, the ICO enforces data protection, HMRC oversees FATCA/CRS reporting and the Financial Ombudsman Service resolves complaints. Training duties are a mix of express statutory or Handbook obligations (AML/CTF training under MLR regulation 24, Conduct Rules training under COCON, whistleblowing training under SYSC 18, role qualifications under TC, health and safety) and broader competence expectations (SYSC 5 competent employees rule, Consumer Duty, operational resilience, failure-to-prevent offences).",
+  "regulators": [
+    { "name": "Financial Conduct Authority", "abbr": "FCA", "role": "Conduct regulator for all banks; sets the FCA Handbook (SYSC, COCON, TC, PRIN 2A Consumer Duty, DISP, CONC) and supervises banks for the Money Laundering Regulations.", "url": "https://www.fca.org.uk/" },
+    { "name": "Prudential Regulation Authority (Bank of England)", "abbr": "PRA", "role": "Prudential supervisor of deposit-takers; co-owner of the Senior Managers and Certification Regime and of operational resilience, outsourcing and incident reporting rules.", "url": "https://www.bankofengland.co.uk/prudential-regulation" },
+    { "name": "Office of Financial Sanctions Implementation (HM Treasury)", "abbr": "OFSI", "role": "Implements and enforces UK financial sanctions; receives breach and frozen-asset reports from relevant firms, including banks.", "url": "https://www.gov.uk/government/organisations/office-of-financial-sanctions-implementation" },
+    { "name": "HM Revenue & Customs", "abbr": "HMRC", "role": "Receives FATCA and CRS reports from UK financial institutions under the International Tax Compliance Regulations.", "url": "https://www.gov.uk/government/organisations/hm-revenue-customs" },
+    { "name": "Information Commissioner's Office", "abbr": "ICO", "role": "Enforces UK GDPR, the Data Protection Act 2018 and the Data (Use and Access) Act 2025, including breach notification and the new complaints duty.", "url": "https://ico.org.uk/" },
+    { "name": "National Crime Agency (UK Financial Intelligence Unit)", "abbr": "NCA", "role": "Receives suspicious activity reports (SARs) and defence-against-money-laundering requests under POCA and the Terrorism Act.", "url": "https://www.nationalcrimeagency.gov.uk/" },
+    { "name": "Financial Ombudsman Service", "abbr": "FOS", "role": "Independent statutory body that resolves complaints from eligible customers that banks have not settled under DISP.", "url": "https://www.financial-ombudsman.org.uk/" },
+    { "name": "Payment Systems Regulator", "abbr": "PSR", "role": "Runs the APP scam reimbursement requirement for Faster Payments; being consolidated into the FCA.", "url": "https://www.psr.org.uk/" }
+  ],
+  "reviewed": "2026-11-08",
+  "programs": [
+    {
+      "program": 1,
+      "title": "United Kingdom | MLR 2017 Regulation 24 AML Awareness Training",
+      "classification": "mandatory-explicit",
+      "frequency": ["periodic", "induction"],
+      "audience": ["All relevant employees", "Agents used by the bank", "Customer-facing staff"],
+      "why": "Regulation 24 of the Money Laundering Regulations 2017 obliges every relevant person, including banks, to make relevant employees (and, since 2019, agents) aware of money laundering and terrorist financing law and of the related data protection requirements, to train them regularly, and to keep a written record. The FCA's Financial Crime Guide treats role-specific training before staff deal with customers as good practice. POCA s.330 also gives untrained staff a limited defence, so missing training weakens the bank's control environment.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/made", "provision": "Regulation 24", "note": "Requires appropriate measures so relevant employees know the ML/TF law and receive regular training on recognising and handling suspicious transactions; a written record of the measures must be kept. The 2019 amendments extended it to agents.", "effective": "2017-06-26" },
+        { "title": "The Money Laundering and Terrorist Financing (Amendment) Regulations 2026", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2026/621/made", "note": "Targeted amendments to the 2017 Regulations; main provisions in force 30 June 2026, with some later dates. Check the consolidated text for any effect on regulation 24.", "effective": "2026-06-30" },
+        { "title": "FCG 2 Financial crime systems and controls", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg2", "note": "Guidance asking whether staff are aware of financial crime risks, whether training is tailored to roles and kept current, and how effectiveness is assessed." }
+      ]
+    },
+    {
+      "program": 2,
+      "title": "United Kingdom | Counter-Terrorist Financing Training (MLR 2017)",
+      "classification": "mandatory-explicit",
+      "frequency": ["periodic"],
+      "audience": ["All relevant employees", "Payments and operations staff", "Financial crime teams"],
+      "why": "The regulation 24 training duty covers terrorist financing as well as money laundering, so staff must understand the terrorist financing offences and how to spot and escalate related activity. Banks also face disclosure duties for terrorist property, so the training needs to explain the UK reporting route through the nominated officer to the NCA.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/made", "provision": "Regulation 24", "note": "The awareness and regular-training duty expressly extends to terrorist financing law and suspicious transactions linked to it." }
+      ]
+    },
+    {
+      "program": 3,
+      "title": "United Kingdom | Proliferation Financing Risk (MLR Regulations 18A and 19A)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Financial crime and compliance teams", "Trade finance staff", "Nominated officer"],
+      "why": "Amendments to the 2017 Regulations require banks to identify and assess proliferation financing risk (regulation 18A) and to mitigate it through policies and controls (regulation 19A), with internal controls and the nominated officer's role extended to cover it. Staff who run these controls must therefore understand proliferation financing, although no separate PF course is prescribed beyond the general training duty.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/21", "provision": "Regulations 18A, 19A and 21 (as amended)", "note": "Requires a firm-wide proliferation financing risk assessment, matching policies and controls, and internal controls that cover PF." },
+        { "title": "FCG 7 Sanctions, asset freezes and proliferation financing", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg7", "note": "FCA guidance on sanctions and proliferation financing systems and controls." }
+      ]
+    },
+    {
+      "program": 5,
+      "title": "United Kingdom | Customer Due Diligence under the MLR 2017",
+      "classification": "mandatory-explicit",
+      "frequency": ["periodic"],
+      "audience": ["Onboarding and KYC staff", "Relationship managers", "Branch staff"],
+      "why": "CDD duties in Part 3 of the Money Laundering Regulations are part of the anti-money laundering law that regulation 24 says relevant employees must be made aware of. Staff who open accounts or service customers must know when CDD applies, what identification and verification is needed and what to do when it cannot be completed.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "provision": "Part 3 (customer due diligence) read with regulation 24", "note": "Sets the CDD measures; regulation 24 requires staff to be made aware of these legal requirements and trained regularly." }
+      ]
+    },
+    {
+      "program": 6,
+      "title": "United Kingdom | Enhanced Due Diligence (MLR Regulation 33)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["KYC and EDD analysts", "Relationship managers for high-risk clients", "Financial crime compliance"],
+      "why": "The Regulations list situations that require enhanced due diligence, including high-risk third countries named by HM Treasury advisory notices. The 2026 amending Regulations also add new EDD provisions from February 2027. Staff applying EDD need the skills that regulation 21 screening tests, but no stand-alone EDD course is prescribed.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "provision": "Regulation 33", "note": "Sets out when enhanced due diligence and enhanced ongoing monitoring must be applied." },
+        { "title": "The Money Laundering and Terrorist Financing (Amendment) Regulations 2026", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2026/621/made", "note": "Adds a new regulation 34A on EDD for certain cryptoasset and correspondent relationships, in force 1 February 2027.", "effective": "2027-02-01" }
+      ]
+    },
+    {
+      "program": 8,
+      "title": "United Kingdom | Ongoing Monitoring of Business Relationships (MLR 2017)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Relationship managers", "KYC refresh teams", "Operations staff"],
+      "why": "Banks must keep monitoring business relationships, scrutinising transactions and keeping CDD information up to date. Staff carrying out periodic reviews and trigger-event refreshes need to know these duties; the regulation 24 training duty covers recognising suspicious activity but the Regulations do not prescribe a separate course on ongoing monitoring.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "note": "Requires ongoing monitoring of business relationships, including keeping due diligence records current." }
+      ]
+    },
+    {
+      "program": 9,
+      "title": "United Kingdom | Beneficial Ownership Identification (MLR 2017)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Corporate onboarding staff", "KYC analysts", "Business banking relationship managers"],
+      "why": "For corporate and trust customers, banks must identify beneficial owners, take reasonable measures to verify them and understand ownership and control, and report material discrepancies with the Companies House register. Staff handling entity customers need this knowledge to meet the competence and screening expectations, though no separate course is mandated.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "note": "Sets beneficial ownership identification and verification duties within customer due diligence." }
+      ]
+    },
+    {
+      "program": 10,
+      "title": "United Kingdom | PEPs: FCA Guidance FG17/6 and FG25/3",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["KYC and EDD analysts", "Relationship managers", "Financial crime compliance"],
+      "why": "The Regulations require EDD for politically exposed persons, and since January 2024 domestic PEPs without other risk factors should be treated as lower risk than foreign PEPs. The FCA's 2024 review found every assessed firm needed to improve, and it has revised its PEP guidance. Staff must apply the right level of scrutiny without over-treating UK PEPs and their families.",
+      "references": [
+        { "title": "FG17/6: The treatment of politically exposed persons for anti-money laundering purposes", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/finalised-guidance/fg17-6-treatment-politically-exposed-persons-peps-money-laundering", "note": "FCA guidance on proportionate treatment of PEPs, family members and close associates." },
+        { "title": "The treatment of politically exposed persons for anti-money laundering purposes (FG25/3)", "issuer": "FCA", "url": "https://www.fca.org.uk/publication/finalised-guidance/fg25-3.pdf", "note": "Revised FCA PEP guidance following the domestic PEP review." },
+        { "title": "The treatment of politically exposed persons (multi-firm review)", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/multi-firm-reviews/treatment-politically-exposed-persons", "note": "Review findings: firms applied overly broad PEP definitions and weak declassification checks." }
+      ]
+    },
+    {
+      "program": 11,
+      "title": "United Kingdom | OFSI Financial Sanctions Compliance",
+      "classification": "competence",
+      "frequency": ["periodic"],
+      "audience": ["Payments and screening staff", "Financial crime compliance", "Trade finance staff"],
+      "why": "UK sanctions regulations made under the Sanctions and Anti-Money Laundering Act 2018 prohibit dealing with designated persons and require relevant firms, which include banks, to report knowledge or suspicion to OFSI. No statute prescribes sanctions training, but the FCA expects effective sanctions systems and controls, and OFSI's 2026 Bank of Scotland penalty commentary stresses regularly reviewed and updated sanctions training.",
+      "references": [
+        { "title": "UK financial sanctions general guidance", "issuer": "OFSI (HM Treasury)", "url": "https://www.gov.uk/government/publications/financial-sanctions-general-guidance/uk-financial-sanctions-general-guidance", "note": "Explains prohibitions, licensing and the reporting obligations of relevant firms." },
+        { "title": "Sanctions compliance in practice: lessons from OFSI's £160,000 Bank of Scotland penalty", "issuer": "OFSI (HM Treasury)", "url": "https://ofsi.blog.gov.uk/2026/02/23/sanctions-compliance-in-practice-lessons-from-ofsis-160000-bank-of-scotland-penalty/", "note": "Links screening, escalation and training weaknesses to breach risk and calls for regular review of sanctions training.", "effective": "2026-02-23" },
+        { "title": "FCG 7 Sanctions, asset freezes and proliferation financing", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg7", "note": "FCA guidance on governance, screening and staff awareness for sanctions." }
+      ]
+    },
+    {
+      "program": 14,
+      "title": "United Kingdom | US OFAC Awareness for UK Banks",
+      "classification": "recommended",
+      "frequency": ["unspecified"],
+      "audience": ["Payments staff handling USD", "Trade finance staff", "Financial crime compliance"],
+      "why": "OFAC rules are not UK law, but UK banks clearing US dollars or with US nexus routinely apply them. Awareness of how US secondary sanctions risk differs from the UK regime is good practice; no UK obligation to train on OFAC was verified.",
+      "references": []
+    },
+    {
+      "program": 15,
+      "title": "United Kingdom | Suspicious Activity Reporting to the NCA (POCA and MLR)",
+      "classification": "mandatory-explicit",
+      "frequency": ["periodic"],
+      "audience": ["All relevant employees", "Nominated officer and SAR team", "Customer-facing staff"],
+      "why": "Regulation 24 requires regular training on how to recognise and deal with transactions and activity that may be linked to money laundering or terrorist financing. Under POCA s.330, staff in the regulated sector commit an offence by failing to report knowledge or suspicion; an employee who did not actually suspect and was not given the specified training has a defence, which shows the law expects banks to train staff on internal reporting and SARs.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/made", "provision": "Regulation 24", "note": "Regular training on identifying and dealing with suspicious transactions is expressly required." },
+        { "title": "Proceeds of Crime Act 2002 - Explanatory Notes (section 330)", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/ukpga/2002/29/section/330/notes", "provision": "Section 330(7)", "note": "Failure-to-disclose offence for the regulated sector, with a defence for staff who lacked both suspicion and employer-provided training." }
+      ]
+    },
+    {
+      "program": 16,
+      "title": "United Kingdom | Recognising Unusual and Suspicious Transactions (MLR Regulation 24)",
+      "classification": "mandatory-explicit",
+      "frequency": ["periodic"],
+      "audience": ["Branch and contact-centre staff", "Payments operations", "Relationship managers"],
+      "why": "The regulation 24 training must teach staff to recognise transactions and situations that may involve money laundering or terrorist financing. FCA guidance expects the content to reflect the bank's own risks and roles and to be tested, so frontline red-flag training is a direct legal requirement rather than optional awareness.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/made", "provision": "Regulation 24", "note": "Training must cover how to recognise and deal with potentially suspicious transactions." },
+        { "title": "FCG 2 Financial crime systems and controls", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg2", "note": "Good practice includes role-tailored training with testing." }
+      ]
+    },
+    {
+      "program": 17,
+      "title": "United Kingdom | Transaction Monitoring and Alert Handling",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Transaction monitoring analysts", "Financial intelligence units", "Quality assurance staff"],
+      "why": "Banks must monitor relationships and transactions and have systems and controls proportionate to their financial crime risk under SYSC 6.3. Alert investigators need specialist skills to meet the competent employees rule and regulation 21 screening, but no specific monitoring course is prescribed.",
+      "references": [
+        { "title": "SYSC 6.3 Financial crime", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/SYSC/6/3.pdf", "provision": "SYSC 6.3", "note": "Requires systems and controls to identify, assess, monitor and manage money laundering risk." },
+        { "title": "SYSC 5.1 Skills, knowledge and expertise", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/sysc5/sysc5s1", "provision": "SYSC 5.1.1R", "note": "Competent employees rule: staff must have the skills, knowledge and expertise their responsibilities require." }
+      ]
+    },
+    {
+      "program": 22,
+      "title": "United Kingdom | Correspondent Relationships EDD (MLR 2017)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Correspondent banking teams", "Financial institutions KYC", "Financial crime compliance"],
+      "why": "Correspondent relationships with respondents outside the UK attract mandatory enhanced due diligence and senior management approval under the Regulations, and the 2026 amendments add a new EDD provision for certain correspondent and cryptoasset relationships from February 2027. Staff managing these relationships need specialist knowledge; no separate training rule exists.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "provision": "Regulation 34", "note": "Enhanced measures for correspondent relationships, including understanding the respondent's controls." },
+        { "title": "The Money Laundering and Terrorist Financing (Amendment) Regulations 2026", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2026/621/made", "note": "Inserts regulation 34A with further EDD requirements, commencing 1 February 2027.", "effective": "2027-02-01" }
+      ]
+    },
+    {
+      "program": 23,
+      "title": "United Kingdom | Risk-Based Approach and Firm-Wide Risk Assessment (MLR 2017)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Compliance and MLRO teams", "Senior management", "Business risk owners"],
+      "why": "Banks must carry out and document a firm-wide ML/TF risk assessment and base their policies, controls and procedures on it; regulation 24 itself is applied in proportion to the size, nature and risk of the business. Staff who own risk assessments need to understand the risk-based approach, but no separate course is required.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "provision": "Regulations 18 and 19", "note": "Firm-wide risk assessment and the policies, controls and procedures that must follow from it." }
+      ]
+    },
+    {
+      "program": 24,
+      "title": "United Kingdom | AML Record-Keeping (MLR 2017)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Operations and records staff", "KYC teams", "Compliance"],
+      "why": "The Regulations require CDD and transaction records to be kept for set periods and, under regulation 24, a written record of training measures. Staff handling customer files must understand retention and deletion rules, which also interact with data protection law; no specific record-keeping course is prescribed.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692", "provision": "Regulation 40", "note": "Record-keeping duties for due diligence documents and transaction records." }
+      ]
+    },
+    {
+      "program": 25,
+      "title": "United Kingdom | AML for Frontline and Branch Staff (MLR Regulation 24)",
+      "classification": "mandatory-explicit",
+      "frequency": ["induction", "periodic"],
+      "audience": ["Branch staff", "Contact-centre staff", "Relationship managers"],
+      "why": "Frontline staff are relevant employees because they can help identify and prevent money laundering, so regulation 24 training applies to them directly. FCA guidance treats role-tailored financial crime training before customer contact as good practice and criticises firms that train only at induction or never test understanding.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/made", "provision": "Regulation 24(2)", "note": "Defines relevant employees by reference to their role in compliance or in detecting and preventing ML/TF." },
+        { "title": "FCG 2 Financial crime systems and controls", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg2", "note": "Good practice: customer-facing joiners get role-specific financial crime training before serving customers." }
+      ]
+    },
+    {
+      "program": 26,
+      "title": "United Kingdom | AML Accountability for Senior Management and the MLRO",
+      "classification": "competence",
+      "frequency": ["role"],
+      "audience": ["Board-level AML officer", "MLRO (SMF17)", "Senior managers"],
+      "why": "The Regulations require a board member or senior manager to be responsible for compliance, and SYSC 6.3 requires an MLRO with sufficient authority; under the SM&CR this is a senior management function. These individuals must be competent and their skills are assessed through screening and fitness checks, but no specific course is prescribed.",
+      "references": [
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/21", "provision": "Regulation 21", "note": "Board-level compliance officer, nominated officer, and screening of relevant employees' skills, knowledge and integrity." },
+        { "title": "SYSC 6.3 Financial crime", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/SYSC/6/3.pdf", "provision": "SYSC 6.3", "note": "Allocation of AML oversight responsibility and the MLRO role." }
+      ]
+    },
+    {
+      "program": 28,
+      "title": "United Kingdom | Bribery Act 2010 Adequate Procedures",
+      "classification": "competence",
+      "frequency": ["induction", "periodic"],
+      "audience": ["All employees", "Procurement and vendor managers", "Staff handling gifts, hospitality and intermediaries"],
+      "why": "Section 7 of the Bribery Act makes a company liable for failing to prevent bribery by associated persons unless it had adequate procedures. The Ministry of Justice guidance names communication including training as one of six principles and suggests induction training plus continuing, monitored training. The FCA also expects banks to counter bribery risk through financial crime systems and controls.",
+      "references": [
+        { "title": "Bribery Act 2010 guidance", "issuer": "Ministry of Justice (GOV.UK)", "url": "https://www.gov.uk/government/publications/bribery-act-2010-guidance", "provision": "Principle 5 (communication, including training)", "note": "Statutory guidance under section 9 on adequate procedures; training should be proportionate, start at induction and be continuous." },
+        { "title": "FCG 1 Introduction", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/fcg1", "note": "The Financial Crime Guide covers bribery and corruption systems and controls for firms." }
+      ]
+    },
+    {
+      "program": 29,
+      "title": "United Kingdom | Failure to Prevent Fraud (ECCTA 2023) and APP Scams",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All employees", "Fraud operations", "Senior management"],
+      "why": "Since 1 September 2025, large organisations commit an offence under section 199 of the Economic Crime and Corporate Transparency Act 2023 if an associated person commits fraud for their benefit, unless reasonable prevention procedures were in place. Home Office guidance lists communication including training among its six principles. Banks also reimburse APP scam victims under the PSR requirement, which raises the value of frontline fraud awareness.",
+      "references": [
+        { "title": "Offence of 'failure to prevent fraud' introduced by ECCTA", "issuer": "Home Office (GOV.UK)", "url": "https://www.gov.uk/government/publications/offence-of-failure-to-prevent-fraud-introduced-by-eccta", "note": "Guidance on reasonable procedures, including communication and training, for the offence in force from 1 September 2025.", "effective": "2025-09-01" },
+        { "title": "PS23/4 Fighting authorised push payment scams: final decision", "issuer": "Payment Systems Regulator", "url": "https://www.psr.org.uk/media/kwlgyzti/ps23-4-app-scams-policy-statement-dec-2023.pdf", "note": "Sets the mandatory reimbursement requirement for APP scams over Faster Payments." }
+      ]
+    },
+    {
+      "program": 35,
+      "title": "United Kingdom | Board Responsibilities under the Consumer Duty and SM&CR",
+      "classification": "competence",
+      "frequency": ["annual"],
+      "audience": ["Board directors", "Non-executive directors", "Company secretariat"],
+      "why": "The board must at least annually review and approve a report on customer outcomes and confirm the bank complies with the Consumer Duty, and directors in senior management functions are approved and held to the Senior Manager Conduct Rules. Directors therefore need enough knowledge to challenge management; the annual frequency reflects the board review cycle, not a prescribed course.",
+      "references": [
+        { "title": "PRIN 2A.2 Cross-cutting obligations (PRIN 2A The Consumer Duty)", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/PRIN/2A/2.html", "provision": "PRIN 2A.8.3R-2A.8.5R", "note": "Governing body must review and approve an outcomes report at least yearly and agree actions." },
+        { "title": "Consumer Duty board reports: good practice and areas for improvement", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/good-and-poor-practice/consumer-duty-board-reports-good-practice-areas-improvement", "note": "FCA observations on how boards use outcome data and challenge management." }
+      ]
+    },
+    {
+      "program": 36,
+      "title": "United Kingdom | Senior Managers Regime and Duty of Responsibility",
+      "classification": "competence",
+      "frequency": ["role"],
+      "audience": ["Senior managers (SMFs)", "Prescribed responsibility holders", "Company secretariat"],
+      "why": "Under the SM&CR, senior managers are pre-approved, hold documented responsibilities and are subject to the duty of responsibility and Senior Manager Conduct Rules. The 2026 Phase 1 review (PS26/6) streamlined parts of the regime and Phase 2 (CP26/37) proposes further cuts, so senior managers need current knowledge of their accountability; no separate training is prescribed for them.",
+      "references": [
+        { "title": "PS26/6: Senior Managers and Certification Regime review", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/policy-statements/ps26-6-senior-managers-certification-regime-review", "note": "Phase 1 changes, mostly effective 24 April 2026, with some later dates.", "effective": "2026-04-24" },
+        { "title": "FCA and PRA confirm changes to streamline senior manager accountability and boost growth", "issuer": "Bank of England (PRA)", "url": "https://www.bankofengland.co.uk/news/2026/april/fca-and-pra-confirm-changes-to-streamline-senior-manager-accountability-and-boost-growth", "note": "Joint FCA/PRA announcement of the final Phase 1 SM&CR changes." }
+      ]
+    },
+    {
+      "program": 37,
+      "title": "United Kingdom | Fitness and Propriety and the Certification Regime",
+      "classification": "competence",
+      "frequency": ["role"],
+      "audience": ["Certified staff", "Senior managers", "HR and compliance teams"],
+      "why": "Banks must assess the fitness and propriety of senior managers and certified staff, and screen relevant employees' skills and integrity under the Money Laundering Regulations. Competence is part of the test, but no course is prescribed. FCA CP26/37 (October 2026) proposes removing the Certification Regime, so this area may change in 2027.",
+      "references": [
+        { "title": "CP26/37: Senior Managers and Certification Regime (SM&CR) Review: Phase 2", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/consultation-papers/cp26-37-senior-managers-certification-regime-review-phase-2", "note": "Consultation proposing removal of the Certification Regime and the Directory; closes January 2027." },
+        { "title": "The Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/21", "provision": "Regulation 21", "note": "Screening of relevant employees' skills, knowledge, conduct and integrity before and during appointment." }
+      ]
+    },
+    {
+      "program": 38,
+      "title": "United Kingdom | FCA/PRA Conduct Rules Training (COCON)",
+      "classification": "mandatory-explicit",
+      "frequency": ["induction", "periodic"],
+      "audience": ["All conduct rules staff", "Senior managers", "Line managers"],
+      "why": "Under FSMA s.64B and COCON 2.3, banks must tell everyone subject to the Conduct Rules which rules apply to them and take all reasonable steps, chiefly through training, to make sure they understand them. The FCA expects broad awareness of all individual rules plus deeper training on the rules most relevant to each role, built into onboarding and reinforced regularly. Since September 2026, COCON 4.3 also gives guidance on bullying and harassment as Conduct Rule breaches.",
+      "references": [
+        { "title": "FCA Handbook - COCON 2 Individual conduct rules", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/cocon2", "provision": "COCON 2.3", "note": "Notification and training duty so that staff understand how the Conduct Rules apply to them." },
+        { "title": "Conduct Rules", "issuer": "FCA", "url": "https://www.fca.org.uk/firms/senior-managers-certification-regime/conduct-rules", "note": "FCA expectations on line-manager involvement, onboarding, regular reinforcement and measuring training effectiveness." },
+        { "title": "CP26/37: Senior Managers and Certification Regime (SM&CR) Review: Phase 2", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/consultation-papers/cp26-37-senior-managers-certification-regime-review-phase-2", "note": "Proposes replacing the training requirement with a notification duty; not yet in force." }
+      ]
+    },
+    {
+      "program": 40,
+      "title": "United Kingdom | FCA Whistleblowing Arrangements Training (SYSC 18)",
+      "classification": "mandatory-explicit",
+      "frequency": ["role"],
+      "audience": ["All UK-based employees", "Managers of UK-based employees", "Staff operating whistleblowing arrangements"],
+      "why": "SYSC 18.3 requires banks to give appropriate training to three groups: all UK-based staff (how to raise concerns and the protections available), managers of UK-based staff (recognising and handling disclosures and protecting confidentiality) and those who operate the arrangements. FCA reviews of banks found training was a key weakness, often not differentiated for managers and investigators.",
+      "references": [
+        { "title": "SYSC 18.3 Internal arrangements", "issuer": "FCA", "url": "https://www.handbook.fca.org.uk/handbook/SYSC/18/3.html?date=2024-09-23", "provision": "SYSC 18.3.1R", "note": "Internal whistleblowing arrangements must include appropriate training for staff, managers and those running the arrangements." },
+        { "title": "Retail and Wholesale Banking: review of firms' whistleblowing arrangements", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/multi-firm-reviews/retail-and-wholesale-banking-review-firms-whistleblowing-arrangements", "note": "Identified training and annual board reporting as the main areas needing improvement." }
+      ]
+    },
+    {
+      "program": 50,
+      "title": "United Kingdom | Personal Regulatory Accountability under the SM&CR",
+      "classification": "competence",
+      "frequency": ["role"],
+      "audience": ["Senior managers", "Certified staff", "Conduct rules staff"],
+      "why": "The SM&CR makes individuals personally answerable to the FCA and PRA through the Conduct Rules, the duty of responsibility and fitness checks. Individuals need to understand how their own accountability works and how it may change following the 2026 reviews; the express training duty sits in COCON 2.3 (program 38), so this module is a competence expectation.",
+      "references": [
+        { "title": "FCA Handbook - COCON 2 Individual conduct rules", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/cocon2", "note": "Individual and Senior Manager Conduct Rules that create personal accountability." },
+        { "title": "PS26/6: Senior Managers and Certification Regime review", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/policy-statements/ps26-6-senior-managers-certification-regime-review", "note": "Phase 1 changes to the regime in 2026." }
+      ]
+    },
+    {
+      "program": 51,
+      "title": "United Kingdom | FCA Consumer Duty (PRIN 2A)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All customer-facing staff", "Product and pricing teams", "Senior management"],
+      "why": "The Consumer Duty requires banks to act in good faith, avoid foreseeable harm and support retail customers' financial objectives, and to embed the Duty in strategy, governance, leadership and people policies. FCA reviews found some firms could not evidence training that helps staff understand their part in good outcomes. Staff knowledge is therefore needed, but the Duty does not prescribe a course.",
+      "references": [
+        { "title": "PRIN 2A.2 Cross-cutting obligations", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/PRIN/2A/2.html", "provision": "PRIN 2A.2 and PRIN 2A.8.1R", "note": "Cross-cutting obligations, and a requirement to reflect the Duty in people policies and governance.", "effective": "2023-07-31" },
+        { "title": "FG22/5 Final non-Handbook Guidance for firms on the Consumer Duty", "issuer": "FCA", "url": "https://www.fca.org.uk/publication/finalised-guidance/fg22-5.pdf", "note": "FCA guidance on applying the Duty in practice." },
+        { "title": "Consumer Duty implementation: good practice and areas for improvement", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/good-and-poor-practice/consumer-duty-implementation-good-practice-and-areas-improvement", "note": "Notes firms failing to evidence staff training and understanding." }
+      ]
+    },
+    {
+      "program": 55,
+      "title": "United Kingdom | Creditworthiness and Affordability (CONC 5.2A)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Credit underwriters", "Lending sales staff", "Credit risk teams"],
+      "why": "Before entering a regulated credit agreement a bank must carry out a reasonable creditworthiness assessment covering both credit risk and affordability for the customer, without relying on security. Underwriters must be competent to apply these rules, but no separate training requirement is set in CONC.",
+      "references": [
+        { "title": "FCA 2018/44 Consumer Credit (Creditworthiness) Instrument 2018", "issuer": "FCA", "url": "https://handbook.fca.org.uk/instrument/2018/FCA_2018_44.pdf", "provision": "CONC 5.2A", "note": "Introduced the detailed creditworthiness and affordability rules for consumer credit." }
+      ]
+    },
+    {
+      "program": 59,
+      "title": "United Kingdom | FCA Complaints Handling (DISP 1)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Complaint handlers", "Customer service staff", "Complaints oversight function"],
+      "why": "DISP 1.3 requires effective and transparent complaint procedures, root-cause analysis and a senior individual responsible for oversight. Its guidance expects lessons from Financial Ombudsman decisions and regulator guidance to be passed to complaint-handling staff, including through training. The guidance status means this is a competence expectation rather than a prescribed course.",
+      "references": [
+        { "title": "DISP 1.3 Complaints handling rules", "issuer": "FCA", "url": "https://www.handbook.fca.org.uk/handbook/DISP/1/3.html", "provision": "DISP 1.3", "note": "Complaint procedures, root-cause analysis and guidance on feeding ombudsman decisions into staff training." }
+      ]
+    },
+    {
+      "program": 64,
+      "title": "United Kingdom | Vulnerable Customers (FCA FG21/1)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Frontline staff", "Collections staff", "Product and design teams"],
+      "why": "FCA guidance expects banks to make sure staff, from the board to frontline and relevant back-office roles, can recognise and respond to vulnerability, with training proportionate to the firm. Under the Consumer Duty, vulnerable customers must get outcomes as good as other customers. FCA reviews found gaps in training, including for product designers.",
+      "references": [
+        { "title": "FG21/1 Guidance for firms on the fair treatment of vulnerable customers", "issuer": "FCA", "url": "https://www.fca.org.uk/publication/finalised-guidance/fg21-1.pdf", "provision": "Chapter 3 (skills and capability)", "note": "Sets expectations on staff skills and capability to identify and respond to vulnerability." },
+        { "title": "Retail banks' treatment of customers in vulnerable circumstances multi-firm review", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/multi-firm-reviews/retail-banks-treatment-customers-vulnerable-circumstances-multi-firm-review", "note": "Found training and competency issues contributing to staff not following processes." }
+      ]
+    },
+    {
+      "program": 66,
+      "title": "United Kingdom | Customer Data Confidentiality (UK GDPR)",
+      "classification": "competence",
+      "frequency": ["induction", "periodic"],
+      "audience": ["All staff handling customer data", "Contact-centre staff", "Operations staff"],
+      "why": "Banks must protect customer personal data under UK GDPR and the Data Protection Act 2018. The ICO's accountability framework expects all-staff training with induction and refresher elements, and treats awareness and training as evidence that policies are actually followed. The law does not prescribe a course for all staff, so this is a competence expectation.",
+      "references": [
+        { "title": "Training and awareness (Accountability Framework)", "issuer": "ICO", "url": "https://ico.org.uk/for-organisations/advice-and-services/audits/data-protection-audit-framework/toolkits/accountability/training-and-awareness/", "note": "ICO expectations for induction, refresher and role-specific data protection training." },
+        { "title": "Guide to accountability and governance", "issuer": "ICO", "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/", "note": "Explains that organisations must be able to show policies are implemented, including through training." }
+      ]
+    },
+    {
+      "program": 67,
+      "title": "United Kingdom | Arrears, Default and Recovery (CONC 7)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Collections and recoveries staff", "Debt collection agents' overseers", "Customer support staff"],
+      "why": "CONC 7 requires banks to treat customers in or near arrears with forbearance and due consideration, to agree sustainable repayment plans and to avoid disproportionate action or pressure. Collections staff need this knowledge to meet the competent employees rule and the Consumer Duty, but no separate course is required.",
+      "references": [
+        { "title": "FCA Handbook - CONC 7 Arrears, default and recovery (including repossessions)", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/conc7?timeline=true", "provision": "CONC 7.3", "note": "Forbearance, sustainable arrangements and fair treatment of customers in financial difficulty." }
+      ]
+    },
+    {
+      "program": 70,
+      "title": "United Kingdom | FCA Training and Competence Regime (TC) for Advisers",
+      "classification": "mandatory-role",
+      "frequency": ["role", "periodic"],
+      "audience": ["Retail investment and pensions advisers", "Mortgage advisers", "Supervisors of TC staff"],
+      "why": "The TC sourcebook applies to staff doing the retail activities listed in TC Appendix 1. They must be supervised until assessed as competent, must hold an appropriate qualification where required (some before starting), and must have their competence reviewed regularly. All other staff fall under the general competent employees rule in SYSC 5.1.",
+      "references": [
+        { "title": "FCA Handbook - TC 2.1 Assessing and maintaining competence", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/tc2/tc2s1", "provision": "TC 2.1.1R, 2.1.2R, 2.1.12R", "note": "Competence assessment, supervision, appropriate qualifications and regular review for TC activities." },
+        { "title": "Training and competence", "issuer": "FCA", "url": "https://www.fca.org.uk/firms/training-competence", "note": "FCA overview of the competent employees rule and the TC qualification requirements." },
+        { "title": "FCA Handbook - SYSC 5.1 Skills, knowledge and expertise", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/sysc5/sysc5s1", "provision": "SYSC 5.1.1R", "note": "High-level competent employees rule for all staff." }
+      ]
+    },
+    {
+      "program": 71,
+      "title": "United Kingdom | Information Security Awareness (UK GDPR Security Principle)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All staff", "IT and operations staff", "Third-party users"],
+      "why": "UK GDPR requires appropriate technical and organisational security measures. ICO guidance treats staff awareness as part of those measures. Banks also need secure systems to meet PRA and FCA systems-and-controls rules. Staff awareness is therefore expected, though no specific course is prescribed.",
+      "references": [
+        { "title": "A guide to data security", "issuer": "ICO", "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/a-guide-to-data-security/", "note": "ICO guidance on the security principle, including organisational measures such as staff awareness." }
+      ]
+    },
+    {
+      "program": 72,
+      "title": "United Kingdom | Cyber Resilience Awareness (PRA/FCA Operational Resilience)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All staff", "Technology and security teams", "Business service owners"],
+      "why": "PRA and FCA operational resilience rules require banks to stay within impact tolerances for important business services in severe but plausible scenarios, including cyber attacks. PRA priorities for 2026 stress recovery from cyber incidents. Staff awareness supports these controls, but no cyber training is prescribed.",
+      "references": [
+        { "title": "PS6/21 Operational resilience: Impact tolerances for important business services", "issuer": "PRA (Bank of England)", "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/policy-statement/2021/march/ps621.pdf", "note": "PRA operational resilience rules; firms had to be able to remain within impact tolerances by 31 March 2025.", "effective": "2022-03-31" },
+        { "title": "Operational resilience", "issuer": "FCA", "url": "https://www.fca.org.uk/firms/operational-resilience", "note": "FCA operational resilience expectations for firms." }
+      ]
+    },
+    {
+      "program": 74,
+      "title": "United Kingdom | UK GDPR, DPA 2018 and Data (Use and Access) Act 2025",
+      "classification": "competence",
+      "frequency": ["induction", "periodic"],
+      "audience": ["All staff processing personal data", "Data protection officer", "Customer complaints staff"],
+      "why": "Where a bank has a data protection officer, UK GDPR Article 39 makes awareness-raising and training of processing staff part of the DPO's tasks, and the ICO expects induction and refresher training. The Data (Use and Access) Act 2025 is now fully in force, including a duty from 19 June 2026 to handle data protection complaints. Training is expected, but no all-staff course is set by statute.",
+      "references": [
+        { "title": "United Kingdom General Data Protection Regulation, Article 39", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/eur/2016/679/article/39", "provision": "Article 39(1)(b)", "note": "DPO tasks include monitoring compliance, including awareness-raising and training of staff involved in processing." },
+        { "title": "Data protection officers", "issuer": "ICO", "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-officers/", "note": "ICO guidance on DPO duties, including training." },
+        { "title": "New data protection complaints law now in force", "issuer": "ICO", "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/new-data-protection-complaints-law-now-in-force/", "note": "Organisations must offer a route to complain, acknowledge within 30 days, investigate and report the outcome.", "effective": "2026-06-19" }
+      ]
+    },
+    {
+      "program": 83,
+      "title": "United Kingdom | Operational Incident Reporting (FCA PS26/2, PRA PS7/26)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Incident management teams", "IT operations", "Compliance and regulatory reporting"],
+      "why": "From 18 March 2027 a single FCA/PRA/Bank of England regime will require operational incidents to be reported through one portal on common timelines and material third-party arrangements to be reported. Staff who detect and escalate incidents must recognise what is reportable; the rules set reporting duties, not training.",
+      "references": [
+        { "title": "PS26/2: Operational incident and third party reporting", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/policy-statements/ps26-2-operational-incident-third-party-reporting", "note": "Final rules on incident and third-party reporting applying from 18 March 2027.", "effective": "2027-03-18" },
+        { "title": "SS1/26", "issuer": "PRA (Bank of England)", "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/supervisory-statement/2026/ss126-march-2026", "note": "PRA supervisory statement on operational incident reporting, effective 18 March 2027.", "effective": "2027-03-18" }
+      ]
+    },
+    {
+      "program": 84,
+      "title": "United Kingdom | Personal Data Breach Management (UK GDPR and ICO)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All staff", "Data protection and security teams", "Incident responders"],
+      "why": "UK GDPR requires notifiable personal data breaches to be reported to the ICO without undue delay and, where feasible, within 72 hours, and high-risk breaches to be told to affected individuals. The ICO audit framework expects staff to be trained to recognise and escalate breaches quickly. The training element is guidance, so this is a competence expectation.",
+      "references": [
+        { "title": "Training (Personal data breach management toolkit)", "issuer": "ICO", "url": "https://ico.org.uk/for-organisations/advice-and-services/audits/data-protection-audit-framework/toolkits/personal-data-breach-management/training/", "note": "ICO expectation that staff are trained to identify and report personal data breaches." }
+      ]
+    },
+    {
+      "program": 90,
+      "title": "United Kingdom | Operational Resilience (PRA SS1/21 and FCA SYSC 15A)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Senior management and board", "Business service owners", "Resilience and continuity teams"],
+      "why": "Banks must identify important business services, set impact tolerances, map and test them and, since 31 March 2025, be able to remain within tolerance in severe but plausible scenarios. The PRA now expects better resilience testing. Staff and management who run this framework must understand it, but no training is prescribed.",
+      "references": [
+        { "title": "PS6/21 Operational resilience: Impact tolerances for important business services", "issuer": "PRA (Bank of England)", "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/policy-statement/2021/march/ps621.pdf", "note": "Rules and supervisory statement SS1/21; compliance deadline 31 March 2025.", "effective": "2025-03-31" },
+        { "title": "Operational resilience", "issuer": "FCA", "url": "https://www.fca.org.uk/firms/operational-resilience", "note": "FCA operational resilience requirements and expectations." }
+      ]
+    },
+    {
+      "program": 112,
+      "title": "United Kingdom | Outsourcing and Third-Party Risk (PRA SS2/21)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Procurement and vendor managers", "Business service owners", "Risk and compliance"],
+      "why": "PRA SS2/21 sets expectations for managing outsourcing and third-party risk, updated in March 2026 alongside new third-party reporting rules effective 18 March 2027. Staff who contract with and oversee suppliers need to know the requirements; no specific training is prescribed.",
+      "references": [
+        { "title": "Supervisory Statement SS2/21 Outsourcing and third party risk management (March 2026 update)", "issuer": "PRA (Bank of England)", "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/supervisory-statement/2026/ss221-march-2026-update", "note": "Updated PRA expectations on outsourcing and third-party risk.", "effective": "2027-03-18" },
+        { "title": "Reporting material third party arrangements", "issuer": "FCA", "url": "https://www.fca.org.uk/firms/outsourcing-and-operational-resilience/reporting-material-third-party-arrangements", "note": "FCA guidance on the new register submission for material third-party arrangements." }
+      ]
+    },
+    {
+      "program": 159,
+      "title": "United Kingdom | Bullying and Harassment as Conduct Rule Breaches (COCON 4.3)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["All conduct rules staff", "Line managers", "HR and investigations teams"],
+      "why": "FCA rules and guidance in force from 1 September 2026 make clear that work-related bullying, harassment and violence towards colleagues can breach the Conduct Rules and affect fitness and propriety. Because banks must already train staff on the Conduct Rules, this content belongs in conduct training, but no separate harassment course is prescribed by the FCA.",
+      "references": [
+        { "title": "FCA Handbook - COCON 4.3 Specific guidance on harassment", "issuer": "FCA", "url": "https://handbook.fca.org.uk/handbook/cocon4/cocon4s3", "provision": "COCON 4.3", "note": "Guidance on when bullying or harassment breaches Individual Conduct Rules 1 or 2.", "effective": "2026-09-01" },
+        { "title": "PS25/23: Tackling non-financial misconduct in financial services", "issuer": "FCA", "url": "https://www.fca.org.uk/publications/policy-statements/ps25-23-tackling-non-financial-misconduct-financial-services", "note": "Policy statement introducing the non-financial misconduct rules and guidance.", "effective": "2026-09-01" }
+      ]
+    },
+    {
+      "program": 160,
+      "title": "United Kingdom | Preventing Sexual Harassment (Equality Act 2010 s.40A)",
+      "classification": "competence",
+      "frequency": ["periodic"],
+      "audience": ["All employees", "Line managers", "HR teams"],
+      "why": "Employers have had a duty since October 2024 to take reasonable steps to prevent sexual harassment of their workers. From 30 October 2026 the Employment Rights Act 2025 raises this to all reasonable steps and adds liability for third-party harassment. The EHRC technical guidance gives manager training and refresher training for all staff as examples of reasonable steps, though the statute does not name training.",
+      "references": [
+        { "title": "Sexual harassment and harassment at work: technical guidance", "issuer": "Equality and Human Rights Commission", "url": "https://www.equalityhumanrights.com/guidance/sexual-harassment-and-harassment-work-technical-guidance", "note": "Explains the preventative duty and lists training among reasonable steps." },
+        { "title": "Employment Rights Act 2025 (protection from harassment and discrimination)", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/ukpga/2025/36/part/1/crossheading/protection-from-harassment-and-discrimination", "provision": "Sections 20 to 22", "note": "Strengthens the duty to all reasonable steps, covers third-party harassment and allows regulations to specify steps." },
+        { "title": "The Employment Rights Act 2025 (Commencement No. 6 and Transitional and Saving Provisions) Regulations 2026", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2026/1065/made", "note": "Brings the strengthened harassment provisions into force.", "effective": "2026-10-30" }
+      ]
+    },
+    {
+      "program": 163,
+      "title": "United Kingdom | Health and Safety at Work Act 1974 Employer Training Duty",
+      "classification": "mandatory-explicit",
+      "frequency": ["unspecified"],
+      "audience": ["All employees", "Managers and supervisors", "Facilities and branch staff"],
+      "why": "Section 2(2)(c) of the Health and Safety at Work etc. Act 1974 requires employers, so far as reasonably practicable, to provide the information, instruction, training and supervision needed for employees' health and safety. HSE guidance points to new recruits and people changing jobs as needing particular attention, which covers branch, office and home-working staff.",
+      "references": [
+        { "title": "Health and Safety at Work etc. Act 1974, section 2", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/ukpga/1974/37/section/2", "provision": "Section 2(2)(c)", "note": "Employer must provide necessary information, instruction, training and supervision for health and safety." },
+        { "title": "Provide information, training and supervision: Overview", "issuer": "Health and Safety Executive", "url": "https://www.hse.gov.uk/simple-health-safety/training/index.htm", "note": "HSE guidance on delivering health and safety training, including for new recruits." }
+      ]
+    },
+    {
+      "program": 180,
+      "title": "United Kingdom | FATCA Due Diligence and Reporting to HMRC",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Account opening staff", "Tax operations", "Compliance"],
+      "why": "UK banks are reporting financial institutions under the International Tax Compliance Regulations 2015 and must identify US reportable accounts and report them to HMRC. From the 2025 amendments, a single mandatory AEOI registration covers both FATCA and CRS. Staff collecting self-certifications must understand these rules, but no training duty is set.",
+      "references": [
+        { "title": "The International Tax Compliance (Amendment) Regulations 2025", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2025/740/made", "note": "Adds mandatory registration and penalties covering FATCA and CRS institutions.", "effective": "2025-07-16" }
+      ]
+    },
+    {
+      "program": 181,
+      "title": "United Kingdom | CRS 2.0 Due Diligence and Reporting (HMRC)",
+      "classification": "competence",
+      "frequency": ["unspecified"],
+      "audience": ["Account opening staff", "Tax operations", "Compliance"],
+      "why": "The amended CRS rules apply from 1 January 2026, with first reports under them due in 2027, new penalties and expanded scope. Banks must collect valid self-certifications and report reportable accounts to HMRC. Staff need current knowledge of these due diligence steps, though no training obligation applies.",
+      "references": [
+        { "title": "The International Tax Compliance (Amendment) Regulations 2025", "issuer": "UK Parliament (legislation.gov.uk)", "url": "https://www.legislation.gov.uk/uksi/2025/740/made", "note": "Implements the amended Common Reporting Standard in UK law from 1 January 2026.", "effective": "2026-01-01" },
+        { "title": "IEIM400080 - Background: Common Reporting Standard", "issuer": "HMRC", "url": "https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim400080", "note": "HMRC manual explaining the CRS framework for UK financial institutions." }
+      ]
+    }
+  ],
+  "notes": [
+    "The Money Laundering and Terrorist Financing (Amendment) Regulations 2026 (SI 2026/621) were made on 9 June 2026; most provisions took effect on 30 June 2026, a new regulation 34A on EDD applies from 1 February 2027, and some cryptoasset change-of-control rules follow on 25 October 2027.",
+    "FCA CP26/37 (October 2026, closing January 2027) proposes removing the Certification Regime and replacing the COCON training requirement with a notification duty. Until final rules are made, COCON 2.3 training still applies.",
+    "SM&CR Phase 1 changes (FCA PS26/6 and PRA PS12/26) took effect mostly from 24 April 2026, with further changes in July 2026.",
+    "FCA non-financial misconduct rules and COCON 4.3 harassment guidance took effect on 1 September 2026.",
+    "The Employment Rights Act 2025 strengthened the sexual harassment prevention duty to 'all reasonable steps' and added third-party harassment liability from 30 October 2026.",
+    "The ECCTA 2023 failure to prevent fraud offence has applied to large organisations since 1 September 2025.",
+    "The Data (Use and Access) Act 2025 is fully in force; the duty to handle data protection complaints applies from 19 June 2026.",
+    "New single FCA/PRA/Bank of England operational incident and third-party reporting rules (FCA PS26/2, PRA PS7/26) apply from 18 March 2027.",
+    "CRS 2.0 changes apply from 1 January 2026, with a single mandatory AEOI registration for FATCA and CRS. The PSR is being consolidated into the FCA, which may change who supervises APP scam reimbursement."
+  ]
+}
