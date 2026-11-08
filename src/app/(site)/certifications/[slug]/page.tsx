@@ -100,7 +100,15 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
           </span>
           <p className="cert__badge-name">Badge: {c.quest.badge.name}</p>
           <p className="cert__price">{formatPkr(e.pricePkr)}</p>
-          <p className="muted cert__price-note">One learner · lifetime access to the material · certificate included</p>
+          <p className="muted cert__price-note">
+            One learner · lifetime access to the material · certificate included
+            {c.sessions.length > 1 && (
+              <>
+                <br />
+                or pay as you go: {formatPkr(Math.round(e.pricePkr / (c.sessions.length - 1)))} per stage after the free one
+              </>
+            )}
+          </p>
           {enrolled ? (
             <Link href={`/learn/${slug}`} className="btn btn--primary cert__cta">
               <span className="btn__label">Continue my quest</span>
@@ -112,7 +120,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
                 <span className="btn__label">{started?.quiz_passed_at ? "See my progress" : started ? "Continue my free stage" : "🎁 Start for free"}</span>
                 <span className="btn__arrow">→</span>
               </Link>
-              <p className="cert__free-note">Stage 1 is free, no payment needed. Unlock the rest when you are ready.</p>
+              <p className="cert__free-note">Stage 1 is free, no payment needed. Then unlock the whole quest, or one stage at a time.</p>
               <Link href={`/checkout/${slug}`} className="btn btn--ghost cert__cta">
                 <span className="btn__label">Enrol now · {formatPkr(e.pricePkr)}</span>
                 <span className="btn__arrow">→</span>

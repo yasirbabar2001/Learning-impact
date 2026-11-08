@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { CheckoutForm } from "@/components/portal/CommerceForms";
+import { CheckoutForm, UnlockChoice } from "@/components/portal/CommerceForms";
 import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
 import { companyOf, requireUser } from "@/lib/portal/auth";
+import { unlockOffer } from "@/lib/portal/commerce";
 import { enrollmentFor } from "@/lib/portal/learning";
 
 export default async function CheckoutPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ team?: string }> }) {
@@ -16,6 +17,7 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
   const company = user.account_type === "company" && user.company_role === "manager" ? companyOf(user) : null;
   if (isTeam && !company) redirect("/company/setup");
   if (isTeam && company?.status !== "approved") redirect("/company/pending");
+  const offer = isTeam ? null : unlockOffer(user.id, slug, e.pricePkr);
 
   return (
     <section className="container section checkout" style={{ ["--c" as string]: e.color }}>
@@ -26,7 +28,17 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
           </p>
           <h1 className="h3">{e.title}</h1>
           <p className="muted">{e.course.tagline}</p>
-          <CheckoutForm slug={slug} team={isTeam} unitPrice={e.pricePkr} companyName={company?.name ?? null} />
+          {offer ? (
+            <UnlockChoice
+              slug={slug}
+              full={formatPkr(offer.full)}
+              next={offer.next ? { number: offer.next.number, title: offer.next.title, price: formatPkr(offer.next.price) } : null}
+              remainingStages={offer.remainingStages}
+              paidSoFar={offer.paidSoFar ? formatPkr(offer.paidSoFar) : null}
+            />
+          ) : (
+            <CheckoutForm slug={slug} team={isTeam} unitPrice={e.pricePkr} companyName={company?.name ?? null} />
+          )}
           <p className="checkout__switch">
             {isTeam ? (
               <Link href={`/checkout/${slug}`} className="inline-link">
@@ -47,9 +59,17 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
               <dd>{e.title}</dd>
             </div>
             <div>
-              <dt>Price per learner</dt>
+              <dt>{isTeam ? "Price per learner" : "Full quest"}</dt>
               <dd>{formatPkr(e.pricePkr)}</dd>
             </div>
+            {offer && (
+              <div>
+                <dt>Or per stage</dt>
+                <dd>
+                  {formatPkr(offer.perStage)} (stage 1 is free)
+                </dd>
+              </div>
+            )}
             <div>
               <dt>Includes</dt>
               <dd>

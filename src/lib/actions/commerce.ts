@@ -14,6 +14,7 @@ import {
   PROOF_TYPES,
   storeProof,
   submitPayment,
+  unlockOffer,
 } from "../portal/commerce";
 import { enrollmentFor } from "../portal/learning";
 import { esc, sendMail } from "../portal/mail";
@@ -30,9 +31,19 @@ export async function startCheckout(_: CheckoutState, fd: FormData): Promise<Che
 
   if (!team) {
     if (enrollmentFor(user.id, slug)) redirect(`/learn/${slug}`);
+    const offer = unlockOffer(user.id, slug, entry.pricePkr);
+    if (!offer) return { message: "This certification is not open for enrolment yet." };
+    if (fd.get("option") === "stage") {
+      // Unlock only the next stage.
+      if (!offer.next) redirect(`/learn/${slug}`);
+      const openStage = openOrderFor(user.id, slug, "individual", offer.next.id);
+      if (openStage) redirect(`/orders/${openStage.reference}`);
+      const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.next.price, stageId: offer.next.id });
+      redirect(`/orders/${order.reference}`);
+    }
     const open = openOrderFor(user.id, slug, "individual");
     if (open) redirect(`/orders/${open.reference}`);
-    const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: entry.pricePkr });
+    const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.full });
     redirect(`/orders/${order.reference}`);
   }
 

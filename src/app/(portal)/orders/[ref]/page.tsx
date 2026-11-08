@@ -4,7 +4,7 @@ import { PaymentForm } from "@/components/portal/CommerceForms";
 import { cancelOrder } from "@/lib/actions/commerce";
 import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
 import { requireUser } from "@/lib/portal/auth";
-import { ORDER_STATUS, orderByRef, PAYMENT_METHODS, paymentSettings } from "@/lib/portal/commerce";
+import { ORDER_STATUS, orderByRef, orderStageLabel, PAYMENT_METHODS, paymentSettings } from "@/lib/portal/commerce";
 
 export default async function OrderPage({ params }: { params: Promise<{ ref: string }> }) {
   const { ref } = await params;
@@ -13,6 +13,7 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
   if (!order || order.user_id !== user.id) notFound();
   const entry = catalogEntry(order.course_slug);
   const pay = paymentSettings();
+  const stage = orderStageLabel(order);
   const bankRows = [
     ["Account title", pay.accountTitle],
     ["Bank", pay.bankName],
@@ -37,9 +38,9 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
 
           {order.status === "approved" ? (
             <div className="order-done">
-              <p>Payment confirmed. {order.kind === "individual" ? "Your quest is unlocked." : "Your seats are ready to assign."}</p>
+              <p>Payment confirmed. {order.kind === "individual" ? (stage ? `${stage.split(":")[0]} is unlocked.` : "Your quest is unlocked.") : "Your seats are ready to assign."}</p>
               <Link href={order.kind === "individual" ? `/learn/${order.course_slug}` : "/company"} className="btn btn--primary">
-                <span className="btn__label">{order.kind === "individual" ? "Start the quest" : "Invite my team"}</span>
+                <span className="btn__label">{order.kind === "individual" ? (stage ? "Continue the quest" : "Start the quest") : "Invite my team"}</span>
                 <span className="btn__arrow">→</span>
               </Link>
             </div>
@@ -93,7 +94,15 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
             </div>
             <div>
               <dt>Item</dt>
-              <dd>{entry?.title}</dd>
+              <dd>
+                {entry?.title}
+                {stage && (
+                  <>
+                    <br />
+                    <span className="muted">Single stage · {stage}</span>
+                  </>
+                )}
+              </dd>
             </div>
             <div>
               <dt>Quantity</dt>

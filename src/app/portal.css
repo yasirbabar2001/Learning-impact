@@ -3992,3 +3992,66 @@
 .gender-pick.has-error .gender-pick__opt span {
   border-color: rgba(255, 77, 109, 0.6);
 }
+
+/* ---------- Pay as you go: whole quest or next stage ---------- */
+.unlock-banner > .unlock-banner__ctas {
+  flex: 0 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.unlock-choice {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+.unlock-choice__opt {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.03);
+}
+.unlock-choice__opt--best {
+  border-color: color-mix(in srgb, var(--c, #2ee59d) 60%, transparent);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--c, #2ee59d) 14%, transparent), rgba(255, 255, 255, 0.02));
+}
+.unlock-choice__opt .btn {
+  justify-self: start;
+  margin-top: 6px;
+}
+.unlock-choice__tag {
+  justify-self: start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #2ee59d, #ffd23f);
+  color: #04110b;
+}
+.unlock-choice__tag--alt {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--fg);
+}
+.unlock-choice__title {
+  font-size: 18px;
+}
+.unlock-choice__price {
+  font-family: var(--font-display, inherit);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+@media (max-width: 600px) {
+  .unlock-choice__opt .btn {
+    justify-self: stretch;
+  }
+  .unlock-choice__price {
+    font-size: 26px;
+  }
+}

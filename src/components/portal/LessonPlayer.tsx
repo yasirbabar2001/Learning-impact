@@ -53,7 +53,9 @@ type Props = {
   /** "trial": the free stage; "preview": an admin looking around (nothing is saved). */
   mode?: AccessMode;
   /** For the free stage: where to pay to unlock the remaining stages. */
-  unlock?: { href: string; price: string; stages: number } | null;
+  unlock?: { href: string; price: string; stages: number; stagePrice?: string | null; stageNumber?: number } | null;
+  /** A trial stage the learner bought on its own (pay as you go), rather than the free stage. */
+  paidStage?: boolean;
 };
 
 type CheckResult = { choice: number; correct: boolean; answer: number; explanation: string; xp: number };
@@ -320,7 +322,19 @@ export function LessonPlayer(p: Props) {
       )}
       {p.mode === "trial" && (
         <p className="mode-banner mode-banner--trial" role="status">
-          🎁 <strong>Free stage.</strong> Stage 1 is on us. {p.unlock ? `Unlock the other ${p.unlock.stages} stages, the final exam and your certificate for ${p.unlock.price}.` : ""}
+          {p.paidStage ? (
+            <>
+              🔓 <strong>Pay-as-you-go stage.</strong> You unlocked this stage on its own.{" "}
+              {p.unlock ? `Unlock the remaining ${p.unlock.stages} stage(s), the final exam and your certificate for ${p.unlock.price}${p.unlock.stagePrice ? `, or the next stage for ${p.unlock.stagePrice}` : ""}.` : ""}
+            </>
+          ) : (
+            <>
+              🎁 <strong>Free stage.</strong> Stage 1 is on us.{" "}
+              {p.unlock
+                ? `Unlock the other ${p.unlock.stages} stages, the final exam and your certificate for ${p.unlock.price}${p.unlock.stagePrice ? `, or pay stage by stage (${p.unlock.stagePrice} each)` : ""}.`
+                : ""}
+            </>
+          )}
         </p>
       )}
       <div className="lesson__top">
@@ -506,6 +520,14 @@ export function LessonPlayer(p: Props) {
                 <span className="btn__arrow">→</span>
               </Link>
             )}
+            {p.quiz.passed && p.unlock?.stagePrice && (
+              <Link href={p.unlock.href} className="btn btn--ghost">
+                <span className="btn__label">
+                  Unlock stage {p.unlock.stageNumber} only · {p.unlock.stagePrice}
+                </span>
+                <span className="btn__arrow">→</span>
+              </Link>
+            )}
             {p.quiz.passed && (p.nextHref || p.examHref) && (
               <Link href={(p.nextHref || p.examHref)!} className="btn btn--ghost">
                 <span className="btn__label">{p.nextHref ? "Next stage" : "Face the final boss"}</span>
@@ -587,7 +609,7 @@ export function LessonPlayer(p: Props) {
           title={celebrate.result.score === celebrate.result.total ? "Perfect score! Stage cleared!" : "Stage cleared!"}
           subtitle={`${p.stage}: ${celebrate.result.score}/${celebrate.result.total} on the stage test.${
             p.unlock
-              ? ` Your free stage is done! Unlock the other ${p.unlock.stages} stages, the final exam and your certificate to keep going. Your progress is saved.`
+              ? ` ${p.paidStage ? "Well done!" : "Your free stage is done!"} Unlock the remaining ${p.unlock.stages} stage(s), the final exam and your certificate${p.unlock.stagePrice ? `, or just the next stage for ${p.unlock.stagePrice},` : ""} to keep going. Your progress is saved.`
               : p.nextHref
                 ? " The next stage is unlocked."
                 : p.examHref
@@ -599,6 +621,7 @@ export function LessonPlayer(p: Props) {
           share={{ text: `I just cleared “${p.stage}” in the ${p.courseTitle} certification quest on Learning Impact! 🏆`, url: p.shareUrl }}
           actions={[
             ...(p.unlock ? [{ label: `Unlock the full certification · ${p.unlock.price}`, href: p.unlock.href, primary: true, pending: !celebrate.confirmed }] : []),
+            ...(p.unlock?.stagePrice ? [{ label: `Unlock stage ${p.unlock.stageNumber} only · ${p.unlock.stagePrice}`, href: p.unlock.href, pending: !celebrate.confirmed }] : []),
             ...(p.nextHref || p.examHref ? [{ label: p.nextHref ? "Next stage" : "Face the final boss", href: (p.nextHref || p.examHref)!, primary: true, pending: !celebrate.confirmed }] : []),
             { label: "Quest map", href: p.mapHref },
           ]}

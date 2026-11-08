@@ -31,7 +31,9 @@ async function typeCode(page: Page, code: string) {
 }
 
 async function adminPage(browser: import("@playwright/test").Browser) {
-  const admin = await (await browser.newContext()).newPage();
+  // Each admin session comes from its own address so the suite stays under the login rate limit.
+  const ip = `10.9.${Math.floor(Math.random() * 250)}.${Math.floor(Math.random() * 250)}`;
+  const admin = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": ip } })).newPage();
   await admin.goto("/admin/login");
   await admin.getByLabel("Password").fill("e2e-password");
   await admin.getByRole("button", { name: "Sign in" }).click();
@@ -75,7 +77,8 @@ test("individual verifies their e-mail with a code, buys a certification and sta
   await page.getByRole("button", { name: "Verify" }).click();
   await expect(page).toHaveURL(/\/checkout\/customer-experience/);
 
-  await page.getByRole("button", { name: /Continue to payment/ }).click();
+  await expect(page.getByText("Unlock the next stage only")).toBeVisible(); // pay-as-you-go is offered too
+  await page.getByRole("button", { name: /Unlock everything · PKR 20,000/ }).click();
   await expect(page).toHaveURL(/\/orders\/LIC-/);
   const ref = page.url().split("/").pop()!;
   await page.locator("label.choice", { hasText: "Easypaisa" }).click();
@@ -544,4 +547,61 @@ test("regulatory library: admin reviews a country map, publishes a draft quest, 
   // the certifications page points to the library
   await page.goto("/certifications");
   await expect(page.locator(".reg-banner")).toBeVisible();
+});
+
+test("after the free stage a learner can unlock the whole quest or pay stage by stage; paid stages are deducted", async ({ browser }) => {
+  const admin = await adminPage(browser);
+  // A separate address keeps this sign-up under the per-network registration limit.
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.1.1" } })).newPage();
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="hr-operations"])');
+  await form.locator("input[name=price]").fill("8000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  const email = `stagewise${Date.now()}@example.com`;
+  await page.goto("/register?next=/checkout/hr-operations");
+  await page.getByLabel(/Full name/).fill("Stage Buyer");
+  await page.getByLabel("E-mail", { exact: false }).first().fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page, "Male");
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await typeCode(page, await codeFor(email));
+  await page.getByRole("button", { name: "Verify" }).click();
+  await expect(page).toHaveURL(/\/checkout\/hr-operations/);
+
+  // 5 stages for PKR 8,000: stage 1 free, then PKR 2,000 per stage, or PKR 8,000 for everything.
+  await expect(page.locator(".unlock-choice__price").first()).toHaveText("PKR 8,000");
+  await expect(page.locator(".unlock-choice__price").nth(1)).toHaveText("PKR 2,000");
+  await page.getByRole("button", { name: /Unlock stage 2 · PKR 2,000/ }).click();
+  await expect(page).toHaveURL(/\/orders\/LIC-/);
+  const ref = page.url().split("/").pop()!;
+  await expect(page.locator(".checkout__summary")).toContainText("Single stage · Stage 2");
+  await page.locator("label.choice", { hasText: "JazzCash" }).click();
+  await page.getByLabel(/Transaction ID/).fill("JC-2000");
+  await page.locator("input[name=proof]").setInputFiles(path.join(__dirname, "fixtures", "receipt.png"));
+  await page.getByRole("button", { name: /Submit payment details/ }).click();
+  await expect(page.getByText(/We have your payment details/).first()).toBeVisible();
+
+  await admin.goto("/admin/orders");
+  const card = admin.locator(".order-admin", { hasText: ref });
+  await expect(card).toContainText("Stage 2");
+  await card.getByRole("button", { name: /Approve/ }).click();
+  await expect(admin.locator(".order-admin", { hasText: ref })).toHaveCount(0);
+
+  // Stage 2 is no longer behind the paywall (it opens once stage 1 is cleared); stage 3 is offered next.
+  await page.goto("/learn/hr-operations");
+  await expect(page.locator(".unlock-banner")).toContainText("PKR 6,000");
+  await expect(page.locator(".unlock-banner")).toContainText("stage 3");
+  await expect(page.locator(".qnode__note").nth(1)).toContainText("Clear the previous stage to unlock");
+  await expect(page.locator(".qnode__note").nth(2)).toContainText("Unlock this stage for PKR 2,000");
+
+  // The whole quest now costs the remaining PKR 6,000.
+  await page.goto("/checkout/hr-operations");
+  await expect(page.locator(".unlock-choice__price").first()).toHaveText("PKR 6,000");
+  await expect(page.getByText(/You already paid PKR 2,000/)).toBeVisible();
+  await page.getByRole("button", { name: /Unlock everything · PKR 6,000/ }).click();
+  await expect(page).toHaveURL(/\/orders\/LIC-/);
+  await expect(page.locator(".checkout__summary")).toContainText("PKR 6,000");
 });

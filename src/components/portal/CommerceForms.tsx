@@ -38,6 +38,63 @@ export function CheckoutForm({ slug, team, unitPrice, companyName }: { slug: str
   );
 }
 
+/** Individual learners choose: the whole quest, or just the next stage (pay as you go). */
+export function UnlockChoice({
+  slug,
+  full,
+  next,
+  remainingStages,
+  paidSoFar,
+}: {
+  slug: string;
+  full: string;
+  next: { number: number; title: string; price: string } | null;
+  remainingStages: number;
+  paidSoFar: string | null;
+}) {
+  const [state, action, pending] = useActionState(startCheckout, {});
+  return (
+    <div className="unlock-choice">
+      {state.message && <p className="form-alert">{state.message}</p>}
+      <form action={action} className="unlock-choice__opt unlock-choice__opt--best">
+        <input type="hidden" name="slug" value={slug} />
+        <input type="hidden" name="kind" value="individual" />
+        <input type="hidden" name="option" value="full" />
+        <span className="unlock-choice__tag">Best value</span>
+        <strong className="unlock-choice__title">Unlock the whole quest</strong>
+        <span className="unlock-choice__price">{full}</span>
+        <span className="muted">
+          All {remainingStages} remaining stage{remainingStages === 1 ? "" : "s"}, the final exam and your verified certificate.
+          {paidSoFar ? ` You already paid ${paidSoFar} for single stages; that is deducted.` : ""}
+        </span>
+        <button className="btn btn--primary" disabled={pending}>
+          <span className="btn__label">{pending ? "Creating your order…" : `Unlock everything · ${full}`}</span>
+          <span className="btn__arrow">→</span>
+        </button>
+      </form>
+      {next && remainingStages > 1 && (
+        <form action={action} className="unlock-choice__opt">
+          <input type="hidden" name="slug" value={slug} />
+          <input type="hidden" name="kind" value="individual" />
+          <input type="hidden" name="option" value="stage" />
+          <span className="unlock-choice__tag unlock-choice__tag--alt">Pay as you go</span>
+          <strong className="unlock-choice__title">Unlock the next stage only</strong>
+          <span className="unlock-choice__price">{next.price}</span>
+          <span className="muted">
+            Stage {next.number}: {next.title}. Buy the following stages one at a time later; once every stage is paid, the final exam and certificate are
+            included.
+          </span>
+          <button className="btn btn--ghost" disabled={pending}>
+            <span className="btn__label">Unlock stage {next.number} · {next.price}</span>
+            <span className="btn__arrow">→</span>
+          </button>
+        </form>
+      )}
+      <p className="field__hint">No payment is taken online. You will see our bank and wallet details next.</p>
+    </div>
+  );
+}
+
 export function PaymentForm({ reference, methods, resubmit }: { reference: string; methods: readonly string[]; resubmit: boolean }) {
   const [state, action, pending] = useActionState(submitPaymentProof, {});
   const [method, setMethod] = useState("");

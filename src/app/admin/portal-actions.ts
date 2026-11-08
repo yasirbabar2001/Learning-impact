@@ -6,7 +6,7 @@ import { requireAdmin } from "@/lib/auth";
 import { catalogEntry, formatPkr, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
 import { now, one, run } from "@/lib/db";
 import { createPasswordReset, currentUser } from "@/lib/portal/auth";
-import { approveOrder, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
+import { approveOrder, orderStageLabel, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
 import { button, esc, sendMail, sendMailDetailed } from "@/lib/portal/mail";
 import { SITE_URL } from "@/lib/site";
 
@@ -23,7 +23,7 @@ export async function approveOrderAction(fd: FormData) {
         individual ? `You're in: ${entry.title}` : `${order.seats} seats ready: ${entry.title}`,
         `<p>Assalam-o-Alaikum ${esc(buyer.name.split(" ")[0])},</p><p>We have confirmed your payment of <b>${formatPkr(order.amount_pkr)}</b> (order ${order.reference}).</p>${
           individual
-            ? `<p>Your quest <b>${esc(entry.title)}</b> is unlocked.</p>${button(`${SITE_URL}/learn/${order.course_slug}`, "Start the quest")}`
+            ? `<p>${order.stage_id ? `${esc(orderStageLabel(order) ?? "Your stage")} of <b>${esc(entry.title)}</b> is unlocked.` : `Your quest <b>${esc(entry.title)}</b> is unlocked.`}</p>${button(`${SITE_URL}/learn/${order.course_slug}`, order.stage_id ? "Continue the quest" : "Start the quest")}`
             : `<p>${order.seats} seats for <b>${esc(entry.title)}</b> are now in your company account. Invite your team from the company dashboard.</p>${button(`${SITE_URL}/company`, "Invite my team")}`
         }`,
       );

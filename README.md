@@ -24,6 +24,10 @@ sent. All motion respects the visitor's "reduce motion" setting.
 - **Admin dashboard** (`/admin`): clickable tiles with live numbers (revenue, payments to review, learners, companies
   to approve, free-stage learners and conversion, enrolments, certificates, exam pass rate, courses live, new
   requests) plus sign-up and top-course charts; training requests moved to `/admin/requests`.
+- **Pay as you go:** after the free stage a learner chooses between the whole quest (full price minus anything already
+  paid for single stages) and the next stage only (full price ÷ paid stages; e.g. 5 stages at PKR 8,000 → PKR 2,000
+  per stage). Stage orders show "Stage N" in Admin → Payments; approving one unlocks that stage, and once every
+  paid stage is bought the learner is fully enrolled (final exam and certificate included). Team seats are unchanged.
 - **Global Banking Regulatory Training** (Admin → Regulatory library, public page `/regulatory`): country-by-country
   maps of the 202 master programs (`content/regulatory/`), each classified Mandatory – Explicit, Mandatory –
   Role-Based, Regulatory Competence Requirement or Recommended, with frequency, audience and official references

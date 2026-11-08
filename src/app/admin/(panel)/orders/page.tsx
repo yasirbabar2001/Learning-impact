@@ -1,7 +1,7 @@
 import { approveOrderAction, rejectOrderAction } from "@/app/admin/portal-actions";
 import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
-import { ORDER_STATUS, type Order } from "@/lib/portal/commerce";
+import { ORDER_STATUS, orderStageLabel, type Order } from "@/lib/portal/commerce";
 
 type Row = Order & { name: string; email: string; phone: string; company: string | null };
 
@@ -57,7 +57,7 @@ export default async function AdminOrders({ searchParams }: { searchParams: Prom
                   <dt>Item</dt>
                   <dd>
                     {catalogEntry(o.course_slug)?.title}
-                    {o.kind === "seats" ? ` · ${o.seats} seats for ${o.company}` : " · individual"}
+                    {o.kind === "seats" ? ` · ${o.seats} seats for ${o.company}` : o.stage_id ? ` · individual · ${orderStageLabel(o)}` : " · individual · full quest"}
                   </dd>
                 </div>
                 {o.submitted_at && (

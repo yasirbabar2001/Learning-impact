@@ -5,6 +5,7 @@ import { Ring } from "@/components/portal/Ring";
 import { Reveal } from "@/components/Reveal";
 import { catalogEntry, formatPkr, getCourse } from "@/lib/courses/catalog";
 import { requireUser } from "@/lib/portal/auth";
+import { unlockOffer } from "@/lib/portal/commerce";
 import { attemptsAllowed, attemptsOf, certificateFor } from "@/lib/portal/exam";
 import { accessFor, courseProgress, progressMap, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 
@@ -18,7 +19,9 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
   const { mode, enrollment } = access;
   const p = courseProgress(course, progressMap(user.id, slug));
   const shown = stagesFor(course, user.id, mode);
-  const price = formatPkr(catalogEntry(slug)?.pricePkr ?? 0);
+  const offer = mode === "trial" ? unlockOffer(user.id, slug, catalogEntry(slug)?.pricePkr ?? 0) : null;
+  const price = formatPkr(offer?.full ?? catalogEntry(slug)?.pricePkr ?? 0);
+  const stagePrice = offer?.next && offer.remainingStages > 1 ? formatPkr(offer.next.price) : null;
   const freeDone = mode === "trial" && p.stages[0]?.status === "passed";
   const cert = certificateFor(user.id, slug);
   const attempts = attemptsOf(user.id, slug).filter((a) => a.submitted_at);
@@ -41,7 +44,9 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
               ? `In progress · card ${Math.min(s.progress.cards_seen + 1, s.session.cards.length)} of ${s.session.cards.length}`
               : `${mode === "trial" ? "Free · " : ""}${s.session.minutes} min · ${s.session.cards.length} cards`
             : s.paywall
-              ? `🔒 Included in the full certification (${price})`
+              ? s.session.id === offer?.next?.id && stagePrice
+                ? `🔒 Unlock this stage for ${stagePrice}, or the full quest for ${price}`
+                : `🔒 Included in the full certification (${price})`
               : "Clear the previous stage to unlock",
   }));
   nodes.push({
@@ -104,17 +109,29 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
               {freeDone ? "🔓" : "🎁"}
             </span>
             <div>
-              <strong>{freeDone ? "You cleared your free stage!" : "Stage 1 is free. Try it now."}</strong>
+              <strong>
+                {offer?.unlocked.size ? "Pay as you go: keep unlocking stages" : freeDone ? "You cleared your free stage!" : "Stage 1 is free. Try it now."}
+              </strong>
               <p className="muted">
-                {freeDone
-                  ? `Unlock the other ${course.sessions.length - 1} stages, the final exam and your verified certificate. Your progress is kept.`
-                  : `No payment needed to start. When you are ready, unlock the full certification for ${price}.`}
+                {freeDone || offer?.unlocked.size
+                  ? `Unlock the remaining ${offer?.remainingStages ?? course.sessions.length - 1} stage(s), the final exam and your verified certificate for ${price}${stagePrice ? `, or pay for one stage at a time (${stagePrice} for stage ${offer?.next?.number})` : ""}. Your progress is kept.`
+                  : `No payment needed to start. When you are ready, unlock the full certification for ${price}${stagePrice ? ` or pay stage by stage (${stagePrice} each)` : ""}.`}
               </p>
             </div>
-            <Link href={`/checkout/${slug}`} className={`btn ${freeDone ? "btn--primary" : "btn--ghost"}`}>
-              <span className="btn__label">Unlock full certification · {price}</span>
-              <span className="btn__arrow">→</span>
-            </Link>
+            <div className="unlock-banner__ctas">
+              <Link href={`/checkout/${slug}`} className={`btn ${freeDone ? "btn--primary" : "btn--ghost"}`}>
+                <span className="btn__label">Unlock full certification · {price}</span>
+                <span className="btn__arrow">→</span>
+              </Link>
+              {stagePrice && (freeDone || offer?.unlocked.size) ? (
+                <Link href={`/checkout/${slug}`} className="btn btn--ghost">
+                  <span className="btn__label">
+                    Unlock stage {offer?.next?.number} only · {stagePrice}
+                  </span>
+                  <span className="btn__arrow">→</span>
+                </Link>
+              ) : null}
+            </div>
           </div>
         </section>
       )}

@@ -232,4 +232,15 @@ export const MIGRATIONS: string[] = [
   CREATE INDEX visits_created ON visits(created_at);
   CREATE INDEX visits_visitor ON visits(visitor, created_at);
   `,
+  /* 7: pay stage by stage (an order can unlock a single stage) */ `
+  ALTER TABLE orders ADD COLUMN stage_id TEXT;
+  CREATE TABLE stage_unlocks (
+    user_id TEXT NOT NULL REFERENCES users(id),
+    course_slug TEXT NOT NULL,
+    session_id TEXT NOT NULL,
+    order_id TEXT REFERENCES orders(id),
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (user_id, course_slug, session_id)
+  );
+  `,
 ];

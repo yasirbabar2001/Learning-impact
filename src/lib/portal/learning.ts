@@ -94,11 +94,16 @@ export function stagesFor(course: Course, userId: string, mode: AccessMode) {
   // Admin preview: every stage is open, but the admin's own place is remembered.
   if (mode === "preview")
     return stages(course, progressMap(userId, course.slug)).map((s) => ({ ...s, status: s.status === "locked" ? ("open" as StageStatus) : s.status, paywall: false }));
+  const bought = mode === "trial" ? boughtStages(userId, course.slug) : new Set<string>();
   return stages(course, progressMap(userId, course.slug)).map((s, i) => {
-    const paywall = mode === "trial" && i >= FREE_STAGES;
+    const paywall = mode === "trial" && i >= FREE_STAGES && !bought.has(s.session.id);
     return { ...s, status: paywall ? ("locked" as StageStatus) : s.status, paywall };
   });
 }
+
+/** Stages bought one at a time (see commerce.unlockOffer). */
+const boughtStages = (userId: string, slug: string) =>
+  new Set(all<{ session_id: string }>("SELECT session_id FROM stage_unlocks WHERE user_id = ? AND course_slug = ?", userId, slug).map((r) => r.session_id));
 
 /** Courses a learner has started for free (progress recorded, not enrolled). */
 export function trialsOf(userId: string): string[] {

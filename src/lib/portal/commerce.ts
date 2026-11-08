@@ -2,6 +2,7 @@ import "server-only";
 import { randomBytes } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { getCourse } from "../courses/catalog";
 import { all, now, one, run, tx } from "../db";
 import { newId, newToken, tokenHash } from "./auth";
 import { rewardEnrolment } from "./referrals";
@@ -13,6 +14,8 @@ export type Order = {
   company_id: string | null;
   kind: "individual" | "seats";
   course_slug: string;
+  /** Set when the order unlocks a single stage instead of the whole quest. */
+  stage_id: string | null;
   seats: number;
   unit_price_pkr: number;
   amount_pkr: number;
@@ -73,17 +76,26 @@ export function savePaymentSettings(s: PaymentSettings) {
 const REF_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 const orderRef = () => "LIC-" + Array.from(randomBytes(6), (b) => REF_ALPHABET[b % REF_ALPHABET.length]).join("");
 
-export function createOrder(o: { userId: string; companyId: string | null; kind: Order["kind"]; slug: string; seats: number; unitPrice: number }): Order {
+export function createOrder(o: {
+  userId: string;
+  companyId: string | null;
+  kind: Order["kind"];
+  slug: string;
+  seats: number;
+  unitPrice: number;
+  stageId?: string | null;
+}): Order {
   const id = newId();
   run(
-    `INSERT INTO orders (id, reference, user_id, company_id, kind, course_slug, seats, unit_price_pkr, amount_pkr, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO orders (id, reference, user_id, company_id, kind, course_slug, stage_id, seats, unit_price_pkr, amount_pkr, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     id,
     orderRef(),
     o.userId,
     o.companyId,
     o.kind,
     o.slug,
+    o.stageId ?? null,
     o.seats,
     o.unitPrice,
     o.unitPrice * o.seats,
@@ -95,14 +107,60 @@ export function createOrder(o: { userId: string; companyId: string | null; kind:
 export const orderByRef = (ref: string) => one<Order>("SELECT * FROM orders WHERE reference = ?", ref) ?? null;
 export const ordersOf = (userId: string) => all<Order>("SELECT * FROM orders WHERE user_id = ? ORDER BY created_at DESC", userId);
 
-/** An unfinished order for the same thing, so buyers are not charged twice by mistake. */
-export const openOrderFor = (userId: string, slug: string, kind: Order["kind"]) =>
+/** An unfinished order for the same thing (whole quest, or one stage), so buyers are not charged twice by mistake. */
+export const openOrderFor = (userId: string, slug: string, kind: Order["kind"], stageId: string | null = null) =>
   one<Order>(
-    "SELECT * FROM orders WHERE user_id = ? AND course_slug = ? AND kind = ? AND status IN ('awaiting_payment', 'submitted') ORDER BY created_at DESC LIMIT 1",
+    `SELECT * FROM orders WHERE user_id = ? AND course_slug = ? AND kind = ? AND COALESCE(stage_id, '') = ?
+       AND status IN ('awaiting_payment', 'submitted') ORDER BY created_at DESC LIMIT 1`,
     userId,
     slug,
     kind,
+    stageId ?? "",
   ) ?? null;
+
+/* ---------- Stage-by-stage payment ---------- */
+
+/** "Stage 3: Title" for an order that unlocks one stage, else null. */
+export function orderStageLabel(o: Pick<Order, "course_slug" | "stage_id">) {
+  if (!o.stage_id) return null;
+  const course = getCourse(o.course_slug);
+  const i = course ? course.sessions.findIndex((s) => s.id === o.stage_id) : -1;
+  return i >= 0 ? `Stage ${i + 1}: ${course!.sessions[i].title}` : `Stage ${o.stage_id}`;
+}
+
+/** Stages anyone can play for free (keep in sync with learning.ts FREE_STAGES). */
+const FREE = 1;
+
+/** Stages this learner has bought one by one (approved stage orders). */
+export const unlockedStages = (userId: string, slug: string) =>
+  new Set(all<{ session_id: string }>("SELECT session_id FROM stage_unlocks WHERE user_id = ? AND course_slug = ?", userId, slug).map((r) => r.session_id));
+
+/**
+ * What a learner can buy next. The whole quest costs the full price minus whatever they already paid for single
+ * stages; a single stage costs the full price divided by the number of paid stages (the last one takes the rounding).
+ * Example: 5 stages, PKR 8,000 → stage 1 free, each further stage PKR 2,000, or PKR 8,000 for everything.
+ */
+export function unlockOffer(userId: string, slug: string, pricePkr: number) {
+  const course = getCourse(slug);
+  if (!course || pricePkr <= 0) return null;
+  const paidStages = Math.max(1, course.sessions.length - FREE);
+  const unlocked = unlockedStages(userId, slug);
+  const paidSoFar =
+    one<{ n: number }>("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE user_id = ? AND course_slug = ? AND stage_id IS NOT NULL AND status = 'approved'", userId, slug)?.n ?? 0;
+  const full = Math.max(0, pricePkr - paidSoFar);
+  const perStage = Math.round(pricePkr / paidStages);
+  const remaining = course.sessions.slice(FREE).filter((s) => !unlocked.has(s.id));
+  const next = remaining[0];
+  const index = next ? course.sessions.findIndex((s) => s.id === next.id) : -1;
+  return {
+    full,
+    paidSoFar,
+    perStage,
+    remainingStages: remaining.length,
+    unlocked,
+    next: next ? { id: next.id, index, number: index + 1, title: next.title, stage: next.stage, price: remaining.length === 1 ? full : Math.min(perStage, full) } : null,
+  };
+}
 
 /* ---------- Payment proof uploads ---------- */
 
@@ -172,7 +230,16 @@ export function approveOrder(orderId: string, adminNote: string) {
     const o = one<Order>("SELECT * FROM orders WHERE id = ?", orderId);
     if (!o || o.status === "approved") return o ?? null;
     run("UPDATE orders SET status = 'approved', admin_note = ?, decided_at = ? WHERE id = ?", adminNote, now(), o.id);
-    if (o.kind === "individual") {
+    if (o.kind === "individual" && o.stage_id) {
+      run("INSERT OR IGNORE INTO stage_unlocks (user_id, course_slug, session_id, order_id, created_at) VALUES (?, ?, ?, ?, ?)", o.user_id, o.course_slug, o.stage_id, o.id, now());
+      // Every paid stage bought one by one: the learner now has the whole quest, exam and certificate included.
+      const course = getCourse(o.course_slug);
+      const unlocked = unlockedStages(o.user_id, o.course_slug);
+      if (course && course.sessions.slice(FREE).every((s) => unlocked.has(s.id))) {
+        enroll(o.user_id, o.course_slug, "purchase", o.id, null);
+        rewardEnrolment(o.user_id);
+      }
+    } else if (o.kind === "individual") {
       enroll(o.user_id, o.course_slug, "purchase", o.id, null);
       rewardEnrolment(o.user_id);
     }
