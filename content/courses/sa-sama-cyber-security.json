@@ -1,0 +1,3224 @@
+{
+  "slug": "sa-sama-cyber-security",
+  "title": "Saudi Arabia | SAMA Cyber Security Framework and Information Protection",
+  "tagline": "Apply SAMA's cyber security, awareness, branch control and cyber-fraud rules as a member of staff at a conventional Saudi bank.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional commercial banks in Saudi Arabia",
+    "Foreign bank branches in Saudi Arabia",
+    "Bank call centres and outsourced service providers",
+    "IT and cyber security service providers to Saudi banks"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the cyber security and information protection rules the **Saudi Central Bank (SAMA)** sets for conventional banks. It is based on SAMA's **Cyber Security Framework** (2017), in particular sections 3.1.6 (awareness) and 3.1.7 (training), roles, risk management and incident management; the **Information Technology Governance Framework** (2021) on IT staff competence; the **Business Continuity Management Framework** in general terms; the **Counter-Fraud Framework** (2022) where it deals with cyber-enabled fraud; the **Control and Awareness Measures for Branch and Customer Service Employees** (2021); and SAMA's instructions on the **Personal Data Protection Law**, all published in the SAMA Rulebook.\n\nSAMA requires every bank to run an approved cyber security awareness programme for staff, third parties and customers through the year and to measure it, to give specialist training to key roles, and to run information security and fraud campaigns for branch and customer service staff at least every three months, with tests at least every six months. This quest supports those duties for all bank staff, with extra depth for branch, customer service, IT, cyber and fraud teams.\n\nThe quest builds knowledge and does not replace your bank's own policies, procedures or the latest SAMA instructions; always follow them. The Personal Data Protection Law is covered only in general terms. The quest covers conventional banking only.",
+  "audience": [
+    "All employees of conventional banks in Saudi Arabia, as part of the bank's cyber security awareness programme",
+    "Branch, teller and customer service staff, including contracted call-centre agents",
+    "IT staff, developers, administrators and risk assessors who need specialist cyber skills",
+    "Cyber security, counter-fraud, compliance and internal audit staff who run or check the programme"
+  ],
+  "outcomes": [
+    "Explain the structure, governance roles and maturity model of SAMA's Cyber Security Framework",
+    "Design and evaluate awareness and training that meets sections 3.1.6 and 3.1.7 and the IT staff competence rules",
+    "Recognise phishing, whaling and other social-engineering attacks and apply SAMA's counter-fraud safeguards",
+    "Apply SAMA's 2021 branch controls: passwords, need-to-know access, logs, campaigns, tests and declarations",
+    "Follow SAMA's risk management and incident notification rules and link them to business continuity",
+    "Assemble the evidence a SAMA cyber review expects"
+  ],
+  "quest": {
+    "name": "The Citadel of Trust",
+    "premise": "You have just joined Rimal Bank, a fictional conventional bank headquartered in Riyadh, as Cyber Security Awareness Officer. A phishing simulation has gone badly, a Jeddah customer has lost savings to a caller posing as the bank, and SAMA will review the bank's cyber self-assessment this quarter. With CISO Lama Al-Mutairi, SOC lead Priya Raman, branch manager Omar Bakr, customer service officer Hessa Al-Shammari and counter-fraud head Yousef Haddad, clear five stages, then face the final boss: the SAMA reviewer's exam.",
+    "badge": {
+      "name": "Citadel Guardian",
+      "description": "Awarded to bankers who can apply SAMA's cyber security, awareness, branch control and cyber-fraud rules in daily work."
+    },
+    "color": "#0e7490",
+    "cast": [
+      {
+        "id": "lama",
+        "name": "Lama Al-Mutairi",
+        "role": "Chief Information Security Officer, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#0b3d91"
+        }
+      },
+      {
+        "id": "priya",
+        "name": "Priya Raman",
+        "role": "Security Operations Centre Lead, Riyadh",
+        "look": {
+          "skin": 4,
+          "hair": "bun",
+          "color": "#6d28d9"
+        }
+      },
+      {
+        "id": "omar",
+        "name": "Omar Bakr",
+        "role": "Branch Manager, Al-Khobar",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#7c4a1e"
+        }
+      },
+      {
+        "id": "hessa",
+        "name": "Hessa Al-Shammari",
+        "role": "Customer Service Officer, Jeddah",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "yousef",
+        "name": "Yousef Haddad",
+        "role": "Head of Counter-Fraud, Riyadh",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "SAMA's Cyber Security Framework: Governance, Roles and Maturity",
+      "stage": "The Citadel Gate",
+      "summary": "Meet SAMA's 2017 Cyber Security Framework: its scope, four domains and maturity model, and who owns cyber security at a Saudi bank, from the board and cyber committee to the CISO and every member of staff.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the scope, structure and principle-based approach of SAMA's Cyber Security Framework",
+        "Describe the governance set-up SAMA expects: board, cyber committee, independent cyber function and CISO",
+        "Match cyber security responsibilities to the board, committee, senior management, CISO, internal audit and staff",
+        "Place a control on SAMA's maturity scale and explain why level 3 is the minimum"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one in the CISO office",
+          "setting": "Cyber Security Department, Rimal Bank head office, Olaya, Riyadh. 8:15 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "You have just joined Rimal Bank, a fictional conventional bank with branches from Jeddah to Al-Khobar, as Cyber Security Awareness Officer.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "Welcome! I'm Lama Al-Mutairi, the bank's CISO. Your timing is perfect: SAMA will review our Cyber Security Framework self-assessment this quarter.",
+              "mood": "happy"
+            },
+            {
+              "who": "priya",
+              "text": "Priya Raman, SOC lead. Bad news first: last week's phishing simulation. Forty-one staff clicked the link and nine typed their passwords.",
+              "mood": "worried"
+            },
+            {
+              "who": "omar",
+              "text": "Omar Bakr, branch manager in Al-Khobar. Some of those were my tellers. They say nobody ever trained them on this.",
+              "mood": "worried"
+            },
+            {
+              "who": "yousef",
+              "text": "Yousef Haddad, Counter-Fraud. And a customer in Jeddah lost savings to a caller who claimed to be from our bank.",
+              "mood": "angry"
+            },
+            {
+              "who": "lama",
+              "text": "So the board will ask one question: is our awareness programme real, or is it a poster on the wall?",
+              "mood": "thinking"
+            },
+            {
+              "who": "lama",
+              "text": "We start at the Citadel Gate: how SAMA's framework is built and who owns cyber security. Ready?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's Cyber Security Framework in one minute",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "One framework for the sector",
+              "narration": "SAMA issued its Cyber Security Framework by circular in May 2017. Every bank operating in Saudi Arabia must adopt it, and it replaced SAMA's earlier cyber security circulars."
+            },
+            {
+              "icon": "🔐",
+              "heading": "What it protects",
+              "narration": "The goal is the confidentiality, integrity and availability of information assets: electronic and paper information, applications, devices such as ATMs, storage media, premises and networks."
+            },
+            {
+              "icon": "🧭",
+              "heading": "Principle based",
+              "narration": "For each topic the framework sets a principle, an objective and control considerations. Where a control cannot be applied, the bank looks at compensating controls, internal risk acceptance and a formal waiver request to SAMA."
+            },
+            {
+              "icon": "📋",
+              "heading": "Self-assessment",
+              "narration": "Banks assess themselves periodically against a questionnaire, and SAMA reviews and audits those self-assessments to judge compliance and maturity."
+            },
+            {
+              "icon": "📈",
+              "heading": "Maturity",
+              "narration": "Maturity is scored from level 0 to level 5. SAMA expects member organisations to operate at level 3 or higher: controls defined, approved, implemented and monitored."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Four domains of the framework",
+          "caption": "All domains apply to banks. Awareness (3.1.6) and training (3.1.7) sit in the first domain, next to governance.",
+          "headers": [
+            "Domain",
+            "Main topics"
+          ],
+          "items": [
+            {
+              "label": "Domain 1",
+              "left": "Leadership and governance",
+              "right": "Governance, strategy, policy, roles, projects, awareness, training"
+            },
+            {
+              "label": "Domain 2",
+              "left": "Risk management and compliance",
+              "right": "Risk process, regulatory compliance, industry standards, reviews, audits"
+            },
+            {
+              "label": "Domain 3",
+              "left": "Operations and technology",
+              "right": "HR, access, applications, e-banking, events, incidents, threats"
+            },
+            {
+              "label": "Domain 4",
+              "left": "Third-party cyber security",
+              "right": "Contracts, vendors, outsourcing, cloud"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the scope of SAMA's Cyber Security Framework is accurate?",
+          "options": [
+            "It covers only systems connected to the internet",
+            "It covers electronic and physical information, devices, applications, premises and networks",
+            "It applies to banks only after SAMA approves a bank's opt-in request",
+            "It replaces the bank's fraud and physical security policies entirely"
+          ],
+          "answer": 1,
+          "explanation": "The framework lists electronic and hard-copy information, applications, machines such as ATMs, storage media, premises and networks. It links to fraud and physical security policies but does not replace their non-cyber parts."
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "The documentation pyramid at maturity level 3",
+          "caption": "Level 3 means the controls are written down, approved, implemented and monitored, with KPIs reported.",
+          "items": [
+            {
+              "label": "Policy: why",
+              "detail": "Board-endorsed. Says why cyber security matters and what must be protected."
+            },
+            {
+              "label": "Standards: what",
+              "detail": "Baselines such as password rules, segregation of duties, logging and backups."
+            },
+            {
+              "label": "Procedures: how",
+              "detail": "Step-by-step tasks for staff, third parties and customers."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Who owns cyber security at a Saudi bank",
+          "body": "The framework is clear that **the board carries ultimate responsibility**. It may delegate work to a **cyber security committee**, but not the accountability.\n\n- **Committee:** mandated by the board, headed by an **independent senior manager from a control function**, with the CISO and senior managers (for example COO, CIO, compliance) as members. Internal audit may sit in as an observer. The charter sets a minimum meeting frequency of **quarterly**.\n- **Cyber security function:** independent of IT, with separate reporting lines, budgets and staff evaluations. It reports to the CEO or managing director, or to the general manager of a control function.\n- **CISO:** a full-time senior manager, who must be a **Saudi national**, sufficiently qualified, and appointed only after SAMA gives **no objection**.\n- **Senior management:** makes sure staff accept and follow the policy and that cyber duties appear in job descriptions of key positions.\n- **Internal audit:** performs cyber security audits.\n- **Every member of staff:** complies with the cyber security policy, standards and procedures."
+        },
+        {
+          "type": "match",
+          "title": "Roles under section 3.1.4",
+          "prompt": "Match each role to a responsibility the framework gives it.",
+          "pairs": [
+            {
+              "left": "Board of directors",
+              "right": "Ultimate responsibility; allocates budget and endorses the strategy and policy"
+            },
+            {
+              "left": "Cyber security committee",
+              "right": "Approves and monitors programmes such as awareness, plus cyber KRIs and KPIs"
+            },
+            {
+              "left": "CISO",
+              "right": "Defines and runs the awareness programmes and oversees incident investigations"
+            },
+            {
+              "left": "Senior management",
+              "right": "Puts cyber duties into job descriptions of key positions and staff"
+            },
+            {
+              "left": "Internal audit",
+              "right": "Performs cyber security audits"
+            },
+            {
+              "left": "All staff",
+              "right": "Comply with the cyber security policy, standards and procedures"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A shortcut on the org chart",
+          "setting": "CISO office, Rimal Bank, Riyadh. Later that morning.",
+          "lines": [
+            {
+              "who": "omar",
+              "text": "Lama, a thought. Wouldn't it be simpler if cyber security just reported to the CIO? Same building, same systems.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lama",
+              "text": "Simpler, yes. But SAMA wants the cyber function independent of IT: its own reporting line, budget and staff evaluations.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "Otherwise the team that builds the systems also grades its own security homework.",
+              "mood": "neutral"
+            },
+            {
+              "who": "omar",
+              "text": "Fair. And who checks that the awareness programme actually works?",
+              "mood": "thinking"
+            },
+            {
+              "who": "lama",
+              "text": "The CISO runs it, the committee approves and monitors it, and internal audit tests it. Let's see how you would handle a real board proposal.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The cost-saving proposal",
+          "situation": "A board member at Rimal Bank proposes saving money by merging the cyber security function into the IT department under the CIO, and letting the CIO's deputy act as CISO part-time. The chief executive asks you for a one-line view before the board meets.",
+          "choices": [
+            {
+              "text": "Advise that the proposal conflicts with SAMA's framework: the cyber function must stay independent of IT, and the CISO must be a full-time senior manager approved by SAMA.",
+              "outcome": "Best answer. Section 3.1.1 calls for an independent function with separate reporting lines, budgets and evaluations, and a full-time CISO who is Saudi, qualified and appointed only after SAMA's no objection.",
+              "score": 2
+            },
+            {
+              "text": "Accept the merger but ask the CIO to send SAMA a yearly report on cyber security.",
+              "outcome": "A report does not cure the conflict of interest. The framework requires structural independence, not just reporting.",
+              "score": 0
+            },
+            {
+              "text": "Accept the merger for now and request a SAMA waiver later if inspectors raise it.",
+              "outcome": "Waivers exist for control considerations that cannot be applied, with compensating controls and risk acceptance. Choosing to break a governance requirement to save money is not that situation.",
+              "score": 0
+            },
+            {
+              "text": "Suggest keeping the function separate but letting the CISO role be part-time.",
+              "outcome": "Half right. Independence is kept, but the framework calls for a full-time senior manager as CISO.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Framework vocabulary",
+          "cards": [
+            {
+              "front": "Member Organization",
+              "back": "SAMA's term for the regulated institutions that must adopt the framework, including every bank operating in the Kingdom."
+            },
+            {
+              "front": "Control consideration",
+              "back": "A numbered control the framework mandates for a subdomain; the bank should apply it to reach the objective."
+            },
+            {
+              "front": "Waiver",
+              "back": "A formal request to SAMA when a control cannot be applied, after compensating controls and internal risk acceptance are considered."
+            },
+            {
+              "front": "Maturity level 3",
+              "back": "Structured and formalised: controls defined, approved, implemented and monitored, with KPIs."
+            },
+            {
+              "front": "Maturity level 4",
+              "back": "Managed and measurable: effectiveness is measured with KRIs and improved."
+            },
+            {
+              "front": "CIA triad",
+              "back": "Confidentiality, integrity and availability of information assets, the three objectives of cyber security."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Whose job is it?",
+          "prompt": "Sort each task to the role the framework gives it.",
+          "buckets": [
+            "Board",
+            "CISO",
+            "All staff"
+          ],
+          "items": [
+            {
+              "text": "Allocate sufficient budget for cyber security",
+              "bucket": 0
+            },
+            {
+              "text": "Approve the cyber security committee charter",
+              "bucket": 0
+            },
+            {
+              "text": "Define and conduct the awareness programmes",
+              "bucket": 1
+            },
+            {
+              "text": "Gather and analyse threat intelligence",
+              "bucket": 1
+            },
+            {
+              "text": "Measure and report cyber KRIs and KPIs",
+              "bucket": 1
+            },
+            {
+              "text": "Follow the password standard every day",
+              "bucket": 2
+            },
+            {
+              "text": "Comply with cyber policy, standards and procedures",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA's banking sector cyber strategy (2017)",
+          "body": "In **March 2017**, two months before the framework itself, SAMA published an **Information Security Strategy for the Banking Sector** in its Rulebook. SAMA's foreword explained why: public disclosures showed cyber attacks rising in number, impact and sophistication, globally and in the region, and cyber incidents can cross borders and disturb financial stability.\n\nThe strategy prepares the sector across **five domains: identify, protect, detect, respond and recover**, with an emphasis on threat intelligence and collaboration between SAMA and the banks. One of its aims is a sector-wide cyber security **education programme and awareness campaign**.\n\n**Lesson for you:** the awareness duty in section 3.1.6 is not a stand-alone rule. It is part of a sector plan in which every bank's staff, contractors and customers are a line of defence. When you design Rimal Bank's programme, you are delivering one piece of that national strategy.\n\n*Source: SAMA Rulebook, Information Security Strategy for the Banking Sector (1438H / 2017).*"
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "SAMA's maturity scale",
+          "caption": "A bank must meet every criterion of the lower levels before it can claim a higher one.",
+          "items": [
+            {
+              "label": "Level 0: Non-existent",
+              "detail": "No documentation, no awareness, no controls."
+            },
+            {
+              "label": "Level 1: Ad hoc",
+              "detail": "Controls partly defined and applied inconsistently."
+            },
+            {
+              "label": "Level 2: Repeatable but informal",
+              "detail": "Standard practice, but not written down or approved."
+            },
+            {
+              "label": "Level 3: Structured and formalised",
+              "detail": "Defined, approved, implemented, monitored with KPIs. SAMA's minimum expectation."
+            },
+            {
+              "label": "Level 4: Managed and measurable",
+              "detail": "Effectiveness measured with KRIs and improved."
+            },
+            {
+              "label": "Level 5: Adaptive",
+              "detail": "Continuous improvement, linked to enterprise risk, benchmarked against peers."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Rimal Bank runs a phishing awareness email every month, but nothing is written down or approved and no one measures the results. At what maturity level does this activity sit?",
+          "options": [
+            "Level 4: managed and measurable",
+            "Level 2: repeatable but informal",
+            "Level 3: structured and formalised",
+            "Level 5: adaptive"
+          ],
+          "answer": 1,
+          "explanation": "A standard, repeated practice that is not formally defined or approved is level 2. Level 3 needs the programme defined, approved, implemented and monitored with KPIs."
+        },
+        {
+          "type": "keypoints",
+          "title": "Citadel Gate: what to remember",
+          "items": [
+            "SAMA's Cyber Security Framework (May 2017) applies to every bank in the Kingdom, and all four domains apply to banks.",
+            "The board holds ultimate responsibility; a committee headed by an independent senior manager from a control function meets at least quarterly.",
+            "The cyber function is independent of IT, and the CISO is a full-time Saudi senior manager appointed after SAMA's no objection.",
+            "Banks self-assess periodically; SAMA reviews them and expects at least maturity level 3.",
+            "The cyber policy must include an awareness programme, and every member of staff must comply with policy, standards and procedures."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about your own bank: could you name the CISO, the committee that approves the awareness programme and the place where your own cyber duties are written? Which of these would you struggle to find?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-cy-s1-q1",
+          "question": "When did SAMA issue its Cyber Security Framework, and what happened to its earlier cyber circulars?",
+          "options": [
+            "March 2015; they remain in force alongside it",
+            "November 2021; they were merged into the IT framework",
+            "May 2017; the framework superseded them",
+            "October 2022; they now apply only to finance companies"
+          ],
+          "answer": 2,
+          "explanation": "The framework was issued by circular dated May 2017 and states that it supersedes SAMA's previously issued cyber security circulars.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s1-q2",
+          "question": "Which three objectives does the framework use to define cyber security?",
+          "options": [
+            "Confidentiality, integrity and availability",
+            "Prevention, detection and prosecution",
+            "Identity, authentication and authorisation",
+            "Governance, compliance and audit"
+          ],
+          "answer": 0,
+          "explanation": "The framework's general security objectives are confidentiality, integrity and availability of information assets.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s1-q3",
+          "question": "A bank cannot apply one control consideration because of a legacy core system. What route does the framework describe?",
+          "options": [
+            "Skip the control silently, since the framework is only guidance",
+            "Ask the vendor to certify the system as compliant instead",
+            "Report the gap in the next annual financial statements",
+            "Apply compensating controls, accept the risk internally and request a formal waiver from SAMA"
+          ],
+          "answer": 3,
+          "explanation": "Section 2.2 says that where a control cannot be applied the bank should consider compensating controls, internal risk acceptance and a formal waiver request to SAMA.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s1-q4",
+          "question": "What minimum maturity level does SAMA expect member organisations to reach?",
+          "options": [
+            "Level 1, ad hoc",
+            "Level 2, repeatable but informal",
+            "Level 5, adaptive",
+            "Level 3, structured and formalised"
+          ],
+          "answer": 3,
+          "explanation": "The framework says member organisations should at least operate at maturity level 3 or higher.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s1-q5",
+          "question": "Who should head Rimal Bank's cyber security committee?",
+          "options": [
+            "The Chief Information Officer",
+            "An independent senior manager from a control function",
+            "The head of internal audit",
+            "An external consultant chosen by the board"
+          ],
+          "answer": 1,
+          "explanation": "Section 3.1.1 says the committee should be headed by an independent senior manager from a control function. Internal audit may attend only as an observer.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s1-q6",
+          "question": "Which condition must be met before a bank appoints its CISO?",
+          "options": [
+            "SAMA must give its no objection to the appointment",
+            "The CISO must have ten years at the same bank",
+            "The board must hold a shareholder vote",
+            "The CISO must also chair the IT steering committee"
+          ],
+          "answer": 0,
+          "explanation": "The framework requires the CISO to be a Saudi national, sufficiently qualified, and appointed only after SAMA's no objection.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s1-q7",
+          "question": "The IT director proposes that the cyber team share IT's budget and be evaluated by IT managers. Why does this conflict with the framework?",
+          "options": [
+            "The framework bans cyber staff from working in the same building as IT",
+            "Only the board may evaluate cyber security staff",
+            "The cyber function must have separate reporting lines, budgets and staff evaluations from IT",
+            "Budgets for cyber security must be approved by SAMA each year"
+          ],
+          "answer": 2,
+          "explanation": "To avoid conflicts of interest, section 3.1.1 requires the cyber function to be independent of IT with separate reporting lines, budgets and evaluations.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s1-q8",
+          "question": "Under section 3.1.4, which body approves and monitors cyber security programmes such as the awareness programme?",
+          "options": [
+            "The cyber security committee",
+            "The internal audit function",
+            "The human resources department",
+            "The SAMA IT risk supervision team"
+          ],
+          "answer": 0,
+          "explanation": "The committee approves, communicates, supports and monitors cyber programmes, including awareness, and the cyber KRIs and KPIs. The CISO defines and runs them.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s1-q9",
+          "question": "What must the bank's cyber security policy say about awareness?",
+          "options": [
+            "That awareness is optional for staff who do not use computers",
+            "That awareness is delivered only after a cyber incident",
+            "That customers are excluded from awareness activity",
+            "That relevant stakeholders are made aware of cyber security and their expected behaviour"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.1.3 lists, among the policy's requirements, that relevant stakeholders are made aware of cyber security and expected behaviour through an awareness programme.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s1-q10",
+          "question": "How often, at a minimum, should the cyber security committee meet according to its charter requirements?",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Twice a year",
+            "Annually"
+          ],
+          "answer": 1,
+          "explanation": "The committee charter must reflect a meeting frequency with a minimum of quarterly meetings.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Awareness and Training under Sections 3.1.6 and 3.1.7",
+      "stage": "The Lantern Hall",
+      "summary": "Build an awareness programme SAMA would recognise: three audiences, tailored content, activity through the year and measured effectiveness, plus specialist cyber training, IT staff competence and continuity awareness.",
+      "minutes": 45,
+      "objectives": [
+        "Apply the awareness requirements of section 3.1.6 to staff, third parties and customers",
+        "Identify the groups that need specialist training under section 3.1.7 and the HR-related duties in section 3.3.1",
+        "Describe the IT staff competence and training rules of SAMA's IT Governance Framework",
+        "Choose measures that show whether an awareness programme works"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The poster problem",
+          "setting": "Learning and Development room, Rimal Bank head office, Riyadh. Monday, 9:00 am.",
+          "lines": [
+            {
+              "who": "lama",
+              "text": "Here is our current 'awareness programme': one e-learning module from three years ago and a poster in the lift.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "The simulation results match. People who clicked had never seen a spear-phishing example aimed at our own executives.",
+              "mood": "neutral"
+            },
+            {
+              "who": "omar",
+              "text": "My tellers want short, practical sessions. They can't leave the counter for half a day.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yousef",
+              "text": "And my investigators need deep training, not the same slides as everyone else.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "Then you have just described sections 3.1.6 and 3.1.7: awareness for everyone, tailored by audience, and specialist training for key roles.",
+              "mood": "proud"
+            },
+            {
+              "who": "lama",
+              "text": "Welcome to the Lantern Hall. Let's build a programme SAMA would recognise.",
+              "mood": "happy"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Section 3.1.6: the awareness principle",
+          "scenes": [
+            {
+              "icon": "🎯",
+              "heading": "The goal",
+              "narration": "SAMA wants a risk-aware culture in which staff, third parties and customers make sound, risk-based decisions that protect the bank's information."
+            },
+            {
+              "icon": "👥",
+              "heading": "Three audiences",
+              "narration": "The programme must be defined and run for three groups: the bank's staff, its third parties such as contractors and suppliers, and its customers."
+            },
+            {
+              "icon": "📣",
+              "heading": "Tailored and multi-channel",
+              "narration": "It should target behaviour, be tailored to different groups and reach them through several channels. Activities run periodically and throughout the year, not once."
+            },
+            {
+              "icon": "📚",
+              "heading": "Minimum content",
+              "narration": "At a minimum it explains the security measures in place, the roles and responsibilities for cyber security, and current threats, with spear-phishing and whaling given as examples."
+            },
+            {
+              "icon": "📏",
+              "heading": "Measured",
+              "narration": "The programme must be evaluated to measure its effectiveness and to recommend improvements. Customer awareness must cover retail and commercial customers and suggest protective steps they can take."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The awareness programme cycle",
+          "caption": "Section 3.1.6 asks for a programme that is approved, tailored, periodic and evaluated.",
+          "items": [
+            {
+              "label": "Define and approve",
+              "detail": "CISO designs; committee approves the programme."
+            },
+            {
+              "label": "Tailor by audience",
+              "detail": "Staff, third parties, retail and commercial customers."
+            },
+            {
+              "label": "Deliver all year",
+              "detail": "Multiple channels, periodic activities, current threats."
+            },
+            {
+              "label": "Evaluate",
+              "detail": "Measure effectiveness with tests, simulations and surveys."
+            },
+            {
+              "label": "Improve",
+              "detail": "Turn results into recommendations and update content."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which audience does section 3.1.6 require the awareness programme to cover in addition to staff and third parties?",
+          "options": [
+            "Only the board of directors",
+            "The bank's customers",
+            "Shareholders holding more than 5%"
+          ],
+          "answer": 1,
+          "explanation": "The programme must be defined and conducted for staff, third parties and customers of the bank. Customer awareness covers retail and commercial customers."
+        },
+        {
+          "type": "sort",
+          "title": "Awareness or training?",
+          "prompt": "Sort each activity into the section of the framework it mainly supports.",
+          "buckets": [
+            "3.1.6 Awareness",
+            "3.1.7 Training"
+          ],
+          "items": [
+            {
+              "text": "A quarterly email on a new whaling technique aimed at executives",
+              "bucket": 0
+            },
+            {
+              "text": "A secure-coding course for developers who maintain the mobile app",
+              "bucket": 1
+            },
+            {
+              "text": "Advice on the website listing protections business customers can use",
+              "bucket": 0
+            },
+            {
+              "text": "A risk-assessment method course for staff who assess information assets",
+              "bucket": 1
+            },
+            {
+              "text": "A short video for contractors on how to report a suspicious message",
+              "bucket": 0
+            },
+            {
+              "text": "Incident-handling skills training for the cyber security function",
+              "bucket": 1
+            },
+            {
+              "text": "A phishing simulation followed by a one-page explanation",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Section 3.1.7: specialist training",
+          "body": "Awareness changes behaviour across the whole bank. **Training** builds skills for people whose jobs carry specific cyber duties. The framework requires **specialist or security-related skills training** in line with job descriptions for at least four groups:\n\n- **Key roles** in the organisation;\n- **Staff of the cyber security function**;\n- **Staff who develop and technically maintain information assets** (developers, system and database administrators);\n- **Staff involved in risk assessments**.\n\nIt also asks for **education** so staff can operate the bank's information assets securely.\n\nOther parts of the framework reinforce this. Under **human resources (3.3.1)**, staff receive cyber awareness **at the start of and during** their employment, staff agreements carry cyber duties and non-disclosure clauses that last after employment ends, and disciplinary consequences are defined. The **security operations centre** and the **incident team** both need skilled and continuously trained staff."
+        },
+        {
+          "type": "match",
+          "title": "Who needs what",
+          "prompt": "Match each group at Rimal Bank to the learning SAMA's frameworks expect.",
+          "pairs": [
+            {
+              "left": "All new joiners",
+              "right": "Cyber awareness at the start of employment, then throughout it"
+            },
+            {
+              "left": "Database administrators",
+              "right": "Specialist skills training linked to their job description"
+            },
+            {
+              "left": "SOC analysts",
+              "right": "Skilled and continuously trained staff for 24x7 monitoring"
+            },
+            {
+              "left": "Retail customers",
+              "right": "Awareness on threats and protective steps through bank channels"
+            },
+            {
+              "left": "Critical IT role holders",
+              "right": "Specialist training and defined professional certifications"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The IT department's turn",
+          "setting": "IT Steering Committee pre-meeting, Riyadh.",
+          "lines": [
+            {
+              "who": "priya",
+              "text": "Our IT colleagues asked whether the cyber framework is the only one that sets training rules for them.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lama",
+              "text": "No. SAMA's IT Governance Framework of 2021 has its own section on staff competence and training.",
+              "mood": "neutral"
+            },
+            {
+              "who": "omar",
+              "text": "So IT staff get it from both sides?",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "Exactly. Cyber skills from 3.1.7, IT competence from the IT framework. And people with continuity roles have a third source in the BCM framework.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "IT Governance Framework section 3.1.8: staff competence",
+          "caption": "The CIO defines the IT training plan in coordination with HR (section 3.1.5).",
+          "items": [
+            {
+              "label": "Identify critical IT roles",
+              "detail": "For example database and system administrators."
+            },
+            {
+              "label": "No single point of failure",
+              "detail": "A critical role must not depend on only one person."
+            },
+            {
+              "label": "Define certifications",
+              "detail": "Name the professional certifications critical roles need."
+            },
+            {
+              "label": "Annual IT training plan",
+              "detail": "Prepared each year, with the CIO and HR, and reviewed periodically."
+            },
+            {
+              "label": "Formal and specialist training",
+              "detail": "For existing and new IT staff, contractors, and specialist roles."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "One course for everyone?",
+          "situation": "To save budget, Rimal Bank's HR team proposes a single 30-minute annual e-learning on cyber security for every employee, contractor and IT specialist, with no follow-up. They ask whether this meets SAMA's expectations.",
+          "choices": [
+            {
+              "text": "Keep a baseline module for all, but add tailored activities through the year, specialist training for the 3.1.7 groups, an annual IT training plan, and measures of effectiveness.",
+              "outcome": "Best answer. Section 3.1.6 wants tailored, periodic, evaluated awareness; 3.1.7 and the IT framework want specialist training for named groups; IT needs an annual training plan.",
+              "score": 2
+            },
+            {
+              "text": "Accept the single module, because the framework does not name a minimum number of hours.",
+              "outcome": "The framework is silent on hours, but it clearly asks for tailoring, periodic activity through the year, specialist skills training and evaluation. One module does none of that.",
+              "score": 0
+            },
+            {
+              "text": "Accept it for staff but run a separate technical course for IT and cyber teams.",
+              "outcome": "Better, because specialist training is covered. But awareness still needs tailoring by audience, activity through the year and evaluation of effectiveness.",
+              "score": 1
+            },
+            {
+              "text": "Replace training with a signed declaration that staff have read the policy.",
+              "outcome": "Declarations have a place, but they do not build skills or awareness and do not satisfy sections 3.1.6 or 3.1.7.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Training sources at a glance",
+          "cards": [
+            {
+              "front": "CSF 3.1.6",
+              "back": "Cyber awareness programme for staff, third parties and customers, run through the year and evaluated."
+            },
+            {
+              "front": "CSF 3.1.7",
+              "back": "Specialist skills training for key roles, cyber staff, developers and maintainers, and risk assessors."
+            },
+            {
+              "front": "CSF 3.3.1",
+              "back": "HR process: awareness at the start and during employment, NDAs, disciplinary measures, screening."
+            },
+            {
+              "front": "ITGF 3.1.8",
+              "back": "Critical IT roles, certifications, annual IT training plan, formal training for IT staff and contractors."
+            },
+            {
+              "front": "BCM framework",
+              "back": "A training and awareness programme so staff and suppliers know continuity plans and their roles."
+            },
+            {
+              "front": "Counter-Fraud 4.3",
+              "back": "Fraud awareness for employees, customers and third parties, with knowledge checks for staff."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA's Cyber Anti-Fraud Program (2023-2024)",
+          "body": "In **September 2023** SAMA announced the first edition of its **Cyber Anti-Fraud Program**: a three-month programme of intensive cyber fraud education and on-the-job training for a cohort drawn from SAMA and local banks, run with a British university and international specialist organisations.\n\nIn **February 2024** SAMA's Vice Governor for Supervision and Technology honoured the graduates in Riyadh. SAMA said the programme exposed trainees to international practice, real-world fraud scenarios and detection methods, including hands-on work with global banks, and described the fight against cyber fraud as a top priority.\n\n**Lesson for you:** the regulator itself invests in specialist cyber and fraud skills, not only general awareness. When SAMA reviews your training records, expect questions about how specialist roles are developed, not just completion rates for an e-learning module.\n\n*Sources: SAMA news releases, 19 September 2023 and 5 February 2024.*"
+        },
+        {
+          "type": "check",
+          "question": "Under the IT Governance Framework, which of these is a staff competence requirement?",
+          "options": [
+            "Critical IT roles must not be handled by only one staff member",
+            "IT staff must sit an external exam every quarter",
+            "Contractors are excluded from formal IT training"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.1.8 asks banks to ensure adequate staffing so a critical IT role is not handled by only one person, and requires formal training for IT staff and, where applicable, contractors."
+        },
+        {
+          "type": "tip",
+          "title": "Make evaluation real",
+          "body": "SAMA asks you to **measure effectiveness**, not attendance. Useful measures:\n\n- Click and report rates in phishing simulations, tracked by department over time;\n- Short knowledge checks after each campaign, with retakes for low scores;\n- Number and speed of suspicious-message reports to the SOC;\n- Incidents traced to human error, before and after a campaign.\n\nReport these as KPIs and KRIs to the cyber security committee, then change the content."
+        },
+        {
+          "type": "keypoints",
+          "title": "Lantern Hall: what to remember",
+          "items": [
+            "Section 3.1.6: an approved awareness programme for staff, third parties and customers, tailored, multi-channel, run through the year and evaluated.",
+            "Minimum content: security measures, roles and responsibilities, and current threats such as spear-phishing and whaling.",
+            "Section 3.1.7: specialist training for key roles, cyber staff, developers and maintainers of information assets, and risk assessors.",
+            "HR processes give awareness at the start and during employment and bind staff to confidentiality after they leave.",
+            "The IT Governance Framework adds critical IT roles, certifications and an annual IT training plan; the BCM framework adds continuity awareness."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one group in your bank, such as tellers, developers or business customers. What would a tailored awareness activity for them look like, and how would you prove it changed behaviour?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-cy-s2-q1",
+          "question": "What objective does section 3.1.6 set for the cyber security awareness programme?",
+          "options": [
+            "A certificate for every employee before they use email",
+            "A risk-aware culture where people make risk-based decisions that protect information",
+            "A reduction in IT spending on security tools",
+            "Full transfer of cyber risk to customers"
+          ],
+          "answer": 1,
+          "explanation": "The objective is a cyber risk-aware culture in which staff, third parties and customers make effective risk-based decisions that protect the bank's information.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s2-q2",
+          "question": "How often should awareness programme activities run under section 3.1.6?",
+          "options": [
+            "Once at induction only",
+            "Only after a reported incident",
+            "Periodically and throughout the year",
+            "Every three years with the policy review"
+          ],
+          "answer": 2,
+          "explanation": "The control consideration says the activities should be conducted periodically and throughout the year.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s2-q3",
+          "question": "Which threats does the framework name as examples of emerging threats the awareness programme must cover?",
+          "options": [
+            "Ransomware and cryptojacking",
+            "Skimming and cash trapping",
+            "Insider trading and front running",
+            "Spear-phishing and whaling"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.1.6 requires information on relevant emerging events and threats and gives spear-phishing and whaling as examples.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s2-q4",
+          "question": "What must customer awareness include at a minimum?",
+          "options": [
+            "A list of suggested security mechanisms customers can use to reduce their own risk",
+            "The bank's internal incident reports for the year",
+            "Details of the bank's firewall configuration",
+            "A copy of the CISO's annual report to the board"
+          ],
+          "answer": 0,
+          "explanation": "Customer awareness must address retail and commercial customers and include suggested mechanisms they may implement to lower their own risk.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s2-q5",
+          "question": "A developer who maintains Rimal Bank's mobile banking app asks which section requires her to receive specialist security training. What do you answer?",
+          "options": [
+            "Section 3.1.6, which applies only to customers",
+            "Section 3.1.7, which covers staff who develop and technically maintain information assets",
+            "Section 3.4.1, which applies to vendor contracts",
+            "Section 3.3.13, which applies to ATM networks"
+          ],
+          "answer": 1,
+          "explanation": "Section 3.1.7 lists staff involved in developing and technically maintaining information assets among the groups needing specialist skills training.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s2-q6",
+          "question": "Under the HR subdomain (3.3.1), when should staff receive cyber security awareness?",
+          "options": [
+            "Only when they are promoted",
+            "Only when they leave the bank",
+            "At the start of and during their employment",
+            "Only if they fail a phishing test"
+          ],
+          "answer": 2,
+          "explanation": "The HR process should ensure staff receive cyber awareness at the start and during their employment.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s2-q7",
+          "question": "Under the IT Governance Framework, who defines the IT training plan, and with whom?",
+          "options": [
+            "The CIO, in coordination with HR",
+            "The CISO, in coordination with SAMA",
+            "Internal audit, with the board",
+            "Each IT employee, with their line manager"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.1.5 makes the CIO accountable for defining the IT training plan in coordination with HR.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s2-q8",
+          "question": "Rimal Bank has one experienced database administrator who alone runs the core database. Which IT Governance Framework requirement is at risk?",
+          "options": [
+            "Keeping the IT budget within the board's limits",
+            "Logging every user request with a reference number",
+            "Approving changes through the change advisory board",
+            "Ensuring critical IT roles are not handled by only one staff member"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.1.8 requires adequate staffing so critical IT roles do not rest with only one staff member.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s2-q9",
+          "question": "The awareness team reports that 98% of staff completed the e-learning. Why might the cyber security committee still challenge the programme?",
+          "options": [
+            "Section 3.1.6 asks for the programme's effectiveness to be measured, not just completion",
+            "Completion above 95% must be reported to SAMA within five days",
+            "E-learning is not permitted as an awareness channel",
+            "Completion data belongs to HR and cannot be shared"
+          ],
+          "answer": 0,
+          "explanation": "The framework requires evaluation of the programme to measure effectiveness and recommend improvements. Completion alone does not show changed behaviour.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s2-q10",
+          "question": "Under the IT Governance Framework, who must receive formal training as a minimum?",
+          "options": [
+            "Only IT managers above a set grade",
+            "Only staff who hold professional certificates",
+            "Existing and new IT staff, and contractors where applicable",
+            "Only staff who joined in the current year"
+          ],
+          "answer": 2,
+          "explanation": "Section 3.1.8 requires formal training at a minimum for existing and new IT staff and, where applicable, contractors.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Phishing, Social Engineering and Cyber-Enabled Fraud",
+      "stage": "The Mirage Market",
+      "summary": "Recognise spear-phishing, whaling, impersonation and account takeover, and apply SAMA's counter-fraud rules on staff and customer awareness, authentication and immediate reporting of new fraud types.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise the stages and warning signs of social-engineering attacks on staff and customers",
+        "Explain the employee, customer and third-party awareness duties in SAMA's Counter-Fraud Framework",
+        "Apply authentication safeguards from the Counter-Fraud and Cyber Security frameworks",
+        "Respond to a suspected scam at the counter and know when SAMA must be told"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The caller who knew too much",
+          "setting": "Counter-Fraud Department, Rimal Bank, Riyadh. Tuesday, 10:30 am.",
+          "lines": [
+            {
+              "who": "yousef",
+              "text": "Here's the Jeddah case. The customer got a call from someone 'from Rimal Bank security'. He knew her name and her last card purchase.",
+              "mood": "worried"
+            },
+            {
+              "who": "hessa",
+              "text": "Hessa Al-Shammari, customer service in Jeddah. She came to my desk crying. The caller said her account was under attack and asked for the code we had just texted her.",
+              "mood": "worried"
+            },
+            {
+              "who": "priya",
+              "text": "That code was for adding a new beneficiary. Within minutes the money went out in several transfers.",
+              "mood": "angry"
+            },
+            {
+              "who": "lama",
+              "text": "Social engineering. No firewall was broken; a person was persuaded.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yousef",
+              "text": "SAMA's Counter-Fraud Framework calls this cyber-enabled fraud, often run by organised groups across borders.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "Welcome to the Mirage Market, where nothing is what it seems. Let's learn to see through it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How social engineering works",
+          "scenes": [
+            {
+              "icon": "🎭",
+              "heading": "Pretend to be trusted",
+              "narration": "The attacker poses as someone the victim trusts: the bank, SAMA, a government body, a courier or a senior manager."
+            },
+            {
+              "icon": "⏰",
+              "heading": "Create urgency",
+              "narration": "There is always a reason to act now: an account about to be frozen, a prize about to expire, a director waiting for a payment."
+            },
+            {
+              "icon": "🔑",
+              "heading": "Ask for the key",
+              "narration": "The real goal is a password, a one-time code, card details, or a payment the victim approves themselves."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Spear-phishing and whaling",
+              "narration": "Spear-phishing is a message crafted for one person or team. Whaling targets senior executives. SAMA's framework names both as threats the awareness programme must cover."
+            },
+            {
+              "icon": "🛑",
+              "heading": "The defence",
+              "narration": "Stop, verify through an official channel you already know, and report. Banks never need your full password or a one-time code over the phone."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "From a message to a loss",
+          "caption": "Each stage is a chance to stop the attack: aware people break the early stages, bank controls break the later ones.",
+          "items": [
+            {
+              "label": "Bait",
+              "detail": "SMS, call, email or social media post that looks official."
+            },
+            {
+              "label": "Hook",
+              "detail": "A link to a fake site or a request to call back."
+            },
+            {
+              "label": "Capture",
+              "detail": "Credentials, card data or one-time codes handed over."
+            },
+            {
+              "label": "Takeover",
+              "detail": "New device, new beneficiary, higher limits."
+            },
+            {
+              "label": "Cash-out",
+              "detail": "Fast transfers to mule accounts."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A message says it is from SAMA and that the central bank is holding funds for the recipient, who should 'update details' through a link. Based on SAMA's own warning, what should staff tell customers?",
+          "options": [
+            "Update the details quickly before the funds expire",
+            "SAMA does not hold deposits for individuals; ignore the message and use official sources only",
+            "Forward the link to the branch so a teller can complete it"
+          ],
+          "answer": 1,
+          "explanation": "SAMA's 2020 warning said it does not keep deposits or money belonging to individuals and urged people to get information only from official sources."
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA warns of messages using its name (2020)",
+          "body": "On **19 October 2020** SAMA warned citizens and residents about fraud attempts in which callers and text messages used SAMA's name, or claimed to come from one of its employees.\n\nSAMA said it had detected a number of fraudulent calls and messages that tried to obtain personal banking data. The fraudsters told recipients that SAMA was holding money for them, or asked them to \"update\" account information by calling a number or opening a **phishing link**.\n\nSAMA reminded the public that it **does not keep deposits or money for individuals** and does not carry out transactions for them. The aim of such schemes, it said, is to steal money or to use the victim's account for illegal transactions. People should rely on **official sources only**.\n\n**Lesson for you:** impersonation of trusted bodies is a standard opening move. Staff need to recognise it, and customers need the same message through every channel.\n\n*Source: SAMA news release, 19 October 2020.*"
+        },
+        {
+          "type": "sort",
+          "title": "Red flag or routine?",
+          "prompt": "Sort each situation at Rimal Bank.",
+          "buckets": [
+            "Red flag",
+            "Routine"
+          ],
+          "items": [
+            {
+              "text": "A caller 'from the bank' asks the customer to read out the code just sent by SMS",
+              "bucket": 0
+            },
+            {
+              "text": "An email from the 'CEO' asks a finance officer to make an urgent, confidential transfer",
+              "bucket": 0
+            },
+            {
+              "text": "A text links to a site with the bank's logo asking for card details to 'unfreeze' an account",
+              "bucket": 0
+            },
+            {
+              "text": "A customer gets an SMS confirming a beneficiary they added themselves in the app",
+              "bucket": 1
+            },
+            {
+              "text": "A login from a new device and country followed by a new beneficiary",
+              "bucket": 0
+            },
+            {
+              "text": "The official app asks the customer to confirm a transfer they started",
+              "bucket": 1
+            },
+            {
+              "text": "An IT 'support' visitor at the branch is not on the maintenance list",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What the Counter-Fraud Framework adds",
+          "body": "SAMA's **Counter-Fraud Framework** (October 2022) applies to banks and must be read with the Cyber Security Framework. It opens by noting that small, individual frauds have given way to **large-scale cyber-enabled fraud** run by **international organised groups**.\n\nIts fraud types include **social engineering** (credential capture and scams), **account takeover**, **impersonation** and **mule fraud**.\n\nFor people, it requires:\n- **Employees:** fraud training at or soon after onboarding, refreshed regularly, with a **knowledge check**; those who fail repeat it. Branch customer-facing staff, managers with authority and fraud teams get **specialised training**. The board and senior management get training suited to their roles. Records are kept.\n- **Customers:** awareness on current scams and how to report fraud, delivered through **all channels** the bank uses, with extra support for vulnerable customers and victims.\n- **Third parties:** proportionate awareness, agreed in contracts.\n\nWhen a new fraud type appears, staff and customers must be warned **immediately**."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Authentication rules that defeat social engineering",
+          "caption": "From the Counter-Fraud Framework (4.4) and the Cyber Security Framework (3.3.13).",
+          "headers": [
+            "Rule",
+            "Extra safeguard"
+          ],
+          "items": [
+            {
+              "label": "Multi-factor authentication",
+              "left": "Not only an SMS one-time password",
+              "right": "Add app approval, trusted device, location or behaviour checks"
+            },
+            {
+              "label": "SMS one-time password",
+              "left": "States purpose, amount and merchant",
+              "right": "Sent in the customer's chosen language"
+            },
+            {
+              "label": "Changing the mobile number",
+              "left": "Only at a branch or an ATM",
+              "right": "SMS alert to both old and new numbers"
+            },
+            {
+              "label": "Wrong passwords or PINs",
+              "left": "Access revoked after 3 in a row",
+              "right": "Same for ATM cards after 3 invalid PINs"
+            },
+            {
+              "label": "Unusual session",
+              "left": "New device or location, risky IP",
+              "right": "Third authentication factor required"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Inside the attack",
+          "setting": "SOC war room, Riyadh. 2:00 pm.",
+          "lines": [
+            {
+              "who": "priya",
+              "text": "Timeline of the Jeddah case: new device login, then a new beneficiary, then five transfers within the hour.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yousef",
+              "text": "The framework lists exactly those as high-risk activities: new device, adding a beneficiary, unusual transfer rates.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "And because this looks like a new pattern targeting our customers, the Counter-Fraud Framework wants SAMA told immediately.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hessa",
+              "text": "What can I do at the desk next time?",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "Spot it, stop it, report it. Let's practise.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "At Hessa's desk",
+          "situation": "An elderly customer arrives at the Jeddah branch, phone in hand. A man on the line says he is from Rimal Bank's fraud team and needs the customer to read out the code he has just received 'to block a hacker'. The customer asks Hessa to help him read the small print.",
+          "choices": [
+            {
+              "text": "Calmly tell the customer not to share the code, end the call, check his account and recent changes through bank systems, and report the attempt to the fraud team at once.",
+              "outcome": "Best answer. A real bank team never needs a customer's one-time code. Fast internal reporting lets the bank protect the account and, if the pattern is new, warn others and SAMA.",
+              "score": 2
+            },
+            {
+              "text": "Read the code to the caller because he says he is from the fraud team.",
+              "outcome": "This hands the fraudster the key. One-time codes authorise actions such as adding beneficiaries; sharing one completes the attack.",
+              "score": 0
+            },
+            {
+              "text": "Tell the customer to hang up, but do not log anything because no money was lost.",
+              "outcome": "Stopping the call is right, but the attempt must be reported. The framework asks banks to notify SAMA of new fraud typologies even when there is no financial loss.",
+              "score": 1
+            },
+            {
+              "text": "Ask the caller for his staff number and continue if it sounds genuine.",
+              "outcome": "Fraudsters can invent staff numbers. Verification must go through a channel the bank controls, not through the caller.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Respond to a suspected social-engineering attack",
+          "prompt": "Put Hessa's actions in the best order.",
+          "steps": [
+            "Stop the interaction: the customer shares nothing more",
+            "Check the account for recent logins, beneficiaries and transfers",
+            "Report to the fraud team through the bank's internal channel",
+            "The fraud team blocks or restricts the account if needed",
+            "Counter-Fraud assesses whether SAMA must be notified",
+            "Give the customer guidance on spotting future scams"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA's urgent anti-fraud measures (April 2022)",
+          "body": "On **8 April 2022** SAMA announced urgent, temporary measures for all banks after a **notable rise in fraudulent websites and social media accounts** and repeated **social-engineering scams** in which customers believed they were dealing with official bodies and revealed passwords and verification codes.\n\nThe measures included **suspending remote account opening** and setting a **daily transfer limit of SAR 60,000** for individuals and individual enterprises, which customers could choose to raise.\n\nOn **12 April 2022**, after re-evaluation, SAMA restored the previous daily limit (customers could still lower it) and allowed remote account opening again under standard procedures. Both times SAMA urged consumers never to disclose passwords or verification codes and to use only trusted websites.\n\n**Lesson for you:** when social engineering spikes, the regulator can change how every bank operates overnight. Front-line staff must explain such changes calmly and accurately.\n\n*Sources: SAMA news releases, 8 and 12 April 2022.*"
+        },
+        {
+          "type": "check",
+          "question": "Which control does the Counter-Fraud Framework set for multi-factor authentication?",
+          "options": [
+            "MFA may rely solely on SMS one-time passwords",
+            "MFA should not rely solely on SMS one-time passwords",
+            "MFA is needed only for corporate customers"
+          ],
+          "answer": 1,
+          "explanation": "Section 4.4 says MFA for identification or transaction verification should not consist solely of SMS OTPs and lists additional factors such as app approval on a trusted device."
+        },
+        {
+          "type": "flip",
+          "title": "Cyber-enabled fraud terms",
+          "cards": [
+            {
+              "front": "Scam",
+              "back": "The victim is tricked into making or authorising a payment to a criminal's account, often after impersonation of a bank, investor or government body."
+            },
+            {
+              "front": "Account takeover",
+              "back": "A criminal gains access to a customer's product or device to control funds or transact."
+            },
+            {
+              "front": "Mule account",
+              "back": "An account, often opened remotely, used to receive stolen funds and launder the proceeds."
+            },
+            {
+              "front": "Whaling",
+              "back": "A targeted attack on senior executives, named in SAMA's framework as an example threat."
+            },
+            {
+              "front": "Trusted device",
+              "back": "A device the customer owns, controls and uses often; transactions from others get extra checks."
+            },
+            {
+              "front": "New typology",
+              "back": "A fraud type not seen before; banks must tell SAMA immediately, even without a loss."
+            }
+          ]
+        },
+        {
+          "type": "keypoints",
+          "title": "Mirage Market: what to remember",
+          "items": [
+            "Social engineering targets people, not systems: impersonation, urgency and a request for credentials or codes.",
+            "SAMA's awareness rules name spear-phishing and whaling; its fraud framework names scams, account takeover, impersonation and mules.",
+            "Employees get fraud training at onboarding and regularly, with a knowledge check; branch staff get specialised training.",
+            "MFA must not rely only on SMS codes; mobile number changes happen only at a branch or ATM, with alerts to both numbers.",
+            "New fraud types must be reported to SAMA immediately, and staff and customers warned straight away."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall a suspicious call, SMS or email you or a customer received. Which of the warning signs from this stage did it show, and what would you now do differently?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-cy-s3-q1",
+          "question": "How does the Counter-Fraud Framework describe the shift in fraud facing Saudi banks?",
+          "options": [
+            "From small individual incidents to large-scale cyber-enabled fraud by international organised groups",
+            "From cyber fraud back to cheque fraud as digital use falls",
+            "From organised groups to lone insiders acting alone",
+            "From card fraud to fraud limited to corporate customers"
+          ],
+          "answer": 0,
+          "explanation": "The framework's introduction says small-scale incidents have been replaced by large-scale cyber-enabled attacks orchestrated by international organised groups.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s3-q2",
+          "question": "Which pair of threats does section 3.1.6 of the Cyber Security Framework give as examples for awareness content?",
+          "options": [
+            "Skimming and shoulder surfing",
+            "Malware and adware",
+            "Vishing and SIM swap",
+            "Spear-phishing and whaling"
+          ],
+          "answer": 3,
+          "explanation": "The framework gives spear-phishing and whaling as examples of emerging threats the programme must cover.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s3-q3",
+          "question": "A finance officer receives an email that seems to come from the chief executive, asking for an urgent confidential transfer. What type of attack is this most likely to be?",
+          "options": [
+            "A routine instruction that only needs the officer's own approval",
+            "A targeted spear-phishing attempt using impersonation of a senior manager",
+            "A denial-of-service attack on the payment system",
+            "A vulnerability scan by the internal security team"
+          ],
+          "answer": 1,
+          "explanation": "A crafted message impersonating a senior figure to get an urgent payment is classic spear-phishing; whaling is when executives themselves are the target.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s3-q4",
+          "question": "Under the Counter-Fraud Framework, what must happen when an employee fails the knowledge check at the end of fraud training?",
+          "options": [
+            "The employee is dismissed under the disciplinary policy",
+            "The result is reported to SAMA within five days",
+            "The employee repeats the training, and pass rates are monitored",
+            "The employee signs a declaration instead"
+          ],
+          "answer": 2,
+          "explanation": "Section 4.3.1 requires a knowledge check; staff who fail must repeat the training, and repeated failures lead to action such as re-training another way.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s3-q5",
+          "question": "What did SAMA's October 2020 warning say about the central bank's relationship with individuals' money?",
+          "options": [
+            "SAMA does not keep deposits or money for individuals or transact on their behalf",
+            "SAMA holds unclaimed deposits and pays them through text links",
+            "SAMA verifies individual accounts by phone each year",
+            "SAMA refunds scam losses directly to individuals"
+          ],
+          "answer": 0,
+          "explanation": "The warning stated that SAMA does not keep deposits or money belonging to individuals and does not carry out transactions for them.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s3-q6",
+          "question": "Which temporary measure did SAMA announce for banks on 8 April 2022 in response to rising social-engineering scams?",
+          "options": [
+            "A ban on all mobile banking for one month",
+            "A requirement for every transfer to be approved at a branch",
+            "Closure of all ATMs outside major cities",
+            "A SAR 60,000 daily transfer limit for individuals and suspension of remote account opening"
+          ],
+          "answer": 3,
+          "explanation": "SAMA set a SAR 60,000 daily limit for individuals and individual enterprises and suspended remote account opening; it eased both on 12 April 2022.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s3-q7",
+          "question": "A customer wants to change the mobile number linked to online banking by calling the contact centre. What does the Cyber Security Framework require?",
+          "options": [
+            "The change may be done by phone after two security questions",
+            "The change may be done only at a branch or an ATM",
+            "The change may be done by email with a scanned ID",
+            "The change may be done in the app with an SMS code to the new number"
+          ],
+          "answer": 1,
+          "explanation": "Section 3.3.13 says the customer's mobile number may be changed only from a branch or ATM, and an SMS alert goes to both the old and new numbers.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s3-q8",
+          "question": "Rimal Bank detects a scam method it has never seen before. No customer has lost money yet. What does the Counter-Fraud Framework expect?",
+          "options": [
+            "Wait until a loss occurs, then report it in the annual return",
+            "Inform only the internal audit committee at its next meeting",
+            "Notify SAMA immediately, since new typologies are reported even without a loss",
+            "Report it only if more than ten customers are targeted"
+          ],
+          "answer": 2,
+          "explanation": "Section 3.7 requires immediate notification to SAMA of any new fraud typology whether or not it caused a financial loss.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s3-q9",
+          "question": "A session shows a login from an unknown device in a new country, followed by a transfer to a newly added beneficiary. What does the Counter-Fraud Framework require?",
+          "options": [
+            "A third authentication factor to validate the instruction",
+            "No extra step, as the customer entered the right password",
+            "Automatic approval if the amount is below SAR 1,000",
+            "A delayed transfer with no customer contact"
+          ],
+          "answer": 0,
+          "explanation": "Section 4.4 requires a third factor for anomalous sessions and for transactions from a non-trusted device to a newly added beneficiary.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s3-q10",
+          "question": "Through which channels should customer fraud awareness be delivered under the Counter-Fraud Framework?",
+          "options": [
+            "Only the bank's website",
+            "Only branch posters and leaflets",
+            "Only channels chosen by the marketing team",
+            "All communication channels the bank offers to customers"
+          ],
+          "answer": 3,
+          "explanation": "Section 4.3.2 asks banks to deliver customer awareness through all channels offered to the customer, such as website, app, email, post and SMS.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Branch and Customer-Service Controls: Need-to-Know, Passwords and Quarterly Campaigns",
+      "stage": "The Counter Line",
+      "summary": "Apply SAMA's 2021 control and awareness measures for branch and customer service staff: passwords, need-to-know access, access logs, maintenance checks, three-monthly campaigns, six-monthly tests and yearly declarations, plus personal data basics.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the password, access and logging controls in SAMA's 2021 branch measures",
+        "Use the need-to-know principle at the counter and in joiner-mover-leaver changes",
+        "Describe the awareness calendar: campaigns, tests, declarations and compliance reviews",
+        "Explain SAMA's instructions on protecting customers' personal data in general terms"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Sticky notes at the counter",
+          "setting": "Rimal Bank branch, Al-Khobar Corniche. Wednesday, 8:45 am, before opening.",
+          "lines": [
+            {
+              "who": "omar",
+              "text": "Welcome to my branch. Be honest with me: what do you see?",
+              "mood": "neutral"
+            },
+            {
+              "who": "hessa",
+              "text": "I'm visiting from Jeddah, and I see a password on a sticky note under that keyboard.",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "And a teller screen that shows every customer's balance, even for people who only update addresses.",
+              "mood": "thinking"
+            },
+            {
+              "who": "omar",
+              "text": "We've always done it that way. The tellers share one login when it gets busy.",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "SAMA wrote a whole instrument for this in 2021: control and awareness measures for branch and customer service employees.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "Welcome to the Counter Line. By lunch, this branch will look different.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "SAMA's 2021 branch and customer service measures",
+          "scenes": [
+            {
+              "icon": "📄",
+              "heading": "What it is",
+              "narration": "In April 2021 SAMA issued minimum control and awareness measures for branch and customer service employees of banks in the Kingdom. They sit alongside the Cyber Security and Business Continuity frameworks."
+            },
+            {
+              "icon": "🎚️",
+              "heading": "Maturity first",
+              "narration": "Banks must meet the maturity level those frameworks require, paying special attention to the controls for how branch and service staff use banking systems."
+            },
+            {
+              "icon": "🔑",
+              "heading": "Access and passwords",
+              "narration": "The cyber policy must cover logins, identity checks, powers linked to job grades, strong passwords and restricted access based on need-to-know."
+            },
+            {
+              "icon": "👀",
+              "heading": "Watching the watchers",
+              "narration": "Banks keep detailed logs of who accessed customer account information, limit after-hours access from branch computers and check maintenance staff."
+            },
+            {
+              "icon": "📣",
+              "heading": "Awareness rhythm",
+              "narration": "Campaigns at least every three months, tests at least every six months, and a signed declaration when staff join and every year."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Supervisory controls for branch staff",
+          "caption": "From the 'Third: Supervisory Procedures' part of SAMA's 2021 measures (translated text).",
+          "headers": [
+            "Control",
+            "What it means in practice"
+          ],
+          "items": [
+            {
+              "label": "Passwords",
+              "left": "Numbers, letters and symbols",
+              "right": "Changed every three months; never shared"
+            },
+            {
+              "label": "Failed logins",
+              "left": "Three wrong attempts in a row",
+              "right": "Username suspended until restored under bank policy"
+            },
+            {
+              "label": "Access",
+              "left": "Powers linked to job grade",
+              "right": "Need-to-know: hide balances from staff who don't need them"
+            },
+            {
+              "label": "Dormant accounts",
+              "left": "Unclaimed or abandoned status",
+              "right": "Signatures and balances hidden"
+            },
+            {
+              "label": "Access logs",
+              "left": "Name, job number, IP, time, action",
+              "right": "Kept automatically for at least 5 years"
+            },
+            {
+              "label": "After hours",
+              "left": "Branch computers restricted",
+              "right": "Controlled exceptions when access is needed"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under SAMA's 2021 measures, how often must branch staff change their banking system passwords?",
+          "options": [
+            "Every month",
+            "Every three months",
+            "Every year"
+          ],
+          "answer": 1,
+          "explanation": "The measures require passwords made of numbers, letters and symbols and changed every three months."
+        },
+        {
+          "type": "concept",
+          "title": "Need-to-know in the branch",
+          "body": "**Need-to-know** means a person sees only the information their task requires. The Cyber Security Framework builds identity and access management on **need-to-have and need-to-know** (3.3.5), and SAMA's 2021 measures apply it to the counter:\n\n- A member of staff whose task does not require a customer's **balance** should not see it.\n- Powers on banking systems are **linked to job grades**, and the minimum permissions are **reviewed periodically** and recorded.\n- IT and support staff get access for **network maintenance only**, without access to confidential customer information.\n- **Copying or sharing data or installing software** needs the consent of an authorised person.\n- Screens are **closed or locked** when not in use.\n- Maintenance technicians must be on the **approved list** sent by the responsible department.\n\nThe framework also expects **joiners, movers and leavers** to be driven by HR, so access changes when a teller moves to a new role and ends when they leave. Access rights are reviewed regularly, and there is an audit trail of requests and revocations."
+        },
+        {
+          "type": "match",
+          "title": "Control and purpose",
+          "prompt": "Match each branch control to the risk it reduces.",
+          "pairs": [
+            {
+              "left": "Hide balances from staff who don't need them",
+              "right": "Snooping and leaks of customer financial data"
+            },
+            {
+              "left": "Log name, IP, time and action for every access",
+              "right": "Untraceable misuse; evidence for investigations"
+            },
+            {
+              "left": "Restrict branch PCs after working hours",
+              "right": "Unsupervised access when the branch is closed"
+            },
+            {
+              "left": "Check the maintenance crew is on the list",
+              "right": "Impostors posing as IT support"
+            },
+            {
+              "left": "Suspend user after three wrong logins",
+              "right": "Password guessing by an insider or intruder"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The awareness calendar for a branch employee",
+          "caption": "From 'Fourth: Awareness Procedures' and 'Fifth: General Provisions' of SAMA's 2021 measures.",
+          "items": [
+            {
+              "label": "Joining",
+              "value": "Day 1",
+              "detail": "Signed declaration on secure system use and handling of usernames and passwords."
+            },
+            {
+              "label": "Ongoing",
+              "value": "≤ 3 months",
+              "detail": "Campaign on confidentiality of customer information and SAMA instructions."
+            },
+            {
+              "label": "Ongoing",
+              "value": "≤ 3 months",
+              "detail": "Campaign on information security and preventing financial fraud."
+            },
+            {
+              "label": "Testing",
+              "value": "≤ 6 months",
+              "detail": "Tests and surveys to measure whether the campaigns work."
+            },
+            {
+              "label": "Every year",
+              "value": "Annual",
+              "detail": "Renewed declaration, paper or electronic."
+            },
+            {
+              "label": "Oversight",
+              "value": "≤ 2 years",
+              "detail": "Internal audit or compliance reviews compliance with the measures."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Meets the measures?",
+          "prompt": "Sort each branch practice.",
+          "buckets": [
+            "Meets SAMA's measures",
+            "Breaches them"
+          ],
+          "items": [
+            {
+              "text": "Tellers share one login during busy hours",
+              "bucket": 1
+            },
+            {
+              "text": "A security and fraud campaign runs every quarter with new material",
+              "bucket": 0
+            },
+            {
+              "text": "Staff are tested once every two years",
+              "bucket": 1
+            },
+            {
+              "text": "A new joiner signs the secure-use declaration on day one",
+              "bucket": 0
+            },
+            {
+              "text": "A technician not on the approved list is allowed to 'quickly fix' a PC",
+              "bucket": 1
+            },
+            {
+              "text": "Access records are kept for five years with IP address and action",
+              "bucket": 0
+            },
+            {
+              "text": "Customer signatures on dormant accounts are visible to all tellers",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The data question",
+          "setting": "Branch back office, Al-Khobar. 11:00 am.",
+          "lines": [
+            {
+              "who": "hessa",
+              "text": "One more thing. Our account form asks every customer for their employer's address and their family members' IDs, even for a simple savings account.",
+              "mood": "thinking"
+            },
+            {
+              "who": "omar",
+              "text": "Head office said 'collect everything, just in case'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "SAMA has flagged exactly that. It told institutions to stop asking customers for personal data that isn't necessary for the service.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "That's the Personal Data Protection Law angle. We'll keep it at principle level, but every teller needs to know it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: SAMA on unnecessary personal data (2021 and 2023)",
+          "body": "In **December 2021** SAMA told financial institutions to bring their internal policies into line with the **Personal Data Protection Law** and the data governance rules of the **Saudi Data and Artificial Intelligence Authority (SDAIA)**, to carry out a **gap analysis**, and to present a correction plan to the **board** for approval.\n\nIn a follow-up circular in **late 2022 (1444H)** SAMA said it had **observed practices requiring individual customers to disclose personal data that was not necessary** before receiving a product or service, directly or through third parties. SAMA required institutions to fully protect customers' personal data, review those disclosure practices, build controls for the data's **security, integrity and use only for the purposes collected**, and report to SAMA on the measures taken.\n\n**Lesson for you:** collecting \"just in case\" is a risk, not a safeguard. Every extra field is more data to protect and more to lose in a breach.\n\n*Source: SAMA Rulebook, Adherence to the Personal Data Protection Law and Data Governance Policies, Regulations and Rules.*"
+        },
+        {
+          "type": "tip",
+          "title": "PDPL at principle level",
+          "body": "The **Personal Data Protection Law** and SDAIA's data governance rules apply alongside SAMA's instructions. This quest covers them only at principle level: **check your bank's data protection policy and the official texts** for details.\n\nHabits every branch employee can apply now:\n- Ask only for the data the product or service needs;\n- Use customer data only for the purpose it was collected for;\n- Share it only with people who need to know;\n- Report any suspected unauthorised access straight away."
+        },
+        {
+          "type": "scenario",
+          "title": "The friendly cousin",
+          "situation": "A teller at the Al-Khobar branch is asked by her cousin, a customer of another bank, to 'just check' whether a mutual acquaintance has an account at Rimal Bank and roughly how much is in it. The teller's role gives her access to customer search screens.",
+          "choices": [
+            {
+              "text": "Refuse politely, explain that she may access customer information only for her job, and tell her manager if the request is repeated.",
+              "outcome": "Best answer. Need-to-know and confidentiality rules limit access to job needs, every access is logged, and repeated pressure should be escalated.",
+              "score": 2
+            },
+            {
+              "text": "Check whether the account exists but don't reveal the balance.",
+              "outcome": "Even confirming that a person banks with Rimal Bank discloses confidential information without a business reason, and the logged search would show it.",
+              "score": 0
+            },
+            {
+              "text": "Ask a colleague with balance access to check instead.",
+              "outcome": "This spreads the breach to a second employee. Need-to-know applies to everyone.",
+              "score": 0
+            },
+            {
+              "text": "Refuse, but not mention it to anyone to avoid family trouble.",
+              "outcome": "Refusing is right. However, a request to misuse access is a warning sign the bank may need to know about, especially if it recurs.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the 2021 measures, how often must banks test or survey branch and customer service staff to judge whether awareness campaigns work?",
+          "options": [
+            "At least every six months",
+            "At least every two years",
+            "Only when SAMA requests it"
+          ],
+          "answer": 0,
+          "explanation": "The measures require tests and surveys of employees at least every six months to assess the effectiveness of the three-monthly campaigns."
+        },
+        {
+          "type": "flip",
+          "title": "Branch security myths",
+          "cards": [
+            {
+              "front": "Sharing a login is fine if we trust each other",
+              "back": "No. Every action must be traceable to one person; the measures require staff never to disclose or share login details."
+            },
+            {
+              "front": "Need-to-know is only for head office",
+              "back": "No. SAMA's measures apply it at the counter, for example hiding balances from staff who don't need them."
+            },
+            {
+              "front": "Awareness once a year is enough",
+              "back": "No. Campaigns are required at least every three months, with tests at least every six months."
+            },
+            {
+              "front": "IT support can see everything",
+              "back": "No. Support staff get access for maintenance only, without confidential customer information."
+            },
+            {
+              "front": "A declaration replaces training",
+              "back": "No. Declarations at joining and yearly come on top of training, campaigns and tests."
+            }
+          ]
+        },
+        {
+          "type": "keypoints",
+          "title": "Counter Line: what to remember",
+          "items": [
+            "SAMA's 2021 measures set minimum controls and awareness for branch and customer service staff, alongside the CSF and BCM frameworks.",
+            "Strong passwords changed every three months, suspension after three failed logins, and no sharing of login details.",
+            "Need-to-know at the counter: powers linked to job grades, hidden balances where not needed, IT access without customer data.",
+            "Campaigns at least every three months, tests at least every six months, declarations at joining and yearly.",
+            "Access logs kept at least five years; audit or compliance checks compliance at least every two years.",
+            "Collect and use only the personal data a service needs, in line with SAMA's PDPL instructions."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Walk through your own workstation in your mind. What could a visitor or colleague see or do there that need-to-know would forbid? What one change will you make tomorrow?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-cy-s4-q1",
+          "question": "What do SAMA's 2021 measures require for the composition of branch staff passwords?",
+          "options": [
+            "At least six digits only",
+            "A mix of numbers, letters and symbols",
+            "The employee's job number plus a word",
+            "Any phrase the employee can remember"
+          ],
+          "answer": 1,
+          "explanation": "The measures require passwords made up of numbers, letters and symbols, changed every three months.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s4-q2",
+          "question": "What happens when a branch employee enters wrong banking system login data three times in a row?",
+          "options": [
+            "The password expires after 24 hours",
+            "SAMA is notified automatically",
+            "The username is suspended and restored only under the bank's procedures",
+            "The employee's manager logs in for them"
+          ],
+          "answer": 2,
+          "explanation": "Three consecutive failed attempts suspend the username, which is restored only according to the bank's internal policy.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s4-q3",
+          "question": "A customer service officer handles only address updates. Which control in the 2021 measures applies to her view of customer balances?",
+          "options": [
+            "Balances should be hidden because her tasks do not require them",
+            "She sees all balances because she is a bank employee",
+            "She may see balances if she signs a declaration",
+            "She sees balances only for customers in her branch"
+          ],
+          "answer": 0,
+          "explanation": "The measures apply need-to-know, giving hiding balances from staff whose tasks do not require them as an example.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s4-q4",
+          "question": "For how long must banks keep the automatic records of employee access to bank account information?",
+          "options": [
+            "At least one year",
+            "At least ten years",
+            "Until the employee leaves the bank",
+            "At least five years"
+          ],
+          "answer": 3,
+          "explanation": "The measures require access information to be saved automatically for a minimum of five years.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s4-q5",
+          "question": "Which details must the access records include at a minimum?",
+          "options": [
+            "Only the date and the branch code",
+            "Employee name and job number, IP address, date and time, validity, authentication and action",
+            "The customer's balance before and after the access",
+            "Employee name and their manager's signature"
+          ],
+          "answer": 1,
+          "explanation": "The listed minimum is name and job number, IP address, date and time of entry, validity, authentication and the action performed.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s4-q6",
+          "question": "How often must banks run awareness campaigns on information security and financial fraud prevention for branch and customer service staff?",
+          "options": [
+            "At least every three months",
+            "At least every six months",
+            "At least once a year",
+            "At least every two years"
+          ],
+          "answer": 0,
+          "explanation": "The measures require these campaigns, with ongoing materials, at least every three months. Six months is the testing interval.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s4-q7",
+          "question": "When must branch staff sign the declaration on secure use of systems and handling of usernames and passwords?",
+          "options": [
+            "Only when they join",
+            "Only after a security incident",
+            "When they start work and every year after",
+            "Every three months with each campaign"
+          ],
+          "answer": 2,
+          "explanation": "The measures require a declaration, on paper or electronically, at the start of employment and annually.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s4-q8",
+          "question": "A technician arrives at the branch saying head office sent him to service the network. What must the branch confirm first?",
+          "options": [
+            "That he carries a company badge with a photograph",
+            "That the branch manager knows his name",
+            "That he signs the visitor book on arrival",
+            "That he is on the maintenance crew list sent by the responsible department"
+          ],
+          "answer": 3,
+          "explanation": "The measures require checking that the maintenance team is among the crew listed and sent by the competent department before work starts, with control procedures in place.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s4-q9",
+          "question": "Who should check compliance with the 2021 measures, and how often at most?",
+          "options": [
+            "SAMA inspectors, every month",
+            "The branch manager, once every five years",
+            "Internal audit or compliance, at intervals of no more than two years",
+            "An external auditor, only when requested by the board"
+          ],
+          "answer": 2,
+          "explanation": "The general provisions assign internal audit or compliance to examine compliance periodically, within a maximum of two years.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s4-q10",
+          "question": "What did SAMA require of financial institutions after observing that customers were asked for personal data not needed for a service?",
+          "options": [
+            "Review those practices, protect the data and report the measures taken to SAMA",
+            "Delete all customer data older than one year",
+            "Stop collecting national ID numbers at account opening",
+            "Publish customers' data rights in the annual report"
+          ],
+          "answer": 0,
+          "explanation": "SAMA's follow-up circular required full protection of customers' personal data, review of disclosure practices, controls for security and purpose limitation, and a report to SAMA.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Risk, Incidents, Continuity and Inspection Readiness",
+      "stage": "The Watchtower",
+      "summary": "Manage cyber risk through its four steps, handle incidents the way SAMA expects (immediate notice, media no objection, formal reports), connect cyber to business continuity, and prepare the evidence a SAMA reviewer will ask for.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the four steps of cyber risk management and the rules for accepting, avoiding, transferring or mitigating risk",
+        "Follow SAMA's notification, media and reporting duties for cyber and IT incidents",
+        "Describe business continuity and crisis management expectations in general terms",
+        "Assemble awareness, training, incident and access evidence for a SAMA review"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The night the app went quiet",
+          "setting": "SOC, Rimal Bank, Riyadh. Thursday, 11:40 pm.",
+          "lines": [
+            {
+              "who": "priya",
+              "text": "Lama, the mobile app login service is failing and the SIEM shows a credential-stuffing burst from thousands of IP addresses.",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "Classify it now. If it's medium or high, SAMA needs to hear from us immediately, not tomorrow.",
+              "mood": "neutral"
+            },
+            {
+              "who": "yousef",
+              "text": "Fraud alerts are up too: three customers report codes they never asked for.",
+              "mood": "worried"
+            },
+            {
+              "who": "omar",
+              "text": "A journalist is already messaging our branch social media page.",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "Nobody talks to the media until SAMA has been consulted. Priya, open the incident record and protect the logs.",
+              "mood": "thinking"
+            },
+            {
+              "who": "lama",
+              "text": "This is the Watchtower: risk, incidents, continuity, and the evidence SAMA will ask for. Let's finish the quest.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Cyber risk management under section 3.2.1",
+          "scenes": [
+            {
+              "icon": "🔎",
+              "heading": "Identify",
+              "narration": "List assets, threats, existing controls and vulnerabilities, and record risks in a central register."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Analyse",
+              "narration": "Judge the likelihood of each threat and its business impact."
+            },
+            {
+              "icon": "🛠️",
+              "heading": "Respond",
+              "narration": "Accept, avoid, transfer or mitigate. Acceptance needs business owner sign-off, must stay within appetite, be reported to the cyber committee and not contradict SAMA rules."
+            },
+            {
+              "icon": "📊",
+              "heading": "Monitor and review",
+              "narration": "Track the treatment plan and check that new or changed controls actually work."
+            },
+            {
+              "icon": "🚦",
+              "heading": "When to start",
+              "narration": "Early in a project, before a critical change, when outsourcing is considered and when launching new products or technology. Existing assets are reassessed periodically."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The four steps of cyber risk management",
+          "caption": "The process is aligned with enterprise risk management and involves business owners, IT, cyber specialists and key users.",
+          "items": [
+            {
+              "label": "Identification",
+              "detail": "Assets, threats, vulnerabilities, controls; central register."
+            },
+            {
+              "label": "Analysis",
+              "detail": "Likelihood and business impact."
+            },
+            {
+              "label": "Response",
+              "detail": "Accept, avoid, transfer or mitigate, per appetite."
+            },
+            {
+              "label": "Monitoring and review",
+              "detail": "Treatment progress and control effectiveness."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A business owner wants to accept a cyber risk rather than fix it. Which condition does the framework set?",
+          "options": [
+            "Acceptance needs only the CISO's verbal agreement",
+            "The risk must be within appetite, signed off by the business owner and reported to the cyber committee",
+            "Accepted risks must be published on the bank's website"
+          ],
+          "answer": 1,
+          "explanation": "Section 3.2.1.3 requires sign-off by the business owner, acceptance within the risk appetite, reporting to the cyber security committee and no conflict with SAMA regulations."
+        },
+        {
+          "type": "concept",
+          "title": "Incident management: what SAMA expects",
+          "body": "Section **3.3.15** of the Cyber Security Framework requires an incident management process aligned with the bank's enterprise incident process, with:\n\n- a **designated team** of skilled, continuously trained staff, and enough **certified forensic** capacity for major incidents;\n- **classification** of incidents, timely handling and progress tracking;\n- **protection of evidence and logs**, root-cause analysis and an incident repository;\n- improvement reports to the **CISO and the cyber committee**.\n\n**Talking to SAMA**\n- Inform SAMA **immediately** when a **medium or high** classified incident occurs.\n- Get SAMA's **no objection before any media interaction** about the incident.\n- After operations resume, send a **formal incident report**: what happened, when it occurred and was detected, assets involved, root cause, corrective actions, impact (such as customers affected) and estimated costs.\n\nThe **IT Governance Framework** (3.3.8) adds a **detailed IT incident report** to SAMA **within five days**. Fast internal reporting by staff makes immediate notification possible."
+        },
+        {
+          "type": "order",
+          "title": "Handle a medium or high cyber incident",
+          "prompt": "Put the steps in the order SAMA's frameworks suggest.",
+          "steps": [
+            "Detect and classify the incident",
+            "Inform SAMA immediately because it is medium or high",
+            "Contain it while protecting evidence and logs",
+            "Seek SAMA's no objection before any media statement",
+            "Resume normal operations",
+            "Send SAMA the formal incident report with root cause and impact",
+            "Feed lessons learned to the CISO and cyber committee"
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who to call",
+          "prompt": "Match each situation to the obligation it triggers.",
+          "pairs": [
+            {
+              "left": "Medium or high cyber incident identified",
+              "right": "Inform SAMA immediately"
+            },
+            {
+              "left": "A journalist asks about the incident",
+              "right": "Obtain SAMA's no objection before any media interaction"
+            },
+            {
+              "left": "Operations resumed after the incident",
+              "right": "Formal incident report to SAMA, including root cause and costs"
+            },
+            {
+              "left": "A new scam method is detected, no loss yet",
+              "right": "Notify SAMA immediately under the Counter-Fraud Framework"
+            },
+            {
+              "left": "An employee spots a suspicious email",
+              "right": "Report it at once through the bank's internal channel"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Keeping the lights on",
+          "setting": "Crisis room, Rimal Bank, Riyadh. Friday, 1:30 am.",
+          "lines": [
+            {
+              "who": "omar",
+              "text": "Branches open in a few hours. If the app is still down, customers will queue at every counter.",
+              "mood": "worried"
+            },
+            {
+              "who": "lama",
+              "text": "That's why the BCM framework expects a crisis management plan with clear criteria for declaring a crisis, a command centre and a communication plan.",
+              "mood": "neutral"
+            },
+            {
+              "who": "priya",
+              "text": "And the cyber framework says cyber security must be reflected in business continuity.",
+              "mood": "neutral"
+            },
+            {
+              "who": "lama",
+              "text": "We keep this at principle level today, but every branch should know its continuity contact and its role.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Business continuity in general terms",
+          "caption": "SAMA's Business Continuity Management Framework (2017). Check your bank's BCM policy for detailed duties and timelines.",
+          "items": [
+            {
+              "label": "Governance",
+              "detail": "Board or delegated executive owns the BCM programme; a BCM committee is mandated."
+            },
+            {
+              "label": "Impact and risk",
+              "detail": "Business impact analysis and risk assessment of critical services."
+            },
+            {
+              "label": "Plans",
+              "detail": "Business continuity, IT disaster recovery and crisis management plans."
+            },
+            {
+              "label": "Testing",
+              "detail": "Plans are tested and improvements are tracked."
+            },
+            {
+              "label": "Awareness",
+              "detail": "Staff and suppliers know the plans, their roles and their BCM contact."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The 2 am decision",
+          "situation": "Priya's team has classified the credential-stuffing attack as high. The head of corporate communications wants to post a reassuring statement on social media right away, before SAMA is contacted, 'to get ahead of the story'.",
+          "choices": [
+            {
+              "text": "Inform SAMA immediately, request its no objection for the statement, and keep customer-facing scripts factual until it is given.",
+              "outcome": "Best answer. A high incident must reach SAMA immediately, and the framework requires SAMA's no objection before any media interaction about the incident.",
+              "score": 2
+            },
+            {
+              "text": "Post the statement now and inform SAMA in the morning formal report.",
+              "outcome": "This breaks two duties: immediate notification and no objection before media contact. The formal report comes after operations resume.",
+              "score": 0
+            },
+            {
+              "text": "Say nothing to anyone, including SAMA, until the root cause is known.",
+              "outcome": "Waiting for root cause delays the immediate notification SAMA requires. Root cause belongs in the later formal report.",
+              "score": 0
+            },
+            {
+              "text": "Inform SAMA immediately, but let communications post the statement without waiting.",
+              "outcome": "Notifying SAMA is right, but media interaction about the incident still needs SAMA's no objection first.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: a SAMA circular on a new card fraud pattern (2021)",
+          "body": "In **February 2021** SAMA issued a circular after noting that some parties were carrying out **suspicious point-of-sale transactions** by abusing the **pre-authorisation** feature and the later capture or purchase advice on cards linked to global payment networks.\n\nSAMA told providers of acquiring services to follow the international card networks' rules for this transaction type, make it available only to the sectors it is meant for, **monitor** pre-authorisation transactions, **investigate** suspicious and high-risk ones by customer segment and amount, and build fraud monitoring and detection systems, in line with SAMA's earlier guide on combating financial fraud.\n\n**Lesson for you:** this is the cycle the frameworks describe. A new pattern is spotted, intelligence is shared, controls change, and staff and systems are retuned. Your awareness programme is one of the channels that turns a SAMA alert into changed behaviour.\n\n*Source: SAMA Rulebook, Financial Frauds Through Prior Authorization and Notification Features (circular, 1442H / 2021).*"
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "SAMA milestones covered in this quest",
+          "caption": "Dates are from the SAMA Rulebook and SAMA news releases opened for this quest.",
+          "items": [
+            {
+              "label": "Continuity framework",
+              "value": "Feb 2017",
+              "detail": "Business Continuity Management Framework issued."
+            },
+            {
+              "label": "Sector strategy",
+              "value": "Mar 2017",
+              "detail": "Information Security Strategy for the Banking Sector."
+            },
+            {
+              "label": "Cyber framework",
+              "value": "May 2017",
+              "detail": "Cyber Security Framework issued; earlier cyber circulars superseded."
+            },
+            {
+              "label": "Branch measures",
+              "value": "Apr 2021",
+              "detail": "Control and awareness measures for branch and customer service staff."
+            },
+            {
+              "label": "IT governance",
+              "value": "Nov 2021",
+              "detail": "IT Governance Framework, including staff competence and training."
+            },
+            {
+              "label": "Urgent measures",
+              "value": "Apr 2022",
+              "detail": "Temporary limits after a wave of social-engineering scams."
+            },
+            {
+              "label": "Counter-fraud",
+              "value": "Oct 2022",
+              "detail": "Counter-Fraud Framework for banks."
+            },
+            {
+              "label": "Anti-fraud skills",
+              "value": "Sep 2023",
+              "detail": "SAMA launches its Cyber Anti-Fraud Program."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Evidence a SAMA reviewer may ask for",
+          "cards": [
+            {
+              "front": "Awareness programme",
+              "back": "Approved by the cyber committee, with audiences, channels, a yearly calendar and effectiveness results."
+            },
+            {
+              "front": "Branch campaign records",
+              "back": "Proof of campaigns at least every three months and tests at least every six months."
+            },
+            {
+              "front": "Declarations",
+              "back": "Signed or electronic declarations at joining and every year."
+            },
+            {
+              "front": "Specialist training",
+              "back": "Records for key roles, cyber staff, developers, risk assessors and critical IT roles."
+            },
+            {
+              "front": "Incident file",
+              "back": "Classification, SAMA notifications, media no objection, formal report, lessons learned."
+            },
+            {
+              "front": "Access reviews",
+              "back": "Periodic reviews of permissions and five-year access logs for account information."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which document should Rimal Bank send SAMA after operations resume following a high cyber incident?",
+          "options": [
+            "A formal incident report including root cause, impact and estimated costs",
+            "Only a copy of the press release",
+            "Nothing further if SAMA was told by phone"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.3.15 requires a formal report after operations resume, covering incident details, root cause, corrective actions, impact and estimated costs."
+        },
+        {
+          "type": "keypoints",
+          "title": "Watchtower: what to remember",
+          "items": [
+            "Cyber risk management has four steps, starts early in projects and changes, and needs business-owner sign-off for accepted risk.",
+            "Medium or high incidents go to SAMA immediately; media contact waits for SAMA's no objection; a formal report follows recovery.",
+            "The IT Governance Framework adds a detailed IT incident report within five days.",
+            "Continuity plans, crisis management and awareness of continuity roles complete the picture.",
+            "Keep evidence: approved programmes, campaign and test records, declarations, training records, incident files and access reviews."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If SAMA's reviewer visited your team tomorrow, which piece of evidence from this stage would be hardest to produce? Who would you ask, and by when?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "sa-cy-s5-q1",
+          "question": "Which four steps make up cyber risk management in section 3.2.1?",
+          "options": [
+            "Planning, building, testing and releasing",
+            "Detection, containment, eradication and recovery",
+            "Identification, analysis, response, and monitoring and review",
+            "Prevention, detection, investigation and prosecution"
+          ],
+          "answer": 2,
+          "explanation": "The framework documents risk identification, risk analysis, risk response, and risk monitoring and review.",
+          "difficulty": 2
+        },
+        {
+          "id": "sa-cy-s5-q2",
+          "question": "When must the cyber risk management process be started, according to the framework?",
+          "options": [
+            "Early in projects, before critical changes, when outsourcing is considered and for new products",
+            "Only once a year at budget time",
+            "Only after an incident has happened",
+            "Only when SAMA announces an inspection"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.2.1 lists early project stage, before critical change, when outsourcing is considered and when launching new products and technologies.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s5-q3",
+          "question": "How soon must a bank inform SAMA of a cyber incident classified as medium or high?",
+          "options": [
+            "Within five working days",
+            "At the next quarterly meeting",
+            "Only after the root cause is known",
+            "Immediately"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.3.15 requires SAMA to be informed immediately when a medium or high classified incident has occurred and been identified.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s5-q4",
+          "question": "What must Rimal Bank obtain before speaking to the media about a cyber incident?",
+          "options": [
+            "The external auditor's sign-off",
+            "SAMA's no objection",
+            "The approval of all affected customers",
+            "A court order"
+          ],
+          "answer": 1,
+          "explanation": "The framework requires the bank to obtain SAMA's no objection before any media interaction related to the incident.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s5-q5",
+          "question": "Under the IT Governance Framework, within what period must a detailed IT incident report reach SAMA?",
+          "options": [
+            "Within twenty-four hours",
+            "Within five days",
+            "Within thirty days",
+            "Within the next financial year"
+          ],
+          "answer": 1,
+          "explanation": "Section 3.3.8 of the IT Governance Framework requires a detailed incident report within five days.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s5-q6",
+          "question": "Which item is NOT among the contents SAMA lists for the formal cyber incident report?",
+          "options": [
+            "Root-cause analysis",
+            "Total estimated cost of the incident",
+            "The names of staff who clicked the phishing link",
+            "Date and time the incident was detected"
+          ],
+          "answer": 2,
+          "explanation": "The list includes title, classification, dates and times, assets, technical details, root cause, corrective actions, impact and cost estimates. It does not ask for named staff.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s5-q7",
+          "question": "Which treatment option involves a business owner cancelling or postponing an activity that brings an unacceptable cyber risk?",
+          "options": [
+            "Avoiding the risk",
+            "Accepting the risk",
+            "Transferring the risk",
+            "Mitigating the risk"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.2.1.3 describes avoidance as a business owner's decision to cancel or postpone an activity or project that introduces unacceptable risk.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s5-q8",
+          "question": "What capability must the incident management process include for major incidents?",
+          "options": [
+            "A dedicated media spokesperson in each branch",
+            "A separate incident budget approved by SAMA",
+            "Automatic disconnection of all customer channels",
+            "Enough certified forensic staff, internal or contracted"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.3.15 requires sufficient capacity of certified forensic staff for major incidents, whether internal staff or an external forensic team.",
+          "difficulty": 4
+        },
+        {
+          "id": "sa-cy-s5-q9",
+          "question": "Under SAMA's business continuity framework, what does the crisis management plan need to include?",
+          "options": [
+            "A list of all employees' home addresses",
+            "Agreement from every customer to service interruptions",
+            "Criteria for declaring a crisis, a command centre, a crisis team and a communication plan",
+            "A promise that no service will ever be interrupted"
+          ],
+          "answer": 2,
+          "explanation": "The BCM framework expects crisis criteria, command centres, a crisis team with contacts, defined steps and a communication plan that includes media response.",
+          "difficulty": 3
+        },
+        {
+          "id": "sa-cy-s5-q10",
+          "question": "Customer and internet-facing services at Rimal Bank have not been tested for two years. Which requirement does this breach?",
+          "options": [
+            "Quarterly penetration tests of all internal systems",
+            "Monthly external audits of the mobile app",
+            "Weekly SAMA approval of website changes",
+            "Annual review and penetration testing of customer and internet-facing services"
+          ],
+          "answer": 3,
+          "explanation": "Section 3.2.4 requires customer and internet-facing services to be reviewed and penetration tested every year.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "sa",
+    "programs": [
+      72,
+      71,
+      73,
+      77,
+      91,
+      29,
+      114,
+      74
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "periodic"
+    ],
+    "regulators": [
+      "Saudi Central Bank (SAMA)",
+      "Saudi Data and Artificial Intelligence Authority (SDAIA)"
+    ],
+    "references": [
+      {
+        "title": "Cyber Security Framework",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/cyber-security-framework-2",
+        "provision": "Sections 2.2-2.4, 3.1.1-3.1.7, 3.2.1-3.2.4, 3.3.1, 3.3.5, 3.3.13-3.3.16",
+        "note": "Governance and roles, awareness programme for staff, third parties and customers (3.1.6), specialist training (3.1.7), risk management, access on need-to-know, e-banking safeguards and incident notification to SAMA.",
+        "effective": "2017-05-24",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Control and Awareness Measures for Branch and Customer Service Employees in Banks Operating in the Kingdom",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/control-and-awareness-measures-branch-and-customer-service-employees-banks-operating-kingdom",
+        "provision": "Third: Supervisory Procedures; Fourth: Awareness Procedures; Fifth: General Provisions",
+        "note": "Password and access controls, need-to-know, five-year access logs, campaigns at least every three months, tests at least every six months, declarations at joining and yearly, compliance review within two years.",
+        "effective": "2021-04-17",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Information Technology Governance Framework",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/information-technology-governance-framework",
+        "provision": "Sections 3.1.1, 3.1.5, 3.1.8 and 3.3.8",
+        "note": "IT governance roles, CIO duty to define the IT training plan with HR, staff competence and annual IT training plan, and IT incident reporting to SAMA including a detailed report within five days.",
+        "effective": "2021-11-04",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Counter-Fraud Framework",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/counter-fraud-framework-0",
+        "provision": "Sections 1.1, 3.7, 4.3-4.3.3, 4.4, 4.5 and Appendix B",
+        "note": "Cyber-enabled fraud, immediate notification of new typologies, employee, customer and third-party fraud awareness, authentication rules and alignment of fraud and cyber teams.",
+        "effective": "2022-10-11",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Business Continuity Management Framework",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/business-continuity-management-framework-1",
+        "provision": "Sections 2.1, 2.8, 2.10 and 2.11",
+        "note": "BCM governance, crisis management plan, training and awareness programme and communication with SAMA; used in general terms.",
+        "effective": "2017-02-27",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Adherence to the Personal Data Protection Law and Data Governance Policies, Regulations and Rules",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/adherence-personal-data-protection-law-and-data-governance-policies-regulations-and-rules",
+        "provision": "Circular No. 43045328 and follow-up Circular No. 44043873",
+        "note": "Align policies with the PDPL and SDAIA rules, gap analysis and board-approved plan; stop asking customers for unnecessary personal data and report measures to SAMA.",
+        "effective": "2021-12-23",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Personal Data Protection Law",
+        "issuer": "SDAIA",
+        "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf",
+        "note": "National data protection law issued by Royal Decree M/19 of 1443H and amended by Royal Decree M/148 of 1444H; host not reachable for verification, so covered only in general terms.",
+        "effective": "2023-09-14"
+      },
+      {
+        "title": "Information Security Strategy for the Banking Sector",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/information-security-strategy-banking-sector",
+        "note": "2017 sector strategy across identify, protect, detect, respond and recover, including a sector-wide cyber education and awareness campaign.",
+        "effective": "2017-03-26",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "The Saudi Arabian Monetary Authority warns against responding to suspicious messages that use its name in fraud activities",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/pages/news-622.aspx",
+        "note": "2020 warning about calls, texts and phishing links impersonating SAMA; SAMA holds no deposits for individuals.",
+        "effective": "2020-10-19",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Saudi Central Bank to Take Urgent Measures to Protect Banking Consumers from Financial Fraud",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/pages/news-752.aspx",
+        "note": "April 2022 temporary measures after a rise in fake websites and social-engineering scams: SAR 60,000 daily limit and suspended remote account opening, eased on 12 April 2022 (news-753).",
+        "effective": "2022-04-08",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "SAMA Launches First Edition of Cyber Anti-Fraud Program",
+        "issuer": "SAMA",
+        "url": "https://www.sama.gov.sa/en-US/MediaCenter/News/Pages/news-980.aspx",
+        "note": "Three-month cyber fraud training programme for SAMA and local bank staff (September 2023); graduates honoured in February 2024 (news-1011).",
+        "effective": "2023-09-19",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Frauds Through Prior Authorization and Notification Features",
+        "issuer": "SAMA",
+        "url": "https://rulebook.sama.gov.sa/en/financial-frauds-through-prior-authorization-and-notification-features",
+        "provision": "Circular No. 42045077",
+        "note": "2021 circular responding to abuse of card pre-authorisation at point of sale: monitoring, investigation and fraud detection by acquirers.",
+        "effective": "2021-02-13",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "sa-cy-x1",
+        "question": "A Saudi finance company and a bank both adopt SAMA's Cyber Security Framework. Which statement about domain applicability is accurate for the bank?",
+        "options": [
+          "Only the governance domain applies to the bank",
+          "All domains of the framework apply to the bank",
+          "The bank may exclude the e-banking subdomain",
+          "The bank applies only controls it chooses to self-assess"
+        ],
+        "answer": 1,
+        "explanation": "The framework states that all domains apply to the banking sector; exclusions in section 1.4 are for other financial institutions.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x2",
+        "question": "Rimal Bank's committee charter states members 'meet when needed'. A reviewer flags it. What is the most likely reason?",
+        "options": [
+          "The charter must require weekly meetings chaired by the CEO",
+          "Charters may not mention meeting frequency at all",
+          "Only SAMA may decide when the committee meets",
+          "The charter must set a meeting frequency of at least quarterly"
+        ],
+        "answer": 3,
+        "explanation": "Section 3.1.1 requires the charter to reflect objectives, roles, minimum participants and a meeting frequency of at least quarterly.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x3",
+        "question": "Internal audit asks to be a full voting member of the cyber security committee. What does the framework provide?",
+        "options": [
+          "Internal audit may attend as an observer",
+          "Internal audit must chair the committee",
+          "Internal audit must not attend at all",
+          "Internal audit votes only on budget items"
+        ],
+        "answer": 0,
+        "explanation": "The framework lists internal audit as an optional observer, keeping its independence to audit cyber security later.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x4",
+        "question": "Which body endorses the cyber security strategy and policy after the cyber security committee has approved them?",
+        "options": [
+          "The chief information officer",
+          "SAMA's IT risk supervision team",
+          "The board of directors",
+          "The external auditor"
+        ],
+        "answer": 2,
+        "explanation": "Section 3.1.4 gives the board ultimate responsibility, including endorsing governance, strategy and policy after committee approval.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x5",
+        "question": "Rimal Bank's awareness programme is written, approved and monitored with KPIs, but nobody measures whether it reduces risk. Which maturity level has it reached, and what would level 4 add?",
+        "options": [
+          "Level 4; level 5 adds a written policy",
+          "Level 2; level 3 adds KRIs and peer comparison",
+          "Level 3; level 4 adds effectiveness measurement using KRIs",
+          "Level 5; nothing more is needed"
+        ],
+        "answer": 2,
+        "explanation": "Defined, approved, implemented and monitored controls with KPIs are level 3. Level 4 adds periodic measurement of effectiveness using KRIs.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x6",
+        "question": "Which of these is a responsibility of senior management under section 3.1.4?",
+        "options": [
+          "Making sure cyber duties are written into job descriptions of key positions and cyber staff",
+          "Performing cyber security audits",
+          "Approving the cyber committee charter",
+          "Running the security operations centre each night"
+        ],
+        "answer": 0,
+        "explanation": "Senior management ensures staff accept and comply with the policy and that cyber responsibilities appear in job descriptions. Audits belong to internal audit; charter approval to the board.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x7",
+        "question": "A board member says the board can hand cyber security entirely to the committee and stop worrying about it. How should the CISO respond?",
+        "options": [
+          "The board may transfer all responsibility to the committee by resolution",
+          "Responsibility passes to SAMA once the self-assessment is filed",
+          "Responsibility passes to the CISO once SAMA gives its no objection",
+          "The board may delegate tasks, but it keeps ultimate responsibility for cyber security"
+        ],
+        "answer": 3,
+        "explanation": "The framework says ultimate responsibility rests with the board; it can delegate cyber responsibilities to a committee but remains accountable.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x8",
+        "question": "Under the framework's documentation model, which document defines 'what' controls apply, such as password rules and logging?",
+        "options": [
+          "The cyber security policy",
+          "Cyber security standards",
+          "Cyber security procedures",
+          "The cyber security strategy"
+        ],
+        "answer": 1,
+        "explanation": "Standards set what controls must be implemented and act as baselines; the policy says why, and procedures say how.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x9",
+        "question": "A third-party call-centre agency answers Rimal Bank's customers. Does section 3.1.6 expect its agents to be covered by the awareness programme?",
+        "options": [
+          "Yes, the programme must cover third parties as well as staff and customers",
+          "No, only the bank's direct employees are covered",
+          "Only if the agency is based outside Saudi Arabia",
+          "Only if the agency asks to be included"
+        ],
+        "answer": 0,
+        "explanation": "Section 3.1.6 requires the programme to be defined and conducted for staff, third parties and customers.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x10",
+        "question": "The awareness team plans to send one identical email to tellers, developers and corporate clients. Which section 3.1.6 requirement does this weaken?",
+        "options": [
+          "Reporting the programme to SAMA every month",
+          "Limiting awareness to employees in head office",
+          "Tailoring the programme to different target groups through multiple channels",
+          "Running awareness only at induction"
+        ],
+        "answer": 2,
+        "explanation": "The framework asks the programme to target behaviours by tailoring it to different audiences through multiple channels.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x11",
+        "question": "Which of the following is part of the minimum content of the cyber awareness programme?",
+        "options": [
+          "The bank's annual profit forecast",
+          "Details of individual staff disciplinary cases",
+          "The source code of the bank's applications",
+          "The roles and responsibilities regarding cyber security"
+        ],
+        "answer": 3,
+        "explanation": "Minimum content is an explanation of security measures, roles and responsibilities, and relevant emerging threats.",
+        "difficulty": 2
+      },
+      {
+        "id": "sa-cy-x12",
+        "question": "Staff who carry out cyber risk assessments at Rimal Bank have had no training since joining. Which section is most directly breached?",
+        "options": [
+          "Section 3.1.2, alignment with the sector strategy",
+          "Section 3.1.7, specialist skills training for staff involved in risk assessments",
+          "Section 3.4.2, approval of material outsourcing",
+          "Section 3.3.11, secure disposal of assets"
+        ],
+        "answer": 1,
+        "explanation": "Section 3.1.7 lists staff involved in risk assessments among those who need specialist or security-related skills training.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x13",
+        "question": "Which HR-process requirement in section 3.3.1 continues after an employee leaves the bank?",
+        "options": [
+          "Monthly awareness emails to former staff",
+          "Annual background checks on former staff",
+          "Access to the bank's systems for a handover year",
+          "Non-disclosure clauses in staff agreements that apply during and after employment"
+        ],
+        "answer": 3,
+        "explanation": "Section 3.3.1 requires cyber responsibilities and non-disclosure clauses in staff agreements during and after employment, and revoking access on exit.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x14",
+        "question": "The CIO asks whether the IT training plan can be produced every three years to save effort. What does the IT Governance Framework say?",
+        "options": [
+          "An IT training plan must be developed annually and reviewed periodically",
+          "A plan every three years is acceptable if SAMA is told",
+          "No training plan is needed if staff hold certifications",
+          "The plan is optional for banks with fewer than 100 IT staff"
+        ],
+        "answer": 0,
+        "explanation": "Section 3.1.8 requires an annual IT training plan, reviewed periodically, plus formal training for IT staff and contractors.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x15",
+        "question": "Under section 3.1.8 of the IT Governance Framework, what must banks identify for staff in critical IT roles?",
+        "options": [
+          "The salary band for each critical role",
+          "The personal social media accounts of role holders",
+          "The professional certifications those roles require",
+          "A SAMA-approved deputy for every role"
+        ],
+        "answer": 2,
+        "explanation": "Banks must identify and define critical IT roles and the professional certifications required for them.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x16",
+        "question": "Rimal Bank's security operations centre runs 24x7 but analysts have had no training since they were hired. Which requirement is unmet?",
+        "options": [
+          "SOC staff must rotate into branches each year",
+          "SOC staff must be skilled and continuously trained",
+          "SOC staff must be employed by SAMA",
+          "SOC staff must hold a credit adviser certificate"
+        ],
+        "answer": 1,
+        "explanation": "Section 3.3.14 lists skilled and continuously trained staff among the requirements for security event management.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x17",
+        "question": "Which statement best describes SAMA's business continuity framework's view of awareness and training, in general terms?",
+        "options": [
+          "Only the IT department needs to know about continuity plans",
+          "Suppliers must never be told about the bank's continuity plans",
+          "Continuity training replaces cyber awareness training",
+          "Staff and relevant suppliers should know the continuity plans, their roles and their BCM contact, with training for BCM staff"
+        ],
+        "answer": 3,
+        "explanation": "The BCM framework calls for a training and awareness programme so staff and relevant third parties know the plans, their roles and their contact, with training for those involved in BCM.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x18",
+        "question": "An email to Rimal Bank's chief financial officer appears to come from a regulator and asks her to open an attached 'inspection notice'. Which threat named in SAMA's framework does this match?",
+        "options": [
+          "Shoulder surfing at a branch counter",
+          "Card skimming at an ATM",
+          "Whaling, a targeted attack on a senior executive",
+          "Batch processing failure"
+        ],
+        "answer": 2,
+        "explanation": "Whaling targets senior executives with tailored messages; the framework names it with spear-phishing as an awareness topic.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x19",
+        "question": "Under the Counter-Fraud Framework, which group is specifically named for specialised fraud training because of the risk of their role?",
+        "options": [
+          "Customer-facing staff in branches",
+          "Staff on long-term leave",
+          "Shareholders of the bank",
+          "Customers who hold savings accounts only"
+        ],
+        "answer": 0,
+        "explanation": "Section 4.3.1 gives managers with authority, customer-facing branch staff, staff operating counter-fraud controls and investigators as examples needing specialised training.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x20",
+        "question": "What does the Counter-Fraud Framework require an SMS one-time password to state?",
+        "options": [
+          "The customer's full account balance",
+          "The purpose, amount and merchant name, in the customer's chosen language",
+          "The customer's national ID number",
+          "The name of the bank employee who sent it"
+        ],
+        "answer": 1,
+        "explanation": "Section 4.4 requires the purpose, amount and merchant name to be clearly defined, in the language selected on the account.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x21",
+        "question": "A customer changes the mobile number on his account at an ATM. What alert does the Cyber Security Framework require?",
+        "options": [
+          "An email to the branch manager only",
+          "A letter to the customer's home within 30 days",
+          "No alert, because the ATM verified the PIN",
+          "An SMS alert sent to both the old and the new mobile numbers"
+        ],
+        "answer": 3,
+        "explanation": "Section 3.3.13 requires an SMS to both the old and new numbers when the mobile number changes.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x22",
+        "question": "Rimal Bank's fraud team and cyber team never share data and run separate incident responses. Which Counter-Fraud Framework principle is weakest?",
+        "options": [
+          "Remote account opening controls",
+          "Third-party fraud awareness",
+          "Alignment of fraud, financial crime and cyber capabilities",
+          "Supervisory notifications"
+        ],
+        "answer": 2,
+        "explanation": "Section 4.5 requires defined roles, cross training, joint task forces, shared threat intelligence and aligned incident response across the three teams.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x23",
+        "question": "Which activity does the Counter-Fraud Framework list as high-risk, needing multi-factor authentication before it is acted on?",
+        "options": [
+          "Adding or modifying beneficiaries",
+          "Viewing the branch opening hours",
+          "Reading a product brochure in the app",
+          "Checking the exchange rate page"
+        ],
+        "answer": 0,
+        "explanation": "Section 4.4 lists adding or modifying beneficiaries among high-risk activities, along with new device logins and password resets.",
+        "difficulty": 2
+      },
+      {
+        "id": "sa-cy-x24",
+        "question": "SAMA's April 2022 urgent measures followed a rise in which threat, according to SAMA's announcement?",
+        "options": [
+          "Ransomware attacks that encrypted bank data centres",
+          "Physical robberies of cash-in-transit vehicles",
+          "Insider trading in bank shares",
+          "Fraudulent websites and social media accounts used in social-engineering scams"
+        ],
+        "answer": 3,
+        "explanation": "SAMA cited a notable rise in fraudulent websites and social media accounts and recurring social-engineering scams that led customers to reveal passwords and codes.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x25",
+        "question": "What did SAMA do on 12 April 2022 after re-evaluating its urgent anti-fraud measures?",
+        "options": [
+          "Made the SAR 60,000 limit permanent for all customers",
+          "Restored the earlier daily limit and allowed remote account opening again",
+          "Banned remote account opening for a year",
+          "Closed online banking during weekends"
+        ],
+        "answer": 1,
+        "explanation": "SAMA raised the daily limit back to its previous ceiling (customers could lower it) and brought back remote account opening under standard procedures.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x26",
+        "question": "A branch employee's fraud training records cannot be found. Which Counter-Fraud Framework requirement is at risk?",
+        "options": [
+          "Keeping records of fraud training delivered and awareness activity",
+          "Publishing training records on the bank's website",
+          "Sending training records to customers",
+          "Deleting training records after each campaign"
+        ],
+        "answer": 0,
+        "explanation": "Section 4.3.1 requires banks to maintain records of fraud training delivered to employees and awareness activity conducted.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x27",
+        "question": "Customer fraud awareness at Rimal Bank is sent once, at onboarding. Which Counter-Fraud Framework expectation does this miss?",
+        "options": [
+          "Awareness must be delivered only in branches",
+          "Awareness should cover the whole customer lifecycle and reflect current fraud trends",
+          "Awareness should be limited to corporate clients",
+          "Awareness must be approved by SAMA before sending"
+        ],
+        "answer": 1,
+        "explanation": "Section 4.3.2 asks for timely, trend-based awareness across the customer lifecycle through all channels, with extra support for vulnerable customers.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x28",
+        "question": "Which statement about SAMA's 2021 control and awareness measures for branch and customer service employees is accurate?",
+        "options": [
+          "They replace the Cyber Security Framework for branch staff",
+          "They apply only to banks with more than 50 branches",
+          "They are guidance that banks may ignore",
+          "They are minimum requirements and do not replace the Cyber Security and BCM frameworks"
+        ],
+        "answer": 3,
+        "explanation": "The measures say they represent minimum requirements and apply without prejudice to related rules, including the Cyber Security and BCM frameworks.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x29",
+        "question": "A teller wants to copy a customer list to a USB stick to work from home. What do the 2021 measures require?",
+        "options": [
+          "Copying is allowed if the file is renamed",
+          "Copying or sharing data needs the consent of an authorised person",
+          "Copying is allowed for staff above a set job grade",
+          "Copying is allowed after working hours only"
+        ],
+        "answer": 1,
+        "explanation": "The measures forbid copying or sharing data or installing software without the consent of the authorised person.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x30",
+        "question": "A network engineer needs access to a branch's systems for maintenance. What do the 2021 measures say about his access?",
+        "options": [
+          "Give full access so he can test every screen",
+          "Give him the branch manager's login for the day",
+          "Limit it to network maintenance, without access to confidential customer information",
+          "Give access only if a customer is present"
+        ],
+        "answer": 2,
+        "explanation": "Access for IT and support staff is limited to network maintenance without access to customers' confidential information.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x31",
+        "question": "Rimal Bank lets tellers log in from branch computers at midnight with no extra checks. Which control is missing?",
+        "options": [
+          "Restricting branch access to banking systems after working hours, with controlled exceptions",
+          "Hiding customer signatures on active accounts",
+          "Changing passwords every three months",
+          "Testing staff every six months"
+        ],
+        "answer": 0,
+        "explanation": "The measures require restricting access from branch computers after official working hours and setting precautionary controls when access is needed.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x32",
+        "question": "What must banks do with customer signatures and balances on unclaimed or abandoned accounts?",
+        "options": [
+          "Show them only to the branch manager",
+          "Publish them in a dormant-account list",
+          "Hide them for all such accounts",
+          "Delete them after one year"
+        ],
+        "answer": 2,
+        "explanation": "The measures require hiding customer signatures and balances for all accounts in an unclaimed or abandoned state.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x33",
+        "question": "A branch runs its information security and fraud campaign every quarter but has never tested staff. What does SAMA require?",
+        "options": [
+          "Tests only when SAMA visits the branch",
+          "Tests once every two years by internal audit",
+          "No tests, because campaigns are enough",
+          "Tests and surveys at least every six months to measure the campaigns' effectiveness"
+        ],
+        "answer": 3,
+        "explanation": "Point 6 of the awareness procedures requires tests and surveys at least every six months to assess the three-monthly campaigns.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x34",
+        "question": "Under the Cyber Security Framework, who should start access changes when a teller moves from Jeddah to a head office role?",
+        "options": [
+          "The teller herself, by email to IT",
+          "The human resources department, as part of joiner-mover-leaver management",
+          "The customer service supervisor at the new site",
+          "SAMA's IT risk supervision team"
+        ],
+        "answer": 1,
+        "explanation": "Section 3.3.5 says changes in job status or position for internal staff should be instigated by HR, with formal approval and timely processing.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x35",
+        "question": "What did SAMA's December 2021 circular ask financial institutions to do about the Personal Data Protection Law?",
+        "options": [
+          "Align internal policies, carry out a gap analysis and give the board a time-bound correction plan",
+          "Appoint SAMA as the bank's data protection officer",
+          "Stop all data sharing with government bodies",
+          "Move all customer data outside the Kingdom"
+        ],
+        "answer": 0,
+        "explanation": "The circular required review of policies against the PDPL and SDAIA rules, a gap analysis, and a timeline plan presented to the board for approval.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x36",
+        "question": "Rimal Bank plans to outsource its card processing. When should the cyber risk assessment be done?",
+        "options": [
+          "After the contract has run for one year",
+          "Only if an incident occurs at the provider",
+          "When the outsourcing is being considered, before the decision is final",
+          "At the next scheduled internal audit"
+        ],
+        "answer": 2,
+        "explanation": "Section 3.2.1 says the risk process should start when outsourcing is considered, as well as early in projects and before critical changes.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x37",
+        "question": "Who must accept and endorse the results of a cyber risk assessment under section 3.2.1?",
+        "options": [
+          "The relevant business owner, as risk owner",
+          "The external auditor",
+          "The most junior analyst involved",
+          "The vendor that supplied the system"
+        ],
+        "answer": 0,
+        "explanation": "Results are reported to the relevant business owner, the risk owner, who should accept and endorse them.",
+        "difficulty": 3
+      },
+      {
+        "id": "sa-cy-x38",
+        "question": "A cyber risk is to be transferred to an insurer. What does the framework require for transfer to be valid?",
+        "options": [
+          "SAMA must sign the insurance contract",
+          "The CISO must pay the premium personally",
+          "The risk must first be published to customers",
+          "The receiving provider accepts the risk and the transfer actually takes place"
+        ],
+        "answer": 3,
+        "explanation": "Section 3.2.1.3 says transfer involves sharing the risk with a provider, acceptance by that provider and the actual transfer.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x39",
+        "question": "Which statement about the threat intelligence process in section 3.3.16 is accurate?",
+        "options": [
+          "It relies only on vendor marketing material",
+          "It uses internal and external sources and shares relevant intelligence with stakeholders such as SAMA",
+          "It must be kept secret from SAMA",
+          "It replaces the vulnerability management process"
+        ],
+        "answer": 1,
+        "explanation": "The process uses internal sources (logs, fraud, audit) and external ones (SAMA, government, forums), analyses them and shares intelligence with stakeholders.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x40",
+        "question": "During a high incident, Rimal Bank's team overwrites server logs while restoring service quickly. Which incident management requirement did they ignore?",
+        "options": [
+          "Annual penetration testing",
+          "Protection of relevant evidence and logs",
+          "Approval of the IT budget",
+          "Quarterly committee meetings"
+        ],
+        "answer": 1,
+        "explanation": "Section 3.3.15 requires protecting relevant evidence and logs so forensics and root-cause analysis are possible.",
+        "difficulty": 4
+      },
+      {
+        "id": "sa-cy-x41",
+        "question": "After a medium cyber incident, which order of reporting to SAMA reflects the framework?",
+        "options": [
+          "A formal report first, then a phone call after one month",
+          "Only an annual summary of all incidents",
+          "Notification only if customers complain",
+          "Immediate notification, then a formal report once operations resume"
+        ],
+        "answer": 3,
+        "explanation": "Section 3.3.15 requires immediate notification for medium or high incidents, then a formal report after operations resume.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-cy-x42",
+        "question": "A SAMA reviewer asks for proof that branch staff awareness works. Which evidence best answers the question?",
+        "options": [
+          "Six-monthly test and survey results compared with campaign topics and incidents",
+          "Attendance sheets from the induction day only",
+          "The bank's marketing brochures for customers",
+          "A list of posters displayed in branches"
+        ],
+        "answer": 0,
+        "explanation": "The 2021 measures and section 3.1.6 both focus on effectiveness: six-monthly tests and surveys, analysed against campaigns, show whether behaviour changed.",
+        "difficulty": 5
+      },
+      {
+        "id": "sa-cy-x43",
+        "question": "Rimal Bank's cyber incident team includes the CERT, but there is no repository of past incidents. Which requirement is missing?",
+        "options": [
+          "A SAMA-approved press office",
+          "A separate CERT building in each region",
+          "A cyber security incident repository",
+          "A customer vote on incident priorities"
+        ],
+        "answer": 2,
+        "explanation": "Section 3.3.15 lists establishing a cyber security incident repository among the process requirements, alongside root-cause analysis and improvement reports.",
+        "difficulty": 3
+      }
+    ]
+  }
+}

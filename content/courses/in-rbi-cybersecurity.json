@@ -1,0 +1,3241 @@
+{
+ "slug": "in-rbi-cybersecurity",
+ "title": "India | RBI Cybersecurity, Information Security and Data Protection",
+ "tagline": "Spot phishing, guard access and customer data, report incidents to RBI within six hours and secure digital payments under RBI's 2026 Directions.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Commercial banks in India",
+  "Foreign banks operating branches in India",
+  "Digital banking and payments teams",
+  "IT, security operations and technology vendors serving banks"
+ ],
+ "hours": 6,
+ "description": "This quest teaches the Reserve Bank of India's cybersecurity rules for commercial banks. It is based on the **RBI (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026** and the **RBI (Commercial Banks – Digital Payment Security Controls) Directions, 2026**, both issued on 31 July 2026 and effective on issue, with the secrecy rule in the **KYC Directions, 2025** and the **Digital Personal Data Protection Act, 2023** in general terms.\n\nRBI requires cybersecurity awareness for every new recruit, annual training for lower and middle management, annual training for all Board members and senior management, targeted training for key executive, operational and security roles, specialised training for staff who handle cyber incidents, and periodic checks of staff awareness. This quest is built for those audiences.\n\nIn five stages you join the CISO's office of a fictional bank: the rulebook and governance, phishing and social engineering, access and customer data, incident response and DAKSH reporting, and digital payment security with Board oversight, illustrated by real RBI enforcement actions.\n\nThe quest builds knowledge and does not replace your bank's own information security policies, procedures or instructions from your CISO's office; always follow them and the latest RBI text.",
+ "audience": [
+  "All staff of commercial banks in India, including new recruits who must complete cybersecurity awareness",
+  "Lower and middle managers who need annual cybersecurity training under RBI's 2026 Directions",
+  "Board members, senior management and members of the IT Strategy, IT Steering and Information Security Committees",
+  "Staff of the CISO's office, security operations centre and incident response team",
+  "Digital banking, payments, branch and contact-centre staff who handle customer credentials and fraud reports",
+  "Vendor and partner staff who use the bank's information assets"
+ ],
+ "outcomes": [
+  "Explain who RBI's 2026 cybersecurity Directions apply to and the roles of the Board, ITSC, ISC, CISO and Head of IT",
+  "Recognise phishing, vishing, spoofing and other social engineering and report them to the incident team at once",
+  "Apply need-based access, least privilege, multi-factor authentication, removable media and data leak prevention rules",
+  "Keep customer information secret and handle personal data with the care the KYC Directions and the DPDP Act expect",
+  "Follow the incident response chain, including reporting to RBI on DAKSH within six hours and notifying CERT-In",
+  "Describe the digital payment controls, awareness duties and Board oversight that RBI inspectors will test"
+ ],
+ "quest": {
+  "name": "The Six-Hour Shield",
+  "premise": "You have just joined the CISO's office at Godavari Harbour Bank, a fictional commercial bank headquartered in Bengaluru with branches across India, as its Information Security Awareness Officer. RBI's new 2026 Directions are in force, a phishing wave is hitting staff and customers, and the clock on incident reporting runs in hours, not days. With Nandini, Rohan, Zoya, Joseph and Anil, clear five stages, then face the final boss: the RBI IT examiner's exam.",
+  "badge": {
+   "name": "Six-Hour Shield Bearer",
+   "description": "Awarded to bankers who can apply RBI's 2026 cybersecurity, data protection, incident reporting and digital payment security rules."
+  },
+  "color": "#1d4ed8",
+  "cast": [
+   {
+    "id": "nandini",
+    "name": "Nandini Rao",
+    "role": "Chief Information Security Officer, Bengaluru, your mentor",
+    "look": {
+     "skin": 3,
+     "hair": "bun",
+     "color": "#1e3a8a"
+    }
+   },
+   {
+    "id": "rohan",
+    "name": "Rohan Bhattacharya",
+    "role": "Incident response lead, Cyber Security Operations Centre",
+    "look": {
+     "skin": 2,
+     "hair": "short",
+     "color": "#334155"
+    }
+   },
+   {
+    "id": "zoya",
+    "name": "Zoya Siddiqui",
+    "role": "Branch operations manager, Hazratganj, Lucknow",
+    "look": {
+     "skin": 3,
+     "hair": "hijab",
+     "color": "#7e22ce"
+    }
+   },
+   {
+    "id": "joseph",
+    "name": "Joseph Kurian",
+    "role": "Head of IT Function (CTO), Kochi",
+    "look": {
+     "skin": 4,
+     "hair": "beard",
+     "color": "#065f46"
+    }
+   },
+   {
+    "id": "anil",
+    "name": "Anil Mehra",
+    "role": "Independent director, Chair of the IT Strategy Committee",
+    "look": {
+     "skin": 2,
+     "hair": "bald",
+     "color": "#7c2d12"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "The Rulebook: RBI's 2026 Cybersecurity Directions and Who Owns What",
+   "stage": "The Rulebook Vault",
+   "summary": "Which banks RBI's 2026 cybersecurity Directions cover, how the Board, the IT Strategy Committee, the Information Security Committee, the CISO and the Head of IT share the work, and who must be trained, and when.",
+   "minutes": 45,
+   "objectives": [
+    "Identify the banks covered by the 2026 Cybersecurity Directions and what they replaced",
+    "Describe the roles of the Board, ITSC, IT Steering Committee, ISC, Head of IT and CISO",
+    "Explain why the CISO must stay independent of the Head of IT and of business targets",
+    "State the awareness and training duties for new recruits, managers, key roles, the Board and senior management"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Day one in the CISO's office",
+     "setting": "Office of the CISO, Godavari Harbour Bank head office, MG Road, Bengaluru. 9:00 am.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "You have just joined Godavari Harbour Bank, a fictional commercial bank with branches across India, as its Information Security Awareness Officer.",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "Welcome! I'm Nandini Rao, the CISO. Your timing is perfect: RBI issued new cybersecurity Directions for commercial banks on 31 July 2026, and they took effect the same day.",
+       "mood": "happy"
+      },
+      {
+       "who": "zoya",
+       "text": "Zoya from the Lucknow branch, on video. Three of my staff got a mail this morning 'from IT' asking them to re-enter their passwords. One clicked.",
+       "mood": "worried"
+      },
+      {
+       "who": "rohan",
+       "text": "Rohan, incident response. I've isolated her machine. The clock is already running on our reporting duty.",
+       "mood": "thinking"
+      },
+      {
+       "who": "joseph",
+       "text": "Joseph Kurian, Head of IT. Before we fight fires, our new joiners still haven't had any cyber awareness session. HR says it's 'optional'.",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "It isn't optional any more, and it never really was. Stage one is the Rulebook Vault: who RBI's rules cover, who owns what, and who must be trained. Let's open it.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "One rulebook for cyber and IT risk",
+     "scenes": [
+      {
+       "icon": "📘",
+       "heading": "A single framework",
+       "narration": "In July 2026 RBI brought its IT governance and cybersecurity instructions for commercial banks into one set of Directions covering governance, risk management, baseline controls, incident response, the security operations centre and IS audit."
+      },
+      {
+       "icon": "🏦",
+       "heading": "Who it covers",
+       "narration": "The Directions apply to commercial banks: banking companies other than small finance, payments and local area banks, plus the nationalised banks and the State Bank of India."
+      },
+      {
+       "icon": "🌍",
+       "heading": "Foreign bank branches",
+       "narration": "For a foreign bank operating through branches, references to the Board mean its controlling or head office. For some chapters, such a bank may comply or explain, if RBI accepts its reasons."
+      },
+      {
+       "icon": "🗑️",
+       "heading": "Out with the old",
+       "narration": "The earlier cybersecurity framework and IT governance instructions for commercial banks were repealed. Actions and penalties under the old rules still stand."
+      },
+      {
+       "icon": "🎓",
+       "heading": "Training is written in",
+       "narration": "The Directions make cyber awareness mandatory for every new recruit and require yearly training for managers, the Board and senior management."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Who owns cyber risk at the bank",
+     "caption": "Built from Chapters II and III of the 2026 Cybersecurity Directions.",
+     "items": [
+      {
+       "label": "Board of Directors",
+       "detail": "Approves IT, information security, cybersecurity, business continuity and incident response policies"
+      },
+      {
+       "label": "IT Strategy Committee",
+       "detail": "Board-level, at least three directors, chaired by an independent director with IT expertise; meets quarterly"
+      },
+      {
+       "label": "Senior management and IT Steering Committee",
+       "detail": "Execute the IT strategy and build a culture of IT risk awareness and cyber hygiene"
+      },
+      {
+       "label": "Information Security Committee",
+       "detail": "Under the ITSC; headed from risk management; approves awareness initiatives"
+      },
+      {
+       "label": "CISO and Head of IT",
+       "detail": "CISO drives cyber strategy and runs the SOC; Head of IT owns IT controls as first line"
+      },
+      {
+       "label": "Every employee, vendor and partner",
+       "detail": "Follow security and acceptable-use policies and report anything suspicious"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Godavari Harbour Bank is a banking company licensed by RBI. Its sister company is a small finance bank. Which of them is covered by the 2026 Cybersecurity Directions for commercial banks?",
+     "options": [
+      "Godavari Harbour Bank only; small finance banks are excluded from the definition of commercial banks used in these Directions",
+      "Both of them, because every bank licensed by RBI is a commercial bank for these Directions",
+      "Neither of them until RBI sends each bank an individual letter of applicability"
+     ],
+     "answer": 0,
+     "explanation": "The Directions define commercial banks as banking companies other than small finance, payments and local area banks, plus corresponding new banks and SBI. They took effect on issue, without any individual letter."
+    },
+    {
+     "type": "concept",
+     "title": "What the Board and its committees must do",
+     "body": "**The Board** approves the strategies and policies for IT, information assets, business continuity, information security and cybersecurity, including incident response and cyber crisis management. It may delegate review to the IT Strategy Committee, but material changes go back to the Board, and the review happens **at least once a year**.\n\n**The ITSC** has at least three directors. Its chair is an independent director with substantial IT expertise (at least seven years managing information systems or leading technology or cyber initiatives). It meets **at least quarterly** and reviews business continuity and DR at least yearly.\n\n**The IT Steering Committee** brings senior IT and business managers together, also at least quarterly.\n\n**The Information Security Committee** works under the ITSC, includes the CISO and is headed by someone from risk management. It approves and monitors security projects and **awareness initiatives** and reviews cyber incidents.\n\nThe bank also needs a separate, Board-approved **Cybersecurity Policy**, distinct from its IT and information security policies."
+    },
+    {
+     "type": "match",
+     "title": "Match the role to its duty",
+     "prompt": "Link each role in the 2026 Directions to one of its duties.",
+     "pairs": [
+      {
+       "left": "Board of Directors",
+       "right": "Approves cybersecurity and incident response policies; material changes come back to it"
+      },
+      {
+       "left": "IT Strategy Committee",
+       "right": "Checks that budgets for IT and cybersecurity match the bank's threats and digital depth"
+      },
+      {
+       "left": "Information Security Committee",
+       "right": "Approves and monitors security awareness initiatives and reviews cyber incidents"
+      },
+      {
+       "left": "Head of IT Function",
+       "right": "First line of defence for IT controls and owner of the DR set-up"
+      },
+      {
+       "left": "CISO",
+       "right": "Drives cyber strategy, enforces security policies and runs the security operations centre"
+      },
+      {
+       "left": "Senior management",
+       "right": "Creates a culture of IT risk awareness and cyber hygiene across the bank"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A tidy reorganisation?",
+     "setting": "Board room, 14th floor. The quarterly ITSC meeting is breaking up.",
+     "lines": [
+      {
+       "who": "anil",
+       "text": "Anil Mehra, chair of the ITSC. Joseph has a proposal to simplify the org chart.",
+       "mood": "neutral"
+      },
+      {
+       "who": "joseph",
+       "text": "Security and IT should sit together. If Nandini reports to me, approvals move faster. And I'd give her a target for digital account openings so she feels the business pressure.",
+       "mood": "happy"
+      },
+      {
+       "who": "nandini",
+       "text": "Faster approvals for whom? If I report to the person whose systems I challenge, my findings can be softened before anyone sees them.",
+       "mood": "worried"
+      },
+      {
+       "who": "anil",
+       "text": "The new Directions have something to say about this. Before we vote, I want your view.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Where should the CISO report?",
+     "situation": "The ITSC is asked to approve Joseph's plan: the CISO would report to the Head of IT and carry a target for digital account openings. Nandini is a General Manager with a strong technical background. What do you advise?",
+     "choices": [
+      {
+       "text": "Reject the plan: the CISO must not report directly to the Head of IT or carry business targets, and should report to the executive director overseeing risk management.",
+       "outcome": "Right. The Directions keep the CISO independent of the Head of IT and free of business targets, with a direct line to the executive director (or equivalent) who oversees risk. The CISO is also a permanent invitee to the ITSC and IT Steering Committee.",
+       "score": 2
+      },
+      {
+       "text": "Approve the reporting line but drop the business target, since targets are the only real conflict.",
+       "outcome": "Only half right. Dropping the target helps, but the Directions also rule out a direct reporting line from the CISO to the Head of IT.",
+       "score": 1
+      },
+      {
+       "text": "Approve the plan if the Board minutes record the reasons, because the Board can override the Directions.",
+       "outcome": "No. The Board must follow RBI's Directions. Recording reasons does not make a prohibited reporting line acceptable.",
+       "score": 0
+      },
+      {
+       "text": "Approve the plan for six months as a trial and review it at the next ITSC meeting.",
+       "outcome": "A trial still breaches the Directions for six months, and it weakens the CISO exactly while the new framework beds in.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Who must be trained, and how often",
+     "caption": "Paragraphs 176 and 199-204 of the 2026 Cybersecurity Directions.",
+     "headers": [
+      "What RBI expects",
+      "How often"
+     ],
+     "items": [
+      {
+       "label": "All staff, vendors and partners",
+       "left": "Security policies communicated, plus education on cyber risks",
+       "right": "Ongoing; awareness tested periodically"
+      },
+      {
+       "label": "New recruits",
+       "left": "Cybersecurity awareness programme",
+       "right": "Mandatory for every new recruit"
+      },
+      {
+       "label": "Lower and middle management",
+       "left": "Cybersecurity training",
+       "right": "Every year"
+      },
+      {
+       "label": "Key executive, operational and security roles",
+       "left": "Targeted awareness and training",
+       "right": "As the role requires"
+      },
+      {
+       "label": "Board and senior management",
+       "left": "Training on IT and cyber risks and good practice, plus periodic briefings",
+       "right": "Every year"
+      },
+      {
+       "label": "Staff who handle cyber incidents",
+       "left": "Specialised incident training",
+       "right": "As the role requires"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "When does the training happen?",
+     "prompt": "Sort each group by the timing RBI sets in the 2026 Directions.",
+     "buckets": [
+      "On joining",
+      "Every year",
+      "By role, as needed"
+     ],
+     "items": [
+      {
+       "text": "A graduate trainee starting at a Lucknow branch",
+       "bucket": 0
+      },
+      {
+       "text": "A lateral hire joining the treasury team",
+       "bucket": 0
+      },
+      {
+       "text": "A deputy general manager in retail banking",
+       "bucket": 1
+      },
+      {
+       "text": "A branch manager in middle management",
+       "bucket": 1
+      },
+      {
+       "text": "An independent director on the Board",
+       "bucket": 1
+      },
+      {
+       "text": "A SOC analyst who triages cyber incidents",
+       "bucket": 2
+      },
+      {
+       "text": "A security administrator who manages firewalls",
+       "bucket": 2
+      },
+      {
+       "text": "A core banking database administrator with elevated rights",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Rulebook terms",
+     "cards": [
+      {
+       "front": "ITSC",
+       "back": "The Board-level IT Strategy Committee: at least three directors, chaired by an independent director with substantial IT expertise, meeting at least quarterly."
+      },
+      {
+       "front": "ISC",
+       "back": "The Information Security Committee: works under the ITSC, includes the CISO, is headed from risk management and approves awareness initiatives."
+      },
+      {
+       "front": "Cyber incident",
+       "back": "A cyber event that harms the security of an information asset, malicious or not. In RBI's definition it includes IT incidents too."
+      },
+      {
+       "front": "Cyber hygiene",
+       "back": "The everyday security habits senior management must build into the bank's culture: patching, strong passwords, careful clicking, reporting."
+      },
+      {
+       "front": "Comply or explain",
+       "back": "The approach for foreign bank branches on certain chapters: they may deviate only if RBI accepts a reasonable justification."
+      },
+      {
+       "front": "Acceptable use",
+       "back": "The rules every staff member and service provider must follow when using the bank's information assets, including customer data."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under the 2026 Directions, how often must lower and middle managers receive cybersecurity training?",
+     "options": [
+      "Only once, when they are first promoted into management",
+      "Every three years, aligned to the IS audit cycle",
+      "Every year",
+      "Only after a cyber incident affects their own department"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 203 makes awareness programmes mandatory for all new recruits and requires annual training for lower and middle management. Board members and senior management also get annual training under paragraph 204."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Kotak Mahindra Bank, 2024",
+     "body": "On **24 April 2024** RBI used its powers under **Section 35A** of the Banking Regulation Act to stop Kotak Mahindra Bank from **onboarding new customers through online and mobile channels** and from **issuing new credit cards**. Existing customers kept their services.\n\nRBI's press release cited its IT examinations for **2022 and 2023** and serious gaps in IT inventory, patch and change management, **user access management**, vendor risk, **data security and data leak prevention**, and business continuity and DR drills. For two years running the bank had been found deficient in **IT risk and information security governance**, and its corrective action plans were inadequate or not sustained. Frequent outages had hurt customers.\n\nOn **12 February 2025** RBI lifted the restrictions after remediation and an external audit approved in advance by RBI.\n\n**Lesson:** RBI treats weak cyber governance as a business problem, not just an IT finding."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Union Bank of India, 2019",
+     "body": "In **July 2019** RBI imposed a penalty of **₹1 million** on Union Bank of India for not complying with its directions on the cyber security framework in banks.\n\nAccording to RBI, the examination followed reports that **seven fraudulent messages** with a total value of about **USD 171 million** had been generated through the bank's **SWIFT** system in **2016**. The examination found several deficiencies in the bank's cyber security framework. RBI set the penalty after a show-cause notice and a personal hearing, taking into account the extent of non-compliance and the corrective action taken.\n\n**Lesson:** an incident invites a full look at the framework behind it. Governance, controls and training all come under review."
+    },
+    {
+     "type": "keypoints",
+     "title": "Rulebook Vault: what to carry forward",
+     "items": [
+      "RBI's 2026 Cybersecurity Directions apply to commercial banks, not small finance, payments or local area banks, and took effect on 31 July 2026.",
+      "The Board approves cyber policies and reviews them at least yearly; the ITSC and IT Steering Committee meet at least quarterly.",
+      "The ISC approves awareness initiatives; the CISO is independent of the Head of IT and has no business targets.",
+      "Awareness is mandatory for every new recruit; managers, the Board and senior management are trained every year.",
+      "Key roles get targeted training, incident handlers get specialised training, and staff awareness is tested periodically."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of your own role. Which group in RBI's training table do you belong to, when did you last complete cyber training, and who in your bank would know if you had not?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-cy-s1-q1",
+     "question": "On which date were RBI's Cybersecurity, Technology: Risk, Resilience and Assurance Framework Directions for commercial banks issued, and when did they take effect?",
+     "options": [
+      "Issued on 1 October 2026 and effective after a six-month transition",
+      "Issued on 31 July 2026 and effective immediately on issue",
+      "Issued on 31 July 2026 and effective from 1 April 2027",
+      "Issued on 28 November 2025 and effective on 1 January 2026"
+     ],
+     "answer": 1,
+     "explanation": "The Directions are dated 31 July 2026 and state that they come into effect on issue. The October 2026 date is a later update, not the start date.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s1-q2",
+     "question": "Which of these institutions falls outside the 2026 Cybersecurity Directions for commercial banks?",
+     "options": [
+      "A nationalised (corresponding new) bank",
+      "A private sector banking company with branches across India",
+      "A payments bank licensed by RBI",
+      "The State Bank of India"
+     ],
+     "answer": 2,
+     "explanation": "The definition of commercial banks excludes small finance banks, payments banks and local area banks. SBI, nationalised banks and banking companies are covered.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s1-q3",
+     "question": "A foreign bank operates in India through branches. When the Directions refer to 'the Board', whom does that mean for this bank?",
+     "options": [
+      "The RBI regional office supervising the branch",
+      "The country head of the Indian branches acting alone",
+      "Its controlling or head office that oversees the Indian branch operations",
+      "A board of Indian directors the bank must create locally"
+     ],
+     "answer": 2,
+     "explanation": "For foreign banks in branch mode, references to the Board are read as references to the controlling or head office overseeing Indian operations.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s1-q4",
+     "question": "Godavari Harbour Bank wants to appoint a new ITSC chair. Which candidate meets the Directions?",
+     "options": [
+      "A non-independent director nominated by the largest shareholder, with five years of IT experience",
+      "An independent director with eight years of leading technology and cybersecurity projects",
+      "An external IT consultant who is not a director but has deep cyber expertise",
+      "The managing director, who has led the bank's digital transformation for ten years"
+     ],
+     "answer": 1,
+     "explanation": "The ITSC chair must be an independent director with substantial IT expertise, meaning at least seven years managing information systems or leading technology or cyber initiatives. The MD is not independent, five years is too few, and a non-director cannot chair a Board committee.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-cy-s1-q5",
+     "question": "How often must the IT Strategy Committee meet under the 2026 Directions?",
+     "options": [
+      "At least once every month",
+      "At least once every quarter",
+      "At least twice a year",
+      "Only when the CISO requests a meeting"
+     ],
+     "answer": 1,
+     "explanation": "The ITSC must meet at least quarterly. The IT Steering Committee also meets at least quarterly.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s1-q6",
+     "question": "Which body approves and monitors the bank's security awareness initiatives?",
+     "options": [
+      "The Audit Committee of the Board, as part of its IS audit oversight",
+      "The IT Steering Committee, chaired by the Head of IT",
+      "The Information Security Committee, working under the oversight of the ITSC",
+      "The HR department, because training belongs to people management"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 23 gives the ISC the job of approving and monitoring information security and cybersecurity projects and security awareness initiatives.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s1-q7",
+     "question": "The HR head says cyber awareness for new joiners can be skipped when induction is busy and done 'at the next annual cycle'. What is the correct response?",
+     "options": [
+      "Agree, provided the new joiners sign the acceptable-use policy",
+      "Refuse only for staff who will handle customer data",
+      "Agree, because RBI only requires annual training for managers",
+      "Refuse: the Directions make cyber awareness programmes mandatory for all new recruits"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 203 makes cybersecurity awareness mandatory for all new recruits, whatever their role. Signing a policy does not replace the programme.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s1-q8",
+     "question": "A bank proposes that its CISO report to the Head of IT and be given a target for digital sales. What does RBI's framework say?",
+     "options": [
+      "Neither is allowed; the CISO reports to the executive overseeing risk and carries no business targets",
+      "Both are allowed if the Board approves them and records its reasons",
+      "The reporting line is allowed, but the business target is not",
+      "The target is allowed, but the reporting line to the Head of IT is not"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 27 says the CISO must not report directly to the Head of IT and must not be given business targets; paragraph 28 has the CISO report to the executive director or equivalent overseeing risk management.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s1-q9",
+     "question": "Which statement about the Board's role in cybersecurity is correct under the 2026 Directions?",
+     "options": [
+      "It approves cyber and incident response policies and may delegate their review to the ITSC, at least yearly",
+      "It reviews cyber policies only when RBI asks for a review",
+      "It approves the IT budget but leaves cybersecurity policy to management",
+      "It may delegate both approval and material amendments of cyber policies to the CISO"
+     ],
+     "answer": 0,
+     "explanation": "The Board approves the policies, may delegate their review to the ITSC, approves material amendments itself, and the review happens at least annually.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s1-q10",
+     "question": "Why did RBI stop Kotak Mahindra Bank from onboarding new customers online in April 2024?",
+     "options": [
+      "The bank had refused to subscribe to anti-phishing takedown services",
+      "The bank had failed to file its quarterly cyber incident returns on time",
+      "A single data breach exposed the bank's customers on the internet",
+      "Its IT examinations found persistent IT risk and security governance gaps that the bank had not fixed"
+     ],
+     "answer": 3,
+     "explanation": "RBI's press release cited IT examinations for 2022 and 2023, deficiencies in inventory, patching, access, vendor risk, data leak prevention and BCP/DR, and corrective action plans that were not properly met.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Phishing, Vishing and Social Engineering: Staff and Customers",
+   "stage": "The Lure Lagoon",
+   "summary": "How phishing, spear phishing, whaling, vishing and rogue apps target bank staff and customers, what technical defences RBI requires, and how you report and educate so the lure fails.",
+   "minutes": 45,
+   "objectives": [
+    "Recognise the main social engineering attacks named in RBI's 2026 Directions",
+    "Describe the mail, anti-phishing and anti-rogue app defences banks must run",
+    "Report suspicious messages and behaviour to the incident management team without delay",
+    "Explain what RBI expects banks to teach customers about credentials, OTPs, PINs and devices"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The mail from 'IT Helpdesk'",
+     "setting": "Hazratganj branch, Lucknow, on a video call with the CISO's office. 11:30 am.",
+     "lines": [
+      {
+       "who": "zoya",
+       "text": "The mail looked exactly like ours. Logo, signature, even our helpdesk ticket format. It said passwords expire today and gave a link.",
+       "mood": "worried"
+      },
+      {
+       "who": "rohan",
+       "text": "The sender domain was godavari-harb0ur with a zero. A look-alike domain. Our filters caught most copies; three got through.",
+       "mood": "thinking"
+      },
+      {
+       "who": "zoya",
+       "text": "And now a customer, Mr Tripathi, says someone from 'the bank's fraud team' rang him and asked him to read out an OTP to 'block a suspicious payment'.",
+       "mood": "angry"
+      },
+      {
+       "who": "nandini",
+       "text": "Two attacks, one pattern: someone pretending to be trusted, creating urgency, asking for a secret.",
+       "mood": "neutral"
+      },
+      {
+       "who": "zoya",
+       "text": "My staff are good people. How were they supposed to know?",
+       "mood": "thinking"
+      },
+      {
+       "who": "nandini",
+       "text": "That is exactly what this stage is for. Welcome to the Lure Lagoon. By the end, your branch will spot the hook before it bites.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "How social engineering works",
+     "scenes": [
+      {
+       "icon": "🎣",
+       "heading": "Pretend to be trusted",
+       "narration": "RBI defines phishing as a digital form of social engineering that tries to get private or confidential information by posing as a trustworthy party in an electronic message."
+      },
+      {
+       "icon": "🎯",
+       "heading": "Pick the target",
+       "narration": "Spear phishing aims at one person or team using details about them. Whaling aims at senior executives who can approve payments or access."
+      },
+      {
+       "icon": "☎️",
+       "heading": "Change the channel",
+       "narration": "Vishing does the same over a voice call. Reverse phishing tricks customers into calling a fake helpline that the fraudster controls."
+      },
+      {
+       "icon": "⏰",
+       "heading": "Create urgency",
+       "narration": "Every lure pushes you to act now: an expiring password, a blocked account, an urgent payment for the MD. Urgency is the signal to slow down."
+      },
+      {
+       "icon": "🛡️",
+       "heading": "Break the chain",
+       "narration": "RBI's Directions require technical defences, staff awareness, customer education and quick reporting. Any one of them can break the chain."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Anatomy of a phishing attack on a bank",
+     "caption": "Reporting at the lure or hook stage gives the incident team the best chance to contain the attack.",
+     "items": [
+      {
+       "label": "Research",
+       "detail": "The attacker studies the bank, staff names, mail formats and vendors"
+      },
+      {
+       "label": "Lure",
+       "detail": "A spoofed or look-alike message, call or fake app arrives"
+      },
+      {
+       "label": "Hook",
+       "detail": "Someone clicks, opens an attachment, installs an app or shares an OTP"
+      },
+      {
+       "label": "Harvest",
+       "detail": "Credentials, session tokens or remote access are captured"
+      },
+      {
+       "label": "Exploit",
+       "detail": "The attacker logs in, moves money or plants malware"
+      },
+      {
+       "label": "Cash out or spread",
+       "detail": "Funds move through mule accounts or the attack spreads inside"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "What makes a message 'phishing' under the definition used in RBI's 2026 Directions?",
+     "options": [
+      "It tries to obtain private or confidential information by pretending to be a trustworthy party in an electronic communication",
+      "It contains a computer virus attached as an executable file",
+      "It is sent to more than a hundred recipients at the same time",
+      "It comes from a sender outside India"
+     ],
+     "answer": 0,
+     "explanation": "The Directions define phishing as a digital form of social engineering that pretends to be a trustworthy entity to get private or confidential information. Malware, volume and origin are not part of the definition."
+    },
+    {
+     "type": "sort",
+     "title": "Red flag or routine?",
+     "prompt": "Sort each message or request a branch employee might see.",
+     "buckets": [
+      "Red flag: stop and report",
+      "Routine: proceed normally"
+     ],
+     "items": [
+      {
+       "text": "A mail from a domain that swaps a letter for a number in the bank's name",
+       "bucket": 0
+      },
+      {
+       "text": "A caller from 'RBI' asking for your login to 'verify compliance'",
+       "bucket": 0
+      },
+      {
+       "text": "An urgent WhatsApp from the 'MD' asking you to buy gift cards today",
+       "bucket": 0
+      },
+      {
+       "text": "An attachment type the bank's mail gateway normally blocks, sent via a personal webmail",
+       "bucket": 0
+      },
+      {
+       "text": "A request to install a screen-sharing app so 'IT' can fix your PC",
+       "bucket": 0
+      },
+      {
+       "text": "A training reminder that asks you to log in through the intranet you always use",
+       "bucket": 1
+      },
+      {
+       "text": "A helpdesk ticket update you raised yourself, with no link or attachment",
+       "bucket": 1
+      },
+      {
+       "text": "A circular from your regional office shared on the bank's document system",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Defences: the bank's systems and your habits",
+     "caption": "Paragraphs 117-120 and 148 of the Cybersecurity Directions and paragraph 37 of the Digital Payment Security Controls Directions.",
+     "headers": [
+      "What the bank must run",
+      "What you do"
+     ],
+     "items": [
+      {
+       "label": "Spoofed mail",
+       "left": "Anti-spoofing and DMARC on the bank's mail domains",
+       "right": "Check the sender domain; report look-alikes"
+      },
+      {
+       "label": "Malicious attachment",
+       "left": "Gateway limits permitted attachment types and scans files",
+       "right": "Never open unexpected files, even from colleagues"
+      },
+      {
+       "label": "Fake website",
+       "left": "Anti-phishing service finds and takes down phishing sites",
+       "right": "Type the bank's address; never log in from a link"
+      },
+      {
+       "label": "Rogue app",
+       "left": "Bank monitors app stores and takes down fake apps",
+       "right": "Install only from the bank's official link"
+      },
+      {
+       "label": "Phone pretext",
+       "left": "Call-back procedures and verified contacts",
+       "right": "Hang up and call back on a known number"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "The MD needs it today",
+     "setting": "Zoya's cabin, Lucknow branch. 4:40 pm on a Friday.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "An email arrives from the managing director's name. It is short and polite.",
+       "mood": "neutral"
+      },
+      {
+       "who": "zoya",
+       "text": "It says he is in a confidential acquisition meeting and needs me to release a vendor payment of ₹48 lakh from a suspense account before 5 pm. No calls, he says, he can't talk.",
+       "mood": "thinking"
+      },
+      {
+       "who": "zoya",
+       "text": "The display name is right. The address ends in a webmail domain. And our MD has never written to a branch about a payment.",
+       "mood": "worried"
+      },
+      {
+       "who": "nandini",
+       "text": "(on the phone) Good instinct. This is business email fraud aimed at someone who can move money. What do you do next?",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Business email fraud at 4:40 pm",
+     "situation": "Zoya has an email that appears to come from the MD, asking for an urgent ₹48 lakh payment from a suspense account, with 'no calls'. The deadline is in twenty minutes. What should she do?",
+     "choices": [
+      {
+       "text": "Not pay; report the email to the incident team through the bank's channel and verify with the MD's office on a known number.",
+       "outcome": "Best. Verifying through a separate, known channel breaks the pretext, and reporting lets the incident team block the sender, warn others and check whether anyone else got it. RBI's Directions ask banks to encourage exactly this reporting.",
+       "score": 2
+      },
+      {
+       "text": "Reply to the email asking the MD to confirm the payment in writing.",
+       "outcome": "Replying goes straight back to the fraudster, who will happily confirm. Always verify through a separate channel you already trust.",
+       "score": 0
+      },
+      {
+       "text": "Process half the amount now to show good faith and hold the rest until Monday.",
+       "outcome": "Any payment rewards the fraud. Money sent to a mule account is very hard to recover.",
+       "score": 0
+      },
+      {
+       "text": "Delete the email and tell no one, since nothing was paid.",
+       "outcome": "Not paying is right, but deleting loses evidence and the incident team never learns that the MD's name is being spoofed. Others may be targeted next.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Name the attack",
+     "prompt": "Match each social engineering technique to what it looks like at a bank.",
+     "pairs": [
+      {
+       "left": "Spear phishing",
+       "right": "A tailored mail to the trade finance team quoting a real customer's LC number"
+      },
+      {
+       "left": "Whaling",
+       "right": "A fake legal notice sent only to the CFO and the MD asking them to open a document"
+      },
+      {
+       "left": "Vishing",
+       "right": "A caller posing as the fraud team asks a customer to read out an OTP"
+      },
+      {
+       "left": "Reverse phishing",
+       "right": "A fake helpline number on a search result that customers call themselves"
+      },
+      {
+       "left": "Look-alike domain",
+       "right": "A sender address that differs from the bank's by one character"
+      },
+      {
+       "left": "Rogue app",
+       "right": "A copy of the bank's mobile app on an unofficial site that captures logins"
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Reporting a suspicious message",
+     "prompt": "Put the steps in the order you should follow when a suspicious mail lands in your inbox.",
+     "steps": [
+      "Do not click links, open attachments or reply",
+      "Report it at once through the bank's phishing report button or incident channel",
+      "If you clicked or entered details, tell the incident team immediately and say exactly what you did",
+      "Follow the incident team's instructions, such as disconnecting the device or resetting credentials",
+      "Warn colleagues only in the way the incident team advises, without forwarding the mail"
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Customer education: myth or fact?",
+     "cards": [
+      {
+       "front": "'The bank may call to ask for my OTP to stop a fraud.'",
+       "back": "Myth. Banks must teach customers the risks of sharing credentials, passwords, OTPs and PINs with anyone. A genuine bank officer never needs them."
+      },
+      {
+       "front": "'Any app with the bank's logo is safe.'",
+       "back": "Myth. Banks must help customers get only the authorised app, for example through a link or QR code on the bank's website, and take down rogue apps."
+      },
+      {
+       "front": "'Screen-sharing apps are fine if the caller is polite.'",
+       "back": "Myth. RBI asks banks to warn customers about remote access of their devices, a common route for fraud."
+      },
+      {
+       "front": "'I have to go through safety tips in the bank's app.'",
+       "back": "Fact. Customers must go through secure usage guidelines, in their preferred language, when onboarding and after major app updates."
+      },
+      {
+       "front": "'I can report a phishing site to my bank.'",
+       "back": "Fact. Banks must encourage customers to report phishing mails and sites and must act on those reports."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Mr Tripathi tells Zoya a 'fraud team' caller asked for his OTP. Under RBI's Directions, which bank duty does this incident most directly test?",
+     "options": [
+      "Reconciling digital payment transactions within 24 hours of receiving settlement files",
+      "Educating customers about the risks of sharing credentials, OTPs and PINs, and acting on reports of phishing",
+      "Conducting penetration tests on internet-facing systems every year",
+      "Keeping DC and DR sites geographically well separated"
+     ],
+     "answer": 1,
+     "explanation": "Paragraphs 205-207 of the Cybersecurity Directions and paragraph 64 of the Digital Payment Security Controls Directions require customer education on phishing, vishing and sharing OTPs or PINs, and action on customer reports."
+    },
+    {
+     "type": "tip",
+     "title": "The five-second check before you click",
+     "body": "- **Sender:** is the domain exactly the bank's, letter for letter?\n- **Surprise:** were you expecting this message, link or file?\n- **Speed:** is it pushing you to act within minutes?\n- **Secret:** is it asking for a password, OTP, PIN or remote access?\n- **Switch channel:** if in doubt, verify by calling a number you already know.\n\nIf any answer worries you, report it. A false alarm costs a minute; a missed lure can cost crores."
+    },
+    {
+     "type": "keypoints",
+     "title": "Lure Lagoon: what to carry forward",
+     "items": [
+      "Phishing is social engineering by electronic message; vishing, whaling, spear phishing and reverse phishing are its cousins.",
+      "Banks must run anti-spoofing mail controls with DMARC, limit attachment types and use anti-phishing and anti-rogue app takedown services.",
+      "Staff must be encouraged to report suspicious behaviour to the incident management team, and should report even after a click.",
+      "Customers must be taught never to share credentials, OTPs or PINs and to beware of remote access and fake helplines.",
+      "Verify unusual requests on a separate, known channel, especially requests to move money."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Recall the last unexpected message that asked you to click, pay or share something. Which of the five checks would have flagged it, and how would you report it in your bank?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-cy-s2-q1",
+     "question": "Which pair of mail controls does the 2026 Cybersecurity Directions specifically require banks to implement?",
+     "options": [
+      "Mandatory digital signatures on all customer emails and a ban on webmail",
+      "Encryption of every internal email and a ban on all attachments",
+      "A weekly manual review of all mail by the CISO and a block on foreign senders",
+      "DMARC for the bank's email domains and controls on permitted attachment types"
+     ],
+     "answer": 3,
+     "explanation": "Paragraphs 119 and 120 require control of permissible attachment types and a DMARC solution for the bank's email domains, alongside anti-spoofing and look-alike domain protection.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s2-q2",
+     "question": "What does RBI require banks to do about phishing websites and rogue applications impersonating them?",
+     "options": [
+      "Rely on customers to find and report such sites",
+      "Publish a list of fake sites in a newspaper every quarter",
+      "Report each site to the police and wait for a court order before acting",
+      "Subscribe to anti-phishing and anti-rogue app services from external providers to find and take them down"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 148 requires banks to subscribe to anti-phishing and anti-rogue app services from external service providers to identify and take down phishing websites and rogue apps.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s2-q3",
+     "question": "A clerk clicked a link in a fake 'password expiry' mail and typed her password, then felt something was wrong. What should she do first?",
+     "options": [
+      "Tell the incident team immediately what she clicked and entered, so they can contain it",
+      "Forward the mail to all colleagues as a warning",
+      "Wait to see if anything unusual happens before reporting",
+      "Change her password quietly and say nothing to avoid disciplinary action"
+     ],
+     "answer": 0,
+     "explanation": "Speed matters most after a click. RBI asks banks to encourage reporting of suspicious behaviour to the incident team; a quiet password change may not stop a stolen session, and forwarding spreads the lure.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s2-q4",
+     "question": "A customer phones the number he found on a search engine for the 'bank helpline' and is asked to install a screen-sharing app. Which threat is this?",
+     "options": [
+      "Spear phishing aimed at a payments team",
+      "Reverse phishing combined with a remote access attempt",
+      "A distributed denial of service attack",
+      "Whaling aimed at a senior executive"
+     ],
+     "answer": 1,
+     "explanation": "In reverse phishing, the victim contacts the fraudster through a fake number. The Digital Payment Security Controls Directions require banks to warn customers about reverse phishing and remote access of devices.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s2-q5",
+     "question": "What must banks teach customers about credentials under paragraph 207 of the Cybersecurity Directions?",
+     "options": [
+      "The risks and consequences of sharing login credentials, passwords, OTPs, PINs and other authentication details",
+      "How to share OTPs only with bank staff who show an ID card",
+      "How to change their PIN every week",
+      "How to store passwords safely in a notebook kept at home"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 207 requires banks to educate customers about the risks and consequences of sharing credentials, passwords, OTPs, PINs and other authentication information, with anyone.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s2-q6",
+     "question": "An email to only the MD and CFO, made to look like a court summons, asks them to open an attached document. Which term fits best?",
+     "options": [
+      "Tailgating",
+      "Reverse phishing",
+      "Vishing",
+      "Whaling"
+     ],
+     "answer": 3,
+     "explanation": "Whaling targets senior executives. RBI's Cyber Crisis Management Plan list includes whaling alongside spear phishing and vishing.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s2-q7",
+     "question": "Under the Digital Payment Security Controls Directions, when must customers go through the secure usage guidelines in the bank's payment app?",
+     "options": [
+      "At onboarding and on first use after each app update or major update to the guidelines, with no option to skip",
+      "Only if the customer chooses to read them from the help menu",
+      "Only after the customer reports a fraud",
+      "Only once a year when the bank sends a reminder"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 58 makes the guidelines mandatory, in the customer's preferred language, with confirmation recorded at onboarding and at first use after updates.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s2-q8",
+     "question": "Zoya receives an urgent 'MD' email asking for a payment with 'no calls'. Which response best matches RBI's expectations and good practice?",
+     "options": [
+      "Delete the email and tell nobody, since no payment was made",
+      "Verify with the MD's office on a known number and report the email to the incident team",
+      "Reply asking the MD to confirm by email before paying",
+      "Pay because the display name is the MD's"
+     ],
+     "answer": 1,
+     "explanation": "Verification on a separate, trusted channel defeats the pretext, and reporting lets the incident team respond. Replying reaches the fraudster; deleting loses evidence.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s2-q9",
+     "question": "How can a bank help customers avoid downloading a fake mobile banking app, according to the Digital Payment Security Controls Directions?",
+     "options": [
+      "By sending the app file to customers as an SMS attachment",
+      "By allowing the app only on phones bought through the bank",
+      "By asking customers to email the bank before each download",
+      "By publishing the app's checksum, or a direct link or QR code on its website to the authorised app"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 68(5) requires the bank to host the checksum of the current app version, or, where the app is only in app stores, give a direct link or QR code on its website.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-cy-s2-q10",
+     "question": "A branch receives several customer reports of a phishing site that copies the bank's login page. What does RBI expect the bank to do?",
+     "options": [
+      "Tell customers it is not the bank's responsibility",
+      "Take effective remedial action, such as getting the site taken down and warning customers",
+      "Ask customers to report the site to their mobile operator instead",
+      "Note the reports and wait for the annual IS audit to review them"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 206 requires banks to encourage customers to report phishing mails and sites and to take effective remedial action when they do.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Access Management and Customer Data: Least Privilege, Secrecy and Leak Prevention",
+   "stage": "The Keymaster's Gate",
+   "summary": "Who gets access to what and for how long, how privileged and remote access is controlled, why removable media is blocked by default, and how banks keep customer data secret under RBI's Directions and the DPDP Act.",
+   "minutes": 50,
+   "objectives": [
+    "Apply RBI's access rules: valid business need, least privilege, separation of duties and MFA for privileged users",
+    "Explain the controls on teleworking, removable media, mobile devices and vendor staff",
+    "Describe the bank's data leak prevention duty across endpoints, networks, servers and vendors",
+    "Keep customer information secret and use it only as the KYC Directions and data protection law allow"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Three keys in the wrong hands",
+     "setting": "IT Function office, Kochi, on a call with Bengaluru. 10:00 am.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "Our access review found three things. A contractor who left in June still has an active VPN account. A database administrator has local admin rights on his laptop. And 214 accounts haven't logged in for six months.",
+       "mood": "worried"
+      },
+      {
+       "who": "nandini",
+       "text": "Any of those would interest an attacker. The first two would interest an RBI examiner even more.",
+       "mood": "thinking"
+      },
+      {
+       "who": "rohan",
+       "text": "The phishing at Lucknow stole a branch password. If that user had broad access, we'd be writing a very different incident report.",
+       "mood": "neutral"
+      },
+      {
+       "who": "joseph",
+       "text": "People say access reviews slow the business down.",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "Access is a key, not a perk. Stage three is the Keymaster's Gate: who gets which key, for how long, and how we keep customer data where it belongs.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Access the RBI way",
+     "scenes": [
+      {
+       "icon": "🔑",
+       "heading": "Only with a business need",
+       "narration": "RBI's Directions allow access to information assets only where a valid business need exists. Curiosity, convenience and seniority are not business needs."
+      },
+      {
+       "icon": "🤏",
+       "heading": "Least privilege",
+       "narration": "Give each user the smallest set of rights the job needs, and split duties so no one person can both make and approve a risky change."
+      },
+      {
+       "icon": "📲",
+       "heading": "Prove it twice",
+       "narration": "Based on risk, banks use two-factor or multi-factor authentication. For privileged users of critical systems and critical activities, MFA is mandatory."
+      },
+      {
+       "icon": "👀",
+       "heading": "Watch the powerful",
+       "narration": "People with elevated access are closely supervised, and all their activity is logged and reviewed. Abnormal logon patterns are monitored."
+      },
+      {
+       "icon": "🚪",
+       "heading": "Close the door",
+       "narration": "Banks limit invalid logon attempts and deactivate dormant accounts, so forgotten keys cannot be reused."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "The access lifecycle",
+     "caption": "Paragraphs 104-113 of the 2026 Cybersecurity Directions.",
+     "items": [
+      {
+       "label": "Request on business need",
+       "detail": "Access is requested and approved for a defined role and purpose"
+      },
+      {
+       "label": "Grant least privilege",
+       "detail": "Rights are provisioned centrally, for a set duration if elevated"
+      },
+      {
+       "label": "Authenticate strongly",
+       "detail": "MFA by risk; mandatory for privileged users of critical systems"
+      },
+      {
+       "label": "Log and monitor",
+       "detail": "Privileged activity logged and reviewed; odd logons flagged"
+      },
+      {
+       "label": "Review and recertify",
+       "detail": "Managers confirm access still matches the job"
+      },
+      {
+       "label": "Revoke and disable",
+       "detail": "Leavers removed at once; dormant accounts deactivated"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A DBA asks to keep permanent local administrator rights on his laptop 'to save time installing tools'. What do RBI's Directions say?",
+     "options": [
+      "Admin rights on end-user machines are disallowed; rights are given on need-to-know, for a specific duration, through an established process",
+      "Allowed for IT staff, because they are trusted users",
+      "Allowed if the laptop has antivirus software installed"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 108 disallows administrative rights on end-user workstations, PCs and laptops and allows access rights only on a need-to-know basis and for specific durations through an established process."
+    },
+    {
+     "type": "concept",
+     "title": "RBI's access, telework and media rules",
+     "body": "**User access (paras 104-113):** access only for a valid business need; centralised authentication and authorisation with strong passwords, **least privilege** and **separation of duties**; **mandatory MFA** for privileged users of critical systems and critical activities; privileged access managed, logged and monitored; invalid logons limited; **dormant accounts deactivated**; abnormal logon patterns monitored; credentials and tokens protected from leakage.\n\n**Teleworking (para 114):** secure remote access, **MFA for enterprise access to critical systems**, an inventory of remote-access devices and protection of data shared while working remotely.\n\n**Removable media (paras 121-125):** **not permitted by default** unless authorised for a defined use and duration; media scanned for malware first; limits on what can be copied; secure erasure after use.\n\n**Vendor staff (para 135):** background checks, non-disclosure and security policy compliance agreements for all third-party service providers."
+    },
+    {
+     "type": "sort",
+     "title": "Allowed or not allowed?",
+     "prompt": "Sort each request under RBI's 2026 access and media rules.",
+     "buckets": [
+      "Allowed with controls",
+      "Not allowed"
+     ],
+     "items": [
+      {
+       "text": "A privileged database login to core banking using password only",
+       "bucket": 1
+      },
+      {
+       "text": "Temporary admin rights for a patch window, approved and time-limited",
+       "bucket": 0
+      },
+      {
+       "text": "A pen drive, scanned and authorised for a one-day audit data transfer",
+       "bucket": 0
+      },
+      {
+       "text": "Keeping a leaver's account active 'in case he comes back'",
+       "bucket": 1
+      },
+      {
+       "text": "Remote access to a critical system with MFA from a registered device",
+       "bucket": 0
+      },
+      {
+       "text": "A teller who can both create and approve the same beneficiary",
+       "bucket": 1
+      },
+      {
+       "text": "A vendor engineer with a background check and signed NDA accessing a server",
+       "bucket": 0
+      },
+      {
+       "text": "An unregistered personal laptop connecting to the bank's network",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "The campaign list",
+     "setting": "Retail sales floor, Bengaluru. Late afternoon.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "A regional sales manager stops by with a pen drive and a smile.",
+       "mood": "neutral"
+      },
+      {
+       "who": "zoya",
+       "text": "(on video from Lucknow) He's asking every branch for the same thing: an export of customers with fixed deposits above ₹5 lakh, with mobile numbers.",
+       "mood": "neutral"
+      },
+      {
+       "who": "zoya",
+       "text": "He wants to hand it to a telemarketing agency to sell an insurance product. He says the customers 'already trust us'.",
+       "mood": "worried"
+      },
+      {
+       "who": "nandini",
+       "text": "Trust is exactly what's at stake. Let's think about secrecy, consent, removable media and vendors, all at once.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "A list on a pen drive",
+     "situation": "A sales manager asks branches to copy a list of high-value deposit customers with phone numbers to his pen drive, for an outside telemarketing agency to cross-sell insurance. Customers gave their details when opening accounts. What should the branches do?",
+     "choices": [
+      {
+       "text": "Decline and escalate: account-opening data cannot be used for cross-selling without customers' express permission, removable media is blocked by default and vendor sharing needs proper controls.",
+       "outcome": "Best. The KYC Directions keep customer information secret and bar using account-opening data for cross-selling without express permission. The Cybersecurity Directions block removable media unless authorised and require data leak prevention at vendors too.",
+       "score": 2
+      },
+      {
+       "text": "Share the list but remove the phone numbers, keeping names and deposit amounts.",
+       "outcome": "Still a breach. Names with deposit amounts are confidential customer information, and the purpose still lacks the customers' express permission.",
+       "score": 0
+      },
+      {
+       "text": "Share it by encrypted email instead of a pen drive, since encryption solves the risk.",
+       "outcome": "Encryption protects data in transit, but it doesn't give the bank the right to use the data for cross-selling or to pass it to an agency without consent.",
+       "score": 1
+      },
+      {
+       "text": "Share it if the agency signs an NDA.",
+       "outcome": "An NDA is a useful vendor control, but it doesn't replace the customer's express permission for a new purpose.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Two sources of the confidentiality duty",
+     "caption": "The DPDP Act is described in general terms only; ask your privacy team for the current duties.",
+     "headers": [
+      "RBI rules",
+      "DPDP Act (general terms)"
+     ],
+     "items": [
+      {
+       "label": "Source",
+       "left": "RBI KYC Directions, 2025, paragraph 63",
+       "right": "Digital Personal Data Protection Act, 2023"
+      },
+      {
+       "label": "Core duty",
+       "left": "Keep customer information from the banking relationship secret",
+       "right": "Process digital personal data lawfully and protect it"
+      },
+      {
+       "label": "Use for other purposes",
+       "left": "No cross-selling with account-opening data without express permission",
+       "right": "Generally needs a lawful basis such as the person's consent"
+      },
+      {
+       "label": "Security",
+       "left": "Data leak prevention under the Cybersecurity Directions",
+       "right": "Reasonable security safeguards against breaches"
+      },
+      {
+       "label": "Oversight",
+       "left": "RBI supervision and penalties",
+       "right": "Data Protection Board of India"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Match the control to its purpose",
+     "prompt": "Each control comes from RBI's 2026 Directions. Match it to what it protects against.",
+     "pairs": [
+      {
+       "left": "Data leak prevention strategy",
+       "right": "Loss of sensitive data from endpoints, networks, servers and vendor sites"
+      },
+      {
+       "left": "Remote wipe and lock",
+       "right": "Customer data on a lost or stolen laptop or phone"
+      },
+      {
+       "left": "Containerised business app",
+       "right": "Bank data mixing with personal apps on a smartphone"
+      },
+      {
+       "left": "Masking in SMS and email",
+       "right": "Full account or card numbers exposed in customer messages"
+      },
+      {
+       "left": "Data classification",
+       "right": "Treating all information the same, whatever its sensitivity"
+      },
+      {
+       "left": "Dormant account deactivation",
+       "right": "Old, unwatched user IDs being reused by attackers"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Keymaster terms",
+     "cards": [
+      {
+       "front": "Privileged user",
+       "back": "A user whose role gives powers in a system well beyond those of most users, such as a database or network administrator."
+      },
+      {
+       "front": "Least privilege",
+       "back": "Each user gets only the rights the job needs, nothing more."
+      },
+      {
+       "front": "Separation of duties",
+       "back": "Splitting tasks so one person cannot both make and approve a sensitive action."
+      },
+      {
+       "front": "Data fiduciary",
+       "back": "Under the DPDP Act, the organisation that decides why and how personal data is processed; a bank is one."
+      },
+      {
+       "front": "Custodial information",
+       "back": "Customers' personal and sensitive data the bank holds as owner and must protect, even at a vendor."
+      },
+      {
+       "front": "Dormant account (user ID)",
+       "back": "A login that has not been used for a long time and must be deactivated under RBI's rules."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which users must use multi-factor authentication under paragraph 110 of the Cybersecurity Directions, whatever the bank's risk assessment says?",
+     "options": [
+      "Every customer using internet banking for balance enquiries",
+      "Only users working from home",
+      "Only the CISO and the Head of IT",
+      "Privileged users of critical information systems and critical activities"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 110 lets banks choose two-factor or multi-factor authentication by risk, but makes MFA mandatory for privileged users of critical systems and critical activities. Telework MFA for critical systems is a separate rule in paragraph 114."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Bank of Bahrain & Kuwait, India Operations, 2022",
+     "body": "In **December 2022** RBI imposed a penalty of **₹2.66 crore** on Bank of Bahrain & Kuwait BSC, India Operations, for not complying with its directions on the **Cyber Security Framework in Banks**.\n\nRBI's press release said its IT examination in October 2021 and a cyber incident the bank reported showed the bank had failed to, among other things:\n\n- **disallow administrative rights on endpoints**\n- use **multi-factor authentication** for access to critical servers\n- control and monitor access to critical servers\n- enable **audit logs** and real-time alerts, and run a **security operations centre**\n- have a **Cyber Crisis Management Plan**\n\nRBI said these failures let an **unauthorised intrusion go undetected**.\n\n**Lesson:** each missing access control looks small. Together they gave an intruder room to hide."
+    },
+    {
+     "type": "tip",
+     "title": "Data protection law in general terms",
+     "body": "The **Digital Personal Data Protection Act, 2023** treats banks as **data fiduciaries** for digital personal data. In broad terms it expects them to use personal data only for lawful purposes, usually with the person's consent or another permitted ground, to protect it with **reasonable security safeguards**, and to tell the **Data Protection Board** and affected people about personal data breaches. The **DPDP Rules, 2025** bring duties into force in phases.\n\nThis quest does not state the Act's section numbers or deadlines. Follow your bank's privacy policy and ask your privacy team which duties apply today."
+    },
+    {
+     "type": "keypoints",
+     "title": "Keymaster's Gate: what to carry forward",
+     "items": [
+      "Access only for a valid business need, with least privilege and separation of duties; no admin rights on end-user machines.",
+      "MFA is mandatory for privileged users of critical systems and for remote access to critical systems.",
+      "Leavers are removed promptly, dormant accounts deactivated, and privileged activity logged and reviewed.",
+      "Removable media is blocked by default; data leak prevention covers endpoints, networks, servers and vendors.",
+      "Customer information is secret; account-opening data is not used for cross-selling without express permission."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "List the systems you can access today. For each, could you explain the business need to an RBI examiner? Is there any access you no longer need and should ask to remove?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-cy-s3-q1",
+     "question": "When does paragraph 104 of the Cybersecurity Directions allow a user access to an information asset?",
+     "options": [
+      "Whenever the asset is not classified as critical",
+      "Only where a valid business need exists",
+      "Whenever the user has finished induction",
+      "Whenever the user's manager is senior enough"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 104 is simple: access is allowed only where a valid business need exists. Seniority or training alone do not create a need.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s3-q2",
+     "question": "A network administrator works from home and logs into the bank's critical systems through VPN using a password. What is missing under the Directions?",
+     "options": [
+      "Multi-factor authentication for enterprise access to critical systems",
+      "A written approval from the Board for each remote session",
+      "A ban on all remote work for IT staff",
+      "A second VPN from another vendor"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 114 requires MFA for enterprise access to critical systems in teleworking, and paragraph 110 makes MFA mandatory for privileged users of critical systems.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q3",
+     "question": "An access review finds 214 user IDs unused for six months. What does RBI's framework expect?",
+     "options": [
+      "Leave them, since unused accounts pose no risk",
+      "Deactivate dormant accounts under the bank's controls",
+      "Rename them so attackers cannot guess them",
+      "Transfer them to the IT team for later use"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 112 requires controls to minimise invalid logons and deactivate dormant accounts, which attackers can otherwise reuse unnoticed.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s3-q4",
+     "question": "What is the default rule on removable media such as pen drives in the bank's environment?",
+     "options": [
+      "Permitted if the device is encrypted",
+      "Permitted for managers but not for clerks",
+      "Not permitted unless specifically authorised for a defined use and duration",
+      "Permitted for all staff once scanned by antivirus"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 121 sets a default ban unless media is specifically authorised for a defined use and duration; scanning (para 124) is an additional step, not a replacement.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q5",
+     "question": "A sales manager wants account-opening data to cross-sell insurance through an agency. Which RBI rule most directly stops him?",
+     "options": [
+      "The KYC Directions' secrecy rule bars such use without the customer's express permission",
+      "The rule on half-yearly DR drills for critical systems",
+      "The rule that the ITSC meets at least quarterly",
+      "The rule requiring DMARC on email domains"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 63 of the KYC Directions keeps customer information secret and bars using account-opening data for cross-selling or other purposes without express permission.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q6",
+     "question": "Which statement about the bank's data leak prevention strategy is correct?",
+     "options": [
+      "It applies only when data leaves India",
+      "It applies only to customer data, not business data",
+      "It only needs to cover the bank's data centre servers",
+      "It must cover endpoints, data in transmission and stored data, with similar arrangements at vendor-managed facilities"
+     ],
+     "answer": 3,
+     "explanation": "Paragraphs 51 and 52 require a comprehensive strategy for sensitive business and customer data across endpoints, transmission and storage, online or offline, and similar arrangements at vendor sites.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q7",
+     "question": "A teller can both add a new beneficiary to a customer's account and approve the same addition. Which principle is broken?",
+     "options": [
+      "Recovery point objective",
+      "Straight through processing",
+      "Data classification",
+      "Separation of duties"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 109 requires centralised authentication with least privilege and separation of duties, so one person cannot both make and approve a sensitive action.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s3-q8",
+     "question": "What must the bank require of all third-party service providers whose staff access its critical assets?",
+     "options": [
+      "Only a letter of comfort from the vendor's CEO",
+      "An annual training certificate from CERT-In",
+      "Background checks, non-disclosure agreements and security policy compliance agreements",
+      "A deposit with the bank equal to the contract value"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 135 mandates background checks, non-disclosure and security policy compliance agreements for all third-party service providers.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q9",
+     "question": "In RBI's 2022 action against Bank of Bahrain & Kuwait's India operations, what did RBI say the control failures led to?",
+     "options": [
+      "A ban on issuing new credit cards",
+      "A nationwide ATM outage lasting a week",
+      "An unauthorised intrusion that went undetected",
+      "The loss of the bank's banking licence"
+     ],
+     "answer": 2,
+     "explanation": "The press release listed failures such as admin rights on endpoints, no MFA for critical servers, no SOC and no CCMP, which resulted in an unauthorised intrusion going undetected. The penalty was ₹2.66 crore.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s3-q10",
+     "question": "Under the Digital Payment Security Controls Directions, how should customer account or card numbers appear in SMS and email messages?",
+     "options": [
+      "Only in email attachments, never in the body",
+      "In full, so customers can match them easily",
+      "In full, but only in English",
+      "Redacted or masked"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 40 requires banks to redact or mask customer information such as account and card numbers in SMS and email, including attachments.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Cyber Incident Response: Six Hours to DAKSH, CERT-In and the Crisis Plan",
+   "stage": "The Six-Hour Watchtower",
+   "summary": "How a bank detects, contains, reports and recovers from cyber incidents under RBI's 2026 Directions: the incident response policy, specialised training, DAKSH reporting within six hours, CERT-In, the Cyber Crisis Management Plan, the CSOC and DR drills.",
+   "minutes": 50,
+   "objectives": [
+    "Describe what the incident response and recovery policy must cover and who needs specialised training",
+    "Report a cyber incident to RBI on DAKSH within six hours of detection and notify CERT-In",
+    "Explain the four aspects of the Cyber Crisis Management Plan and the CSOC's three levels",
+    "Connect incident response to DR drills, recovery objectives and lessons learnt"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The login that shouldn't exist",
+     "setting": "Cyber Security Operations Centre, Bengaluru. 10:05 am.",
+     "lines": [
+      {
+       "who": "rohan",
+       "text": "SIEM alert. The Lucknow clerk's stolen password was just used from an IP in another state to log into the branch's account-opening module.",
+       "mood": "worried"
+      },
+      {
+       "who": "nandini",
+       "text": "So the phish wasn't harmless. Is the session live?",
+       "mood": "thinking"
+      },
+      {
+       "who": "rohan",
+       "text": "Killed it a minute ago. Account disabled, device quarantined. We confirmed it as a cyber incident at 10:05.",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "Then the clock started at 10:05. RBI wants this on DAKSH within six hours of detection. Who's drafting?",
+       "mood": "neutral"
+      },
+      {
+       "who": "joseph",
+       "text": "Shouldn't we wait until we know what they touched? I'd rather not send RBI half a story.",
+       "mood": "worried"
+      },
+      {
+       "who": "nandini",
+       "text": "Stage four is the Six-Hour Watchtower. Let's see what 'half a story' means to a regulator.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "From alert to report",
+     "scenes": [
+      {
+       "icon": "🚨",
+       "heading": "Detect",
+       "narration": "The CSOC watches logs around the clock. Staff, vendors and customers must also have a clear way to report suspected incidents."
+      },
+      {
+       "icon": "🧱",
+       "heading": "Contain",
+       "narration": "The bank limits the attack by shielding or quarantining affected devices and systems before the damage spreads."
+      },
+      {
+       "icon": "⏱️",
+       "heading": "Report",
+       "narration": "RBI requires banks to report cyber incidents on DAKSH, its supervisory monitoring platform, within six hours of detection, and to notify CERT-In proactively."
+      },
+      {
+       "icon": "🔎",
+       "heading": "Analyse",
+       "narration": "The bank analyses severity, impact and root cause, using forensics where needed, then takes corrective and preventive action."
+      },
+      {
+       "icon": "📣",
+       "heading": "Communicate",
+       "narration": "Clear plans escalate the incident to the Board and senior management and inform customers where required."
+      },
+      {
+       "icon": "🔁",
+       "heading": "Learn",
+       "narration": "Lessons from incidents, tests and drills feed back into the response plans."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "The Cyber Crisis Management Plan",
+     "caption": "The CCMP is part of the Board-approved cybersecurity framework and must address these four aspects (paragraphs 192-193).",
+     "items": [
+      {
+       "label": "Detection",
+       "detail": "Spot intrusions quickly through monitoring, alerts and staff reports"
+      },
+      {
+       "label": "Containment",
+       "detail": "Isolate affected systems and stop the spread"
+      },
+      {
+       "label": "Response",
+       "detail": "Act on the threat, report, communicate and coordinate"
+      },
+      {
+       "label": "Recovery",
+       "detail": "Restore services securely within recovery objectives, then learn"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Rohan's team confirmed the incident at 10:05 am. By when must Godavari Harbour Bank report it to RBI on DAKSH?",
+     "options": [
+      "By 4:05 pm the same day, within six hours of detection",
+      "By 10:05 am the next day, within twenty-four hours",
+      "Within seventy-two hours, once forensics are complete",
+      "Only after root cause analysis is approved by the ISC"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 182 requires reporting within six hours of detection on the DAKSH platform. Analysis continues after the first report; it does not delay it."
+    },
+    {
+     "type": "concept",
+     "title": "What the incident response policy must cover",
+     "body": "Under paragraph 175 the bank's cyber incident response and recovery policy must address:\n\n- definition, classification and assessment of incidents\n- roles of staff **and outsourced staff** who handle incidents\n- how **employees, vendors and customers** report incidents\n- a clear communication strategy and plan\n- containment and timely recovery\n- collecting and sharing threat information\n- post-incident review\n- periodic testing of response plans\n\nParagraph 176 adds that **personnel handling cyber incidents must receive specialised training**. Response plans must also be ready for scenarios such as ransomware, data destruction and DDoS.\n\nIf customers' personal data is involved, data protection law adds its own breach duties. Bring in your privacy team at once."
+    },
+    {
+     "type": "order",
+     "title": "Handling the Lucknow incident",
+     "prompt": "Put Rohan's actions in the order RBI's framework and good practice suggest.",
+     "steps": [
+      "Validate the alert and confirm it as a cyber incident, noting the time of detection",
+      "Contain it: end the session, disable the account and quarantine the device",
+      "Report it to RBI on DAKSH within six hours, notify CERT-In and escalate under the communication plan",
+      "Analyse severity, impact and root cause, with forensics if needed",
+      "Fix the root cause and feed lessons into the response plan"
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "timeline",
+     "title": "The Lucknow incident clock",
+     "caption": "An illustrative timeline for the quest's fictional incident.",
+     "items": [
+      {
+       "label": "Phish clicked",
+       "value": "09:20",
+       "detail": "A clerk enters her password on a look-alike page"
+      },
+      {
+       "label": "Detected",
+       "value": "10:05",
+       "detail": "SIEM alert confirmed as a cyber incident; clock starts"
+      },
+      {
+       "label": "Contained",
+       "value": "10:15",
+       "detail": "Session killed, account disabled, device quarantined"
+      },
+      {
+       "label": "Reported",
+       "value": "12:30",
+       "detail": "Initial report on DAKSH; CERT-In notified"
+      },
+      {
+       "label": "Six-hour limit",
+       "value": "16:05",
+       "detail": "Latest time for the DAKSH report"
+      },
+      {
+       "label": "Root cause",
+       "value": "Next days",
+       "detail": "Forensics, fixes and lessons learnt"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Half a story",
+     "setting": "CISO's office, 11:40 am.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "We still don't know if any customer records were viewed. If we report now, we may have to correct it later. That looks bad.",
+       "mood": "neutral"
+      },
+      {
+       "who": "rohan",
+       "text": "We know enough: confirmed unauthorised access to a bank system using a stolen credential.",
+       "mood": "thinking"
+      },
+      {
+       "who": "anil",
+       "text": "(on the phone) As ITSC chair, I'd rather explain an update than explain a late report. What does the rule say?",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "Joseph wants certainty. RBI wants speed. Let's decide.",
+       "mood": "thinking"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Report now or wait?",
+     "situation": "It is 11:40 am. The incident was detected at 10:05 am. The team knows a stolen credential was used to access a branch module, but not yet whether customer data was viewed. Joseph wants to wait for forensic results expected tomorrow. What should the bank do?",
+     "choices": [
+      {
+       "text": "Report on DAKSH now with the facts known, notify CERT-In, and send updates as forensics progress.",
+       "outcome": "Best. The six-hour limit runs from detection, not from the end of the investigation. An initial report with known facts, followed by updates, meets RBI's rule and keeps the regulator informed.",
+       "score": 2
+      },
+      {
+       "text": "Wait for tomorrow's forensic report so RBI gets one complete, accurate submission.",
+       "outcome": "This misses the six-hour window. Accuracy matters, but RBI expects timely reporting and allows the bank to add detail later.",
+       "score": 0
+      },
+      {
+       "text": "Report to CERT-In now and to RBI after forensics, since CERT-In is the cyber agency.",
+       "outcome": "Both are needed. The Directions require reporting to RBI on DAKSH within six hours and proactive notification to CERT-In; one does not replace the other.",
+       "score": 1
+      },
+      {
+       "text": "Report only if forensics confirm that customer data was accessed.",
+       "outcome": "A cyber incident is reportable whether or not customer data was touched. Waiting for that answer misses the deadline.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Who staffs the Cyber Security Operations Centre",
+     "caption": "Paragraph 221. All CSOC staff, in-house or from a service provider, must be adequately trained (paragraph 223).",
+     "items": [
+      {
+       "label": "Level 3: advanced analysts",
+       "detail": "Deep packet analysis, IOC collection, forensic evidence, malware reverse engineering"
+      },
+      {
+       "label": "Level 2: specialists",
+       "detail": "Network, data and endpoint security experts for root cause and corrective action"
+      },
+      {
+       "label": "Level 1: round-the-clock monitoring",
+       "detail": "Adequately trained staff with product and vendor certifications watching 24x7"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Whose job is it?",
+     "prompt": "Sort each incident duty to the people mainly responsible.",
+     "buckets": [
+      "Every employee",
+      "Incident team and CSOC",
+      "Board and senior management"
+     ],
+     "items": [
+      {
+       "text": "Report a suspicious mail or odd system behaviour at once",
+       "bucket": 0
+      },
+      {
+       "text": "Tell the incident team immediately after clicking a bad link",
+       "bucket": 0
+      },
+      {
+       "text": "Quarantine affected devices and analyse root cause",
+       "bucket": 1
+      },
+      {
+       "text": "Submit the DAKSH report and notify CERT-In",
+       "bucket": 1
+      },
+      {
+       "text": "Collect indicators of compromise and preserve evidence",
+       "bucket": 1
+      },
+      {
+       "text": "Receive escalations and oversee the response",
+       "bucket": 2
+      },
+      {
+       "text": "Approve the cybersecurity framework that includes the CCMP",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Watchtower terms",
+     "cards": [
+      {
+       "front": "DAKSH",
+       "back": "RBI's Advanced Supervisory Monitoring System. Banks report cyber incidents on it within six hours of detection."
+      },
+      {
+       "front": "CERT-In",
+       "back": "The Indian Computer Emergency Response Team. Banks must notify it of cyber incidents proactively, alongside RBI."
+      },
+      {
+       "front": "IB-CART",
+       "back": "The Indian Banks Centre for Analysis of Risks and Threats, set up by IDRBT, where banks may share threat intelligence."
+      },
+      {
+       "front": "CCMP",
+       "back": "Cyber Crisis Management Plan: part of the Board-approved framework, covering detection, containment, response and recovery."
+      },
+      {
+       "front": "RTO",
+       "back": "Recovery Time Objective: how long a system can be in recovery before the business is hurt. The ITSC approves a minimal RTO for critical systems."
+      },
+      {
+       "front": "RPO",
+       "back": "Recovery Point Objective: the point in time to which data must be recovered. RBI wants near zero for critical systems."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "How often must a bank run DR drills for its critical information systems under the 2026 Directions?",
+     "options": [
+      "Once a year, in a test environment only",
+      "Every three years, with the IS audit",
+      "Only after a major outage",
+      "At least every six months, switching to the DR site for at least a full working day"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 165 sets DR drills for critical systems at least half-yearly, and paragraph 167 requires running from the DR or alternate site for at least a full working day, beginning to end of day."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Tamilnad Mercantile Bank, 2021",
+     "body": "In **May 2021** RBI imposed a penalty of **₹1 crore** on Tamilnad Mercantile Bank for not complying with certain provisions of RBI's **Cyber Security Framework in Banks** directions of 2016.\n\nRBI's press release explained that the bank had **reported a few cyber incidents to RBI in October 2019**. When RBI examined those incident reports, it found non-compliance with the framework. After a show-cause notice, the bank's reply, a personal hearing and further submissions, RBI found the charges substantiated.\n\n**Lesson:** reporting is required and it is right. But an incident report also shows the regulator how well your controls work. The best protection is a framework that holds up when someone looks closely."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Corporation Bank, 2019",
+     "body": "In **August 2019** RBI imposed a penalty of **₹1 crore** on Corporation Bank for not complying with its directions on the **Cyber Security Framework in Banks** and on **fraud classification and reporting**.\n\nAccording to RBI, the case began with a **cyber security incident report** the bank itself submitted, about **fraudulent transactions using a cancelled debit card**. Reviewing that report showed the bank had not complied with both sets of directions. RBI found the charges substantiated after the bank's reply and a personal hearing.\n\n**Lesson:** a cyber incident is often a fraud incident too. Incident response and fraud reporting must work together."
+    },
+    {
+     "type": "keypoints",
+     "title": "Six-Hour Watchtower: what to carry forward",
+     "items": [
+      "The incident response policy covers classification, roles (including outsourced staff), reporting by staff, vendors and customers, communication, recovery and testing.",
+      "Staff who handle cyber incidents must get specialised training; CSOC staff must be adequately trained at every level.",
+      "Report cyber incidents to RBI on DAKSH within six hours of detection and notify CERT-In proactively; update as facts emerge.",
+      "The Board-approved CCMP covers detection, containment, response and recovery, including ransomware, DDoS and phishing.",
+      "DR drills for critical systems run at least half-yearly, and lessons from incidents and drills improve the plans."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If you spotted a cyber incident at 6 pm on a Friday, who exactly would you call, and how would they know the six-hour clock had started? Write down the contact you would use."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-cy-s4-q1",
+     "question": "Within what time must a commercial bank report a cyber incident to RBI, and where?",
+     "options": [
+      "Within twenty-four hours of detection, by email to the RBI regional office",
+      "Within six hours of detection, on the DAKSH platform",
+      "Within six hours of the incident starting, through CERT-In's portal",
+      "Within seventy-two hours of confirming root cause, on DAKSH"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 182 requires reporting within six hours of detection on DAKSH, RBI's supervisory monitoring system, plus proactive notification to CERT-In.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s4-q2",
+     "question": "Which group must receive specialised training under paragraph 176 of the Cybersecurity Directions?",
+     "options": [
+      "Personnel who handle cyber incidents",
+      "External auditors of the bank",
+      "Branch security guards only",
+      "All customers of the bank"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 176 requires specialised training for personnel handling cyber incidents, in addition to the general awareness programme.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s4-q3",
+     "question": "Forensic results will take two more days. The incident was detected four hours ago. What should the bank do about reporting to RBI?",
+     "options": [
+      "Report only if customer data turns out to be affected",
+      "Wait for forensics so the report is complete and accurate",
+      "Report on DAKSH now with known facts and update RBI as the investigation progresses",
+      "Report only to CERT-In now and to RBI later"
+     ],
+     "answer": 2,
+     "explanation": "The six-hour clock runs from detection. A timely initial report with later updates meets the rule; waiting misses it.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s4-q4",
+     "question": "Which four aspects must the Cyber Crisis Management Plan address?",
+     "options": [
+      "Prevention, prosecution, publicity and payment",
+      "Planning, procurement, patching and penetration testing",
+      "Detection, containment, response and recovery",
+      "Identification, investigation, insurance and indemnity"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 193 requires the CCMP to address detection, containment, response and recovery.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s4-q5",
+     "question": "Which of these must the incident response policy include under paragraph 175?",
+     "options": [
+      "A list of employees to be dismissed after each incident",
+      "A mechanism for employees, vendors and customers to report cyber incidents",
+      "A promise never to share threat information outside the bank",
+      "A rule that only the CISO may speak to staff about incidents"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 175 lists items including a reporting mechanism for employees, vendors and customers, communication plans, containment, threat information sharing, post-incident review and testing.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s4-q6",
+     "question": "How is Level 1 of the CSOC described in the 2026 Directions?",
+     "options": [
+      "Monthly review of firewall rules by the Head of IT",
+      "Malware reverse engineering and custom scripting by senior analysts",
+      "Board-level oversight of security operations",
+      "Round-the-clock monitoring by adequately trained staff with relevant product and vendor certifications"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 221 describes Level 1 as round-the-clock monitoring, Level 2 as specialists for root cause and correction, and Level 3 as advanced analysts with forensic and reverse-engineering skills.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s4-q7",
+     "question": "What does RBI require for DR drills on critical information systems?",
+     "options": [
+      "At least yearly, in a test copy of the production system",
+      "Only when the ITSC requests one",
+      "At least half-yearly, running from the DR site for at least a full working day",
+      "Every two years, during a weekend shutdown"
+     ],
+     "answer": 2,
+     "explanation": "Paragraphs 165 and 167 require at least half-yearly drills for critical systems that switch to the DR or alternate site for at least a full working day.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s4-q8",
+     "question": "After a confirmed attack, Rohan isolates the affected servers from the network. Which duty does this fulfil?",
+     "options": [
+      "Reporting the incident to CERT-In",
+      "Containing the attack by shielding or quarantining affected systems",
+      "Testing the DR site",
+      "Approving the IS audit policy"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 180 requires banks to contain cyber-attacks by shielding controls or quarantining affected devices and systems.",
+     "difficulty": 2
+    },
+    {
+     "id": "in-cy-s4-q9",
+     "question": "What triggered RBI's 2021 penalty on Tamilnad Mercantile Bank under the Cyber Security Framework?",
+     "options": [
+      "A newspaper report about a data leak",
+      "A customer complaint to the RBI Ombudsman about ATM charges",
+      "Examining cyber incident reports the bank had filed in October 2019 revealed non-compliance",
+      "A failed DR drill observed by CERT-In"
+     ],
+     "answer": 2,
+     "explanation": "RBI's press release says the bank reported a few cyber incidents in October 2019 and examination of those reports revealed non-compliance, leading to a ₹1 crore penalty in May 2021.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s4-q10",
+     "question": "Which organisations' cyber drills does RBI expect banks to take part in periodically and actively?",
+     "options": [
+      "Drills run by the bank's statutory auditor",
+      "Drills and simulations run under the aegis of agencies such as CERT-In and IDRBT",
+      "Drills run by card networks only",
+      "Drills run by foreign central banks"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 188 asks banks to participate periodically and actively in cyber drills and simulations conducted by institutions such as CERT-In and IDRBT.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Digital Payment Security, Board Oversight and RBI Inspection Readiness",
+   "stage": "The Examiner's Citadel",
+   "summary": "The Digital Payment Security Controls Directions 2026 for apps, internet banking and fraud monitoring, the Board's annual cyber training and oversight, the metrics, testing and IS audit cycle, and how to show RBI's IT examiners that the programme works.",
+   "minutes": 55,
+   "objectives": [
+    "Apply the main Digital Payment Security Controls: MFA, alerts, failed-login limits, fraud rules and reconciliation",
+    "Describe the Board's and senior management's annual training and oversight duties",
+    "Recall the review, testing and drill frequencies RBI sets for policies, VA/PT, DR and committees",
+    "Prepare evidence that the bank's awareness and training programme meets RBI's Directions"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The examiners are coming",
+     "setting": "Board room, Godavari Harbour Bank, Bengaluru. 9:30 am.",
+     "lines": [
+      {
+       "who": "anil",
+       "text": "RBI's IT examination team arrives next month. They'll look at the new Directions, our digital payments and, I'm told, us: the Board.",
+       "mood": "neutral"
+      },
+      {
+       "who": "nandini",
+       "text": "They will. Every Board member and senior manager needs annual training on IT and cyber risks. Two directors joined in August and haven't had it.",
+       "mood": "thinking"
+      },
+      {
+       "who": "joseph",
+       "text": "And our mobile app team wants to keep two old versions live for another year because some customers don't update.",
+       "mood": "worried"
+      },
+      {
+       "who": "zoya",
+       "text": "Branches are also seeing customers who say they never got an alert when a new beneficiary was added.",
+       "mood": "neutral"
+      },
+      {
+       "who": "anil",
+       "text": "Then this is our final stage: the Examiner's Citadel. Let's make sure we can show, not just say, that we comply.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "The Digital Payment Security Controls Directions",
+     "scenes": [
+      {
+       "icon": "📜",
+       "heading": "Board-approved policy",
+       "narration": "Each commercial bank needs a Board-approved policy for digital payment products, covering functionality, security and performance. The Board may delegate review to the ITSC, at least once a year."
+      },
+      {
+       "icon": "🔏",
+       "heading": "Strong authentication",
+       "narration": "Electronic payments and fund transfers need multi-factor authentication, unless RBI has relaxed it, and at least one factor must be dynamic or non-replicable, such as an OTP, device binding or a biometric."
+      },
+      {
+       "icon": "🔔",
+       "heading": "Alerts that mean something",
+       "narration": "Customers get MFA and alerts for payments, new or changed beneficiaries, changed account details and new limits. Alerts name the merchant, not just the payment aggregator."
+      },
+      {
+       "icon": "🕵️",
+       "heading": "Fraud rules and trained staff",
+       "narration": "Banks set fraud rules for things like transaction velocity and new beneficiaries, and train fraud control staff in tools, investigation and rule setting."
+      },
+      {
+       "icon": "📱",
+       "heading": "Safe apps",
+       "narration": "Mobile apps are bound to the device, re-authenticate at launch and retire old versions within six months of a new release."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Securing a digital payment product",
+     "caption": "Built from Chapters II and III of the Digital Payment Security Controls Directions, 2026.",
+     "items": [
+      {
+       "label": "Policy and risk assessment",
+       "detail": "Board-approved policy; risk assessed before launch and regularly after"
+      },
+      {
+       "label": "Secure by design",
+       "detail": "Threat modelling, secure coding, source code review, VA and PT before go-live"
+      },
+      {
+       "label": "Strong authentication",
+       "detail": "MFA with a dynamic or non-replicable factor; failed-login limits"
+      },
+      {
+       "label": "Monitor for fraud",
+       "detail": "Parameterised alerts on velocity, geography, new beneficiaries and more"
+      },
+      {
+       "label": "Reconcile",
+       "detail": "Reconcile with all stakeholders no later than 24 hours from settlement files"
+      },
+      {
+       "label": "Protect and educate customers",
+       "detail": "Mandatory safe-usage guidance, alerts, easy fraud marking and grievance routes"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which authentication set-up meets paragraph 41 of the Digital Payment Security Controls Directions for a fund transfer in the mobile app?",
+     "options": [
+      "A PIN plus device binding to the customer's registered phone",
+      "A password plus the customer's date of birth",
+      "A password plus a security question about the customer's first school",
+      "A username plus a static PIN printed in the welcome kit"
+     ],
+     "answer": 0,
+     "explanation": "MFA is required and at least one factor must be dynamic or non-replicable, such as OTP, device binding with SIM, biometrics or hardware tokens. A password, date of birth or static PIN can all be copied."
+    },
+    {
+     "type": "match",
+     "title": "Payment control and its rule",
+     "prompt": "Match each digital payment control to what the 2026 Directions require.",
+     "pairs": [
+      {
+       "left": "Failed logins",
+       "right": "The bank sets a maximum number of failed attempts, then blocks access and notifies the customer"
+      },
+      {
+       "left": "Transaction alerts",
+       "right": "Sent for debits, credits, beneficiary changes and limit changes, naming the merchant"
+      },
+      {
+       "left": "Reconciliation",
+       "right": "Real-time or near-real-time, no later than 24 hours from receiving settlement files"
+      },
+      {
+       "left": "Old app versions",
+       "right": "Phased out within six months of the newer version's release"
+      },
+      {
+       "left": "New device registration",
+       "right": "Customer notified on multiple channels and can disable a registered device"
+      },
+      {
+       "left": "Fraud marking",
+       "right": "Customers can flag a transaction as fraudulent in the app for immediate notice to the bank"
+      }
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "Board oversight and the assurance cycle",
+     "body": "**Board and senior management (para 204):** kept aware of evolving threats through periodic briefings, and given **annual training** on IT and cyber risks and good practice.\n\n**CISO (para 28):** places a review of cyber risks and preparedness before the Board, its Risk Management Committee or the ITSC **at least quarterly**.\n\n**Testing (paras 151, 161):** for critical systems and customer-facing DMZ systems, **VA at least every six months and PT at least every 12 months**. Closure of findings goes to the ITSC and ISC at least quarterly.\n\n**Metrics (paras 194, 197):** key risk and performance indicators, including the **extent of user awareness training**; staff awareness may be part of assessing preparedness.\n\n**IS audit (paras 224-229):** the Audit Committee oversees IS audit; it approves the IS audit policy and reviews it at least annually; audit planning is risk-based."
+    },
+    {
+     "type": "story",
+     "title": "Sixty-one per cent",
+     "setting": "CISO's office, two weeks before the examination.",
+     "lines": [
+      {
+       "who": "nandini",
+       "text": "Here's our awareness dashboard. Sixty-one per cent of lower and middle managers completed this year's cyber training. Forty new recruits from September haven't done the awareness module at all.",
+       "mood": "worried"
+      },
+      {
+       "who": "zoya",
+       "text": "My managers say the module is boring and the deadlines keep slipping.",
+       "mood": "thinking"
+      },
+      {
+       "who": "anil",
+       "text": "And the two new directors haven't had their annual IT and cyber training.",
+       "mood": "neutral"
+      },
+      {
+       "who": "joseph",
+       "text": "Could we just show the examiners the training calendar? It looks very complete.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Getting ready for the examiners",
+     "situation": "Two weeks before RBI's IT examination, only 61% of managers have done their annual cyber training, 40 new recruits have not had awareness training, and two new directors are untrained. What should the CISO's office do?",
+     "choices": [
+      {
+       "text": "Run catch-up sessions now, report the gaps and the plan to the ISC and ITSC, and show examiners accurate completion data with dates and a fix plan.",
+       "outcome": "Best. RBI's Directions make these trainings mandatory and expect awareness to be measured. Honest data with a dated remediation plan, overseen by the committees, shows a working programme. Hiding gaps risks a finding on governance as well.",
+       "score": 2
+      },
+      {
+       "text": "Show the training calendar only, since it proves training is planned.",
+       "outcome": "A calendar is not evidence of completion. Examiners will ask for records, and an incomplete picture damages trust.",
+       "score": 0
+      },
+      {
+       "text": "Train the directors first and leave staff for next year, since the Board matters most to RBI.",
+       "outcome": "Directors' training matters, but new recruit awareness and annual management training are mandatory too. Fix all three.",
+       "score": 1
+      },
+      {
+       "text": "Ask managers to tick a box confirming they have read the cyber policy instead of training.",
+       "outcome": "A tick box is not a training programme, and recording it as training would be misleading.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "RBI enforcement on cyber failings",
+     "caption": "From RBI press releases. All five actions applied the earlier cyber security framework, now replaced by the 2026 Directions.",
+     "items": [
+      {
+       "label": "BBK India, 2022",
+       "value": "₹2.66 crore",
+       "detail": "Undetected intrusion; no SOC, MFA or CCMP"
+      },
+      {
+       "label": "Tamilnad Mercantile, 2021",
+       "value": "₹1 crore",
+       "detail": "Gaps found from its own incident reports"
+      },
+      {
+       "label": "Corporation Bank, 2019",
+       "value": "₹1 crore",
+       "detail": "Cancelled debit card fraud; cyber and fraud rules"
+      },
+      {
+       "label": "Union Bank of India, 2019",
+       "value": "₹1 million",
+       "detail": "After fraudulent SWIFT messages in 2016"
+      },
+      {
+       "label": "Kotak Mahindra Bank",
+       "value": "Apr 2024",
+       "detail": "Online onboarding and new cards stopped; lifted Feb 2025"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "How often?",
+     "prompt": "Sort each duty by the minimum frequency in RBI's 2026 Directions.",
+     "buckets": [
+      "At least quarterly",
+      "At least every six months",
+      "At least yearly"
+     ],
+     "items": [
+      {
+       "text": "ITSC meeting",
+       "bucket": 0
+      },
+      {
+       "text": "CISO's review of cyber preparedness to the Board, RMCB or ITSC",
+       "bucket": 0
+      },
+      {
+       "text": "Status of VA/PT findings to the ITSC and ISC",
+       "bucket": 0
+      },
+      {
+       "text": "DR drill for critical information systems",
+       "bucket": 1
+      },
+      {
+       "text": "Vulnerability assessment of critical customer-facing systems",
+       "bucket": 1
+      },
+      {
+       "text": "Penetration test of critical customer-facing systems",
+       "bucket": 2
+      },
+      {
+       "text": "Training for Board members and senior management",
+       "bucket": 2
+      },
+      {
+       "text": "Review of the digital payment products policy",
+       "bucket": 2
+      },
+      {
+       "text": "Review of the IS audit policy by the Audit Committee",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "What fraud control staff must learn",
+     "cards": [
+      {
+       "front": "Fraud control tools",
+       "back": "How to use the bank's fraud detection systems properly."
+      },
+      {
+       "front": "Investigation",
+       "back": "Investigative techniques and procedures for suspected frauds."
+      },
+      {
+       "front": "Rules",
+       "back": "How to set and update fraud rules, monitor exceptions continuously and act promptly."
+      },
+      {
+       "front": "False positives",
+       "back": "How to tell genuine alerts apart from false positives, and escalate when needed."
+      },
+      {
+       "front": "Education",
+       "back": "How to teach cardholders and merchants to prevent fraud."
+      },
+      {
+       "front": "Working with others",
+       "back": "Card scheme rules, data analysis and liaison with law enforcement agencies."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Joseph's app team wants to keep two older mobile app versions live for another year. What do the Digital Payment Security Controls Directions say?",
+     "options": [
+      "Older versions may stay live as long as customers still use them",
+      "Older versions must be deactivated in a phased but time-bound way, within six months of the newer version's release",
+      "Older versions must be switched off the same day a new one is released",
+      "Older versions may stay for two years if the ITSC agrees"
+     ],
+     "answer": 1,
+     "explanation": "Paragraph 68(2)(iii) requires phasing out older versions within six months of the new release, so only one version is maintained per platform apart from the overlap."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Kotak Mahindra Bank's road back, 2025",
+     "body": "After RBI's April 2024 restrictions, Kotak Mahindra Bank started **remedial measures** and sent RBI its compliances. It also commissioned an **external audit, with RBI's prior approval**, to validate them.\n\nOn **12 February 2025** RBI said it was satisfied with the submissions and remedial steps and **lifted the restrictions** on online and mobile onboarding of new customers and on issuing new credit cards.\n\n**What examiners look for, in this and other RBI cases:**\n\n- corrective action plans that are **complete, accurate and sustained**, not just submitted\n- governance that owns IT and cyber risk at Board level\n- evidence, such as independent audit, that controls really work\n\n**Lesson:** you earn trust back with proof, not promises."
+    },
+    {
+     "type": "keypoints",
+     "title": "Examiner's Citadel: what to carry forward",
+     "items": [
+      "Digital payments need MFA with a dynamic or non-replicable factor, meaningful alerts, failed-login limits and reconciliation within 24 hours.",
+      "Fraud control staff are trained in tools, investigation, rule setting and false positives; customers must go through safe-usage guidance.",
+      "Board members and senior management receive annual IT and cyber training and quarterly reviews from the CISO.",
+      "Critical customer-facing systems get VA every six months and PT every year, with quarterly reporting on closure.",
+      "Awareness is measured. Accurate completion data and a dated fix plan beat a polished calendar."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If an RBI examiner asked you tomorrow to prove you completed your cyber training and know how to report an incident, what evidence could you show? What would you change in your bank's programme?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "in-cy-s5-q1",
+     "question": "Under the Digital Payment Security Controls Directions, which events must trigger MFA and alerts to the customer?",
+     "options": [
+      "Only logins from a new device",
+      "Only transactions flagged by the fraud system",
+      "Only payments above ₹50,000 made from abroad",
+      "Payment transactions, beneficiary additions or changes, account detail changes and fund transfer limit changes"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 46 requires MFA and alerts for all payment transactions (debits and credits), new or changed beneficiaries, changes in account details and revisions to transfer limits.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q2",
+     "question": "What must transaction alerts and OTPs for online purchases show, where applicable?",
+     "options": [
+      "The customer's full card number",
+      "The bank's branch code",
+      "The merchant's name rather than the payment aggregator's",
+      "The customer's account balance"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 47 requires alerts and OTPs to identify the merchant name, where applicable, instead of the payment aggregator through which the payment was made.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q3",
+     "question": "How quickly must digital payment transactions be reconciled with stakeholders such as payment system operators and card networks?",
+     "options": [
+      "Real-time or near-real-time, no later than 24 hours from receiving settlement files",
+      "At the end of each month",
+      "Within 48 hours of the customer's complaint",
+      "Within seven days of the transaction"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 57 sets a real-time or near-real-time reconciliation framework, not later than 24 hours from receipt of settlement files, to help detect suspicious transactions.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q4",
+     "question": "Which training must the Board receive under paragraph 204 of the Cybersecurity Directions?",
+     "options": [
+      "No training, only quarterly briefings by the CISO",
+      "Training every three years, aligned with the director's term",
+      "Annual training for all Board members on IT and cyber risks and evolving good practice",
+      "A one-time induction session only for the ITSC chair"
+     ],
+     "answer": 2,
+     "explanation": "Paragraph 204 requires annual training for all Board members and senior management, plus periodic sensitisation to technology and cyber developments.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q5",
+     "question": "For critical systems and customer-facing systems in the DMZ, how often must VA and PT be carried out at a minimum?",
+     "options": [
+      "VA every six months and PT every 12 months",
+      "VA every month and PT every six months",
+      "VA and PT every quarter",
+      "VA every year and PT every two years"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 151 sets VA at least once every six months and PT at least once every 12 months for these systems; non-critical systems follow a risk-based approach.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q6",
+     "question": "Two weeks before an RBI IT examination, awareness completion is low. Which approach best fits RBI's expectations?",
+     "options": [
+      "Close the gaps fast, report them to the committees and show examiners accurate data with a dated plan",
+      "Record policy read-receipts as training completions",
+      "Show examiners only the planned training calendar",
+      "Postpone new-recruit training to next year's cycle"
+     ],
+     "answer": 0,
+     "explanation": "RBI requires the trainings and expects banks to evaluate awareness. Accurate records and committee oversight of a remediation plan show a working programme; presenting plans or read-receipts as completions misleads.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-cy-s5-q7",
+     "question": "Which of these must the bank teach fraud control staff under paragraph 55 of the Digital Payment Security Controls Directions?",
+     "options": [
+      "Selling credit cards to merchants",
+      "Writing the bank's IS audit policy",
+      "Designing the bank's annual marketing campaigns",
+      "Setting and updating fraud rules and telling false positives from genuine alerts"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph 55 lists fraud control tools, investigation, cardholder and merchant education, scheme rules, data analysis and law enforcement liaison, and rule setting, monitoring, escalation and false positive skills.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q8",
+     "question": "Who approves the bank's IS audit policy and how often is it reviewed?",
+     "options": [
+      "RBI's regional office, once at licensing",
+      "The Audit Committee of the Board, at least annually",
+      "The CISO, every quarter",
+      "The Head of IT, every two years"
+     ],
+     "answer": 1,
+     "explanation": "Paragraphs 224-225 give the Audit Committee oversight of IS audit; it approves the IS audit policy and reviews it at least annually.",
+     "difficulty": 3
+    },
+    {
+     "id": "in-cy-s5-q9",
+     "question": "A customer's mobile banking app is installed on a second phone. What must the bank do under the device binding rules?",
+     "options": [
+      "Notify the customer of the new device registration on several channels and keep a record of registered devices",
+      "Allow it silently because the password was correct",
+      "Ask the customer to visit the branch with both phones within a week",
+      "Block the second phone without telling the customer"
+     ],
+     "answer": 0,
+     "explanation": "Paragraph 68(6) requires device binding; where multiple devices are allowed, the customer is notified of each new registration on several channels and can disable registered devices.",
+     "difficulty": 4
+    },
+    {
+     "id": "in-cy-s5-q10",
+     "question": "What led RBI to lift Kotak Mahindra Bank's restrictions in February 2025?",
+     "options": [
+      "Remedial measures and compliances validated by an external audit approved by RBI in advance",
+      "Payment of a monetary penalty in place of the restrictions",
+      "A court order directing RBI to lift the restrictions",
+      "A change in RBI's cybersecurity rules that removed the original requirements"
+     ],
+     "answer": 0,
+     "explanation": "RBI's February 2025 press release says the bank undertook remedial measures, submitted compliances and commissioned an RBI-approved external audit, after which RBI lifted the restrictions.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "in",
+  "programs": [
+   71,
+   72,
+   73,
+   77,
+   83,
+   84,
+   66,
+   91,
+   90
+  ],
+  "classification": "mandatory-explicit",
+  "frequency": [
+   "induction",
+   "annual",
+   "periodic"
+  ],
+  "regulators": [
+   "Reserve Bank of India (RBI)",
+   "Indian Computer Emergency Response Team (CERT-In)",
+   "Data Protection Board of India"
+  ],
+  "references": [
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 197-204 (User / Employee / Management Awareness)",
+    "note": "Security policies must be communicated to staff, vendors and partners with education on cyber risks; key roles get targeted training; suspicious behaviour is reported to the incident team; awareness is evaluated periodically; awareness is mandatory for all new recruits, with annual training for lower and middle management and for all Board members and senior management.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 7-28 (Board policies, ITSC, IT Steering Committee, ISC, Head of IT, CISO)",
+    "note": "The Board approves IT, information security and cybersecurity policies, reviewed at least annually; the ITSC and IT Steering Committee meet at least quarterly; the ISC approves awareness initiatives; the CISO is independent of the Head of IT and reports cyber preparedness at least quarterly.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 42-43, 117-120, 148, 193 and 205-207 (acceptable use; secure mail; anti-phishing; customer education)",
+    "note": "Staff and service providers must follow acceptable-use policies; mail systems must resist spoofing and look-alike domains with DMARC; banks subscribe to anti-phishing and anti-rogue app takedown services and teach customers never to share credentials, OTPs or PINs.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 47-54 and 104-125, 135 (data leak prevention; user access; teleworking; removable media; vendor staff)",
+    "note": "Access only for a valid business need, least privilege, no admin rights on end-user machines, mandatory MFA for privileged users of critical systems, dormant accounts disabled, removable media blocked unless authorised, and a data leak prevention strategy covering vendors.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 165-193 and 221-223 (DR drills; incident response; DAKSH reporting; CCMP; CSOC staff)",
+    "note": "Incident response policy and specialised training for incident handlers; cyber incidents reported to RBI on DAKSH within six hours of detection with CERT-In notified proactively; a Cyber Crisis Management Plan; half-yearly DR drills for critical systems; trained CSOC staff.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Cybersecurity, Technology: Risk, Resilience and Assurance Framework) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13643",
+    "provision": "Paragraphs 151, 161, 194-197 and 224-230 (VA/PT; metrics; IS audit; repeal)",
+    "note": "VA at least every six months and PT at least every 12 months for critical and customer-facing DMZ systems, quarterly closure status to the ITSC and ISC, metrics including awareness, IS audit under the Audit Committee, and repeal of the earlier cybersecurity framework.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Digital Payment Security Controls) Directions, 2026",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13642",
+    "provision": "Paragraphs 7-9, 40-58, 64-68 (policy; authentication; fraud monitoring; staff training; customer education; app controls)",
+    "note": "Board-approved digital payment policy reviewed annually; MFA with at least one dynamic or non-replicable factor; alerts; failed-login limits; fraud rules and staff fraud training; reconciliation within 24 hours; mandatory secure-usage guidance for customers; device binding.",
+    "effective": "2026-07-31",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+    "provision": "Paragraph 63 (secrecy obligations and sharing of information)",
+    "note": "Customer information from the banking relationship must be kept secret, and account-opening data must not be used for cross-selling or other purposes without the customer's express permission.",
+    "effective": "2025-11-28",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Supervisory Action against Kotak Mahindra Bank Limited under Section 35A of the Banking Regulation Act, 1949 (press release, 24 April 2024)",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=57769",
+    "note": "RBI stopped online and mobile onboarding of new customers and new credit cards after IT examinations found deficiencies in inventory, patch and change, access, vendor risk, data leak prevention and BCP/DR; lifted on 12 February 2025.",
+    "effective": "2024-04-24",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "RBI imposes monetary penalty on Bank of Bahrain & Kuwait BSC, India Operations (press release, 19 December 2022)",
+    "issuer": "Reserve Bank of India",
+    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=54891",
+    "note": "A penalty of ₹2.66 crore for cyber security framework failures, including no SOC, no MFA for critical servers, admin rights on endpoints, missing logs and no Cyber Crisis Management Plan, which let an intrusion go undetected.",
+    "effective": "2022-12-19",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Digital Personal Data Protection Act, 2023",
+    "issuer": "Parliament of India (India Code)",
+    "url": "https://www.indiacode.nic.in/handle/123456789/22037",
+    "note": "Sets duties for data fiduciaries such as banks, including reasonable security safeguards and breach notification; the DPDP Rules, 2025 apply in phases. The official text blocks automated access and was not opened, so the quest covers it only in general terms.",
+    "effective": "2023"
+   },
+   {
+    "title": "CERT-In Directions under section 70B(6) of the IT Act, 2000 (28 April 2022)",
+    "issuer": "Indian Computer Emergency Response Team (MeitY)",
+    "url": "https://www.cert-in.org.in/Directions70B.jsp",
+    "note": "CERT-In's own directions set cyber incident reporting duties for body corporates including banks. The host refuses automated connections, so the text was not opened and the quest does not state its details.",
+    "effective": "2022"
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "in-cy-x1",
+    "question": "A local area bank's IT head says RBI's 2026 Cybersecurity Directions for commercial banks now bind his bank too. Is he right?",
+    "options": [
+     "Yes, but only for its Board-approved cybersecurity policy chapter",
+     "No; the Directions cover only foreign banks operating in India",
+     "No; local area banks are excluded from the definition of commercial banks used by these Directions",
+     "Yes; every RBI-licensed bank became a commercial bank on 31 July 2026"
+    ],
+    "answer": 2,
+    "explanation": "The Directions apply to banking companies other than small finance, payments and local area banks, plus corresponding new banks and SBI. Foreign bank branches are covered with some comply-or-explain flexibility.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x2",
+    "question": "A foreign bank's Indian branches want to depart from a paragraph in Chapter IV of the Directions. On what basis can they do so?",
+    "options": [
+     "Under 'comply or explain', if RBI examines and accepts a reasonable justification during supervision",
+     "Only with a resolution of the Indian country management committee",
+     "Automatically, because foreign banks follow only their home regulator",
+     "Never; foreign branches must follow every paragraph without exception"
+    ],
+    "answer": 0,
+    "explanation": "Foreign banks in branch mode may follow a comply-or-explain approach for Chapters II, III, IV and VII and selected Chapter V paragraphs, but deviations need RBI to accept a reasonably justifiable explanation.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x3",
+    "question": "The Board wants to delegate approval of a major rewrite of the Cybersecurity Policy entirely to the ITSC. What do the Directions allow?",
+    "options": [
+     "The ITSC may review the policy, but material amendments must still be approved by the Board",
+     "Only RBI may approve material amendments to a bank's cyber policy",
+     "The CISO may approve the rewrite if the ITSC chair agrees",
+     "The ITSC may approve any change, because delegation is unlimited"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 8 allows the Board to delegate review to the ITSC, but material amendments must be approved by the Board, and the review takes place at least annually.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x4",
+    "question": "Which statement about the bank's Cybersecurity Policy is correct under paragraph 15?",
+    "options": [
+     "It must be Board-approved and distinct from the broader IT and information security policies",
+     "It may be a short annex inside the IT policy approved by the Head of IT",
+     "It replaces the information security policy entirely",
+     "It is optional for banks with an ISO 27001 certificate"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 15 requires a Board-approved Cybersecurity Policy that is distinct and separate from the IT and information security policies, so that cyber risks and their mitigation stand out.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x5",
+    "question": "The ISC at Godavari Harbour Bank is to be chaired by the Head of IT. Which requirement does this break?",
+    "options": [
+     "The ISC must be chaired by an independent director",
+     "The ISC must be chaired by an RBI nominee",
+     "The head of the Information Security Committee must come from the risk management vertical",
+     "The ISC must be chaired by the managing director"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 23 places the ISC under the ITSC's oversight, includes the CISO and representatives of business and IT, and requires the head of the ISC to be from risk management.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x6",
+    "question": "Which duty belongs to senior management under paragraph 20 of the Directions?",
+    "options": [
+     "Chairing the ITSC and setting its quarterly agenda",
+     "Creating a culture of IT risk awareness and cyber hygiene through IT risk management processes",
+     "Performing the IS audit of the CISO's office",
+     "Approving the bank's licence to offer digital payments"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 20 requires senior management to execute the IT strategy and ensure IT risk processes create a culture of IT risk awareness and cyber hygiene, with a robust cyber posture.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x7",
+    "question": "A vendor's support engineers use the bank's ticketing system and see customer names. What does paragraph 199 expect for them?",
+    "options": [
+     "The bank defines and communicates its security policies to them and educates them on cyber risks and protection at their level",
+     "Nothing, because vendor staff are the vendor's responsibility alone",
+     "Only a clause in the contract, without any communication",
+     "Full annual Board-level cyber training"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 199 covers users, employees, vendors and partners: the bank must communicate its security and acceptable-use policies, including for customer data, and educate them about cyber risks and protection.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x8",
+    "question": "Which group must receive targeted awareness and training under paragraph 200?",
+    "options": [
+     "Only customers using internet banking for the first time",
+     "Only staff who failed a phishing simulation",
+     "Only directors who chair Board committees",
+     "Key personnel in executive, operational and security administration or management roles"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 200 requires targeted awareness and training for key personnel in executive, operational and security administration or management roles, on top of general awareness.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x9",
+    "question": "A manager argues that if his team completed awareness at induction, nobody needs to check what they remember. Which paragraph contradicts him?",
+    "options": [
+     "Paragraph 151, which sets vulnerability assessment frequency",
+     "Paragraph 165, which sets DR drill frequency",
+     "Paragraph 182, which sets the DAKSH reporting deadline",
+     "Paragraph 202, which requires the bank to evaluate employees' awareness level periodically"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 202 requires periodic evaluation of employees' awareness, and paragraph 197 lets awareness form part of assessing the bank's preparedness.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x10",
+    "question": "Customers receive SMS links to a page that copies the bank's login screen. Besides warning customers, what external service must the bank already have in place?",
+    "options": [
+     "A CERT-In certificate for its website",
+     "A cyber insurance policy that pays customers automatically",
+     "A contract with a newspaper to publish weekly warnings",
+     "An anti-phishing and anti-rogue app service from an external provider to find and take down such sites"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 148 requires a subscription to anti-phishing and anti-rogue app services from external providers to identify and take down phishing sites and rogue apps.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x11",
+    "question": "An attacker registers 'godavariharbour-bank.co' and sends staff invoices from it. Which control in paragraph 117 is aimed at this?",
+    "options": [
+     "Annual capacity planning of IT resources",
+     "Geographic separation of DC and DR sites",
+     "Straight through processing of data between applications",
+     "Measures in secure mail systems against email spoofing and look-alike domain abuse"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 117 requires secure mail and messaging systems with measures against spoofing, look-alike domain abuse, malicious attachments and links, and spam, and asks partners and vendors to do the same.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x12",
+    "question": "A fraud ring calls customers posing as the bank and asks them to install a remote access app. Under the Digital Payment Security Controls Directions, what should the bank's mobile app try to do?",
+    "options": [
+     "Report each such call to the telecom provider",
+     "Identify remote access applications, to the extent possible, and prohibit login to the banking app",
+     "Ask the customer to uninstall the app permanently",
+     "Allow login but cap transactions at a small amount"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 68(2)(iv) requires mobile apps to be able to identify remote access applications where possible and prohibit login, alongside customer warnings about remote access fraud.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-cy-x13",
+    "question": "Which list of threats appears in RBI's Cyber Crisis Management Plan requirements as attacks banks must prepare for?",
+    "options": [
+     "Only DDoS attacks on the bank's website",
+     "Spear phishing, whaling, vishing and business email frauds, among others",
+     "Only insider frauds by branch staff",
+     "Only physical theft of servers and fire in data centres"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 193 lists many threats, including DDoS, ransomware, business email frauds, email phishing, spear phishing, whaling, vishing, identity frauds and password-related frauds.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x14",
+    "question": "Zoya's staff ask why they should report a phishing mail they did not click. What is the best answer?",
+    "options": [
+     "Reports are needed only to calculate staff bonuses",
+     "Reporting is only required after money is lost",
+     "Early reports let the incident team block the sender, find others who received it and warn staff before anyone is hooked",
+     "RBI forbids reporting mails that were not clicked"
+    ],
+    "answer": 2,
+    "explanation": "RBI asks banks to encourage reporting of suspicious behaviour to the incident management team. A report at the lure stage gives the best chance of preventing an incident.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x15",
+    "question": "Which of these is the bank required to educate customers about under paragraph 61 of the Digital Payment Security Controls Directions?",
+    "options": [
+     "Sharing OTPs only with family members",
+     "Keeping a written copy of their PIN with the card",
+     "Choosing the cheapest mobile data plan",
+     "Keeping devices secure: regular updates, apps only from authorised sources and anti-malware"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 61 requires education on physical and logical device security, including regular OS and app updates, downloading apps only from authorised sources and having anti-malware.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x16",
+    "question": "A customer says he was told by a 'bank officer' on the phone to share his OTP to stop fraud. A teller replies, 'That's normal procedure.' Which bank duty is the teller undermining?",
+    "options": [
+     "Reconciling payments within 24 hours",
+     "Educating customers never to share credentials, OTPs or PINs, a message staff must reinforce",
+     "Keeping the ITSC chair independent",
+     "Maintaining an enterprise data dictionary"
+    ],
+    "answer": 1,
+    "explanation": "Banks must educate customers about the risks of sharing OTPs and PINs (paragraph 207) and caution them about vishing (DPSC paragraph 64). Staff who call it normal undo that education.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x17",
+    "question": "Which statement about customer reports of phishing is correct under paragraph 206?",
+    "options": [
+     "The bank must charge a fee to investigate each report",
+     "Customers must report phishing only to CERT-In, not to the bank",
+     "The bank must encourage customers to report phishing mails and sites, and act effectively on them",
+     "The bank may ignore reports unless a loss has occurred"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 206 requires the bank to encourage customers to report phishing mails and phishing sites and to take effective remedial action on such reports.",
+    "difficulty": 2
+   },
+   {
+    "id": "in-cy-x18",
+    "question": "A core banking DBA needs root access for a patch on Saturday. Which approach best meets paragraphs 105, 108 and 111?",
+    "options": [
+     "Give him a permanent root password so he can work without delays",
+     "Grant time-limited elevated access through the privileged access system, log every action and review the logs",
+     "Let him use a colleague's account if his access is not ready",
+     "Share the root password with the whole DBA team for cover"
+    ],
+    "answer": 1,
+    "explanation": "Elevated access is given for a specific need and duration, managed through centralised controls, with all activity logged and reviewed, and personnel with elevated access closely supervised.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x19",
+    "question": "Which requirement applies to authentication for administering applications, databases and network devices under paragraph 109?",
+    "options": [
+     "Authentication only for internet-facing devices",
+     "Separate local passwords on each device, changed only on failure",
+     "A centralised authentication and authorisation system with strong passwords, least privilege and separation of duties",
+     "A single shared admin account for each team"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 109 requires a centralised authentication and authorisation system for applications, OS, databases, network and security devices, with strong passwords, least privilege and separation of duties.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x20",
+    "question": "Security monitoring shows a branch user logging in at 3 am from two cities an hour apart. Which RBI requirement makes this worth investigating?",
+    "options": [
+     "Reviewing IT architecture at least annually",
+     "Obtaining source code for critical applications",
+     "Running DR drills at least half-yearly",
+     "Monitoring any abnormal change in the pattern of logon"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 113 requires banks to monitor abnormal changes in logon patterns. Impossible travel and odd hours are classic signs of stolen credentials.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x21",
+    "question": "An auditor needs to copy logs to a USB drive for a one-day review. Which sequence fits paragraphs 121-124?",
+    "options": [
+     "Let the auditor use any drive, because auditors are independent",
+     "Allow it if the auditor signs the visitor register",
+     "Refuse in all cases, because removable media can never be used",
+     "Authorise the drive for that defined use and duration, scan it for malware, limit what is copied and erase it securely afterwards"
+    ],
+    "answer": 3,
+    "explanation": "Removable media is barred by default unless specifically authorised for a defined use and duration; it must be scanned, transfers limited and data securely erased after use.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x22",
+    "question": "A relationship manager loses a bank laptop holding customer files on a train. Which control in the Directions limits the damage?",
+    "options": [
+     "The data migration policy's sign-off requirement",
+     "The ITSC's quarterly meeting",
+     "The IPv6 readiness of public-facing systems",
+     "Remote management, wiping or locking of mobile devices including laptops"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 54 requires controls for remote management, wiping and locking of mobile devices, including laptops, as part of protecting sensitive data.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x23",
+    "question": "The bank outsources call-centre work to a vendor that stores customer data. Whose duty is it to keep that data confidential?",
+    "options": [
+     "The bank's, as owner of customers' personal and sensitive data, whether stored internally or with vendors",
+     "Only RBI's, through its inspection of vendors",
+     "Only the customer's, once they consent to outsourcing",
+     "Only the vendor's, once the contract is signed"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 53 makes the bank, as owner of customers' personal and sensitive data, responsible for its confidentiality, integrity and availability, whether stored in-house or with third-party vendors.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x24",
+    "question": "Marketing wants to text a new card offer to all customers using the mobile numbers they gave when opening accounts, without asking them. What should compliance say?",
+    "options": [
+     "Account-opening data must not be used for cross-selling without the customer's express permission",
+     "It is fine if the texts mask the card number",
+     "It is fine if the offer is from the bank, not a third party",
+     "It is fine because customers gave the numbers to the bank"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 63 of the KYC Directions bars using information collected at account opening for cross-selling or other purposes without the customer's express permission.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x25",
+    "question": "In general terms, how does the Digital Personal Data Protection Act, 2023 describe a bank that decides why and how customers' digital personal data is processed?",
+    "options": [
+     "As a significant data processor exempt from breach duties",
+     "As a data principal with no duties under the Act",
+     "As a consent manager registered with RBI",
+     "As a data fiduciary that must protect personal data with reasonable security safeguards"
+    ],
+    "answer": 3,
+    "explanation": "In the DPDP Act the organisation deciding the purpose and means of processing is the data fiduciary, which must protect personal data with reasonable security safeguards; the person the data is about is the data principal.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x26",
+    "question": "A ransomware alert is confirmed by the CSOC at 11:30 pm on a Saturday. What is the latest time for the DAKSH report?",
+    "options": [
+     "9:30 am on Monday, when RBI offices open",
+     "5:30 am on Sunday, six hours after detection",
+     "11:30 pm on Monday, the next working day after a full day",
+     "11:30 pm on Sunday, twenty-four hours after detection"
+    ],
+    "answer": 1,
+    "explanation": "The six-hour limit in paragraph 182 runs from detection, with no exception for nights or weekends. CERT-In must also be notified proactively.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x27",
+    "question": "Which statement best describes the relationship between RBI and CERT-In reporting in the 2026 Directions?",
+    "options": [
+     "The bank reports to RBI on DAKSH within six hours and also proactively notifies CERT-In",
+     "Reporting to CERT-In replaces reporting to RBI",
+     "Reporting to RBI replaces reporting to CERT-In",
+     "The bank chooses one of them based on the incident type"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 182 requires both: a DAKSH report to RBI within six hours of detection and proactive notification to CERT-In. CERT-In's own directions also set duties, which this quest does not detail.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x28",
+    "question": "A vendor managing the bank's ATM switch detects malware on its servers. What should the bank's contract with this application service provider require?",
+    "options": [
+     "The ASP reports only to CERT-In and never to the bank",
+     "The ASP must shut down all ATMs nationwide immediately",
+     "The ASP must inform the bank of cyber incidents affecting it on a timely basis and have a written incident response procedure",
+     "The ASP may deal with the incident itself and tell the bank at contract renewal"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 138 requires contracts with ATM switch ASPs to cover incident management, including timely notice to the bank and a written incident response procedure with defined roles.",
+    "difficulty": 5
+   },
+   {
+    "id": "in-cy-x29",
+    "question": "After an incident is closed, the CISO's office updates the response plan with what went wrong. Which requirement does this meet?",
+    "options": [
+     "Dynamically incorporating lessons learnt to continually improve response plans",
+     "Hosting the mobile app checksum on a public platform",
+     "Annual capacity planning for IT resources",
+     "Maintaining a centralised software inventory"
+    ],
+    "answer": 0,
+    "explanation": "Paragraphs 178 and 187 require banks to incorporate lessons learnt from incidents, tests and drills to keep improving response and recovery.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x30",
+    "question": "Which arrangement must the bank have on standby according to paragraph 211?",
+    "options": [
+     "A spare Board of Directors ready to take over",
+     "Support for network forensics, forensic investigation and DDoS mitigation services",
+     "A second regulator's approval for every incident",
+     "A public relations firm to deny incidents"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 211 requires support or arrangements for network forensics, forensic investigation and DDoS mitigation on standby.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x31",
+    "question": "In its 2021 penalty on Tamilnad Mercantile Bank, which directions did RBI find the bank had not complied with?",
+    "options": [
+     "The KYC Master Direction's video-KYC rules",
+     "The Digital Payment Security Controls Directions, 2026",
+     "RBI's 'Cyber Security Framework in Banks' directions of June 2016",
+     "The Integrated Ombudsman Scheme, 2021"
+    ],
+    "answer": 2,
+    "explanation": "The May 2021 press release refers to non-compliance with the Cyber Security Framework in Banks directions dated 2 June 2016, discovered by examining incident reports from October 2019.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x32",
+    "question": "Which of these must the bank's crisis communication arrangements be tested with, under paragraph 190?",
+    "options": [
+     "Only the media, once a year",
+     "Stakeholders including customers and service providers, through periodic drills",
+     "Only the bank's internal IT staff",
+     "Only RBI officials during inspections"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 190 requires periodic drills or tests of the crisis communication plan with stakeholders, including customers and service providers.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x33",
+    "question": "What does RBI want for the recovery point objective of critical information systems?",
+    "options": [
+     "Near zero, with a documented reconciliation method if it is not zero",
+     "Exactly 24 hours of data loss for every system",
+     "Whatever the vendor's standard contract offers",
+     "No defined value, as RPO applies only to non-critical systems"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 171 asks banks to prioritise minimal RTO, approved by the ITSC, and near zero RPO for critical systems; paragraph 172 requires a documented reconciliation method for non-zero RPO.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x34",
+    "question": "Corporation Bank's 2019 penalty began with an incident report. What did that report concern, according to RBI?",
+    "options": [
+     "A leak of customer data on a public website",
+     "Fraudulent transactions carried out with a cancelled debit card",
+     "A ransomware attack on the core banking system",
+     "Seven fraudulent SWIFT messages worth USD 171 million"
+    ],
+    "answer": 1,
+    "explanation": "RBI's press release says a cyber security incident report about fraudulent transactions using a cancelled debit card revealed non-compliance with the cyber security and fraud reporting directions, leading to a ₹1 crore penalty.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x35",
+    "question": "A customer's internet banking access is blocked after too many failed attempts. What do the Digital Payment Security Controls Directions require?",
+    "options": [
+     "A secure re-activation procedure, and notifying the customer of the failed attempts",
+     "Automatic re-activation after one hour without notice",
+     "Re-activation by any branch on a phone call from the customer",
+     "Permanent closure of internet banking for that customer"
+    ],
+    "answer": 0,
+    "explanation": "Paragraphs 50 and 51 require a set maximum of failed attempts, a secure procedure to re-activate blocked access and notice to the customer of failed attempts.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x36",
+    "question": "Which internet banking control is specifically required in Chapter IV of the Digital Payment Security Controls Directions?",
+    "options": [
+     "Automatic termination of an online session after a fixed period of inactivity",
+     "Passwords sent to customers by ordinary post with no expiry",
+     "Unlimited session length for corporate customers",
+     "Login only from branch computers"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph 67 requires, among other things, a virtual keyboard option, automatic session timeout after inactivity and a compulsory change of bank-generated passwords at first login.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x37",
+    "question": "A customer spots an unknown debit in the bank's app at midnight. What facility must the app provide under paragraph 66?",
+    "options": [
+     "Only a phone number that works during branch hours",
+     "A form to download, print and post",
+     "A way to mark the transaction as fraudulent, with authentication, for immediate notice to the bank",
+     "An option to reverse the transaction instantly without checks"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph 66 requires a mechanism in mobile and internet banking for customers to mark a transaction as fraudulent for seamless, immediate notice to the bank.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x38",
+    "question": "Digital banking wants to switch all savings customers to mobile banking by default to boost adoption. What do the Digital Payment Security Controls Directions say?",
+    "options": [
+     "Default enrolment is required by RBI for financial inclusion",
+     "Default enrolment is fine for customers under 40",
+     "Digital channels are offered only at the customer's option, on a specific written or authenticated electronic request",
+     "Default enrolment is fine if customers can opt out later"
+    ],
+    "answer": 2,
+    "explanation": "Paragraphs 62 and 65 require digital channels to be offered on the customer's express willingness, not bundled without their knowledge, and only on a specific written or authenticated electronic request.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x39",
+    "question": "How often must the CISO place a review of cyber risks and preparedness before the Board, the Risk Management Committee or the ITSC?",
+    "options": [
+     "At least once every month",
+     "At least once every quarter",
+     "Only after a reportable incident",
+     "At least once every year"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 28(7) requires the CISO to place a review of cyber risks, arrangements and preparedness before the Board, RMCB or ITSC at least quarterly.",
+    "difficulty": 3
+   },
+   {
+    "id": "in-cy-x40",
+    "question": "An RBI examiner asks which indicators the bank uses to measure its cybersecurity programme. Which answer matches paragraph 194's illustrations?",
+    "options": [
+     "Number of vendors and their annual turnover",
+     "Number of press releases issued and social media followers",
+     "Branch footfall and deposit growth",
+     "Anti-malware coverage, patch latency, extent of user awareness training and vulnerability metrics"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph 194 asks for KPIs and KRIs; its examples include anti-malware coverage and update rate, patch latency, extent of user awareness training and vulnerability-related metrics.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x41",
+    "question": "VA/PT of the internet banking platform found high-risk vulnerabilities. Which follow-up does the Directions require?",
+    "options": [
+     "Accept them automatically if the vendor wrote the code",
+     "Fix them in a time-bound way and report closure status to the ITSC and ISC at least quarterly",
+     "Wait for the next annual IS audit to decide whether to fix them",
+     "Hide them from senior management until fixed"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph 153 requires time-bound fixing of identified vulnerabilities, paragraph 160 close monitoring by IS audit and senior management, and paragraph 161 quarterly closure status to the ITSC and ISC.",
+    "difficulty": 4
+   },
+   {
+    "id": "in-cy-x42",
+    "question": "Which pattern links RBI's actions against Union Bank (2019), BBK India (2022) and Kotak Mahindra Bank (2024)?",
+    "options": [
+     "Each involved a breach of the Digital Personal Data Protection Act",
+     "Each was a criminal conviction of the bank's CISO",
+     "Each followed RBI examination of the bank's IT or cyber framework, often prompted by an incident, and found control gaps",
+     "Each was based only on customer complaints to the RBI Ombudsman"
+    ],
+    "answer": 2,
+    "explanation": "Union Bank's penalty followed fraudulent SWIFT messages, BBK's an IT examination and a reported incident, and Kotak's restrictions RBI's IT examinations. All found gaps in the cyber or IT risk framework; none was a criminal case or DPDP action.",
+    "difficulty": 5
+   }
+  ]
+ }
+}
