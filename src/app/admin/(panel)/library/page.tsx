@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { regulatoryCatalog } from "@/lib/courses/catalog";
 import { jurisdictions } from "@/lib/regulatory/library";
-import { REGIONS } from "@/lib/regulatory/schema";
+import { isProvisional, REGIONS } from "@/lib/regulatory/schema";
 import { TARGETS } from "@/lib/regulatory/targets";
 
 export const metadata = { title: "Regulatory library" };
@@ -71,6 +71,7 @@ export default async function AdminLibrary() {
                     ) : (
                       <span className="tile__note">Phase {t.phase} · not researched yet</span>
                     )}
+                    {j && j.programs.some(isProvisional) && <span className="tile__note">⏳ {j.programs.filter(isProvisional).length} awaiting source check</span>}
                     {qs.length > 0 && (
                       <span className="tile__note">
                         {qs.filter((q) => q.available).length} live · {qs.filter((q) => !q.available).length} draft quest(s)

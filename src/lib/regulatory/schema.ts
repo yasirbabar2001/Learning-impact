@@ -51,6 +51,11 @@ export const referenceSchema = z.object({
   note: text(10, 500).optional(),
   /** Date it took effect, if relevant (YYYY-MM-DD or YYYY). */
   effective: z.string().regex(/^\d{4}(-\d{2}-\d{2})?$/).optional(),
+  /**
+   * Date the full official text was opened and the statement above confirmed against it. Absent means the source
+   * was found on the official domain but its text has not been read yet (e.g. the site blocks automated access).
+   */
+  checked: isoDate.optional(),
 });
 
 export const regulatorSchema = z.object({
@@ -96,6 +101,9 @@ export type Reference = z.infer<typeof referenceSchema>;
 export type Regulator = z.infer<typeof regulatorSchema>;
 export type Mapping = z.infer<typeof mappingSchema>;
 export type Jurisdiction = z.infer<typeof jurisdictionSchema>;
+
+/** A mandatory or competence mapping whose official text has not been opened yet: shown as "source check pending". */
+export const isProvisional = (m: Mapping) => m.classification !== "recommended" && !m.references.some((r) => r.checked);
 
 /** Rules the schema cannot express. */
 export function jurisdictionProblems(j: Jurisdiction): string[] {

@@ -4,7 +4,7 @@ import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
 import { regulatoryCatalog } from "@/lib/courses/catalog";
 import { groupedPrograms, jurisdiction, questStatuses, unassessed } from "@/lib/regulatory/library";
 import { PROGRAM_CATEGORIES } from "@/lib/regulatory/programs";
-import { CLASSIFICATION_HELP, CLASSIFICATION_LABELS, CLASSIFICATIONS, FREQUENCY_LABELS } from "@/lib/regulatory/schema";
+import { CLASSIFICATION_HELP, CLASSIFICATION_LABELS, CLASSIFICATIONS, FREQUENCY_LABELS, isProvisional } from "@/lib/regulatory/schema";
 
 export default async function AdminJurisdiction({ params }: { params: Promise<{ code: string }> }) {
   const { code } = await params;
@@ -28,7 +28,8 @@ export default async function AdminJurisdiction({ params }: { params: Promise<{ 
           <h1 className="h3">{j.name}</h1>
           <p className="muted">{j.summary}</p>
           <p className="muted lib__reviewed">
-            Checked against official sources on <b>{j.reviewed}</b>. {j.programs.length} of 202 programs assessed.
+            Reviewed <b>{j.reviewed}</b>. {j.programs.length} of 202 programs assessed. {j.programs.filter(isProvisional).length} classification(s) still
+            waiting for the official text to be opened (marked ⏳): open the linked source and confirm before relying on them.
           </p>
         </div>
       </div>
@@ -125,7 +126,10 @@ export default async function AdminJurisdiction({ params }: { params: Promise<{ 
                           {m.master} · {PROGRAM_CATEGORIES[m.category as keyof typeof PROGRAM_CATEGORIES]}
                         </span>
                       </span>
-                      <span className="lib__freq">{m.frequency.map((f) => FREQUENCY_LABELS[f]).join(" · ")}</span>
+                      <span className="lib__freq">
+                        {m.frequency.map((f) => FREQUENCY_LABELS[f]).join(" · ")}
+                        {isProvisional(m) && <span className="lib__pending"> · ⏳ source check pending</span>}
+                      </span>
                       <span className={`badge ${q ? (q.available ? "badge--confirmed" : "badge--new") : "badge--closed"}`}>
                         {q ? (q.available ? "Quest live" : "Quest draft") : "No quest yet"}
                       </span>
@@ -146,6 +150,9 @@ export default async function AdminJurisdiction({ params }: { params: Promise<{ 
                                 ({r.issuer}
                                 {r.provision ? `, ${r.provision}` : ""}
                                 {r.effective ? `, effective ${r.effective}` : ""})
+                              </span>
+                              <span className={r.checked ? "lib__ok" : "lib__pending"}>
+                                {r.checked ? ` ✓ official text checked ${r.checked}` : " ⏳ found on the official site; full text not opened yet"}
                               </span>
                               {r.note && <span className="lib__note">{r.note}</span>}
                             </li>
