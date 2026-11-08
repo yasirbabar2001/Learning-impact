@@ -24,6 +24,12 @@ sent. All motion respects the visitor's "reduce motion" setting.
 - **Admin dashboard** (`/admin`): clickable tiles with live numbers (revenue, payments to review, learners, companies
   to approve, free-stage learners and conversion, enrolments, certificates, exam pass rate, courses live, new
   requests) plus sign-up and top-course charts; training requests moved to `/admin/requests`.
+- **Global Banking Regulatory Training** (Admin → Regulatory library, public page `/regulatory`): country-by-country
+  maps of the 202 master programs (`content/regulatory/`), each classified Mandatory – Explicit, Mandatory –
+  Role-Based, Regulatory Competence Requirement or Recommended, with frequency, audience and official references
+  (✓ = official text checked; ⏳ = source check pending). Country quests are normal course files with a
+  `jurisdiction` block; they appear as drafts until an admin prices and publishes them. See
+  `content/regulatory/QUEST-GUIDE.md`, `VERIFY-BRIEF.md` and `REPORT-PHASE1.md`.
 - **Website visitors** on the dashboard: unique visitors and page views today (by hour), this month (by day), this
   year (by month) and all time. Counting uses an anonymous first-party cookie (`li_vid`), skips bots, headless
   browsers and admin pages, and stores no IP address. Most visited pages and referring sites (30 days) are listed too.

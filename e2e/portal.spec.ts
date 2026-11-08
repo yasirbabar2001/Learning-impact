@@ -514,3 +514,34 @@ test("sign-up requires mobile and gender; Admin › Users lists them and exports
   await admin.getByRole("button", { name: "Show as table" }).click();
   await expect(admin.locator(".visitors__table tbody tr")).toHaveCount(24);
 });
+
+test("regulatory library: admin reviews a country map, publishes a draft quest, and the public library lists it with its sources", async ({ page, browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/library");
+  await expect(admin.getByRole("heading", { name: "Global Banking Regulatory Training" })).toBeVisible();
+  // a researched country opens; a planned one is not a link yet
+  await admin.locator("a.tile", { hasText: "Pakistan" }).click();
+  await expect(admin).toHaveURL(/\/admin\/library\/pk$/);
+  await expect(admin.getByRole("heading", { name: "Pakistan", level: 1 })).toBeVisible();
+  await expect(admin.locator(".cls--mandatory-explicit").first()).toBeVisible();
+  await expect(admin.locator(".lib__ok").first()).toBeAttached();
+  // the draft quest is not public yet
+  const anon = await (await browser.newContext()).newPage();
+  await anon.goto("/regulatory");
+  await expect(anon.locator(".reg-quest")).toHaveCount(0);
+  // publish it
+  const form = admin.locator("form.admin-inline", { has: admin.locator("input[value=pk-sbp-aml-cft-cpf]") });
+  await form.locator("input[name=price]").fill("15000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+  await expect(admin.locator(".badge", { hasText: "Live" }).first()).toBeVisible();
+  // the public library and sales page show it with its regulatory basis
+  await anon.goto("/regulatory");
+  await anon.locator(".reg-quest", { hasText: "Pakistan | AML/CFT/CPF Regulatory Compliance" }).click();
+  await expect(anon).toHaveURL(/\/certifications\/pk-sbp-aml-cft-cpf$/);
+  await expect(anon.locator(".reg-basis")).toContainText("Mandatory – Explicit");
+  await expect(anon.locator(".reg-basis a").first()).toHaveAttribute("href", /^https:\/\//);
+  // the certifications page points to the library
+  await page.goto("/certifications");
+  await expect(page.locator(".reg-banner")).toBeVisible();
+});
