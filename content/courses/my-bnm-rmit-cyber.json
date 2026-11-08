@@ -1,0 +1,3193 @@
+{
+  "slug": "my-bnm-rmit-cyber",
+  "title": "Malaysia | BNM Risk Management in Technology, Cybersecurity and Customer Information",
+  "tagline": "Protect systems, customers and data the Malaysian way: RMiT, the NCII code, MCIPD breaches, scams and the amended PDPA.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Licensed conventional banks in Malaysia",
+    "Bank contact centres and branch networks",
+    "Bank technology, cybersecurity and operations teams",
+    "Bank risk, compliance, data protection and internal audit functions",
+    "Boards and senior management of Malaysian banks"
+  ],
+  "hours": 6,
+  "description": "This quest teaches staff of Malaysian conventional banks the technology, cybersecurity and customer information rules set by **Bank Negara Malaysia (BNM)**: the **Risk Management in Technology (RMiT)** policy document (in force from 28 November 2025 and reissued on 25 September 2026 with a **code of practice for national critical information infrastructure (NCII) entities** under the **Cyber Security Act 2024**), the **Management of Customer Information and Permitted Disclosures (MCIPD)** policy document of 31 October 2025, BNM's business continuity notification rules, and the **Personal Data Protection Act 2010** as amended in 2024, including data protection officers and breach notification from 1 June 2025.\n\nRMiT requires every bank to give **all staff** technology and cybersecurity awareness education **at least annually**, to train technology, cyber and risk staff continuously, and to keep the board trained. MCIPD requires staff awareness, training and reminders on protecting customer information and on breach escalation. This quest serves those duties for all staff, with deeper material for managers, incident teams and directors.\n\nAcross five stages you follow a fictional team at Bukit Kenanga Bank Berhad through governance, daily cyber defence, phishing and scams, incident and breach notification, and third parties, cloud and the PDPA. Real BNM enforcement actions show what goes wrong.\n\nThis quest builds knowledge of the rules and good practice; it does not replace your bank's own policies, procedures or advice from your security, data protection and compliance teams.",
+  "audience": [
+    "All staff of Malaysian conventional banks who use the bank's systems or handle customer information",
+    "Contact centre and branch staff who help customers facing phishing, scams and account takeover",
+    "Technology, cybersecurity and incident response teams who run controls and notify regulators",
+    "Risk, compliance, data protection and internal audit staff who oversee RMiT, MCIPD and PDPA duties",
+    "Senior managers and directors accountable for technology and cyber risk oversight"
+  ],
+  "outcomes": [
+    "Explain who is accountable under RMiT and the awareness and training duties in paragraphs 8.4(c) and 15.1 to 15.3",
+    "Apply everyday cyber and customer information controls: access, MFA, logs, devices and messaging tools",
+    "Recognise phishing, scams and account takeover, and apply RMiT's digital fraud and customer protection rules",
+    "Escalate and notify cyber incidents and customer information breaches to BNM, NACSA and the PDP Commissioner on time",
+    "Describe RMiT and outsourcing duties for third parties and cloud, and the amended PDPA's DPO and breach rules",
+    "Summarise the evidence a bank needs to show BNM that its technology and information programme works"
+  ],
+  "quest": {
+    "name": "The Kenanga Firewall",
+    "premise": "You have just joined the Technology Risk and Cybersecurity Office of Bukit Kenanga Bank Berhad, a fictional conventional bank headquartered in Kuala Lumpur with an operations hub in Cyberjaya and branches from Penang to Kuching. The bank has just been told the reissued RMiT applies in full, and BNM's supervisors will review its programme next quarter. With CISO Farah Nadia, SOC lead Ravi, data protection officer Tan Mei Ling, contact centre leader Hafiz and board technology committee chair Datuk Andrew Ong, clear five stages, then face the final boss: the supervisors' exam.",
+    "badge": {
+      "name": "Kenanga Firewall Guardian",
+      "description": "Awarded for working knowledge of BNM's RMiT, the NCII code of practice, MCIPD breach rules and the amended PDPA for Malaysian banks."
+    },
+    "color": "#0f766e",
+    "cast": [
+      {
+        "id": "farah",
+        "name": "Farah Nadia Rahim",
+        "role": "Chief Information Security Officer, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "ravi",
+        "name": "Ravi Chandran",
+        "role": "Head of Security Operations Centre and CERT lead",
+        "look": {
+          "skin": 4,
+          "hair": "beard",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "meiling",
+        "name": "Tan Mei Ling",
+        "role": "Data Protection Officer, customer information",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "hafiz",
+        "name": "Hafiz Azman",
+        "role": "Contact centre team leader, Cyberjaya",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "andrew",
+        "name": "Datuk Andrew Ong",
+        "role": "Independent director, chair of the board technology committee",
+        "look": {
+          "skin": 2,
+          "hair": "bald",
+          "color": "#be123c"
+        }
+      }
+    ]
+  },
+  "jurisdiction": {
+    "code": "my",
+    "programs": [
+      71,
+      72,
+      73,
+      35,
+      77,
+      29,
+      83,
+      84,
+      66,
+      74,
+      91,
+      112
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "annual",
+      "periodic"
+    ],
+    "regulators": [
+      "Bank Negara Malaysia (BNM)",
+      "National Cyber Security Agency (NACSA)",
+      "Personal Data Protection Commissioner (JPDP)"
+    ],
+    "references": [
+      {
+        "title": "Policy Document on Risk Management in Technology (RMiT)",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/938039/pd-rmit-sep26.pdf",
+        "provision": "Paragraphs 1.3, 8, 9.4, 10.32, 10.46 to 10.57, 11, 12, 15.1 to 15.3, 17.1; Appendices 3, 11 and 12",
+        "note": "Board and management duties, access and cyber controls, digital fraud measures, annual awareness for all staff, continuous training for technology staff and board training; Appendix 12 is the code of practice for NCII entities, including awareness before system access and NACSA incident notification.",
+        "effective": "2025-11-28",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Policy Document on Management of Customer Information and Permitted Disclosures",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/938039/MCIPD_PD_2025.pdf",
+        "provision": "Paragraphs 9.7, 9.8, 10.12 to 10.24, 10.41 to 10.48, 11.1 to 11.31, 12.7 and 12.9",
+        "note": "ICT controls and detection of unusual access, staff awareness, induction training and effectiveness checks, the breach response plan, immediate notification to BNM, investigation reports, customer notification and outsourced provider training.",
+        "effective": "2025-10-31",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Policy Document on Business Continuity Management",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/938039/PD-BCM.pdf",
+        "provision": "Paragraphs 10.4 to 10.10",
+        "note": "Cyber incidents must be notified to BNM within two hours of confirmation through the central email channel and the cyber incident scoring form, with progressive updates.",
+        "effective": "2023-12-19",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Personal Data Protection Act 2010 (Act 709), Reprint as at 15 September 2026",
+        "issuer": "Attorney General's Chambers (Laws of Malaysia)",
+        "url": "https://lom.agc.gov.my/ilims/upload/portal/akta/outputaktap/3301061_BI/Act%20709%20(Reprint%202026).pdf",
+        "provision": "Sections 5, 9, 12A, 12B and 129",
+        "note": "The seven principles, the Security Principle for controllers and processors, appointment of data protection officers, breach notification to the Commissioner and to data subjects at risk of significant harm, and transfers abroad.",
+        "effective": "2025-06-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Policy Document on Ensuring Fair Treatment for Victims of Unauthorised e-Banking Transactions",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/938039/Ensuring_Fair_Treatment_for_Victims_of_Unauthorised_eBanking-Transactions.pdf",
+        "provision": "Paragraphs 8.1 to 8.3",
+        "note": "Banks must remind customers regularly of current safety tips, give them a fraud hotline, and keep customer service staff well aware of current fraud risks and the investigation process.",
+        "effective": "2024-10-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Policy Document on Outsourcing",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/documents/20124/938039/PD_Outsourcing_20191023.pdf/115dc006-4220-44ff-e443-7dc6e9a9a2f5?t=1592250636323",
+        "provision": "Paragraphs 8.3 to 8.6 and 12.1",
+        "note": "Board oversight of outsourcing risk, an annual outsourcing plan, and BNM's written approval before a new material outsourcing arrangement or a significant change to one.",
+        "effective": "2019-10-23",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Enforcement Actions taken by BNM against Regulatees / Licensees",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/enforcement-actions-regulatees",
+        "note": "BNM's public register of administrative monetary penalties and other actions, including RMiT downtime, cybersecurity, customer information and outsourcing breaches.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Imposition of Administrative Monetary Penalty on Bank Kerjasama Rakyat Malaysia Berhad for Cybersecurity and Customer Information Protection Breaches",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn072026",
+        "note": "RM1 million penalty imposed on 20 January 2026 after an external threat actor gained unauthorised access; BNM found inadequate cyber controls and incident response, and weak ICT controls over customer information.",
+        "effective": "2026-04-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Negara Malaysia imposes Administrative Monetary Penalty on Malayan Banking Berhad and Maybank Islamic Berhad for non-compliance with the Financial Services Act 2013 and Islamic Financial Services Act 2013",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/ea-mybnk24",
+        "note": "Penalty imposed on 29 July 2024 for unplanned mobile banking downtime between June 2023 and May 2024 that breached RMiT's high-availability thresholds.",
+        "effective": "2024-08-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Negara Malaysia imposes Administrative Monetary Penalty on CIMB Bank Berhad and CIMB Islamic Bank Berhad for non-compliance with the Financial Services Act 2013 and Islamic Financial Services Act 2013",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/ea-cimb24",
+        "note": "Penalty imposed on 29 July 2024 after disruptions on 8 and 9 April 2024 to e-banking, ATMs and cards exceeded RMiT's downtime thresholds because recovery was not executed promptly.",
+        "effective": "2024-08-14",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Negara Malaysia has imposed an Administrative Monetary Penalty on Bank Simpanan Nasional for non-compliance with the Development Financial Institutions Act 2002 and the Risk Management in Technology Policy Document",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/eapn925",
+        "note": "RM995,000 penalty imposed on 16 June 2025 for repeated unplanned downtime between June 2023 and October 2024 that breached RMiT thresholds.",
+        "effective": "2025-07-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bank Negara Malaysia imposes Administrative Monetary Penalty on Bank of China (Malaysia) Berhad for non-compliance with the Financial Services Act 2013",
+        "issuer": "Bank Negara Malaysia",
+        "url": "https://www.bnm.gov.my/-/ea-ampboc",
+        "note": "RM88,000 penalty imposed on 22 July 2024 for moving two core banking systems to new data centres without BNM's prior approval of a significant change to a material outsourcing arrangement.",
+        "effective": "2024-08-23",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "RMiT Foundations: Board, Management, CISO and the Awareness Duty",
+      "stage": "The Control Tower",
+      "summary": "Meet BNM's RMiT policy document: why it exists, what 'S' and 'G' mean, the duties of the board, senior management and the CISO, and the training duties in paragraphs 8.4(c) and 15.1 to 15.3 that make this quest compulsory.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the purpose, legal basis and structure of RMiT, including standards marked S and guidance marked G",
+        "Describe the board's technology oversight duties, including the designated committee and paragraph 8.4",
+        "Describe the roles of senior management, the cross-functional committee and the CISO",
+        "Apply the awareness and training duties in paragraphs 15.1, 15.2 and 15.3 to different groups of staff"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the control tower",
+          "setting": "Level 30 meeting room, Bukit Kenanga Bank head office, Kuala Lumpur. Monday, 8:45 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your new pass says 'Technology Risk and Cybersecurity Office'. On the screen, a thick PDF is open: Risk Management in Technology, issued 25 September 2026.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farah",
+              "text": "Welcome! I'm Farah, the bank's CISO. That document is RMiT, BNM's rulebook for technology and cyber risk. It shapes almost everything we do.",
+              "mood": "happy"
+            },
+            {
+              "who": "andrew",
+              "text": "Andrew Ong, I chair the board technology committee. BNM is clear: the board approves the technology risk appetite and must understand cyber risk. Directors don't get to say 'that's IT's problem'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ravi",
+              "text": "Ravi, security operations. My team watches the systems around the clock. But most attacks still start with a person clicking something.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meiling",
+              "text": "Mei Ling, data protection officer. When customer information leaks, BNM's MCIPD rules and the PDPA land on my desk at the same time.",
+              "mood": "worried"
+            },
+            {
+              "who": "hafiz",
+              "text": "(video call from Cyberjaya) Hafiz, contact centre. My agents take scam calls from frightened customers every day. They need answers they can use.",
+              "mood": "worried"
+            },
+            {
+              "who": "farah",
+              "text": "And RMiT says every one of our staff needs cybersecurity awareness at least once a year. So your mission: five stages, from this tower to the phone queue. Ready?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "RMiT in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Who sets the rules",
+              "narration": "Bank Negara Malaysia issues RMiT under the Financial Services Act 2013. It applies to licensed banks and other financial institutions, and the current version took effect on 28 November 2025."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Why it exists",
+              "narration": "Banks run on complex systems and face fast-changing digital crime. RMiT sets minimum standards so that banks prevent disruption, protect customers and stay resilient against cyber-attack."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Proportionate, not optional",
+              "narration": "Larger, more digital and more connected banks must adopt stronger controls. Size changes how much you do, not whether you comply."
+            },
+            {
+              "icon": "📘",
+              "heading": "S and G",
+              "narration": "Paragraphs marked S are standards that must be met, and breaking them can lead to enforcement. Paragraphs marked G are guidance that BNM encourages banks to adopt."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "September 2026",
+              "narration": "The reissue added Appendix 12, a code of practice for banks designated as national critical information infrastructure under the Cyber Security Act 2024."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who owns technology risk under RMiT",
+          "caption": "RMiT spreads accountability from the board to every user. Enforcement under paragraph 1.3 can reach the institution and its directors, officers and employees.",
+          "items": [
+            {
+              "label": "Board",
+              "detail": "Approves technology risk appetite, IT and cyber strategy, and the risk frameworks; oversees through a designated committee."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Primary responsibility for day-to-day technology and cyber risk; turns frameworks into policies."
+            },
+            {
+              "label": "CISO and risk function",
+              "detail": "Independent of daily IT operations; advises, sets policy and enforces compliance."
+            },
+            {
+              "label": "Technology, SOC and CERT",
+              "detail": "Run controls, monitoring, incident response and recovery."
+            },
+            {
+              "label": "Every staff member",
+              "detail": "Follows policy, spots threats and reports quickly; trained at least annually."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What does a paragraph marked 'S' in RMiT mean for a bank?",
+          "options": [
+            "It is a standard that must be complied with, and a breach can lead to enforcement action",
+            "It is a suggestion that the bank may adopt if it has the budget",
+            "It applies only to banks designated as NCII entities",
+            "It is a sample practice that BNM will publish for comment"
+          ],
+          "answer": 0,
+          "explanation": "RMiT defines S as a standard or requirement that must be met; non-compliance may result in enforcement. G marks guidance that is encouraged. NCII status is a separate question handled in Appendix 12."
+        },
+        {
+          "type": "concept",
+          "title": "What the board must do",
+          "body": "RMiT gives the board clear duties (paragraphs 8.1 to 8.5):\n\n- **Risk appetite**: approve a technology risk appetite aligned with the bank's overall appetite, with tolerances, risk owners and key risk indicators.\n- **Strategy and frameworks**: approve IT and cybersecurity strategic plans covering **at least three years**, and oversee the technology risk management framework (TRMF) and cyber resilience framework (CRF).\n- **Policy reviews**: make sure IT policies are reviewed **at least once every three years** unless RMiT says otherwise.\n- **Committee**: designate a board-level committee for technology matters with **at least one member with technology experience**.\n- **Paragraph 8.4**: get regular updates on technology risk and cyber threats, give real time to discussing extreme cyber scenarios, and **take part in cybersecurity awareness and training** (8.4(c)).\n- **Audit**: the board audit committee makes sure technology audit is effective and gaps are closed."
+        },
+        {
+          "type": "match",
+          "title": "Match the RMiT role",
+          "prompt": "Link each role to the duty RMiT gives it.",
+          "pairs": [
+            {
+              "left": "Board",
+              "right": "Approves the technology risk appetite and joins cybersecurity awareness and training"
+            },
+            {
+              "left": "Designated board committee",
+              "right": "Supports the board's technology oversight; includes a member with technology experience"
+            },
+            {
+              "left": "Senior management",
+              "right": "Bears primary responsibility for day-to-day technology and cyber risk"
+            },
+            {
+              "left": "Cross-functional committee",
+              "right": "Guides technology plans; approves policy deviations and reports material ones to the board"
+            },
+            {
+              "left": "CISO",
+              "right": "Runs the technology risk function, independent of daily IT operations, and is appropriately certified"
+            },
+            {
+              "left": "Board audit committee",
+              "right": "Ensures technology audit is effective and corrective actions close promptly"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Three training duties in RMiT section 15",
+          "caption": "Section 15 is why this quest exists. Each paragraph targets a different group.",
+          "headers": [
+            "Who",
+            "What RMiT requires"
+          ],
+          "items": [
+            {
+              "label": "15.1",
+              "left": "All staff (and third parties where appropriate)",
+              "right": "Technology and cyber awareness, at least annually, updated for new threats, effectiveness measured"
+            },
+            {
+              "label": "15.2",
+              "left": "Technology operations, cyber and risk staff",
+              "right": "Adequate, continuous training so they are competent and suitably certified"
+            },
+            {
+              "label": "15.3",
+              "left": "Board members",
+              "right": "Regular training and information on technology developments for oversight"
+            },
+            {
+              "label": "8.4(c)",
+              "left": "Board members",
+              "right": "Take part in relevant cybersecurity awareness and training programmes"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The training spreadsheet",
+          "setting": "Farah's office, level 30. Monday, 11:30 am.",
+          "lines": [
+            {
+              "who": "farah",
+              "text": "Last year's awareness module: 96% completion. HR is pleased. I'm not.",
+              "mood": "thinking"
+            },
+            {
+              "who": "ravi",
+              "text": "Same video as the year before. And our phishing test click rate didn't move at all.",
+              "mood": "worried"
+            },
+            {
+              "who": "andrew",
+              "text": "Two directors skipped it. They said the board gets a cyber briefing anyway.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farah",
+              "text": "RMiT asks for more than a completion rate. It says the education must reflect the evolving threats and that we measure whether it works.",
+              "mood": "neutral"
+            },
+            {
+              "who": "andrew",
+              "text": "Then the board needs a decision. What do we change before BNM looks at it?",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the awareness programme",
+          "situation": "Bukit Kenanga's annual cyber awareness module has not changed in two years. Completion is high, simulated phishing results are flat, two directors did not take part, and the bank's outsourced contact centre staff are not included. Andrew asks you to propose the fix.",
+          "choices": [
+            {
+              "text": "Refresh the content for current threats, measure effectiveness with tests and phishing simulations, bring directors in, and add relevant third-party staff",
+              "outcome": "This meets paragraph 15.1 (annual, current, measured, third parties where appropriate) and paragraph 8.4(c) for the board. The board can now see evidence that behaviour is changing.",
+              "score": 2
+            },
+            {
+              "text": "Keep the module but make completion a performance target for all staff",
+              "outcome": "Completion improves, but the content is still stale and nobody measures whether behaviour changes. RMiT asks for both currency and measured effectiveness.",
+              "score": 1
+            },
+            {
+              "text": "Exempt directors, since they receive a quarterly cyber briefing in the board pack",
+              "outcome": "A briefing is useful, but RMiT separately requires the board to take part in cybersecurity awareness and training and to receive regular training on technology developments.",
+              "score": 0
+            },
+            {
+              "text": "Leave third-party staff out, because they are the vendor's responsibility",
+              "outcome": "RMiT expects the bank to include third-party service providers in relevant training where appropriate, and its service agreements should require them to take part.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "RMiT terms you will hear",
+          "cards": [
+            {
+              "front": "TRMF",
+              "back": "Technology risk management framework: how the bank defines, assesses, controls and monitors technology risk as part of enterprise risk management."
+            },
+            {
+              "front": "CRF",
+              "back": "Cyber resilience framework: governance, objectives and tolerance for cyber risk, covering identify, protect, detect, respond and recover."
+            },
+            {
+              "front": "Critical system",
+              "back": "A system supporting critical banking services whose failure could significantly harm customers, operations, finances, reputation or compliance."
+            },
+            {
+              "front": "Cyber incident",
+              "back": "A cyber event that harms the security of a system or its data, whether malicious or not."
+            },
+            {
+              "front": "CISO",
+              "back": "Chief information security officer: responsible for the technology risk function, independent of daily IT operations, with enough authority and resources."
+            },
+            {
+              "front": "NCII entity",
+              "back": "A bank designated by BNM as national critical information infrastructure under the Cyber Security Act 2024; Appendix 12 applies to it."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under paragraph 15.2 of RMiT, which staff must receive adequate and continuous training so that they are competent and suitably certified?",
+          "options": [
+            "Staff involved in technology operations, cybersecurity and risk management",
+            "All customer-facing staff in branches and contact centres",
+            "Only the CISO and the head of internal audit",
+            "Only staff of third-party cloud providers"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 15.2 targets technology operations, cybersecurity and risk management staff. All staff are covered by the annual awareness duty in 15.1, and the board by 15.3 and 8.4(c)."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Real cases: BNM penalties for system downtime",
+          "caption": "RMiT paragraph 10.32 caps unplanned downtime of critical customer-facing systems at 4 hours a year (rolling) and 120 minutes per incident. Source: BNM enforcement notices.",
+          "items": [
+            {
+              "label": "Malayan Banking Berhad, July 2024",
+              "value": "RM2.16m",
+              "detail": "Mobile banking platform downtime, June 2023 to May 2024; a matching penalty went to a group entity."
+            },
+            {
+              "label": "CIMB Bank Berhad, July 2024",
+              "value": "RM380,000",
+              "detail": "Disruptions on 8 and 9 April 2024 to e-banking, ATMs and cards."
+            },
+            {
+              "label": "Bank Simpanan Nasional, June 2025",
+              "value": "RM995,000",
+              "detail": "Repeated downtime, June 2023 to October 2024."
+            },
+            {
+              "label": "Downtime cap per incident",
+              "value": "120 min",
+              "detail": "Maximum tolerable downtime per incident for critical systems."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: what the downtime penalties teach the board",
+          "body": "In August 2024 BNM published penalties on **Malayan Banking Berhad** and **CIMB Bank Berhad**, imposed on 29 July 2024, for breaching RMiT's high-availability thresholds for critical systems. In July 2025 it published a **RM995,000** penalty on **Bank Simpanan Nasional**.\n\nBNM's notices pointed to root causes that sit with management and the board, not just engineers:\n\n- Maybank could not recover **effectively and promptly**, and resilience improvements BNM required were **incomplete** when the incidents happened.\n- CIMB and BSN had **lapses in executing response and recovery** to restore systems quickly.\n\nBNM weighed the impact on customers, the failure to take reasonable steps, past compliance and the effectiveness of remediation. The lesson: the board's approved risk tolerances, strategy and investment plans are tested in real outages, and BNM checks whether recovery actually works."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "RMiT is BNM's binding policy document on technology and cyber risk; 'S' paragraphs must be met, 'G' paragraphs are guidance.",
+            "The board approves technology risk appetite and three-year IT and cyber plans, oversees through a designated committee, and must join cyber awareness training (8.4(c)).",
+            "Senior management runs technology risk day to day; the CISO is independent of IT operations and appropriately certified.",
+            "Paragraph 15.1: all staff get technology and cyber awareness at least annually, kept current, with effectiveness measured and third parties included where appropriate.",
+            "Paragraph 15.2 covers continuous training for technology, cyber and risk staff; 15.3 covers regular board training on technology developments."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about the last cybersecurity awareness training you took. Did it reflect threats you actually see in your job? What one change would make it more useful for your team?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-cy-s1-q1",
+          "question": "From which date did the current version of BNM's RMiT policy document take effect, according to the reissued document?",
+          "options": [
+            "25 September 2026",
+            "1 June 2023",
+            "26 August 2024",
+            "28 November 2025"
+          ],
+          "answer": 3,
+          "explanation": "RMiT states it comes into effect on 28 November 2025 unless a paragraph says otherwise. 25 September 2026 is the reissue date that added Appendix 12; 26 August 2024 is when the Cyber Security Act 2024 came into effect.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s1-q2",
+          "question": "A paragraph in RMiT is marked 'G'. How should the bank treat it?",
+          "options": [
+            "As a standard whose breach automatically leads to a fine",
+            "As a rule that only applies to e-money issuers",
+            "As guidance that BNM encourages the bank to adopt",
+            "As a draft that has no effect until gazetted"
+          ],
+          "answer": 2,
+          "explanation": "G marks guidance, such as advice or recommendations that are encouraged. S marks standards that must be complied with, where non-compliance may lead to enforcement.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s1-q3",
+          "question": "Against whom can BNM take enforcement or supervisory action for breaching an 'S' paragraph of RMiT?",
+          "options": [
+            "Only the financial institution as a legal entity",
+            "Only the CISO named in the bank's responsibility map",
+            "Only third-party providers that caused the breach",
+            "The financial institution, including its directors, officers and employees"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 1.3 says action can be taken against the institution including its directors, officers and employees. Accountability is not limited to the entity or to one role.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s1-q4",
+          "question": "What must the composition of the board-level committee designated for technology matters include?",
+          "options": [
+            "A majority of members who are former CISOs",
+            "The CISO as a voting member of the committee",
+            "A representative of BNM as an observer",
+            "At least one member with technology experience and competencies"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 8.3 requires the designated committee to include at least one member with technology experience and competencies. The CISO advises the board but is not required to be a member.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s1-q5",
+          "question": "Which item is part of paragraph 8.4 of RMiT on board discussion of technology and cyber risk?",
+          "options": [
+            "The board must personally test the bank's incident response plan every month",
+            "The board must take part in relevant cybersecurity awareness and training programmes",
+            "The board must hold a cybersecurity certification before appointment",
+            "The board must approve every change to firewall rules"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 8.4 requires regular updates, enough time to discuss cyber risks, and participation in cybersecurity awareness and training (8.4(c)). The other options are not RMiT requirements.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s1-q6",
+          "question": "The cross-functional technology committee approves a deviation from an IT security policy. Under RMiT, what else must happen if the deviation is material?",
+          "options": [
+            "It must be reported to the board",
+            "It must be approved by BNM before it takes effect",
+            "It must be published on the bank's website",
+            "It must be reversed within 30 days"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 8.7(c) lets the committee approve deviations after a robust risk assessment, with material deviations reported to the board. RMiT does not require BNM approval or publication.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s1-q7",
+          "question": "A bank appoints its head of IT infrastructure as CISO while he keeps running data centre operations. Which RMiT requirement does this most clearly put at risk?",
+          "options": [
+            "The rule that the CISO must be based outside Malaysia",
+            "The rule that the CISO must report only to internal audit",
+            "The CISO's independence from day-to-day technology operations",
+            "The rule that the CISO must hold a law degree"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 9.4 requires the CISO to be independent from day-to-day technology operations, with sufficient authority, independence and resources. The other options are not RMiT rules.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-cy-s1-q8",
+          "question": "Under paragraph 15.1, how often must cybersecurity awareness education be given to all staff?",
+          "options": [
+            "Only at induction, with refreshers left to each department",
+            "Once every three years, in line with policy reviews",
+            "At least annually, reflecting the evolving cyber threat landscape",
+            "Only after a major cyber incident at the bank"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 15.1 requires cybersecurity awareness education at least annually, kept up to date with evolving threats, with its effectiveness measured. The three-year cycle applies to policy reviews, not awareness.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s1-q9",
+          "question": "A bank's awareness programme reports only completion rates to the board. What does paragraph 15.1 also require?",
+          "options": [
+            "Publishing completion rates in the annual report",
+            "Measuring how effective the education and awareness programmes are",
+            "Sending completion data to BNM every quarter",
+            "Replacing classroom sessions with e-learning"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 15.1 requires the bank to measure the effectiveness of its education and awareness programmes, not just record attendance. RMiT does not require publication or quarterly submissions to BNM.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s1-q10",
+          "question": "In BNM's 2024 and 2025 downtime cases against Malayan Banking Berhad, CIMB Bank Berhad and Bank Simpanan Nasional, which RMiT thresholds were breached?",
+          "options": [
+            "No more than 8 hours of downtime a month and 4 hours per incident",
+            "No more than 24 hours of downtime a year and 6 hours per incident",
+            "No more than 4 hours of unplanned downtime a year and 120 minutes per incident",
+            "No more than 1 hour of downtime a quarter and 30 minutes per incident"
+          ],
+          "answer": 2,
+          "explanation": "The notices cite paragraph 10.32: cumulative unplanned downtime affecting customers of no more than four hours on a rolling 12-month basis, and a maximum of 120 minutes per incident.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Cyber Defence Every Day: Resilience Framework, Access, Monitoring and Customer Data Controls",
+      "stage": "The Watch Floor",
+      "summary": "See how RMiT's cyber resilience framework, security operations centre, access controls, MFA and logging work in practice, and how MCIPD's ICT controls stop customer information leaving through screens, USB drives and messaging apps.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the cyber resilience framework, the SOC, threat intelligence and red team testing under RMiT",
+        "Apply RMiT's access control principles: deny by default, least privilege, time-bound access, segregation and MFA",
+        "Apply MCIPD controls on portable devices, messaging platforms, screen photos and unusual access to customer data",
+        "Explain what BNM found in its 2026 cybersecurity and customer information case"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the watch floor",
+          "setting": "Security operations centre, Bukit Kenanga operations hub, Cyberjaya. Tuesday, 2:10 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Wall screens glow in the dark. One tile turns amber: 'Unusual download volume: customer statements, user ID LN4471'.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ravi",
+              "text": "That's a loan officer in Penang. Four thousand statements downloaded at two in the morning. That isn't a normal shift.",
+              "mood": "worried"
+            },
+            {
+              "who": "farah",
+              "text": "(on the phone) Could be a stolen password. Could be an insider. Either way, RMiT and MCIPD both expect us to catch exactly this.",
+              "mood": "thinking"
+            },
+            {
+              "who": "ravi",
+              "text": "Account suspended. Session killed. The logs are preserved. Now we find out how it got this far.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farah",
+              "text": "Welcome to stage two. Tonight you'll see why access rules, monitoring and logs matter more than any firewall.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The cyber resilience framework",
+          "scenes": [
+            {
+              "icon": "🧭",
+              "heading": "A framework, not a product",
+              "narration": "RMiT requires a cyber resilience framework that sets the bank's governance, objectives and tolerance for cyber risk, and aims for resilience against extreme but plausible attacks."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Five functions",
+              "narration": "The framework must support identifying, protecting, detecting, responding and recovering, for systems on the bank's premises and those run by third parties."
+            },
+            {
+              "icon": "🧱",
+              "heading": "Layers of defence",
+              "narration": "Banks build layered defences using sound practices such as zero trust, defence in depth through micro-segmentation, and security by design."
+            },
+            {
+              "icon": "👁️",
+              "heading": "Always watching",
+              "narration": "A security operations centre monitors all critical systems continuously, and threat intelligence looks outward, including social media and the dark web, for data leaks and false rumours about the bank."
+            },
+            {
+              "icon": "🎭",
+              "heading": "Think like an attacker",
+              "narration": "At least once every three years, a red team simulates a realistic attack to find weaknesses before criminals do."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Identify, protect, detect, respond, recover",
+          "caption": "RMiT paragraph 11.2 expects the cyber resilience framework to support all five functions, on premises and at third parties.",
+          "items": [
+            {
+              "label": "Identify",
+              "detail": "Know critical systems, data, assets and connections; keep an automated asset inventory."
+            },
+            {
+              "label": "Protect",
+              "detail": "Layered controls, zero trust, access control, encryption and secure configuration."
+            },
+            {
+              "label": "Detect",
+              "detail": "SOC monitoring, threat intelligence and prompt investigation of anomalies."
+            },
+            {
+              "label": "Respond",
+              "detail": "Incident response plan, CERT, crisis management and communication."
+            },
+            {
+              "label": "Recover",
+              "detail": "Restore services fast, learn lessons and strengthen defences."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "How often must a bank run a realistic red team simulation attack on its infrastructure under RMiT?",
+          "options": [
+            "At least once every three years",
+            "Every month",
+            "Only when BNM directs it",
+            "Once, before going live with a new system"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 11.6 requires a realistic red team exercise at least once every three years. The annual cyber drill under paragraph 11.16 is a different test of the incident response plan."
+        },
+        {
+          "type": "concept",
+          "title": "Access control: the RMiT principles",
+          "body": "RMiT (paragraphs 10.53 to 10.57) sets the rules every system owner and user lives with:\n\n- **Deny all by default**: no access unless explicitly authorised.\n- **Least privilege**: only the minimum permissions needed for the role.\n- **Time-bound access**: limited to the period the work needs.\n- **Segregation of incompatible functions**: no one person can develop, run and secure a system alone.\n- **Dual authorisation** for activities the bank defines as high risk.\n- **Strong authentication**: stronger for remote access and critical activities; each credential tied to **one user**.\n- **MFA for critical systems** that resists social engineering, combining two or more of something you know, are or have.\n- **Access matrix** reviewed periodically.\n- **Logs** of user activity in critical systems kept for **at least three years** and reviewed.\n\nSharing your login breaks the one-user-one-credential rule and destroys the audit trail."
+        },
+        {
+          "type": "sort",
+          "title": "Within the rules or a breach?",
+          "prompt": "Sort each action at Bukit Kenanga by whether it fits RMiT and MCIPD controls or breaks them.",
+          "buckets": [
+            "Fits the rules",
+            "Breaks the rules"
+          ],
+          "items": [
+            {
+              "text": "A contractor's admin access expires automatically when the project ends",
+              "bucket": 0
+            },
+            {
+              "text": "Two tellers share one login to save time at a busy branch",
+              "bucket": 1
+            },
+            {
+              "text": "A developer also approves and deploys her own code to production alone",
+              "bucket": 1
+            },
+            {
+              "text": "Access to recorded customer calls is limited to staff who need it",
+              "bucket": 0
+            },
+            {
+              "text": "A relationship manager photographs a customer's account screen to show a colleague",
+              "bucket": 1
+            },
+            {
+              "text": "USB ports are disabled for staff with no need to store customer data",
+              "bucket": 0
+            },
+            {
+              "text": "A staff member sends a customer's statement through a personal messaging app",
+              "bucket": 1
+            },
+            {
+              "text": "Critical system activity logs are kept for three years and reviewed",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two documents, one control environment",
+          "caption": "RMiT protects systems; MCIPD focuses on customer information. Banks apply both.",
+          "headers": [
+            "RMiT (systems and cyber)",
+            "MCIPD (customer information)"
+          ],
+          "items": [
+            {
+              "label": "Prevent",
+              "left": "Deny by default, least privilege, MFA for critical systems",
+              "right": "Preventive and detective ICT controls against theft, loss and disclosure"
+            },
+            {
+              "label": "Devices",
+              "left": "Secure storage and transport of sensitive data on removable media",
+              "right": "Only staff with a business need download to bank-issued devices, protected by encryption"
+            },
+            {
+              "label": "Detect",
+              "left": "SOC monitoring and prompt investigation of anomalies",
+              "right": "Detect unusual frequent viewing, suspicious downloads and unauthorised disclosure"
+            },
+            {
+              "label": "Evidence",
+              "left": "Critical system logs kept at least three years",
+              "right": "Audit trail reviews and random sample checks"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The desktop messaging app",
+          "setting": "Mortgage processing team, Kuala Lumpur head office. Tuesday, 10:20 am.",
+          "lines": [
+            {
+              "who": "meiling",
+              "text": "I've just seen something on the proxy report. Someone in mortgages is logged into a desktop messaging app on a work PC.",
+              "mood": "worried"
+            },
+            {
+              "who": "hafiz",
+              "text": "Half my old team used to do that. Customers send their payslips that way. It's faster than email.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meiling",
+              "text": "Faster for fraudsters too. MCIPD says we must restrict web-based messaging and social media for staff who handle customer information, especially end-to-end encrypted ones.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hafiz",
+              "text": "So what do we tell the customer who just sent a payslip on that app?",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Working from home with customer files",
+          "situation": "Aisyah, a credit analyst, has a deadline. She asks if she can copy 300 customer credit files to her personal USB drive to work at home tonight. Her team leader is on leave. You are the most senior person in the team today.",
+          "choices": [
+            {
+              "text": "Say no to the personal drive; help her use the bank's approved remote access on a bank laptop, or escalate for a bank-issued encrypted device if she has a business need",
+              "outcome": "Right call. MCIPD allows downloads only by staff with a legitimate need onto bank-provided, protected devices, and requires controls for offsite work such as strong remote authentication and encryption.",
+              "score": 2
+            },
+            {
+              "text": "Allow it if she encrypts the USB drive with a password",
+              "outcome": "Encryption helps, but a personal drive is outside the bank's control and MCIPD limits downloads to devices the bank provides. The bank cannot monitor or recover the data.",
+              "score": 1
+            },
+            {
+              "text": "Allow it, since she is a trusted employee and will delete the files tomorrow",
+              "outcome": "Trust is not a control. If the drive is lost, this becomes a customer information breach that the bank may need to notify to BNM and the PDP Commissioner.",
+              "score": 0
+            },
+            {
+              "text": "Tell her to email the files to her personal email instead, because email is encrypted",
+              "outcome": "Sending customer data to a personal account is an unauthorised disclosure risk and moves data outside the bank's controls entirely.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "The cyber-attack lifecycle",
+          "prompt": "RMiT paragraph 11.8 asks banks to set defences for each phase of an attack. Put the phases in order.",
+          "steps": [
+            "Reconnaissance: the attacker studies the bank and its staff",
+            "Weaponisation: the attacker builds a malicious payload",
+            "Delivery: the payload arrives, often in an email or link",
+            "Exploitation: a weakness or a click lets the code run",
+            "Installation: malware gains a foothold",
+            "Command and control: the attacker steers the compromised device",
+            "Exfiltration: data is taken out of the bank"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Cyber hygiene at your desk",
+          "cards": [
+            {
+              "front": "Lock your screen",
+              "back": "Every time you step away. An unlocked screen lets anyone act under your credentials, and your login is your accountability."
+            },
+            {
+              "front": "MFA prompt you did not request",
+              "back": "Deny it and report it at once. It may mean someone has your password and is trying to log in."
+            },
+            {
+              "front": "Software from the internet",
+              "back": "Install only through the bank's approved process. Unapproved tools can carry malware and bypass controls."
+            },
+            {
+              "front": "Bring your own device",
+              "back": "Follow the bank's acceptable use policy; NCII entities must set a BYOD rule, enabling or restricting it."
+            },
+            {
+              "front": "Customer data in personal apps",
+              "back": "Never. MCIPD requires banks to restrict messaging and social platforms for staff handling customer information."
+            },
+            {
+              "front": "Something looks wrong",
+              "back": "Report it quickly through the bank's channel. Early reports shrink damage and help meet notification deadlines."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which detection mechanism does MCIPD specifically require for customer information?",
+          "options": [
+            "Prompt detection of unusual frequent viewing and suspicious downloading of customer information by staff",
+            "A monthly survey asking staff whether they have shared customer data",
+            "Annual confirmation from each customer that their data is correct",
+            "A review of staff social media accounts by human resources"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 10.23 requires mechanisms to promptly detect unauthorised access, unusual frequent viewing, suspicious downloads and unauthorised disclosure. Surveys and customer confirmations are not what the paragraph requires."
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Real case: Bank Kerjasama Rakyat Malaysia Berhad",
+          "caption": "Source: BNM press release of 1 April 2026 and its enforcement register.",
+          "items": [
+            {
+              "value": "Incident",
+              "label": "External intrusion",
+              "detail": "An external threat actor gained unauthorised access to the institution's IT infrastructure."
+            },
+            {
+              "value": "Investigation",
+              "label": "BNM findings",
+              "detail": "Breaches of RMiT and MCIPD traced to inadequate cybersecurity controls and incident response."
+            },
+            {
+              "value": "20 Jan 2026",
+              "label": "Penalty imposed",
+              "detail": "Administrative monetary penalty of RM1,000,000 under the Development Financial Institutions Act 2002."
+            },
+            {
+              "value": "26 Jan 2026",
+              "label": "Penalty paid",
+              "detail": "The institution paid in full and strengthened controls, resources and governance."
+            },
+            {
+              "value": "1 Apr 2026",
+              "label": "Published",
+              "detail": "BNM published the action and restated what RMiT and MCIPD require."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: what BNM said about the 2026 cyber breach",
+          "body": "On **20 January 2026** BNM imposed an administrative monetary penalty of **RM1,000,000** on **Bank Kerjasama Rakyat Malaysia Berhad**, a development financial institution, after an **external threat actor gained unauthorised access** to its IT infrastructure.\n\nBNM found breaches of both documents:\n\n- **RMiT**: cybersecurity controls and **incident response** were inadequate.\n- **MCIPD**: preventive and detective **ICT controls**, their regular monitoring, and mechanisms to spot unauthorised access, unusual viewing or downloads and unauthorised disclosure of customer information fell short (paragraphs 10.12, 10.13 and 10.23).\n\nBNM weighed the severity, lack of reasonable care, existing controls, past record and how well the institution fixed the gaps.\n\n**Your lesson**: the detection rules in this stage are not paperwork. When an intruder gets in, BNM asks whether your monitoring would have caught unusual access, and whether staff escalated in time."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "The cyber resilience framework must support identify, protect, detect, respond and recover, on premises and at third parties.",
+            "Banks need a SOC covering all critical systems, cyber threat intelligence (including the dark web), and a red team exercise at least every three years.",
+            "Access is denied by default, least privilege and time-bound, with segregation of duties, one credential per user and MFA for critical systems.",
+            "Critical system activity logs are kept for at least three years; sharing logins destroys accountability.",
+            "MCIPD limits downloads to bank devices, restricts messaging and social platforms, and requires detection of unusual viewing and downloads."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "List the systems you log into each day. For each one, do you have only the access your role needs? Is there any access you no longer use that you should ask to remove?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-cy-s2-q1",
+          "question": "Which five functions must the cyber resilience framework support under RMiT paragraph 11.2?",
+          "options": [
+            "Identification, protection, detection, response and recovery",
+            "Planning, purchasing, patching, policing and publishing",
+            "Prevention, prosecution, penalty, publicity and payment",
+            "Inventory, insurance, investigation, isolation and invoicing"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 11.2 requires the CRF to support effective identification, protection, detection, response and recovery of systems and data, whether hosted on premises or by third parties.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s2-q2",
+          "question": "Bukit Kenanga's threat intelligence team spots a forum post on the dark web offering what looks like the bank's customer data. Which RMiT duty is this team fulfilling?",
+          "options": [
+            "Running the annual cyber drill required for the board",
+            "Performing the data centre resilience assessment",
+            "Testing the out-of-band communication channel",
+            "Collecting and analysing cyber threat information to detect data breaches and misleading information about the bank"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.10 requires a threat intelligence process to detect cyber threats including data breaches and misleading information, drawing on sources such as social media and the dark web.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q3",
+          "question": "A new branch officer is given access to every module of the core banking system 'just in case'. Which RMiT principle does this break?",
+          "options": [
+            "Least privilege, granting only the minimum access needed for the role",
+            "Dual authorisation for high-value payments",
+            "Time-bound access for external contractors only",
+            "Data centre resilience and risk assessment"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 10.54(b) requires least privilege: only the minimum permissions needed for legitimate users to do their roles. Access 'just in case' is the opposite.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s2-q4",
+          "question": "What does RMiT require of multi-factor authentication for user access to critical systems?",
+          "options": [
+            "It must rely on SMS one-time passwords for every user",
+            "It must defend against social engineering and combine two or more factor types",
+            "It is optional where staff use strong passwords",
+            "It must use biometrics as one of the factors"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 10.55 requires MFA that can defend against social engineering, combining two or more of knowledge, inherent and possession factors. Biometrics are one option, not a requirement.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q5",
+          "question": "For how long must activity logs of users in critical systems be kept under RMiT?",
+          "options": [
+            "At least seven years, without a review requirement",
+            "At least twelve months, reviewed annually",
+            "At least three years, with regular and timely review",
+            "Until the end of the user's employment"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 10.57(c) requires logs of user activity in critical systems to be kept for at least three years and reviewed regularly. Seven years appears in MCIPD for breach investigation reports, not system logs.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q6",
+          "question": "A systems engineer can change the core banking code, deploy it to production and switch off the security logging himself. Which RMiT principle is missing?",
+          "options": [
+            "Default transfer limits for new customers",
+            "Customer notification of new controls",
+            "Segregation of incompatible functions",
+            "Annual review of the outsourcing plan"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 10.54(d) requires segregation so that no single person can independently modify, circumvent and disable security features, for example separating development from operations and security administration from system administration.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q7",
+          "question": "Under MCIPD, who may download customer information to portable storage devices?",
+          "options": [
+            "Any staff member, provided they delete the data within one week",
+            "Only branch managers, onto their personal devices",
+            "Only staff with a legitimate business need, onto devices the bank provides, with protection such as encryption",
+            "Any staff member who has completed induction training"
+          ],
+          "answer": 2,
+          "explanation": "Paragraphs 10.16 and 10.17 restrict downloads to staff with a legitimate business need, onto bank-provided devices protected with controls such as passwords and encryption.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q8",
+          "question": "Why does MCIPD require banks to restrict access to web-based messaging and social media platforms for staff who handle customer information?",
+          "options": [
+            "To improve staff productivity during working hours",
+            "To prevent unauthorised disclosure of customer information to outside parties through internet services",
+            "To reduce the bank's internet bandwidth costs",
+            "To comply with the Communications and Multimedia Act"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 10.22 targets the risk of customer information leaving the bank through web-based messaging and social media, particularly end-to-end encrypted platforms, where the bank cannot see what is sent.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s2-q9",
+          "question": "MCIPD gives examples of ways to deter staff from disclosing customer information without authority. Which is one of them?",
+          "options": [
+            "Paying staff a bonus for every month without a complaint",
+            "Letting staff keep customer files at home",
+            "Restricting personal electronic devices in high-risk areas such as call centres and data centres",
+            "Allowing open use of personal phones on dealing floors"
+          ],
+          "answer": 2,
+          "explanation": "Guidance in paragraph 10.21 includes awareness of disciplinary action, CCTV, open offices, whistleblowing and restricting personal devices in high-risk areas. Unauthorised disclosure can include photographing screens.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s2-q10",
+          "question": "In BNM's 2026 action against Bank Kerjasama Rakyat Malaysia Berhad, which MCIPD failures did BNM's release describe?",
+          "options": [
+            "Weak preventive and detective ICT controls and weak mechanisms to spot unauthorised access, unusual viewing or downloads",
+            "Failure to answer a police request for customer statements on time",
+            "Charging customers fees not disclosed in product terms",
+            "Failure to submit cash threshold reports to BNM"
+          ],
+          "answer": 0,
+          "explanation": "BNM cited MCIPD paragraphs 10.12, 10.13 and 10.23: preventive and detective ICT controls, their monitoring, and detection of unauthorised access, suspicious viewing or downloads and unauthorised disclosure.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Phishing, Scams and Account Takeover: Protecting Customers and Yourself",
+      "stage": "The Scam Frontline",
+      "summary": "Learn how social engineering targets staff and customers, the RMiT controls that make phishing harder (no links in SMS, device binding, cooling-off, phishing-resistant MFA, fraud detection) and what customer service staff must know under BNM's e-banking fraud policy document.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise phishing, vishing and other social engineering aimed at bank staff and customers",
+        "Explain RMiT's customer-side controls: SMS without links, device binding, cooling-off, MFA and kill switches",
+        "Apply Appendix 11 fraud detection duties, including blocking, customer contact and vulnerable customers",
+        "Describe what customer service staff must know and tell customers under BNM's e-banking fraud rules"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the scam frontline",
+          "setting": "Contact centre floor, Cyberjaya. Wednesday, 9:05 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Line 14 lights up. The caller is crying before the agent finishes the greeting.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hafiz",
+              "text": "Puan Rosnah, 67, from Ipoh. Someone called saying they were from 'the bank's security unit'. They said her account was being used for crime and walked her through 'securing' it on her phone.",
+              "mood": "worried"
+            },
+            {
+              "who": "hafiz",
+              "text": "RM48,000 left her account in three transfers to accounts she had never heard of. She still thinks she was helping the police.",
+              "mood": "worried"
+            },
+            {
+              "who": "ravi",
+              "text": "Classic impersonation scam. The attacker didn't break our systems. They broke her trust, then used our app.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farah",
+              "text": "That's why RMiT spends pages on digital fraud. Today you learn the controls, and what Hafiz's team must say in the first five minutes.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How BNM tackles digital fraud",
+          "scenes": [
+            {
+              "icon": "🎣",
+              "heading": "The human door",
+              "narration": "Most digital fraud starts with social engineering: a fake message, a convincing call or a cloned website that tricks someone into giving access."
+            },
+            {
+              "icon": "🔗",
+              "heading": "No links in texts",
+              "narration": "RMiT requires banks to remove clickable links from SMS messages to customers, and to tell customers about the change, so any link in a 'bank' text is a warning sign."
+            },
+            {
+              "icon": "📱",
+              "heading": "One device, one account",
+              "narration": "By default, transactions are authorised from a single bound mobile device. Customers are alerted when a new device or new details appear, and cooling-off periods slow down risky changes."
+            },
+            {
+              "icon": "🚨",
+              "heading": "Real-time detection",
+              "narration": "Fraud analytics must spot and block suspicious transactions in real time, using each customer's risk profile, mule account intelligence and device changes."
+            },
+            {
+              "icon": "🛑",
+              "heading": "The kill switch",
+              "narration": "Customers must have a quick self-service way to freeze their account, and a contact centre resourced to help people in distress."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Anatomy of an account takeover, and where controls bite",
+          "caption": "Each step maps to RMiT controls in paragraph 12 and Appendices 3 and 11.",
+          "items": [
+            {
+              "label": "Bait",
+              "detail": "Fake SMS, call or ad. Control: no links in bank SMS; customers can verify genuine bank calls."
+            },
+            {
+              "label": "Credentials stolen",
+              "detail": "Victim enters details on a fake site. Control: phishing-resistant MFA, more secure than plain SMS codes."
+            },
+            {
+              "label": "New device added",
+              "detail": "Fraudster binds his phone. Control: one-device binding, instant alert, cooling-off period."
+            },
+            {
+              "label": "Limits raised",
+              "detail": "Fraudster lifts transfer limits. Control: verification and cooling-off for limit increases."
+            },
+            {
+              "label": "Money moved to mules",
+              "detail": "Rapid transfers to new payees. Control: real-time detection, blocking and call-back to the customer."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer receives an SMS that looks like it comes from Bukit Kenanga, with a link to 'update your details'. Why should staff tell customers this is a red flag?",
+          "options": [
+            "RMiT requires banks to remove clickable links from SMS messages to customers",
+            "Banks may send links only by email, never by SMS",
+            "SMS messages from banks must be in Bahasa Malaysia only",
+            "Only BNM may send customers links by SMS"
+          ],
+          "answer": 0,
+          "explanation": "RMiT requires banks to remove clickable links from SMS to customers and to make customers aware of this, so a link in a 'bank' SMS points to phishing. The other statements are not RMiT rules."
+        },
+        {
+          "type": "concept",
+          "title": "Customer-side controls in RMiT Appendix 3",
+          "body": "These are the controls your customers meet in the app, and the ones fraudsters try to talk them out of:\n\n- **Device binding**: transactions are authenticated from **one mobile or secure device per account holder** by default, unless an informed customer asks otherwise.\n- **Alerts**: customers are told **immediately** when a new device accesses the account or their details change.\n- **Cooling-off and verification** for first-time enrolment, new devices, limit increases and abnormal patterns.\n- **Conservative default limits** for new customers, with RMiT giving RM1,000 a day as an example, changeable through secure channels.\n- **MFA** for financial and high-risk transactions (including adding a favourite payee), using technology **more secure than unencrypted SMS**; codes are generated on the customer's device and tied to the payee and amount.\n- **Kill switch**: a secure self-service way to suspend the account (paragraph 12.8)."
+        },
+        {
+          "type": "match",
+          "title": "Which control stops which trick?",
+          "prompt": "Match each fraud trick to the RMiT control designed to stop it.",
+          "pairs": [
+            {
+              "left": "Fraudster registers his own phone to the victim's account",
+              "right": "One-device binding with an instant new-device alert and a cooling-off period"
+            },
+            {
+              "left": "Victim reads out an SMS code to a 'bank officer'",
+              "right": "MFA more secure than unencrypted SMS, with codes tied to the payee and amount"
+            },
+            {
+              "left": "Fake bank text with a 'verify now' link",
+              "right": "No clickable links in bank SMS, and customer awareness of that rule"
+            },
+            {
+              "left": "Stolen funds sent to a newly opened account",
+              "right": "Real-time analytics that flag suspected mule accounts"
+            },
+            {
+              "left": "Customer realises at midnight that the account is compromised",
+              "right": "Self-service kill switch to suspend the account"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Social engineering against staff: red flag or routine?",
+          "prompt": "The NCII code requires awareness training on social engineering. Sort these requests that reach bank staff.",
+          "buckets": [
+            "Red flag: stop and verify",
+            "Routine: proceed normally"
+          ],
+          "items": [
+            {
+              "text": "'IT helpdesk' calls and asks you to read out the MFA code just sent to you",
+              "bucket": 0
+            },
+            {
+              "text": "An email from the 'CEO' asks you to urgently change a supplier's bank account today",
+              "bucket": 0
+            },
+            {
+              "text": "A visitor without a pass asks you to hold the secure door open",
+              "bucket": 0
+            },
+            {
+              "text": "A caller claiming to be police demands customer statements by phone",
+              "bucket": 0
+            },
+            {
+              "text": "Your manager asks you in person to complete the annual awareness module",
+              "bucket": 1
+            },
+            {
+              "text": "The service desk portal shows the ticket you raised has been resolved",
+              "bucket": 1
+            },
+            {
+              "text": "A message with a QR code to 'reclaim your staff bonus' on a new website",
+              "bucket": 0
+            },
+            {
+              "text": "The bank's internal portal announces the date of the next cyber drill",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The helpdesk call",
+          "setting": "Contact centre, Cyberjaya. Wednesday, 11:40 am.",
+          "lines": [
+            {
+              "who": "hafiz",
+              "text": "One of my agents, Siti, just got a call. 'IT support' said her account was locked and asked for the code that had just popped up on her phone.",
+              "mood": "worried"
+            },
+            {
+              "who": "ravi",
+              "text": "Did she give it?",
+              "mood": "worried"
+            },
+            {
+              "who": "hafiz",
+              "text": "No! She hung up and called the real service desk number from the intranet. Then she reported it.",
+              "mood": "proud"
+            },
+            {
+              "who": "ravi",
+              "text": "Brilliant. The prompt means someone already had her password. We're resetting it and checking where else it was used.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farah",
+              "text": "That's the behaviour our training has to build. Now let's see what happens when the customer is the one being manipulated.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The blocked transfer",
+          "situation": "At 3:12 pm Bukit Kenanga's fraud engine blocks a RM30,000 transfer from Encik Lim, 72, to a payee added 20 minutes earlier from a new device. Encik Lim then calls Hafiz's team insisting the transfer is genuine and urgent: 'an investment officer' is on his other phone line. What should the agent do?",
+          "choices": [
+            {
+              "text": "Keep the hold, ask open questions to check whether a third party is directing him, explain current scam patterns, and escalate to the fraud team before any release",
+              "outcome": "Best response. Appendix 11 requires verification before releasing flagged transactions, including checks for customers acting under a fraudster's influence, and higher risk scoring for vulnerable customers.",
+              "score": 2
+            },
+            {
+              "text": "Release the transfer, because the customer has confirmed it is genuine",
+              "outcome": "A confirmation given while a fraudster is on the other line is not real consent. Releasing it ignores RMiT's requirement to detect coercion during verification.",
+              "score": 0
+            },
+            {
+              "text": "Keep the hold but end the call quickly, telling him to visit a branch next week",
+              "outcome": "The hold protects the money, but the customer is left confused and the scam may continue. RMiT expects touch points to give prompt advice and connect him to the fraud team.",
+              "score": 1
+            },
+            {
+              "text": "Close his account immediately without explaining why",
+              "outcome": "Disproportionate and unhelpful. He needs guidance and a way to restore access after robust verification, as Appendix 11 requires.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers from RMiT's fraud rules",
+          "caption": "From RMiT Appendices 3 and 11 and the footnote to paragraph 12.5.",
+          "items": [
+            {
+              "value": "0",
+              "label": "Clickable links in bank SMS",
+              "detail": "Banks must remove them and tell customers about the change."
+            },
+            {
+              "value": "1",
+              "label": "Bound device per account holder",
+              "detail": "Default for authorising digital transactions, unless an informed customer opts out."
+            },
+            {
+              "value": "30 min",
+              "label": "To contact the customer",
+              "detail": "After a suspicious transaction is blocked, even at peak times."
+            },
+            {
+              "value": "Yearly",
+              "label": "Fraud playbook update",
+              "detail": "Updated and validated at least once a year, using lessons from missed frauds."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Safety messages customers must keep hearing",
+          "cards": [
+            {
+              "front": "Check alerts",
+              "back": "Read transaction alerts promptly, check balances and statements regularly, and report anything unauthorised at once."
+            },
+            {
+              "front": "Verify the message",
+              "back": "Treat unexpected messages as suspect: do not click, do not share codes, do not pay and do not download from unknown sources."
+            },
+            {
+              "front": "Is this call really the bank?",
+              "back": "Banks must give customers practical ways to verify that a call from the bank or its agents is genuine."
+            },
+            {
+              "front": "Fraud hotline",
+              "back": "Banks must give customers a hotline or similar service to report e-banking fraud, shown clearly on the website and app."
+            },
+            {
+              "front": "Freeze fast",
+              "back": "Use the self-service kill switch to suspend the account, then call the bank to restore access after verification."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under BNM's policy document on fair treatment for victims of unauthorised e-banking transactions, what must banks ensure about customer service staff?",
+          "options": [
+            "They are well aware of current fraud risks and the bank's end-to-end fraud investigation process",
+            "They decide whether the bank refunds the customer on the call",
+            "They refer every fraud victim to the police before taking any action",
+            "They are certified fraud examiners"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 8.3 requires customer service personnel to be well aware of current fraud risks and the investigation process so they can advise customers on frauds, scams and identity theft. It does not make them the refund decision-makers."
+        },
+        {
+          "type": "tip",
+          "title": "The first five minutes with a scam victim",
+          "body": "When a customer calls about a possible scam:\n\n1. **Stop the bleeding**: help them use the kill switch or suspend access now.\n2. **Stay calm and kind**: victims feel ashamed. Do not blame.\n3. **Check for a live scammer**: ask if anyone else is on the line or guiding them.\n4. **Capture facts**: times, amounts, payees, devices, messages received.\n5. **Escalate** to the fraud team through the playbook, and explain what happens next.\n6. **Never** ask for full passwords or codes, even to 'verify'."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Social engineering is the main route into accounts; NCII entities must train staff on it, and every bank's awareness programme should cover it.",
+            "RMiT requires no clickable links in bank SMS, one-device binding by default, instant alerts and cooling-off for risky changes.",
+            "MFA for transactions must be more secure than unencrypted SMS, with codes tied to the payee and amount.",
+            "Fraud engines must block suspicious transactions in real time; banks notify the customer at once and aim to reach them within 30 minutes.",
+            "Customer service staff must know current fraud risks and the investigation process so they can guide victims."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of a suspicious message or call you received at work or at home. What made it convincing? How would you explain the warning signs to an older relative or a new colleague?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-cy-s3-q1",
+          "question": "What does RMiT require banks to do about hyperlinks in SMS messages to customers?",
+          "options": [
+            "Shorten them so customers can read them more easily",
+            "Add a warning line underneath each link",
+            "Remove clickable hyperlinks and make customers aware of the change",
+            "Send them only during office hours"
+          ],
+          "answer": 2,
+          "explanation": "The footnote to paragraph 12.5 requires banks to remove clickable hyperlinks from SMS messages to customers and to create awareness of this change, reducing phishing risk.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s3-q2",
+          "question": "By default, how many devices may be used to authenticate a retail customer's digital transactions under RMiT Appendix 3?",
+          "options": [
+            "Up to three devices, as long as they are registered on the same day",
+            "Any device on which the customer can log in with a password",
+            "One mobile or secure device per account holder, unless the customer knowingly asks otherwise",
+            "Two devices: one phone and one computer"
+          ],
+          "answer": 2,
+          "explanation": "Appendix 3 requires secure binding that restricts transaction authentication by default to one mobile or secure device per account holder, with exceptions only for customers who understand and accept the risks.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s3-q3",
+          "question": "What must happen when a customer's account is accessed from a new device or their contact details are changed?",
+          "options": [
+            "The customer must be alerted immediately",
+            "The bank must close the account for 30 days",
+            "The bank must report it to BNM within two hours",
+            "Nothing, unless a transaction above RM10,000 follows"
+          ],
+          "answer": 0,
+          "explanation": "Appendix 3 requires all customers to be alerted immediately when access from a new device is detected or their details are changed. A BNM notification relates to cyber incidents, not routine device changes.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s3-q4",
+          "question": "Which statement about MFA for financial transactions matches RMiT Appendix 3?",
+          "options": [
+            "SMS one-time passwords are the preferred method for all transactions",
+            "MFA technology and channels must be more secure than unencrypted SMS",
+            "MFA is required only for transfers above RM50,000",
+            "MFA codes should be generated by the bank's server and sent to the customer"
+          ],
+          "answer": 1,
+          "explanation": "Appendix 3 requires MFA that resists phishing, deployed through channels more secure than unencrypted SMS, and OTPs generated on the customer's device and bound to the transaction details, not on the bank's server.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s3-q5",
+          "question": "A fraud engine blocks a suspicious transfer. What does RMiT Appendix 11 require regarding the customer?",
+          "options": [
+            "Wait for the customer to notice and call the bank",
+            "Contact the customer within three working days by letter",
+            "Notify the customer immediately and have resources to contact them within 30 minutes",
+            "Release the transfer after 24 hours if the customer does not respond"
+          ],
+          "answer": 2,
+          "explanation": "Appendix 11 requires immediate notification of each block and enough resources to contact the affected customer within 30 minutes of the transaction, including at peak times, with a process for when the customer cannot be reached.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s3-q6",
+          "question": "During a call-back on a flagged transfer, the customer seems to be repeating words someone else is telling him. What does RMiT expect the verification procedure to include?",
+          "options": [
+            "Immediate release, because the customer has authenticated",
+            "Transfer of the call to the police before speaking further",
+            "A requirement that the customer visit a branch with two witnesses",
+            "Ways to detect when a customer may be acting under the influence or threat of fraudsters"
+          ],
+          "answer": 3,
+          "explanation": "Appendix 11 says verification procedures must include ways to detect circumstances where a customer may be responding under the influence or threat of fraudsters.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-cy-s3-q7",
+          "question": "How does RMiT Appendix 11 treat vulnerable customers such as senior citizens or previous fraud victims in fraud analytics?",
+          "options": [
+            "They must be excluded from digital banking",
+            "They must use branch services only for transfers",
+            "A higher risk score must be applied to them",
+            "Their transactions must always be approved by a relative"
+          ],
+          "answer": 2,
+          "explanation": "Appendix 11 requires higher risk scoring for vulnerable customers, for example senior citizens, younger customers, previous fraud victims and those with lower awareness of e-banking safety.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s3-q8",
+          "question": "What must customer service personnel be aware of under paragraph 8.3 of BNM's policy document on victims of unauthorised e-banking transactions?",
+          "options": [
+            "The personal details of every fraud investigator in the bank",
+            "The bank's capital adequacy ratio and liquidity position",
+            "The source code of the mobile banking application",
+            "Current fraud risks and the bank's end-to-end fraud investigation process"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 8.3 requires customer service staff to be well aware of current fraud risks and the end-to-end investigation process so they can advise customers on frauds, scams and identity theft.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s3-q9",
+          "question": "A colleague receives an MFA prompt on her phone that she did not request, followed by a call from 'IT' asking for the code. What is the best response?",
+          "options": [
+            "Give the code, since IT staff need it to unlock accounts",
+            "Refuse, end the call, report it through the official channel and change the password",
+            "Approve the prompt to stop further notifications",
+            "Ignore both and carry on working"
+          ],
+          "answer": 1,
+          "explanation": "An unrequested MFA prompt usually means the password is already compromised. Sharing or approving it hands over the account; reporting lets the security team reset credentials and investigate.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s3-q10",
+          "question": "How often must a bank's fraud management playbook be updated and validated under RMiT Appendix 11?",
+          "options": [
+            "Once every three years with the IT policies",
+            "At least once a year, or more often if needed",
+            "Only when BNM issues a new circular",
+            "Every five years as part of the strategic plan"
+          ],
+          "answer": 1,
+          "explanation": "Appendix 11 requires a comprehensive fraud management playbook updated and validated at least once a year, reflecting confirmed fraud cases and frauds the bank failed to detect.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "When It Goes Wrong: Cyber Incidents, Customer Information Breaches and Notification Clocks",
+      "stage": "The Crisis Room",
+      "summary": "Respond to a live incident: RMiT's incident response plan, CERT and cyber drills, notifying BNM within two hours of confirming a cyber incident, the NACSA clock for NCII entities, MCIPD's breach rules and the PDPA duty to notify the Commissioner and affected customers.",
+      "minutes": 55,
+      "objectives": [
+        "Describe RMiT's cyber incident response plan, the CERT, out-of-band communication and the annual cyber drill",
+        "Apply the notification clocks: BNM for cyber incidents, NACSA for NCII entities, and BNM under MCIPD",
+        "Decide when a customer information breach must be notified to BNM immediately and what the notice contains",
+        "Apply the amended PDPA's breach notification duty and MCIPD's rules on investigation and customer notices"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: the crisis room",
+          "setting": "Crisis room, Bukit Kenanga head office. Thursday, 7:50 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Remember the 2 am downloads from stage two? This morning a screenshot is circulating on social media: a spreadsheet of Bukit Kenanga customers with names, IC numbers and loan balances.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ravi",
+              "text": "It matches the files pulled with LN4471's credentials. Phishing stole his password two weeks ago. About 1,800 customers are in the sample.",
+              "mood": "worried"
+            },
+            {
+              "who": "meiling",
+              "text": "That's a customer information breach of significant scale, and it's public. Under MCIPD we notify BNM immediately. Under the PDPA I notify the Commissioner as soon as practicable.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farah",
+              "text": "And it started with an intrusion using stolen credentials. If we confirm it's a cyber incident, the two-hour clock to BNM starts at confirmation.",
+              "mood": "neutral"
+            },
+            {
+              "who": "andrew",
+              "text": "(joining by phone) I want the board told today. What do we know, what don't we know, and who are we calling?",
+              "mood": "worried"
+            },
+            {
+              "who": "farah",
+              "text": "Let's walk the playbook, step by step. Every minute counts now.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who must hear about it, and when",
+          "scenes": [
+            {
+              "icon": "⏱️",
+              "heading": "BNM: cyber incidents",
+              "narration": "RMiT points to BNM's business continuity rules: all cyber incidents must be notified to BNM within two hours of confirming the incident, through BNM's central email channel and its cyber incident scoring form."
+            },
+            {
+              "icon": "🗂️",
+              "heading": "BNM: customer information",
+              "narration": "Under MCIPD, a customer information breach that threatens reputation or public confidence, may cause significant harm, or affects more than a thousand customers must be notified to BNM immediately."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "NACSA: if you are NCII",
+              "narration": "A bank designated as national critical information infrastructure must also alert NACSA immediately, submit details within six hours through the NC4 portal, and add supplementary information within fourteen days."
+            },
+            {
+              "icon": "🔏",
+              "heading": "The PDP Commissioner",
+              "narration": "Under the amended PDPA, a data controller that has reason to believe a personal data breach has happened must notify the Commissioner as soon as practicable."
+            },
+            {
+              "icon": "👥",
+              "heading": "The customers",
+              "narration": "Where significant harm is likely, affected customers must be told without undue delay, in plain language, with steps they can take to protect themselves."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The notification clocks",
+          "caption": "Based on BNM's BCM and MCIPD policy documents, RMiT Appendix 12 and PDPA section 12B. Your bank's playbook sets internal deadlines inside these.",
+          "items": [
+            {
+              "value": "Immediately",
+              "label": "BNM under MCIPD",
+              "detail": "Breach that is significant in reputation, harm or scale; give what is known, with estimates."
+            },
+            {
+              "value": "Immediately",
+              "label": "NACSA alert (NCII only)",
+              "detail": "Authorised persons report that an incident has or may have occurred."
+            },
+            {
+              "value": "2 hours",
+              "label": "BNM cyber incident notice",
+              "detail": "From confirming the incident, by email with the scoring form; update as facts emerge."
+            },
+            {
+              "value": "6 hours",
+              "label": "NC4 portal details (NCII)",
+              "detail": "Required information on the incident submitted through the NC4 portal."
+            },
+            {
+              "value": "ASAP",
+              "label": "PDP Commissioner",
+              "detail": "As soon as practicable once there is reason to believe a breach occurred."
+            },
+            {
+              "value": "14 days",
+              "label": "NACSA supplementary (NCII)",
+              "detail": "Further information, as complete as practicable, after the notification."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under BNM's Business Continuity Management policy document, which RMiT cross-refers to, when must a bank notify BNM of a cyber incident?",
+          "options": [
+            "Within 2 hours upon confirmation of the incident",
+            "Within 24 hours of the first alert",
+            "Within 72 hours after the investigation is complete",
+            "Only if more than 1,000 customers are affected"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 10.5 of the BCM policy document requires all cyber incidents to be notified within 2 hours upon confirmation, after a preliminary check that the incident is cyber-related. The 1,000-customer threshold belongs to MCIPD's breach rules."
+        },
+        {
+          "type": "concept",
+          "title": "RMiT's incident response machinery",
+          "body": "RMiT (paragraphs 11.12 to 11.16) requires a bank to be ready **before** the crisis:\n\n- **Cyber crisis management** built into the bank's crisis plan, escalation, business continuity and disaster recovery, with a **communication plan** for shareholders, regulators, customers and employees.\n- A **Cyber Incident Response Plan** covering preparedness, detection and analysis (including preserving forensic evidence and testing a threat actor's claims), containment and eradication, recovery, and post-incident review.\n- A **CERT** whose members know the plan and are **contactable at all times**.\n- **Out-of-band communication** that still works if email and phones are compromised.\n- An **annual cyber drill** with the board, senior management and relevant third parties, testing escalation, communication and decisions, with results reported to the board.\n\nFor affected customers, paragraph 12.9 adds closer monitoring of their accounts, notifying them, and reissuing compromised credentials or cards."
+        },
+        {
+          "type": "sort",
+          "title": "Which MCIPD trigger for immediate notice to BNM?",
+          "prompt": "Each breach below must be notified to BNM immediately under MCIPD paragraph 11.8. Sort it by the main trigger it meets.",
+          "buckets": [
+            "Reputation or public confidence",
+            "Significant harm",
+            "Significant scale"
+          ],
+          "items": [
+            {
+              "text": "Customer list screenshots are circulating on social media",
+              "bucket": 0
+            },
+            {
+              "text": "A well-known public figure's account details are leaked",
+              "bucket": 0
+            },
+            {
+              "text": "Customer data is disclosed to a party suspected of crime",
+              "bucket": 0
+            },
+            {
+              "text": "Online banking login credentials of customers are exposed",
+              "bucket": 1
+            },
+            {
+              "text": "Customers' fingerprint templates are stolen from a vendor",
+              "bucket": 1
+            },
+            {
+              "text": "Data that could enable identity theft is lost",
+              "bucket": 1
+            },
+            {
+              "text": "Letters to 3,200 customers are posted to the wrong addresses",
+              "bucket": 2
+            },
+            {
+              "text": "A file of 1,500 customers is emailed to the wrong vendor",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The temptation to wait",
+          "setting": "Crisis room. Thursday, 9:30 am.",
+          "lines": [
+            {
+              "who": "andrew",
+              "text": "Could we wait until Monday to tell BNM? By then we'll know the exact number of customers and the full root cause.",
+              "mood": "thinking"
+            },
+            {
+              "who": "meiling",
+              "text": "MCIPD says immediately. If we don't have everything, we send what we have now, including an estimate of how many customers are affected, and then the rest as soon as we get it.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farah",
+              "text": "Same for the cyber notice: two hours from confirmation, then progressive updates. BNM would rather have a rough picture early than a perfect one late.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hafiz",
+              "text": "And my agents need a script before customers start calling. MCIPD says staff must be trained to handle their questions.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Friday evening: what goes to BNM?",
+          "situation": "It is Friday, 6 pm. Bukit Kenanga has confirmed that about 1,800 customers' identity and loan data were stolen using a phished credential and posted online. Forensics will take weeks. The final customer count is uncertain. The communications team suggests waiting for the full picture before contacting regulators.",
+          "choices": [
+            {
+              "text": "Notify BNM now with what is known, including an estimated customer count; notify the PDP Commissioner as soon as practicable; prepare customer notices and an agent script",
+              "outcome": "Correct. MCIPD paragraph 11.17 expects immediate notice with available information and an estimate, followed by the complete details without undue delay. PDPA section 12B runs alongside.",
+              "score": 2
+            },
+            {
+              "text": "Notify BNM on Monday with a complete and verified report",
+              "outcome": "Too late. A breach of significant scale that is public must be notified immediately; completeness is not a reason to delay.",
+              "score": 0
+            },
+            {
+              "text": "Notify BNM now but leave the PDP Commissioner until the investigation report is ready",
+              "outcome": "BNM is covered, but MCIPD reminds banks that, as data controllers, they must also meet the PDPA's notification duty, which is as soon as practicable.",
+              "score": 1
+            },
+            {
+              "text": "Tell affected customers first, then decide whether regulators need to know",
+              "outcome": "MCIPD expects customer notification without undue delay after the BNM notice, not instead of it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "BNM under MCIPD versus the PDP Commissioner under the PDPA",
+          "caption": "Both duties can apply to the same incident. MCIPD's footnote expressly reminds banks of PDPA section 12B.",
+          "headers": [
+            "BNM (MCIPD policy document)",
+            "PDP Commissioner (PDPA s.12B)"
+          ],
+          "items": [
+            {
+              "label": "When",
+              "left": "Immediately, if the breach meets a reputation, harm or scale trigger",
+              "right": "As soon as practicable once there is reason to believe a breach occurred"
+            },
+            {
+              "label": "Customers",
+              "left": "Notify without undue delay after BNM, where significant harm is likely",
+              "right": "Notify data subjects without unnecessary delay where significant harm is likely"
+            },
+            {
+              "label": "Follow-up",
+              "left": "Root-cause investigation within 3 months; report to board, then BNM",
+              "right": "In the manner and form the Commissioner determines"
+            },
+            {
+              "label": "Sanction",
+              "left": "Enforcement under the FSA for breaching standards",
+              "right": "Failing to notify the Commissioner is an offence: fine up to RM250,000, prison up to 2 years, or both"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Handling a customer information breach under MCIPD",
+          "prompt": "Put the bank's steps in a sensible order.",
+          "steps": [
+            "Staff spot the breach (or a complaint reveals it) and escalate at once",
+            "Contain the breach immediately",
+            "Assess impact: intent, data type, number of customers, recipients, misuse risk",
+            "Notify BNM immediately if a trigger is met, with estimates where needed",
+            "Notify affected customers without undue delay where significant harm is likely",
+            "Investigate the root cause within three months and table the report to the board",
+            "Record the breach and lessons in the breach register"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "What the notices must contain",
+          "cards": [
+            {
+              "front": "BNM notice (MCIPD 11.16)",
+              "back": "What happened and the data affected; number of customers; actual and potential harm; measures taken or planned."
+            },
+            {
+              "front": "Customer notice (MCIPD 11.27)",
+              "back": "Brief description; possible consequences; steps the customer should take; what the bank is doing; contact details for help."
+            },
+            {
+              "front": "How to tell customers",
+              "back": "Directly, for example by email or app notification. Public notices only where direct contact is disproportionate, or until affected customers are identified."
+            },
+            {
+              "front": "Law enforcement",
+              "back": "If the breach appears to involve fraud, crime or identity theft, notify the relevant agency as soon as practicable."
+            },
+            {
+              "front": "Another bank's customers",
+              "back": "If the breach involves data from another financial service provider, promptly notify that provider."
+            },
+            {
+              "front": "Breach register",
+              "back": "Record every breach with root causes, remedial actions and lessons; keep investigation reports at least seven years."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under MCIPD, how long does a bank have to complete its investigation into a customer information breach, and when is the report sent to BNM for a breach of significant scale?",
+          "options": [
+            "Three months to complete; sent to BNM within one working day after it is tabled to the board",
+            "Fourteen days to complete; sent to BNM within one month",
+            "Six months to complete; sent to BNM only if BNM asks for it",
+            "One month to complete; sent to BNM before the board sees it"
+          ],
+          "answer": 0,
+          "explanation": "Paragraphs 11.19 and 11.20 require the investigation to be completed within three months of detection and tabled to the board, with the report sent to BNM within one working day of tabling where the breach causes significant harm, exceeds 1,000 customers, or involves deliberate disclosure."
+        },
+        {
+          "type": "example",
+          "title": "Example: Bukit Kenanga's customer notice",
+          "body": "This is the quest's own fictional notice, written to meet MCIPD paragraphs 11.27 and 11.28:\n\n> **We are writing to tell you about a security incident affecting your information.** On 9 October, we found that an unauthorised person used a staff member's stolen password to copy files containing your name, identity card number and loan balance. Your online banking password was **not** included.\n>\n> **What this could mean**: criminals may contact you pretending to be the bank.\n>\n> **What you should do**: never share codes or passwords; check your alerts and statements; be wary of calls and messages about your loan.\n>\n> **What we are doing**: we have closed the access, increased monitoring of your account and reported the incident to the authorities.\n>\n> **Questions?** Call our dedicated line shown in the app.\n\nPlain language, no blame-shifting, and practical steps first."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "Cyber incidents go to BNM within 2 hours of confirmation through the central channel and scoring form, with progressive updates.",
+            "NCII entities also alert NACSA immediately, submit details within 6 hours via the NC4 portal and add supplementary information within 14 days.",
+            "MCIPD: notify BNM immediately if a breach threatens reputation or confidence, may cause significant harm, or affects over 1,000 customers; send estimates if needed.",
+            "PDPA s.12B: notify the PDP Commissioner as soon as practicable, and data subjects without unnecessary delay where significant harm is likely.",
+            "Investigate within three months, table to the board, send qualifying reports to BNM within one working day, and keep a breach register."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you discovered a possible breach at 5 pm on a Friday, do you know exactly who to call and how? Write down your bank's escalation route, and check it against your playbook this week."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-cy-s4-q1",
+          "question": "RMiT paragraph 11.18 requires cyber incidents to be notified to BNM in line with which documents?",
+          "options": [
+            "The Personal Data Protection Act only",
+            "The Cyber Security Act 2024 only",
+            "The bank's own incident policy, with no BNM template",
+            "BNM's policy documents on Operational Risk Reporting and Business Continuity Management, among others"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.18 points to Operational Risk Reporting Part C, Business Continuity Management Part C and other relevant BNM documents. The PDPA and the Cyber Security Act impose separate duties.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s4-q2",
+          "question": "Through which channel must a bank notify BNM of cyber and non-cyber incidents under the BCM policy document?",
+          "options": [
+            "BNM's centralised email for incident notifications, with the required reporting form",
+            "A letter to the Governor's office by courier",
+            "A post on the bank's corporate website",
+            "A call to the BNM contact centre hotline only"
+          ],
+          "answer": 0,
+          "explanation": "The BCM document requires notification through the centralised email, with the Cyber Incident Scoring System form for cyber incidents. Calls to relationship managers are an accepted fallback only when email is unavailable.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s4-q3",
+          "question": "What must the CERT members be, under RMiT paragraph 11.14?",
+          "options": [
+            "External consultants appointed by BNM",
+            "Conversant with the incident response plan and contactable at all times",
+            "Members of the board audit committee",
+            "Available only during office hours"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.14 requires relevant CERT members to know the incident response plan and handling procedures and to remain contactable at all times.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s4-q4",
+          "question": "Who must be involved in the annual cyber drill under RMiT paragraph 11.16?",
+          "options": [
+            "Only the security operations centre team",
+            "Only BNM's examiners and the external auditor",
+            "Only customers who volunteer to test the app",
+            "Key stakeholders including board members, senior management and relevant third-party providers"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 11.16 requires an annual drill testing the incident response plan and out-of-band communication, involving the board, senior management and relevant third parties, with results reported to the board.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s4-q5",
+          "question": "Under MCIPD, above how many affected customers is a customer information breach considered of significant scale?",
+          "options": [
+            "More than 100 customers",
+            "More than 1,000 customers",
+            "More than 10,000 customers",
+            "More than 500 customers"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.11 treats a breach as significant scale when affected customers exceed one thousand.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s4-q6",
+          "question": "A bank confirms a breach of 1,400 customers' data but does not yet know the exact number. What does MCIPD require?",
+          "options": [
+            "Wait until the exact number is confirmed before notifying BNM",
+            "Notify BNM immediately with the information available and an estimated number, then the complete details without undue delay",
+            "Notify only the PDP Commissioner, since BNM needs exact numbers",
+            "Notify BNM within three months with the investigation report"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11.17 says incomplete information is no reason to wait: the bank provides what it has immediately, an estimated count, and the rest as soon as it is obtained.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-cy-s4-q7",
+          "question": "Which of these does MCIPD give as an example of sensitive customer information whose breach is treated as likely to cause significant harm?",
+          "options": [
+            "The branch where the customer opened the account",
+            "The customer's preferred language for statements",
+            "The date the customer last visited a branch",
+            "Security credentials used to access a customer's account"
+          ],
+          "answer": 3,
+          "explanation": "MCIPD gives security credentials, biometric data and medical or health information as examples of sensitive customer information. A breach involving such data is treated as likely to cause significant harm.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s4-q8",
+          "question": "When must a data controller notify the Personal Data Protection Commissioner of a personal data breach under the amended PDPA?",
+          "options": [
+            "As soon as practicable after it has reason to believe a breach has occurred",
+            "Within 30 days after its investigation is complete",
+            "Only when more than 1,000 data subjects are affected",
+            "Only after the affected data subjects have been told"
+          ],
+          "answer": 0,
+          "explanation": "Section 12B(1) requires notice as soon as practicable once the controller has reason to believe a personal data breach has occurred. The 1,000 threshold is MCIPD's significant scale test for BNM.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s4-q9",
+          "question": "An NCII-designated bank detects a serious cyber security incident. Under RMiT Appendix 12, within what time must its authorised persons submit the required information through the NC4 portal?",
+          "options": [
+            "Within two working days of the incident",
+            "Within 14 days of the incident",
+            "Within one month of the incident",
+            "Within six hours of the incident coming to the bank's knowledge"
+          ],
+          "answer": 3,
+          "explanation": "Appendix 12 requires an immediate alert, the required information through the NC4 portal within six hours of knowledge, and supplementary information within 14 days of the notification.",
+          "difficulty": 4
+        },
+        {
+          "id": "my-cy-s4-q10",
+          "question": "Under MCIPD, how must affected customers normally be notified of a breach likely to cause them significant harm?",
+          "options": [
+            "Directly, for example by email or app notification, without undue delay after notifying BNM",
+            "Only through a notice in a national newspaper",
+            "Only if the customer asks the bank whether they were affected",
+            "Only after the three-month investigation is complete"
+          ],
+          "answer": 0,
+          "explanation": "Paragraphs 11.25 and 11.29 require direct notification without undue delay after the BNM notice. Public announcements are for exceptional cases where direct notice is disproportionate or customers are not yet identified.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Third Parties, Cloud, the Amended PDPA and Readiness for BNM",
+      "stage": "The Supervisors' Gate",
+      "summary": "Close the quest by managing technology risk beyond the bank's walls (third-party providers, outsourcing approvals and cloud), applying the amended PDPA's principles, data protection officer and transfer rules, and assembling the evidence BNM expects from the bank's programme.",
+      "minutes": 55,
+      "objectives": [
+        "Explain RMiT and outsourcing duties for third-party providers, including service agreement terms and BNM approval",
+        "Describe RMiT's cloud risk assessment and the duty to consult BNM before first adopting public cloud for critical systems",
+        "Apply the amended PDPA: the seven principles, data processors, data protection officers and transfers abroad",
+        "Summarise the reviews, audits, records and training evidence that show BNM the programme works"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the supervisors' gate",
+          "setting": "Board technology committee, Bukit Kenanga head office. Monday, 3:00 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "One month to go before BNM's supervisors arrive. The committee agenda has two items: a cloud proposal, and 'Are we ready?'",
+              "mood": "neutral"
+            },
+            {
+              "who": "andrew",
+              "text": "Management wants to move the loan origination system, a critical system, to a public cloud provider. It would be our first critical system on public cloud.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farah",
+              "text": "Then RMiT says we consult BNM first, after a full risk assessment, a readiness confirmation and an independent pre-implementation review.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meiling",
+              "text": "And customer data will sit with the provider, so MCIPD's outsourced provider rules and the PDPA apply. The provider is our data processor.",
+              "mood": "thinking"
+            },
+            {
+              "who": "ravi",
+              "text": "I also need their incident data in real time. If they get hit, I can't wait for a monthly report.",
+              "mood": "worried"
+            },
+            {
+              "who": "andrew",
+              "text": "Good. Let's get this right, then prove to BNM that everything we've learned actually runs.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Your risk does not leave with your data",
+          "scenes": [
+            {
+              "icon": "🤝",
+              "heading": "Still accountable",
+              "narration": "RMiT says the bank remains accountable for all risks from third-party service providers. The board and senior management must oversee providers of critical technology."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Due diligence, before and during",
+              "narration": "Banks check a provider before onboarding and throughout the relationship, and work towards continuous monitoring of the provider's cyber posture."
+            },
+            {
+              "icon": "📝",
+              "heading": "Approval for material outsourcing",
+              "narration": "Under BNM's outsourcing policy document, a bank needs BNM's written approval before entering a new material outsourcing arrangement or significantly changing an existing one."
+            },
+            {
+              "icon": "☁️",
+              "heading": "Cloud with care",
+              "narration": "Before adopting cloud, banks assess risks such as location, multi-tenancy, lock-in and exit. They must keep ownership and control of customer data and the encryption keys."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Train the provider too",
+              "narration": "Service agreements should require providers to join the bank's security awareness programme where appropriate, and outsourced providers must train their staff on customer information."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "First critical system on public cloud",
+          "caption": "Based on RMiT paragraphs 10.50, 10.52, 17.1 and 17.5.",
+          "items": [
+            {
+              "label": "Risk assessment",
+              "detail": "Cover deployment model, migration, location, multi-tenancy, lock-in, configuration, cyber exposure, exit and responsibilities."
+            },
+            {
+              "label": "Readiness confirmation",
+              "detail": "Signed by the CISO, a senior management officer or the board or committee chair, in BNM's format."
+            },
+            {
+              "label": "Independent review",
+              "detail": "Third-party pre-implementation review, deeper where customer data or cross-border transfers are involved."
+            },
+            {
+              "label": "Consult BNM",
+              "detail": "Before first-time adoption; proceed only once risks are addressed to BNM's satisfaction."
+            },
+            {
+              "label": "Keep control",
+              "detail": "Retain ownership and control of customer data and cryptographic keys; include the roadmap in the outsourcing plan."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Bukit Kenanga plans to host its first critical system on a public cloud. What does RMiT require before adoption?",
+          "options": [
+            "Consult BNM, after a risk assessment, a readiness confirmation and a third-party pre-implementation review",
+            "Notify BNM within 30 days after the system goes live",
+            "Obtain approval from the PDP Commissioner",
+            "Nothing, if the cloud provider holds an international security certification"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 17.1 requires consultation with BNM before the first-time adoption of public cloud for critical systems, supported by the risk assessment, readiness confirmation and independent review. Later adoptions may move to notification under 17.2 if conditions are met."
+        },
+        {
+          "type": "concept",
+          "title": "What a service agreement must cover",
+          "body": "RMiT paragraph 10.48 sets the minimum for a service level agreement with a technology provider. Among others:\n\n- **Access rights for BNM** and parties the bank appoints to examine records and data.\n- **Prior notice** of substantial **sub-contracting**.\n- A written undertaking on **secrecy**, binding even after the contract ends.\n- **Disaster recovery, backup**, uptime objectives and **exit** arrangements so data can be recovered in time.\n- **Prompt notice** to the bank of service disruptions or cyber incidents affecting it or its customer data, including at sub-contractors.\n- Key provider staff kept **certified**, and provider participation in the bank's **security awareness programme** where appropriate.\n\nMCIPD adds for providers handling customer information: vetting of personnel, **regular training**, breach reporting within an agreed time, return or destruction of data at the end, audit rights, a **non-disclosure undertaking**, and a bank review **at least once every two years**."
+        },
+        {
+          "type": "match",
+          "title": "The amended PDPA in six terms",
+          "prompt": "Match each PDPA term to its meaning, as the Act now stands.",
+          "pairs": [
+            {
+              "left": "Data controller",
+              "right": "The person who processes personal data or controls or authorises its processing, such as the bank"
+            },
+            {
+              "left": "Data processor",
+              "right": "Processes data only on the controller's behalf; must now comply with the Security Principle"
+            },
+            {
+              "left": "Data protection officer",
+              "right": "Appointed by controllers and processors, accountable for compliance; the Commissioner is notified"
+            },
+            {
+              "left": "Security Principle",
+              "right": "Practical steps to protect data, including reliability, integrity and competence of staff with access"
+            },
+            {
+              "left": "Sensitive personal data",
+              "right": "Includes health data, religious or political beliefs, alleged offences and biometric data"
+            },
+            {
+              "left": "Transfer abroad",
+              "right": "Allowed to places with substantially similar law or adequate protection, or under listed exceptions"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "How hard to watch each provider",
+          "caption": "A practical way to set oversight intensity. RMiT asks for continuous monitoring of critical providers' cyber posture.",
+          "axes": {
+            "x": "Access to customer data",
+            "y": "Criticality of service"
+          },
+          "items": [
+            {
+              "label": "Critical, little data",
+              "detail": "Network or data centre provider: resilience tests, uptime SLAs, incident alerts."
+            },
+            {
+              "label": "Critical, much data",
+              "detail": "Core or cloud provider: deepest due diligence, continuous monitoring, BNM approval or consultation."
+            },
+            {
+              "label": "Low, little data",
+              "detail": "Office supplies: standard contract and periodic review."
+            },
+            {
+              "label": "Low, much data",
+              "detail": "Printing or archiving vendor: vetting, training, secrecy undertaking, two-yearly review."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The readiness review",
+          "setting": "Farah's office. Friday, 4:30 pm.",
+          "lines": [
+            {
+              "who": "farah",
+              "text": "BNM won't ask whether we have policies. They'll ask for evidence that they work.",
+              "mood": "neutral"
+            },
+            {
+              "who": "meiling",
+              "text": "I have the MCIPD independent review from last year, the breach register and the annual awareness survey on customer information.",
+              "mood": "proud"
+            },
+            {
+              "who": "ravi",
+              "text": "Cyber drill report to the board, red team results, phishing simulation trends, and proof that CERT can be reached at 3 am.",
+              "mood": "proud"
+            },
+            {
+              "who": "hafiz",
+              "text": "Training records for every agent, plus our scam call scripts. And our outsourced overflow team finished the awareness module this year.",
+              "mood": "happy"
+            },
+            {
+              "who": "andrew",
+              "text": "And the board? We need proof that directors took part in cyber training too.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The provider that will not share",
+          "situation": "Bukit Kenanga's managed SOC provider is renewing its contract. It refuses to tell the bank about cyber incidents in its own environment unless they are 'confirmed material', and says its analysts are too busy to join the bank's awareness programme. Procurement wants to sign because the price is low.",
+          "choices": [
+            {
+              "text": "Insist on prompt notice of disruptions and cyber incidents affecting the bank or its data, BNM access rights and awareness participation; escalate if the provider refuses",
+              "outcome": "Right. RMiT paragraph 10.48 makes these service agreement terms, and the bank needs prompt provider alerts to meet its own two-hour BNM clock.",
+              "score": 2
+            },
+            {
+              "text": "Sign, but ask for a quarterly summary of incidents instead",
+              "outcome": "A quarterly summary cannot support a two-hour notification to BNM or a fast response. It falls short of RMiT's prompt-notice requirement.",
+              "score": 1
+            },
+            {
+              "text": "Sign as proposed; the provider is responsible for its own security",
+              "outcome": "RMiT is explicit that the bank remains accountable for risks from its providers. Accepting blind spots breaks that duty.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Cycles BNM will check",
+          "caption": "From RMiT, the NCII code (Appendix 12) and MCIPD. NCII items apply only to designated banks.",
+          "items": [
+            {
+              "value": "Annual",
+              "label": "Awareness for all staff",
+              "detail": "RMiT 15.1; NCII banks also review the awareness programme at least annually."
+            },
+            {
+              "value": "Annual",
+              "label": "Cyber drill",
+              "detail": "Tests the incident plan and out-of-band channel; results go to the board."
+            },
+            {
+              "value": "2 years",
+              "label": "MCIPD independent review",
+              "detail": "Of customer information controls, ordered by senior management."
+            },
+            {
+              "value": "2 years",
+              "label": "Outsourced provider review",
+              "detail": "Confirms the provider protects customer information as contracted."
+            },
+            {
+              "value": "3 years",
+              "label": "Red team exercise",
+              "detail": "Realistic attack simulation on the bank's infrastructure."
+            },
+            {
+              "value": "7 years",
+              "label": "Breach report retention",
+              "detail": "Investigation reports kept from the date tabled to the board."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Since the 2024 PDPA amendments took effect, which statement about data protection officers is correct?",
+          "options": [
+            "Both data controllers and data processors must appoint one or more DPOs and notify the Commissioner of the controller's appointment",
+            "Only banks with more than 1,000 customers must appoint a DPO",
+            "Appointing a DPO transfers the bank's PDPA duties to that officer personally",
+            "DPOs are appointed by BNM for each licensed bank"
+          ],
+          "answer": 0,
+          "explanation": "Section 12A requires controllers and processors to appoint DPOs accountable to them, and the controller to notify the Commissioner. The appointment does not discharge the controller or processor from their duties under the Act."
+        },
+        {
+          "type": "example",
+          "title": "Real case: the data centre move that needed approval",
+          "body": "On **22 July 2024** BNM imposed an administrative monetary penalty of **RM88,000** on **Bank of China (Malaysia) Berhad**, published on 23 August 2024.\n\nThe bank had **moved two core banking systems to new data centres** in December 2022 and February 2023 **without BNM's prior approval**. BNM treated the relocation as a **significant modification** of an approved **material outsourcing arrangement**, because it could materially change the level or type of risk. The Outsourcing policy document requires written approval before such a change.\n\nBNM traced the breach to **gaps in oversight of outsourcing** and in internal policies. The bank responded with periodic reviews of its outsourcing arrangements and better coordination with group functions.\n\n**Your lesson**: technology changes made by a provider or group function can trigger BNM approval or consultation duties. Ask early."
+        },
+        {
+          "type": "flip",
+          "title": "Final boss flashcards",
+          "cards": [
+            {
+              "front": "Who must get annual cyber awareness?",
+              "back": "All staff, under RMiT 15.1, plus third-party providers where appropriate; effectiveness must be measured."
+            },
+            {
+              "front": "NCII new joiners",
+              "back": "Must complete cyber awareness training before getting access to the NCII entity's assets."
+            },
+            {
+              "front": "Cyber incident to BNM",
+              "back": "Within 2 hours of confirmation, by the central email with the cyber incident scoring form."
+            },
+            {
+              "front": "MCIPD significant scale",
+              "back": "More than 1,000 affected customers; notify BNM immediately."
+            },
+            {
+              "front": "PDPA penalty for breaking the principles",
+              "back": "A fine up to RM1 million, prison up to 3 years, or both (section 5(2))."
+            },
+            {
+              "front": "Board's own duty",
+              "back": "Join cybersecurity awareness and training (8.4(c)) and get regular training on technology developments (15.3)."
+            }
+          ]
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "The bank stays accountable for risks from third-party providers; due diligence runs before and during the engagement.",
+            "Service agreements must give BNM access, require prompt incident notice and secrecy, and bring providers into awareness training where appropriate.",
+            "BNM's written approval is needed before new material outsourcing or a significant change; first-time public cloud for critical systems needs prior consultation.",
+            "The amended PDPA binds processors to the Security Principle, requires DPOs, and allows transfers abroad only on its listed grounds.",
+            "Readiness means evidence: training records and effectiveness results, drills, red team results, reviews, registers and board reports."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which outside companies handle data or systems for your team? Do you know who manages each relationship, and how they would tell your bank about an incident?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "my-cy-s5-q1",
+          "question": "Under RMiT paragraph 10.46, who remains accountable for risks arising from a bank's third-party technology providers?",
+          "options": [
+            "The provider, once the contract is signed",
+            "BNM, as the approving authority",
+            "The provider's own regulator in its home country",
+            "The bank itself, under the oversight of its board and senior management"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 10.46 states that the financial institution remains accountable for all risks arising from engaging third-party providers, with the board and senior management exercising oversight.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s5-q2",
+          "question": "Which term must a bank's service agreement with a technology provider contain under RMiT paragraph 10.48?",
+          "options": [
+            "The provider must store all data only on the bank's premises",
+            "The provider must promptly notify the bank of disruptions or cyber incidents affecting the bank or its customer data",
+            "The provider must be a Malaysian-owned company",
+            "The provider must report its incidents directly to BNM instead of the bank"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 10.48(g) requires prompt disclosure and notification to the bank of service disruptions or cyber incidents, including in sub-contractors' environments, so the bank can update BNM.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q3",
+          "question": "Under BNM's Outsourcing policy document, when does a bank need BNM's written approval?",
+          "options": [
+            "Only after a material arrangement has run for one year",
+            "Before entering a new material outsourcing arrangement or significantly modifying an existing one",
+            "For every outsourcing arrangement, however small",
+            "Only when the provider is located outside Malaysia"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 12.1 requires BNM's written approval before a new material outsourcing arrangement or a significant modification to an existing one, as the Bank of China (Malaysia) case showed.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q4",
+          "question": "Which risk must a bank's assessment before cloud adoption specifically address under RMiT paragraph 10.50?",
+          "options": [
+            "Multi-tenancy or data co-mingling",
+            "The provider's marketing budget",
+            "The bank's dividend policy",
+            "The number of branches the bank operates"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 10.50 lists risks including the deployment model, migration, location, multi-tenancy, vendor lock-in, security configuration, cyber exposure, termination, demarcation of responsibilities and ongoing regulatory compliance.",
+          "difficulty": 2
+        },
+        {
+          "id": "my-cy-s5-q5",
+          "question": "When using cloud services, what must a bank retain under RMiT paragraph 10.52?",
+          "options": [
+            "Physical possession of the cloud provider's servers",
+            "Ownership, control and management of customer data, including cryptographic key management",
+            "A copy of the provider's source code",
+            "The right to appoint the provider's directors"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 10.52 requires safeguards against unauthorised access, including keeping ownership, control and management of customer and proprietary data and the related cryptographic keys.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q6",
+          "question": "Under the amended PDPA, which Personal Data Protection Principle must a data processor comply with when processing on a controller's behalf?",
+          "options": [
+            "The Security Principle",
+            "The Notice and Choice Principle",
+            "The Access Principle",
+            "The Retention Principle"
+          ],
+          "answer": 0,
+          "explanation": "Section 5(1a), added by the amendment, requires a data processor to comply with the Security Principle in section 9. The other principles remain duties of the data controller.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q7",
+          "question": "What does the PDPA's Security Principle expressly ask data controllers to consider about staff?",
+          "options": [
+            "Measures to ensure the reliability, integrity and competence of personnel with access to personal data",
+            "The salary bands of staff with access to personal data",
+            "The nationality of staff with access to personal data",
+            "Whether staff have personal social media accounts"
+          ],
+          "answer": 0,
+          "explanation": "Section 9(1)(d) lists measures for the reliability, integrity and competence of personnel who access personal data, which is one reason banks train staff on data protection.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q8",
+          "question": "Under MCIPD, how often must a bank review an outsourced service provider that handles customer information?",
+          "options": [
+            "At least once every five years",
+            "Only when the contract is renewed",
+            "Only after a breach at the provider",
+            "At least once every two years"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 12.9 requires a review at least once every two years to confirm the provider meets its contractual obligations to safeguard customer information.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q9",
+          "question": "Under RMiT Appendix 12, when must new employees of an NCII-designated bank complete cyber security awareness training?",
+          "options": [
+            "Before being granted access to the NCII entity's assets",
+            "Within their first year of employment",
+            "Only if they work in the IT department",
+            "After their probation period ends"
+          ],
+          "answer": 0,
+          "explanation": "Appendix 12 paragraph 6.3.3 requires all new employees to complete cyber awareness training before getting access to the NCII entity's assets.",
+          "difficulty": 3
+        },
+        {
+          "id": "my-cy-s5-q10",
+          "question": "What is the maximum penalty under section 5(2) of the PDPA for a data controller that breaches the Personal Data Protection Principles?",
+          "options": [
+            "A fine up to RM1 million, imprisonment up to three years, or both",
+            "A fine up to RM250,000, imprisonment up to two years, or both",
+            "A fine up to RM100,000 only",
+            "A fine up to RM5 million, imprisonment up to ten years, or both"
+          ],
+          "answer": 0,
+          "explanation": "Section 5(2) sets a fine not exceeding one million ringgit, imprisonment up to three years, or both. RM250,000 and two years is the penalty for failing to notify the Commissioner under section 12B(1).",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "my-cy-x1",
+        "question": "Bukit Kenanga's board approves a technology risk appetite. Which further step does RMiT paragraph 8.1 require as part of that approval?",
+        "options": [
+          "Approve each new IT system purchase above RM100,000",
+          "Approve tolerances for technology-related events, name risk owners and set key risk indicators",
+          "Delegate the risk appetite entirely to the CISO",
+          "Submit the risk appetite to BNM for approval"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 8.1 asks the board to approve tolerances, identify risk owners and criteria for accepting residual risk, ensure key risk indicators and adequate resources, and review the appetite regularly. BNM approval is not required.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x2",
+        "question": "What period must the IT and cybersecurity strategic plans approved by the board cover under RMiT?",
+        "options": [
+          "No less than three years",
+          "Exactly one financial year",
+          "No less than ten years",
+          "The remaining term of the current CEO"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 8.2(a) requires the board to approve and review IT and cybersecurity strategic plans covering a period of no less than three years.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x3",
+        "question": "Unless RMiT states otherwise, how often must IT-related frameworks, policies and guidelines be reviewed?",
+        "options": [
+          "Every month by the cross-functional committee",
+          "At least once every three years, with depth matched to complexity and risk changes",
+          "Only when BNM issues a new policy document",
+          "Every five years at the strategic plan refresh"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 8.2(d) requires reviews at least once every three years unless otherwise stated, with depth commensurate with complexity and changes in the risk environment.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x4",
+        "question": "A director says: 'Board members do not need cyber training; we have a technology expert on the committee.' Which RMiT provisions show this is wrong?",
+        "options": [
+          "Paragraph 10.32 on downtime and paragraph 12.5 on SMS links",
+          "Paragraph 11.6 on red teaming and paragraph 17.1 on cloud consultation",
+          "Paragraph 14.1 on data centre resilience assessments only",
+          "Paragraph 8.4(c), on board participation in cyber awareness and training, and paragraph 15.3, on regular board training"
+        ],
+        "answer": 3,
+        "explanation": "RMiT requires the board itself to take part in cybersecurity awareness and training (8.4(c)) and to receive regular training on technology developments (15.3). Having one expert member is a separate requirement for the committee.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x5",
+        "question": "Which body must ensure the internal technology audit function is effective, including the competence of audit staff, under RMiT?",
+        "options": [
+          "The cross-functional technology committee",
+          "The security operations centre",
+          "The board audit committee",
+          "The bank's external cloud provider"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 8.5 makes the board audit committee responsible for an effective internal technology audit function, including audit staff competence, scope, frequency and prompt closure of gaps.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x6",
+        "question": "RMiT section 15.1 allows banks to include third-party service providers in training 'where appropriate'. Which other RMiT paragraph supports this through contracts?",
+        "options": [
+          "Paragraph 10.48(i), requiring providers to participate in the bank's security awareness programme where appropriate",
+          "Paragraph 11.6, requiring a red team exercise every three years",
+          "Paragraph 10.32, on maximum downtime for critical systems",
+          "Paragraph 8.3, on the board technology committee's membership"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 15.1 refers to paragraph 10.48(i), which makes participation in the bank's awareness and education programme a service agreement requirement where appropriate.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x7",
+        "question": "Senior management at Bukit Kenanga wants to show BNM the annual awareness programme meets RMiT. Which evidence best fits paragraph 15.1?",
+        "options": [
+          "Updated content for current threats, completion records for all staff and results showing whether behaviour improved",
+          "A certificate from the vendor that sold the e-learning platform",
+          "A list of staff who attended induction three years ago",
+          "Minutes showing the board approved the training budget"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 15.1 asks for adequate, regular, at least annual education reflecting evolving threats, with effectiveness measured. Vendor certificates, old induction lists and budget approvals do not show that.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x8",
+        "question": "A bank's CISO also leads several group functions abroad. Under RMiT, when is this acceptable?",
+        "options": [
+          "Never; the CISO must hold no other role anywhere in the group",
+          "Only if BNM appoints the CISO directly",
+          "Only if the CISO reports to the head of IT operations",
+          "When the other roles do not impair the CISO's independence or competence, and the CISO stays accountable for the bank's technology matters"
+        ],
+        "answer": 3,
+        "explanation": "RMiT's footnote to paragraph 9.4 allows a CISO to draw on group expertise and hold other roles if independence and competence are not impaired, while remaining the accountable contact with BNM.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-cy-x9",
+        "question": "Bukit Kenanga's SOC currently monitors only internet-facing systems. Which RMiT requirement does this fall short of?",
+        "options": [
+          "The SOC must be located outside Malaysia",
+          "The scope of monitoring must cover all critical systems, including supporting infrastructure",
+          "The SOC must be outsourced to a BNM-approved provider",
+          "The SOC must report every alert directly to BNM"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 11.9(b) requires monitoring to cover all critical systems and their supporting infrastructure, supported by a competent SOC with the right tools.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x10",
+        "question": "Which security approach does RMiT describe as requiring every user, inside or outside the network, to be authenticated, authorised and validated before access?",
+        "options": [
+          "Perimeter trust",
+          "Zero trust",
+          "Single sign-on",
+          "Air-gapping"
+        ],
+        "answer": 1,
+        "explanation": "RMiT's footnote to paragraph 11.3(d) describes zero-trust principles as requiring all users, inside or outside the network, to be authenticated, authorised and validated before access.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x11",
+        "question": "A contractor's access to production servers is set to expire automatically at the end of the agreed maintenance window. Which RMiT access principle is this?",
+        "options": [
+          "Dual authorisation",
+          "Time-bound access",
+          "Deny all by default",
+          "Data loss prevention"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 10.54(c) requires time-bound access that restricts access to a specific period based on the nature of the work.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x12",
+        "question": "Which statement about online credentials matches RMiT paragraph 10.54(f)?",
+        "options": [
+          "A team may share one credential if the team leader approves",
+          "Credentials may be shared during system outages",
+          "Each online credential must be uniquely linked to a single user for clear accountability",
+          "Shared credentials are acceptable for read-only access"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 10.54(f)(iii) requires each online credential to be uniquely linked to one user so that access to confidential IT assets is accountable.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x13",
+        "question": "An internal audit finds that Bukit Kenanga cannot tell which staff viewed a celebrity customer's account last month. Which MCIPD requirement is most clearly at risk?",
+        "options": [
+          "The requirement to publish a privacy notice on the website",
+          "Mechanisms to promptly detect unauthorised access and unusual frequent viewing of customer information",
+          "The requirement to keep complaint records for seven years",
+          "The requirement to consult BNM before using public cloud"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 10.23 requires prompt detection of unauthorised access and unusual frequent viewing; without usable audit trails the bank cannot meet it. MCIPD's guidance mentions audit trail reviews and random checks.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x14",
+        "question": "What does MCIPD require banks to do about the access rights of staff who change roles or leave?",
+        "options": [
+          "Regularly review access rights and revoke them immediately when no longer needed",
+          "Keep access active for 90 days in case the staff member returns",
+          "Transfer the access rights to the staff member's replacement",
+          "Review access rights only during the annual audit"
+        ],
+        "answer": 0,
+        "explanation": "MCIPD requires regular reviews of staff access rights and immediate revocation where access is no longer required, consistent with RMiT's least privilege and periodic access matrix reviews.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x15",
+        "question": "In the 2026 Bank Kerjasama Rakyat Malaysia Berhad case, what did BNM say the RMiT breaches were attributed to?",
+        "options": [
+          "Inadequate cybersecurity controls and incident response",
+          "Late submission of cash threshold reports",
+          "Failure to publish product disclosure sheets",
+          "Breaching the single counterparty exposure limit"
+        ],
+        "answer": 0,
+        "explanation": "BNM's release said the RMiT and MCIPD breaches, found after an external threat actor gained unauthorised access, were attributed to inadequate cybersecurity controls and incident response.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x16",
+        "question": "Under the NCII code in RMiT Appendix 12, what must an IT acceptable use policy cover?",
+        "options": [
+          "Only the list of approved software vendors",
+          "Acceptable, prohibited and personal use of enterprise assets, privacy expectations, reporting violations, remote work and BYOD",
+          "Only rules for the use of company cars and phones",
+          "Only the bank's social media marketing guidelines"
+        ],
+        "answer": 1,
+        "explanation": "Appendix 12 paragraph 7.1.1 lists acceptable, prohibited and personal use, privacy expectations, reporting violations, remote work and a BYOD policy, and staff must be trained on it.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x17",
+        "question": "What did the September 2026 reissue of RMiT add for banks designated under the Cyber Security Act 2024?",
+        "options": [
+          "A new licensing regime for cloud providers",
+          "A ban on all use of public cloud for critical systems",
+          "Appendix 12, a code of practice for NCII entities designated by BNM in the banking and finance sector",
+          "A requirement for every bank to appoint a NACSA officer to its board"
+        ],
+        "answer": 2,
+        "explanation": "The reissued RMiT added Appendix 12, which together with the relevant RMiT requirements forms the code of practice for NCII entities designated by BNM under the Cyber Security Act 2024.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x18",
+        "question": "Bukit Kenanga still uses unencrypted SMS one-time passwords for high-value transfers. Which RMiT requirement is it most likely failing?",
+        "options": [
+          "Removing hyperlinks from customer SMS messages",
+          "Deploying MFA technology and channels more secure than unencrypted SMS for financial transactions",
+          "Running the annual cyber drill with the board",
+          "Consulting BNM before using public cloud"
+        ],
+        "answer": 1,
+        "explanation": "Appendix 3 requires MFA for financial transactions to resist phishing and use technology and channels more secure than unencrypted SMS. The SMS link rule is a different control.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x19",
+        "question": "Where a bank uses OTPs, which feature does RMiT Appendix 3 require?",
+        "options": [
+          "The OTP is generated on the customer's device and bound to the transaction details such as payee and amount",
+          "The OTP is sent by email as well as SMS",
+          "The OTP stays valid for 24 hours so customers are not rushed",
+          "The OTP is generated on the bank's server and shown on the website"
+        ],
+        "answer": 0,
+        "explanation": "Appendix 3 requires dynamic, time-bound OTPs bound to transaction details and generated on the customer's device, not the bank's server, to reduce manipulation risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x20",
+        "question": "A customer wants to add a new 'favourite' payee in the app. What does RMiT Appendix 3 require?",
+        "options": [
+          "MFA only for the first transfer to the new payee",
+          "MFA when registering the favourite payee and for all later transfers to that payee",
+          "No authentication, because favourites are trusted",
+          "Approval from a branch manager before the payee is saved"
+        ],
+        "answer": 1,
+        "explanation": "Appendix 3 requires MFA for financial and high-risk non-financial transactions, including registering a favourite beneficiary and all subsequent transfers to that beneficiary.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x21",
+        "question": "A new digital banking customer asks why her daily transfer limit is low. What does RMiT Appendix 3 say about default limits for new customers?",
+        "options": [
+          "Default limits must be fixed at RM50,000 for all customers",
+          "Limits are set by BNM for each customer",
+          "Default limits should be conservatively low, with RM1,000 a day given as an example, and changeable through secure channels",
+          "New customers cannot transfer money for the first six months"
+        ],
+        "answer": 2,
+        "explanation": "Appendix 3 sets a conservatively low default limit for new customers, giving RM1,000 per day as an example, with the option to change it through secure channels such as MFA online or at branches.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x22",
+        "question": "Which signals does RMiT Appendix 11 require fraud analytics to consider when the customer has just registered MFA on a new device and then makes many transfers to new payees?",
+        "options": [
+          "Only transactions above RM100,000",
+          "Only transfers to overseas accounts",
+          "Elevated-risk activities followed by high-volume debits to new beneficiaries within a short period",
+          "Only transactions made outside office hours"
+        ],
+        "answer": 2,
+        "explanation": "Appendix 11 lists elevated-risk activities such as MFA registration on a new device, followed by patterns such as high-volume debits to new beneficiaries within a day or the next few days.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x23",
+        "question": "What must a bank do when a customer's online banking access is restricted because of suspected fraud, under RMiT Appendix 11?",
+        "options": [
+          "Keep the account locked until the customer visits BNM",
+          "Close the account and open a new one automatically",
+          "Promptly notify the customer with guidance to restore access after robust verification",
+          "Inform the customer only if the customer complains"
+        ],
+        "answer": 2,
+        "explanation": "Appendix 11 paragraph 4 requires prompt notification with guidance so the customer can restore access subject to robust verification; consent is needed before device profiling.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x24",
+        "question": "RMiT paragraph 12.5(c) addresses a common scam. What must banks provide?",
+        "options": [
+          "Practical ways for customers to verify that calls from the bank or its outsourced providers are genuine",
+          "A list of all staff phone numbers on the website",
+          "Recordings of every call sent to customers by email",
+          "A promise that the bank will never call customers"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 12.5(c) requires practical ways for customers to verify the authenticity of calls made by the bank or its appointed outsourced service providers.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x25",
+        "question": "Bukit Kenanga's contact centre has long queues on Friday nights, the peak time for scam reports. Which RMiT requirement is most directly engaged?",
+        "options": [
+          "Running a red team exercise every three years",
+          "Keeping critical system logs for three years",
+          "Retaining breach investigation reports for seven years",
+          "Keeping the contact centre adequately resourced and effective to help customers in distress"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 12.8(b) requires an adequately resourced, effective contact centre for customers in distress, alongside a self-service kill switch and timely restoration of access.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x26",
+        "question": "Under BNM's policy document on victims of unauthorised e-banking transactions, what must banks regularly remind customers to do?",
+        "options": [
+          "Change their account number every year",
+          "Visit a branch every six months to confirm their identity",
+          "Share their passwords only with bank staff who call them",
+          "Check transaction alerts promptly, verify the authenticity of bank messages and read the bank's security tips"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 8.1 requires current safety tips and regular reminders to check alerts and statements, verify bank messages and read security warnings before sharing confidential information.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x27",
+        "question": "A bank's email system is compromised during a ransomware attack. Which RMiT requirement helps the CERT keep coordinating?",
+        "options": [
+          "Default transfer limits for new customers",
+          "An annual outsourcing plan submitted to BNM",
+          "A conservative technology risk appetite",
+          "A secure, reliable out-of-band communication infrastructure, tested regularly in cyber drills"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 11.15 requires out-of-band communication for internal and external stakeholders if primary channels fail, and paragraph 11.16 requires it to be tested in drills.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x28",
+        "question": "Under the BCM policy document, what must a bank do after its initial cyber incident notification to BNM as more facts come to light?",
+        "options": [
+          "Wait for BNM to request an update",
+          "Send nothing further until the investigation closes",
+          "Inform only the PDP Commissioner of new facts",
+          "Progressively update BNM with the latest information"
+        ],
+        "answer": 3,
+        "explanation": "The BCM document requires the bank to progressively update BNM as information on the disruption changes, so that BNM can respond or intervene where needed.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x29",
+        "question": "In the BCM policy document, when does the two-hour cyber incident clock start?",
+        "options": [
+          "When the first customer complaint is received",
+          "When the board is informed",
+          "When the forensic investigation is complete",
+          "On confirmation, after a preliminary investigation shows the incident is cyber-related"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 10.5 runs the two hours from confirmation; its footnote describes confirmation as following a preliminary investigation into whether the incident is cyber-centric, such as ransomware, DDoS or a data leak.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x30",
+        "question": "An NCII-designated bank must nominate people responsible for notifying cyber security incidents to NACSA. How many does RMiT Appendix 12 require?",
+        "options": [
+          "One authorised person",
+          "Five authorised persons",
+          "No specific number",
+          "Three authorised persons"
+        ],
+        "answer": 3,
+        "explanation": "Appendix 12 paragraph 18.1.4(c) requires the NCII entity to nominate three authorised persons for cyber security incident notification under the Cyber Security Act 2024.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x31",
+        "question": "A customer information breach is caused by a staff member deliberately selling data, affecting 40 customers. Which MCIPD duty applies even though fewer than 1,000 customers are affected?",
+        "options": [
+          "No duty, because the breach is below significant scale",
+          "Only an entry in the breach register",
+          "Submitting the detailed investigation report to BNM within one working day of tabling it to the board",
+          "Only a notice on the bank's website"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11.20 requires the report to be submitted where the breach causes or may cause significant harm, exceeds 1,000 customers, or involves a deliberate attempt at unauthorised disclosure. Deliberate selling meets the third limb.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-cy-x32",
+        "question": "Who must confirm a bank's assessment that a customer information breach causes or is likely to cause significant harm, under MCIPD?",
+        "options": [
+          "The designated officer of sufficient senior ranking named under MCIPD paragraph 9.2",
+          "The branch manager where the breach happened",
+          "The external auditor",
+          "The affected customer"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 11.13 requires the significant harm assessment to be confirmed by the designated senior officer under paragraph 9.2, who also signs off the investigation report.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x33",
+        "question": "Under MCIPD, who must carry out and oversee the root-cause investigation of a customer information breach?",
+        "options": [
+          "The staff member who caused the breach",
+          "The business unit where it occurred, without independent oversight",
+          "A competent party, overseen by a party independent of the business unit where the breach occurred",
+          "BNM's Consumer and Market Conduct Department"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11.18 requires a competent party to investigate, overseen by a party independent of the relevant business unit, and to determine remedial actions.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x34",
+        "question": "A breach involves customer information Bukit Kenanga received from another bank through a permitted disclosure. What must Bukit Kenanga do?",
+        "options": [
+          "Leave all notifications to the other bank",
+          "Delete the data and take no further action",
+          "Promptly notify the other bank so it can take remedial action, and carry out the investigation and reporting itself",
+          "Notify only the customers, not the other bank"
+        ],
+        "answer": 2,
+        "explanation": "Paragraphs 11.6 and 11.22 require the institution where the breach occurred to notify the affected provider promptly and to carry out the investigation and reporting duties.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x35",
+        "question": "Under the amended PDPA, what is the consequence for a data controller that fails to notify the Commissioner of a personal data breach as section 12B(1) requires?",
+        "options": [
+          "It commits an offence punishable by a fine up to RM250,000, imprisonment up to two years, or both",
+          "It receives an automatic warning letter with no further penalty",
+          "It loses its banking licence",
+          "It must pay compensation of RM1,000 to each data subject"
+        ],
+        "answer": 0,
+        "explanation": "Section 12B(3) makes failure to notify under 12B(1) an offence with a fine not exceeding RM250,000, imprisonment up to two years, or both.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x36",
+        "question": "After customer credentials are exposed in an incident, which additional measures does RMiT paragraph 12.9 require?",
+        "options": [
+          "Closing all affected accounts permanently",
+          "Charging affected customers for replacement cards",
+          "Waiting for customers to report fraud before acting",
+          "Heightened monitoring of affected accounts, notifying affected customers, and revoking and reissuing affected credentials or payment instruments"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 12.9 requires closer monitoring of affected accounts, notifying affected customers with information to protect themselves, and revoking and reissuing compromised credentials or payment instruments where needed.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x37",
+        "question": "Bukit Kenanga has already consulted BNM on its first critical system on public cloud with no concerns raised. What usually applies when it moves a second critical system to public cloud?",
+        "options": [
+          "No contact with BNM at all",
+          "A fresh consultation, every time, without exception",
+          "Approval from the PDP Commissioner instead of BNM",
+          "Notification to BNM with updated information, if the RMiT conditions for subsequent adoption are met"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 17.2 allows notification for subsequent adoption where the bank consulted BNM the first time without concerns, enhanced its framework, has independent assurance and confirmed incident response readiness. BNM may still direct a consultation.",
+        "difficulty": 5
+      },
+      {
+        "id": "my-cy-x38",
+        "question": "Under the Outsourcing policy document, what must the board approve each year before it is submitted to BNM?",
+        "options": [
+          "Each outsourced staff member's employment contract",
+          "An outsourcing plan detailing planned outsourcing arrangements for the next financial year",
+          "The provider's annual financial statements",
+          "The provider's marketing materials"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 8.5 requires the board to approve an outsourcing plan for the following financial year before it is submitted to BNM, with assurance from senior management.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x39",
+        "question": "Why did BNM treat Bank of China (Malaysia) Berhad's relocation of two core banking systems to new data centres as needing prior approval?",
+        "options": [
+          "The data centres were outside Malaysia and banned by law",
+          "The systems were run by an unlicensed vendor",
+          "The relocation was done without informing customers",
+          "It was a significant modification to an approved material outsourcing arrangement that could change the bank's risk"
+        ],
+        "answer": 3,
+        "explanation": "BNM's release said the relocation of core banking systems was a significant modification to an existing approved material outsourcing arrangement because it could materially change the level or type of risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x40",
+        "question": "MCIPD requires outsourced service providers to train their personnel. What exactly must the bank ensure?",
+        "options": [
+          "The provider trains its personnel at regular intervals on handling customer information and reviews the training's effectiveness",
+          "The provider's staff attend the bank's induction once only",
+          "The provider sends its training slides to BNM",
+          "The provider's staff hold a university degree in data protection"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 12.7 requires the bank to ensure the provider trains its personnel regularly on policies for proper handling of customer information and reviews the adequacy and effectiveness of that training.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x41",
+        "question": "Under PDPA section 129 as amended, which of these is a basis on which a bank may transfer personal data outside Malaysia?",
+        "options": [
+          "The overseas recipient is a well-known technology company",
+          "The data is encrypted, whatever the destination",
+          "The destination has a law substantially similar to the PDPA or ensures at least equivalent protection",
+          "The transfer is approved by the bank's marketing team"
+        ],
+        "answer": 2,
+        "explanation": "Section 129(2) allows transfers where the place has a substantially similar law or ensures an adequate, at least equivalent, level of protection; section 129(3) lists further exceptions such as consent and contract performance.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x42",
+        "question": "Under MCIPD, how often must senior management ensure an independent review of the effectiveness of customer information policies and controls?",
+        "options": [
+          "At least once every five years",
+          "Only after a breach",
+          "At least once every two years",
+          "Every month"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 9.8 requires an independent review at least once every two years; the reviewer can be an independent function such as internal audit.",
+        "difficulty": 3
+      },
+      {
+        "id": "my-cy-x43",
+        "question": "Which method does RMiT Appendix 12 list for evaluating the effectiveness of cyber awareness training at NCII entities?",
+        "options": [
+          "Counting the number of posters displayed in branches",
+          "Post-programme quizzes or tests, participant feedback surveys and incident analysis during simulations",
+          "Asking BNM to grade the training materials",
+          "Measuring how long staff spend on the training page"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 6.3.4 says effectiveness is evaluated on completion using post-programme assessments, feedback surveys and analysis of incidents during simulations; a pre-programme baseline may also be set.",
+        "difficulty": 4
+      },
+      {
+        "id": "my-cy-x44",
+        "question": "Which statement about the PDPA and MCIPD breach duties is correct for a Malaysian bank?",
+        "options": [
+          "They run in parallel: the bank notifies BNM under MCIPD and the PDP Commissioner under PDPA section 12B",
+          "Notifying BNM replaces the duty to notify the PDP Commissioner",
+          "Notifying the PDP Commissioner replaces the duty to notify BNM",
+          "Banks are exempt from the PDPA because of the Financial Services Act"
+        ],
+        "answer": 0,
+        "explanation": "MCIPD's footnote reminds banks that, as data controllers, they must also comply with PDPA section 12B and the Commissioner's breach notification requirements effective 1 June 2025.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
