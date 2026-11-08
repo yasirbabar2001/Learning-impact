@@ -1,0 +1,3024 @@
+{
+  "slug": "au-apra-infosec-privacy",
+  "title": "Australia | APRA CPS 234 Information Security, CPS 230 Resilience and the Privacy Act",
+  "tagline": "Protect bank data and services the Australian way: CPS 234 security, CPS 230 resilience, APP 11 and the data breach scheme.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Banks and authorised deposit-taking institutions",
+    "Contact centres and customer operations",
+    "Bank technology, security and operations teams",
+    "Bank risk, compliance, privacy and internal audit functions"
+  ],
+  "hours": 6,
+  "description": "This quest teaches Australian bank staff how information security, operational resilience and privacy fit together under three sources: APRA's **Prudential Standard CPS 234 Information Security** and its practice guide **CPG 234**, APRA's **Prudential Standard CPS 230 Operational Risk Management** (in force since 1 July 2025), and the **Privacy Act 1988**, including **APP 11** and the **Notifiable Data Breaches** scheme in Part IIIC, regulated by the **OAIC**.\n\nCPS 234 requires banks to keep an information security capability that matches their threats and makes the board ultimately responsible. APRA's guidance describes an awareness program for staff, contractors and third parties, tested at commencement and periodically. This quest serves that need for all bank staff, with deeper material for managers, risk teams and directors.\n\nAcross five stages you follow a fictional team at Wattle Coast Bank through the board's duties, controls and testing, APRA notifications, phishing and social engineering, data breach decisions, critical operations, tolerance levels and service providers.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own policies, procedures or advice from your security, privacy and compliance teams.",
+  "audience": [
+    "All staff and contractors at Australian banks who use the bank's systems or handle customer information",
+    "Contact centre, branch and operations staff who are targets of phishing and social engineering",
+    "Technology, security and operations teams who run controls, testing and incident response",
+    "Risk, privacy, compliance and internal audit staff who oversee CPS 234, CPS 230 and Privacy Act duties",
+    "Senior managers and directors accountable for information security and operational resilience"
+  ],
+  "outcomes": [
+    "Explain CPS 234's requirements and the board's ultimate responsibility for information security",
+    "Apply CPS 234's rules on controls, testing, response plans and the 72-hour and 10-business-day APRA notices",
+    "Recognise and report phishing, vishing, tailgating and other social engineering in line with CPG 234 good practice",
+    "Apply APP 11 and decide whether an incident is an eligible data breach under the Privacy Act",
+    "Describe CPS 230 critical operations, tolerance levels, BCP testing and material service provider duties",
+    "Summarise the evidence a bank needs to show APRA and auditors that its program works"
+  ],
+  "quest": {
+    "name": "Wattle Coast Shield",
+    "premise": "You have just joined the Information Security Office at Wattle Coast Bank in Brisbane. With CISO Mei Lin Zhao, operational risk manager Callum Reid, privacy officer Amara Mensah, Perth contact centre leader Raj Menon and board risk chair Sofia Marchetti, you must turn APRA's standards and the Privacy Act into decisions in the boardroom, the security operations centre and the phone queue.",
+    "badge": {
+      "name": "Wattle Coast Shield Bearer",
+      "description": "Awarded for demonstrating working knowledge of APRA CPS 234, CPS 230 and the Privacy Act's security and data breach duties for Australian banks."
+    },
+    "color": "#1e40af",
+    "cast": [
+      {
+        "id": "mei",
+        "name": "Mei Lin Zhao",
+        "role": "Chief information security officer",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#1e40af"
+        }
+      },
+      {
+        "id": "callum",
+        "name": "Callum Reid",
+        "role": "Operational risk manager",
+        "look": {
+          "skin": 1,
+          "hair": "short",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "amara",
+        "name": "Amara Mensah",
+        "role": "Privacy officer",
+        "look": {
+          "skin": 5,
+          "hair": "curly",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "raj",
+        "name": "Raj Menon",
+        "role": "Contact centre team leader, Perth",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "sofia",
+        "name": "Sofia Marchetti",
+        "role": "Chair, board risk committee",
+        "look": {
+          "skin": 1,
+          "hair": "long",
+          "color": "#be123c"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "CPS 234 foundations: board, roles, capability and classification",
+      "stage": "The Security Charter",
+      "summary": "Meet APRA's CPS 234 Information Security: its aim, the board's ultimate responsibility, defined roles, a capability that matches the threats, the policy framework, asset classification and third-party assets.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the purpose and scope of CPS 234 for authorised deposit-taking institutions",
+        "Describe the board's ultimate responsibility and the roles CPS 234 requires to be defined",
+        "Classify information assets by criticality and sensitivity",
+        "Apply CPS 234 to assets managed by related parties and third parties"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the security charter",
+          "setting": "Board room, Wattle Coast Bank head office, Brisbane. Monday, 8:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your new lanyard reads 'Information Security Office'. Through the glass you can see a whiteboard covered in four letters: CPS 234.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "Welcome aboard. I'm Mei Lin Zhao, the bank's chief information security officer. You're joining the team that keeps our customers' data and money safe.",
+              "mood": "happy"
+            },
+            {
+              "who": "sofia",
+              "text": "Sofia Marchetti, I chair the board risk committee. I'll be blunt: under APRA's standard the board is ultimately responsible for information security. Not IT. Us.",
+              "mood": "neutral"
+            },
+            {
+              "who": "callum",
+              "text": "Callum Reid, operational risk. And since July 2025 we also live under CPS 230, so security and resilience now sit side by side in my world.",
+              "mood": "thinking"
+            },
+            {
+              "who": "amara",
+              "text": "Amara Mensah, privacy officer. When something goes wrong with customer data, the Privacy Act and the Notifiable Data Breaches scheme land on my desk.",
+              "mood": "neutral"
+            },
+            {
+              "who": "raj",
+              "text": "(video call from the Perth contact centre) Raj Menon, team leader. My people get fake 'IT support' calls every week. I need something they can actually use.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "So that's your mission: five stages, from the boardroom to the phone queue. First stop, what CPS 234 actually asks of a bank. Ready?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "CPS 234 in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Who sets the rule",
+              "narration": "APRA, the Australian Prudential Regulation Authority, supervises banks and other deposit-takers. It made Prudential Standard CPS 234 Information Security, which has applied since 1 July 2019."
+            },
+            {
+              "icon": "🎯",
+              "heading": "The aim",
+              "narration": "The standard wants each regulated entity to be resilient against information security incidents, including cyber-attacks, by keeping a security capability that matches the threats it faces."
+            },
+            {
+              "icon": "🔐",
+              "heading": "Three properties",
+              "narration": "Information security means preserving three things: confidentiality, so only authorised people get access; integrity, so data stays complete and accurate; and availability, so systems work when needed."
+            },
+            {
+              "icon": "👔",
+              "heading": "The board on the hook",
+              "narration": "The board is ultimately responsible for the entity's information security. It must make sure security keeps pace with the size of the threats and supports the bank's sound operation."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Beyond our walls",
+              "narration": "The duties reach information assets that related parties and third parties manage for the bank. Outsourcing a system does not outsource the responsibility."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who owns information security",
+          "caption": "CPS 234 requires the entity to define the security roles of the board, senior management, governing bodies and individuals.",
+          "items": [
+            {
+              "label": "Board",
+              "detail": "Ultimately responsible; sets direction and oversees whether security matches the threats."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Roles defined in writing; runs the capability and reports to the board."
+            },
+            {
+              "label": "Committees and forums",
+              "detail": "Governing bodies with decision, approval or oversight roles named clearly."
+            },
+            {
+              "label": "Security specialists",
+              "detail": "Operate controls, testing, monitoring and incident response."
+            },
+            {
+              "label": "Every staff member and contractor",
+              "detail": "Follows the policy framework and reports concerns quickly."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under CPS 234, who is ultimately responsible for a bank's information security?",
+          "options": [
+            "The chief information security officer",
+            "The board of the bank",
+            "APRA's supervision team",
+            "The bank's main technology vendor"
+          ],
+          "answer": 1,
+          "explanation": "The standard places ultimate responsibility on the board. The CISO and others carry defined roles, but they act under the board's oversight; a vendor never takes over the bank's responsibility."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Criticality versus sensitivity",
+          "caption": "CPS 234 requires every information asset, including those held by third parties, to be classified by both.",
+          "headers": [
+            "Criticality",
+            "Sensitivity"
+          ],
+          "items": [
+            {
+              "label": "Question it answers",
+              "left": "What if we lose availability?",
+              "right": "What if confidentiality or integrity is lost?"
+            },
+            {
+              "label": "Typical example",
+              "left": "Payments switch goes offline",
+              "right": "Customer identity files leak or are altered"
+            },
+            {
+              "label": "Who is harmed",
+              "left": "Customers who cannot pay or access funds",
+              "right": "Customers exposed to fraud or identity theft"
+            },
+            {
+              "label": "Drives",
+              "left": "Recovery priority and resilience design",
+              "right": "Access, encryption and monitoring strength"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What CPS 234 requires, in plain words",
+          "body": "CPS 234 is short, but each paragraph carries weight. A bank must:\n\n- **Define roles**: write down the security responsibilities of the board, senior management, committees and individuals.\n- **Keep a capability** (people, skills, resources and controls) that matches the size and extent of the threats, and keep it current as threats and systems change.\n- **Maintain a policy framework** that tells *everyone* with a security duty what to do: staff, contractors, consultants, related parties, third parties and even customers.\n- **Classify information assets** by criticality and sensitivity, including assets managed by others.\n- **Implement controls** in a timely way, sized to threats, asset value, life-cycle stage and the consequences of an incident.\n- **Detect, respond, test and audit**, and **notify APRA** of material incidents and control weaknesses.\n\nThe key idea is *commensurate*: the stronger the threat and the more valuable the asset, the stronger the protection must be."
+        },
+        {
+          "type": "match",
+          "title": "Match the CPS 234 term",
+          "prompt": "Link each term from the standard to its meaning, in your own words.",
+          "pairs": [
+            {
+              "left": "Information asset",
+              "right": "Information and IT, including software, hardware and data, in soft or hard copy"
+            },
+            {
+              "left": "Information security incident",
+              "right": "An actual or potential compromise of information security"
+            },
+            {
+              "left": "Vulnerability",
+              "right": "A weakness in an asset or control that could be exploited"
+            },
+            {
+              "left": "Threat",
+              "right": "A circumstance or event that could exploit a weakness"
+            },
+            {
+              "left": "Security control",
+              "right": "A prevention, detection or response measure that lowers likelihood or impact"
+            },
+            {
+              "left": "Security capability",
+              "right": "All the resources, skills and controls that let the bank maintain security"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The vendor contract",
+          "setting": "Mei's office, level 12. Monday, 11:15 am.",
+          "lines": [
+            {
+              "who": "callum",
+              "text": "Procurement wants to sign a new cloud provider for our loan document archive this week. They say the provider is 'ISO-certified, so we're covered'.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "A certificate is a starting point. CPS 234 says we must assess the provider's security capability and evaluate the design of the controls protecting our data.",
+              "mood": "thinking"
+            },
+            {
+              "who": "callum",
+              "text": "Even though the provider runs the systems?",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "Especially then. The archive holds identity documents for thousands of borrowers. Its sensitivity is high, so our checks need to be deep.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sofia",
+              "text": "And if it goes wrong, the board can't tell APRA it was the vendor's problem. What's the right call here?",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Signing the cloud archive deal",
+          "situation": "Procurement wants to sign a cloud provider for the loan document archive by Friday. The provider offers an ISO 27001 certificate and a standard contract. Nobody in the security team has reviewed the controls that would protect the bank's documents, and the business is pushing hard for the deadline.",
+          "choices": [
+            {
+              "text": "Sign now on the strength of the certificate and review the controls after go-live.",
+              "outcome": "The bank would be relying on a certificate whose scope may not even cover the archive service. CPS 234 expects the bank to assess the provider's capability and evaluate control design before trusting it with sensitive assets.",
+              "score": 0
+            },
+            {
+              "text": "Pause signing until security assesses the provider's capability, the scope of its certification and the design of the controls for our data, sized to the archive's sensitivity.",
+              "outcome": "This matches CPS 234: third-party capability is assessed in proportion to the consequences of an incident, and the design of the provider's controls over the bank's assets is evaluated. The deadline moves a little; the risk falls a lot.",
+              "score": 2
+            },
+            {
+              "text": "Sign, but add a clause making the provider liable for any breach.",
+              "outcome": "A liability clause helps with money, not with security. The bank would still not know whether the controls are adequate, and responsibility to APRA stays with the bank.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Myth or fact?",
+          "cards": [
+            {
+              "front": "Myth: information security is an IT matter.",
+              "back": "Fact: CPS 234 makes the board ultimately responsible and requires roles for senior management, committees and individuals."
+            },
+            {
+              "front": "Myth: if a vendor runs the system, its security is the vendor's problem.",
+              "back": "Fact: the bank must assess third-party capability, evaluate control design and include those assets in testing and audit."
+            },
+            {
+              "front": "Myth: paper files are outside CPS 234.",
+              "back": "Fact: information assets include data in both soft and hard copy."
+            },
+            {
+              "front": "Myth: controls are set once at go-live.",
+              "back": "Fact: the capability must be actively maintained as threats, assets and the business change."
+            },
+            {
+              "front": "Myth: CPS 234 only covers cyber-attacks.",
+              "back": "Fact: it covers any actual or potential compromise of confidentiality, integrity or availability, whatever the cause."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A bank classifies its customer identity document store. Which pair of questions does CPS 234 require it to consider?",
+          "options": [
+            "Cost of the system and age of the hardware",
+            "Criticality (impact of losing availability) and sensitivity (impact of losing confidentiality or integrity)",
+            "Number of users and the vendor's market share"
+          ],
+          "answer": 1,
+          "explanation": "Classification must be by criticality and sensitivity, reflecting how an incident could affect the bank or its customers financially or otherwise. Cost and vendor size may matter commercially but are not the classification test."
+        },
+        {
+          "type": "example",
+          "title": "Real case: APRA's response to the Medibank cyber incident",
+          "body": "In October 2022, health insurer **Medibank** suffered a cyber incident that APRA later called one of the most significant data breaches Australia had experienced. Medibank is APRA-regulated, so CPS 234 applied.\n\nIn **June 2023** APRA announced it would increase Medibank's capital adequacy requirement by **AUD 250 million**, effective 1 July 2023, reflecting weaknesses it found in Medibank's information security environment. The adjustment stays until an agreed remediation program is completed to APRA's satisfaction, and APRA said it would run a targeted technology review focused on **governance and risk culture**.\n\nAPRA also said it expected appropriate accountability and consequence management, including effects on executive pay where appropriate, and noted that it kept finding poor practices and **inadequate oversight from boards and management** across the industry.\n\n**Lesson for a bank:** weak security is a prudential issue, not just an IT one. APRA can turn control weaknesses into capital costs and close scrutiny of the board."
+        },
+        {
+          "type": "example",
+          "title": "Real case: ASIC v RI Advice (2022)",
+          "body": "In **May 2022** the Federal Court found, in an Australian first, that financial services licensee **RI Advice** had breached its licence obligations because it lacked adequate risk management systems for cybersecurity risk. ASIC brought the case.\n\nBetween 2014 and 2020 a series of cyber incidents hit practices of RI Advice's authorised representatives. In one, an attacker used a **brute force attack** to reach a representative's file server and stayed undetected for months, potentially exposing personal information of several thousand people.\n\nThe court ordered RI Advice to hire a cybersecurity expert to identify and implement any further measures needed across its network, and to pay **AUD 750,000** towards ASIC's costs. The judge observed that cyber risk cannot be cut to zero but can be materially reduced to an acceptable level with adequate documentation and controls.\n\n**Lesson:** for a bank, CPS 234 sets APRA's expectations; ASIC's licensing duties can add a second line of legal exposure when cyber risk is poorly managed."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "CPS 234 has applied to banks and other APRA-regulated entities since 1 July 2019.",
+            "The board is ultimately responsible for information security; roles for everyone else must be clearly defined.",
+            "Capability, policies and controls must be commensurate with the threats and the value of the assets.",
+            "Assets are classified by criticality (availability) and sensitivity (confidentiality and integrity).",
+            "Third-party and related-party assets stay inside the bank's responsibility."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one system you use every day at work. How would you rate its criticality and its sensitivity, and who in your organisation is responsible for its security?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-is-s1-q1",
+          "question": "Since when has APRA's CPS 234 Information Security applied to authorised deposit-taking institutions?",
+          "options": [
+            "1 July 2019",
+            "1 July 2015",
+            "1 July 2025",
+            "1 January 2023"
+          ],
+          "answer": 0,
+          "explanation": "CPS 234 commenced on 1 July 2019. 1 July 2025 is the start date of CPS 230 Operational Risk Management, a different standard.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s1-q2",
+          "question": "Which statement best captures the main objective of CPS 234?",
+          "options": [
+            "To require every bank to buy security software from approved vendors",
+            "To make entities resilient to security incidents by keeping a capability that matches their threats",
+            "To make APRA responsible for detecting cyber-attacks on banks",
+            "To replace the Privacy Act's security duties for every bank and insurer that APRA regulates in Australia"
+          ],
+          "answer": 1,
+          "explanation": "CPS 234 aims for resilience through a security capability commensurate with vulnerabilities and threats. APRA does not run banks' detection, and the Privacy Act still applies alongside it.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s1-q3",
+          "question": "A director says: 'Cyber security is the CISO's job; the board only hears about it if something breaks.' How does this fit CPS 234?",
+          "options": [
+            "It fits, provided the CISO reports to the chief executive",
+            "It fits, because CPS 234 places responsibility on senior management and leaves the board to receive incident reports",
+            "It does not fit: the board is ultimately responsible and must ensure security matches the threats",
+            "It does not fit, because APRA requires a director to act as CISO"
+          ],
+          "answer": 2,
+          "explanation": "CPS 234 makes the board ultimately responsible for information security. It does not require a director to be the CISO, but it does require active oversight rather than waiting for failures.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s1-q4",
+          "question": "A bank's mortgage files are stored in paper form in an offsite facility run by a storage company. Are they inside CPS 234?",
+          "options": [
+            "Yes: information assets include hard copy data, including assets managed by third parties",
+            "No: CPS 234 only applies to digital systems",
+            "Only if the storage company is itself APRA-regulated, because the standard follows the provider's own licence",
+            "Only once the files are scanned into a bank system"
+          ],
+          "answer": 0,
+          "explanation": "The definition of information asset covers data in soft and hard copy, and the standard expressly reaches assets managed by related parties and third parties.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s1-q5",
+          "question": "In CPS 234 terms, a payments switch that customers rely on every minute but that stores little personal data is most likely to be rated as:",
+          "options": [
+            "High sensitivity, low criticality",
+            "Out of scope, because it holds little personal data",
+            "Low risk, because availability is not a security property",
+            "High criticality, with sensitivity assessed separately"
+          ],
+          "answer": 3,
+          "explanation": "Criticality is about the impact of losing availability, so a payments switch rates high. Availability is one of the three security properties, and sensitivity is a separate rating.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s1-q6",
+          "question": "Who must the bank's information security policy framework give direction to?",
+          "options": [
+            "Only the information security team",
+            "Only employees on permanent contracts, since contractors follow their own employer's rules",
+            "All parties with a security obligation, including staff, contractors, third parties and customers",
+            "Only the board and senior management"
+          ],
+          "answer": 2,
+          "explanation": "The framework must direct everyone with a duty to maintain security. The standard's notes list staff, contractors, consultants, related parties, third parties and customers.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s1-q7",
+          "question": "A bank plans to move its customer document archive to a cloud provider. What does CPS 234 require before relying on it?",
+          "options": [
+            "Obtain APRA's written approval of the provider and of the contract before any customer data is moved",
+            "Assess the provider's capability and evaluate the design of controls protecting the bank's assets",
+            "Nothing, if the provider is certified to an international standard",
+            "Ask the provider to sign the bank's staff code of conduct"
+          ],
+          "answer": 1,
+          "explanation": "CPS 234 requires the bank to assess third-party capability in line with the consequences of an incident and to evaluate the design of the third party's controls. Certification helps but does not replace that assessment.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s1-q8",
+          "question": "What did APRA announce in June 2023 in response to the Medibank cyber incident?",
+          "options": [
+            "A capital adequacy increase of AUD 250 million until agreed remediation was completed",
+            "The cancellation of Medibank's registration as a private health insurer until a new board was appointed",
+            "A criminal referral of Medibank's directors",
+            "A fine of AUD 250 million paid to the Commonwealth"
+          ],
+          "answer": 0,
+          "explanation": "APRA applied a capital adjustment of AUD 250 million from 1 July 2023 and announced a targeted technology review. It was a capital measure, not a fine or a licence cancellation.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s1-q9",
+          "question": "Which word best summarises how CPS 234 expects controls and capability to be sized?",
+          "options": [
+            "Uniform",
+            "Maximal",
+            "Optional",
+            "Commensurate"
+          ],
+          "answer": 3,
+          "explanation": "The standard repeatedly asks for capability, policies, controls and testing commensurate with threats, criticality, sensitivity and consequences. It does not prescribe one uniform level for every asset.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s1-q10",
+          "question": "In ASIC v RI Advice (2022), what did the Federal Court find?",
+          "options": [
+            "The licensee breached its obligations by lacking adequate cybersecurity risk management",
+            "The licensee was not responsible for incidents at its authorised representatives' separately owned practices",
+            "APRA should have supervised the licensee's cyber controls",
+            "The licensee had to pay compensation to every affected client"
+          ],
+          "answer": 0,
+          "explanation": "The court found RI Advice breached its licence obligations because its cyber risk management systems were inadequate, and ordered it to engage a cybersecurity expert and pay AUD 750,000 towards ASIC's costs.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Controls, testing, incident response and APRA notification",
+      "stage": "The Watchtower",
+      "summary": "Turn CPS 234 into practice: commensurate controls, detection, response plans tested every year, independent control testing, internal audit, and the 72-hour and 10-business-day notices to APRA.",
+      "minutes": 55,
+      "objectives": [
+        "Describe how CPS 234 expects controls to be sized and implemented",
+        "Explain the requirements for response plans, control testing and internal audit",
+        "Apply the 72-hour incident and 10-business-day weakness notification rules",
+        "Escalate a suspected incident correctly from the front line"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the watchtower",
+          "setting": "Security operations centre, Wattle Coast Bank, Melbourne. Wednesday, 2:05 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A red tile flashes on the wall screen: unusual data transfer from a server in the home loans environment to an unknown address overseas.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "(on the phone, half awake) How much data, and since when?",
+              "mood": "thinking"
+            },
+            {
+              "who": "callum",
+              "text": "About 40 gigabytes over three hours. We've blocked the address. We don't yet know what was in it.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "Then the clock may already be running. Under CPS 234 we tell APRA within 72 hours of becoming aware of a material incident, and we can't wait for perfect facts.",
+              "mood": "neutral"
+            },
+            {
+              "who": "amara",
+              "text": "If customer data left the building, I have Privacy Act duties too. Please loop me in now, not on Friday.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "Agreed. Let's run the response plan the way we tested it in March. This is what the drills were for.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Prevent, detect, respond, prove",
+          "scenes": [
+            {
+              "icon": "🛡️",
+              "heading": "Controls that fit",
+              "narration": "CPS 234 requires controls for every information asset, put in place in a timely way and sized to the threats, the asset's criticality and sensitivity, its life-cycle stage and the possible consequences."
+            },
+            {
+              "icon": "📡",
+              "heading": "See it early",
+              "narration": "The bank needs robust mechanisms to detect and respond to incidents in a timely way. Prevention alone is never enough."
+            },
+            {
+              "icon": "📕",
+              "heading": "Plans for the plausible",
+              "narration": "It must keep response plans for incidents that could plausibly happen, covering every stage from detection to post-incident review, plus escalation to the board."
+            },
+            {
+              "icon": "🧪",
+              "heading": "Test and test again",
+              "narration": "Response plans must be reviewed and tested every year. Controls must be tested through a systematic program run by skilled, functionally independent specialists."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Independent eyes",
+              "narration": "Internal audit must review the design and operating effectiveness of security controls, including controls run by third parties."
+            },
+            {
+              "icon": "📨",
+              "heading": "Tell the regulator",
+              "narration": "Material incidents go to APRA within 72 hours of becoming aware. Material control weaknesses that won't be fixed in time go to APRA within 10 business days."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The CPS 234 incident cycle",
+          "caption": "Response plans must cover every stage from detection to post-incident review.",
+          "items": [
+            {
+              "label": "Detect",
+              "detail": "Monitoring and staff reports surface an actual or potential compromise."
+            },
+            {
+              "label": "Assess and escalate",
+              "detail": "Rate materiality; escalate to the board and responsible owners as the plan sets out."
+            },
+            {
+              "label": "Contain and respond",
+              "detail": "Follow the tested response plan; preserve evidence."
+            },
+            {
+              "label": "Notify",
+              "detail": "APRA within 72 hours if material or notified to other regulators; other regimes as they apply."
+            },
+            {
+              "label": "Review and improve",
+              "detail": "Post-incident review feeds controls, testing and training."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Two APRA notification clocks in CPS 234",
+          "caption": "Both deadlines come from CPS 234. 'As soon as possible' comes first; the outer limit is a backstop.",
+          "headers": [
+            "Incident notice",
+            "Control weakness notice"
+          ],
+          "items": [
+            {
+              "label": "What triggers it",
+              "left": "Incident that materially affected, or could have, the bank or customers; or was notified to another regulator",
+              "right": "Material control weakness the bank expects it cannot fix in a timely way"
+            },
+            {
+              "label": "Deadline",
+              "left": "As soon as possible, no later than 72 hours",
+              "right": "As soon as possible, no later than 10 business days"
+            },
+            {
+              "label": "Clock starts",
+              "left": "When the bank becomes aware of the incident",
+              "right": "When the bank becomes aware of the weakness"
+            },
+            {
+              "label": "Typical example",
+              "left": "Ransomware halts loan processing",
+              "right": "Privileged accounts lack strong authentication, and the fix is months away"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A bank discovers a material information security incident on Monday at 10 am. What is the latest it may notify APRA under CPS 234?",
+          "options": [
+            "Within 10 business days",
+            "Thursday at 10 am, 72 hours after becoming aware, and sooner if possible",
+            "Only after its forensic investigation is complete",
+            "At the next scheduled supervision meeting"
+          ],
+          "answer": 1,
+          "explanation": "CPS 234 requires notice as soon as possible and no later than 72 hours after becoming aware. The 10-business-day limit applies to material control weaknesses, not incidents."
+        },
+        {
+          "type": "concept",
+          "title": "Testing that means something",
+          "body": "CPS 234 does not let a bank mark its own homework. Its testing rules are specific:\n\n- A **systematic testing program** checks whether controls work. How often and how deeply each control is tested depends on how fast threats change, the asset's criticality and sensitivity, the consequences of an incident, exposure to untrusted environments, and how often the asset changes.\n- Testers must be **appropriately skilled and functionally independent**.\n- Deficiencies that **cannot be fixed in a timely way** are escalated to the board or senior management.\n- The program itself is reviewed **at least annually**, or sooner after a material change.\n- If a third party tests its own controls, the bank must judge whether that testing is deep and frequent enough.\n- **Internal audit** gives separate assurance on design and operating effectiveness, using skilled people.\n\nAPRA's guide CPG 234 lists techniques such as penetration tests, social engineering tests and access reviews."
+        },
+        {
+          "type": "sort",
+          "title": "Which CPS 234 clock applies?",
+          "prompt": "Sort each situation by the APRA notification it most likely triggers.",
+          "buckets": [
+            "72-hour incident notice",
+            "10-business-day weakness notice",
+            "No APRA notice on these facts"
+          ],
+          "items": [
+            {
+              "text": "Attackers encrypt the core banking servers and branches cannot serve customers",
+              "bucket": 0
+            },
+            {
+              "text": "Bank reports a data theft to an overseas regulator where it has a branch",
+              "bucket": 0
+            },
+            {
+              "text": "Audit finds no strong authentication on privileged admin access; fix needs a year-long rebuild",
+              "bucket": 1
+            },
+            {
+              "text": "An unsupported system holding customer data cannot be patched for months",
+              "bucket": 1
+            },
+            {
+              "text": "A phishing email is reported and deleted; no one clicked and no access occurred",
+              "bucket": 2
+            },
+            {
+              "text": "A minor control gap is found and fixed the same week",
+              "bucket": 2
+            },
+            {
+              "text": "Card data at an outsourced processor is accessed by an intruder",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The quiet weakness",
+          "setting": "Mei's office, Brisbane. Two weeks later.",
+          "lines": [
+            {
+              "who": "callum",
+              "text": "The penetration test is back. Our internet banking admin console still accepts a password alone for privileged staff.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "Can we fix it this sprint?",
+              "mood": "thinking"
+            },
+            {
+              "who": "callum",
+              "text": "Vendor says the platform needs an upgrade first. Realistic date: nine months away.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sofia",
+              "text": "Nine months of exposure on the keys to the kingdom. What does the standard expect from us now?",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Nine months to fix the admin console",
+          "situation": "A penetration test shows privileged access to the internet banking admin console uses a password only. The vendor says a fix needs a platform upgrade about nine months away. The test was run by an independent firm. The head of digital wants to 'keep it in the team' until the upgrade lands.",
+          "choices": [
+            {
+              "text": "Accept the vendor date, log the finding and revisit after the upgrade.",
+              "outcome": "This ignores two CPS 234 duties: escalating deficiencies that cannot be fixed in time to the board or senior management, and notifying APRA of a material weakness the bank cannot fix in a timely way.",
+              "score": 0
+            },
+            {
+              "text": "Add compensating controls now, escalate to senior management and the board, assess materiality and, if material, notify APRA within 10 business days.",
+              "outcome": "This is the expected path. Compensating controls cut exposure, escalation meets the testing rules, and a material weakness that cannot be fixed in time is notified to APRA as soon as possible and within 10 business days.",
+              "score": 2
+            },
+            {
+              "text": "Ask the testing firm to remove the finding from the final report.",
+              "outcome": "Suppressing a finding defeats the purpose of independent testing and would hide a known weakness from the board and APRA. It could also mislead the regulator.",
+              "score": 0
+            },
+            {
+              "text": "Add compensating controls and fix it quietly within the digital team.",
+              "outcome": "Compensating controls help, but CPS 234 also requires escalation and, for a material weakness, notice to APRA. Keeping it in the team leaves the board blind.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Run the response plan",
+          "prompt": "Put the first hours of a well-run incident response in order.",
+          "steps": [
+            "Analyst confirms the alert is a real or potential compromise and opens an incident",
+            "Incident lead contains the threat, for example by blocking the address and isolating the server",
+            "Evidence such as logs and disk images is preserved for investigation",
+            "Materiality is assessed and the incident is escalated to executives and the board as the plan requires",
+            "APRA is notified as soon as possible and within 72 hours if the incident is material",
+            "A post-incident review records lessons and updates controls, tests and training"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these does CPS 234 require for the testing of security controls?",
+          "options": [
+            "Testing only by the vendor that built the system",
+            "Skilled and functionally independent testers, with the program reviewed at least annually",
+            "A fixed quarterly penetration test for every system, whatever its risk"
+          ],
+          "answer": 1,
+          "explanation": "The standard requires skilled, functionally independent specialists and an annual (or change-driven) review of the program. Frequency and depth are risk-based rather than one fixed schedule."
+        },
+        {
+          "type": "example",
+          "title": "Real case: ASIC v FIIG Securities (2026)",
+          "body": "In **2026** the Federal Court ordered fixed-income firm **FIIG Securities** to pay a **AUD 2.5 million** penalty and AUD 500,000 towards ASIC's costs. ASIC said it was the first time the court had imposed civil penalties for cyber security failures under the general licensee obligations.\n\nIn a **2023** attack, about 385 gigabytes of confidential data were stolen and sensitive client data later appeared on the dark web. FIIG admitted that adequate measures would have let it **detect and respond sooner**. ASIC listed failures over several years, including:\n\n- no multi-factor authentication for remote access, and weak controls on privileged accounts;\n- no structured plan to patch vulnerable software;\n- no qualified staff monitoring threat alerts;\n- no regular penetration testing or vulnerability scanning;\n- no incident response plan **tested at least annually**.\n\nFIIG is an ASIC licensee, not a bank, but the list reads like a CPS 234 checklist: controls, detection, testing and tested response plans."
+        },
+        {
+          "type": "tip",
+          "title": "Becoming aware is not the same as being certain",
+          "body": "The 72-hour clock runs from when the bank **becomes aware** of the incident, and an incident includes a **potential** compromise. Don't wait for forensics to finish before telling the security office.\n\n- Record the time you first saw the problem.\n- Escalate through the plan's channel straight away.\n- Share what you know, what you don't, and what you've done.\n- Leave the materiality decision and the APRA notice to the incident lead and compliance."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "Controls must be timely and sized to threats, criticality, sensitivity, life-cycle stage and consequences.",
+            "Response plans cover detection to post-incident review and must be reviewed and tested every year.",
+            "Testing is systematic, done by skilled and independent specialists, and the program is reviewed at least annually.",
+            "Notify APRA of a material incident within 72 hours of becoming aware, sooner if possible.",
+            "Notify APRA of a material control weakness that cannot be fixed in time within 10 business days."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you spotted something odd on a system tonight, who would you call, and how quickly could the bank's incident team know about it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-is-s2-q1",
+          "question": "Under CPS 234, when must a bank notify APRA of a material information security incident?",
+          "options": [
+            "As soon as possible and no later than 72 hours after becoming aware",
+            "Within 30 days, once the investigation is complete",
+            "Within 24 hours of the incident starting",
+            "Within 10 business days of the board meeting"
+          ],
+          "answer": 0,
+          "explanation": "CPS 234 sets 72 hours from becoming aware, with 'as soon as possible' coming first. The 10-business-day limit is for material control weaknesses.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s2-q2",
+          "question": "A bank tells a foreign regulator about a security incident affecting its overseas branch. The incident had little impact in Australia. Does CPS 234 require notice to APRA?",
+          "options": [
+            "No: only incidents with a material impact on the bank or its Australian depositors count for APRA notice purposes",
+            "No: foreign incidents are reported in the annual return",
+            "Yes: an incident notified to other regulators, in Australia or overseas, must also be notified",
+            "Only if the foreign regulator asks APRA to be informed"
+          ],
+          "answer": 2,
+          "explanation": "One of the two triggers is that the incident has been notified to other regulators, domestic or international. Materiality in Australia is not required for that trigger.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s2-q3",
+          "question": "How often must a bank review and test its information security response plans?",
+          "options": [
+            "Every three years",
+            "Annually",
+            "Only after a material incident",
+            "Whenever APRA requests it"
+          ],
+          "answer": 1,
+          "explanation": "CPS 234 requires an annual review and test so that response plans remain effective and fit for purpose.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s2-q4",
+          "question": "Internal testing shows a material control weakness that the bank expects to need eight months to fix. What does CPS 234 require?",
+          "options": [
+            "Notify APRA within 72 hours, treating the weakness as an information security incident in its own right",
+            "Record it and report it only if it is exploited",
+            "Notify APRA only when the fix is complete",
+            "Notify APRA as soon as possible and within 10 business days of becoming aware"
+          ],
+          "answer": 3,
+          "explanation": "A material weakness the bank expects it cannot remediate in a timely way must be notified within 10 business days. The 72-hour rule is for incidents.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q5",
+          "question": "Which factor does CPS 234 NOT list for setting the nature and frequency of control testing?",
+          "options": [
+            "The vendor's share price",
+            "How quickly vulnerabilities and threats change",
+            "The criticality and sensitivity of the asset",
+            "Exposure to environments where the bank cannot enforce its policies"
+          ],
+          "answer": 0,
+          "explanation": "The listed factors include rate of change of threats, criticality and sensitivity, consequences, untrusted environments and frequency of change. Commercial measures like share price are not among them.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q6",
+          "question": "Who may carry out the testing of security controls under CPS 234?",
+          "options": [
+            "Any staff member who completed awareness training",
+            "Only APRA-accredited auditors",
+            "Appropriately skilled and functionally independent specialists",
+            "The team that designed and operates the control"
+          ],
+          "answer": 2,
+          "explanation": "Testers must be skilled and functionally independent. APRA does not accredit testers, and the team that runs a control lacks independence.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q7",
+          "question": "What must the response plans include under CPS 234?",
+          "options": [
+            "A list of approved ransomware negotiators",
+            "Mechanisms for every incident stage and for escalation and reporting to the board and responsible people",
+            "A pre-written media release for each incident type, approved in advance by APRA's communications team",
+            "Only the contact details of the IT help desk"
+          ],
+          "answer": 1,
+          "explanation": "Plans must cover all stages from detection to post-incident review and the escalation and reporting of incidents to the board and others responsible for oversight.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q8",
+          "question": "What should happen to control deficiencies found in testing that cannot be fixed in a timely way?",
+          "options": [
+            "They are closed once a risk owner signs an acceptance",
+            "They are deleted from the test report",
+            "They are fixed by the testers directly",
+            "They are escalated and reported to the board or senior management"
+          ],
+          "answer": 3,
+          "explanation": "CPS 234 requires escalation of such deficiencies to the board or senior management, and material ones may also trigger APRA notice.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q9",
+          "question": "In the FIIG Securities case, which failure did ASIC list?",
+          "options": [
+            "No incident response plan tested at least annually",
+            "Using a cloud provider based overseas",
+            "Reporting the breach to clients too quickly",
+            "Encrypting data that clients did not ask to protect"
+          ],
+          "answer": 0,
+          "explanation": "ASIC listed missing MFA, patching, monitoring, testing, awareness training and an incident response plan tested at least annually. The other options were not failures in the case.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s2-q10",
+          "question": "A night analyst sees a possible data exfiltration but is not sure it is real. What best supports CPS 234 compliance?",
+          "options": [
+            "Wait until the morning team confirms it, because only a confirmed compromise counts as an incident for APRA",
+            "Notify APRA personally before telling anyone",
+            "Delete the alert if the data flow has stopped",
+            "Escalate now through the response plan; a potential compromise is already an incident"
+          ],
+          "answer": 3,
+          "explanation": "An incident includes a potential compromise, and the 72-hour clock runs from awareness. Escalation through the plan lets the incident lead assess materiality and handle notices.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The human firewall: awareness, phishing and social engineering",
+      "stage": "The Human Firewall",
+      "summary": "Use APRA's CPG 234 guidance to build security awareness that works: who to train, what to cover, how to test understanding, and how to spot and report phishing, vishing, tailgating and other social engineering.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the awareness program CPG 234 presents as sound practice",
+        "Recognise common social engineering techniques used against bank staff",
+        "Respond correctly to suspicious calls, emails and requests",
+        "Explain why awareness results are reported to the board"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the human firewall",
+          "setting": "Contact centre floor, Wattle Coast Bank, Perth. Thursday, 9:20 am.",
+          "lines": [
+            {
+              "who": "raj",
+              "text": "Three calls this morning from 'IT support' asking agents to read out the code from their authenticator app. One agent nearly did.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "That's a classic. Attackers can't beat multi-factor authentication technically, so they try to beat the person holding the phone.",
+              "mood": "thinking"
+            },
+            {
+              "who": "raj",
+              "text": "We did the annual e-learning. People clicked through it in eleven minutes.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "APRA's guidance pictures more than a tick-box: training tracked, understanding tested at the start and periodically, and topics that match how people are really attacked.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sofia",
+              "text": "And the board wants evidence it works. Not just completion rates.",
+              "mood": "thinking"
+            },
+            {
+              "who": "mei",
+              "text": "Then let's build an awareness program people remember. Stage three: turning staff from the weakest link into the first alarm.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What CPG 234 says about awareness",
+          "scenes": [
+            {
+              "icon": "📘",
+              "heading": "Guidance, not a rulebook",
+              "narration": "CPG 234 is APRA's practice guide to CPS 234. It explains what sound practice looks like; it uses words like 'could' and 'would typically' rather than imposing new rules."
+            },
+            {
+              "icon": "👥",
+              "heading": "Everyone with access",
+              "narration": "It suggests a training and awareness program for staff, contractors and third parties, plus material that helps the board and other governing bodies carry out their duties."
+            },
+            {
+              "icon": "📊",
+              "heading": "Track and test",
+              "narration": "Sound practice tracks who completed training and tests whether people understand the security policies, both when they start and periodically after that."
+            },
+            {
+              "icon": "🎣",
+              "heading": "Real attack techniques",
+              "narration": "Topics typically include email and internet use, malware, mobile devices, remote working, passwords and access, handling sensitive data, and common attacks on people such as social engineering and tailgating."
+            },
+            {
+              "icon": "✍️",
+              "heading": "Sign and report",
+              "narration": "Users would typically sign off on security policies periodically as part of their terms, and everyone should know how to report incidents and concerns."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "A CPG 234-style awareness program",
+          "caption": "Built from the topics and practices in CPG 234 Attachment B and the board reporting examples in Attachment H.",
+          "items": [
+            {
+              "label": "Induction",
+              "detail": "Security policies, reporting channels and a short understanding test before system access."
+            },
+            {
+              "label": "Role-based modules",
+              "detail": "Deeper content for contact centre, payments, privileged IT users and executives."
+            },
+            {
+              "label": "Ongoing campaigns",
+              "detail": "Phishing simulations, short refreshers and alerts on current scams."
+            },
+            {
+              "label": "Policy sign-off",
+              "detail": "Periodic acknowledgement of security policies under employment or contract terms."
+            },
+            {
+              "label": "Measure and report",
+              "detail": "Coverage, test scores and phishing results reported to management and the board."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "How does APRA's CPG 234 relate to the binding standard CPS 234?",
+          "options": [
+            "It replaces CPS 234 for smaller banks",
+            "It is guidance on how to meet CPS 234, describing sound practice such as awareness training",
+            "It is a law passed by Parliament",
+            "It only applies to superannuation trustees"
+          ],
+          "answer": 1,
+          "explanation": "CPG 234 is a prudential practice guide that supports CPS 234 for all APRA-regulated industries. It describes sound practice; CPS 234 holds the binding requirements."
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "How a social engineering attack narrows in",
+          "caption": "Every stage is a chance to spot the attack. The ask is the last and clearest warning sign.",
+          "items": [
+            {
+              "label": "Research",
+              "detail": "Attacker gathers names, roles and jargon from public profiles and past leaks."
+            },
+            {
+              "label": "Pretext",
+              "detail": "A believable story: IT support, a senior executive, a regulator, a supplier."
+            },
+            {
+              "label": "Contact",
+              "detail": "Email, text, phone call, collaboration chat or a visitor at the door."
+            },
+            {
+              "label": "Pressure",
+              "detail": "Urgency, authority or fear to stop the target from checking."
+            },
+            {
+              "label": "The ask",
+              "detail": "A code, a password, a payment change or a click."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Red flag or routine?",
+          "prompt": "Sort each contact centre moment.",
+          "buckets": [
+            "Red flag: stop and verify",
+            "Routine: proceed normally"
+          ],
+          "items": [
+            {
+              "text": "Caller from 'IT' asks you to read out your authenticator code",
+              "bucket": 0
+            },
+            {
+              "text": "Email from the CEO's personal address asks for an urgent supplier payment",
+              "bucket": 0
+            },
+            {
+              "text": "A visitor without a pass follows you through the secure door holding coffee",
+              "bucket": 0
+            },
+            {
+              "text": "Text says your bank login expires today and links to a look-alike page",
+              "bucket": 0
+            },
+            {
+              "text": "Customer passes the bank's standard identification steps and asks for a balance",
+              "bucket": 1
+            },
+            {
+              "text": "Help desk ticket you raised is closed through the official service portal",
+              "bucket": 1
+            },
+            {
+              "text": "A 'supplier' calls to change bank account details and wants it done before lunch",
+              "bucket": 0
+            },
+            {
+              "text": "Security team sends a scheduled reminder through the usual intranet channel",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Why phishing results reach the board",
+          "body": "CPG 234 gives examples of security information a board could receive. Among them are **awareness exercise coverage** and the **share of staff responding to phishing tests**.\n\nThat matters for three reasons:\n\n- **Board responsibility.** Under CPS 234 the board is ultimately responsible. It cannot judge whether the human layer is working from completion rates alone.\n- **Testing applies to people too.** CPG 234 lists **social engineering tests** as a way to check access controls and staff awareness.\n- **Trends beat snapshots.** Click rates, report rates and time-to-report, tracked over months, show whether training changes behaviour.\n\nA good simulation program is **fair**: no humiliation, quick coaching after a click, and praise for fast reporting. The goal is a culture where reporting feels normal, because staff who report quickly turn one person's mistake into an early warning."
+        },
+        {
+          "type": "story",
+          "title": "The 'urgent' call",
+          "setting": "Contact centre floor, Perth. Friday, 4:47 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Agent Tayla waves Raj over and mutes her headset.",
+              "mood": "neutral"
+            },
+            {
+              "who": "raj",
+              "text": "What's happening?",
+              "mood": "thinking"
+            },
+            {
+              "who": "narrator",
+              "text": "Tayla says the caller claims to be from the bank's cyber team. He says her account is part of an active breach and needs her authenticator code within two minutes to 'lock it'.",
+              "mood": "worried"
+            },
+            {
+              "who": "raj",
+              "text": "He knows her name, her manager's name and our ticket system's name. It sounds real.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Two minutes to lock the account",
+          "situation": "A caller claiming to be from the bank's cyber team tells a contact centre agent that her account is compromised. He knows her name, her manager and internal system names, and asks for her authenticator code within two minutes to 'lock' the account. It is late on Friday. You are the team leader.",
+          "choices": [
+            {
+              "text": "Tell the agent to give the code, since the caller knows internal details and time is short.",
+              "outcome": "Internal details are easy to gather and are exactly what a pretext relies on. Real security teams never need your one-time code. The attacker now has a working session.",
+              "score": 0
+            },
+            {
+              "text": "Tell the agent to end the call, report it through the security channel at once, and call the security team back on the number in the bank directory.",
+              "outcome": "Correct. Verifying through a known channel defeats the pretext, and fast reporting lets security warn other agents and check for related attempts. This is the behaviour CPG 234-style training aims for.",
+              "score": 2
+            },
+            {
+              "text": "Tell the agent to hang up and forget about it, since nothing was disclosed.",
+              "outcome": "Hanging up is right, but not reporting wastes the early warning. The same caller is probably trying other agents right now.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Attack techniques decoded",
+          "cards": [
+            {
+              "front": "Phishing",
+              "back": "Fraudulent emails that push you to click, open an attachment or enter credentials on a fake page."
+            },
+            {
+              "front": "Vishing",
+              "back": "Voice phishing: a phone call using a pretext such as IT support, a regulator or a customer to extract information."
+            },
+            {
+              "front": "Smishing",
+              "back": "Phishing by text message, often with a link to a look-alike login page."
+            },
+            {
+              "front": "Tailgating",
+              "back": "Following an authorised person through a secure door without using a pass."
+            },
+            {
+              "front": "MFA fatigue",
+              "back": "Flooding someone with login approval prompts until they approve one just to make them stop."
+            },
+            {
+              "front": "Credential stuffing",
+              "back": "Trying usernames and passwords leaked elsewhere against another service, hoping people reused them."
+            },
+            {
+              "front": "Business email compromise",
+              "back": "Using a hijacked or look-alike email account to redirect payments or obtain data."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A staff member clicks a link in a simulated phishing email. What response best fits a healthy awareness culture?",
+          "options": [
+            "Public naming in the weekly team meeting",
+            "Immediate dismissal",
+            "Short, private coaching, and encouragement to report quickly next time",
+            "Ignoring it because it was only a test"
+          ],
+          "answer": 2,
+          "explanation": "The aim is behaviour change and fast reporting. Shaming discourages reporting; ignoring the result wastes the lesson. Coaching plus tracked trends gives the board meaningful evidence."
+        },
+        {
+          "type": "example",
+          "title": "Real case: APRA's 2025 letter on authentication controls",
+          "body": "In **June 2025** APRA wrote to the board chairs of all superannuation trustees after **credential stuffing attacks**, where criminals reused leaked passwords against member accounts.\n\nAPRA reminded them that CPS 234 requires controls to match the threats and the sensitivity of the assets, and said it saw persistent weaknesses in authentication. It required each trustee to:\n\n- carry out a **self-assessment** of its security controls, especially authentication;\n- at a minimum, expect **multi-factor authentication or an equivalent** for high-risk activities and for all administrative or privileged access;\n- where controls were deficient, send APRA a **material control weakness notification** or explain why the gap was not material;\n- name its **Accountable Person(s)** under the Financial Accountability Regime responsible for CPS 234 compliance.\n\nThe letter was for superannuation, but the logic applies to banks: stolen passwords are a people problem *and* a control problem, and APRA links both to board accountability."
+        },
+        {
+          "type": "example",
+          "title": "Real case: RI Advice and the brute force attack",
+          "body": "In the **RI Advice** case decided by the Federal Court in **2022**, one incident involved an attacker using a **brute force attack** to gain access to an authorised representative's file server. The intruder remained undetected for about four months, potentially exposing sensitive information of several thousand clients and others.\n\nBrute force attacks succeed against weak or reused passwords and accounts without lockout or multi-factor protection. That links technical controls to everyday habits taught in awareness training:\n\n- use long, unique passphrases and a password manager the bank approves;\n- never share or reuse work credentials;\n- report unexpected lockouts or login prompts you did not trigger.\n\nThe court ordered RI Advice to engage a cybersecurity expert to identify any further measures needed across its representative network."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "CPG 234 is APRA guidance; it describes an awareness program for staff, contractors and third parties.",
+            "Sound practice tracks training and tests understanding at commencement and periodically.",
+            "Typical topics include phishing, social engineering, tailgating, passwords, mobile and remote work, and reporting.",
+            "Never share a one-time code; verify any unexpected request through a channel you already know.",
+            "Phishing test results and awareness coverage are examples of what a board could receive."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which pretext would most likely fool you or your team: IT support, a senior executive, a supplier or a regulator? What one check would stop it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-is-s3-q1",
+          "question": "What is CPG 234?",
+          "options": [
+            "APRA's practice guide explaining sound practice for meeting CPS 234",
+            "A section of the Privacy Act 1988",
+            "An ASIC regulatory guide for financial advisers",
+            "A binding standard that replaced CPS 234 for banks when CPS 230 took effect in 2025"
+          ],
+          "answer": 0,
+          "explanation": "CPG 234 is APRA's prudential practice guide supporting CPS 234. It does not replace it and is not part of the Privacy Act or ASIC's guidance.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s3-q2",
+          "question": "According to CPG 234, who would typically receive information security awareness training?",
+          "options": [
+            "Only permanent staff in technology roles, because other staff are covered by the bank's code of conduct",
+            "Only customers using internet banking",
+            "Only staff who handle card data",
+            "Staff, contractors and third parties, with material for the board and governing bodies"
+          ],
+          "answer": 3,
+          "explanation": "CPG 234 describes communicating security expectations to staff, contractors and third parties, and providing material to help the board and other governing bodies carry out their duties.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s3-q3",
+          "question": "When does CPG 234 describe testing staff understanding of security policies as sound practice?",
+          "options": [
+            "Only after a security incident",
+            "On commencement and periodically after that",
+            "Only every five years",
+            "Only when staff change roles"
+          ],
+          "answer": 1,
+          "explanation": "The guide describes tracking training and testing understanding both on commencement and periodically.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s3-q4",
+          "question": "A caller claiming to be from the bank's IT team asks an agent for the code shown in her authenticator app. What is the best response?",
+          "options": [
+            "Give the code if the caller can correctly name the agent's manager and the internal ticketing system",
+            "Give only half of the code to test the caller",
+            "Refuse, end the call and report it, then verify through a known internal number",
+            "Ask the caller to email the request first, then comply"
+          ],
+          "answer": 2,
+          "explanation": "Legitimate teams never need a one-time code. A request by email can also be spoofed. Refusing, reporting and verifying through a known channel defeats the pretext.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s3-q5",
+          "question": "Which attack relies on people reusing passwords leaked from another service?",
+          "options": [
+            "Credential stuffing",
+            "Tailgating",
+            "MFA fatigue",
+            "Vishing"
+          ],
+          "answer": 0,
+          "explanation": "Credential stuffing tries leaked username and password pairs against other services. APRA's 2025 letter to superannuation trustees followed such attacks.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s3-q6",
+          "question": "In its June 2025 letter after credential stuffing attacks, what did APRA say it expected at a minimum?",
+          "options": [
+            "Passwords changed every thirty days for all members, with security questions added at every login",
+            "All online services to be closed until audited",
+            "Security questions instead of passwords for members",
+            "MFA or equivalent for high-risk activities and for all administrative or privileged access"
+          ],
+          "answer": 3,
+          "explanation": "APRA expected MFA or equivalent controls for high-risk activities and all administrative or privileged access, and required a self-assessment and, where deficient, a material control weakness notification or a rationale.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s3-q7",
+          "question": "Which metric does CPG 234 give as an example of information a board could receive about the human layer of security?",
+          "options": [
+            "The number of emails each employee sends",
+            "The share of staff responding to phishing tests",
+            "Staff satisfaction scores for the e-learning platform and its course catalogue",
+            "The cost of each e-learning licence"
+          ],
+          "answer": 1,
+          "explanation": "Attachment H of CPG 234 lists examples such as awareness exercise coverage and the percentage of staff responding to phishing tests.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s3-q8",
+          "question": "A visitor without a pass follows an employee through a secure door. What is this called, and what should the employee do?",
+          "options": [
+            "Smishing; report it to the privacy officer",
+            "Vishing; let them through if they look busy and appear to know the names of people on the floor",
+            "Tailgating; politely stop the person and direct them to reception or security",
+            "Credential stuffing; change their own password"
+          ],
+          "answer": 2,
+          "explanation": "Tailgating is following someone through a controlled entry. CPG 234 lists it among common attack techniques; the employee should not allow entry and should involve security.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s3-q9",
+          "question": "Why is quick reporting of a phishing email valuable even if you did not click?",
+          "options": [
+            "It automatically creates an APRA incident notification that must be lodged within 72 hours",
+            "Security can block the sender and warn others before someone else falls for it",
+            "It counts towards the employee's annual bonus",
+            "It removes the need for email filtering"
+          ],
+          "answer": 1,
+          "explanation": "Early reports let the security team act across the bank. Not every phishing email is an APRA-notifiable incident.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s3-q10",
+          "question": "An executive gets an email from what looks like the chief executive's personal address asking for an urgent supplier payment. Which attack type is most likely?",
+          "options": [
+            "Tailgating",
+            "Credential stuffing",
+            "MFA fatigue",
+            "Business email compromise"
+          ],
+          "answer": 3,
+          "explanation": "A spoofed or hijacked email used to redirect a payment is business email compromise. The fix is to verify through a known channel before paying.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Privacy Act 1988: APP 11 security and the Notifiable Data Breaches scheme",
+      "stage": "The Privacy Vault",
+      "summary": "Apply APP 11's duty to protect and dispose of personal information, then walk through Part IIIC: what an eligible data breach is, how to judge serious harm, the 30-day assessment and notice to the Commissioner and customers.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the duties in APP 11.1, 11.2 and 11.3",
+        "Decide whether an incident is an eligible data breach, including remedial action",
+        "Describe the assessment and notification steps in Part IIIC",
+        "Coordinate Privacy Act and CPS 234 duties for the same incident"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: the privacy vault",
+          "setting": "Privacy office, Wattle Coast Bank, Brisbane. Tuesday, 10:00 am.",
+          "lines": [
+            {
+              "who": "amara",
+              "text": "A branch officer emailed a spreadsheet of 2,300 home loan customers, with incomes and tax file numbers, to the wrong external address.",
+              "mood": "worried"
+            },
+            {
+              "who": "callum",
+              "text": "Is that a cyber incident? Nobody hacked anything.",
+              "mood": "thinking"
+            },
+            {
+              "who": "amara",
+              "text": "Under the Privacy Act it doesn't matter how it happened. It's an unauthorised disclosure of personal information. The question is whether serious harm is likely.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "And from the CPS 234 side, it's a compromise of confidentiality. We assess materiality for APRA in parallel.",
+              "mood": "neutral"
+            },
+            {
+              "who": "amara",
+              "text": "The recipient hasn't replied yet. If we get the file deleted fast, that changes the analysis. Let's walk through it properly.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Privacy Act 1988: APP 11 and the NDB scheme",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The law",
+              "narration": "The Privacy Act 1988 contains the Australian Privacy Principles. Banks, as organisations covered by the Act, must follow them. The Office of the Australian Information Commissioner, the OAIC, regulates it."
+            },
+            {
+              "icon": "🔒",
+              "heading": "APP 11.1",
+              "narration": "If you hold personal information, you must take reasonable steps to protect it from misuse, interference and loss, and from unauthorised access, modification or disclosure."
+            },
+            {
+              "icon": "🗑️",
+              "heading": "APP 11.2",
+              "narration": "When you no longer need it for a permitted purpose, and no law or court order requires you to keep it, you must take reasonable steps to destroy or de-identify it."
+            },
+            {
+              "icon": "⚙️",
+              "heading": "APP 11.3",
+              "narration": "The Act now makes clear that reasonable steps include technical and organisational measures. Training staff is a classic organisational measure."
+            },
+            {
+              "icon": "🚨",
+              "heading": "Part IIIC",
+              "narration": "Part IIIC of the Act sets up the Notifiable Data Breaches scheme: eligible data breaches must be notified to the Commissioner and to affected individuals."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Is it an eligible data breach?",
+          "caption": "Based on sections 26WE and 26WF of the Privacy Act 1988 (Part IIIC).",
+          "items": [
+            {
+              "label": "Personal information held",
+              "detail": "The bank holds personal information it must protect under APP 11."
+            },
+            {
+              "label": "Unauthorised access, disclosure or loss",
+              "detail": "Someone got it, it was sent out, or it was lost where that could happen."
+            },
+            {
+              "label": "Serious harm likely?",
+              "detail": "Would a reasonable person conclude serious harm is likely for any individual?"
+            },
+            {
+              "label": "Remedial action?",
+              "detail": "If quick action means serious harm is no longer likely, it is not an eligible breach."
+            },
+            {
+              "label": "Eligible data breach",
+              "detail": "Notify the Commissioner and affected individuals as soon as practicable."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which situation can be an eligible data breach under the Privacy Act?",
+          "options": [
+            "Only a breach caused by an external hacker",
+            "Unauthorised access, disclosure or loss of personal information where serious harm is likely",
+            "Any system outage that delays payments",
+            "A customer complaint about marketing emails"
+          ],
+          "answer": 1,
+          "explanation": "Part IIIC turns on unauthorised access, disclosure or loss of personal information that is likely to result in serious harm. Human error counts just as much as hacking."
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "From suspicion to notification",
+          "caption": "Sections 26WH, 26WK and 26WL. The 30 days is an outer limit for the assessment, not a target.",
+          "items": [
+            {
+              "label": "Suspicion",
+              "value": "Day 0",
+              "detail": "Reasonable grounds to suspect a breach: start a reasonable, fast assessment."
+            },
+            {
+              "label": "Assessment",
+              "value": "Within 30 days",
+              "detail": "Take all reasonable steps to finish the assessment within 30 days of becoming aware."
+            },
+            {
+              "label": "Belief",
+              "value": "As soon as practicable",
+              "detail": "Reasonable grounds to believe: prepare a statement and give it to the Commissioner."
+            },
+            {
+              "label": "Individuals told",
+              "value": "As soon as practicable",
+              "detail": "Notify all affected or all at-risk individuals; if neither is practicable, publish and publicise."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Judging 'serious harm'",
+          "body": "The Act lists matters to weigh when deciding whether a reasonable person would conclude serious harm is likely (section 26WG). In your own assessment, ask:\n\n- **What kind of information** is it, and how **sensitive**? Tax file numbers, identity documents, account details and health data weigh heavily.\n- Was it **protected** by security measures, such as strong encryption, and how likely is it that someone could get around them (for example, was the key also exposed)?\n- **Who** has, or could get, the information? A trusted bank partner is different from a criminal forum.\n- What is the **nature of the harm**? Think identity theft, financial loss, threats to safety, humiliation or damage to reputation.\n- Any **other relevant matters**.\n\n**Remedial action counts.** If the bank acts before harm occurs and, as a result, a reasonable person would conclude serious harm is no longer likely, the breach is treated as never having been eligible (section 26WF). That is why fast reporting by staff matters so much."
+        },
+        {
+          "type": "match",
+          "title": "Who, what, when?",
+          "prompt": "Match each step of the NDB scheme to what it involves.",
+          "pairs": [
+            {
+              "left": "Suspected breach",
+              "right": "Run a reasonable and fast assessment, using all reasonable steps to finish within 30 days"
+            },
+            {
+              "left": "Statement to the Commissioner",
+              "right": "Identity and contact details, a description of the breach, the kinds of information, recommended steps"
+            },
+            {
+              "left": "Notifying individuals",
+              "right": "All affected individuals, or all at risk; otherwise publish the statement and publicise it"
+            },
+            {
+              "left": "Remedial action",
+              "right": "Fast action that means serious harm is no longer likely, so no notification is needed"
+            },
+            {
+              "left": "Overseas recipient",
+              "right": "Information the bank sent overseas under APP 8 can still count as held by the bank for the scheme"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The reply from the wrong inbox",
+          "setting": "Privacy office, Brisbane. Tuesday, 3:30 pm.",
+          "lines": [
+            {
+              "who": "amara",
+              "text": "The wrong recipient is a small accounting firm. They've confirmed in writing that they deleted the email and the file, and didn't open the attachment.",
+              "mood": "thinking"
+            },
+            {
+              "who": "callum",
+              "text": "So we're done?",
+              "mood": "happy"
+            },
+            {
+              "who": "amara",
+              "text": "Not quite. We document the assessment, check their deletion confirmation is credible, and decide whether serious harm is still likely. And we fix why it happened.",
+              "mood": "neutral"
+            },
+            {
+              "who": "mei",
+              "text": "A different case would play out very differently. Imagine the same file on a criminal forum.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The leaked file on a forum",
+          "situation": "Monitoring finds that a file with names, dates of birth, driver licence numbers and account numbers of 9,000 Wattle Coast customers has been posted on a criminal forum. It came from a marketing supplier the bank shared data with. The supplier says it is 'still investigating' and asks the bank to say nothing for a month.",
+          "choices": [
+            {
+              "text": "Agree to wait a month so the supplier can complete its investigation.",
+              "outcome": "The bank already has reasonable grounds to believe an eligible breach has happened: sensitive identity data is in criminal hands. Waiting a month would breach the 'as soon as practicable' duty and leave customers unprotected.",
+              "score": 0
+            },
+            {
+              "text": "Treat it as an eligible data breach: prepare the statement for the Commissioner, notify affected customers with practical steps, assess CPS 234 materiality for APRA, and manage the supplier.",
+              "outcome": "Correct. Serious harm is likely, remedial action cannot pull the data back, and both regimes apply. Customers get advice such as replacing licences and watching accounts; APRA is told within 72 hours if material.",
+              "score": 2
+            },
+            {
+              "text": "Notify the Commissioner but not customers, to avoid panic.",
+              "outcome": "The Act requires notifying the contents of the statement to individuals (or publishing it if that is not practicable). Customers need to know so they can protect themselves.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Eligible breach or not (on these facts)?",
+          "prompt": "Decide which outcome is more likely on the facts given.",
+          "buckets": [
+            "Likely eligible: notify",
+            "Likely not eligible"
+          ],
+          "items": [
+            {
+              "text": "Unencrypted laptop with customer tax file numbers stolen from a car",
+              "bucket": 0
+            },
+            {
+              "text": "Encrypted backup tape lost; key stored separately and not exposed",
+              "bucket": 1
+            },
+            {
+              "text": "Statement sent to wrong customer, who confirms deletion unopened within an hour",
+              "bucket": 1
+            },
+            {
+              "text": "Attacker downloads identity documents from a cloud bucket left public",
+              "bucket": 0
+            },
+            {
+              "text": "Customer database listed for sale on a criminal forum",
+              "bucket": 0
+            },
+            {
+              "text": "Staff member views a colleague's account out of curiosity; no further disclosure and access is cut off fast",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under section 26WH, how long does a bank have to complete its assessment of a suspected eligible data breach?",
+          "options": [
+            "72 hours",
+            "It must take all reasonable steps to complete it within 30 days",
+            "10 business days",
+            "There is no time limit"
+          ],
+          "answer": 1,
+          "explanation": "The assessment must be reasonable and expeditious, and the entity must take all reasonable steps to complete it within 30 days of becoming aware of the grounds for suspicion. 72 hours is the CPS 234 APRA clock."
+        },
+        {
+          "type": "flip",
+          "title": "Two regimes, one incident",
+          "cards": [
+            {
+              "front": "Who regulates APP 11 and the NDB scheme?",
+              "back": "The Office of the Australian Information Commissioner (OAIC)."
+            },
+            {
+              "front": "Who receives CPS 234 incident notices?",
+              "back": "APRA, within 72 hours of the bank becoming aware of a material incident."
+            },
+            {
+              "front": "Does notifying the OAIC affect the CPS 234 duty?",
+              "back": "Yes. An incident notified to another regulator is one of the triggers for notifying APRA."
+            },
+            {
+              "front": "Does a breach need a hacker?",
+              "back": "No. Misdirected emails, lost files and staff snooping can all be breaches."
+            },
+            {
+              "front": "What should a staff member do first?",
+              "back": "Report the suspected breach immediately through the bank's channel, so assessment and remedial action can start."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: FIIG Securities notifies 18,000 clients",
+          "body": "In the **FIIG Securities** matter, about 385 gigabytes of confidential information were stolen in a **2023** cyber-attack and highly sensitive client data, including driver licences, passport details, bank account details and tax file numbers, was later leaked on the dark web. FIIG **notified some 18,000 clients** that their personal information may have been compromised.\n\nIn the case ASIC brought, the Federal Court ordered FIIG in **2026** to pay a **AUD 2.5 million** penalty. FIIG admitted that complying with its own policies and procedures could have supported earlier detection and prevented some or all of the client information from being downloaded.\n\n**Lessons for APP 11 and the NDB scheme:**\n\n- the kinds of data held (identity documents, tax file numbers) made serious harm far more likely once stolen;\n- detection speed decides how much leaves the building;\n- policies only protect customers when people follow them."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "APP 11.1 requires reasonable steps, including technical and organisational measures, to protect personal information.",
+            "APP 11.2 requires destroying or de-identifying information no longer needed, unless the law requires keeping it.",
+            "An eligible data breach is unauthorised access, disclosure or loss that is likely to cause serious harm.",
+            "Suspected breaches need a fast assessment, with all reasonable steps to finish within 30 days.",
+            "Eligible breaches go to the Commissioner and affected individuals as soon as practicable; consider APRA's 72-hour rule too."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Where in your daily work could personal information be sent, left or shown to the wrong person? What habit would prevent it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-is-s4-q1",
+          "question": "What does APP 11.1 of the Privacy Act 1988 require of a bank that holds personal information?",
+          "options": [
+            "Encryption of all data using an algorithm approved by APRA",
+            "Storage of all personal information only within Australia, on systems inspected and certified each year by the OAIC",
+            "Reasonable steps to protect it from misuse, interference, loss and unauthorised access, modification or disclosure",
+            "Deletion of all customer data after seven years"
+          ],
+          "answer": 2,
+          "explanation": "APP 11.1 sets a reasonable-steps duty to protect against misuse, interference, loss and unauthorised access, modification or disclosure. It does not prescribe a specific algorithm, location or retention period.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s4-q2",
+          "question": "What does APP 11.3 clarify about the 'reasonable steps' in APP 11?",
+          "options": [
+            "They are limited to physical locks and alarms",
+            "They include technical and organisational measures",
+            "They are set out in a fixed list of controls made by APRA under CPS 234",
+            "They apply only to sensitive information"
+          ],
+          "answer": 1,
+          "explanation": "APP 11.3 states that reasonable steps include technical and organisational measures. Staff training and access controls are typical examples.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s4-q3",
+          "question": "A bank no longer needs a former applicant's documents for any permitted purpose, and no law or court order requires it to keep them. What does APP 11.2 require?",
+          "options": [
+            "Reasonable steps to destroy or de-identify the information",
+            "Keeping it indefinitely in case the person reapplies, provided it is stored securely",
+            "Sending it back to the person by registered post",
+            "Transferring it to the OAIC for archiving"
+          ],
+          "answer": 0,
+          "explanation": "APP 11.2 requires reasonable steps to destroy or de-identify personal information no longer needed, subject to legal retention duties.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s4-q4",
+          "question": "An employee emails a customer list to the wrong external address. Which statement is correct under Part IIIC?",
+          "options": [
+            "It cannot be a breach because it was an honest mistake",
+            "It is only a breach if the recipient is overseas",
+            "It is automatically notifiable to the Commissioner and every affected customer, regardless of the likelihood of harm",
+            "It can be an eligible data breach if serious harm is likely, even though no one hacked anything"
+          ],
+          "answer": 3,
+          "explanation": "Unauthorised disclosure through human error is covered. Whether it is eligible depends on whether a reasonable person would conclude serious harm is likely, after any remedial action.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s4-q5",
+          "question": "Which is NOT a matter section 26WG lists for judging whether serious harm is likely?",
+          "options": [
+            "The bank's share price after the breach",
+            "The sensitivity of the information",
+            "Whether security measures protected it and could be overcome",
+            "Who has obtained or could obtain the information"
+          ],
+          "answer": 0,
+          "explanation": "Section 26WG lists the kinds and sensitivity of information, security measures and their likelihood of being overcome, the persons who may obtain it, the nature of the harm and other relevant matters. Share price is irrelevant.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s4-q6",
+          "question": "A lost backup tape is strongly encrypted and the key was stored separately and not exposed. How does this affect the serious harm assessment?",
+          "options": [
+            "It reduces the likelihood of serious harm, because the security measure is unlikely to be overcome",
+            "It has no effect, because every loss of a device or tape holding personal information is notifiable regardless of protection",
+            "It makes the breach notifiable to APRA only",
+            "It means the Privacy Act does not apply to the tape"
+          ],
+          "answer": 0,
+          "explanation": "Section 26WG asks whether security measures protected the data and how likely they are to be overcome, noting an encryption key as information needed to get around encryption.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s4-q7",
+          "question": "A bank suspects, but is not yet sure, that an eligible data breach has occurred. What must it do?",
+          "options": [
+            "Notify all customers immediately to be safe",
+            "Wait until the breach is confirmed by police",
+            "Carry out a reasonable and fast assessment, taking all reasonable steps to finish within 30 days",
+            "Notify the Commissioner within 72 hours and all customers within 30 days, even before the assessment is finished"
+          ],
+          "answer": 2,
+          "explanation": "Section 26WH requires a reasonable and expeditious assessment, with all reasonable steps taken to complete it within 30 days. Notification follows once there are reasonable grounds to believe.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s4-q8",
+          "question": "What must the statement to the Commissioner set out under section 26WK?",
+          "options": [
+            "The names of the staff responsible for the breach and the disciplinary action the bank has taken against them",
+            "Identity and contact details, a breach description, kinds of information and recommended steps for individuals",
+            "An estimate of the bank's financial loss",
+            "The bank's proposed compensation offer"
+          ],
+          "answer": 1,
+          "explanation": "Section 26WK lists the entity's identity and contact details, a description of the breach, the kinds of information concerned and recommendations about steps individuals should take.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s4-q9",
+          "question": "It is not practicable to contact affected customers or the at-risk group individually. What does section 26WL require instead?",
+          "options": [
+            "Nothing further once the Commissioner is told",
+            "Ask APRA to contact the customers",
+            "Wait until up-to-date contact details can be found for every affected customer, however long that takes",
+            "Publish the statement on the bank's website and take reasonable steps to publicise it"
+          ],
+          "answer": 3,
+          "explanation": "Where neither individual notification option is practicable, the entity must publish the statement on its website (if any) and take reasonable steps to publicise its contents.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s4-q10",
+          "question": "A bank notifies the OAIC of an eligible data breach caused by a cyber-attack. Why must it also consider CPS 234?",
+          "options": [
+            "The OAIC forwards every notice to APRA automatically",
+            "CPS 234 replaces Part IIIC for APRA-regulated banks, so the OAIC notice was not actually required",
+            "An incident notified to another regulator triggers APRA notice within 72 hours",
+            "APRA must approve the statement before it is sent"
+          ],
+          "answer": 2,
+          "explanation": "CPS 234 requires notice to APRA for an incident notified to other regulators, as well as for material incidents. Neither regime replaces the other.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "CPS 230 resilience, service providers and assessment readiness",
+      "stage": "The Unbroken Line",
+      "summary": "Learn CPS 230: critical operations, tolerance levels, the BCP and its testing, material service providers and APRA notices. Then pull everything together with board accountability and the evidence an audit expects.",
+      "minutes": 60,
+      "objectives": [
+        "Identify critical operations and the three dimensions of tolerance levels",
+        "Describe the BCP contents and testing duties under CPS 230",
+        "Apply CPS 230's material service provider requirements and notices",
+        "Summarise board accountability and the evidence a bank needs for review"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the unbroken line",
+          "setting": "Crisis room, Wattle Coast Bank, Brisbane. Saturday, 7:10 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "A failed update at the bank's core technology provider has knocked out card payments and internet banking across the country.",
+              "mood": "worried"
+            },
+            {
+              "who": "callum",
+              "text": "Payments down for 90 minutes so far. Our board-approved tolerance for payments is four hours. Customer calls are tripling.",
+              "mood": "worried"
+            },
+            {
+              "who": "raj",
+              "text": "(from Perth) The queue is at 600. People can't buy groceries. We need a script, now.",
+              "mood": "worried"
+            },
+            {
+              "who": "sofia",
+              "text": "This is exactly what CPS 230 asks of us: keep critical operations within tolerance through a severe disruption. Where's the BCP?",
+              "mood": "thinking"
+            },
+            {
+              "who": "mei",
+              "text": "And we check it isn't also a security incident. A failed update and an attack can look the same in the first hour.",
+              "mood": "neutral"
+            },
+            {
+              "who": "callum",
+              "text": "BCP activated at 6:55. Let's show the board the plan works. Final stage: resilience, and everything you need for the exam.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "CPS 230 Operational Risk Management",
+          "scenes": [
+            {
+              "icon": "📅",
+              "heading": "New since 2025",
+              "narration": "APRA's CPS 230 took effect on 1 July 2025, replacing the older standards on outsourcing and business continuity. A version with targeted amendments has applied since 1 July 2026."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Full range of risks",
+              "narration": "Banks must manage all their operational risks, including legal, compliance, conduct, technology, data and change management risk, and meet CPS 234 for information security."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Critical operations",
+              "narration": "A bank keeps a register of critical operations. For a deposit-taker, payments, deposit-taking and management, custody, settlements and clearing, and customer enquiries are critical unless it can justify otherwise."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Tolerance levels",
+              "narration": "For each critical operation the bank sets how long a disruption it would tolerate, how much data loss it would accept, and the minimum service it would keep running."
+            },
+            {
+              "icon": "🔗",
+              "heading": "Service providers",
+              "narration": "Banks manage material service providers through a policy, a register, due diligence, formal agreements and monitoring, including risks from fourth parties."
+            },
+            {
+              "icon": "👔",
+              "heading": "Board accountable",
+              "narration": "The board is ultimately accountable for oversight of operational risk. It approves the business continuity plan and tolerance levels, and the service provider policy."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Reading a disruption against tolerance",
+          "caption": "A teaching grid for the duties in CPS 230; your bank's BCP sets the actual triggers.",
+          "axes": {
+            "x": "Duration and impact",
+            "y": "Importance of the operation"
+          },
+          "items": [
+            {
+              "label": "Inside tolerance, contained",
+              "detail": "Run the BCP, monitor, communicate with customers."
+            },
+            {
+              "label": "Inside tolerance, worsening",
+              "detail": "Prepare escalation; brief executives; ready APRA notice if it may breach."
+            },
+            {
+              "label": "Minor operation, short outage",
+              "detail": "Normal incident management; record and learn."
+            },
+            {
+              "label": "Outside tolerance",
+              "detail": "Notify APRA within 24 hours; report to the board with a remediation plan."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under CPS 230, which set must a bank define for each critical operation?",
+          "options": [
+            "A marketing plan, a budget and a headcount",
+            "Maximum disruption time, maximum data loss and minimum service levels",
+            "A list of competitors offering the same service"
+          ],
+          "answer": 1,
+          "explanation": "Tolerance levels cover the maximum tolerable disruption period, the maximum acceptable data loss and minimum service levels while operating under alternative arrangements."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "APRA notification clocks across CPS 234 and CPS 230",
+          "caption": "Every clock says 'as soon as possible' first. A CPS 234 notice need not be repeated under CPS 230's incident rule.",
+          "headers": [
+            "Outer limit",
+            "Trigger"
+          ],
+          "items": [
+            {
+              "label": "Material security incident (CPS 234)",
+              "left": "No later than 72 hours",
+              "right": "After becoming aware"
+            },
+            {
+              "label": "Material security control weakness (CPS 234)",
+              "left": "No later than 10 business days",
+              "right": "Bank expects it cannot remediate in time"
+            },
+            {
+              "label": "Material operational risk incident (CPS 230)",
+              "left": "No later than 72 hours",
+              "right": "Likely material financial impact or threat to critical operations"
+            },
+            {
+              "label": "Critical operation disrupted outside tolerance (CPS 230)",
+              "left": "No later than 24 hours",
+              "right": "Disruption beyond the board-approved tolerance"
+            },
+            {
+              "label": "New or changed arrangement for a critical operation (CPS 230)",
+              "left": "No later than 20 business days",
+              "right": "After entering into or materially changing it"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "The business continuity plan, unpacked",
+          "body": "CPS 230 asks for a **credible BCP** showing how critical operations stay within tolerance through disruptions. It must contain:\n\n- the **register of critical operations** and their tolerance levels;\n- **triggers** that identify a disruption and activate the plan, and arrangements to direct resources;\n- the **actions** that keep critical operations within tolerance;\n- an assessment of **execution risks, resources and dependencies**, internal and external;\n- a **communications strategy**.\n\nThe bank must keep the people, resources and technology to execute it, and report any failure to meet tolerance to the board with a remediation plan.\n\n**Testing:** a systematic program covering all critical operations, including an **annual business continuity exercise** using severe but plausible scenarios, including the failure of a material service provider. The BCP is updated annually as needed, and **internal audit** periodically gives the board assurance that it is credible."
+        },
+        {
+          "type": "match",
+          "title": "Material service providers",
+          "prompt": "Match each CPS 230 duty to what it means in practice.",
+          "pairs": [
+            {
+              "left": "Register",
+              "right": "Keep a register of material service providers and submit it to APRA every year"
+            },
+            {
+              "left": "Minimum list for a bank",
+              "right": "Credit assessment, funding and liquidity management, and mortgage brokerage providers"
+            },
+            {
+              "left": "Minimum list for all",
+              "right": "Risk management, core technology services and internal audit providers"
+            },
+            {
+              "left": "Before signing",
+              "right": "Due diligence and an assessment of financial and non-financial risks, including concentration"
+            },
+            {
+              "left": "Formal agreement",
+              "right": "Service levels, data ownership, audit access, APRA access, sub-contracting notice, termination"
+            },
+            {
+              "left": "Offshoring",
+              "right": "Tell APRA before entering a material arrangement where the service is performed outside Australia"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The board's question",
+          "setting": "Board risk committee, Brisbane. Monday, 9:00 am.",
+          "lines": [
+            {
+              "who": "sofia",
+              "text": "Payments came back in two hours and forty minutes. Inside tolerance. Well done. But I have a question for the room.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sofia",
+              "text": "The provider's failed update came from one of its own sub-contractors. Did we know that sub-contractor existed?",
+              "mood": "thinking"
+            },
+            {
+              "who": "callum",
+              "text": "Not until Saturday.",
+              "mood": "worried"
+            },
+            {
+              "who": "mei",
+              "text": "Then our fourth-party view has a gap. CPS 230 wants our policy to cover fourth parties that material providers rely on for critical operations.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sofia",
+              "text": "As directors we're accountable for oversight of this. What do we do next?",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the fourth-party blind spot",
+          "situation": "After a disruption caused by a sub-contractor of the bank's core technology provider, the board learns the bank had no record of that sub-contractor. Payments stayed within tolerance this time. Management proposes three options.",
+          "choices": [
+            {
+              "text": "Close the matter: tolerance was met, so there is no breach and no action needed.",
+              "outcome": "Meeting tolerance once does not show the arrangement is well managed. CPS 230 expects the policy to address fourth-party risk and the contract to require notice of material sub-contracting.",
+              "score": 0
+            },
+            {
+              "text": "Update the service provider policy and register for fourth parties, require sub-contracting notice in the contract, include provider failure in the next BCP exercise and report progress to the board.",
+              "outcome": "This addresses the root cause and matches CPS 230: fourth-party risk in the policy, contract terms on sub-contracting, severe but plausible scenarios including provider failure, and board oversight.",
+              "score": 2
+            },
+            {
+              "text": "Replace the provider immediately with the cheapest alternative.",
+              "outcome": "An unplanned exit adds risk. CPS 230 expects due diligence before entering a new material arrangement and an orderly exit plan, not a rushed switch.",
+              "score": 0
+            },
+            {
+              "text": "Ask the provider for a list of sub-contractors, file it, and take no other action.",
+              "outcome": "A list is a start, but without policy, contract terms, testing and monitoring, the blind spot will come back.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Readiness: the bank's year of assurance",
+          "prompt": "Order these steps of a well-run security and resilience year, starting from setting direction.",
+          "steps": [
+            "Board approves risk appetite, tolerance levels, the BCP and the service provider policy",
+            "Management classifies information assets and maps the resources behind each critical operation",
+            "Controls are implemented and staff complete induction and periodic awareness training",
+            "Independent specialists test controls, and the response plan and BCP are exercised",
+            "Internal audit reviews control effectiveness and the credibility of the BCP",
+            "Results, weaknesses and remediation plans are reported to the board, and APRA is notified where required"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Final boss flashcards",
+          "cards": [
+            {
+              "front": "CPS 234 incident notice",
+              "back": "As soon as possible, no later than 72 hours after becoming aware of a material incident or one notified to other regulators."
+            },
+            {
+              "front": "CPS 234 weakness notice",
+              "back": "As soon as possible, no later than 10 business days for a material weakness the bank cannot fix in time."
+            },
+            {
+              "front": "CPS 230 tolerance breach",
+              "back": "As soon as possible, no later than 24 hours after a disruption to a critical operation outside tolerance."
+            },
+            {
+              "front": "Privacy Act assessment",
+              "back": "Reasonable and fast, with all reasonable steps to finish within 30 days."
+            },
+            {
+              "front": "Annual duties",
+              "back": "Test the security response plan; review the testing program; run a BC exercise; update the BCP; submit the material service provider register."
+            },
+            {
+              "front": "Ultimate responsibility",
+              "back": "The board: for information security (CPS 234) and oversight of operational risk (CPS 230)."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which business operations must a bank treat as critical under CPS 230 unless it can justify otherwise?",
+          "options": [
+            "Marketing, branch design and sponsorship",
+            "Payments, deposit-taking and management, custody, settlements and clearing, and customer enquiries",
+            "Only the operations its board chooses each year",
+            "Only services provided by overseas providers"
+          ],
+          "answer": 1,
+          "explanation": "CPS 230 lists these as minimum critical operations for a deposit-taking institution, together with customer enquiries and the systems and infrastructure that support critical operations."
+        },
+        {
+          "type": "example",
+          "title": "Real case: accountability after the Medibank incident",
+          "body": "When APRA acted against **Medibank** in **June 2023**, it did not stop at controls. It said it expected **appropriate accountability and consequence management**, including impacts on **executive remuneration** where appropriate, and announced a technology review focused on **governance and risk culture**.\n\nAPRA also said it continued to see poor cyber practices and **inadequate oversight from boards and management** across regulated entities, and would act where needed.\n\n**Why it matters for a bank's directors:**\n\n- CPS 234 makes the board ultimately responsible for information security, and CPS 230 makes it ultimately accountable for oversight of operational risk.\n- Boards need meaningful reporting: incidents, test results, control gaps, tolerance breaches and provider performance.\n- APRA can impose capital adjustments, require reviews and expects consequences for executives when controls fail."
+        },
+        {
+          "type": "example",
+          "title": "Real case: what failure cost FIIG",
+          "body": "When the Federal Court ordered **FIIG Securities** to pay **AUD 2.5 million** in **2026**, ASIC noted that the consequences were far larger than the cost of putting adequate controls in place at the start. Beyond the penalty and AUD 500,000 in costs, FIIG had to run a compliance program with an **independent expert** reviewing its cyber security and resilience systems.\n\nAmong the failures FIIG admitted: not allocating enough money for qualified people and technology, no MFA for remote access, no structured patching plan, no monitoring of threat alerts, **no mandatory cyber security awareness training** for staff, and no incident response plan tested at least annually.\n\n**Readiness lesson:** every item on that list maps to something a bank's own program should show at audit: resourcing, controls, testing, training records and tested plans."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "CPS 230 took effect on 1 July 2025 (amended version from 1 July 2026) and covers operational risk, business continuity and service providers.",
+            "Critical operations need tolerance levels for time, data loss and minimum service, approved by the board.",
+            "Notify APRA within 24 hours of a disruption outside tolerance, and within 72 hours of a material operational risk incident.",
+            "Material service providers need due diligence, formal agreements, monitoring, an annual register to APRA and fourth-party oversight.",
+            "Boards are ultimately responsible; training, testing, audit and reporting give them the evidence they need."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which critical operation does your role support, and what would you do in the first hour if it stopped working?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-is-s5-q1",
+          "question": "When did APRA's CPS 230 Operational Risk Management first take effect?",
+          "options": [
+            "1 July 2019",
+            "1 January 2024",
+            "1 July 2025",
+            "31 March 2026"
+          ],
+          "answer": 2,
+          "explanation": "CPS 230 took effect on 1 July 2025, replacing the outsourcing and business continuity standards. A version with targeted amendments has applied since 1 July 2026.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s5-q2",
+          "question": "Under CPS 230, who must approve the business continuity plan and the tolerance levels for critical operations?",
+          "options": [
+            "APRA",
+            "The chief information security officer",
+            "The bank's main service provider",
+            "The board"
+          ],
+          "answer": 3,
+          "explanation": "The board must approve the BCP and tolerance levels, review testing results and oversee the follow-up of findings.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s5-q3",
+          "question": "Payments at a bank have been disrupted for longer than the board-approved tolerance. What does CPS 230 require?",
+          "options": [
+            "Notify APRA within 10 business days",
+            "Notify APRA as soon as possible and within 24 hours, and report the failure to the board with a remediation plan",
+            "Notify APRA only if customers complain",
+            "Wait until service is restored, then include the outage in the annual report to APRA and to the board"
+          ],
+          "answer": 1,
+          "explanation": "A disruption to a critical operation outside tolerance must be notified within 24 hours. Failures to meet tolerance are also reported to the board with a remediation plan.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s5-q4",
+          "question": "A bank's BCP testing program must include which of the following under CPS 230?",
+          "options": [
+            "A full shutdown of all systems every quarter",
+            "A test only after an actual disruption",
+            "An annual business continuity exercise using severe but plausible scenarios",
+            "An exercise designed and run by APRA each year, with the bank observing and recording the results"
+          ],
+          "answer": 2,
+          "explanation": "The program must cover all critical operations and include an annual business continuity exercise with severe but plausible scenarios, including provider disruption. APRA may require its own scenario but does not run every exercise.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s5-q5",
+          "question": "Which provider must a bank treat as a material service provider under CPS 230, unless it can justify otherwise?",
+          "options": [
+            "A provider of core technology services",
+            "The bank's office cleaning contractor",
+            "A stationery supplier",
+            "A staff canteen operator"
+          ],
+          "answer": 0,
+          "explanation": "CPS 230's minimum list for all entities includes risk management, core technology services and internal audit; for a bank it adds credit assessment, funding and liquidity management, and mortgage brokerage.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-is-s5-q6",
+          "question": "A bank enters a new agreement with a provider it relies on for a critical operation. When must it notify APRA?",
+          "options": [
+            "Within 24 hours of signing",
+            "Only in the annual register",
+            "Only if the provider is overseas; domestic providers are reported in the annual register instead",
+            "As soon as possible and no later than 20 business days after entering into it"
+          ],
+          "answer": 3,
+          "explanation": "CPS 230 requires notice no later than 20 business days after entering into or materially changing such an agreement. Material offshoring needs notice beforehand.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s5-q7",
+          "question": "What must a bank do before entering a material offshoring arrangement under CPS 230?",
+          "options": [
+            "Notify APRA before entering into it",
+            "Obtain the OAIC's approval",
+            "Nothing, if the provider is incorporated in Australia but works offshore",
+            "Move all staff offshore with the service"
+          ],
+          "answer": 0,
+          "explanation": "APRA must be notified before a material offshoring arrangement. CPS 230 says offshoring includes an Australian-incorporated provider performing the service outside Australia.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s5-q8",
+          "question": "A cyber-attack is notified to APRA under CPS 234. It also has a material impact on a critical operation. Must the bank send a separate CPS 230 incident notice?",
+          "options": [
+            "Yes, every incident needs separate CPS 234 and CPS 230 notices, each with its own investigation report attached to it",
+            "No, a CPS 234 notice need not be repeated under CPS 230's incident rule, though other CPS 230 duties still apply",
+            "No, because CPS 230 does not cover technology risk",
+            "Yes, but only after 30 days"
+          ],
+          "answer": 1,
+          "explanation": "CPS 230 says an information security incident reported under CPS 234 need not be reported again under its incident notification rule. A tolerance breach and board reporting duties can still apply.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-is-s5-q9",
+          "question": "What does CPS 230 require the bank's service provider management policy to address, in addition to direct providers?",
+          "options": [
+            "Risks from fourth parties that material providers rely on for a critical operation",
+            "Personal finances of the provider's staff",
+            "The provider's marketing strategy and its plans to sell similar services to other banks in Australia",
+            "The provider's competitors' pricing"
+          ],
+          "answer": 0,
+          "explanation": "The policy must cover entering, monitoring, substituting and exiting material arrangements, managing their risks, and managing risks from fourth parties relied on for critical operations.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-is-s5-q10",
+          "question": "After the Medibank incident, what did APRA say it expected regarding accountability?",
+          "options": [
+            "Automatic removal of all directors",
+            "No action against individuals, since APRA said accountability sits with the entity and never with its executives",
+            "Accountability and consequence management, including executive remuneration impacts where appropriate",
+            "Compensation paid by APRA to customers"
+          ],
+          "answer": 2,
+          "explanation": "APRA said it expected appropriate accountability and consequence management, including impacts on executive pay where appropriate, plus a review of governance and risk culture.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "au",
+    "programs": [
+      71,
+      77,
+      66,
+      84,
+      90,
+      112,
+      114,
+      83,
+      85
+    ],
+    "classification": "competence",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "Australian Prudential Regulation Authority (APRA)",
+      "Office of the Australian Information Commissioner (OAIC)",
+      "Australian Securities and Investments Commission (ASIC)"
+    ],
+    "references": [
+      {
+        "title": "CPS 234 Information Security",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/standards/cps-234",
+        "provision": "Board responsibility, roles, capability, policy framework, classification, controls, incident management, testing, internal audit and APRA notification",
+        "note": "Board ultimately responsible; capability and controls commensurate with threats; response plans reviewed and tested annually; APRA told of material incidents within 72 hours and of unremediated material weaknesses within 10 business days.",
+        "effective": "2019-07-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CPG 234 Information Security",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/practice-guides/cpg-234",
+        "provision": "Attachment B (training and awareness); Attachments G and H (testing techniques, board reporting)",
+        "note": "Guidance describing an awareness program for staff, contractors and third parties, tracked and tested on commencement and periodically, covering social engineering and incident reporting.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CPS 230 Operational Risk Management",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/standards/cps-230",
+        "provision": "Roles, operational risk incidents, business continuity, critical operations and tolerance levels, service provider management",
+        "note": "Board approves BCP and tolerance levels; APRA told within 72 hours of material operational risk incidents and within 24 hours of a critical operation disrupted outside tolerance; annual BC exercise; material service provider register submitted annually.",
+        "effective": "2025-07-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Final targeted amendments to CPS 230 Operational Risk Management",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/final-targeted-amendments-to-cps-230-operational-risk-management",
+        "note": "Limited exemption from certain agreement requirements for listed non-traditional providers such as central banks and clearing facilities, from 1 July 2026.",
+        "effective": "2026-07-01",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Privacy Act 1988",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2004A03712/latest/text",
+        "provision": "Schedule 1, APP 11.1-11.3",
+        "note": "Reasonable steps, including technical and organisational measures, to protect personal information, and to destroy or de-identify it when no longer needed.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Privacy Act 1988",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2004A03712/latest/text",
+        "provision": "Part IIIC, sections 26WC, 26WE-26WH, 26WK, 26WL",
+        "note": "Eligible data breach, remedial action exception, serious harm factors, assessment of suspected breaches within 30 days, statement to the Commissioner and notice to individuals as soon as practicable.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Chapter 11: APP 11 Security of personal information",
+        "issuer": "OAIC",
+        "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information",
+        "provision": "Privacy Act 1988, Schedule 1, APP 11",
+        "note": "APP 11 requires reasonable steps to protect personal information; the OAIC lists staff training on privacy and security as an expected organisational step."
+      },
+      {
+        "title": "Part 1: Data breaches and the Australian Privacy Act",
+        "issuer": "OAIC",
+        "url": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/preventing-preparing-for-and-responding-to-data-breaches/data-breach-preparation-and-response/part-1-data-breaches-and-the-australian-privacy-act",
+        "note": "Explains the Notifiable Data Breaches scheme: eligible breaches must be assessed and notified to affected individuals and the Commissioner."
+      },
+      {
+        "title": "APRA takes action against Medibank Private in relation to cyber incident",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/news-and-publications/apra-takes-action-against-medibank-private-relation-cyber-incident",
+        "note": "June 2023: AUD 250 million capital adequacy increase until agreed remediation is complete, and a technology review focused on governance and risk culture.",
+        "effective": "2023-06-27",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "For action: Information Security Obligations and Critical Authentication Controls",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/news-and-publications/action-information-security-obligations-and-critical-authentication-controls",
+        "note": "June 2025 letter to superannuation trustees after credential stuffing attacks: self-assessment, MFA or equivalent for high-risk and privileged access, weakness notification or rationale, FAR accountable persons.",
+        "effective": "2025-06-10",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "22-104MR Court finds RI Advice failed to adequately manage cybersecurity risks",
+        "issuer": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2022-releases/22-104mr-court-finds-ri-advice-failed-to-adequately-manage-cybersecurity-risks",
+        "note": "2022 Federal Court finding that an AFS licensee breached its obligations through inadequate cyber risk management; expert engagement and AUD 750,000 costs ordered.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "26-021MR ASIC action sees FIIG Securities ordered to pay $2.5 million over cyber security failures",
+        "issuer": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-021mr-asic-action-sees-fiig-securities-ordered-to-pay-25-million-over-cyber-security-failures",
+        "note": "2026 Federal Court penalty of AUD 2.5 million for cyber security failures, including missing MFA, patching, monitoring, awareness training and an annually tested response plan.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "au-is-x1",
+        "question": "A regional bank's board delegates all cyber decisions to the CIO and asks for no reporting. Which CPS 234 requirement is the board most clearly failing?",
+        "options": [
+          "Its ultimate responsibility for ensuring security matches the threats and supports sound operation",
+          "The duty to notify APRA within 10 business days of every incident, whether material or not, with the board's sign-off",
+          "The rule that only directors may approve firewall changes",
+          "The duty to classify assets by market value"
+        ],
+        "answer": 0,
+        "explanation": "CPS 234 makes the board ultimately responsible for information security. Delegating operations is fine; abandoning oversight is not. The other options misstate the standard.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x2",
+        "question": "A foreign bank operates a branch in Sydney. To which operations do CPS 234's obligations apply?",
+        "options": [
+          "Its worldwide operations, wherever located, because the head office controls the branch",
+          "The Australian branch operations of that foreign ADI",
+          "None, because foreign banks are exempt",
+          "Only systems physically hosted in Australia"
+        ],
+        "answer": 1,
+        "explanation": "CPS 234 states that its obligations on a foreign ADI apply only in relation to its Australian branch operations.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x3",
+        "question": "A bank's spreadsheet of branch staff rosters is widely shared and rarely needed in a hurry. How is it most likely classified under CPS 234?",
+        "options": [
+          "High criticality, because all data is critical",
+          "Outside CPS 234, because it is a spreadsheet",
+          "Low sensitivity and low criticality, so lighter controls are commensurate",
+          "High sensitivity, because any file that contains staff names must be protected at the highest level"
+        ],
+        "answer": 2,
+        "explanation": "Classification reflects the impact of losing availability (criticality) and confidentiality or integrity (sensitivity). A widely shared roster rates low on both, so lighter controls fit. Spreadsheets are information assets.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x4",
+        "question": "Which list best describes the scope of the parties CPS 234's policy framework must give direction to?",
+        "options": [
+          "Only those employed under an Australian employment contract",
+          "The board, senior management and technology staff only, since other people have no security obligations under the standard",
+          "APRA, the OAIC and ASIC",
+          "Board, management, committees, staff, contractors, consultants, related parties, third parties and customers"
+        ],
+        "answer": 3,
+        "explanation": "The standard's note on the policy framework lists governing bodies and individuals with security roles plus all other staff, contractors, consultants, related parties, third parties and customers.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x5",
+        "question": "A bank's security team says, 'We set our controls in 2019 to meet CPS 234, so we're compliant.' Which duty is most at risk?",
+        "options": [
+          "Notifying APRA of material incidents within 72 hours of the board's first briefing on them",
+          "Classifying assets by criticality and sensitivity",
+          "Actively maintaining the capability as vulnerabilities, threats, assets and the business change",
+          "Defining the roles of the board"
+        ],
+        "answer": 2,
+        "explanation": "CPS 234 requires the bank to actively maintain its capability in response to changing vulnerabilities and threats, including changes to assets and the business environment. A 2019 snapshot does not meet that.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x6",
+        "question": "Which of these is an 'information security incident' under CPS 234?",
+        "options": [
+          "A potential compromise, such as malware found on a server before any data is touched",
+          "Only a confirmed theft of customer data",
+          "Only an incident reported in the media",
+          "Only an attack by a foreign state"
+        ],
+        "answer": 0,
+        "explanation": "The standard defines an incident as an actual or potential compromise of information security, so a potential compromise counts. Whether it must be notified is a separate materiality question.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x7",
+        "question": "A bank's critical lending data is processed by a related company in the same group. What does CPS 234 require?",
+        "options": [
+          "Nothing beyond the group's own audit, because related parties inside the same group are outside the standard's third-party rules",
+          "Only a yearly letter of comfort from the related party",
+          "Transfer the data back in-house within 12 months",
+          "Classify, protect and test those assets as if managed by any third party, including assessing the related party's capability"
+        ],
+        "answer": 3,
+        "explanation": "CPS 234 applies to information assets managed by related parties as well as third parties: capability assessment, classification, control design evaluation, testing and assurance all apply.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x8",
+        "question": "In June 2023 APRA applied a capital adjustment to Medibank after its cyber incident. What condition did APRA set for removing it?",
+        "options": [
+          "Payment of a fine to the OAIC",
+          "Completion of an agreed remediation program to APRA's satisfaction",
+          "A change in Medibank's external auditor",
+          "The passing of 12 months without a new incident"
+        ],
+        "answer": 1,
+        "explanation": "APRA said the AUD 250 million adjustment would stay until Medibank completed an agreed remediation program to APRA's satisfaction.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x9",
+        "question": "Which statement about the RI Advice judgment is accurate?",
+        "options": [
+          "The court held that licensees cannot be liable for cyber incidents occurring at the practices of their authorised representatives, only for their own systems",
+          "The court said cyber risk cannot be removed but can be materially reduced to an acceptable level with adequate documentation and controls",
+          "The court ordered compensation to every client",
+          "The court found APRA had failed to supervise RI Advice"
+        ],
+        "answer": 1,
+        "explanation": "Justice Rofe observed that cyber risk cannot be reduced to zero but can be materially reduced with adequate documentation and controls. The licensee was held responsible for inadequate risk management across its network.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x10",
+        "question": "Ransomware is detected on a Tuesday at 3 pm, and the incident lead decides on Wednesday at 9 am that it is material. Which statement best reflects CPS 234's notice duty?",
+        "options": [
+          "The bank has 72 hours from the incident lead's materiality decision, so it may notify as late as Saturday at 9 am without any concern",
+          "The bank has 10 business days because it is a control weakness",
+          "No notice is needed until data loss is confirmed",
+          "Notify as soon as possible; the outer limit runs 72 hours from becoming aware of the incident, not from the materiality decision"
+        ],
+        "answer": 3,
+        "explanation": "CPS 234 runs the 72 hours from when the bank becomes aware of the incident, and requires notice as soon as possible. Treating the clock as starting at a later internal decision risks a late notice.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x11",
+        "question": "An independent test finds a material weakness. The bank expects to fix it within a week. What is the most accurate position under CPS 234?",
+        "options": [
+          "The 10-business-day notice applies to weaknesses the bank expects it cannot remediate in a timely way, so it may not be triggered",
+          "APRA must be notified within 72 hours as an incident",
+          "Every test finding, whatever its rating or fix date, must be notified to APRA within 10 business days of the final report",
+          "The finding must be kept from the board until fixed"
+        ],
+        "answer": 0,
+        "explanation": "The weakness notice targets material weaknesses the bank expects it cannot fix in time. A quick fix may not trigger it, but escalation and records still matter.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x12",
+        "question": "Which arrangement best meets CPS 234's requirement for functionally independent testing?",
+        "options": [
+          "The system's own developers testing their code",
+          "The vendor that built the system, under its own scope",
+          "A specialist testing team separate from the developers and operators of the control",
+          "An annual self-assessment by the business owner"
+        ],
+        "answer": 2,
+        "explanation": "Testing must be carried out by appropriately skilled and functionally independent specialists. People who build or operate the control are not independent of it.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x13",
+        "question": "A bank relies on its cloud provider's own penetration testing for a critical system. What does CPS 234 require?",
+        "options": [
+          "Accept the provider's testing without review, because the provider is responsible for its own controls under the contract",
+          "Ban the provider from testing its own systems",
+          "Ask APRA to test the provider",
+          "Assess whether the provider's testing nature and frequency match the risk factors the standard lists"
+        ],
+        "answer": 3,
+        "explanation": "Where the bank relies on a third party's control testing, it must assess whether the nature and frequency of that testing is commensurate with the factors listed in the standard.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x14",
+        "question": "What must the bank's internal audit cover under CPS 234?",
+        "options": [
+          "Only the financial cost of the security function",
+          "Design and operating effectiveness of security controls, including those run by related parties and third parties",
+          "Only controls the bank built and runs itself, since providers' controls are covered by their own auditors",
+          "Only the annual awareness training completion rate"
+        ],
+        "answer": 1,
+        "explanation": "Internal audit must review the design and operating effectiveness of security controls, including those maintained by related and third parties, using appropriately skilled personnel.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x15",
+        "question": "How often must the sufficiency of the CPS 234 testing program be reviewed?",
+        "options": [
+          "At least annually, or when there is a material change to assets or the business environment",
+          "Every three years",
+          "Only when APRA requests it",
+          "Only after a material incident"
+        ],
+        "answer": 0,
+        "explanation": "CPS 234 requires the program's sufficiency to be reviewed at least annually or after material change.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x16",
+        "question": "A bank's incident response plan was last tested two years ago. Which CPS 234 duty is breached?",
+        "options": [
+          "Notification of control weaknesses within 10 business days",
+          "Classification of assets by sensitivity",
+          "Annual review and testing of information security response plans",
+          "Defining the board's role"
+        ],
+        "answer": 2,
+        "explanation": "Response plans must be reviewed and tested annually so they remain effective and fit for purpose.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x17",
+        "question": "In the FIIG case, what did FIIG admit about detection?",
+        "options": [
+          "The breach could not have been detected by any means",
+          "It detected the breach within minutes",
+          "Adequate measures suited to its size and data would have enabled it to detect and respond sooner",
+          "Detection was the responsibility of its clients"
+        ],
+        "answer": 2,
+        "explanation": "FIIG admitted adequate cyber security measures would have let it detect and respond to the breach sooner, and that following its own policies could have supported earlier detection.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x18",
+        "question": "Which approach to testing frequency fits CPS 234 best?",
+        "options": [
+          "More frequent and deeper testing for assets with high criticality, sensitivity, fast-changing threats or untrusted exposure",
+          "The same annual penetration test for every system, regardless of risk, so that all results can be compared across the bank",
+          "Testing only systems that have failed before",
+          "Testing only after a software release"
+        ],
+        "answer": 0,
+        "explanation": "CPS 234 ties nature and frequency of testing to the rate of change of threats, criticality and sensitivity, consequences, untrusted environments and frequency of change.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x19",
+        "question": "Which statement about awareness training is most accurate for an Australian bank?",
+        "options": [
+          "CPS 234 sets a fixed number of training hours per year",
+          "CPS 234 requires capability and controls; CPG 234 guidance describes an awareness program as sound practice",
+          "The Privacy Act requires a specific annual security course",
+          "APRA approves each bank's training content in advance, and CPS 234 sets the minimum hours and the pass mark"
+        ],
+        "answer": 1,
+        "explanation": "Training is not prescribed as a separate course in CPS 234. CPG 234 describes sound practice, and APP 11.3 refers to organisational measures without naming a course.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x20",
+        "question": "A bank's awareness program only records completions. Which CPG 234 sound practice is missing?",
+        "options": [
+          "Sending all staff on external university courses",
+          "Publishing staff results on the website",
+          "Having APRA mark the tests",
+          "Testing understanding of the security policies, on commencement and periodically"
+        ],
+        "answer": 3,
+        "explanation": "CPG 234 describes tracking training and testing understanding of relevant policies both on commencement and periodically. Completion alone does not show understanding.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x21",
+        "question": "A contractor with system access is excluded from the bank's awareness program because 'they are not staff'. How does this sit with CPG 234?",
+        "options": [
+          "Poorly: the guidance describes training for staff, contractors and third parties",
+          "Correctly: contractors are trained by their employer only",
+          "Correctly: CPS 234 excludes contractors",
+          "Poorly: contractors must be trained by APRA"
+        ],
+        "answer": 0,
+        "explanation": "CPG 234 describes communicating security expectations to staff, contractors and third parties. CPS 234's policy framework also reaches contractors.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x22",
+        "question": "An employee receives dozens of login approval prompts at midnight and finally approves one. What is this attack called?",
+        "options": [
+          "Tailgating",
+          "Smishing",
+          "MFA fatigue",
+          "Credential stuffing"
+        ],
+        "answer": 2,
+        "explanation": "MFA fatigue floods a user with approval prompts hoping they accept one. The right response is to deny and report immediately.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x23",
+        "question": "A supplier calls a payments officer, gives a correct invoice number and asks to change bank details today. What is the best control?",
+        "options": [
+          "Make the change if the invoice number matches",
+          "Ask the caller to send the request by email from the supplier's domain, then make the change once it arrives",
+          "Change it and check with the supplier next month",
+          "Verify the change by calling the supplier on a number already held on file, not one given in the call"
+        ],
+        "answer": 3,
+        "explanation": "Invoice numbers and emails can be stolen or spoofed. Call-back verification through an independent, known channel defeats the pretext.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x24",
+        "question": "Which CPG 234 testing technique checks how staff respond to attackers who target people?",
+        "options": [
+          "Key management reviews",
+          "Social engineering tests",
+          "Firewall rule audits",
+          "Code vulnerability scans"
+        ],
+        "answer": 1,
+        "explanation": "CPG 234 lists social engineering tests as an approach for testing controls such as access limitation and employee awareness.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x25",
+        "question": "In APRA's June 2025 letter, what did APRA require from trustees whose authentication controls were deficient?",
+        "options": [
+          "Immediate closure of every member account that had been accessed without MFA until a forensic review was complete",
+          "A public apology on their websites",
+          "Replacement of all directors",
+          "A material control weakness notification under CPS 234, or a clear rationale for why the gap was not material"
+        ],
+        "answer": 3,
+        "explanation": "APRA required either a material control weakness notification or a clear rationale explaining why the issue was not material, plus a breach assessment where a weakness was notified.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x26",
+        "question": "The same APRA letter asked trustees to identify which people in relation to CPS 234 compliance?",
+        "options": [
+          "Their external auditors only",
+          "Their largest members",
+          "Their Accountable Person(s) under the Financial Accountability Regime",
+          "The OAIC case officer"
+        ],
+        "answer": 2,
+        "explanation": "APRA asked each trustee to advise its Accountable Person(s) under FAR responsible for CPS 234 compliance, linking cyber controls to individual accountability.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x27",
+        "question": "A bank keeps loan application files for rejected applicants indefinitely 'in case they are useful'. No law requires it. Which APP is most at risk?",
+        "options": [
+          "APP 12, which gives people access to the information held about them and so requires keeping it indefinitely",
+          "APP 11.2, which requires reasonable steps to destroy or de-identify information no longer needed",
+          "APP 8, which covers sending data overseas",
+          "APP 1, which requires a privacy policy"
+        ],
+        "answer": 1,
+        "explanation": "APP 11.2 requires destroying or de-identifying personal information no longer needed for a permitted purpose, unless law or court order requires it to be kept.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x28",
+        "question": "Staff are emailing customer files to personal accounts to work from home. Which Privacy Act duty is most engaged?",
+        "options": [
+          "APP 11.1 reasonable steps, including organisational measures such as policy, training and email controls",
+          "APP 13, which requires correcting personal information, together with the duty to notify APRA within 72 hours",
+          "The duty to notify APRA within 24 hours",
+          "APP 12 access requests"
+        ],
+        "answer": 0,
+        "explanation": "This exposes personal information to unauthorised access and loss. APP 11.1, read with 11.3, expects technical and organisational measures to prevent it.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x29",
+        "question": "A stolen laptop held customer tax file numbers. It was encrypted, but the password was written on a note in the laptop bag. How does section 26WG's encryption factor apply?",
+        "options": [
+          "Encryption means the breach can never be eligible",
+          "The key was exposed, so the encryption is likely to be overcome and serious harm is more likely",
+          "Only the laptop's value matters",
+          "Tax file numbers are not personal information"
+        ],
+        "answer": 1,
+        "explanation": "Section 26WG asks how likely security measures are to be overcome and notes a key as information needed to circumvent encryption. Exposing the password undermines the protection.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x30",
+        "question": "Within an hour of a misdirected email, the bank gets credible written confirmation the recipient deleted it unopened. What does section 26WF provide?",
+        "options": [
+          "The breach must still be notified to the Commissioner and to all customers, because the email was sent and the disclosure happened",
+          "The bank must notify APRA instead of the Commissioner",
+          "The recipient must notify the Commissioner",
+          "If remedial action means serious harm is no longer likely, the disclosure is treated as never having been an eligible breach"
+        ],
+        "answer": 3,
+        "explanation": "Under section 26WF, remedial action taken before serious harm that makes harm no longer likely means the access or disclosure is not, and never was, an eligible data breach.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x31",
+        "question": "A bank has reasonable grounds to believe an eligible data breach occurred. Which order of actions fits sections 26WK and 26WL?",
+        "options": [
+          "Notify individuals after the 30-day assessment, then the Commissioner at year end",
+          "Notify APRA only, because APRA passes eligible data breach notices for banks on to the Commissioner, who then notifies customers",
+          "Prepare the statement and give it to the Commissioner as soon as practicable, then notify individuals as soon as practicable",
+          "Publish on the website first, then decide whether a statement is needed"
+        ],
+        "answer": 2,
+        "explanation": "Section 26WK requires the statement to be given to the Commissioner as soon as practicable; section 26WL then requires notifying individuals as soon as practicable after the statement is prepared.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x32",
+        "question": "A bank sent personal information to an overseas processor under APP 8. The processor suffers a breach. Is the bank inside Part IIIC?",
+        "options": [
+          "Yes: in these circumstances the Act treats the information as held by the bank for the scheme",
+          "No: overseas breaches are outside the Act",
+          "Only if the processor is APRA-regulated",
+          "Only if the customers live overseas"
+        ],
+        "answer": 0,
+        "explanation": "Section 26WC deems the APP entity to hold personal information disclosed to an overseas recipient where APP 8.1 applied, so the bank must deal with the breach under Part IIIC.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x33",
+        "question": "A breach affects 50,000 customers but only 2,000 are at risk of serious harm. Under section 26WL, which option is open to the bank?",
+        "options": [
+          "Notify the contents of the statement to the 2,000 at-risk individuals, if that is practicable",
+          "Notify only those who complain",
+          "Notify no one, because most of the affected customers are not at risk and the scheme looks at the whole group",
+          "Notify the Commissioner and wait for a direction"
+        ],
+        "answer": 0,
+        "explanation": "Section 26WL allows notifying all affected individuals or, if practicable, only those at risk; publishing is the fallback when neither is practicable.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x34",
+        "question": "Who regulates the Privacy Act and the Notifiable Data Breaches scheme?",
+        "options": [
+          "APRA",
+          "The Office of the Australian Information Commissioner",
+          "ASIC",
+          "AUSTRAC"
+        ],
+        "answer": 1,
+        "explanation": "The OAIC (the Australian Information Commissioner) regulates the Privacy Act. APRA's CPS 234 is a separate prudential duty.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x35",
+        "question": "A bank says its customer enquiries line is not a critical operation because it is 'just a call centre'. What does CPS 230 say?",
+        "options": [
+          "Call centres are outside CPS 230",
+          "Only APRA may decide what is critical",
+          "Customer enquiries are critical only for insurers",
+          "Customer enquiries are a minimum critical operation for all entities unless the bank can justify otherwise"
+        ],
+        "answer": 3,
+        "explanation": "CPS 230 lists customer enquiries, and the systems and infrastructure supporting critical operations, as minimum critical operations for all APRA-regulated entities unless justified otherwise.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x36",
+        "question": "Which statement about tolerance levels under CPS 230 is correct?",
+        "options": [
+          "APRA sets identical tolerance levels for all banks in a schedule to the standard, and banks may not set their own",
+          "Tolerance levels are optional for small banks",
+          "The bank sets them for each critical operation, the board approves them, and APRA may require changes or set them",
+          "Management sets them without board involvement"
+        ],
+        "answer": 2,
+        "explanation": "Banks set tolerance levels for time, data loss and minimum service; the board approves them; APRA may require a review, and may set levels where it sees heightened risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x37",
+        "question": "Which of these is an operational risk that CPS 230 expressly includes?",
+        "options": [
+          "Interest rate risk in the banking book",
+          "Credit spread risk",
+          "Equity market risk",
+          "Conduct risk"
+        ],
+        "answer": 3,
+        "explanation": "CPS 230 lists legal, regulatory, compliance, conduct, technology, data and change management risk among the operational risks to manage. The others are financial risks managed under other standards.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x38",
+        "question": "A bank uses a central bank's settlement service on standard terms it cannot negotiate. How did the 2026 CPS 230 amendments affect this?",
+        "options": [
+          "Certain contract requirements need not be met for listed provider categories, such as central banks, using standardised terms",
+          "The service no longer counts as an arrangement at all",
+          "The bank must stop using the service",
+          "The bank must still negotiate custom terms covering audit access, APRA access and termination with the central bank"
+        ],
+        "answer": 0,
+        "explanation": "The amended CPS 230 exempts arrangements with listed categories, including central banks, from certain agreement requirements where standardised terms are used or there is no formal agreement.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-is-x39",
+        "question": "What must the BCP include under CPS 230?",
+        "options": [
+          "Only the IT disaster recovery runbooks for the core banking platform, signed off by the chief technology officer each quarter",
+          "A list of staff home addresses",
+          "Register of critical operations and tolerances, triggers, actions, execution risks and dependencies, and a communications strategy",
+          "The bank's marketing calendar"
+        ],
+        "answer": 2,
+        "explanation": "CPS 230 sets these BCP contents; disaster recovery for critical information assets sits within a broader plan.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x40",
+        "question": "What must internal audit do in relation to a proposed material arrangement that outsources a critical operation?",
+        "options": [
+          "Approve the arrangement in place of the board, and then run the provider's monitoring for the life of the contract",
+          "Review the proposed arrangement and regularly report on compliance with the service provider policy",
+          "Run the outsourced service itself",
+          "Nothing until after the contract ends"
+        ],
+        "answer": 1,
+        "explanation": "CPS 230 requires internal audit to review any proposed material arrangement outsourcing a critical operation and to report regularly to the board or audit committee on compliance with the policy.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-is-x41",
+        "question": "How often must a bank submit its register of material service providers to APRA?",
+        "options": [
+          "Monthly",
+          "Only when APRA asks",
+          "Annually",
+          "Every three years"
+        ],
+        "answer": 2,
+        "explanation": "CPS 230 requires the register to be submitted to APRA on an annual basis.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-is-x42",
+        "question": "An internal auditor preparing for APRA review asks for evidence on the human side of security. Which set is most useful?",
+        "options": [
+          "Staff holiday rosters and canteen menus",
+          "Training completion and understanding test results, phishing trends, policy sign-offs and incident reporting data",
+          "The vendor's brochures",
+          "The number of emails in each inbox"
+        ],
+        "answer": 1,
+        "explanation": "CPG 234 describes tracked training, tested understanding and periodic policy sign-off, and gives phishing and awareness metrics as examples for board reporting.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
