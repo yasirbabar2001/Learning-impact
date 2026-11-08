@@ -1,0 +1,3144 @@
+{
+ "slug": "au-asic-consumer-conduct",
+ "title": "Australia | ASIC Consumer Protection: Responsible Lending, DDO and Dispute Resolution",
+ "tagline": "Learn the ASIC conduct rules Australian bank staff apply every day: trained and competent representatives, responsible lending, DDO, complaints and hardship.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Banks and authorised deposit-taking institutions",
+  "Consumer, home and personal lending",
+  "Cards, deposits and payment products",
+  "Contact centres, branches and complaints teams",
+  "Bank compliance, risk and learning functions"
+ ],
+ "hours": 5,
+ "description": "This quest teaches the consumer protection rules that **ASIC**, Australia's conduct and licensing regulator, applies to banks. It covers the general obligations of AFS and credit licensees in the **Corporations Act 2001 (s 912A)** and the **National Consumer Credit Protection Act 2009 (s 47)**, including the duty to keep every representative **adequately trained and competent**; **responsible lending** under NCCP Act Chapter 3 and **RG 209**; the **design and distribution obligations** and **RG 274**; **internal dispute resolution** under **RG 271**, **AFCA**, hardship notices under the National Credit Code; and customers experiencing vulnerability. The **Banking Code of Practice** is explained as an ASIC-approved industry code that binds subscribing banks through their customer contracts.\n\nIt is designed for bank staff who provide financial products or consumer credit, their supervisors and the complaints, product and compliance teams around them: the representatives that licensees must keep trained and competent.\n\nYou follow a fictional team at Coral Range Bank in Brisbane, Logan, Townsville and Melbourne, and study real ASIC cases.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own policies, procedures or advice from your compliance team.",
+ "audience": [
+  "Branch, contact centre and digital staff who deal in deposit, payment, card and insurance products",
+  "Home loan, personal loan and credit card lenders and credit assessors",
+  "Complaints, hardship and customer advocacy teams",
+  "Product owners, distribution managers and sales leaders",
+  "Team leaders, compliance and learning staff who supervise and train representatives"
+ ],
+ "outcomes": [
+  "Explain the general obligations of AFS and credit licensees and the duty to keep representatives adequately trained and competent",
+  "Apply the responsible lending steps: inquiry, verification, unsuitability assessment and written assessment",
+  "Apply the design and distribution obligations as an issuer or distributor, including review triggers and significant dealings",
+  "Handle complaints under RG 271, escalate systemic issues and explain the role of AFCA",
+  "Respond to hardship notices and customers experiencing vulnerability, and describe the Banking Code's contractual status",
+  "Identify the evidence, roles and timeframes ASIC expects a bank to show"
+ ],
+ "quest": {
+  "name": "The Fair Deal Mission",
+  "premise": "You have just joined the conduct and compliance team at Coral Range Bank in Brisbane. With compliance head Mei Lin Zhao, learning lead Sofia Petrakis, home lending manager Liam Fitzgerald, complaints lead Kirra Watson and product manager Farid Haddad, you must turn ASIC's consumer protection rules into everyday decisions at the lending desk, on the product gate and at the complaints line.",
+  "badge": {
+   "name": "Fair Deal Guardian",
+   "description": "Awarded for demonstrating working knowledge of ASIC's consumer protection rules for Australian banks: competence, responsible lending, DDO and dispute resolution."
+  },
+  "color": "#0e7490",
+  "cast": [
+   {
+    "id": "mei",
+    "name": "Mei Lin Zhao",
+    "role": "Head of conduct and compliance",
+    "look": {
+     "skin": 2,
+     "hair": "bun",
+     "color": "#0e7490"
+    }
+   },
+   {
+    "id": "sofia",
+    "name": "Sofia Petrakis",
+    "role": "Learning and competence lead",
+    "look": {
+     "skin": 2,
+     "hair": "long",
+     "color": "#9333ea"
+    }
+   },
+   {
+    "id": "liam",
+    "name": "Liam Fitzgerald",
+    "role": "Home lending manager, Logan",
+    "look": {
+     "skin": 1,
+     "hair": "short",
+     "color": "#15803d"
+    }
+   },
+   {
+    "id": "kirra",
+    "name": "Kirra Watson",
+    "role": "Customer advocate and complaints lead",
+    "look": {
+     "skin": 4,
+     "hair": "curly",
+     "color": "#c2410c"
+    }
+   },
+   {
+    "id": "farid",
+    "name": "Farid Haddad",
+    "role": "Products and distribution manager",
+    "look": {
+     "skin": 3,
+     "hair": "beard",
+     "color": "#1d4ed8"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "Licensee obligations and trained, competent representatives",
+   "stage": "The Licence Promise",
+   "summary": "Meet the two licences a bank works under, the general obligations in Corporations Act s 912A and NCCP Act s 47, and the duty to keep every representative adequately trained and competent.",
+   "minutes": 50,
+   "objectives": [
+    "Explain why a bank holds an AFS licence and an Australian credit licence and what ASIC expects of each",
+    "Describe the main general obligations in Corporations Act s 912A(1) and NCCP Act s 47(1)",
+    "Apply the duty to keep representatives adequately trained and competent (s 912A(1)(f) and s 47(1)(g))",
+    "Recognise how RG 146, RG 206 and RG 105 shape initial and ongoing training",
+    "Explain when a licensee must report a reportable situation to ASIC"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage one: the licence on the wall",
+     "setting": "Conduct and Compliance floor, Coral Range Bank head office, Queen Street, Brisbane. 8:45 am.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Your first morning at Coral Range Bank. In the lift lobby, two framed certificates hang side by side: an Australian financial services licence and an Australian credit licence.",
+       "mood": "neutral"
+      },
+      {
+       "who": "mei",
+       "text": "Welcome aboard! I'm Mei Lin Zhao, head of conduct and compliance. Those two certificates are the reason this floor exists.",
+       "mood": "happy"
+      },
+      {
+       "who": "sofia",
+       "text": "Sofia Petrakis, learning and competence lead. I look after who is allowed to talk to customers about which products, and how we prove they're ready.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "Liam Fitzgerald, home lending manager at Logan. My new starters ask me the same thing every week: what am I actually allowed to say to a customer?",
+       "mood": "thinking"
+      },
+      {
+       "who": "kirra",
+       "text": "Kirra Watson, customer advocate and complaints lead. And when someone gets it wrong, the customer ends up talking to me.",
+       "mood": "worried"
+      },
+      {
+       "who": "farid",
+       "text": "Farid Haddad, products and distribution, Melbourne. Every product I design lives or dies on how well your people sell it.",
+       "mood": "neutral"
+      },
+      {
+       "who": "mei",
+       "text": "So here's your quest: five stages, one final exam. Start with the promise behind those licences. What does ASIC expect of a licensee, and of every person who speaks for us?",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Two licences, one conduct regulator",
+     "scenes": [
+      {
+       "icon": "🏛️",
+       "heading": "ASIC watches conduct",
+       "narration": "The Australian Securities and Investments Commission, ASIC, licenses and supervises how financial services and consumer credit are provided. APRA looks after a bank's safety and soundness; ASIC looks after how it treats customers."
+      },
+      {
+       "icon": "📜",
+       "heading": "The AFS licence",
+       "narration": "Under the Corporations Act 2001, a bank needs an Australian financial services licence to deal in or advise on financial products such as deposit accounts, payment products and insurance it arranges."
+      },
+      {
+       "icon": "🏠",
+       "heading": "The credit licence",
+       "narration": "Under the National Consumer Credit Protection Act 2009, the NCCP Act, a bank needs an Australian credit licence to provide consumer credit such as home loans, personal loans and credit cards."
+      },
+      {
+       "icon": "🤝",
+       "heading": "General obligations",
+       "narration": "Both Acts attach a list of general obligations to the licence. They are ongoing duties, not a one-off test at the licensing stage."
+      },
+      {
+       "icon": "🧑‍🏫",
+       "heading": "People are the licence",
+       "narration": "Both lists include the same promise: the licensee must make sure its representatives are adequately trained and competent for the services they provide. That is why this quest exists."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Section 912A(1) and section 47(1) side by side",
+     "caption": "The two lists are close cousins. Learn them together and you understand most of what ASIC expects of a bank as a licensee.",
+     "headers": [
+      "Corporations Act s 912A(1)",
+      "NCCP Act s 47(1)"
+     ],
+     "items": [
+      {
+       "label": "Core conduct standard",
+       "left": "Efficiently, honestly and fairly (s 912A(1)(a))",
+       "right": "Efficiently, honestly and fairly (s 47(1)(a))"
+      },
+      {
+       "label": "Conflicts",
+       "left": "Adequate conflict management arrangements",
+       "right": "Clients not disadvantaged by conflicts"
+      },
+      {
+       "label": "Laws and representatives",
+       "left": "Comply with financial services laws; reasonable steps so representatives comply",
+       "right": "Comply with credit legislation; reasonable steps so representatives comply"
+      },
+      {
+       "label": "Competence",
+       "left": "Maintain competence; representatives adequately trained and competent (s 912A(1)(f))",
+       "right": "Maintain competence; representatives adequately trained and competent (s 47(1)(g))"
+      },
+      {
+       "label": "Disputes",
+       "left": "IDR meeting ASIC standards plus AFCA membership (retail clients)",
+       "right": "IDR meeting ASIC standards plus AFCA membership"
+      },
+      {
+       "label": "Systems",
+       "left": "Adequate resources and risk management systems",
+       "right": "Compliance arrangements with a written plan"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A personal loan officer explains a credit card's fees incorrectly because nobody ever trained her on the product. Which licence duty is most directly engaged?",
+     "options": [
+      "The duty to hold adequate financial resources",
+      "The duty to lodge annual financial statements",
+      "The duty to appoint a responsible manager for deposits",
+      "The duty to keep representatives adequately trained and competent for the credit activities they perform"
+     ],
+     "answer": 3,
+     "explanation": "NCCP Act s 47(1)(g) requires a credit licensee to ensure its representatives are adequately trained and competent to engage in the credit activities authorised by the licence. The other options are not the duty this failure engages."
+    },
+    {
+     "type": "concept",
+     "title": "What 'adequately trained and competent' means in practice",
+     "body": "Neither Act sets a course length or exam. ASIC's guidance fills in the picture:\n\n- **RG 206** (credit): the licensee decides what initial and ongoing training each representative needs and builds it into recruitment and training systems.\n- **RG 146** (financial product advice): sets training standards for advisers. Staff who advise only on **basic deposit products** and related non-cash payment products can meet the standard through a course their licensee has assessed.\n- **RG 105** (organisational competence): the licensee itself must keep the competence to provide its services, separate from the duty to train representatives.\n\nThe test is practical: could this person do this task, for this product, for this customer, correctly today? Training without assessment, refreshers or supervision rarely proves that."
+    },
+    {
+     "type": "match",
+     "title": "Match the duty to where it lives",
+     "prompt": "Link each obligation to its source.",
+     "pairs": [
+      {
+       "left": "s 912A(1)(f)",
+       "right": "AFS licensee must keep representatives adequately trained (including CPD where it applies) and competent"
+      },
+      {
+       "left": "s 47(1)(g)",
+       "right": "Credit licensee must keep representatives adequately trained and competent for authorised credit activities"
+      },
+      {
+       "left": "s 47(1)(k)",
+       "right": "Credit licensee must have compliance arrangements and a written plan documenting them"
+      },
+      {
+       "left": "RG 146",
+       "right": "ASIC guide on training standards for financial product advisers, including basic deposit products"
+      },
+      {
+       "left": "RG 206",
+       "right": "ASIC guide expecting credit licensees to set initial and ongoing training for representatives"
+      },
+      {
+       "left": "s 912DAA",
+       "right": "AFS licensee must report reportable situations to ASIC within 30 days"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A turn: the 'reject' button",
+     "setting": "Sofia's training room, Brisbane. Mid-morning.",
+     "lines": [
+      {
+       "who": "sofia",
+       "text": "Before you meet a customer, look at this public case. A big bank's staff kept pressing the wrong button in a hardship system.",
+       "mood": "thinking"
+      },
+      {
+       "who": "liam",
+       "text": "Wrong button? That sounds like an IT problem, not a training problem.",
+       "mood": "neutral"
+      },
+      {
+       "who": "sofia",
+       "text": "It was both. Hundreds of customers who asked for hardship help never got the response the law requires. The Federal Court penalised the bank.",
+       "mood": "worried"
+      },
+      {
+       "who": "mei",
+       "text": "Systems fail when people don't understand what the system is for. That is exactly why 'adequately trained and competent' covers the tools people use, not just the rules.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "So my induction checklist should cover the screens my lenders use, not only the law?",
+       "mood": "thinking"
+      },
+      {
+       "who": "sofia",
+       "text": "Yes. And then you check they can actually use them correctly.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The fast-tracked transfer",
+     "situation": "Liam's branch is short-staffed. A teller, Josh, has six years on deposits but has never sold credit cards. Liam's regional manager wants Josh taking credit card applications from Monday because a promotion starts. The card module in the training system takes two days and includes an assessment. Josh says he 'watched someone do it once'.",
+     "choices": [
+      {
+       "text": "Keep Josh on deposits until he completes the card module and assessment, and ask for a trained lender to cover applications in the meantime.",
+       "outcome": "Best choice. The bank must ensure representatives are trained and competent for the credit activities they perform before they perform them. Recording the completion and the assessment also lets the bank prove it.",
+       "score": 2
+      },
+      {
+       "text": "Let Josh start Monday but have him complete the module by Friday.",
+       "outcome": "Partly right. Training will happen, but for a week customers deal with someone not yet shown to be competent. If something goes wrong, the bank cannot show it met its duty at the time.",
+       "score": 1
+      },
+      {
+       "text": "Let Josh start because six years of banking experience is enough for a simple card.",
+       "outcome": "Poor choice. Experience with deposits does not show competence in credit cards, which carry responsible lending duties. The licence duty is product and activity specific.",
+       "score": 0
+      },
+      {
+       "text": "Let Josh take applications as long as a lender signs every application afterwards.",
+       "outcome": "Partly helpful, but a sign-off after the conversation does not fix what Josh told the customer. Supervision supports training; it does not replace it.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "The competence cycle a licensee runs",
+     "caption": "RG 206 expects training to be built into recruitment and supervision. The cycle repeats whenever a role, a product or the law changes.",
+     "items": [
+      {
+       "label": "Define the role",
+       "detail": "Which products and activities, for which customers"
+      },
+      {
+       "label": "Train before doing",
+       "detail": "Induction on law, product, systems and conduct"
+      },
+      {
+       "label": "Assess",
+       "detail": "Show the person can do the task correctly"
+      },
+      {
+       "label": "Supervise and monitor",
+       "detail": "File reviews, call reviews, complaints data"
+      },
+      {
+       "label": "Refresh and update",
+       "detail": "Ongoing training when law, products or risks change"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Myth or fact: training duties",
+     "cards": [
+      {
+       "front": "Myth: a one-off induction is enough.",
+       "back": "Fact: ASIC expects initial and ongoing training. Competence has to be kept up as products, systems and laws change."
+      },
+      {
+       "front": "Myth: only financial advisers need training.",
+       "back": "Fact: the duty covers every representative who provides the licensed services, including lenders and staff who deal in deposit or payment products."
+      },
+      {
+       "front": "Myth: ASIC approves each bank's training course.",
+       "back": "Fact: the licensee decides what is adequate. For basic deposit products, RG 146 lets the licensee assess the course itself."
+      },
+      {
+       "front": "Myth: training records are optional.",
+       "back": "Fact: without records, the licensee cannot show it met the duty. ASIC will ask for evidence, not intentions."
+      },
+      {
+       "front": "Myth: APRA banks are outside the credit licence duties.",
+       "back": "Fact: they hold credit licences too. Only some s 47(1) items, such as the resources and risk management limb, do not apply to APRA-regulated bodies."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Coral Range Bank discovers that a pricing error has overcharged hundreds of credit card customers. Under the Corporations Act breach reporting regime, what must the AFS licensee consider?",
+     "options": [
+      "Only whether customers complained, since reports are triggered by complaints",
+      "Whether APRA has already noticed, because APRA reports replace every ASIC duty",
+      "Nothing until the error has been fully remediated",
+      "Whether it is a reportable situation, and if so report to ASIC within 30 days of first knowing there are reasonable grounds to believe it has arisen"
+     ],
+     "answer": 3,
+     "explanation": "Corporations Act s 912DAA requires a report within 30 days after the licensee first knows, or is reckless about whether, there are reasonable grounds to believe a reportable situation has arisen. Complaints and remediation do not start or stop the clock."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Westpac and consumer credit insurance (2022)",
+     "body": "In April 2022 the Federal Court ordered **Westpac** to pay a **$1.5 million** penalty, as reported in ASIC media release 22-084MR.\n\n- Between 2015 and 2017 Westpac issued consumer credit insurance with credit cards and Flexi Loans to **141 customers** who had not asked for it.\n- It then charged premiums the customers were not liable to pay.\n- Westpac admitted contravening the ASIC Act ban on asserting a right to payment for unsolicited services, and **failing to comply with financial services laws** (Corporations Act s 912A(1)(c)).\n\n**Lesson:** general obligations are not abstract. A gap in sales process and staff practice became a breach of the licence duties themselves."
+    },
+    {
+     "type": "example",
+     "title": "Real case: NAB, AFSH and the hardship button (2025)",
+     "body": "In August 2025 the Federal Court ordered **National Australia Bank** and its subsidiary **AFSH Nominees** to pay a combined **$15.5 million** penalty (ASIC 25-165MR).\n\n- Between 2018 and 2023 they failed to respond within the legal timeframe to **345 hardship applications**.\n- ASIC said the failures arose mostly from staff **incorrectly using a 'reject' button** in the internal hardship system, so customers heard nothing.\n- The banks also had to publish an adverse publicity notice and contact affected customers.\n\n**Lesson:** competence includes knowing how the bank's own systems carry out legal duties."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage one take-aways",
+     "items": [
+      "A bank providing financial products and consumer credit holds an AFS licence and an Australian credit licence, both supervised by ASIC.",
+      "Both licences carry general obligations, starting with providing services efficiently, honestly and fairly.",
+      "Corporations Act s 912A(1)(f) and NCCP Act s 47(1)(g) require representatives to be adequately trained and competent.",
+      "ASIC expects initial and ongoing training, assessment and supervision built into recruitment (RG 206, RG 146).",
+      "Reportable situations must be reported to ASIC within 30 days under s 912DAA."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of a product or system you use with customers. If ASIC asked tomorrow, what evidence could your bank show that you were trained and competent to use it before your first customer?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "au-cc-s1-q1",
+     "question": "Which regulator licenses and supervises how Australian banks provide financial services and consumer credit to customers?",
+     "options": [
+      "ASIC",
+      "APRA",
+      "AUSTRAC",
+      "The Reserve Bank of Australia"
+     ],
+     "answer": 0,
+     "explanation": "ASIC is the conduct and licensing regulator for financial services and consumer credit. APRA is the prudential regulator, AUSTRAC handles AML/CTF and the RBA runs monetary policy.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s1-q2",
+     "question": "A new lender at Coral Range Bank will arrange personal loans for consumers. Which provision requires the bank to ensure she is adequately trained and competent for that work?",
+     "options": [
+      "Corporations Act s 912A(1)(h)",
+      "NCCP Act s 133(1)",
+      "Corporations Act s 994B",
+      "NCCP Act s 47(1)(g)"
+     ],
+     "answer": 3,
+     "explanation": "Section 47(1)(g) of the NCCP Act is the credit licensee's duty to keep representatives adequately trained and competent. Section 912A(1)(h) is risk management, s 133 is the ban on unsuitable credit contracts and s 994B concerns target market determinations.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q3",
+     "question": "What does Corporations Act s 912A(1)(f) add to the training duty for AFS licensees that the credit provision does not mention?",
+     "options": [
+      "Training must be approved in advance by ASIC",
+      "Training must be delivered by an external provider",
+      "Training includes complying with the CPD provisions where they apply",
+      "Training must be repeated every calendar month"
+     ],
+     "answer": 2,
+     "explanation": "Section 912A(1)(f) refers to representatives being adequately trained, including by complying with the CPD provisions, and competent. The Act does not require ASIC approval, external providers or monthly repetition.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q4",
+     "question": "Josh, a teller with long deposit experience, is asked to start taking credit card applications tomorrow without the card training. What is the best response?",
+     "options": [
+      "Let him start because deposit experience shows competence",
+      "Let him start if a colleague sits within earshot",
+      "Let him start and record the training as completed later",
+      "Complete the card training and assessment before he takes applications"
+     ],
+     "answer": 3,
+     "explanation": "The duty is specific to the activity: he must be trained and competent for credit card applications before doing them. Deposit experience, informal oversight or back-dated records do not meet it.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q5",
+     "question": "According to RG 146, how can staff who advise only on basic deposit products meet the training standards?",
+     "options": [
+      "By passing a national exam set by ASIC each year",
+      "By holding a university degree in finance",
+      "By completing a course their licensee has assessed as meeting the standards",
+      "By working under supervision for twelve months"
+     ],
+     "answer": 2,
+     "explanation": "RG 146 allows advisers on basic deposit products and related non-cash payment products to meet the standards through a course assessed by their licensee. It does not require a national ASIC exam, a degree or a fixed supervision period.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q6",
+     "question": "Which statement best reflects ASIC's expectation in RG 206 about credit representatives' training?",
+     "options": [
+      "The licensee decides suitable initial and ongoing training and builds it into recruitment and training",
+      "ASIC sets one national syllabus every credit representative must follow",
+      "Training is only needed when a representative is first appointed",
+      "Training is optional if representatives work under a manager"
+     ],
+     "answer": 0,
+     "explanation": "RG 206 says ASIC generally expects the licensee to determine appropriate initial and ongoing training and embed it in recruitment and training systems. There is no single national syllabus, and supervision does not replace training.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q7",
+     "question": "Which general obligation sits at the top of both s 912A(1) and s 47(1)?",
+     "options": [
+      "Holding capital above the regulatory minimum",
+      "Publishing annual customer satisfaction scores",
+      "Offering every product to every customer who applies",
+      "Doing all things necessary to provide the services efficiently, honestly and fairly"
+     ],
+     "answer": 3,
+     "explanation": "Paragraph (a) of both lists requires the licensee to do all things necessary so its services are provided efficiently, honestly and fairly. Capital is an APRA matter, and the other options are not licence obligations.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s1-q8",
+     "question": "A bank finds a systems error that may have overcharged many customers. When does the 30-day period for reporting a reportable situation to ASIC start?",
+     "options": [
+      "When the licensee first knows, or is reckless about, reasonable grounds to believe it has arisen",
+      "When the first customer complains about the error",
+      "When remediation payments are completed",
+      "When the board next meets to approve the report"
+     ],
+     "answer": 0,
+     "explanation": "Under s 912DAA(3), the report is due within 30 days after the licensee first knows that, or is reckless as to whether, there are reasonable grounds to believe the reportable situation has arisen. Complaints, remediation or board timing do not set the clock.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s1-q9",
+     "question": "In the 2025 NAB and AFSH hardship case, what did ASIC say caused most of the missed responses?",
+     "options": [
+      "Staff incorrectly using a 'reject' button in the hardship system",
+      "A deliberate policy to refuse all hardship requests",
+      "Customers sending hardship requests to the wrong bank",
+      "An outsourced call centre that closed without notice"
+     ],
+     "answer": 0,
+     "explanation": "ASIC's release explained that, with limited exceptions, the failures came from NAB staff incorrectly using a 'reject' function, so customers received no communication. That makes it a lesson in system competence, not deliberate policy.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s1-q10",
+     "question": "Under NCCP Act s 47(1), which limb does NOT apply to a licensee that is regulated by APRA, such as a bank?",
+     "options": [
+      "Keeping representatives trained and competent",
+      "Having adequate resources and adequate risk management systems",
+      "Being a member of the AFCA scheme",
+      "Engaging in credit activities efficiently, honestly and fairly"
+     ],
+     "answer": 1,
+     "explanation": "Section 47(1)(l), covering adequate resources and risk management systems, applies unless the licensee is a body regulated by APRA. The training, AFCA membership and efficiently honestly and fairly duties apply to banks in full.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Responsible lending under the NCCP Act and RG 209",
+   "stage": "The Lending Desk",
+   "summary": "Work through the responsible lending obligations for credit providers: reasonable inquiries, verification, the unsuitability assessment, the written assessment and the records that prove it, with ASIC's views in RG 209.",
+   "minutes": 60,
+   "objectives": [
+    "Explain the three steps a credit provider must complete before entering a credit contract or increasing a limit",
+    "Apply the tests that make a credit contract unsuitable under NCCP Act ss 131 and 133",
+    "Use benchmarks, verification and scalability as RG 209 describes",
+    "Handle a consumer's request for a written copy of the assessment within the legal timeframes",
+    "Keep records that show the inquiries, verification and assessment were done"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage two: the refinance in a hurry",
+     "setting": "Logan branch lending office, south of Brisbane. 2:10 pm.",
+     "lines": [
+      {
+       "who": "liam",
+       "text": "Welcome to the lending desk. Meet today's file: a couple refinancing their home loan and adding $60,000 for a car and a holiday.",
+       "mood": "neutral"
+      },
+      {
+       "who": "narrator",
+       "text": "The application shows two salaries, a credit card, a buy now pay later account and living expenses entered as exactly the same number the system's benchmark suggests.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "The broker says they're in a rush. Their old lender is slow and they want an answer by Friday.",
+       "mood": "worried"
+      },
+      {
+       "who": "mei",
+       "text": "Rushing is fine. Skipping steps is not. Tell me what you know about their requirements and objectives.",
+       "mood": "thinking"
+      },
+      {
+       "who": "liam",
+       "text": "Refinance and a car. And a holiday, I think.",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "'I think' is where responsible lending starts. Inquire, verify, assess, then decide. And write it down.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "The responsible lending sequence",
+     "scenes": [
+      {
+       "icon": "❓",
+       "heading": "Inquire",
+       "narration": "Before assessing, the credit provider must make reasonable inquiries about the consumer's requirements and objectives, and about their financial situation."
+      },
+      {
+       "icon": "🔍",
+       "heading": "Verify",
+       "narration": "It must also take reasonable steps to verify the consumer's financial situation. Asking is not enough; you check what you are told."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "Assess",
+       "narration": "Then it must assess whether the credit contract will be unsuitable for the consumer, covering the period in which the credit is provided. The assessment must be made within the 90 days before the credit day."
+      },
+      {
+       "icon": "🚫",
+       "heading": "Do not lend if unsuitable",
+       "narration": "If the contract is unsuitable, the licensee must not enter it, or increase the limit. Each of these duties is a civil penalty provision."
+      },
+      {
+       "icon": "📝",
+       "heading": "Show your work",
+       "narration": "On request, the consumer must get a free written copy of the assessment, and good records let the lender prove every step later."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Before a credit day: NCCP Act ss 128-133",
+     "caption": "The same steps apply to a new credit contract and to an increase in a credit limit, and to unconditional representations that a consumer is eligible.",
+     "items": [
+      {
+       "label": "Reasonable inquiries",
+       "detail": "Requirements and objectives; financial situation (s 130(1)(a)-(b))"
+      },
+      {
+       "label": "Reasonable verification",
+       "detail": "Steps to verify the financial situation (s 130(1)(c))"
+      },
+      {
+       "label": "Unsuitability assessment",
+       "detail": "Specifies its period; made within 90 days before the credit day (ss 128-129)"
+      },
+      {
+       "label": "Unsuitable? Assess as unsuitable",
+       "detail": "Inability to repay, or only with substantial hardship; or objectives not met (s 131)"
+      },
+      {
+       "label": "Decide",
+       "detail": "Must not enter or increase the limit if unsuitable (s 133)"
+      },
+      {
+       "label": "Written copy on request",
+       "detail": "Free of charge, within the set timeframes (s 132)"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which two questions decide whether a credit contract is unsuitable under the NCCP Act?",
+     "options": [
+      "Is the consumer's credit score above the bank's cut-off, and is the loan profitable?",
+      "Has the consumer banked with us before, and do they own property?",
+      "Is the interest rate competitive, and has the broker signed the file?",
+      "Can the consumer meet the obligations without substantial hardship, and does it meet their requirements and objectives?"
+     ],
+     "answer": 3,
+     "explanation": "Sections 131(2) and 133(2) make a contract unsuitable if the consumer is likely to be unable to comply with the obligations, or only with substantial hardship, or if it does not meet their requirements or objectives (plus any circumstances the regulations prescribe)."
+    },
+    {
+     "type": "concept",
+     "title": "Substantial hardship: two presumptions to remember",
+     "body": "The Act gives lenders two firm rules when judging whether a consumer could repay only with **substantial hardship**:\n\n- **Selling the home.** If the consumer could only meet the obligations by selling their principal place of residence, the law presumes substantial hardship unless the contrary is proved (ss 131(3) and 133(3)).\n- **Credit cards.** For a credit card contract, the consumer is taken to be in substantial hardship if they could not repay an amount equal to the credit limit within the period ASIC determines (s 131(3AA)).\n\nAlso remember **requirements and objectives**. A loan can be affordable and still unsuitable if it does not do what the consumer needs, for example a product with features they did not want and will pay for."
+    },
+    {
+     "type": "sort",
+     "title": "Inquiry or verification?",
+     "prompt": "Sort each step into the part of s 130 it mainly serves.",
+     "buckets": [
+      "Reasonable inquiry",
+      "Reasonable verification"
+     ],
+     "items": [
+      {
+       "text": "Asking why the customer wants to refinance",
+       "bucket": 0
+      },
+      {
+       "text": "Checking payslips against the stated salary",
+       "bucket": 1
+      },
+      {
+       "text": "Asking about expected changes, such as parental leave",
+       "bucket": 0
+      },
+      {
+       "text": "Reviewing bank statements for undisclosed debts",
+       "bucket": 1
+      },
+      {
+       "text": "Asking which loan features matter to the customer",
+       "bucket": 0
+      },
+      {
+       "text": "Confirming existing debts through a credit report",
+       "bucket": 1
+      },
+      {
+       "text": "Asking about regular living expenses",
+       "bucket": 0
+      },
+      {
+       "text": "Checking that stated rent matches the lease and transactions",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A turn: the benchmark shortcut",
+     "setting": "Liam's desk, Logan. 3:30 pm.",
+     "lines": [
+      {
+       "who": "liam",
+       "text": "Their declared living expenses match the benchmark figure to the dollar. Can I just use the benchmark and move on?",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "RG 209 is clear on that. A benchmark tells you nothing about this particular couple. It cannot confirm what they told you.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "So what is it for?",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "Testing plausibility. If their figure is far below a realistic benchmark, that's a reason to ask more. It's a cross-check, not a substitute for inquiry and verification.",
+       "mood": "proud"
+      },
+      {
+       "who": "narrator",
+       "text": "Liam pulls the bank statements. Two monthly payments to a car finance company appear that nobody mentioned.",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The undisclosed car loan",
+     "situation": "The couple's statements show two monthly payments to a car finance company that are not in the application. With them included, repayments on the new loan would leave very little each month. The broker says the car loan 'is being paid off soon' and asks you to approve today so the couple can settle on Friday.",
+     "choices": [
+      {
+       "text": "Pause the decision, ask the couple about the payments, verify the balance and payoff date, and reassess unsuitability with the debt included.",
+       "outcome": "Best choice. New information about the financial situation must be inquired into and verified before the assessment. If the loan would cause substantial hardship, it must be assessed as unsuitable and not entered.",
+       "score": 2
+      },
+      {
+       "text": "Approve now and note the broker's comment in the file.",
+       "outcome": "Poor choice. A broker's assurance is not verification, and the lender stays responsible for its own assessment. Approving with a known gap risks an unsuitable contract.",
+       "score": 0
+      },
+      {
+       "text": "Approve a smaller extra amount without asking, to leave a buffer.",
+       "outcome": "Partly sensible, but guessing does not meet the duty to inquire and verify. The assessment must rest on the consumer's real situation.",
+       "score": 1
+      },
+      {
+       "text": "Decline immediately and tell the broker the couple are unsuitable for any loan.",
+       "outcome": "Too fast. The undisclosed debt calls for inquiry, not an automatic refusal. Once verified, the couple may still qualify for a suitable amount.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "matrix",
+     "title": "How much inquiry is reasonable? Scalability in RG 209",
+     "caption": "RG 209 calls this scalability: what is reasonable depends on the consumer and the credit. Inquiries never drop to zero.",
+     "axes": {
+      "x": "Size and complexity of the credit",
+      "y": "Risk signs in the consumer's situation"
+     },
+     "items": [
+      {
+       "label": "Light but real checks",
+       "detail": "Small, short, simple credit for a consumer whose situation is clear"
+      },
+      {
+       "label": "Deeper checks on the product",
+       "detail": "Complex product or features the consumer may not understand"
+      },
+      {
+       "label": "Deeper checks on the person",
+       "detail": "Signs of stretch, irregular income or a vulnerable consumer"
+      },
+      {
+       "label": "Most thorough inquiry and verification",
+       "detail": "Large or long-term credit plus complexity or signs of stretch"
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Answering a request for the written assessment",
+     "prompt": "Put the steps in order for a customer who asks for a copy of the assessment eight months after settlement.",
+     "steps": [
+      "Log the request and the date the bank received it",
+      "Confirm the credit day and that the request falls within the 7-year window",
+      "Note the deadline: 7 business days, because it is within 2 years of the credit day",
+      "Retrieve the assessment from the loan records",
+      "Send a written copy without charging any fee",
+      "Record when and how the copy was given"
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "RG 209 at a glance",
+     "cards": [
+      {
+       "front": "What are benchmarks such as HEM for?",
+       "back": "A cross-check of plausibility. RG 209 says they give no information about the individual consumer and do not verify what the consumer said."
+      },
+      {
+       "front": "Who must assess suitability: lender or broker?",
+       "back": "Each licensee has its own obligations. A lender can use information from a broker but remains responsible for its own inquiries, verification and assessment."
+      },
+      {
+       "front": "What is 'scalability'?",
+       "back": "The idea that the inquiries and verification that are reasonable depend on the consumer's circumstances and the credit product."
+      },
+      {
+       "front": "Why keep records?",
+       "back": "RG 209 warns that without records of inquiries, verification and information relied on, it is hard to show you complied."
+      },
+      {
+       "front": "Does the duty cover limit increases?",
+       "back": "Yes. The steps apply before increasing a credit limit, not only before a new contract."
+      },
+      {
+       "front": "Can a lender charge for the written assessment?",
+       "back": "No. The NCCP Act prohibits asking for payment for a copy of the assessment."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A customer asks for a copy of her credit assessment three years after her personal loan started. What timeframe applies?",
+     "options": [
+      "7 business days after the request is received",
+      "21 business days after the request is received",
+      "30 calendar days after the request is received",
+      "No copy is required after two years"
+     ],
+     "answer": 1,
+     "explanation": "Section 132(2) gives 7 business days for requests made within 2 years of the credit day, and 21 business days for later requests within the 7-year period. The copy must be free."
+    },
+    {
+     "type": "example",
+     "title": "Real case: ASIC v Westpac, the responsible lending appeal (2019-2020)",
+     "body": "ASIC sued **Westpac** in 2017, alleging that between 2011 and 2015 its automated home loan process did not properly assess whether borrowers could meet repayments, partly because it relied on a living-expense benchmark.\n\n- In **August 2019** Justice Perram dismissed the case (ASIC 19-210MR).\n- In **June 2020** the Full Federal Court dismissed ASIC's appeal by a **2-1 majority** (ASIC 20-149MR).\n- ASIC said it brought the case to get judicial clarity on a cornerstone duty, and later said it would not appeal further and would review its guidance.\n\n**Lesson:** the law leaves lenders room in *how* they assess, but the steps of inquiry, verification and assessment still have to be done, and RG 209 explains ASIC's view of doing them well."
+    },
+    {
+     "type": "tip",
+     "title": "Make your file tell the story",
+     "body": "A reviewer who picks up your file should see, without asking you:\n\n- the customer's **requirements and objectives** in their own words\n- the **income, expenses and debts** you were told, and **what you checked** them against\n- any **benchmark** comparison and what you did when figures looked low\n- your **unsuitability conclusion** and the period it covers\n\nRG 209 points to application forms, fact finds and needs analyses as practical ways to record this."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage two take-aways",
+     "items": [
+      "Before entering a credit contract or increasing a limit, inquire, verify and assess within the 90 days before the credit day.",
+      "A contract is unsuitable if the consumer likely cannot repay or only with substantial hardship, or it does not meet their requirements and objectives.",
+      "Selling the home to repay is presumed to be substantial hardship; credit cards are tested against repaying the limit within ASIC's period.",
+      "Benchmarks test plausibility; they do not replace inquiry or verification (RG 209).",
+      "Give a free written copy of the assessment on request within the legal timeframes, and keep records that prove each step."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Pick a loan or limit increase you have seen recently. Which step, inquiry, verification or assessment, would have been hardest to prove from the file alone, and what would you add next time?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "au-cc-s2-q1",
+     "question": "Before entering a credit contract, what must a credit provider do about the consumer's financial situation under s 130?",
+     "options": [
+      "Obtain a credit score above a fixed national minimum",
+      "Accept the consumer's declaration if it is signed",
+      "Make reasonable inquiries and take reasonable steps to verify it",
+      "Ask the broker to confirm it in writing"
+     ],
+     "answer": 2,
+     "explanation": "Section 130(1) requires reasonable inquiries about the financial situation and reasonable steps to verify it. There is no national score threshold, and a signed declaration or broker confirmation does not replace the lender's own verification.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s2-q2",
+     "question": "Within what period before the credit day must the unsuitability assessment be made, unless regulations prescribe otherwise?",
+     "options": [
+      "30 days",
+      "7 business days",
+      "90 days",
+      "12 months"
+     ],
+     "answer": 2,
+     "explanation": "Section 128 requires the assessment and the inquiries and verification to be made within 90 days (or another prescribed period) before the credit day.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q3",
+     "question": "A customer could repay a proposed loan only by selling her home. How does the NCCP Act treat this?",
+     "options": [
+      "It is acceptable because the home secures the loan",
+      "It is a matter for her to decide, not the lender",
+      "It is presumed she could comply only with substantial hardship",
+      "It only matters if she has dependants"
+     ],
+     "answer": 2,
+     "explanation": "Sections 131(3) and 133(3) presume substantial hardship if the consumer could only comply by selling their principal place of residence, unless the contrary is proved.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q4",
+     "question": "A loan is affordable, but it includes an offset feature and redraw fees the customer said she does not want and will pay extra for. What is the main responsible lending concern?",
+     "options": [
+      "It may not meet her requirements and objectives, which can make it unsuitable",
+      "None, because affordability is the only test",
+      "It breaches the design and distribution obligations automatically",
+      "It must be reported to AFCA within 30 days"
+     ],
+     "answer": 0,
+     "explanation": "Unsuitability has two limbs: inability to comply without substantial hardship, and failure to meet requirements or objectives. An affordable product can still be unsuitable on the second limb.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q5",
+     "question": "Liam sees declared living expenses that exactly match a benchmark figure. What does RG 209 say about using the benchmark here?",
+     "options": [
+      "It can test plausibility but is not a substitute for inquiry and verification",
+      "It verifies the expenses, so no further steps are needed",
+      "It must never be used by lenders in any way",
+      "It replaces the need to ask about expenses"
+     ],
+     "answer": 0,
+     "explanation": "RG 209 says benchmarks give no information about the individual consumer and do not verify what they said, but can be used as a plausibility check. Banning them or relying on them alone both misread the guide.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q6",
+     "question": "How does the credit card test of substantial hardship in s 131(3AA) work?",
+     "options": [
+      "Could the consumer pay the minimum repayment each month?",
+      "Has the consumer had a credit card for at least a year?",
+      "Could the consumer repay an amount equal to the limit within the period ASIC determines?",
+      "Is the limit below the consumer's monthly income?"
+     ],
+     "answer": 2,
+     "explanation": "For credit card contracts, the consumer is taken to be in substantial hardship if they could not repay an amount equal to the credit limit within the period ASIC determines under s 160F. Minimum repayments are not the test.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s2-q7",
+     "question": "A broker sends Coral Range Bank a complete application with verified payslips. What remains the bank's responsibility as lender?",
+     "options": [
+      "Nothing, because the broker carries all responsible lending duties",
+      "Only checking the broker's licence number",
+      "Only checking the security property valuation",
+      "Its own inquiries, verification and unsuitability assessment, using the broker's material as appropriate"
+     ],
+     "answer": 3,
+     "explanation": "Lenders and brokers each have responsible lending duties. RG 209 says lenders may use information obtained by a broker, but the lender's own obligations remain.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s2-q8",
+     "question": "A customer asks for the written assessment before her loan is entered. What must the lender do?",
+     "options": [
+      "Give her a written copy before entering the contract, free of charge",
+      "Give it within 21 business days after settlement",
+      "Give it only if she pays an administration fee",
+      "Refer her to AFCA for a copy"
+     ],
+     "answer": 0,
+     "explanation": "Under s 132(1), a request made before the contract is entered must be met with a written copy before entry, and s 132(4) bans charging for it.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q9",
+     "question": "What did the Full Federal Court decide in ASIC's responsible lending appeal against Westpac in 2020?",
+     "options": [
+      "It ordered Westpac to pay a record penalty",
+      "It dismissed ASIC's appeal by a 2-1 majority",
+      "It found every Westpac home loan unsuitable",
+      "It sent the case to the High Court for decision"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's release 20-149MR reported that the Full Federal Court dismissed the appeal two to one. No penalty was ordered, and ASIC later said it would not seek to appeal further.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s2-q10",
+     "question": "Which practice does RG 209 suggest best helps a lender demonstrate compliance with its responsible lending duties?",
+     "options": [
+      "Destroying working notes once a loan settles",
+      "Recording only the final approval decision",
+      "Relying on staff memory if ASIC asks",
+      "Recording inquiries, verification and the information relied on, using fact finds or needs analyses"
+     ],
+     "answer": 3,
+     "explanation": "RG 209 warns that failing to keep records of inquiries, verification and information relied on makes it hard to show compliance, and points to application forms, fact finds and needs analyses.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Design and distribution obligations and sales practices",
+   "stage": "The Product Gate",
+   "summary": "Learn how the design and distribution obligations (RG 274) steer bank products to the right customers, what distributors and frontline staff must do, and how poor sales practices turn into regulatory breaches.",
+   "minutes": 55,
+   "objectives": [
+    "Explain what a target market determination (TMD) must contain and which bank products need one",
+    "Describe the reasonable steps duty for issuers and distributors and the 10-business-day deadlines",
+    "Recognise review triggers and significant dealings and escalate them",
+    "Explain how training, incentives and scripts support distribution consistent with the TMD",
+    "Identify sales practices that ASIC has treated as harmful"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage three: the card everyone wants",
+     "setting": "Product team video call, Coral Range Bank Melbourne office and Brisbane. 9:30 am.",
+     "lines": [
+      {
+       "who": "farid",
+       "text": "Good news: our new rewards credit card launch is a hit. Applications are up, and the branch teams love the sales bonus.",
+       "mood": "happy"
+      },
+      {
+       "who": "kirra",
+       "text": "Less good news: complaints too. Students saying they were signed up while opening a savings account, and people over their heads with the annual fee.",
+       "mood": "worried"
+      },
+      {
+       "who": "farid",
+       "text": "The TMD says the card is for people with steady income who pay the balance in full most months.",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "Then we have two questions. Is our distribution consistent with that target market? And is something telling us the TMD itself needs review?",
+       "mood": "neutral"
+      },
+      {
+       "who": "sofia",
+       "text": "And a third: do the people selling it know who the card is for?",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "This stage is about the product gate: the rules that decide which customers a product should reach.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "DDO in five scenes",
+     "scenes": [
+      {
+       "icon": "🎯",
+       "heading": "Design for someone",
+       "narration": "Since 5 October 2021, issuers of most retail financial products must make a target market determination, a TMD, describing the class of consumers the product is designed for."
+      },
+      {
+       "icon": "🚧",
+       "heading": "Set the guardrails",
+       "narration": "The TMD also sets distribution conditions, review triggers, review periods and the information distributors must report back, including complaint numbers."
+      },
+      {
+       "icon": "🚶",
+       "heading": "Reasonable steps",
+       "narration": "Both issuer and distributor must take reasonable steps that will, or are reasonably likely to, result in distribution consistent with the TMD."
+      },
+      {
+       "icon": "🔔",
+       "heading": "Listen for triggers",
+       "narration": "If a review trigger occurs, the issuer must review the TMD within 10 business days, and stop distributing until it has."
+      },
+      {
+       "icon": "📣",
+       "heading": "Report significant dealings",
+       "narration": "A distributor that learns of a significant dealing outside the TMD tells the issuer within 10 business days; the issuer tells ASIC within the same limit."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Issuer and distributor duties under DDO",
+     "caption": "A bank is usually both: issuer of its own cards, loans and deposits, and distributor through branches, apps and contact centres.",
+     "headers": [
+      "Issuer",
+      "Distributor"
+     ],
+     "items": [
+      {
+       "label": "Make the TMD",
+       "left": "Prepare it and make it public, free, before distribution",
+       "right": "Do not distribute unless a TMD has been made (s 994D)"
+      },
+      {
+       "label": "Reasonable steps",
+       "left": "Distribution consistent with the TMD (s 994E(1))",
+       "right": "Distribution consistent with the latest TMD (s 994E(3))"
+      },
+      {
+       "label": "Reviews",
+       "left": "Review when a trigger occurs and periodically (s 994C)",
+       "right": "Report information the TMD asks for, including complaints"
+      },
+      {
+       "label": "Significant dealings",
+       "left": "Notify ASIC within 10 business days (s 994G)",
+       "right": "Notify the issuer within 10 business days (s 994F(6))"
+      },
+      {
+       "label": "Records",
+       "left": "TMD decisions, reasons and data",
+       "right": "Distribution information and complaint numbers"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which of these bank products is covered by the design and distribution obligations according to RG 274?",
+     "options": [
+      "A margin lending facility",
+      "A consumer credit card issued by the bank",
+      "A MySuper product",
+      "Fully paid ordinary shares in the bank"
+     ],
+     "answer": 1,
+     "explanation": "RG 274 lists credit facilities such as credit cards and home loans as covered, along with basic banking products. Margin lending, MySuper products and most ordinary shares are among the listed exclusions."
+    },
+    {
+     "type": "concept",
+     "title": "What a TMD must contain",
+     "body": "RG 274 summarises the content rules in s 994B(5). A TMD must be in writing and:\n\n- describe the **target market**, the class of consumers the product is designed for\n- set any **distribution conditions** and restrictions\n- set **review triggers**, events suggesting the TMD may no longer be appropriate\n- say when the **first and later reviews** happen\n- set **reporting periods** for complaint numbers, and other information distributors must report\n\nIt must also be **appropriate**: if distributed under its conditions, the consumer is likely to be in the target market, and for a consumer in the target market the product is likely to fit their objectives, financial situation and needs.\n\nPersonal advice is **excluded conduct**, so some DDO duties do not apply when a licensed adviser gives personal advice."
+    },
+    {
+     "type": "sort",
+     "title": "Inside the TMD or a distribution duty?",
+     "prompt": "Sort each item: is it content the issuer puts in the TMD, or a duty the distributor carries out?",
+     "buckets": [
+      "TMD content",
+      "Distributor duty"
+     ],
+     "items": [
+      {
+       "text": "Description of the class of consumers the card suits",
+       "bucket": 0
+      },
+      {
+       "text": "Review triggers such as a spike in early cancellations",
+       "bucket": 0
+      },
+      {
+       "text": "Reporting complaint numbers to the issuer each period",
+       "bucket": 1
+      },
+      {
+       "text": "Distribution conditions, such as no sales through a store counter",
+       "bucket": 0
+      },
+      {
+       "text": "Telling the issuer about a significant dealing within 10 business days",
+       "bucket": 1
+      },
+      {
+       "text": "Keeping records of distribution information",
+       "bucket": 1
+      },
+      {
+       "text": "The dates of the first and later TMD reviews",
+       "bucket": 0
+      },
+      {
+       "text": "Not distributing before a TMD has been made",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A turn: the cancellation spike",
+     "setting": "Farid's dashboard, Melbourne. Late afternoon.",
+     "lines": [
+      {
+       "who": "farid",
+       "text": "Look at this. A third of new card applications from our store partnership get cancelled within weeks.",
+       "mood": "worried"
+      },
+      {
+       "who": "kirra",
+       "text": "And complaints are coming in from people who say they didn't understand they were applying for credit.",
+       "mood": "worried"
+      },
+      {
+       "who": "farid",
+       "text": "Our TMD lists unusually high cancellations as a review trigger. Do we keep selling while we look into it?",
+       "mood": "thinking"
+      },
+      {
+       "who": "mei",
+       "text": "That is exactly what got another card issuer into Federal Court. If a trigger has happened and the TMD hasn't been reviewed, distribution must stop until it is.",
+       "mood": "neutral"
+      },
+      {
+       "who": "farid",
+       "text": "Then I'll pause the channel today and start the review.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The savings account cross-sell",
+     "situation": "A branch customer service officer, Mia, has a monthly target for the rewards credit card. A 19-year-old student opens a savings account and mentions she works six hours a week. Mia's script says to 'offer the card to every new customer'. The TMD describes consumers with steady income who usually repay the balance in full.",
+     "choices": [
+      {
+       "text": "Do not offer the card; help with the savings account, and raise with her manager that the script conflicts with the TMD.",
+       "outcome": "Best choice. Offering the card to a consumer clearly outside the target market is not consistent with the TMD, and the script itself is a distribution problem the bank must fix.",
+       "score": 2
+      },
+      {
+       "text": "Offer the card but explain the annual fee clearly.",
+       "outcome": "Partly right on disclosure, but the issue is target market fit. Clear disclosure does not make distribution consistent with the TMD.",
+       "score": 1
+      },
+      {
+       "text": "Offer the card because the script says to offer it to everyone.",
+       "outcome": "Poor choice. A script that ignores the TMD undermines the bank's reasonable steps and invites mis-selling.",
+       "score": 0
+      },
+      {
+       "text": "Offer a lower limit on the same card to fit her income.",
+       "outcome": "Still outside the target market, and responsible lending checks would also be engaged. A lower limit does not fix the mismatch.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "funnel",
+     "title": "From product idea to the right customer",
+     "caption": "DDO controls the funnel at product level. Responsible lending and advice duties still apply to each individual customer.",
+     "items": [
+      {
+       "label": "All consumers",
+       "detail": "Everyone who might hear about the product"
+      },
+      {
+       "label": "Target market",
+       "detail": "The class of consumers in the TMD"
+      },
+      {
+       "label": "Distribution conditions",
+       "detail": "Channels, eligibility checks and scripts"
+      },
+      {
+       "label": "Responsible lending or suitability checks",
+       "detail": "Each individual customer's situation"
+      },
+      {
+       "label": "Right product, right customer",
+       "detail": "Monitored through complaints and data"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Match the warning sign to the right response",
+     "prompt": "Link each situation to what the bank should do.",
+     "pairs": [
+      {
+       "left": "Review trigger occurs",
+       "right": "Review the TMD within 10 business days and pause distribution until reviewed"
+      },
+      {
+       "left": "Significant dealing outside the TMD",
+       "right": "Distributor tells the issuer within 10 business days"
+      },
+      {
+       "left": "Issuer learns of significant dealing",
+       "right": "Notify ASIC as soon as practicable, within 10 business days"
+      },
+      {
+       "left": "Sales bonus drives sales outside the target market",
+       "right": "Fix the incentive and retrain staff"
+      },
+      {
+       "left": "Staff unsure who a product suits",
+       "right": "Train on product attributes and the target market"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Sales practice red flags",
+     "cards": [
+      {
+       "front": "Add-on insurance 'just in case'",
+       "back": "ASIC's review of consumer credit insurance found poor value and harmful sales. Never add a product the customer did not ask for and agree to."
+      },
+      {
+       "front": "'Offer it to everyone' scripts",
+       "back": "Scripts must reflect distribution conditions. Blanket offers ignore the target market."
+      },
+      {
+       "front": "Bonuses tied only to volume",
+       "back": "RG 274 says ASIC considers how distributors manage incentives that could encourage harm or distribution outside the TMD."
+      },
+      {
+       "front": "Pressure to apply today",
+       "back": "Urgency stops customers understanding what they are applying for and undermines suitability checks."
+      },
+      {
+       "front": "Credit offered during an unrelated task",
+       "back": "Opening a savings account is not a reason to apply for credit. Treat it as a separate, informed decision."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "RG 274 says ASIC will consider whether a distributor has trained staff involved in distribution. What does it suggest that training include?",
+     "options": [
+      "Only the product's price and fees",
+      "Only techniques for overcoming customer objections",
+      "Only the bank's internal sales targets",
+      "Key product attributes and the target market, as well as appropriate sales conduct"
+     ],
+     "answer": 3,
+     "explanation": "RG 274 says distributors should consider training staff on key product attributes and the target market, in addition to appropriate sales conduct, and assess their skills."
+    },
+    {
+     "type": "example",
+     "title": "Real case: American Express and the David Jones cards (2024)",
+     "body": "In July 2024 the Federal Court ordered **American Express Australia** to pay **$8 million** for breaching the DDO, in ASIC's first civil penalty case under the regime (ASIC 24-158MR).\n\n- The cards were co-branded David Jones credit cards, mainly sold in David Jones stores.\n- From **25 May to 5 July 2022**, Amex ought to have known that **high cancelled application rates** suggested the TMDs were no longer appropriate, yet kept issuing the cards without reviewing them.\n- The Court noted that staff responsible for monitoring the TMDs **were not aware of their obligations**.\n\n**Lesson:** DDO is live monitoring, and people must know what the data is telling them."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Westpac's unsolicited credit insurance (2022)",
+     "body": "ASIC's 2022 release on **Westpac** (22-084MR) shows the sales side of the same problem.\n\n- Westpac issued consumer credit insurance to **141 customers** who had not asked for it, then charged premiums; the Court ordered a **$1.5 million** penalty.\n- ASIC said its earlier review of credit insurance across **11 banks and lenders** found poor value products and harmful sales practices.\n- ASIC reported securing about **$270 million** in remediation across the sector.\n\n**Lesson:** add-on sales need the customer's genuine request and agreement. Product design and sales conduct must both serve the customer."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage three take-aways",
+     "items": [
+      "Since 5 October 2021, issuers must make a TMD for covered products, including credit cards, home loans and basic banking products.",
+      "Issuers and distributors must take reasonable steps so distribution is consistent with the TMD.",
+      "Review triggers mean the TMD must be reviewed within 10 business days, and distribution paused until it is.",
+      "Significant dealings outside the TMD go to the issuer, and from the issuer to ASIC, within 10 business days.",
+      "Training on product attributes and target markets, sensible scripts and safe incentives are part of reasonable steps."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of a product you sell or support. Could you describe its target market in one sentence to a customer? If not, what would help you learn it?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "au-cc-s3-q1",
+     "question": "From what date did the design and distribution obligations apply to issuers and distributors?",
+     "options": [
+      "1 July 2019",
+      "28 February 2025",
+      "1 January 2023",
+      "5 October 2021"
+     ],
+     "answer": 3,
+     "explanation": "RG 274 states that issuers and distributors had to comply from 5 October 2021.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s3-q2",
+     "question": "What is a target market determination (TMD)?",
+     "options": [
+      "A credit assessment of one customer's ability to repay",
+      "ASIC's approval of a product before sale",
+      "A written document describing the class of consumers a product is designed for and how it should be distributed",
+      "A customer's statement of their financial goals"
+     ],
+     "answer": 2,
+     "explanation": "A TMD is the issuer's written description of the target market, distribution conditions, review triggers and reporting requirements. It is not an individual assessment or an ASIC approval.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s3-q3",
+     "question": "A review trigger in a credit card's TMD has occurred. What must the issuer do?",
+     "options": [
+      "Notify AFCA within 30 days",
+      "Review the TMD within 10 business days and not keep distributing until it has",
+      "Keep distributing until the next scheduled annual review",
+      "Ask distributors to collect more complaints first"
+     ],
+     "answer": 1,
+     "explanation": "RG 274 summarises s 994C: review within 10 business days of knowing, or when it ought reasonably to know, of the trigger. The Amex case shows the risk of continuing to issue without the review.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s3-q4",
+     "question": "A Coral Range branch, acting as distributor, finds a significant dealing in a product that is not consistent with the TMD. What must it do?",
+     "options": [
+      "Notify ASIC directly within 30 days",
+      "Record it and wait for the next audit",
+      "Tell the customer to complain to AFCA",
+      "Notify the issuer as soon as practicable, within 10 business days"
+     ],
+     "answer": 3,
+     "explanation": "Under s 994F(6), distributors notify the issuer of significant dealings within 10 business days. The issuer then notifies ASIC under s 994G.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s3-q5",
+     "question": "Which product is excluded from the design and distribution obligations according to RG 274?",
+     "options": [
+      "A home loan for a consumer",
+      "A 31-day term deposit",
+      "A consumer credit card",
+      "A margin lending facility"
+     ],
+     "answer": 3,
+     "explanation": "RG 274 lists margin lending facilities among excluded products. Home loans and credit cards are covered credit facilities, and basic banking products, which include 31-day term deposits, are prescribed as needing a TMD.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s3-q6",
+     "question": "Why do some DDO duties not apply when a licensed adviser gives a customer personal advice?",
+     "options": [
+      "Advisers are exempt from all ASIC regulation",
+      "Personal advice only applies to superannuation",
+      "Personal advice is 'excluded conduct' under the DDO regime",
+      "ASIC approves each piece of personal advice in advance"
+     ],
+     "answer": 2,
+     "explanation": "RG 274 explains that personal advice is excluded conduct, so duties such as the reasonable steps obligation for distributors do not apply to it. Advisers remain subject to their own advice obligations.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s3-q7",
+     "question": "In the 2024 American Express case, what signal should have prompted a TMD review?",
+     "options": [
+      "A fall in the cash rate",
+      "High rates of cancelled credit card applications",
+      "A competitor launching a new card",
+      "A drop in the store's foot traffic"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's release says the Court found Amex ought to have known that high cancelled application rates reasonably suggested the TMDs were no longer appropriate, yet kept issuing the cards.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s3-q8",
+     "question": "A branch script tells staff to offer a rewards credit card to every new savings customer. Which DDO concern is most direct?",
+     "options": [
+      "The script breaches the credit card interest rate cap",
+      "Distribution may not be consistent with the TMD, undermining the bank's reasonable steps",
+      "The script must first be lodged with AFCA",
+      "Savings accounts cannot be sold with any other product"
+     ],
+     "answer": 1,
+     "explanation": "Reasonable steps include distribution conditions, scripts and controls that keep sales within the target market. A blanket offer ignores the TMD. The other options describe rules that do not exist.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s3-q9",
+     "question": "What does RG 274 say ASIC will take into account about distributors' staff incentives?",
+     "options": [
+      "Steps taken to eliminate or manage the risk that incentives encourage harm or sales outside the TMD",
+      "Whether incentives are paid in cash or shares",
+      "Whether incentives exceed a fixed percentage of salary",
+      "Nothing, because incentives are an employment matter"
+     ],
+     "answer": 0,
+     "explanation": "RG 274 lists inappropriate incentives as a factor: ASIC considers how a distributor eliminates or manages the risk that incentives encourage consumer harm or inconsistent distribution.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s3-q10",
+     "question": "Which records must a distributor keep under the DDO regime?",
+     "options": [
+      "Only signed customer applications",
+      "Distribution information, including the number of complaints about the product",
+      "Only the issuer's TMD reviews",
+      "Only staff sales targets"
+     ],
+     "answer": 1,
+     "explanation": "RG 274 summarises s 994F(3): distributors must keep complete and accurate records of distribution information, including complaint numbers and information the TMD specifies.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Complaints, AFCA, hardship and customers experiencing vulnerability",
+   "stage": "The Listening Post",
+   "summary": "Handle complaints under RG 271 and send unresolved ones to AFCA, respond to hardship notices on time, support customers experiencing vulnerability, and understand where the Banking Code of Practice fits.",
+   "minutes": 60,
+   "objectives": [
+    "Recognise a complaint using the definition RG 271 adopts, in any channel",
+    "Apply the RG 271 response timeframes, the five-business-day rule and IDR delay notifications",
+    "Explain the role of AFCA and what an IDR response must tell the customer",
+    "Respond to a hardship notice in line with National Credit Code s 72",
+    "Support customers experiencing vulnerability and explain the Banking Code's contractual status"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage four: the comment on the bank's page",
+     "setting": "Complaints team, Coral Range Bank contact centre, Townsville. 10:05 am.",
+     "lines": [
+      {
+       "who": "kirra",
+       "text": "Welcome to the listening post. Every complaint here is free advice about what we're getting wrong.",
+       "mood": "happy"
+      },
+      {
+       "who": "narrator",
+       "text": "On screen: a post on the bank's own social media page. 'Third time I've rung about my loan. Nobody calls back. I lost my job and I can't keep paying. Disgraceful.' The author's name and profile are visible.",
+       "mood": "worried"
+      },
+      {
+       "who": "liam",
+       "text": "That's a social media rant, surely. Not a formal complaint. She hasn't even used the word.",
+       "mood": "thinking"
+      },
+      {
+       "who": "kirra",
+       "text": "Under RG 271 she doesn't need to. It's an expression of dissatisfaction on our own channel, she's identifiable and contactable, and she clearly expects a response.",
+       "mood": "neutral"
+      },
+      {
+       "who": "mei",
+       "text": "And look again. 'I lost my job and I can't keep paying.' That may also be a hardship notice.",
+       "mood": "worried"
+      },
+      {
+       "who": "kirra",
+       "text": "So two clocks may have just started. Let's learn to read them.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "How a complaint travels",
+     "scenes": [
+      {
+       "icon": "👂",
+       "heading": "Recognise it",
+       "narration": "RG 271 adopts the definition in the Australian standard AS/NZS 10002:2014: an expression of dissatisfaction where a response or resolution is explicitly or implicitly expected. It can be spoken, written or posted on the firm's own social media."
+      },
+      {
+       "icon": "📨",
+       "heading": "Acknowledge it",
+       "narration": "ASIC expects firms to acknowledge a complaint within 24 hours, or one business day, or as soon as practicable."
+      },
+      {
+       "icon": "🔎",
+       "heading": "Resolve it",
+       "narration": "Most complaints need a written IDR response within 30 calendar days. Credit complaints about hardship notices or default notices have 21 days."
+      },
+      {
+       "icon": "✉️",
+       "heading": "Explain the outcome",
+       "narration": "The IDR response gives the final outcome, reasons if the complaint is rejected, and the customer's right to go to AFCA with AFCA's contact details."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "AFCA if needed",
+       "narration": "The Australian Financial Complaints Authority is the external dispute resolution scheme. Banks must be members, and customers can take complaints the bank has not resolved to AFCA."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "timeline",
+     "title": "RG 271 maximum timeframes for an IDR response",
+     "caption": "Timeframes run in calendar days unless marked as business days. Day 1 is the first day after the complaint is received.",
+     "items": [
+      {
+       "value": "Day 1",
+       "label": "Acknowledge",
+       "detail": "ASIC expects acknowledgement within 24 hours or one business day"
+      },
+      {
+       "value": "5 business days",
+       "label": "Quick closure",
+       "detail": "No IDR response needed if resolved to satisfaction or explained, unless an exception applies"
+      },
+      {
+       "value": "21 days",
+       "label": "Hardship and default notices",
+       "detail": "Credit complaints involving hardship notices or default notices"
+      },
+      {
+       "value": "30 days",
+       "label": "Standard complaints",
+       "detail": "Written IDR response, or an IDR delay notification with reasons"
+      },
+      {
+       "value": "45 days",
+       "label": "Super trustees",
+       "detail": "Most superannuation trustee complaints"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A customer tells a teller, angrily, that a fee was charged twice. She doesn't use the word 'complaint' and doesn't put anything in writing. Under RG 271, what is this?",
+     "options": [
+      "Feedback only, because it was verbal",
+      "A complaint that must go through the IDR process",
+      "An inquiry, because she did not say 'complaint'",
+      "Not a complaint until she writes to the bank"
+     ],
+     "answer": 1,
+     "explanation": "RG 271 says consumers do not need to use the word 'complaint' or write it down. Firms must not class a complaint as feedback or an inquiry just because it was verbal."
+    },
+    {
+     "type": "concept",
+     "title": "The five-business-day rule and its exceptions",
+     "body": "A firm does not need to send a written IDR response if, by the end of the **fifth business day** after receipt, it has:\n\n- resolved the complaint to the customer's satisfaction, or\n- given an explanation or apology when it can take no further reasonable action.\n\nBut a **written IDR response is still required** if:\n\n- the customer asks for one\n- the complaint is about **hardship**, a **declined insurance claim** or the **value of a claim**\n- it concerns certain superannuation trustee decisions\n\nAnd whatever the timeframe, if the firm cannot respond in time, it must send an **IDR delay notification** that gives the real reasons for the delay and the right to go to AFCA. 'Our investigation is ongoing' is not a reason."
+    },
+    {
+     "type": "sort",
+     "title": "Complaint or not?",
+     "prompt": "Sort each contact under RG 271.",
+     "buckets": [
+      "Complaint: use IDR",
+      "Not a complaint"
+     ],
+     "items": [
+      {
+       "text": "A verbal grumble about a double fee charge, expecting a fix",
+       "bucket": 0
+      },
+      {
+       "text": "A post on the bank's own page by a named, contactable customer, upset about delays",
+       "bucket": 0
+      },
+      {
+       "text": "A question about branch opening hours",
+       "bucket": 1
+      },
+      {
+       "text": "Dissatisfaction resolved with a goodwill payment and no admission of error",
+       "bucket": 0
+      },
+      {
+       "text": "A complaint about delays in an existing remediation program",
+       "bucket": 0
+      },
+      {
+       "text": "A request to update a home address",
+       "bucket": 1
+      },
+      {
+       "text": "A complaint the bank thinks has no merit",
+       "bucket": 0
+      },
+      {
+       "text": "A thank-you email praising a lender",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A turn: hardship hidden in a complaint",
+     "setting": "Kirra's desk, Townsville. 11:20 am.",
+     "lines": [
+      {
+       "who": "kirra",
+       "text": "Our customer, Mrs Talbot, confirms she lost her job last month. She wants to reduce her home loan repayments for a while.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "Do we treat it as a complaint or a hardship request?",
+       "mood": "thinking"
+      },
+      {
+       "who": "kirra",
+       "text": "Both. The complaint is about nobody calling back. Her words about being unable to pay are a hardship notice, and it can be given orally.",
+       "mood": "neutral"
+      },
+      {
+       "who": "mei",
+       "text": "Under the National Credit Code we must respond with our decision within the time the law sets. If we don't agree a change, the notice must give reasons and AFCA's details.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kirra",
+       "text": "Large banks have paid heavy penalties for missing exactly this. We log it now, with today's date.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The missing hardship request",
+     "situation": "Mrs Talbot says she used the online hardship form three weeks ago and heard nothing. You check: the form arrived, but was routed to an inbox nobody monitors. She is now behind on repayments and has received a collections call. She is upset and says she feels ashamed to be asking.",
+     "choices": [
+      {
+       "text": "Apologise, pause collections, log a complaint and a hardship request, escalate the unmonitored inbox as a possible systemic issue, and assess her hardship request quickly.",
+       "outcome": "Best choice. It treats her with care, protects her while the request is considered, meets IDR and hardship duties, and gets the system fault investigated so other customers are found too.",
+       "score": 2
+      },
+      {
+       "text": "Ask her to submit the form again so the clock restarts from today.",
+       "outcome": "Poor choice. The bank received her request three weeks ago. Asking her to resubmit hides the failure and may breach hardship timeframes.",
+       "score": 0
+      },
+      {
+       "text": "Assess her hardship request but leave the inbox issue for IT to find.",
+       "outcome": "Partly right. Her request is handled, but RG 271 requires firms to escalate possible systemic issues promptly. Other customers may be in the same inbox.",
+       "score": 1
+      },
+      {
+       "text": "Refer her straight to AFCA because the complaint is serious.",
+       "outcome": "Not the first step. The bank must deal with the complaint through IDR and respond to the hardship notice. AFCA is for complaints the bank does not resolve.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "From one complaint to fixing the system",
+     "caption": "RG 271 says boards must set clear accountabilities for complaints handling, including systemic issues.",
+     "items": [
+      {
+       "label": "Staff spot a pattern",
+       "detail": "RG 271 requires firms to encourage staff to escalate possible systemic issues"
+      },
+      {
+       "label": "Analyse complaint data",
+       "detail": "Regular analysis to find issues affecting more than one customer"
+      },
+      {
+       "label": "Escalate and investigate",
+       "detail": "Promptly, to the right area of the bank"
+      },
+      {
+       "label": "Remediate",
+       "detail": "Identify affected customers and provide fair remediation"
+      },
+      {
+       "label": "Report and learn",
+       "detail": "Board reports include complaint metrics and systemic issues"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Banking Code of Practice: what it is and is not",
+     "prompt": "Match each statement to the right fact, based on ASIC's 2024 approval release.",
+     "pairs": [
+      {
+       "left": "Who owns the Code",
+       "right": "The Australian Banking Association, which develops and reviews it"
+      },
+      {
+       "left": "How it binds banks",
+       "right": "Its rules form part of subscribing banks' contracts with customers and guarantors"
+      },
+      {
+       "left": "Who monitors compliance",
+       "right": "The Banking Code Compliance Committee, not ASIC"
+      },
+      {
+       "left": "Current version",
+       "right": "Approved by ASIC; took effect on 28 February 2025"
+      },
+      {
+       "left": "A retained protection",
+       "right": "Care and skill of a diligent and prudent banker for consumer borrowers and guarantors"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Customers experiencing vulnerability",
+     "cards": [
+      {
+       "front": "What can make a customer vulnerable?",
+       "back": "Life events such as job loss, serious illness, family violence or natural disaster, as well as disability, language barriers or age. Anyone can become vulnerable."
+      },
+      {
+       "front": "Do customers have to say 'I am vulnerable'?",
+       "back": "No. Listen for cues, ask open questions, and offer help without forcing disclosure."
+      },
+      {
+       "front": "What does RG 271 expect on accessibility?",
+       "back": "An IDR process easy to use, including for people with disability or language difficulties, and staff trained to identify and help people who need support to complain."
+      },
+      {
+       "front": "What did the 2025 Banking Code broaden?",
+       "back": "ASIC's approval release says it broadened the meaning of financial difficulty and improved inclusion, including interpreter services."
+      },
+      {
+       "front": "Why does it matter legally?",
+       "back": "Hardship failures have led to large penalties, and courts have stressed that affected customers were often in very vulnerable situations."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Coral Range Bank refuses Mrs Talbot's hardship request. What must its notice under National Credit Code s 72(4) include?",
+     "options": [
+      "That no change was agreed, the reasons, and AFCA's name, contact details and her rights under it",
+      "Only that no change was agreed",
+      "A referral to a debt collector",
+      "An offer to sell the property for her"
+     ],
+     "answer": 0,
+     "explanation": "Section 72(4)(b) requires a notice stating that the parties have not agreed to change the contract, the reasons, AFCA's name and contact details, and the debtor's rights under the AFCA scheme."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Westpac's missed hardship requests (2026)",
+     "body": "In May 2026 the Federal Court ordered **Westpac** to pay **$26 million** (ASIC 26-107MR).\n\n- Westpac and its brands St George, BankSA and Bank of Melbourne failed to respond in time to **over 200 online hardship requests** between 2017 and 2023.\n- Justice McEvoy found the failures, though not deliberate, **grossly negligent**, and noted that some customers had adverse credit information recorded and debts sold.\n- Westpac admitted contraventions of National Credit Code s 72(4) and the NCCP Act duty to act efficiently, honestly and fairly, and paid over **$1.7 million** in remediation.\n\nASIC's release also noted **ANZ** was ordered to pay **$40 million** for hardship failures (25-314MR)."
+    },
+    {
+     "type": "example",
+     "title": "Real case: Telstra Super and IDR timeframes (2026)",
+     "body": "In April 2026 the Federal Court found **Telstra Super** failed to comply with the enforceable IDR requirements, in **the first case ASIC brought under them** (ASIC 26-091MR).\n\n- About **one third** of relevant complaints were not answered within the **45-day** superannuation timeframe; some took more than 100 days.\n- Some members were not told the reasons for delay or their right to go to AFCA.\n- The judge said a delay notice that merely says the investigation is 'ongoing' does **not** give a reason for the delay.\n\n**Lesson for banks:** the same enforceable standards apply to bank complaints, with 30-day and 21-day timeframes."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage four take-aways",
+     "items": [
+      "A complaint is any expression of dissatisfaction expecting a response; it can be verbal or on the bank's own social media.",
+      "Standard complaints get a written IDR response within 30 calendar days; hardship and default notice complaints within 21.",
+      "IDR responses give the outcome, reasons for any rejection and the right to go to AFCA; delay notices need real reasons.",
+      "A hardship notice can be oral; the credit provider must respond as National Credit Code s 72 requires.",
+      "The Banking Code binds subscribing banks through their customer contracts; ASIC approves it but does not enforce it."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Recall a time a customer expressed frustration to you without calling it a complaint. How would you handle it now, and what clue might have signalled hardship or vulnerability?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "au-cc-s4-q1",
+     "question": "Which definition of 'complaint' does RG 271 require financial firms to adopt?",
+     "options": [
+      "The definition in AS/NZS 10002:2014",
+      "The definition in the firm's own complaints policy",
+      "Any written complaint marked 'formal'",
+      "The definition in the Banking Code of Practice"
+     ],
+     "answer": 0,
+     "explanation": "RG 271 requires the IDR process to adopt the AS/NZS 10002:2014 definition: an expression of dissatisfaction where a response or resolution is explicitly or implicitly expected or legally required.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s4-q2",
+     "question": "What is the maximum timeframe for an IDR response to a standard bank complaint under RG 271?",
+     "options": [
+      "45 calendar days after receiving the complaint",
+      "21 business days after receiving the complaint",
+      "10 business days after receiving the complaint",
+      "30 calendar days after receiving the complaint"
+     ],
+     "answer": 3,
+     "explanation": "RG 271 sets 30 calendar days for standard complaints. 45 days applies to most superannuation trustee complaints and 21 days to credit complaints involving hardship or default notices.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s4-q3",
+     "question": "A customer complains about the bank's handling of her hardship request. The bank resolves it on day 3. Must it still send a written IDR response?",
+     "options": [
+      "Yes, because hardship complaints need a written IDR response even if closed within five business days",
+      "No, because it was closed within five business days",
+      "Only if AFCA asks for one",
+      "Only if the customer pays a fee for it"
+     ],
+     "answer": 0,
+     "explanation": "RG 271.75 requires a written IDR response for complaints about hardship even when closed by the end of the fifth business day.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s4-q4",
+     "question": "Which of these must an IDR response tell a complainant?",
+     "options": [
+      "The names of every staff member involved",
+      "The bank's profit on the product",
+      "The final outcome, her right to take the complaint to AFCA and AFCA's contact details",
+      "How to complain to APRA instead"
+     ],
+     "answer": 2,
+     "explanation": "RG 271.53 lists the final outcome, the right to take the complaint to AFCA, and AFCA's contact details. Staff names, profit figures and APRA are not required.",
+     "difficulty": 2
+    },
+    {
+     "id": "au-cc-s4-q5",
+     "question": "The bank cannot finish investigating a complex complaint within 30 days. What must it send?",
+     "options": [
+      "Nothing until the investigation finishes",
+      "A letter saying 'our investigation is ongoing'",
+      "A request that the customer withdraw the complaint",
+      "An IDR delay notification giving the reasons for the delay and the right to go to AFCA"
+     ],
+     "answer": 3,
+     "explanation": "RG 271 requires an IDR delay notification. In the Telstra Super case the Court held that saying an investigation is ongoing is not a reason for delay.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s4-q6",
+     "question": "A named, contactable customer posts on Coral Range Bank's own social media page that her card was charged twice and she wants it fixed. How should staff treat it?",
+     "options": [
+      "As public feedback that needs no response",
+      "As a complaint to be handled through IDR, with care to protect her privacy",
+      "As a complaint only if she also emails",
+      "As a matter for the social media agency"
+     ],
+     "answer": 1,
+     "explanation": "RG 271.32 treats posts on a firm's own social media by identifiable, contactable authors as complaints if they meet the definition. Firms must protect privacy when responding.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s4-q7",
+     "question": "A borrower phones to say she has lost her job and cannot keep up repayments. Under National Credit Code s 72, what is this?",
+     "options": [
+      "Not a hardship notice until she completes a form",
+      "A complaint that must go straight to AFCA",
+      "A hardship notice, which can be given orally",
+      "A default notice issued by the borrower"
+     ],
+     "answer": 2,
+     "explanation": "Section 72(1) allows a debtor to give a hardship notice orally or in writing. The bank must then respond in line with s 72, with the AFCA details if no change is agreed.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s4-q8",
+     "question": "What did ASIC's 2024 release say about the Banking Code of Practice's legal effect?",
+     "options": [
+      "It is a law passed by Parliament and enforced by ASIC",
+      "Its rules bind ABA members and form part of their contracts with customers; ASIC does not enforce it",
+      "It applies to every lender in Australia, whether or not it subscribes",
+      "It replaces the NCCP Act for subscribing banks"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's 24-136MR says the Code's rules are binding on ABA members and form part of contracts with customers, ASIC has no role in enforcing or monitoring compliance, and the Banking Code Compliance Committee oversees it.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s4-q9",
+     "question": "Under RG 271, what must a firm do when staff spot what may be a systemic issue from complaints?",
+     "options": [
+      "Enable staff to escalate it and promptly escalate it for investigation and action",
+      "Wait until AFCA identifies it",
+      "Handle each complaint separately without escalation",
+      "Report it only in the annual report"
+     ],
+     "answer": 0,
+     "explanation": "RG 271.120 requires firms to encourage and enable staff to escalate possible systemic issues, analyse complaint data, escalate promptly and report internally on outcomes.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s4-q10",
+     "question": "In the 2026 Westpac hardship case, how did Justice McEvoy characterise the contraventions?",
+     "options": [
+      "Deliberate and dishonest",
+      "Not deliberate, but grossly negligent",
+      "Minor technical breaches",
+      "Caused entirely by customers' errors"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's 26-107MR quotes the judge accepting that the contraventions were not suggested to be deliberate, arose from inadequate systems, and were grossly negligent.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Assessment readiness: the conduct framework, roles and evidence",
+   "stage": "The Assurance Room",
+   "summary": "Pull the quest together: how a bank shows ASIC that its people are trained and competent, how complaints, lending files and product data feed each other, who does what, and when to report.",
+   "minutes": 50,
+   "objectives": [
+    "Describe the parts of a bank's conduct framework that ASIC would expect to see",
+    "Connect complaints data, DDO reviews, responsible lending files and breach reporting",
+    "Explain the roles of frontline staff, team leaders, product owners, complaints, compliance and the board",
+    "Identify the records that prove training, lending, distribution and complaint duties were met",
+    "Recall the key timeframes and obligations covered across the quest"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Stage five: the review is coming",
+     "setting": "Boardroom annex, Coral Range Bank head office, Brisbane. 4:00 pm.",
+     "lines": [
+      {
+       "who": "mei",
+       "text": "Final stage. Imagine ASIC writes tomorrow asking how we know our lenders, tellers and complaints staff are competent. What do we send?",
+       "mood": "thinking"
+      },
+      {
+       "who": "sofia",
+       "text": "Training records for every representative: what they completed, when, the assessment result, and refreshers.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "Lending files that show inquiries, verification and the unsuitability assessment.",
+       "mood": "neutral"
+      },
+      {
+       "who": "farid",
+       "text": "TMDs, review records and the data we watched, including complaint numbers from distributors.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kirra",
+       "text": "Our complaints register, timeframes met, delay notices, and the systemic issues we escalated.",
+       "mood": "neutral"
+      },
+      {
+       "who": "mei",
+       "text": "Good. Now prove they connect. ASIC looks for one system, not five separate filing cabinets.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "One conduct system, many duties",
+     "scenes": [
+      {
+       "icon": "🧭",
+       "heading": "Start with the licence duties",
+       "narration": "Everything hangs off the general obligations: efficiently, honestly and fairly; comply with the law; take reasonable steps so representatives comply; keep them trained and competent."
+      },
+      {
+       "icon": "📚",
+       "heading": "Train and assess",
+       "narration": "Each role gets induction and ongoing training matched to its products and tasks, with an assessment that shows competence, and records that prove it."
+      },
+      {
+       "icon": "🔁",
+       "heading": "Connect the signals",
+       "narration": "Complaints feed DDO reviews. Lending file reviews feed training. Systemic issues feed remediation. One signal should reach every team that needs it."
+      },
+      {
+       "icon": "🚨",
+       "heading": "Escalate and report",
+       "narration": "Breaches and possible breaches are escalated quickly so the licensee can decide whether a reportable situation must go to ASIC within 30 days."
+      },
+      {
+       "icon": "🏛️",
+       "heading": "Board oversight",
+       "narration": "RG 271 says boards must set clear accountabilities for complaints and systemic issues, and board reports must include complaint metrics and analysis."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Who owns what in the conduct framework",
+     "caption": "Each layer depends on the one below spotting issues early and the one above acting on them.",
+     "items": [
+      {
+       "label": "Board",
+       "detail": "Sets accountabilities; receives complaint metrics and systemic issue analysis"
+      },
+      {
+       "label": "Senior management",
+       "detail": "Resources, incentives and culture; signs off TMDs and remediation"
+      },
+      {
+       "label": "Compliance and risk",
+       "detail": "Monitoring, testing, breach assessment and reporting to ASIC"
+      },
+      {
+       "label": "Product owners and complaints team",
+       "detail": "TMD reviews, complaint analysis, systemic issue escalation"
+      },
+      {
+       "label": "Team leaders",
+       "detail": "Supervision, file and call reviews, coaching"
+      },
+      {
+       "label": "Frontline representatives",
+       "detail": "Apply training with every customer; escalate concerns"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which evidence best shows ASIC that a credit representative was adequately trained and competent before advising customers?",
+     "options": [
+      "Her job title and years of service",
+      "A signed code of conduct",
+      "A note that she attended a team meeting",
+      "A dated record of completed role training and a passed assessment, before the first customer contact"
+     ],
+     "answer": 3,
+     "explanation": "The duty is to ensure representatives are trained and competent for the activities they perform. A dated training and assessment record that predates customer contact is the clearest proof."
+    },
+    {
+     "type": "concept",
+     "title": "The evidence map",
+     "body": "When ASIC tests a bank's conduct, it typically asks for evidence like this:\n\n| Duty | Typical evidence |\n|---|---|\n| Trained and competent (s 912A(1)(f), s 47(1)(g)) | Training plans by role, completion and assessment records, refresher logs |\n| Compliance arrangements (s 47(1)(k)) | The written compliance plan and monitoring results |\n| Responsible lending | Fact finds, verification documents, assessments, file reviews |\n| DDO | TMDs, review records and reasons, distributor reports, significant dealing notices |\n| IDR | Complaints register, timeframes met, IDR responses, delay notices, systemic issue reports |\n| Breach reporting | Breach register, assessments and reports lodged with ASIC |\n\nIf it isn't recorded, it is very hard to prove it happened."
+    },
+    {
+     "type": "order",
+     "title": "From a complaint to a reportable situation",
+     "prompt": "Put the steps in the order a well-run bank would follow.",
+     "steps": [
+      "Frontline staff log a complaint about a fee charged twice",
+      "Complaints team spots many similar complaints and escalates a possible systemic issue",
+      "Investigation finds a systems error affecting thousands of accounts",
+      "Compliance assesses whether it is a reportable situation",
+      "The bank reports to ASIC within 30 days of reasonable grounds to believe it arose",
+      "Affected customers are identified and remediated, and staff guidance is updated"
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A turn: the mock review",
+     "setting": "Sofia's office, Brisbane. Next morning.",
+     "lines": [
+      {
+       "who": "sofia",
+       "text": "I ran a mock review on ten home loan files. Eight are great. Two have no verification of living expenses, just the benchmark.",
+       "mood": "worried"
+      },
+      {
+       "who": "liam",
+       "text": "Both from the same new lender. She joined in a rush during the refinance boom.",
+       "mood": "thinking"
+      },
+      {
+       "who": "sofia",
+       "text": "And her training record shows the responsible lending module was booked but never completed.",
+       "mood": "worried"
+      },
+      {
+       "who": "mei",
+       "text": "So this is not just two bad files. It is a training and supervision gap, and possibly a breach to assess.",
+       "mood": "neutral"
+      },
+      {
+       "who": "kirra",
+       "text": "And if any of those customers complain, I need to know the context.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Closing the gap",
+     "situation": "The new lender has written 14 home loans in six weeks without completing responsible lending training. Two of ten sampled files lack verification of living expenses. The regional manager suggests quietly completing her training and moving on, since 'no customer has complained yet'.",
+     "choices": [
+      {
+       "text": "Stop her from approving loans until trained and assessed, review all 14 files, remediate any unsuitable lending, and refer the matter to compliance for breach assessment.",
+       "outcome": "Best choice. It protects customers, fixes the competence gap, checks the full population of files and lets compliance decide if there is a reportable situation within the 30-day window.",
+       "score": 2
+      },
+      {
+       "text": "Complete her training this week and review only the two failed files.",
+       "outcome": "Partly right. Training fixes the future, but the other 12 files may have the same gap, and breach assessment is still needed.",
+       "score": 1
+      },
+      {
+       "text": "Do nothing until a customer complains.",
+       "outcome": "Poor choice. The duty to train is not triggered by complaints, and waiting risks harm, larger remediation and a late breach report.",
+       "score": 0
+      },
+      {
+       "text": "Move her to a deposits role and close the matter.",
+       "outcome": "Removes the immediate risk but leaves possible unsuitable loans and an unassessed breach. ASIC expects the problem itself to be fixed.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "Real cases from this quest",
+     "caption": "Common threads: systems people did not understand, signals nobody acted on, and customers who needed help and did not get it.",
+     "items": [
+      {
+       "value": "$26m",
+       "label": "Westpac, 2026",
+       "detail": "Penalty for failing to respond in time to over 200 online hardship requests (ASIC 26-107MR)"
+      },
+      {
+       "value": "$15.5m",
+       "label": "NAB and AFSH, 2025",
+       "detail": "Penalty for 345 hardship applications not answered in time (ASIC 25-165MR)"
+      },
+      {
+       "value": "$8m",
+       "label": "American Express, 2024",
+       "detail": "First DDO civil penalty: cards issued without reviewing TMDs after a trigger (ASIC 24-158MR)"
+      },
+      {
+       "value": "$1.5m",
+       "label": "Westpac, 2022",
+       "detail": "Consumer credit insurance issued to 141 customers who had not asked for it (ASIC 22-084MR)"
+      },
+      {
+       "value": "2-1",
+       "label": "ASIC v Westpac, 2020",
+       "detail": "Full Federal Court majority dismissed ASIC's responsible lending appeal (ASIC 20-149MR)"
+      },
+      {
+       "value": "1st",
+       "label": "Telstra Super, 2026",
+       "detail": "First ASIC case under the enforceable IDR requirements; liability found (ASIC 26-091MR)"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Match the timeframe to the duty",
+     "prompt": "Link each timeframe to the obligation it belongs to.",
+     "pairs": [
+      {
+       "left": "90 days",
+       "right": "Unsuitability assessment made before the credit day (NCCP Act s 128)"
+      },
+      {
+       "left": "7 business days",
+       "right": "Copy of the credit assessment, if requested within 2 years of the credit day"
+      },
+      {
+       "left": "10 business days",
+       "right": "Review a TMD after a trigger; report significant dealings"
+      },
+      {
+       "left": "21 days",
+       "right": "IDR response to hardship notice and default notice complaints"
+      },
+      {
+       "left": "30 calendar days",
+       "right": "IDR response to a standard complaint"
+      },
+      {
+       "left": "30 days",
+       "right": "Report a reportable situation to ASIC (s 912DAA)"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Final boss warm-up",
+     "cards": [
+      {
+       "front": "What is the core conduct standard in both licences?",
+       "back": "Do all things necessary to provide services efficiently, honestly and fairly."
+      },
+      {
+       "front": "Two limbs of unsuitability?",
+       "back": "Likely unable to repay, or only with substantial hardship; or the credit does not meet requirements and objectives."
+      },
+      {
+       "front": "What does DDO require of distributors?",
+       "back": "Do not distribute without a TMD; take reasonable steps for consistent distribution; report significant dealings and complaint numbers; keep records."
+      },
+      {
+       "front": "When is a written IDR response still needed within five business days?",
+       "back": "When the customer asks, or for complaints about hardship, a declined insurance claim or its value, and certain trustee decisions."
+      },
+      {
+       "front": "Is the Banking Code law?",
+       "back": "No. It is an ASIC-approved industry code that binds subscribing banks through their customer contracts and is monitored by the Banking Code Compliance Committee."
+      },
+      {
+       "front": "Who receives unresolved complaints?",
+       "back": "AFCA, the external dispute resolution scheme every licensee providing services to retail clients must join."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Product data shows complaints about a home loan feature tripled after a branch campaign. Who should hear about it under the bank's DDO arrangements?",
+     "options": [
+      "Nobody, unless AFCA receives a complaint",
+      "Only the marketing team that ran the campaign",
+      "The product issuer team, because complaint information feeds TMD review",
+      "Only the branch manager"
+     ],
+     "answer": 2,
+     "explanation": "TMDs specify the complaint and other information distributors must report to the issuer so it can decide whether the TMD needs review. A spike may be a review trigger."
+    },
+    {
+     "type": "example",
+     "title": "Real case: what the judges and ASIC emphasised",
+     "body": "Across the cases in this quest, the official releases repeat a few lessons:\n\n- **Systems and people together.** NAB's hardship failures came mostly from staff misusing a 'reject' button; Westpac's came from inadequate systems and operational failures.\n- **Know your obligations.** In the Amex case, the Court noted that staff monitoring the TMDs were not aware of their obligations.\n- **Penalties must sting.** The Amex judge said the penalty had to be more than a cost of doing business; in Westpac's hardship case the judge called a $10 million penalty 'derisory'.\n- **Delay is harm.** Telstra Super's judge said timeliness is central to complaint management.\n\nTraining, supervision and monitoring are how a bank avoids becoming the next case."
+    },
+    {
+     "type": "keypoints",
+     "title": "Quest take-aways",
+     "items": [
+      "ASIC looks for one connected conduct system built on the licence general obligations.",
+      "Train, assess and record competence for each role before people serve customers, then refresh it.",
+      "Link complaints, lending file reviews and product data so signals reach the right team fast.",
+      "Escalate possible breaches promptly; reportable situations go to ASIC within 30 days.",
+      "Boards set accountabilities for complaints and systemic issues and receive complaint metrics."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If you were the person ASIC interviewed about your role next week, which three records would you want to show, and are they complete today?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "au-cc-s5-q1",
+     "question": "Under NCCP Act s 47(1)(k), what must a credit licensee have in addition to compliance arrangements and systems?",
+     "options": [
+      "An external auditor's certificate each month",
+      "A written plan that documents those arrangements and systems",
+      "Approval of its training courses by AFCA",
+      "A board member responsible for each branch"
+     ],
+     "answer": 1,
+     "explanation": "Section 47(1)(k) requires adequate arrangements and systems to ensure compliance with s 47, and a written plan documenting them.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q2",
+     "question": "Which evidence best shows that a bank's complaints process meets RG 271?",
+     "options": [
+      "A customer satisfaction survey average",
+      "The number of staff in the complaints team",
+      "A copy of the AFCA membership certificate alone",
+      "A complaints register showing receipt dates, responses within timeframes, delay notices and escalated systemic issues"
+     ],
+     "answer": 3,
+     "explanation": "RG 271 requires firms to record all complaints and manage timeframes and systemic issues. A register showing those elements is direct evidence; satisfaction scores and headcount are not.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q3",
+     "question": "A file review finds a lender approved loans without completing responsible lending training. What should happen first to protect customers?",
+     "options": [
+      "Let her continue and complete training within the year",
+      "Review only the files that have generated complaints",
+      "Stop her approving loans until trained and assessed, and review all her files",
+      "Ask her to sign a statement that she understands the law"
+     ],
+     "answer": 2,
+     "explanation": "The bank must ensure representatives are trained and competent before they perform credit activities, and the whole population of files may carry the same gap. Complaints are not the only sign of harm.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q4",
+     "question": "According to RG 271, what must board or executive complaint reports include if the firm provides them?",
+     "options": [
+      "Only the number of complaints sent to AFCA",
+      "Only complaints about senior staff",
+      "Metrics and analysis of complaints, including systemic issues identified",
+      "Only complaints resolved in the customer's favour"
+     ],
+     "answer": 2,
+     "explanation": "RG 271.119 says reports to the board or executive committees must include metrics and analysis of consumer complaints, including systemic issues found through them.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q5",
+     "question": "Which of these is the clearest link between complaints handling and the design and distribution obligations?",
+     "options": [
+      "Distributors report complaint numbers to the issuer so it can decide whether a TMD needs review",
+      "AFCA approves each TMD after reviewing complaints",
+      "Complaints must be closed before a TMD can be made",
+      "Only the issuer may receive complaints about a product"
+     ],
+     "answer": 0,
+     "explanation": "TMDs set reporting periods for complaint numbers and other information distributors must give the issuer, which uses it to identify review needs.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q6",
+     "question": "What is the general purpose of the requirement to take reasonable steps so representatives comply with the law (s 912A(1)(ca) and s 47(1)(e))?",
+     "options": [
+      "Representatives become solely liable for their own breaches",
+      "Representatives must hold their own separate licences",
+      "The licensee only answers for conduct at head office",
+      "The licensee stays responsible for supervising and monitoring its representatives' conduct"
+     ],
+     "answer": 3,
+     "explanation": "Both Acts require the licensee to take reasonable steps so its representatives comply. That is why supervision, monitoring and training records matter.",
+     "difficulty": 4
+    },
+    {
+     "id": "au-cc-s5-q7",
+     "question": "A pattern of complaints reveals a fee error affecting thousands of customers. What should the bank do once the issue is confirmed, according to RG 271?",
+     "options": [
+      "Wait for each customer to complain individually",
+      "Promptly identify affected customers and provide fair remediation",
+      "Refund only customers who escalate to AFCA",
+      "Correct the system but not contact customers"
+     ],
+     "answer": 1,
+     "explanation": "RG 271 expects firms that confirm a systemic issue to take prompt action to identify affected consumers and provide fair remediation, alongside any reporting duties.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q8",
+     "question": "Which statement about the Banking Code of Practice is accurate for training purposes?",
+     "options": [
+      "It is legislation enforced by ASIC through civil penalties",
+      "It is an ASIC-approved industry code that binds subscribing banks through their customer contracts",
+      "It applies only to small business lending",
+      "It replaces RG 271 for subscribing banks"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's approval release says the Code binds ABA members as part of their customer contracts, that ASIC does not enforce it, and the Banking Code Compliance Committee monitors compliance. RG 271 still applies.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q9",
+     "question": "In the Amex DDO case, what did the Court note about staff responsible for monitoring the TMDs?",
+     "options": [
+      "They had deliberately hidden the data",
+      "They were not aware of their obligations",
+      "They had reported the trigger to ASIC on time",
+      "They worked for David Jones, not Amex"
+     ],
+     "answer": 1,
+     "explanation": "ASIC's 24-158MR quotes the Court noting that those responsible for monitoring the TMDs were not aware of their obligations, while those aware of the facts did not act.",
+     "difficulty": 3
+    },
+    {
+     "id": "au-cc-s5-q10",
+     "question": "Which role is best placed to spot the first sign that a product is reaching customers outside its target market?",
+     "options": [
+      "Frontline staff who hear customers' circumstances and escalate concerns",
+      "The external auditor at year end",
+      "AFCA case managers",
+      "The bank's share registry"
+     ],
+     "answer": 0,
+     "explanation": "Frontline representatives see mismatches first, which is why training on target markets and clear escalation routes are part of reasonable steps under DDO.",
+     "difficulty": 2
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "au",
+  "programs": [
+   48,
+   51,
+   52,
+   54,
+   55,
+   56,
+   59,
+   60,
+   61,
+   63,
+   64,
+   70
+  ],
+  "classification": "mandatory-role",
+  "frequency": [
+   "induction",
+   "periodic",
+   "role"
+  ],
+  "regulators": [
+   "Australian Securities and Investments Commission (ASIC)",
+   "Australian Financial Complaints Authority (AFCA), external dispute resolution scheme"
+  ],
+  "references": [
+   {
+    "title": "Corporations Act 2001",
+    "issuer": "Parliament of Australia (Federal Register of Legislation)",
+    "url": "https://www.legislation.gov.au/C2004A00818/latest/text",
+    "provision": "Section 912A(1)(a), (c), (ca), (f), (g) and (2); section 912DAA(1) and (3)",
+    "note": "General obligations of AFS licensees, including trained and competent representatives (with CPD where it applies) and IDR plus AFCA membership for retail clients; reportable situations must be reported to ASIC within 30 days.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "National Consumer Credit Protection Act 2009",
+    "issuer": "Parliament of Australia (Federal Register of Legislation)",
+    "url": "https://www.legislation.gov.au/C2009A00134/latest/text",
+    "provision": "Section 47(1)(a), (e), (g), (h), (i), (k) and (l)",
+    "note": "General conduct obligations of credit licensees, including trained and competent representatives, IDR, AFCA membership and a written compliance plan; the resources and risk management limb does not apply to APRA-regulated bodies.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "National Consumer Credit Protection Act 2009",
+    "issuer": "Parliament of Australia (Federal Register of Legislation)",
+    "url": "https://www.legislation.gov.au/C2009A00134/latest/text",
+    "provision": "Sections 128-133 (responsible lending for credit providers)",
+    "note": "Assessment within 90 days before the credit day; reasonable inquiries and verification; when a contract is unsuitable, including the home-sale presumption and the credit card limit test; free written assessment on request within 7 or 21 business days; ban on unsuitable contracts.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "National Consumer Credit Protection Act 2009, Schedule 1 (National Credit Code)",
+    "issuer": "Parliament of Australia (Federal Register of Legislation)",
+    "url": "https://www.legislation.gov.au/C2009A00134/latest/text",
+    "provision": "Section 72 (changes on grounds of hardship)",
+    "note": "A debtor may give a hardship notice orally or in writing; the credit provider may request information within 21 days and must give a decision notice, with reasons and AFCA details if no change is agreed, within the set period.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Regulatory Guide 146 Licensing: Training of financial product advisers",
+    "issuer": "ASIC",
+    "url": "https://download.asic.gov.au/media/1240766/rg146-published-26-september-2012.pdf",
+    "provision": "RG 146.9, 146.11, 146.14-146.15, Table 3",
+    "note": "Training standards for advisers; staff advising only on basic deposit and related non-cash payment products can meet them through a course assessed by their licensee; licensees need continuing training policies.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "RG 206 Credit licensing: Competence and training",
+    "issuer": "ASIC",
+    "url": "https://www.asic.gov.au/regulatory-resources/find-a-document/regulatory-guides/rg-206-credit-licensing-competence-and-training",
+    "provision": "NCCP Act s 47(1)(g)",
+    "note": "Credit licensees must keep representatives adequately trained and competent; ASIC expects initial and ongoing training built into recruitment and supervision.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "RG 105 AFS licensing: Organisational competence",
+    "issuer": "ASIC",
+    "url": "https://www.asic.gov.au/regulatory-resources/find-a-document/regulatory-guides/rg-105-afs-licensing-organisational-competence",
+    "note": "Guidance on the licensee's organisational competence; it notes the separate duty to keep representatives trained and competent.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Regulatory Guide 209 Credit licensing: Responsible lending conduct",
+    "issuer": "ASIC",
+    "url": "https://download.asic.gov.au/media/hyeofbni/rg209-published-9-december-2019-20250306.pdf",
+    "provision": "RG 209.83-209.84 (scalability), RG 209.135-209.140 (benchmarks), RG 209.265-209.266 (records)",
+    "note": "ASIC's view of the inquiries, verification and unsuitability assessment required before credit is provided or increased, the limited role of benchmarks and the value of records.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Regulatory Guide 274 Product design and distribution obligations",
+    "issuer": "ASIC",
+    "url": "https://download.asic.gov.au/media/etgm1amc/rg274-published-10-september-2024.pdf",
+    "provision": "Tables 1-2; RG 274.20-274.21, 274.31, 274.154; RG 274.174 and Table 6 (distributor training and incentives)",
+    "note": "TMD content, reasonable steps, reviews within 10 business days of a trigger, significant dealing notices within 10 business days and records; ASIC considers distributor staff training and incentives.",
+    "effective": "2021-10-05",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Regulatory Guide 271 Internal dispute resolution",
+    "issuer": "ASIC",
+    "url": "https://download.asic.gov.au/media/3olo5aq5/rg271-published-2-september-2021.pdf",
+    "provision": "RG 271.27-271.32, 271.53-271.60 and Table 2, 271.71-271.75, 271.118-271.120, 271.132(c), 271.150",
+    "note": "Complaint definition, IDR response content and maximum timeframes (30 days standard, 21 days for hardship and default notice complaints), the five-business-day rule, systemic issues and staff training.",
+    "effective": "2021-10-05",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "24-136MR ASIC approves enhanced Banking Code of Practice",
+    "issuer": "ASIC",
+    "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2024-releases/24-136mr-asic-approves-enhanced-banking-code-of-practice",
+    "note": "ASIC approved the 2025 Banking Code of Practice from 28 February 2025; the Code binds ABA members through their customer contracts, ASIC does not enforce it, and the Banking Code Compliance Committee oversees compliance.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Banking Code of Practice (2025)",
+    "issuer": "Australian Banking Association",
+    "url": "https://www.ausbanking.org.au/banking-code/",
+    "note": "Industry code binding on subscribing banks through their customer contracts. Its text was not opened for this quest, so no clause numbers are cited.",
+    "effective": "2025-02-28"
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "au-cc-x1",
+    "question": "Coral Range Bank offers deposit accounts, arranges consumer credit insurance with its cards and provides home loans. Which combination of licences does it typically need for these consumer services?",
+    "options": [
+     "Only an Australian credit licence, because a bank's deposits are prudentially regulated",
+     "Only an AFS licence, because credit is a financial product under the Corporations Act",
+     "A banking authority from APRA, which replaces both ASIC licences",
+     "An AFS licence for the financial products and an Australian credit licence for the consumer credit"
+    ],
+    "answer": 3,
+    "explanation": "Financial products such as deposits and insurance fall under the Corporations Act AFS licence, and consumer credit falls under the NCCP Act credit licence. APRA authorisation as an ADI does not replace ASIC licensing.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x2",
+    "question": "A bank's contact centre staff handle calls about deposit accounts and payment products. The training team asks whether these staff fall under the representative training duty. What is the best answer?",
+    "options": [
+     "No: the duty applies only to financial advisers giving personal advice on investments",
+     "Yes: s 912A(1)(f) covers representatives who provide the licensed financial services, including on basic deposit and payment products",
+     "No: deposit products are regulated by APRA, so ASIC training duties do not apply",
+     "Only if the staff are paid a commission on each product they sell"
+    ],
+    "answer": 1,
+    "explanation": "Section 912A(1)(f) requires representatives to be adequately trained and competent to provide the financial services covered by the licence. RG 146 even addresses training for staff advising on basic deposit and non-cash payment products.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x3",
+    "question": "Sofia is designing training for staff who give general advice only on basic deposit products. Under RG 146, which approach can meet the training standard?",
+    "options": [
+     "Any internal course, without assessing it against the training standards",
+     "A course the bank itself has assessed as meeting the relevant knowledge and skill requirements",
+     "A course approved by AFCA's training panel",
+     "An external degree in any discipline"
+    ],
+    "answer": 1,
+    "explanation": "RG 146 allows licensees to assess whether courses on basic deposit products and related non-cash payment products meet the training standards. The course must still be assessed against them; AFCA has no such role.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x4",
+    "question": "Which statement about continuing training reflects RG 146?",
+    "options": [
+     "Continuing training is optional once an adviser passes the initial course",
+     "Continuing training must be listed on a register and assessed every year",
+     "Continuing training only applies to advisers on Tier 1 products",
+     "Licensees must have policies so advisers keep their knowledge and skills up to date, and those courses need not be assessed by an authorised assessor"
+    ],
+    "answer": 3,
+    "explanation": "RG 146.14-146.15 say licensees must implement policies and procedures for continuing training, and ASIC does not require continuing training courses to be assessed by an authorised assessor.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x5",
+    "question": "A regional manager argues that because Coral Range Bank is APRA-regulated, the NCCP Act general obligations do not apply to its lenders. How accurate is that?",
+    "options": [
+     "Correct: APRA regulation removes all credit licence obligations",
+     "Correct, but only for home loans secured by property",
+     "Wrong: APRA-regulated bodies have extra NCCP training duties instead",
+     "Mostly wrong: only the adequate resources and risk management limb is disapplied for APRA-regulated bodies"
+    ],
+    "answer": 3,
+    "explanation": "Section 47(1)(l) applies unless the licensee is a body regulated by APRA. Every other s 47(1) duty, including training and competence, IDR and AFCA membership, still applies.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x6",
+    "question": "In the 2022 Westpac consumer credit insurance case, which Corporations Act general obligation did Westpac admit failing?",
+    "options": [
+     "Maintaining adequate financial resources under s 912A(1)(d)",
+     "Having a dispute resolution system under s 912A(1)(g)",
+     "Complying with licence conditions under s 912A(1)(b)",
+     "Complying with the financial services laws under s 912A(1)(c)"
+    ],
+    "answer": 3,
+    "explanation": "ASIC's 22-084MR states Westpac admitted contravening s 12DM of the ASIC Act and failing to comply with financial services laws under s 912A(1)(c).",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x7",
+    "question": "Coral Range Bank learns on 3 March that there are reasonable grounds to believe a reportable situation has arisen. The compliance team wants to wait for the April board meeting before reporting. What is the risk?",
+    "options": [
+     "The report is due to ASIC within 30 days of 3 March, so waiting for the board could make it late",
+     "None, because the deadline runs from the board's approval",
+     "None, because reports are only due once customers are remediated",
+     "The report must go to AFCA, not ASIC, so the timing does not matter"
+    ],
+    "answer": 0,
+    "explanation": "Section 912DAA(3) sets 30 days from when the licensee first knows, or is reckless about, reasonable grounds to believe the situation has arisen. Board timing and remediation do not move the deadline.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x8",
+    "question": "Which change at Coral Range Bank would most clearly require new or refreshed representative training to stay within s 47(1)(g)?",
+    "options": [
+     "Moving the head office to a new building",
+     "Changing the bank's logo and branding colours",
+     "Launching a new credit product that lenders will arrange from next month",
+     "Appointing a new external auditor"
+    ],
+    "answer": 2,
+    "explanation": "The duty is to keep representatives trained and competent for the credit activities they engage in. A new credit product changes those activities; the other changes do not.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x9",
+    "question": "Why did the NAB hardship case (2025) illustrate a competence problem as well as a systems problem?",
+    "options": [
+     "NAB staff were not licensed by ASIC to discuss hardship",
+     "NAB had no hardship policy at all",
+     "Staff misused a function in the hardship system, so customers who asked for help got no response",
+     "NAB staff gave customers personal financial advice"
+    ],
+    "answer": 2,
+    "explanation": "ASIC explained that the failures mostly came from staff incorrectly using a 'reject' button. Competence includes knowing how the bank's systems carry out legal duties.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x10",
+    "question": "A customer applies to increase her credit card limit through the app. Which responsible lending steps apply?",
+    "options": [
+     "The same inquiry, verification and unsuitability assessment as for a new credit contract",
+     "None, because she is an existing customer with a good record",
+     "Only a credit report check, because the increase is small",
+     "Only the steps the card's TMD lists"
+    ],
+    "answer": 0,
+    "explanation": "Sections 128-133 apply to increasing the credit limit of an existing contract as well as entering a new one. An existing relationship does not remove the steps.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x11",
+    "question": "A lender tells a customer by email that she is 'approved, no conditions' for a car loan before doing any assessment. Why is this a responsible lending problem?",
+    "options": [
+     "It is only a marketing issue, covered by the Banking Code",
+     "Section 128 also bars making an unconditional representation of eligibility without the assessment and inquiries",
+     "It breaches the design and distribution obligations but not the NCCP Act",
+     "It is acceptable if the loan is later declined"
+    ],
+    "answer": 1,
+    "explanation": "Section 128(aa) prohibits making an unconditional representation that a consumer is eligible to enter a credit contract unless the assessment, inquiries and verification have been done within the required period.",
+    "difficulty": 5
+   },
+   {
+    "id": "au-cc-x12",
+    "question": "Liam's assessment of a couple was made 100 days before settlement because of a delayed property purchase. What should happen before the credit day?",
+    "options": [
+     "Nothing, because the original approval remains valid until settlement",
+     "Only a new property valuation",
+     "A fresh assessment covering the credit day, with updated inquiries and verification",
+     "Only a signed declaration that nothing has changed"
+    ],
+    "answer": 2,
+    "explanation": "Section 128 requires the assessment and inquiries to be made within 90 days before the credit day and to cover the period in which it falls. An assessment 100 days earlier does not meet that.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x13",
+    "question": "A retired couple seek a 30-year loan they can only repay by selling their home in later years. They insist they are happy to do that. How should the lender approach unsuitability?",
+    "options": [
+     "Approve, because the customers' wishes override the presumption",
+     "Start from the legal presumption of substantial hardship and only proceed if it is genuinely rebutted on the evidence",
+     "Approve, because the home secures the loan in any case",
+     "Decline automatically, because the presumption can never be rebutted"
+    ],
+    "answer": 1,
+    "explanation": "Sections 131(3) and 133(3) presume substantial hardship where repayment depends on selling the principal residence, unless the contrary is proved. The presumption is strong but rebuttable; it cannot simply be waived by preference.",
+    "difficulty": 5
+   },
+   {
+    "id": "au-cc-x14",
+    "question": "A credit card applicant could manage the minimum repayments but could not repay the full proposed limit within the period ASIC determines. What follows under the NCCP Act?",
+    "options": [
+     "She is taken to be able to comply only with substantial hardship, so the contract must be assessed as unsuitable",
+     "The card is suitable because minimum repayments are affordable",
+     "The card is suitable if she agrees to a lower annual fee",
+     "The lender may proceed if a guarantor signs"
+    ],
+    "answer": 0,
+    "explanation": "Section 131(3AA) treats a credit card consumer as able to comply only with substantial hardship if they could not repay an amount equal to the limit within ASIC's period, which makes the contract unsuitable.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x15",
+    "question": "Which use of an expense benchmark is consistent with RG 209?",
+    "options": [
+     "Replacing the expense question on the application with the benchmark figure",
+     "Using the lowest benchmark figure so more applicants qualify",
+     "Comparing a first home buyer's estimated future expenses with a realistic benchmark to test plausibility",
+     "Using a benchmark from several years ago because it is simpler"
+    ],
+    "answer": 2,
+    "explanation": "RG 209 says benchmarks can test plausibility, including estimating future outgoings, but they must be current and realistic, and they do not substitute for inquiries or verification.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x16",
+    "question": "Under RG 209's idea of 'scalability', which application most justifies deeper inquiry and verification?",
+    "options": [
+     "A small, short-term loan for a customer with clear, stable income",
+     "A large, long-term loan for a customer with irregular income and signs of financial stress",
+     "A loan to a customer who has banked with the lender for many years",
+     "A loan application submitted through the lender's app"
+    ],
+    "answer": 1,
+    "explanation": "RG 209 explains that what is reasonable depends on the consumer's circumstances and the credit. Larger, longer credit plus risk signs call for more inquiry and verification.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x17",
+    "question": "A customer asks in year five for a copy of the assessment for her personal loan and offers to pay a fee to speed it up. What is right?",
+    "options": [
+     "Provide it within 7 business days and charge the fee",
+     "Decline, because the duty ends after two years",
+     "Provide it only if she lodges a complaint first",
+     "Provide a written copy within 21 business days, without charging"
+    ],
+    "answer": 3,
+    "explanation": "Section 132(2) covers requests within 7 years; after 2 years the copy is due within 21 business days. Section 132(4) bans requesting or demanding payment for it.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x18",
+    "question": "Which statement best describes the significance of ASIC's responsible lending case against Westpac (2019-2020)?",
+    "options": [
+     "The courts found Westpac breached the law and ordered a record penalty",
+     "The High Court confirmed benchmarks must never be used",
+     "The case was settled with Westpac admitting all allegations",
+     "The courts rejected ASIC's case, and ASIC said it would review its guidance in light of the decision"
+    ],
+    "answer": 3,
+    "explanation": "Justice Perram dismissed the case in 2019 and the Full Federal Court dismissed ASIC's appeal 2-1 in 2020. ASIC then said it would not appeal further and would review RG 209.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x19",
+    "question": "Coral Range Bank issues a basic savings account and a 31-day term deposit. Do the design and distribution obligations apply?",
+    "options": [
+     "No: deposit products are fully excluded from the DDO regime",
+     "Yes: basic banking products, including 31-day term deposits, are prescribed as needing a TMD",
+     "Only the term deposit, because savings accounts are not financial products",
+     "Only if the products are sold through a third-party distributor"
+    ],
+    "answer": 1,
+    "explanation": "RG 274 notes that the regulations require a TMD for basic banking products, and that basic banking products include 31-day term deposits.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x20",
+    "question": "Which item must a TMD contain under s 994B(5), as summarised in RG 274?",
+    "options": [
+     "The names of the staff members who will sell the product",
+     "The kinds of information distributors must report, and how often, so the issuer can tell whether a review is needed",
+     "The product's expected profit margin",
+     "A credit assessment for each expected customer"
+    ],
+    "answer": 1,
+    "explanation": "RG 274's summary of s 994B(5) includes reporting periods for complaint numbers and the other information distributors must report. Staff names, margins and individual assessments are not TMD content.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x21",
+    "question": "A product owner wants to describe the target market of a new card as 'all adults in Australia'. Why is that unlikely to work?",
+    "options": [
+     "TMDs can only describe consumers aged under 65",
+     "ASIC must approve the wording of every target market",
+     "The TMD must be appropriate: consumers reached under it must be likely to be in the target market and the product likely to fit their needs",
+     "A target market can only be described by postcode"
+    ],
+    "answer": 2,
+    "explanation": "RG 274 explains the appropriateness requirement in s 994B(8). A market drawn so widely that the product is unlikely to suit many in it fails that test.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x22",
+    "question": "Farid's team finds a review trigger occurred two weeks ago and nobody acted. What must the issuer do now?",
+    "options": [
+     "Stop issuing the product, direct distributors to stop, and review the TMD before distribution resumes",
+     "Keep issuing until the next scheduled periodic review",
+     "Notify AFCA and continue distribution",
+     "Lower the product's fees and keep selling"
+    ],
+    "answer": 0,
+    "explanation": "RG 274.154 says that if information reasonably suggests a TMD is no longer appropriate, the issuer must stop issuing and direct distributors to stop until it has reviewed the TMD (s 994C(3)-(5)).",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x23",
+    "question": "Which statement about 'significant dealings' is correct?",
+    "options": [
+     "Issuers notify ASIC of significant dealings inconsistent with the TMD within 10 business days",
+     "Distributors notify ASIC directly within 30 days",
+     "Significant dealings are only reported once a year",
+     "Only dealings that cause a complaint are reportable"
+    ],
+    "answer": 0,
+    "explanation": "Under s 994G an issuer that becomes aware of a significant dealing inconsistent with the TMD must notify ASIC as soon as practicable, within 10 business days. Distributors notify the issuer within the same limit.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x24",
+    "question": "A distributor's staff are well trained on fees but cannot say who a home loan product is designed for. What does RG 274 suggest?",
+    "options": [
+     "Nothing more is needed if fee disclosure is accurate",
+     "Replace the training with a longer product disclosure document",
+     "Train staff on key product attributes and the target market, and assess their skills",
+     "Ask customers to read the TMD and decide for themselves"
+    ],
+    "answer": 2,
+    "explanation": "RG 274 says ASIC will consider whether distributors gave sufficient training and assessed staff skills, including on key product attributes and the target market, alongside sales conduct.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x25",
+    "question": "A bonus scheme pays tellers for every credit card application, whether or not the customer fits the TMD. What is the best DDO response?",
+    "options": [
+     "Keep the scheme but add a disclaimer to the application",
+     "Redesign or manage the incentive so it does not encourage distribution outside the target market",
+     "Keep the scheme because incentives are outside the DDO",
+     "Cancel all sales training to reduce pressure"
+    ],
+    "answer": 1,
+    "explanation": "RG 274 says ASIC takes into account the steps a distributor takes to eliminate or manage the risk that incentives encourage harm or distribution inconsistent with the TMD.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x26",
+    "question": "In ASIC's 2022 credit insurance release, what did ASIC say its earlier review of the sector had found?",
+    "options": [
+     "Consumer credit insurance was poor value and sales practices and design caused consumer harm",
+     "Consumer credit insurance was good value but disclosure was unclear",
+     "Only one lender had sold policies poorly",
+     "The policies were sold mainly to small businesses"
+    ],
+    "answer": 0,
+    "explanation": "ASIC's 22-084MR refers to Report 622, which found consumer credit insurance was poor value and that its sales practices and product design caused consumer harm across lenders.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x27",
+    "question": "A customer tells a branch officer her loan statement is confusing and asks for an explanation. The officer explains it and she leaves satisfied. Is this a complaint?",
+    "options": [
+     "Not unless she expressed dissatisfaction expecting a response; a simple request for information is usually an inquiry",
+     "Yes, every customer contact is a complaint under RG 271",
+     "Yes, because she visited a branch in person",
+     "No, because verbal contacts are never complaints"
+    ],
+    "answer": 0,
+    "explanation": "RG 271's definition turns on an expression of dissatisfaction where a response or resolution is expected. Pure inquiries are not complaints, but verbal dissatisfaction can be.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x28",
+    "question": "Kirra closes a complaint on day 4 with an apology because the customer was upset that the bank declined her loan application, which was a commercial decision. Does RG 271 require a written IDR response?",
+    "options": [
+     "Yes, all declined loan complaints need a written response",
+     "Yes, because any apology must be in writing",
+     "Not unless she asks for one, because an explanation or apology can close it within five business days",
+     "No, and she also loses the right to go to AFCA"
+    ],
+    "answer": 2,
+    "explanation": "RG 271.71 and 271.74 allow closure within five business days with an explanation or apology, giving refusal of credit as an example. A written response is still needed if she requests it. Her AFCA rights are unaffected.",
+    "difficulty": 5
+   },
+   {
+    "id": "au-cc-x29",
+    "question": "A credit complaint involves a default notice the bank sent. What is the maximum IDR response timeframe under RG 271?",
+    "options": [
+     "30 calendar days after receiving the complaint",
+     "45 calendar days after receiving the complaint",
+     "21 calendar days after receiving the complaint",
+     "5 business days after receiving the complaint"
+    ],
+    "answer": 2,
+    "explanation": "RG 271's Table 2 sets 21 calendar days for credit-related complaints involving default notices, and for those involving hardship notices or requests to postpone enforcement.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x30",
+    "question": "Coral Range Bank rejects a complaint about fees. Which content must the IDR response include to meet RG 271.54?",
+    "options": [
+     "Only the decision and a phone number for the branch",
+     "A copy of the bank's full complaints policy",
+     "A statement that the decision is final and cannot be reviewed",
+     "The issues raised, findings on material facts with supporting information, and enough detail for an informed decision about AFCA"
+    ],
+    "answer": 3,
+    "explanation": "RG 271.54 requires the reasons to identify and address the issues, set out findings on material questions of fact with supporting information, and give enough detail for the complainant to decide whether to go to AFCA.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x31",
+    "question": "Which statement about AFCA membership is accurate?",
+    "options": [
+     "Only banks with more than one million customers must join AFCA",
+     "AFS licensees serving retail clients and credit licensees must be members of the AFCA scheme",
+     "AFCA membership is voluntary for credit licensees",
+     "AFCA membership replaces the need for an IDR process"
+    ],
+    "answer": 1,
+    "explanation": "Section 912A(1)(g) and (2) require AFS licensees serving retail clients to have IDR and AFCA membership, and s 47(1)(h)-(i) require credit licensees to have IDR and be AFCA members. Membership does not replace IDR.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x32",
+    "question": "After receiving a hardship notice, what may a credit provider do under National Credit Code s 72(2) if it needs more information?",
+    "options": [
+     "Within 21 days, ask the debtor for specified relevant information to be provided within 21 days",
+     "Refuse to consider the notice until the debtor attends a branch",
+     "Wait 90 days before deciding",
+     "Charge a fee to assess the notice"
+    ],
+    "answer": 0,
+    "explanation": "Section 72(2) lets the credit provider, within 21 days of receiving the hardship notice, require specified information relevant to the decision, to be given within 21 days.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x33",
+    "question": "A customer whose first language is not English struggles to explain her complaint on the phone. What does RG 271 expect?",
+    "options": [
+     "Ask her to put the complaint in writing in English",
+     "Close the complaint because it cannot be understood",
+     "Refer her straight to AFCA",
+     "An accessible process, such as interpreter or translation help, and staff trained to identify and support her"
+    ],
+    "answer": 3,
+    "explanation": "RG 271 requires an IDR process that people with language difficulties can use, suggests translation services, and expects staff to be trained to identify and help people who need assistance to complain.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x34",
+    "question": "Which statement best reflects how the Banking Code of Practice should be described in staff training?",
+    "options": [
+     "An ASIC-approved industry code that subscribing banks follow under their customer contracts, monitored by the Banking Code Compliance Committee",
+     "A regulation made by ASIC under the Corporations Act and enforced by civil penalty",
+     "An APRA prudential standard on customer service",
+     "A voluntary guide with no effect on customer contracts"
+    ],
+    "answer": 0,
+    "explanation": "ASIC's 24-136MR explains the Code binds ABA members and forms part of contracts with customers, ASIC does not enforce it, and the BCCC monitors compliance and can apply sanctions.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x35",
+    "question": "ASIC asks Coral Range Bank how it knows its credit representatives are competent. Which response is strongest?",
+    "options": [
+     "Role-based training plans, dated completion and assessment records, supervision results and refresher logs",
+     "A statement that all staff signed the code of conduct",
+     "The number of training hours delivered across the bank",
+     "Customer satisfaction scores for the lending team"
+    ],
+    "answer": 0,
+    "explanation": "Competence is shown by evidence for each role and person: what training was required, what was completed and assessed, and how supervision confirmed it. Aggregate hours and satisfaction scores do not show individual competence.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x36",
+    "question": "A mock file review finds a lender relied only on benchmarks for living expenses in several files. What is the most complete response?",
+    "options": [
+     "Correct the two sampled files and close the review",
+     "Issue a reminder email to all lenders",
+     "Review her other files, remediate any unsuitable lending, retrain and supervise her, and refer for breach assessment",
+     "Wait for complaints before acting"
+    ],
+    "answer": 2,
+    "explanation": "The finding points to a competence gap and possibly a breach. Reviewing the full population, remediating, retraining and breach assessment address the cause and the harm.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x37",
+    "question": "Which link between teams best supports the DDO review obligation?",
+    "options": [
+     "Marketing sharing campaign artwork with branches",
+     "Finance sharing quarterly profit forecasts with branches",
+     "HR sharing leave rosters with the complaints team",
+     "Complaints data flowing promptly from distributors to the product issuer team"
+    ],
+    "answer": 3,
+    "explanation": "TMDs specify complaint and other information distributors report to the issuer so it can identify when a TMD may no longer be appropriate.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x38",
+    "question": "A complaints analyst spots dozens of complaints about the same interest calculation error. Put simply, what does RG 271 require next?",
+    "options": [
+     "Promptly escalate the possible systemic issue for investigation, then report internally on the outcome",
+     "Answer each complaint separately and take no further action",
+     "Wait until the next annual complaints report",
+     "Forward all the complaints to AFCA"
+    ],
+    "answer": 0,
+    "explanation": "RG 271.120 requires firms to escalate possible systemic issues promptly to the right area for investigation and to report internally on outcomes. RG 271.117 lists interest calculation errors as an example.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x39",
+    "question": "Who must set clear accountabilities for complaints handling, including systemic issues, under RG 271?",
+    "options": [
+     "AFCA",
+     "The Banking Code Compliance Committee",
+     "The board (or owners of smaller firms)",
+     "Each individual complaints officer"
+    ],
+    "answer": 2,
+    "explanation": "RG 271.118 says boards must set clear accountabilities for complaints handling functions, including management of systemic issues identified through complaints.",
+    "difficulty": 3
+   },
+   {
+    "id": "au-cc-x40",
+    "question": "Which pairing of obligation and timeframe is correct?",
+    "options": [
+     "Respond to a standard bank complaint: within 45 calendar days",
+     "Review a TMD after a review trigger: within 10 business days",
+     "Report a reportable situation to ASIC: within 90 days",
+     "Make the unsuitability assessment: within 30 days before the credit day"
+    ],
+    "answer": 1,
+    "explanation": "TMD reviews after a trigger are due within 10 business days. Standard complaints have 30 calendar days, reportable situations 30 days, and the unsuitability assessment must be within 90 days before the credit day.",
+    "difficulty": 4
+   },
+   {
+    "id": "au-cc-x41",
+    "question": "A regional manager suggests delaying a hardship decision for a customer so the bank 'has time to get the paperwork right'. Which combination of cases shows the risk?",
+    "options": [
+     "American Express (2024) and Westpac (2022), both about credit insurance",
+     "ASIC v Westpac (2020) and Telstra Super (2026), both about lending",
+     "Telstra Super (2026) and American Express (2024), both about DDO",
+     "Westpac (2026) and NAB with AFSH (2025), both penalised for hardship responses not given in time"
+    ],
+    "answer": 3,
+    "explanation": "The Westpac and NAB/AFSH hardship cases led to penalties of $26 million and $15.5 million for failing to respond to hardship notices within the legal time. The other pairings misdescribe the cases.",
+    "difficulty": 4
+   }
+  ]
+ }
+}
