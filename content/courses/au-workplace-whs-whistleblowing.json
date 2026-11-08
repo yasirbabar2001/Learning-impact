@@ -1,0 +1,3054 @@
+{
+  "slug": "au-workplace-whs-whistleblowing",
+  "title": "Australia | Work Health and Safety, the Positive Duty and Whistleblower Protections in Banking",
+  "tagline": "Keep people safe, prevent harassment and protect those who speak up: the Australian laws behind a bank's people-safety duties.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Banks and authorised deposit-taking institutions",
+    "Branches, contact centres and operations",
+    "People and culture, safety and wellbeing teams",
+    "Compliance, risk and internal audit",
+    "Boards and senior executives"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the Australian laws that shape how a bank protects its people. It covers the **primary duty of care** in the **Work Health and Safety Act 2011** (s 19, including the duty in s 19(3)(f) to provide the information, training, instruction or supervision needed to protect people), officers' due diligence, consultation, health and safety representatives and psychosocial hazards; the **positive duty** in **s 47C of the Sex Discrimination Act 1984** and the **Australian Human Rights Commission's** powers to enforce it; the whistleblower protections in **Part 9.4AAA of the Corporations Act 2001**, as overseen by **ASIC**; and, in general terms, the **Financial Accountability Regime** administered by **APRA** and ASIC.\n\nIt is for all bank staff, people managers, health and safety representatives, eligible recipients of whistleblower disclosures and accountable executives: the WHS Act requires the training workers need to be protected, and ASIC and the Commission expect people to know how to prevent harassment and handle disclosures.\n\nYou follow a fictional team at Tasman Ridge Bank in Sydney, Parramatta and Hobart, and study real APRA and ASIC cases.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own policies, procedures or advice from your safety, people or compliance teams.",
+  "audience": [
+    "All bank employees, including contact centre and branch staff",
+    "People managers and team leaders",
+    "Health and safety representatives and people and culture teams",
+    "Whistleblower protection officers, eligible recipients and investigators",
+    "Senior executives, FAR accountable persons and directors"
+  ],
+  "outcomes": [
+    "Apply the WHS primary duty, including the duty to provide necessary information, training, instruction and supervision",
+    "Identify and control psychosocial hazards and consult workers and HSRs on changes that affect their safety",
+    "Explain and apply the Sex Discrimination Act positive duty to harassment by colleagues and customers",
+    "Decide whether a whistleblower disclosure is protected and handle it with confidentiality and without detriment",
+    "Describe FAR accountability obligations and how they connect to people-safety oversight",
+    "Assemble evidence of a working people-safety and speak-up program for boards and regulators"
+  ],
+  "quest": {
+    "name": "The Safe Voice Mission",
+    "premise": "You have joined the people risk and safety team at Tasman Ridge Bank in Sydney. With safety head Leila Nasser, HSR Ben Tran, whistleblower protection officer Aroha Ngata, COO James Whitfield and Hobart branch manager Chloe Papadopoulos, you must make sure every worker is safe, free from harassment and protected when they speak up, and that someone is accountable for it all.",
+    "badge": {
+      "name": "Safe Voice Guardian",
+      "description": "Awarded for working knowledge of Australian WHS duties, the Sex Discrimination Act positive duty, whistleblower protections and FAR accountability in banking."
+    },
+    "color": "#0f766e",
+    "cast": [
+      {
+        "id": "leila",
+        "name": "Leila Nasser",
+        "role": "Head of people risk and safety",
+        "look": {
+          "skin": 3,
+          "hair": "long",
+          "color": "#0f766e"
+        }
+      },
+      {
+        "id": "ben",
+        "name": "Ben Tran",
+        "role": "Contact centre team leader and HSR, Parramatta",
+        "look": {
+          "skin": 2,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "aroha",
+        "name": "Aroha Ngata",
+        "role": "Whistleblower protection officer",
+        "look": {
+          "skin": 4,
+          "hair": "curly",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "james",
+        "name": "James Whitfield",
+        "role": "Chief operating officer and accountable person",
+        "look": {
+          "skin": 1,
+          "hair": "beard",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "chloe",
+        "name": "Chloe Papadopoulos",
+        "role": "Branch manager, Hobart",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#be123c"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The WHS primary duty of care and the training duty",
+      "stage": "The Duty Deck",
+      "summary": "Learn who owes the WHS primary duty, what 'reasonably practicable' means, the seven limbs of section 19(3) including the duty to provide information, training, instruction and supervision, and the due diligence officers must show.",
+      "minutes": 50,
+      "objectives": [
+        "Identify the PCBU, workers and others protected by the WHS Act",
+        "Apply the eliminate-then-minimise approach and the reasonably practicable test",
+        "Explain what section 19(3)(f) requires for information, training, instruction and supervision",
+        "Describe the officer's due diligence duty and the duties of workers"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the safety brief that never happened",
+          "setting": "People Risk and Safety floor, Tasman Ridge Bank head office, Barangaroo, Sydney. 8:40 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your first morning as a workplace conduct and safety analyst at Tasman Ridge Bank. A printed incident summary is already waiting on your desk.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "Welcome! I'm Leila Nasser, head of people risk and safety. That summary is from our Parramatta contact centre, and it is why you are here.",
+              "mood": "happy"
+            },
+            {
+              "who": "ben",
+              "text": "Ben Tran, team leader in Parramatta and our elected health and safety representative. Last week a new starter took six abusive calls in a row and left the floor in tears. Nobody had shown her how to end an abusive call.",
+              "mood": "worried"
+            },
+            {
+              "who": "aroha",
+              "text": "Aroha Ngata, whistleblower protection officer. Safety, harassment and speaking up all land on our floor sooner or later, so you will see a lot of me too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "james",
+              "text": "James Whitfield, chief operating officer. I am a registered accountable person and an officer for WHS purposes. When something goes wrong in operations, I need to know what the law expected of us.",
+              "mood": "thinking"
+            },
+            {
+              "who": "chloe",
+              "text": "Chloe Papadopoulos, branch manager in Hobart. My team handles cash, irate customers and late finishes. Training is not a nice-to-have for us.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "Five stages, one final exam. First stage: the primary duty of care in the Work Health and Safety Act, and the training promise hidden inside it. Ready?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who owes the duty, and to whom",
+          "scenes": [
+            {
+              "icon": "🏢",
+              "heading": "The PCBU",
+              "narration": "The WHS Act puts its main duty on a person conducting a business or undertaking, the PCBU. For us, the PCBU is the bank itself, whether or not an activity makes a profit."
+            },
+            {
+              "icon": "👥",
+              "heading": "Workers, widely defined",
+              "narration": "A worker is anyone who carries out work in any capacity for the PCBU: employees, contractors and their staff, labour hire workers, apprentices, students on placement and volunteers."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "The primary duty",
+              "narration": "Section 19 requires the PCBU to ensure, so far as is reasonably practicable, the health and safety of its workers, and that other people, such as customers, are not put at risk by its work."
+            },
+            {
+              "icon": "🧠",
+              "heading": "Health means mind too",
+              "narration": "The Act defines health as both physical and psychological health. A contact centre's emotional load counts just as much as a slippery floor."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Officers and workers",
+              "narration": "Officers must exercise due diligence so the bank complies, and every worker must take reasonable care and follow reasonable safety instructions. Everyone has a part."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "How 'reasonably practicable' is worked out",
+          "caption": "Section 18 lists the matters weighed. Section 17 adds the order: eliminate a risk if reasonably practicable; if not, minimise it.",
+          "items": [
+            {
+              "label": "Likelihood",
+              "detail": "How likely is the hazard or risk to occur?"
+            },
+            {
+              "label": "Degree of harm",
+              "detail": "How serious could the harm be if it happens?"
+            },
+            {
+              "label": "Knowledge",
+              "detail": "What the bank knows, or ought reasonably to know, about the risk and ways to deal with it"
+            },
+            {
+              "label": "Available controls",
+              "detail": "Whether ways to eliminate or minimise the risk exist and suit the situation"
+            },
+            {
+              "label": "Cost last",
+              "detail": "Only after the steps above, the cost of controls, including whether it is grossly disproportionate to the risk"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A contractor's employee installs new teller screens in a Tasman Ridge branch. Is she a 'worker' to whom the bank owes the primary duty?",
+          "options": [
+            "No, only the bank's own employees are workers",
+            "Yes, the definition of worker includes an employee of a contractor",
+            "Only if she has worked at the branch for more than three months",
+            "Only if her employer has no WHS policy of its own"
+          ],
+          "answer": 1,
+          "explanation": "Section 7 defines a worker as anyone carrying out work in any capacity for a PCBU, expressly including employees of contractors and subcontractors. Neither length of engagement nor the contractor's own policy changes that."
+        },
+        {
+          "type": "concept",
+          "title": "Section 19(3): the seven things the primary duty includes",
+          "body": "Section 19(3) spells out what the primary duty includes, so far as is reasonably practicable:\n\n- **(a)** a work environment without risks to health and safety\n- **(b)** safe plant and structures\n- **(c)** safe systems of work\n- **(d)** safe use, handling and storage of plant, structures and substances\n- **(e)** adequate welfare facilities, and access to them\n- **(f)** any **information, training, instruction or supervision** needed to protect all persons from work-related risks\n- **(g)** monitoring workers' health and workplace conditions to prevent illness or injury\n\nParagraph (f) is why the bank's WHS training is not optional. It is not limited to a single induction: the test is what is **necessary** to protect people from the risks of the work actually done. New tasks, new systems and new hazards mean new training, instruction or supervision."
+        },
+        {
+          "type": "sort",
+          "title": "Who carries this duty?",
+          "prompt": "Sort each duty to the person the WHS Act places it on.",
+          "buckets": [
+            "The bank as PCBU",
+            "An officer (e.g. the COO)",
+            "Every worker"
+          ],
+          "items": [
+            {
+              "text": "Ensure safe systems of work for cash handling",
+              "bucket": 0
+            },
+            {
+              "text": "Provide training needed to protect people from work risks",
+              "bucket": 0
+            },
+            {
+              "text": "Keep up-to-date knowledge of WHS matters",
+              "bucket": 1
+            },
+            {
+              "text": "Verify that safety resources and processes are provided and used",
+              "bucket": 1
+            },
+            {
+              "text": "Take reasonable care for their own health and safety",
+              "bucket": 2
+            },
+            {
+              "text": "Follow reasonable safety instructions given by the bank",
+              "bucket": 2
+            },
+            {
+              "text": "Monitor workplace conditions to prevent illness or injury",
+              "bucket": 0
+            },
+            {
+              "text": "Understand the hazards of the bank's operations generally",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The turn: 'we sent them the policy'",
+          "setting": "Parramatta contact centre, 2:15 pm.",
+          "lines": [
+            {
+              "who": "ben",
+              "text": "Here's the induction checklist. Item 14: 'Read the abusive caller policy.' It's ticked. But nobody practised a call, and nobody sat with her.",
+              "mood": "worried"
+            },
+            {
+              "who": "leila",
+              "text": "So the policy existed, the tick existed, and she still had no idea she was allowed to end the call.",
+              "mood": "thinking"
+            },
+            {
+              "who": "chloe",
+              "text": "Same in Hobart. We email the hold-up procedure once a year. I doubt half the team could tell you the first three steps.",
+              "mood": "worried"
+            },
+            {
+              "who": "james",
+              "text": "Is emailing a document enough to say we provided training and instruction?",
+              "mood": "thinking"
+            },
+            {
+              "who": "leila",
+              "text": "That's exactly the question. Section 19(3)(f) asks what is necessary to protect people. A document nobody understands may not be it.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the contact centre induction",
+          "situation": "Tasman Ridge is about to on-board 30 new contact centre staff in Parramatta. Ben's review shows that abusive calls are frequent, the policy lets staff end a call after a warning, but new starters only read the policy and are placed on live calls on day two without a buddy. You must recommend a fix to Leila.",
+          "choices": [
+            {
+              "text": "Add practised call-handling sessions on abusive callers, a buddy on live calls for the first weeks, a clear rule that staff may end abusive calls, and check-ins with Ben as HSR",
+              "outcome": "This tackles the risk with training, instruction and supervision matched to the actual hazard, and consults the HSR. It is the kind of response s 19(3)(f) and s 49 point to.",
+              "score": 2
+            },
+            {
+              "text": "Re-send the policy with a request that new starters confirm they have read it",
+              "outcome": "A read-receipt proves delivery, not understanding or capability. The risk on live calls is largely unchanged.",
+              "score": 0
+            },
+            {
+              "text": "Keep the induction but offer a counselling service for anyone who is upset afterwards",
+              "outcome": "Support after harm matters, but it does not eliminate or minimise the risk first. Controls should come before the injury.",
+              "score": 1
+            },
+            {
+              "text": "Ask experienced staff to take all difficult calls so new starters are protected",
+              "outcome": "This shifts the hazard to another group without managing it, and may overload experienced staff. The underlying risk is still uncontrolled.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "PCBU duty versus officer due diligence",
+          "caption": "An officer can be found guilty of failing the s 27 duty whether or not the bank itself is convicted.",
+          "headers": [
+            "The bank (PCBU), s 19",
+            "An officer, s 27"
+          ],
+          "items": [
+            {
+              "label": "Who",
+              "left": "The bank as a business or undertaking",
+              "right": "Directors and senior people who make or influence decisions about the business"
+            },
+            {
+              "label": "What",
+              "left": "Ensure health and safety so far as reasonably practicable",
+              "right": "Exercise due diligence so the bank complies with its duties"
+            },
+            {
+              "label": "Knowledge",
+              "left": "Know the risks of the work",
+              "right": "Keep up-to-date WHS knowledge and understand the operations"
+            },
+            {
+              "label": "Resources",
+              "left": "Provide controls, training and facilities",
+              "right": "Ensure resources and processes exist and are used"
+            },
+            {
+              "label": "Evidence",
+              "left": "Records of controls, training and consultation",
+              "right": "Verify, not just assume, that it is all happening"
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Officer due diligence in practice",
+          "prompt": "Match each element of due diligence in s 27(5) to what James might do as COO.",
+          "pairs": [
+            {
+              "left": "Keep WHS knowledge current",
+              "right": "Attend a briefing on new psychosocial risk guidance each year"
+            },
+            {
+              "left": "Understand the operations",
+              "right": "Spend a shift in the Parramatta contact centre and a Hobart branch"
+            },
+            {
+              "left": "Resources and processes",
+              "right": "Approve budget for call-handling training and extra team leaders"
+            },
+            {
+              "left": "Information on incidents",
+              "right": "Receive a monthly safety dashboard and act on trends quickly"
+            },
+            {
+              "left": "Compliance processes",
+              "right": "Make sure HSR training requests and notifiable incidents are handled"
+            },
+            {
+              "left": "Verify",
+              "right": "Ask internal audit to test whether training actually took place"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the officer's duty under s 27 is correct?",
+          "options": [
+            "It only applies after the bank has been convicted of a WHS offence",
+            "It is met if the board has approved a WHS policy",
+            "It requires reasonable steps, including verifying that safety resources and processes are provided and used",
+            "It applies only to officers with a safety qualification"
+          ],
+          "answer": 2,
+          "explanation": "Section 27(5) lists due diligence steps, ending with verifying the provision and use of resources and processes. Section 27(4) says an officer can be convicted whether or not the PCBU is, and approving a policy alone is not verification."
+        },
+        {
+          "type": "example",
+          "title": "Inside the story: Hobart's after-hours cash run",
+          "body": "Chloe's Hobart branch closes at 4 pm but the vault is balanced and cash is prepared for collection after closing. A new teller, Sam, is rostered to help on his third day.\n\n**What went wrong:** Sam had read the security procedure, but nobody had walked him through it. He propped the rear door open to carry out rubbish while cash was on the counter.\n\n**What Chloe changed:**\n- a short, practical walk-through of the closing procedure for every new team member before they join a close\n- a buddy for the first two weeks of closes\n- a laminated three-step card at the rear door\n- a quick quarterly refresher, recorded in the learning system\n\nNothing happened to Sam, but the near miss showed a gap in **instruction and supervision** for a known risk. That is s 19(3)(f) in a bank branch: training is matched to the risk of the actual task, and supervision covers the gap until the person is competent."
+        },
+        {
+          "type": "tip",
+          "title": "Which WHS law applies to your workplace?",
+          "body": "This quest uses the section numbers of the **Commonwealth Work Health and Safety Act 2011**, which follows the national model law. Most private-sector workplaces are covered by their **state or territory** WHS Act, built on the same model, so the duties look very similar. **Victoria** has its own Occupational Health and Safety Act with different numbering. Always check which law, regulator and codes apply where you work."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "The bank, as a PCBU, must ensure workers' health and safety, and that of others, so far as is reasonably practicable",
+            "Health includes psychological health; workers include contractors, labour hire staff, students and volunteers",
+            "Section 19(3)(f) requires the information, training, instruction or supervision necessary to protect people from work risks",
+            "Eliminate risks first; if that is not reasonably practicable, minimise them, weighing cost last",
+            "Officers must exercise due diligence, including verifying that resources and processes are used; workers must take reasonable care"
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of one task in your team that a new starter does in their first month. What information, training, instruction or supervision do they actually receive before doing it, and would it protect them if something went wrong?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-wp-s1-q1",
+          "question": "Under the WHS Act, who owes the primary duty of care in section 19?",
+          "options": [
+            "Each worker personally",
+            "The state WHS regulator",
+            "The person conducting a business or undertaking (PCBU)",
+            "The elected health and safety representative"
+          ],
+          "answer": 2,
+          "explanation": "Section 19 places the primary duty on the PCBU. Workers have their own duties under s 28, and HSRs and regulators have functions, not the primary duty.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s1-q2",
+          "question": "Which paragraph of section 19(3) deals with information, training, instruction and supervision?",
+          "options": [
+            "Paragraph (f)",
+            "Paragraph (a)",
+            "Paragraph (c)",
+            "Paragraph (g)"
+          ],
+          "answer": 0,
+          "explanation": "Section 19(3)(f) covers the information, training, instruction or supervision needed to protect all persons from work risks. (a) is a safe work environment, (c) safe systems of work and (g) health and conditions monitoring.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s1-q3",
+          "question": "A university student completes a four-week work placement in Tasman Ridge's credit team. How does the WHS Act treat her?",
+          "options": [
+            "As a visitor with no WHS protection",
+            "As a worker to whom the bank owes the primary duty",
+            "As a worker only if she is paid",
+            "As the university's responsibility alone"
+          ],
+          "answer": 1,
+          "explanation": "Section 7 expressly includes a student gaining work experience as a worker. Payment is not required, and the bank as PCBU owes her the primary duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s1-q4",
+          "question": "The Act defines 'health' for WHS purposes as:",
+          "options": [
+            "Physical health only",
+            "Freedom from notifiable injuries",
+            "Health as certified by a doctor",
+            "Physical and psychological health"
+          ],
+          "answer": 3,
+          "explanation": "The WHS Act defines health as physical and psychological health, which is why psychosocial risks fall within the primary duty.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s1-q5",
+          "question": "In deciding what is reasonably practicable, when does the cost of a control come into the assessment?",
+          "options": [
+            "First, because controls must fit within the approved budget",
+            "Never, because cost is irrelevant to WHS duties",
+            "After the risk and available controls are assessed, asking whether cost is grossly disproportionate to the risk",
+            "Only when a regulator asks for a cost estimate"
+          ],
+          "answer": 2,
+          "explanation": "Section 18(e) brings in cost only after assessing the risk and the available controls, and asks whether the cost is grossly disproportionate to the risk.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s1-q6",
+          "question": "A branch manager says: 'Our hold-up procedure is on the intranet, so we've met the training duty.' What is the best response?",
+          "options": [
+            "She is right, because publishing the procedure always meets the duty",
+            "The duty applies only to head office staff, not branches",
+            "Training is only required after a notifiable incident occurs",
+            "Section 19(3)(f) asks what training, instruction or supervision is necessary to protect people; posting a document may not be enough"
+          ],
+          "answer": 3,
+          "explanation": "The test in s 19(3)(f) is what is necessary to protect people from the risks of the work. Making a document available may not achieve that, especially for high-risk tasks. The duty applies to all workplaces and does not wait for an incident.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s1-q7",
+          "question": "Which of these is part of an officer's due diligence under section 27(5)?",
+          "options": [
+            "Personally delivering all WHS training",
+            "Approving each individual risk assessment",
+            "Acting as the health and safety representative",
+            "Verifying that safety resources and processes are provided and used"
+          ],
+          "answer": 3,
+          "explanation": "Section 27(5)(f) requires verification of the resources and processes in (c) to (e). Officers need not personally deliver training or approve every assessment, and HSRs are elected by workers.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s1-q8",
+          "question": "The bank has not been prosecuted, but an inspector finds the COO took no steps to understand safety risks in the contact centre. Can the COO still be found guilty of breaching the officer duty?",
+          "options": [
+            "No, the bank must be convicted first",
+            "No, officers only owe duties to shareholders",
+            "Yes, an officer can be convicted whether or not the PCBU has been convicted",
+            "Yes, but only if the COO is also a director"
+          ],
+          "answer": 2,
+          "explanation": "Section 27(4) allows an officer to be convicted of the s 27 duty whether or not the PCBU has been convicted. The officer duty is not limited to directors.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s1-q9",
+          "question": "A worker refuses to follow a reasonable, notified instruction to use the sit-stand desk settings set after her ergonomic assessment. Which duty is engaged?",
+          "options": [
+            "The worker's duty to comply, so far as reasonably able, with reasonable instructions",
+            "The officer's due diligence duty",
+            "The PCBU's duty to provide welfare facilities",
+            "No duty, because ergonomics is outside the WHS Act"
+          ],
+          "answer": 0,
+          "explanation": "Section 28(c) requires a worker to comply, so far as they are reasonably able, with reasonable instructions given to allow the PCBU to comply with the Act.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s1-q10",
+          "question": "Section 17 tells a duty holder how to manage risks. What is the order it requires?",
+          "options": [
+            "Minimise risks first, then eliminate any that remain",
+            "Insure against risks that cannot be avoided",
+            "Transfer risks to contractors where possible",
+            "Eliminate risks so far as reasonably practicable; if not reasonably practicable, minimise them"
+          ],
+          "answer": 3,
+          "explanation": "Section 17 requires elimination so far as reasonably practicable and, only if that is not reasonably practicable, minimisation so far as reasonably practicable.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Psychosocial hazards, consultation and safety representatives",
+      "stage": "The Pressure Room",
+      "summary": "See psychosocial hazards as WHS risks, consult workers before changes that affect their health and safety, support health and safety representatives, handle notifiable incidents and protect people who raise concerns.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise common psychosocial hazards in banking and how to control them",
+        "Explain when and how the bank must consult workers and HSRs",
+        "Describe HSR training entitlements, the right to cease unsafe work and protection from discriminatory conduct",
+        "Apply the notifiable incident steps and record-keeping rule"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the restructure memo",
+          "setting": "Parramatta contact centre break room, Tuesday, 10:05 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Stage two. A memo has just landed: the hardship and collections teams will merge, call targets will rise and two team leader roles will go.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ben",
+              "text": "People are rattled. Nobody asked us about this. Collections calls are already the hardest calls we take.",
+              "mood": "angry"
+            },
+            {
+              "who": "leila",
+              "text": "Before anyone signs off, we need to look at this the way the WHS Act does. Workload, low control and poor support are hazards too.",
+              "mood": "thinking"
+            },
+            {
+              "who": "james",
+              "text": "It's an efficiency change, not a safety change. Isn't that a management call?",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "It's both. A change that may affect workers' health or safety is one we have to consult on, and psychological harm counts as harm.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ben",
+              "text": "And as HSR I'd like to be part of that conversation before the decision, not after.",
+              "mood": "worried"
+            },
+            {
+              "who": "leila",
+              "text": "Then this stage is about psychosocial hazards, consultation and the people who represent workers. Let's get it right before the memo goes live.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Psychosocial hazards in plain terms",
+          "scenes": [
+            {
+              "icon": "🧠",
+              "heading": "What they are",
+              "narration": "Psychosocial hazards are features of work that can cause psychological harm, and sometimes physical harm too. Examples include high or low job demands, low job control, poor support, unclear roles, poorly managed change and conflict."
+            },
+            {
+              "icon": "🚫",
+              "heading": "Bullying and harassment",
+              "narration": "Workplace bullying, harassment, including sexual harassment, and aggression from customers are psychosocial hazards that banks know well."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Same duty, same method",
+              "narration": "There is no separate 'stress law'. The primary duty already covers psychological health, so the bank manages these risks like any other: eliminate if reasonably practicable, otherwise minimise."
+            },
+            {
+              "icon": "📘",
+              "heading": "Regulations and codes",
+              "narration": "Most jurisdictions now also have WHS regulations and a code of practice on psychosocial risks. Check the current version where you work for the detail."
+            },
+            {
+              "icon": "🗣️",
+              "heading": "Talk to the people doing the work",
+              "narration": "Workers and their representatives usually know where the pressure points are. Consultation is not a courtesy here; it is part of the duty."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Managing a psychosocial risk",
+          "caption": "Consultation with workers and HSRs runs through every step, not just the end.",
+          "items": [
+            {
+              "label": "Identify",
+              "detail": "Look at workload data, complaints, absence, surveys and what workers say"
+            },
+            {
+              "label": "Assess",
+              "detail": "How long, how often and how severe is the exposure, and who is affected?"
+            },
+            {
+              "label": "Control",
+              "detail": "Change the work itself first: staffing, targets, call routing, support, role clarity"
+            },
+            {
+              "label": "Review",
+              "detail": "Check whether controls work, especially after change, incidents or new concerns"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of the following is best described as a psychosocial hazard at a bank?",
+          "options": [
+            "A loose cable across a branch walkway",
+            "Sustained high call targets with no time between difficult collections calls",
+            "A faulty air-conditioning unit in the server room",
+            "An unsecured filing cabinet in the archive"
+          ],
+          "answer": 1,
+          "explanation": "Sustained high job demands without recovery time is a classic psychosocial hazard. The other options are physical hazards that should also be managed, but they are not psychosocial."
+        },
+        {
+          "type": "sort",
+          "title": "Psychosocial or physical?",
+          "prompt": "Sort each workplace issue into the kind of hazard it mainly presents.",
+          "buckets": [
+            "Psychosocial hazard",
+            "Physical hazard"
+          ],
+          "items": [
+            {
+              "text": "Repeated abusive calls from customers in arrears",
+              "bucket": 0
+            },
+            {
+              "text": "Unclear reporting lines after a merger",
+              "bucket": 0
+            },
+            {
+              "text": "Heavy coin bags lifted at the counter",
+              "bucket": 1
+            },
+            {
+              "text": "A manager who belittles staff in team meetings",
+              "bucket": 0
+            },
+            {
+              "text": "Glare on screens causing eye strain",
+              "bucket": 1
+            },
+            {
+              "text": "Restructure rumours with no information for months",
+              "bucket": 0
+            },
+            {
+              "text": "Trip hazard from a damaged carpet edge",
+              "bucket": 1
+            },
+            {
+              "text": "Working alone in a regional branch with aggressive visitors",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Consultation, HSRs and the right to speak up about safety",
+          "body": "**Consultation (ss 47-49).** The bank must, so far as reasonably practicable, consult workers who are or are likely to be directly affected by a WHS matter. Consultation means sharing relevant information, giving workers a reasonable chance to express views and raise issues, taking those views into account and telling workers the outcome. It is required when identifying hazards, deciding on controls, proposing **changes that may affect health or safety**, and deciding procedures, including those for information and **training**.\n\n**Health and safety representatives.** Workers can ask for HSRs to be elected for their work group. If an HSR asks, the bank must let them attend an approved HSR course, pay the fees and give paid time off, as soon as practicable within three months of the request (s 72).\n\n**Stopping unsafe work.** A worker may cease or refuse work if they reasonably fear a serious risk from immediate or imminent exposure to a hazard (s 84).\n\n**No retaliation.** It is an offence to dismiss or disadvantage a worker because they are an HSR, raise a WHS concern or perform a role under the Act (ss 104-106)."
+        },
+        {
+          "type": "story",
+          "title": "The turn: decision first, questions later",
+          "setting": "Level 12 meeting room, head office, 4:30 pm.",
+          "lines": [
+            {
+              "who": "james",
+              "text": "The merger plan is final. We'll brief staff on Monday and answer questions then.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "James, the plan changes workloads and removes team leaders. That's a change that may affect health and safety. We need to consult before it's locked in.",
+              "mood": "worried"
+            },
+            {
+              "who": "ben",
+              "text": "Collections staff will be taking hardship calls without training on hardship. That's a new risk for them and for customers.",
+              "mood": "worried"
+            },
+            {
+              "who": "james",
+              "text": "If we consult, won't we be stuck with whatever they want?",
+              "mood": "thinking"
+            },
+            {
+              "who": "leila",
+              "text": "No. Consultation means sharing the plan, hearing the concerns, genuinely considering them and telling people what we decided. The bank still decides.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Getting the merger right",
+          "situation": "The merger of hardship and collections teams is due in six weeks. Call targets will rise 15%, two team leader roles go, and collections staff will start taking hardship calls. Ben, as HSR, has asked to be involved. James asks you what to do next.",
+          "choices": [
+            {
+              "text": "Share the draft plan with affected staff and Ben now, assess the workload and training risks with them, adjust targets, supervision and training where needed, and explain the final decision",
+              "outcome": "This is consultation as ss 47-49 describe it, done before the change, and it feeds directly into controls such as training under s 19(3)(f).",
+              "score": 2
+            },
+            {
+              "text": "Go ahead as planned and run a staff wellbeing webinar after the merger",
+              "outcome": "A webinar may help, but it skips consultation on a change that may affect health and safety and does not control the workload risk.",
+              "score": 0
+            },
+            {
+              "text": "Send staff a survey link and implement the plan unchanged, whatever the results",
+              "outcome": "Asking for views but not taking them into account is not real consultation, and the risks remain unaddressed.",
+              "score": 0
+            },
+            {
+              "text": "Consult only the remaining team leaders, since they will manage the change",
+              "outcome": "Team leaders matter, but the duty is to consult workers who are directly affected, including the HSR's work group.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "When a notifiable incident happens",
+          "caption": "Sections 35-39. Most psychological injuries are not 'notifiable incidents', but they still need reporting internally and managing.",
+          "items": [
+            {
+              "label": "Recognise it",
+              "detail": "A death, a serious injury or illness, or a dangerous incident arising from the work"
+            },
+            {
+              "label": "Notify immediately",
+              "detail": "Tell the WHS regulator straight away, by the fastest means, by phone or in writing"
+            },
+            {
+              "label": "Follow up in writing",
+              "detail": "If the regulator asks after a phone notice, give written notice within 48 hours"
+            },
+            {
+              "label": "Preserve the site",
+              "detail": "Do not disturb the scene until an inspector arrives or directs, except to help people or make it safe"
+            },
+            {
+              "label": "Keep the record",
+              "detail": "Keep a record of each notifiable incident for at least five years"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "WHS terms to know",
+          "cards": [
+            {
+              "front": "PCBU",
+              "back": "Person conducting a business or undertaking: for us, the bank. It owes the primary duty of care."
+            },
+            {
+              "front": "Reasonably practicable",
+              "back": "What can reasonably be done, weighing likelihood, harm, knowledge, available controls and finally cost."
+            },
+            {
+              "front": "Health and safety representative",
+              "back": "A worker elected by a work group to represent them on WHS matters, entitled to approved training."
+            },
+            {
+              "front": "Consultation",
+              "back": "Sharing information, giving workers a reasonable chance to have a say, taking their views into account and reporting back."
+            },
+            {
+              "front": "Right to cease work",
+              "back": "A worker may stop work if reasonably concerned about a serious risk from an immediate or imminent hazard."
+            },
+            {
+              "front": "Discriminatory conduct",
+              "back": "Dismissing or disadvantaging someone because they raise WHS issues or hold a WHS role: an offence."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Responding when a worker raises a psychosocial concern",
+          "prompt": "Put the team leader's steps in a sensible order.",
+          "steps": [
+            "Listen, thank the worker and check whether there is any immediate risk to them",
+            "Record the concern and tell the worker what will happen next",
+            "Gather information and consult the worker, others affected and the HSR",
+            "Decide on controls that change the work, not just the person",
+            "Put the controls in place and support the worker meanwhile",
+            "Review whether the controls worked and report back"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Ben asks to attend an approved HSR training course. What must the bank do?",
+          "options": [
+            "Allow him to attend as soon as practicable within three months, pay the fees and give paid time off",
+            "Allow attendance only if his manager agrees it suits rosters that year",
+            "Allow him to attend in his own time, with Ben paying the fees",
+            "Offer its own internal course instead of the approved one"
+          ],
+          "answer": 0,
+          "explanation": "Section 72 requires the PCBU, on the HSR's request, to allow attendance at an approved course the HSR chooses, within three months as soon as practicable, with fees paid and time off with pay."
+        },
+        {
+          "type": "example",
+          "title": "Inside the story: what consultation changed in Parramatta",
+          "body": "Leila and Ben ran three short sessions with the affected teams before the merger plan was final. What they heard:\n\n- collections staff had **no training** on hardship requests and feared getting them wrong\n- removing both team leaders would leave **no one to escalate** distressing calls to in the evening shift\n- the 15% target rise ignored the **longer duration** of hardship calls\n\n**What the bank decided:**\n- keep one evening team leader role\n- a two-day hardship and difficult-conversations course before anyone takes hardship calls\n- targets phased in over three months and measured on quality as well as volume\n- a review at 90 days with Ben\n\nThe merger went ahead. Staff did not get everything they asked for, but they were heard, the bank recorded why it decided as it did, and the controls changed the work itself. That record is also good evidence of due diligence for James as an officer."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "Psychosocial hazards, such as high demands, low support, poor change management, bullying and harassment, are managed under the same primary duty",
+            "Control psychosocial risks by changing the work first, and review controls after change or incidents",
+            "Consult affected workers and HSRs before decisions that may affect health and safety, including training procedures",
+            "HSRs can request approved training: paid time off and fees, as soon as practicable within three months",
+            "Notifiable incidents go to the regulator immediately; keep records for at least five years; never punish someone for raising WHS concerns"
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about the last significant change in your team, such as new targets, a new system or a restructure. Were the people affected consulted before the decision? What would you do differently next time?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-wp-s2-q1",
+          "question": "Which of these is a psychosocial hazard?",
+          "options": [
+            "A wet floor near the branch entrance",
+            "Exposure to cleaning chemicals",
+            "Poorly managed organisational change",
+            "Manual handling of coin boxes"
+          ],
+          "answer": 2,
+          "explanation": "Poorly managed change is a recognised psychosocial hazard. The others are physical hazards.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s2-q2",
+          "question": "Why does the WHS primary duty cover psychosocial risks?",
+          "options": [
+            "Because a separate stress Act requires it",
+            "Because the Act defines health to include psychological health",
+            "Only because a code of practice says so",
+            "Only when a worker makes a compensation claim"
+          ],
+          "answer": 1,
+          "explanation": "The WHS Act defines health as physical and psychological health, so the primary duty already extends to psychological harm. Codes and regulations add detail but are not the source of that coverage.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s2-q3",
+          "question": "Under section 49, consultation is required when the bank is:",
+          "options": [
+            "Proposing changes that may affect workers' health or safety",
+            "Setting the annual dividend",
+            "Choosing a new marketing agency",
+            "Publishing quarterly financial results"
+          ],
+          "answer": 0,
+          "explanation": "Section 49 lists when consultation is required, including proposing changes that may affect health or safety. Dividends, agencies and results are not WHS matters.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s2-q4",
+          "question": "Which description best fits consultation under section 48?",
+          "options": [
+            "Telling workers about a decision after it has been made",
+            "Sharing relevant information, giving workers a reasonable chance to express views, taking them into account and advising the outcome",
+            "Obtaining every worker's written agreement before acting",
+            "Holding a vote that binds the bank"
+          ],
+          "answer": 1,
+          "explanation": "Section 48 describes consultation as information-sharing, a reasonable opportunity to have a say, taking views into account and advising the outcome. It does not require agreement or a binding vote.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s2-q5",
+          "question": "A manager plans to move a staff member to a less favourable roster because she was elected HSR and keeps raising issues. What does the WHS Act say?",
+          "options": [
+            "It is allowed if the roster change is temporary",
+            "It is allowed because HSRs have no special protection",
+            "It is only a problem if she resigns",
+            "This may be discriminatory conduct for a prohibited reason, which the Act forbids"
+          ],
+          "answer": 3,
+          "explanation": "Altering a worker's position to their detriment because they are an HSR or raise WHS issues is discriminatory conduct under ss 104-106.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s2-q6",
+          "question": "A worker refuses to go into a branch after a credible threat that an armed person is waiting outside. Which provision supports her?",
+          "options": [
+            "The officer's due diligence duty in section 27",
+            "The duty to keep notifiable incident records",
+            "The right of a worker to cease unsafe work in section 84",
+            "The HSR training entitlement in section 72"
+          ],
+          "answer": 2,
+          "explanation": "Section 84 lets a worker cease or refuse work where they reasonably fear a serious risk from immediate or imminent exposure to a hazard.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s2-q7",
+          "question": "A teller is taken to hospital and admitted as an in-patient after collapsing from a work-related injury. What must the bank do?",
+          "options": [
+            "Notify the regulator within 30 days",
+            "Record it internally only, as it is not notifiable",
+            "Wait for the doctor's report before deciding",
+            "Notify the WHS regulator immediately by the fastest possible means"
+          ],
+          "answer": 3,
+          "explanation": "Immediate treatment as a hospital in-patient makes it a serious injury or illness and so a notifiable incident. Section 38 requires immediate notification by the fastest possible means.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s2-q8",
+          "question": "For how long must the bank keep a record of each notifiable incident?",
+          "options": [
+            "At least five years from the date notice is given",
+            "Twelve months",
+            "Two years from the incident",
+            "Until the injured worker returns to work"
+          ],
+          "answer": 0,
+          "explanation": "Section 38(7) requires the PCBU to keep a record of each notifiable incident for at least five years from the day notice is given to the regulator.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s2-q9",
+          "question": "Which control for a high-demand contact centre best follows the WHS approach of changing the work first?",
+          "options": [
+            "Giving staff a resilience webinar",
+            "Adding a wellbeing message to payslips",
+            "Asking staff to report stress to their GP",
+            "Adjusting staffing and call routing so staff get recovery time after difficult calls"
+          ],
+          "answer": 3,
+          "explanation": "Controls that change the work itself, such as staffing and routing, address the hazard at its source. Individual supports can help but should not replace work-design controls.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s2-q10",
+          "question": "Which statement about health and safety representatives is correct?",
+          "options": [
+            "They are appointed by the board to audit managers",
+            "They are elected by workers in a work group to represent them on WHS matters",
+            "They replace the bank's duty to consult",
+            "They must be qualified safety engineers"
+          ],
+          "answer": 1,
+          "explanation": "HSRs are elected by members of a work group. They do not replace consultation with workers and need no professional qualification, though they are entitled to approved training.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The Sex Discrimination Act positive duty",
+      "stage": "The Line We Hold",
+      "summary": "Understand the section 47C duty to take reasonable and proportionate measures to eliminate sex discrimination, sexual and sex-based harassment, hostile workplace environments and victimisation, and how the Australian Human Rights Commission enforces it.",
+      "minutes": 45,
+      "objectives": [
+        "Explain who owes the positive duty and what conduct it targets",
+        "Apply the duty to harassment by colleagues and by customers",
+        "Judge what reasonable and proportionate measures look like for a bank",
+        "Describe the Commission's inquiry, compliance notice and enforcement powers"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: 'it's just banter'",
+          "setting": "Tasman Ridge Bank branch, Elizabeth Street, Hobart. Friday, 3:50 pm.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Stage three. Chloe has called you and Leila from Hobart. A young teller, Mia, has asked to be moved off the Friday roster.",
+              "mood": "neutral"
+            },
+            {
+              "who": "chloe",
+              "text": "One of our biggest business customers comes in every Friday. He comments on Mia's looks, asks if she's single, and last week he said women shouldn't be lending money.",
+              "mood": "worried"
+            },
+            {
+              "who": "chloe",
+              "text": "And a senior lender in my team laughs along and repeats the jokes in the lunch room. Mia hasn't made a formal complaint. She just wants to avoid Fridays.",
+              "mood": "worried"
+            },
+            {
+              "who": "leila",
+              "text": "So the conduct comes from a customer and from our own staff, and nobody has complained formally. Under the old way of thinking we'd wait. Under the positive duty we can't.",
+              "mood": "thinking"
+            },
+            {
+              "who": "aroha",
+              "text": "If Mia does complain later, we also need to make sure nobody treats her worse for it. That's victimisation, and it is covered too.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "This stage is about section 47C of the Sex Discrimination Act: the duty to prevent, not just respond.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The positive duty in section 47C",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "A duty to prevent",
+              "narration": "Employers and PCBUs must take reasonable and proportionate measures to eliminate, as far as possible, certain unlawful conduct. It is a proactive duty: it applies even when no one has complained."
+            },
+            {
+              "icon": "🎯",
+              "heading": "What it targets",
+              "narration": "Sex discrimination in employment, sexual harassment, harassment on the ground of sex, conduct creating a workplace environment hostile on the ground of sex, and victimisation linked to complaints about those things."
+            },
+            {
+              "icon": "👔",
+              "heading": "Whose conduct",
+              "narration": "The duty covers conduct by the bank itself, its employees or workers, and its agents. It also covers harassment and hostile conduct by third parties, such as customers, towards the bank's employees and workers."
+            },
+            {
+              "icon": "📏",
+              "heading": "What is reasonable",
+              "narration": "Whether measures are enough depends on the size, nature and circumstances of the business, its resources, and the practicability and cost of measures. A large bank is expected to do a lot."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Alongside WHS",
+              "narration": "Section 47C does not limit WHS duties. Sexual harassment is both a positive-duty issue and a psychosocial hazard, so the two frameworks work together."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Reacting to complaints versus the positive duty",
+          "caption": "Complaint handling still matters, but the positive duty asks what the bank does before anyone complains.",
+          "headers": [
+            "Complaint-based approach",
+            "Positive duty, s 47C"
+          ],
+          "items": [
+            {
+              "label": "Trigger",
+              "left": "Waits for a complaint",
+              "right": "Applies all the time, complaint or not"
+            },
+            {
+              "label": "Focus",
+              "left": "Investigating what already happened",
+              "right": "Preventing harassment, hostility and victimisation"
+            },
+            {
+              "label": "Third parties",
+              "left": "Customers often treated as outside scope",
+              "right": "Customer harassment of staff is covered"
+            },
+            {
+              "label": "Culture",
+              "left": "Individual incidents",
+              "right": "Workplace environment and leadership"
+            },
+            {
+              "label": "Evidence",
+              "left": "Complaint files",
+              "right": "Risk assessments, measures, training, monitoring, outcomes"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "No one in Hobart has lodged a complaint about the Friday customer. Does the positive duty still require the bank to act?",
+          "options": [
+            "No, the duty is triggered only by a formal complaint",
+            "Only if the customer's conduct is reported to police",
+            "Yes, the duty requires reasonable and proportionate measures to eliminate such conduct as far as possible, with or without a complaint",
+            "No, conduct by customers is outside the Sex Discrimination Act"
+          ],
+          "answer": 2,
+          "explanation": "Section 47C is a proactive duty. It covers sexual harassment and sex-based harassment of employees by any person, including customers, under s 47C(4), and does not depend on a complaint."
+        },
+        {
+          "type": "match",
+          "title": "Name the conduct",
+          "prompt": "Match each type of conduct covered by the positive duty to a description in plain words.",
+          "pairs": [
+            {
+              "left": "Sexual harassment",
+              "right": "Unwelcome conduct of a sexual nature that a reasonable person would anticipate could offend, humiliate or intimidate"
+            },
+            {
+              "left": "Harassment on the ground of sex",
+              "right": "Unwelcome demeaning conduct because of a person's sex or characteristics linked to it"
+            },
+            {
+              "left": "Hostile workplace environment",
+              "right": "Conduct that makes a workplace offensive, intimidating or humiliating for people of a particular sex"
+            },
+            {
+              "left": "Victimisation",
+              "right": "Treating someone badly because they complained, or might complain, about unlawful conduct"
+            },
+            {
+              "left": "Sex discrimination in employment",
+              "right": "Treating someone less favourably in hiring, pay, promotion or dismissal because of their sex"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "How the Commission enforces the positive duty",
+          "body": "The **Australian Human Rights Commission Act 1986** gives the Commission specific functions for the positive duty (s 35A):\n\n- publish **guidelines** on complying with the duty, and promote understanding of it\n- run research and education programs\n- **inquire** into an organisation's compliance where it reasonably suspects non-compliance (s 35B), giving written notice and a chance to make submissions\n- notify findings and recommendations\n- issue a **compliance notice** specifying action to take, with a period starting at least 21 days after the notice (s 35F)\n- apply to the Federal Court or the Federal Circuit and Family Court to enforce a notice that is not complied with (s 35J)\n\nThe Commission's guidelines describe what compliance looks like in practice, including leadership, risk management, support, reporting and training. They are not law in themselves, but they are the best guide to what the regulator will expect from a bank of our size."
+        },
+        {
+          "type": "story",
+          "title": "The turn: 'he's one of our best customers'",
+          "setting": "Hobart branch manager's office, Monday, 9:10 am.",
+          "lines": [
+            {
+              "who": "chloe",
+              "text": "The relationship manager says if we confront him, he'll take his business accounts elsewhere.",
+              "mood": "worried"
+            },
+            {
+              "who": "leila",
+              "text": "The positive duty doesn't have a customer-value exception. His conduct towards Mia is exactly what s 47C(4) covers.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aroha",
+              "text": "And the lender laughing along and repeating it? That's our own employee contributing to a hostile environment.",
+              "mood": "thinking"
+            },
+            {
+              "who": "james",
+              "text": "What does 'reasonable and proportionate' look like for a bank our size?",
+              "mood": "thinking"
+            },
+            {
+              "who": "leila",
+              "text": "More than a poster. We need measures that actually change what happens in that branch on a Friday, and in every branch like it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing Fridays in Hobart",
+          "situation": "You must recommend what Tasman Ridge does about the Friday customer and the lender who repeats his jokes. Mia has not complained formally and is worried about being seen as a troublemaker.",
+          "choices": [
+            {
+              "text": "Remove Mia from Friday rosters and take no further action, as she asked",
+              "outcome": "This protects Mia in the short term, but it shifts the burden onto her and leaves the conduct and environment unchanged for everyone else.",
+              "score": 1
+            },
+            {
+              "text": "Have a senior person tell the customer his conduct is unacceptable and set conditions for service, address the lender's conduct through the conduct process, check in with Mia confidentially about support, and review customer-harassment controls across branches",
+              "outcome": "This acts on both sources of conduct, supports Mia without making her responsible, guards against victimisation and treats it as a system risk. It reflects the preventive purpose of s 47C.",
+              "score": 2
+            },
+            {
+              "text": "Wait until Mia makes a formal written complaint, then investigate",
+              "outcome": "The positive duty does not wait for a complaint. Waiting allows the harassment and hostile environment to continue.",
+              "score": 0
+            },
+            {
+              "text": "Send all Hobart staff a reminder of the anti-harassment policy",
+              "outcome": "A reminder alone is unlikely to be a reasonable and proportionate measure for a known, continuing problem.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Building blocks of prevention",
+          "caption": "Our own framework for organising measures. Check the Commission's current guidelines for its expectations.",
+          "items": [
+            {
+              "label": "Leadership",
+              "detail": "Leaders set expectations, model behaviour and are held accountable"
+            },
+            {
+              "label": "Risk assessment",
+              "detail": "Identify where harassment risks arise: customers, events, power imbalances, isolated work"
+            },
+            {
+              "label": "Controls and training",
+              "detail": "Clear rules, practical training for all, deeper training for managers"
+            },
+            {
+              "label": "Support and reporting",
+              "detail": "Several safe ways to raise concerns, with confidentiality and no victimisation"
+            },
+            {
+              "label": "Monitoring",
+              "detail": "Track data, check whether measures work and improve them"
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Prevention or reaction?",
+          "prompt": "Sort each action by whether it mainly prevents conduct or mainly reacts after it happens.",
+          "buckets": [
+            "Prevents (positive duty focus)",
+            "Reacts after the event"
+          ],
+          "items": [
+            {
+              "text": "Assessing harassment risks before the end-of-year function",
+              "bucket": 0
+            },
+            {
+              "text": "Investigating a complaint received last week",
+              "bucket": 1
+            },
+            {
+              "text": "Practical training for managers on stepping in early",
+              "bucket": 0
+            },
+            {
+              "text": "Setting service conditions for customers who harass staff",
+              "bucket": 0
+            },
+            {
+              "text": "Disciplining a lender after an investigation",
+              "bucket": 1
+            },
+            {
+              "text": "Tracking harassment data by branch to spot hot spots",
+              "bucket": 0
+            },
+            {
+              "text": "Paying compensation after a tribunal finding",
+              "bucket": 1
+            },
+            {
+              "text": "Rostering so no one works alone with known problem customers",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which matter is relevant under s 47C(6) when deciding whether the bank's measures are reasonable and proportionate?",
+          "options": [
+            "Whether the harasser is a valuable customer",
+            "The size, nature and circumstances of the business and its resources",
+            "Whether the affected employee is permanent or casual",
+            "Whether any complaint has been made to the Commission"
+          ],
+          "answer": 1,
+          "explanation": "Section 47C(6) lists the size, nature and circumstances of the business, its resources, the practicability and cost of measures, and any other relevant matter. A customer's commercial value is not a reason to do less."
+        },
+        {
+          "type": "example",
+          "title": "Inside the story: the end-of-year function",
+          "body": "Tasman Ridge's Sydney end-of-year party had a history: an open bar, no end time and senior staff 'running the after-party'. Two informal concerns were raised the previous year, but nobody complained formally.\n\n**Leila's prevention plan, approved by James:**\n- a risk assessment of the event with the people and culture team and an HSR\n- a clear end time, food throughout, and no bank-funded after-party\n- named senior **'event leads'** briefed on stepping in early and on how to escalate\n- a reminder to all staff of expected behaviour and of the confidential ways to raise concerns, including Aroha's team\n- a check-in survey a week later\n\n**Why it matters:** the earlier informal concerns meant the risk was known. Under s 47C the question is not only whether someone complained, but whether the bank took reasonable and proportionate measures to stop it happening again."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Section 47C requires employers and PCBUs to take reasonable and proportionate measures to eliminate, as far as possible, sex discrimination, sexual and sex-based harassment, hostile workplace environments and related victimisation",
+            "The duty is proactive: it applies whether or not anyone has complained",
+            "It covers conduct by the bank, its workers and agents, and harassment of staff by third parties such as customers",
+            "What is reasonable depends on size, nature, resources and practicability; a large bank is expected to do more",
+            "The Commission can inquire, issue compliance notices and seek court enforcement; s 47C works alongside WHS duties"
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Where in your workplace are staff most exposed to sexual or sex-based harassment: customers, events, travel, isolated work or power imbalances? What one preventive measure would make the biggest difference there?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-wp-s3-q1",
+          "question": "In which Act is the positive duty to eliminate sexual harassment found?",
+          "options": [
+            "Work Health and Safety Act 2011, section 19",
+            "Sex Discrimination Act 1984, section 47C",
+            "Corporations Act 2001, section 1317AI",
+            "Fair Work Act 2009, section 47C"
+          ],
+          "answer": 1,
+          "explanation": "The positive duty is in s 47C of the Sex Discrimination Act 1984. It sits alongside, and does not limit, WHS duties.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s3-q2",
+          "question": "What standard does section 47C set for the measures an employer must take?",
+          "options": [
+            "Reasonable and proportionate measures to eliminate the conduct as far as possible",
+            "Every measure needed to guarantee no harassment ever occurs",
+            "Measures listed in a schedule to the Act",
+            "Measures agreed with a union"
+          ],
+          "answer": 0,
+          "explanation": "Section 47C(1) requires reasonable and proportionate measures to eliminate the relevant conduct, as far as possible. It is not an absolute guarantee or a fixed list.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s3-q3",
+          "question": "Which of these conduct types is within the positive duty?",
+          "options": [
+            "Conduct creating a workplace environment hostile on the ground of sex",
+            "A customer's complaint about a fee",
+            "Underpayment of overtime unrelated to sex",
+            "A dispute about parking spaces"
+          ],
+          "answer": 0,
+          "explanation": "Section 47C(2)(c) and (4)(b) cover hostile workplace environment conduct under s 28M. The other options are not sex-based conduct.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s3-q4",
+          "question": "A customer repeatedly makes sexual comments to a teller. Is this within the bank's positive duty?",
+          "options": [
+            "No, only conduct by employees is covered",
+            "Only if the customer is also an employee of another bank",
+            "Yes, sexual harassment of employees by any person, including customers, is covered",
+            "Only if the teller reports it to police"
+          ],
+          "answer": 2,
+          "explanation": "Section 47C(4) covers sexual harassment and sex-based harassment of the duty holder's employees or workers by third parties, which includes customers.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s3-q5",
+          "question": "After Mia complains, her manager stops offering her overtime. Which conduct covered by the positive duty may this be?",
+          "options": [
+            "A hostile workplace environment only",
+            "Victimisation related to a complaint",
+            "Indirect discrimination on the ground of age",
+            "A personal work-related grievance excluded by the Act"
+          ],
+          "answer": 1,
+          "explanation": "Section 47C(2)(d) and (4)(c) cover victimisation linked to complaints or allegations about the covered conduct. Penalising someone for complaining is the classic example.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s3-q6",
+          "question": "Which body can inquire into an employer's compliance with the positive duty and issue a compliance notice?",
+          "options": [
+            "The Australian Human Rights Commission",
+            "ASIC",
+            "APRA",
+            "The Fair Work Ombudsman"
+          ],
+          "answer": 0,
+          "explanation": "The AHRC Act gives the Australian Human Rights Commission functions to inquire into compliance with the positive duty and, through its President, to issue compliance notices.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s3-q7",
+          "question": "A compliance notice under the AHRC Act must give the organisation how long to take the specified action?",
+          "options": [
+            "A reasonable period starting at least 21 days after the notice is given",
+            "Seven days from receipt",
+            "Exactly 90 days",
+            "Whatever period the employer proposes"
+          ],
+          "answer": 0,
+          "explanation": "Section 35F(2)(d) requires a reasonable period starting at least 21 days after the notice is given.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s3-q8",
+          "question": "What happens if an organisation does not comply with a compliance notice?",
+          "options": [
+            "The Commission may cancel the organisation's business licence",
+            "ASIC automatically issues an infringement notice",
+            "Nothing, because compliance notices are advisory only",
+            "The President may apply to the Federal Court or Federal Circuit and Family Court for an order"
+          ],
+          "answer": 3,
+          "explanation": "Section 35J allows the President to apply to the court for an order where a person has not complied with a compliance notice that is not under reconsideration or review.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s3-q9",
+          "question": "How does section 47C relate to WHS duties?",
+          "options": [
+            "It does not limit duties under WHS laws; both apply",
+            "It replaces WHS duties for harassment matters",
+            "WHS laws no longer apply to sexual harassment",
+            "It applies only where no WHS law exists"
+          ],
+          "answer": 0,
+          "explanation": "Section 47C(7) says the positive duty does not limit or affect duties under the Commonwealth WHS Act or state and territory WHS laws.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s3-q10",
+          "question": "Which measure is most clearly preventive rather than reactive?",
+          "options": [
+            "Investigating a complaint after a staff event",
+            "Disciplining an employee after a finding",
+            "Assessing harassment risks before a staff event and setting controls",
+            "Settling a claim with a former employee"
+          ],
+          "answer": 2,
+          "explanation": "The positive duty focuses on preventing conduct. A risk assessment with controls before an event is preventive; the others respond after harm.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Whistleblower protections under Corporations Act Part 9.4AAA",
+      "stage": "The Safe Channel",
+      "summary": "Learn who is an eligible whistleblower, what can be disclosed and to whom, the confidentiality and immunity protections, the ban on victimisation, and the lessons of ASIC's first whistleblower enforcement outcome.",
+      "minutes": 55,
+      "objectives": [
+        "Decide whether a disclosure qualifies for protection",
+        "Distinguish disclosable matters from personal work-related grievances",
+        "Apply the confidentiality rules when handling and investigating a disclosure",
+        "Recognise victimisation, including threats and reputational harm, and its consequences"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: 'just tell me who it was'",
+          "setting": "Whistleblower protection office, head office, Sydney. Wednesday, 11:20 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Stage four. Aroha has received a disclosure through the bank's speak-up platform, made anonymously.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aroha",
+              "text": "Someone in business lending says income figures in loan files are being changed so applications pass credit policy. They attached two before-and-after screenshots.",
+              "mood": "thinking"
+            },
+            {
+              "who": "james",
+              "text": "That's serious. The business lending head has already called me. He wants to know who sent it so he can 'clear the air'.",
+              "mood": "worried"
+            },
+            {
+              "who": "aroha",
+              "text": "He can't have that, and neither can you, unless the discloser consents. Telling him, or giving hints that point to them, could itself be a contravention.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "And if he starts moving people off the team because he suspects them, that could be victimisation even if he guesses wrong.",
+              "mood": "worried"
+            },
+            {
+              "who": "aroha",
+              "text": "This stage is Part 9.4AAA of the Corporations Act: who is protected, what they can report, to whom, and what we must never do.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Part 9.4AAA in five scenes",
+          "scenes": [
+            {
+              "icon": "🏦",
+              "heading": "Banks are covered",
+              "narration": "The whistleblower protections apply to regulated entities, which include companies and every authorised deposit-taking institution and its subsidiaries."
+            },
+            {
+              "icon": "🙋",
+              "heading": "Who is protected",
+              "narration": "Eligible whistleblowers include current and former officers and employees, suppliers of goods or services and their employees, associates, and relatives or dependants of any of them."
+            },
+            {
+              "icon": "🔍",
+              "heading": "What they can report",
+              "narration": "Information they have reasonable grounds to suspect concerns misconduct or an improper state of affairs, including breaches of laws such as the Corporations Act, Banking Act, credit law and FAR, serious Commonwealth offences, or dangers to the public or the financial system."
+            },
+            {
+              "icon": "📬",
+              "heading": "Who can receive it",
+              "narration": "ASIC, APRA, and eligible recipients inside the bank, such as officers, senior managers, auditors, actuaries and people the bank authorises. Disclosures to a lawyer for advice on these protections are protected too."
+            },
+            {
+              "icon": "🕶️",
+              "heading": "Anonymous is fine",
+              "narration": "A whistleblower does not have to give their name. Anonymous disclosures can still qualify for protection."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Does a disclosure qualify for protection?",
+          "caption": "Based on ss 1317AA-1317AADA. The discloser needs reasonable grounds to suspect, not proof.",
+          "items": [
+            {
+              "label": "Eligible whistleblower?",
+              "detail": "Current or former officer, employee, supplier, associate, or their relative or dependant"
+            },
+            {
+              "label": "Right recipient?",
+              "detail": "ASIC, APRA, an eligible recipient, or a lawyer for advice on the protections"
+            },
+            {
+              "label": "Reasonable grounds?",
+              "detail": "Reasonable grounds to suspect misconduct, an improper state of affairs or a listed contravention"
+            },
+            {
+              "label": "Not only a personal grievance?",
+              "detail": "Solely personal work-related grievances are excluded unless they involve victimisation"
+            },
+            {
+              "label": "Protected",
+              "detail": "Confidentiality, immunity and protection from detriment apply"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The anonymous discloser in business lending turns out to be a former contractor whose engagement ended last month. Can the disclosure still qualify for protection?",
+          "options": [
+            "No, only current employees are eligible whistleblowers",
+            "No, anonymous disclosures never qualify",
+            "Only if the contractor first reported it to a manager",
+            "Yes, former suppliers of services and their employees can be eligible whistleblowers"
+          ],
+          "answer": 3,
+          "explanation": "Section 1317AAA covers anyone who is or has been an officer, employee, supplier of goods or services, or an employee of a supplier. Anonymity does not prevent protection, and there is no need to go through a manager first."
+        },
+        {
+          "type": "sort",
+          "title": "Protected disclosure or personal grievance?",
+          "prompt": "Sort each report by how Part 9.4AAA is likely to treat it.",
+          "buckets": [
+            "Likely a disclosable matter",
+            "Likely a personal work-related grievance"
+          ],
+          "items": [
+            {
+              "text": "Income figures in loan files changed to pass credit policy",
+              "bucket": 0
+            },
+            {
+              "text": "I was not promoted and I think the decision was unfair to me",
+              "bucket": 1
+            },
+            {
+              "text": "Fees charged to customers that the product terms do not allow",
+              "bucket": 0
+            },
+            {
+              "text": "A clash with my team leader about my desk location",
+              "bucket": 1
+            },
+            {
+              "text": "Risk reports to the board misstate known AML breaches",
+              "bucket": 0
+            },
+            {
+              "text": "I disagree with my performance rating this year",
+              "bucket": 1
+            },
+            {
+              "text": "After I reported misconduct, my shifts were cut",
+              "bucket": 0
+            },
+            {
+              "text": "Systems failures that could endanger the financial system",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What the protections actually do",
+          "body": "**Confidentiality (s 1317AAE).** No one may disclose the whistleblower's identity, or information likely to identify them, obtained because of the disclosure, unless an exception applies: to ASIC, APRA or the AFP, to a lawyer for advice, or with the discloser's **consent**. Other information may be shared if reasonably necessary to investigate, as long as identity is not disclosed and all reasonable steps are taken to reduce the risk of identification. Breach is an offence and a civil penalty provision.\n\n**Immunity (s 1317AB).** The discloser cannot face civil, criminal or administrative liability, including discipline, for making the disclosure, and has qualified privilege. This does not excuse their own misconduct revealed by it.\n\n**No victimisation (s 1317AC).** It is unlawful to cause or threaten detriment because someone made, or might make, a protected disclosure. Detriment includes dismissal, demotion, discrimination, harassment, psychological harm and damage to reputation.\n\n**Remedies (ss 1317AD-1317AE).** Courts can order compensation and other remedies. Once the applicant points to a reasonable possibility of detriment, the other side must prove the claim is not made out."
+        },
+        {
+          "type": "story",
+          "title": "The turn: the reshuffle",
+          "setting": "Business lending floor, Thursday, 8:30 am.",
+          "lines": [
+            {
+              "who": "aroha",
+              "text": "James, I've just heard the business lending head plans to move two analysts to the back office 'for their own development'. Both had access to those files.",
+              "mood": "worried"
+            },
+            {
+              "who": "james",
+              "text": "He says it's unrelated. The timing is awkward, I admit.",
+              "mood": "thinking"
+            },
+            {
+              "who": "aroha",
+              "text": "Under s 1317AC, it doesn't matter whether he's right about who reported. If his suspicion is part of the reason, that's victimisation.",
+              "mood": "neutral"
+            },
+            {
+              "who": "leila",
+              "text": "And moving people off a team against their wishes, right after a disclosure, will look exactly like detriment to anyone reviewing it later.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Protecting the discloser while investigating",
+          "situation": "The disclosure about altered loan files is credible. The business lending head is pressing for names and planning a reshuffle. You must advise James, as the accountable executive, on the next steps.",
+          "choices": [
+            {
+              "text": "Pause the reshuffle, remind the business lending head in writing of the confidentiality and anti-victimisation rules, appoint an independent investigator outside his line, share only what the investigation needs, and monitor the team for signs of detriment",
+              "outcome": "This protects confidentiality, prevents detriment, keeps the investigation independent and creates a record. It reflects what ss 1317AAE and 1317AC require.",
+              "score": 2
+            },
+            {
+              "text": "Let the business lending head run the investigation, since he knows the files best",
+              "outcome": "He is conflicted and has already sought the discloser's identity. This risks both identification and detriment.",
+              "score": 0
+            },
+            {
+              "text": "Allow the reshuffle but ask HR to document that it is for development",
+              "outcome": "Paperwork does not change the reason. If suspicion of a disclosure is part of the reason, the move may still be victimisation.",
+              "score": 0
+            },
+            {
+              "text": "Pause the reshuffle but tell the business lending head who reported, so he can be careful around them",
+              "outcome": "Pausing helps, but disclosing identity without consent is itself a contravention, and makes detriment more likely.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Whistleblowing in numbers: what ASIC has found",
+          "caption": "Sources: ASIC media releases 25-179MR (27 August 2025) and 25-294MR (4 December 2025).",
+          "items": [
+            {
+              "label": "TerraCom penalty",
+              "value": "AUD 7.5m",
+              "detail": "Federal Court penalty in 2025 for whistleblower victimisation: ASIC's first enforcement outcome on these provisions"
+            },
+            {
+              "label": "Entities surveyed",
+              "value": "134",
+              "detail": "ASIC's 2024-25 whistleblower questionnaire, across 18 industries (REP 827, published December 2025)"
+            },
+            {
+              "label": "No dedicated web page",
+              "value": "Over 1 in 3",
+              "detail": "Participating entities without a dedicated whistleblower web page for raising concerns"
+            },
+            {
+              "label": "No regular training",
+              "value": "1 in 4",
+              "detail": "Participating entities that did not provide regular staff training on their whistleblower program"
+            },
+            {
+              "label": "No employee feedback",
+              "value": "Over half",
+              "detail": "Had not sought employee feedback on their whistleblower program in the past year"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: ASIC v TerraCom (Federal Court, 2025)",
+          "body": "**What happened.** TerraCom, an ASX-listed mining company, made two ASX announcements and published an open letter to shareholders in 2020 saying a whistleblower's allegations were false and that it had had its employees' conduct independently investigated.\n\n**The outcome.** In August 2025 the Federal Court ordered TerraCom to pay a **AUD 7.5 million** penalty for whistleblower victimisation, plus AUD 1 million of ASIC's costs. TerraCom admitted the statements caused the whistleblower hurt, humiliation and distress and damaged his reputation, when an independent investigation had at least partly supported his allegations. ASIC said it was its first enforcement outcome for the whistleblower provisions. Separate claims against individual directors and officers were dismissed.\n\n**The lesson for a bank.** Detriment is not only dismissal. Public statements, even when meant to reassure markets, can harm a whistleblower's reputation and breach s 1317AC. Communications about a disclosure need the same care as the investigation itself."
+        },
+        {
+          "type": "flip",
+          "title": "Whistleblower terms to know",
+          "cards": [
+            {
+              "front": "Eligible recipient",
+              "back": "Inside the bank: an officer, senior manager, auditor, actuary or a person authorised to receive disclosures."
+            },
+            {
+              "front": "Public interest disclosure",
+              "back": "To a journalist or parliamentarian, only after a disclosure to ASIC, APRA or a prescribed body, at least 90 days passing, written notice and other conditions."
+            },
+            {
+              "front": "Emergency disclosure",
+              "back": "To a journalist or parliamentarian after an earlier regulator disclosure, where there is a substantial and imminent danger to health, safety or the environment, after written notice."
+            },
+            {
+              "front": "Personal work-related grievance",
+              "back": "A grievance about one's own employment with personal implications only; excluded unless it involves victimisation or wider misconduct."
+            },
+            {
+              "front": "Detriment",
+              "back": "Includes dismissal, demotion, discrimination, harassment, psychological harm and damage to reputation or finances."
+            },
+            {
+              "front": "Qualified privilege",
+              "back": "Protection the discloser has for the disclosure, for example against a defamation claim."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A senior manager receives a protected disclosure and wants to brief the investigator. Which approach is consistent with s 1317AAE?",
+          "options": [
+            "Share the discloser's name with the investigator and the business lending head",
+            "Share no information at all, so the matter cannot be investigated",
+            "Share the information reasonably necessary to investigate, without the discloser's identity, and take reasonable steps to reduce the risk of identification",
+            "Share the identity only with people who promise to keep it confidential"
+          ],
+          "answer": 2,
+          "explanation": "Section 1317AAE(4) allows disclosure of information other than identity where reasonably necessary to investigate, if all reasonable steps are taken to reduce the risk of identification. Identity itself needs consent or another listed exception."
+        },
+        {
+          "type": "tip",
+          "title": "If someone brings you a concern",
+          "body": "You may be an **eligible recipient** without realising it: officers and senior managers are. If a colleague raises a possible misconduct concern with you:\n\n- thank them and do not ask them to prove it\n- do not share their identity, or clues to it, with anyone, without their consent\n- tell them about the whistleblower policy and protections\n- pass the matter to the whistleblower protection officer in the way the policy sets out\n- never treat them differently because they spoke up"
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "Part 9.4AAA protects eligible whistleblowers, including former staff, suppliers and their relatives, who disclose to ASIC, APRA, eligible recipients or a lawyer",
+            "Disclosable matters need reasonable grounds to suspect misconduct, an improper state of affairs or a listed contravention; solely personal work-related grievances are excluded",
+            "Identity, and information likely to identify a whistleblower, must stay confidential except with consent or a listed exception",
+            "Causing or threatening detriment because of a suspected disclosure is unlawful, even if the suspicion is wrong",
+            "ASIC v TerraCom (2025) showed that public statements can be detriment, with a AUD 7.5 million penalty"
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a colleague told you tomorrow that they suspected misconduct in your area, what would you say in the first two minutes, and who would you pass it to?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-wp-s4-q1",
+          "question": "Which Part of the Corporations Act contains the corporate sector whistleblower protections?",
+          "options": [
+            "Part 9.4AAA",
+            "Part 7.7A",
+            "Part 2D.1",
+            "Part 9.4B"
+          ],
+          "answer": 0,
+          "explanation": "Part 9.4AAA contains the whistleblower protections. Part 7.7A deals with advice, Part 2D.1 with officers' duties, and Part 9.4B with civil penalty proceedings.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s4-q2",
+          "question": "Which person is an eligible whistleblower in relation to Tasman Ridge Bank?",
+          "options": [
+            "A member of the public with no link to the bank",
+            "The spouse of a current bank employee",
+            "A journalist who heard a rumour",
+            "A competitor bank's employee with no dealings with the bank"
+          ],
+          "answer": 1,
+          "explanation": "Section 1317AAA includes relatives and dependants of officers, employees and suppliers. People with no connection to the bank are not eligible whistleblowers.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s4-q3",
+          "question": "Which of these is an eligible recipient within the bank?",
+          "options": [
+            "Any customer of the bank",
+            "A teller's family member",
+            "A senior manager of the bank",
+            "A journalist covering banking"
+          ],
+          "answer": 2,
+          "explanation": "Section 1317AAC lists officers, senior managers, auditors, actuaries and authorised persons of the body corporate or a related body corporate.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s4-q4",
+          "question": "What state of mind must a discloser have about the information for it to be a disclosable matter?",
+          "options": [
+            "Proof beyond reasonable doubt",
+            "Reasonable grounds to suspect it concerns misconduct or an improper state of affairs",
+            "A signed statement from a witness",
+            "Certainty that a criminal offence occurred"
+          ],
+          "answer": 1,
+          "explanation": "Section 1317AA(4) and (5) require reasonable grounds to suspect. Proof or certainty is not required.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s4-q5",
+          "question": "An employee reports only that her request for a transfer was refused and she feels it was unfair to her. How is this most likely treated?",
+          "options": [
+            "As a protected disclosure in every case",
+            "As a personal work-related grievance outside the protections, unless it involves victimisation or wider misconduct",
+            "As a public interest disclosure",
+            "As a notifiable incident under the WHS Act"
+          ],
+          "answer": 1,
+          "explanation": "Section 1317AADA excludes personal work-related grievances, such as decisions about transfer, unless they have significant wider implications, involve listed conduct or concern victimisation.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s4-q6",
+          "question": "Which of the following is an exception that allows the whistleblower's identity to be disclosed?",
+          "options": [
+            "Disclosure to the business unit head so he can be careful",
+            "Disclosure to the board's chair as a courtesy",
+            "Disclosure to the alleged wrongdoer for a fair response",
+            "Disclosure with the whistleblower's consent"
+          ],
+          "answer": 3,
+          "explanation": "Section 1317AAE(2) allows identity to be disclosed to ASIC, APRA, the AFP, a lawyer for advice, a prescribed body, or with consent. Internal courtesy briefings are not exceptions.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s4-q7",
+          "question": "A manager wrongly suspects an analyst made a disclosure and cuts her shifts for that reason. Has he contravened s 1317AC?",
+          "options": [
+            "No, because she did not actually make the disclosure",
+            "No, because cutting shifts is not dismissal",
+            "Yes, detriment caused because of a belief or suspicion about a disclosure is victimisation even if the belief is wrong",
+            "Only if she can prove the disclosure was true"
+          ],
+          "answer": 2,
+          "explanation": "Section 1317AC(1) applies where the person believes or suspects that someone made, may have made or could make a qualifying disclosure, and that is part of the reason. Detriment is broadly defined.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s4-q8",
+          "question": "Before making a public interest disclosure to a journalist, what must generally have happened?",
+          "options": [
+            "A disclosure to the bank's CEO and a 30-day wait",
+            "Approval from ASIC to go public",
+            "A previous qualifying disclosure to ASIC, APRA or a prescribed body, at least 90 days passing, and written notice to that body",
+            "Nothing; journalists are always eligible recipients"
+          ],
+          "answer": 2,
+          "explanation": "Section 1317AAD(1) requires an earlier disclosure under s 1317AA(1), at least 90 days, no reasonable grounds to believe action is being taken, a public interest belief, and written notice, among other conditions.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s4-q9",
+          "question": "In ASIC v TerraCom, what conduct led to the 2025 victimisation penalty?",
+          "options": [
+            "Dismissing the whistleblower on the day he reported",
+            "Refusing to have a whistleblower policy",
+            "Public announcements and an open letter saying the whistleblower's allegations were false",
+            "Failing to report the disclosure to APRA"
+          ],
+          "answer": 2,
+          "explanation": "The case concerned two ASX announcements and an open letter in 2020 stating the allegations were false. TerraCom admitted they caused detriment, including reputational damage.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s4-q10",
+          "question": "In a claim for compensation for victimisation, what happens once the applicant points to evidence suggesting a reasonable possibility of the detrimental conduct?",
+          "options": [
+            "The applicant must then prove the claim beyond reasonable doubt",
+            "The claim is automatically successful",
+            "ASIC must take over the proceedings",
+            "The other party bears the onus of proving the claim is not made out"
+          ],
+          "answer": 3,
+          "explanation": "Section 1317AD(2B) shifts the onus: once the applicant adduces or points to evidence of a reasonable possibility, the respondent must prove the claim is not made out.",
+          "difficulty": 5
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Accountability under FAR and assessment readiness",
+      "stage": "The Accountability Map",
+      "summary": "Connect the Financial Accountability Regime, whistleblower policies and WHS officer duties into one people-safety program with clear accountability, role-based training and evidence the board and regulators can rely on.",
+      "minutes": 50,
+      "objectives": [
+        "Describe FAR's accountable persons and their accountability obligations",
+        "Explain deferred remuneration, key personnel and disqualification under FAR",
+        "List what a whistleblower policy must contain and the training ASIC expects",
+        "Assemble evidence of a working people-safety program for the board"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the board wants evidence",
+          "setting": "Board risk committee pre-meeting, Level 30, head office, Sydney. Monday, 7:45 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Final stage. The board risk committee meets on Thursday. Its chair has asked one question: 'Show us that our people are safe, heard and protected, and who is accountable.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "james",
+              "text": "As COO I'm a registered accountable person under FAR. Operations, including people safety in the contact centres, sits in my accountability statement.",
+              "mood": "thinking"
+            },
+            {
+              "who": "leila",
+              "text": "So Thursday isn't just a WHS update. It's evidence that you've taken reasonable steps in your accountability, and that officers have exercised due diligence.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aroha",
+              "text": "The whistleblower program needs to be in the pack too. Policy, channels, training, cases, and how we protect people.",
+              "mood": "neutral"
+            },
+            {
+              "who": "ben",
+              "text": "And the HSRs' view. If the board only hears from managers, they'll miss half the picture.",
+              "mood": "worried"
+            },
+            {
+              "who": "chloe",
+              "text": "Hobart is ready to show what we changed on Fridays.",
+              "mood": "proud"
+            },
+            {
+              "who": "leila",
+              "text": "Then let's build the pack, and make sure you're ready for the final exam at the same time.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The Financial Accountability Regime in brief",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "Two regulators, one regime",
+              "narration": "The Financial Accountability Regime, FAR, is administered jointly by APRA and ASIC. It replaced the Banking Executive Accountability Regime and has applied to banks and their holding companies since 15 March 2024."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "Accountable persons",
+              "narration": "An accountable person is someone with actual or effective senior executive responsibility for managing the bank, or a significant part of it, plus people in roles or responsibilities the rules prescribe. Banks must register them."
+            },
+            {
+              "icon": "📏",
+              "heading": "Accountability obligations",
+              "narration": "Accountable persons must act with honesty and integrity and with due skill, care and diligence, deal with the regulators openly and cooperatively, and take reasonable steps to prevent matters that would damage the bank's prudential standing or reputation, or cause material breaches of key financial laws."
+            },
+            {
+              "icon": "🗺️",
+              "heading": "Statements and maps",
+              "narration": "The bank gives the regulator accountability statements for each accountable person and an accountability map showing who is responsible for what, so nothing important falls between the cracks."
+            },
+            {
+              "icon": "💰",
+              "heading": "Pay with consequences",
+              "narration": "A portion of each accountable person's variable pay must be deferred, and the bank's remuneration policy must reduce it for failures to meet their obligations. The regulator can also disqualify a person."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "FAR obligations: the bank and the person",
+          "caption": "From the Financial Accountability Regime Act 2023. The key law list in s 21 includes the Banking Act, credit legislation and financial services law.",
+          "headers": [
+            "Accountable entity (s 20)",
+            "Accountable person (s 21)"
+          ],
+          "items": [
+            {
+              "label": "Honesty and care",
+              "left": "Take reasonable steps to conduct business with honesty, integrity, skill, care and diligence",
+              "right": "Act with honesty, integrity, skill, care and diligence in the role"
+            },
+            {
+              "label": "Regulators",
+              "left": "Take reasonable steps to deal with APRA and ASIC openly and cooperatively",
+              "right": "Deal with APRA and ASIC openly and cooperatively"
+            },
+            {
+              "label": "Prevention",
+              "left": "Take reasonable steps to prevent damage to prudential standing or reputation",
+              "right": "Take reasonable steps to prevent such damage and material breaches of key laws"
+            },
+            {
+              "label": "Oversight",
+              "left": "Make sure accountable persons and significant related entities comply",
+              "right": "Own the responsibilities in their accountability statement"
+            },
+            {
+              "label": "Consequences",
+              "left": "Civil penalties for the bank",
+              "right": "Reduced variable pay; possible disqualification"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under FAR, what must a bank's remuneration policy provide for an accountable person who fails to meet their accountability obligations?",
+          "options": [
+            "Their variable remuneration is reduced by an amount proportionate to the failure",
+            "Their fixed salary is frozen for one year",
+            "Their bonus is paid to the whistleblower who reported the failure",
+            "Nothing, because remuneration is outside FAR"
+          ],
+          "answer": 0,
+          "explanation": "Section 25(1)(b) of the FAR Act requires a remuneration policy under which variable remuneration is reduced proportionately to the failure, and the reduction can be to zero."
+        },
+        {
+          "type": "match",
+          "title": "FAR's four obligation sets",
+          "prompt": "Match each set of obligations of an accountable entity to what it requires.",
+          "pairs": [
+            {
+              "left": "Accountability obligations",
+              "right": "Conduct business honestly and with due care, cooperate with regulators and prevent prudential harm"
+            },
+            {
+              "left": "Key personnel obligations",
+              "right": "Make sure accountable persons together cover every part of the group's operations"
+            },
+            {
+              "left": "Deferred remuneration obligations",
+              "right": "Defer part of accountable persons' variable pay and reduce it for failures"
+            },
+            {
+              "left": "Notification obligations",
+              "right": "Give the regulator accountability statements, the accountability map and notice of key events"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: APRA's prudential inquiry into CBA (2018)",
+          "body": "**Background.** In August 2017 APRA set up a prudential inquiry into governance, culture and accountability at the Commonwealth Bank of Australia after a series of incidents that damaged its reputation. The final report was released on 1 May 2018.\n\n**What the panel found.** CBA's financial success had dulled its senses to warning signs, particularly for operational, compliance and conduct risk. The panel pointed to **unclear accountabilities**, weak escalation of issues, slow and overly collegial decision-making, an under-resourced compliance function, and pay that, for senior managers, had **little sting** when risk or customer outcomes were poor.\n\n**The response.** CBA gave APRA an enforceable undertaking to fix the issues, and APRA applied a AUD 1 billion add-on to its minimum capital requirement.\n\n**The lesson.** People-related risks, such as conduct, speak-up culture and safety, are non-financial risks. FAR's clear accountabilities and remuneration consequences grew from lessons like these."
+        },
+        {
+          "type": "story",
+          "title": "The turn: is the whistleblower policy enough?",
+          "setting": "Whistleblower protection office, Tuesday, 2:00 pm.",
+          "lines": [
+            {
+              "who": "aroha",
+              "text": "Our policy covers everything the Act lists. But when I asked ten people in Parramatta where to raise a concern, four didn't know the policy existed.",
+              "mood": "worried"
+            },
+            {
+              "who": "ben",
+              "text": "The contact centre induction covers WHS and harassment. Whistleblowing is a link at the end that nobody clicks.",
+              "mood": "thinking"
+            },
+            {
+              "who": "leila",
+              "text": "A policy on the intranet meets the 'make it available' requirement. Whether it works is a different question.",
+              "mood": "thinking"
+            },
+            {
+              "who": "james",
+              "text": "And ASIC's own reviews keep finding the same gap: no regular training. I don't want our name on that list.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Whistleblower policies and the training ASIC expects",
+          "body": "**The legal requirement (s 1317AI).** A public company, and a large proprietary company, must have a whistleblower policy and make it available to its officers and employees. The policy must explain:\n\n- the protections available to whistleblowers\n- to whom disclosures can be made, and how\n- how the company will support whistleblowers and protect them from detriment\n- how it will investigate disclosures\n- how it will ensure fair treatment of employees mentioned in disclosures\n- how the policy is made available\n\nFailing to have one is a strict liability offence.\n\n**ASIC's guidance (RG 270).** ASIC expects upfront and ongoing education and training on the policy for all staff, appropriate training for managers, and **specialist training for eligible recipients** and others with roles in handling disclosures. Training is guidance rather than an express statutory duty, but it is how a bank shows its policy actually works."
+        },
+        {
+          "type": "scenario",
+          "title": "What goes in the board pack?",
+          "situation": "The board risk committee wants evidence that people are safe, heard and protected. You have one page for the summary. Which approach do you recommend to Leila and James?",
+          "choices": [
+            {
+              "text": "List all policies with their approval dates",
+              "outcome": "Approved policies matter, but they do not show whether risks are controlled, training happens or people are protected in practice.",
+              "score": 0
+            },
+            {
+              "text": "Show key risks and controls, training completion and effectiveness by role, consultation with HSRs, harassment prevention measures and outcomes, whistleblower program metrics with confidentiality protected, open actions and who is accountable for each",
+              "outcome": "This gives the board evidence of controls, verification and accountability across WHS, the positive duty and Part 9.4AAA, mapped to accountable persons.",
+              "score": 2
+            },
+            {
+              "text": "Report the number of whistleblower disclosures with the names of the business units and disclosers involved",
+              "outcome": "Disclosure metrics help, but naming disclosers, or details that identify them, would breach confidentiality.",
+              "score": 0
+            },
+            {
+              "text": "Show training completion rates only, since they are easy to measure",
+              "outcome": "Completion is a useful start, but it does not show whether training was suitable or controls worked.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Milestones behind this quest",
+          "caption": "Dates from APRA and ASIC releases. Check for newer developments, including WHS regulations and codes on psychosocial risks where you work.",
+          "items": [
+            {
+              "label": "CBA inquiry report",
+              "value": "May 2018",
+              "detail": "APRA releases its prudential inquiry report on governance, culture and accountability at CBA"
+            },
+            {
+              "label": "Whistleblower policies",
+              "value": "Jan 2020",
+              "detail": "Public companies, large proprietary companies and super trustees must have a whistleblower policy"
+            },
+            {
+              "label": "ASIC good practices",
+              "value": "Mar 2023",
+              "detail": "ASIC REP 758 sets out good practices for handling whistleblower disclosures"
+            },
+            {
+              "label": "FAR for banks",
+              "value": "Mar 2024",
+              "detail": "FAR applies to banks and their holding companies, replacing BEAR"
+            },
+            {
+              "label": "TerraCom penalty",
+              "value": "Aug 2025",
+              "detail": "Federal Court orders AUD 7.5m penalty for whistleblower victimisation"
+            },
+            {
+              "label": "ASIC benchmark",
+              "value": "Dec 2025",
+              "detail": "ASIC REP 827 benchmarks whistleblower practices across 134 entities"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Building the annual people-safety assurance cycle",
+          "prompt": "Put the steps of Tasman Ridge's annual cycle in a sensible order.",
+          "steps": [
+            "Map each obligation (WHS, positive duty, whistleblowing) to an accountable person and an owner",
+            "Assess the risks with workers and HSRs, including psychosocial and harassment risks",
+            "Set controls and role-based training: all staff, managers, HSRs and eligible recipients",
+            "Deliver training and record attendance and assessment results",
+            "Test effectiveness through audits, surveys, incident and disclosure data",
+            "Report to the board risk committee and fix the gaps found"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about Tasman Ridge's whistleblower policy is correct?",
+          "options": [
+            "It must be lodged with ASIC before it takes effect",
+            "It is optional for banks that have a speak-up platform",
+            "It only needs to cover disclosures made to ASIC and APRA",
+            "As a public company, the bank must have a policy covering the matters in s 1317AI(5) and make it available to officers and employees"
+          ],
+          "answer": 3,
+          "explanation": "Section 1317AI requires public companies to have a policy covering the listed matters and to make it available to officers and employees. There is no lodgement requirement, and a platform does not replace the policy."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "FAR, run jointly by APRA and ASIC, has applied to banks since 15 March 2024 and replaced BEAR",
+            "Accountable persons must act with honesty, integrity, skill, care and diligence, cooperate with regulators and take reasonable steps to prevent prudential harm and material breaches",
+            "Part of accountable persons' variable pay is deferred and must be reduced for failures; the regulator can disqualify",
+            "Public companies must have and make available a whistleblower policy; ASIC expects ongoing training, with specialist training for eligible recipients",
+            "Evidence that works joins it all up: risks, controls, role-based training, consultation, outcomes and named accountability"
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If your board asked tomorrow for evidence that people in your area are safe, heard and protected, what three pieces of evidence could you produce, and what is missing?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "au-wp-s5-q1",
+          "question": "Which regulators jointly administer the Financial Accountability Regime?",
+          "options": [
+            "AUSTRAC and ASIC",
+            "APRA and the Reserve Bank",
+            "APRA and ASIC",
+            "ASIC and the AHRC"
+          ],
+          "answer": 2,
+          "explanation": "FAR is jointly administered by APRA and ASIC, as both regulators' official pages state.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s5-q2",
+          "question": "From what date has FAR applied to authorised deposit-taking institutions?",
+          "options": [
+            "1 July 2018",
+            "15 March 2024",
+            "1 January 2020",
+            "15 March 2025"
+          ],
+          "answer": 1,
+          "explanation": "FAR commenced for ADIs and their authorised NOHCs on 15 March 2024; insurers and super trustees followed from 15 March 2025.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s5-q3",
+          "question": "Which regime did FAR replace?",
+          "options": [
+            "The Banking Code of Practice",
+            "The Corporations Act whistleblower regime",
+            "Prudential Standard CPS 520",
+            "The Banking Executive Accountability Regime (BEAR)"
+          ],
+          "answer": 3,
+          "explanation": "APRA and ASIC both describe FAR as replacing BEAR, which commenced in 2018.",
+          "difficulty": 2
+        },
+        {
+          "id": "au-wp-s5-q4",
+          "question": "Which is an accountability obligation of an accountable person under s 21 of the FAR Act?",
+          "options": [
+            "Dealing with APRA and ASIC in an open, constructive and cooperative way",
+            "Personally approving every customer complaint outcome",
+            "Holding a minimum shareholding in the bank",
+            "Signing every WHS risk assessment"
+          ],
+          "answer": 0,
+          "explanation": "Section 21(1)(b) requires accountable persons to deal with the Regulator in an open, constructive and cooperative way. The other options are not FAR obligations.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s5-q5",
+          "question": "Under the FAR Act, how much of an accountable person's variable remuneration must generally be deferred?",
+          "options": [
+            "At least 10%",
+            "At least 40% for the relevant financial year",
+            "At least 25%",
+            "All of it, until retirement"
+          ],
+          "answer": 1,
+          "explanation": "Section 27(1) sets the required deferred amount at 40% of the accountable person's variable remuneration for the relevant financial year, deferred for at least the minimum deferral period.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s5-q6",
+          "question": "What can the Regulator do if satisfied that an accountable person has failed to meet their accountability obligations and that it is justified by the seriousness of the failure?",
+          "options": [
+            "Disqualify the person from being or acting as an accountable person",
+            "Fine the person's family members",
+            "Cancel the bank's banking licence automatically",
+            "Order the person to repay all past salary"
+          ],
+          "answer": 0,
+          "explanation": "Section 42 allows the Regulator to disqualify a person for a period it considers appropriate, having regard to the seriousness of the failure.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s5-q7",
+          "question": "Which matter must a whistleblower policy under s 1317AI set out?",
+          "options": [
+            "The names of past whistleblowers",
+            "How the company will ensure fair treatment of employees mentioned in disclosures",
+            "The amount of any reward paid to whistleblowers",
+            "The salary of the whistleblower protection officer"
+          ],
+          "answer": 1,
+          "explanation": "Section 1317AI(5)(e) requires information on fair treatment of employees mentioned in or affected by disclosures. Naming whistleblowers would breach confidentiality.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s5-q8",
+          "question": "What did ASIC's RG 270 say about whistleblower training?",
+          "options": [
+            "Training is prohibited because it may identify whistleblowers",
+            "Entities should provide upfront and ongoing training, with specialist training for eligible recipients",
+            "Training is only needed for board directors",
+            "Training must be delivered by ASIC staff"
+          ],
+          "answer": 1,
+          "explanation": "RG 270 expects upfront and ongoing education and training on the policy and specialist training for eligible recipients and others handling disclosures.",
+          "difficulty": 3
+        },
+        {
+          "id": "au-wp-s5-q9",
+          "question": "APRA's 2018 prudential inquiry into CBA found which of the following?",
+          "options": [
+            "That CBA had no board risk committee",
+            "That CBA's capital was below the legal minimum",
+            "That CBA's whistleblower policy was missing",
+            "Unclear accountabilities and remuneration with little sting for poor risk outcomes"
+          ],
+          "answer": 3,
+          "explanation": "The panel found unclear accountabilities, weak escalation and remuneration with little sting for senior managers, among other cultural issues. APRA then applied a AUD 1 billion capital add-on.",
+          "difficulty": 4
+        },
+        {
+          "id": "au-wp-s5-q10",
+          "question": "Which evidence best shows the board that the bank meets the WHS training duty in s 19(3)(f) for contact centre staff?",
+          "options": [
+            "Role-based training linked to assessed risks, with completion, effectiveness checks and HSR feedback",
+            "A copy of the WHS policy approved by the board",
+            "A list of staff who opened the policy email",
+            "The number of WHS incidents reported to the regulator"
+          ],
+          "answer": 0,
+          "explanation": "Section 19(3)(f) looks at the training necessary to protect people. Evidence linking training to risks, and checking it works, shows that; policy approval or email opens do not.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "au",
+    "programs": [
+      163,
+      159,
+      160,
+      40,
+      50,
+      36,
+      167
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "periodic"
+    ],
+    "regulators": [
+      "State and territory WHS regulators and Comcare (Commonwealth), with Safe Work Australia as national policy body",
+      "Australian Human Rights Commission (AHRC)",
+      "Australian Securities and Investments Commission (ASIC)",
+      "Australian Prudential Regulation Authority (APRA)"
+    ],
+    "references": [
+      {
+        "title": "Work Health and Safety Act 2011 (Cth)",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2011A00137/latest/text",
+        "provision": "Sections 7, 17-19 (incl. s 19(3)(f)), 27-28, 35-39, 47-49, 72, 84, 104-106",
+        "note": "Primary duty of care, including the information, training, instruction or supervision needed to protect people; officer due diligence; consultation; HSR training; notifiable incidents; no discriminatory conduct. States and territories have mirror laws; Victoria has its own OHS Act.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Psychosocial hazards",
+        "issuer": "Safe Work Australia",
+        "url": "https://www.safeworkaustralia.gov.au/safety-topic/managing-health-and-safety/mental-health/psychosocial-hazards",
+        "note": "Employers must eliminate or minimise psychosocial risks, including bullying and harassment, so far as reasonably practicable."
+      },
+      {
+        "title": "Sex Discrimination Act 1984",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2004A02868/latest/text",
+        "provision": "Section 47C (positive duty); ss 28AA, 28B, 28M, 47A",
+        "note": "Employers and PCBUs must take reasonable and proportionate measures to eliminate, as far as possible, unlawful sex discrimination, sexual and sex-based harassment, hostile workplace environments and related victimisation, including harassment of workers by third parties; WHS duties are not limited.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Australian Human Rights Commission Act 1986",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2004A03366/latest/text",
+        "provision": "Part II Division 4A, ss 35A-35J",
+        "note": "Commission functions for the positive duty: guidelines, education, inquiries on reasonable suspicion, findings, compliance notices with at least 21 days to act, reconsideration and court enforcement.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guidelines for Complying with the Positive Duty under the Sex Discrimination Act 1984 (Cth)",
+        "issuer": "Australian Human Rights Commission",
+        "url": "https://humanrights.gov.au/__data/assets/file/0030/46974/Guidelines-for-Complying-with-the-Positive-Duty-2023.pdf",
+        "provision": "Sex Discrimination Act 1984 s 47C",
+        "note": "The Commission's guidance on reasonable and proportionate measures, including training; site blocks automated access, so described in general terms only."
+      },
+      {
+        "title": "Corporations Act 2001",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2004A00818/latest/text",
+        "provision": "Part 9.4AAA, ss 1317AA-1317AI",
+        "note": "Eligible whistleblowers, regulated entities (including ADIs), eligible recipients, disclosable matters, public interest and emergency disclosures, personal grievances, confidentiality, immunity, victimisation, compensation and whistleblower policies.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Regulatory Guide 270 Whistleblower policies",
+        "issuer": "ASIC",
+        "url": "https://download.asic.gov.au/media/5702691/rg270-published-13-november-2019-20200727.pdf",
+        "provision": "Corporations Act s 1317AI; RG 270.131-270.134 (education and training)",
+        "note": "Public companies must have a whistleblower policy and make it available to officers and employees; ASIC recommends upfront and ongoing training, plus specific training for eligible recipients.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Accountability Regime Act 2023",
+        "issuer": "Parliament of Australia (Federal Register of Legislation)",
+        "url": "https://www.legislation.gov.au/C2023A00067/latest/text",
+        "provision": "Sections 10, 20-21, 23, 25, 27-28, 42",
+        "note": "Accountable persons, accountability obligations of entities and persons, key personnel obligations, deferral and reduction of variable remuneration and disqualification.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Accountability Regime (FAR)",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/financial-accountability-regime",
+        "note": "Joint APRA-ASIC regime that replaced BEAR; applied to ADIs and their authorised NOHCs from 15 March 2024.",
+        "effective": "2024-03-15",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "25-179MR TerraCom to pay $7.5 million after ASIC whistleblower action",
+        "issuer": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-179mr-terracom-to-pay-7-5-million-after-asic-whistleblower-action/",
+        "note": "Federal Court penalty for whistleblower victimisation through public announcements; ASIC's first enforcement outcome on the whistleblower provisions (ASIC v TerraCom Ltd (No 3) [2025] FCA 1017).",
+        "effective": "2025-08-27",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "25-294MR ASIC calls on Australian companies to adopt better practices to protect whistleblowers",
+        "issuer": "ASIC",
+        "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-294mr-asic-calls-on-australian-companies-to-adopt-better-practices-to-protect-whistleblowers",
+        "note": "REP 827 benchmark of 134 entities: over a third lacked a dedicated whistleblower web page and a quarter gave no regular staff training on their program.",
+        "effective": "2025-12-04",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "APRA releases CBA Prudential Inquiry Final Report and accepts Enforceable Undertaking from CBA",
+        "issuer": "APRA",
+        "url": "https://www.apra.gov.au/news-and-publications/apra-releases-cba-prudential-inquiry-final-report-and-accepts-enforceable",
+        "note": "Inquiry into governance, culture and accountability found unclear accountabilities and weak consequences in remuneration; CBA gave an enforceable undertaking and APRA applied a capital add-on.",
+        "effective": "2018-05-01",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "au-wp-x1",
+        "question": "A labour hire worker placed in Tasman Ridge's mail room is injured using a faulty franking machine. The labour hire firm says it is responsible for her safety. Which is correct?",
+        "options": [
+          "Only the labour hire firm owes her a duty, as her employer",
+          "The bank also owes her the primary duty, because she carries out work for the bank as a PCBU",
+          "The bank owes a duty only if she is on its payroll",
+          "Neither owes a duty, since she is a temporary worker"
+        ],
+        "answer": 1,
+        "explanation": "Section 7 includes labour hire employees assigned to the business as workers, and s 19 applies to workers engaged or directed by the PCBU. More than one PCBU can owe duties at once.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x2",
+        "question": "Tasman Ridge introduces a new cash recycler in branches. Staff get a two-page leaflet but no demonstration, and two tellers jam their fingers clearing it. Which part of the primary duty is most directly in question?",
+        "options": [
+          "Providing adequate welfare facilities",
+          "Providing the information, training, instruction or supervision necessary to protect people from the risk",
+          "Monitoring workers' health",
+          "Keeping notifiable incident records"
+        ],
+        "answer": 1,
+        "explanation": "The issue is whether the instruction and training given were necessary and adequate for the new plant, which is s 19(3)(f). Safe plant under (b) is also relevant, but the gap described is in training.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x3",
+        "question": "A contact centre manager says a full call-handling course for new starters is too expensive, so the bank only needs to email the policy. How should cost be treated under s 18?",
+        "options": [
+          "Cost is the first factor and any expensive control can be dropped",
+          "Cost cannot be considered at all",
+          "Cost is weighed last and a control can be rejected on cost only if the cost is grossly disproportionate to the risk",
+          "Cost decides the matter if the budget has been approved by the board"
+        ],
+        "answer": 2,
+        "explanation": "Section 18(e) brings cost in after assessing the risk and available controls, asking whether it is grossly disproportionate to the risk. It is not a first-order budget test.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x4",
+        "question": "James, the COO, receives a safety dashboard but never asks whether the training reported as 'complete' actually took place. Which element of officer due diligence is weakest?",
+        "options": [
+          "Verifying the provision and use of resources and processes",
+          "Acquiring knowledge of WHS matters",
+          "Understanding the general nature of the operations",
+          "Having processes for receiving incident information"
+        ],
+        "answer": 0,
+        "explanation": "Section 27(5)(f) requires officers to verify the provision and use of the resources and processes in (c) to (e). Receiving a dashboard without checking is a verification gap.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x5",
+        "question": "Which statement best describes how the Commonwealth WHS Act relates to workplaces across Australia?",
+        "options": [
+          "It directly governs every workplace in Australia",
+          "It applies only to banks regulated by APRA",
+          "It follows the national model law; states and territories have their own similar WHS Acts, while Victoria has its own OHS Act",
+          "It replaced all state and territory safety laws in 2011"
+        ],
+        "answer": 2,
+        "explanation": "The Commonwealth Act follows the model WHS law, and states and territories have mirror laws. Victoria has its own OHS Act, so learners must check which law applies.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x6",
+        "question": "A customer slips on a wet floor near a branch ATM after cleaners mopped without signs. Does the bank's WHS duty extend to the customer?",
+        "options": [
+          "No, WHS duties protect workers only",
+          "Yes, the PCBU must ensure others are not put at risk by work carried out in the business",
+          "Only if the customer is also a bank employee",
+          "Only if the cleaner was a bank employee rather than a contractor"
+        ],
+        "answer": 1,
+        "explanation": "Section 19(2) requires the PCBU to ensure, so far as reasonably practicable, that the health and safety of other persons is not put at risk from its work.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x7",
+        "question": "A worker repeatedly ignores the notified procedure to lock the rear door before counting cash, saying it slows him down. Which is correct?",
+        "options": [
+          "He breaches his own duty to cooperate with reasonable notified safety procedures, and the bank should address it",
+          "Only the bank has duties, so his conduct is irrelevant",
+          "He has no duty because procedures are not law",
+          "Only the officer is liable for his conduct"
+        ],
+        "answer": 0,
+        "explanation": "Section 28(d) requires workers to cooperate with reasonable notified policies and procedures. The bank still owes its own duties, including supervision.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x8",
+        "question": "Tasman Ridge can either remove the need for after-dark cash transfers by using a security contractor, or train staff to do them more safely. Both are reasonably practicable. What does s 17 require?",
+        "options": [
+          "Train staff, because training is always preferred",
+          "Choose whichever option is cheaper",
+          "Eliminate the risk by removing the task, since elimination comes first when reasonably practicable",
+          "Do both only if a regulator requires it"
+        ],
+        "answer": 2,
+        "explanation": "Section 17 requires elimination so far as reasonably practicable; minimisation is for risks that cannot reasonably be eliminated. Training may still support the remaining risks.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x9",
+        "question": "Which example best shows the training duty being met for a genuinely new risk?",
+        "options": [
+          "Staff are told the new model starts on Monday and to call security if needed",
+          "Before a new branch model with solo staffing starts, staff practise lone-work and duress procedures and are supervised for the first weeks",
+          "The duress procedure is added to the intranet library",
+          "Branch managers are asked to sign that they have read the procedure"
+        ],
+        "answer": 1,
+        "explanation": "Section 19(3)(f) focuses on what is necessary to protect people. Practical training and supervision before exposure fit the risk; publishing or signing documents may not.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x10",
+        "question": "The bank plans to change the training procedure for collections staff from a classroom course to a short video. Must it consult affected workers?",
+        "options": [
+          "No, training format is purely a management decision",
+          "Only if the union requests it",
+          "Yes, decisions about procedures for providing information and training are consultation matters",
+          "Only if a notifiable incident has occurred"
+        ],
+        "answer": 2,
+        "explanation": "Section 49(e)(v) lists decisions about procedures for providing information and training to workers as a matter requiring consultation.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x11",
+        "question": "A survey shows contact centre staff fear going home after shifts because of abusive callers. Which response is the strongest WHS control?",
+        "options": [
+          "Redesign call handling with escalation, permission to end abusive calls and limits on exposure, and review it with staff",
+          "Add a wellbeing app to staff phones",
+          "Remind staff the employee assistance program exists",
+          "Ask staff to toughen up during induction"
+        ],
+        "answer": 0,
+        "explanation": "Work-design controls address the hazard at its source and should be reviewed with workers. Support services help but do not replace controls.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x12",
+        "question": "A team leader asks why a worker's long-term stress injury from excessive workload was not notified to the regulator immediately. What is the best answer?",
+        "options": [
+          "All psychological injuries must be notified within 48 hours",
+          "Notifiable incidents are deaths, serious injuries or illnesses as defined, and dangerous incidents; many psychological injuries are not, but they still must be recorded and managed internally",
+          "No injury involving stress can ever be notifiable",
+          "Only the worker can notify the regulator"
+        ],
+        "answer": 1,
+        "explanation": "Sections 35-37 define notifiable incidents narrowly. Many psychosocial injuries fall outside them, but the primary duty still requires the risk to be managed.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x13",
+        "question": "After a branch hold-up, a staff member is admitted to hospital as an in-patient. The manager wants to clean up and reopen within the hour. What should happen?",
+        "options": [
+          "Reopen quickly to reassure customers, then notify within a week",
+          "Notify only the police, not the WHS regulator",
+          "Notify the regulator immediately and preserve the site, except for actions to help people or make it safe, until an inspector arrives or directs",
+          "Wait for written confirmation from the hospital before deciding"
+        ],
+        "answer": 2,
+        "explanation": "In-patient treatment makes it a notifiable incident. Section 38 requires immediate notice, and s 39 requires the site to be preserved, subject to the listed exceptions.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x14",
+        "question": "An HSR raises concerns about understaffing in a branch. Two weeks later, his manager removes him from the higher-paid relief manager roster, citing 'attitude'. What risk does the bank face?",
+        "options": [
+          "None, because roster decisions are always lawful",
+          "Only a breach of the HSR's training entitlement",
+          "Only a notifiable incident report",
+          "A discriminatory conduct offence and civil claims if raising WHS concerns or his HSR role was the reason"
+        ],
+        "answer": 3,
+        "explanation": "Sections 104-106 prohibit altering a worker's position to their detriment because they are an HSR or raised WHS issues. The offence requires the prohibited reason to be the dominant reason; civil proceedings are also available.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x15",
+        "question": "Ben, as HSR, asks for approved training in May. In August the bank still has not released him, saying the roster is tight. Which is correct?",
+        "options": [
+          "The bank may defer the course to the next financial year",
+          "The bank may require Ben to take annual leave",
+          "The bank may choose a cheaper unapproved course instead",
+          "The bank must allow attendance as soon as practicable within three months of the request, with fees paid and time off with pay"
+        ],
+        "answer": 3,
+        "explanation": "Section 72 requires release as soon as practicable within three months, payment of fees and reasonable costs, and paid time off. The HSR chooses the approved course.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x16",
+        "question": "Which pair are both psychosocial hazards a bank should assess?",
+        "options": [
+          "Glare on monitors and low job control",
+          "Heavy coin bags and unclear roles",
+          "Electrical faults and workplace conflict",
+          "Low job control and poor support from managers"
+        ],
+        "answer": 3,
+        "explanation": "Low job control and poor support are both psychosocial hazards. Each other option pairs a psychosocial hazard with a physical one.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x17",
+        "question": "What does consultation require the bank to do with workers' views?",
+        "options": [
+          "Adopt every view a majority of workers holds",
+          "Record them but not consider them",
+          "Pass them to the regulator for decision",
+          "Take them into account when making the decision and advise workers of the outcome in a timely way"
+        ],
+        "answer": 3,
+        "explanation": "Section 48 requires that workers' views are taken into account and that they are advised of the outcome in a timely manner. Consultation does not mean agreement.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x18",
+        "question": "A regional bank with 40 staff and a major bank with 30,000 staff both ask what the positive duty requires. Which is correct?",
+        "options": [
+          "Both must take reasonable and proportionate measures, but what is reasonable depends on size, nature, circumstances and resources",
+          "Only the major bank has the duty",
+          "Both must take exactly the same measures",
+          "Small employers are exempt until they receive a complaint"
+        ],
+        "answer": 0,
+        "explanation": "Section 47C applies to all employers and PCBUs, and s 47C(6) makes size, nature, circumstances and resources relevant to what is reasonable and proportionate.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x19",
+        "question": "A senior manager displays sexualised images in a shared office that several women staff must pass. No one is directly targeted. Which conduct is most clearly engaged?",
+        "options": [
+          "Subjecting people to a workplace environment that is hostile on the ground of sex",
+          "Sex discrimination in recruitment",
+          "Victimisation",
+          "A personal work-related grievance"
+        ],
+        "answer": 0,
+        "explanation": "Section 28M covers conduct that makes a workplace environment offensive, intimidating or humiliating on the ground of sex, even without targeting one person. Section 47C requires the bank to work to eliminate it.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x20",
+        "question": "A relationship manager argues the bank cannot restrict a high-value client who harasses staff because he is not an employee. Which response is correct?",
+        "options": [
+          "He is right; the Sex Discrimination Act only covers employees' conduct",
+          "The bank may act only if the client agrees to training",
+          "The bank must refer the matter to ASIC",
+          "The positive duty covers harassment of the bank's employees and workers by third parties, so the bank must take reasonable and proportionate measures"
+        ],
+        "answer": 3,
+        "explanation": "Section 47C(4) covers sexual and sex-based harassment of the duty holder's employees and workers by any person, which includes clients.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x21",
+        "question": "After Mia raised concerns informally, her team leader starts excluding her from meetings. Mia has not made a formal complaint. Is this within the positive duty?",
+        "options": [
+          "No, victimisation needs a complaint to the Commission first",
+          "Yes, victimisation linked to allegations about covered conduct is within the duty even without a formal complaint",
+          "No, exclusion from meetings is not detriment",
+          "Only if Mia resigns as a result"
+        ],
+        "answer": 1,
+        "explanation": "Section 47C covers victimisation, within the meaning of s 47A, relating to complaints, proceedings, assertions or allegations, which include informal allegations.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x22",
+        "question": "The AHRC suspects a bank is not complying with the positive duty. What must it do after starting an inquiry?",
+        "options": [
+          "Issue an immediate fine",
+          "Refer the bank directly to APRA",
+          "Publish the bank's name before contacting it",
+          "Give the bank written notice of the grounds for the inquiry and a reasonable opportunity to make submissions before any finding of non-compliance"
+        ],
+        "answer": 3,
+        "explanation": "Section 35C requires written notice of the grounds as soon as practicable, and a reasonable opportunity to make oral or written submissions before a finding of non-compliance.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x23",
+        "question": "Tasman Ridge receives a compliance notice and believes it is wrong. Within what time can it ask the President to reconsider?",
+        "options": [
+          "Within 7 days",
+          "Within 90 days",
+          "Within 21 days after the notice is given",
+          "At any time before the court hearing"
+        ],
+        "answer": 2,
+        "explanation": "Section 35G(2)(c) requires the request for reconsideration to be in writing, with reasons, within 21 days after the notice is given.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-wp-x24",
+        "question": "Which plan is most likely to be a reasonable and proportionate response to known harassment risks at a large bank's conferences?",
+        "options": [
+          "Ask attendees to sign a code of conduct and take no other action",
+          "Cancel all events permanently without assessing the risk",
+          "Rely on attendees to report problems to police",
+          "Assess the event risks beforehand, set controls on alcohol and timing, brief leaders to step in, publicise safe reporting channels and follow up afterwards"
+        ],
+        "answer": 3,
+        "explanation": "Preventive measures linked to identified risks, with leadership, reporting and follow-up, fit the purpose of s 47C. A signature alone does little, and cancelling without assessment is not risk-based.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x25",
+        "question": "How do the positive duty and WHS duties interact for sexual harassment at a bank?",
+        "options": [
+          "Sexual harassment is both covered by s 47C and a psychosocial hazard under WHS laws, and s 47C does not limit WHS duties",
+          "The positive duty replaced WHS duties for harassment",
+          "WHS laws apply only to physical harassment",
+          "The bank must choose which law to comply with"
+        ],
+        "answer": 0,
+        "explanation": "Section 47C(7) preserves WHS duties. Harassment is a psychosocial risk under WHS laws and also within the positive duty, so both frameworks apply.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x26",
+        "question": "A bank's external IT supplier's employee discovers that a bank system is overriding customer hardship flags, causing unlawful default fees. She tells the bank's chief risk officer. Does the disclosure qualify for protection?",
+        "options": [
+          "No, only bank employees can be whistleblowers",
+          "Yes, she is an employee of a supplier, the CRO is an eligible recipient, and she has reasonable grounds to suspect a contravention",
+          "No, disclosures must be made to ASIC first",
+          "Only if she discloses her name"
+        ],
+        "answer": 1,
+        "explanation": "Section 1317AAA(d) covers employees of suppliers, s 1317AAC covers officers and senior managers as eligible recipients, and s 1317AA(5)(c) covers contraventions of credit law. Anonymity is allowed.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x27",
+        "question": "A whistleblower's disclosure about loan file tampering also reveals that she personally altered two files. What does s 1317AB do?",
+        "options": [
+          "It gives her full immunity for everything the disclosure reveals",
+          "It gives no protection because she was involved",
+          "It protects her from liability for making the disclosure, but not for her own misconduct revealed by it",
+          "It allows the bank to dismiss her for the disclosure"
+        ],
+        "answer": 2,
+        "explanation": "Section 1317AB(1) prevents liability for making the disclosure, and its note confirms she may still be liable for her own conduct revealed by it (subject to the evidence rule in (1)(c)).",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x28",
+        "question": "An internal investigator, without naming the discloser, tells the team leader that 'the report came from someone in the evening shift who joined in March', and only one person fits. What is the problem?",
+        "options": [
+          "None, because the name was not given",
+          "It is only a problem if the team leader repeats it",
+          "It is allowed because investigators may share anything",
+          "He disclosed information likely to lead to identification, which s 1317AAE prohibits unless an exception applies"
+        ],
+        "answer": 3,
+        "explanation": "Section 1317AAE covers both identity and information likely to lead to identification. Investigation sharing must exclude identity and involve all reasonable steps to reduce the risk of identification.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-wp-x29",
+        "question": "Which disclosure would be protected even though it is not made to ASIC, APRA or an eligible recipient?",
+        "options": [
+          "A disclosure to a lawyer to get advice about how the whistleblower protections apply",
+          "A disclosure posted on social media",
+          "A disclosure to a friend at another bank",
+          "A disclosure to a journalist on day one"
+        ],
+        "answer": 0,
+        "explanation": "Section 1317AA(3) protects disclosures to a legal practitioner for advice or representation about Part 9.4AAA. Public or media disclosures need the strict public interest or emergency conditions.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x30",
+        "question": "A whistleblower reported a fire safety risk to APRA. She reasonably believes it poses a substantial and imminent danger to people's safety. What must she do before an emergency disclosure to a member of Parliament?",
+        "options": [
+          "Wait at least 90 days",
+          "Get the bank's consent",
+          "Give APRA written notice identifying the earlier disclosure and stating she intends to make an emergency disclosure",
+          "Obtain a court order"
+        ],
+        "answer": 2,
+        "explanation": "Section 1317AAD(2) requires a previous qualifying disclosure, reasonable grounds about substantial and imminent danger, and written notice to the body that received it. The 90-day wait applies to public interest disclosures, not emergency ones.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-wp-x31",
+        "question": "A manager emails his team: 'Whoever went to ASIC should think about their future here.' No one is named and no action follows. Has he contravened s 1317AC?",
+        "options": [
+          "Possibly yes, because threatening detriment, expressly or by implication, can be a contravention even without action",
+          "No, because no detriment actually occurred",
+          "No, because he did not know who reported",
+          "Only if someone proves they were afraid"
+        ],
+        "answer": 0,
+        "explanation": "Section 1317AC(2) covers threats, which may be express or implied and conditional or unconditional, and s 1317AC(5) says it is not necessary to prove actual fear.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-wp-x32",
+        "question": "A company officer was knowingly involved in the bank's victimisation of a whistleblower. Can a court order the officer to pay compensation?",
+        "options": [
+          "Yes, the court can make orders against an officer knowingly concerned in the detrimental conduct",
+          "No, only the bank can be ordered to compensate",
+          "Only if the officer is a director",
+          "Only if ASIC brings criminal charges"
+        ],
+        "answer": 0,
+        "explanation": "Section 1317AD(2) allows orders against an officer or employee who aided, induced or was knowingly concerned in the body corporate's detrimental conduct.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x33",
+        "question": "Which matters can be disclosable matters for a bank whistleblower?",
+        "options": [
+          "Suspected breaches of the Banking Act, the FAR Act or credit legislation, or conduct dangerous to the financial system",
+          "Only suspected criminal offences with prison terms over 10 years",
+          "Only breaches of the Corporations Act",
+          "Only matters affecting the whistleblower personally"
+        ],
+        "answer": 0,
+        "explanation": "Section 1317AA(5) lists contraventions of the Corporations Act, ASIC Act, Banking Act, FAR Act, NCCP Act and others, Commonwealth offences punishable by 12 months or more, and dangers to the public or financial system.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x34",
+        "question": "In ASIC v TerraCom, which outcome did ASIC describe as a first?",
+        "options": [
+          "Its first criminal conviction of a bank CEO",
+          "Its first action against an APRA-regulated insurer",
+          "Its first enforcement outcome for contraventions of the whistleblower provisions",
+          "Its first enforceable undertaking on harassment"
+        ],
+        "answer": 2,
+        "explanation": "ASIC's release on the AUD 7.5 million penalty in 2025 described it as ASIC's first enforcement outcome for contraventions of whistleblower provisions.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x35",
+        "question": "Tasman Ridge appoints a new chief people officer with senior executive responsibility for a significant part of the bank's operations. What must the bank consider under FAR?",
+        "options": [
+          "Nothing, because FAR covers only the CEO and directors",
+          "Whether she is an accountable person who must be registered, with an accountability statement covering her responsibilities",
+          "Only whether she holds an AFS licence",
+          "Whether she has completed WHS officer training within 30 days"
+        ],
+        "answer": 1,
+        "explanation": "Section 10 makes a person with actual or effective senior executive responsibility for a significant part of operations an accountable person; the bank must register accountable persons and give accountability statements.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x36",
+        "question": "Which FAR obligation makes sure no part of the bank's operations is left without an accountable person?",
+        "options": [
+          "The key personnel obligations",
+          "The deferred remuneration obligations",
+          "The whistleblower policy obligation",
+          "The notifiable incident obligation"
+        ],
+        "answer": 0,
+        "explanation": "Section 23 requires the bank to ensure accountable persons' responsibilities cover all parts of the relevant group's operations.",
+        "difficulty": 3
+      },
+      {
+        "id": "au-wp-x37",
+        "question": "A bank argues that because it reduced an accountable person's bonus for a failure in the current year, it cannot reduce deferred amounts from earlier years. Which is correct?",
+        "options": [
+          "Reductions can only apply to the year of the failure",
+          "Deferred amounts can never be reduced",
+          "Only the regulator can reduce variable remuneration",
+          "A reduction need not relate to the period of the failure and may be a reduction to zero"
+        ],
+        "answer": 3,
+        "explanation": "Section 25(2) provides that a reduction need not relate to the period in which the failure occurred and may reduce variable remuneration to zero.",
+        "difficulty": 5
+      },
+      {
+        "id": "au-wp-x38",
+        "question": "Tasman Ridge's whistleblower policy is approved but sits on a page staff cannot find, and eligible recipients have never been trained. What is the most accurate assessment?",
+        "options": [
+          "It is fully compliant and nothing more is needed",
+          "It is unlawful because ASIC must approve the policy",
+          "It is irrelevant because banks are exempt from s 1317AI",
+          "It may meet the bare legal requirement, but falls short of ASIC's guidance on training and accessibility and risks failures in handling disclosures"
+        ],
+        "answer": 3,
+        "explanation": "Section 1317AI requires a policy covering set matters and made available to officers and employees. RG 270 expects ongoing training and specialist training for eligible recipients; untrained recipients risk breaching confidentiality.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x39",
+        "question": "APRA's 2018 CBA inquiry linked weak non-financial risk management to which accountability issue later addressed by FAR-style rules?",
+        "options": [
+          "A shortage of branch staff",
+          "A lack of clear ownership of key risks at executive level and pay with little consequence for poor risk outcomes",
+          "Unclear WHS notification forms",
+          "Excessive use of whistleblower hotlines"
+        ],
+        "answer": 1,
+        "explanation": "The panel found unclear accountabilities and remuneration with little sting for senior managers. FAR's accountability maps and deferred remuneration address those themes.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x40",
+        "question": "The board risk committee asks for whistleblower program reporting. Which approach is appropriate?",
+        "options": [
+          "A list of disclosers and their business units",
+          "Aggregated trends, themes, timeliness and outcomes, with no information likely to identify disclosers",
+          "Copies of every disclosure in full",
+          "Only the number of disclosures, with no themes or outcomes"
+        ],
+        "answer": 1,
+        "explanation": "Boards need meaningful oversight information, but s 1317AAE prohibits disclosing identity or information likely to identify whistleblowers. Aggregated reporting balances both.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x41",
+        "question": "An accountable person learns that a branch network has ignored HSR concerns about staff safety for a year and does nothing. Which FAR obligation is most at risk?",
+        "options": [
+          "The obligation to defer 40% of every employee's pay",
+          "Taking reasonable steps to prevent matters that would adversely affect the bank's prudential standing or reputation",
+          "The obligation to file the bank's annual tax return",
+          "The obligation to hold a credit licence"
+        ],
+        "answer": 1,
+        "explanation": "Section 21(1)(c) requires accountable persons to take reasonable steps in their responsibilities to prevent matters likely to damage prudential standing or reputation; ignoring known people-safety failures engages it.",
+        "difficulty": 4
+      },
+      {
+        "id": "au-wp-x42",
+        "question": "Which combination best evidences a bank's people-safety program to a regulator?",
+        "options": [
+          "Approved policies and an annual staff email",
+          "Training completion percentages only",
+          "Risk assessments, role-based training records with effectiveness checks, consultation records, harassment prevention measures, whistleblower metrics and named accountabilities",
+          "A record of disciplinary outcomes only"
+        ],
+        "answer": 2,
+        "explanation": "Regulators look for evidence that risks are assessed, controls and training work, workers are consulted and accountability is clear. Policies or single metrics alone do not show that.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
