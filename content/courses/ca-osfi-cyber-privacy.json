@@ -1,0 +1,3070 @@
+{
+ "slug": "ca-osfi-cyber-privacy",
+ "title": "Canada | OSFI B-13 Technology and Cyber Risk, E-21 Resilience and PIPEDA",
+ "tagline": "Spot the lure, raise the alarm, protect customer data and keep critical operations running the way OSFI and PIPEDA expect.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Banking",
+  "Federally regulated financial institutions",
+  "Payments",
+  "Financial technology"
+ ],
+ "hours": 6,
+ "description": "This quest teaches staff of Canadian federally regulated banks how cyber security, operational resilience and privacy fit together under the rules that apply to them: OSFI's **Guideline B-13 Technology and Cyber Risk Management** (effective 1 January 2024), OSFI's **Technology and Cyber Security Incident Reporting Advisory**, OSFI's **Guideline E-21 Operational Risk Management and Resilience** (full adherence expected by 1 September 2026), OSFI's **Guideline B-10 Third-Party Risk Management** and the **Personal Information Protection and Electronic Documents Act (PIPEDA)** with its Breach of Security Safeguards Regulations.\n\nB-13 expects banks to make employees aware of the cyber attacks aimed at them, to encourage reporting of suspicious activity and to test staff regularly. E-21 expects adequate training on operational risk, resilience and business continuity plans, and PIPEDA requires staff training on privacy policies and awareness of confidentiality. Every employee, contractor and manager with system access should take it; incident, privacy, resilience and vendor teams get deeper material.\n\nAcross five stages you follow a fictional team at Boreal Harbour Bank through phishing lures, OSFI incident reports, privacy breach decisions, critical operations and third parties.\n\nThis quest builds knowledge of the guidelines and the law; it does not replace your institution's own policies, procedures or advice from your security, privacy and compliance teams.",
+ "audience": [
+  "All employees and contractors of Canadian federally regulated banks who use the bank's systems or data",
+  "Contact centre, branch and payments staff who face phishing, vishing and impersonation attempts",
+  "Technology, cyber security and incident response teams who prepare reports to OSFI",
+  "Privacy office staff and managers of customer data who handle breaches under PIPEDA",
+  "Operational risk, business continuity and vendor management staff working under E-21 and B-10"
+ ],
+ "outcomes": [
+  "Explain what OSFI Guideline B-13 expects of a bank's technology and cyber governance, operations and security, including awareness and testing of staff",
+  "Recognise phishing, vishing and impersonation attempts, including scams that misuse OSFI's name, and report them through the right channel",
+  "Decide when a technology or cyber incident is reportable to OSFI and what the initial report and follow-up updates must contain",
+  "Apply PIPEDA's accountability and safeguards principles and its breach reporting, notification and record-keeping duties",
+  "Describe E-21's critical operations, tolerances for disruption, business continuity training and B-10's third-party life cycle",
+  "Show how training, testing, records and reporting prove the bank meets OSFI's and PIPEDA's expectations"
+ ],
+ "quest": {
+  "name": "The Boreal Harbour Firewall",
+  "premise": "You have just joined the cyber and resilience office of Boreal Harbour Bank, a fictional federally regulated bank headquartered in Toronto with operations in Montréal, Calgary and Halifax. With CISO Ananya Krishnan, resilience head Marc-André Lefebvre, chief privacy officer Adaeze Okafor, contact centre lead Liam Whitehorse and vendor risk lead Sandra Kowalski, you must turn B-13, E-21, B-10 and PIPEDA into everyday decisions.",
+  "badge": {
+   "name": "Boreal Harbour Firewall Keeper",
+   "description": "Awarded for working knowledge of OSFI B-13, the OSFI incident reporting advisory, E-21, B-10 and PIPEDA's safeguard and breach duties."
+  },
+  "color": "#0e7490",
+  "cast": [
+   {
+    "id": "ananya",
+    "name": "Ananya Krishnan",
+    "role": "Chief information security officer, Toronto",
+    "look": {
+     "skin": 3,
+     "hair": "long",
+     "color": "#0e7490"
+    }
+   },
+   {
+    "id": "marc",
+    "name": "Marc-André Lefebvre",
+    "role": "Head of operational resilience, Montréal",
+    "look": {
+     "skin": 1,
+     "hair": "beard",
+     "color": "#4d7c0f"
+    }
+   },
+   {
+    "id": "adaeze",
+    "name": "Adaeze Okafor",
+    "role": "Chief privacy officer",
+    "look": {
+     "skin": 5,
+     "hair": "curly",
+     "color": "#b45309"
+    }
+   },
+   {
+    "id": "liam",
+    "name": "Liam Whitehorse",
+    "role": "Contact centre team lead, Calgary",
+    "look": {
+     "skin": 3,
+     "hair": "short",
+     "color": "#7c3aed"
+    }
+   },
+   {
+    "id": "sandra",
+    "name": "Sandra Kowalski",
+    "role": "Third-party risk lead, Halifax",
+    "look": {
+     "skin": 1,
+     "hair": "bun",
+     "color": "#be123c"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "The OSFI rulebook: B-13 and who owns technology and cyber risk",
+   "stage": "The Watchtower",
+   "summary": "Who OSFI supervises, how Guideline B-13 is built around three domains and outcomes, who is accountable for technology and cyber risk, and why awareness and training sit inside the governance domain.",
+   "minutes": 45,
+   "objectives": [
+    "Explain which institutions Guideline B-13 applies to and when it took effect",
+    "Name B-13's three domains and the outcome each one aims for",
+    "Describe Senior Management's accountability and the structure, resources and training B-13 expects",
+    "Link the risk management framework, risk appetite and culture of risk awareness to everyday staff behaviour"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Day one in the watchtower",
+     "setting": "Cyber and resilience office, Boreal Harbour Bank head office, Toronto. 8:15 am, Monday.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Your badge works, your laptop asks for a second factor, and a calendar invite already waits: 'B-13 walk-through, 9:00, Ananya.'",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Welcome. I'm Ananya Krishnan, CISO. You picked a good week: OSFI's supervisors want to see how we meet Guideline B-13.",
+       "mood": "happy"
+      },
+      {
+       "who": "liam",
+       "text": "Liam Whitehorse, contact centre in Calgary. Honest question: is B-13 an IT thing? My team takes calls, we don't patch servers.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "That's the question everyone asks. B-13 covers governance, operations and security, and one part is all about people: awareness, reporting and testing staff like yours.",
+       "mood": "thinking"
+      },
+      {
+       "who": "marc",
+       "text": "Marc-André Lefebvre, resilience. And when something breaks, B-13 hands over to E-21 and to OSFI's incident advisory. They fit together.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Stage one is the Watchtower: who OSFI is, what B-13 asks and who owns the risk. Let's climb.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "B-13 in five scenes",
+     "scenes": [
+      {
+       "icon": "🏛️",
+       "heading": "The supervisor",
+       "narration": "OSFI is the prudential supervisor of federally regulated financial institutions, including banks and foreign bank branches. It publishes guidelines that set out what it expects for sound business practices."
+      },
+      {
+       "icon": "📘",
+       "heading": "The guideline",
+       "narration": "Guideline B-13 sets OSFI's expectations for technology and cyber risk management. OSFI released the final version in July 2022 and it took effect on 1 January 2024."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "Risk based",
+       "narration": "B-13 is principles based. There is no one-size-fits-all approach: a bank applies it according to its size, the nature and complexity of its operations and its risk profile."
+      },
+      {
+       "icon": "🧭",
+       "heading": "Three domains",
+       "narration": "The guideline is organised in three domains: governance and risk management, technology operations and resilience, and cyber security. Each domain has a desired outcome."
+      },
+      {
+       "icon": "👥",
+       "heading": "People inside",
+       "narration": "Training and awareness run through it: a resourced structure with the right expertise and training, a culture of risk awareness, and staff whose cyber awareness is promoted and regularly tested."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "B-13's three domains and their outcomes",
+     "caption": "Each domain sets principles and a desired outcome. Read B-13 together with E-21, B-10 and OSFI's incident reporting advisory.",
+     "headers": [
+      "What it covers",
+      "Desired outcome"
+     ],
+     "items": [
+      {
+       "label": "Governance and risk management",
+       "left": "Accountability, structure, strategy, risk framework",
+       "right": "Risks governed through clear accountabilities and frameworks"
+      },
+      {
+       "label": "Technology operations and resilience",
+       "left": "Architecture, assets, change, patching, incidents, recovery",
+       "right": "A stable, scalable and resilient technology environment"
+      },
+      {
+       "label": "Cyber security",
+       "left": "Identify, defend, detect, respond, recover and learn",
+       "right": "Confidentiality, integrity and availability of technology assets"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Boreal Harbour's Halifax operations team says B-13 does not apply to them because they only run branch services. Who does B-13 apply to?",
+     "options": [
+      "All federally regulated financial institutions, including foreign bank branches, applied on a risk basis",
+      "Only the bank's technology department and its outsourced data centres",
+      "Only banks that have reported a cyber incident to OSFI in the past"
+     ],
+     "answer": 0,
+     "explanation": "B-13 applies to all federally regulated financial institutions, including foreign bank branches, and is applied according to size, complexity and risk profile. It sets expectations for the institution as a whole, not just the IT team."
+    },
+    {
+     "type": "concept",
+     "title": "Who owns technology and cyber risk",
+     "body": "B-13 opens with accountability. Its first principle says **Senior Management** should assign responsibility for technology and cyber risk to senior officers and make sure the structure and resources are adequate.\n\n- **Accountable roles:** examples include the head of IT, the CTO, the CIO and the head of cyber security or **CISO**. These roles should have stature and visibility across the bank.\n- **Structure, resources and training (1.1.2):** clear roles, enough people and money, and **appropriate subject-matter expertise and training**.\n- **Senior understanding:** Senior Management should include people who understand technology and cyber risk well enough to challenge it.\n- **Culture:** the bank should promote a **culture of risk awareness** about technology and cyber risk throughout the institution.\n\nOSFI's Corporate Governance Guideline covers the board's role in strategy and risk appetite. B-13 focuses on what management builds underneath."
+    },
+    {
+     "type": "match",
+     "title": "Match the B-13 element to what it means",
+     "prompt": "Link each element of B-13's governance domain to its practical meaning.",
+     "pairs": [
+      {
+       "left": "Senior officer accountability",
+       "right": "Named executives such as the CISO or CIO own technology and cyber risk"
+      },
+      {
+       "left": "Technology and cyber strategy",
+       "right": "A documented plan aligned to business strategy, with measurable goals and risk indicators"
+      },
+      {
+       "left": "Risk management framework",
+       "right": "Processes to identify, assess, manage, monitor and report on technology and cyber risk"
+      },
+      {
+       "left": "Risk appetite",
+       "right": "Limits, thresholds and tolerance levels the bank sets for technology and cyber risk"
+      },
+      {
+       "left": "Culture of risk awareness",
+       "right": "Everyone, not only IT, understands and acts on technology and cyber risk"
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Layers of responsibility at Boreal Harbour",
+     "caption": "B-13 builds from accountability at the top to awareness at every desk.",
+     "items": [
+      {
+       "label": "Board of directors",
+       "detail": "Sets strategy and risk appetite; oversees management under the Corporate Governance Guideline"
+      },
+      {
+       "label": "Senior Management",
+       "detail": "Accountable for directing technology and cyber operations; assigns senior officers"
+      },
+      {
+       "label": "CISO, CIO and senior officers",
+       "detail": "Own the framework, policies, controls and reporting on technology and cyber risk"
+      },
+      {
+       "label": "Technology and cyber teams",
+       "detail": "Run operations and defences with the expertise and training B-13 expects"
+      },
+      {
+       "label": "Every employee and contractor",
+       "detail": "Stays aware, follows policy and reports suspicious cyber activity"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A question from the board",
+     "setting": "Video call with the chair of the board risk committee. 11:00 am.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "The risk committee chair has read a draft of the technology and cyber strategy and has one question for Ananya.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "She wants to know how we measure whether our cyber risk is inside appetite. Not how many tools we bought.",
+       "mood": "thinking"
+      },
+      {
+       "who": "marc",
+       "text": "B-13's framework expects risk appetite measures such as limits, thresholds and tolerance levels, plus regular reporting to Senior Management on exposures and trends.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "And where does my team show up in those numbers?",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "In phishing test results and in how fast your people report suspicious calls. Awareness is measurable, and B-13 expects us to test it.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The budget cut",
+     "situation": "During planning, a business executive proposes to cut the cyber awareness budget in half and to stop phishing simulations for a year, saying 'our firewall is good enough'. The CISO has to respond before the plan goes to Senior Management.",
+     "choices": [
+      {
+       "text": "Explain that B-13 expects a culture of risk awareness and regular testing of staff, show the risk data and ask Senior Management to decide with that evidence",
+       "outcome": "Senior Management sees that awareness and testing are OSFI expectations, sees the measured risk, and keeps a program sized to the bank's risk. The decision is documented.",
+       "score": 2
+      },
+      {
+       "text": "Accept the cut quietly and plan to restore the program after the next OSFI review",
+       "outcome": "The bank would then fall short of an express B-13 expectation, and nobody with accountability has been told of the risk being accepted.",
+       "score": 0
+      },
+      {
+       "text": "Keep the simulations but drop all awareness content, since testing alone is enough",
+       "outcome": "Testing without awareness misses half of the expectation: B-13 asks banks to create awareness of attack scenarios and to test it. Partly right.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "B-13 terms to know",
+     "cards": [
+      {
+       "front": "Technology risk",
+       "back": "Risk from inadequate, disrupted, failed or misused technology assets, people or processes; B-13 treats cyber risk as part of it."
+      },
+      {
+       "front": "Technology asset",
+       "back": "Something tangible such as hardware, or intangible such as software and data, that needs protection and supports services."
+      },
+      {
+       "front": "FRFI",
+       "back": "Federally regulated financial institution: banks, foreign bank branches, insurers and trust and loan companies supervised by OSFI."
+      },
+      {
+       "front": "Secure-by-design",
+       "back": "Building security into systems from the design stage, preferring preventive controls over detective ones."
+      },
+      {
+       "front": "Risk-based application",
+       "back": "B-13 is applied in proportion to an institution's size, the complexity of its operations and its risk profile."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "timeline",
+     "title": "How B-13 arrived",
+     "caption": "Dates from OSFI's July 2022 news release on the final guideline.",
+     "items": [
+      {
+       "label": "Discussion paper",
+       "value": "Sept 2020",
+       "detail": "OSFI consults on building resilience in a digital world"
+      },
+      {
+       "label": "Draft B-13",
+       "value": "Nov 2021",
+       "detail": "Draft guideline published for consultation"
+      },
+      {
+       "label": "Final B-13",
+       "value": "July 2022",
+       "detail": "OSFI releases the final guideline in three domains"
+      },
+      {
+       "label": "Effective",
+       "value": "1 Jan 2024",
+       "detail": "Banks expected to meet B-13 after time to self-assess"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which statement about training in B-13's governance domain is accurate?",
+     "options": [
+      "B-13 sets a fixed number of training hours for every technology employee each year",
+      "B-13 leaves all training to the Canadian Centre for Cyber Security",
+      "The bank should have adequate people with appropriate subject-matter expertise and training to manage technology and cyber risk",
+      "Training is only expected for board members, not for technology staff"
+     ],
+     "answer": 2,
+     "explanation": "Section 1.1.2 expects an organisational structure with adequate people and financial resources and appropriate subject-matter expertise and training. B-13 does not set a fixed number of hours."
+    },
+    {
+     "type": "example",
+     "title": "Real case: OSFI names integrity and security its top risk",
+     "body": "In its **Annual Risk Outlook for fiscal year 2025-2026**, OSFI ranked **integrity and security** as its top risk for the institutions it supervises.\n\nOSFI pointed to geopolitical tension, fast technology change and reliance on complex networks of third parties. It said cyber attacks are constant, and that it was seeing elevated levels of **ransomware, exploited software vulnerabilities and data breaches** worldwide. It also warned that third-party providers can open new channels for cyber attacks and insider threats.\n\nIn its 2026-2027 outlook, OSFI said malicious cyber activity remains a significant and evolving threat and that **AI-enabled tools** are increasing the speed and scale of attacks. It planned intelligence-led cyber resilience testing and targeted cyber and technology reviews.\n\n**Lesson:** B-13 is not a paper exercise. The supervisor sees cyber risk as a live threat and checks how banks manage it."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 1 take-aways",
+     "items": [
+      "OSFI's Guideline B-13 applies to all federally regulated financial institutions and took effect on 1 January 2024.",
+      "B-13 has three domains: governance and risk management, technology operations and resilience, and cyber security.",
+      "Senior Management is accountable and assigns technology and cyber risk to senior officers such as the CISO or CIO.",
+      "Section 1.1.2 expects adequate people, appropriate expertise and training, and a culture of risk awareness.",
+      "A risk management framework with appetite measures lets the bank show whether cyber risk is under control."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think about your own role. Which part of B-13 touches your work most: governance, technology operations or cyber security? What would a supervisor expect you personally to know?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "ca-cy-s1-q1",
+     "question": "Which institutions does OSFI's Guideline B-13 apply to?",
+     "options": [
+      "Only Canada's six largest banks and their foreign subsidiaries",
+      "Only payment service providers registered with the Bank of Canada under the federal retail payments law",
+      "Only provincially regulated credit unions and caisses populaires",
+      "All federally regulated financial institutions, foreign bank branches included"
+     ],
+     "answer": 3,
+     "explanation": "B-13 applies to all FRFIs, including foreign bank branches and foreign insurance company branches, to the extent consistent with their legal obligations in Canada. Credit unions regulated by provinces are outside OSFI's guideline.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s1-q2",
+     "question": "From what date were federally regulated financial institutions expected to meet final Guideline B-13?",
+     "options": [
+      "1 September 2026",
+      "22 August 2024",
+      "1 January 2024",
+      "13 August 2021"
+     ],
+     "answer": 2,
+     "explanation": "OSFI released final B-13 in July 2022 and made it effective 1 January 2024 to give institutions time to self-assess. 13 August 2021 is the incident advisory date; 2024 and 2026 dates relate to E-21.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s1-q3",
+     "question": "Which list correctly names B-13's three domains?",
+     "options": [
+      "Strategy; procurement; internal audit of technology assets",
+      "Board oversight; customer privacy; anti-money laundering controls",
+      "Identify; protect; detect, with response and recovery left to a separate OSFI guideline on resilience",
+      "Governance and risk management; technology operations and resilience; cyber security"
+     ],
+     "answer": 3,
+     "explanation": "B-13 is organised into governance and risk management, technology operations and resilience, and cyber security, each with a desired outcome. Identify-defend-detect-respond appears inside the cyber security domain, not as the domains.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s1-q4",
+     "question": "A new head of IT at Boreal Harbour asks who B-13 says is accountable for directing the bank's technology and cyber security operations. What is the answer?",
+     "options": [
+      "OSFI's Lead Supervisor, who directs the bank's security team during supervisory reviews",
+      "Each employee individually, with no central accountability",
+      "The external auditor, which signs off on controls each year",
+      "Senior Management, which assigns responsibility to senior officers"
+     ],
+     "answer": 3,
+     "explanation": "Under section 1.1.1, Senior Management is accountable and should assign responsibility to senior officers such as the CIO, CTO or CISO. OSFI supervises but does not run the bank's operations.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s1-q5",
+     "question": "Section 1.1.2 of B-13 expects an appropriate structure, resources and training. Which practice best meets it?",
+     "options": [
+      "Relying on the expertise of the bank's technology vendors and giving the internal security staff no training",
+      "Clear cyber roles, enough staff and budget, relevant expertise and ongoing training",
+      "Hiring certified staff once and assuming their skills stay current",
+      "A single security analyst covering all systems so that costs stay low"
+     ],
+     "answer": 1,
+     "explanation": "1.1.2 asks for clear roles, adequate people and financial resources, appropriate subject-matter expertise and training. Hiring once without ongoing training does not keep expertise appropriate as threats change.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s1-q6",
+     "question": "Why does B-13 expect Senior Management to include people with sufficient understanding of technology and cyber risks?",
+     "options": [
+      "So management can understand, challenge and decide on those risks",
+      "So that the bank can skip having a dedicated CISO role",
+      "Because OSFI must approve each executive's technical certification",
+      "So that executives can personally configure firewalls and servers during a serious cyber incident"
+     ],
+     "answer": 0,
+     "explanation": "The expectation is about informed oversight: leaders who understand the risk can challenge proposals and decisions. B-13 does not require OSFI to certify executives or let a bank drop a CISO.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s1-q7",
+     "question": "Boreal Harbour's technology and cyber risk framework lists limits, thresholds and tolerance levels. Which framework element are these?",
+     "options": [
+      "The cyber incident taxonomy",
+      "The software development life cycle",
+      "Risk appetite and its measurement",
+      "The technology asset inventory"
+     ],
+     "answer": 2,
+     "explanation": "B-13 section 1.3.2 lists technology and cyber risk appetite and measurement, such as limits, thresholds and tolerance levels, as an element of the framework. The taxonomy classifies incidents, not appetite.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s1-q8",
+     "question": "An executive argues that B-13 forces every bank to buy the same set of security tools. Why is that wrong?",
+     "options": [
+      "B-13 lists approved vendors that each bank must choose from",
+      "B-13 only applies to banks that run their own data centres",
+      "B-13 is principles based and applied in proportion to each bank's size, complexity and risk profile",
+      "B-13 lets each bank opt out if its board approves a waiver"
+     ],
+     "answer": 2,
+     "explanation": "OSFI states there is no one-size-fits-all approach; B-13 is read and applied from a risk-based perspective. It names no approved vendors and has no board opt-out.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s1-q9",
+     "question": "In its Annual Risk Outlook for fiscal year 2025-2026, how did OSFI rank integrity and security risk?",
+     "options": [
+      "As a risk OSFI would leave entirely to the RCMP to monitor",
+      "As its top risk, citing constant cyber attacks and third-party channels",
+      "As a minor risk, ranked below every credit, market and liquidity risk that OSFI tracks for banks",
+      "As a risk for insurers only, not for deposit-taking banks"
+     ],
+     "answer": 1,
+     "explanation": "OSFI's 2025-2026 outlook made integrity and security its top priority and cited ransomware, exploited vulnerabilities, data breaches and third parties. It did not limit the risk to insurers.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s1-q10",
+     "question": "Which outcome does B-13 set for its cyber security domain?",
+     "options": [
+      "Annual certification of every bank system by the Canadian Centre for Cyber Security before it goes live",
+      "Full outsourcing of security operations to a qualified third party",
+      "A secure posture that keeps technology assets confidential, intact and available",
+      "A technology environment with no incidents of any kind during the year"
+     ],
+     "answer": 2,
+     "explanation": "The cyber security domain's outcome is a secure posture maintaining confidentiality, integrity and availability. B-13 assumes incidents can happen and expects the bank to respond and learn.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Phishing, social engineering and the awareness B-13 expects",
+   "stage": "The Lure Lagoon",
+   "summary": "How attackers target employees, customers and third parties by email, phone and text, what B-13 section 3.1.7 expects of awareness, reporting and testing, and how identity and access controls back people up.",
+   "minutes": 50,
+   "objectives": [
+    "Recognise the warning signs of phishing, vishing, smishing and impersonation, including scams that misuse OSFI's name",
+    "Explain the three parts of B-13 section 3.1.7: encourage reporting, create awareness and regularly test employees",
+    "Respond correctly to a suspicious email or call and report it through the bank's channel",
+    "Describe how multi-factor authentication, least privilege and access attestation support awareness"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The call that sounded official",
+     "setting": "Contact centre floor, Boreal Harbour Bank, Calgary. 2:40 pm.",
+     "lines": [
+      {
+       "who": "liam",
+       "text": "One of my agents just took a call from someone who said he was from OSFI. He wanted a list of customers flagged in last week's outage, 'for a regulatory review'.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "Did the number look real?",
+       "mood": "thinking"
+      },
+      {
+       "who": "liam",
+       "text": "It showed an Ottawa number. My agent nearly started reading names before she paused and called me.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "She did exactly the right thing. OSFI itself warns that people impersonate its staff and even spoof its real phone numbers.",
+       "mood": "proud"
+      },
+      {
+       "who": "adaeze",
+       "text": "Adaeze Okafor, privacy. And reading customer names to an unverified caller would have been a disclosure we'd have to assess as a possible breach.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Welcome to the Lure Lagoon. Today we learn to spot the bait, and why B-13 expects us to test that skill.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "What section 3.1.7 asks",
+     "scenes": [
+      {
+       "icon": "📣",
+       "heading": "Encourage reporting",
+       "narration": "B-13 expects a bank to enable and encourage employees, customers and third parties to report suspicious cyber activity, because each of them can help stop an attack."
+      },
+      {
+       "icon": "🎣",
+       "heading": "Create awareness",
+       "narration": "The bank should make people aware of the attack scenarios aimed directly at them: employees, customers and relevant third parties, not just the IT team."
+      },
+      {
+       "icon": "🧪",
+       "heading": "Test regularly",
+       "narration": "The bank should regularly test its employees to assess their awareness of cyber threats, and test whether the reporting processes and tools actually work."
+      },
+      {
+       "icon": "🔁",
+       "heading": "Learn and adjust",
+       "narration": "Test results show which teams and lures need more attention. The program changes as attackers change their methods."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "funnel",
+     "title": "How a social engineering attack narrows in",
+     "caption": "Each stage is a chance to stop the attack. Most social engineering is stopped at the lure by an alert, trained person.",
+     "items": [
+      {
+       "label": "Research",
+       "detail": "Attacker gathers names, roles and news from public sources and past breaches"
+      },
+      {
+       "label": "Lure",
+       "detail": "A message or call that borrows authority, urgency or a trusted brand"
+      },
+      {
+       "label": "Hook",
+       "detail": "A click, a password, a one-time code or a data disclosure"
+      },
+      {
+       "label": "Foothold",
+       "detail": "Access to an account, mailbox or system inside the bank"
+      },
+      {
+       "label": "Objective",
+       "detail": "Fraudulent payment, data theft, ransomware or extortion"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Red flag or routine?",
+     "prompt": "Sort each situation: is it a red flag to stop and report, or a routine request you can handle normally?",
+     "buckets": [
+      "Red flag: stop and report",
+      "Routine: handle normally"
+     ],
+     "items": [
+      {
+       "text": "A caller says he is from OSFI and asks for a customer list by phone",
+       "bucket": 0
+      },
+      {
+       "text": "An email from the 'CEO' asks you to buy gift cards urgently and keep it quiet",
+       "bucket": 0
+      },
+      {
+       "text": "A supplier emails new bank details for its next invoice payment",
+       "bucket": 0
+      },
+      {
+       "text": "A text asks you to confirm your network password through a link",
+       "bucket": 0
+      },
+      {
+       "text": "A customer calls the published number and passes the bank's verification steps",
+       "bucket": 1
+      },
+      {
+       "text": "IT announces a planned password change on the intranet, with no link to click",
+       "bucket": 1
+      },
+      {
+       "text": "A colleague asks you to share your one-time code so she can 'test' a login",
+       "bucket": 0
+      },
+      {
+       "text": "Your manager books a phishing awareness module for your team",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which group does B-13 section 3.1.7 expect the bank to make aware of attack scenarios aimed at them?",
+     "options": [
+      "Employees, customers and relevant third parties",
+      "Only employees with administrator rights",
+      "Only the board and Senior Management",
+      "Only customers who use online banking"
+     ],
+     "answer": 0,
+     "explanation": "Section 3.1.7 covers attack scenarios targeting employees, customers and relevant third parties, and asks the bank to encourage all of them to report suspicious activity."
+    },
+    {
+     "type": "concept",
+     "title": "The usual lures and how to beat them",
+     "body": "- **Phishing:** an email that imitates a colleague, supplier or regulator and pushes you to click, open or sign in. Check the real sender address and hover over links.\n- **Vishing:** a phone call, often with a spoofed caller ID. Hang up and call back on a number you find yourself.\n- **Smishing:** a text message with a link or a callback number. Do not use the link.\n- **Business email compromise:** a real or look-alike mailbox asks to change payment details or rush a transfer. Verify by a known channel before any change.\n- **Pretexting:** a believable story ('I'm from OSFI', 'I'm the new auditor') to get data or access.\n\n**The pause test:** authority + urgency + secrecy + an unusual request = stop. Verify through a channel you control, then **report** through the bank's reporting button or desk, even if you did not fall for it."
+    },
+    {
+     "type": "example",
+     "title": "Real case: fraudsters impersonating OSFI",
+     "body": "OSFI's own **Scams and fraud** page warns that some people try to obtain personal information from **financial institutions and members of the public** by claiming to be OSFI employees. It also reports that **legitimate OSFI telephone numbers have been spoofed** to call Canadians as part of other scams.\n\nOSFI states that it **does not ask for personal or confidential information by telephone, email or fax**, and that it does not ask people to pay fees to unlock their funds. It urges anyone contacted this way to report it to the **Canadian Anti-Fraud Centre**, run jointly by the RCMP, the Competition Bureau and the Ontario Provincial Police.\n\n**Lesson for bank staff:** a regulator's name and a real-looking number prove nothing. Requests for customer data from any 'regulator' go through the bank's compliance or regulatory affairs team, never through a cold call to the front line."
+    },
+    {
+     "type": "story",
+     "title": "The test results",
+     "setting": "Cyber awareness review, Toronto. Thursday morning.",
+     "lines": [
+      {
+       "who": "ananya",
+       "text": "Last quarter's phishing simulation: the click rate dropped, but only a third of people who spotted the email reported it.",
+       "mood": "neutral"
+      },
+      {
+       "who": "liam",
+       "text": "So people delete it and move on. They think spotting it is enough.",
+       "mood": "thinking"
+      },
+      {
+       "who": "ananya",
+       "text": "That's the gap. B-13 asks us to test awareness and the effectiveness of reporting processes and tools. A deleted phish helps nobody else.",
+       "mood": "worried"
+      },
+      {
+       "who": "sandra",
+       "text": "Sandra Kowalski, third-party risk. Our call-centre vendor's staff never get these tests. Should they?",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Section 3.1.7 names relevant third parties for awareness. Let's agree how they take part through the contract.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The urgent invoice",
+     "situation": "Sandra receives an email that looks like it comes from a long-standing IT supplier. It says the supplier has changed banks and asks that today's invoice of CAD 184,000 be paid to a new account. The email is polite, uses the right invoice number, and the sender address has one letter swapped.",
+     "choices": [
+      {
+       "text": "Do not reply to the email; call the supplier on the number held in the vendor file, report the email through the phishing button and alert accounts payable",
+       "outcome": "The supplier confirms it has not changed banks. The security team blocks the look-alike domain and warns finance. This is the response B-13's reporting culture is built for.",
+       "score": 2
+      },
+      {
+       "text": "Reply to the email asking for a signed letter on the supplier's letterhead before paying",
+       "outcome": "The attacker controls that mailbox and sends a convincing letter. Verification must use a channel you already trust, not the suspicious one.",
+       "score": 0
+      },
+      {
+       "text": "Hold the payment for a day but tell nobody, in case it turns out to be genuine",
+       "outcome": "The payment is safe for now, but the security team never learns about the domain, and colleagues may get the same email. Partly right.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Match the control to the attack it blunts",
+     "prompt": "Link each control from B-13's identity and access expectations to the risk it reduces.",
+     "pairs": [
+      {
+       "left": "Multi-factor authentication",
+       "right": "A stolen password alone is not enough to sign in"
+      },
+      {
+       "left": "Least privilege",
+       "right": "A compromised account can reach only what that job needs"
+      },
+      {
+       "left": "Regular access attestation",
+       "right": "Old or excess access is found and removed"
+      },
+      {
+       "left": "Privileged credentials in a secure vault",
+       "right": "Administrator passwords are not stored where attackers can find them"
+      },
+      {
+       "left": "Logging and monitoring account activity",
+       "right": "Unusual sign-ins are spotted and investigated quickly"
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "The awareness program loop",
+     "caption": "B-13 expects awareness to be promoted and regularly tested, so the loop never stops.",
+     "items": [
+      {
+       "label": "Assess",
+       "detail": "Use threat intelligence to choose the scenarios aimed at your staff, customers and vendors"
+      },
+      {
+       "label": "Educate",
+       "detail": "Short, role-based training on those scenarios and how to report"
+      },
+      {
+       "label": "Test",
+       "detail": "Simulations and checks of awareness and of the reporting tools"
+      },
+      {
+       "label": "Measure",
+       "detail": "Report rates, click rates and time to report by team"
+      },
+      {
+       "label": "Improve",
+       "detail": "Target weak spots and update content as attacks change"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Myth or fact?",
+     "cards": [
+      {
+       "front": "Myth: if I delete a phishing email, I've done my job.",
+       "back": "Fact: report it. Reporting warns the security team and protects colleagues who got the same message."
+      },
+      {
+       "front": "Myth: a caller ID showing a government number is proof.",
+       "back": "Fact: numbers can be spoofed. OSFI says its own numbers have been spoofed by scammers."
+      },
+      {
+       "front": "Myth: MFA makes awareness training unnecessary.",
+       "back": "Fact: attackers trick people into reading out one-time codes. Controls and awareness work together."
+      },
+      {
+       "front": "Myth: phishing tests are only about catching people out.",
+       "back": "Fact: B-13 expects testing to measure awareness and whether reporting tools work, so the bank can improve."
+      },
+      {
+       "front": "Myth: OSFI may call the front line for customer lists.",
+       "back": "Fact: OSFI says it does not ask for personal or confidential information by phone, email or fax."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A phishing simulation shows few clicks but very few reports. Under B-13 section 3.1.7, what does this tell the bank?",
+     "options": [
+      "The program is complete, because a low click rate is the only measure",
+      "Awareness is improving, but the effectiveness of reporting processes and tools also needs work",
+      "Reporting is optional, so the result needs no action",
+      "The bank should stop testing to avoid annoying staff"
+     ],
+     "answer": 1,
+     "explanation": "Section 3.1.7 expects regular testing of both employees' awareness and the effectiveness of their reporting processes and tools. Low reporting is a gap to fix."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 2 take-aways",
+     "items": [
+      "B-13 section 3.1.7: encourage reporting, create awareness of attacks aimed at employees, customers and third parties, and regularly test employees.",
+      "Authority, urgency, secrecy and an unusual request together mean stop, verify through your own channel and report.",
+      "OSFI warns that scammers impersonate its staff and spoof its numbers; OSFI does not ask for personal information by phone, email or fax.",
+      "Payment detail changes are verified with a known contact, never through the message that asked for the change.",
+      "MFA, least privilege, access attestation and monitoring back up people; they do not replace awareness."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Recall the last suspicious message or call you received at work. Did you report it? What would make reporting faster for you and your team?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "ca-cy-s2-q1",
+     "question": "Which three expectations make up B-13 section 3.1.7 on cyber awareness?",
+     "options": [
+      "Encourage reporting, create awareness of attack scenarios and regularly test employees",
+      "Train the board every year, publish a written cyber policy and collect a signed attestation from every member of staff",
+      "Hire a vendor, buy filtering software and report click rates to OSFI",
+      "Block personal email, ban USB devices and lock screens after one minute"
+     ],
+     "answer": 0,
+     "explanation": "Section 3.1.7 asks the bank to enable and encourage reporting, create awareness of attack scenarios aimed at employees, customers and third parties, and regularly test employees' awareness and reporting tools.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s2-q2",
+     "question": "A caller with an Ottawa number says he is from OSFI and asks a branch officer for a list of customers affected by an outage. What should the officer do?",
+     "options": [
+      "Email the list to the address the caller provides, for a written record",
+      "Ask the caller for his OSFI employee number, then share the list",
+      "Read out the list, since OSFI is the bank's supervisor",
+      "Decline, take no data, and pass the contact to compliance and the security team as a likely impersonation"
+     ],
+     "answer": 3,
+     "explanation": "OSFI warns that people impersonate its employees and spoof real OSFI numbers, and says it does not ask for personal or confidential information by phone, email or fax. An employee number given by the caller proves nothing.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s2-q3",
+     "question": "An email from a supplier asks Boreal Harbour to send today's payment to a new account. What is the safest verification?",
+     "options": [
+      "Call the supplier on the number already held in the vendor file",
+      "Reply to the email and ask the supplier to confirm",
+      "Check that the invoice number in the email is correct",
+      "Call the phone number shown in the signature block of the new email to confirm the change"
+     ],
+     "answer": 0,
+     "explanation": "Verification must use a channel the bank already trusts. A reply or the number in the suspicious email may reach the attacker, and a correct invoice number can come from a compromised mailbox.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s2-q4",
+     "question": "Why does B-13 expect the bank to test the effectiveness of reporting processes and tools, not only employees' awareness?",
+     "options": [
+      "Because tests of tools are cheaper than tests of people",
+      "Because spotting an attack helps only if responders hear about it fast",
+      "Because OSFI scores the design of each bank's phishing report button during its supervisory reviews",
+      "Because reporting tools replace the need for training"
+     ],
+     "answer": 1,
+     "explanation": "Reports let the security team block a campaign and warn others. B-13 links awareness to working reporting processes and tools; it does not grade button design.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s2-q5",
+     "question": "Which message shows the classic social engineering pattern of authority, urgency and secrecy?",
+     "options": [
+      "'IT will update laptops on Saturday; no action is needed from you'",
+      "'Your training module is due next month in the learning portal'",
+      "'This is the CEO. I need gift cards bought within the hour; don't tell anyone'",
+      "'The branch will open late on Monday because of the holiday'"
+     ],
+     "answer": 2,
+     "explanation": "The CEO message combines a claim of authority, time pressure and a request for secrecy plus an unusual payment method. The other messages are routine notices that ask for nothing risky.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s2-q6",
+     "question": "A colleague asks you to read out the one-time code your phone just received so she can 'finish setting up your account'. What is the right response?",
+     "options": [
+      "Share it only if she is in your own department",
+      "Share it, because one-time codes expire within minutes and so carry no real risk to the account",
+      "Refuse, since the code defeats MFA, and report the request",
+      "Share it, then change your password the next day"
+     ],
+     "answer": 2,
+     "explanation": "One-time codes are a factor of authentication; anyone who has it can complete a sign-in. Attackers often ask for codes by posing as colleagues or IT. Expiry does not help if the code is used at once.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s2-q7",
+     "question": "Which control does B-13 list among identity and access expectations to limit the damage from a compromised employee account?",
+     "options": [
+      "Sharing one service password across the team for convenience",
+      "Turning off logging to reduce storage costs",
+      "Enforcing least privilege so each account has only the access its role needs",
+      "Giving all staff administrator rights so they can fix problems on their own machines without waiting"
+     ],
+     "answer": 2,
+     "explanation": "B-13 section 3.2.7 suggests least privilege, regular access attestation, MFA, secure vaulting of privileged credentials and logging and monitoring. Broad admin rights and shared passwords widen the damage.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s2-q8",
+     "question": "Boreal Harbour's call-centre vendor handles customer calls. Under B-13 section 3.1.7, how should the vendor's staff be treated?",
+     "options": [
+      "As customers who should receive the bank's marketing alerts",
+      "As relevant third parties to make aware and encourage to report",
+      "As OSFI's direct responsibility rather than the bank's",
+      "As outside B-13 entirely, since they are not bank employees and work under their own employer's policies"
+     ],
+     "answer": 1,
+     "explanation": "Section 3.1.7 names relevant third parties alongside employees and customers. The bank uses its contract and oversight to bring them into awareness and reporting.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s2-q9",
+     "question": "After a phishing test, the security team learns that one team clicked twice as often as others. What is the best next step under the awareness loop?",
+     "options": [
+      "Discipline every person who clicked and end the program",
+      "Report the names of the team members who clicked to OSFI's Technology Risk Division as a cyber incident",
+      "Give that team targeted training on the lures it fell for and test again later",
+      "Stop testing that team so that results look better"
+     ],
+     "answer": 2,
+     "explanation": "Testing exists to find and fix weak spots. Targeted education and retesting improve awareness; hiding results or punishing everyone discourages reporting. Phishing tests are not reported to OSFI as incidents.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s2-q10",
+     "question": "Where does OSFI tell people to report scam contacts that falsely use OSFI's name?",
+     "options": [
+      "The Canadian Anti-Fraud Centre",
+      "The Bank of Canada's payments desk",
+      "The Office of the Superintendent's legal department",
+      "The Financial Consumer Agency of Canada"
+     ],
+     "answer": 0,
+     "explanation": "OSFI's Scams and fraud page urges people to report such contacts to the Canadian Anti-Fraud Centre, jointly managed by the RCMP, the Competition Bureau and the Ontario Provincial Police. Inside a bank, staff also report to their security team.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Incidents: detect, respond and report to OSFI within 24 hours",
+   "stage": "The Signal Fire",
+   "summary": "How B-13 expects incidents to be detected, classified, contained and learned from, which technology and cyber incidents OSFI's advisory treats as reportable, and how the initial report and follow-up updates work.",
+   "minutes": 50,
+   "objectives": [
+    "Describe B-13's expectations for incident management, detection, triage, response and root cause analysis",
+    "Apply the characteristics in OSFI's advisory to decide whether an incident is reportable",
+    "State who receives an OSFI incident report, in what form and within what time",
+    "Explain follow-up updates, the post-incident review and the consequences of failing to report"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Friday night, 11:52 pm",
+     "setting": "Security operations centre, Toronto, on a video bridge with the on-call team.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Alerts light up: thousands of failed logins to online banking from a botnet, and some customer accounts locked or taken over.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "Our controls are blocking most attempts, but not all. Several customers report money moved out.",
+       "mood": "worried"
+      },
+      {
+       "who": "marc",
+       "text": "Is this an OSFI report? It's almost midnight on a Friday.",
+       "mood": "thinking"
+      },
+      {
+       "who": "ananya",
+       "text": "The advisory says reportable incidents go to OSFI within 24 hours, or sooner if possible. The clock doesn't stop for the weekend.",
+       "mood": "neutral"
+      },
+      {
+       "who": "adaeze",
+       "text": "And if customer information was compromised, I need to start the PIPEDA assessment too. Two different duties, one incident.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "Light the signal fire. Let's work out what we report, to whom and when.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "From alert to lessons learned",
+     "scenes": [
+      {
+       "icon": "🚨",
+       "heading": "Detect",
+       "narration": "B-13 expects continuous security logging and monitoring so malicious or unauthorised activity is spotted and alerts are raised."
+      },
+      {
+       "icon": "🧮",
+       "heading": "Triage and classify",
+       "narration": "High-risk alerts are triaged quickly. Incidents are classified by priority and severity using the bank's cyber incident taxonomy."
+      },
+      {
+       "icon": "🛡️",
+       "heading": "Respond and contain",
+       "narration": "A cyber incident response team, available on a continuous basis, contains and recovers, using playbooks aligned with crisis and communication protocols."
+      },
+      {
+       "icon": "📨",
+       "heading": "Report",
+       "narration": "If the incident is reportable under OSFI's advisory, the bank tells OSFI's Technology Risk Division and its Lead Supervisor in writing within 24 hours, or sooner."
+      },
+      {
+       "icon": "🔍",
+       "heading": "Learn",
+       "narration": "For high-severity incidents, the bank assesses impacts and does root cause analysis, then reports its post-incident review and lessons learned to OSFI."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "OSFI incident reporting, step by step",
+     "caption": "If electronic notice is not possible, the advisory allows a phone call followed by a paper submission.",
+     "items": [
+      {
+       "label": "Assess against criteria",
+       "detail": "Use the advisory's characteristics and the bank's severity levels"
+      },
+      {
+       "label": "Initial report",
+       "detail": "Within 24 hours or sooner, in writing, to the Technology Risk Division and Lead Supervisor"
+      },
+      {
+       "label": "Use the form",
+       "detail": "OSFI's technology and cyber incident reporting form; say 'information not yet available' where needed"
+      },
+      {
+       "label": "Regular updates",
+       "detail": "For example daily, until all details are provided and the incident is contained"
+      },
+      {
+       "label": "Post-incident review",
+       "detail": "After closure, report the review and lessons learned"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Reportable to OSFI?",
+     "prompt": "Using the characteristics in OSFI's advisory, sort each incident.",
+     "buckets": [
+      "Has a reportable characteristic",
+      "No reportable characteristic shown"
+     ],
+     "items": [
+      {
+       "text": "Disaster recovery plans activated after a data centre failure",
+       "bucket": 0
+      },
+      {
+       "text": "A material vendor tells the bank it is investigating a breach that may touch bank data",
+       "bucket": 0
+      },
+      {
+       "text": "A credible extortion threat to launch a DDoS attack on online banking",
+       "bucket": 0
+      },
+      {
+       "text": "An incident the bank has also reported to the Privacy Commissioner",
+       "bucket": 0
+      },
+      {
+       "text": "An incident rated priority 1 under the bank's own severity scale",
+       "bucket": 0
+      },
+      {
+       "text": "A single phishing email blocked by the filter, with no click",
+       "bucket": 1
+      },
+      {
+       "text": "A planned weekend maintenance window completed on schedule",
+       "bucket": 1
+      },
+      {
+       "text": "A cyber insurance claim has been opened for the event",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under OSFI's advisory, who must Boreal Harbour notify of a reportable technology or cyber incident?",
+     "options": [
+      "OSFI's Technology Risk Division and the bank's Lead Supervisor at OSFI",
+      "Only the Canadian Centre for Cyber Security",
+      "Only the bank's external auditor",
+      "Only the Lead Supervisor, by phone, with nothing in writing"
+     ],
+     "answer": 0,
+     "explanation": "The advisory requires written notice to both the Technology Risk Division and the Lead Supervisor, using OSFI's reporting form. Phone followed by paper is a fallback only when electronic means are unavailable."
+    },
+    {
+     "type": "concept",
+     "title": "What makes an incident reportable",
+     "body": "OSFI's advisory covers incidents that affect, or could affect, a bank's operations, including the **confidentiality, integrity or availability** of systems and information. A reportable incident has **one or more** characteristics, for example:\n\n- possible consequences for **other institutions or the Canadian financial system**;\n- impact on **payments, settlement or confirmations**, or on customer information;\n- disruption of business systems, data centre outages or loss of connectivity;\n- **disaster recovery** activated, or a vendor's disaster declaration that affects the bank;\n- growing customer impact or **imminent reputational harm**;\n- the incident team activated, or the **board or senior management** told;\n- a report to the **Privacy Commissioner**, another department or regulator, or **police**;\n- a cyber insurance claim, a high or critical internal rating, or a **breach of risk appetite**.\n\nWhen unsure, OSFI encourages notification as a precaution and consulting the Lead Supervisor."
+    },
+    {
+     "type": "story",
+     "title": "The vendor's late-night email",
+     "setting": "Third-party risk desk, Halifax. Saturday, 7:30 am.",
+     "lines": [
+      {
+       "who": "sandra",
+       "text": "Our cloud payroll provider just emailed. They're investigating a breach and can't say yet if our data was touched.",
+       "mood": "worried"
+      },
+      {
+       "who": "ananya",
+       "text": "The advisory's own examples include exactly this: a material third party is breached and impact to our data is possible.",
+       "mood": "thinking"
+      },
+      {
+       "who": "sandra",
+       "text": "Our contract requires them to notify us and give incident details we need for OSFI. B-10 expects that clause.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Good. We report what we know now, mark the rest 'information not yet available', give our best estimates and say when we expect more.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "Report now or wait for certainty?",
+     "situation": "At 9:00 am Saturday, Boreal Harbour's incident team confirms account takeovers from the botnet campaign. Some customers are locked out and the controls are failing to block new techniques. The head of digital wants to wait until Monday's root cause analysis before telling OSFI, 'so the report is complete'.",
+     "choices": [
+      {
+       "text": "Send the written initial report to the Technology Risk Division and Lead Supervisor now, mark unknown details 'information not yet available' with best estimates, and plan daily updates",
+       "outcome": "OSFI gets timely notice within 24 hours, knows what is still unknown and when more will come. This is what the advisory requires.",
+       "score": 2
+      },
+      {
+       "text": "Wait until Monday so the first report includes the full root cause",
+       "outcome": "By Monday the 24-hour window has passed. The advisory expects early notice with best estimates, not a complete report. Failing to report can lead to closer supervisory oversight.",
+       "score": 0
+      },
+      {
+       "text": "Phone the Lead Supervisor informally now and send nothing in writing until the root cause is known",
+       "outcome": "A call shows good faith, but the advisory requires written notice to both the Technology Risk Division and the Lead Supervisor. Phone first is only a fallback when electronic means are unavailable. Partly right.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Put the reporting life cycle in order",
+     "prompt": "Arrange the bank's steps for a reportable cyber incident from first to last.",
+     "steps": [
+      "Detect the activity and triage the alert",
+      "Classify severity using the bank's incident taxonomy and OSFI's criteria",
+      "Send the written initial report within 24 hours, or sooner",
+      "Provide regular updates, for example daily, until all details are given",
+      "Contain the incident, recover and close it",
+      "Report the post-incident review and lessons learned to OSFI"
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Initial report versus follow-up",
+     "caption": "Depending on severity and speed, OSFI may ask the bank to change the method and frequency of updates.",
+     "headers": [
+      "Initial notification",
+      "Subsequent reporting"
+     ],
+     "items": [
+      {
+       "label": "Timing",
+       "left": "Within 24 hours, or sooner if possible",
+       "right": "Regular, e.g. daily, or as OSFI asks"
+      },
+      {
+       "label": "Content",
+       "left": "Known facts plus best estimates; unknowns marked",
+       "right": "New information, remediation actions and plans"
+      },
+      {
+       "label": "Ends when",
+       "left": "The first written notice is sent",
+       "right": "All details are provided and the incident is resolved"
+      },
+      {
+       "label": "Afterwards",
+       "left": "Not applicable",
+       "right": "Post-incident review and lessons learned"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Incident terms",
+     "cards": [
+      {
+       "front": "Technology Risk Division",
+       "back": "The OSFI team that, with the Lead Supervisor, receives technology and cyber incident reports."
+      },
+      {
+       "front": "Lead Supervisor",
+       "back": "The OSFI supervisor assigned to the bank; consult them when unsure whether to report."
+      },
+      {
+       "front": "Information not yet available",
+       "back": "The phrase the advisory asks banks to use for details still unknown in the initial report."
+      },
+      {
+       "front": "Cyber incident taxonomy",
+       "back": "B-13's expected classification of incidents by severity, category, type and root cause."
+      },
+      {
+       "front": "Root cause analysis",
+       "back": "For high-severity incidents, an assessment of weaknesses in people, processes, technology and data."
+      },
+      {
+       "front": "Watch-listing or staging",
+       "back": "Possible supervisory consequences OSFI names for failing to report incidents as required."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "What does OSFI's advisory say may happen if a bank fails to report incidents as required?",
+     "options": [
+      "An automatic fine of a fixed amount per day of delay",
+      "Immediate loss of the bank's charter",
+      "No consequence, since reporting is voluntary",
+      "Increased supervisory oversight, such as enhanced monitoring, watch-listing or staging"
+     ],
+     "answer": 3,
+     "explanation": "The advisory says failure to report may lead to increased supervisory oversight including enhanced monitoring, watch-listing or staging. It does not set a fixed daily fine."
+    },
+    {
+     "type": "tip",
+     "title": "Reporting habits that save hours",
+     "body": "- Keep OSFI's reporting form and contacts in the incident playbook, not in one person's inbox.\n- Start a timeline at first detection; the 24-hour clock is easier to meet when facts are logged as they happen.\n- Flag early when an incident may also be a **PIPEDA breach** so the privacy office runs its assessment in parallel.\n- Make sure vendor contracts require timely incident notice and the details OSFI asks for.\n- When in doubt, talk to the Lead Supervisor: OSFI encourages precautionary notice."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 3 take-aways",
+     "items": [
+      "B-13 expects logging, detection, triage, a continuously available response team, a cyber incident taxonomy and root cause analysis.",
+      "A reportable incident may have one or more of the advisory's characteristics; when unsure, notify OSFI as a precaution.",
+      "Report in writing to OSFI's Technology Risk Division and the Lead Supervisor within 24 hours, or sooner, using OSFI's form.",
+      "Give best estimates, mark unknowns 'information not yet available', update regularly and report the post-incident review.",
+      "Failing to report can bring enhanced monitoring, watch-listing or staging; vendor contracts must support the bank's reporting."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If a serious incident started on your team's systems tonight, who would you call first, and do you know where the bank's incident playbook and OSFI reporting steps are kept?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "ca-cy-s3-q1",
+     "question": "Within what time must a federally regulated bank report a reportable technology or cyber incident to OSFI under the advisory?",
+     "options": [
+      "Within 10 business days of the incident",
+      "As soon as feasible after the board is briefed",
+      "Within 24 hours, or sooner if possible",
+      "Within 72 hours of confirming the root cause"
+     ],
+     "answer": 2,
+     "explanation": "OSFI's advisory requires initial notice within 24 hours, or sooner if possible. 'As soon as feasible' is PIPEDA's wording for breach reports to the Privacy Commissioner, not OSFI's.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s3-q2",
+     "question": "Which description matches the advisory's definition of a technology or cyber security incident?",
+     "options": [
+      "Only an attack by an external criminal group that causes financial loss",
+      "Only an event that has already been reported to law enforcement",
+      "An incident that affects, or could affect, operations, including confidentiality, integrity or availability of systems and information",
+      "Only an outage of the core banking system lasting more than a day"
+     ],
+     "answer": 2,
+     "explanation": "The definition covers actual or potential impact on operations, including confidentiality, integrity or availability. It is not limited to criminals, long outages or police reports.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s3-q3",
+     "question": "At the time of the initial OSFI report, Boreal Harbour does not yet know how many customers are affected. What should the report do?",
+     "options": [
+      "Mark it 'information not yet available', give best estimates and say when more will follow",
+      "Delay the report until the number is confirmed",
+      "Report zero affected customers until proven otherwise",
+      "Leave the field blank and send the report without comment, then correct the record once the number is final"
+     ],
+     "answer": 0,
+     "explanation": "The advisory asks banks to indicate 'information not yet available', provide best estimates and all other details, and state when more information is expected. Delay or a guess of zero would mislead.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s3-q4",
+     "question": "A material third party tells the bank it was breached and is investigating; the bank's data may be affected. How does OSFI's advisory treat this?",
+     "options": [
+      "It is reportable only after the vendor proves bank data was stolen",
+      "It is one of the advisory's examples of a reportable incident",
+      "It is the vendor's matter alone and never reportable by the bank",
+      "It is reportable only if the vendor is located outside Canada"
+     ],
+     "answer": 1,
+     "explanation": "Appendix I of the advisory lists a breach at a material third party, where impact to the bank's data is possible, as an example of a reportable incident. Impact to a third party affecting the bank is also a listed characteristic.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s3-q5",
+     "question": "After the initial report, what reporting does the advisory expect while the incident is ongoing?",
+     "options": [
+      "Monthly updates through the bank's regular supervisory meeting, with a written summary at year end",
+      "A single update when the media first reports the incident",
+      "Regular updates, for example daily, as new information becomes available",
+      "No further contact until a final report in 90 days"
+     ],
+     "answer": 2,
+     "explanation": "OSFI expects regular updates, such as daily, until all details have been provided, including remediation actions and plans. OSFI may change the method and frequency based on severity.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s3-q6",
+     "question": "The bank's email system is down and the incident team cannot send the OSFI form electronically. What does the advisory allow?",
+     "options": [
+      "Waiting until email is restored, however long it takes",
+      "Asking the vendor to notify OSFI on the bank's behalf",
+      "Posting a notice on the bank's public website instead",
+      "Notice by telephone, followed by a paper submission"
+     ],
+     "answer": 3,
+     "explanation": "A footnote in the advisory says that if electronic means are not available, telephone notification followed by a paper submission is acceptable. The bank remains responsible for notifying.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s3-q7",
+     "question": "Which of these is listed in OSFI's advisory as a characteristic of a reportable incident?",
+     "options": [
+      "The incident was caused by an employee working remotely",
+      "The incident affected a test environment that holds no live customer data and no production systems",
+      "The incident has been reported to the board of directors or senior management",
+      "The incident happened outside normal business hours"
+     ],
+     "answer": 2,
+     "explanation": "Reporting to the board or senior executive management is one of the listed characteristics. Time of day, remote work or a test system with no impact are not criteria in themselves.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s3-q8",
+     "question": "What does B-13 expect after a high-severity cyber incident?",
+     "options": [
+      "A public apology within 24 hours and no internal review",
+      "Dismissal of the staff on duty before any analysis is done",
+      "Replacement of every system involved, whatever the cause",
+      "A detailed post-incident assessment of impacts with a root cause analysis covering people, processes, technology and data"
+     ],
+     "answer": 3,
+     "explanation": "B-13 section 3.4.5 expects a post-incident assessment of direct and indirect impacts and a root cause analysis of weaknesses in people, processes, technology and data, to drive remediation and lessons learned.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s3-q9",
+     "question": "Boreal Harbour is unsure whether a moderate outage meets any of OSFI's criteria. What does the advisory suggest?",
+     "options": [
+      "Decide internally not to report, since doubt means it is minor",
+      "Consult the Lead Supervisor and notify OSFI as a precaution",
+      "Report it only to the Privacy Commissioner instead",
+      "Wait to see whether the media picks up the story"
+     ],
+     "answer": 1,
+     "explanation": "The advisory says that when in doubt, institutions should consult their Lead Supervisor, and that precautionary notification is encouraged when the criteria do not clearly fit.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s3-q10",
+     "question": "Why does B-10 expect contracts with third parties to contain incident notification provisions?",
+     "options": [
+      "So that the vendor reports its incidents directly to OSFI and the bank no longer needs to report them",
+      "So the bank can meet its own reporting duties under OSFI's incident advisory",
+      "So the bank can recover its costs from the vendor automatically",
+      "So that incidents at vendors are kept out of the bank's records"
+     ],
+     "answer": 1,
+     "explanation": "B-10 expects written agreements to let the bank comply with OSFI's Technology and Cyber Security Incident Reporting Advisory, including timely notice and incident details. The bank stays accountable for reporting.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "PIPEDA: accountability, safeguards and breaches of security safeguards",
+   "stage": "The Vault of Names",
+   "summary": "How PIPEDA's accountability and safeguards principles apply to bank staff, what counts as a breach of security safeguards, when the Privacy Commissioner and individuals must be told, and what records the bank keeps.",
+   "minutes": 50,
+   "objectives": [
+    "Explain PIPEDA's accountability principle, including responsibility for data sent to third parties and the duty to train staff",
+    "Describe the safeguards principle: physical, organisational and technological measures, staff awareness and careful disposal",
+    "Assess whether a breach creates a real risk of significant harm using PIPEDA's definition and factors",
+    "State what the report to the Commissioner, the notice to individuals and the breach record must cover"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The spreadsheet that left the building",
+     "setting": "Privacy office, Boreal Harbour Bank, Toronto. Tuesday, 10:05 am.",
+     "lines": [
+      {
+       "who": "adaeze",
+       "text": "A relationship manager emailed a spreadsheet of 2,300 mortgage customers to a personal address so she could work from home. Her personal account was then compromised.",
+       "mood": "worried"
+      },
+      {
+       "who": "liam",
+       "text": "So the data left our systems because of a shortcut, not a hacker breaking in?",
+       "mood": "thinking"
+      },
+      {
+       "who": "adaeze",
+       "text": "Either way, PIPEDA calls it a breach of security safeguards if personal information was lost, accessed or disclosed without authority because safeguards failed or were missing.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "Names, income, addresses and loan balances. That's sensitive.",
+       "mood": "worried"
+      },
+      {
+       "who": "adaeze",
+       "text": "Then the clock is running on our assessment. Welcome to the Vault of Names: today you learn to decide, report, notify and record.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "PIPEDA in four moves",
+     "scenes": [
+      {
+       "icon": "🏷️",
+       "heading": "Accountable",
+       "narration": "Under PIPEDA's first principle, the bank is responsible for personal information it controls and names someone accountable for compliance, often the chief privacy officer."
+      },
+      {
+       "icon": "🔐",
+       "heading": "Safeguarded",
+       "narration": "The safeguards principle says personal information must be protected by security safeguards matched to its sensitivity, in any format."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "Assessed",
+       "narration": "When safeguards fail, the bank decides whether it is reasonable to believe the breach creates a real risk of significant harm to an individual."
+      },
+      {
+       "icon": "📮",
+       "heading": "Reported and recorded",
+       "narration": "If it does, the bank reports to the Privacy Commissioner and notifies the people affected. Either way, it records every breach."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Accountability and safeguards side by side",
+     "caption": "PIPEDA Schedule 1, clauses 4.1 and 4.7, in our own words.",
+     "headers": [
+      "Principle 1: Accountability",
+      "Principle 7: Safeguards"
+     ],
+     "items": [
+      {
+       "label": "Core idea",
+       "left": "The bank answers for personal data it controls",
+       "right": "Protection matched to how sensitive the data is"
+      },
+      {
+       "label": "People",
+       "left": "A designated individual is accountable",
+       "right": "Employees made aware of confidentiality"
+      },
+      {
+       "label": "Third parties",
+       "left": "Contracts give comparable protection during processing",
+       "right": "Safeguards apply in any format and location"
+      },
+      {
+       "label": "Practices",
+       "left": "Procedures, complaint handling, staff training",
+       "right": "Physical, organisational and technological measures"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Which kind of safeguard?",
+     "prompt": "PIPEDA gives three kinds of protection. Sort each measure.",
+     "buckets": [
+      "Physical",
+      "Organisational",
+      "Technological"
+     ],
+     "items": [
+      {
+       "text": "Locked cabinets for paper loan files",
+       "bucket": 0
+      },
+      {
+       "text": "Restricted access to the server room",
+       "bucket": 0
+      },
+      {
+       "text": "Need-to-know access to customer records",
+       "bucket": 1
+      },
+      {
+       "text": "Background checks for staff with data access",
+       "bucket": 1
+      },
+      {
+       "text": "Encryption of customer data on laptops",
+       "bucket": 2
+      },
+      {
+       "text": "Strong passwords and multi-factor sign-in",
+       "bucket": 2
+      },
+      {
+       "text": "Clean desk rule enforced by branch managers",
+       "bucket": 1
+      },
+      {
+       "text": "Data loss prevention that blocks emails to personal accounts",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A bank sends customer data to a third-party processor. Under PIPEDA's accountability principle, who is responsible for that data?",
+     "options": [
+      "The bank remains responsible and must use contracts or other means to get comparable protection",
+      "The processor alone becomes responsible once it receives the data",
+      "The Privacy Commissioner becomes responsible for supervising the processor",
+      "Nobody, until the customer consents again to the transfer"
+     ],
+     "answer": 0,
+     "explanation": "Clause 4.1.3 says an organisation is responsible for personal information transferred to a third party for processing and must use contractual or other means to provide comparable protection."
+    },
+    {
+     "type": "concept",
+     "title": "Real risk of significant harm",
+     "body": "PIPEDA defines a **breach of security safeguards** as the loss of, unauthorised access to or unauthorised disclosure of personal information resulting from a breach of the bank's safeguards, or from a failure to set them up.\n\n**Significant harm** includes bodily harm, humiliation, damage to reputation or relationships, loss of employment, business or professional opportunities, **financial loss, identity theft**, negative effects on the **credit record** and damage to or loss of property.\n\nTo judge whether there is a **real risk**, the Act points to:\n- the **sensitivity** of the information involved; and\n- the **probability** that it has been, is being or will be misused;\n- plus any other factor set by regulation.\n\nIf it is reasonable to believe there is a real risk of significant harm, the bank must **report to the Commissioner** and **notify affected individuals**, each as soon as feasible after it determines that the breach occurred."
+    },
+    {
+     "type": "match",
+     "title": "Match the duty to its PIPEDA source",
+     "prompt": "Link each breach duty to what the law requires.",
+     "pairs": [
+      {
+       "left": "Report to the Commissioner",
+       "right": "In writing, with prescribed content, as soon as feasible when there is a real risk of significant harm"
+      },
+      {
+       "left": "Notify the individual",
+       "right": "Directly and conspicuously, with enough to understand the harm and protect themselves"
+      },
+      {
+       "left": "Notify other organisations",
+       "right": "Tell bodies that may reduce or mitigate the harm, such as a credit bureau or police"
+      },
+      {
+       "left": "Keep a breach record",
+       "right": "Record every breach, whether reportable or not, for 24 months"
+      },
+      {
+       "left": "Give records to the Commissioner",
+       "right": "Provide access to, or a copy of, breach records on request"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Report or not?",
+     "setting": "Privacy office, Tuesday, 3:30 pm.",
+     "lines": [
+      {
+       "who": "adaeze",
+       "text": "Sensitive financial data, and the personal mailbox was taken over by an unknown attacker. Probability of misuse is real.",
+       "mood": "thinking"
+      },
+      {
+       "who": "ananya",
+       "text": "And because the employee's personal account was the weak point, I'll check whether any bank systems were touched too.",
+       "mood": "neutral"
+      },
+      {
+       "who": "adaeze",
+       "text": "My conclusion: real risk of significant harm. We report to the Commissioner and notify the 2,300 customers directly. And it goes in the breach record.",
+       "mood": "proud"
+      },
+      {
+       "who": "liam",
+       "text": "My contact centre will get calls. What do we tell people?",
+       "mood": "worried"
+      },
+      {
+       "who": "adaeze",
+       "text": "What happened, when, what data, what we've done, what they can do, and who to contact. The regulations list it all.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The misdirected statement",
+     "situation": "A Montréal branch employee mails one customer's monthly statement to the wrong address. The recipient, a neighbour, calls the next day, says she opened it by mistake, and returns it unread beyond the first page. The statement shows the name, address and account balance.",
+     "choices": [
+      {
+       "text": "Log the incident with the privacy office, which assesses sensitivity and probability of misuse, records the breach and decides on notification",
+       "outcome": "The privacy office documents its reasoning. Whatever the outcome on reporting, PIPEDA requires a record of every breach, and the branch fixes the mailing error.",
+       "score": 2
+      },
+      {
+       "text": "Do nothing, since the statement came back and no harm is likely",
+       "outcome": "Even if the assessment finds no real risk of significant harm, the bank must still keep a record of every breach of security safeguards. Ignoring it breaks that duty.",
+       "score": 0
+      },
+      {
+       "text": "Immediately report it to the Commissioner without any assessment, to be safe",
+       "outcome": "Reporting is required when there is a real risk of significant harm; skipping the assessment wastes effort and still needs a record. Partly right, because it errs on the side of openness.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Breach handling at Boreal Harbour",
+     "caption": "If the breach is also a technology or cyber incident, OSFI's 24-hour reporting runs in parallel.",
+     "items": [
+      {
+       "label": "Contain",
+       "detail": "Stop the loss, recover data where possible and preserve evidence"
+      },
+      {
+       "label": "Escalate",
+       "detail": "Tell the privacy office and security team at once"
+      },
+      {
+       "label": "Assess",
+       "detail": "Sensitivity plus probability of misuse: real risk of significant harm?"
+      },
+      {
+       "label": "Report and notify",
+       "detail": "Commissioner, individuals and organisations that can reduce harm"
+      },
+      {
+       "label": "Record",
+       "detail": "Log every breach and keep the record for 24 months"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "What the notices contain",
+     "cards": [
+      {
+       "front": "Report to the Commissioner: circumstances",
+       "back": "A description of what happened and, if known, the cause."
+      },
+      {
+       "front": "Report to the Commissioner: scale",
+       "back": "The number of individuals affected or, if unknown, an approximate number."
+      },
+      {
+       "front": "Notice to individuals: steps",
+       "back": "What the bank has done to reduce harm, and what the person can do to protect themselves."
+      },
+      {
+       "front": "Notice to individuals: contact",
+       "back": "Contact details the person can use to learn more about the breach."
+      },
+      {
+       "front": "Indirect notice",
+       "back": "Allowed by public communication when direct notice could cause more harm, cause undue hardship or contact details are missing."
+      },
+      {
+       "front": "Breach record",
+       "back": "Must contain enough information for the Commissioner to verify compliance with reporting and notification duties."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A breach is assessed as not creating a real risk of significant harm. What must the bank still do under PIPEDA?",
+     "options": [
+      "Nothing at all, because only reportable breaches matter",
+      "Notify every customer of the bank as a precaution",
+      "Keep a record of the breach and provide it to the Commissioner on request",
+      "Delete all evidence of the breach after 30 days"
+     ],
+     "answer": 2,
+     "explanation": "Section 10.3 requires a record of every breach of security safeguards, and the Breach of Security Safeguards Regulations require it to be kept for 24 months after the bank determines the breach occurred."
+    },
+    {
+     "type": "tip",
+     "title": "Staff habits that stop breaches",
+     "body": "- Never send customer data to personal email or cloud accounts.\n- Check the address before you mail, email or fax customer information.\n- Share data on a need-to-know basis, even inside the bank.\n- Lock screens and files; dispose of paper in secure shredding bins.\n- Report a possible breach to the privacy office **at once**: the assessment, reporting and notice clocks start when the bank determines the breach has occurred, and fast escalation protects customers."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 4 take-aways",
+     "items": [
+      "PIPEDA makes the bank accountable for personal information it controls, including data sent to processors, and expects staff training.",
+      "Safeguards must match sensitivity and combine physical, organisational and technological measures; employees must understand confidentiality.",
+      "A breach of security safeguards is the loss of, or unauthorised access to or disclosure of, personal information because safeguards failed or were missing.",
+      "Where there is a real risk of significant harm, report to the Commissioner and notify individuals as soon as feasible; notify bodies that can reduce harm.",
+      "Record every breach for 24 months; knowingly failing to report, notify or keep records is an offence under section 28."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Which customer data do you handle every day? Name one shortcut you have seen, or been tempted to take, that could turn into a breach of security safeguards."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "ca-cy-s4-q1",
+     "question": "Under PIPEDA's safeguards principle, what should determine the level of protection given to personal information?",
+     "options": [
+      "The age of the customer, with older and more vulnerable customers always getting more protection",
+      "Whether the data is held on paper, which needs no protection",
+      "The cost of the safeguard compared with the bank's annual budget",
+      "The sensitivity of the information, along with its amount, format and storage"
+     ],
+     "answer": 3,
+     "explanation": "Clause 4.7 says safeguards must be appropriate to sensitivity, and 4.7.2 adds amount, distribution, format and storage. Information is protected regardless of format, including paper.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s4-q2",
+     "question": "Which of these does PIPEDA give as an example of an organisational safeguard?",
+     "options": [
+      "Limiting access on a need-to-know basis",
+      "Requiring strong passwords on all customer accounts",
+      "Locked filing cabinets",
+      "Encrypting files on laptops"
+     ],
+     "answer": 0,
+     "explanation": "Clause 4.7.3 gives security clearances and need-to-know access as organisational measures, locked cabinets as physical, and passwords and encryption as technological measures.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s4-q3",
+     "question": "What does PIPEDA's accountability principle say about staff training?",
+     "options": [
+      "Training is optional if the bank has a written privacy policy",
+      "Organisations must train staff on, and communicate, their privacy policies and practices",
+      "Training must be delivered by the Office of the Privacy Commissioner, not by the organisation itself, every year",
+      "Training is needed only for the designated privacy officer"
+     ],
+     "answer": 1,
+     "explanation": "Clause 4.1.4(c) requires training staff and communicating information about the organisation's policies and practices. Clause 4.7.4 adds that employees must be aware of the importance of confidentiality.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q4",
+     "question": "Which event is a breach of security safeguards under PIPEDA?",
+     "options": [
+      "A customer asks to see the personal information the bank holds about her and how it has been used",
+      "A customer withdraws consent to marketing emails",
+      "The bank updates its privacy policy and posts it on its website",
+      "A laptop holding unencrypted customer data is stolen from an employee's car"
+     ],
+     "answer": 3,
+     "explanation": "Loss of personal information resulting from a failure of the bank's safeguards is a breach of security safeguards. Access requests, policy updates and consent withdrawals are not breaches.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q5",
+     "question": "Which two factors does PIPEDA name for judging whether a breach creates a real risk of significant harm?",
+     "options": [
+      "The cost of fixing the breach and the bank's insurance cover",
+      "The sensitivity of the information and the probability it will be misused",
+      "The number of employees involved and the time of day",
+      "Whether the media has reported it and whether OSFI was told"
+     ],
+     "answer": 1,
+     "explanation": "Section 10.1(8) lists sensitivity and probability of misuse, plus any prescribed factor. Cost, media attention and OSFI reporting are not the legal test.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q6",
+     "question": "When must a bank report a breach that creates a real risk of significant harm to the Privacy Commissioner?",
+     "options": [
+      "Only once a customer files a complaint about it",
+      "As soon as feasible after the bank determines that the breach has occurred",
+      "Within 30 days, after all customers have been notified",
+      "Within 24 hours of the breach, under the same timetable as OSFI's technology and cyber incident advisory"
+     ],
+     "answer": 1,
+     "explanation": "Section 10.1(2) requires the report as soon as feasible after the organisation determines the breach occurred. The 24-hour deadline belongs to OSFI's separate incident advisory.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q7",
+     "question": "Boreal Harbour has no current contact details for 40 former customers affected by a breach. How can it notify them?",
+     "options": [
+      "By waiting until those customers return to a branch",
+      "It need not notify them at all because contact is impossible",
+      "By asking OSFI to contact them on the bank's behalf",
+      "By indirect notice, such as a public communication likely to reach them"
+     ],
+     "answer": 3,
+     "explanation": "The Breach of Security Safeguards Regulations allow indirect notice, by public communication or similar measure, when the organisation lacks contact information, when direct notice could cause further harm or would cause undue hardship.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s4-q8",
+     "question": "How long must the bank keep its record of a breach of security safeguards?",
+     "options": [
+      "24 months after the day it determines the breach occurred",
+      "Until the Commissioner closes any investigation",
+      "6 months after the breach is contained",
+      "5 years after the customer relationship ends, in line with the bank's general record retention schedule"
+     ],
+     "answer": 0,
+     "explanation": "Section 6 of the Breach of Security Safeguards Regulations requires records of every breach for 24 months after the organisation determines the breach occurred.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q9",
+     "question": "Which item must the bank's notice to an affected individual include under the regulations?",
+     "options": [
+      "A copy of the report sent to OSFI",
+      "The name of the employee who caused the breach",
+      "The bank's total annual spending on security",
+      "Steps the individual could take to reduce or mitigate the risk of harm"
+     ],
+     "answer": 3,
+     "explanation": "Section 3 of the regulations lists the circumstances, timing, data involved, steps taken by the bank, steps the individual could take and contact information. Naming staff or sharing OSFI reports is not required.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s4-q10",
+     "question": "Under section 28 of PIPEDA, which conduct can be an offence?",
+     "options": [
+      "Knowingly failing to report or notify under section 10.1, or to keep breach records",
+      "Reporting a breach that later proves to be minor",
+      "Keeping breach records for longer than the minimum period set in the Breach of Security Safeguards Regulations",
+      "Notifying customers by telephone rather than email"
+     ],
+     "answer": 0,
+     "explanation": "Section 28 makes it an offence to knowingly contravene section 10.1 or subsection 10.3(1), among others, with fines up to $10,000 on summary conviction or $100,000 on indictment. Over-reporting is not an offence.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "E-21 resilience, B-10 third parties and assessment readiness",
+   "stage": "The Long Winter Drill",
+   "summary": "How E-21 frames operational risk and resilience, critical operations, tolerances for disruption, business continuity and data risk, how B-10 governs third parties across their life cycle, and how the bank proves it meets OSFI and PIPEDA expectations.",
+   "minutes": 55,
+   "objectives": [
+    "Define operational risk, operational resilience, critical operations and tolerance for disruption as E-21 uses them",
+    "Explain E-21's training expectations for business and central functions, business continuity plans and data roles",
+    "Describe B-10's third-party life cycle and why the bank remains accountable",
+    "Assemble the evidence a supervisor or auditor expects: roles, training records, tests, incident and breach records"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The ice storm drill",
+     "setting": "Crisis management room, Montréal, with Toronto and Halifax on screen. Wednesday, 9:00 am.",
+     "lines": [
+      {
+       "who": "marc",
+       "text": "Today's exercise: an ice storm knocks out power in Montréal for three days, and our payments vendor's data centre fails over badly.",
+       "mood": "proud"
+      },
+      {
+       "who": "sandra",
+       "text": "That vendor supports our retail payments. If it's down, customers can't pay rent.",
+       "mood": "worried"
+      },
+      {
+       "who": "marc",
+       "text": "Retail payments are a critical operation. Our tolerance for disruption says how long we can go before the harm is unacceptable. Let's see if we stay inside it.",
+       "mood": "thinking"
+      },
+      {
+       "who": "ananya",
+       "text": "And a cyber-attack could cause the same outage. E-21, B-13 and B-10 all meet here.",
+       "mood": "neutral"
+      },
+      {
+       "who": "marc",
+       "text": "E-21 also expects staff to be trained on the business continuity plan, including how it is activated. So this drill is training too. Let's begin.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "E-21 in five scenes",
+     "scenes": [
+      {
+       "icon": "📘",
+       "heading": "The guideline",
+       "narration": "OSFI published final Guideline E-21 on Operational Risk Management and Resilience on 22 August 2024. Sections 1 and 2 applied at once; full adherence was expected by 1 September 2026."
+      },
+      {
+       "icon": "🧱",
+       "heading": "Risk and resilience",
+       "narration": "Operational risk is the risk of loss from people, inadequate processes and systems, or external events. Operational resilience is the ability to deliver operations, especially critical ones, through disruption."
+      },
+      {
+       "icon": "🎯",
+       "heading": "Critical operations",
+       "narration": "Banks identify their critical operations, map the people, technology, processes, facilities and third parties behind them, and set tolerances for disruption."
+      },
+      {
+       "icon": "🧪",
+       "heading": "Scenario testing",
+       "narration": "Banks test severe but plausible scenarios, such as cyber incidents, technology failures, third-party disruption and natural disasters, to see whether they stay within tolerance."
+      },
+      {
+       "icon": "🎓",
+       "heading": "Trained people",
+       "narration": "Business and central functions should give staff adequate training on operational risk and resilience, staff are trained on continuity plans, and people managing data receive training."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "matrix",
+     "title": "Risk appetite versus tolerance for disruption",
+     "caption": "E-21 keeps the two ideas apart: appetite is about choice in normal times, tolerance is about survival in a crisis.",
+     "axes": {
+      "x": "Normal operations to crisis",
+      "y": "Setting to testing"
+     },
+     "items": [
+      {
+       "label": "Risk appetite",
+       "detail": "Risk the bank willingly accepts to meet business goals"
+      },
+      {
+       "label": "Operational risk limits",
+       "detail": "Usually set lower than tolerances for disruption"
+      },
+      {
+       "label": "Tolerance for disruption",
+       "detail": "Maximum disruption the bank can withstand in a crisis"
+      },
+      {
+       "label": "Scenario testing",
+       "detail": "Checks whether critical operations stay within tolerance"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Match the E-21 term to its meaning",
+     "prompt": "Link each E-21 term to the right description.",
+     "pairs": [
+      {
+       "left": "Operational risk event",
+       "right": "An unintended outcome from operational risk, including near misses"
+      },
+      {
+       "left": "Critical operations",
+       "right": "Services whose disruption would threaten the bank's safety or harm others"
+      },
+      {
+       "left": "Tolerance for disruption",
+       "right": "The most disruption the bank can withstand under severe but plausible scenarios"
+      },
+      {
+       "left": "Crisis management team",
+       "right": "A senior group that decides and coordinates during a crisis"
+      },
+      {
+       "left": "Data risk",
+       "right": "Risk of loss from collecting, storing, using, sharing or disposing of data"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "According to the E-21 backgrounder, by when was full adherence to Guideline E-21 expected?",
+     "options": [
+      "1 September 2026",
+      "1 January 2024",
+      "13 August 2021",
+      "30 April 2023"
+     ],
+     "answer": 0,
+     "explanation": "E-21 was published on 22 August 2024. Sections 1 and 2 on operational risk management applied immediately, and full adherence was expected by 1 September 2026. 1 January 2024 is B-13's effective date."
+    },
+    {
+     "type": "concept",
+     "title": "Training duties in E-21",
+     "body": "E-21 makes training part of resilience, not an extra.\n\n- **Section 1.2, business and central functions:** they own operational risk, identify critical operations, escalate events and **provide adequate training to staff on operational risk management and resilience**.\n- **Section 4.1.2, business continuity plans:** plans set roles, invocation protocols, backup staff, staff safety, recovery targets and communications, and **staff should be trained on the plans, including how they are activated and how operations run during disruption**.\n- **Section 4.1.3, testing:** continuity tests should help senior management and staff understand their roles, and cover long, simultaneous and third-party disruptions.\n- **Section 4.7, data risk:** the data risk program should include **training for the people who manage and oversee data**, plus processes for escalating and responding to data breaches.\n\nSenior management is ultimately accountable, and internal audit gives independent assurance that controls work."
+    },
+    {
+     "type": "story",
+     "title": "The vendor in the storm",
+     "setting": "Same drill, 11:30 am.",
+     "lines": [
+      {
+       "who": "sandra",
+       "text": "The payments vendor says its backup site is fine, but its own subcontractor for network links is down too.",
+       "mood": "worried"
+      },
+      {
+       "who": "marc",
+       "text": "Subcontractors are part of B-10. We should have known that dependency when we did due diligence.",
+       "mood": "thinking"
+      },
+      {
+       "who": "sandra",
+       "text": "We did. Our contract requires them to keep and test continuity plans and to tell us about subcontractor incidents. Now we use the contingency plan.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ananya",
+       "text": "And remember: we stay accountable. OSFI doesn't accept 'the vendor did it' as an answer.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "B-10's third-party life cycle",
+     "caption": "B-10 applies to all third-party arrangements, scaled to risk and criticality; the bank remains accountable throughout.",
+     "items": [
+      {
+       "label": "Risk assessment",
+       "detail": "Judge risk and criticality before entering and periodically after"
+      },
+      {
+       "label": "Due diligence",
+       "detail": "Check the third party first and on an ongoing basis, in proportion to risk"
+      },
+      {
+       "label": "Contract",
+       "detail": "Written rights and duties: data security, audit, continuity, incident notice"
+      },
+      {
+       "label": "Monitoring",
+       "detail": "Verify performance, financial soundness and incident handling"
+      },
+      {
+       "label": "Exit or renewal",
+       "detail": "Planned or stressed exit with triggers, or reassess at renewal"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The new cloud contract",
+     "situation": "A business unit wants to sign a cloud analytics vendor next week to process customer transaction data. The vendor's standard contract has no audit rights, no incident notice clause and says nothing about subcontractors. The business head says, 'It's only analytics, legal can fix it later.'",
+     "choices": [
+      {
+       "text": "Pause signing until third-party risk assesses criticality, due diligence is done and the contract covers data security, incident notice, audit rights and subcontractors",
+       "outcome": "The bank meets B-10's life cycle and PIPEDA's accountability for data sent to processors. Signing later is cheaper than renegotiating after an incident.",
+       "score": 2
+      },
+      {
+       "text": "Sign now and add the missing clauses at the first renewal in three years",
+       "outcome": "For three years the bank cannot audit the vendor, may not learn of incidents in time to report to OSFI, and has no comparable privacy protection in contract.",
+       "score": 0
+      },
+      {
+       "text": "Sign now but forbid the vendor from receiving any data until the clauses are agreed",
+       "outcome": "This avoids immediate exposure, but due diligence and the contract gaps remain unresolved and the project stalls with no plan. Partly right.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Prepare for a supervisory review",
+     "prompt": "Put the steps for showing OSFI and auditors your cyber and resilience readiness in a sensible order.",
+     "steps": [
+      "Confirm accountable owners: CISO, privacy officer, operational risk, third-party risk",
+      "Map critical operations, dependencies and tolerances for disruption",
+      "Gather training records: awareness, role-based, continuity and data training",
+      "Collect test evidence: phishing simulations, continuity and scenario tests",
+      "Assemble incident reports to OSFI and the PIPEDA breach record",
+      "Track remediation of findings and report to senior management and the board"
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Who does what at Boreal Harbour",
+     "cards": [
+      {
+       "front": "CISO",
+       "back": "Senior officer for cyber risk under B-13; runs awareness, testing, detection and incident response."
+      },
+      {
+       "front": "Chief privacy officer",
+       "back": "PIPEDA's designated accountable individual; leads breach assessment, Commissioner reports and the breach record."
+      },
+      {
+       "front": "Head of operational resilience",
+       "back": "Coordinates E-21: critical operations, tolerances, continuity plans, scenario tests and training."
+      },
+      {
+       "front": "Third-party risk lead",
+       "back": "Runs B-10's life cycle: risk assessment, due diligence, contracts, monitoring and exit plans."
+      },
+      {
+       "front": "Internal audit",
+       "back": "Gives independent assurance that operational risk controls and processes work as designed."
+      },
+      {
+       "front": "Every employee",
+       "back": "Completes training, follows policy, protects customer data and reports suspicious activity at once."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "The numbers this quest has taught",
+     "caption": "Sources: OSFI's incident advisory, the Breach of Security Safeguards Regulations, OSFI's B-13 news release and E-21 backgrounder.",
+     "items": [
+      {
+       "label": "OSFI incident report",
+       "value": "24 hours",
+       "detail": "Initial written notice, or sooner if possible"
+      },
+      {
+       "label": "PIPEDA breach records",
+       "value": "24 months",
+       "detail": "Kept from the day the breach is determined"
+      },
+      {
+       "label": "B-13 effective",
+       "value": "1 Jan 2024",
+       "detail": "Technology and cyber risk expectations apply"
+      },
+      {
+       "label": "E-21 full adherence",
+       "value": "1 Sept 2026",
+       "detail": "Phased expectations fully in place"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which evidence best shows OSFI that the B-13 section 3.1.7 expectation is met?",
+     "options": [
+      "A copy of the security policy signed by the CISO",
+      "Records of awareness content, regular phishing tests, reporting rates and follow-up actions",
+      "The invoice for the bank's email filtering tool",
+      "A list of employees who joined during the year"
+     ],
+     "answer": 1,
+     "explanation": "Section 3.1.7 asks for awareness, encouraged reporting and regular testing of employees and of reporting tools. Evidence must show those activities and what changed as a result."
+    },
+    {
+     "type": "example",
+     "title": "Real case: OSFI's supervisory plan for 2026-2027",
+     "body": "In its **Annual Risk Outlook for fiscal year 2026-2027**, OSFI said malicious cyber activity remains a **significant and evolving threat** to the financial sector and its critical service partners, with threat actors using **advanced and AI-enabled tools** that increase the speed and scale of attacks. It named software vulnerabilities in common technology as the most persistent high-impact technology risk and flagged the **concentration and complexity of third-party providers**.\n\nOSFI said it planned **intelligence-led cyber resilience testing**, targeted cyber and technology risk reviews, monitoring of significant cyber incidents reported to it, supervisory work on readiness for the operational resilience expectations effective **1 September 2026**, and targeted work on third-party risk management.\n\n**Lesson:** B-13, E-21 and B-10 are what supervisors test against. Keep the evidence ready."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 5 take-aways",
+     "items": [
+      "E-21 separates operational risk management from operational resilience; full adherence was expected by 1 September 2026.",
+      "Banks identify critical operations, map dependencies, set tolerances for disruption and test severe but plausible scenarios.",
+      "E-21 expects staff training on operational risk and resilience, on continuity plans and their activation, and for people managing data.",
+      "B-10 covers every third-party arrangement across its life cycle, scaled to risk; the bank stays accountable.",
+      "Readiness means named owners, training and test records, OSFI incident reports, the PIPEDA breach record and tracked remediation."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Which critical operation does your work support? If it stopped for a day, what would you do in the first hour, and where is your team's continuity plan?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "ca-cy-s5-q1",
+     "question": "How does E-21 define operational resilience?",
+     "options": [
+      "The absence of any operational loss during the financial year",
+      "The risk of loss resulting from people, inadequate processes and systems, or from external events",
+      "The bank's insurance cover against cyber and technology failure",
+      "The ability to deliver operations, especially critical operations, through disruption"
+     ],
+     "answer": 3,
+     "explanation": "E-21 defines operational resilience as the ability to deliver operations, especially critical ones, through disruption. The risk of loss from people, processes and systems is the definition of operational risk.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s5-q2",
+     "question": "Which E-21 section expects business and central functions to provide adequate training to staff on operational risk management and resilience?",
+     "options": [
+      "Section 2.4.2",
+      "Section 1.2",
+      "Section 4.4",
+      "Section 3.3"
+     ],
+     "answer": 1,
+     "explanation": "Section 1.2 lists the duties of business and central functions, including adequate staff training on operational risk management and resilience. 3.3 covers scenario testing, 4.4 change management and 2.4.2 reporting.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s5-q3",
+     "question": "What does E-21 section 4.1.2 expect regarding staff and business continuity plans?",
+     "options": [
+      "Staff are trained on the plans only after a real disruption has occurred, so that the lessons are fresh and practical",
+      "Staff are trained on the plans, including activation and running operations in disruption",
+      "Only the crisis management team needs to read the plans",
+      "Plans are kept confidential from staff to prevent leaks"
+     ],
+     "answer": 1,
+     "explanation": "Section 4.1.2 says staff should be trained on business continuity plans, including their activation and how operations will be managed during disruption. Testing under 4.1.3 then builds understanding of roles.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s5-q4",
+     "question": "How does E-21 distinguish tolerance for disruption from risk appetite?",
+     "options": [
+      "Tolerance is the maximum disruption the bank can withstand in a crisis; appetite is risk it willingly accepts for business goals",
+      "They are the same measure under two different names",
+      "Tolerance applies only to cyber incidents and appetite only to credit",
+      "Appetite is set by OSFI while tolerance is set by the board"
+     ],
+     "answer": 0,
+     "explanation": "E-21 says tolerances differ from and are typically greater than risk appetite: appetite is risk willingly accepted, tolerance is the maximum disruption the bank can withstand. Operational risk limits are usually set below tolerances.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s5-q5",
+     "question": "Marc-André's team maps the retail payments operation. What should the mapping consider under E-21?",
+     "options": [
+      "Only the core banking software and its hardware",
+      "People, technology, processes, information, facilities, third parties and the links between them",
+      "Only third parties located outside Canada",
+      "Only the staff who work in the payments department"
+     ],
+     "answer": 1,
+     "explanation": "E-21 section 3.1 says mapping should view critical operations end to end and consider people, technology, processes, information, facilities, third parties and their interconnections.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s5-q6",
+     "question": "Which of these is an example of a severe but plausible scenario that E-21 lists for scenario testing?",
+     "options": [
+      "A critical third-party service disruption",
+      "A planned office redecoration",
+      "A routine monthly password change",
+      "A scheduled public holiday closure"
+     ],
+     "answer": 0,
+     "explanation": "E-21 section 3.3 gives power outages, large-scale technology failures, critical third-party disruptions, cyber incidents, natural disasters and pandemics as examples.",
+     "difficulty": 2
+    },
+    {
+     "id": "ca-cy-s5-q7",
+     "question": "Under B-10, what happens to the bank's accountability when it outsources a service to a third party?",
+     "options": [
+      "The bank keeps accountability for the outsourced activity and manages the risks",
+      "Accountability moves fully to the third party once the contract assigns the service and its risks to that party",
+      "Accountability ends once the contract is signed by legal counsel",
+      "Accountability is shared equally with OSFI"
+     ],
+     "answer": 0,
+     "explanation": "B-10's first principle says the institution is ultimately accountable for managing risks from all third-party arrangements and retains accountability for outsourced activities.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s5-q8",
+     "question": "Which E-21 expectation applies to people responsible for managing and overseeing data?",
+     "options": [
+      "They must hold a government security clearance issued before they are given access to any critical data",
+      "They are exempt from operational risk training",
+      "They must report every data change to OSFI",
+      "The data risk management program should include training programs for them"
+     ],
+     "answer": 3,
+     "explanation": "E-21 section 4.7 says the data risk management program should include training programs for the people responsible for managing and overseeing data, along with breach escalation and response processes.",
+     "difficulty": 3
+    },
+    {
+     "id": "ca-cy-s5-q9",
+     "question": "A vendor's standard contract lacks audit rights and incident notice. Which B-10 expectation does this most directly miss?",
+     "options": [
+      "Written agreements that set out rights and duties, including audit and incident notification",
+      "The need for the vendor to be a Canadian company",
+      "The need for OSFI to approve each vendor in advance",
+      "The need to pay vendors only after an annual audit"
+     ],
+     "answer": 0,
+     "explanation": "B-10 expects written agreements setting out each party's rights and responsibilities, including the right to audit and provisions that let the bank meet OSFI's incident reporting. It does not require OSFI pre-approval of vendors.",
+     "difficulty": 4
+    },
+    {
+     "id": "ca-cy-s5-q10",
+     "question": "Who provides independent assurance under E-21 that operational risk controls, policies and systems are designed and operating effectively?",
+     "options": [
+      "Internal audit or a similar function",
+      "The Canadian Anti-Fraud Centre",
+      "The business line that owns the process",
+      "The vendor that supplies the system"
+     ],
+     "answer": 0,
+     "explanation": "E-21 section 1.4 gives that role to internal audit or a similar function, reporting to senior management and the board. Business lines own and manage risk; they cannot assure themselves independently.",
+     "difficulty": 3
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "ca",
+  "programs": [
+   72,
+   73,
+   77,
+   83,
+   66,
+   84,
+   90,
+   114,
+   112
+  ],
+  "classification": "mandatory-explicit",
+  "frequency": [
+   "periodic"
+  ],
+  "regulators": [
+   "Office of the Superintendent of Financial Institutions (OSFI)",
+   "Office of the Privacy Commissioner of Canada (OPC)"
+  ],
+  "references": [
+   {
+    "title": "Guideline B-13: Technology and Cyber Risk Management",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/technology-cyber-risk-management",
+    "provision": "Sections 1.1.2 (structure, resources and training) and 3.1.7 (cyber awareness promoted and tested)",
+    "note": "OSFI expects institutions to raise awareness of cyber attack scenarios aimed at employees, customers and third parties, encourage reporting of suspicious activity, regularly test employees' awareness, and give technology and cyber staff appropriate expertise and training.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "OSFI releases new guideline for technology and cyber risk, balancing innovation with risk management",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/news/osfi-releases-new-guideline-technology-cyber-risk-balancing-innovation-risk-management",
+    "note": "News release of 13 July 2022 announcing final Guideline B-13, organised in three domains, effective 1 January 2024.",
+    "effective": "2024-01-01",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Technology and Cyber Security Incident Reporting",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/technology-cyber-security-incident-reporting",
+    "note": "Advisory requiring reportable technology or cyber incidents to be reported in writing to OSFI's Technology Risk Division and the Lead Supervisor within 24 hours, or sooner, with regular updates and a post-incident review.",
+    "effective": "2021-08-13",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Guideline E-21: Operational Risk Management and Resilience",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/operational-risk-management-resilience-guideline",
+    "provision": "Section 1.2 (business and central functions); 4.1.2 (business continuity plans); 4.7 (data risk management)",
+    "note": "OSFI expects business and central functions to give staff adequate training on operational risk management and resilience, to train staff on business continuity plans and their activation, and to have training for people who manage and oversee data.",
+    "effective": "2024-08-22",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Backgrounder: Guideline E-21, Operational Risk and Resilience",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/news/backgrounder-guideline-e-21-operational-risk-resilience",
+    "note": "Explains that sections 1 and 2 applied immediately on publication and that full adherence to the rest of E-21 was expected by 1 September 2026.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Guideline B-10: Third-Party Risk Management",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/third-party-risk-management-guideline",
+    "note": "Sets expectations for a third-party risk management framework, risk-based due diligence, contracting, monitoring, incident management and exit planning, with the institution remaining accountable.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Personal Information Protection and Electronic Documents Act (S.C. 2000, c. 5)",
+    "issuer": "Parliament of Canada (Justice Laws Website)",
+    "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/FullText.html",
+    "provision": "Sections 10.1-10.3 and 28; Schedule 1, clauses 4.1 (accountability) and 4.7 (safeguards)",
+    "note": "Accountability and safeguards principles, staff training and confidentiality awareness; report to the Commissioner and notify individuals of breaches creating a real risk of significant harm; keep a record of every breach; offences for knowing contraventions.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Breach of Security Safeguards Regulations (SOR/2018-64)",
+    "issuer": "Government of Canada (Justice Laws Website)",
+    "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-64/FullText.html",
+    "provision": "Sections 2-6",
+    "note": "Sets the content of the written report to the Commissioner and of notices to individuals, when indirect notice is allowed, and requires breach records to be kept for 24 months.",
+    "effective": "2018-11-01",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Scams and fraud",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/scams-fraud",
+    "note": "OSFI warns that people impersonate OSFI employees and spoof OSFI telephone numbers to obtain personal information, and that OSFI does not ask for such information by phone, email or fax.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "OSFI's Annual Risk Outlook - Fiscal Year 2025-2026",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/about-osfi/reports-publications/osfis-annual-risk-outlook-fiscal-year-2025-2026",
+    "note": "Ranked integrity and security as OSFI's top risk, citing constant cyber attacks, ransomware, exploited software vulnerabilities, data breaches and third-party channels.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "OSFI's Annual Risk Outlook - Fiscal Year 2026-2027",
+    "issuer": "Office of the Superintendent of Financial Institutions",
+    "url": "https://www.osfi-bsif.gc.ca/en/about-osfi/reports-publications/osfis-annual-risk-outlook-fiscal-year-2026-2027",
+    "note": "Describes malicious cyber activity as a significant and evolving threat accelerated by AI-enabled tools, and plans intelligence-led cyber resilience testing and checks of readiness for E-21.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Office of the Privacy Commissioner of Canada: guidance for businesses",
+    "issuer": "Office of the Privacy Commissioner of Canada",
+    "url": "https://www.priv.gc.ca/en/",
+    "note": "OPC oversees PIPEDA and receives breach reports; its site could not be opened from this session."
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "ca-cy-x1",
+    "question": "A foreign bank operates in Canada through a branch. Its head office says Canadian technology guidance does not reach the branch. What is OSFI's position in B-13?",
+    "options": [
+     "B-13 applies to foreign bank branches, consistent with their obligations in Canada",
+     "B-13 applies only if the branch takes retail deposits",
+     "The branch follows only its home regulator's cyber rules",
+     "B-13 never applies to branches, only to banks incorporated in Canada, so the branch follows head office rules"
+    ],
+    "answer": 0,
+    "explanation": "B-13's scope covers all FRFIs, including foreign bank branches, to the extent consistent with their Canadian requirements, with branch-specific expectations in Guideline E-4. Home-country rules do not displace it.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x2",
+    "question": "Boreal Harbour's technology and cyber strategy lists goals but no measures. Which B-13 expectation does it miss?",
+    "options": [
+     "The plan must cover exactly a five-year period",
+     "The plan must be approved by OSFI before the bank adopts it",
+     "The plan should set measurable objectives with risk indicators that are defined, monitored and reported",
+     "The plan must be published on the bank's public website"
+    ],
+    "answer": 2,
+    "explanation": "Principle 2 and section 1.2.1 expect measurable goals, measures of progress and risk indicators that are defined, measured, monitored and reported. B-13 does not require OSFI approval, publication or a fixed horizon.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x3",
+    "question": "Senior Management appoints a CISO but places the role three levels below the CIO with no access to executive meetings. Which B-13 point is at risk?",
+    "options": [
+     "The CISO must report directly to OSFI's Lead Supervisor rather than to the bank's own Senior Management",
+     "The CISO must also be the bank's chief privacy officer",
+     "Accountable technology and cyber roles should have appropriate stature and visibility",
+     "The CISO role is optional for banks of any size"
+    ],
+    "answer": 2,
+    "explanation": "Section 1.1.1 says roles such as the CISO should have appropriate stature and visibility throughout the institution. B-13 does not make the CISO report to OSFI or combine the role with privacy.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x4",
+    "question": "The technology and cyber risk management framework should be aligned with which other framework under B-13?",
+    "options": [
+     "The bank's enterprise risk management framework",
+     "The bank's marketing and brand framework",
+     "The vendor's own security framework",
+     "OSFI's internal supervisory framework"
+    ],
+    "answer": 0,
+    "explanation": "Section 1.3.1 says the technology and cyber RMF should align with the enterprise risk management framework and be refreshed using lessons such as past incidents.",
+    "difficulty": 2
+   },
+   {
+    "id": "ca-cy-x5",
+    "question": "An internal review finds that cyber policies exist but are applied differently in each province and exceptions are not tracked. Which B-13 element is weakest?",
+    "options": [
+     "The technology asset disposal standard",
+     "Policies applied consistently enterprise-wide with a process for managing exceptions",
+     "The bank's choice of software development method",
+     "The physical security of branch vaults"
+    ],
+    "answer": 1,
+    "explanation": "Section 1.3.2 lists policies and standards that are approved, regularly reviewed and consistently implemented enterprise-wide, and processes that include managing exceptions.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x6",
+    "question": "Which statement best describes how B-13 treats training for technology and cyber staff?",
+    "options": [
+     "Part of a resourced structure with the right expertise, plus a culture of risk awareness",
+     "A matter only for banks that have had a reportable incident",
+     "An activity that OSFI delivers directly to each bank's IT team",
+     "A one-off certification expected when a person is hired into the technology team, with no later expectation"
+    ],
+    "answer": 0,
+    "explanation": "Section 1.1.2 expects adequate people and resources with appropriate subject-matter expertise and training, and a culture of risk awareness throughout the institution. Training is ongoing, not one-off.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x7",
+    "question": "B-13 asks for an updated inventory of technology assets. Why does it also ask for the critical assets to be identified?",
+    "options": [
+     "Critical assets, or those attractive to attackers, need enhanced cyber protections",
+     "So the bank can sell older critical assets first",
+     "So the asset list can replace the incident taxonomy",
+     "So OSFI can approve each critical asset individually"
+    ],
+    "answer": 0,
+    "explanation": "Section 2.2.2 expects processes that identify critical assets of high importance or likely to attract threat actors, which require enhanced cyber protection, and documented interdependencies to help in incidents.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x8",
+    "question": "A developer wants to write, approve and deploy her own code change to production to save time. What does B-13 expect?",
+    "options": [
+     "Changes may skip testing if a rollback plan exists",
+     "Approval is optional for small changes made by senior developers, provided the change is logged after deployment",
+     "Segregation of duties, so no one person can develop, approve and deploy code alone",
+     "Emergency rules allow anyone to deploy without records"
+    ],
+    "answer": 2,
+    "explanation": "Section 2.5.2 expects duties to be segregated so the same person cannot develop, authorise, execute and move code between environments. Emergency changes still need defined controls under 2.5.1.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x9",
+    "question": "Which practice matches B-13's expectation on unsupported software?",
+    "options": [
+     "Monitor technology currency and replace or upgrade assets before vendor maintenance ends",
+     "Keep unsupported systems running for as long as they have not failed, then replace them after the first outage",
+     "Report each unsupported system to OSFI monthly",
+     "Patch unsupported systems with code written by users"
+    ],
+    "answer": 0,
+    "explanation": "Section 2.2.5 expects continuous monitoring of software and hardware currency and proactive plans to replace or upgrade assets before maintenance ceases.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x10",
+    "question": "Boreal Harbour's awareness program covers employees only. Under B-13 section 3.1.7, what is missing?",
+    "options": [
+     "Monthly reports of every employee's test result to OSFI",
+     "A ban on employees using the bank's email system",
+     "Mandatory cyber insurance for all staff members",
+     "Awareness of attack scenarios aimed at customers and relevant third parties, and encouragement for them to report"
+    ],
+    "answer": 3,
+    "explanation": "Section 3.1.7 extends awareness and reporting to customers and relevant third parties, not just employees. It does not require individual results to be sent to OSFI.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x11",
+    "question": "A contact centre agent gets a call from someone claiming to be an OSFI examiner who needs a customer's account history urgently. The caller ID shows a real OSFI number. What is correct?",
+    "options": [
+     "Ask the caller to repeat the request by fax and then comply",
+     "Share the history, since a real OSFI number proves who is calling",
+     "Share only the last three months of transactions to limit risk",
+     "Treat it as a likely impersonation; OSFI says it does not ask for personal information by phone and its numbers have been spoofed"
+    ],
+    "answer": 3,
+    "explanation": "OSFI's Scams and fraud page says legitimate OSFI numbers have been spoofed and that OSFI does not ask for personal or confidential information by telephone, email or fax. Moving to fax changes nothing.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x12",
+    "question": "Which behaviour does B-13's awareness section most want every employee to show after spotting a phishing email?",
+    "options": [
+     "Report it through the bank's reporting process so responders can act",
+     "Delete it quietly so it cannot be clicked later",
+     "Reply to the sender to tell them the attempt failed",
+     "Forward it to colleagues so that they can also see it"
+    ],
+    "answer": 0,
+    "explanation": "Section 3.1.7 expects the bank to enable and encourage reporting of suspicious activity and to test reporting processes. Forwarding spreads the lure and replying confirms a live address.",
+    "difficulty": 2
+   },
+   {
+    "id": "ca-cy-x13",
+    "question": "Finance receives an email from the CFO's real mailbox asking for an urgent wire to a new supplier, marked confidential. What makes this especially dangerous?",
+    "options": [
+     "A compromised real mailbox passes sender checks, so verify through another channel",
+     "Emails from executives are always genuine and need no checks",
+     "Emails marked confidential are automatically encrypted by the bank's mail system and are therefore always safe to act on",
+     "Wires to new suppliers are blocked by the payment system anyway"
+    ],
+    "answer": 0,
+    "explanation": "Business email compromise often uses a real but compromised mailbox, so the sender address looks perfect. Verification through a known, separate channel is the defence.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x14",
+    "question": "Where does B-13 expect multi-factor authentication to be implemented, where feasible?",
+    "options": [
+     "Only on the CEO's personal devices",
+     "Only on systems hosted outside Canada",
+     "Only for staff who failed a phishing test",
+     "Across external-facing channels and privileged accounts, for customers, employees and third parties"
+    ],
+    "answer": 3,
+    "explanation": "Section 3.2.7 suggests MFA across external-facing channels and privileged accounts for customers, employees and third parties, alongside least privilege and privileged access management.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x15",
+    "question": "Access reviews show that staff who moved roles kept their old system access for years. Which B-13 identity practice was missing?",
+    "options": [
+     "Security configuration baselines for firewalls",
+     "Static and dynamic application scanning",
+     "Physical access cards for the data centre",
+     "Regular attestation of access under the principle of least privilege"
+    ],
+    "answer": 3,
+    "explanation": "Section 3.2.7 lists least privilege and regular attestation of access. Unreviewed access lets a compromised account reach far more than the job requires.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x16",
+    "question": "A phishing simulation finds that the report button in the mobile mail app does not work. How does this relate to B-13 section 3.1.7?",
+    "options": [
+     "It does not matter, since only click rates count",
+     "It must be reported to OSFI's Technology Risk Division as a technology incident within 24 hours",
+     "It shows staff should stop reading email on mobile devices",
+     "Testing reporting tools is part of 3.1.7, so fix the defect and retest"
+    ],
+    "answer": 3,
+    "explanation": "Section 3.1.7 expects regular testing of employees' awareness and of the effectiveness of reporting processes and tools. A broken tool is a finding to fix; it is not in itself a reportable incident.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x17",
+    "question": "Why does B-13 expect background checks, where feasible, for people granted access to the bank's systems or data?",
+    "options": [
+     "Because background checks remove the need for access controls",
+     "Because PIPEDA bans banks from hiring anyone into any role without first completing a criminal record check",
+     "Because OSFI must clear every employee personally",
+     "To manage insider risk in line with how critical and sensitive the assets are"
+    ],
+    "answer": 3,
+    "explanation": "Section 3.2.7 suggests appropriate background checks, where feasible, commensurate with asset criticality and classification. OSFI does not clear employees itself.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x18",
+    "question": "A ransomware gang emails a credible threat to launch a DDoS attack on online banking unless paid in Bitcoin. No attack has started. Is this reportable under OSFI's advisory?",
+    "options": [
+     "Yes; a credible extortion threat is one of the advisory's examples of a reportable incident",
+     "Only if the bank decides to pay the ransom",
+     "No; nothing is reportable until systems are actually disrupted",
+     "No; extortion is a police matter only, never an OSFI matter"
+    ],
+    "answer": 0,
+    "explanation": "Appendix I of the advisory includes an extortion threat that is credible and could disrupt a critical online service. Potential impact is enough.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x19",
+    "question": "Boreal Harbour's internal scale rates an incident Tier 2. What does the advisory say?",
+    "options": [
+     "Internal ratings are irrelevant to OSFI reporting",
+     "Tier 2 incidents go to the Privacy Commissioner instead",
+     "Only Tier 1 incidents can ever be reportable",
+     "An incident ranked high or critical, or priority/severity tier 1 or 2 internally, may be reportable"
+    ],
+    "answer": 3,
+    "explanation": "Among the listed characteristics is an incident assessed internally as high or critical, or ranked priority, severity or tier 1 or 2. Banks should define these levels in their incident framework.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x20",
+    "question": "Which pair of OSFI recipients and format matches the advisory's initial notification requirement?",
+    "options": [
+     "OSFI's public inquiries line, by web chat",
+     "The Lead Supervisor only, raised orally at the next quarterly supervisory meeting with the bank",
+     "Technology Risk Division and Lead Supervisor, in writing on OSFI's form",
+     "Superintendent's office only, by an informal phone call"
+    ],
+    "answer": 2,
+    "explanation": "The advisory requires written notice to both the Technology Risk Division and the Lead Supervisor using the Technology and Cyber Incident Reporting Form, within 24 hours or sooner.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x21",
+    "question": "After containment and closure of a major outage, what does the advisory expect the bank to report to OSFI?",
+    "options": [
+     "A list of staff disciplined for the incident",
+     "Only the final cost of the outage",
+     "Nothing further, since the incident is closed",
+     "Its post-incident review and lessons learned"
+    ],
+    "answer": 3,
+    "explanation": "The advisory expects the bank, after containment, recovery and closure, to report on its post-incident review and lessons learned.",
+    "difficulty": 2
+   },
+   {
+    "id": "ca-cy-x22",
+    "question": "An outage is reported to the Canadian Centre for Cyber Security and to the police, but the bank's team says OSFI need not be told because impact was modest. How does the advisory view this?",
+    "options": [
+     "Police involvement means OSFI must not be informed",
+     "Telling the Canadian Centre for Cyber Security satisfies OSFI's reporting requirement automatically and fully",
+     "Reporting to another department or to police is itself a reportable characteristic",
+     "Modest incidents are never reportable, whatever else happened"
+    ],
+    "answer": 2,
+    "explanation": "The advisory lists reporting to the Privacy Commissioner, another federal department such as the Cyber Centre, other regulators or law enforcement as reportable characteristics. One report does not replace another.",
+    "difficulty": 5
+   },
+   {
+    "id": "ca-cy-x23",
+    "question": "Which B-13 expectation helps the bank's forensic investigation after a significant cyber incident?",
+    "options": [
+     "Deleting logs weekly to reduce storage costs",
+     "Keeping logs only on each individual server",
+     "Continuous, centralised security logging with minimum retention periods",
+     "Logging only successful logins, not failures"
+    ],
+    "answer": 2,
+    "explanation": "Section 3.3.1 expects continuous security logging, central tools to aggregate and correlate logs, and minimum retention so investigations are not limited by missing or scattered logs.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x24",
+    "question": "During a fast-moving cyber attack, OSFI asks Boreal Harbour to send updates twice a day by phone and in writing. Is that consistent with the advisory?",
+    "options": [
+     "No; the bank decides alone how often to update",
+     "Yes, but only if the board has approved the change",
+     "Yes; OSFI may change the method and frequency of updates depending on severity, impact and velocity",
+     "No; the advisory fixes updates at once a week"
+    ],
+    "answer": 2,
+    "explanation": "The advisory says OSFI may request changes to the method and frequency of subsequent updates depending on severity, impact and velocity, beyond the example of daily updates.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x25",
+    "question": "Which statement about the relationship between OSFI's incident advisory and B-13 is accurate?",
+    "options": [
+     "The advisory replaced B-13's whole cyber security domain",
+     "B-13 sets the 24-hour reporting deadline and the advisory simply repeats it for foreign bank branches",
+     "They apply to different kinds of institutions",
+     "B-13 sets incident management expectations; the advisory sets how to notify OSFI"
+    ],
+    "answer": 3,
+    "explanation": "The advisory says it covers OSFI's reporting requirements and does not give guidance on incident management frameworks; B-13 sections 2.7 and 3.4 set those management expectations.",
+    "difficulty": 5
+   },
+   {
+    "id": "ca-cy-x26",
+    "question": "A cyber incident team wants a cyber incident taxonomy. Which classifications does B-13 expect it to include?",
+    "options": [
+     "Department, cost centre and budget code",
+     "Severity, category, type and root cause",
+     "Customer age, province and product type",
+     "Vendor name, contract value and renewal date"
+    ],
+    "answer": 1,
+    "explanation": "Section 3.4.2 expects a cyber incident taxonomy with severity, category, type and root cause classification to support response, management and reporting.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x27",
+    "question": "A breach exposes customers' names and branch hours of visits, with no evidence of access by anyone outside the bank. How should the privacy office approach reporting?",
+    "options": [
+     "Report automatically, because every breach must go to the Commissioner",
+     "Assess sensitivity and likely misuse for a real risk of significant harm, and record it either way",
+     "Notify only OSFI, because federally regulated banks report every privacy breach to their prudential supervisor instead",
+     "Do nothing, because names are never personal information"
+    ],
+    "answer": 1,
+    "explanation": "Reporting to the Commissioner depends on a reasonable belief that the breach creates a real risk of significant harm, judged by sensitivity and probability of misuse. Every breach must still be recorded under section 10.3.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x28",
+    "question": "Which list is entirely within PIPEDA's description of significant harm?",
+    "options": [
+     "Financial loss, identity theft and negative effects on the credit record",
+     "Loss of loyalty points and slower branch service",
+     "Higher interest rates on all of the customer's products and a lower limit on the customer's credit card",
+     "Inconvenience from changing a password and a delayed email"
+    ],
+    "answer": 0,
+    "explanation": "Section 10.1(7) lists bodily harm, humiliation, damage to reputation or relationships, loss of opportunities, financial loss, identity theft, negative effects on the credit record and loss of property.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x29",
+    "question": "A breach report to the Commissioner is being drafted. Which item is required content under the Breach of Security Safeguards Regulations?",
+    "options": [
+     "The salaries of the employees involved",
+     "The bank's share price on the day of the breach",
+     "The full text of every affected customer record",
+     "The number of individuals affected or, if unknown, an approximate number"
+    ],
+    "answer": 3,
+    "explanation": "Section 2 of the regulations lists circumstances and cause, timing, the information involved, the number affected or an approximation, steps taken, steps to notify, and a contact person.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x30",
+    "question": "Direct notice to a group of affected customers would likely put them at further risk. What do the regulations allow?",
+    "options": [
+     "Notifying only the customers' employers instead",
+     "Skipping notice entirely without any record",
+     "Indirect notice, by public communication or a similar measure likely to reach them",
+     "Waiting until the Commissioner gives permission to notify"
+    ],
+    "answer": 2,
+    "explanation": "Section 5 allows indirect notice when direct notice is likely to cause further harm, would cause undue hardship, or the bank lacks contact details. Indirect notice is a public communication or similar measure.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x31",
+    "question": "Boreal Harbour notifies customers of a breach involving their card numbers. Under section 10.2, whom else must it notify?",
+    "options": [
+     "The customers' family members and emergency contacts listed in the bank's files, so they can watch for fraud",
+     "Only its external auditor, at the next annual audit",
+     "Any organisation or government body that may be able to reduce or mitigate the harm",
+     "Every other Canadian bank, as a matter of course"
+    ],
+    "answer": 2,
+    "explanation": "Section 10.2 requires a notifying organisation to notify other organisations or government institutions that may be able to reduce or mitigate the harm, or as prescribed. It also permits limited disclosure to them for that purpose.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x32",
+    "question": "The privacy office records a breach but notes only 'misdirected email, closed'. Why is this record weak under the regulations?",
+    "options": [
+     "Records are only needed for breaches reported to the Commissioner",
+     "The record must contain enough information for the Commissioner to verify compliance with reporting and notification duties",
+     "Records must be kept on paper and signed by the CEO",
+     "Records must be published on the bank's website"
+    ],
+    "answer": 1,
+    "explanation": "Section 6(2) of the regulations requires the record to contain any information enabling the Commissioner to verify compliance with subsections 10.1(1) and (3). A one-line note does not show the reasoning.",
+    "difficulty": 5
+   },
+   {
+    "id": "ca-cy-x33",
+    "question": "A relationship manager emails a customer list to her personal account to work at home. Which PIPEDA safeguards point most directly applies to her behaviour?",
+    "options": [
+     "Organisations must publish the name of their privacy officer",
+     "Employees must be made aware of the importance of keeping personal information confidential",
+     "Individuals may access the information an organisation holds about them and challenge its accuracy and completeness",
+     "Organisations must identify purposes at or before collection"
+    ],
+    "answer": 1,
+    "explanation": "Clause 4.7.4 requires organisations to make employees aware of confidentiality; her action also shows a missing organisational and technological safeguard. Openness, access and purpose clauses are other principles.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x34",
+    "question": "Under PIPEDA, what is the maximum fine for an organisation convicted on indictment of knowingly failing to keep breach records?",
+    "options": [
+     "$20,000,000",
+     "$100,000",
+     "$1,000,000",
+     "$10,000"
+    ],
+    "answer": 1,
+    "explanation": "Section 28 sets a fine of up to $10,000 on summary conviction and up to $100,000 on indictment for knowing contraventions of sections 10.1 and 10.3(1), among others.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x35",
+    "question": "When E-21 was published on 22 August 2024, which parts were institutions expected to adhere to immediately?",
+    "options": [
+     "Only the definitions in the introduction",
+     "None; everything was delayed to 2026",
+     "The operational risk management expectations in sections 1 and 2",
+     "The whole guideline at once, including every resilience, continuity, crisis and data risk section"
+    ],
+    "answer": 2,
+    "explanation": "OSFI's backgrounder says sections 1 (governance) and 2 (operational risk management) applied immediately, with phased implementation of the rest and full adherence by 1 September 2026.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x36",
+    "question": "A business unit says it owns operational risk but that staff training on resilience is the risk function's job. What does E-21 say?",
+    "options": [
+     "Training on resilience is optional under E-21",
+     "Business and central functions should provide adequate training to staff on operational risk management and resilience",
+     "Only the independent risk function may train business staff",
+     "OSFI provides all resilience training to bank staff"
+    ],
+    "answer": 1,
+    "explanation": "Section 1.2 places the training expectation on business and central functions, alongside identifying critical operations and managing risk within tolerances. Risk functions oversee and challenge under 1.3.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x37",
+    "question": "Which pair of scenarios should business continuity tests include under E-21 section 4.1.3?",
+    "options": [
+     "Long-duration disruptions and disruptions involving critical third parties",
+     "Only short disruptions during business hours",
+     "Only scenarios with no third-party involvement",
+     "Only scenarios the bank has already experienced"
+    ],
+    "answer": 0,
+    "explanation": "Section 4.1.3 says tests should consider severe but plausible circumstances, including long, simultaneous and critical third-party disruptions.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x38",
+    "question": "A key risk indicator for payment system availability approaches its limit. What does E-21 expect?",
+    "options": [
+     "An escalation protocol that warns and prompts management action to mitigate the risk",
+     "Immediate notice to the Privacy Commissioner",
+     "Removal of the indicator so the dashboard stays green",
+     "No action until the limit has actually been breached for a full month, so that a trend can be confirmed first"
+    ],
+    "answer": 0,
+    "explanation": "Section 2.3.2 says leading and lagging indicators should have escalation protocols warning when risk levels approach or exceed limits, prompting management action.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x39",
+    "question": "Before signing with a new critical vendor, which B-10 step should come first?",
+    "options": [
+     "Skip due diligence if the vendor is well known",
+     "Assess the risk and criticality of the arrangement and carry out due diligence",
+     "Sign the contract and then decide whether the vendor is critical",
+     "Ask OSFI to perform due diligence on the bank's behalf"
+    ],
+    "answer": 1,
+    "explanation": "B-10 principles 3 and 4 expect risk assessment and due diligence before entering an arrangement, proportionate to risk and criticality, and on an ongoing basis.",
+    "difficulty": 3
+   },
+   {
+    "id": "ca-cy-x40",
+    "question": "A critical vendor relies on its own subcontractor for network links. What does B-10 expect of the bank?",
+    "options": [
+     "Sign a direct contract with every subcontractor",
+     "Identify, monitor and manage risks from the vendor's subcontracting arrangements",
+     "Ignore subcontractors, since the bank has no contract with them and the vendor carries all of that risk",
+     "Ask the subcontractor to report incidents to OSFI directly"
+    ],
+    "answer": 1,
+    "explanation": "B-10 principle 5 makes the institution responsible for identifying, monitoring and managing risk from its third parties' subcontracting, and understanding those practices before entering the arrangement.",
+    "difficulty": 4
+   },
+   {
+    "id": "ca-cy-x41",
+    "question": "A cyber attack on a vendor exposes Boreal Harbour customer data and disrupts payments. Which combination of duties applies?",
+    "options": [
+     "Only PIPEDA, because personal information was involved",
+     "OSFI incident reporting within 24 hours, a PIPEDA breach assessment, and E-21 and B-10 continuity and vendor response",
+     "Only the vendor's duties, because the attack happened there",
+     "Only E-21, because payments were disrupted"
+    ],
+    "answer": 1,
+    "explanation": "Impact through a third party is a reportable characteristic for OSFI; exposed personal data needs a PIPEDA assessment; and critical operations and vendor contingency plans engage E-21 and B-10. The bank stays accountable.",
+    "difficulty": 5
+   },
+   {
+    "id": "ca-cy-x42",
+    "question": "An internal auditor asks for proof that staff understand the business continuity plan for retail payments. Which evidence is strongest?",
+    "options": [
+     "An email from the business head confirming that every member of staff has read the plan and is ready to act",
+     "Training records on plan activation, plus continuity test results showing staff did their roles",
+     "A copy of the plan stored on the shared drive",
+     "The vendor's marketing brochure on its backup site"
+    ],
+    "answer": 1,
+    "explanation": "E-21 expects staff training on continuity plans, including activation, and tests that promote understanding of roles. Records of both show the expectation is met; a stored plan alone does not.",
+    "difficulty": 4
+   }
+  ]
+ }
+}

@@ -1,0 +1,3177 @@
+{
+ "slug": "qa-qcb-technology-risk",
+ "title": "Qatar | QCB Technology Risks, Cybersecurity and Data Protection",
+ "tagline": "Qatar Central Bank's technology risk, data protection and cloud rules in practice: awareness, the 1-hour incident report, breaches, continuity and cloud.",
+ "category": "Banking & Compliance",
+ "level": "Intermediate",
+ "sectors": [
+  "Conventional banks licensed by the Qatar Central Bank",
+  "Retail, corporate and digital banking",
+  "Information security, IT and operations",
+  "Data governance, privacy and compliance",
+  "Business continuity, risk and internal audit"
+ ],
+ "hours": 6,
+ "description": "A country-specific quest for staff of **conventional banks licensed and supervised by the Qatar Central Bank (QCB)** outside the Qatar Financial Centre. It is built on the **QCB Technology Risks Regulation for banks (January 2018)**, the **QCB Data Handling and Protection Regulation** and the **QCB Cloud Computing Regulation** (in force from 15 April 2024), with **Law No. 13 of 2016 on Personal Data Privacy Protection** covered in general terms.\n\nThe Technology Risks Regulation requires every bank to run a funded security awareness programme: information security training at induction, a refresher at least once a year that teaches staff to spot social engineering, an assessment after training, attendance and acknowledgement records, and training sessions on cyber threats for senior management and the board. It also requires all users to be trained to report incidents, fraud prevention training and business continuity training for staff with crisis roles. The Data Handling and Protection Regulation adds training on data privacy, classification, handling and protection. That is why this quest is for every employee, with extra depth for managers, IT, data and continuity teams.\n\nYou will learn who governs technology risk in the bank, how to recognise and report phishing and fraud, how to classify and protect customer data, how critical incidents reach the QCB within one hour, how data breaches are handled, and what the QCB expects for continuity and cloud.\n\nThis quest builds knowledge of Qatar's framework; it does not replace your institution's own information security, data protection and continuity policies and procedures, which you must always follow.",
+ "audience": [
+  "All employees and long-term contractors of QCB-licensed conventional banks who need induction or annual security awareness training",
+  "Branch, contact centre, card and digital banking staff who face phishing, social engineering and fraud attempts",
+  "IT, information security and incident response staff who classify, escalate and report incidents to the QCB",
+  "Data owners, data stewards and the Data Privacy Officer applying the QCB Data Handling and Protection Regulation",
+  "Business continuity, vendor, cloud and risk teams, internal auditors, senior managers and board members"
+ ],
+ "outcomes": [
+  "Explain how the QCB Technology Risks, Data Handling and Protection and Cloud Computing regulations fit together and who is accountable",
+  "Apply the security awareness duties: induction, yearly refresher, social engineering, assessment, records and board training",
+  "Recognise and report phishing, social engineering and fraud attempts through the bank's channels",
+  "Classify and handle PII, sensitive personal and sensitive financial information, with lawful bases, consent and retention",
+  "Escalate incidents so critical ones reach the QCB within 1 hour, and handle data breaches with the QCB, NCSA and Ministry of Interior",
+  "Describe the QCB's expectations for business continuity testing, cloud arrangements and the bank's yearly compliance cycle"
+ ],
+ "quest": {
+  "name": "Shield of the Doha Skyline",
+  "premise": "You have just joined the Information Security Group of Dafna Bank, a fictional conventional bank licensed by the Qatar Central Bank, with its head office in West Bay, Doha, and branches in Al Wakrah and Al Khor. The bank's yearly compliance report to the QCB is due and the awareness programme must be refreshed. With CISO Maryam Al Marri, incident manager Joseph Mwangi, Data Privacy Officer Priya Nair and business continuity head Khalid Al Naimi, clear five stages, then face the final boss: board risk committee chair Ahmed Al Sada.",
+  "badge": {
+   "name": "Qatar Cyber Shield",
+   "description": "Awarded to bank staff who can apply the QCB technology risk, data protection and cloud rules: spot attacks, protect data and report on time."
+  },
+  "color": "#5c1a33",
+  "cast": [
+   {
+    "id": "maryam",
+    "name": "Maryam Al Marri",
+    "role": "Chief Information Security Officer, your mentor",
+    "look": {
+     "skin": 2,
+     "hair": "hijab",
+     "color": "#5c1a33"
+    }
+   },
+   {
+    "id": "joseph",
+    "name": "Joseph Mwangi",
+    "role": "Incident Response Manager",
+    "look": {
+     "skin": 5,
+     "hair": "short",
+     "color": "#1d3557"
+    }
+   },
+   {
+    "id": "priya",
+    "name": "Priya Nair",
+    "role": "Data Privacy Officer",
+    "look": {
+     "skin": 4,
+     "hair": "long",
+     "color": "#6a4c93"
+    }
+   },
+   {
+    "id": "khalid",
+    "name": "Khalid Al Naimi",
+    "role": "Head of Business Continuity",
+    "look": {
+     "skin": 3,
+     "hair": "beard",
+     "color": "#2a9d8f"
+    }
+   },
+   {
+    "id": "ahmed",
+    "name": "Ahmed Al Sada",
+    "role": "Board Risk Committee Chair",
+    "look": {
+     "skin": 2,
+     "hair": "bald",
+     "color": "#343a40"
+    }
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "id": "s1",
+   "title": "Qatar's Technology Risk Rulebook: Three QCB Regulations and Who Is Accountable",
+   "stage": "The West Bay Watchtower",
+   "summary": "How the QCB Technology Risks Regulation, the Data Handling and Protection Regulation and the Cloud Computing Regulation fit together, and what the board, senior management, the CISO and every employee must do.",
+   "minutes": 45,
+   "objectives": [
+    "Describe the three QCB regulations on technology risk, data and cloud and where Law No. 13 of 2016 fits",
+    "Explain the board's cyber duties: policy, strategy, budget, risk appetite and twice-yearly indicator reviews",
+    "Explain why the Information Security Group and the CISO must be independent of IT",
+    "Name the yearly cycle: policy review, information systems audit and the compliance report to the QCB"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Day one in the Watchtower",
+     "setting": "Information Security Group, Dafna Bank head office, West Bay, Doha. 8:00 am, Sunday.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Your access badge works on the third try. The screen on the wall shows a live map of blocked attacks, and a printed QCB regulation sits on your new desk, already full of coloured tabs.",
+       "mood": "neutral"
+      },
+      {
+       "who": "maryam",
+       "text": "Welcome to Dafna Bank. I'm Maryam, the CISO. Good timing: our yearly compliance report to Qatar Central Bank is due and the awareness programme needs its annual refresh.",
+       "mood": "happy"
+      },
+      {
+       "who": "joseph",
+       "text": "Joseph, incident response. Last night someone in Al Khor clicked a fake parcel link. Nothing was lost, but I need people who know when to call me.",
+       "mood": "worried"
+      },
+      {
+       "who": "priya",
+       "text": "Priya, Data Privacy Officer. And I keep hearing that cyber rules belong to IT. Half of my data questions are about people, not servers.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "Exactly why you start here, in the Watchtower. Before any tool, you need the map: which QCB rules apply, who owns what, and what the board must sign.",
+       "mood": "proud"
+      },
+      {
+       "who": "ahmed",
+       "text": "(passing by) Ahmed Al Sada, board risk committee. Maryam, the committee wants the cyber indicators before our next meeting. Six months goes quickly.",
+       "mood": "neutral"
+      },
+      {
+       "who": "maryam",
+       "text": "It does. Let's get our new colleague ready to brief you.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Qatar's technology risk rulebook in five scenes",
+     "scenes": [
+      {
+       "icon": "🏛️",
+       "heading": "The supervisor",
+       "narration": "Qatar Central Bank licenses and supervises banks outside the Qatar Financial Centre. Its Information Security rules set out what every bank must do to manage technology and cyber risk."
+      },
+      {
+       "icon": "📘",
+       "heading": "The core regulation",
+       "narration": "The Technology Risks Regulation for banks, issued in January 2018, covers governance, people, risk, continuity, IT operations, security controls and fraud. Most of what you do day to day traces back to it."
+      },
+      {
+       "icon": "🔐",
+       "heading": "The data regulation",
+       "narration": "The Data Handling and Protection Regulation covers how all QCB-regulated financial institutions classify, use, keep, share and protect data, including customer consent and data breaches."
+      },
+      {
+       "icon": "☁️",
+       "heading": "The cloud regulation",
+       "narration": "The Cloud Computing Regulation came into force on 15 April 2024. It governs how a regulated entity selects, contracts, monitors and exits cloud services."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "The national law",
+       "narration": "Above them sits Qatar's personal data privacy law, Law Number 13 of 2016. The QCB data regulation requires personal data to be processed in line with it."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Layers that govern Dafna Bank's technology risk",
+     "caption": "Each layer must fit the one above it. Where the bank's procedure is silent, the regulation still applies.",
+     "items": [
+      {
+       "label": "Law No. 13 of 2016",
+       "detail": "Qatar's personal data privacy law, administered nationally by the National Cyber Security Agency"
+      },
+      {
+       "label": "QCB regulations",
+       "detail": "Technology Risks Regulation (2018), Data Handling and Protection Regulation, Cloud Computing Regulation (2024)"
+      },
+      {
+       "label": "Board-approved policy",
+       "detail": "Cyber security policy, strategy, budget and risk appetite approved by the board"
+      },
+      {
+       "label": "Standards and procedures",
+       "detail": "Reviewed at least yearly; acceptable use, classification, incident and continuity procedures"
+      },
+      {
+       "label": "What you do every day",
+       "detail": "Spot, protect, report: the habits the awareness programme builds"
+      }
+     ]
+    },
+    {
+     "type": "match",
+     "title": "Which regulation covers it?",
+     "prompt": "Match each topic to the QCB text that mainly governs it.",
+     "pairs": [
+      {
+       "left": "Annual security awareness refresher",
+       "right": "Technology Risks Regulation, section 2.2 on staff competency and training"
+      },
+      {
+       "left": "Customer consent records",
+       "right": "Data Handling and Protection Regulation, customer data protection section"
+      },
+      {
+       "left": "Register of cloud arrangements",
+       "right": "Cloud Computing Regulation, governance part"
+      },
+      {
+       "left": "Critical incident report within 1 hour",
+       "right": "Technology Risks Regulation, incident management section"
+      },
+      {
+       "left": "Data Privacy Officer appointment",
+       "right": "Data Handling and Protection Regulation, organisational governance"
+      },
+      {
+       "left": "Four unplanned continuity drills a year",
+       "right": "Technology Risks Regulation, business continuity section"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Which statement best describes how the QCB Data Handling and Protection Regulation relates to Law No. 13 of 2016?",
+     "options": [
+      "It requires personal data to be processed in line with the 2016 law",
+      "It replaces the 2016 law for banks in Qatar",
+      "It applies only where the 2016 law is silent",
+      "It applies only to banks inside the Qatar Financial Centre"
+     ],
+     "answer": 0,
+     "explanation": "The QCB regulation lists Law No. 13 of 2016 among the laws a financial institution must comply with and says personal data must be processed in line with it. It adds sector rules on top; it does not replace the law. QFC firms follow their own regulator."
+    },
+    {
+     "type": "concept",
+     "title": "What the board must own",
+     "body": "The Technology Risks Regulation puts cyber risk on the board's agenda, not just IT's. The board (or a board-authorised committee) must:\n\n- **approve** the cyber security function and framework, the **cyber security policy**, and the overall **strategy and budget**, with contingency built in\n- **approve a cyber risk appetite**: how much risk the bank will accept\n- have **adequate technical representation**, people with real cyber security experience, to guide it\n- ask senior management to **review the adequacy of cyber controls at least once a year** and justify any material gaps\n- **monitor cyber security indicators at least every six months**, with senior management fixing deviations\n\nThe indicators cover risks, compliance, incidents, threat level, key projects and **awareness and culture**, such as learning scores and training coverage. Your training records feed the board pack."
+    },
+    {
+     "type": "sort",
+     "title": "Board, CISO or every employee?",
+     "prompt": "Sort each duty to the person or body the QCB rules give it to.",
+     "buckets": [
+      "Board",
+      "CISO",
+      "Every employee"
+     ],
+     "items": [
+      {
+       "text": "Approve the cyber risk appetite",
+       "bucket": 0
+      },
+      {
+       "text": "Approve the cyber security strategy and budget",
+       "bucket": 0
+      },
+      {
+       "text": "Review cyber indicators at least twice a year",
+       "bucket": 0
+      },
+      {
+       "text": "Manage the security awareness programme",
+       "bucket": 1
+      },
+      {
+       "text": "Facilitate the security forum meetings",
+       "bucket": 1
+      },
+      {
+       "text": "Report suspicious emails to the security team",
+       "bucket": 2
+      },
+      {
+       "text": "Complete the yearly awareness refresher",
+       "bucket": 2
+      },
+      {
+       "text": "Sign the confidentiality agreement on joining",
+       "bucket": 2
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Who does the CISO report to?",
+     "setting": "Maryam's office, later that morning.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "Question from my team: why doesn't Maryam just report to the CIO? IT and security work together every day.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "Working together is essential. Reporting to IT is the problem. Imagine I find that an IT project skipped a security test to hit a deadline.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Then your boss would be the person who missed the test.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "That's the conflict the QCB rule removes. The Information Security Group is separate from IT, and the CISO reports to an independent governing body, not to the CIO or CTO.",
+       "mood": "proud"
+      },
+      {
+       "who": "ahmed",
+       "text": "And the board hears from the Information Security Committee directly, including how the awareness programme is going.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Key roles and bodies",
+     "cards": [
+      {
+       "front": "CISO",
+       "back": "Heads the Information Security Group, manages the awareness programme and reports to an independent body, not the IT head."
+      },
+      {
+       "front": "Information Security Group",
+       "back": "A separate function focused only on information and cyber security, segregated from the IT division that builds and runs systems."
+      },
+      {
+       "front": "Security forum",
+       "back": "Senior leaders such as the CEO, CFO, CIO and heads of HR, legal, risk, audit and operations, facilitated by the CISO."
+      },
+      {
+       "front": "Information Security Committee",
+       "back": "Reviews policies, incidents and the status of the awareness programme, and reports to the board."
+      },
+      {
+       "front": "Data Privacy Officer",
+       "back": "Required by the data regulation; advises on privacy and reports to the CEO or most senior manager."
+      },
+      {
+       "front": "Head of BCM",
+       "back": "A senior manager designated to lead business continuity, including yearly impact analysis and testing."
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The deadline and the skipped test",
+     "situation": "A digital onboarding app must launch next week. The IT head asks the Information Security Group to sign off without the planned penetration test, promising to run it after launch. You draft the reply for Maryam.",
+     "choices": [
+      {
+       "text": "Escalate through the CISO to the governing body and risk committee, setting out the risk and options such as delaying launch or limiting scope.",
+       "outcome": "Best. The independence rule exists for this moment. The decision is made by people with authority over risk, with the facts in front of them, and the bank stays inside its risk appetite.",
+       "score": 2
+      },
+      {
+       "text": "Agree, but ask IT to email a promise that the test will happen within a month.",
+       "outcome": "Partly helpful, because it creates a record, but the security function has accepted a risk it has no authority to accept and the board's risk appetite is bypassed.",
+       "score": 1
+      },
+      {
+       "text": "Sign off quietly; the app is small and IT owns the project.",
+       "outcome": "Poor. A skipped test on an internet-facing app is exactly the gap the board must know about. Security is not a rubber stamp for IT.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "cycle",
+     "title": "Dafna Bank's yearly technology risk cycle",
+     "caption": "The QCB can also audit the bank's compliance at any time.",
+     "items": [
+      {
+       "label": "Review policies",
+       "detail": "Cyber security policies, standards and procedures updated at least once a year"
+      },
+      {
+       "label": "Refresh awareness",
+       "detail": "Training content reviewed and updated at least yearly for new threats and rules"
+      },
+      {
+       "label": "Audit",
+       "detail": "Information systems audit covering infrastructure, people and processes at least yearly"
+      },
+      {
+       "label": "Report to QCB",
+       "detail": "Yearly compliance report against the regulation, signed by the board or its committee"
+      },
+      {
+       "label": "Fix the gaps",
+       "detail": "Material gaps remediated under board guidance; action plans shared with the QCB"
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "What the QCB saw in 2022",
+     "caption": "Source: QCB Financial Stability Review 2022. Figures are described, not quoted.",
+     "items": [
+      {
+       "label": "Ransomware and phishing",
+       "value": "Top threats",
+       "detail": "Named in the QCB Financial Stability Review 2022 as cyber challenges facing the financial sector"
+      },
+      {
+       "label": "Applications",
+       "value": "Most targeted layer",
+       "detail": "Security events reported by the sector concentrated on the application layer of bank environments"
+      },
+      {
+       "label": "High",
+       "value": "Banks' own view",
+       "detail": "Banks surveyed rated risk from the cyber world as very high or high"
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: what the QCB's 2022 review reported",
+     "body": "In its **Financial Stability Review 2022**, the Qatar Central Bank described the cyber challenges of that year as **ransomware, phishing and other sophisticated attacks** that needed strong detection and response.\n\nThe review explained that the financial sector reports **key risk indicators** on security events to the QCB, and that in 2022 these events concentrated on the **application layer** of bank systems. In the QCB's survey of banks, institutions rated **risk from the cyber world** as very high or high, and also counted fraud among their high operational risks.\n\n**Why it matters to you:** phishing is a people problem as much as a technology one. The regulator expects banks to measure awareness (learning scores, training coverage) because the same threats it sees across the sector arrive in your inbox."
+    },
+    {
+     "type": "check",
+     "question": "Under the QCB Technology Risks Regulation, how often must the board at least monitor the bank's cyber security indicators?",
+     "options": [
+      "At least every six months",
+      "At least once every two years",
+      "Only after a critical incident",
+      "At least once every quarter, by law"
+     ],
+     "answer": 0,
+     "explanation": "The regulation asks the board to monitor cyber security key indicators periodically, at least semi-annually, with senior management putting remedial plans in place. A yearly control adequacy review by senior management is a separate duty."
+    },
+    {
+     "type": "tip",
+     "title": "Exceptions are a board decision",
+     "body": "If the bank cannot meet a mandatory requirement, it does not quietly ignore it. It writes a **business justification**, which the **board or a board-authorised committee approves**. Gaps found in the yearly compliance review need remediation under board guidance, and where advisory items are not met, an action plan goes to the QCB. **Common mistake:** a department head 'accepting' a risk by email. That is not an approved exception."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 1 take-aways",
+     "items": [
+      "Three QCB texts work together: Technology Risks (2018), Data Handling and Protection, and Cloud Computing (in force 15 April 2024).",
+      "Personal data must also be processed in line with Law No. 13 of 2016.",
+      "The board approves cyber policy, strategy, budget and risk appetite and monitors indicators at least twice a year.",
+      "The Information Security Group is separate from IT and the CISO reports to an independent governing body.",
+      "Each year: policies reviewed, awareness refreshed, systems audited and a board-signed compliance report sent to the QCB."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Think of one security rule in your bank that people see as an 'IT thing'. Who actually owns that risk under the QCB rules, and who should hear about it if it fails?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "qa-cy-s1-q1",
+     "question": "Which QCB regulation sets the duty to give staff information security awareness training at induction and at least yearly?",
+     "options": [
+      "The Cloud Computing Regulation of 2024",
+      "Law No. 13 of 2016 on personal data",
+      "The AML/CFT Instructions for financial institutions",
+      "The Technology Risks Regulation for banks"
+     ],
+     "answer": 3,
+     "explanation": "Section 2.2 of the Technology Risks Regulation (staff competency and training) sets the awareness programme, induction training and the yearly refresher. The cloud regulation and the AML/CFT Instructions cover other topics.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s1-q2",
+     "question": "From which date did the QCB Cloud Computing Regulation enter into force?",
+     "options": [
+      "1 January 2025",
+      "15 April 2022",
+      "15 April 2024",
+      "1 January 2018"
+     ],
+     "answer": 2,
+     "explanation": "The regulation states that it enters into force on 15 April 2024. January 2018 is the date of the Technology Risks Regulation.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s1-q3",
+     "question": "Dafna Bank's IT head proposes that the CISO report to him because 'security is part of IT'. What does the Technology Risks Regulation expect?",
+     "options": [
+      "The CISO may report to the CIO in banks with small IT teams",
+      "The CISO reports to the head of HR to keep IT and security balanced",
+      "The CISO reports to the IT head as long as the board is told",
+      "The CISO reports to an independent body and has no direct reporting line to the IT head"
+     ],
+     "answer": 3,
+     "explanation": "The regulation requires a separate Information Security Group and a CISO who reports to an independent governing body without a direct relationship to the IT head, CIO or CTO, while still working closely with them.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s1-q4",
+     "question": "Which of these must the board of a QCB-licensed bank approve under the Technology Risks Regulation?",
+     "options": [
+      "Every user's access rights",
+      "The wording of each phishing simulation email",
+      "Each individual firewall rule change",
+      "The overall cyber risk appetite"
+     ],
+     "answer": 3,
+     "explanation": "The board must approve the cyber risk appetite, policy, strategy and budget. Operational items such as firewall rules and access rights are managed by management under the approved framework.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s1-q5",
+     "question": "A new board member asks what 'awareness and culture' indicators the board will see. Which pair fits the regulation's examples?",
+     "options": [
+      "Number of servers and licence costs",
+      "Learning scores and training coverage",
+      "Share price and capital adequacy ratio",
+      "Branch footfall and customer waiting times"
+     ],
+     "answer": 1,
+     "explanation": "The regulation's cyber preparedness indicators include awareness and culture, measured by things like learning scores, training coverage and awareness-related incidents.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s1-q6",
+     "question": "Dafna Bank cannot meet one mandatory requirement of the Technology Risks Regulation this year. What is the right route?",
+     "options": [
+      "Prepare a business justification approved by the board or a board-authorised committee",
+      "Leave it out of the compliance report until it is fixed",
+      "Ask the vendor to sign a letter taking over the bank's responsibility",
+      "Let the CISO accept the risk by email and close the item"
+     ],
+     "answer": 0,
+     "explanation": "Exceptions to mandatory requirements need a business justification approved by the board or its authorised committee. Hiding gaps from the compliance report or shifting responsibility to a vendor is not allowed.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s1-q7",
+     "question": "How often must the bank, at minimum, send the QCB a compliance report based on its reporting framework for the Technology Risks Regulation?",
+     "options": [
+      "Once every three years",
+      "Every month",
+      "Once a year",
+      "Only when the QCB inspects the bank"
+     ],
+     "answer": 2,
+     "explanation": "The regulation asks banks to prepare a reporting framework and submit a compliance report to the QCB at least annually, signed by the board or its authorised committee.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s1-q8",
+     "question": "An information systems audit has just finished at Dafna Bank. Under the Technology Risks Regulation, when must the next one take place at the latest?",
+     "options": [
+      "Within three years, unless the QCB asks earlier",
+      "Only when the bank replaces its core banking system",
+      "Within a year, or sooner if a change could affect security",
+      "Whenever the external auditor has spare capacity"
+     ],
+     "answer": 2,
+     "explanation": "The regulation requires an audit of information systems, covering infrastructure, people and processes, at least once a year or whenever a change may affect the bank's security.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s1-q9",
+     "question": "Priya says the QCB Data Handling and Protection Regulation only matters to the IT department. Why is she wrong?",
+     "options": [
+      "It applies only when a breach has already happened",
+      "It covers all data managed by the institution and requires training for employees",
+      "It applies only to paper records kept in branches",
+      "It covers only data held by outsourced vendors"
+     ],
+     "answer": 1,
+     "explanation": "The regulation applies to all financial institutions supervised by the QCB and to all data they manage, and it requires training and awareness for employees on privacy, classification and handling.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s1-q10",
+     "question": "Under the Technology Risks Regulation, how often must cyber security policies, standards and procedures be reviewed and updated at minimum?",
+     "options": [
+      "Every two years",
+      "Only when the QCB issues a new circular",
+      "At least once a year",
+      "Every five years"
+     ],
+     "answer": 2,
+     "explanation": "The regulation requires cyber security policies, standards and procedures to be reviewed and updated at least annually. New circulars may trigger earlier updates, but they are not the only trigger.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The Human Firewall: Awareness, Social Engineering, Acceptable Use and Fraud",
+   "stage": "The Souq of Lures",
+   "summary": "What the QCB requires of the bank's security awareness programme, how to recognise phishing, smishing and vishing, the acceptable use rules you sign up to, and the bank's fraud prevention training and customer education duties.",
+   "minutes": 50,
+   "objectives": [
+    "List the QCB requirements for the awareness programme: budget, yearly content review, induction, yearly refresher, assessment and records",
+    "Recognise social engineering through calls, SMS, email, social media and links, and report it correctly",
+    "Apply the acceptable use rules for email, the internet, software and confidential information",
+    "Explain the bank's fraud prevention training and its duty to educate customers about fraud and phishing"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The parcel that never came",
+     "setting": "Al Khor branch, Monday morning, on a video call with the Information Security Group.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "Here's what happened on Saturday. A teller got an SMS about a parcel waiting at customs, clicked the link and typed her work email and password.",
+       "mood": "neutral"
+      },
+      {
+       "who": "narrator",
+       "text": "The link led to a page that looked exactly like the bank's webmail login. Within minutes, someone tried to sign in from abroad.",
+       "mood": "worried"
+      },
+      {
+       "who": "joseph",
+       "text": "Multi-factor authentication stopped them. And she called us twenty minutes later, which is why we reset everything fast.",
+       "mood": "proud"
+      },
+      {
+       "who": "maryam",
+       "text": "She did two things wrong and one thing very right. The right thing was reporting quickly without fear.",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "How many others got the same SMS and said nothing?",
+       "mood": "worried"
+      },
+      {
+       "who": "maryam",
+       "text": "That's the question for this stage. Our awareness programme must turn every person in this bank into a sensor, not a target.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "How the QCB wants awareness to work",
+     "scenes": [
+      {
+       "icon": "💰",
+       "heading": "Funded, not optional",
+       "narration": "The bank must set up a security awareness programme and give it a proper budget to launch, run and maintain it."
+      },
+      {
+       "icon": "🆕",
+       "heading": "Day one",
+       "narration": "New employees receive information security awareness training as part of their wider induction, before habits form."
+      },
+      {
+       "icon": "🔁",
+       "heading": "Every year",
+       "narration": "Everyone receives a refresher at least once a year. The content is reviewed at least yearly for new threats, system changes and new laws."
+      },
+      {
+       "icon": "🎭",
+       "heading": "Social engineering",
+       "narration": "Staff are trained to recognise social engineering and never to disclose information that breaks bank policy, however convincing the caller."
+      },
+      {
+       "icon": "📝",
+       "heading": "Prove it worked",
+       "narration": "After training, the bank assesses whether it was effective, and keeps attendance records and each employee's acknowledgement that they received and understood it."
+      },
+      {
+       "icon": "🏛️",
+       "heading": "Up to the board",
+       "narration": "Senior management and board members also receive training sessions on cyber threats, because awareness must exist at every level."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "The awareness programme lifecycle at Dafna Bank",
+     "items": [
+      {
+       "label": "Fund",
+       "detail": "Budget approved for launching, running and maintaining the programme"
+      },
+      {
+       "label": "Update content",
+       "detail": "Reviewed at least yearly for new trends, threats, systems and rules"
+      },
+      {
+       "label": "Deliver",
+       "detail": "At induction for new joiners; refresher at least yearly for everyone, online or classroom"
+      },
+      {
+       "label": "Assess",
+       "detail": "Test effectiveness after training, for example with quizzes or simulations"
+      },
+      {
+       "label": "Record",
+       "detail": "Keep attendance and each person's acknowledgement of understanding"
+      },
+      {
+       "label": "Report",
+       "detail": "Completion and learning scores go to the security committee and the board"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "A contractor will sit in Dafna Bank's operations floor for two years with full system access. What does the QCB rule expect?",
+     "options": [
+      "Give the contractor the same security training and access to policies as staff in that role",
+      "Skip training because contractors are trained by their own firm",
+      "Give training only if the contractor asks for it",
+      "Train the contractor only after the first incident"
+     ],
+     "answer": 0,
+     "explanation": "Long-term contractors and third parties acting like staff must receive appropriate training for their role, and security material and policies must be available to relevant long-term onsite vendors and contractors."
+    },
+    {
+     "type": "concept",
+     "title": "What the training must cover",
+     "body": "The regulation lists what the awareness material must include. At Dafna Bank that means:\n\n- the bank's **security requirements** and the **legal and regulatory** rules behind them\n- **business-specific processes and controls** for your job\n- the **enforcement and disciplinary process** for breaches\n- **who to contact to report a security incident**\n- **acceptable use** of systems, internet and email\n\nThe regulation also suggests focusing on attacks that **individual action can block**, refreshing content yearly with the **latest attack techniques**, making the refresher **mandatory for all** and **monitoring completion**. Before you even start, HR has you sign terms and a **confidentiality and non-disclosure agreement**, and you only get the access your job needs (**least privilege**)."
+    },
+    {
+     "type": "sort",
+     "title": "Social engineering or normal business?",
+     "prompt": "Sort each situation: is it a likely social engineering attempt, or normal business you can handle under procedure?",
+     "buckets": [
+      "Likely social engineering",
+      "Normal business"
+     ],
+     "items": [
+      {
+       "text": "A caller claiming to be from QCB asks for a customer's OTP to 'verify' an account",
+       "bucket": 0
+      },
+      {
+       "text": "An SMS says your parcel is held and asks you to pay a small fee by link",
+       "bucket": 0
+      },
+      {
+       "text": "A gaming platform friend you have never met sends a link to 'free credits'",
+       "bucket": 0
+      },
+      {
+       "text": "An email from the CEO's private webmail asks you to buy gift cards urgently",
+       "bucket": 0
+      },
+      {
+       "text": "A customer at the counter shows ID and asks for her own balance",
+       "bucket": 1
+      },
+      {
+       "text": "The security team announces a simulation exercise on the intranet",
+       "bucket": 1
+      },
+      {
+       "text": "Your manager asks you in person to update a procedure document",
+       "bucket": 1
+      },
+      {
+       "text": "A vendor's email asks you to update their bank details today, with a new account abroad",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Acceptable use: do and don't",
+     "caption": "The bank must teach acceptable use and basic security hygiene in its awareness courses.",
+     "headers": [
+      "Do",
+      "Don't"
+     ],
+     "items": [
+      {
+       "label": "Email",
+       "left": "Use only bank email for bank work and classify messages",
+       "right": "Send bank emails from public webmail services"
+      },
+      {
+       "label": "Software",
+       "left": "Use approved software installed by IT",
+       "right": "Install or run programs of unknown origin"
+      },
+      {
+       "label": "Suspicious mail",
+       "left": "Report spam and attachments from strangers to security",
+       "right": "Open attachments from strangers to check them"
+      },
+      {
+       "label": "Sessions",
+       "left": "Log off when you finish a task",
+       "right": "Leave online sessions open at an empty desk"
+      },
+      {
+       "label": "Personal data",
+       "left": "Share only through approved channels after checks",
+       "right": "Give personal or financial details to untrusted sources"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "A call to the contact centre",
+     "setting": "Contact centre, Dafna Bank, Tuesday afternoon.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "A caller says he is from 'the central bank inspection team'. He knows the agent's name and the branch code.",
+       "mood": "neutral"
+      },
+      {
+       "who": "narrator",
+       "text": "He says a customer's account is under urgent review and asks the agent to read out the one-time password just sent to the customer's phone.",
+       "mood": "worried"
+      },
+      {
+       "who": "joseph",
+       "text": "Every detail he has could come from social media or an earlier leak. The urgency is the tell.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "And remember the QCB's own public advice: never share an OTP, and if a call seems fake, contact the organisation it claims to be from through official channels. No regulator needs a customer's OTP.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The 'QCB inspector' on line 3",
+     "situation": "You are the contact centre agent. The caller is polite, knows internal names and says the customer could lose money if you delay. He asks for the OTP within two minutes.",
+     "choices": [
+      {
+       "text": "Refuse to share anything, end the call politely, note the number and report it to the security team and your supervisor straight away.",
+       "outcome": "Best. You protect the customer, give the security team the details to warn others and follow the training on social engineering. The real QCB never asks for OTPs.",
+       "score": 2
+      },
+      {
+       "text": "Ask him for his staff number and call back on the number he gives you.",
+       "outcome": "Partly right: you slowed down. But calling back on a number the caller supplies verifies nothing. Use only official numbers you find yourself, and report the attempt.",
+       "score": 1
+      },
+      {
+       "text": "Read out the OTP because he knew your name and the branch code.",
+       "outcome": "Poor. Knowing internal details is not proof of identity. Disclosing the OTP lets the fraudster take over the customer's account.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: the QCB's 'Stay Aware' campaign",
+     "body": "Qatar Central Bank launched a national information security awareness campaign called **'Stay Aware'**, together with the **Ministry of Interior**, the **National Cyber Security Agency** and the **QFC Regulatory Authority**.\n\nThe campaign names the main channels for cyber fraud as **phone calls, social media, emails, SMS messages and links**. Its tips tell the public not to reveal personal information by phone, never to share card details or **one-time passwords**, to avoid opening links in SMS messages, to be wary of messages demanding urgent action and to contact the impersonated organisation through its official channels.\n\nIt also gives reporting routes for financial cybercrime, including a Ministry of Interior hotline and the Metrash2 app.\n\n**Why it matters to you:** customers will repeat these messages back to you. Your behaviour on the phone must match what the regulator tells them."
+    },
+    {
+     "type": "flip",
+     "title": "Lures and how to spot them",
+     "cards": [
+      {
+       "front": "Phishing email",
+       "back": "Lures you to open a link or attachment or reveal information. Check the sender address, distrust urgency, report it."
+      },
+      {
+       "front": "Smishing",
+       "back": "Phishing by SMS, often posing as banks, couriers or popular websites. Do not open the link; contact the sender officially."
+      },
+      {
+       "front": "Vishing",
+       "back": "Phishing by voice call. Callers sound official and rushed. Never disclose OTPs, passwords or card details."
+      },
+      {
+       "front": "Look-alike domain",
+       "back": "A web address one letter away from the bank's. The bank must monitor new registrations of similar domains."
+      },
+      {
+       "front": "Social media lure",
+       "back": "Messages from unknown accounts or fake friends with links, often to take over accounts or blackmail."
+      },
+      {
+       "front": "Pretexting",
+       "back": "A made-up story, such as an audit or an urgent transfer, built to make you skip a control."
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Reporting a suspicious email at Dafna Bank",
+     "prompt": "Put the steps in the right order.",
+     "steps": [
+      "Notice the warning signs: unknown sender, urgency, odd link",
+      "Do not click links or open attachments",
+      "Report it to the security team using the bank's reporting channel",
+      "Delete it once the security team has what it needs",
+      "Tell the team at once if you already clicked or typed a password"
+     ]
+    },
+    {
+     "type": "concept",
+     "title": "Fraud training and customer education",
+     "body": "Section 10 of the Technology Risks Regulation adds fraud duties that touch every front-line role:\n\n- The bank must run **training on fraud prevention practices** in various forums, delivered by the **fraud management team**. The fraud risk team itself must keep training continuously.\n- The bank must give **customers continuous fraud risk awareness**, educate them on **cyber security risks** and the danger of **sharing login credentials**, and encourage them to **report phishing emails and sites**, then act on those reports.\n- For email, the bank should give customers an address to forward suspicious messages, harden its own email and domain settings, and **inform the QCB of every phishing incident** it discovers.\n- Frauds in **merchant acquiring** must be reported to the QCB, and the bank must share data the police request when fraudulent money lands in its accounts, even if the bank is not the victim."
+    },
+    {
+     "type": "check",
+     "question": "Which team does the QCB Technology Risks Regulation say should deliver fraud prevention training to employees?",
+     "options": [
+      "The fraud management team",
+      "The external auditor",
+      "The marketing team",
+      "The board's audit committee"
+     ],
+     "answer": 0,
+     "explanation": "The regulation says training on fraud prevention practices must be conducted at various forums and undertaken by the fraud management team, which itself must train continuously."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 2 take-aways",
+     "items": [
+      "Awareness training happens at induction and at least yearly, with content reviewed every year.",
+      "Training must teach staff to recognise social engineering and never disclose information against policy.",
+      "The bank assesses effectiveness and keeps attendance and acknowledgement records.",
+      "Never share OTPs or passwords; report suspicious calls, SMS and emails at once, even if you clicked.",
+      "Fraud prevention training comes from the fraud team; customers must be educated and every phishing incident is reported to the QCB."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Which lure would most likely work on you: a rushed call, a parcel SMS or an email from a senior manager? What will you do differently next time one arrives?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "qa-cy-s2-q1",
+     "question": "A new teller joins Dafna Bank on Sunday. Under the QCB Technology Risks Regulation, when should she receive information security awareness training?",
+     "options": [
+      "As part of her wider induction programme",
+      "Only when the next yearly refresher opens",
+      "Only once she has worked for a full year",
+      "Only if she later handles customer data"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires information security awareness training for new employees as part of the wider induction programme, followed by a refresher at least yearly.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s2-q2",
+     "question": "What is the minimum frequency for the security awareness refresher for existing staff?",
+     "options": [
+      "Every quarter for all staff",
+      "Only after a reported incident",
+      "At least once every two years",
+      "At least once a year"
+     ],
+     "answer": 3,
+     "explanation": "Refresher training must be conducted at least annually. Some banks run it more often, but yearly is the floor set by the regulation.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s2-q3",
+     "question": "Dafna Bank's HR team wants to drop the post-training quiz to save time. Which QCB expectation would that break?",
+     "options": [
+      "Assessing the effectiveness of the training programme after training",
+      "Translating training into every customer's language",
+      "Sending training records to the police",
+      "Holding training only in a classroom"
+     ],
+     "answer": 0,
+     "explanation": "The regulation asks banks to perform an assessment after training to check its effectiveness, and to keep attendance records and acknowledgements. Classroom delivery is optional; online training is allowed.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s2-q4",
+     "question": "Which record must Dafna Bank keep for each employee after security awareness training, according to the regulation?",
+     "options": [
+      "A list of the websites the employee visited during training",
+      "Attendance and the employee's acknowledgement of receiving and understanding it",
+      "A copy of the employee's personal social media profile",
+      "The employee's home internet provider and router type"
+     ],
+     "answer": 1,
+     "explanation": "Attendance records and each employee's acknowledgement of having received and understood the training should be kept. Collecting unrelated personal data would breach data minimisation.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s2-q5",
+     "question": "A caller says he is from Qatar Central Bank and asks an agent for a customer's one-time password to stop a fraud. What should the agent do?",
+     "options": [
+      "Give the OTP because regulators can request any data",
+      "Give only the first three digits as a test",
+      "Refuse, end the call and report it to the security team",
+      "Transfer the call to the customer so he can ask directly"
+     ],
+     "answer": 2,
+     "explanation": "No legitimate authority needs a customer's OTP. Training must teach staff to recognise social engineering and not disclose information against policy. Reporting lets the bank warn others.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s2-q6",
+     "question": "Which item does the regulation say must be part of the security training material?",
+     "options": [
+      "Each department's annual budget",
+      "Passwords for shared test accounts",
+      "Contact details for reporting security incidents",
+      "The CISO's personal mobile number only"
+     ],
+     "answer": 2,
+     "explanation": "The training material must include the bank's security requirements, legal and regulatory requirements, processes and controls, the disciplinary process, contacts for reporting incidents and acceptable use.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s2-q7",
+     "question": "A relationship manager wants to send a large client file from her personal webmail because the bank's mail server is slow. What do the acceptable use rules say?",
+     "options": [
+      "It is allowed if the client agrees by phone",
+      "It is allowed after working hours only",
+      "Public web-based email must not be used to send email from the bank's systems",
+      "It is allowed if the file is zipped first"
+     ],
+     "answer": 2,
+     "explanation": "The regulation states that public webmail services shall not be used to send emails from the bank's systems. Data must move through approved, secure channels.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s2-q8",
+     "question": "Dafna Bank discovers a phishing website copying its online banking login page. Besides acting to take it down, what does the regulation require?",
+     "options": [
+      "Post the fake site's address on social media for customers",
+      "Inform the QCB about the phishing incident",
+      "Inform only the hosting company that runs the site",
+      "Wait to see whether any customer complains first"
+     ],
+     "answer": 1,
+     "explanation": "The anti-phishing section requires the bank to inform the QCB about the discovery of all phishing incidents and to preserve evidence for possible prosecution.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s2-q9",
+     "question": "Which statement about customer fraud awareness matches the Technology Risks Regulation?",
+     "options": [
+      "Customer education is the QCB's job, not the bank's",
+      "Customer awareness is optional for retail banks",
+      "The bank must keep educating customers and encourage them to report phishing",
+      "Banks may educate customers only once at account opening"
+     ],
+     "answer": 2,
+     "explanation": "The bank must provide continuous fraud risk awareness, improve customer cyber awareness, encourage reporting of phishing emails and sites and act on those reports.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s2-q10",
+     "question": "A supplier's long-term on-site engineer asks why he must sign a confidentiality agreement. What does the regulation require?",
+     "options": [
+      "Employees, contractors and third-party staff sign terms and a non-disclosure agreement on joining",
+      "A verbal promise is enough for staff working fewer than two years",
+      "Agreements are needed only for staff in the IT department",
+      "Only permanent staff sign; contractors are covered by their employer"
+     ],
+     "answer": 0,
+     "explanation": "The regulation asks banks to ensure that employees, contractors and third-party staff sign terms and conditions and a confidentiality and non-disclosure agreement when joining or changing role.",
+     "difficulty": 3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Handling Customer Data: The QCB Data Handling and Protection Regulation",
+   "stage": "The Pearl Vault",
+   "summary": "How the QCB data regulation organises data governance and the Data Privacy Officer, how PII, sensitive personal and sensitive financial information are classified and processed, where data must live, how long it is kept, and what customers can ask for.",
+   "minutes": 50,
+   "objectives": [
+    "Describe the data governance unit and the Data Privacy Officer's role, independence and reporting line",
+    "Classify PII, sensitive personal information, sensitive financial information and technical information",
+    "Apply the three bases for processing, consent rules and customer rights",
+    "State the QCB rules on data location, third parties, impact assessments and minimum retention periods"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The marketing spreadsheet",
+     "setting": "Priya's office, Data Privacy Office, Dafna Bank head office.",
+     "lines": [
+      {
+       "who": "priya",
+       "text": "Marketing wants to send our premium customer list, with salaries and card limits, to an events agency for a gala invitation.",
+       "mood": "worried"
+      },
+      {
+       "who": "maryam",
+       "text": "Is the agency a third party processing our data? Do we have consent for marketing use?",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "That's my point. Salaries and card limits are sensitive financial information. They sit in our highest classification tier.",
+       "mood": "neutral"
+      },
+      {
+       "who": "khalid",
+       "text": "And where would the agency store it? Their cloud drive might be anywhere in the world.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Welcome to the Pearl Vault. In this stage you learn to treat customer data like the pearls this coast was famous for: counted, classified and never handed over casually.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Who looks after data at Dafna Bank",
+     "scenes": [
+      {
+       "icon": "🗂️",
+       "heading": "A data governance unit",
+       "narration": "Every QCB-regulated institution must set up a data governance unit or give the job to an existing function. It builds the privacy programme and works with security, risk, IT and compliance."
+      },
+      {
+       "icon": "🛡️",
+       "heading": "A Data Privacy Officer",
+       "narration": "The bank must appoint a Data Privacy Officer with real privacy knowledge, notify the QCB and submit the fit and proper form under the QCB licensing rules."
+      },
+      {
+       "icon": "⚖️",
+       "heading": "Independent and senior",
+       "narration": "The DPO must be free of conflicts, must not be involved in the bank's operations and reports directly to the chief executive, who makes sure privacy risks reach the board."
+      },
+      {
+       "icon": "🎓",
+       "heading": "Everyone keeps learning",
+       "narration": "The bank must give employees and relevant stakeholders training and awareness so they keep their knowledge of privacy, classification, handling, stewardship, backup and recovery up to date."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "pyramid",
+     "title": "Data classes under the QCB regulation",
+     "caption": "SFI includes card information, account information, transactions, loans and credit scores.",
+     "items": [
+      {
+       "label": "SPI and SFI",
+       "detail": "Sensitive personal and sensitive financial information: always the highest, strictest classification tier"
+      },
+      {
+       "label": "PII",
+       "detail": "Personal data that can identify a person, such as names, ID numbers and contact details; classified by the bank's framework"
+      },
+      {
+       "label": "Technical information",
+       "detail": "Confidential system data such as user credentials and network, system, application and security logs"
+      },
+      {
+       "label": "Other data",
+       "detail": "Classified under the bank's own policy and handling guideline"
+      }
+     ]
+    },
+    {
+     "type": "sort",
+     "title": "Which class of data?",
+     "prompt": "Sort each item into the class the QCB data regulation would give it.",
+     "buckets": [
+      "SPI or SFI",
+      "PII",
+      "Technical information"
+     ],
+     "items": [
+      {
+       "text": "A customer's credit score",
+       "bucket": 0
+      },
+      {
+       "text": "Card numbers and card limits",
+       "bucket": 0
+      },
+      {
+       "text": "A customer's account transaction history",
+       "bucket": 0
+      },
+      {
+       "text": "A customer's name and mobile number",
+       "bucket": 1
+      },
+      {
+       "text": "A customer's Qatar ID number on a form",
+       "bucket": 1
+      },
+      {
+       "text": "Firewall and application logs",
+       "bucket": 2
+      },
+      {
+       "text": "Service account passwords",
+       "bucket": 2
+      },
+      {
+       "text": "Health details given for a loan insurance claim",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under the QCB data regulation, how must sensitive financial information be classified?",
+     "options": [
+      "Under the highest, strictest classification tier the bank has",
+      "Under the lowest tier, because banks hold so much of it",
+      "Under any tier the business owner prefers",
+      "It does not need to be classified at all"
+     ],
+     "answer": 0,
+     "explanation": "The regulation defines sensitive financial information, such as card and account data, transactions, loans and credit scores, and requires it to be managed under the most strict classification available. The same applies to sensitive personal information."
+    },
+    {
+     "type": "concept",
+     "title": "When may the bank process personal data?",
+     "body": "The regulation allows the bank to process PII, SPI and SFI only when at least one of three bases applies:\n\n1. the customer has given **explicit consent**\n2. the processing is needed for a **regulatory or legal** activity\n3. the processing is needed to **fulfil a contract**\n\nConsent is expected, for example, before **sharing data with a third party**, using data for **marketing**, or using **sensitive personal information**, unless a legal, regulatory or contractual basis applies. Consent must be freely given, specific, informed and unambiguous, and customers can **refuse or withdraw** it at any time except where the law or a contract requires the processing. The bank must tell customers what happens if they do not consent, and keep a **record of each consent**: purpose, who gave it, date, method and the privacy policy then in force.\n\nCollect only what you need to serve the customer or meet legal duties."
+    },
+    {
+     "type": "match",
+     "title": "Customer requests and what the bank must offer",
+     "prompt": "Match each customer request to what the regulation says the bank must do.",
+     "pairs": [
+      {
+       "left": "'Are you processing my data?'",
+       "right": "Confirm whether their personal data is being processed"
+      },
+      {
+       "left": "'Send me what you hold.'",
+       "right": "Provide a copy in a structured, commonly used, machine-readable format"
+      },
+      {
+       "left": "'My address is wrong.'",
+       "right": "Correct or complete the data"
+      },
+      {
+       "left": "'Delete my data.'",
+       "right": "Delete it where this does not break retention, contract or legal duties"
+      },
+      {
+       "left": "'Stop using my old salary figure.'",
+       "right": "Restrict processing of incorrect or inaccurate data"
+      },
+      {
+       "left": "A parent opens an account for a child",
+       "right": "Check the person consenting holds parental responsibility"
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Where does the data live?",
+     "setting": "Data governance committee, the next morning.",
+     "lines": [
+      {
+       "who": "khalid",
+       "text": "The new analytics platform is cheaper if the main database sits in a data centre abroad.",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "For PII, SPI and SFI, the primary storage and processing environment must be inside Qatar. Abroad only with explicit QCB approval.",
+       "mood": "neutral"
+      },
+      {
+       "who": "maryam",
+       "text": "And any foreign storage or transfer of personal data needs QCB approval plus due diligence on the jurisdiction and the third party.",
+       "mood": "neutral"
+      },
+      {
+       "who": "khalid",
+       "text": "So the cheap option comes with a regulator's approval process. Let's price that in.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The gala invitation list",
+     "situation": "Marketing insists the events agency needs the premium customer list with names, mobile numbers, salaries and card limits by tomorrow. Customers have not consented to marketing use or third-party sharing.",
+     "choices": [
+      {
+       "text": "Refuse the full file; check consent, send only the minimum fields to consenting customers after the agency's data protection checks and contract are in place, and involve the DPO.",
+       "outcome": "Best. Marketing and third-party sharing need consent, sensitive financial data has no place in an invitation list, and the agency must be assessed and bound by contract before receiving anything.",
+       "score": 2
+      },
+      {
+       "text": "Send names and mobile numbers only, without checking consent, because they are not sensitive.",
+       "outcome": "Partly better, since salaries and limits are removed, but PII still needs a lawful basis and consent for marketing and third-party sharing.",
+       "score": 1
+      },
+      {
+       "text": "Send the full file because the gala is good for customer relationships.",
+       "outcome": "Poor. It shares SFI with an unassessed third party without consent and breaches the bank's classification rules and bank secrecy expectations.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "stats",
+     "title": "Minimum retention periods in the QCB data regulation",
+     "caption": "These are minimums. Keep data longer where another law or regulation requires it, including AML/CFT rules.",
+     "items": [
+      {
+       "label": "Sensitive financial information",
+       "value": "10 years",
+       "detail": "Card, account, transaction, loan and credit score data"
+      },
+      {
+       "label": "Personal data, PII and SPI",
+       "value": "10 years",
+       "detail": "Customer and employee personal data of all kinds"
+      },
+      {
+       "label": "Technical information",
+       "value": "1 year",
+       "detail": "Credentials and system, network, application and security logs"
+      },
+      {
+       "label": "All other data",
+       "value": "Bank-defined",
+       "detail": "Set by the bank's own retention policy"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Data governance tools",
+     "cards": [
+      {
+       "front": "ROPA",
+       "back": "Record of Processing Activities: what data, from where, why, on what basis, how long, who sees it. Reviewed yearly or on major change."
+      },
+      {
+       "front": "Data mapping",
+       "back": "A picture of how data flows through processes and systems. Data maps are reviewed yearly or on major change."
+      },
+      {
+       "front": "Privacy Impact Assessment",
+       "back": "Required for new sensitive processes, changes to them, and significant changes to relevant laws."
+      },
+      {
+       "front": "Internal Privacy Policy",
+       "back": "Guidance for staff on handling data, published so the people who need it can find and use it."
+      },
+      {
+       "front": "External Privacy Policy",
+       "back": "Public statement telling customers their rights and how data is collected, used, shared and kept."
+      },
+      {
+       "front": "Autonomous decisions",
+       "back": "The QCB must approve processing within fully autonomous decision-making systems before it starts."
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Example: a vendor's quiet breach",
+     "body": "Dafna Bank uses a printing company to send card PIN mailers. One Thursday the printer's IT manager realises a laptop with a batch file of customer names and addresses was stolen from a car.\n\nBecause the bank's contract followed the QCB regulation, the printer had to **report breaches involving the bank's data promptly to a designated representative** at the bank. Priya was told within hours, not weeks.\n\nThe contract also included **data protection, confidentiality and compliance clauses**, the bank had **assessed the printer's controls** before signing, and the printer only received the fields it needed. That is the regulation's approach to third parties: assess first, contract clearly, share the minimum and require prompt breach reports.\n\nStage 4 will follow what happens next: the breach becomes an incident, with reports to the authorities."
+    },
+    {
+     "type": "check",
+     "question": "A customer asks Dafna Bank to delete all her data after closing her account. What should the bank do?",
+     "options": [
+      "Delete what it can, keeping data that retention or legal duties still require",
+      "Delete everything at once, including transaction records",
+      "Refuse, because closed accounts have no rights",
+      "Keep everything forever in case of future disputes"
+     ],
+     "answer": 0,
+     "explanation": "Customers can request deletion, but the bank's deletion policy must not break retention, contract or legal requirements. Transaction and personal data have 10-year minimum retention periods under the regulation."
+    },
+    {
+     "type": "tip",
+     "title": "Bank secrecy still applies",
+     "body": "The data regulation reminds institutions to respect **bank secrecy** under the QCB Law, especially for sensitive financial information. Even inside the bank, look up customer data only when your job needs it. **Common mistake:** 'just checking' a famous customer's balance out of curiosity. Using data beyond your legitimate permissions is a **data privacy breach**, even though you are an authorised user."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 3 take-aways",
+     "items": [
+      "Every QCB-regulated institution needs a data governance unit and an independent DPO reporting to the CEO.",
+      "SPI and SFI always sit in the highest classification tier.",
+      "Process personal data only with explicit consent, a legal or regulatory need, or to fulfil a contract.",
+      "The primary environment for PII, SPI and SFI is in Qatar; foreign storage or transfer needs QCB approval.",
+      "Minimum retention: 10 years for SFI and personal data, 1 year for technical information."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Pick one spreadsheet or report you handle that contains customer data. Which class is it, who else receives it, and is there a lawful basis for each recipient?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "qa-cy-s3-q1",
+     "question": "Which person must every QCB-regulated financial institution appoint under the Data Handling and Protection Regulation?",
+     "options": [
+      "An external data broker",
+      "A Data Sales Manager",
+      "A Data Privacy Officer",
+      "A Chief Marketing Officer"
+     ],
+     "answer": 2,
+     "explanation": "The regulation requires a Data Privacy Officer with the necessary knowledge and experience, notification to the QCB and the fit and proper form under the licensing rules.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s3-q2",
+     "question": "Dafna Bank plans to make the head of retail operations its DPO as an extra hat. What is the problem under the regulation?",
+     "options": [
+      "The DPO must always be a lawyer by training",
+      "The DPO must report to the head of IT",
+      "The DPO must not be involved in the institution's operations",
+      "The DPO must be employed by an outside firm"
+     ],
+     "answer": 2,
+     "explanation": "The DPO can be an existing role only if independent and free of conflicts, and must not be involved in operations. The DPO reports directly to the CEO or most senior manager.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s3-q3",
+     "question": "Which item is sensitive financial information under the QCB data regulation?",
+     "options": [
+      "A customer's credit score",
+      "A customer's preferred language for letters",
+      "The bank's public exchange rate table",
+      "The bank's published branch opening hours"
+     ],
+     "answer": 0,
+     "explanation": "Sensitive financial information covers data such as card information, account information, transactions, loans and credit scores linked to a customer.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s3-q4",
+     "question": "Which is NOT one of the three bases on which the regulation lets a bank process PII, SPI and SFI?",
+     "options": [
+      "Processing is needed for a regulatory or legal activity",
+      "The data would be commercially useful to a partner",
+      "The customer has given explicit consent",
+      "Processing is required to fulfil a contract"
+     ],
+     "answer": 1,
+     "explanation": "The regulation lists explicit consent, regulatory or legal necessity and contract fulfilment. Commercial usefulness to someone else is not a lawful basis.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s3-q5",
+     "question": "Dafna Bank wants to run its main customer database for PII and SFI in a data centre abroad. What does the regulation require?",
+     "options": [
+      "The customer's verbal agreement during the next branch visit",
+      "Only a notification to the NCSA after migration",
+      "Explicit approval from the QCB before using a primary environment outside Qatar",
+      "Nothing, if the data centre is certified to an international standard"
+     ],
+     "answer": 2,
+     "explanation": "The primary storage and processing environment for PII, SPI and SFI must be in Qatar; using one abroad needs explicit QCB approval, and foreign storage or transfer generally needs QCB approval and due diligence.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s3-q6",
+     "question": "What is the minimum retention period for technical information such as system and security logs under the data regulation?",
+     "options": [
+      "Ten years",
+      "Three months",
+      "Five years",
+      "One year"
+     ],
+     "answer": 3,
+     "explanation": "The retention table sets 10 years for SFI and for personal data, PII and SPI, and 1 year for technical information, unless another law requires longer.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s3-q7",
+     "question": "A customer withdraws marketing consent but still has an active personal loan. What follows?",
+     "options": [
+      "The loan must be closed because all consent is withdrawn",
+      "The bank may keep marketing if it reduces the frequency",
+      "Marketing processing stops, while processing needed for the loan contract continues",
+      "Nothing changes until the loan matures"
+     ],
+     "answer": 2,
+     "explanation": "Customers can refuse or withdraw consent at any time, except where processing is needed for legal or regulatory obligations or to fulfil a contract. Marketing depends on consent; servicing the loan does not.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s3-q8",
+     "question": "Which record must the bank keep when a customer gives consent?",
+     "options": [
+      "Only the customer's signature, with no date",
+      "The customer's social media handles and contacts",
+      "A recording of every phone call ever made by the customer",
+      "Purpose, who consented, the date and method, and the privacy policy in force"
+     ],
+     "answer": 3,
+     "explanation": "The regulation lists the purpose, the identity of the person consenting, the date, the method, the External Privacy Policy then in force and related documents.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s3-q9",
+     "question": "When must the bank carry out a Privacy Impact Assessment under the regulation?",
+     "options": [
+      "Only once, when the bank receives its licence",
+      "When starting or changing a sensitive process, or when relevant laws change significantly",
+      "Only after a customer complaint",
+      "Only when the external auditor asks for one"
+     ],
+     "answer": 1,
+     "explanation": "A PIA is needed for new activities involving sensitive processes, changes to sensitive processes and significant changes in relevant laws that may affect privacy.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s3-q10",
+     "question": "An authorised employee browses a celebrity customer's transactions out of curiosity. How does the regulation describe this?",
+     "options": [
+      "Not a breach, because the employee had system access",
+      "A data privacy breach, because an authorised user exceeded legitimate permissions",
+      "A data breach only if the data leaves the bank",
+      "A matter for HR only, with no data protection angle"
+     ],
+     "answer": 1,
+     "explanation": "The regulation defines a data privacy breach as personal data being accessed or used by an authorised person beyond legitimate permissions or for unauthorised purposes. A data breach involves unauthorised individuals.",
+     "difficulty": 4
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Incidents and Breaches: Escalation, the 1-Hour Report and Data Breach Duties",
+   "stage": "The Signal Tower",
+   "summary": "How Dafna Bank detects, classifies and escalates security incidents, why every user must know how to report, how critical incidents reach the QCB within one hour, and how data breaches are reported to the QCB, the NCSA and the Ministry of Interior.",
+   "minutes": 50,
+   "objectives": [
+    "Describe the incident management framework: owner, central severity setting, evidence and lessons learned",
+    "Explain why every user is trained to report incidents and how to report one",
+    "Apply the rule that critical incidents go to the QCB and relevant authorities within 1 hour of identification",
+    "Handle data breaches and data privacy breaches under section 16 of the QCB data regulation"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "Thursday, 4:12 pm",
+     "setting": "Security operations room, Dafna Bank head office.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "An alert flashes: dozens of file servers are renaming files at high speed. A branch manager calls the help desk saying her shared drive shows strange file names.",
+       "mood": "worried"
+      },
+      {
+       "who": "joseph",
+       "text": "Could be ransomware. Could be a backup job gone wrong. The next hour decides a lot.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "Start the clock from identification. If the central team classes this as critical, the QCB and the relevant authorities must hear from us within one hour.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Those servers hold customer files. If data was copied out, this is also a data breach.",
+       "mood": "worried"
+      },
+      {
+       "who": "khalid",
+       "text": "I'll get the crisis team ready in case we need to switch to recovery sites.",
+       "mood": "neutral"
+      },
+      {
+       "who": "joseph",
+       "text": "And the branch manager who called the help desk instead of rebooting? She just bought us twenty minutes.",
+       "mood": "proud"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "How an incident moves through Dafna Bank",
+     "scenes": [
+      {
+       "icon": "👀",
+       "heading": "Someone notices",
+       "narration": "Monitoring tools raise alerts automatically, but people spot many incidents first. Every user is trained to report incidents to the incident management team."
+      },
+      {
+       "icon": "🧭",
+       "heading": "Evaluate",
+       "narration": "The team checks whether it is a false alarm or hoax, and how big the problem is."
+      },
+      {
+       "icon": "🚦",
+       "heading": "Classify centrally",
+       "narration": "A central incident response team sets the severity level, so resolution times and escalation match the risk."
+      },
+      {
+       "icon": "📣",
+       "heading": "Escalate and report",
+       "narration": "Critical incidents are reported to the QCB and the relevant government authorities within one hour of identification. Large incidents keep the QCB and the Ministry of Interior informed."
+      },
+      {
+       "icon": "🧩",
+       "heading": "Contain, recover, learn",
+       "narration": "The team contains the incident, restores service, collects evidence that can stand up legally, finds the root cause and records lessons learned."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "steps",
+     "title": "Incident lifecycle under the QCB Technology Risks Regulation",
+     "items": [
+      {
+       "label": "Detect and report",
+       "detail": "Tools alert automatically; users report to the incident management team"
+      },
+      {
+       "label": "Evaluate",
+       "detail": "False trigger or real? What type and how large?"
+      },
+      {
+       "label": "Prioritise",
+       "detail": "Central team sets severity and the matching escalation route"
+      },
+      {
+       "label": "Notify",
+       "detail": "Critical incidents to the QCB and relevant authorities within 1 hour"
+      },
+      {
+       "label": "Contain and recover",
+       "detail": "Find the source, contain, assess damage, restore and monitor"
+      },
+      {
+       "label": "Learn",
+       "detail": "Root cause analysis, documentation and lessons learned"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under the QCB Technology Risks Regulation, how quickly must a critical incident be reported to the QCB and the relevant government authorities?",
+     "options": [
+      "Within 1 hour of identification",
+      "Within 72 hours of identification",
+      "Within 24 hours of the root cause being known",
+      "By the end of the next business day"
+     ],
+     "answer": 0,
+     "explanation": "Item 8.2.10 requires all critical incidents to be reported to the QCB and the relevant governmental authorities within 1 hour of identification. Waiting for a root cause would miss the deadline."
+    },
+    {
+     "type": "concept",
+     "title": "Who does what in incident management",
+     "body": "The regulation expects a clear structure rather than heroics:\n\n- **An owner.** One person owns and manages the incident management programme, its budget and its execution, and is the contact point for security communications.\n- **Dedicated resources** with documented roles for recording, analysing, fixing and monitoring incidents.\n- **Central severity setting** by an incident response team, so a branch and a data centre are judged by the same scale.\n- **A communication plan** for reporting internally and externally, to the QCB and agencies such as the Ministry of Interior, with public relations involved.\n- **Evidence** collected and kept so it meets the rules of evidence if legal action follows.\n- **Yearly testing** of the escalation and response plan against scenarios such as ransomware, extortion and denial of service.\n- **Specialised training** for people who handle incidents, and post-incident reviews."
+    },
+    {
+     "type": "sort",
+     "title": "Report it now or handle it normally?",
+     "prompt": "As an ordinary employee, which of these should you report to the incident management team straight away?",
+     "buckets": [
+      "Report immediately",
+      "Normal IT request"
+     ],
+     "items": [
+      {
+       "text": "You typed your password into a page that turned out to be fake",
+       "bucket": 0
+      },
+      {
+       "text": "Your laptop with customer files was stolen from your car",
+       "bucket": 0
+      },
+      {
+       "text": "Files on a shared drive are suddenly renamed with odd extensions",
+       "bucket": 0
+      },
+      {
+       "text": "A USB stick you do not recognise is plugged into a branch PC",
+       "bucket": 0
+      },
+      {
+       "text": "You sent a customer statement to the wrong customer by email",
+       "bucket": 0
+      },
+      {
+       "text": "You need a new printer cartridge",
+       "bucket": 1
+      },
+      {
+       "text": "You forgot your password and need a routine reset",
+       "bucket": 1
+      },
+      {
+       "text": "You want a second monitor for your desk",
+       "bucket": 1
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "Breach or not?",
+     "setting": "Crisis room, 4:50 pm.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "Update: the malware encrypted files on three servers. Logs show about 2 GB went to an unknown address before we cut the link.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "Then we treat it as a data breach too. The QCB data regulation says every data breach is classified as an incident and follows QCB incident reporting.",
+       "mood": "worried"
+      },
+      {
+       "who": "maryam",
+       "text": "So the QCB hears from us, and the data rule adds the National Cyber Security Agency and the Ministry of Interior.",
+       "mood": "thinking"
+      },
+      {
+       "who": "priya",
+       "text": "We also assess the impact now, decide whether customers must be told, and prompt staff and customers to act, for example to watch for fraud.",
+       "mood": "neutral"
+      },
+      {
+       "who": "ahmed",
+       "text": "(by phone) I need a one-page summary for the board tonight. What do we know, and what have we told the regulator?",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "compare",
+     "title": "Security incident duties and data breach duties",
+     "caption": "One event can trigger both sets of duties. Run them together, not one after the other.",
+     "headers": [
+      "Security incident",
+      "Data breach"
+     ],
+     "items": [
+      {
+       "label": "Main source",
+       "left": "Technology Risks Regulation, incident management",
+       "right": "Data Handling and Protection Regulation, section 16"
+      },
+      {
+       "label": "Who is told",
+       "left": "The QCB and relevant government authorities; QCB and MOI kept informed of large incidents",
+       "right": "The QCB and authorised agencies including the NCSA and the Ministry of Interior"
+      },
+      {
+       "label": "Timing",
+       "left": "Critical incidents within 1 hour of identification",
+       "right": "As set by QCB incident reporting guidelines, since a breach is an incident"
+      },
+      {
+       "label": "Extra steps",
+       "left": "Root cause, evidence, lessons learned, yearly plan test",
+       "right": "Assess impact, decide on telling customers, trigger action to limit harm"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "The 4:55 pm decision",
+     "situation": "The central incident team has rated the event critical at 4:20 pm. Legal suggests waiting until tomorrow to report to the QCB, 'when we have the full picture'. It is now 4:55 pm.",
+     "choices": [
+      {
+       "text": "Report to the QCB and relevant authorities now with what is known, state what is still unknown, and send updates as the picture develops.",
+       "outcome": "Best. The 1-hour clock runs from identification, not from full understanding. An early, honest report with follow-ups meets the rule and builds trust.",
+       "score": 2
+      },
+      {
+       "text": "Send a short email to a QCB contact saying 'possible issue, details tomorrow'.",
+       "outcome": "Partly right on timing, but a vague note without the incident's nature, impact and actions may not meet the bank's reporting procedure or the QCB's expectations.",
+       "score": 1
+      },
+      {
+       "text": "Wait until tomorrow so the report is complete and accurate.",
+       "outcome": "Poor. The deadline would be missed by many hours. Completeness comes through updates, not by delaying the first report.",
+       "score": 0
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Incident and breach terms",
+     "cards": [
+      {
+       "front": "Critical incident",
+       "back": "An incident in the highest severity class. Report to the QCB and relevant authorities within 1 hour of identification."
+      },
+      {
+       "front": "Data breach",
+       "back": "Sensitive, confidential or protected data accessed, disclosed or stolen by unauthorised people."
+      },
+      {
+       "front": "Data privacy breach",
+       "back": "Personal data used by an authorised person beyond their permissions or for improper purposes."
+      },
+      {
+       "front": "Root cause analysis",
+       "back": "For major incidents: timeline, losses, costs, customers affected, reputational impact and corrective actions."
+      },
+      {
+       "front": "Chain of evidence",
+       "back": "Evidence collected and kept so it meets legal rules if the bank pursues action."
+      },
+      {
+       "front": "Lessons learned",
+       "back": "Documented findings from each incident, used to improve how future incidents are handled."
+      }
+     ]
+    },
+    {
+     "type": "order",
+     "title": "Your first moves if you think you caused an incident",
+     "prompt": "You clicked a link and typed your password. Put your actions in the right order.",
+     "steps": [
+      "Stop: do not type anything else or open more links",
+      "Report it at once to the incident management team through the bank's channel",
+      "Follow their instructions, such as disconnecting or changing passwords",
+      "Write down what you saw and when, for the investigation",
+      "Join the follow-up review and share what made the lure convincing"
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under section 16 of the QCB data regulation, which authorities must be told of a data breach besides the QCB?",
+     "options": [
+      "The National Cyber Security Agency and the Ministry of Interior",
+      "The Ministry of Commerce and the stock exchange",
+      "Only the bank's external auditor",
+      "No one else; the QCB passes it on"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires data breaches and data privacy breaches to be reported to the QCB and the authorised agencies in Qatar, including the NCSA and the Ministry of Interior."
+    },
+    {
+     "type": "example",
+     "title": "Example: a shared ATM network fraud",
+     "body": "Over a weekend, criminals use cloned cards issued by another bank to withdraw cash at Dafna Bank ATMs on a shared network.\n\nUnder the Technology Risks Regulation, in a shared ATM network the **acquiring bank reports the fraud**, not the card issuer. Dafna Bank, as acquirer, reports it and asks the issuing bank for help recovering the money.\n\nThe incident team keeps the ATM logs and camera footage as **evidence**, the fraud team checks whether Dafna's own customers were affected, and the bank shares the data the police request. If the fraud had happened in the bank's **merchant acquiring** business, it would have to be reported to the QCB.\n\n**Lesson:** fraud and cyber incidents overlap. Know which team leads and which reports go where."
+    },
+    {
+     "type": "tip",
+     "title": "Reporting without fear",
+     "body": "The fastest incident reports come from people who are not afraid of blame. Dafna Bank's policy separates **honest mistakes reported quickly** from **deliberate breaches**, which follow the disciplinary process. **Common mistake:** trying to fix it yourself first, for example rebooting an infected PC, which can destroy evidence and waste minutes of the 1-hour window."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 4 take-aways",
+     "items": [
+      "Every user is trained to report incidents to the incident management team.",
+      "A central team sets severity; critical incidents go to the QCB and relevant authorities within 1 hour of identification.",
+      "Report early with what you know and update later; never wait for the full picture.",
+      "A data breach is an incident: report to the QCB, the NCSA and the Ministry of Interior, assess impact and decide on telling customers.",
+      "Keep evidence, find the root cause, record lessons learned and test the response plan every year."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "Do you know, without searching, how to reach your bank's incident team right now? If not, find out today and save the contact where you will see it."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "qa-cy-s4-q1",
+     "question": "Who sets the severity level of an incident at Dafna Bank under the QCB Technology Risks Regulation?",
+     "options": [
+      "The employee who first noticed it",
+      "The branch manager where it happened",
+      "The vendor whose system was affected",
+      "A centralised incident response team"
+     ],
+     "answer": 3,
+     "explanation": "The regulation asks banks to delegate the job of determining and assigning incident severity levels to a centralised incident response team, so severity is judged consistently.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s4-q2",
+     "question": "Why does the regulation integrate incident management with security awareness training?",
+     "options": [
+      "So every user knows how to report incidents to the incident management team",
+      "So incident reports can be skipped for trained staff",
+      "So staff learn how to remove malware from their own PCs",
+      "So the training team can investigate incidents itself"
+     ],
+     "answer": 0,
+     "explanation": "Item 8.2.9 says the incident process is integrated with awareness training, all users are trained to report incidents and to respond to certain events such as fire.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q3",
+     "question": "A critical incident is identified at 10:05 am. By when, at the latest, should the QCB and the relevant authorities have the report?",
+     "options": [
+      "Once the root cause analysis is approved",
+      "11:05 am the same day",
+      "The end of the same week",
+      "10:05 am the next day"
+     ],
+     "answer": 1,
+     "explanation": "Critical incidents must be reported within 1 hour of identification, so 11:05 am. Root cause analysis comes later and does not delay the report.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q4",
+     "question": "Which scenarios does the regulation say the yearly test of the incident escalation and response plan should simulate?",
+     "options": [
+      "Only fire evacuation of the head office",
+      "Only a change in the bank's share price",
+      "Only failures of the staff canteen systems",
+      "Attacks such as ransomware, extortion and denial of service"
+     ],
+     "answer": 3,
+     "explanation": "The predetermined escalation and response plan must be tested every year to simulate responses to attacks such as ransomware, extortion, DDoS and level 1 severity incidents.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q5",
+     "question": "During an incident, an engineer wants to wipe and rebuild an infected server immediately to save time. What concern does the regulation raise?",
+     "options": [
+      "Rebuilding servers is banned during business hours",
+      "Evidence must be collected and kept so it meets legal rules of evidence",
+      "Servers can only be rebuilt by the QCB",
+      "The vendor must approve every rebuild in writing first"
+     ],
+     "answer": 1,
+     "explanation": "Evidence related to incidents must be collected, retained and presented in line with the rules of evidence where legal action may follow. Wiping first can destroy it.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s4-q6",
+     "question": "Customer data was copied out during a cyber attack. Under the QCB data regulation, how should Dafna Bank treat the data breach?",
+     "options": [
+      "As a routine IT ticket closed within a month",
+      "As an incident, following QCB incident reporting guidelines",
+      "As a private matter between the bank and its insurer",
+      "As a marketing issue for the communications team"
+     ],
+     "answer": 1,
+     "explanation": "Section 16 requires any data breach or data privacy breach to be classified as an incident and reported under QCB incident reporting guidelines, to the QCB, NCSA and Ministry of Interior.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q7",
+     "question": "After a data breach, what must the bank assess about its customers under section 16?",
+     "options": [
+      "Whether they should be asked to sign a waiver",
+      "Whether they can be charged for the investigation",
+      "Whether their accounts should be closed",
+      "Whether the breach needs to be reported to them"
+     ],
+     "answer": 3,
+     "explanation": "The regulation requires the bank to assess the impact of the breach on identification and to assess the need to report it to customers, then trigger action to limit harm.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q8",
+     "question": "In a shared ATM network, cloned cards from Bank B are used at Bank A's ATMs. Who reports the fraud under the regulation?",
+     "options": [
+      "Bank A, as the acquirer, with help from Bank B to recover funds",
+      "Only the customer whose card was cloned",
+      "Bank B alone, because it issued the cards",
+      "Neither bank; the ATM network operator reports"
+     ],
+     "answer": 0,
+     "explanation": "In a shared ATM network, the acquirer reports the fraud and seeks the issuer's help in recovering the money.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s4-q9",
+     "question": "A vendor processing Dafna Bank's customer data suffers a breach. What must the bank's contract and procedures ensure?",
+     "options": [
+      "The vendor reports only if customers complain",
+      "The vendor handles it alone and tells the bank at contract renewal",
+      "The vendor reports only to its own regulator abroad",
+      "The vendor promptly reports the breach to a designated representative at the bank"
+     ],
+     "answer": 3,
+     "explanation": "The data regulation requires institutions to ensure third parties promptly report data breaches and data privacy breaches involving the institution's data to a designated representative.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s4-q10",
+     "question": "Which document must Dafna Bank prepare so incidents are reported both internally and externally, including to the QCB and agencies such as the Ministry of Interior?",
+     "options": [
+      "A communication plan and procedure for reporting security incidents",
+      "A marketing campaign plan for new products",
+      "A list of preferred printing suppliers",
+      "A staff holiday rota for the security team"
+     ],
+     "answer": 0,
+     "explanation": "Item 8.2.8 requires a communication plan and procedure for reporting incidents internally and externally, involving public relations or communications functions.",
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Resilience, Cloud and the Bank's Programme: Continuity, Cloud Arrangements and Assessment Readiness",
+   "stage": "The Lusail Command Centre",
+   "summary": "What the QCB expects for business continuity and cyber crisis plans, how the Cloud Computing Regulation governs cloud arrangements, and how the bank's whole programme of training, records, audit and reporting comes together for the QCB.",
+   "minutes": 50,
+   "objectives": [
+    "Describe the BCM roles, yearly testing, test types and unplanned drills required by the QCB",
+    "Explain the cyber crisis management plan and why incident handlers need specialised training",
+    "Apply the main Cloud Computing Regulation duties: accountability, register, due diligence, approval, continuity and exit",
+    "Summarise the bank's yearly programme: training records, audit, compliance reporting and board oversight"
+   ],
+   "cards": [
+    {
+     "type": "story",
+     "title": "The drill nobody announced",
+     "setting": "Business continuity command centre, Lusail, 7:30 am, Wednesday.",
+     "lines": [
+      {
+       "who": "narrator",
+       "text": "Phones buzz across the bank: the head office is 'unavailable' and critical teams must move to the recovery site in Lusail.",
+       "mood": "neutral"
+      },
+      {
+       "who": "khalid",
+       "text": "Good morning. This is one of our unplanned drills. Only a handful of people knew. Let's see how ready we really are.",
+       "mood": "proud"
+      },
+      {
+       "who": "joseph",
+       "text": "Payments are up at the recovery site. But the card system runs on a cloud service, and I've never tested the switch-over with the provider.",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "Then that's our finding for today. The cloud provider has to be part of our continuity tests.",
+       "mood": "worried"
+      },
+      {
+       "who": "ahmed",
+       "text": "(arriving) The board will read this drill report. Tell me what failed, not just what worked.",
+       "mood": "neutral"
+      },
+      {
+       "who": "khalid",
+       "text": "Welcome to the last stage. Today you see how resilience, cloud and the whole programme fit together before the QCB looks at it.",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Business continuity the QCB way",
+     "scenes": [
+      {
+       "icon": "👤",
+       "heading": "A senior owner",
+       "narration": "A senior manager is designated as head of business continuity. They own the plan, keep it current, make sure impact analysis, risk assessment and testing happen at least yearly, and advise management on declaring a crisis."
+      },
+      {
+       "icon": "👥",
+       "heading": "A senior committee",
+       "narration": "A committee of senior officials from areas such as IT, HR, legal, business and information security runs drills, decides when to activate the plan and owns continuity communication, training and awareness across the bank."
+      },
+      {
+       "icon": "🧪",
+       "heading": "Yearly testing",
+       "narration": "Every year the bank tests its plans: table-top discussions, simulations that train people in crisis roles, technical recovery, disaster recovery, supplier tests and full rehearsals."
+      },
+      {
+       "icon": "🚨",
+       "heading": "Surprise drills",
+       "narration": "At least four unplanned drills a year, with at least one hot test that moves activities to the alternate site and three cold tests of selected parts of the plan."
+      },
+      {
+       "icon": "📨",
+       "heading": "Report and improve",
+       "narration": "Internal audit reviews the testing programme, an independent external audit happens yearly, and the bank sends an approved copy of its plan with results to the QCB each year."
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "matrix",
+     "title": "Choosing the right continuity test",
+     "caption": "The QCB expects all of these within the yearly testing programme, plus supplier tests.",
+     "axes": {
+      "x": "Systems involved",
+      "y": "People practised"
+     },
+     "items": [
+      {
+       "label": "Table-top",
+       "detail": "Discuss recovery using example interruptions; low disruption, builds shared understanding"
+      },
+      {
+       "label": "Simulation",
+       "detail": "Rehearse post-incident and crisis roles so people learn their parts"
+      },
+      {
+       "label": "Technical recovery and DR",
+       "detail": "Restore systems and run operations from the recovery site"
+      },
+      {
+       "label": "Complete rehearsal",
+       "detail": "Test people, equipment, facilities and processes together in a crisis"
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "How many unplanned business continuity drills must a bank run each year at minimum under the Technology Risks Regulation?",
+     "options": [
+      "Four, with at least one hot test and three cold tests",
+      "One, announced in advance to all staff",
+      "Two, both table-top discussions",
+      "Twelve, one every month"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires at least four unplanned BCM drills a year, at least one hot and three cold, with only a restricted group of people aware beforehand."
+    },
+    {
+     "type": "concept",
+     "title": "The cyber crisis management plan",
+     "body": "The regulation recognises that ordinary continuity plans may not be enough for cyber attacks. Banks must have a **Cyber Crisis Management Plan (CCMP)** covering four things: **detection, response, recovery and containment**.\n\nThe CCMP sets out incident severity and types, signs of compromise, detection methods, reporting channels, threat information sharing and the expected response for each scenario, plus controls to **quarantine** affected devices.\n\nTwo people points stand out:\n\n- the bank must give **specialised training to personnel who handle incidents**, review incidents afterwards and test response plans periodically\n- **working from home** should not be used for staff in critical functions; highly privileged users may connect remotely only with **prior approval** and when needed\n\nPlans also need a **trained media spokesperson**, draft press releases and regular **communication drills**."
+    },
+    {
+     "type": "sort",
+     "title": "Business continuity or cloud regulation?",
+     "prompt": "Sort each duty to the QCB text it comes from.",
+     "buckets": [
+      "Technology Risks Regulation (BCM)",
+      "Cloud Computing Regulation"
+     ],
+     "items": [
+      {
+       "text": "Run at least four unplanned drills a year",
+       "bucket": 0
+      },
+      {
+       "text": "Send an approved copy of the BCP to the QCB yearly",
+       "bucket": 0
+      },
+      {
+       "text": "Appoint a senior head of business continuity",
+       "bucket": 0
+      },
+      {
+       "text": "Keep a register of all cloud arrangements",
+       "bucket": 1
+      },
+      {
+       "text": "Disclose the full register to the QCB every year",
+       "bucket": 1
+      },
+      {
+       "text": "Get QCB approval before signing a material cloud arrangement",
+       "bucket": 1
+      },
+      {
+       "text": "Plan both a stressed exit and a managed exit",
+       "bucket": 1
+      },
+      {
+       "text": "Keep a trained media spokesperson for crises",
+       "bucket": 0
+      }
+     ]
+    },
+    {
+     "type": "explainer",
+     "title": "Cloud under the QCB Cloud Computing Regulation",
+     "scenes": [
+      {
+       "icon": "🧭",
+       "heading": "Strategy and accountability",
+       "narration": "A regulated entity needs a cloud strategy, a risk appetite for cloud and a function that oversees cloud arrangements. Outsourcing to the cloud never outsources accountability."
+      },
+      {
+       "icon": "📋",
+       "heading": "Register",
+       "narration": "The entity keeps a register of every cloud arrangement, marks which are material, discloses its materiality criteria to the QCB and gives the QCB the full register every year."
+      },
+      {
+       "icon": "🔍",
+       "heading": "Due diligence and approval",
+       "narration": "Before contracting, it checks the provider, its sub-contractors and locations, runs risk and threat assessments and gets QCB approval for material arrangements."
+      },
+      {
+       "icon": "📄",
+       "heading": "Contract",
+       "narration": "Contracts give the bank and the QCB access and audit rights, require incident reports without undue delay, notice of sub-contracting and protection of personal data under Law 13 of 2016."
+      },
+      {
+       "icon": "🔁",
+       "heading": "Continuity and exit",
+       "narration": "Cloud services are built into continuity plans and tests, and every arrangement has an exit plan for both a calm and a stressed exit."
+      }
+     ]
+    },
+    {
+     "type": "story",
+     "title": "The cloud card system",
+     "setting": "Lusail command centre, after the drill.",
+     "lines": [
+      {
+       "who": "joseph",
+       "text": "The drill showed we can't switch the card platform to the provider's recovery region on our own. We've never tested it together.",
+       "mood": "worried"
+      },
+      {
+       "who": "khalid",
+       "text": "The cloud regulation is clear: integrate the provider into our business continuity tests and document how to switch over and back.",
+       "mood": "neutral"
+      },
+      {
+       "who": "priya",
+       "text": "And personal and financial information must be processed in Qatar only. Is the recovery region in Qatar?",
+       "mood": "thinking"
+      },
+      {
+       "who": "maryam",
+       "text": "We need to check. If not, this arrangement needs a closer look with the QCB before we rely on it.",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "type": "scenario",
+     "title": "A cheaper cloud provider",
+     "situation": "Procurement finds a cloud provider that is 30% cheaper for the bank's customer analytics. The contract would store PII and transaction data in another country, the provider can add sub-contractors without notice, and there is no exit clause. Procurement wants to sign this week.",
+     "choices": [
+      {
+       "text": "Pause; treat it as a material arrangement, run due diligence, renegotiate sub-contracting notice, audit rights and exit terms, address data location, and seek QCB approval before signing.",
+       "outcome": "Best. Material arrangements need QCB approval before signing, PII and financial information must be processed in Qatar, and contracts must give notice of sub-contracting, audit rights and an exit plan.",
+       "score": 2
+      },
+      {
+       "text": "Sign now and fix the contract at renewal next year.",
+       "outcome": "Poor in practice. The bank would already be outside the regulation for a year and remains fully accountable for anything that goes wrong.",
+       "score": 0
+      },
+      {
+       "text": "Sign, but keep only anonymised test data in the cloud until the contract is fixed.",
+       "outcome": "Partly sensible as risk reduction, but the arrangement still needs the governance steps, and the plan to move live data later must go through due diligence and QCB approval.",
+       "score": 1
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "kind": "timeline",
+     "title": "Dafna Bank's yearly technology risk calendar",
+     "caption": "An illustrative calendar: the QCB sets the minimum frequencies, the bank chooses the dates.",
+     "items": [
+      {
+       "label": "Awareness refresh",
+       "value": "Q1",
+       "detail": "Training content updated; yearly refresher opens for all staff with completion tracking"
+      },
+      {
+       "label": "Board indicators",
+       "value": "Q2",
+       "detail": "Cyber indicators reviewed by the board, at least every six months"
+      },
+      {
+       "label": "Testing",
+       "value": "Q3",
+       "detail": "Incident response plan test; BCP tests and unplanned drills through the year"
+      },
+      {
+       "label": "Board indicators",
+       "value": "Q4",
+       "detail": "Second board review of cyber indicators and remediation plans"
+      },
+      {
+       "label": "Report and audit",
+       "value": "Year end",
+       "detail": "Information systems audit; compliance report to the QCB; BCP copy and cloud register to the QCB"
+      }
+     ]
+    },
+    {
+     "type": "example",
+     "title": "Real case: keeping banks running during 2022's major events",
+     "body": "In its **Financial Stability Review 2022**, the QCB explained that, recognising how important it was for payment systems to keep running during major events, **a business continuity committee was formed** to oversee the continuity of operations of banks and financial institutions.\n\nThe review reports that the QCB and the financial sector **continued operations seamlessly** during the event, and presents this as evidence that proactive continuity planning works. The same review lists **managing cyber threats and testing business continuity plans** among the QCB's ongoing efforts to keep payment and settlement systems resilient.\n\n**Why it matters to you:** the drills, simulations and plans in this stage are not paperwork. When demand peaks and the whole country is watching, tested plans are what keep the cards and payments working."
+    },
+    {
+     "type": "match",
+     "title": "Evidence the QCB may ask for",
+     "prompt": "Match each QCB expectation to the evidence Dafna Bank keeps.",
+     "pairs": [
+      {
+       "left": "Awareness at induction and yearly",
+       "right": "Attendance records, acknowledgements and completion reports"
+      },
+      {
+       "left": "Training effectiveness",
+       "right": "Post-training assessment results and learning scores"
+      },
+      {
+       "left": "Board cyber training",
+       "right": "Board and senior management session records"
+      },
+      {
+       "left": "Yearly compliance reporting",
+       "right": "Board-signed compliance report and action plans"
+      },
+      {
+       "left": "Business continuity testing",
+       "right": "Test and drill reports, audit findings, BCP copy sent to the QCB"
+      },
+      {
+       "left": "Cloud oversight",
+       "right": "Cloud register, due diligence files and annual assessments"
+      }
+     ]
+    },
+    {
+     "type": "flip",
+     "title": "Programme check before the QCB visit",
+     "cards": [
+      {
+       "front": "Is board cyber training on record?",
+       "back": "Yes: senior management and board members must receive training sessions on cyber threats."
+      },
+      {
+       "front": "Who runs BCM awareness?",
+       "back": "The senior BCM committee owns business continuity communication, training and awareness across the bank."
+      },
+      {
+       "front": "Do incident handlers get extra training?",
+       "back": "Yes: the cyber crisis plan requires specialised training for personnel handling incidents."
+      },
+      {
+       "front": "Is privacy training in place?",
+       "back": "Yes: the data regulation requires training on data security, data protection and privacy."
+      },
+      {
+       "front": "How often is each cloud arrangement assessed?",
+       "back": "A full assessment of each cloud arrangement every year, including contracts and breaches at the provider."
+      },
+      {
+       "front": "Can the QCB audit at any time?",
+       "back": "Yes: the QCB may audit the bank's compliance with the Technology Risks Regulation at any point."
+      }
+     ]
+    },
+    {
+     "type": "check",
+     "question": "Under the Cloud Computing Regulation, what must happen before Dafna Bank signs a material cloud arrangement?",
+     "options": [
+      "It must receive official QCB approval",
+      "It must publish the contract on its website",
+      "It must obtain consent from every shareholder",
+      "Nothing beyond the procurement team's sign-off"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires official QCB approval before signing any material arrangement or making a material change to an existing one."
+    },
+    {
+     "type": "keypoints",
+     "title": "Stage 5 take-aways",
+     "items": [
+      "A senior head of BCM and a senior committee own continuity, including its training and awareness.",
+      "Test plans every year and run at least four unplanned drills, at least one hot and three cold.",
+      "The cyber crisis plan covers detection, response, recovery and containment, with specialised training for incident handlers.",
+      "Cloud: accountability stays with the bank; keep a register, get QCB approval for material arrangements, test continuity and plan exits.",
+      "Keep the evidence: training records, assessments, board sessions, audits, compliance reports and test results."
+     ]
+    },
+    {
+     "type": "reflect",
+     "prompt": "If your role were part of tomorrow's unplanned drill, would you know where to go, what to do first and who to call? What is the one thing you would check today?"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "qa-cy-s5-q1",
+     "question": "Under the Technology Risks Regulation, which body is responsible for business continuity communication, training and awareness across the bank?",
+     "options": [
+      "The bank's external auditor",
+      "The marketing department alone",
+      "Each branch manager acting independently",
+      "A committee of senior officials from areas such as IT, HR, legal, business and security"
+     ],
+     "answer": 3,
+     "explanation": "Item 6.1.5 makes a committee of senior officials responsible for BCM communication, training and awareness, plan review, budgets, coordination and activation.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s5-q2",
+     "question": "Which type of yearly BCP test is described as training personnel in post-incident and crisis management roles?",
+     "options": [
+      "Table-top discussion only",
+      "Simulation testing",
+      "Component testing of the ATM switch",
+      "Supplier SLA testing"
+     ],
+     "answer": 1,
+     "explanation": "Simulation testing is the test type used to train personnel in post-incident and crisis management roles. Table-top tests discuss recovery arrangements using example interruptions.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s5-q3",
+     "question": "What must the bank send to the QCB each year about business continuity?",
+     "options": [
+      "Nothing unless a crisis has occurred",
+      "An approved copy of its BCP with a summary of results and key learnings",
+      "A list of every employee's home address",
+      "A copy of each drill's attendance sheet only"
+     ],
+     "answer": 1,
+     "explanation": "The bank must provide an approved copy of the BCP to the QCB annually, including a summary of results, the status of IT systems and key learnings.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s5-q4",
+     "question": "Which four aspects must a cyber crisis management plan include?",
+     "options": [
+      "Detection, response, recovery and containment",
+      "Marketing, pricing, sales and service",
+      "Hiring, training, appraisal and exit",
+      "Budgeting, forecasting, audit and tax"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires the CCMP to cover detection, response, recovery and containment of cyber attacks, with documented roles and procedures.",
+     "difficulty": 2
+    },
+    {
+     "id": "qa-cy-s5-q5",
+     "question": "A payments engineer with highly privileged access asks to work from home permanently. What does the regulation say?",
+     "options": [
+      "Permanent remote work is fine if the engineer uses a personal laptop",
+      "Remote work should not be used for critical functions; privileged users connect only with prior approval when needed",
+      "Remote access is banned for all bank staff in all roles",
+      "Remote work is allowed for privileged users without any approval"
+     ],
+     "answer": 1,
+     "explanation": "Work-from-home arrangements should not be considered for staff in critical functions; if needed, highly privileged users may connect only with prior approval and as needed.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s5-q6",
+     "question": "Dafna Bank's card platform runs on a cloud service. Under the Cloud Computing Regulation, what must the bank do about business continuity?",
+     "options": [
+      "Integrate the provider into its BCP and BCP tests and document switch-over and switch-back",
+      "Remove the platform from the BCP because it is outsourced",
+      "Rely entirely on the provider's own continuity plan",
+      "Test continuity only when the contract is renewed"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires cloud arrangements to be integrated into the BCP, switch-over and switch-back to be detailed in the DR plan and the provider to be included in BCP tests.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s5-q7",
+     "question": "How often must a bank disclose its full register of cloud arrangements to the QCB?",
+     "options": [
+      "Every year, and whenever the QCB asks",
+      "Every five years",
+      "Never; the register is internal only",
+      "Only when it changes provider"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires the full register to be disclosed to the QCB annually and on request, alongside the criteria the entity uses to decide materiality.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s5-q8",
+     "question": "A manager says, 'Once it is in the cloud, the provider is responsible for compliance.' What does the Cloud Computing Regulation say?",
+     "options": [
+      "Accountability passes to the provider once the contract is signed",
+      "Accountability is shared equally by law",
+      "The QCB takes over accountability for approved providers",
+      "The entity remains fully accountable and cannot delegate accountability"
+     ],
+     "answer": 3,
+     "explanation": "The regulation states that an entity entering into cloud arrangements remains fully accountable for its regulatory obligations and cannot delegate that accountability.",
+     "difficulty": 4
+    },
+    {
+     "id": "qa-cy-s5-q9",
+     "question": "What must a bank's exit plan for a cloud arrangement cover under the regulation?",
+     "options": [
+      "Both a stressed exit and a managed exit",
+      "Only a managed exit at contract expiry",
+      "Only the provider's own insolvency",
+      "Only a price comparison with other providers"
+     ],
+     "answer": 0,
+     "explanation": "The regulation requires a documented exit plan covering both stressed and managed exits, with plans to move to another provider or back in-house while keeping continuity.",
+     "difficulty": 3
+    },
+    {
+     "id": "qa-cy-s5-q10",
+     "question": "Which piece of evidence best shows the QCB that Dafna Bank's security awareness training reached everyone?",
+     "options": [
+      "Attendance records with acknowledgements and completion tracking",
+      "An email announcing the course dates",
+      "A copy of the training slides only",
+      "The trainer's invoice for the course"
+     ],
+     "answer": 0,
+     "explanation": "The regulation asks banks to keep attendance records and acknowledgements, and suggests monitoring completion. Slides or invoices do not show who was trained.",
+     "difficulty": 2
+    }
+   ]
+  }
+ ],
+ "jurisdiction": {
+  "code": "qa",
+  "programs": [
+   71,
+   72,
+   73,
+   77,
+   83,
+   93,
+   66,
+   74,
+   84,
+   85,
+   29,
+   114,
+   112,
+   89
+  ],
+  "classification": "mandatory-explicit",
+  "frequency": [
+   "induction",
+   "annual"
+  ],
+  "regulators": [
+   "Qatar Central Bank (QCB)",
+   "National Cyber Security Agency (NCSA)",
+   "Ministry of Interior (MOI)"
+  ],
+  "references": [
+   {
+    "title": "Technology Risks Regulation for Banks (January 2018)",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/Documents/InformationSecurity/Technology%20Risks%20Regulation%20Banks.pdf",
+    "provision": "Section 2.2 (Staff competency and training), items 2.2.1-2.2.9",
+    "note": "Funded security awareness programme: training at induction, refresher at least yearly including social engineering, content reviewed yearly, assessment after training, attendance and acknowledgement records, and cyber threat training for senior management and the board (2.2.7).",
+    "effective": "2018",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Technology Risks Regulation for Banks (January 2018)",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/Documents/InformationSecurity/Technology%20Risks%20Regulation%20Banks.pdf",
+    "provision": "Items 8.2.1-8.2.14 (Incident management)",
+    "note": "Incident framework and owner, central severity setting, all users trained to report incidents (8.2.9), critical incidents reported to the QCB and relevant authorities within 1 hour of identification (8.2.10), yearly testing of the response plan.",
+    "effective": "2018",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Technology Risks Regulation for Banks (January 2018)",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/Documents/InformationSecurity/Technology%20Risks%20Regulation%20Banks.pdf",
+    "provision": "Section 1 (governance), Section 6.1 (BCP/DR) and Sections 8.11, 9.4.4, 10.5-10.9",
+    "note": "Board approval of cyber policy, strategy and budget; independent CISO; BCM committee owns BCM training and awareness (6.1.5); yearly BCP testing incl. simulation tests (6.1.9); acceptable use; anti-phishing; fraud prevention training by the fraud team (10.8).",
+    "effective": "2018",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Data Handling and Protection Regulation",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/Documents/InformationSecurity/Data%20Handling%20and%20Protection%20Regulation.pdf",
+    "provision": "Items 4.4-4.7, 6-7, 11, 13.2.3, 14-16",
+    "note": "Data governance unit and Data Privacy Officer; training and awareness on privacy, classification and handling (4.7, 13.2.3); PII, SPI and SFI rules; retention table; customer consent and rights; breaches reported to the QCB, NCSA and Ministry of Interior (section 16).",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Cloud Computing Regulation",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/Documents/InformationSecurity/Cloud%20Computing%20Regulation.pdf",
+    "note": "In force from 15 April 2024: cloud strategy, accountability that cannot be delegated, register disclosed to the QCB yearly, due diligence, QCB approval of material arrangements, sub-contracting notice, annual assessment, continuity and exit planning, PII and financial data processed in Qatar.",
+    "effective": "2024-04-15",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Law No. 13 of 2016 - Personal Data Privacy Protection",
+    "issuer": "NCSA",
+    "url": "https://ncsa.gov.qa/en/pages/personal-data-privacy-personal-data-privacy-protection-law",
+    "note": "Qatar's personal data privacy law, administered by the NCSA; the QCB Data Handling and Protection Regulation requires personal data to be processed in line with it. Not opened: the NCSA page is script-rendered.",
+    "effective": "2016"
+   },
+   {
+    "title": "The National Awareness Campaign for Information Security (Stay Aware)",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/en/Pages/The-National-Awareness-Campaign-for-Information-Security.aspx",
+    "note": "QCB public campaign with the Ministry of Interior, NCSA and QFCRA naming calls, social media, email, SMS and links as the main fraud channels, with reporting routes for financial cybercrime.",
+    "checked": "2026-11-08"
+   },
+   {
+    "title": "Financial Stability Review 2022",
+    "issuer": "QCB",
+    "url": "https://www.qcb.gov.qa/PublicationFilesReportsAndStatementsGovernance/QCB%20Financial%20Stability%20Report%202022_EN.pdf",
+    "provision": "Chapter 4.1.3 (Cyber Security) and the banks' systemic risk survey",
+    "note": "Reports ransomware and phishing as 2022 cyber challenges, the application layer as the most targeted, banks rating cyber risk high, and a business continuity committee for major events.",
+    "checked": "2026-11-08"
+   }
+  ],
+  "reviewed": "2026-11-08"
+ },
+ "exam": {
+  "questionsPerAttempt": 30,
+  "passMark": 75,
+  "minutes": 45,
+  "bank": [
+   {
+    "id": "qa-cy-x1",
+    "question": "A bank's board wants to approve the cyber security budget but leave the cyber risk appetite to the IT head. What does the Technology Risks Regulation expect?",
+    "options": [
+     "The board approves both the risk appetite and the strategy and budget",
+     "Risk appetite is optional if the budget is approved",
+     "The QCB sets each bank's risk appetite directly",
+     "The IT head sets the risk appetite and the board notes it"
+    ],
+    "answer": 0,
+    "explanation": "The regulation makes the board responsible for approving the overall cyber risk appetite as well as the cyber security policy, strategy and budget.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x2",
+    "question": "Which board composition point does the Technology Risks Regulation make about cyber security?",
+    "options": [
+     "The board must exclude anyone with an IT background",
+     "Every director must hold a cyber security certificate",
+     "The board must have adequate technical representation with cyber security experience",
+     "The CISO must sit on the board as a voting member"
+    ],
+    "answer": 2,
+    "explanation": "The regulation asks that the board have adequate technical representation, members with real cyber security experience or expertise, to guide it on cyber matters.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x3",
+    "question": "Senior management finds a material gap in cyber controls during its yearly adequacy review. What does the regulation expect next?",
+    "options": [
+     "Keep the gap internal until the next QCB inspection",
+     "Ask the vendor to formally accept the gap",
+     "Give the board a reasonable justification for the gap and act on it",
+     "Record the gap only if a breach has already happened"
+    ],
+    "answer": 2,
+    "explanation": "The board asks senior management to review control adequacy at least yearly, and senior management must give the board reasonable justification for any material gaps.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x4",
+    "question": "Who facilitates the bank's security forum of senior leaders such as the CEO, CFO, CIO and heads of HR, legal and risk?",
+    "options": [
+     "The CISO",
+     "The external auditor",
+     "The head of marketing",
+     "A QCB inspector"
+    ],
+    "answer": 0,
+    "explanation": "The regulation requires a security forum of senior leaders whose meetings are facilitated by the CISO.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x5",
+    "question": "Which body reviews the status of the security awareness programme and reports information security activities to the board?",
+    "options": [
+     "The staff social committee",
+     "The Information Security Committee",
+     "The procurement tender board",
+     "The customer complaints unit"
+    ],
+    "answer": 1,
+    "explanation": "The Information Security Committee's tasks include reviewing the status of the awareness programme, reviewing incidents and reporting to the board on information security.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x6",
+    "question": "Dafna Bank's compliance report on the Technology Risks Regulation is ready. Who must sign it?",
+    "options": [
+     "The board or a board-authorised committee",
+     "The QCB's supervisor for the bank",
+     "Any IT team leader",
+     "The vendor that supplies the firewall"
+    ],
+    "answer": 0,
+    "explanation": "The compliance report sent to the QCB must be duly signed by the board or a board-authorised committee, and material gaps are remediated under their guidance.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x7",
+    "question": "A colleague says the QCB can only check the bank's technology risk compliance through the yearly report. Is that right?",
+    "options": [
+     "No; the QCB may audit the bank's compliance at any time",
+     "Yes; the yearly report is the only route",
+     "No; only the NCSA may audit banks",
+     "Yes, unless a critical incident happens"
+    ],
+    "answer": 0,
+    "explanation": "The regulation states that the QCB reserves the right to audit the bank's compliance with it at any point in time.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x8",
+    "question": "Which national agency do the QCB rules name, alongside the QCB and the Ministry of Interior, as a recipient of data breach reports?",
+    "options": [
+     "The Qatar Financial Information Unit",
+     "The General Tax Authority",
+     "The National Cyber Security Agency",
+     "The Qatar Stock Exchange"
+    ],
+    "answer": 2,
+    "explanation": "Section 16 of the data regulation names the National Cyber Security Agency and the Ministry of Interior among the authorised agencies to receive breach reports.",
+    "difficulty": 2
+   },
+   {
+    "id": "qa-cy-x9",
+    "question": "Dafna Bank last updated its awareness course content two years ago. Which QCB requirement has it missed?",
+    "options": [
+     "Reviewing and updating training content at least yearly",
+     "Translating the course into five languages",
+     "Asking customers to approve the content",
+     "Running the course only in classrooms"
+    ],
+    "answer": 0,
+    "explanation": "The regulation requires the content of security training and awareness to be reviewed and updated at least annually for new trends, threats, systems and laws.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x10",
+    "question": "The bank's head of HR asks whether board members must also take cyber training. What does the Technology Risks Regulation say?",
+    "options": [
+     "Board members are exempt because they set policy",
+     "Board training is needed only after a breach",
+     "Only the board chair needs training",
+     "Senior management and board members must be made aware of cyber threats through training sessions"
+    ],
+    "answer": 3,
+    "explanation": "Item 2.2.7 requires awareness at all levels and says senior management and board members shall be made aware of the nuances of cyber threats through appropriate training sessions.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x11",
+    "question": "Which delivery methods does the regulation accept for the yearly awareness training?",
+    "options": [
+     "Only external conferences abroad",
+     "Only classroom sessions with a QCB observer",
+     "Only printed booklets posted to staff",
+     "Computer-based online training or classroom sessions"
+    ],
+    "answer": 3,
+    "explanation": "The regulation lets the bank choose computer-based online training or classroom-based sessions, as long as completion is mandated and monitored.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x12",
+    "question": "A branch employee receives an email with an attachment from an unknown sender. Under the acceptable use rules, what should she do?",
+    "options": [
+     "Not open it and report it to the bank's security team",
+     "Save it to a USB stick to open at home",
+     "Forward it to colleagues to ask their view",
+     "Open it on a branch PC to see if it is safe"
+    ],
+    "answer": 0,
+    "explanation": "The basic security hygiene rules say users should not open attachments from strangers and should report them to the bank's security team.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x13",
+    "question": "Which customer-facing control does the anti-phishing section expect a bank to offer?",
+    "options": [
+     "An email address where customers can send suspicious emails to check them",
+     "A phone line that reads out customers' passwords on request",
+     "A web page listing customers' account numbers",
+     "An app that shares customers' OTPs with partners"
+    ],
+    "answer": 0,
+    "explanation": "The regulation expects the bank to educate customers about phishing and provide an email address to which customers can forward suspicious emails to check their authenticity.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x14",
+    "question": "Why does the regulation require a bank to buy domain monitoring services?",
+    "options": [
+     "To measure how many staff read the intranet",
+     "To track customers' browsing outside the bank",
+     "To speed up the bank's website loading times",
+     "To spot newly registered look-alike domains that could be used for phishing"
+    ],
+    "answer": 3,
+    "explanation": "Under anti-phishing, banks must protect their domains and use domain monitoring to flag deceptive registrations similar to their own domains.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x15",
+    "question": "Fraudulent funds from a scam at another bank land in a Dafna Bank account. The police ask Dafna Bank for documents. What does the regulation expect?",
+    "options": [
+     "Share only if the other bank pays a fee",
+     "Share only after the account holder agrees",
+     "Refuse, because Dafna Bank was not defrauded",
+     "Share the data and documents the police request, even though Dafna Bank is not the victim"
+    ],
+    "answer": 3,
+    "explanation": "The regulation says the bank must share data and documents requested by the police even when it is not the victim but has received fraudulent money into its accounts.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x16",
+    "question": "Which team must itself undergo continuous training to build its skills under the fraud section of the regulation?",
+    "options": [
+     "The facilities management team",
+     "The investor relations team",
+     "The staff canteen team",
+     "The fraud risk management team"
+    ],
+    "answer": 3,
+    "explanation": "The fraud investigation part says the fraud risk management team must undergo continuous training to enhance its skills and competencies.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x17",
+    "question": "In the QCB's public 'Stay Aware' campaign, which partners joined the QCB?",
+    "options": [
+     "Only foreign central banks from the region",
+     "The General Tax Authority, the QFIU and an airline",
+     "The Ministry of Commerce, the stock exchange and a telecom firm",
+     "The Ministry of Interior, the NCSA and the QFC Regulatory Authority"
+    ],
+    "answer": 3,
+    "explanation": "The QCB launched the Stay Aware campaign in cooperation with the Ministry of Interior, the National Cyber Security Agency and the QFC Regulatory Authority.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x18",
+    "question": "Under the QCB data regulation, whom does the Data Privacy Officer report to?",
+    "options": [
+     "Directly to the CEO or the most senior management position",
+     "To the bank's largest shareholder",
+     "To the head of IT operations",
+     "To the marketing director"
+    ],
+    "answer": 0,
+    "explanation": "The DPO must report directly to the CEO or most senior manager, who makes sure data privacy and protection risks are communicated to the board.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x19",
+    "question": "A foreign bank's branch in Qatar wants its DPO to sit at headquarters abroad. What does the regulation allow?",
+    "options": [
+     "It may, with no further arrangement in Qatar",
+     "It may, but only if the DPO is also the CISO",
+     "It may never; the DPO must always live in Qatar",
+     "It may, if a Qatar-based representative is assigned to liaise and ensure requirements are met"
+    ],
+    "answer": 3,
+    "explanation": "A foreign institution may appoint a DPO at its headquarters, provided a Qatar-based representative is responsible for liaising and making sure privacy requirements are consistently met.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x20",
+    "question": "Which classification rule does the regulation set for sensitive personal information?",
+    "options": [
+     "Classify it only if a customer asks",
+     "Leave classification to each branch",
+     "Manage it under the highest, most strict classification tier",
+     "Treat it like public marketing data"
+    ],
+    "answer": 2,
+    "explanation": "SPI and SFI must be classified and managed as per the highest, most strict classification available in the institution's framework.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x21",
+    "question": "How often must the bank at least review its Record of Processing Activities (ROPA), absent major changes?",
+    "options": [
+     "Every ten years with retention",
+     "Only when the QCB requests it",
+     "Every five years",
+     "Every year"
+    ],
+    "answer": 3,
+    "explanation": "The regulation requires annual ROPA reviews, or reviews triggered by changes such as restructuring, new rules or a changed processing environment.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x22",
+    "question": "Dafna Bank wants to share customer data with an insurance partner for cross-selling. No legal, regulatory or contractual need applies. What is required first?",
+    "options": [
+     "Only an internal email approval from sales",
+     "Nothing, if the partner is licensed in Qatar",
+     "The customers' consent, and telling them the impact of not consenting",
+     "A notice in a newspaper advertisement"
+    ],
+    "answer": 2,
+    "explanation": "The bank must collect consent before sharing customer data with a third party unless it is for legal, regulatory or contractual purposes, and must tell customers the impact of not granting consent.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x23",
+    "question": "A customer asks for a copy of all the personal data Dafna Bank holds about her. In what form must the bank be able to provide it?",
+    "options": [
+     "Only as a handwritten summary by the branch",
+     "Only as photographs of the screen",
+     "In a structured, commonly used and machine-readable format",
+     "Only verbally over the phone"
+    ],
+    "answer": 2,
+    "explanation": "The regulation requires procedures so customers can access a copy of their data, with information about processing, in a structured, commonly used, machine-readable format.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x24",
+    "question": "Which retention rule applies when another law requires a longer period than the QCB data regulation's minimum?",
+    "options": [
+     "Keep it for the shorter of the two periods",
+     "Ask the customer which period to apply",
+     "Keep the data for the longer period the other law requires",
+     "Delete it at the QCB minimum regardless"
+    ],
+    "answer": 2,
+    "explanation": "The retention periods are minimums; data must be kept longer where a legal or regulatory mandate requires it, including AML/CFT retention rules.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x25",
+    "question": "Dafna Bank wants to use a fully autonomous system to approve or reject loan applications with no human review. What does the data regulation require?",
+    "options": [
+     "Only a notice on the bank's website",
+     "Nothing, if the model is accurate",
+     "Only the vendor's written guarantee",
+     "Approval from the QCB before processing data in fully autonomous decision-making systems"
+    ],
+    "answer": 3,
+    "explanation": "The regulation requires institutions to assess controls for semi-autonomous or autonomous processing and to seek QCB approval before processing data within fully autonomous decision-making systems.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x26",
+    "question": "Which regulation items make privacy and data protection training a requirement for employees of QCB-regulated institutions?",
+    "options": [
+     "Items 6.1.8 and 6.1.9 of the Technology Risks Regulation",
+     "Items 4.7 and 13.2.3 of the Data Handling and Protection Regulation",
+     "Sections 18 and 19 of the Cloud Computing Regulation",
+     "Article 1 of Law No. 13 of 2016 only"
+    ],
+    "answer": 1,
+    "explanation": "Item 4.7 requires training and awareness on privacy, classification and handling, and 13.2.3 requires appropriate training on data security, data protection and privacy. Sections 6.1.8-6.1.9 cover continuity testing.",
+    "difficulty": 5
+   },
+   {
+    "id": "qa-cy-x27",
+    "question": "Who owns and manages the incident management programme, including its budget, under the Technology Risks Regulation?",
+    "options": [
+     "Whoever reports the incident first",
+     "A person appointed by the bank, who is also the contact point for security communications",
+     "The bank's external legal counsel",
+     "The QCB's on-call supervisor"
+    ],
+    "answer": 1,
+    "explanation": "The bank must appoint a person who owns and manages the incident management programme, including budget and execution, and acts as the contact point for information security communications.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x28",
+    "question": "Besides cyber incidents, what does the regulation say users should be trained to respond to as part of incident management?",
+    "options": [
+     "Certain incidents such as fire and natural disasters",
+     "Media questions about share prices",
+     "Customer complaints about pricing",
+     "Disputes over staff bonuses"
+    ],
+    "answer": 0,
+    "explanation": "Item 8.2.9 says all users must be trained to report incidents to the incident team and to respond to certain incidents, such as fire or natural disasters.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x29",
+    "question": "After a major incident causing severe disruption, which items must the root cause analysis include under the regulation?",
+    "options": [
+     "Only the name of the employee to blame",
+     "Only the vendor's invoice for the fix",
+     "Only the number of emails sent during the incident",
+     "Timeline, losses and costs, customers affected, reputational impact and corrective actions"
+    ],
+    "answer": 3,
+    "explanation": "The regulation lists timelines, revenue loss, costs, customers affected, implications for reputation and confidence, and corrective and preventive measures.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x30",
+    "question": "A large-scale cyber attack hits several Gulf banks. What does the regulation expect Dafna Bank to do even if it is only lightly affected?",
+    "options": [
+     "Inform only its own shareholders",
+     "Stay silent so competitors do not learn about it",
+     "Keep the QCB and the Ministry of Interior informed so sector-wide measures can be taken",
+     "Wait for the QCB to ask before saying anything"
+    ],
+    "answer": 2,
+    "explanation": "Item 8.2.14 asks banks to keep the QCB and MOI informed of incidents such as large-scale cyber incidents, so that proactive measures can reduce risk to the financial sector.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x31",
+    "question": "An incident ticket was raised as 'low' by a branch, but the central team sees signs of a wider attack. What should happen?",
+    "options": [
+     "The ticket is closed and a new one opened next week",
+     "The vendor decides the final rating",
+     "The central team re-classifies it and applies the matching escalation and reporting route",
+     "The branch rating stands because it was first"
+    ],
+    "answer": 2,
+    "explanation": "Severity is set by the centralised incident response team, with escalation and resolution matched to the severity. If it becomes critical, the 1-hour reporting rule applies from identification.",
+    "difficulty": 5
+   },
+   {
+    "id": "qa-cy-x32",
+    "question": "Which definition matches a 'data breach' in the QCB data regulation?",
+    "options": [
+     "A planned upgrade of the core banking system",
+     "Sensitive, confidential or protected data accessed, disclosed or stolen by unauthorised people",
+     "Any delay in answering a customer's email",
+     "An authorised transfer of data to the QCB"
+    ],
+    "answer": 1,
+    "explanation": "A data breach is an incident where sensitive, confidential or protected data is accessed, disclosed or stolen by unauthorised individuals. Misuse by authorised users is a data privacy breach.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x33",
+    "question": "A breach exposes customers' card data. Under section 16, which action fits the duty to trigger action by stakeholders?",
+    "options": [
+     "Waiting until fraud losses appear before telling anyone",
+     "Alerting affected customers and staff so cards can be blocked and fraud watched for",
+     "Asking customers to sign that the bank is not liable",
+     "Removing the incident from the internal log"
+    ],
+    "answer": 1,
+    "explanation": "Section 16 requires the institution to trigger action from relevant stakeholders, including employees and customers, to circumvent the potential impact of the breach.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x34",
+    "question": "Which customer reporting route for financial cybercrime does the QCB's Stay Aware campaign mention?",
+    "options": [
+     "The QCB's exchange rate service",
+     "The Ministry of Interior's Metrash2 application",
+     "A post on the bank's social media page",
+     "The bank's annual general meeting"
+    ],
+    "answer": 1,
+    "explanation": "The Stay Aware page tells the public to report financial cybercrime through a Ministry of Interior hotline, the Metrash2 app or email.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x35",
+    "question": "In a hot test under the regulation's unplanned drill requirement, what happens?",
+    "options": [
+     "Only one server is restarted in the data centre",
+     "The bank checks that fire alarms ring",
+     "All activities are moved from the original site to the alternate site in a full simulation",
+     "Managers discuss a scenario around a table"
+    ],
+    "answer": 2,
+    "explanation": "The hot test is a full simulation in which activities are relocated from the original site to the alternative site; cold tests cover selected components.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x36",
+    "question": "Who must assess the effectiveness of the bank's BCP testing programme and report to the Audit Committee?",
+    "options": [
+     "The head of marketing",
+     "Internal audit, with an independent external audit also each year",
+     "The vendor that hosts the recovery site",
+     "The customer complaints unit"
+    ],
+    "answer": 1,
+    "explanation": "Internal audit assesses the testing programme, reviews results and reports to the Audit Committee, and an independent experienced external auditor reviews it annually.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x37",
+    "question": "Which standard does the regulation give as an example to align the bank's BCM policy, procedures and plans with?",
+    "options": [
+     "ISO 22301",
+     "ISO 9001",
+     "ISO 14001",
+     "IFRS 9"
+    ],
+    "answer": 0,
+    "explanation": "The regulation says BCM policies, procedures and plans should follow a global standard such as ISO 22301, alongside the QCB's business continuity instructions.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x38",
+    "question": "Under the Cloud Computing Regulation, where must PII and financial information processed in a cloud arrangement be processed?",
+    "options": [
+     "Within Qatar only",
+     "Wherever the provider's prices are lowest",
+     "In any country with a privacy law",
+     "Anywhere in the GCC without approval"
+    ],
+    "answer": 0,
+    "explanation": "The regulation requires entities to ensure that PII and financial information is processed within Qatar only, consistent with the data regulation's location rules.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x39",
+    "question": "A cloud provider plans to add a new sub-contractor that will process Dafna Bank's data. What must the arrangement give the bank?",
+    "options": [
+     "A discount on fees but no say in the change",
+     "Advance notice long enough to assess the risk and the right to object or approve",
+     "Notice after the change, for information only",
+     "No notice, because sub-contracting is the provider's business"
+    ],
+    "answer": 1,
+    "explanation": "Where sub-contracting is allowed, the CSP must notify the entity in time for a risk assessment, and the entity must be able to object or give explicit approval.",
+    "difficulty": 5
+   },
+   {
+    "id": "qa-cy-x40",
+    "question": "How often must a QCB-regulated entity carry out a full assessment of each cloud arrangement?",
+    "options": [
+     "Every five years",
+     "Every year",
+     "Only at contract signing",
+     "Only after a provider breach"
+    ],
+    "answer": 1,
+    "explanation": "The regulation requires a full annual assessment of each cloud arrangement, covering contracts, failures, breaches at the provider and location changes.",
+    "difficulty": 3
+   },
+   {
+    "id": "qa-cy-x41",
+    "question": "When contracting a cloud provider, what must the bank's contract say about incidents at the provider?",
+    "options": [
+     "The provider reports incidents only at year end",
+     "The provider must report incidents affecting the bank's service without undue delay",
+     "The provider may keep incidents confidential from the bank",
+     "The provider reports incidents only to its own board"
+    ],
+    "answer": 1,
+    "explanation": "Material arrangement contracts must oblige the provider to report incidents that affected the entity's operation or service without undue delay.",
+    "difficulty": 4
+   },
+   {
+    "id": "qa-cy-x42",
+    "question": "Ahmed, the board risk committee chair, asks for one item that proves the board itself met its QCB cyber training duty. Which is best?",
+    "options": [
+     "Staff completion rates for the yearly refresher only",
+     "Records of the cyber threat training sessions held for board members and senior management",
+     "The CISO's own professional certificates",
+     "A copy of the cloud provider's ISO certificate"
+    ],
+    "answer": 1,
+    "explanation": "Item 2.2.7 requires senior management and board members to be made aware of cyber threats through training sessions, so session records are the direct evidence. Staff completion rates cover a different duty.",
+    "difficulty": 5
+   }
+  ]
+ }
+}

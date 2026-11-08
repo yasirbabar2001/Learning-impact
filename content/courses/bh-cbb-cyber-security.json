@@ -1,0 +1,3131 @@
+{
+  "slug": "bh-cbb-cyber-security",
+  "title": "Bahrain | CBB Cyber Security Risk Management (Module OM) and Confidentiality",
+  "tagline": "The CBB's Module OM-5.5 cyber rules in practice: governance, phishing defences, one-hour incident reporting, confidentiality and staff training.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional banks licensed by the Central Bank of Bahrain",
+    "Retail and wholesale banking",
+    "IT, cyber security and security operations",
+    "Contact centres, branches and digital channels",
+    "Risk, compliance and internal audit"
+  ],
+  "hours": 6,
+  "description": "A country-specific quest for staff of **conventional banks licensed by the Central Bank of Bahrain (CBB)**. It is built on **Section OM-5.5 (Cyber Security Risk Management) of the Operational Risk Management Module in Volume 1 of the CBB Rulebook**, the **confidentiality articles (116-119) of the Central Bank of Bahrain and Financial Institutions Law (Law No. 64 of 2006)**, and, in general terms only, the **Personal Data Protection Law (Law No. 30 of 2018)**.\n\nModule OM content comes from the **CBB-hosted copy of Volume 1, Module OM issued with the CBB's consultation of 28 January 2024**. Pages dated 2021-2022 show the rules then in force; pages marked 'XX 2024' are treated as proposals. The consolidated Rulebook site could not be opened, so always check the current paragraph. Volume 1 only; other volumes are not covered.\n\nOM-5.5.55 requires all employees to receive regular cyber security training, and OM-5.5.56 adds role-specific training for the board, senior management, cyber, IT and high-risk staff. This quest covers governance, prevention and phishing, testing, incident reporting to the CBB, confidentiality and training effectiveness.\n\nThis quest builds knowledge of the Bahrain framework; it does not replace your institution's own cyber security, information security and data protection policies, which you must always follow.",
+  "audience": [
+    "All employees of CBB-licensed conventional banks who need the cyber awareness training Module OM requires",
+    "Contact centre, branch, payments and digital banking staff exposed to phishing and social engineering",
+    "IT, cyber security and SOC staff who apply the OM-5.5 controls and incident reporting rules",
+    "Board members and senior managers who oversee cyber risk and receive role-specific training",
+    "Risk, compliance, data protection and internal audit staff preparing for CBB reviews"
+  ],
+  "outcomes": [
+    "Explain the board, senior management, CISO and cyber risk function duties under Module OM-5.5",
+    "Apply the preventive, email authentication and customer-link controls in OM-5.5.18 to OM-5.5.21",
+    "Recognise phishing and social engineering and respond with pause, verify and report",
+    "Describe the testing cycles and apply the one-hour, two-hour and 10-day CBB incident reporting steps",
+    "Apply the confidentiality gateways in Articles 116-117 of the CBB Law and describe the PDPL in general terms",
+    "Design and measure role-based cyber training that meets OM-5.5.54 to OM-5.5.56"
+  ],
+  "quest": {
+    "name": "Shields of the Kingdom",
+    "premise": "You have just joined the cyber risk team at Dilmun Coast Bank, a fictional conventional retail bank licensed by the CBB, with its head office in Seef, Manama, and branches in Riffa and Muharraq. Phishing texts are hitting customers and the board wants proof the bank's cyber programme works. With CISO Fatema Al Sayed, SOC lead Arjun Pillai, contact centre supervisor Maryam Al Mahroos and CRO Thomas Brennan, clear five stages, then face the final boss: chief executive Rashid Bucheeri's board review.",
+    "badge": {
+      "name": "Bahrain Cyber Shield",
+      "description": "Awarded to bank staff who can apply the CBB's Module OM-5.5 cyber rules and the CBB Law's confidentiality duties: prevent, detect, report and protect."
+    },
+    "color": "#0b6e99",
+    "cast": [
+      {
+        "id": "fatema",
+        "name": "Fatema Al Sayed",
+        "role": "Chief Information Security Officer, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "hijab",
+          "color": "#0b6e99"
+        }
+      },
+      {
+        "id": "arjun",
+        "name": "Arjun Pillai",
+        "role": "SOC Team Lead",
+        "look": {
+          "skin": 4,
+          "hair": "short",
+          "color": "#3a5a40"
+        }
+      },
+      {
+        "id": "maryam",
+        "name": "Maryam Al Mahroos",
+        "role": "Contact Centre Supervisor, Riffa",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#9d4edd"
+        }
+      },
+      {
+        "id": "thomas",
+        "name": "Thomas Brennan",
+        "role": "Chief Risk Officer, chair of the cyber committee",
+        "look": {
+          "skin": 1,
+          "hair": "bald",
+          "color": "#6c757d"
+        }
+      },
+      {
+        "id": "rashid",
+        "name": "Rashid Bucheeri",
+        "role": "Chief Executive",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#264653"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "Bahrain's Cyber Rulebook: Module OM-5.5 and Who Owns Cyber Risk",
+      "stage": "The Seef Command Deck",
+      "summary": "Map the CBB's cyber security rules for conventional banks in Module OM-5.5: the board's role, the NIST-based framework, the independent cyber risk function and CISO, senior management duties and review cycles, and which version of the text this quest uses.",
+      "minutes": 50,
+      "objectives": [
+        "Explain how Module OM-5.5 in Volume 1 of the CBB Rulebook applies to conventional banks and which CBB-hosted version this quest uses",
+        "Describe the duties of the board, the cyber security committee, senior management and the CISO",
+        "List the minimum components of the cyber framework and its review cycles",
+        "Explain why the cyber risk function must be independent of IT"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one in the CISO's office",
+          "setting": "Dilmun Coast Bank head office, Seef, Manama. 8:15 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "You join Dilmun Coast Bank, a fictional conventional retail bank licensed by the Central Bank of Bahrain, on the cyber risk team.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatema",
+              "text": "Welcome! I'm Fatema Al Sayed, the bank's CISO. Your quest starts with a question the CBB will ask us: who owns cyber risk here?",
+              "mood": "happy"
+            },
+            {
+              "who": "arjun",
+              "text": "Arjun Pillai, SOC team lead. Most people say 'IT'. That's the wrong answer in Bahrain.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "Module OM, Section OM-5.5, puts the board at the top, senior management in charge of delivery and a cyber risk function that sits outside IT.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thomas",
+              "text": "Thomas Brennan, Chief Risk Officer. I chair our cyber security committee, so that function reports into my side of the house.",
+              "mood": "neutral"
+            },
+            {
+              "who": "rashid",
+              "text": "And I'm Rashid Bucheeri, chief executive. Cyber is on every board agenda now. I want to know we can show the CBB a working framework, not just a policy file.",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Then let's map it. By the end of this stage you'll know the framework, the roles and the review cycles.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Module OM-5.5 in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "The board owns it",
+              "narration": "The board must make sure the bank has a robust cyber security risk management policy, approve it and set clear ownership and accountability. Cyber security must be discussed at board or board committee meetings."
+            },
+            {
+              "icon": "🧭",
+              "heading": "A framework built on NIST",
+              "narration": "The framework must contain a cyber strategy, a cyber policy, a risk approach with tools and methods, and an organisation-wide security awareness programme. It follows the NIST Cybersecurity Framework."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Independent of IT",
+              "narration": "A cyber security risk function, separate from the IT department, reports to an independent risk function and monitors how mature the controls are. A suitably qualified CISO heads it."
+            },
+            {
+              "icon": "👥",
+              "heading": "Senior management delivers",
+              "narration": "Senior management builds and runs the framework, writes the strategy and policy, allocates resources and reports to the board at least quarterly on threats and incidents."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Reviewed on a cycle",
+              "narration": "The board re-evaluates the framework every three years or sooner when risks change. The strategy is revised at least every three years, and the policy is reviewed and approved at least once a year."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Who owns cyber risk at a Bahraini conventional bank",
+          "caption": "Based on OM-5.5.1 to OM-5.5.11 in the CBB-hosted Module OM copy issued with the January 2024 consultation.",
+          "items": [
+            {
+              "label": "Board of directors",
+              "detail": "Approves the cyber policy and framework, sets accountability, discusses cyber at meetings."
+            },
+            {
+              "label": "Cyber security committee",
+              "detail": "Headed by an independent control-function senior manager such as the CRO or CFO."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Builds and runs the framework, resources it and reports to the board at least quarterly."
+            },
+            {
+              "label": "Cyber risk function and CISO",
+              "detail": "Independent of IT; monitors and reports on control status and maturity."
+            },
+            {
+              "label": "Every employee",
+              "detail": "Follows the policy, completes training and reports suspicious activity."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Match the duty to its owner",
+          "prompt": "Link each OM-5.5 duty to the person or body that carries it.",
+          "pairs": [
+            {
+              "left": "Board",
+              "right": "Approves the cyber policy and re-evaluates the framework at least every three years"
+            },
+            {
+              "left": "Senior management",
+              "right": "Reports to the board on cyber threats and risk treatment at least quarterly"
+            },
+            {
+              "left": "CISO",
+              "right": "Heads the cyber security risk function with authority to implement the strategy"
+            },
+            {
+              "left": "Cyber committee",
+              "right": "Approves the policies and frameworks needed to carry out the cyber strategy"
+            },
+            {
+              "left": "Cyber risk function",
+              "right": "Monitors and reports on the status and maturity of cyber controls"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under OM-5.5.6, where should Dilmun Coast Bank's cyber security risk function report?",
+          "options": [
+            "To the head of IT, who runs the systems",
+            "To an independent risk management function or an equivalent",
+            "To the internal auditor only",
+            "Directly to the CBB"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.6 requires the cyber risk function to be independent of the IT department and to report to an independent risk management function or an equivalent. Reporting to IT would defeat that independence."
+        },
+        {
+          "type": "concept",
+          "title": "Which text this quest uses",
+          "body": "The consolidated CBB Rulebook site could not be opened for this quest, so its Module OM content comes from the **CBB-hosted copy of Volume 1, Module OM** published with the CBB's consultation of **28 January 2024** on proposed amendments to the cyber security requirements.\n\n- Most of Section OM-5.5 in that copy carries pages dated **July 2021**, with some pages from **April 2022** and **October 2022**: these show the rules in force when the consultation was issued.\n- Pages marked **'XX 2024'** show the **proposals**, such as making a cyber threat intelligence subscription mandatory and adding an external attack surface management platform. Treat these as proposals unless you confirm the final text.\n- **Volume 1 covers conventional banks only.** Other volumes have their own versions of the rules.\n\nAlways check the current paragraph in the Rulebook and follow your bank's own policies."
+        },
+        {
+          "type": "sort",
+          "title": "Rule or proposal?",
+          "prompt": "Sort each item from the January 2024 CBB copy of Module OM: was it already in the dated 2021-2022 pages, or a 2024 proposal?",
+          "buckets": [
+            "In the 2021-2022 pages",
+            "2024 proposal"
+          ],
+          "items": [
+            {
+              "text": "Penetration testing at least twice a year",
+              "bucket": 0
+            },
+            {
+              "text": "Calling the CBB within one hour of a qualifying cyber incident",
+              "bucket": 0
+            },
+            {
+              "text": "Regular cyber training for all employees",
+              "bucket": 0
+            },
+            {
+              "text": "A mandatory subscription to a cyber threat intelligence service",
+              "bucket": 1
+            },
+            {
+              "text": "An external attack surface management platform",
+              "bucket": 1
+            },
+            {
+              "text": "A CISO heading an independent cyber risk function",
+              "bucket": 0
+            },
+            {
+              "text": "SPF, DKIM and DMARC email authentication",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The board pack",
+          "setting": "Board meeting preparation room, Seef. Two days before the board.",
+          "lines": [
+            {
+              "who": "rashid",
+              "text": "The chairman wants one page on cyber. Can we just give him the number of incidents?",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "OM-5.5.4 expects fuller reports at every board meeting: key risk and performance indicators, control maturity, staff awareness status, recent incidents and penetration test results.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thomas",
+              "text": "And senior management owes the board quarterly or more frequent reports on threats, risk treatment and all cyber incidents, internal and external.",
+              "mood": "neutral"
+            },
+            {
+              "who": "rashid",
+              "text": "Staff awareness is a board item too?",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Yes. If the board can't see whether people are spotting phishing, it can't judge the risk.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Framework vocabulary",
+          "cards": [
+            {
+              "front": "Cyber security strategy",
+              "back": "The documented, bank-wide plan: why cyber matters to the bank, its main threats, its approach, objectives and how it will respond, recover and share information. Revised at least every three years."
+            },
+            {
+              "front": "Cyber security policy",
+              "back": "The written rules protecting systems and client data, covering roles, risk tolerance and functions such as access, incident and third-party management. Reviewed and approved at least annually."
+            },
+            {
+              "front": "Cyber risk tolerance",
+              "back": "A statement, in the policy, of how much cyber risk the bank accepts, shaped by customer impact, downtime, publicity, penalties and financial loss."
+            },
+            {
+              "front": "Information asset inventory",
+              "back": "A regularly updated list of the bank's information assets and data, each with a clear internal owner and classification."
+            },
+            {
+              "front": "Data classification",
+              "back": "Deciding how important each set of data is and putting it in a category that sets who can access it, how it is protected, kept, encrypted and disposed of."
+            },
+            {
+              "front": "Playbooks",
+              "back": "Approved plans and procedures for responding to and recovering from cyber incidents, with criteria for activating them."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The IT director's proposal",
+          "situation": "To save costs, Dilmun Coast Bank's IT director proposes merging the cyber risk function into IT operations, with the CISO reporting to him. He argues that IT already runs the firewalls and knows the systems best. Rashid asks for your view before the executive committee.",
+          "choices": [
+            {
+              "text": "Support the merger, as IT has the technical expertise and one team is cheaper.",
+              "outcome": "The CBB expects the cyber risk function to be independent of IT and to report to an independent risk function. The merger would remove the challenge that independence is meant to give.",
+              "score": 0
+            },
+            {
+              "text": "Advise against it: OM-5.5.6 requires a cyber risk function independent of IT, reporting to risk, headed by a qualified CISO; propose better cooperation instead.",
+              "outcome": "Right. Independence lets the function monitor and report honestly on control maturity, including IT's own controls. Cooperation and shared tooling can save costs without changing the reporting line.",
+              "score": 2
+            },
+            {
+              "text": "Agree, but ask the IT director to send the CBB a quarterly letter confirming that controls are fine.",
+              "outcome": "Self-certification by the team being monitored is exactly what the rule avoids. The reporting line itself must stay independent.",
+              "score": 0
+            },
+            {
+              "text": "Suggest the CISO reports to IT for daily work and to the CRO once a year.",
+              "outcome": "This is partly right in spirit but still leaves the function inside IT for its day-to-day work. OM-5.5.6 asks for a function that is independent of IT.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the CBB's cyber rules developed (consultations page)",
+          "caption": "Dates as listed on the CBB's consultations page (cbb.gov.bh). Check whether later amendments have been issued.",
+          "items": [
+            {
+              "label": "Cyber security risk management consultation",
+              "value": "Jan 2020",
+              "detail": "The CBB consulted on cyber security risk management and published final OM enhancements for Volumes 1 and 2."
+            },
+            {
+              "label": "Cybersecurity requirements consultation",
+              "value": "Jun 2022",
+              "detail": "A further consultation on cybersecurity requirements."
+            },
+            {
+              "label": "Financial Cybersecurity Controls",
+              "value": "Nov 2022",
+              "detail": "The CBB consulted on a draft national standard prepared by the National Cybersecurity Center."
+            },
+            {
+              "label": "Proposed amendments to cyber rules",
+              "value": "Jan 2024",
+              "detail": "Consultation dated 28 January 2024 covering Volumes 1, 2, 5 and 6, with the Module OM copy used in this quest."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the CBB's January 2024 cyber consultation",
+          "body": "On **28 January 2024** the CBB published proposed amendments to its cyber security requirements, with marked-up copies of Module OM for Volumes 1 and 2 and the matching modules for Volumes 5 and 6.\n\nIn the Volume 1 copy, the new pages (marked 'XX 2024') show the direction of travel:\n\n- a cyber threat intelligence subscription moves from a recommendation to a **requirement**;\n- banks would subscribe to an **external attack surface management** platform that continuously finds the bank's internet-facing assets, flags exposures with a data refresh within 24 to 48 hours, rates the bank's visible controls and profiles vendors and partners.\n\nThe lesson for Dilmun Coast Bank: Bahrain's cyber rules are updated in steps, through public consultation. Fatema keeps a watch list of consultations and checks the Rulebook before each annual policy review."
+        },
+        {
+          "type": "check",
+          "question": "How often must Dilmun Coast Bank's written cyber security policy be reviewed and approved under OM-5.5.15?",
+          "options": [
+            "At least every three years",
+            "Only when the CBB asks",
+            "At least annually, by the board or senior management as appropriate",
+            "Every board meeting"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.15 requires the written cyber policy to be reviewed and approved at least annually by the board or senior management, as appropriate. The three-year cycle applies to the framework evaluation and the strategy revision."
+        },
+        {
+          "type": "tip",
+          "title": "Read the verb",
+          "body": "The Rulebook marks binding rules with **must** and guidance with **should**. Both matter in an examination, but a 'must' gap is a breach. When the January 2024 copy changes a 'should' to a 'must', as for threat intelligence, the bank's plan has to change too. In policies, quote the paragraph number so reviewers can trace each control to OM-5.5."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "OM-5.5 in Volume 1 of the CBB Rulebook sets the cyber rules for conventional banks; this quest uses the CBB-hosted January 2024 consultation copy.",
+            "The board approves the cyber policy, sets accountability and discusses cyber at its meetings, with full cyber reports at every meeting.",
+            "The framework follows NIST and must include a strategy, a policy, a risk approach and an organisation-wide awareness programme.",
+            "A cyber risk function independent of IT, headed by a qualified CISO, reports to an independent risk function.",
+            "Cycles: framework evaluated every three years (or on major change), strategy revised at least every three years, policy approved at least annually."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Who in your bank receives the board's cyber report, and does it include the status of staff security awareness? What would you add?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-cy-s1-q1",
+          "question": "Which framework must a Bahraini conventional bank's cyber security risk management framework be developed in line with, according to OM-5.5.3?",
+          "options": [
+            "The NIST Cybersecurity Framework",
+            "The PCI Data Security Standard",
+            "The Basel Committee's operational risk principles",
+            "ISO 22301 on business continuity"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.3 names the NIST Cybersecurity Framework, summarised in Appendix C of Module OM. The other standards may be useful but are not the one the rule names.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s1-q2",
+          "question": "Which list matches the minimum components of the cyber framework in OM-5.5.2?",
+          "options": [
+            "Strategy, policy, risk approach and tools, and an organisation-wide awareness programme",
+            "Strategy, insurance policy, penetration test results and a red team",
+            "Policy, firewall rules, antivirus software and a disaster recovery site",
+            "An IT budget, a vendor list, a help desk and an outsourcing contract"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.2 lists a cyber strategy, a cyber policy, a risk management approach with tools and methodology, and an organisation-wide security awareness programme. The other lists mix in controls or unrelated items.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s1-q3",
+          "question": "Dilmun Coast Bank's board last evaluated its cyber framework 18 months ago. A major new threat emerges that changes the risk environment significantly. What does OM-5.5.5 expect?",
+          "options": [
+            "Wait until the three-year point, as the cycle is fixed",
+            "A fresh board evaluation now, because significant change triggers it",
+            "Ask the CISO to update the framework without board involvement",
+            "Evaluate only at the next CBB inspection"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.5 requires the board to evaluate and approve the framework every three years or when there are significant changes to the risk environment. A major change brings the review forward.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s1-q4",
+          "question": "Who should head the cyber security committee recommended by OM-5.5.9?",
+          "options": [
+            "The head of IT infrastructure",
+            "An independent senior manager from a control function, such as the CFO or CRO",
+            "The external auditor",
+            "The most senior business line head"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.9 says the committee should be headed by an independent senior manager from a control function, giving examples such as the CFO or CRO. Its members should include business, IT, risk and compliance.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s1-q5",
+          "question": "How often must senior management report to the board on cyber threats and cyber risk treatment under OM-5.5.10?",
+          "options": [
+            "Once a year",
+            "Every three years",
+            "Only after a reportable incident",
+            "Quarterly or more often"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.10(e) requires quarterly or more frequent reports to the board on the current cyber threat situation and risk treatment, and (f) adds quarterly or more frequent reports on all cyber incidents.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s1-q6",
+          "question": "Which item is listed in OM-5.5.4 as a topic for the comprehensive cyber reports the board should receive at every meeting?",
+          "options": [
+            "The salary of the CISO",
+            "The status of staff information security awareness",
+            "The marketing plan for digital channels",
+            "Individual customers' account balances"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.4 lists key risk and performance indicators, control maturity status, staff information security awareness status, recent incidents and penetration test results.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s1-q7",
+          "question": "A branch of a foreign bank operates in Bahrain under Volume 1. How does OM-5.5.6 expect its cyber risk oversight to work?",
+          "options": [
+            "It is exempt from cyber governance rules",
+            "The CBB itself acts as its cyber risk function",
+            "Under a framework of policies ensuring adequate oversight by the regional or head office",
+            "Its local IT manager must chair the board's cyber committee"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.6 says branches of foreign banks must be governed under cyber risk policies that ensure an adequate level of oversight by the regional or head office.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s1-q8",
+          "question": "The CISO notices that no one owns the bank's customer complaints database and it is missing from the inventory. Which OM-5.5.11 duties are not being met?",
+          "options": [
+            "Clear ownership and classification of information assets, and a maintained inventory",
+            "The duty to buy cyber insurance",
+            "The duty to run a red team exercise",
+            "The duty to report to the CBB within one hour"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.11(a) and (b) require senior management to make sure all information assets and data have clear internal owners and classifications and are recorded in an inventory that is regularly reviewed.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s1-q9",
+          "question": "According to OM-5.5.12, who should be involved when the bank classifies a set of data?",
+          "options": [
+            "Only the external penetration testers",
+            "The customers whose data it is",
+            "Only the CBB's inspectors",
+            "The data owner, meaning the relevant business function"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.12 says the owner of the data, meaning the relevant business function, should be involved in classifying it, and that categories should be clear with little overlap.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s1-q10",
+          "question": "In the CBB-hosted January 2024 copy of Module OM, how should a learner treat pages marked 'XX 2024', such as the external attack surface management paragraph?",
+          "options": [
+            "As rules in force since July 2021",
+            "As guidance for Islamic banks only",
+            "As proposals from the consultation, to be confirmed against the final text",
+            "As withdrawn rules that no longer apply"
+          ],
+          "answer": 2,
+          "explanation": "The copy was published with the 28 January 2024 consultation; pages dated 'XX 2024' show proposed changes. Pages dated 2021 and 2022 show the rules then in force. Check the current Rulebook for the final position.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Prevention Controls, Phishing and Social Engineering",
+      "stage": "The Riffa Signal Tower",
+      "summary": "Learn the preventive controls Module OM requires, the email and customer-link rules in OM-5.5.19 to OM-5.5.21, and how phishing, smishing, vishing, pretexting and payment-change fraud target bank staff and customers in Bahrain.",
+      "minutes": 50,
+      "objectives": [
+        "Describe the preventive controls listed in OM-5.5.18 and the anti-spoofing measures in OM-5.5.19",
+        "Apply OM-5.5.21's rules on email domains, SMS links and shortened links",
+        "Recognise phishing and social engineering red flags",
+        "Use the pause, verify and report routine"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The text message at the Riffa branch",
+          "setting": "Contact centre, Riffa. Monday, 9:40 am.",
+          "lines": [
+            {
+              "who": "maryam",
+              "text": "I'm Maryam Al Mahroos, contact centre supervisor. Three customers have called about a text saying their 'CPR details have expired' with a short link to fix it.",
+              "mood": "worried"
+            },
+            {
+              "who": "arjun",
+              "text": "Short link, urgency, a request for ID details. That's a phishing pattern we've seen in Bahrain before.",
+              "mood": "thinking"
+            },
+            {
+              "who": "maryam",
+              "text": "One customer says the message looked like it came from us. Do we send links like that?",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Not under our policy. Module OM limits links in SMS to messages the customer triggered, and bans shortened links in customer messages.",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "I'll check whether our email and SMS sender IDs are being spoofed, and whether any staff clicked.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatema",
+              "text": "And you, newcomer, will learn the controls that stop this, and the human habits that matter just as much.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Layers of prevention in OM-5.5.18",
+          "scenes": [
+            {
+              "icon": "💻",
+              "heading": "Endpoints",
+              "narration": "Endpoint protection and endpoint detection and response tools, including anti-malware, find, block and isolate malicious code on laptops and servers."
+            },
+            {
+              "icon": "🚧",
+              "heading": "Network and web",
+              "narration": "Firewalls segment the network, web application firewalls filter traffic to web apps, and network access control keeps unknown devices off physical ports."
+            },
+            {
+              "icon": "📧",
+              "heading": "Email and browsing",
+              "narration": "A secure email gateway filters malicious attachments, links and phishing, and a secure web gateway blocks harmful websites."
+            },
+            {
+              "icon": "🔑",
+              "heading": "Accounts",
+              "narration": "Privileged access management and identity and access management limit and watch what powerful and ordinary accounts can do."
+            },
+            {
+              "icon": "📱",
+              "heading": "Devices and data",
+              "narration": "Mobile device management secures phones that reach bank systems, with encryption and remote wipe, and data leakage prevention stops confidential data leaving."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Customer messages: what OM-5.5.21 allows",
+          "caption": "OM-5.5.21. Other domains may be used only with CBB approval in limited cases (OM-5.5.21A).",
+          "headers": [
+            "Allowed or expected",
+            "Not allowed"
+          ],
+          "items": [
+            {
+              "label": "Email domain",
+              "left": "One private bank domain or its subdomains",
+              "right": "Free third-party email provider domains"
+            },
+            {
+              "label": "Links in SMS or WhatsApp",
+              "left": "Only after a customer request or action",
+              "right": "Unprompted links asking for data or payment"
+            },
+            {
+              "label": "Link format",
+              "left": "Full, clear links",
+              "right": "Shortened links"
+            },
+            {
+              "label": "Extra safeguards",
+              "left": "Clear instructions, a prior call, transaction details or authentication",
+              "right": "A bare link with no context"
+            },
+            {
+              "label": "Customer education",
+              "left": "Campaigns explaining the bank's link rules",
+              "right": "Leaving customers to guess"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which measures does OM-5.5.19 give as examples of the anti-spoofing controls that prove the bank's emails are genuine?",
+          "options": [
+            "SPF, DKIM and DMARC",
+            "VPN, MFA and PAM",
+            "SIEM, SOC and EDR",
+            "RTO, RPO and BCP"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.19 requires anti-spam and anti-spoofing measures that authenticate the bank's mail server, giving SPF, DKIM and DMARC as examples. The other sets are real controls but serve different purposes."
+        },
+        {
+          "type": "example",
+          "title": "Real case: the fake Benefitpay text (CBB warning, January 2021)",
+          "body": "In **January 2021** the CBB published a warning about a fraudulent SMS. The message claimed the recipient's **Benefitpay account CPR number had expired** and told them to **update their CPR and activate the account** through a **shortened link**.\n\nThe CBB told the public **not to click the link** and said Benefitpay **never asks for personal information by SMS**.\n\nWhat the attack used:\n\n- a trusted local brand,\n- a fake deadline and a threat of losing access,\n- a request for identity details,\n- a shortened link that hides the real destination.\n\nThis is why OM-5.5.21 bars shortened links in customer messages, limits SMS links to customer-initiated cases and asks banks to tell customers clearly what the bank will never send."
+        },
+        {
+          "type": "sort",
+          "title": "Phishing red flag or normal?",
+          "prompt": "Sort each feature of a message received by a Dilmun Coast Bank employee.",
+          "buckets": [
+            "Red flag",
+            "Usually normal"
+          ],
+          "items": [
+            {
+              "text": "Urgent warning that your account will be blocked today",
+              "bucket": 0
+            },
+            {
+              "text": "A shortened link asking you to 'verify' your CPR details",
+              "bucket": 0
+            },
+            {
+              "text": "Sender address on a free webmail domain using the bank's name",
+              "bucket": 0
+            },
+            {
+              "text": "A request to keep a payment change secret from your manager",
+              "bucket": 0
+            },
+            {
+              "text": "An internal system notice you can also find on the intranet",
+              "bucket": 1
+            },
+            {
+              "text": "A calendar invite from a colleague for a meeting you agreed",
+              "bucket": 1
+            },
+            {
+              "text": "A caller on a messaging app asking for a customer's one-time code",
+              "bucket": 0
+            },
+            {
+              "text": "A payslip notice telling you to log in through the usual HR portal bookmark",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Social engineering: the attack on people",
+          "body": "Technical controls stop many attacks, but criminals target staff because people can be persuaded. Common forms:\n\n- **Phishing:** emails that copy a trusted brand to steal credentials or plant malware.\n- **Smishing and vishing:** the same trick by SMS, messaging apps or phone, often with a fake caller ID.\n- **Pretexting:** a believable story, such as 'I'm from head office audit', to get information.\n- **Business email compromise:** a fake or hijacked executive or supplier email asking for an urgent payment or bank detail change.\n- **Impersonating a regulator:** messages that copy an authority's logo and signature.\n\nThey all lean on **urgency, authority, fear or reward**. Your defence is a habit: **pause, verify through a channel you already trust, and report**. OM-5.5.22 also asks banks to consider **insider threats** in their threat assessments."
+        },
+        {
+          "type": "story",
+          "title": "The call from 'IT support'",
+          "setting": "Contact centre, Riffa. 11:05 am.",
+          "lines": [
+            {
+              "who": "maryam",
+              "text": "One of my agents just got a call from someone saying he's from head office IT. He wanted her login code to 'fix the phishing problem'.",
+              "mood": "worried"
+            },
+            {
+              "who": "arjun",
+              "text": "We never ask for codes or passwords. That's a vishing attempt riding on the SMS campaign.",
+              "mood": "angry"
+            },
+            {
+              "who": "maryam",
+              "text": "She didn't give it. But she wasn't sure who to tell.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "That gap matters. Every employee needs to know how to report straight to the SOC, quickly and without fear of blame.",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "Her report gives us the caller's number and the script. That helps us warn every branch within the hour.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The supplier's new bank details",
+          "situation": "An email that appears to come from a long-standing IT supplier reaches Dilmun Coast Bank's accounts payable team. It says the supplier has changed banks and asks for this month's invoice of BHD 48,000 to be paid to a new account abroad. The sender address differs by one letter from the real one, and the message says the change is urgent and confidential.",
+          "choices": [
+            {
+              "text": "Pay the invoice to the new account, since the supplier is known and the invoice amount is correct.",
+              "outcome": "This is a classic business email compromise. The payment could be lost and is hard to recover once it leaves the bank.",
+              "score": 0
+            },
+            {
+              "text": "Reply to the email asking the supplier to confirm the change.",
+              "outcome": "Replying goes to the attacker, who will happily confirm. Verification must use a channel you already trust.",
+              "score": 0
+            },
+            {
+              "text": "Hold the payment, call the supplier on the number in the vendor master file, and report the email to the SOC.",
+              "outcome": "Right. Out-of-band verification stops the fraud, and the SOC can block the look-alike domain and warn other teams.",
+              "score": 2
+            },
+            {
+              "text": "Forward the email to colleagues to ask whether anyone else received it.",
+              "outcome": "Partly helpful for awareness, but forwarding spreads a malicious message and delays the report. Report it to the SOC instead.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Prevention controls decoded",
+          "cards": [
+            {
+              "front": "EDR",
+              "back": "Endpoint detection and response: tools on devices that spot suspicious behaviour, alert and help contain it."
+            },
+            {
+              "front": "DLP",
+              "back": "Data leakage prevention: detects and stops confidential data leaving the bank's technology environment."
+            },
+            {
+              "front": "WAF",
+              "back": "Web application firewall: filters and monitors web traffic between a web application and the internet."
+            },
+            {
+              "front": "PAM",
+              "back": "Privileged access management: secures, controls and monitors powerful administrator accounts."
+            },
+            {
+              "front": "DMARC",
+              "back": "A policy that tells receiving mail servers how to handle mail that fails sender checks, building on SPF and DKIM."
+            },
+            {
+              "front": "Application whitelisting",
+              "back": "Only approved applications and components may run on the bank's systems."
+            },
+            {
+              "front": "Threat intelligence",
+              "back": "A subscription service on emerging threats and criminal tools. Recommended in OM-5.5.20 and proposed as mandatory in 2024."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Pause, verify, report",
+          "caption": "A simple staff routine that supports the bank's OM-5.5 controls and its regular cyber training.",
+          "items": [
+            {
+              "label": "Pause",
+              "detail": "Urgency and secrecy are warning signs. Do not click, open or pay."
+            },
+            {
+              "label": "Check the sender",
+              "detail": "Look at the real address, domain and number, not just the display name."
+            },
+            {
+              "label": "Verify independently",
+              "detail": "Use a number or system you already trust, never the contact details in the message."
+            },
+            {
+              "label": "Report to the SOC",
+              "detail": "Use the bank's phishing button or hotline, even if you clicked."
+            },
+            {
+              "label": "Help warn others",
+              "detail": "The SOC blocks domains and alerts staff and, where needed, customers."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer asks Maryam whether Dilmun Coast Bank ever sends payment links by SMS. Under OM-5.5.21, what is the right answer?",
+          "options": [
+            "Yes, whenever the bank needs a payment",
+            "Only when the message results from the customer's own request or action, such as a payment they started",
+            "Never under any circumstances",
+            "Only through shortened links for security"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.21(a) limits links in SMS and short messages to those sent because of a customer request or action, such as onboarding verification or a customer-initiated payment. Shortened links are not allowed."
+        },
+        {
+          "type": "tip",
+          "title": "If you clicked, say so fast",
+          "body": "Clicking a bad link is a mistake; hiding it is the real problem. Report at once, give the time and what you entered, and follow the SOC's instructions, such as disconnecting or changing your password. Early reports shorten the attacker's time inside the network and may help the bank meet its one-hour duty to contact the CBB when an incident qualifies."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "OM-5.5.18 requires layered preventive controls, including EDR, DLP, firewalls and WAF, secure email and web gateways, PAM, MDM, NAC and IAM.",
+            "OM-5.5.19 requires anti-spoofing email authentication such as SPF, DKIM and DMARC.",
+            "OM-5.5.21: one private email domain, SMS links only after customer action, no shortened links, extra safeguards and customer awareness campaigns.",
+            "Phishing, smishing, vishing, pretexting and payment-change fraud all exploit urgency, authority, fear or reward.",
+            "Staff routine: pause, verify through a trusted channel, report to the SOC quickly, even after a mistake."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the last unexpected message that asked you to act quickly. What would you check before acting, and how would you report it at your bank?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-cy-s2-q1",
+          "question": "A marketing team at Dilmun Coast Bank wants to email customers from a popular free webmail address because the bank's domain has sending limits. What does OM-5.5.21 say?",
+          "options": [
+            "Any domain is fine if the email carries the bank's logo",
+            "Free webmail is allowed for marketing but not for statements",
+            "Customer emails must use the bank's single private domain or its subdomains",
+            "The team only needs approval from the head of marketing"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.21 requires a single unified private email domain or its subdomains for customer communication and forbids third-party email provider domains. Other domains need CBB approval in limited cases under OM-5.5.21A.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s2-q2",
+          "question": "Which item does OM-5.5.21 forbid in communications with customers?",
+          "options": [
+            "Transaction amounts in alerts",
+            "The bank's own domain name",
+            "Instructions on how to use a link",
+            "Shortened links"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.21(b) tells banks to refrain from shortened links. Giving transaction details and clear instructions are among the safeguards the paragraph lists.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s2-q3",
+          "question": "A customer starts an online card payment, and the bank sends a confirmation link by SMS showing the merchant name and amount. Is this consistent with OM-5.5.21?",
+          "options": [
+            "No, links in SMS are banned in all cases",
+            "No, merchant names may not appear in SMS",
+            "Yes, the link follows a customer action and includes transaction details",
+            "Yes, but only if the link is shortened"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.21(a) allows links in short messages that result from customer requests or actions, such as payment links for customer-initiated transactions, and (c) lists giving the amount and merchant name as one safeguard.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s2-q4",
+          "question": "What was the main lure in the fake Benefitpay SMS the CBB warned about in January 2021?",
+          "options": [
+            "A prize draw for Benefitpay users",
+            "A claim that the user's CPR number had expired, with a link to update it",
+            "A request to call the CBB's hotline",
+            "An offer of a cheap personal loan"
+          ],
+          "answer": 1,
+          "explanation": "The CBB's warning showed an SMS claiming the Benefitpay account CPR number had expired and asking the user to update it through a shortened link. The CBB said Benefitpay never requests personal information by SMS.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s2-q5",
+          "question": "Which OM-5.5.18 control is designed to stop confidential data leaving the bank's technology environment?",
+          "options": [
+            "Data leakage prevention",
+            "A web application firewall",
+            "Network access control",
+            "Application whitelisting"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.18(b) requires data leakage prevention solutions to detect and prevent confidential data leaving. A WAF filters web traffic, NAC keeps unauthorised devices off the network and whitelisting limits which applications run.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s2-q6",
+          "question": "An employee receives a call through a messaging app from someone claiming to be the bank's IT support, asking for her one-time login code to 'fix a problem'. What is the best response?",
+          "options": [
+            "Refuse, end the call and report it to the SOC with the number and details",
+            "Give the code, since IT support needs it to help",
+            "Ask the caller to prove identity by giving her staff number",
+            "Give half the code and wait for a callback"
+          ],
+          "answer": 0,
+          "explanation": "Genuine IT staff never need your codes or passwords. Personal details can be found or guessed by attackers, so 'proof' from the caller is weak. Reporting helps the SOC warn others.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s2-q7",
+          "question": "Under OM-5.5.20 in the January 2024 CBB copy of Module OM, what change is proposed for cyber threat intelligence services?",
+          "options": [
+            "A subscription moves from recommended to mandatory",
+            "Subscriptions would be banned",
+            "Only the CBB would subscribe on behalf of banks",
+            "Subscriptions would be optional for retail banks"
+          ],
+          "answer": 0,
+          "explanation": "The 2024 copy shows 'should must' in OM-5.5.20, signalling that subscribing to a cyber threat intelligence service would become a requirement. Confirm the final text in the current Rulebook.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s2-q8",
+          "question": "Which OM-5.5.21 duty is aimed at customers rather than at bank systems?",
+          "options": [
+            "Configuring DMARC on the mail server",
+            "Awareness campaigns telling customers the bank will not send unprompted clickable links",
+            "Blocking shortened links in the SMS platform",
+            "Running weekly external vulnerability scans"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.21(d) requires customer awareness campaigns on link-related fraud, with clear instructions that the bank will not send clickable links asking for information or payment unless the customer started the action.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s2-q9",
+          "question": "An email that seems to be from the chief executive asks a finance officer to make an urgent, confidential transfer to a new account and not to call because he is in a meeting. Which attack type is this most likely to be?",
+          "options": [
+            "A denial of service attack",
+            "A web application attack",
+            "A ransomware encryption event",
+            "Business email compromise"
+          ],
+          "answer": 3,
+          "explanation": "A fake or hijacked executive or supplier email demanding an urgent, secret payment is the hallmark of business email compromise. The right step is to verify through a trusted channel and report it.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s2-q10",
+          "question": "Which OM-5.5.18 control is meant to secure staff mobile phones that connect to bank systems, for example by enforcing encryption and allowing remote wipe?",
+          "options": [
+            "A secure web gateway",
+            "Mobile device management with BYOD policies",
+            "Privileged access management",
+            "A web application firewall"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.18(i) requires mobile device management, including bring-your-own-device policies, to secure all mobile devices with access to bank systems through measures such as encryption, remote wipe and password enforcement.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Testing, Detection and Reporting Incidents to the CBB",
+      "stage": "The Midnight SOC",
+      "summary": "Cover cyber testing (threat and control assessments, vulnerability scans, penetration tests and red teaming), detection through the SIEM and SOC, the incident response roles and severity levels, and the CBB reporting duties in OM-5.5.57 to OM-5.5.61.",
+      "minutes": 55,
+      "objectives": [
+        "State the testing and reporting cycles for vulnerability scans, penetration tests and red teaming",
+        "Describe the SIEM, SOC, incident roles, incident log and severity levels",
+        "Apply the one-hour, two-hour and 10-calendar-day reporting steps for qualifying cyber incidents",
+        "Explain what the full incident report to the CBB must contain"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Alert at 02:10",
+          "setting": "Security Operations Centre, Seef. Wednesday, 2:10 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "SIEM alert: unusual data transfers from a customer database server to an unknown address. It started forty minutes ago.",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Contain first. Isolate the server, keep the logs and open the incident log. Who's the incident owner tonight?",
+              "mood": "thinking"
+            },
+            {
+              "who": "arjun",
+              "text": "I am, under our playbook. I'll start the record and bring in the incident response team.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatema",
+              "text": "If customer information is compromised, the clock to the CBB has started. We have one hour to make contact.",
+              "mood": "worried"
+            },
+            {
+              "who": "rashid",
+              "text": "Rashid here, I'm on the bridge. What do I need to decide, and by when?",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Whether this is a critical incident for the crisis plan, and you'll approve what we tell the CBB. Arjun, show us what we know.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Find weaknesses before attackers do",
+          "scenes": [
+            {
+              "icon": "🔍",
+              "heading": "Threat assessments",
+              "narration": "Banks must assess cyber threats periodically: criminals, activists and insiders, attack methods, regional trends, dark web chatter and lessons from attacks on others."
+            },
+            {
+              "icon": "🧪",
+              "heading": "Control assessments",
+              "narration": "Banks must also assess how mature and effective their controls are, and plan treatment for any risk above their tolerance."
+            },
+            {
+              "icon": "📡",
+              "heading": "Vulnerability scans",
+              "narration": "Regular technical scans cover internal systems, public-facing services and third-party connections, preferably monthly inside and weekly or more often outside."
+            },
+            {
+              "icon": "🩹",
+              "heading": "Patching",
+              "narration": "Vulnerabilities found must be fixed and patches applied within a time that matches the risk each one poses."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Penetration tests",
+              "narration": "At least twice a year, certified testers simulate real attacks using recognised methods such as NIST or OWASP, with grey box and black box testing."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Testing and log numbers in Module OM-5.5",
+          "caption": "From the CBB-hosted Module OM copy issued with the January 2024 consultation.",
+          "items": [
+            {
+              "label": "Penetration tests",
+              "value": "2 a year",
+              "detail": "At least twice a year (OM-5.5.28)."
+            },
+            {
+              "label": "Change test providers",
+              "value": "2 years",
+              "detail": "Internal and external independent testers changed at least every two years."
+            },
+            {
+              "label": "Pen test report to CBB",
+              "value": "2 months",
+              "detail": "Within two months after the end of the month of the test (OM-5.5.61)."
+            },
+            {
+              "label": "Keep pen test reports",
+              "value": "5 years",
+              "detail": "From the date of the report, with mitigation steps."
+            },
+            {
+              "label": "Red team results",
+              "value": "1 month",
+              "detail": "To the CBB within one month of completion, with a fix plan, when required."
+            },
+            {
+              "label": "SIEM log retention",
+              "value": "5 years+",
+              "detail": "Recommended in OM-5.5.33 to support investigations."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Dilmun Coast Bank completes a penetration test in June. By when must the report reach the CBB under OM-5.5.61?",
+          "options": [
+            "By 30 June",
+            "By 31 July",
+            "By 31 August",
+            "By 31 December"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.61 requires the report within two months after the end of the month of testing; the Rulebook's own example says a June test report is due by 31 August."
+        },
+        {
+          "type": "concept",
+          "title": "Detecting and handling an incident",
+          "body": "Module OM expects a bank to **see** incidents early and handle them in an orderly way:\n\n- **SIEM:** a security information and event management system that collects data in real time from systems, applications and network devices and raises alerts (OM-5.5.31-5.5.32).\n- **SOC:** a security operations centre that detects, investigates and responds to incidents and keeps the asset inventory and network diagrams (OM-5.5.35).\n- **Scenarios:** risk scenarios and response plans tested and updated regularly, with new SIEM use cases for gaps (OM-5.5.36-5.5.37).\n- **Escalation:** critical incidents go to the incident response team, management and the **board**, in line with the continuity and crisis plans (OM-5.5.38).\n- **Containment:** isolate or shut down affected systems when needed, after weighing business impact (OM-5.5.34).\n- **Records:** an incident log of every notification, decision and action, kept securely and in a legally admissible way (OM-5.5.41)."
+        },
+        {
+          "type": "match",
+          "title": "Incident roles in OM-5.5.39",
+          "prompt": "Match each incident role or tool to what it does.",
+          "pairs": [
+            {
+              "left": "Incident Owner",
+              "right": "Leads detection and response for the incident and has authority to remove its impact"
+            },
+            {
+              "left": "Spokesperson",
+              "right": "Manages consistent communication to internal and external stakeholders"
+            },
+            {
+              "left": "Record Keeper",
+              "right": "Keeps an accurate record of the incident, actions and decisions for later review"
+            },
+            {
+              "left": "Situation room",
+              "right": "Physical or virtual room where management gathers to handle a critical incident"
+            },
+            {
+              "left": "Incident log",
+              "right": "Time-stamped record of notifications, decisions, actions, status and owner"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Severity levels suggested in OM-5.5.42",
+          "caption": "A pre-set severity framework helps teams classify quickly and consistently.",
+          "headers": [
+            "Effect on critical services",
+            "Effect on public confidence"
+          ],
+          "items": [
+            {
+              "label": "Severity 1",
+              "left": "Serious disruption or degradation of critical services",
+              "right": "Potentially high impact on public confidence"
+            },
+            {
+              "label": "Severity 2",
+              "left": "Some degradation of critical services",
+              "right": "Medium impact on public confidence"
+            },
+            {
+              "label": "Severity 3",
+              "left": "Little or no impact on critical services",
+              "right": "No visible impact on public confidence"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The one-hour clock",
+          "setting": "Situation room (virtual). Wednesday, 2:35 am.",
+          "lines": [
+            {
+              "who": "arjun",
+              "text": "Confirmed: the attacker copied part of a customer table with names and phone numbers. The server is isolated.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatema",
+              "text": "Customer information is compromised. Under OM-5.5.57 we must contact the CBB immediately, within one hour, by phone.",
+              "mood": "neutral"
+            },
+            {
+              "who": "rashid",
+              "text": "We don't know the root cause yet. Shouldn't we wait until we have the full picture?",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "No. The call comes first, then Section A of the incident report by email within two hours. The full Section B follows within 10 calendar days.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thomas",
+              "text": "And weekly progress updates to the CBB until it's fully resolved. I'll make sure the record keeper logs every step.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Reporting a qualifying cyber incident to the CBB",
+          "prompt": "Put Dilmun Coast Bank's reporting steps in order, following OM-5.5.57 to OM-5.5.58.",
+          "steps": [
+            "Detect the incident and confirm it compromises customer information or disrupts critical services",
+            "Contact the CBB by telephone immediately, within one hour",
+            "Email Section A of the Cyber Security Incident Report to the CBB's incident address within two hours",
+            "Submit Section B with root cause, impact and measures within 10 calendar days of the incident",
+            "Send weekly progress updates to the CBB until the incident is fully resolved"
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Report now or later?",
+          "situation": "At 3:00 am a ransomware attack takes Dilmun Coast Bank's card authorisation system offline for retail customers. The team is confident it can restore from backup by 9:00 am. The head of IT suggests telling the CBB only after restoration, 'so we report good news, not panic'.",
+          "choices": [
+            {
+              "text": "Agree: report once services are back, with a complete story.",
+              "outcome": "This breaks OM-5.5.57. A disruption of critical services that affects operations requires contact with the CBB within one hour, whatever the expected recovery time.",
+              "score": 0
+            },
+            {
+              "text": "Call the CBB within one hour, send Section A within two hours, then Section B within 10 calendar days and weekly updates.",
+              "outcome": "Right. The rule is triggered by disruption of critical services, and early contact lets the CBB judge any wider impact. Restoration updates go in the follow-up reports.",
+              "score": 2
+            },
+            {
+              "text": "Email the CBB a short note after 24 hours, as an overnight incident is not 'immediate'.",
+              "outcome": "The time limit runs from occurrence or detection, day or night. A delayed email misses both the one-hour call and the two-hour Section A deadline.",
+              "score": 0
+            },
+            {
+              "text": "Call the CBB within one hour but skip Section A, since the full report will follow.",
+              "outcome": "The call is right, but Section A is still due within two hours. Partial compliance leaves the bank in breach.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Testing and response terms",
+          "cards": [
+            {
+              "front": "Grey box test",
+              "back": "A penetration test where testers have partial knowledge of the system, such as a user account or design notes."
+            },
+            {
+              "front": "Black box test",
+              "back": "A penetration test where testers start with no inside knowledge, like an outside attacker."
+            },
+            {
+              "front": "Red teaming",
+              "back": "A targeted exercise, which the CBB may require, testing the bank's detection and response across cyber, social and physical fronts."
+            },
+            {
+              "front": "Low-and-slow attack",
+              "back": "A quiet attack spread over a long time to avoid detection, which is why long log retention helps."
+            },
+            {
+              "front": "MISP",
+              "back": "Malware information sharing platforms, where banks may share non-sensitive threat data such as indicators of compromise."
+            },
+            {
+              "front": "Dwell time",
+              "back": "How long an attacker has undetected access until fully removed: a key incident performance metric."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the CBB's readiness statement (March 2026)",
+          "body": "In **March 2026**, during regional security developments, the CBB issued a statement that Bahrain's banking and financial sector was **operating normally**.\n\nAccording to the CBB:\n\n- it had kept **heightened oversight** since the situation began, coordinating closely with banks, insurers and other institutions;\n- institutions showed strong **operational readiness and business continuity**;\n- payment systems continued to operate efficiently and securely;\n- **physical and cyber security measures** across financial institutions were at the **highest levels of readiness**.\n\nThe lesson: in a crisis, the regulator expects to hear from banks early and often. Clear incident escalation, a ready situation room and well-practised reporting under OM-5.5 are what allow a bank to give the CBB fast, reliable answers."
+        },
+        {
+          "type": "check",
+          "question": "Which incidents trigger the OM-5.5.57 duty to contact the CBB within one hour?",
+          "options": [
+            "Only incidents that cause financial loss above a set threshold",
+            "Any internal or external cyber incident that compromises customer information or disrupts critical services affecting operations",
+            "Only attacks confirmed by the police",
+            "Only incidents rated Severity 1 that last more than a day"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.57 covers any cyber security incident, internal or external, that compromises customer information or disrupts critical services that affect operations. It sets no money threshold or minimum duration."
+        },
+        {
+          "type": "tip",
+          "title": "Report with what you have",
+          "body": "OM-5.5.59 says the bank should send its report with as much information as possible even if not all details are known yet. Do not hold a report back to perfect it. Log the time of every call and email so the bank can show it met the one-hour and two-hour limits."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "Periodic threat and control assessments, vulnerability scans (preferably monthly internal, weekly external) and risk-based patching are required.",
+            "Penetration tests at least twice a year by certified testers, providers changed at least every two years, reports to the CBB within two months after the test month.",
+            "A SIEM and SOC detect incidents; critical incidents are escalated to the response team, management and the board.",
+            "Named roles (incident owner, spokesperson, record keeper), a situation room and an incident log support an orderly response.",
+            "Qualifying incidents: call the CBB within one hour, Section A within two hours, Section B within 10 calendar days, then weekly updates."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you discovered a suspected incident at 2 am, who would you call first at your bank, and do you know where the incident reporting playbook is kept?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-cy-s3-q1",
+          "question": "How often must Dilmun Coast Bank carry out penetration testing of its systems, applications and network devices under OM-5.5.28?",
+          "options": [
+            "At least twice a year",
+            "Once every three years",
+            "Only after a major incident",
+            "Once a quarter, by the internal team only"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.28 requires penetration testing at least twice a year, using internal and external independent testers who are changed at least every two years.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s3-q2",
+          "question": "Which description fits the vulnerability assessment frequency OM-5.5.25 prefers?",
+          "options": [
+            "Yearly for all systems",
+            "Daily for internal systems and monthly for public-facing ones",
+            "Only before new systems go live",
+            "Monthly for internal technology, and weekly or more often for public-facing services"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.25 says assessments are preferably monthly for internal technology and weekly or more frequent for external, public-facing services and systems.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s3-q3",
+          "question": "The CBB asks Dilmun Coast Bank to run a red teaming exercise. What must the bank do with the results under OM-5.5.30?",
+          "options": [
+            "Keep them internally and show them at the next inspection",
+            "Publish them in the annual report",
+            "Send them to the CBB within 10 calendar days without a plan",
+            "Give them to the CBB within one month of completion, with a plan to fix weaknesses"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.30 requires red team results to reach the CBB within one month of completing the exercise, together with a comprehensive plan to address observed weaknesses.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s3-q4",
+          "question": "What does OM-5.5.33 recommend for keeping SIEM logs?",
+          "options": [
+            "Delete them after 30 days to protect privacy",
+            "Retain them for five years or longer to support investigations",
+            "Keep them for one year only",
+            "Keep only logs from incidents reported to the CBB"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.33 says banks should keep SIEM logs and related information for five years or longer, including to investigate 'low-and-slow' attacks.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s3-q5",
+          "question": "In the incident response roles described in OM-5.5.39, who manages consistent communication to internal and external stakeholders?",
+          "options": [
+            "The Record Keeper",
+            "The Incident Owner",
+            "The Spokesperson",
+            "The external penetration tester"
+          ],
+          "answer": 2,
+          "explanation": "The Spokesperson, from external communications or another suitable department, consolidates information and keeps stakeholders updated consistently. The Record Keeper documents the incident; the Incident Owner leads the response.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s3-q6",
+          "question": "At 10:00 the SOC confirms an intrusion has exposed customer account details. By when must Dilmun Coast Bank, a retail bank, have sent Section A of the Cyber Security Incident Report?",
+          "options": [
+            "By 12:00, within two hours",
+            "By 11:00, within one hour",
+            "By the end of the next business day",
+            "Within 10 calendar days"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.57 requires contacting the CBB immediately, within one hour, by phone, and sending Section A to the CBB's incident email within two hours. Section B is due within 10 calendar days.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s3-q7",
+          "question": "What must Section B of the Cyber Security Incident Report contain under OM-5.5.58?",
+          "options": [
+            "Full root cause analysis, business and customer impact, and the measures taken",
+            "Only the time the incident was detected",
+            "The names of staff to be disciplined",
+            "A press release for the media"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.58 requires all relevant details, including full root cause analysis, impact on operations and customers, and all measures taken to stop the attack, limit impact and prevent recurrence.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s3-q8",
+          "question": "After Section B is submitted, the bank is still cleaning up the incident. What does OM-5.5.58 require?",
+          "options": [
+            "Nothing more until the next annual report",
+            "Weekly progress updates to the CBB until it is fully resolved",
+            "A monthly update to the board only",
+            "A new Section A every day"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.58 requires a weekly progress update to the CBB until the incident is fully resolved.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s3-q9",
+          "question": "Under OM-5.5.42, which description matches a Severity 2 incident?",
+          "options": [
+            "Serious disruption of critical services and high impact on public confidence",
+            "Some degradation of critical services and a medium impact on public confidence",
+            "No impact on critical services or public confidence",
+            "Any incident caused by a third-party provider"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.42 describes Severity 1 as serious disruption with high confidence impact, Severity 2 as some degradation with medium impact and Severity 3 as little or no impact.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s3-q10",
+          "question": "Which set of features must penetration tests include under OM-5.5.28?",
+          "options": [
+            "Only automated scanning tools run by IT staff",
+            "Testing only on old copies of systems, never production",
+            "A recognised method, grey and black box testing, and certified testers",
+            "A single external firm used permanently"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.28 requires a risk-based approach on a recognised method such as NIST or OWASP, grey box and black box testing, certified professionals, rotated internal and external testers, and testing on production or exact replicas.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Customer Confidentiality and Personal Data: CBB Law and PDPL",
+      "stage": "The Vault of Secrets",
+      "summary": "Apply the confidentiality rules in Articles 116 to 119 of the CBB Law, recognise attempts to obtain customer information by deception, link data classification and leakage controls to confidentiality, and place the Personal Data Protection Law (Law No. 30 of 2018) in general terms.",
+      "minutes": 45,
+      "objectives": [
+        "Define confidential information and the four disclosure gateways under Articles 116-117 of the CBB Law",
+        "Explain how Articles 118, 119 and 171 extend and enforce confidentiality",
+        "Handle third-party requests for customer information safely",
+        "Describe the PDPL and its supervisor in general terms"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The caller who knew too much",
+          "setting": "Contact centre, Riffa. Thursday, 10:20 am.",
+          "lines": [
+            {
+              "who": "maryam",
+              "text": "A caller says he's a lawyer for a customer's family. He wants the customer's balance and recent transfers 'for an urgent family matter'.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "Does the customer know? Is there a court order or a CBB instruction?",
+              "mood": "neutral"
+            },
+            {
+              "who": "maryam",
+              "text": "No. He says the customer is in hospital and can't speak. He sounds genuine and upset.",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Then we can't disclose. The CBB Law treats information on a customer's private affairs as confidential, with only a few legal gateways.",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "And it fits the pattern from the data theft last week. Callers use stolen names and phone numbers to sound convincing.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "This stage is about keeping secrets: the CBB Law, data protection in Bahrain and the tricks people use to get information out of us.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Confidentiality under the CBB Law",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "What is confidential",
+              "narration": "Article 116 of the CBB Law defines confidential information as any information on the private affairs of a licensee's customers."
+            },
+            {
+              "icon": "🚪",
+              "heading": "Four gateways",
+              "narration": "Article 117 says a licensee may disclose it only with the customer's unequivocal approval, under a law or international agreement, to carry out a court order, or to follow a CBB instruction."
+            },
+            {
+              "icon": "🏦",
+              "heading": "The CBB's own powers",
+              "narration": "Article 118 lets the CBB disclose information it receives in those cases, to protect the stability and trust of the financial system, and when cooperating with international or competent bodies."
+            },
+            {
+              "icon": "🔗",
+              "heading": "It follows the data",
+              "narration": "Article 119 says anyone who receives confidential information may only disclose it as Article 118 allows."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Serious consequences",
+              "narration": "In the CBB-hosted English text, Article 171 provides imprisonment and a fine of up to 10,000 Bahraini dinars, or either, for disclosing confidential information in bad faith."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "Can Dilmun Coast Bank disclose this customer information?",
+          "caption": "Articles 116-117 of the Central Bank of Bahrain and Financial Institutions Law (Law No. 64 of 2006).",
+          "items": [
+            {
+              "label": "Is it about a customer's private affairs?",
+              "detail": "If yes, Article 116 makes it confidential information."
+            },
+            {
+              "label": "Clear customer approval?",
+              "detail": "Unequivocal approval from the person the information relates to."
+            },
+            {
+              "label": "Required by law or treaty?",
+              "detail": "A provision of law or an international agreement Bahrain has signed."
+            },
+            {
+              "label": "Court order?",
+              "detail": "Executing an order of a competent court."
+            },
+            {
+              "label": "CBB instruction?",
+              "detail": "Implementing an instruction given by the Central Bank."
+            },
+            {
+              "label": "None applies: do not disclose",
+              "detail": "Escalate to compliance or legal if in doubt."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Disclosure allowed or not?",
+          "prompt": "Under Article 117, sort each request to Dilmun Coast Bank.",
+          "buckets": [
+            "A gateway applies",
+            "No gateway: refuse"
+          ],
+          "items": [
+            {
+              "text": "The customer signs a clear consent letting her accountant see her statements",
+              "bucket": 0
+            },
+            {
+              "text": "A competent court orders the bank to produce account records",
+              "bucket": 0
+            },
+            {
+              "text": "The CBB instructs the bank to provide information on an account",
+              "bucket": 0
+            },
+            {
+              "text": "A caller claiming to be the customer's lawyer asks for balances by phone",
+              "bucket": 1
+            },
+            {
+              "text": "A relative of a customer in hospital asks for recent transfers",
+              "bucket": 1
+            },
+            {
+              "text": "A journalist asks whether a well-known businessman banks with you",
+              "bucket": 1
+            },
+            {
+              "text": "A disclosure required by a law of Bahrain",
+              "bucket": 0
+            },
+            {
+              "text": "A colleague in marketing asks for a list of high-balance customers for a personal side business",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Article 117 of the CBB Law, which situation lets Dilmun Coast Bank disclose a customer's account details?",
+          "options": [
+            "A close relative asks in person and shows ID",
+            "The bank receives an order issued by a competent court",
+            "A senior manager approves the request internally",
+            "The requester promises to keep the details private"
+          ],
+          "answer": 1,
+          "explanation": "Article 117 allows disclosure with the customer's unequivocal approval, under law or an international agreement, to execute a competent court's order, or to implement a CBB instruction. A relative's request or internal approval are not gateways."
+        },
+        {
+          "type": "concept",
+          "title": "Personal data protection in general terms",
+          "body": "Alongside banking confidentiality, Bahrain has a general data protection law: **Law No. 30 of 2018 with respect to Personal Data Protection (PDPL)**, supervised by the **Personal Data Protection Authority**. Its official text could not be opened for this quest, so this card stays general.\n\nLike other modern data protection laws, it expects organisations that process personal data to:\n\n- process it **lawfully and fairly**, for **clear purposes**;\n- collect **only what they need** and keep it **accurate**;\n- keep it **secure** against loss, misuse and unauthorised access;\n- respect the **rights of the people** the data is about.\n\nFor a bank, the PDPL sits **on top of** the stricter confidentiality duty in the CBB Law and the security rules in Module OM. Ask your bank's data protection lead about the specific duties, notices and timelines that apply to your role."
+        },
+        {
+          "type": "story",
+          "title": "The spreadsheet on the shared drive",
+          "setting": "Retail credit department, Seef. 2:00 pm.",
+          "lines": [
+            {
+              "who": "thomas",
+              "text": "Internal audit found a spreadsheet of 3,000 customers with CPR numbers and salaries on a shared drive anyone can open.",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "That breaks our data classification. Under OM-5.5.12 the owner decides who can access data, how it's secured, kept and disposed of.",
+              "mood": "thinking"
+            },
+            {
+              "who": "maryam",
+              "text": "My team used it last year for a campaign. I didn't think about who else could see it.",
+              "mood": "neutral"
+            },
+            {
+              "who": "fatema",
+              "text": "Lock it down now, find out who opened it and check the DLP alerts. If it left the bank, we treat it as a possible incident.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thomas",
+              "text": "And we fix the root cause: training and a clear rule on where customer lists may be stored.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "A request from 'head office'",
+          "situation": "Maryam receives an email from an address that looks like the bank's regional office. It asks her to send a list of the Riffa branch's top 50 customers with phone numbers 'for a CBB data request due today'. The email carries the bank's logo and a senior manager's signature block.",
+          "choices": [
+            {
+              "text": "Send the list quickly, as the CBB deadline is today and the sender looks senior.",
+              "outcome": "Urgency, authority and a copied signature are classic social engineering signs. Sending the list could breach the CBB Law's confidentiality rules and the bank's data policies.",
+              "score": 0
+            },
+            {
+              "text": "Check the request through a known channel, such as calling compliance on the internal directory number, and report the email to the SOC.",
+              "outcome": "Right. A genuine CBB request comes through compliance with a record of the instruction. Verifying independently protects customers and catches the attack.",
+              "score": 2
+            },
+            {
+              "text": "Send only names without phone numbers to reduce the risk.",
+              "outcome": "Customer names linked to the bank are still information on their private affairs. Partial disclosure to an unverified sender is still a breach.",
+              "score": 0
+            },
+            {
+              "text": "Reply asking the sender to confirm it is genuine.",
+              "outcome": "Better than sending, but a reply goes straight back to the attacker. Use a channel you already trust.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: impersonating a regulator (CBB warning, June 2019)",
+          "body": "In **June 2019** the CBB warned Bahrain's financial community and the public about a scam in which criminals **impersonated the Cyprus Securities and Exchange Commission (CySEC)** and its officers.\n\nThe CBB described the pattern:\n\n- emails that looked genuine, with the authority's **name, address, stamp and logo** and **copied signatures**;\n- false promises to help investors win **compensation** from failed trading firms, in return for fees;\n- requests for **personal information**, including telephone records;\n- follow-up **phone calls** to make the story more convincing.\n\nCySEC said it never sends unsolicited correspondence or collects fees from investors.\n\nThe lesson: a logo and a signature prove nothing. Verify any 'regulator' request through compliance, using contact details you already hold."
+        },
+        {
+          "type": "flip",
+          "title": "Confidentiality myths and facts",
+          "cards": [
+            {
+              "front": "Myth: family members can get details if the customer is ill.",
+              "back": "Fact: without unequivocal customer approval or another Article 117 gateway, the bank must not disclose."
+            },
+            {
+              "front": "Myth: confirming that someone is a customer is harmless.",
+              "back": "Fact: even the existence of a relationship can be information on a customer's private affairs."
+            },
+            {
+              "front": "Myth: once information leaves the bank, the duty ends.",
+              "back": "Fact: Article 119 limits further disclosure by anyone who receives confidential information."
+            },
+            {
+              "front": "Myth: internal colleagues can see any customer data.",
+              "back": "Fact: access follows data classification and need to know (OM-5.5.12)."
+            },
+            {
+              "front": "Myth: data protection replaces banking secrecy.",
+              "back": "Fact: the PDPL adds general data duties; the CBB Law's confidentiality rules still apply to banks."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "Protecting customer data day to day",
+          "caption": "Combines the CBB Law's confidentiality rules with the data classification and DLP controls in Module OM.",
+          "items": [
+            {
+              "label": "Classify",
+              "detail": "Know which data is confidential and who owns it."
+            },
+            {
+              "label": "Limit access",
+              "detail": "Only those who need it, through approved systems."
+            },
+            {
+              "label": "Verify requests",
+              "detail": "Check identity and the legal gateway before any disclosure."
+            },
+            {
+              "label": "Store and share safely",
+              "detail": "Approved locations, encryption where required, no personal email."
+            },
+            {
+              "label": "Report and review",
+              "detail": "Report leaks or odd requests at once; learn from them."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about Bahrain's Personal Data Protection Law is accurate at the level this quest teaches?",
+          "options": [
+            "It is Law No. 30 of 2018 and is supervised by the Personal Data Protection Authority",
+            "It replaced the confidentiality articles of the CBB Law",
+            "It applies only to government bodies",
+            "It is a CBB Rulebook module"
+          ],
+          "answer": 0,
+          "explanation": "The PDPL is Law No. 30 of 2018, supervised by the Personal Data Protection Authority. It applies alongside, not instead of, the CBB Law's confidentiality rules, and it is a law, not a Rulebook module."
+        },
+        {
+          "type": "tip",
+          "title": "Phone requests: a simple script",
+          "body": "When a caller asks about a customer's affairs: 1) do not confirm or deny the relationship; 2) explain politely that the bank can only discuss accounts with the customer or under legal authority; 3) offer to take a message and call the customer on the number already held; 4) log and report suspicious calls to the SOC. Never let sympathy or pressure override the rule."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Article 116 of the CBB Law: confidential information is any information on a customer's private affairs.",
+            "Article 117 gateways: unequivocal customer approval, law or international agreement, competent court order, or CBB instruction.",
+            "Article 119 extends the limit to anyone who receives confidential information; bad-faith disclosure is an offence (Article 171).",
+            "The PDPL (Law No. 30 of 2018), supervised by the Personal Data Protection Authority, adds general data protection duties.",
+            "Social engineers use urgency, authority, sympathy and copied logos: verify through trusted channels and report."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall a time someone asked you for information about another person. How did you check they were entitled to it, and what would you do differently now?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-cy-s4-q1",
+          "question": "How does Article 116 of the CBB Law define confidential information?",
+          "options": [
+            "Only account balances above a set amount",
+            "Only information marked 'confidential' by the bank",
+            "Any information on the private affairs of a licensee's customers",
+            "Only information about corporate customers"
+          ],
+          "answer": 2,
+          "explanation": "Article 116 defines confidential information broadly as any information on the private affairs of any of the licensee's customers. It is not limited by amount, labelling or customer type.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s4-q2",
+          "question": "A customer emails Dilmun Coast Bank: 'Please send my last three statements to my accountant at this address.' She signs it and the bank verifies the request with her. Which Article 117 gateway applies?",
+          "options": [
+            "A competent court order",
+            "A CBB instruction",
+            "The customer's unequivocal approval",
+            "No gateway, so the bank must refuse"
+          ],
+          "answer": 2,
+          "explanation": "Article 117 allows disclosure with the unequivocal approval of the person the information relates to. A clear, verified instruction from the customer meets that test.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s4-q3",
+          "question": "Which of these is NOT one of the four disclosure gateways in Article 117 of the CBB Law?",
+          "options": [
+            "Executing an order of a competent court",
+            "Approval by the bank's chief executive",
+            "Implementing a CBB instruction",
+            "Compliance with a law or an international agreement signed by Bahrain"
+          ],
+          "answer": 1,
+          "explanation": "The four gateways are customer approval, law or international agreement, a competent court order and a CBB instruction. Internal approval by bank management is not a gateway.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s4-q4",
+          "question": "A company receives confidential customer information from a bank under a valid gateway. Under Article 119, may it pass the information on freely?",
+          "options": [
+            "No, it may only disclose it as Article 118 permits",
+            "Yes, once it has left the bank the duty ends",
+            "Yes, if it pays a fee to the CBB",
+            "Only to its own shareholders"
+          ],
+          "answer": 0,
+          "explanation": "Article 119 says no person who receives confidential information directly or indirectly may disclose it except as Article 118 allows. The duty follows the information.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s4-q5",
+          "question": "In the CBB-hosted English text of the CBB Law, what does Article 171 provide for a person who discloses confidential information in bad faith?",
+          "options": [
+            "Imprisonment and a fine of up to BD 10,000, or either penalty",
+            "A written warning only",
+            "A fine of up to BD 500",
+            "Loss of the bank's licence automatically"
+          ],
+          "answer": 0,
+          "explanation": "Article 171 provides imprisonment and a fine not exceeding 10,000 Bahraini dinars, or either penalty, without prejudice to greater penalties in other laws.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s4-q6",
+          "question": "Which authority supervises Bahrain's Personal Data Protection Law (Law No. 30 of 2018)?",
+          "options": [
+            "The National Cybersecurity Center",
+            "The Personal Data Protection Authority",
+            "The CBB's Consumer Protection Office",
+            "The Ministry of Interior's financial intelligence unit"
+          ],
+          "answer": 1,
+          "explanation": "The PDPL is supervised by the Personal Data Protection Authority. The NCSC is the national cyber security body, and the CBB supervises banks under the CBB Law.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s4-q7",
+          "question": "A caller says he is a customer's brother, gives the customer's full name, CPR number and phone number correctly, and asks for the account balance. What should Maryam's agent do?",
+          "options": [
+            "Decline, offer to contact the customer on the number on file, and log the call",
+            "Give the balance, since he passed the identity checks",
+            "Give the balance but not the transactions",
+            "Ask for the customer's date of birth and then disclose"
+          ],
+          "answer": 0,
+          "explanation": "Knowing a customer's details does not make someone the customer or create an Article 117 gateway. Stolen data is often used this way, so the agent should refuse, contact the customer through known details and log the call.",
+          "difficulty": 4
+        },
+        {
+          "id": "bh-cy-s4-q8",
+          "question": "Under OM-5.5.12, which question should a bank's data classification policy answer?",
+          "options": [
+            "Which marketing campaign the data will be used for next",
+            "Who has access to the data and how long it is retained",
+            "How much the data could sell for",
+            "Which customers have the highest balances"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.12 lists access, security, retention including backups, disposal method, encryption and appropriate use as aspects the classification policy should decide.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s4-q9",
+          "question": "What did the CBB's June 2019 warning say criminals were doing when they impersonated CySEC?",
+          "options": [
+            "Hacking the CBB's website",
+            "Opening branches without a licence",
+            "Selling counterfeit banknotes",
+            "Sending genuine-looking emails with copied logos and signatures and seeking fees and personal data"
+          ],
+          "answer": 3,
+          "explanation": "The CBB described emails carrying CySEC's name, stamp, logo and copied signatures, false compensation promises, requests for personal information and follow-up calls.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s4-q10",
+          "question": "How does the PDPL relate to the confidentiality rules in the CBB Law for a Bahraini bank?",
+          "options": [
+            "The PDPL cancels the CBB Law's confidentiality articles",
+            "Only the PDPL applies to banks",
+            "Only the CBB Law applies, as banks are exempt from the PDPL",
+            "Both apply: the PDPL adds general data duties alongside banking confidentiality"
+          ],
+          "answer": 3,
+          "explanation": "Banks must respect the CBB Law's confidentiality rules and the general data protection duties of the PDPL. Check specific PDPL duties with your bank's data protection lead.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Training, Awareness, Recovery and Readiness for the CBB",
+      "stage": "The Board Room Trial",
+      "summary": "Bring it together: the training duties in OM-5.5.54 to OM-5.5.56 for all employees, higher-risk staff, the board and senior management, measuring effectiveness, exercises, recovery, cyber insurance and the evidence a bank needs for a CBB review.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the cyber training duties for all employees, higher-risk staff, the executive board, senior management, cyber and IT staff",
+        "Show how to evaluate whether training improves awareness and preparedness",
+        "Describe recovery objectives, exercises, continuity planning and cyber insurance under Module OM",
+        "Assemble the evidence the bank needs to show the CBB its cyber programme works"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The training numbers that didn't add up",
+          "setting": "Executive floor, Seef. Monday, 8:30 am.",
+          "lines": [
+            {
+              "who": "rashid",
+              "text": "Our cyber training completion rate is 98%. That sounds excellent. Why does Fatema look unhappy?",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "Because completion isn't the test. OM-5.5.54 asks us to evaluate whether awareness and preparedness actually improve.",
+              "mood": "neutral"
+            },
+            {
+              "who": "arjun",
+              "text": "Our last phishing simulation: 21% of staff clicked, and only 6% reported it. The year before it was about the same.",
+              "mood": "worried"
+            },
+            {
+              "who": "thomas",
+              "text": "So the board report says 'trained', but behaviour hasn't changed. That's what the CBB will look at.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maryam",
+              "text": "My agents get the same generic video as the IT team. They face phone scams all day, but nothing covers those.",
+              "mood": "thinking"
+            },
+            {
+              "who": "fatema",
+              "text": "Then our final stage is clear: build training that fits each role, measure it honestly and get ready to show the CBB.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "What OM-5.5.54 to OM-5.5.56 require",
+          "scenes": [
+            {
+              "icon": "👥",
+              "heading": "Everyone, regularly",
+              "narration": "All employees must receive adequate cyber security training on a regular basis about the threats they could meet."
+            },
+            {
+              "icon": "🎣",
+              "heading": "Practice, not just theory",
+              "narration": "Training can include testing how employees react to simulated cyber attacks, such as mock phishing emails."
+            },
+            {
+              "icon": "📣",
+              "heading": "Current threats",
+              "narration": "All relevant employees must be kept informed of current cyber security breaches and threats."
+            },
+            {
+              "icon": "🎯",
+              "heading": "More for higher-risk staff",
+              "narration": "Higher-risk staff should get additional training, and role-specific training must be given regularly to the executive board and senior management, cyber roles, IT staff and other high-risk staff."
+            },
+            {
+              "icon": "📈",
+              "heading": "Prove it works",
+              "narration": "The bank must evaluate improvement in awareness and preparedness, so it knows its training programmes are effective."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Role-specific cyber training at Dilmun Coast Bank",
+          "caption": "From the CBB-hosted Module OM copy issued with the January 2024 consultation; the training paragraphs sit on pages dated July 2021 and April 2022.",
+          "items": [
+            {
+              "label": "Executive board and senior management",
+              "detail": "Role-specific training on cyber risk oversight, reports and crisis decisions (OM-5.5.56(a))."
+            },
+            {
+              "label": "Cyber security roles",
+              "detail": "Regular updates and certification-level courses, such as CISSP or CISM (OM-5.5.11(d) and OM-5.5.56(b))."
+            },
+            {
+              "label": "IT staff",
+              "detail": "Role-specific training on secure configuration, change and access (OM-5.5.56(c))."
+            },
+            {
+              "label": "High-risk staff",
+              "detail": "Extra training for roles the bank identifies, such as payments or contact centre (OM-5.5.55-56)."
+            },
+            {
+              "label": "All employees",
+              "detail": "Regular awareness training, simulations and threat updates (OM-5.5.55)."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Who needs what training?",
+          "prompt": "Match each group with the training Module OM expects.",
+          "pairs": [
+            {
+              "left": "All employees",
+              "right": "Adequate, regular cyber training, including reactions to simulated attacks"
+            },
+            {
+              "left": "Higher-risk staff",
+              "right": "Additional training beyond the general programme"
+            },
+            {
+              "left": "Executive board and senior management",
+              "right": "Regular role-specific cyber security training"
+            },
+            {
+              "left": "Cyber security staff",
+              "right": "Regular update and training sessions to keep up with threats and countermeasures"
+            },
+            {
+              "left": "Board as a body",
+              "right": "Reports at every meeting that include staff awareness status"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Dilmun Coast Bank's training completion rate is 98%, but phishing simulation results have not improved in two years. Which OM-5.5 requirement is most at risk?",
+          "options": [
+            "OM-5.5.54: evaluating improvement in awareness to make sure training is effective",
+            "OM-5.5.53: cyber insurance",
+            "OM-5.5.21: single email domain",
+            "OM-5.5.28: penetration testing"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.54 requires the bank to evaluate improvement in awareness and preparedness to make sure training programmes are effective. Completion alone does not show that."
+        },
+        {
+          "type": "concept",
+          "title": "Recovery, exercises and insurance",
+          "body": "Training is wider than courses. Module OM also expects banks to **practise** and **prepare to recover**:\n\n- **Recovery objectives:** identify critical systems and set **recovery time objectives (RTO)** and **recovery point objectives (RPO)**; critical systems must be able to recover within the defined RTO (OM-5.5.45-5.5.48).\n- **Clean restoration:** check that recovered systems are free of compromise and data is intact before returning to normal (OM-5.5.49).\n- **Exercises:** a programme of attack simulations, **war games** and **table-top** exercises involving technical staff, the crisis team, decision-makers and spokespersons (OM-5.5.50).\n- **Communication:** accurate, timely updates to internal stakeholders, including the board (OM-5.5.51).\n- **Continuity:** the business continuity plan must include recovery from cyber incidents (OM-5.5.52).\n- **Insurance:** seek cyber risk insurance after a risk assessment independently verified by the insurer (OM-5.5.53)."
+        },
+        {
+          "type": "sort",
+          "title": "Effective training or tick-box?",
+          "prompt": "Sort each element of a cyber training programme.",
+          "buckets": [
+            "Shows effectiveness",
+            "Tick-box only"
+          ],
+          "items": [
+            {
+              "text": "Phishing simulation click and report rates tracked over time",
+              "bucket": 0
+            },
+            {
+              "text": "A single annual video for every role",
+              "bucket": 1
+            },
+            {
+              "text": "Contact centre scenarios on vishing and pretext calls",
+              "bucket": 0
+            },
+            {
+              "text": "Counting attendance without testing understanding",
+              "bucket": 1
+            },
+            {
+              "text": "Table-top exercise for the executive team on the CBB one-hour call",
+              "bucket": 0
+            },
+            {
+              "text": "Monthly bulletins on current threats seen by the SOC",
+              "bucket": 0
+            },
+            {
+              "text": "Training slides unchanged for three years",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The table-top",
+          "setting": "Board room, Seef. Thursday, 4:00 pm.",
+          "lines": [
+            {
+              "who": "fatema",
+              "text": "Scenario: it's 6 am on a weekend. Online banking is down after a ransomware attack, and customers are posting on social media.",
+              "mood": "neutral"
+            },
+            {
+              "who": "rashid",
+              "text": "First decision: is this a critical incident under our crisis plan? I think yes.",
+              "mood": "thinking"
+            },
+            {
+              "who": "thomas",
+              "text": "Then the clock to the CBB has started. Who makes the call, and who has the number?",
+              "mood": "neutral"
+            },
+            {
+              "who": "maryam",
+              "text": "And what do my agents tell customers who call? We need a script within the hour.",
+              "mood": "worried"
+            },
+            {
+              "who": "fatema",
+              "text": "Good. These gaps are exactly what OM-5.5.50 exercises are for. We'll fix them before a real attack finds them.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Designing next year's programme",
+          "situation": "Fatema asks you to propose next year's cyber training plan for the executive committee. The budget allows one major change.",
+          "choices": [
+            {
+              "text": "Buy a longer generic e-learning course for everyone and require 100% completion.",
+              "outcome": "More content does not show effectiveness, and it ignores role-specific needs for executives, IT, cyber and high-risk staff.",
+              "score": 0
+            },
+            {
+              "text": "Build a role-based programme with regular simulations, threat bulletins, extra modules for high-risk staff and executive table-tops, and measure results over time.",
+              "outcome": "Right. This covers OM-5.5.55 and OM-5.5.56 and gives the evidence OM-5.5.54 asks for, which can also feed the board's awareness report.",
+              "score": 2
+            },
+            {
+              "text": "Train only the IT and cyber teams, since they handle the systems.",
+              "outcome": "OM-5.5.55 requires training for all employees, and phishing targets everyone. Specialist training is needed but is not enough.",
+              "score": 0
+            },
+            {
+              "text": "Keep the current course but add one phishing simulation a year.",
+              "outcome": "A step forward, but a single yearly test gives little evidence of improvement and misses role-specific training.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Readiness checklist for a CBB review",
+          "cards": [
+            {
+              "front": "Governance",
+              "back": "Board-approved policy (reviewed at least annually), framework evaluated within three years, cyber on board agendas, minutes and reports."
+            },
+            {
+              "front": "People",
+              "back": "Qualified CISO, independent cyber risk function, adequate cyber staff with current training."
+            },
+            {
+              "front": "Testing",
+              "back": "Twice-yearly penetration tests, reports sent to the CBB on time and kept for five years, scan results and patch records."
+            },
+            {
+              "front": "Incidents",
+              "back": "Playbooks, incident logs, named roles and evidence of one-hour and two-hour reporting to the CBB."
+            },
+            {
+              "front": "Training",
+              "back": "Role-based plan, simulation results, threat bulletins and evidence of improvement."
+            },
+            {
+              "front": "Customers",
+              "back": "Single email domain, SPF/DKIM/DMARC, link rules and customer awareness campaigns."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Deadlines and cycles to remember",
+          "items": [
+            {
+              "label": "Call the CBB",
+              "value": "1 hour",
+              "detail": "After a qualifying cyber incident (OM-5.5.57)."
+            },
+            {
+              "label": "Section A by email",
+              "value": "2 hours",
+              "detail": "Initial Cyber Security Incident Report (OM-5.5.57)."
+            },
+            {
+              "label": "Section B",
+              "value": "10 days",
+              "detail": "Full report within 10 calendar days, then weekly updates (OM-5.5.58)."
+            },
+            {
+              "label": "Pen test report",
+              "value": "2 months",
+              "detail": "After the end of the test month (OM-5.5.61)."
+            },
+            {
+              "label": "Cyber policy review",
+              "value": "Annual",
+              "detail": "At least annually (OM-5.5.15)."
+            },
+            {
+              "label": "Framework and strategy",
+              "value": "3 years",
+              "detail": "Framework evaluated and strategy revised at least every three years (OM-5.5.5, 5.5.14)."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: CBB and NCSC awareness event (August 2026)",
+          "body": "In **August 2026** the CBB, working with Bahrain's **National Cyber Security Center (NCSC)**, held a specialised cyber security awareness event for financial sector professionals called **'Securing Financial Services Data in the AI Era'**.\n\nAccording to the CBB:\n\n- it included two lectures, one on the **role of the human element** in cyber security and one on **artificial intelligence** and related trends;\n- the aim was to raise readiness among employees **across all roles and job levels**;\n- it was part of continuing cooperation between the two bodies to build a lasting cyber security culture.\n\nThe lesson for Dilmun Coast Bank: the regulator sees people as a key line of defence. External events are useful, but the bank's own regular, role-based and measured programme is what OM-5.5.54 to OM-5.5.56 require."
+        },
+        {
+          "type": "check",
+          "question": "Which groups must receive regular role-specific cyber security training under OM-5.5.56?",
+          "options": [
+            "Only the IT department",
+            "Executive board and senior management, cyber security roles, IT staff and high-risk staff the bank identifies",
+            "Only new joiners in their first month",
+            "Only customers using digital channels"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.56 lists the executive board and senior management, cyber security roles, IT staff and any high-risk staff as determined by the licensee. OM-5.5.55 separately covers all employees."
+        },
+        {
+          "type": "tip",
+          "title": "Make your board report count",
+          "body": "Report training as outcomes, not just attendance: simulation click and report rates by department, time to report, repeat clickers given extra coaching, and lessons from real incidents. OM-5.5.4 expects staff awareness status in the board's cyber reports, so give directors numbers they can challenge."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "OM-5.5.55: all employees get adequate, regular cyber training, can be tested with simulated attacks and are kept informed of current threats.",
+            "OM-5.5.56: regular role-specific training for the executive board and senior management, cyber roles, IT staff and high-risk staff.",
+            "OM-5.5.54: the bank must evaluate whether awareness and preparedness improve, so training is shown to be effective.",
+            "Exercises (simulations, war games, table-tops), RTO and RPO, clean recovery, cyber in the BCP and cyber insurance complete the picture.",
+            "Be ready to show the CBB evidence: policies, reports, test results, incident logs, reporting times and training outcomes."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Which cyber threat is most likely to target your own role, and what one training or practice change would make you better prepared for it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bh-cy-s5-q1",
+          "question": "Which group does OM-5.5.55 say must receive adequate cyber security training on a regular basis?",
+          "options": [
+            "Only IT staff",
+            "Only staff who handle payments",
+            "All employees",
+            "Only board members"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.55 requires that all employees receive adequate, regular training on cyber security and the threats they could encounter. Role-specific training under OM-5.5.56 comes on top.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s5-q2",
+          "question": "Which method does OM-5.5.55 give as an example of how cyber training can be delivered?",
+          "options": [
+            "Asking staff to sign the policy each year",
+            "Testing employee reactions to simulated cyber attack scenarios",
+            "Sending the policy to staff by post",
+            "Holding a quiz only for new joiners"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.55 mentions testing employee reactions to simulated cyber attack scenarios, such as mock phishing, as one way to deliver the training.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s5-q3",
+          "question": "Dilmun Coast Bank decides its payments operations team is high-risk. What does Module OM expect for that team?",
+          "options": [
+            "Additional and role-specific training on top of the general programme",
+            "An exemption from the general programme",
+            "Training only after an incident",
+            "Penetration testing of each team member"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.55 says higher-risk staff should get additional training, and OM-5.5.56(d) requires role-specific training for any high-risk staff the bank identifies.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q4",
+          "question": "What does OM-5.5.54 require the bank to do about its cyber training programmes?",
+          "options": [
+            "Have them approved by the CBB before each session",
+            "Evaluate improvement in staff awareness and preparedness to confirm effectiveness",
+            "Outsource them to the NCSC",
+            "Repeat the same course every month"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.54 requires the bank to evaluate improvement in the level of awareness and preparedness to deal with cyber risk, to make sure the training is effective.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q5",
+          "question": "Which examples of certifications does OM-5.5.11(d) give for cyber security staff training?",
+          "options": [
+            "CFA, ACCA and FRM",
+            "Security+, CEH, CISSP, CISA and CISM",
+            "PMP, PRINCE2 and ITIL",
+            "CAMS, CGSS and CFE"
+          ],
+          "answer": 1,
+          "explanation": "OM-5.5.11(d) says senior management must provide and require regular cyber security update and training sessions for cyber staff, with examples such as Security+, CEH, CISSP, CISA and CISM.",
+          "difficulty": 2
+        },
+        {
+          "id": "bh-cy-s5-q6",
+          "question": "Under OM-5.5.50, which stakeholders should the bank's programme of incident response exercises take into account?",
+          "options": [
+            "Only external penetration testers",
+            "Only the IT help desk",
+            "Technical staff, the crisis management team, decision-makers and spokespersons",
+            "Only customers and the media"
+          ],
+          "answer": 2,
+          "explanation": "OM-5.5.50 asks for an exercise programme using simulations, war games and table-tops, with reference to technical staff, the crisis team, decision-makers and spokespersons.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q7",
+          "question": "What is a recovery point objective (RPO) in Module OM?",
+          "options": [
+            "The time by which a service must be back",
+            "The date of the next penetration test",
+            "The maximum fine for a late report",
+            "The point to which data must be restored for the activity to work again"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.47 defines RTO as the time in which a process must be recovered and RPO as the point to which information must be restored so the activity can operate on resumption.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q8",
+          "question": "Before returning a recovered system to normal operation after a cyber incident, what does OM-5.5.49 say the bank should check?",
+          "options": [
+            "That it is free of compromise, fully working, secure and its data intact",
+            "Only that customers can log in",
+            "That the insurer has paid the claim",
+            "That the CBB has visited the site"
+          ],
+          "answer": 0,
+          "explanation": "OM-5.5.49 says recovered assets should be validated as free of compromise, fully functional and meeting security requirements, including data integrity checks.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q9",
+          "question": "How does OM-5.5.53 describe the way a bank should approach cyber risk insurance?",
+          "options": [
+            "Insurance is optional and discouraged",
+            "Buy the cheapest policy without assessment",
+            "The CBB provides the insurance directly",
+            "Seek cover after a cyber risk assessment that the insurer independently verifies"
+          ],
+          "answer": 3,
+          "explanation": "OM-5.5.53 requires banks to arrange to seek cyber risk insurance from a suitable insurer after a risk-based assessment that the insurer independently verifies.",
+          "difficulty": 3
+        },
+        {
+          "id": "bh-cy-s5-q10",
+          "question": "What did the CBB's August 2026 event with the National Cyber Security Center focus on?",
+          "options": [
+            "Securing financial services data in the AI era, including the human element",
+            "New capital requirements for banks",
+            "Licensing rules for exchange houses",
+            "Changes to Bahrain's currency notes"
+          ],
+          "answer": 0,
+          "explanation": "The CBB said the event, 'Securing Financial Services Data in the AI Era', covered the human element in cyber security and AI-related trends, to raise readiness across all roles and job levels.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "bh",
+    "programs": [
+      72,
+      71,
+      73,
+      93,
+      91,
+      77,
+      29,
+      83,
+      114,
+      66,
+      74
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "periodic"
+    ],
+    "regulators": [
+      "Central Bank of Bahrain (CBB)",
+      "Personal Data Protection Authority (PDPA)",
+      "National Cybersecurity Center, Ministry of Interior (NCSC)"
+    ],
+    "references": [
+      {
+        "title": "Operational Risk Management Module (Module OM), Volume 1: copy issued with the January 2024 consultation on cyber security amendments",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2024/01/Vol-1_OM_2024.pdf",
+        "provision": "Section OM-5.5 (OM-5.5.1 to OM-5.5.61), including training OM-5.5.54-5.5.56 and reporting OM-5.5.57-5.5.58",
+        "note": "CBB-hosted copy published with the 28 January 2024 consultation. Pages dated July 2021, April 2022 and October 2022 show the rules then in force; pages marked 'XX 2024' show proposals (for example threat intelligence and attack surface management).",
+        "effective": "2021",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Central Bank of Bahrain and Financial Institutions Law (Law No. 64 of 2006)",
+        "issuer": "Kingdom of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2018/12/THE_CENTRAL_BANK_OF_BAHRAIN_AND_FINANCIAL_INSTITUTIONS_LAW_ENGLISH.pdf",
+        "provision": "Articles 116-119 and 171",
+        "note": "Customer information is confidential and a licensee may disclose it only with the customer's unequivocal approval, under law or treaty, by court order or on CBB instruction; recipients are bound too, and bad-faith disclosure is an offence.",
+        "effective": "2006",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Financial Cybersecurity Controls (National Cybersecurity Center draft v0.1, issued by the CBB for consultation)",
+        "issuer": "Ministry of Interior, National Cybersecurity Center / Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/wp-content/uploads/2022/11/Financial-Cybersecurity-Controls-Document.pdf",
+        "provision": "Subdomain 1.7, Controls 1.7.1-1.7.7",
+        "note": "Draft national standard consulted on in November 2022; would require an approved awareness programme, role-based training and an annual effectiveness review. Mentioned only as a consultation; final status not confirmed.",
+        "effective": "2022",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Law No. (30) of 2018 with respect to Personal Data Protection",
+        "issuer": "Kingdom of Bahrain (Legislation and Legal Opinion Commission)",
+        "url": "https://www.lloc.gov.bh/FullEn/K3018.docx",
+        "note": "General data protection law supervised by the Personal Data Protection Authority. The official text could not be opened, so the quest covers it only in general terms."
+      },
+      {
+        "title": "CBB consultations page (cyber security consultations 2020, 2022 and 28 January 2024)",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/consultations/",
+        "note": "Lists the January 2020 cyber security risk management consultation, the June 2022 cybersecurity requirements consultation, the November 2022 Financial Cybersecurity Controls consultation and the 28 January 2024 proposed amendments.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Warning- Benefitpay SMS",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/media-center/warning-benefitpay-sms/",
+        "note": "January 2021 public warning about a fake SMS claiming the user's Benefitpay CPR number had expired, with a shortened link; Benefitpay never requests personal information by SMS.",
+        "effective": "2021-01-28",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB warns consumers when dealing with personal and banking information",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/media-center/cbb-warns-consumers-when-dealing-with-personal-and-banking-information/",
+        "note": "September 2020 warning, prompted by a global rise in cyber attacks and fraud during COVID-19, on fake calls, messages and websites seeking banking information.",
+        "effective": "2020-09-15",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB warns against fraudulent scam involving the impersonation of Cyprus Securities and Exchange Commission",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/media-center/cbb-warns-against-fraudulent-scam-involving-the-impersonation-of-cyprus-securities-and-exchange-commission/",
+        "note": "June 2019 warning describing genuine-looking emails with copied regulator logos and signatures used to seek fees and personal information.",
+        "effective": "2019",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "CBB organizes Specialized Cyber Security Awareness Event in coordination with NCSC",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/media-center/cbb-organizes-specialized-cyber-security-awareness-event-in-coordination-with-ncsc/",
+        "note": "August 2026 awareness event for financial sector professionals, 'Securing Financial Services Data in the AI Era', on the human element and AI trends.",
+        "effective": "2026",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bahrain's Banking and Financial Sector Continues to Operate Normally, Demonstrating Stability, Resilience and the Highest Levels of Readiness",
+        "issuer": "Central Bank of Bahrain",
+        "url": "https://www.cbb.gov.bh/media-center/bahrains-banking-and-financial-sector-continues-to-operate-normally-demonstrating-stability-resilience-and-the-highest-levels-of-readiness/",
+        "note": "March 2026 statement: heightened CBB oversight during regional developments, continuity across institutions, and physical and cyber security measures at the highest readiness.",
+        "effective": "2026",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "bh-cy-x1",
+        "question": "Dilmun Coast Bank's board approved the cyber framework two years ago. The CBB examiner asks for evidence that cyber security is discussed at board level. Which evidence best meets OM-5.5.1 and OM-5.5.4?",
+        "options": [
+          "The approval letter from two years ago",
+          "The IT department's monthly ticket statistics",
+          "Board minutes showing cyber as an agenda item, with reports on indicators, maturity, awareness, incidents and test results",
+          "A contract with the bank's antivirus vendor"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.1 makes cyber security an item for discussion at board or board committee meetings, and OM-5.5.4 expects comprehensive reports at every meeting covering those topics. A one-off approval does not show ongoing oversight.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x2",
+        "question": "The cyber risk function at a Bahraini conventional bank reports to the CIO, who also runs IT operations. Which change brings it into line with OM-5.5.6?",
+        "options": [
+          "Rename it the IT security unit",
+          "Move its reporting line to an independent risk management function",
+          "Ask internal audit to review it every five years",
+          "Let the CIO approve its reports before they reach the board"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.6 requires a cyber security risk function independent of the IT department that reports to an independent risk management function or equivalent. Renaming or audit reviews do not fix the reporting line.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x3",
+        "question": "Which combination of review cycles is correct under Module OM-5.5?",
+        "options": [
+          "Policy every three years; strategy annually; framework only on CBB request",
+          "Policy and strategy every five years; framework annually",
+          "Policy quarterly; strategy every two years; framework every five years",
+          "Policy at least annually; strategy at least every three years; framework every three years or on significant change"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.15 sets an annual review of the policy, OM-5.5.14 a revision of the strategy at least every three years, and OM-5.5.5 an evaluation of the framework every three years or on significant change.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x4",
+        "question": "Thomas, the CRO, is asked to chair the bank's cyber security committee. Which membership is closest to what OM-5.5.9 suggests?",
+        "options": [
+          "Only IT engineers and the external auditor",
+          "Board members and shareholders only",
+          "Customer representatives and vendors",
+          "Senior managers from business functions, IT, risk and compliance"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.9 says the committee should be headed by an independent senior manager from a control function and include senior managers from business functions, IT, risk and compliance.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x5",
+        "question": "Dilmun Coast Bank is drafting its cyber strategy. Which element does OM-5.5.13 require the scope of risk identification and assessment to include?",
+        "options": [
+          "The personal social media of staff",
+          "Dependencies on third-party service providers",
+          "Competitors' marketing plans",
+          "Exchange rate forecasts"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.13(e) requires the strategy's scope of risk identification and assessment to include dependencies on third-party service providers.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x6",
+        "question": "The bank's cyber policy lists access, incident and vulnerability management but not cyber training and awareness. What is the problem under OM-5.5.15?",
+        "options": [
+          "Cyber training and awareness is one of the policy areas that must be addressed",
+          "None, since training belongs only in the HR manual",
+          "The policy should leave training to each branch manager",
+          "Training must be covered only in the BCP"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.15(d) lists the functions and controls the policy must address, including cyber training and awareness, along with asset, incident, vulnerability, configuration, access and third-party management.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x7",
+        "question": "When drafting its cyber risk tolerance statement, which factors does OM-5.5.15(b) suggest the bank should consider?",
+        "options": [
+          "Only the cost of security software",
+          "Only the number of IT staff",
+          "Customer impact, service downtime, negative publicity, regulatory penalties and financial loss",
+          "Only the share price"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.15(b) says the tolerance statement should be developed by considering impacts such as customer impact, service downtime, negative media publicity, regulatory penalties and financial loss.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x8",
+        "question": "A compliance analyst cites the external attack surface management paragraph from the January 2024 CBB copy of Module OM as a rule in force since 2021. What is wrong with this?",
+        "options": [
+          "Nothing, since every paragraph in the copy dates from 2021",
+          "The paragraph applies only to Volume 2 banks",
+          "The paragraph was deleted in 2022",
+          "That paragraph sits on a page marked 'XX 2024' and was a consultation proposal"
+        ],
+        "answer": 3,
+        "explanation": "In the CBB-hosted copy issued with the 28 January 2024 consultation, OM-5.5.24A appears on a page marked 'XX 2024', showing it was proposed. Its final status must be checked in the current Rulebook.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-cy-x9",
+        "question": "Senior management at Dilmun Coast Bank reports cyber incidents to the board only once a year. Which OM-5.5.10 duty does this fail?",
+        "options": [
+          "Monthly reports to the CBB on every phishing email",
+          "Weekly reports to shareholders",
+          "Daily reports to customers",
+          "Quarterly or more frequent reports on all cyber incidents and their implications"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.10(f) requires senior management to prepare quarterly or more frequent reports on all cyber incidents, internal and external, and their implications for the bank.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x10",
+        "question": "Criminals are sending emails that appear to come from Dilmun Coast Bank's domain. Which control set in OM-5.5.19 helps receiving servers reject such spoofed mail?",
+        "options": [
+          "SPF, DKIM and DMARC on the bank's mail domain",
+          "A web application firewall",
+          "Privileged access management",
+          "Network access control on branch ports"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.19 requires anti-spoofing measures that authenticate the bank's mail server, such as SPF, DKIM and DMARC. The other controls protect web apps, admin accounts and network ports.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x11",
+        "question": "Dilmun Coast Bank wants to use an e-signature service whose emails come from the service provider's own domain. What does OM-5.5.21A allow?",
+        "options": [
+          "Any domain without approval if customers agree",
+          "No exceptions: only the bank's domain can ever be used",
+          "Additional domains subject to CBB approval, for example for third-party services arranged with customers",
+          "Any domain if the email contains no links"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.21A allows additional email domains, subject to CBB approval, in cases such as head or regional office emails and third-party services arranged in advance with customers, for example document management services.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x12",
+        "question": "A product manager wants to send an SMS campaign to all customers with a shortened link to a new savings offer. Which two OM-5.5.21 rules does this break?",
+        "options": [
+          "The link is unprompted by customer action, and it is shortened",
+          "It uses SMS instead of a letter, and it mentions a product",
+          "It is sent to all customers, and it is in English",
+          "It is a marketing message, and it is sent in the evening"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.21(a) limits links in SMS to messages resulting from a customer request or action, and (b) tells banks not to use shortened links in customer messages.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x13",
+        "question": "Which list of safeguards does OM-5.5.21(c) give, of which a bank must use one or more when sending links to customers?",
+        "options": [
+          "Clear instructions, a prior call, transaction details, or password or biometric authentication",
+          "Bright colours, larger text, an emoji or a QR code",
+          "A shortened link, a free email domain, or a pop-up",
+          "A discount code, a deadline, or a prize draw"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.21(c) lists clear instructions, prior notification such as a call, transaction details such as amount and merchant, and other verification such as password or biometric authentication.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x14",
+        "question": "An employee clicks a link in a phishing email and enters her network password before realising. What should she do first?",
+        "options": [
+          "Report it immediately to the SOC with details of what she entered",
+          "Change her password quietly and say nothing",
+          "Wait to see whether anything unusual happens",
+          "Forward the email to all colleagues as a warning"
+        ],
+        "answer": 0,
+        "explanation": "Fast reporting lets the SOC reset credentials, contain any access and check whether the incident must be reported to the CBB. Hiding the mistake gives the attacker time.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x15",
+        "question": "What did the CBB's January 2021 Benefitpay warning say about how Benefitpay requests personal information?",
+        "options": [
+          "It requests personal information only through shortened links",
+          "It requests CPR updates by SMS once a year",
+          "It never requests personal information through SMS",
+          "It asks customers to reply to SMS with their PIN"
+        ],
+        "answer": 2,
+        "explanation": "The CBB warned the public not to click the link in the fake SMS and stated that Benefitpay will never request personal information through SMS.",
+        "difficulty": 2
+      },
+      {
+        "id": "bh-cy-x16",
+        "question": "Which OM-5.5.18 control limits the exploitation of both privileged and non-privileged accounts and monitors how they are used?",
+        "options": [
+          "Identity and access management solutions",
+          "A secure web gateway",
+          "Data leakage prevention",
+          "Endpoint protection"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.18(k) requires identity and access management solutions to limit exploitation of, and monitor, privileged and non-privileged accounts. PAM under (e) focuses on privileged access to critical assets.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x17",
+        "question": "OM-5.5.22 lists factors for periodic cyber threat assessments. Which factor relates directly to the risk that a member of staff misuses access?",
+        "options": [
+          "Insider threats among cyber threat entities",
+          "Dark web surveillance only",
+          "Changes in regional threat severity",
+          "Attacks on other organisations"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.22(a) lists cyber threat entities including cyber criminals, cyber activists and insider threats. Insider risk is one reason awareness and access controls matter for every employee.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x18",
+        "question": "A finance officer receives an email from a supplier asking to change bank details for the next payment. The email address is correct, but the supplier's mailbox may have been hacked. What is the safest control?",
+        "options": [
+          "Accept it, because the address is genuine",
+          "Ask the sender to confirm by replying to the email",
+          "Confirm the change by calling the supplier on a number already held on file",
+          "Make half the payment to each account"
+        ],
+        "answer": 2,
+        "explanation": "A hijacked mailbox sends from the genuine address, so the address alone proves nothing. Out-of-band verification through known contact details is the reliable control against payment-change fraud.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x19",
+        "question": "Dilmun Coast Bank has used the same external penetration testing firm for three years. What does OM-5.5.28 require?",
+        "options": [
+          "Nothing, as long as the firm is certified",
+          "Change the independent testers at least every two years",
+          "Stop external testing and use internal staff only",
+          "Ask the CBB to appoint a tester"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.28(d) requires tests by internal and external independent third parties, which should be changed at least every two years.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x20",
+        "question": "A December penetration test finishes on 15 December. When is the report due to the CBB, and how long must it be kept?",
+        "options": [
+          "By 31 December, and kept for one year",
+          "By 15 January, and kept for ten years",
+          "By 28 February, and kept for five years from the report date",
+          "By 31 March, and kept until the next test"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.61 requires the report within two months after the end of the testing month (its example: a December test by 28 February) and retention for five years from the report date, with the mitigation steps.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x21",
+        "question": "Which feature distinguishes a red teaming exercise from a standard penetration test, as described in OM-5.5.29?",
+        "options": [
+          "It is always done by the bank's own IT team",
+          "It tests detection and response quietly, rather than finding as many vulnerabilities as possible",
+          "It covers only the bank's website",
+          "It must be run every month"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.29 explains that a red team targets the organisation's detection and response, possibly across cyber, social and physical fronts, trying to reach sensitive information quietly, rather than listing all vulnerabilities.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x22",
+        "question": "At 23:30 on a Friday the SOC confirms that a third-party provider's breach has exposed Dilmun Coast Bank customer data. Does OM-5.5.57 apply, and when?",
+        "options": [
+          "No, because the breach happened at a third party",
+          "Yes, but only from the next business day",
+          "Yes: external incidents compromising customer data count, so the CBB must be called by 00:30",
+          "No, unless the data includes card numbers"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.57 covers any cyber incident, internal or external, that compromises customer information or disrupts critical services. The one-hour limit runs from occurrence or detection, including nights and weekends.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-cy-x23",
+        "question": "The bank called the CBB within an hour and sent Section A on time. Ten days later, the root cause is still unknown. What should it do?",
+        "options": [
+          "Delay Section B until the root cause is known",
+          "Submit Section B on time with as much information as possible, then keep sending weekly updates",
+          "Withdraw Section A and start again",
+          "Tell the CBB the incident is closed"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.58 sets the 10-calendar-day deadline and weekly updates until resolution, and OM-5.5.59 says to submit with as much information as possible even if not all details are known.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x24",
+        "question": "Which item is listed in OM-5.5.60 as part of the comprehensive cyber incident report?",
+        "options": [
+          "Who discovered the incident, such as a provider, customer or employee",
+          "The personal phone numbers of all board members",
+          "A list of every employee's training scores",
+          "The bank's quarterly profit forecast"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.60 lists discovery date and time, time to restore critical services, who discovered it, incident type, impact, affected systems and technical details, root cause and actions taken.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x25",
+        "question": "The SOC detects ransomware spreading across branch PCs. Under OM-5.5.34, what may containment involve?",
+        "options": [
+          "Paying the ransom immediately",
+          "Isolating or shutting down affected systems after weighing business impact",
+          "Deleting all logs to stop the spread",
+          "Waiting for the next penetration test"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.34 says that once an incident is detected, banks should activate containment, which may include shutting down or isolating affected systems after considering costs, business impact and operational risk.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x26",
+        "question": "During an incident, the bank's Record Keeper is unsure what to log. What does OM-5.5.41 say the incident log should contain?",
+        "options": [
+          "Only the final outcome once the incident is closed",
+          "Only technical data from the firewall",
+          "Only messages sent to the media",
+          "All notifications, decisions and actions, logged close to when they happen, with status and owner"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.41 asks for an incident log documenting all notifications, decisions and actions as close as possible to when they occur, including status and the person responsible, stored securely and in a legally admissible way.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x27",
+        "question": "A cyber incident at Dilmun Coast Bank may affect other banks through a shared payment link. What does OM-5.5.43 suggest?",
+        "options": [
+          "Keep the information internal to protect reputation",
+          "Post technical details publicly on social media",
+          "Wait for other banks to report first",
+          "Assess the wider impact and report it to the CBB if it may be systemic"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.43 says banks should assess effects on customers and the wider banking system and report the results to the CBB if the incident may have systemic impact. Non-sensitive data can also be shared through MISP.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x28",
+        "question": "A police officer visits a Riffa branch and asks verbally for a customer's statements, without any written request or court order. The branch manager asks Maryam what to do. What is the best answer?",
+        "options": [
+          "Hand them over, since the police can always see bank records",
+          "Give a summary of balances only",
+          "Do not hand them over; refer the request to compliance or legal to check the legal basis",
+          "Ask the customer's employer for permission"
+        ],
+        "answer": 2,
+        "explanation": "Article 117 permits disclosure under a provision of law, a competent court order or a CBB instruction, among others. Whether a legal basis exists must be checked by compliance or legal; branch staff should not decide on a verbal request.",
+        "difficulty": 5
+      },
+      {
+        "id": "bh-cy-x29",
+        "question": "Which statement about Article 118 of the CBB Law is accurate?",
+        "options": [
+          "It allows any bank employee to disclose information to journalists",
+          "It sets out when the CBB itself may disclose confidential information it receives",
+          "It requires banks to publish customer lists",
+          "It abolishes banking confidentiality for corporate customers"
+        ],
+        "answer": 1,
+        "explanation": "Article 118 lists when the Central Bank may disclose confidential information: in the Article 117 cases, for measures to protect the stability and trust of the system, and in cooperation with international or competent bodies.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x30",
+        "question": "An employee emails a file of customer CPR numbers to her personal webmail to work from home. Which controls and rules are engaged?",
+        "options": [
+          "Only the cyber insurance rules",
+          "Data leakage prevention under OM-5.5.18 and the CBB Law's confidentiality duty",
+          "Only the penetration testing rules",
+          "None, because she is a bank employee"
+        ],
+        "answer": 1,
+        "explanation": "DLP under OM-5.5.18(b) aims to stop confidential data leaving the bank, and customer information is confidential under Articles 116-117. Sending it to personal email puts it outside the bank's protection.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x31",
+        "question": "A customer gives verbal consent on a recorded call for the bank to share her loan details with a named mortgage broker. Later, a different broker asks for the same details. What should the bank do?",
+        "options": [
+          "Share the details, as consent has been given once",
+          "Share them if the second broker works in the same building",
+          "Share only the loan amount",
+          "Refuse the second broker, since the customer's approval covered only the named broker"
+        ],
+        "answer": 3,
+        "explanation": "Article 117 requires the unequivocal approval of the person the information relates to. Consent given for one named recipient does not extend to others.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x32",
+        "question": "Which statement about Bahrain's PDPL is accurate at the level taught in this quest?",
+        "options": [
+          "It is a CBB circular issued in 2024",
+          "It applies only to health data",
+          "It is Law No. 30 of 2018 and sets general duties for processing personal data",
+          "It removes the need for data classification at banks"
+        ],
+        "answer": 2,
+        "explanation": "The Personal Data Protection Law is Law No. 30 of 2018, supervised by the Personal Data Protection Authority. It adds general data protection duties and does not replace Module OM controls.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x33",
+        "question": "An email to a Dilmun Coast Bank manager appears to come from a foreign financial regulator, carries its logo and a signed letter, and asks for customer data to support 'compensation claims'. What does the CBB's 2019 CySEC warning suggest?",
+        "options": [
+          "A regulator's logo proves the request is genuine",
+          "Logos and signatures can be faked; verify through compliance using known contact details",
+          "Foreign regulators may collect customer data from any bank employee",
+          "Reply with the data but mark it confidential"
+        ],
+        "answer": 1,
+        "explanation": "The CBB's June 2019 warning described scammers copying CySEC's name, logo, stamp and signatures to seek fees and personal data. Requests from authorities must be verified and handled through compliance under Article 117.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x34",
+        "question": "A colleague asks you to look up a famous customer's balance 'out of curiosity'. Why is this a problem even though no information leaves the bank?",
+        "options": [
+          "Access should follow need to know under data classification, and customer information is confidential",
+          "It is not a problem if no one outside the bank finds out",
+          "It is only a problem if the customer complains",
+          "It is a problem only for corporate customers"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.12 links data classification to who has access and what use is appropriate, and Article 116 makes information on a customer's private affairs confidential. Curiosity is not a business need.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x35",
+        "question": "Which pair of laws together shape how a Bahraini conventional bank must protect customer information, beyond the CBB Rulebook?",
+        "options": [
+          "The Companies Law and the Labour Law",
+          "The Traffic Law and the Commercial Register Law",
+          "The Income Tax Law and the Customs Law",
+          "The CBB Law (Law No. 64 of 2006) and the Personal Data Protection Law (Law No. 30 of 2018)"
+        ],
+        "answer": 3,
+        "explanation": "Articles 116-120 of the CBB Law set banking confidentiality, and the PDPL sets general personal data duties. Module OM then adds the technical and organisational controls.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x36",
+        "question": "Dilmun Coast Bank delivers the same 20-minute cyber video to all staff each year and records 100% completion. Which OM-5.5 requirements may it still fail?",
+        "options": [
+          "Penetration testing and red teaming",
+          "The single email domain rule",
+          "Cyber insurance and RTO setting",
+          "Role-specific training (OM-5.5.56), extra training for higher-risk staff and evaluating effectiveness (OM-5.5.54)"
+        ],
+        "answer": 3,
+        "explanation": "Completion of a generic course does not provide regular role-specific training for executives, cyber, IT and high-risk staff, additional training for higher-risk staff, or evidence of improved awareness.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x37",
+        "question": "After a phishing simulation, the CISO finds that the contact centre has a much higher click rate than other teams. What fits best with OM-5.5.55 and OM-5.5.56?",
+        "options": [
+          "Discipline every agent who clicked and stop simulations",
+          "Hide the results to protect morale",
+          "Treat the team as higher-risk and give it extra, role-specific training, then re-measure",
+          "Exclude the team from future simulations"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.55 calls for additional training for higher-risk staff and OM-5.5.56(d) for role-specific training for high-risk staff the bank identifies. Re-measuring supports the effectiveness check in OM-5.5.54.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x38",
+        "question": "Which obligation in OM-5.5.55 goes beyond formal courses?",
+        "options": [
+          "Paying staff a bonus for completing training",
+          "Asking staff to buy their own antivirus",
+          "Keeping relevant employees informed of current cyber security breaches and threats",
+          "Requiring each employee to hold a CISSP"
+        ],
+        "answer": 2,
+        "explanation": "OM-5.5.55 requires that all relevant employees be informed of current cyber breaches and threats, for example through threat bulletins, in addition to regular training.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x39",
+        "question": "The board asks why it must attend cyber training when it already receives reports. What is the best answer under Module OM?",
+        "options": [
+          "OM-5.5.56(a) requires regular role-specific training for the executive board and senior management",
+          "Board training is optional under Module OM",
+          "Only the CISO needs training, as the board delegates cyber",
+          "Board members are trained only if an incident occurs"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.56(a) lists the executive board and senior management among those who must receive regular role-specific cyber training. Reports under OM-5.5.4 do not replace it.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x40",
+        "question": "Dilmun Coast Bank's executive team has never practised a cyber crisis. Which OM-5.5 duty addresses this most directly?",
+        "options": [
+          "The policy review cycle (OM-5.5.15)",
+          "The single email domain (OM-5.5.21)",
+          "The data classification guidance (OM-5.5.12)",
+          "A programme of exercises such as attack simulations, war games and table-tops (OM-5.5.50)"
+        ],
+        "answer": 3,
+        "explanation": "OM-5.5.50 requires a programme for exercising response mechanisms using simulations, war games and table-top exercises, involving technical staff, the crisis team, decision-makers and spokespersons.",
+        "difficulty": 3
+      },
+      {
+        "id": "bh-cy-x41",
+        "question": "A critical payments system's recovery after a cyber attack took far longer than its defined RTO. Which OM-5.5 requirement was not met?",
+        "options": [
+          "Penetration tests must be run twice a year (OM-5.5.28)",
+          "Critical systems must be able to recover within the defined RTO (OM-5.5.48)",
+          "Customer emails must use one domain (OM-5.5.21)",
+          "The board must discuss cyber (OM-5.5.1)"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.48 requires banks to ensure all critical systems can recover from a cyber breach within the bank's defined RTO, to provide important or minimum services.",
+        "difficulty": 4
+      },
+      {
+        "id": "bh-cy-x42",
+        "question": "Which document must include a recovery plan for systems, operations and services after a cyber incident, under OM-5.5.52?",
+        "options": [
+          "The annual report",
+          "The business continuity plan",
+          "The staff handbook",
+          "The marketing plan"
+        ],
+        "answer": 1,
+        "explanation": "OM-5.5.52 requires the business continuity plan to be comprehensive and include recovery of systems, operations and services arising from a cyber security incident.",
+        "difficulty": 2
+      },
+      {
+        "id": "bh-cy-x43",
+        "question": "During a CBB review, the examiner asks how the bank knows its cyber awareness programme works. Which evidence is strongest?",
+        "options": [
+          "Trend data from simulations and incident reports showing better reporting and fewer clicks",
+          "A signed attendance sheet from last year's course",
+          "The training vendor's brochure",
+          "A statement from the CISO that staff are aware"
+        ],
+        "answer": 0,
+        "explanation": "OM-5.5.54 asks the bank to evaluate improvement in awareness and preparedness. Measured trends in behaviour show effectiveness; attendance and assurances do not.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
