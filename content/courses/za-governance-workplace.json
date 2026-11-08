@@ -1,0 +1,3003 @@
+{
+  "slug": "za-governance-workplace",
+  "title": "South Africa | Bank Governance, Board Training, Health and Safety and Harassment Prevention",
+  "tagline": "From the boardroom to the branch floor: PA governance rules for directors, fit and proper checks, OHS Act duties and harassment prevention.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "South African banks and controlling companies",
+    "Boards, board committees and company secretariats",
+    "Human resources and employee relations",
+    "Facilities, health and safety and branch management"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the South African rules that shape how a bank is governed and how it protects its people. It covers the **Banks Act** governance duties as restated by the **Prudential Authority (PA)** (sections 60, 60B and 64 to 64C), **PA Directive 1 of 2026** on governance and tenure (25 February 2026), which requires a board-approved policy ensuring **appropriate and ongoing training for directors** and ongoing assessment of each board member, the **fit and proper** rules for directors and executive officers including form BA 020 and **Directive 7 of 2022** on criminal background checks, the employer duties in the **Occupational Health and Safety Act** (including the section 8(2)(e) duty to provide information, instructions, training and supervision), and the **2022 Code of Good Practice on the Prevention and Elimination of Harassment in the Workplace** under the Employment Equity Act.\n\nIt is for directors, company secretaries, executives, HR, facilities and branch managers of South African banks. Director training is an express role-based duty under the PA Directive; OHS training is an express employer duty; harassment training is a good-practice expectation of the Code.\n\nYou follow a fictional team at Sable Crest Bank and study real cases from SARB and government sources.\n\nThis quest builds knowledge of the law and good practice; it does not replace your institution's own policies, procedures or advice from your compliance, legal or HR teams.",
+  "audience": [
+    "Directors, board committee chairs and company secretaries of South African banks and controlling companies",
+    "Executive officers and nominations or directors' affairs committee support staff",
+    "Human resources, employee relations and grievance handlers",
+    "Facilities, health and safety managers, representatives and branch managers",
+    "Compliance and internal audit staff who review governance and workplace controls"
+  ],
+  "outcomes": [
+    "Explain the Banks Act duties of directors and executive officers and the rules on board committees",
+    "Apply PA Directive 1 of 2026 on independence, tenure, director training and assessment",
+    "Apply the fit and proper rules, the BA 020 timing and the criminal background check requirements",
+    "Apply the OHS Act duties of employers, CEOs, employees and health and safety representatives",
+    "Recognise harassment and sexual harassment and apply the 2022 Code's policy, procedure and training expectations",
+    "Prepare honest evidence for governance and workplace reviews"
+  ],
+  "quest": {
+    "name": "The Boardroom and the Branch Floor",
+    "premise": "You have just joined the company secretariat of Sable Crest Bank Limited, a fictional South African bank with its head office in Menlyn, Pretoria, a regional office in Cape Town and branches from East London to Durban. The Prudential Authority will review the bank's new governance policy next quarter. With company secretary Busisiwe Zulu, independent chair Hendrik Steyn, HR head Refilwe Mahlangu, health and safety manager Yusuf Cassim and branch manager Thabo Nkuna, clear five stages and then face the final review.",
+    "badge": {
+      "name": "Governance and Workplace Steward",
+      "description": "Awarded for working knowledge of South African bank governance, director training, fit and proper rules, health and safety duties and harassment prevention."
+    },
+    "color": "#9a3412",
+    "cast": [
+      {
+        "id": "busi",
+        "name": "Busisiwe Zulu",
+        "role": "Company Secretary, Menlyn, your mentor",
+        "look": {
+          "skin": 5,
+          "hair": "bun",
+          "color": "#9a3412"
+        }
+      },
+      {
+        "id": "hendrik",
+        "name": "Hendrik Steyn",
+        "role": "Independent Non-Executive Chair of the Board",
+        "look": {
+          "skin": 1,
+          "hair": "bald",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "refilwe",
+        "name": "Refilwe Mahlangu",
+        "role": "Head of HR and Employee Relations",
+        "look": {
+          "skin": 4,
+          "hair": "long",
+          "color": "#7c3aed"
+        }
+      },
+      {
+        "id": "yusuf",
+        "name": "Yusuf Cassim",
+        "role": "Facilities and Health and Safety Manager, Cape Town",
+        "look": {
+          "skin": 3,
+          "hair": "beard",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "thabo",
+        "name": "Thabo Nkuna",
+        "role": "Branch Manager, East London",
+        "look": {
+          "skin": 5,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Banks Act governance frame: duties, board and committees",
+      "stage": "The Boardroom Gate",
+      "summary": "Learn who supervises bank governance, the personal duties of directors and executive officers, the non-executive majority, the section 60B governance process and the four statutory committees, with the VBS Mutual Bank failure as a warning.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the Prudential Authority's role and its power to issue directives under section 6(6) of the Banks Act",
+        "Describe the duties in section 60 and the 49% cap on employee directors",
+        "Explain what the section 60B governance process must achieve",
+        "Identify the membership rules of the four statutory board committees"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage one: the empty chair",
+          "setting": "Board room, Sable Crest Bank head office, Menlyn, Pretoria. 07:50, before a board meeting.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your first day in the company secretariat of Sable Crest Bank Limited, a fictional South African bank. Twelve chairs face a long table. One has a fresh name card.",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "Welcome! I'm Busisiwe Zulu, company secretary. That new card belongs to a director who joins us today. Your job this quarter is the board's governance file.",
+              "mood": "happy"
+            },
+            {
+              "who": "hendrik",
+              "text": "Hendrik Steyn, independent chair. The Prudential Authority reviews our governance policy next quarter, and it now asks how we train directors, not only who we appoint.",
+              "mood": "neutral"
+            },
+            {
+              "who": "refilwe",
+              "text": "Refilwe Mahlangu, HR and employee relations. Governance isn't only the boardroom. The PA looks at the board; the Labour department looks at how we treat and protect staff.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yusuf",
+              "text": "Yusuf Cassim, facilities and health and safety, Cape Town. And my inspectors ask a simple question: did you inform, instruct, train and supervise your people?",
+              "mood": "neutral"
+            },
+            {
+              "who": "thabo",
+              "text": "Thabo Nkuna, branch manager in East London. Honestly, the branch floor feels a long way from this table.",
+              "mood": "worried"
+            },
+            {
+              "who": "busi",
+              "text": "It isn't. Five stages: the Banks Act, the new Directive on governance, fit and proper people, health and safety, and harassment. Stage one: what does the law expect a bank board to do?",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The Banks Act governance frame in five scenes",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "The prudential supervisor",
+              "narration": "The Prudential Authority, inside the South African Reserve Bank, supervises banks for safety and soundness. Under section 6(6) of the Banks Act it can issue directives that banks must follow."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Personal duties",
+              "narration": "Section 60 says each director, chief executive officer and executive officer owes the bank a fiduciary duty and a duty of care and skill. The duty is personal, not just collective."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "A mostly non-executive board",
+              "narration": "The same section caps employees at 49 per cent of a bank's directors, rounded down. In practice, most directors must be non-executive."
+            },
+            {
+              "icon": "🧭",
+              "heading": "A real governance process",
+              "narration": "Section 60B makes the board and executive officers responsible for an adequate and effective corporate governance process that fits the nature, complexity and risks of the bank's business."
+            },
+            {
+              "icon": "🗂️",
+              "heading": "Committees with teeth",
+              "narration": "Sections 64 to 64C require an audit committee, a risk and capital management committee, a directors' affairs committee and a remuneration committee, each with rules on who may sit on it."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "The four statutory board committees",
+          "items": [
+            {
+              "label": "Audit (s 64)",
+              "left": "Members may not be employees of the bank or its group",
+              "right": "The board chair may not be a member"
+            },
+            {
+              "label": "Risk and capital (s 64A)",
+              "left": "At least three board members",
+              "right": "At least two must be non-executive"
+            },
+            {
+              "label": "Directors' affairs (s 64B)",
+              "left": "Only non-executive directors",
+              "right": "Reviews governance and board continuity and skills"
+            },
+            {
+              "label": "Remuneration (s 64C)",
+              "left": "Only non-executive directors",
+              "right": "Oversees how the bank pays its people"
+            }
+          ],
+          "caption": "Summarised from Annexure A to PA Directive 1 of 2026, which restates these Banks Act sections for ease of reference.",
+          "headers": [
+            "Who may sit on it",
+            "Key feature"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sable Crest's board has 12 directors. Under section 60 of the Banks Act, what is the largest number who may be employees of the bank or its group?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 1,
+          "explanation": "The cap is 49 per cent rounded down to the next whole number. 49 per cent of 12 is 5.88, which rounds down to 5. Six would already be half the board, which the rule is designed to prevent."
+        },
+        {
+          "type": "concept",
+          "title": "Section 60B: what the governance process is for",
+          "body": "Section 60B is the heart of bank governance in the Banks Act. The board **and** the executive officers must set up and keep an **adequate and effective** corporate governance process that suits the bank's nature, complexity and risks.\n\nThe Act says what the process should achieve, in summary:\n\n- the bank meets its strategic and business goals efficiently, effectively, **ethically and equitably**, within acceptable risk limits;\n- a fair balance between shareholders and other people affected by what directors and executives do, with real accountability;\n- executives commit to behaviour widely accepted as correct and proper;\n- mechanisms that **avoid or minimise conflicts** between the bank's interests and the personal interests of directors and executives;\n- responsible conduct by directors and executives; and\n- **compliance with all applicable laws**.\n\nNotice the last point. A board that ignores labour, safety or equality law is failing its Banks Act governance duty too."
+        },
+        {
+          "type": "match",
+          "title": "Match the Banks Act section to its duty",
+          "prompt": "Link each section to what it requires.",
+          "pairs": [
+            {
+              "left": "Section 60",
+              "right": "Fiduciary duty and duty of care and skill; employees capped at 49% of directors"
+            },
+            {
+              "left": "Section 60B",
+              "right": "An adequate and effective governance process suited to the bank's risks"
+            },
+            {
+              "left": "Section 64",
+              "right": "Audit committee of non-employees, without the board chair"
+            },
+            {
+              "left": "Section 64A",
+              "right": "Risk and capital management committee of at least three, two non-executive"
+            },
+            {
+              "left": "Section 64B",
+              "right": "Directors' affairs committee: governance review, continuity and skills mix"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Turning point: the file from 2018",
+          "setting": "Company secretariat office, Menlyn. 11:30.",
+          "lines": [
+            {
+              "who": "busi",
+              "text": "Before you design anything, read this. It's the Reserve Bank's statement from March 2018 on VBS Mutual Bank.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hendrik",
+              "text": "The Governor said the bank's problems came from a failure of the board and executive management to manage rapid growth, funding and liquidity.",
+              "mood": "worried"
+            },
+            {
+              "who": "thabo",
+              "text": "So it wasn't a market crash. It was the people at the table.",
+              "mood": "thinking"
+            },
+            {
+              "who": "busi",
+              "text": "Exactly. Every rule you'll study this quest is somebody's lesson learned the hard way.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: VBS Mutual Bank, 2017-2018",
+          "body": "**What happened (from SARB statements):**\n\n- **August 2017:** the SARB imposed administrative sanctions on VBS for weaknesses in its FIC Act controls: a R2.5 million penalty (R2 million suspended on conditions) and a directive to fix customer identification and reporting processes.\n- **11 March 2018:** the Minister of Finance placed VBS under curatorship. The Governor said its liquidity crisis came from the board's and management's failure to manage rapid growth and funding, including short-term municipal deposits lent out long-term. The board and management lost their powers to the curator.\n- **April 2018:** the PA appointed Advocate Terry Motau SC to investigate under section 134 of the FSR Act.\n- **July 2018:** government guaranteed retail deposits up to R100,000, paid through Nedbank; the SARB estimated about 97% of some 22,700 retail depositors would be repaid in full.\n- **October 2018:** the investigator reported that almost R2 billion had been taken.\n\nVBS was a mutual bank under its own Act, but the governance lesson applies to every bank."
+        },
+        {
+          "type": "scenario",
+          "title": "The growth slide",
+          "situation": "At a board meeting, the head of treasury presents a plan to grow deposits fast by taking large short-term deposits from a few public-sector clients and lending them out on long terms. Profits look excellent. Two non-executive directors look at their phones. The chair asks if there are questions. You are taking minutes.",
+          "choices": [
+            {
+              "text": "Prompt the chair, through the company secretary, to ask the risk and capital committee for a liquidity and concentration analysis before approval.",
+              "outcome": "Best. Section 60B expects decisions within acceptable risk limits, and the risk and capital committee exists for exactly this. The minutes will show the board challenged the plan. VBS showed where unchallenged concentrated funding can lead.",
+              "score": 2
+            },
+            {
+              "text": "Record that the board approved the plan, since nobody objected.",
+              "outcome": "Poor. Silence is not oversight. Directors owe a duty of care and skill; minutes showing no challenge to a risky plan are evidence against the board later.",
+              "score": 0
+            },
+            {
+              "text": "Email the non-executive directors after the meeting to suggest they read the plan more carefully.",
+              "outcome": "Partly right. Raising the concern helps, but the decision has already been taken. The time to test the risk was before approval, through the proper committee route.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "VBS Mutual Bank: from warning to failure",
+          "items": [
+            {
+              "label": "Penalty for weak controls",
+              "detail": "SARB sanctions VBS over FIC Act control weaknesses: R2.5 million, R2 million suspended.",
+              "value": "Aug 2017"
+            },
+            {
+              "label": "Curatorship",
+              "detail": "Minister places VBS under curatorship; board and management relieved of their powers.",
+              "value": "Mar 2018"
+            },
+            {
+              "label": "Forensic investigation",
+              "detail": "PA appoints an investigator under section 134 of the FSR Act.",
+              "value": "Apr 2018"
+            },
+            {
+              "label": "Depositors repaid",
+              "detail": "Retail deposits up to R100,000 repaid through Nedbank under a government guarantee.",
+              "value": "Jul 2018"
+            },
+            {
+              "label": "Investigator's report",
+              "detail": "Report to the PA finds almost R2 billion was taken from the bank.",
+              "value": "Oct 2018"
+            }
+          ],
+          "caption": "Dates and amounts from SARB media statements of 4 August 2017, 11 March, 13 April, 9 July and 10 October 2018."
+        },
+        {
+          "type": "flip",
+          "title": "Governance words you'll hear all quest",
+          "cards": [
+            {
+              "front": "Fiduciary duty",
+              "back": "A duty to act in good faith in the bank's interests, not your own; directors and executive officers owe it personally."
+            },
+            {
+              "front": "Duty of care and skill",
+              "back": "A duty to bring proper attention, diligence and competence to the role, including understanding what you approve."
+            },
+            {
+              "front": "Executive officer",
+              "back": "A senior manager defined in the Banks Act; the PA treats executive management and senior executive management the same way."
+            },
+            {
+              "front": "Controlling company",
+              "back": "The holding company registered as controlling a bank; most governance rules apply to it as well as to the bank."
+            },
+            {
+              "front": "Directive under s 6(6)",
+              "back": "A binding instruction the PA issues to banks under the Banks Act, such as Directive 1 of 2026 on governance."
+            },
+            {
+              "front": "Curatorship",
+              "back": "When a curator takes over management of a failing bank and the board's powers pass to the curator."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about section 60B of the Banks Act is accurate?",
+          "options": [
+            "Only the board chair is responsible for the governance process",
+            "The board and executive officers must keep an effective governance process that fits the bank's risks",
+            "It applies only to banks listed on the stock exchange",
+            "It lists the exact number of board meetings a year"
+          ],
+          "answer": 1,
+          "explanation": "Section 60B puts the duty on the board and the executive officers together, and ties the process to the nature, complexity and risks of the bank's business. It does not single out the chair or depend on a listing."
+        },
+        {
+          "type": "tip",
+          "title": "Minutes are your evidence",
+          "body": "Supervisors judge governance by what the record shows. Good minutes capture the **questions** directors asked, the **information** they relied on, any **conflicts declared** and **who abstained**. A one-line \"approved\" tells a reviewer nothing about care and skill."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "The PA supervises banks and issues binding directives under section 6(6) of the Banks Act.",
+            "Directors, the CEO and executive officers each owe the bank a fiduciary duty and a duty of care and skill (s 60).",
+            "Employees may make up at most 49% of a bank's board, rounded down, so most directors are non-executive.",
+            "Section 60B requires an effective governance process that includes ethics, conflict management and compliance with all laws.",
+            "VBS Mutual Bank (2018) shows how board failure to manage growth and funding can end in curatorship."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about a decision your own board or senior team approved recently. If a supervisor read the minutes, could they see the questions asked and the risks weighed?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-gv-s1-q1",
+          "question": "Which body supervises South African banks for safety and soundness and issues directives under the Banks Act?",
+          "options": [
+            "The Financial Sector Conduct Authority",
+            "The Prudential Authority in the South African Reserve Bank",
+            "The Department of Employment and Labour",
+            "The Commission for Employment Equity"
+          ],
+          "answer": 1,
+          "explanation": "The Prudential Authority sits in the SARB and is the prudential regulator of banks; Directive 1 of 2026 was issued under section 6(6) of the Banks Act. The FSCA regulates conduct, and the Labour department administers workplace laws.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s1-q2",
+          "question": "Under section 60 of the Banks Act, who owes a bank a fiduciary duty and a duty of care and skill?",
+          "options": [
+            "Only the non-executive directors who sit on board committees",
+            "Only the chair of the board and the company secretary",
+            "The controlling company's shareholders, as owners",
+            "Each director, the chief executive officer and each executive officer"
+          ],
+          "answer": 3,
+          "explanation": "Section 60, as restated in Annexure A to Directive 1 of 2026, names each director, the CEO and each executive officer. The duty is personal and is not limited to committee members or the chair.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s1-q3",
+          "question": "A bank has a board of 15 directors. Applying the section 60 cap, how many of them may at most be employees of the bank or its group?",
+          "options": [
+            "7",
+            "8",
+            "6",
+            "5"
+          ],
+          "answer": 0,
+          "explanation": "49% of 15 is 7.35, rounded down to 7. Eight would be more than half of the board; the rule's purpose is a non-executive majority.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s1-q4",
+          "question": "The board of Sable Crest Bank wants to appoint its chair to the audit committee because she is a chartered accountant. What does the Banks Act, as summarised in Annexure A, say?",
+          "options": [
+            "The chair may join if the PA approves her qualifications",
+            "The chair may join but may not chair the committee",
+            "The board chair may not be appointed a member of the audit committee",
+            "The chair may join if most members are non-executive"
+          ],
+          "answer": 2,
+          "explanation": "Section 64 bars the chair of the board (of the bank or its controlling company) from audit committee membership, regardless of qualifications. The other options describe conditions the Act does not offer.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s1-q5",
+          "question": "What is the minimum make-up of a bank's risk and capital management committee under section 64A?",
+          "options": [
+            "At least five members, all of them independent",
+            "At least two members, one of them the chief risk officer",
+            "At least three board members, at least two of them non-executive",
+            "Any number, provided the chair is non-executive"
+          ],
+          "answer": 2,
+          "explanation": "Section 64A requires at least three board members, of whom at least two are non-executive directors. The other options invent numbers or roles.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s1-q6",
+          "question": "Which committee must help the board run a directorship continuity programme that includes regularly reviewing the board's mix of skills and experience?",
+          "options": [
+            "The directors' affairs committee",
+            "The audit committee",
+            "The remuneration committee",
+            "The risk and capital management committee"
+          ],
+          "answer": 0,
+          "explanation": "Section 64B gives the directors' affairs committee, made up only of non-executive directors, the role of assessing governance and supporting continuity and a regular skills review.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s1-q7",
+          "question": "A director says: 'Section 60B is about strategy and profit; labour and safety law is HR's problem.' Why is that wrong?",
+          "options": [
+            "Section 60B makes HR directors personally liable for all labour law",
+            "Section 60B transfers labour inspections to the Prudential Authority",
+            "Section 60B requires every director to qualify in labour law",
+            "Section 60B expects the governance process to secure compliance with all applicable laws"
+          ],
+          "answer": 3,
+          "explanation": "One of the stated aims of the section 60B process is compliance with all applicable laws, which includes employment and safety law. It does not move inspections to the PA or create an HR-only liability.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s1-q8",
+          "question": "According to the SARB Governor's statement of 11 March 2018, what caused VBS Mutual Bank's liquidity crisis?",
+          "options": [
+            "A sudden national banking crisis that hit every mutual bank",
+            "The board's and management's failure to manage rapid growth, funding and liquidity",
+            "A cyber attack that froze the bank's payment systems",
+            "A court order freezing municipal accounts"
+          ],
+          "answer": 1,
+          "explanation": "The Governor tied the crisis to the board and executive management failing to manage growth, funding and liquidity, including short-term municipal deposits lent long-term. The SARB stressed the wider banking system was sound.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s1-q9",
+          "question": "In August 2017, months before VBS was placed under curatorship, the SARB imposed sanctions on it. What was the reason given?",
+          "options": [
+            "Weaknesses in its FIC Act anti-money laundering controls",
+            "Failing to hold board meetings for a year",
+            "Paying directors more than the legal maximum",
+            "Breaching the 49% cap on executive directors"
+          ],
+          "answer": 0,
+          "explanation": "The 4 August 2017 statement says the sanctions (R2.5 million, R2 million suspended, plus remedial directives) were for weak FIC Act control measures. It was an early warning sign of weak oversight.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s1-q10",
+          "question": "Minutes of a Sable Crest board meeting say only: 'Expansion plan approved.' Why would a supervisor see this as a weakness?",
+          "options": [
+            "Minutes must be signed by every director to be valid",
+            "The PA requires minutes to be published on the bank's website",
+            "It gives no evidence that directors applied care and skill or challenged the risks",
+            "Board decisions are invalid unless the PA attended the meeting"
+          ],
+          "answer": 2,
+          "explanation": "Directors owe a duty of care and skill and must keep an effective governance process. Minutes are the record of how they exercised it; a bare approval shows no questioning. The other statements are not Banks Act rules.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PA Directive 1 of 2026: independence, tenure, training and assessment",
+      "stage": "The Tenure Clock",
+      "summary": "Unpack the PA's 2026 governance Directive: what the board-approved policy must contain, the tests that deem a director not independent, the nine-year tenure rule and its exceptions, ongoing director training and assessment, and how the PA supervises it.",
+      "minutes": 50,
+      "objectives": [
+        "Explain the status, scope and date of PA Directive 1 of 2026",
+        "Apply the minimum tests that deem a director not independent",
+        "Work through the nine-year tenure, extension, cooling-off and reappointment rules",
+        "Design board training and assessment that meet paragraphs 7.1.3.6 and 7.1.3.7"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage two: the nine-year question",
+          "setting": "Chair's office, Menlyn. 09:15.",
+          "lines": [
+            {
+              "who": "hendrik",
+              "text": "Our longest-serving independent director, Mrs Govender, reaches nine years on the board in March. She's our best credit mind.",
+              "mood": "thinking"
+            },
+            {
+              "who": "busi",
+              "text": "Then Directive 1 of 2026 matters. The PA issued it on 25 February 2026 and it replaces Directive 4 of 2018.",
+              "mood": "neutral"
+            },
+            {
+              "who": "refilwe",
+              "text": "Does she have to leave the board?",
+              "mood": "thinking"
+            },
+            {
+              "who": "busi",
+              "text": "Not necessarily. But the Directive changes what we may call her, and what our board policy must say about tenure, independence and training.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thabo",
+              "text": "Training? Directors get training too?",
+              "mood": "happy"
+            },
+            {
+              "who": "hendrik",
+              "text": "They must. The policy has to ensure appropriate and ongoing training for directors. That's our second stage: build a policy the PA will accept.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Directive 1 of 2026 in six scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "What it is",
+              "narration": "Directive 1 of 2026 was issued by the Prudential Authority under section 6(6) of the Banks Act on 25 February 2026. It replaces Directive 4 of 2018 and focuses on governance and the tenure of independent directors."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Who it binds",
+              "narration": "It is addressed to banks and controlling companies. They must have, and actually implement, a sufficiently robust board-approved policy. It does not apply to the board of a foreign bank operating a branch in South Africa."
+            },
+            {
+              "icon": "🪑",
+              "heading": "Independence",
+              "narration": "The policy must protect board independence: an independent non-executive chair, independent chairs of the required board sub-committees, and cooling-off periods before former insiders can become non-executive directors."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Tests for independence",
+              "narration": "It must contain objective tests that deem a director not independent, for example a substantial shareholding, performance-linked pay, recent executive roles or nine years as an independent director."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training and assessment",
+              "narration": "The policy must ensure appropriate and ongoing training for directors and ongoing assessment of how effective each board member is. This is the express training duty of the Directive."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Supervision",
+              "narration": "The PA assesses the policy and how it works in practice during its supervisory review, and can require the bank to fix deficiencies within a period it sets in writing."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "What the board-approved policy must cover",
+          "items": [
+            {
+              "label": "Protect independence",
+              "detail": "Independent chair and sub-committee chairs; cooling-off for former insiders."
+            },
+            {
+              "label": "Test independence",
+              "detail": "Objective tests that deem a director not independent."
+            },
+            {
+              "label": "Select and compose",
+              "detail": "Rigorous selection, continuity, enough independent directors, effective oversight."
+            },
+            {
+              "label": "Train and assess",
+              "detail": "Appropriate and ongoing director training; ongoing assessment of each member."
+            },
+            {
+              "label": "Specify limits",
+              "detail": "Maximum boards per non-executive, annual independence declarations, fit and proper criteria."
+            },
+            {
+              "label": "Prevent conflicts",
+              "detail": "Stop clashes between the bank's interests and directors' personal interests."
+            }
+          ],
+          "caption": "A summary of paragraph 7.1 of Directive 1 of 2026, in our own words."
+        },
+        {
+          "type": "check",
+          "question": "Which paragraph of Directive 1 of 2026 carries the express duty about directors' training?",
+          "options": [
+            "Paragraph 7.1.3.6: the policy must ensure appropriate and ongoing training for directors",
+            "Paragraph 7.4: training is optional for foreign branches",
+            "Paragraph 2.1: the PA trains every new director itself",
+            "Paragraph 8.1: auditors must train the board each year"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 7.1.3.6 requires the board-approved policy to ensure appropriate and ongoing training for directors; 7.1.3.7 adds ongoing assessment of individual effectiveness. The PA does not run the training itself."
+        },
+        {
+          "type": "concept",
+          "title": "Deemed not independent: the main tests",
+          "body": "The Directive lists circumstances in which a director is **deemed not independent**. In summary, a director who:\n\n- is a **substantial shareholder** (more than 5% of nominal value or voting rights, with associates) or linked to one;\n- was a principal of a **material adviser or consultant** in the last three years, where an informed third party would see a conflict;\n- provides **significant capital** or **material funding** (each set at 5% of the relevant base);\n- receives pay **linked to the bank's performance**, such as share incentives, beyond directors' fees;\n- was an **executive director, CEO or executive officer** in the past three years;\n- has served **nine years** as an independent non-executive director;\n- was the **designated auditor** or key audit team member in the past three financial years, or the **curator** in the past three years;\n- is an **immediate family member** of someone in these groups.\n\nThe bank may add stricter tests; these are the minimum."
+        },
+        {
+          "type": "sort",
+          "title": "Independent or deemed not independent?",
+          "prompt": "Sort each director using the Directive's minimum tests.",
+          "buckets": [
+            "Can be independent",
+            "Deemed not independent"
+          ],
+          "items": [
+            {
+              "text": "Receives only directors' fees and served four years",
+              "bucket": 0
+            },
+            {
+              "text": "Holds 7% of the voting rights with her associates",
+              "bucket": 1
+            },
+            {
+              "text": "Was the bank's chief financial officer two years ago",
+              "bucket": 1
+            },
+            {
+              "text": "Was the CFO of a different, unrelated company until last year",
+              "bucket": 0
+            },
+            {
+              "text": "Receives share options that vest on the bank's profit targets",
+              "bucket": 1
+            },
+            {
+              "text": "Her brother is the bank's chief executive",
+              "bucket": 1
+            },
+            {
+              "text": "Was a partner at the bank's statutory auditor five years ago",
+              "bucket": 0
+            },
+            {
+              "text": "Has completed nine years as an independent director",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Turning point: the March deadline",
+          "setting": "Chair's office, Menlyn. 14:00.",
+          "lines": [
+            {
+              "who": "busi",
+              "text": "Mrs Govender reaches nine years in March. From then, if we keep her, she counts as a non-executive director but not an independent one.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hendrik",
+              "text": "That leaves our credit committee one independent member short.",
+              "mood": "worried"
+            },
+            {
+              "who": "busi",
+              "text": "There is one exception. In exceptional cases the PA may approve, in writing, an extension of the nine years, for up to 24 months, with conditions.",
+              "mood": "neutral"
+            },
+            {
+              "who": "refilwe",
+              "text": "So we either plan her successor, or we make a real case to the PA. We can't just assume.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Keeping Mrs Govender",
+          "situation": "Mrs Govender will complete nine years as an independent non-executive director in March. The board wants her expertise. The credit committee needs an independent chair. It is now November.",
+          "choices": [
+            {
+              "text": "Start succession for the committee chair now, and decide whether there is an exceptional case to ask the PA in writing for an extension of up to 24 months.",
+              "outcome": "Best. The Directive lets the PA approve an extension of up to 24 months only in exceptional cases and in writing. Planning a successor in parallel protects the committee either way.",
+              "score": 2
+            },
+            {
+              "text": "Keep her as independent chair of the committee; nine years is only a guideline.",
+              "outcome": "Poor. After nine years she is deemed not independent unless the PA has approved an extension. Chairing a required sub-committee as an 'independent' would breach the board's own policy and the Directive.",
+              "score": 0
+            },
+            {
+              "text": "Ask her to resign in February and reappoint her in June so the nine-year clock restarts.",
+              "outcome": "Poor. The Directive closes this gap: a director who resigns before completing the tenure and returns within three years only gets the remaining years of her original nine, so the clock does not restart.",
+              "score": 0
+            },
+            {
+              "text": "Keep her on the board as a non-executive director but move the committee chair to another independent director.",
+              "outcome": "Partly right. This works from March without PA approval. But it should be planned now with the directors' affairs committee, and the board must check it still has enough independent directors.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Numbers in Directive 1 of 2026",
+          "items": [
+            {
+              "label": "Independent tenure",
+              "detail": "After nine years an independent director is treated as non-independent unless the PA approves an extension.",
+              "value": "9 years"
+            },
+            {
+              "label": "Maximum PA extension",
+              "detail": "Exceptional cases only, approved in writing, with conditions.",
+              "value": "24 months"
+            },
+            {
+              "label": "Cooling-off to join as NED",
+              "detail": "Former executive, CEO, executive officer, statutory auditor or curator, unless the PA allows less.",
+              "value": "12 months"
+            },
+            {
+              "label": "Recent insider test",
+              "detail": "Executive roles, curator, or material adviser in this period mean not independent.",
+              "value": "3 years"
+            },
+            {
+              "label": "Substantial shareholder",
+              "detail": "Holding with associates above this share of nominal value or voting rights.",
+              "value": "> 5%"
+            }
+          ],
+          "caption": "All figures from paragraph 7.1 of Directive 1 of 2026 (25 February 2026)."
+        },
+        {
+          "type": "match",
+          "title": "Match the policy element to its purpose",
+          "prompt": "Each item comes from paragraph 7.1 of the Directive.",
+          "pairs": [
+            {
+              "left": "Independent non-executive chair",
+              "right": "Keeps leadership of the board separate from management and major interests"
+            },
+            {
+              "left": "Lead independent director",
+              "right": "A fallback channel when the chair is conflicted or temporarily not independent"
+            },
+            {
+              "left": "Annual independence declaration",
+              "right": "Made at the first board meeting each financial year and whenever circumstances change"
+            },
+            {
+              "left": "Limit on other boards",
+              "right": "Makes sure each non-executive has enough time for the bank"
+            },
+            {
+              "left": "Ongoing director training",
+              "right": "Keeps directors' knowledge current for the bank's business and risks"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "An independent director's circumstances change mid-year: her husband joins the bank's main external consultancy as a partner. What does the Directive expect?",
+          "options": [
+            "Nothing until the next annual review",
+            "A fresh independence declaration, which the bank must assess and verify",
+            "Automatic removal from the board by the PA",
+            "A new form BA 020 within 30 days"
+          ],
+          "answer": 1,
+          "explanation": "The declaration is due at the first meeting each financial year and whenever circumstances change that may affect independence, and the bank must assess and verify it. The PA does not remove directors automatically."
+        },
+        {
+          "type": "tip",
+          "title": "Make training evidence-ready",
+          "body": "Keep a **training log per director**: induction topics, ongoing sessions (for example new directives, cyber, conduct, labour and safety risks), dates and attendance. Link it to the **annual board effectiveness review** so gaps found in assessment become next year's training. That is how you show the policy is implemented, not just approved."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "Directive 1 of 2026 (25 February 2026) replaces Directive 4 of 2018 and requires a robust, implemented board-approved governance policy.",
+            "The chair and the chairs of required sub-committees must be independent non-executive directors, with narrow PA exceptions.",
+            "After nine years an independent director counts as non-independent; the PA may extend by up to 24 months in exceptional cases, in writing.",
+            "The policy must ensure appropriate and ongoing director training and ongoing assessment of each board member.",
+            "The PA assesses policy and practice in its supervisory review and can order deficiencies fixed."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you sat on a board, which topics would you need training on in the next 12 months to challenge management with confidence?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-gv-s2-q1",
+          "question": "Which earlier directive does PA Directive 1 of 2026 replace?",
+          "options": [
+            "Directive 7 of 2022",
+            "Directive 4 of 2023",
+            "Directive 14 of 2025",
+            "Directive 4 of 2018"
+          ],
+          "answer": 3,
+          "explanation": "The Directive states that it replaces Directive 4 of 2018 on governance. Directive 7 of 2022 deals with criminal background checks and remains separate.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s2-q2",
+          "question": "To which of these does Directive 1 of 2026 NOT apply?",
+          "options": [
+            "The board of a foreign institution running a bank branch in South Africa",
+            "A South African bank's board",
+            "A controlling company's board",
+            "A bank whose chair is temporarily conflicted"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 7.4 excludes the board of a foreign institution conducting banking business in South Africa through an authorised branch. Banks and controlling companies are covered.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s2-q3",
+          "question": "Which pair of requirements in the Directive deals directly with directors' development and performance?",
+          "options": [
+            "An annual exam set by the PA, and a pass mark for each director",
+            "Training only at induction, and a peer review every five years",
+            "Appropriate and ongoing training for directors, and ongoing assessment of each board member's effectiveness",
+            "Training for executive directors only, and assessment by the auditors"
+          ],
+          "answer": 2,
+          "explanation": "Paragraphs 7.1.3.6 and 7.1.3.7 require the policy to ensure appropriate and ongoing training for directors and ongoing assessment of individual board members. The Directive sets no PA exam.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s2-q4",
+          "question": "Mr Dlamini owns 4% of Sable Crest's shares and his company owns another 2%. Is he deemed not independent under the substantial shareholder test?",
+          "options": [
+            "No, because only his personal 4% counts",
+            "Yes, because holdings with associates are added and together exceed 5%",
+            "No, because the test only applies above 10%",
+            "Yes, because any shareholder is deemed not independent"
+          ],
+          "answer": 1,
+          "explanation": "The substantial shareholder test counts the person's shares together with those of associates; 6% is more than 5%. Holding shares alone below the threshold would not breach this test.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s2-q5",
+          "question": "A non-executive director is paid fees plus share options that vest when the bank hits profit targets. What is the effect under the Directive?",
+          "options": [
+            "She stays independent because options are a normal part of directors' pay",
+            "She stays independent if the remuneration committee approves the options",
+            "She is independent until the options actually vest",
+            "She is deemed not independent because her pay is linked to the bank's performance"
+          ],
+          "answer": 3,
+          "explanation": "Pay other than directors' fees or directors' remuneration that is contingent on the bank's performance, such as a share incentive, makes a director not independent. Approval or timing does not change that.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s2-q6",
+          "question": "Sable Crest's former chief financial officer, an executive officer as defined in the Banks Act, retired eight months ago. The board wants him as a non-executive director now. What does the Directive say?",
+          "options": [
+            "He can be appointed at once as an independent director",
+            "He cannot be appointed within 12 months unless the PA, in exceptional cases, allows a shorter period",
+            "He can never be appointed to the board of the same bank",
+            "He can be appointed only after nine years"
+          ],
+          "answer": 1,
+          "explanation": "A former executive officer faces a 12-month cooling-off before appointment as a non-executive director, with a PA discretion to shorten it in exceptional cases. Even after that, the three-year test means he would not count as independent yet.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s2-q7",
+          "question": "An independent director resigned after six years and is reappointed two years later. How is her independent tenure counted?",
+          "options": [
+            "The remaining three years of the nine-year tenure apply from the date of reappointment",
+            "The nine-year clock restarts from zero",
+            "She can no longer be treated as independent at all",
+            "The two years away are added to her tenure"
+          ],
+          "answer": 0,
+          "explanation": "If an independent director resigns before completing the tenure and returns within three years, only the remaining years of the original nine apply from reappointment. This stops the clock being reset by short breaks.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s2-q8",
+          "question": "When must an independent director give a declaration that she meets the board's independence criteria?",
+          "options": [
+            "Only once, on appointment",
+            "Every quarter, to the Prudential Authority directly",
+            "At her first board meeting, then at the first meeting each financial year, and whenever circumstances change",
+            "Only when the PA requests it in writing"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 7.1.4.2 sets these three trigger points, and the bank must assess and verify the content of the declaration as part of its own governance process.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s2-q9",
+          "question": "During its supervisory review, the PA finds that Sable Crest's governance policy does not cover director training. What may the PA do under the Directive?",
+          "options": [
+            "Nothing, because training is a matter for King Code guidance",
+            "Fine each director a fixed amount set in the Directive",
+            "Automatically suspend the bank's licence",
+            "Require the bank to correct the deficiency within a period the PA directs in writing"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 7.3 lets the PA require deficiencies to be corrected within the period it directs in writing. The Directive does not set fixed fines or automatic suspension.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s2-q10",
+          "question": "Why must the policy limit the number and type of other boards a non-executive director may sit on?",
+          "options": [
+            "So that directors' fees stay below a national cap",
+            "So each director can give enough time to properly discharge duties at the bank",
+            "Because the Companies Act bans multiple directorships",
+            "So the PA can keep its register of directors short"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 7.1.4.1 links the limit to each director's circumstances and the nature, scale and complexity of their directorships, so they can devote enough time to the bank.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fit and proper directors and executive officers",
+      "stage": "The Nomination Desk",
+      "summary": "Follow a new director from nomination to induction: the Banks Act fit and proper qualities, form BA 020 and its 30-day rule, criminal background checks under Directive 7 of 2022, the VBS lesson on integrity, and a training and assessment cycle for the board.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the fit and proper qualities in section 1(1A) of the Banks Act and the bank's own responsibility",
+        "Apply the BA 020 timing rules for first appointments and reappointments",
+        "Apply the criminal background check rules in Directive 7 of 2022",
+        "Build a director development cycle linking skills reviews, training, assessment and re-screening"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage three: the new director's file",
+          "setting": "Company secretariat, Menlyn. 08:30.",
+          "lines": [
+            {
+              "who": "busi",
+              "text": "The nominations work starts today. Dr Sizwe Mabuza is the board's choice for a new non-executive seat. He has never been a bank director.",
+              "mood": "neutral"
+            },
+            {
+              "who": "hendrik",
+              "text": "Strong CV. Former deputy vice-chancellor, sat on two audit committees.",
+              "mood": "happy"
+            },
+            {
+              "who": "busi",
+              "text": "A CV isn't a fit and proper assessment. We assess before appointment, and the PA must get his BA 020 with a criminal background check report well before he takes the seat.",
+              "mood": "thinking"
+            },
+            {
+              "who": "refilwe",
+              "text": "And once he's in, our new governance policy says he gets an induction and ongoing training. So who designs that?",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "We do. Stage three: fit and proper people, from nomination to their training plan.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Fit and proper in five scenes",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "The three qualities",
+              "narration": "Section 1(1A) of the Banks Act tells the PA to consider three qualities, as far as it can reasonably determine them: the person's general probity, their competence and soundness of judgement for the office, and the diligence they are likely to bring."
+            },
+            {
+              "icon": "🏦",
+              "heading": "The bank's own responsibility",
+              "narration": "Directive 7 of 2022 is clear: banks are ultimately responsible for choosing fit and proper directors and senior managers, and must assess them before appointment and regularly afterwards."
+            },
+            {
+              "icon": "📝",
+              "heading": "Form BA 020",
+              "narration": "Regulation 42 requires a completed form BA 020, a statement of the person's attributes, with a CV. The chair or the chair's representative submits it, or the auditor for a new bank."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "Thirty days ahead",
+              "narration": "For a first appointment as director or executive officer, the form goes to the PA at least 30 days before the appointment takes effect. The same applies when someone returns more than 12 months after resigning."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Background checks",
+              "narration": "Since 1 September 2022 every BA 020 for a prospective or interim person must come with a criminal background check report. A person who will not or cannot be checked is disqualified."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "What fit and proper means at a bank",
+          "items": [
+            {
+              "label": "Probity",
+              "detail": "Honesty, integrity and a clean record: no criminal or regulatory history that makes the person unfit."
+            },
+            {
+              "label": "Competence and judgement",
+              "detail": "Knowledge, proportionate skills and experience for the role and the bank's risks."
+            },
+            {
+              "label": "Diligence",
+              "detail": "Time, attention and commitment to actually do the job."
+            },
+            {
+              "label": "Independence of mind",
+              "detail": "Especially for non-executive directors: willing to challenge management."
+            }
+          ],
+          "caption": "The first three are the Banks Act section 1(1A) qualities; independence of mind is part of selection under Directive 1 of 2026."
+        },
+        {
+          "type": "check",
+          "question": "Which statement best reflects Directive 7 of 2022 on who is responsible for appointing fit and proper directors?",
+          "options": [
+            "The PA chooses directors and the bank confirms them",
+            "The bank is ultimately responsible and must assess before and regularly after appointment",
+            "Shareholders alone are responsible at the annual general meeting",
+            "The external auditor certifies each director as fit and proper"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 1.1 of Directive 7 of 2022 puts ultimate responsibility on the bank, with due diligence before appointment and on a regular basis afterwards. The PA reviews the information; it does not choose directors."
+        },
+        {
+          "type": "concept",
+          "title": "Criminal background checks: the Directive 7 of 2022 rules",
+          "body": "Directive 7 of 2022 (12 August 2022) adds a **criminal background check report (CBCR)** to the fit and proper process. In summary:\n\n- From **1 September 2022**, every BA 020 for a prospective or interim director or executive officer must include a CBCR.\n- A CBCR for a **South African national** may be no older than **30 calendar days** when the BA 020 is submitted; for a **foreign national**, no older than **60 calendar days**.\n- Anyone **unable or unwilling** to undergo a check is **disqualified** from appointment.\n- Banks must **re-screen** serving directors, executive officers and key persons periodically and send the reports to the PA within **30 calendar days** of completing the screening; the PA may also ask at any time.\n- The rule also covers appointments in the group's cross-border banking operations and applications to establish a new bank.\n\nA police clearance certificate, or a report from a provider with an arrangement with the police, is acceptable."
+        },
+        {
+          "type": "order",
+          "title": "Appointing a new non-executive director",
+          "prompt": "Put the steps in a sensible order for Dr Mabuza's appointment.",
+          "steps": [
+            "Directors' affairs committee reviews the board's skills gaps and agrees the profile needed",
+            "Nominee is assessed against the policy's fit and proper and independence criteria",
+            "Criminal background check report is obtained (not older than 30 days for a South African)",
+            "Chair submits form BA 020 with CV and report to the PA at least 30 days before appointment",
+            "Appointment takes effect and the director gives an independence declaration at the first meeting",
+            "Induction programme starts and the director's training log is opened"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Turning point: the declaration form",
+          "setting": "Meeting room 3, Menlyn. 15:20.",
+          "lines": [
+            {
+              "who": "busi",
+              "text": "Dr Mabuza's BA 020 draft says 'no' to every question. But his background check shows a 2009 conviction for drunk driving.",
+              "mood": "worried"
+            },
+            {
+              "who": "hendrik",
+              "text": "He says he forgot about it. It was a long time ago.",
+              "mood": "thinking"
+            },
+            {
+              "who": "refilwe",
+              "text": "The conviction may not disqualify him on its own. The failure to disclose is a probity question in itself.",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "We don't decide this by guessing. We correct the form, assess it honestly and let the PA see the full picture.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The undisclosed conviction",
+          "situation": "Dr Mabuza's criminal background check shows an old conviction he did not disclose on the draft BA 020. The board is keen to appoint him next month. You are preparing the submission to the PA.",
+          "choices": [
+            {
+              "text": "Ask Dr Mabuza to correct the BA 020, record the board's assessment of both the conviction and the non-disclosure, and submit the full file to the PA.",
+              "outcome": "Best. The bank is responsible for honest assessment, and the PA considers probity. A complete, corrected file lets everyone judge the facts. Hiding it would itself be a governance failure.",
+              "score": 2
+            },
+            {
+              "text": "Submit the draft as it is, with the check report attached; the PA can spot it.",
+              "outcome": "Poor. The chair signs the submission. Sending a form the bank knows is inaccurate undermines the bank's own fit and proper responsibility and the chair's credibility.",
+              "score": 0
+            },
+            {
+              "text": "Withdraw the nomination immediately without discussing it with him.",
+              "outcome": "Partly right. Caution is understandable, but a single old conviction is not an automatic bar. The board should assess it fairly, including the non-disclosure, and decide on facts.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the VBS investigator on board integrity",
+          "body": "In October 2018 the SARB published the forensic report Advocate Terry Motau SC gave the Prudential Authority on VBS Mutual Bank, titled *The Great Bank Heist*.\n\nAmong his findings:\n\n- the people behind the scheme took **almost R2 billion** from the bank;\n- **three non-executive directors** admitted they had been improperly rewarded;\n- he concluded that, in the result, **no honest person** held the vital role of audit committee chair.\n\n**The lesson for fit and proper:** checks at appointment are not enough. Probity and independence of mind must be tested **regularly**, which is why Directive 7 of 2022 requires periodic re-screening and Directive 1 of 2026 requires ongoing assessment of each board member and robust measures against conflicts of interest."
+        },
+        {
+          "type": "flip",
+          "title": "Fit and proper terms",
+          "cards": [
+            {
+              "front": "BA 020",
+              "back": "The prescribed statement of a serving or prospective director's or executive officer's attributes, sent to the PA with a CV."
+            },
+            {
+              "front": "CBCR",
+              "back": "Criminal background check report: a police clearance or approved provider report on a person's criminal status."
+            },
+            {
+              "front": "Section 1(1A)",
+              "back": "The Banks Act provision listing probity, competence and judgement, and diligence as the qualities the PA considers."
+            },
+            {
+              "front": "Re-screening",
+              "back": "Periodic fresh checks on serving directors and executives; reports go to the PA within 30 calendar days."
+            },
+            {
+              "front": "Serving director request",
+              "back": "The PA may require a BA 020 for a director already in office."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The director development cycle",
+          "items": [
+            {
+              "label": "Skills review",
+              "detail": "Directors' affairs committee maps skills against strategy and risks."
+            },
+            {
+              "label": "Induction",
+              "detail": "Banking law, the bank's business model, risk appetite and key policies."
+            },
+            {
+              "label": "Ongoing training",
+              "detail": "Planned sessions on new rules and emerging risks, logged per director."
+            },
+            {
+              "label": "Individual assessment",
+              "detail": "Ongoing review of each member's effectiveness."
+            },
+            {
+              "label": "Re-screening",
+              "detail": "Periodic background checks and independence declarations."
+            }
+          ],
+          "caption": "Combines Banks Act s 64B, Directive 1 of 2026 (7.1.3.6-7.1.3.7, 7.1.4.2) and Directive 7 of 2022 (2.1.13)."
+        },
+        {
+          "type": "check",
+          "question": "Sable Crest wants to reappoint a former director who resigned 14 months ago. What does regulation 42, as described in Directive 1 of 2026, require?",
+          "options": [
+            "No new form, because he has served before",
+            "A BA 020 at least 30 days before the reappointment takes effect",
+            "A BA 020 within 30 days after he takes his seat",
+            "Only a fresh independence declaration"
+          ],
+          "answer": 1,
+          "explanation": "A person reappointed more than 12 months after resigning is treated like a first-time appointee: the BA 020 must reach the PA at least 30 days before the appointment takes effect."
+        },
+        {
+          "type": "tip",
+          "title": "Training plans that pass review",
+          "body": "Tie each director's plan to **three inputs**: the skills matrix, the individual effectiveness assessment and the bank's **regulatory calendar** (new directives, joint standards, labour and safety law). Include topics the whole board needs, such as the duties in this quest. Record attendance, and follow up on missed sessions."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "The PA considers probity, competence and soundness of judgement, and diligence (Banks Act s 1(1A)).",
+            "Banks are ultimately responsible for assessing directors and executives before appointment and regularly afterwards.",
+            "Form BA 020 goes to the PA at least 30 days before a first appointment, with a criminal background check report.",
+            "Background check reports may be at most 30 days old for South Africans and 60 days for foreign nationals.",
+            "Ongoing training, assessment and re-screening turn fit and proper from a gate into a cycle."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "What would you want to know about a new colleague in a position of trust before they start, and what should be checked again after a few years?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-gv-s3-q1",
+          "question": "Which three qualities does section 1(1A) of the Banks Act tell the PA to consider when deciding if a director is fit and proper?",
+          "options": [
+            "Age, nationality and years of banking experience",
+            "Shareholding, independence and remuneration",
+            "General probity, competence and soundness of judgement, and diligence",
+            "Qualifications, language skills and board attendance"
+          ],
+          "answer": 2,
+          "explanation": "Directive 1 of 2026 restates section 1(1A): probity, competence and soundness of judgement for the role, and the diligence the person is likely to show. The other lists are not the statutory qualities.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s3-q2",
+          "question": "Who normally submits form BA 020 to the PA for a proposed director of an existing bank?",
+          "options": [
+            "The chair of the board or the chair's duly appointed representative",
+            "The proposed director personally",
+            "The bank's external auditor",
+            "The head of human resources"
+          ],
+          "answer": 0,
+          "explanation": "Regulation 42 requires the chair or the chair's representative to submit the form; the auditor does so only for a new bank.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s3-q3",
+          "question": "Sable Crest plans to appoint a first-time executive officer on 1 June. What is the latest date the BA 020 can reach the PA?",
+          "options": [
+            "On 1 June itself",
+            "At least 30 days before 1 June",
+            "Within 30 days after 1 June",
+            "Within 12 months after 1 June"
+          ],
+          "answer": 1,
+          "explanation": "For a first-time appointment, the BA 020 must be submitted at least 30 days before the appointment becomes effective. Filing on or after the start date breaches the rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s3-q4",
+          "question": "A proposed director is a South African national. His criminal background check report is dated 45 days before the BA 020 is submitted. What is the problem?",
+          "options": [
+            "Reports must be no older than 7 days for anyone",
+            "Reports for South Africans are not required at all",
+            "Reports may be up to 12 months old for South Africans",
+            "For a South African national, the report may be no older than 30 calendar days"
+          ],
+          "answer": 3,
+          "explanation": "Directive 7 of 2022 sets 30 calendar days for South African nationals and 60 for foreign nationals, measured from the date the BA 020 is submitted. A 45-day-old report is too old for a South African.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s3-q5",
+          "question": "A nominee refuses to undergo a criminal background check, saying his reputation speaks for itself. What does Directive 7 of 2022 say?",
+          "options": [
+            "He is disqualified for appointment to the position",
+            "The bank may appoint him if two directors vouch for him",
+            "He may serve for six months while the PA decides",
+            "The check can be replaced by a sworn affidavit"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 2.1.4 says a person unable or unwilling to undergo a check is disqualified. No vouching or affidavit alternative is offered.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s3-q6",
+          "question": "Sable Crest completes a periodic re-screening of its serving executive officers on 3 March. When must the reports reach the PA?",
+          "options": [
+            "Only at the next annual BA 020 cycle",
+            "Within 7 days, by registered post",
+            "Only if a report shows a conviction",
+            "Within 30 calendar days of completing the screening"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 2.1.13 requires periodic re-screening and submission of the reports within 30 calendar days of completing it. All results go, not only adverse ones.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s3-q7",
+          "question": "A director's background check shows an old minor conviction he did not disclose on his BA 020. What is the best governance response?",
+          "options": [
+            "Remove the report from the file because the conviction is old",
+            "Appoint him and update the form at the next annual review",
+            "Correct the form, assess both the conviction and the non-disclosure, and give the PA the full picture",
+            "Ask the PA informally whether to mention it at all"
+          ],
+          "answer": 2,
+          "explanation": "The bank is responsible for an honest fit and proper assessment and the PA considers probity. Non-disclosure is itself relevant. Hiding or delaying it would undermine the chair's submission.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s3-q8",
+          "question": "Which finding did the VBS investigator report to the PA in October 2018?",
+          "options": [
+            "The board had met all fit and proper requirements",
+            "Three non-executive directors admitted they had been improperly rewarded",
+            "The bank's losses were caused by a cyber attack",
+            "The audit committee had stopped the fraud in 2016"
+          ],
+          "answer": 1,
+          "explanation": "The Great Bank Heist report records that three non-executive directors confessed to improper rewards and that no honest person occupied the audit committee chair. It shows why probity must be re-tested over time.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s3-q9",
+          "question": "Which body helps the board keep a continuity programme and regularly review the skills mix the board needs?",
+          "options": [
+            "The audit committee under section 64",
+            "The PA's licensing department",
+            "The directors' affairs committee under section 64B",
+            "The remuneration committee under section 64C"
+          ],
+          "answer": 2,
+          "explanation": "Section 64B gives this role to the directors' affairs committee, whose skills reviews should feed both nominations and the directors' training plans.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s3-q10",
+          "question": "The board's assessment finds that most directors struggle to question the bank's cyber and IT risk reports. What should follow under the governance policy?",
+          "options": [
+            "Targeted director training on that topic, recorded and checked in the next assessment",
+            "Replacing all directors who lack IT degrees",
+            "Leaving cyber matters to the chief information officer alone",
+            "Waiting for the PA to point it out in its review"
+          ],
+          "answer": 0,
+          "explanation": "Directive 1 of 2026 requires ongoing training and ongoing assessment; linking the two is how a bank shows its policy works. Replacing the board or delegating oversight away does not meet the duty of care and skill.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Health and safety at work: the OHS Act duties",
+      "stage": "The Fire Door",
+      "summary": "Apply the Occupational Health and Safety Act to a bank: the employer's general duty and its training duty in section 8(2)(e), the duty to inform, employees' duties, the CEO's responsibility, health and safety representatives and committees, and how inspectors enforce the Act.",
+      "minutes": 45,
+      "objectives": [
+        "Explain the employer's general duty in section 8 and the training duty in section 8(2)(e)",
+        "Apply the duty to inform in section 13 and employees' duties in section 14",
+        "Explain the CEO's responsibility under section 16 and the limits of delegation",
+        "Apply the rules on health and safety representatives and committees in sections 17 to 19"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage four: the fire door",
+          "setting": "Sable Crest regional office, Foreshore, Cape Town. 10:05.",
+          "lines": [
+            {
+              "who": "yusuf",
+              "text": "Look at this. A fire door wedged open with a box of archive files, and the evacuation map still shows last year's floor plan.",
+              "mood": "worried"
+            },
+            {
+              "who": "thabo",
+              "text": "Is that really the bank's problem? It's a branch, not a factory.",
+              "mood": "thinking"
+            },
+            {
+              "who": "yusuf",
+              "text": "The Occupational Health and Safety Act covers every employer, banks included. An office worker can still die in a fire.",
+              "mood": "neutral"
+            },
+            {
+              "who": "refilwe",
+              "text": "And the duty isn't only about equipment. Section 8 says information, instructions, training and supervision.",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "Which makes it a governance issue too. Stage four: what the Act asks of the bank, its CEO, its managers and every employee.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The OHS Act in five scenes",
+          "scenes": [
+            {
+              "icon": "🏢",
+              "heading": "One general duty",
+              "narration": "Section 8 of the Occupational Health and Safety Act, 85 of 1993, says every employer must provide and maintain, as far as reasonably practicable, a working environment that is safe and without risk to employees' health."
+            },
+            {
+              "icon": "🧰",
+              "heading": "What that includes",
+              "narration": "It includes safe systems of work and equipment, finding out what the hazards are and what precautions are needed, and eliminating or reducing hazards before falling back on protective equipment."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Information and training",
+              "narration": "Section 8(2)(e) is the training duty: the employer must give the information, instructions, training and supervision needed, as far as reasonably practicable, for employees' health and safety at work."
+            },
+            {
+              "icon": "👔",
+              "heading": "The chief executive",
+              "narration": "Section 16 makes the chief executive officer responsible for ensuring, as far as reasonably practicable, that the employer's duties are properly carried out. The CEO may assign duties but stays responsible."
+            },
+            {
+              "icon": "🙋",
+              "heading": "Everyone's part",
+              "narration": "Section 14 asks every employee to take reasonable care, cooperate, follow safety rules and report unsafe situations and incidents quickly."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who does what under the OHS Act",
+          "items": [
+            {
+              "label": "Safe environment",
+              "left": "Employer provides and maintains it (s 8(1))",
+              "right": "Employee takes reasonable care for self and others (s 14(a))"
+            },
+            {
+              "label": "Information and training",
+              "left": "Employer gives what is necessary (s 8(2)(e), s 13)",
+              "right": "Employee follows the rules and lawful instructions (s 14(c))"
+            },
+            {
+              "label": "Unsafe conditions",
+              "left": "Employer identifies hazards and precautions (s 8(2)(d))",
+              "right": "Employee reports them as soon as practicable (s 14(d))"
+            },
+            {
+              "label": "Incidents",
+              "left": "Employer reports certain incidents to an inspector (s 24)",
+              "right": "Employee reports by the end of the shift where possible (s 14(e))"
+            }
+          ],
+          "caption": "Summarised from the Act as published in Government Gazette 14918 (2 July 1993).",
+          "headers": [
+            "Employer",
+            "Employee"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which provision of the OHS Act expressly requires the employer to provide information, instructions, training and supervision?",
+          "options": [
+            "Section 8(2)(e)",
+            "Section 17(5)",
+            "Section 24(1)",
+            "Section 7(1)"
+          ],
+          "answer": 0,
+          "explanation": "Section 8(2)(e) lists these four as part of the employer's general duty, as far as reasonably practicable. Section 17 deals with safety representatives, section 24 with incident reports and section 7 with a written policy when the chief inspector directs it."
+        },
+        {
+          "type": "concept",
+          "title": "'As far as reasonably practicable' and section 13",
+          "body": "Most duties in sections 8 and 13 are qualified by **\"as far as is reasonably practicable\"**. That is not a loophole. It means weighing how serious and likely the harm is against what is known about the hazard and the cost and availability of ways to reduce it. For ordinary office risks the precautions are usually cheap and well known, so excuses are weak.\n\n**Section 13, the duty to inform**, adds that the employer must, as far as reasonably practicable:\n\n- make every employee **conversant with the hazards** of their work and the precautions to take;\n- tell the **health and safety representatives** in advance about inspections or inquiries an inspector has notified, and about exemption applications; and\n- inform the relevant representative **as soon as reasonably practicable** after an incident in their area.\n\nIn a bank, typical hazards include fire and evacuation, electrical equipment, workstation strain, slips and trips, cash-handling and robbery risk, and travel between sites. The Act does not set a training frequency: the bank decides, based on risk."
+        },
+        {
+          "type": "sort",
+          "title": "Whose duty is it?",
+          "prompt": "Sort each action under the OHS Act.",
+          "buckets": [
+            "Employer",
+            "Employee",
+            "Health and safety representative"
+          ],
+          "items": [
+            {
+              "text": "Give staff the information and training needed to work safely",
+              "bucket": 0
+            },
+            {
+              "text": "Report a frayed cable under a desk as soon as practicable",
+              "bucket": 1
+            },
+            {
+              "text": "Inspect the workplace at intervals agreed with the employer",
+              "bucket": 2
+            },
+            {
+              "text": "Make sure work is supervised by someone trained to understand its hazards",
+              "bucket": 0
+            },
+            {
+              "text": "Follow the branch's evacuation procedure during a drill",
+              "bucket": 1
+            },
+            {
+              "text": "Investigate an employee's complaint about safety at work",
+              "bucket": 2
+            },
+            {
+              "text": "Report an injury to the employer by the end of the shift where possible",
+              "bucket": 1
+            },
+            {
+              "text": "Identify hazards and decide what precautions are needed",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Turning point: how many representatives?",
+          "setting": "Facilities office, Foreshore, Cape Town. 13:40.",
+          "lines": [
+            {
+              "who": "thabo",
+              "text": "My East London branch has 26 staff. Do I need a health and safety representative?",
+              "mood": "thinking"
+            },
+            {
+              "who": "yusuf",
+              "text": "Section 17: more than 20 employees at a workplace means the employer designates representatives in writing. For shops and offices, at least one for every 100 employees or part of 100.",
+              "mood": "neutral"
+            },
+            {
+              "who": "refilwe",
+              "text": "And the designation, functions and training of representatives happen during ordinary working hours, counted as work time.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thabo",
+              "text": "We've never had one. Since we went over 20 staff two years ago.",
+              "mood": "worried"
+            },
+            {
+              "who": "yusuf",
+              "text": "Then we fix that now, and we tell Busi. It goes in the governance file.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The missing representative",
+          "situation": "Thabo's East London branch has 26 employees and no designated health and safety representative. The annual internal audit starts next month. Thabo suggests appointing his deputy informally and backdating a letter.",
+          "choices": [
+            {
+              "text": "Consult staff in good faith on nominating or electing a representative, designate them in writing for a set period, arrange training in working hours and report the gap honestly.",
+              "outcome": "Best. Section 17 requires written designation after good-faith consultation, and section 18 entitles representatives to the training they reasonably need. Owning the gap is better governance than hiding it.",
+              "score": 2
+            },
+            {
+              "text": "Backdate a designation letter for the deputy so the audit finds no gap.",
+              "outcome": "Poor. A false record turns a compliance gap into dishonesty and still leaves the branch without a properly chosen, trained representative.",
+              "score": 0
+            },
+            {
+              "text": "Appoint the deputy in writing today without consulting staff.",
+              "outcome": "Partly right. Written designation is needed, but section 17 expects good-faith consultation with employees on how representatives are chosen. Skipping it invites a dispute and weak buy-in.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "OHS Act numbers to know",
+          "items": [
+            {
+              "label": "Representatives needed",
+              "detail": "More than this many employees at a workplace triggers designation.",
+              "value": "> 20 staff"
+            },
+            {
+              "label": "Shops and offices",
+              "detail": "At least one representative for every 100 employees or part of 100.",
+              "value": "1 per 100"
+            },
+            {
+              "label": "Committee meetings",
+              "detail": "A health and safety committee meets as often as needed, and at least this often.",
+              "value": "Every 3 months"
+            },
+            {
+              "label": "Incident reports by staff",
+              "detail": "An employee reports an injury incident by the end of the shift, where possible.",
+              "value": "Same shift"
+            }
+          ],
+          "caption": "From sections 14, 17 and 19 of the Act as published in 1993. Check the current consolidated Act and regulations for later amendments."
+        },
+        {
+          "type": "match",
+          "title": "Match the section to its rule",
+          "prompt": "Link each OHS Act section to what it requires.",
+          "pairs": [
+            {
+              "left": "Section 8",
+              "right": "Employer's general duty: safe environment, hazards, information, training and supervision"
+            },
+            {
+              "left": "Section 13",
+              "right": "Make employees conversant with hazards; keep representatives informed"
+            },
+            {
+              "left": "Section 16",
+              "right": "The CEO must ensure the employer's duties are properly discharged"
+            },
+            {
+              "left": "Section 19",
+              "right": "Committee where two or more representatives exist, meeting at least every three months"
+            },
+            {
+              "left": "Section 24",
+              "right": "Report serious incidents to an inspector in the prescribed way"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "The CEO of Sable Crest delegates all health and safety duties to the head of facilities in writing. What is the legal effect under section 16?",
+          "options": [
+            "The CEO is no longer responsible for safety",
+            "The CEO may assign duties but keeps responsibility, and the bank keeps its liability",
+            "The head of facilities becomes the legal employer",
+            "The delegation is invalid unless an inspector approves it"
+          ],
+          "answer": 1,
+          "explanation": "Section 16(2) lets the CEO assign duties to people under their control, but without derogating from the CEO's own responsibility, and section 16(3) keeps the employer's liability in place."
+        },
+        {
+          "type": "example",
+          "title": "Real case: inspectors and their notices",
+          "body": "The Department of Employment and Labour enforces the OHS Act through inspectors. In a joint blitz inspection in Rustenburg, North West, in March 2024, the department reported issuing about **28 more notices** (contravention, prohibition and improvement) and **31 compliance orders** on a single day, and said it would keep bringing non-complying employers to book. The blitz tested compliance with the OHS Act alongside other labour laws.\n\nThat blitz was in wholesale and retail, not banking. But the tools are the same for any employer, including a bank branch:\n\n- an **improvement** or **contravention** notice requires the employer to fix a problem;\n- a **prohibition** notice can stop the use of a workplace or activity where conditions are hazardous.\n\n**For Sable Crest:** an inspector visiting a branch with blocked fire exits, no representative and no training records would find the gaps in minutes."
+        },
+        {
+          "type": "tip",
+          "title": "Training records that count",
+          "body": "For each employee keep: **induction safety briefing** (evacuation routes, assembly point, reporting), **role-specific training** (first aiders, fire marshals, cash-in-transit or robbery procedures), **refresher dates** you set from your risk assessment, and **drill records**. The Act sets no fixed frequency, so write your own and follow it."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "Section 8 makes every employer, including a bank, keep the workplace safe as far as reasonably practicable.",
+            "Section 8(2)(e) requires the information, instructions, training and supervision employees need; no frequency is set.",
+            "Section 13 requires employees to be made conversant with hazards and precautions.",
+            "The CEO must ensure the duties are discharged and stays responsible even after delegating (s 16).",
+            "Workplaces with more than 20 employees need written designation of representatives; offices need at least one per 100."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Walk through your own workplace in your mind. Which hazard would a new colleague not know about on their first day, and who would tell them?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-gv-s4-q1",
+          "question": "Does the Occupational Health and Safety Act, 85 of 1993, apply to a bank's offices and branches?",
+          "options": [
+            "No, it applies only to factories and mines",
+            "Yes, its duties apply to every employer, offices included",
+            "Only if the bank uses heavy machinery",
+            "Only to branches that handle cash"
+          ],
+          "answer": 1,
+          "explanation": "Section 8 places its general duty on every employer, and section 17 even sets a specific ratio of representatives for shops and offices. Banks are covered.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s4-q2",
+          "question": "Which phrase qualifies most employer duties in sections 8 and 13 of the OHS Act?",
+          "options": [
+            "Subject to the employer's budget",
+            "Only where an inspector has issued a notice",
+            "As far as is reasonably practicable",
+            "Within the limits of the employer's insurance"
+          ],
+          "answer": 2,
+          "explanation": "The Act repeatedly uses 'as far as is reasonably practicable', which weighs risk against the means available to reduce it. It is not tied to budget, notices or insurance.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s4-q3",
+          "question": "How often does the OHS Act say employees must receive safety training?",
+          "options": [
+            "Once a year, by statute",
+            "Every three months, at the committee meeting",
+            "Only once, at induction",
+            "It sets no fixed frequency; the employer provides what is necessary for safety"
+          ],
+          "answer": 3,
+          "explanation": "Section 8(2)(e) requires necessary information, instructions, training and supervision but sets no interval. The bank should set refresher periods from its own risk assessment.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s4-q4",
+          "question": "A new teller starts at Sable Crest's Durban branch. Under section 13, what must the employer do as far as reasonably practicable?",
+          "options": [
+            "Make her conversant with the hazards of her work and the precautions to take",
+            "Give her a copy of the Act and ask her to sign it",
+            "Wait until the next annual drill to brief her",
+            "Register her with the Department of Employment and Labour"
+          ],
+          "answer": 0,
+          "explanation": "Section 13(a) is about making each employee conversant with the hazards and the precautions. Handing over the Act or waiting for a drill does not achieve that.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s4-q5",
+          "question": "An employee trips over a loose carpet strip and sprains a wrist at 10:00. Under section 14, when should she report it?",
+          "options": [
+            "Within 30 days, in writing",
+            "As soon as practicable, and not later than the end of that shift unless she could not",
+            "Only if she needs more than 14 days off",
+            "Only if a colleague saw the fall"
+          ],
+          "answer": 1,
+          "explanation": "Section 14(e) requires an employee involved in an injury incident to report it as soon as practicable, no later than the end of the shift, unless circumstances made that impossible.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s4-q6",
+          "question": "Sable Crest's Pretoria head office has 450 employees. What is the minimum number of health and safety representatives for that office under section 17(5)?",
+          "options": [
+            "4",
+            "9",
+            "5",
+            "1"
+          ],
+          "answer": 2,
+          "explanation": "For shops and offices the minimum is one per 100 employees or part of 100. 450 employees means four full hundreds plus a part, so at least five representatives.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s4-q7",
+          "question": "Sable Crest has three health and safety representatives at its Cape Town office. What follows under section 19?",
+          "options": [
+            "It must set up a health and safety committee that meets at least every three months",
+            "Nothing, committees are optional for offices",
+            "It must replace the representatives with one safety officer",
+            "It must ask an inspector to chair monthly meetings"
+          ],
+          "answer": 0,
+          "explanation": "Where two or more representatives are designated at a workplace, section 19 requires one or more committees, meeting as often as needed and at least once every three months.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s4-q8",
+          "question": "A branch manager wants safety representative training to happen on Saturdays, unpaid, to avoid disrupting the branch. Why is this a problem?",
+          "options": [
+            "Training of representatives is the inspector's job, not the employer's",
+            "Representatives may not receive any training under the Act",
+            "Saturday training is banned by the Banks Act",
+            "Section 17(7) says designation, functions and training of representatives happen in ordinary working hours, as work time"
+          ],
+          "answer": 3,
+          "explanation": "Section 17(7) treats time reasonably spent on these activities as working time and places them in ordinary working hours; section 18(3) also requires the employer to provide the training reasonably required.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s4-q9",
+          "question": "The CEO says: 'I delegated safety to the facilities manager, so the Act no longer applies to me.' What is correct?",
+          "options": [
+            "The CEO is right once the delegation is in writing",
+            "Only the board chair is responsible under the Act",
+            "The facilities manager becomes the employer for the Act",
+            "The CEO may assign duties but remains responsible, and the bank stays liable as employer"
+          ],
+          "answer": 3,
+          "explanation": "Section 16 makes the CEO responsible for ensuring the employer's duties are discharged; subsection (2) allows assignment without removing that responsibility, and subsection (3) keeps the employer's liability.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s4-q10",
+          "question": "Which approach best reflects section 8(2)(b) when a branch finds that staff hurt their backs lifting coin boxes?",
+          "options": [
+            "First remove or reduce the hazard, such as trolleys or smaller loads, before relying on protective equipment",
+            "Issue back-support belts and continue as before",
+            "Ask staff to sign that they lift at their own risk",
+            "Record it and wait for an inspector's advice"
+          ],
+          "answer": 0,
+          "explanation": "Section 8(2)(b) requires taking reasonably practicable steps to eliminate or mitigate a hazard before resorting to personal protective equipment. Waivers do not remove the employer's duty.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Harassment prevention and assessment readiness",
+      "stage": "The Dignity Test",
+      "summary": "Apply the Employment Equity Act and the 2022 Harassment Code: what harassment and sexual harassment are, where protection applies, policies, procedures, confidentiality and employer liability. Then pull the whole quest together into a readiness review for the PA and labour inspectors.",
+      "minutes": 50,
+      "objectives": [
+        "Explain harassment as unfair discrimination and the Code's test for sexual harassment",
+        "Identify the forms and settings of harassment the Code covers",
+        "Apply the Code's expectations on policy, procedures, confidentiality and training",
+        "Prepare evidence that the bank's governance, safety and harassment programmes work in practice"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Stage five: the message at 23:14",
+          "setting": "HR office, Menlyn, Pretoria. 08:10.",
+          "lines": [
+            {
+              "who": "refilwe",
+              "text": "A teller from the East London branch emailed me last night. A regional manager keeps sending her late-night messages about her looks, and hinted her promotion depends on 'being friendly'.",
+              "mood": "worried"
+            },
+            {
+              "who": "thabo",
+              "text": "That's my branch. She never said anything to me.",
+              "mood": "worried"
+            },
+            {
+              "who": "refilwe",
+              "text": "She may not have felt she could. He's senior to you both.",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "This is where the board's governance meets one person's dignity. And it's our last stage before the PA's review.",
+              "mood": "thinking"
+            },
+            {
+              "who": "hendrik",
+              "text": "Then let's get it right: what harassment is, what the Code expects of us, and how we prove our whole programme works.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Harassment law in South Africa in five scenes",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "Unfair discrimination",
+              "narration": "Section 6(3) of the Employment Equity Act says harassment of an employee is a form of unfair discrimination, prohibited on any of the grounds listed in section 6(1), such as race, gender, sex, sexual orientation or disability."
+            },
+            {
+              "icon": "📘",
+              "heading": "The 2022 Code",
+              "narration": "The Code of Good Practice on the Prevention and Elimination of Harassment in the Workplace was published on 18 March 2022 under the Employment Equity Act. It guides employers and employees on all forms of harassment."
+            },
+            {
+              "icon": "🧩",
+              "heading": "What harassment is",
+              "narration": "The Code describes harassment as unwanted conduct that impairs dignity, creates a hostile or intimidating environment or is meant to induce submission, and is linked to a prohibited or arbitrary ground."
+            },
+            {
+              "icon": "🌍",
+              "heading": "Where it applies",
+              "narration": "Protection covers the workplace and work-related settings: trips, training and social events, work messages and online platforms, and transport the employer provides. Clients, suppliers and contractors can be harassers or victims too."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Employer liability",
+              "narration": "The Code explains that employers must take proactive and remedial steps under section 60 of the Act. An employer that fails to act adequately on a complaint can be held liable for the harasser's conduct."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The test for sexual harassment in the Code",
+          "items": [
+            {
+              "label": "Prohibited ground",
+              "detail": "Is it on the grounds of sex, gender or sexual orientation?"
+            },
+            {
+              "label": "Unwanted",
+              "detail": "Was the conduct unwanted or unacceptable? Silence does not mean consent."
+            },
+            {
+              "label": "Nature and extent",
+              "detail": "Physical, verbal or non-verbal conduct of a sexual nature; one incident can be enough."
+            },
+            {
+              "label": "Impact",
+              "detail": "Did it impair dignity, considering the employee's circumstances and the parties' positions?"
+            }
+          ],
+          "caption": "Item 5.3 of the 2022 Code lists these four factors."
+        },
+        {
+          "type": "check",
+          "question": "The regional manager says he never heard the teller object, so his messages cannot be harassment. What does the Code say?",
+          "options": [
+            "He is right: harassment requires a clear objection",
+            "Conduct can still be harassment if he knew or ought to have known it was unwanted",
+            "Only physical contact can be sexual harassment",
+            "Only repeated conduct over six months counts"
+          ],
+          "answer": 1,
+          "explanation": "The Code says a complainant not indicating the conduct is unwanted does not mean there was no harassment where the perpetrator ought to have known it could be regarded as unwanted. Verbal and electronic conduct count, and a single incident can be enough."
+        },
+        {
+          "type": "flip",
+          "title": "Forms of harassment in the Code",
+          "cards": [
+            {
+              "front": "Quid pro quo",
+              "back": "Using power over hiring, promotion, training, pay or discipline to coerce someone into sexual advances."
+            },
+            {
+              "front": "Sexual favouritism",
+              "back": "A person in authority rewarding those who respond to their sexual advances."
+            },
+            {
+              "front": "Victimisation",
+              "back": "Punishing or intimidating someone for refusing advances or for complaining."
+            },
+            {
+              "front": "Bullying",
+              "back": "Abuse of coercive power by a person or group, often through repeated aggressive behaviour."
+            },
+            {
+              "front": "Mobbing",
+              "back": "Harassment by a group of people aimed at one or more individuals."
+            },
+            {
+              "front": "Online harassment",
+              "back": "Harassment through phones, email, social media or other technology; online bullying is cyber-bullying."
+            },
+            {
+              "front": "Racial harassment",
+              "back": "Unwanted conduct linked to race, ethnic or social origin, persistent or a single incident."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "What the Code expects of employers",
+          "body": "The Code is **guidance**. Most of it uses advisory language (\"should\"), but courts and the CCMA take it into account, and it explains the employer's duties under section 60 of the Act. In summary, employers should:\n\n- take a **zero-tolerance** stance and assess the **risk of harassment** staff face, as far as reasonably practicable;\n- adopt a **harassment policy** that states harassment will not be tolerated, grievances are handled **confidentially**, and **victimising a complainant is a disciplinary offence**;\n- set out **informal and formal procedures**, time frames and the route to the **CCMA** or a bargaining council if internal steps fail;\n- designate, where practicable, a **trained person outside line management** for confidential advice;\n- **communicate** the policy to all employees; and\n- include sexual and other harassment in **orientation, education and training** in an accessible format, with ongoing awareness.\n\nTraining is therefore an expected part of competence, not a separate statutory course."
+        },
+        {
+          "type": "sort",
+          "title": "Does the Code cover it?",
+          "prompt": "Decide whether each situation falls within the Code's scope.",
+          "buckets": [
+            "Covered",
+            "Not work-related"
+          ],
+          "items": [
+            {
+              "text": "Crude comments in the team's work WhatsApp group on a Sunday",
+              "bucket": 0
+            },
+            {
+              "text": "A customer repeatedly propositions a teller at the counter",
+              "bucket": 0
+            },
+            {
+              "text": "Unwanted touching at the bank's year-end function",
+              "bucket": 0
+            },
+            {
+              "text": "A supplier's driver making racial remarks to branch cleaners",
+              "bucket": 0
+            },
+            {
+              "text": "A manager's remarks during a work trip to Bloemfontein",
+              "bucket": 0
+            },
+            {
+              "text": "A dispute between two neighbours who happen to work at different banks",
+              "bucket": 1
+            },
+            {
+              "text": "An argument at a private family wedding unrelated to work",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Turning point: what the teller wants",
+          "setting": "Small meeting room, East London branch. 14:00.",
+          "lines": [
+            {
+              "who": "refilwe",
+              "text": "Thank you for trusting us. You can choose an informal route, where he is told clearly the conduct must stop, or a formal grievance and disciplinary process.",
+              "mood": "neutral"
+            },
+            {
+              "who": "thabo",
+              "text": "She's scared she'll lose the promotion either way.",
+              "mood": "thinking"
+            },
+            {
+              "who": "refilwe",
+              "text": "Our policy and the Code are clear: she won't face adverse consequences for choosing either route, and victimising her would itself be a disciplinary offence.",
+              "mood": "neutral"
+            },
+            {
+              "who": "busi",
+              "text": "One more thing. HR tells me two other staff raised similar concerns about him last year. That changes our duty.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The second and third complaint",
+          "situation": "The teller asks for the informal route only: she wants the messages to stop and no hearing. HR has records of two earlier, similar concerns about the same regional manager. He manages 60 staff across four branches.",
+          "choices": [
+            {
+              "text": "Respect her choice for her own matter, but assess the risk to others; given the pattern, follow a formal procedure, explain why to her and protect her identity as far as possible.",
+              "outcome": "Best. The Code lets complainants choose, but where an investigation shows a significant risk of harm to others, considering severity and history, the employer must follow a formal procedure regardless, and tell the complainant.",
+              "score": 2
+            },
+            {
+              "text": "Follow the informal route only, as she asked, and close the file.",
+              "outcome": "Partly right. Her wishes matter, but closing the file ignores the earlier complaints. The Code expects the employer to assess the risk to others and act on it.",
+              "score": 1
+            },
+            {
+              "text": "Move the teller to another branch so she no longer reports to him.",
+              "outcome": "Poor. Moving the complainant punishes her, may count as victimisation and does nothing about the conduct or the risk to others.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the Constitutional Court in McGregor (2021)",
+          "body": "The 2022 Code itself relies on case law. It cites the Constitutional Court's judgment in **McGregor v Public Health and Social Development Sectoral Bargaining Council and Others [2021] ZACC 14**, a sexual harassment dismissal case involving a senior hospital doctor.\n\nAs the Code summarises it, the Court:\n\n- **reiterated that the seniority of a perpetrator and a large age gap** between the perpetrator and the complainant are **aggravating factors** in sexual harassment; and\n- recognised that people who experience harassment may describe themselves as a **complainant, survivor or victim**, or none of these, and that their choice deserves respect.\n\n**For Sable Crest:** a regional manager's seniority over a junior teller does not soften the case. It makes it more serious, and the bank's response, including any sanction, should reflect that."
+        },
+        {
+          "type": "match",
+          "title": "Match the Code item to the duty",
+          "prompt": "Link each part of the 2022 Code to what it asks.",
+          "pairs": [
+            {
+              "left": "Item 8",
+              "right": "Guiding principles: zero tolerance, risk assessment, awareness training"
+            },
+            {
+              "left": "Item 9",
+              "right": "Adopt and communicate a harassment policy with minimum statements"
+            },
+            {
+              "left": "Item 10",
+              "right": "Clear informal and formal procedures, advice, sanctions and referral"
+            },
+            {
+              "left": "Item 11",
+              "right": "Confidentiality of grievances, with safety steps still allowed"
+            },
+            {
+              "left": "Item 13",
+              "right": "Include harassment in orientation, education and training"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Assessment readiness: where Sable Crest stands",
+          "items": [
+            {
+              "label": "Board training and BA 020 files",
+              "detail": "Strong: training log per director, BA 020s with background checks."
+            },
+            {
+              "label": "Safety drills and committee minutes",
+              "detail": "Strong: quarterly committee minutes and drill records at head office."
+            },
+            {
+              "label": "Tenure tracking",
+              "detail": "Gap: nine-year dates not yet tracked for every independent director."
+            },
+            {
+              "label": "Branch representatives and harassment training",
+              "detail": "Gap: one branch without a representative; orientation coverage untracked."
+            }
+          ],
+          "caption": "A self-assessment the company secretariat brings to the board before the PA's governance review.",
+          "axes": {
+            "x": "Prudential (left) or workplace (right)",
+            "y": "Evidence strong (top) or gap (bottom)"
+          }
+        },
+        {
+          "type": "check",
+          "question": "Which statement about training under the 2022 Harassment Code is most accurate?",
+          "options": [
+            "It sets a binding annual training hour target for every bank",
+            "It expects employers to include harassment in orientation, education and training, as good practice",
+            "It applies only to employers with a trade union",
+            "It requires the PA to approve harassment training content"
+          ],
+          "answer": 1,
+          "explanation": "Item 13 says employers should include sexual and other harassment in orientation, education and training in an accessible format. It is a code of good practice, so treat it as an expected competence rather than a fixed statutory course; it sets no hours."
+        },
+        {
+          "type": "order",
+          "title": "Before the review: the company secretary's checklist",
+          "prompt": "Order the readiness steps.",
+          "steps": [
+            "Map each obligation: Banks Act, Directive 1 of 2026, Directive 7 of 2022, OHS Act, Harassment Code",
+            "Collect evidence: policies, minutes, training logs, BA 020s, designations, drill and grievance records",
+            "Test the evidence against each requirement and list the gaps honestly",
+            "Agree remediation owners and dates, and report them to the board",
+            "Track closure and update the training plan for directors and staff"
+          ]
+        },
+        {
+          "type": "tip",
+          "title": "Recap: what supervisors will ask",
+          "body": "**PA:** Is your governance policy board-approved and implemented? Show director training and assessment records, independence declarations, tenure tracking and BA 020 files with background checks.\n\n**Labour inspectors:** Show risk assessments, training and supervision records, designated representatives, committee minutes and incident reports.\n\n**CCMA or courts, in a harassment dispute:** Show the policy, how you communicated it, the training given and how you handled the complaint."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "Harassment is unfair discrimination under section 6(3) of the Employment Equity Act.",
+            "The 2022 Code covers all forms of harassment, in work-related settings, by and against staff, clients and suppliers.",
+            "Employers should adopt and communicate a policy, offer confidential informal and formal procedures and protect complainants from victimisation.",
+            "An employer that fails to act adequately on a harassment complaint can be held liable for the harasser's conduct.",
+            "Readiness means mapping each duty, holding evidence, admitting gaps and fixing them with owners and dates."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a colleague told you tomorrow that a senior person was harassing them, what would you say in the first two minutes, and where would you take it next?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "za-gv-s5-q1",
+          "question": "Under the Employment Equity Act, how is harassment of an employee classified?",
+          "options": [
+            "As a form of unfair discrimination prohibited on the listed grounds",
+            "As a criminal offence only, outside labour law",
+            "As a matter for the Banks Act and the PA",
+            "As a breach of contract with no statutory basis"
+          ],
+          "answer": 0,
+          "explanation": "Section 6(3) of the EEA, quoted in the 2022 Code, makes harassment a form of unfair discrimination on any of the section 6(1) grounds. Some harassment may also be criminal, but that is not its EEA classification.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s5-q2",
+          "question": "Under which Act was the 2022 Code of Good Practice on the Prevention and Elimination of Harassment in the Workplace issued?",
+          "options": [
+            "The Occupational Health and Safety Act, 1993",
+            "The Banks Act, 1990",
+            "The Employment Equity Act, 1998",
+            "The Financial Sector Regulation Act, 2017"
+          ],
+          "answer": 2,
+          "explanation": "The Code was issued under the Employment Equity Act on 18 March 2022 (GN R.1890). The Banks Act and FSR Act govern prudential regulation, not workplace harassment.",
+          "difficulty": 2
+        },
+        {
+          "id": "za-gv-s5-q3",
+          "question": "A customer repeatedly makes sexual comments to a teller at the counter. Does the Code expect the bank to act?",
+          "options": [
+            "No, the Code covers only conduct between employees",
+            "Yes, employers should try to ensure staff are not harassed by third parties such as clients",
+            "Only if the customer holds an account at the branch",
+            "Only once the teller lays a criminal charge"
+          ],
+          "answer": 1,
+          "explanation": "The Code lists clients and customers among possible perpetrators and expects employers to attempt to protect employees from third-party harassment.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s5-q4",
+          "question": "A manager sends one sexually explicit image to a junior colleague by text after work hours. Can this be sexual harassment under the Code?",
+          "options": [
+            "No, because it happened after hours",
+            "No, because harassment requires a repeated pattern",
+            "Only if the image was sent from a bank device",
+            "Yes, a single incident can be enough and work-related electronic communications are covered"
+          ],
+          "answer": 3,
+          "explanation": "The Code says a single incident of unwelcome sexual conduct may constitute sexual harassment, and protection extends to work-related communications through technology.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s5-q5",
+          "question": "A supervisor hints that a staff member's training place depends on accepting his sexual advances. Which form of harassment is this?",
+          "options": [
+            "Mobbing",
+            "Quid pro quo harassment",
+            "Horizontal harassment",
+            "Passive-aggressive harassment"
+          ],
+          "answer": 1,
+          "explanation": "Quid pro quo harassment is using influence over engagement, promotion, training, discipline or benefits to coerce someone into sexual advances. Mobbing is group harassment.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s5-q6",
+          "question": "A complainant chooses the informal route. HR knows the alleged harasser has a history of similar complaints. What does the Code expect?",
+          "options": [
+            "Assess the risk to others and, if it is significant, follow a formal procedure and tell the complainant",
+            "Follow the informal route only, because the complainant's choice is final",
+            "Transfer the complainant to protect her from further contact",
+            "Wait for a second complaint before doing anything"
+          ],
+          "answer": 0,
+          "explanation": "Item 10.8.2 says the employer should assess the risk to others, considering severity and history, and must follow a formal procedure if there is a significant risk, advising the complainant.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s5-q7",
+          "question": "According to the Code, what can happen to an employer that does not take adequate steps after a harassment complaint is made within a reasonable time?",
+          "options": [
+            "Nothing, because only the harasser is ever liable",
+            "The PA can withdraw its banking licence automatically",
+            "It can be held liable for the employee's conduct under section 60 of the EEA",
+            "The complainant loses the right to go to the CCMA"
+          ],
+          "answer": 2,
+          "explanation": "Item 10.3 explains that failure to take adequate steps renders the employer liable for the conduct under section 60, even for a single incident. It does not trigger automatic licence action.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s5-q8",
+          "question": "Which statement best describes the training expectation in the Harassment Code?",
+          "options": [
+            "Every employee must pass an annual government test",
+            "Only managers need training, by statute",
+            "Training is required only after a complaint is upheld",
+            "Employers should cover harassment in orientation, education and training, as good practice"
+          ],
+          "answer": 3,
+          "explanation": "Item 13 uses advisory language: employers should include sexual and other harassment in orientation, education and training. It is an expected competence, not a statutory exam or manager-only rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "za-gv-s5-q9",
+          "question": "As summarised in the 2022 Code, what did the Constitutional Court reiterate in McGregor (2021)?",
+          "options": [
+            "A perpetrator's seniority and a large age gap are aggravating factors in sexual harassment",
+            "Senior employees cannot be dismissed for a first offence",
+            "Complaints must be made within 24 hours to be valid",
+            "Harassment by doctors is a matter for professional councils only"
+          ],
+          "answer": 0,
+          "explanation": "The Code's footnote records that in McGregor the Court reiterated that seniority and age disparity aggravate sexual harassment. It did not create the other rules.",
+          "difficulty": 4
+        },
+        {
+          "id": "za-gv-s5-q10",
+          "question": "Before the PA's governance review, the company secretary finds no training record for two new directors. What is the best readiness step?",
+          "options": [
+            "Create training records from memory so the file is complete",
+            "Record the gap, schedule their induction training with an owner and date, and report it to the board",
+            "Leave it out of the board report to avoid alarming the PA",
+            "Ask the directors to resign and be reappointed"
+          ],
+          "answer": 1,
+          "explanation": "Directive 1 of 2026 requires ongoing director training; readiness means honest evidence and tracked remediation. Invented records or concealment create a far worse governance problem.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "za",
+    "programs": [
+      35,
+      34,
+      37,
+      163,
+      159,
+      160
+    ],
+    "classification": "mandatory-role",
+    "frequency": [
+      "role",
+      "periodic"
+    ],
+    "regulators": [
+      "Prudential Authority (South African Reserve Bank)",
+      "Department of Employment and Labour"
+    ],
+    "references": [
+      {
+        "title": "Directive 1 of 2026 (D1/2026): Governance tenure",
+        "issuer": "Prudential Authority (SARB)",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-deposit-takers/banks-directives/2026/Directive%201%20of%202026%20-%20Governance%20Tenure.pdf",
+        "provision": "Paragraphs 7.1.3.6, 7.1.3.7 and 7.1.4.3",
+        "note": "Replaces Directive 4 of 2018. The board-approved governance policy must ensure appropriate and ongoing training for directors, ongoing assessment of individual directors, and robust criteria so that only fit and proper people with the needed knowledge and skills are appointed.",
+        "effective": "2026-02-25",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Directive 1 of 2026 (D1/2026): Governance tenure",
+        "issuer": "Prudential Authority (SARB)",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-deposit-takers/banks-directives/2026/Directive%201%20of%202026%20-%20Governance%20Tenure.pdf",
+        "provision": "Paragraphs 2-3 and 7.1.1-7.1.5, 7.2-7.4",
+        "note": "Independent chair and sub-committee chairs, cooling-off periods, minimum tests deeming a director not independent (including nine-year tenure with PA extension of up to 24 months), independence declarations, limits on other boards, BA 020 timing, PA supervisory review and exclusion of foreign branches.",
+        "effective": "2026-02-25",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Annexure A to Directive 1 of 2026: Banks Act, 1990 and Regulations (extracts)",
+        "issuer": "Prudential Authority (SARB)",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-deposit-takers/banks-directives/2026/d1-of-2026-attachments/Appendix%20A%20-%20Banks%20Act%20and%20Regs.PDF",
+        "provision": "Banks Act ss 60, 60B, 64-64C",
+        "note": "Summarises the statutory duties: directors and executive officers owe a fiduciary duty and a duty of care and skill (s 60); the board must keep an effective corporate governance process (s 60B); the directors' affairs committee must regularly review the board's skills mix (s 64B).",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Directive 7 of 2022 (D7/2022): matters related to fit and proper assessment of directors and executive officers",
+        "issuer": "Prudential Authority (SARB)",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-deposit-takers/banks-directives/2022/D7-2022%20-%20Banks%20CBC%20Directive%20-%20Directors%20and%20executive%20officers.pdf",
+        "provision": "Paragraphs 1.1 and 2.1",
+        "note": "Banks are responsible for appointing fit and proper directors and executives and must assess them before and after appointment; BA 020 submissions need criminal background check reports (30 days for South Africans, 60 for foreign nationals), with disqualification for refusal and periodic re-screening.",
+        "effective": "2022-08-12",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Occupational Health and Safety Act 85 of 1993",
+        "issuer": "Parliament (gov.za)",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act85of1993.pdf",
+        "provision": "Section 8(2)(e)",
+        "note": "The employer's general duty includes giving employees the information, instructions, training and supervision needed, as far as reasonably practicable, for their health and safety at work.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Occupational Health and Safety Act 85 of 1993",
+        "issuer": "Parliament (gov.za)",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act85of1993.pdf",
+        "provision": "Sections 13, 14, 16, 17, 18, 19 and 24",
+        "note": "Duty to inform employees of hazards; employees' duties including reporting; the CEO's responsibility; designation of health and safety representatives (more than 20 employees, at least one per 100 in shops and offices); committees meeting at least every three months; reporting of incidents. Text as published in 1993.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Code of Good Practice on the Prevention and Elimination of Harassment in the Workplace (GN R.1890, Government Gazette 46056)",
+        "issuer": "Department of Employment and Labour",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202203/46056reg11409gon1890.pdf",
+        "provision": "Items 9 and 13",
+        "note": "Issued under the Employment Equity Act. Employers should adopt harassment policies and procedures, and should include sexual and other harassment in their orientation, education and training programmes in an accessible format.",
+        "effective": "2022-03-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Code of Good Practice on the Prevention and Elimination of Harassment in the Workplace (GN R.1890, Government Gazette 46056)",
+        "issuer": "Department of Employment and Labour",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202203/46056reg11409gon1890.pdf",
+        "provision": "Items 2, 4, 5, 8, 10 and 11",
+        "note": "Scope (work-related settings, third parties), elements of harassment and the four-factor test for sexual harassment, guiding principles, informal and formal procedures, employer liability under EEA s 60 and confidentiality.",
+        "effective": "2022-03-18",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Media statement on VBS Mutual Bank, 11 March 2018 (curatorship)",
+        "issuer": "South African Reserve Bank",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/media-releases/2018/8318/Media-statement-on-VBS-Mutual-Bank-11-March-2018.pdf",
+        "note": "Real case: the Governor tied VBS's liquidity crisis to the board's and management's failure to manage growth and funding; the bank was placed under curatorship and the board's powers passed to the curator.",
+        "effective": "2018-03-11",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "VBS Mutual Bank investigators report to the Prudential Authority (The Great Bank Heist)",
+        "issuer": "South African Reserve Bank",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/media-releases/2018/8830/VBS-Mutual-Bank---The-Great-Bank-Heist.pdf",
+        "note": "Real case: forensic report under FSR Act s 134, received 5 October 2018; finds almost R2 billion taken and that three non-executive directors admitted improper rewards.",
+        "effective": "2018-10-10",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "South African Reserve Bank imposes administrative sanctions on VBS Mutual Bank (4 August 2017)",
+        "issuer": "South African Reserve Bank",
+        "url": "https://www.resbank.co.za/content/dam/sarb/publications/media-releases/2017/7924/Media-Release-VBS-.pdf",
+        "note": "Real case: R2.5 million penalty (R2 million suspended) and remedial directives for weak FIC Act controls, months before curatorship.",
+        "effective": "2017-08-04",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Employment and Labour urges employers to comply with labour laws as non-compliance increases drastically in workplace (13 March 2024)",
+        "issuer": "Department of Employment and Labour (gov.za)",
+        "url": "https://www.gov.za/news/media-statements/employment-and-labour-urges-employers-comply-labour-laws-non-compliance",
+        "note": "Real case: a Rustenburg blitz inspection testing OHS Act and other labour-law compliance issued contravention, prohibition and improvement notices and compliance orders.",
+        "effective": "2024-03-13",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "za-gv-x1",
+        "question": "Sable Crest's controlling company has a board of 10. Seven are employees of the group. Which Banks Act rule is breached?",
+        "options": [
+          "The rule that the board chair must also chair the audit committee",
+          "The rule that every director must hold a banking qualification",
+          "The rule that not more than 49% of a controlling company's directors may be employees",
+          "The rule that boards may not exceed nine members"
+        ],
+        "answer": 2,
+        "explanation": "Section 60 applies the 49% cap, rounded down, to controlling companies as well as banks: at most 4 of 10 directors may be employees. The other rules do not exist in the Act.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x2",
+        "question": "Which of these is NOT one of the aims the Banks Act sets for a bank's corporate governance process under section 60B?",
+        "options": [
+          "Guaranteeing a minimum dividend to shareholders each year",
+          "Avoiding or minimising conflicts between the bank's and directors' interests",
+          "Responsible conduct by directors and executive officers",
+          "Compliance with all applicable laws and regulations"
+        ],
+        "answer": 0,
+        "explanation": "Section 60B lists conflict management, responsible conduct and legal compliance, alongside ethical and equitable achievement of objectives within acceptable risk. It does not guarantee dividends.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x3",
+        "question": "An executive director of Sable Crest is asked to join the audit committee to 'add banking insight'. What does section 64 say?",
+        "options": [
+          "Executive directors may join if they are not the CEO",
+          "One executive member is allowed if the chair agrees",
+          "Executives may join as non-voting members only by law",
+          "Audit committee members may not be employees of the bank or its group"
+        ],
+        "answer": 3,
+        "explanation": "Section 64 requires all audit committee members to be non-employees of the bank, its subsidiaries, its controlling company and that company's subsidiaries. Executives can attend by invitation, but the Act gives them no seat.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x4",
+        "question": "The remuneration committee has four members: three non-executive directors and the chief executive. What is wrong?",
+        "options": [
+          "The CEO must chair the remuneration committee",
+          "Section 64C requires the remuneration committee to consist only of non-executive directors",
+          "Remuneration committees need at least seven members",
+          "The committee must include the external auditor"
+        ],
+        "answer": 1,
+        "explanation": "Section 64C, like section 64B for the directors' affairs committee, limits membership to non-executive directors. Having the CEO set or approve pay would create an obvious conflict.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x5",
+        "question": "Under what power did the Prudential Authority issue Directive 1 of 2026 and Directive 7 of 2022?",
+        "options": [
+          "Section 60B of the Banks Act",
+          "Section 6(6) of the Banks Act",
+          "Section 8 of the Occupational Health and Safety Act",
+          "Section 54 of the Employment Equity Act"
+        ],
+        "answer": 1,
+        "explanation": "Both directives state that they were issued in terms of section 6(6) of the Banks Act. Section 60B is a governance duty, and the other sections belong to labour laws.",
+        "difficulty": 2
+      },
+      {
+        "id": "za-gv-x6",
+        "question": "When VBS Mutual Bank was placed under curatorship in March 2018, what happened to its board and management?",
+        "options": [
+          "They kept running the bank under the curator's advice",
+          "They were replaced by PA staff on the board",
+          "They were required to recapitalise the bank within 30 days",
+          "They were relieved of their powers, which vested in the curator"
+        ],
+        "answer": 3,
+        "explanation": "The Governor's statement explained that with a curator appointed, the board and management are relieved of their powers and these vest in the curator.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x7",
+        "question": "Which element of the VBS story best illustrates a failure of the board's risk oversight, as described by the SARB in March 2018?",
+        "options": [
+          "Taking large short-term municipal deposits and lending them out long-term",
+          "Opening too few branches in Limpopo",
+          "Refusing to pay out retail deposits up to R50,000",
+          "Choosing Nedbank as the paying agent"
+        ],
+        "answer": 0,
+        "explanation": "The Governor called it highly risky to take sizeable short-term municipal deposits and lend them long-term; this concentration and maturity mismatch drove the liquidity crisis. The Nedbank arrangement came later, under curatorship.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x8",
+        "question": "A board pack contains a proposal in which a director's family company will supply the bank. The director stays in the room and votes. Which Banks Act aim is most directly at risk?",
+        "options": [
+          "Keeping the audit committee free of employees",
+          "Keeping employee directors at 49% or fewer",
+          "Mechanisms to minimise or avoid conflicts between the bank's interests and directors' personal interests",
+          "Having a risk and capital committee of at least three members"
+        ],
+        "answer": 2,
+        "explanation": "Section 60B expects the governance process to minimise or avoid conflicts of interest, and Directive 1 of 2026 asks the policy to prevent them. Declaring and recusing is the normal control.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x9",
+        "question": "A new non-executive director asks why the Banks Act governance duties matter to her personally rather than to 'the board'. What is the best answer?",
+        "options": [
+          "Only the chair is accountable; other directors are advisers",
+          "Personal duties apply only to executive directors",
+          "Directors are personally liable only after curatorship",
+          "Section 60 makes each director owe the bank a fiduciary duty and a duty of care and skill"
+        ],
+        "answer": 3,
+        "explanation": "The section 60 duties are owed by each director, CEO and executive officer individually. Non-executive status does not reduce them.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x10",
+        "question": "Sable Crest's chair has just become a substantial shareholder through an inheritance. What should the board policy provide for under Directive 1 of 2026?",
+        "options": [
+          "Automatic dissolution of the board until a new chair is elected",
+          "Arrangements, such as a lead independent director, for when the chair becomes non-independent",
+          "Nothing, as the Directive only tests independence at appointment",
+          "Permission for the chair to continue as an independent for nine years"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 7.1.1.1 requires the policy to provide for a chair who becomes non-independent or conflicted, for example through a lead independent director. Continued non-independent chairing needs PA approval in exceptional cases.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x11",
+        "question": "Under Directive 1 of 2026, which people must be independent non-executive directors, subject to narrow PA exceptions?",
+        "options": [
+          "Every member of every board committee",
+          "The CEO and the chief financial officer",
+          "The board chair and the chairs of the board sub-committees required by the Banks Act and Companies Act",
+          "Only the chair of the audit committee"
+        ],
+        "answer": 2,
+        "explanation": "Paragraphs 7.1.1.1 and 7.1.1.2 require an independent non-executive board chair and independent chairs of the required sub-committees. The PA may allow exceptions only in writing and in exceptional cases.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x12",
+        "question": "A candidate was the bank's curator until 18 months ago. The board wants to appoint him as an independent non-executive director. What does the Directive say?",
+        "options": [
+          "He may be a non-executive director after 12 months, but is deemed not independent until three years have passed",
+          "He may be appointed as independent immediately",
+          "He may never serve on the bank's board",
+          "He may serve as independent if the PA confirms his BA 020"
+        ],
+        "answer": 0,
+        "explanation": "A former curator faces a 12-month cooling-off before appointment as a non-executive, and having been curator in the preceding three years means he is not independent. Both tests apply.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-gv-x13",
+        "question": "A director's spouse was a principal of a consultancy that was a material adviser to Sable Crest until two years ago, so an informed observer would doubt the director's objectivity. How should the board classify the director?",
+        "options": [
+          "Independent, because the director never worked at the consultancy",
+          "Independent, provided the director declares the link annually",
+          "Not independent for life, regardless of time passed",
+          "Not independent, because an immediate family member falls within a disqualifying category"
+        ],
+        "answer": 3,
+        "explanation": "The Directive deems a director not independent if an immediate family member falls within the listed categories, including a principal of a material adviser in the last three years where an informed third party would see a conflict. A declaration does not cure it, and the test is time-limited.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-gv-x14",
+        "question": "A director who served as an independent director of a Sable Crest subsidiary for seven years is appointed to the bank's own board. What happens to his tenure?",
+        "options": [
+          "He keeps counting from seven years and has two years left",
+          "He may never be independent at the bank level",
+          "He may reset the tenure on appointment to the higher board, subject to no material conflicts and any PA conditions",
+          "He must first sit out a three-year cooling-off period"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7.1.2.8(b)(ii) allows a reset when a subsidiary's independent director moves to the bank or controlling company board, because the role is broader, provided the PA finds no material conflicts.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x15",
+        "question": "Which statement about the nine-year rule in Directive 1 of 2026 is correct?",
+        "options": [
+          "A director who stays beyond nine years counts as non-executive but not independent, unless the PA approves an extension",
+          "The director must leave the board on the ninth anniversary",
+          "The rule applies only to the chair of the board",
+          "The board may extend independence by up to five years by resolution"
+        ],
+        "answer": 0,
+        "explanation": "After nine years an independent director may remain as a non-executive director but not as independent. Only the PA may extend independence, in exceptional cases, in writing, for at most 24 months.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x16",
+        "question": "A director completed nine years as independent, left the board, and is offered a seat again 20 months later as an independent director. What does the Directive say?",
+        "options": [
+          "She is independent again after a 12-month break",
+          "She is deemed not independent because she is reappointed within three years after serving the tenure",
+          "She regains independence if the PA receives a new BA 020",
+          "She is independent if she now holds fewer than 5% of the shares"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 7.1.2.11 deems a director not independent if reappointed within less than three years after serving the nine-year tenure. Twenty months is too soon.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x17",
+        "question": "Which supervisory process does the PA use to check that a bank's board-approved governance policy is complied with in practice?",
+        "options": [
+          "An annual public hearing in Parliament",
+          "A certificate signed by the Companies Commission",
+          "A self-declaration lodged with the FSCA",
+          "Its supervisory review and evaluation processes"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 7.2 says the PA assesses governance policies, processes, practices and their implementation as part of its supervisory review and evaluation processes.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x18",
+        "question": "The Directive's training duty in paragraph 7.1.3.6 is classified as a role-based mandatory requirement. Who is it aimed at?",
+        "options": [
+          "Directors of banks and controlling companies",
+          "Every bank employee, annually",
+          "Branch staff who handle cash",
+          "External auditors of banks"
+        ],
+        "answer": 0,
+        "explanation": "The Directive requires appropriate and ongoing training for directors. Staff training duties come from other laws, such as the OHS Act and the FIC Act, not from this paragraph.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x19",
+        "question": "Who may the PA require to submit a BA 020 even though they already hold office?",
+        "options": [
+          "Only directors who change their address",
+          "Only directors who were appointed before 1990",
+          "No one, because BA 020 applies only to new appointments",
+          "Any serving director or executive officer, at the PA's request"
+        ],
+        "answer": 3,
+        "explanation": "Directive 1 of 2026 records that regulation 42 requires a BA 020 for serving directors or executive officers when the PA requests it under section 1(1A)(c) of the Banks Act.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x20",
+        "question": "A foreign national is proposed as Sable Crest's chief risk officer. His criminal background check report is 50 days old when the BA 020 is filed. Is it acceptable?",
+        "options": [
+          "No, all reports must be under 30 days old",
+          "Yes, for a foreign national the report may be up to 60 calendar days old",
+          "No, foreign nationals need a report under 14 days old",
+          "Yes, because reports for foreign nationals never expire"
+        ],
+        "answer": 1,
+        "explanation": "Directive 7 of 2022 allows up to 60 calendar days for foreign nationals and 30 for South Africans. Fifty days is within the foreign-national limit.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x21",
+        "question": "Sable Crest opens a banking subsidiary in another African country and appoints its directors. Does the criminal background check requirement apply?",
+        "options": [
+          "No, it applies only inside South Africa",
+          "Only if the subsidiary is listed on a stock exchange",
+          "Yes, it covers directors and executive officers of cross-border banking operations too",
+          "Only for directors who are South African citizens"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 2.1.11 extends the requirement to appointments in cross-border subsidiaries and branches established under section 52 of the Banks Act.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x22",
+        "question": "Which pairing correctly links the regulatory document to its role in fit and proper assessments?",
+        "options": [
+          "Directive 7 of 2022 adds criminal background checks; Directive 1 of 2026 requires robust fit and proper criteria in the board policy",
+          "Directive 7 of 2022 sets director tenure; Directive 1 of 2026 sets background checks",
+          "Both documents only cover executive officers",
+          "Directive 1 of 2026 abolished form BA 020"
+        ],
+        "answer": 0,
+        "explanation": "Directive 7 of 2022 deals with background check reports supporting the BA 020, while Directive 1 of 2026 requires the policy to have robust criteria so only fit and proper people are appointed.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x23",
+        "question": "Which quality is the PA expressly told to consider under section 1(1A) when looking at a director who sits on six other boards?",
+        "options": [
+          "The person's home province",
+          "The diligence with which the person is likely to fulfil the responsibilities",
+          "The number of shares the person holds",
+          "The person's political affiliation"
+        ],
+        "answer": 1,
+        "explanation": "Diligence is one of the three statutory qualities. Heavy board commitments can reduce the time and attention a director brings, which is why Directive 1 also requires limits on other boards.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x24",
+        "question": "Why does Directive 7 of 2022 require banks to re-screen serving directors periodically rather than only at appointment?",
+        "options": [
+          "Because BA 020 forms expire after 12 months",
+          "To replace the annual independence declaration",
+          "Because the PA no longer reviews appointments",
+          "To keep the bank's information about their criminal status up to date and accurate"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 2.1.13 says re-screening keeps the information held up to date and accurate, supporting the bank's ongoing responsibility to keep fit and proper people in office.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x25",
+        "question": "Which part of a sound director induction for Sable Crest best supports the 'competence and soundness of judgement' quality?",
+        "options": [
+          "A tour of the head office building and parking",
+          "A list of board meeting dates for the year",
+          "Briefings on the bank's business model, risk profile and key regulatory duties",
+          "A gift pack and the director's email login"
+        ],
+        "answer": 2,
+        "explanation": "Competence and judgement relate to the responsibilities of the office and the bank's risks. Induction on the business, risks and duties builds that; logistics do not.",
+        "difficulty": 2
+      },
+      {
+        "id": "za-gv-x26",
+        "question": "A group applies under section 12 of the Banks Act for authorisation to establish a new bank. What must the application include under Directive 7 of 2022?",
+        "options": [
+          "Criminal background check reports for each prospective director, executive officer and key person",
+          "Background checks only for the proposed chair and CEO",
+          "A sworn statement that no director has a criminal record",
+          "Background checks only once the bank starts trading"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 2.1.10 requires applications to establish a bank to include background check reports for every prospective director, executive officer and key person, before authorisation, not after.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x27",
+        "question": "Which duty in section 8(2) of the OHS Act would require Sable Crest to ensure branch cash-handling work is overseen by someone who understands its hazards?",
+        "options": [
+          "Section 8(2)(i): work performed under the general supervision of a person trained to understand the hazards",
+          "Section 8(2)(c): safety of articles and substances in transport",
+          "Section 8(2)(j): informing employees of their authority under section 37",
+          "Section 8(2)(b): eliminating hazards before using protective equipment"
+        ],
+        "answer": 0,
+        "explanation": "Section 8(2)(i) requires general supervision by a person trained to understand the hazards and with authority to make sure precautions are implemented. The others address different aspects of the duty.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x28",
+        "question": "Who must be informed beforehand when an inspector notifies Sable Crest of an inspection at its Durban office?",
+        "options": [
+          "Every customer of the branch",
+          "The Prudential Authority",
+          "The health and safety representatives concerned",
+          "The bank's external auditors"
+        ],
+        "answer": 2,
+        "explanation": "Section 13(b) requires the employer to inform the representatives concerned beforehand of inspections, investigations or formal inquiries an inspector has notified.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x29",
+        "question": "Which employee is eligible to be designated as a health and safety representative under section 17(4)?",
+        "options": [
+          "Any contractor who visits the workplace weekly",
+          "A full-time employee at that workplace who knows its conditions and activities",
+          "A part-time employee based at another province's office",
+          "An external consultant hired for the purpose"
+        ],
+        "answer": 1,
+        "explanation": "Only employees employed full-time at the specific workplace and acquainted with its conditions and activities are eligible. Contractors and consultants cannot be designated.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x30",
+        "question": "Sable Crest's East London branch has 18 employees. An inspector thinks a representative is still needed. What can the inspector do?",
+        "options": [
+          "Nothing, because the duty starts only above 20 employees",
+          "Appoint a representative from the inspector's own staff",
+          "Fine the branch manager on the spot",
+          "Direct the employer in writing to designate the number of representatives the inspector decides"
+        ],
+        "answer": 3,
+        "explanation": "Section 17(6) lets an inspector, by written notice, direct designation of representatives even where a workplace has 20 or fewer employees if the number is inadequate.",
+        "difficulty": 5
+      },
+      {
+        "id": "za-gv-x31",
+        "question": "During an armed robbery at a branch, a teller is injured and likely unable to work for at least 14 days. What does section 24 require?",
+        "options": [
+          "Only the police must be told; the OHS Act does not apply to crime",
+          "The teller must report it to the PA within 24 hours",
+          "The employer must report the incident to an inspector within the prescribed period and manner",
+          "Nothing, unless the teller later dies"
+        ],
+        "answer": 2,
+        "explanation": "Section 24(1)(a) covers incidents at work causing injury likely to make a person unable to work for at least 14 days; the employer reports them to an inspector as prescribed. Robbery does not take it outside the Act.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x32",
+        "question": "Which of the following is a function a health and safety representative MAY perform under section 18?",
+        "options": [
+          "Investigate an employee's complaint about health or safety at work",
+          "Dismiss an employee who breaks a safety rule",
+          "Approve the bank's annual budget for facilities",
+          "Issue prohibition notices to the employer"
+        ],
+        "answer": 0,
+        "explanation": "Section 18(1)(d) lets a representative investigate employees' safety complaints. Discipline and budgets belong to management, and prohibition notices are issued by inspectors.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x33",
+        "question": "Sable Crest's board asks how it can show it meets section 8(2)(e). Which evidence is strongest?",
+        "options": [
+          "A signed statement from the CEO that staff are safe",
+          "A copy of the Act on the intranet",
+          "Insurance cover for workplace injuries",
+          "Risk-based training plans, attendance records, supervision arrangements and drill results"
+        ],
+        "answer": 3,
+        "explanation": "Section 8(2)(e) is about providing the information, instructions, training and supervision actually needed. Records of what was delivered and tested show that; a statement, a copy of the Act or insurance do not.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x34",
+        "question": "A branch manager plans to rely only on giving staff anti-slip shoes after several falls on a wet entrance floor. Which OHS Act principle does this overlook?",
+        "options": [
+          "Employees must pay for their own protective equipment",
+          "Take reasonably practicable steps to eliminate or mitigate the hazard before resorting to personal protective equipment",
+          "Only inspectors may decide on safety equipment",
+          "Protective equipment must be approved by the PA"
+        ],
+        "answer": 1,
+        "explanation": "Section 8(2)(b) sets the order: remove or reduce the hazard first, for example mats, drainage and cleaning routines, before relying on protective equipment.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x35",
+        "question": "Under the 2022 Code, whose perspective is the starting point when assessing whether conduct is harassment?",
+        "options": [
+          "The intention of the alleged harasser alone",
+          "An objective assessment from the perspective of the employee who alleges harassment",
+          "The view of the majority of the team",
+          "The opinion of the line manager"
+        ],
+        "answer": 1,
+        "explanation": "Item 4.4.5 says the assessment is objective, from the complainant's perspective, focusing on the impact of the conduct. The harasser's intention is not the test.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x36",
+        "question": "A teller does not tell her supervisor his comments are unwelcome, but walks away each time he makes them. How does the Code treat this?",
+        "options": [
+          "Silence means she accepted the comments",
+          "Only a written objection counts as showing it is unwanted",
+          "The conduct is harassment only if she reported it within a day",
+          "Walking away or not responding can be a non-verbal way of showing the conduct is unwanted"
+        ],
+        "answer": 3,
+        "explanation": "Item 5.2.1 recognises non-verbal ways of indicating conduct is unwanted, including walking away or not responding. And conduct can still be harassment where the perpetrator ought to have known it was unwanted.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x37",
+        "question": "Which minimum statement should a harassment policy contain, according to item 9.4 of the Code?",
+        "options": [
+          "Victimising an employee who lodges a good-faith grievance is a disciplinary offence",
+          "Complaints will be shared with all staff for transparency",
+          "Only sexual harassment will be investigated",
+          "Employees must first raise every complaint with the alleged harasser"
+        ],
+        "answer": 0,
+        "explanation": "Item 9.4 lists statements including zero tolerance, confidential handling and that victimisation of a good-faith complainant is a disciplinary offence. Confronting the harasser is optional, not required.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x38",
+        "question": "Where practicable, whom does the Code suggest employers designate for complainants to approach for confidential advice?",
+        "options": [
+          "The alleged harasser's direct manager",
+          "The external auditor of the bank",
+          "A trained person outside line management, with suitable skills and resources",
+          "The chair of the board of directors"
+        ],
+        "answer": 2,
+        "explanation": "Item 10.5.2 suggests a person outside line management, such as an employee, union representative or professional, who is properly trained and resourced.",
+        "difficulty": 3
+      },
+      {
+        "id": "za-gv-x39",
+        "question": "If internal procedures do not resolve a harassment dispute under the EEA, where may the complainant refer it, according to the Code?",
+        "options": [
+          "Directly to the Prudential Authority",
+          "To the bank's audit committee for a final ruling",
+          "To the Financial Sector Conduct Authority",
+          "To the CCMA or a bargaining council with jurisdiction for conciliation, then for adjudication if unresolved"
+        ],
+        "answer": 3,
+        "explanation": "Item 10.8.3.4 describes referral to the CCMA or a bargaining council for conciliation and then adjudication by the CCMA, bargaining council or Labour Court. The PA and FSCA do not decide harassment disputes.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x40",
+        "question": "A disciplinary inquiry into alleged sexual harassment is being set up. Who should be present according to item 11.4 of the Code?",
+        "options": [
+          "The whole branch team, so lessons are shared",
+          "Any staff member who wishes to observe",
+          "Designated management, the parties and their representatives, witnesses when testifying and any interpreter",
+          "Members of the media, for transparency"
+        ],
+        "answer": 2,
+        "explanation": "Item 11.4 limits attendance to protect confidentiality. Opening the inquiry to the team or public would breach the confidentiality the Code expects.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x41",
+        "question": "Which statement best describes how the harassment training expectation should be labelled in a South African bank's training map?",
+        "options": [
+          "A mandatory annual course under the Banks Act",
+          "A competence expectation from a Code of Good Practice, not an express statutory training duty",
+          "A PA directive for all bank staff",
+          "An OHS Act requirement with a fixed frequency"
+        ],
+        "answer": 1,
+        "explanation": "The Code uses advisory language for training and is guidance under the EEA. It should be delivered as good practice and to support the employer's section 60 position, but not labelled as an express statutory duty.",
+        "difficulty": 4
+      },
+      {
+        "id": "za-gv-x42",
+        "question": "Preparing for review, Sable Crest finds strong board training records but no record of harassment orientation for new branch staff. What should the readiness report say?",
+        "options": [
+          "State the gap, its risk, the owner and date for adding harassment content to branch orientation",
+          "Leave it out because the PA reviews only board governance",
+          "Say all staff are trained, since the policy is on the intranet",
+          "Postpone the report until the gap is closed"
+        ],
+        "answer": 0,
+        "explanation": "Section 60B governance includes compliance with all laws, and honest gap reporting with owners and dates is what reviewers trust. Publishing a policy alone is not training.",
+        "difficulty": 4
+      }
+    ]
+  }
+}
