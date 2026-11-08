@@ -1,0 +1,3085 @@
+{
+  "slug": "us-consumer-compliance",
+  "title": "United States | Consumer Compliance for Banks (UDAAP, Reg E, Reg Z, ECOA, Privacy)",
+  "tagline": "Run consumer compliance the way US examiners expect: CMS and training, UDAAP, Reg E disputes, Reg Z and loan originators, ECOA, complaints and privacy.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Retail banking",
+    "Consumer lending",
+    "Mortgage lending",
+    "Cards and payments",
+    "Deposit operations",
+    "Customer service and complaints"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the **US federal consumer protection rules** that bank staff apply every day, built on the CFPB's Supervision and Examination Manual (compliance management review and UDAAP procedures), Regulation E (12 CFR Part 1005), Regulation Z (12 CFR Part 1026), Regulation B (12 CFR Part 1002, including the April 2026 amendment effective 21 July 2026), Regulation P (12 CFR Part 1016) and Regulation F (12 CFR Part 1006), and the OCC's compliance management handbook.\n\nYou will learn how a consumer compliance management system works and why training is one of its parts, the three UDAAP tests, Regulation E error resolution timelines, Truth in Lending mortgage disclosure timing, the loan originator screening and periodic training duty in 12 CFR 1026.36(f)(3), equal credit and adverse action rules, complaint handling, privacy notices and opt-outs, and where debt collection rules reach a bank.\n\nIt is meant for staff of US banks in consumer-facing, product, marketing, lending, disputes, complaints and compliance roles. Examiners expect role-specific, up-to-date consumer compliance training, and loan originator employees must receive periodic training under Regulation Z. This quest builds knowledge and does not replace your bank's own policies and procedures.",
+  "audience": [
+    "Branch, call centre and digital banking staff at US banks who serve consumers",
+    "Product, marketing and sales managers who design or promote consumer products",
+    "Mortgage and consumer lending staff, including registered loan originators",
+    "Card disputes, deposit operations, collections and complaints teams",
+    "Compliance officers, auditors and managers who oversee the consumer compliance programme"
+  ],
+  "outcomes": [
+    "Describe the parts of a consumer compliance management system and what examiners expect from training",
+    "Apply the unfair, deceptive and abusive tests to products, ads and scripts",
+    "Resolve electronic fund transfer errors within Regulation E's timelines",
+    "Apply Regulation Z mortgage disclosure timing and the loan originator screening and training rule",
+    "Identify prohibited bases, discouragement and adverse action duties under ECOA and Regulation B, including the 2026 change",
+    "Handle complaints, privacy notices and opt-outs, and collections risks in a way that stands up to examination"
+  ],
+  "quest": {
+    "name": "The Consumer Exam",
+    "premise": "You have just joined the compliance team of Prairie Lantern Bank, N.A., a fictional national bank with USD 14 billion in assets, headquartered in Kansas City with operations in Denver, Phoenix and Atlanta. The CFPB has announced a consumer compliance examination. Chief Compliance Officer Maya Okafor wants you ready: with disputes lead Luis Herrera, mortgage manager Grace Liu, product head Tom Brennan and complaints lead Aisha Rahman, clear five stages and then face the examiner's questions.",
+    "badge": {
+      "name": "Consumer Compliance Guardian",
+      "description": "Awarded to US bank staff who can apply CMS, UDAAP, Regulation E, Z, B and P rules and complaint handling with confidence."
+    },
+    "color": "#0e7490",
+    "cast": [
+      {
+        "id": "maya",
+        "name": "Maya Okafor",
+        "role": "Chief Compliance Officer, Kansas City, your mentor",
+        "look": {
+          "skin": 5,
+          "hair": "bun",
+          "color": "#155e75"
+        }
+      },
+      {
+        "id": "luis",
+        "name": "Luis Herrera",
+        "role": "Card Disputes and Deposit Operations Lead, Denver",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      },
+      {
+        "id": "grace",
+        "name": "Grace Liu",
+        "role": "Mortgage Lending Manager, Phoenix",
+        "look": {
+          "skin": 2,
+          "hair": "long",
+          "color": "#be123c"
+        }
+      },
+      {
+        "id": "tom",
+        "name": "Tom Brennan",
+        "role": "Head of Consumer Products and Marketing",
+        "look": {
+          "skin": 1,
+          "hair": "beard",
+          "color": "#4b5563"
+        }
+      },
+      {
+        "id": "aisha",
+        "name": "Aisha Rahman",
+        "role": "Complaints and Customer Care Lead, Atlanta",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#6d28d9"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Consumer Compliance Management System and Why Training Matters",
+      "stage": "The Control Room",
+      "summary": "Meet the US consumer regulators, learn the parts of a compliance management system the CFPB examines, and see why role-based, timely training is one of them.",
+      "minutes": 45,
+      "objectives": [
+        "Explain which agency supervises a US bank for federal consumer financial law and why size matters",
+        "Describe the two components and four programme parts of a compliance management system",
+        "State what examiners expect from compliance training, including timing, tailoring and records",
+        "Link sales incentives to training on consent, accurate terms and reporting misconduct"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one: the consumer exam letter",
+          "setting": "Compliance floor, Prairie Lantern Bank head office, Kansas City, Missouri. 8:30 am.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "Your badge opens the compliance floor. On your desk sits a printed letter and a sticky note: 'Read this first. Maya.'",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Welcome. I'm Maya Okafor, Chief Compliance Officer. That letter says the CFPB will examine our consumer compliance management system next quarter.",
+              "mood": "happy"
+            },
+            {
+              "who": "tom",
+              "text": "Tom Brennan, product and marketing. I'm launching a new rewards checking account in six weeks. Please tell me the exam won't stall it.",
+              "mood": "worried"
+            },
+            {
+              "who": "luis",
+              "text": "Luis Herrera, deposit operations. I run the card disputes team in Denver. Examiners always ask for our dispute files.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aisha",
+              "text": "Aisha Rahman, complaints. And they always ask what our complaints are telling us, and what we did about it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "grace",
+              "text": "Grace Liu, mortgage lending in Phoenix. My loan officers have their own training rule, so count me in.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Five stages, then the examiner's questions. Stage one: who supervises us, what a compliance management system is, and why training sits inside it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "US consumer protection in five scenes",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The laws",
+              "narration": "Congress wrote the consumer financial laws: Truth in Lending, Electronic Fund Transfer, Equal Credit Opportunity, Gramm-Leach-Bliley privacy and others. The Dodd-Frank Act of 2010 added a ban on unfair, deceptive or abusive acts or practices, known as UDAAP."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "The CFPB writes most rules",
+              "narration": "The Consumer Financial Protection Bureau issues the main implementing rules, such as Regulation B for equal credit, E for electronic transfers, P for privacy and Z for truth in lending."
+            },
+            {
+              "icon": "🔍",
+              "heading": "Who examines a bank",
+              "narration": "Banks with more than 10 billion US dollars in assets are supervised by the CFPB for federal consumer financial law. Their prudential regulator, the OCC, the Federal Reserve or the FDIC, examines the rest, and examines smaller banks for consumer law too."
+            },
+            {
+              "icon": "🧭",
+              "heading": "The compliance management system",
+              "narration": "Examiners do not only hunt for violations. They judge the system a bank uses to prevent, find and fix them: its compliance management system, or CMS."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Training is part of the system",
+              "narration": "Training is one of the named parts of a compliance programme. If staff do not know the rules, policies alone will not protect customers."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "The CMS the CFPB examines",
+          "caption": "The CFPB manual describes two linked components: oversight by the board and management, and a compliance programme with four parts.",
+          "items": [
+            {
+              "label": "Board and management oversight",
+              "detail": "Sets the tone, approves policy, funds compliance, manages change and holds people accountable."
+            },
+            {
+              "label": "Policies and procedures",
+              "detail": "Written, current, cover each product's full life cycle and match board-approved policy."
+            },
+            {
+              "label": "Training",
+              "detail": "Tailored to each role, updated before new products or rule changes, consistent with policy."
+            },
+            {
+              "label": "Monitoring and audit",
+              "detail": "Monitoring finds weaknesses early; audit tests the whole system independently."
+            },
+            {
+              "label": "Consumer complaint response",
+              "detail": "Records, investigates, escalates and learns from every complaint."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A bank uses an outside firm to run its card dispute call centre. What does the CFPB compliance management manual say about responsibility for consumer law compliance?",
+          "options": [
+            "It passes to the service provider under the contract",
+            "The bank keeps it, and must oversee the provider",
+            "It is shared equally between the bank and the provider",
+            "It applies only if the provider is also a bank"
+          ],
+          "answer": 1,
+          "explanation": "The manual is clear that a bank may outsource operations but cannot outsource responsibility for complying with federal consumer financial law. It must oversee the provider, including its training."
+        },
+        {
+          "type": "concept",
+          "title": "What examiners look for in training",
+          "body": "The CFPB's compliance management review module lists what good training looks like. In our own words:\n\n- **Tailored**: specific to the job, including product development, marketing and customer service, not one generic course for everyone.\n- **Timely**: updated **before** a new or changed product launches and before a new or changed rule takes effect.\n- **Consistent**: it reinforces the bank's written policies and procedures.\n- **Deep enough for specialists**: compliance staff get the training they need to run the programme.\n\nThe manual says fair lending and UDAAP requirements belong in training for all relevant officers and staff, **including audit personnel**. Board members need enough information to understand the bank's duties and the resources they require.\n\nExaminers then rate the training programme on a five-point scale from strong to critically deficient."
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "How an examiner tests your training",
+          "items": [
+            {
+              "label": "Schedules and completion records",
+              "detail": "For board, senior management, compliance staff, managers and front-line staff."
+            },
+            {
+              "label": "Compliance officer's role",
+              "detail": "Who chose, reviewed or delivered the content."
+            },
+            {
+              "label": "Sample the materials",
+              "detail": "Fair lending, new rules, new products and channels, marketing scripts."
+            },
+            {
+              "label": "Fixes from findings",
+              "detail": "Training built after audit, exam or complaint findings."
+            },
+            {
+              "label": "Sales practices content",
+              "detail": "Ethics, reporting concerns, describing terms, evidence of consent."
+            },
+            {
+              "label": "Late completers and plans",
+              "detail": "Follow-up on missed deadlines and the next 12 months' plan."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Match the CMS part to what it does",
+          "prompt": "Link each part of the compliance management system to its job.",
+          "pairs": [
+            {
+              "left": "Board oversight",
+              "right": "Approves compliance policy, provides resources and acts on compliance reports"
+            },
+            {
+              "left": "Policies and procedures",
+              "right": "Turns legal requirements into day-to-day steps for each product"
+            },
+            {
+              "left": "Training",
+              "right": "Makes sure each person knows the rules that apply to their own role"
+            },
+            {
+              "left": "Monitoring",
+              "right": "Frequent, less formal checks, often by the business, to catch problems early"
+            },
+            {
+              "left": "Audit",
+              "right": "Less frequent, formal and independent testing of the whole system"
+            },
+            {
+              "left": "Complaint response",
+              "right": "Resolves each complaint and spots patterns that signal harm"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The rewards account",
+          "setting": "Product team room, Kansas City. 2:15 pm.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "Here's the plan: a rewards checking account with a sign-up bonus. Branch staff get a small bonus for each one they open.",
+              "mood": "happy"
+            },
+            {
+              "who": "maya",
+              "text": "Incentives aren't banned. But examiners ask for compensation plans and look hard at sales goals.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "Training is set for launch week. A short video about the features.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Launch week is too late, and features aren't enough. The manual expects training before rollout and content on consent and describing terms accurately.",
+              "mood": "worried"
+            },
+            {
+              "who": "aisha",
+              "text": "And if customers start complaining about accounts they never asked for, I need to know how to escalate it.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Training for the rewards launch",
+          "situation": "Tom wants to launch the rewards checking account in six weeks. Branch staff will earn a per-account incentive. The current plan is a 10-minute product video in launch week. Maya asks you to recommend a training approach she can defend to CFPB examiners.",
+          "choices": [
+            {
+              "text": "Build role-based training before launch: product terms, how to describe conditions accurately, getting and recording customer consent, how to raise concerns, and track completion",
+              "outcome": "Best. This matches what the manual expects for new products and sales incentives: timely, role-specific training on accurate descriptions, consent evidence and reporting misconduct, with completion records examiners can review.",
+              "score": 2
+            },
+            {
+              "text": "Keep the launch-week video but add a slide reminding staff to be honest",
+              "outcome": "Partly right. A reminder is better than nothing, but it arrives late and does not teach consent, accurate terms or how to report problems, and it gives examiners little evidence.",
+              "score": 1
+            },
+            {
+              "text": "Skip extra training because staff already did annual compliance training",
+              "outcome": "Poor. Annual generic training does not cover a new product with sales incentives. Examiners expect training updated in advance of new or changed products.",
+              "score": 0
+            },
+            {
+              "text": "Delay training until complaints show whether there is a problem",
+              "outcome": "Poor. Waiting for harm is the opposite of what a CMS is for. Complaints should trigger more training, not replace it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Wells Fargo sales practices, 2016",
+          "body": "In September 2016 the CFPB fined **Wells Fargo Bank, N.A.** USD 100 million over the secret opening of deposit and credit card accounts that customers had not authorised.\n\nAccording to the CFPB, staff were pushed by **sales targets and incentive pay**. They opened accounts and moved customers' money into them without consent, which often caused fees. The bank's own analysis found more than **2 million** accounts that may not have been authorised.\n\nThe bank also paid USD 35 million to the OCC and USD 50 million to the City and County of Los Angeles, and had to refund victims.\n\n**Why it matters for training:** this case is why the CFPB manual now asks for training on sales practices, consent evidence, accurate descriptions of products and how staff report misconduct. Incentives that reward volume need controls and training that reward doing it right.\n\nSource: CFPB enforcement action page, docket 2016-CFPB-0015."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank of America card accounts, 2023",
+          "body": "In July 2023 the CFPB ordered **Bank of America, N.A.** to pay a USD 30 million civil money penalty and redress customers.\n\nThe CFPB found that in some cases the bank had **opened credit card accounts without customer consent**, pulling credit reports without a permissible purpose. It also found **deceptive** marketing: a sign-up bonus advertised online as if open to all, then refused to people who applied by phone or in a branch, and bonuses promised but not paid because of **employee error**.\n\nThe findings touched three laws at once: Truth in Lending (Regulation Z), the Fair Credit Reporting Act and the Consumer Financial Protection Act's UDAAP ban.\n\n**Lesson:** staff who sell a product need to know its real terms in every channel, and how to record consent. Training gaps show up as 'employee error' in an enforcement order.\n\nSource: CFPB enforcement action page, docket 2023-CFPB-0007."
+        },
+        {
+          "type": "flip",
+          "title": "CMS terms to know",
+          "cards": [
+            {
+              "front": "CMS",
+              "back": "Compliance management system: how a bank sets, communicates, builds in, checks and corrects its consumer compliance duties."
+            },
+            {
+              "front": "UDAAP",
+              "back": "Unfair, deceptive or abusive acts or practices, banned by the Dodd-Frank Act for providers of consumer financial products and their service providers."
+            },
+            {
+              "front": "Prudential regulator",
+              "back": "The OCC, Federal Reserve or FDIC: the agency that supervises a bank for safety and soundness, depending on its charter."
+            },
+            {
+              "front": "Service provider oversight",
+              "back": "The bank must make sure vendors who touch consumers follow the law and are trained. Responsibility stays with the bank."
+            },
+            {
+              "front": "Change management",
+              "back": "How the bank updates policies, systems and training before a new product or a new rule goes live."
+            },
+            {
+              "front": "Rating scale",
+              "back": "Examiners rate each CMS part from strong or satisfactory down to deficient, seriously deficient or critically deficient."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A new Regulation Z amendment takes effect in three months. When does the CFPB manual expect the bank's training to be updated?",
+          "options": [
+            "Within a year after the effective date",
+            "Only after examiners find a violation",
+            "In advance of the effective date",
+            "At the next annual training cycle"
+          ],
+          "answer": 2,
+          "explanation": "The manual expects the training programme to be updated proactively, before new or changed rules take effect and before new or changed products roll out, so staff know their duties on day one."
+        },
+        {
+          "type": "tip",
+          "title": "Make your training records exam-ready",
+          "body": "Examiners will ask for evidence, not intentions. Keep:\n\n- a **training schedule** by role (board, management, compliance, front line, vendors with consumer contact);\n- **completion records**, plus what happened to people who missed deadlines;\n- the **materials themselves**, including scripts used in marketing and sales;\n- a log linking training changes to **new rules, new products, audit findings and complaint trends**;\n- next year's **training plan** and how this year compared with last year's plan."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage one take-aways",
+          "items": [
+            "The CFPB supervises banks above USD 10 billion in assets for federal consumer financial law; the OCC, Fed or FDIC covers the rest.",
+            "A CMS has board and management oversight plus a compliance programme: policies, training, monitoring and audit, and complaint response.",
+            "Training must be role-specific, consistent with policy and updated before new products and rule changes.",
+            "A bank can outsource tasks but never responsibility; vendors with consumer contact must be trained and overseen.",
+            "Sales incentives need training on accurate descriptions, consent and reporting misconduct, as the Wells Fargo case shows."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about the last product or rule change in your area. When did you receive training about it: before, on, or after the day it went live? What would you change?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-cc-s1-q1",
+          "question": "Which agency supervises a US bank with USD 25 billion in assets for compliance with federal consumer financial law?",
+          "options": [
+            "FinCEN",
+            "The CFPB",
+            "The FFIEC",
+            "OFAC"
+          ],
+          "answer": 1,
+          "explanation": "Banks with more than USD 10 billion in assets are supervised by the CFPB for federal consumer financial law. FinCEN covers the Bank Secrecy Act, OFAC sanctions, and the FFIEC is an interagency council.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s1-q2",
+          "question": "In the CFPB's model of a compliance management system, which two components work together?",
+          "options": [
+            "Internal audit, and external review by the bank's examiners",
+            "Product design approval, and marketing sign-off by the legal team",
+            "Risk appetite setting, and capital and liquidity planning",
+            "Board and management oversight, and the compliance programme"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB manual describes two interdependent components: board and management oversight, and a compliance programme made up of policies and procedures, training, monitoring and/or audit, and complaint response.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s1-q3",
+          "question": "Which of these is NOT one of the four parts of the compliance programme in the CFPB manual?",
+          "options": [
+            "Capital adequacy planning",
+            "Training",
+            "Consumer complaint response",
+            "Monitoring and/or audit"
+          ],
+          "answer": 0,
+          "explanation": "The four parts are policies and procedures, training, monitoring and/or audit, and consumer complaint response. Capital planning is a prudential topic, not part of the consumer CMS programme.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s1-q4",
+          "question": "A bank plans to launch a new overdraft feature next month. Branch staff will get training two weeks after launch. What is the main weakness an examiner would note?",
+          "options": [
+            "Branch staff should never be trained on overdraft",
+            "Training is only required for the compliance team",
+            "Training should be updated before the product rolls out",
+            "New products need no training if the disclosures are correct"
+          ],
+          "answer": 2,
+          "explanation": "The manual expects training to be updated in advance of new or changed products. Correct disclosures do not replace staff knowing how to describe and sell the product.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s1-q5",
+          "question": "The CFPB manual says fair lending and UDAAP requirements should be part of training for relevant staff. Which group does it expressly include that banks often forget?",
+          "options": [
+            "Only senior executives",
+            "Only external lawyers",
+            "Audit personnel",
+            "Only call centre agents"
+          ],
+          "answer": 2,
+          "explanation": "The manual says these requirements should be built into training for all relevant officers and employees, including audit personnel, so that auditors can recognise problems.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s1-q6",
+          "question": "A card servicing vendor handles customer calls for your bank. What should the bank be able to show examiners about the vendor's staff?",
+          "options": [
+            "That they are appropriately trained for their consumer contact",
+            "That each agent holds an individual licence issued by the CFPB",
+            "That the vendor has agreed to accept all legal liability instead",
+            "That the vendor's staff never discuss fees or terms with customers"
+          ],
+          "answer": 0,
+          "explanation": "Examiners request documents showing that service providers with consumer contact or compliance duties are appropriately trained. The bank keeps legal responsibility.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s1-q7",
+          "question": "Which item would a CFPB examiner most likely request when reviewing training related to sales practices?",
+          "options": [
+            "The bank's dividend policy and capital distribution plans",
+            "Branch opening hours and staffing rotas for the quarter",
+            "Records of staff holidays and leave approvals for each business unit",
+            "Content on getting and keeping evidence of customer consent"
+          ],
+          "answer": 3,
+          "explanation": "The manual asks examiners to check training on sales practices, including standards of ethical behaviour, reporting concerns, describing terms accurately and evidence of consumer consent for product openings and upselling.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s1-q8",
+          "question": "According to the CFPB, what did Wells Fargo employees do in the 2016 sales practices case?",
+          "options": [
+            "Refused to open accounts for applicants from minority areas",
+            "Opened accounts without customers' knowledge or consent",
+            "Failed to file currency transaction reports for cash deposits",
+            "Charged card interest above state usury caps for years"
+          ],
+          "answer": 1,
+          "explanation": "The CFPB found that employees, spurred by sales targets and incentives, secretly opened deposit and credit card accounts and moved money into them without consent.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s1-q9",
+          "question": "Monitoring and audit both test compliance. Which statement matches the CFPB manual?",
+          "options": [
+            "Monitoring is more frequent and informal; audit is formal and independent",
+            "Monitoring must be carried out by external firms, never the business",
+            "Audit happens daily, while monitoring takes place every three years",
+            "They are the same activity, so examiners do not need to distinguish between them"
+          ],
+          "answer": 0,
+          "explanation": "The manual says monitoring is generally more frequent and less formal and may be done by the business unit, while audit is less frequent, more formal and requires independence.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s1-q10",
+          "question": "Units at your bank keep missing training deadlines. What will a CFPB examiner look for?",
+          "options": [
+            "Proof that the training deadlines were removed or relaxed",
+            "A waiver signed by each employee who missed the deadline",
+            "Records of follow-up, escalation and enforcement for those units",
+            "Evidence that the training was made optional for the busiest units"
+          ],
+          "answer": 2,
+          "explanation": "The manual directs examiners to review records of follow-up, escalation and enforcement for units whose completion rates miss the bank's standards or deadlines.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "UDAAP: Unfair, Deceptive and Abusive Acts or Practices",
+      "stage": "The Truth Table",
+      "summary": "Learn the three UDAAP tests from the CFPB examination procedures, how examiners judge ads and scripts, and what real enforcement cases teach front-line and product staff.",
+      "minutes": 45,
+      "objectives": [
+        "Apply the three-part tests for unfair and deceptive practices and the two-limb abusive standard",
+        "Judge marketing by net impression, target audience and the four Ps",
+        "Explain why technical compliance with a specific rule does not prevent a UDAAP finding",
+        "Use complaints, refunds and chargebacks as early warning signals"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The billboard draft",
+          "setting": "Marketing studio, Kansas City. 10:00 am.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "Look at this billboard: 'Free checking. Earn USD 300.' Clean, bold, done.",
+              "mood": "proud"
+            },
+            {
+              "who": "maya",
+              "text": "Free if what? And USD 300 if what?",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "The conditions are on the website. Direct deposit, minimum balance, 90 days. Standard stuff.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aisha",
+              "text": "My team already gets calls from people who thought 'free' meant no monthly fee at all. They're upset when it appears.",
+              "mood": "worried"
+            },
+            {
+              "who": "maya",
+              "text": "A rule-compliant ad can still be deceptive. Today you learn the three UDAAP tests examiners use.",
+              "mood": "neutral"
+            },
+            {
+              "who": "tom",
+              "text": "Three tests? I thought deceptive was just lying.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Unfair, deceptive, abusive: three separate tests",
+          "scenes": [
+            {
+              "icon": "⚖️",
+              "heading": "One ban, three standards",
+              "narration": "The Dodd-Frank Act makes it unlawful for any provider of consumer financial products, or its service provider, to engage in unfair, deceptive or abusive acts or practices. Each word has its own legal test."
+            },
+            {
+              "icon": "🩹",
+              "heading": "Unfair",
+              "narration": "A practice is unfair when it causes or is likely to cause substantial injury, consumers cannot reasonably avoid that injury, and the injury is not outweighed by benefits to consumers or competition."
+            },
+            {
+              "icon": "🎭",
+              "heading": "Deceptive",
+              "narration": "A practice is deceptive when it misleads or is likely to mislead, the consumer's reading is reasonable, and the point is material, meaning it would affect their choice or conduct."
+            },
+            {
+              "icon": "🪤",
+              "heading": "Abusive",
+              "narration": "A practice is abusive when it materially interferes with a consumer's ability to understand a term, or takes unreasonable advantage of their lack of understanding, inability to protect themselves, or reasonable reliance on the provider."
+            },
+            {
+              "icon": "📣",
+              "heading": "Complaints are clues",
+              "narration": "Examiners read complaints closely. Many similar complaints about the same product are a red flag, and even one serious complaint can trigger a review."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Unfair vs deceptive at a glance",
+          "headers": [
+            "Unfair",
+            "Deceptive"
+          ],
+          "items": [
+            {
+              "label": "Core question",
+              "left": "Does it cause harm consumers can't avoid?",
+              "right": "Does it mislead a reasonable consumer?"
+            },
+            {
+              "label": "Element one",
+              "left": "Substantial injury, actual or likely",
+              "right": "A representation, omission or practice likely to mislead"
+            },
+            {
+              "label": "Element two",
+              "left": "Not reasonably avoidable",
+              "right": "Reasonable interpretation by the target audience"
+            },
+            {
+              "label": "Element three",
+              "left": "Not outweighed by benefits",
+              "right": "Material to the consumer's decision"
+            },
+            {
+              "label": "Typical example",
+              "left": "Repeat fees on the same returned item",
+              "right": "Headline claim contradicted by hidden conditions"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the unfairness test, which of these is usually enough to count as substantial injury?",
+          "options": [
+            "A small fee charged to a very large number of people",
+            "A customer's mild annoyance at a long queue",
+            "A purely speculative risk with no evidence",
+            "A consumer choosing a product they later regret"
+          ],
+          "answer": 0,
+          "explanation": "The CFPB's UDAAP procedures note that a small harm to many people can be substantial injury, and that monetary harm such as fees is typical. Trivial or speculative harms usually are not enough."
+        },
+        {
+          "type": "concept",
+          "title": "How examiners judge 'deceptive'",
+          "body": "The CFPB procedures give practical tests for deception:\n\n- **Net impression.** A statement is judged in the context of the whole ad or conversation, not word by word.\n- **Fine print does not always cure.** A small-print or later disclosure may not fix a misleading headline or a prominent claim.\n- **Target audience.** If you market to older customers, students or people in financial distress, ask how a reasonable member of *that group* would understand it.\n- **A significant minority is enough.** If a meaningful share of the audience is misled, the claim can be deceptive even if most people understand it.\n- **Materiality.** Information about cost, benefits and restrictions is presumed material.\n\nThe FTC's **four Ps** help: is the disclosure **prominent**, is it **presented** clearly, is it **placed** where people look, and is it in **proximity** to the claim it qualifies?\n\nPuffery, obvious exaggeration nobody takes literally, is not deceptive."
+        },
+        {
+          "type": "sort",
+          "title": "Unfair, deceptive or abusive?",
+          "prompt": "Put each practice in the UDAAP category it most clearly fits.",
+          "buckets": [
+            "Unfair",
+            "Deceptive",
+            "Abusive"
+          ],
+          "items": [
+            {
+              "text": "Charging a second NSF fee each time a merchant re-presents the same returned item",
+              "bucket": 0
+            },
+            {
+              "text": "Advertising 'no fees' when a monthly fee applies below a balance most customers hold",
+              "bucket": 1
+            },
+            {
+              "text": "Freezing accounts on a fraud flag without review when lesser steps were available",
+              "bucket": 0
+            },
+            {
+              "text": "Burying a key condition so consumers cannot understand how the product works",
+              "bucket": 2
+            },
+            {
+              "text": "Promising a bonus to all applicants and refusing it to those who apply in branch",
+              "bucket": 1
+            },
+            {
+              "text": "Steering a confused older customer into a costly add-on they clearly don't grasp",
+              "bucket": 2
+            },
+            {
+              "text": "Showing a low monthly payment while hiding a large balloon payment",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Technically compliant",
+          "setting": "Marketing studio, later that day.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "Legal says the billboard ad meets the Truth in Lending advertising rules. So we're fine, right?",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Technical compliance with TILA doesn't insulate the rest of the ad. The CFPB procedures say that directly.",
+              "mood": "thinking"
+            },
+            {
+              "who": "aisha",
+              "text": "And our complaints log has 40 calls this quarter about 'free' checking that wasn't free.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "That's a reasonable-consumer signal. Examiners would read those complaints before they read our ad.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The 'free checking' billboard",
+          "situation": "Tom's billboard says 'Free checking. Earn USD 300.' The account is free only with a monthly direct deposit or a minimum balance; the bonus needs 90 days and a set amount of deposits. Conditions are on the website only. Complaints about surprise monthly fees are rising. What do you recommend?",
+          "choices": [
+            {
+              "text": "Revise the ad so the key conditions sit next to the headline, review the complaint pattern, and brief branch and call staff on the exact conditions",
+              "outcome": "Best. It fixes the net impression, uses proximity and prominence, treats complaints as a signal, and makes sure staff describe the product accurately.",
+              "score": 2
+            },
+            {
+              "text": "Keep the ad because the conditions are on the website and TILA advertising rules are met",
+              "outcome": "Poor. Technical compliance with TILA does not protect an ad whose overall impression misleads. Website-only conditions are not near the claim.",
+              "score": 0
+            },
+            {
+              "text": "Add a tiny asterisk and 'conditions apply' in small print at the bottom",
+              "outcome": "Partly right. It acknowledges conditions, but small print may not cure a misleading headline, and the key conditions are still hidden.",
+              "score": 1
+            },
+            {
+              "text": "Tell the complaints team to explain the conditions to callers one by one",
+              "outcome": "Poor. It treats the symptom, not the cause, and leaves a likely deceptive ad running.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "UDAAP enforcement in numbers (CFPB)",
+          "caption": "Figures from the CFPB's own enforcement action pages.",
+          "items": [
+            {
+              "label": "Wells Fargo, 2022",
+              "value": "USD 3.7bn",
+              "detail": "Over USD 2bn redress and a USD 1.7bn penalty for auto, mortgage and deposit practices."
+            },
+            {
+              "label": "Bank of America, 2023",
+              "value": "USD 80.4m",
+              "detail": "Approximate redress for repeat NSF fees, plus a USD 60m CFPB penalty."
+            },
+            {
+              "label": "TD Bank, 2020",
+              "value": "USD 97m",
+              "detail": "Estimated restitution over overdraft enrolment practices, plus a USD 25m penalty."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: repeat NSF fees at Bank of America, 2023",
+          "body": "When a customer's check or ACH debit bounced, Bank of America charged a USD 35 non-sufficient funds (NSF) fee. Merchants often **re-present** the same item, sometimes the very next day. Until February 2022 the bank charged **another** NSF fee each time the same item was returned again.\n\nThe CFPB found this **unfair** under the Consumer Financial Protection Act. The order in July 2023 required the bank to refund about **USD 80.4 million** in repeat fees and pay a **USD 60 million** civil penalty. The OCC separately fined the bank USD 60 million.\n\n**Lesson:** a fee can be disclosed and still be unfair. The harm was substantial in total, customers could not control when a merchant re-presented an item, and repeat fees for the same item offered no real benefit.\n\nSource: CFPB enforcement action page, docket 2023-CFPB-0006."
+        },
+        {
+          "type": "example",
+          "title": "Real case: TD Bank overdraft enrolment, 2020",
+          "body": "In August 2020 the CFPB issued a consent order against **TD Bank, N.A.** over its optional overdraft service for ATM and one-time debit card transactions.\n\nThe CFPB found that TD Bank:\n\n- charged overdraft fees **without the customer's affirmative consent**, breaching the Electronic Fund Transfer Act and Regulation E;\n- made **misleading statements** about the service in branches, by phone and in mailings, which was **deceptive**;\n- **materially interfered** with customers' ability to understand its terms, which was **abusive**.\n\nThe order required an estimated **USD 97 million** in restitution and a **USD 25 million** penalty.\n\n**Lesson:** one sales script can breach a specific rule and all three UDAAP standards. Front-line training on exactly what to say, and what not to say, is a control.\n\nSource: CFPB enforcement action page, docket 2020-BCFP-0007."
+        },
+        {
+          "type": "flip",
+          "title": "UDAAP myths and facts",
+          "cards": [
+            {
+              "front": "Myth: if it's in the terms and conditions, it can't be deceptive.",
+              "back": "Fact: fine print or later disclosures may not cure a misleading headline or a prominent claim."
+            },
+            {
+              "front": "Myth: deception requires intent.",
+              "back": "Fact: intent is not needed. A claim can be deceptive if it is likely to mislead a reasonable consumer."
+            },
+            {
+              "front": "Myth: if most customers understand, it's fine.",
+              "back": "Fact: misleading a significant minority of the target audience can be enough."
+            },
+            {
+              "front": "Myth: following TILA's ad rules makes an ad safe.",
+              "back": "Fact: an ad can meet TILA and still contain other statements that are deceptive."
+            },
+            {
+              "front": "Myth: no complaints means no UDAAP problem.",
+              "back": "Fact: an absence of complaints does not prove compliance, but patterns of complaints are a strong warning."
+            },
+            {
+              "front": "Myth: abusive is just another word for unfair.",
+              "back": "Fact: unfair, deceptive and abusive each have their own legal standard."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A bank markets a high-cost credit product to recent immigrants. How should its compliance team judge whether the marketing is deceptive?",
+          "options": [
+            "By how a reasonable member of that target group would understand it",
+            "By how a financial expert would read the full contract",
+            "By whether the product is profitable for the bank",
+            "By whether a competitor uses similar wording"
+          ],
+          "answer": 0,
+          "explanation": "The CFPB procedures say that when marketing targets a specific audience, it must be judged from the view of a reasonable member of that group."
+        },
+        {
+          "type": "tip",
+          "title": "UDAAP review in your daily work",
+          "body": "Before something reaches customers, ask:\n\n- **What will people believe** after a quick look? Is that true?\n- **Is the key condition next to the claim**, as prominent as the headline?\n- **Who is the audience**, and would a reasonable member of it understand?\n- **Can customers avoid the fee or harm**, or is it out of their control?\n- **What do complaints, refunds and chargebacks say?** High volumes are a signal examiners also use."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage two take-aways",
+          "items": [
+            "UDAAP is banned by the Dodd-Frank Act; unfair, deceptive and abusive each have separate tests.",
+            "Unfair: substantial injury, not reasonably avoidable, not outweighed by benefits.",
+            "Deceptive: likely to mislead, reasonable interpretation by the target audience, material.",
+            "Abusive: interfering with understanding or taking unreasonable advantage of a consumer.",
+            "Meeting a specific rule such as TILA does not make a misleading message safe.",
+            "Complaints, refunds and chargebacks are signals both you and examiners should read."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one product message you use with customers. Would a reasonable member of your least experienced customer group understand its key cost and conditions? What would you change?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-cc-s2-q1",
+          "question": "Which law makes unfair, deceptive or abusive acts or practices unlawful for providers of consumer financial products?",
+          "options": [
+            "The Bank Secrecy Act, as amended by the USA PATRIOT Act",
+            "The Gramm-Leach-Bliley Act, through its financial privacy subtitle",
+            "The Dodd-Frank Act (Consumer Financial Protection Act of 2010)",
+            "The Truth in Savings Act, through its advertising rules"
+          ],
+          "answer": 2,
+          "explanation": "Title X of the Dodd-Frank Act, the Consumer Financial Protection Act of 2010, contains the UDAAP prohibition for covered persons and service providers.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s2-q2",
+          "question": "Which is NOT one of the three elements of unfairness?",
+          "options": [
+            "The injury is substantial",
+            "The injury is not reasonably avoidable",
+            "The bank intended to harm the consumer",
+            "The injury is not outweighed by benefits"
+          ],
+          "answer": 2,
+          "explanation": "Unfairness requires substantial injury, not reasonably avoidable, and not outweighed by benefits to consumers or competition. Intent is not an element.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s2-q3",
+          "question": "A bank charges a fee each time a merchant re-presents the same returned ACH item. Which UDAAP standard did the CFPB apply to this practice at Bank of America in 2023?",
+          "options": [
+            "Unfair",
+            "Abusive only",
+            "Deceptive only",
+            "None; it was found lawful"
+          ],
+          "answer": 0,
+          "explanation": "The CFPB found Bank of America's repeat NSF fees unfair under the Consumer Financial Protection Act and ordered refunds and a penalty.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s2-q4",
+          "question": "Information about which of these is generally presumed material under the deception test?",
+          "options": [
+            "The colour scheme of the bank's logo",
+            "The name of the branch manager",
+            "The font size used in a printed product brochure",
+            "A product's cost, benefits or restrictions"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB procedures say information about the central features of a product, such as cost, benefits or restrictions, is presumed material.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s2-q5",
+          "question": "An ad meets every Regulation Z advertising rule but also claims the loan has 'no hidden costs' when it does. What is the risk?",
+          "options": [
+            "None, because Regulation Z compliance is a safe harbour",
+            "The extra claim can still be deceptive",
+            "Only a state law issue, not federal",
+            "Only a problem if a court has ruled on it"
+          ],
+          "answer": 1,
+          "explanation": "The CFPB procedures note that technical compliance with TILA does not insulate the rest of an ad from being deceptive.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s2-q6",
+          "question": "Which description matches the abusive standard?",
+          "options": [
+            "Taking unreasonable advantage of a consumer's lack of understanding",
+            "Any fee that is above the average for the local market",
+            "Any practice that at least one customer has complained about in writing",
+            "Any credit product that carries a variable interest rate"
+          ],
+          "answer": 0,
+          "explanation": "An abusive practice materially interferes with understanding of a term or takes unreasonable advantage of lack of understanding, inability to protect interests, or reasonable reliance.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s2-q7",
+          "question": "Most customers understand a bonus offer, but a significant minority of the target audience is misled. What follows under the deception standard?",
+          "options": [
+            "It is lawful because most understood",
+            "It is lawful if the bank meant well",
+            "The offer can still be deceptive",
+            "It is only deceptive if all are misled"
+          ],
+          "answer": 2,
+          "explanation": "The CFPB procedures say a representation may be deceptive if a significant minority of the target audience is misled, even if most consumers are not.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s2-q8",
+          "question": "Which of the FTC's 'four Ps' asks whether a disclosure sits close to the claim it qualifies?",
+          "options": [
+            "Prominence",
+            "Proximity",
+            "Placement",
+            "Presentation"
+          ],
+          "answer": 1,
+          "explanation": "Proximity asks whether the disclosure is near the claim it qualifies. Prominence is about noticeability, placement about where people look, presentation about clarity.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s2-q9",
+          "question": "In the 2020 TD Bank case, which finding was based on Regulation E rather than UDAAP?",
+          "options": [
+            "Making misleading statements about the service by phone",
+            "Interfering with customers' understanding of the terms",
+            "Sending misleading mailed solicitations to customers",
+            "Charging overdraft fees without affirmative consent"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB found TD Bank charged overdraft fees on ATM and one-time debit card transactions without affirmative consent, violating EFTA and Regulation E. The misleading statements were deceptive and the interference was abusive.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-cc-s2-q10",
+          "question": "Your team sees a sharp rise in refunds and chargebacks on a new add-on product, but few formal complaints. What is the best reading?",
+          "options": [
+            "It proves the product is compliant and well liked",
+            "It only matters for the finance team's budgeting",
+            "It can be ignored until written complaints appear",
+            "It may signal a UDAAP problem worth reviewing"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB procedures note that high volumes of refunds or chargebacks can indicate potential UDAAP issues, even if they do not appear in complaint records.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Regulation E: Electronic Fund Transfers and Error Resolution",
+      "stage": "The Disputes Desk",
+      "summary": "Handle electronic fund transfer disputes the way Regulation E requires: what counts as an error, oral notices, the 10-business-day clock, provisional credit, extended periods, results and liability limits.",
+      "minutes": 50,
+      "objectives": [
+        "Identify what is and is not an error under Regulation E",
+        "Apply the investigation timelines, including provisional credit and extended periods",
+        "Explain what the bank must tell the customer when it finds an error or no error",
+        "Describe consumer liability limits for unauthorised transfers and why automated tools cannot replace investigation"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The disputes queue",
+          "setting": "Card disputes centre, Denver, Colorado. 9:10 am.",
+          "lines": [
+            {
+              "who": "luis",
+              "text": "Morning. We have 340 open card disputes. Last week the fraud system flagged half of them as 'customer probably did it'.",
+              "mood": "worried"
+            },
+            {
+              "who": "luis",
+              "text": "Some of my team want to close those automatically. Faster queue, happier managers.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Regulation E doesn't let a fraud score replace an investigation. And the clock started the day each customer called.",
+              "mood": "thinking"
+            },
+            {
+              "who": "aisha",
+              "text": "Three of those callers have already complained to the CFPB. They say we told them to put it in writing first.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Then we may have a timing problem as well. Stage three: error resolution, step by step.",
+              "mood": "worried"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Regulation E error resolution in five scenes",
+          "scenes": [
+            {
+              "icon": "💳",
+              "heading": "What it covers",
+              "narration": "Regulation E, issued by the CFPB under the Electronic Fund Transfer Act, protects consumers who use debit cards, ATMs, online transfers and other electronic fund transfers from their accounts."
+            },
+            {
+              "icon": "❗",
+              "heading": "What counts as an error",
+              "narration": "Errors include unauthorised transfers, wrong amounts, transfers missing from a statement, bank bookkeeping mistakes, wrong cash from an ATM, and a request for documentation or clarification about a transfer."
+            },
+            {
+              "icon": "📞",
+              "heading": "Oral notice counts",
+              "narration": "A customer can give notice by phone. The bank may ask for written confirmation, but must start investigating right away and cannot wait for the letter."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "The clock",
+              "narration": "The bank generally has 10 business days to decide. If it needs longer, it can take up to 45 days, but only if it provisionally credits the customer within those 10 business days."
+            },
+            {
+              "icon": "📝",
+              "heading": "Closing the loop",
+              "narration": "The bank reports results, explains in writing if it finds no error, offers the documents it relied on, and corrects real errors quickly."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Regulation E: the key clocks",
+          "caption": "Periods from 12 CFR 1005.11 as published on consumerfinance.gov. New accounts have longer periods.",
+          "items": [
+            {
+              "label": "Customer's notice window",
+              "value": "60 days",
+              "detail": "From when the statement first showing the error is sent."
+            },
+            {
+              "label": "Investigate or provisionally credit",
+              "value": "10 bus. days",
+              "detail": "Also the window for any written confirmation the bank asks for."
+            },
+            {
+              "label": "Tell the customer about the credit",
+              "value": "2 bus. days",
+              "detail": "Amount and date; full use of the funds during the investigation."
+            },
+            {
+              "label": "Longest standard investigation",
+              "value": "45 days",
+              "detail": "Extended to 90 days for some transfers, such as point-of-sale debit card ones."
+            },
+            {
+              "label": "Report the results",
+              "value": "3 bus. days",
+              "detail": "After the investigation ends; correct a real error within one business day."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer calls on day one to dispute a debit card charge. The bank asks for written confirmation. When must the investigation start?",
+          "options": [
+            "When the written confirmation arrives",
+            "Promptly, on receiving the oral notice",
+            "After 10 business days",
+            "Only once the merchant replies"
+          ],
+          "answer": 1,
+          "explanation": "The official interpretation says the bank must begin investigating promptly on an oral notice and may not delay until written confirmation arrives. It may skip provisional credit only if it required written confirmation and did not get it within 10 business days."
+        },
+        {
+          "type": "concept",
+          "title": "Provisional credit and the extended timelines",
+          "body": "If the bank cannot finish within **10 business days**, it may take up to **45 days**, but only if it:\n\n- **provisionally credits** the alleged error amount (with interest where applicable) within 10 business days;\n- tells the customer the amount and date within **two business days** of crediting, and gives **full use** of the funds;\n- corrects any error within **one business day** of deciding;\n- reports results within **three business days** of finishing.\n\nWhen it reasonably believes an unauthorised transfer occurred and the liability rules are met, the bank may hold back up to **USD 50** of the provisional credit.\n\n**Longer periods** apply in some cases: 20 business days instead of 10 when the transfer happened within 30 days of the account's first deposit, and 90 days instead of 45 for transfers not initiated in a state, point-of-sale debit card transactions, or new-account transfers."
+        },
+        {
+          "type": "order",
+          "title": "Work a Regulation E dispute in order",
+          "prompt": "Put the steps of a dispute that needs more than 10 business days in order.",
+          "steps": [
+            "Receive the customer's notice of error, by phone or in writing",
+            "Start investigating straight away, without waiting for written confirmation",
+            "Provisionally credit the account within 10 business days",
+            "Tell the customer the amount and date of the credit within two business days",
+            "Finish the investigation within the allowed period",
+            "Report the results within three business days, with a written explanation if no error is found"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The fraud filter",
+          "setting": "Denver, the disputes team huddle. 11:30 am.",
+          "lines": [
+            {
+              "who": "luis",
+              "text": "Here's the proposal: if the fraud model scores a claim as 'likely first-party', we deny it and close the case.",
+              "mood": "thinking"
+            },
+            {
+              "who": "maya",
+              "text": "That's very close to a real enforcement case. The CFPB found a bank relied solely on an automated filter and denied claims without reasonable investigation.",
+              "mood": "worried"
+            },
+            {
+              "who": "luis",
+              "text": "So the model is useless?",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "No. Use it to prioritise and guide. But a real investigation must look at the facts, and the customer must get the timelines and explanations Regulation E requires.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Closing disputes on a fraud score",
+          "situation": "A customer reports three debit card transactions she says she did not make. The fraud model scores the claim 'likely customer-initiated'. It is day 8 after her phone call and the team has not looked at the transactions. A supervisor suggests denying the claim today to keep the queue down. What do you do?",
+          "choices": [
+            {
+              "text": "Investigate the facts now, and if you can't finish by day 10, provisionally credit her and tell her within two business days",
+              "outcome": "Best. A score can guide an investigation but not replace it. The 10-business-day clock is running, and provisional credit keeps the 45- or 90-day option open.",
+              "score": 2
+            },
+            {
+              "text": "Deny the claim today based on the score and send a standard letter",
+              "outcome": "Poor. Relying solely on a filter without a reasonable investigation is what the CFPB found unfair and in breach of Regulation E in the Bank of America case.",
+              "score": 0
+            },
+            {
+              "text": "Wait for her written statement before doing anything",
+              "outcome": "Poor. The bank may ask for written confirmation, but it cannot delay starting or completing the investigation while waiting.",
+              "score": 0
+            },
+            {
+              "text": "Credit her permanently without investigating to save time",
+              "outcome": "Partly right. A bank may correct without investigation in the amount alleged, and must still meet the other rules, but doing this routinely ignores fraud risk.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank of America unemployment benefit cards, 2022",
+          "body": "From 2020, Bank of America delivered unemployment and other benefits for 12 states on prepaid debit cards. As pandemic claims surged, the bank changed how it investigated cardholders' notices of error, relying **solely on an automated fraud filter** that it knew or should have known would wrongly find no error. It froze or blocked accounts on that basis.\n\nIn July 2022 the CFPB found:\n\n- **unfair** practices in denying notices of error and freezing accounts on the flawed filter alone;\n- **abusive** practices in reapplying the filter to deny claims already investigated and paid;\n- **unfair** practices in making it hard for cardholders to file notices of error;\n- breaches of **EFTA and Regulation E** for failing to investigate reasonably and on time.\n\nThe CFPB imposed a **USD 100 million** penalty and required redress; the OCC fined the bank **USD 125 million**.\n\nSource: CFPB enforcement action page, docket 2022-CFPB-0004."
+        },
+        {
+          "type": "match",
+          "title": "Error or not an error?",
+          "prompt": "Match each customer request to how Regulation E treats it.",
+          "pairs": [
+            {
+              "left": "'I didn't make this ATM withdrawal'",
+              "right": "An error: an unauthorised electronic fund transfer"
+            },
+            {
+              "left": "'The ATM gave me USD 60, not USD 100'",
+              "right": "An error: receiving the wrong amount from an electronic terminal"
+            },
+            {
+              "left": "'What's my balance?'",
+              "right": "Not an error: a routine balance inquiry"
+            },
+            {
+              "left": "'Can you send me a copy for my taxes?'",
+              "right": "Not an error: a request for tax or record-keeping information"
+            },
+            {
+              "left": "'Please explain this transfer on my statement'",
+              "right": "An error notice: a request for clarification about a transfer"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Consumer liability for unauthorised transfers",
+          "caption": "Summary of 12 CFR 1005.6(b) in our own words. The bank applies the detailed rule.",
+          "headers": [
+            "Liability limit",
+            "What staff should know"
+          ],
+          "items": [
+            {
+              "label": "Lost or stolen card, reported within two business days",
+              "left": "Lesser of USD 50 or the transfers before notice",
+              "right": "Report fast to keep liability lowest"
+            },
+            {
+              "label": "Reported later than two business days",
+              "left": "Up to USD 500, subject to the rule's conditions",
+              "right": "Bank must show later losses were avoidable"
+            },
+            {
+              "label": "Unauthorised transfer on a statement, not reported within 60 days",
+              "left": "May be liable for later transfers the bank shows were avoidable",
+              "right": "Staff should urge customers to check statements"
+            },
+            {
+              "label": "Extenuating circumstances, such as hospital stay",
+              "left": "Time limits extended to a reasonable period",
+              "right": "Listen for reasons for delay"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Regulation E quick facts",
+          "cards": [
+            {
+              "front": "Can the customer's notice be oral?",
+              "back": "Yes. A phone call is a valid notice of error. The bank can ask for written confirmation within 10 business days."
+            },
+            {
+              "front": "Must the notice include the account number?",
+              "back": "No, if the bank can identify the account another way, the notice is still effective."
+            },
+            {
+              "front": "Can the bank charge for investigating?",
+              "back": "No charge if an error occurred. The commentary warns against charges that would chill good-faith claims."
+            },
+            {
+              "front": "What if the bank finds no error?",
+              "back": "It explains its findings in writing and tells the customer they can ask for the documents it relied on."
+            },
+            {
+              "front": "What if it reverses a provisional credit?",
+              "back": "It notifies the customer and honours cheques and preauthorised transfers for five business days without overdraft charges, as the rule sets out."
+            },
+            {
+              "front": "Does closing the account end the right?",
+              "back": "No. A properly asserted error must be handled even if the account is closed."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A bank investigated a dispute, found no error and reversed the provisional credit. Which step does Regulation E require?",
+          "options": [
+            "Close the account to prevent repeat claims",
+            "Charge a research fee for the investigation",
+            "Explain the finding in writing and offer the documents relied on",
+            "Report the customer to a consumer reporting agency"
+          ],
+          "answer": 2,
+          "explanation": "When the bank finds no error, its report must include a written explanation and note the customer's right to request the documents it relied on. It must also give notice of the debit and honour items for five business days."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Wells Fargo account freezes, 2022",
+          "body": "The CFPB's December 2022 order against **Wells Fargo Bank, N.A.** covered auto loans, mortgages and deposit accounts. On deposits, the CFPB found the bank **unfairly froze consumer accounts when fraud was suspected** even though lesser restraints were available. It also found deceptive claims about monthly fee waivers and unfair overdraft fees charged when customers had enough available funds at the time of the transaction.\n\nThe order required more than **USD 2 billion** in redress and a **USD 1.7 billion** penalty.\n\n**Lesson for disputes and fraud teams:** fraud controls protect the bank and its customers, but blunt tools such as freezing a whole account can themselves harm consumers. Choose the least harmful control that does the job, document why, and keep error resolution moving.\n\nSource: CFPB enforcement action page, docket 2022-CFPB-0011."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage three take-aways",
+          "items": [
+            "Regulation E errors include unauthorised transfers, wrong amounts, omissions, bank mistakes and requests for clarification.",
+            "Oral notice counts; investigation starts at once and cannot wait for written confirmation.",
+            "Decide within 10 business days, or provisionally credit and take up to 45 days (90 in set cases).",
+            "Report results within three business days; if no error, explain in writing and offer the documents.",
+            "Automated fraud tools can guide but cannot replace a reasonable investigation."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you handle or route customer disputes, where could a Regulation E clock be lost today: at the first call, in a handoff, or waiting for paperwork? Who would you tell?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-cc-s3-q1",
+          "question": "Within how many business days must a bank generally determine whether an error occurred under Regulation E, unless it provisionally credits the account?",
+          "options": [
+            "5 business days",
+            "30 business days",
+            "60 business days",
+            "10 business days"
+          ],
+          "answer": 3,
+          "explanation": "12 CFR 1005.11(c)(1) gives 10 business days to determine whether an error occurred. With provisional credit, the bank may take up to 45 days.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s3-q2",
+          "question": "Which of these is an 'error' under Regulation E?",
+          "options": [
+            "A routine question about the current account balance",
+            "An ATM dispensing less cash than the customer requested",
+            "A request for a duplicate statement for tax purposes",
+            "A question about the local branch's weekend opening hours"
+          ],
+          "answer": 1,
+          "explanation": "Receiving an incorrect amount of money from an electronic terminal is listed as an error. Balance inquiries and duplicate copies for tax purposes are excluded.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s3-q3",
+          "question": "A customer gives oral notice of an error. The bank requires written confirmation and tells the customer where to send it. The letter never arrives. What does the bank NOT have to do?",
+          "options": [
+            "Provisionally credit the account",
+            "Investigate the alleged error",
+            "Report the result to the customer",
+            "Correct any error it does find"
+          ],
+          "answer": 0,
+          "explanation": "If the bank requires written confirmation and does not receive it within 10 business days, it need not provisionally credit. It must still investigate and resolve the notice.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s3-q4",
+          "question": "After provisionally crediting an account, how soon must the bank tell the customer the amount and date of the credit?",
+          "options": [
+            "Within 10 business days",
+            "Within 30 days",
+            "Within two business days",
+            "At the next periodic statement"
+          ],
+          "answer": 2,
+          "explanation": "1005.11(c)(2)(ii) requires the bank to inform the consumer within two business days after the provisional crediting.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s3-q5",
+          "question": "A customer disputes a point-of-sale debit card transaction. With provisional credit made in time, what is the maximum period to complete the investigation?",
+          "options": [
+            "45 days",
+            "90 days",
+            "60 days",
+            "120 days"
+          ],
+          "answer": 1,
+          "explanation": "The 45-day period becomes 90 days for transfers resulting from point-of-sale debit card transactions, transfers not initiated within a state, and new-account transfers.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-cc-s3-q6",
+          "question": "After finishing an investigation, how quickly must the bank report the results to the customer?",
+          "options": [
+            "Within one business day",
+            "Within 10 business days",
+            "Within 60 calendar days of notice",
+            "Within three business days"
+          ],
+          "answer": 3,
+          "explanation": "The bank must report results within three business days after completing the investigation, and correct a real error within one business day of determining it.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s3-q7",
+          "question": "In the 2022 Bank of America prepaid card case, what practice did the CFPB find unfair?",
+          "options": [
+            "Paying unemployment benefits to cardholders faster than the states required",
+            "Offering prepaid debit cards to people receiving government benefits",
+            "Using any kind of automated fraud detection at all on its prepaid card accounts",
+            "Denying error claims and freezing accounts based solely on a flawed fraud filter"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB found the bank relied solely on an automated fraud filter it knew or should have known was flawed to deny claims and freeze accounts.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s3-q8",
+          "question": "A customer reports their lost debit card within two business days of learning it was lost. What is their maximum liability for unauthorised transfers?",
+          "options": [
+            "Nothing at all, in every case",
+            "The lesser of USD 50 or the transfers before notice",
+            "USD 500 in all cases, regardless of timing",
+            "The full amount of every unauthorised transfer made"
+          ],
+          "answer": 1,
+          "explanation": "Under 1005.6(b)(1), timely notice caps liability at the lesser of USD 50 or the amount of unauthorised transfers before notice.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s3-q9",
+          "question": "An investigation finds no error. What must the bank's report include?",
+          "options": [
+            "Only an oral statement of the result, given at the branch or by phone",
+            "A fee for the investigation, deducted from the account balance",
+            "A written explanation and notice of the right to see the documents relied on",
+            "A notice that the account will be closed to prevent the customer making further claims"
+          ],
+          "answer": 2,
+          "explanation": "1005.11(d)(1) requires a written explanation of the findings and notice of the right to request the documents the bank relied on.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s3-q10",
+          "question": "A customer's account was closed last month. She now properly asserts an error on a transfer from before closure. What applies?",
+          "options": [
+            "The error resolution procedures still apply",
+            "Nothing, because closed accounts are out of scope",
+            "Only state law applies once an account is closed",
+            "She must reopen the account before she can dispute"
+          ],
+          "answer": 0,
+          "explanation": "The official interpretation says the bank must comply with error resolution when an error is properly asserted, even if the account is closed.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Credit: Regulation Z, Loan Originator Rules and ECOA/Regulation B",
+      "stage": "The Lending Floor",
+      "summary": "Learn the Truth in Lending disclosure clocks for mortgages, the loan originator screening and training rule, and the equal credit rules in Regulation B, including the 2026 removal of the effects test.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the Loan Estimate and Closing Disclosure timing rules",
+        "Explain the screening, fitness and periodic training duties for loan originator employees",
+        "Identify prohibited bases, discouragement and adverse action notice duties under Regulation B",
+        "Describe what the April 2026 Regulation B amendment changed and what it did not"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The new loan officer",
+          "setting": "Mortgage centre, Phoenix, Arizona. 8:50 am.",
+          "lines": [
+            {
+              "who": "grace",
+              "text": "Good news: we hired Daniel, an experienced loan officer from a credit union. He starts taking applications Monday.",
+              "mood": "happy"
+            },
+            {
+              "who": "maya",
+              "text": "Before Monday, did we run the NMLS background check, pull his credit report and make the fitness decision? And is his periodic training booked?",
+              "mood": "thinking"
+            },
+            {
+              "who": "grace",
+              "text": "He's registered in NMLS already. Isn't that enough?",
+              "mood": "worried"
+            },
+            {
+              "who": "maya",
+              "text": "Registration is one piece. Regulation Z puts its own duties on us as his employer, including training on federal and state law.",
+              "mood": "neutral"
+            },
+            {
+              "who": "grace",
+              "text": "And the new Regulation B changes from July. My team keeps asking whether fair lending still matters.",
+              "mood": "thinking"
+            },
+            {
+              "who": "maya",
+              "text": "It absolutely does. Stage four: Truth in Lending, loan originator rules, and equal credit.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Truth in Lending and equal credit in five scenes",
+          "scenes": [
+            {
+              "icon": "📄",
+              "heading": "TILA and Regulation Z",
+              "narration": "The Truth in Lending Act, put into effect by the CFPB's Regulation Z, makes lenders disclose the cost of credit clearly, such as the annual percentage rate and the finance charge, so consumers can compare offers."
+            },
+            {
+              "icon": "🏠",
+              "heading": "Mortgage disclosures",
+              "narration": "For most closed-end mortgages, the Loan Estimate goes out within three business days of application, and the consumer must receive the Closing Disclosure at least three business days before closing."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "Loan originators",
+              "narration": "Banks that employ mortgage loan originators must screen them before they originate and give them periodic training on the federal and state law that applies to their work."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Equal credit",
+              "narration": "The Equal Credit Opportunity Act and Regulation B ban discrimination on a prohibited basis in any part of a credit transaction, for every creditor."
+            },
+            {
+              "icon": "🔄",
+              "heading": "The 2026 change",
+              "narration": "In April 2026 the CFPB amended Regulation B to remove the disparate-impact 'effects test', effective 21 July 2026. Intentional and different treatment on a prohibited basis is still illegal."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Mortgage disclosure clocks (Regulation Z)",
+          "caption": "From 12 CFR 1026.19(e) and (f) on consumerfinance.gov. Timeshare transactions and some waivers follow special rules.",
+          "items": [
+            {
+              "label": "Loan Estimate after application",
+              "value": "3 bus. days",
+              "detail": "Delivered or mailed no later than the third business day after the application."
+            },
+            {
+              "label": "Before consummation",
+              "value": "7 bus. days",
+              "detail": "Loan Estimate delivered or mailed at least seven business days before closing."
+            },
+            {
+              "label": "Closing Disclosure received",
+              "value": "3 bus. days",
+              "detail": "Consumer must receive it at least three business days before consummation."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A loan officer wants to collect an application fee before the consumer has received the Loan Estimate. What does Regulation Z say?",
+          "options": [
+            "Allowed if the fee is small",
+            "Allowed if disclosed verbally",
+            "Generally not allowed until the consumer gets the Loan Estimate and says they want to proceed",
+            "Allowed only for first-time buyers"
+          ],
+          "answer": 2,
+          "explanation": "Under 1026.19(e)(2), apart from a narrow exception for a credit report fee, no fee may be imposed before the consumer has received the Loan Estimate and indicated an intent to proceed."
+        },
+        {
+          "type": "concept",
+          "title": "The loan originator training rule: 12 CFR 1026.36(f)",
+          "body": "Regulation Z sets **qualification duties** for employers of mortgage loan originators. For each loan originator employee who is **not required to be licensed** (typical for bank staff, who register in the Nationwide Mortgage Licensing System and Registry, NMLSR), the bank must:\n\n- **Before** the person originates (for hires on or after 1 January 2014, or where reliable information raises doubts): get an **NMLSR criminal background check**, a **credit report**, and NMLSR information on any administrative, civil or criminal findings.\n- **Decide** the person meets the standards: broadly, no felony in the past **seven years**, or ever for felonies involving fraud, dishonesty, breach of trust or money laundering (unless a consent applies), and financial responsibility, character and general fitness.\n- Provide **periodic training** covering the federal and state law requirements that apply to the person's origination work: 1026.36(f)(3)(iii).\n\nThe loan documents must also show the organisation's and the originator's names and NMLSR IDs (1026.36(g))."
+        },
+        {
+          "type": "sort",
+          "title": "Allowed or not under ECOA and Regulation B?",
+          "prompt": "Sort each lending practice.",
+          "buckets": [
+            "Allowed",
+            "Not allowed"
+          ],
+          "items": [
+            {
+              "text": "Declining an applicant because of their religion",
+              "bucket": 1
+            },
+            {
+              "text": "Considering verified income and debts to judge repayment ability",
+              "bucket": 0
+            },
+            {
+              "text": "Treating income from a public assistance programme as worthless",
+              "bucket": 1
+            },
+            {
+              "text": "Using age as a variable in a sound, validated scoring system without penalising older applicants",
+              "bucket": 0
+            },
+            {
+              "text": "Advertising that suggests applicants of one national origin should not apply",
+              "bucket": 1
+            },
+            {
+              "text": "Sending an adverse action notice with the specific reasons for denial",
+              "bucket": 0
+            },
+            {
+              "text": "Refusing credit because a customer once disputed a bill under consumer credit law",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Does fair lending still matter?",
+          "setting": "Mortgage centre team meeting, Phoenix. 3:00 pm.",
+          "lines": [
+            {
+              "who": "grace",
+              "text": "My loan officers read headlines saying 'disparate impact is gone'. Some think fair lending checks are now optional.",
+              "mood": "thinking"
+            },
+            {
+              "who": "maya",
+              "text": "The April 2026 rule says ECOA doesn't recognise the effects test, effective 21 July 2026. That's a real change in Regulation B.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "But treating applicants differently on a prohibited basis, or discouraging them, is still illegal. Most enforcement cases were about exactly that.",
+              "mood": "worried"
+            },
+            {
+              "who": "tom",
+              "text": "So our scripts and ads still need review?",
+              "mood": "thinking"
+            },
+            {
+              "who": "maya",
+              "text": "Yes. And other federal and state laws can have their own fair lending rules, so we check with legal before we change anything.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The 'neighbourhood' comment",
+          "situation": "A customer of Middle Eastern origin asks a loan officer about a home equity loan. The officer says, 'Honestly, people from your community usually don't get approved here, you might try somewhere else.' The customer leaves without applying. The officer says nothing was denied, so no rule applies. What should happen?",
+          "choices": [
+            {
+              "text": "Escalate to compliance as possible discouragement on a prohibited basis, review the officer's other files, and retrain",
+              "outcome": "Best. Regulation B bans statements a creditor knows or should know would make a reasonable person think they'd be denied because of a prohibited basis, such as national origin. No application is needed.",
+              "score": 2
+            },
+            {
+              "text": "Do nothing because no application was taken and no credit was denied",
+              "outcome": "Poor. Discouragement covers prospective applicants. A statement like this is a fair lending concern even without an application.",
+              "score": 0
+            },
+            {
+              "text": "Ask the officer to apologise if the customer comes back",
+              "outcome": "Partly right. An apology may help, but it does not deal with the compliance risk, other affected customers or training.",
+              "score": 1
+            },
+            {
+              "text": "Treat it as an HR matter only, since the April 2026 rule removed disparate impact",
+              "outcome": "Poor. The 2026 change concerns the effects test. A statement aimed at national origin is about intent and treatment, which is still prohibited.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Regulation B: what changed in 2026 and what did not",
+          "headers": [
+            "Rule after the change",
+            "Practical note"
+          ],
+          "items": [
+            {
+              "label": "Disparate impact ('effects test')",
+              "left": "Removed from Regulation B; ECOA stated not to recognise it",
+              "right": "Effective 21 July 2026"
+            },
+            {
+              "label": "Discrimination on a prohibited basis",
+              "left": "Still prohibited in any aspect of a credit transaction",
+              "right": "Training still essential"
+            },
+            {
+              "label": "Discouragement",
+              "left": "Now focused on statements showing intent, judged by a reasonable person",
+              "right": "Scripts and ads still need review"
+            },
+            {
+              "label": "Special purpose credit programmes",
+              "left": "Race, colour, national origin or sex can't be the shared characteristic",
+              "right": "Added steps for for-profit creditors"
+            },
+            {
+              "label": "Adverse action notices",
+              "left": "Unchanged: notify within 30 days with specific reasons or the right to them",
+              "right": "Accurate reasons still required"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Citibank and Armenian American applicants, 2023",
+          "body": "In November 2023 the CFPB issued an order against **Citibank, N.A.** finding that it violated ECOA and Regulation B by **discriminating against certain credit card applicants based on national origin**. The CFPB also found Citibank failed to give accurate and adequate statements of the **specific reasons** for adverse action when applicants were denied on that basis.\n\nThe order required **USD 1.4 million** in redress and a **USD 24.5 million** civil money penalty.\n\nIn October 2025 the CFPB **terminated** the order early, noting Citibank had paid the penalty, made redress and taken steps to prevent future violations.\n\n**Lesson:** this was intentional, different treatment, the kind of conduct the 2026 Regulation B change did not touch. Adverse action reasons must be the real reasons.\n\nSource: CFPB enforcement action page, docket 2023-CFPB-0013."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Trustmark National Bank, 2021",
+          "body": "In October 2021 the CFPB and the US Department of Justice filed a joint complaint alleging that **Trustmark National Bank** violated ECOA, Regulation B and the Consumer Financial Protection Act. The agencies' press release described it as deliberate discrimination against Black and Hispanic families in mortgage lending. The OCC took part in the announcement.\n\nA federal court in Tennessee entered a consent order with injunctive relief and a civil money penalty.\n\nIn **May 2025**, on the agencies' unopposed motion, the court **vacated** the 2021 judgment and dismissed the case.\n\n**Lesson:** enforcement priorities change, and orders can end early. The underlying ban on discrimination in ECOA did not change. Your bank's fair lending programme should not rise and fall with headlines.\n\nSource: CFPB enforcement action page, docket 2:21-cv-02664."
+        },
+        {
+          "type": "match",
+          "title": "Match the rule to its requirement",
+          "prompt": "Link each Regulation Z or B provision to what it requires.",
+          "pairs": [
+            {
+              "left": "1026.19(e)",
+              "right": "Loan Estimate within three business days after application"
+            },
+            {
+              "left": "1026.19(f)",
+              "right": "Closing Disclosure received three business days before consummation"
+            },
+            {
+              "left": "1026.36(f)(3)(iii)",
+              "right": "Periodic training for loan originator employees on federal and state law"
+            },
+            {
+              "left": "1026.36(g)",
+              "right": "Names and NMLSR IDs on application, disclosures, note and security instrument"
+            },
+            {
+              "left": "1002.9",
+              "right": "Notice of action taken, generally within 30 days, with reasons or the right to them"
+            },
+            {
+              "left": "1002.4(b)",
+              "right": "No statements that would discourage applicants on a prohibited basis"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Lending terms to know",
+          "cards": [
+            {
+              "front": "APR",
+              "back": "Annual percentage rate: the cost of credit as a yearly rate, a core TILA disclosure."
+            },
+            {
+              "front": "Finance charge",
+              "back": "The cost of consumer credit as a dollar amount, disclosed under TILA."
+            },
+            {
+              "front": "NMLSR",
+              "back": "Nationwide Mortgage Licensing System and Registry. Bank loan originators register there and get an NMLSR ID."
+            },
+            {
+              "front": "Prohibited basis",
+              "back": "Race, colour, religion, national origin, sex, marital status, age (with capacity to contract), public assistance income, or good-faith exercise of consumer credit rights."
+            },
+            {
+              "front": "Adverse action",
+              "back": "A denial, unfavourable change or refusal of credit on the terms requested, which triggers a notice."
+            },
+            {
+              "front": "Effects test",
+              "back": "The disparate-impact theory that a neutral policy can be illegal because of its outcomes. Removed from Regulation B from 21 July 2026."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which applicant characteristic is a prohibited basis under Regulation B?",
+          "options": [
+            "The applicant's credit history",
+            "The applicant's debt-to-income ratio",
+            "The applicant's employment length",
+            "The fact that income comes from a public assistance programme"
+          ],
+          "answer": 3,
+          "explanation": "Regulation B lists the fact that all or part of income comes from public assistance as a prohibited basis. Credit history, debt and job tenure are legitimate credit factors when used consistently."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage four take-aways",
+          "items": [
+            "TILA and Regulation Z require clear credit cost disclosures; mortgage Loan Estimates and Closing Disclosures have strict timing.",
+            "Banks must screen loan originator employees before they originate and give them periodic training: 12 CFR 1026.36(f)(3).",
+            "ECOA and Regulation B ban discrimination on a prohibited basis and discouragement of applicants.",
+            "From 21 July 2026 Regulation B no longer uses the disparate-impact effects test; intentional discrimination is still illegal.",
+            "Adverse action notices must give the real, specific reasons or the right to get them."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you talk to credit applicants, think of one phrase you use when someone probably won't qualify. Could a reasonable person hear it as being about who they are rather than their finances?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-cc-s4-q1",
+          "question": "Under Regulation Z, by when must a creditor deliver or mail the Loan Estimate for a covered mortgage?",
+          "options": [
+            "By the third business day after receiving the application",
+            "No later than the day of closing, with the other documents",
+            "Within 30 calendar days of receiving the application",
+            "Only if the consumer asks for an estimate in writing"
+          ],
+          "answer": 0,
+          "explanation": "1026.19(e)(1)(iii)(A) requires delivery or mailing no later than the third business day after the creditor receives the application.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s4-q2",
+          "question": "When must the consumer receive the Closing Disclosure for a typical covered mortgage?",
+          "options": [
+            "At closing, along with the note",
+            "Seven business days after closing",
+            "At least three business days before consummation",
+            "Within 60 days of receiving the application"
+          ],
+          "answer": 2,
+          "explanation": "1026.19(f)(1)(ii)(A) requires the consumer to receive the Closing Disclosure no later than three business days before consummation, with special cases such as timeshares.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s4-q3",
+          "question": "Which Regulation Z provision requires periodic training for a bank's loan originator employees?",
+          "options": [
+            "12 CFR 1005.11(c)",
+            "12 CFR 1026.36(f)(3)(iii)",
+            "12 CFR 1002.9(a)",
+            "12 CFR 1016.4(a)"
+          ],
+          "answer": 1,
+          "explanation": "1026.36(f)(3)(iii) requires periodic training covering federal and state law requirements that apply to the individual's loan origination activities.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s4-q4",
+          "question": "What must the periodic loan originator training cover?",
+          "options": [
+            "Only the bank's own sales targets and product features",
+            "Only federal anti-money laundering and sanctions rules",
+            "Only the bank's loan origination IT systems and how to use their screens",
+            "Federal and state law that applies to the person's origination work"
+          ],
+          "answer": 3,
+          "explanation": "The rule requires training on the federal and state law requirements that apply to the individual loan originator's origination activities.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s4-q5",
+          "question": "Before a newly hired bank loan originator takes applications, which check does 1026.36(f)(3) require?",
+          "options": [
+            "A polygraph test arranged by the bank",
+            "A home visit by a senior manager",
+            "A personal reference from a current customer and a former employer",
+            "An NMLSR criminal background check and a credit report"
+          ],
+          "answer": 3,
+          "explanation": "The bank must obtain a criminal background check through NMLSR, a credit report and NMLSR information on findings, then decide whether the person meets the standards.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s4-q6",
+          "question": "Which is a prohibited basis under Regulation B?",
+          "options": [
+            "Credit score",
+            "Marital status",
+            "Monthly income",
+            "Existing debt"
+          ],
+          "answer": 1,
+          "explanation": "Prohibited bases include race, colour, religion, national origin, sex, marital status, age (with capacity to contract), public assistance income and good-faith exercise of consumer credit rights.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s4-q7",
+          "question": "What did the CFPB's April 2026 amendment to Regulation B do?",
+          "options": [
+            "Repealed the Equal Credit Opportunity Act and Regulation B entirely",
+            "Removed the ban on intentional discrimination on a prohibited basis",
+            "Removed the disparate-impact effects test, effective 21 July 2026",
+            "Abolished adverse action notices for consumer credit applications"
+          ],
+          "answer": 2,
+          "explanation": "The rule removed the effects test and stated ECOA does not recognise disparate impact liability; it also changed discouragement and special purpose credit programmes. Intentional discrimination remains prohibited.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s4-q8",
+          "question": "A creditor denies a completed credit application. Generally, within how many days must it notify the applicant?",
+          "options": [
+            "30 days",
+            "10 days",
+            "60 days",
+            "90 days"
+          ],
+          "answer": 0,
+          "explanation": "1002.9(a)(1)(i) requires notice of action taken within 30 days after receiving a completed application. 90 days applies to unaccepted counteroffers.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s4-q9",
+          "question": "A loan officer tells a walk-in visitor, 'People of your faith don't usually qualify here.' No application is taken. Which statement is correct?",
+          "options": [
+            "No rule applies because no application was taken",
+            "This can be prohibited discouragement even without an application",
+            "It is allowed after the 2026 Regulation B amendment",
+            "It is only a matter of customer service politeness, not legal compliance"
+          ],
+          "answer": 1,
+          "explanation": "Regulation B's discouragement rule covers statements to prospective applicants that a reasonable person would take as meaning they'd be denied because of a prohibited basis such as religion.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-cc-s4-q10",
+          "question": "In the 2023 Citibank case, what did the CFPB find in addition to national origin discrimination?",
+          "options": [
+            "Late Closing Disclosures on mortgage loans",
+            "Unlicensed loan originators taking applications",
+            "Missing annual privacy notices to its credit card holders nationwide",
+            "Failure to give accurate specific reasons for adverse action"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB found Citibank failed to give accurate and adequate statements of specific reasons for adverse action to applicants denied based on national origin.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Complaints, Privacy, Collections and Exam Readiness",
+      "stage": "The Examiner's Table",
+      "summary": "Handle complaints the way examiners expect, apply Regulation P privacy notice and opt-out rules, see where Regulation F reaches collections, and assemble the evidence of a working compliance management system.",
+      "minutes": 50,
+      "objectives": [
+        "Run a complaint process that records, escalates, analyses and fixes",
+        "Apply Regulation P initial notice, annual notice and opt-out basics",
+        "Explain when Regulation F covers a bank's collections and where UDAAP still applies",
+        "Assemble exam-ready evidence across all parts of the compliance management system"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Complaints, privacy and the final week",
+          "setting": "Complaints hub, Atlanta, Georgia. 9:00 am.",
+          "lines": [
+            {
+              "who": "aisha",
+              "text": "Welcome to Atlanta. This screen shows every complaint: branch, phone, email, social media, and the ones the CFPB forwards to us.",
+              "mood": "neutral"
+            },
+            {
+              "who": "aisha",
+              "text": "The CFPB portal ones have a clock. Companies generally respond in 15 days, and if we need longer we say it's in progress and finish within 60.",
+              "mood": "worried"
+            },
+            {
+              "who": "tom",
+              "text": "My partner team wants to share customer lists with an insurance company for a joint offer. Is that a privacy issue?",
+              "mood": "thinking"
+            },
+            {
+              "who": "luis",
+              "text": "And our collections vendor asked if they can call as 'Lantern Recovery Services' instead of our name.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "Three good questions for the last stage: complaints, privacy and collections. Then we put the whole CMS on the examiner's table.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Complaints, privacy and collections in five scenes",
+          "scenes": [
+            {
+              "icon": "📥",
+              "heading": "Every channel counts",
+              "narration": "Examiners expect complaints from every channel to be recorded and categorised, whether they come by phone, letter, branch, social media or from a regulator."
+            },
+            {
+              "icon": "🚨",
+              "heading": "Escalate what matters",
+              "narration": "Complaints that suggest discrimination, unauthorised accounts, improper sales, imminent foreclosure or other legal issues must be escalated, not just closed."
+            },
+            {
+              "icon": "🔁",
+              "heading": "Fix the cause",
+              "narration": "Management uses complaints to find root causes and takes corrective action, including putting things right for customers already harmed."
+            },
+            {
+              "icon": "🔒",
+              "heading": "Privacy under Regulation P",
+              "narration": "Banks give customers a privacy notice, generally every year, and let consumers opt out before sharing their nonpublic personal information with unaffiliated third parties, unless an exception applies."
+            },
+            {
+              "icon": "📞",
+              "heading": "Debt collection",
+              "narration": "Regulation F covers debt collectors, such as firms collecting debts owed to others. A bank collecting its own debts under another name can also count as a debt collector."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The complaint management cycle",
+          "items": [
+            {
+              "label": "Capture",
+              "detail": "Log complaints from every channel, including about service providers."
+            },
+            {
+              "label": "Categorise",
+              "detail": "Tag the product, issue and any legal or regulatory risk."
+            },
+            {
+              "label": "Investigate and respond",
+              "detail": "Make a good-faith effort to resolve each complaint promptly."
+            },
+            {
+              "label": "Escalate",
+              "detail": "Send legal and harm issues to compliance and management."
+            },
+            {
+              "label": "Analyse root cause",
+              "detail": "Look for patterns across complaints, refunds and chargebacks."
+            },
+            {
+              "label": "Correct and remediate",
+              "detail": "Fix processes and training; put harmed customers right."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer posts on social media that the bank opened a credit card she never applied for. How should the complaints team treat it?",
+          "options": [
+            "Ignore it, because social media is not an official channel",
+            "Record it, categorise it as possible unauthorised account opening and escalate",
+            "Reply publicly with her account details to show the card was valid",
+            "Wait to see if she files a formal written complaint"
+          ],
+          "answer": 1,
+          "explanation": "The CFPB manual expects complaints from any channel to be recorded and categorised, and those alleging unauthorised account openings to be escalated. Never share account details publicly."
+        },
+        {
+          "type": "concept",
+          "title": "Regulation P privacy basics",
+          "body": "Regulation P (12 CFR Part 1016) implements the privacy part of the Gramm-Leach-Bliley Act.\n\n- **Initial notice.** Give a clear privacy notice to a new **customer** no later than when the customer relationship starts, for example when they open a deposit account or get a loan.\n- **Annual notice.** Give customers a notice at least once in any 12 consecutive months, **unless** the bank shares only under the rule's exceptions and has not changed its sharing practices since the last notice.\n- **Opt-out.** Before sharing a consumer's nonpublic personal information with a **nonaffiliated third party** outside the exceptions, the bank must give the initial and opt-out notices, a **reasonable opportunity** to opt out (the rule's mail example is 30 days), and respect an opt-out.\n- **Consumers vs customers.** A one-off consumer, such as someone buying a cashier's cheque, has fewer notice rights than a customer with a continuing relationship.\n\nInformation security and breach response are separate duties covered in other training."
+        },
+        {
+          "type": "sort",
+          "title": "Which rule is at stake?",
+          "prompt": "Sort each situation by the rule it mainly engages.",
+          "buckets": [
+            "Complaint handling",
+            "Regulation P privacy",
+            "Regulation F collections"
+          ],
+          "items": [
+            {
+              "text": "A CFPB portal complaint needs a response",
+              "bucket": 0
+            },
+            {
+              "text": "Sharing customer lists with an unaffiliated insurer",
+              "bucket": 1
+            },
+            {
+              "text": "A vendor calls about debts the bank owns",
+              "bucket": 2
+            },
+            {
+              "text": "Annual privacy notice when sharing practices change",
+              "bucket": 1
+            },
+            {
+              "text": "Many callers report the same surprise fee",
+              "bucket": 0
+            },
+            {
+              "text": "The bank collects its own loans under a different trade name",
+              "bucket": 2
+            },
+            {
+              "text": "A customer opts out of third-party sharing by phone",
+              "bucket": 1
+            },
+            {
+              "text": "A branch complaint alleging unfair treatment by age",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The joint offer",
+          "setting": "Product team room, Kansas City, by video. 1:00 pm.",
+          "lines": [
+            {
+              "who": "tom",
+              "text": "The insurer is not our affiliate. They want names, addresses and account types for a marketing mail-out.",
+              "mood": "neutral"
+            },
+            {
+              "who": "maya",
+              "text": "That's nonpublic personal information going to a nonaffiliated third party. Unless an exception applies, customers need notice and a real chance to opt out first.",
+              "mood": "thinking"
+            },
+            {
+              "who": "tom",
+              "text": "Our notice says we don't share with third parties for marketing. So we'd be changing our practice?",
+              "mood": "worried"
+            },
+            {
+              "who": "maya",
+              "text": "Exactly. If we change, we tell customers before we share, give them time to opt out, and update our annual notice approach. Legal decides which exception, if any, fits.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The collections script",
+          "situation": "Prairie Lantern Bank wants to use a vendor to call customers who are behind on credit card payments the bank still owns. The vendor suggests calling as 'Lantern Recovery Services', a name customers wouldn't link to the bank, and using a firm script stressing 'legal consequences'. Complaints about harsh calls are already rising. What do you recommend?",
+          "choices": [
+            {
+              "text": "Ask legal to review Regulation F before using another name, check the script for UDAAP risk, train and monitor the vendor, and track complaints",
+              "outcome": "Best. A creditor collecting its own debts under a name suggesting a third party can fall within Regulation F, and harsh or misleading scripts are a UDAAP risk regardless. Vendor oversight stays with the bank.",
+              "score": 2
+            },
+            {
+              "text": "Approve it, because Regulation F never applies to banks",
+              "outcome": "Poor. Regulation F's definition of debt collector includes a creditor that uses another name suggesting a third party is collecting.",
+              "score": 0
+            },
+            {
+              "text": "Keep the bank's name but let the vendor write its own script without review",
+              "outcome": "Partly right. Using the bank's own name helps, but unreviewed scripts and no monitoring leave UDAAP and vendor risk with the bank.",
+              "score": 1
+            },
+            {
+              "text": "Stop collecting overdue debts entirely",
+              "outcome": "Poor. Collection is lawful; the goal is lawful, fair collection, not abandoning it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Prioritising complaint issues",
+          "axes": {
+            "x": "How many customers",
+            "y": "Potential harm or legal risk"
+          },
+          "items": [
+            {
+              "label": "Isolated, high harm",
+              "detail": "One complaint about discrimination or an unauthorised account: escalate now."
+            },
+            {
+              "label": "Widespread, high harm",
+              "detail": "Pattern of surprise fees or wrongful freezes: escalate, fix, remediate."
+            },
+            {
+              "label": "Isolated, low harm",
+              "detail": "A one-off service delay: resolve and record."
+            },
+            {
+              "label": "Widespread, low harm",
+              "detail": "Many small irritations: analyse root cause and fix the process."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: Regions Bank surprise overdraft fees, 2022",
+          "body": "In September 2022 the CFPB issued an order against **Regions Bank**, headquartered in Birmingham, Alabama, over what the CFPB's press release called illegal **surprise overdraft fees**, with a headline total of **USD 191 million**. The order included a **USD 50 million** civil money penalty and a redress plan.\n\nIn **July 2025** the CFPB **terminated** the order, noting that Regions had paid the penalty and made redress payments.\n\n**Lessons for your CMS:**\n\n- Fee practices that surprise customers show up first in **complaints**. Patterns should reach management fast.\n- **Remediation** of past harm is part of what examiners and enforcers expect, not only fixing the future.\n- Supervisory priorities shift, and orders can end early, but the underlying laws and private claims remain.\n\nSource: CFPB enforcement action page, docket 2022-CFPB-0008."
+        },
+        {
+          "type": "example",
+          "title": "Real case: Bank of America garnishment processing, 2022",
+          "body": "In May 2022 the CFPB ordered **Bank of America, N.A.** to pay a **USD 10 million** civil money penalty and refund or cancel at least USD 592,000 in fees over how it processed **garnishment notices**, the court orders that let creditors take funds from a debtor's account.\n\nThe CFPB found **unfair and deceptive** practices: the deposit agreement made customers waive the bank's liability for garnishment protections and told them they could not go to court to stop wrongful garnishments. The bank also froze accounts and sent funds where state law did not allow it, and sometimes applied the wrong state's exemption rules.\n\n**Lesson:** debt-related processes inside the bank, not just collection calls, carry consumer protection risk. Contract wording and back-office procedures need compliance review and trained staff.\n\nSource: CFPB enforcement action page, docket 2022-CFPB-0002."
+        },
+        {
+          "type": "order",
+          "title": "Prepare for the consumer compliance exam",
+          "prompt": "Put Maya's final-week steps in a sensible order.",
+          "steps": [
+            "Confirm the board and management have received current compliance and complaint reports",
+            "Check policies and procedures cover every product, including the new rewards account",
+            "Pull training schedules, materials and completion records by role, including vendors",
+            "Review monitoring and audit results and show what was fixed",
+            "Summarise complaint trends, escalations, root causes and remediation",
+            "Brief staff who will meet examiners on facts, not guesses"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Final review: who, what, when",
+          "cards": [
+            {
+              "front": "CFPB complaint portal timing",
+              "back": "Companies generally respond within 15 days; if more time is needed, they say so and give a final response within 60 days."
+            },
+            {
+              "front": "Regulation P opt-out example",
+              "back": "For notices sent by mail, 30 days to opt out is given as a reasonable opportunity."
+            },
+            {
+              "front": "Regulation F 'debt collector'",
+              "back": "Collects debts owed to another, or a creditor collecting its own debts under a name suggesting a third party."
+            },
+            {
+              "front": "CMS rating language",
+              "back": "Strong, satisfactory, deficient, seriously deficient or critically deficient."
+            },
+            {
+              "front": "Loan originator training",
+              "back": "Periodic, covering federal and state law for each originator's work: 1026.36(f)(3)(iii)."
+            },
+            {
+              "front": "Regulation E decision clock",
+              "back": "10 business days, or 45 days (90 in set cases) with provisional credit."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Tom's team plans to start sharing customer data with an unaffiliated insurer for marketing. No Regulation P exception applies. What must happen before sharing?",
+          "options": [
+            "Nothing, if the insurer signs a confidentiality agreement",
+            "Only a note in the next annual report",
+            "Notice, an opt-out notice and a reasonable opportunity to opt out, and no opt-out received",
+            "Approval from the CFPB"
+          ],
+          "answer": 2,
+          "explanation": "Under 12 CFR 1016.10, the bank may not share nonpublic personal information with a nonaffiliated third party outside the exceptions unless it has given the initial and opt-out notices, a reasonable chance to opt out, and the consumer has not opted out."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage five take-aways",
+          "items": [
+            "Record complaints from every channel, escalate legal and harm issues, fix root causes and remediate.",
+            "On the CFPB portal, companies generally respond within 15 days, and give a final response within 60 when more time is needed.",
+            "Regulation P requires initial and generally annual privacy notices and an opt-out before most sharing with nonaffiliated third parties.",
+            "Regulation F reaches third-party collectors and creditors that collect under another name; bank collections still carry UDAAP risk.",
+            "Exam readiness means evidence: reports, policies, training records, monitoring, audit and complaint analysis."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "You have finished the five stages. Which one part of your bank's compliance management system would you strengthen first in your own role, and what evidence would show an examiner it works?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "us-cc-s5-q1",
+          "question": "According to the CFPB's complaint process page, how quickly do companies generally respond to complaints sent through the CFPB?",
+          "options": [
+            "Within 2 days",
+            "Within 15 days",
+            "Within 90 days",
+            "Within one year"
+          ],
+          "answer": 1,
+          "explanation": "The CFPB says companies generally respond in 15 days; in some cases they say the response is in progress and give a final response within 60 days.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s5-q2",
+          "question": "Which complaint would the CFPB manual expect to be escalated, not just resolved?",
+          "options": [
+            "One about a long wait on the phone line",
+            "One praising a branch employee by name",
+            "One asking for a replacement debit card to be posted urgently overseas",
+            "One alleging an account was opened without the customer's consent"
+          ],
+          "answer": 3,
+          "explanation": "The manual lists complaints raising issues such as unauthorised account openings, discrimination or improper sales as ones that must be categorised and escalated.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s5-q3",
+          "question": "When must a bank give its initial privacy notice to a new customer under Regulation P?",
+          "options": [
+            "Within one year of opening the account",
+            "Only when the customer asks to see it",
+            "After the customer receives the first annual account statement",
+            "No later than when the customer relationship is established"
+          ],
+          "answer": 3,
+          "explanation": "12 CFR 1016.4(a)(1) requires the initial notice no later than when the bank establishes a customer relationship, subject to limited exceptions.",
+          "difficulty": 2
+        },
+        {
+          "id": "us-cc-s5-q4",
+          "question": "When can a bank skip the annual privacy notice under Regulation P?",
+          "options": [
+            "When the customer uses the bank's mobile app instead of paper",
+            "When it shares only under the exceptions and its practices are unchanged",
+            "When the customer holds fewer than three accounts with the bank",
+            "Whenever the bank also posts its full privacy notice on its public website"
+          ],
+          "answer": 1,
+          "explanation": "1016.5(e) excuses the annual notice if the bank discloses information only under 1016.13-1016.15 and has not changed its policies and practices since the last notice.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s5-q5",
+          "question": "The bank mails privacy and opt-out notices. Which opt-out window does Regulation P give as an example of a reasonable opportunity?",
+          "options": [
+            "3 days",
+            "10 days",
+            "30 days",
+            "180 days"
+          ],
+          "answer": 2,
+          "explanation": "1016.10(a)(3)(i) gives 30 days from mailing as an example of a reasonable opportunity to opt out by mail.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s5-q6",
+          "question": "Under Regulation F, when can a bank collecting its own debts be treated as a debt collector?",
+          "options": [
+            "When it uses a name suggesting a third party is collecting",
+            "Whenever it collects any overdue debt of its own",
+            "Only when the debt is larger than USD 10,000",
+            "Never, because banks are always fully exempt from Regulation F"
+          ],
+          "answer": 0,
+          "explanation": "12 CFR 1006.2(i) includes a creditor that, collecting its own debts, uses any name other than its own that would suggest a third party is collecting.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s5-q7",
+          "question": "Complaints show many customers are surprised by the same overdraft fee. Which response best fits CMS expectations?",
+          "options": [
+            "Close each complaint with a standard apology letter",
+            "Find the root cause, fix the practice and consider remediation",
+            "Remove the fee from the complaint category list",
+            "Wait for a regulator to raise the issue at the next examination"
+          ],
+          "answer": 1,
+          "explanation": "The manual expects management to monitor complaints for harm and CMS weaknesses and take prospective and retrospective corrective action.",
+          "difficulty": 3
+        },
+        {
+          "id": "us-cc-s5-q8",
+          "question": "In the 2022 Bank of America garnishment case, which practice did the CFPB find?",
+          "options": [
+            "Refusing to process any garnishment orders at all",
+            "Charging no fees at all for processing garnishments",
+            "Paying garnished funds over to judgment creditors too slowly, causing them losses",
+            "Telling consumers they could not go to court to stop wrongful garnishments"
+          ],
+          "answer": 3,
+          "explanation": "The CFPB found the bank misrepresented that consumers could not go to court to prevent wrongful garnishments and required waivers of liability in its deposit agreement.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-cc-s5-q9",
+          "question": "Which of these is NOT something examiners assess about complaint handling under the CFPB manual?",
+          "options": [
+            "Whether every complaint was resolved in the customer's favour",
+            "Whether complaints from all channels are recorded",
+            "Whether investigations and responses are reasonable",
+            "Whether complaints lead to appropriate corrective action by management"
+          ],
+          "answer": 0,
+          "explanation": "Examiners assess processes, reasonableness, recording, timeliness, escalation and corrective action. A good-faith effort is expected, not a guaranteed customer win.",
+          "difficulty": 4
+        },
+        {
+          "id": "us-cc-s5-q10",
+          "question": "An examiner asks how training changed after last year's complaint trends. What is the best evidence?",
+          "options": [
+            "A statement that staff were reminded about it verbally",
+            "The original training materials from three years ago",
+            "Updated training on the complaint issues, with completion records",
+            "A list of staff who complained about the length of the training itself"
+          ],
+          "answer": 2,
+          "explanation": "Examiners request training developed in response to issues raised in complaints, plus records showing who completed it.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "us",
+    "programs": [
+      51,
+      52,
+      57,
+      58,
+      59,
+      61,
+      66,
+      70
+    ],
+    "classification": "competence",
+    "frequency": [
+      "role",
+      "periodic"
+    ],
+    "regulators": [
+      "Consumer Financial Protection Bureau (CFPB)",
+      "Office of the Comptroller of the Currency (OCC)",
+      "Board of Governors of the Federal Reserve System",
+      "Federal Deposit Insurance Corporation (FDIC)"
+    ],
+    "references": [
+      {
+        "title": "CFPB Supervision and Examination Manual: Compliance Management Review",
+        "issuer": "CFPB",
+        "url": "https://files.consumerfinance.gov/f/documents/201708_cfpb_compliance-management-review_supervision-and-examination-manual.pdf",
+        "note": "Training is a reviewed component of the compliance management system; examiners check content, completion and updates. Also sets complaint response expectations.",
+        "effective": "2017",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Comptroller's Handbook: Compliance Management Systems",
+        "issuer": "OCC",
+        "url": "https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/compliance-mgmt-systems/pub-ch-compliance-management-systems.pdf",
+        "note": "OCC examiner expectations for the consumer compliance management system, including training."
+      },
+      {
+        "title": "CFPB Examination Procedures: Unfair, Deceptive, or Abusive Acts or Practices",
+        "issuer": "CFPB",
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_unfair-deceptive-abusive-acts-practices-udaaps_procedures_2023-09.pdf",
+        "note": "Sets out the unfairness, deception and abuse standards and the role of complaints; examiners review training materials and incentive plans.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR Part 1005 Electronic Fund Transfers (Regulation E)",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1005/11/",
+        "provision": "12 CFR 1005.6(b), 1005.11",
+        "note": "Consumer liability limits for unauthorised transfers and the error resolution procedure, including notice, investigation, provisional credit and reporting timelines.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR 1026.36 Prohibited acts or practices and certain requirements for credit secured by a dwelling",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+        "provision": "12 CFR 1026.36(f)(3), 1026.36(g)",
+        "note": "Loan originator organisations must screen loan originator employees before they originate and provide periodic training on applicable federal and state law; names and NMLSR IDs go on key loan documents.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR 1026.19 Certain mortgage and variable-rate transactions",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+        "provision": "12 CFR 1026.19(e)(1)(iii), (e)(2), (f)(1)(ii)",
+        "note": "Timing of the Loan Estimate and Closing Disclosure and the limit on fees before the Loan Estimate is received.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Equal Credit Opportunity Act (ECOA) examination procedures",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/compliance/supervision-examinations/equal-credit-opportunity-act-ecoa-examination-procedures/",
+        "note": "Updated July 2026 to reflect the April 2026 Regulation B amendments on disparate impact, discouragement and special purpose credit programmes.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Equal Credit Opportunity Act (Regulation B), final rule (FR Doc. 2026-07804)",
+        "issuer": "CFPB",
+        "url": "https://www.federalregister.gov/documents/2026/04/22/2026-07804/equal-credit-opportunity-act-regulation-b",
+        "note": "Amends Regulation B on disparate impact, discouragement and special purpose credit programmes. Published 22 April 2026; effective 21 July 2026 (confirmed via the Federal Register API).",
+        "effective": "2026-07-21",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR Part 1002 Equal Credit Opportunity Act (Regulation B)",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/",
+        "provision": "12 CFR 1002.2(z), 1002.4, 1002.6(a), 1002.9(a)",
+        "note": "Prohibited bases, the ban on discrimination and discouragement, the statement that the effects test does not apply, and notice of action taken.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR Part 1016 Privacy of Consumer Financial Information (Regulation P)",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1016/",
+        "provision": "12 CFR 1016.4, 1016.5, 1016.10",
+        "note": "Initial and annual privacy notices, the annual notice exception, and the opt-out before sharing with nonaffiliated third parties.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "12 CFR 1006.2 Definitions (Regulation F)",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/rules-policy/regulations/1006/2/",
+        "provision": "12 CFR 1006.2(i)",
+        "note": "Defines debt collector, including a creditor collecting its own debts under a name suggesting a third party.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Learn how the complaint process works",
+        "issuer": "CFPB",
+        "url": "https://www.consumerfinance.gov/complaint/process/",
+        "note": "Companies generally respond to complaints sent through the CFPB within 15 days, with a final response within 60 days where more time is needed.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "us-cc-x1",
+        "question": "Prairie Lantern Bank, a national bank with USD 14 billion in assets, is preparing for a consumer compliance exam. Which statement about its supervisors is most accurate?",
+        "options": [
+          "Only the OCC can examine it, because it is a national bank",
+          "The CFPB examines it for federal consumer financial law, and the OCC remains its prudential supervisor",
+          "Only the FDIC examines it, because its deposits are insured",
+          "FinCEN examines it for consumer law under the Bank Secrecy Act"
+        ],
+        "answer": 1,
+        "explanation": "Above USD 10 billion in assets, the CFPB supervises a bank for federal consumer financial law. The OCC still charters and supervises the national bank prudentially. FinCEN is about the BSA, not consumer law.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x2",
+        "question": "A bank's compliance policies are excellent, but staff in a new digital lending team have never been trained on them. How would an examiner most likely see this?",
+        "options": [
+          "As acceptable, because the written policies are what examiners rate",
+          "As a problem only once customers have already started to complain about it",
+          "As a matter for the HR department, which sits outside the CMS",
+          "As a CMS weakness, since training must reinforce policy for each role"
+        ],
+        "answer": 3,
+        "explanation": "Training is one of the four parts of the compliance programme. Policies that staff do not know do not protect consumers, and examiners check that training is tailored and consistent with policy.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x3",
+        "question": "The board of a bank receives no reports on consumer complaints or compliance issues. Which CMS component is weakest?",
+        "options": [
+          "Monitoring and/or audit",
+          "Consumer complaint response",
+          "Policies and procedures manual",
+          "Board and management oversight"
+        ],
+        "answer": 3,
+        "explanation": "Board and management oversight includes receiving relevant compliance information and acting on it. Without reports, the board cannot carry out its oversight role, even if other parts exist.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x4",
+        "question": "A bank outsources its collections calls to a vendor. The vendor's agents use a script the bank never reviewed, and complaints rise. Which response best fits the CFPB's expectations?",
+        "options": [
+          "Tell complainants to take their concerns to the vendor directly",
+          "Review and approve the script, require vendor training and monitor calls",
+          "End the contract at once and stop collecting overdue debts",
+          "Note in the file that the vendor carries all of the responsibility by contract"
+        ],
+        "answer": 1,
+        "explanation": "The bank cannot outsource responsibility for compliance. It should oversee the provider's procedures, training and conduct, including scripts, and monitor results.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x5",
+        "question": "Which approach to compliance training is most consistent with what CFPB examiners look for?",
+        "options": [
+          "One annual course for all staff, unchanged unless the law changes",
+          "Training only for the compliance department, who then answer any staff questions",
+          "Role-based modules updated before rule and product changes, with completion tracking",
+          "Optional e-learning that staff can take when they have time"
+        ],
+        "answer": 2,
+        "explanation": "The manual expects training to be comprehensive, timely, tailored to responsibilities, updated in advance of changes, and tracked, with follow-up for late completers.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x6",
+        "question": "An audit finds that branch staff misdescribe a savings account's fee waiver. Management commits to a fix. What should examiners later be able to see?",
+        "options": [
+          "Training built in response to the finding, and evidence staff completed it",
+          "A note that the account has since been renamed",
+          "A statement from staff that they will be more careful",
+          "Nothing, because audit findings are kept confidential"
+        ],
+        "answer": 0,
+        "explanation": "Examiners request training developed as a result of management's commitments to address audit, monitoring or exam findings and complaint issues. They expect to see the content and completion.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x7",
+        "question": "In the 2023 Bank of America order on credit card rewards, what did the CFPB find about a sign-up bonus?",
+        "options": [
+          "It was so generous that it raised safety and soundness concerns",
+          "It was shown as open to all but refused to applicants in some channels",
+          "It was paid to the bank's employees instead of to the customers",
+          "It was found lawful because the conditions were set out in the fine print"
+        ],
+        "answer": 1,
+        "explanation": "The CFPB found deception: the bonus was advertised online in a way that made it seem open to all applicants, but those applying by phone or in branch were denied it. Some promised bonuses were not paid due to employee error.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x8",
+        "question": "A bank's sales incentive plan pays staff per new account. Which control set best reflects the CFPB manual's expectations?",
+        "options": [
+          "Higher incentives for staff who open the most products each month",
+          "Deleting older consent records to save storage and reduce cost",
+          "Letting each branch design its own incentive rules and targets",
+          "Compensation review, training on consent and accurate terms, and a speak-up route"
+        ],
+        "answer": 3,
+        "explanation": "The manual asks examiners to review incentive structures and training on ethics, reporting, accurate descriptions and consent evidence. These are the controls that would have prevented harms like the Wells Fargo case.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x9",
+        "question": "An examiner concludes that a bank's training programme has significant gaps that are likely to lead to violations. Which rating language would match the CFPB scale?",
+        "options": [
+          "Deficient or seriously deficient",
+          "Amber or red status",
+          "Pass or fail outcome",
+          "Level 1 or Level 2 rating"
+        ],
+        "answer": 0,
+        "explanation": "The CFPB manual asks examiners to conclude whether each element is strong, satisfactory, deficient, seriously deficient or critically deficient.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x10",
+        "question": "A bank launches a 'zero-fee' overdraft line. A fee applies after the first 30 days, disclosed on page 9 of the agreement. Staff are told not to mention it unless asked. What is the strongest UDAAP concern?",
+        "options": [
+          "Unfairness, because every kind of overdraft fee is illegal under federal law",
+          "Deception: the headline's net impression misleads and fine print may not cure it",
+          "No concern at all, because the fee is written into the account agreement",
+          "Abusiveness, because any fee charged on a line of credit always counts as abusive"
+        ],
+        "answer": 1,
+        "explanation": "The net impression of 'zero-fee' is misleading, the fee is material and staff are told to stay silent. Fine print may not cure a misleading headline.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x11",
+        "question": "Which fact pattern best fits the 'not reasonably avoidable' element of unfairness?",
+        "options": [
+          "A fee the customer chose to pay after a clear and full explanation",
+          "A fee that is waived when customers sign up for low-balance alerts",
+          "A fee triggered by a merchant's re-presentment the customer can't control",
+          "A fee shown clearly on screen before each transaction is confirmed by the customer"
+        ],
+        "answer": 2,
+        "explanation": "Consumers cannot reasonably avoid harm they cannot control or foresee. Re-presentment timing is set by the merchant, as in the repeat NSF fee case.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x12",
+        "question": "An older customer relies on a banker who says a product is 'right for you', and the banker sells a costly add-on the customer clearly doesn't understand. Which UDAAP limb fits best?",
+        "options": [
+          "Abusive: unreasonable advantage of reliance and lack of understanding",
+          "Unfair: the add-on product was not profitable for the bank",
+          "Deceptive: the product's official name was far too long",
+          "None: the customer signed all the paperwork, so the sale is lawful"
+        ],
+        "answer": 0,
+        "explanation": "The abusive standard covers taking unreasonable advantage of a consumer's lack of understanding or reasonable reliance on the provider to act in their interest.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x13",
+        "question": "A marketing manager argues: 'We didn't intend to mislead, so it can't be deceptive.' What is the correct response?",
+        "options": [
+          "Correct: intent to mislead is the key element of deception",
+          "Intent is not needed; the test is whether a reasonable consumer is misled",
+          "Correct, unless the regulator can prove bad faith by the bank",
+          "Intent matters only for unfairness, so deception is ruled out"
+        ],
+        "answer": 1,
+        "explanation": "Deception does not require intent. The test is whether the practice is likely to mislead a reasonable consumer and is material.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x14",
+        "question": "Under the CFPB's UDAAP procedures, which documents would examiners typically request early to spot UDAAP risk?",
+        "options": [
+          "Only the audited financial statements and auditor's letter",
+          "Only board meeting minutes on capital and dividend policy",
+          "Only IT system architecture diagrams and data centre network maps",
+          "Training materials, pay plans, disclosures and complaint records"
+        ],
+        "answer": 3,
+        "explanation": "The document review step lists items such as training materials, product lists and disclosures, procedure manuals, minutes, monitoring and audit materials, compensation arrangements and complaints.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x15",
+        "question": "The 2022 Wells Fargo order covered deposit accounts. Which deposit practice did the CFPB find unfair?",
+        "options": [
+          "Freezing accounts on suspected fraud when lesser restraints were available",
+          "Paying interest above the advertised savings rate",
+          "Offering more branch locations than competitors",
+          "Sending monthly account statements by email only"
+        ],
+        "answer": 0,
+        "explanation": "The CFPB found Wells Fargo unfairly froze consumer accounts in suspected fraud cases when lesser restraints were available, alongside deceptive claims on fee waivers and unfair overdraft fees.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x16",
+        "question": "Which statement about puffery is consistent with the CFPB procedures?",
+        "options": [
+          "Any marketing adjective at all is deceptive",
+          "Puffery is deceptive once any customer complains",
+          "Exaggeration no reasonable consumer would take seriously is not deceptive",
+          "Puffery is allowed only in television adverts"
+        ],
+        "answer": 2,
+        "explanation": "The procedures say exaggerated claims or puffery are not deceptive if a reasonable consumer would not take them seriously.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x17",
+        "question": "A bank sees 200 complaints in a month saying customers didn't understand a new card's interest rate structure. What does the CFPB guidance suggest examiners do with this?",
+        "options": [
+          "Ignore it unless a court finds a violation",
+          "Count it only if each complaint is in writing",
+          "Treat it as a red flag and review the practice in detail",
+          "Assume it reflects customer error and move on"
+        ],
+        "answer": 2,
+        "explanation": "The UDAAP procedures say complaints alleging consumers did not understand terms may be a red flag warranting a detailed review, especially when many similar complaints concern the same product.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x18",
+        "question": "A UDAAP review weighs costs and benefits under the unfairness test. Which is an offsetting benefit the test can consider?",
+        "options": [
+          "Lower prices or wider product availability for consumers",
+          "Higher fee income for the bank",
+          "Lower staff training costs overall",
+          "A higher share price for investors"
+        ],
+        "answer": 0,
+        "explanation": "Countervailing benefits are to consumers or competition, such as lower prices or wider availability. The costs of preventing the injury are also considered, but bank profit alone is not a consumer benefit.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x19",
+        "question": "A customer phones on Monday to dispute an online transfer. The bank requires written confirmation. The letter arrives 14 business days later. The bank has not yet decided. Which statement is correct?",
+        "options": [
+          "The bank may close the case because the written letter arrived late",
+          "The bank must keep investigating but did not have to give provisional credit",
+          "The bank must pay interest on the disputed amount at double the rate",
+          "The bank must restart the 10-business-day clock from the date the letter arrived"
+        ],
+        "answer": 1,
+        "explanation": "The investigation clock runs from the oral notice. Because written confirmation came after 10 business days, the bank need not provisionally credit, but it must still investigate and resolve the error.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x20",
+        "question": "Day 9 after a customer's dispute: the investigation needs another two weeks. What must the bank do to use the longer period?",
+        "options": [
+          "Ask the customer to agree in writing to the longer investigation period",
+          "Report the open dispute to the CFPB and wait for its instructions",
+          "Close the account straight away to stop any further losses occurring on it",
+          "Provisionally credit by day 10 and tell the customer within two business days"
+        ],
+        "answer": 3,
+        "explanation": "To use up to 45 days (or 90 where it applies), the bank must provisionally credit within 10 business days, tell the customer within two business days and give full use of the funds.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x21",
+        "question": "A disputes analyst wants to hold back part of a provisional credit. Under what condition does Regulation E allow holding back up to USD 50?",
+        "options": [
+          "When it reasonably believes an unauthorised transfer occurred and liability rules are met",
+          "Whenever the customer's account balance is low at the time of the dispute",
+          "When the merchant has formally disputed the customer's version of events",
+          "When the customer has already filed a complaint with the CFPB about it"
+        ],
+        "answer": 0,
+        "explanation": "1005.11(c)(2)(i) lets the bank withhold up to USD 50 if it has a reasonable basis to believe an unauthorised transfer occurred and has met 1005.6(a).",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x22",
+        "question": "A notice of error concerns a transfer made 20 days after the customer's first deposit into a new account. Which periods apply?",
+        "options": [
+          "10 business days and 45 days, as for any account",
+          "5 business days and 30 days, as new accounts are simpler",
+          "20 business days instead of 10, and 90 days instead of 45",
+          "No error resolution rights apply to accounts this new at all"
+        ],
+        "answer": 2,
+        "explanation": "For transfers within 30 days after the first deposit, the 10-business-day period becomes 20, and the 45-day period becomes 90.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x23",
+        "question": "A bank reverses a provisional credit after finding no error. Which additional step does Regulation E require?",
+        "options": [
+          "Charge an overdraft fee on any item that the reversal causes to bounce",
+          "Freeze the account for 30 days in case the customer disputes again",
+          "Notify the debit and honour items for five business days without overdraft charges",
+          "Ask the customer to reimburse the bank's investigation costs in full"
+        ],
+        "answer": 2,
+        "explanation": "1005.11(d)(2) requires notice of the date and amount of the debit and that the bank will honour third-party items and preauthorised transfers for five business days without overdraft charges, as described.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x24",
+        "question": "The CFPB found Bank of America acted abusively in its 2022 prepaid card case. Which conduct was described as abusive?",
+        "options": [
+          "Reapplying the fraud filter to deny claims already investigated and paid",
+          "Paying unemployment benefits to recipients on prepaid debit cards",
+          "Answering cardholders' phone calls more slowly than in past years",
+          "Signing benefit delivery contracts with 12 different US state governments"
+        ],
+        "answer": 0,
+        "explanation": "The CFPB described retroactively applying the fraud filter to deny previously paid notices of error as abusive. The original denials and freezes were unfair.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x25",
+        "question": "A customer notices an unauthorised transfer on a statement sent 75 days ago and reports it today. More unauthorised transfers happened after day 60. Which is accurate?",
+        "options": [
+          "She has no rights at all because more than 60 days have passed",
+          "She is liable for everything, including the transfers before day 60",
+          "The bank must refund everything regardless of when she reported it",
+          "She may owe later transfers the bank shows timely notice would have prevented"
+        ],
+        "answer": 3,
+        "explanation": "Under 1005.6(b)(3), failure to report within 60 days of the statement can make the consumer liable for later transfers the bank shows would have been prevented. Extenuating circumstances can extend the time.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x26",
+        "question": "A fraud team proposes freezing every account with a disputed card transaction until the investigation ends. What does the 2022 Wells Fargo order suggest?",
+        "options": [
+          "Freezing every account is always required in fraud cases",
+          "Freezing accounts when lesser restraints are available can be unfair",
+          "Account freezes fall outside consumer protection law",
+          "Freezes are always fine if the deposit agreement allows them in writing"
+        ],
+        "answer": 1,
+        "explanation": "The CFPB found Wells Fargo unfairly froze accounts in suspected fraud cases when lesser restraints were available. Controls should be proportionate.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x27",
+        "question": "Grace hires a bank loan originator on 1 March 2026. He is registered in NMLSR. Before he originates a mortgage, which combination meets 1026.36(f)(3)?",
+        "options": [
+          "NMLSR background check, credit report, NMLSR findings, fitness decision, training",
+          "NMLSR registration only, because registration replaces all of the bank's checks",
+          "A credit report only, because he is already an experienced loan originator",
+          "Periodic training only, because background checks are optional for bank employees"
+        ],
+        "answer": 0,
+        "explanation": "The bank must get the background check, credit report and NMLSR information, decide the person meets the standards before they originate, and provide periodic training.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x28",
+        "question": "A bank's screening shows a loan originator candidate was convicted 12 years ago of a felony involving fraud. No consent from a regulator applies. What does 1026.36(f)(3)(ii) mean for the hire?",
+        "options": [
+          "He qualifies because more than seven years have passed since then",
+          "He qualifies if a senior manager vouches for his honesty",
+          "He does not meet the standard to act as a loan originator",
+          "He qualifies after completing one year of probation"
+        ],
+        "answer": 2,
+        "explanation": "The seven-year look-back applies to felonies generally, but a felony involving fraud, dishonesty, breach of trust or money laundering disqualifies at any time, unless the relevant consent has been obtained.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x29",
+        "question": "A bank wants to save time by giving the Loan Estimate at the first in-person meeting, five business days after it received the online application. What is the issue?",
+        "options": [
+          "There is no issue at all if it is delivered in person",
+          "It is too early, so the bank must wait a few more days",
+          "The Loan Estimate is late; it was due by the third business day",
+          "The timing rule only applies to refinance loans, not to home purchases"
+        ],
+        "answer": 2,
+        "explanation": "1026.19(e)(1)(iii)(A) requires delivery or mailing no later than the third business day after the application is received.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x30",
+        "question": "A mortgage borrower receives the Closing Disclosure by email the day before closing. Ignoring special exceptions, what is the issue?",
+        "options": [
+          "The consumer must receive it at least three business days before consummation",
+          "There is no issue at all, as long as it arrives before the consumer signs anything",
+          "The Closing Disclosure is optional for banks that are supervised by the CFPB",
+          "It must always be posted by mail and can never be sent by email to anyone"
+        ],
+        "answer": 0,
+        "explanation": "1026.19(f)(1)(ii)(A) requires receipt no later than three business days before consummation, with defined exceptions such as timeshares.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x31",
+        "question": "After 21 July 2026, a compliance analyst asks whether the bank still needs fair lending training for loan officers. What is the best answer?",
+        "options": [
+          "No: removing the effects test ended the bank's fair lending duties",
+          "Only for staff working in states that have their own fair lending laws",
+          "Only if the CFPB, rather than the OCC, examines the bank in this exam cycle",
+          "Yes: intentional discrimination, discouragement and notice duties remain"
+        ],
+        "answer": 3,
+        "explanation": "The 2026 amendment removed disparate impact from Regulation B. ECOA and Regulation B still ban discrimination on a prohibited basis, discouragement, and require proper adverse action notices.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x32",
+        "question": "Which statement best describes how the amended Regulation B treats discouragement?",
+        "options": [
+          "Any statement at all that leaves an applicant with a negative impression of the bank or its products",
+          "Statements the creditor knows or should know would make a reasonable person expect denial on a prohibited basis",
+          "Nothing, because the discouragement rule was removed from Regulation B entirely by the 2026 amendment",
+          "Only written advertising, so spoken statements made by loan officers in branches are no longer covered at all"
+        ],
+        "answer": 1,
+        "explanation": "The amended 1002.4(b) covers oral or written statements, including images, that the creditor knows or should know would cause a reasonable person to believe they'd be denied or offered worse terms because of a prohibited basis.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x33",
+        "question": "A bank denies an application and sends a notice saying only 'internal standards not met'. Under Regulation B, what is wrong?",
+        "options": [
+          "It must state specific reasons, or disclose the right to get them",
+          "Nothing, because internal credit standards are confidential",
+          "It must also enclose the applicant's full credit file",
+          "It must be sent within five days of the decision"
+        ],
+        "answer": 0,
+        "explanation": "An adverse action notice must contain a statement of specific reasons or disclose the applicant's right to a statement of specific reasons, along with other required content.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x34",
+        "question": "A mortgage application lists the bank's name but not the individual loan originator's NMLSR ID. Which Regulation Z rule is engaged?",
+        "options": [
+          "1026.19(f), on the timing of the Closing Disclosure",
+          "1005.11, on the resolution of transfer errors",
+          "1026.36(g), on names and NMLSR IDs on loan documents",
+          "1016.5, on the annual privacy notice sent to customers"
+        ],
+        "answer": 2,
+        "explanation": "1026.36(g) requires the organisation's and the primary individual loan originator's names and NMLSR IDs on the application, the Loan Estimate and Closing Disclosure, the note and the security instrument.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x35",
+        "question": "A customer files a complaint through the CFPB portal about a mortgage escrow error. The bank needs more than 15 days to investigate. What is the appropriate approach?",
+        "options": [
+          "Ignore the portal and reply to the customer by letter after 90 days",
+          "Close the complaint in the portal marked as 'no response needed'",
+          "Say the response is in progress and give a final response within 60 days",
+          "Forward it to the escrow vendor and let the vendor answer it on its own terms"
+        ],
+        "answer": 2,
+        "explanation": "The CFPB says companies generally respond in 15 days, and where needed indicate the response is in progress and provide a final response within 60 days.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x36",
+        "question": "Complaints about a service provider's call centre are rising. The bank logs only complaints made directly to its branches. What does the CFPB manual expect?",
+        "options": [
+          "All complaints, including about service providers, from every channel",
+          "Only complaints made in person at branches need to be recorded",
+          "Complaints about vendors belong only in the vendor's own complaint process",
+          "Only complaints that customers put in writing need to be logged"
+        ],
+        "answer": 0,
+        "explanation": "Examiners assess whether complaints, regardless of channel and whether about the entity or its service providers, are recorded, categorised and resolved promptly.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x37",
+        "question": "A bank's privacy notice says it does not share with nonaffiliated third parties for marketing. It now wants to start. Which is the correct sequence?",
+        "options": [
+          "Share the data now and update the privacy notice at next year's annual mailing",
+          "Share only customers' email addresses, which are not covered by Regulation P",
+          "Share once the insurer signs a written promise not to sell the data to anyone else",
+          "Revised notice and opt-out, a reasonable wait, then share only non-opted-out data"
+        ],
+        "answer": 3,
+        "explanation": "Sharing outside the exceptions requires notice, an opt-out notice and a reasonable opportunity to opt out first. Changing practice also ends any annual notice exception.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x38",
+        "question": "Which statement about the scope of Regulation P notices is correct?",
+        "options": [
+          "Every person who visits a branch must be handed an annual privacy notice",
+          "Customers get initial and generally annual notices; one-off consumers mainly before sharing",
+          "Only borrowers, not depositors, are entitled to receive privacy notices",
+          "Former customers must keep receiving annual privacy notices for life"
+        ],
+        "answer": 1,
+        "explanation": "Regulation P distinguishes customers, who get notices when the relationship starts and generally yearly, from consumers, who get notice before disclosure to nonaffiliated third parties outside exceptions. Former customers do not need annual notices.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x39",
+        "question": "A bank collects its own overdue loans in-house under its own name. Its staff use threatening language. Which statement is most accurate?",
+        "options": [
+          "Regulation F may not apply, but the conduct can still be a UDAAP",
+          "No federal consumer law applies to a bank's own in-house collections",
+          "Only state criminal law can apply to threatening collection calls",
+          "It is lawful as long as the debt itself is valid and overdue"
+        ],
+        "answer": 0,
+        "explanation": "A creditor collecting its own debts in its own name is generally outside Regulation F's debt collector definition, but UDAAP applies to any covered person, so abusive or deceptive collection is still unlawful.",
+        "difficulty": 5
+      },
+      {
+        "id": "us-cc-x40",
+        "question": "Which statement about recent CFPB consent order terminations (Citibank 2025, Regions 2025, Trustmark 2025) is the best compliance lesson?",
+        "options": [
+          "Banks can now stop their fair lending and fee practice reviews",
+          "Terminated orders show the original conduct was always legal",
+          "Priorities can change, but the laws and CMS expectations still apply",
+          "Only state law now governs consumer protection for US banks of every size"
+        ],
+        "answer": 2,
+        "explanation": "The CFPB pages show orders ended early after obligations were met or on motion. The laws (ECOA, CFPA, EFTA and others) remain, and banks still need a working CMS.",
+        "difficulty": 4
+      },
+      {
+        "id": "us-cc-x41",
+        "question": "An examiner reviews a bank's consumer complaint process and finds complaints are closed quickly but no one looks for patterns. Which CMS weakness is this?",
+        "options": [
+          "Complaints are being resolved too slowly",
+          "Complaints are not used to find risks and drive corrective action",
+          "The bank offers too many complaint channels",
+          "The bank is paying too much customer redress"
+        ],
+        "answer": 1,
+        "explanation": "The manual expects management to monitor complaints to identify risks of harm and CMS deficiencies, and take prospective and retrospective corrective action.",
+        "difficulty": 3
+      },
+      {
+        "id": "us-cc-x42",
+        "question": "On the eve of the exam, which package best shows a strong consumer CMS?",
+        "options": [
+          "A marketing brochure, the annual report and the latest share price",
+          "A single compliance policy approved by the board five years ago",
+          "A list of all employees, their job titles, their managers and their salary bands",
+          "Board reports, policies, training records, monitoring, audit and complaint fixes"
+        ],
+        "answer": 3,
+        "explanation": "Examiners assess oversight, policies, training, monitoring and audit, and complaint response. Evidence across all parts, including fixes, is what a strong CMS looks like.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
