@@ -7,8 +7,11 @@ course format as every other quest (`src/lib/courses/schema.ts`), so read `conte
 ## Accuracy first (non-negotiable)
 
 1. Your only sources of regulatory fact are the jurisdiction map you are given
-   (`content/regulatory/jurisdictions/<code>.json`) and official pages you open yourself with WebFetch/WebSearch
-   on official domains (regulator, FIU, gazette, legislation portal). If a fact is not in either, leave it out.
+   (`content/regulatory/jurisdictions/<code>.json`) and official pages you open yourself (WebFetch does not work in
+   this session: fetch with curl exactly as described in `content/regulatory/VERIFY-BRIEF.md`). Specific details
+   (provision numbers, deadlines, thresholds, periods) may only come from references marked `"checked"` in the map
+   or from official text you opened yourself. If a fact is not confirmed that way, leave it out or describe the
+   duty in general terms.
 2. Never invent section numbers, circular numbers, thresholds, deadlines, penalty amounts, form names or dates.
    When you state a number (e.g. a record-keeping period, a reporting deadline, a threshold), it must come from a
    source you checked. If unsure, describe the duty without the number ("within the time the regulation sets").
