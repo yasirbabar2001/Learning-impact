@@ -1,0 +1,3157 @@
+{
+  "slug": "bd-bb-ict-cyber",
+  "title": "Bangladesh | Bangladesh Bank ICT Security, Cybersecurity Framework and Data Protection",
+  "tagline": "Meet Bangladesh Bank's ICT Security Guideline and 2026 Cybersecurity Framework: phishing, ICT risk, 72-hour reporting and the new data and cyber laws.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Scheduled commercial banks in Bangladesh",
+    "Foreign bank branches in Bangladesh",
+    "Finance companies and NBFIs",
+    "Mobile financial service providers",
+    "Payment service providers and operators"
+  ],
+  "hours": 6,
+  "description": "This quest teaches the ICT and cyber security rules that Bangladesh Bank sets for the institutions it regulates. It is based on Bangladesh Bank's **Guideline on ICT Security, Version 4.0** (issued by BRPD Circular No. 10 of 19 June 2023) and its **Cybersecurity Framework, Version 1.0** (issued by BRPD-2 Circular No. 02 of 29 March 2026, with compliance due by 31 December 2026), and it introduces in general terms the **Cyber Security Act 2026** and the **Personal Data Protection Act 2026**.\n\nThe ICT Security Guideline requires security awareness training for all staff as early as possible after joining and every year after that, and an email security session for every new joiner within 60 days. The framework adds periodic training for all staff on security policies and cyber hygiene, and role training for privileged users, executives, security staff and vendors. This quest supports those duties for branch, operations, ICT and security staff, managers and auditors, at induction and as an annual refresher.\n\nIn five stages you join the Cyber Security Unit of a fictional Bangladeshi bank: mapping the rules, beating phishing, governing ICT risk, handling a ransomware incident against the 72-hour clock and preparing for the 31 December 2026 deadline.\n\nThe quest builds knowledge and does not replace your institution's own ICT Security Policy, procedures and training; always follow them and the latest Bangladesh Bank instructions.",
+  "audience": [
+    "All staff of banks and other Bangladesh Bank-regulated institutions who need annual security awareness and the email security session",
+    "Branch managers, operations and customer service staff who handle customer data, payments and suspicious messages",
+    "ICT, information security, SOC and CIRT staff, system administrators and developers with privileged access",
+    "Managers, CISOs, risk and compliance officers who run ICT governance, ICT risk and incident reporting",
+    "Internal and IS auditors and training teams preparing for Bangladesh Bank ICT inspections"
+  ],
+  "outcomes": [
+    "Explain how the ICT Security Guideline v4.0, the Cybersecurity Framework v1.0, the Cyber Security Act 2026 and the PDPA 2026 fit together",
+    "Spot and report phishing, vishing, smishing and pretexting, and follow the guideline's email, device and work-from-home rules",
+    "Describe ICT governance roles and run the ICT risk cycle with sound access and privileged-user controls",
+    "Handle a cyber incident with the right roles and report critical incidents within 72 hours of occurrence",
+    "Apply the PDPA 2026 basics on consent, disclosure, security and breach notice to customer data",
+    "Build training records and evidence that meet the joining, 60-day and annual training duties"
+  ],
+  "quest": {
+    "name": "The 72-Hour Clock of Motijheel",
+    "premise": "You have just joined the Cyber Security Unit of Shimul Commercial Bank PLC, a fictional conventional bank headquartered in Motijheel, Dhaka, with a data centre in Mirpur and branches from Khulna to Rajshahi. Bangladesh Bank's Cybersecurity Framework must be met by 31 December 2026. With CISO Farhana Akter, ICT head Rashedul Islam, Khulna branch manager Sumaiya Haque, ICT audit head Anisur Rahman Talukder and training head Proshanta Kumar Das, clear five stages, then face the final boss: the inspector's exam.",
+    "badge": {
+      "name": "Delta Cyber Guardian",
+      "description": "Awarded to staff who can apply Bangladesh Bank's ICT Security Guideline and Cybersecurity Framework, beat phishing, report incidents on time and protect customer data."
+    },
+    "color": "#0f5132",
+    "cast": [
+      {
+        "id": "farhana",
+        "name": "Farhana Akter",
+        "role": "CISO and Head of Cyber Security Unit, your mentor",
+        "look": {
+          "skin": 3,
+          "hair": "bun",
+          "color": "#0f5132"
+        }
+      },
+      {
+        "id": "rashed",
+        "name": "Rashedul Islam",
+        "role": "Head of ICT Division (CITO), Dhaka",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#1d4ed8"
+        }
+      },
+      {
+        "id": "sumaiya",
+        "name": "Sumaiya Haque",
+        "role": "Branch Manager, KDA Avenue branch, Khulna",
+        "look": {
+          "skin": 4,
+          "hair": "hijab",
+          "color": "#9d174d"
+        }
+      },
+      {
+        "id": "anis",
+        "name": "Anisur Rahman Talukder",
+        "role": "Head of ICT Audit, Internal Control and Compliance",
+        "look": {
+          "skin": 4,
+          "hair": "beard",
+          "color": "#4b5563"
+        }
+      },
+      {
+        "id": "proshanta",
+        "name": "Proshanta Kumar Das",
+        "role": "Head of the bank's Training Institute, Mirpur",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The Rulebook: ICT Security Guideline v4.0, the 2026 Cybersecurity Framework and the New Laws",
+      "stage": "The Guideline Vault",
+      "summary": "Map the rules a Bangladeshi bank works under for ICT and cyber security: Bangladesh Bank's ICT Security Guideline v4.0 (2023), its Cybersecurity Framework v1.0 (2026) with compliance due by 31 December 2026, the Cyber Security Act 2026 and the Personal Data Protection Act 2026, and the training duties they set for every member of staff.",
+      "minutes": 50,
+      "objectives": [
+        "Explain how the ICT Security Guideline v4.0, the Cybersecurity Framework v1.0 and the bank's own policy fit together",
+        "Name the institutions each Bangladesh Bank document applies to and the 31 December 2026 compliance date",
+        "Describe the awareness and training duties: on joining, every year, and the email session within 60 days",
+        "Use the 2016 cyber fraud on Bangladesh Bank's own account to explain why these rules exist"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Shimul Commercial Bank",
+          "setting": "Cyber Security Unit, Shimul Commercial Bank PLC head office, Motijheel, Dhaka. 9:10 am, early November 2026.",
+          "lines": [
+            {
+              "who": "narrator",
+              "text": "You have just joined the Cyber Security Unit of Shimul Commercial Bank PLC. Bangladesh Bank's new Cybersecurity Framework must be met by 31 December 2026, and the board wants proof.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farhana",
+              "text": "Welcome! I'm Farhana Akter, the CISO. Your mission: make sure every one of our 4,000 staff knows and follows the rules before the deadline. Five stages, then the inspector's exam.",
+              "mood": "happy"
+            },
+            {
+              "who": "rashed",
+              "text": "Rashedul Islam, Head of ICT Division. My teams run the core banking system, SWIFT and the data centre. We already follow the ICT Security Guideline. Is the framework something new on top?",
+              "mood": "neutral"
+            },
+            {
+              "who": "proshanta",
+              "text": "Proshanta Kumar Das, Head of the Training Institute. I need to know exactly what the rules say about training: who, when and how often.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sumaiya",
+              "text": "(on video from Khulna) Sumaiya Haque, Branch Manager, KDA Avenue. Two of my officers got an email this morning that looked like it came from head office. One clicked the link.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "That is exactly why we start with the rulebook. Let's open the vault.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Four documents, one job",
+          "scenes": [
+            {
+              "icon": "📘",
+              "heading": "ICT Security Guideline v4.0",
+              "narration": "Bangladesh Bank issued version 4.0 of its Guideline on ICT Security in June 2023 through BRPD Circular No. 10. It sets minimum controls for governance, risk, infrastructure, cyber security, access, continuity, payments, vendors and training."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "Cybersecurity Framework v1.0",
+              "narration": "In March 2026, BRPD-2 Circular No. 02 issued the Cybersecurity Framework, Version 1.0. It is built around NIST-style functions, from preparation and governance to reporting, and must be complied with by 31 December 2026."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Cyber Security Act 2026",
+              "narration": "Parliament passed the Cyber Security Act in April 2026. It sets up the National Cyber Security Agency, lets the Government declare critical information infrastructure and defines cyber offences."
+            },
+            {
+              "icon": "🔐",
+              "heading": "Personal Data Protection Act 2026",
+              "narration": "The Personal Data Protection Act 2026 treats personal data as belonging to the person. It sets rules on consent, disclosure, security, retention and breach notification."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Your bank's own policy",
+              "narration": "Each bank turns all of this into a board-approved ICT Security Policy and procedures. That policy is what you follow day to day, so it must match the guideline and the framework."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "From Act to desk procedure",
+          "caption": "The framework says a Government Act or law prevails if one of its controls conflicts with it; a clash with another Bangladesh Bank instruction can be resolved on request.",
+          "items": [
+            {
+              "label": "Acts of Parliament",
+              "detail": "Cyber Security Act 2026 and Personal Data Protection Act 2026 bind everyone."
+            },
+            {
+              "label": "Bangladesh Bank circulars",
+              "detail": "BRPD Circular 10 (2023) and BRPD-2 Circular 02 (2026) give the documents force."
+            },
+            {
+              "label": "ICT Guideline and Cyber Framework",
+              "detail": "Minimum controls and outcomes every regulated institution must meet."
+            },
+            {
+              "label": "Board-approved ICT Security Policy",
+              "detail": "The bank's own policy, which must comply with the guideline."
+            },
+            {
+              "label": "Procedures and user manuals",
+              "detail": "Step-by-step instructions for each ICT activity and application."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sumaiya asks which Bangladesh Bank document first set the rule that new joiners get an email security session within 60 days. What do you tell her?",
+          "options": [
+            "The Cybersecurity Framework v1.0 (2026)",
+            "The Guideline on ICT Security, Version 4.0 (2023)",
+            "The Personal Data Protection Act 2026",
+            "The Cyber Security Act 2026"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.14.9 of the ICT Security Guideline v4.0 requires the email security awareness session within 60 days of joining. The framework adds periodic training, but the 60-day rule is in the guideline."
+        },
+        {
+          "type": "concept",
+          "title": "Who the rules apply to",
+          "body": "Both Bangladesh Bank documents reach well beyond scheduled banks.\n\n- **ICT Security Guideline v4.0 (section 1.2):** banks, non-bank financial institutions, mobile financial service providers, payment service providers, payment system operators, white label ATM and merchant acquirers, and other financial service providers Bangladesh Bank regulates. The guideline calls them all \"the Organization\".\n- **Cybersecurity Framework v1.0 (section 1.1):** banks, financial institutions, MFS providers, PSPs, PSOs and other financial or payment service providers.\n\nThe guideline describes itself as a **minimum** requirement. The framework is a **baseline** of controls, mostly drawn from ISO 27001, Bangladesh's national ICT security policies and the ICT Security Guideline itself.\n\nIf a bank cannot comply, section 1.3 of the guideline expects a named team to monitor compliance, a time-bound fix, and, if that fails, a request to Bangladesh Bank for **dispensation**. Repeated failure can lead to a penalty, depending on the impact on the business and on customers."
+        },
+        {
+          "type": "match",
+          "title": "Match the document to what it does",
+          "prompt": "Link each source to its main role for a Bangladeshi bank.",
+          "pairs": [
+            {
+              "left": "ICT Security Guideline v4.0",
+              "right": "Minimum ICT controls, from governance and access to email, SWIFT and staff training."
+            },
+            {
+              "left": "Cybersecurity Framework v1.0",
+              "right": "Seven functions from Preparation and Govern to Reporting; compliance due 31 December 2026."
+            },
+            {
+              "left": "Cyber Security Act 2026",
+              "right": "National Cyber Security Agency, critical information infrastructure and cyber offences."
+            },
+            {
+              "left": "Personal Data Protection Act 2026",
+              "right": "Consent, purpose limits, security, retention and breach notice for personal data."
+            },
+            {
+              "left": "BRPD-1 Circular 10 (2026)",
+              "right": "Foundation training for new officers, which must cover data protection and cyber security."
+            },
+            {
+              "left": "Bank's ICT Security Policy",
+              "right": "Board-approved rules that put the guideline into practice inside the bank."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "How the rulebook grew",
+          "items": [
+            {
+              "label": "ICT guideline v1.0",
+              "value": "2005",
+              "detail": "Bangladesh Bank's first ICT guideline for scheduled banks and financial institutions."
+            },
+            {
+              "label": "Cyber fraud event",
+              "value": "2016",
+              "detail": "Unauthorised payments of about USD 81m from Bangladesh Bank's account at the New York Fed."
+            },
+            {
+              "label": "ICT Security Guideline v4.0",
+              "value": "Jun 2023",
+              "detail": "Issued by BRPD Circular No. 10; replaces version 3.0 of 2015."
+            },
+            {
+              "label": "Cybersecurity Framework v1.0",
+              "value": "Mar 2026",
+              "detail": "Issued by BRPD-2 Circular No. 02 on 29 March 2026."
+            },
+            {
+              "label": "New Acts passed",
+              "value": "Apr 2026",
+              "detail": "Cyber Security Act and Personal Data Protection Act, both dated 10 April 2026."
+            },
+            {
+              "label": "Framework deadline",
+              "value": "31 Dec 2026",
+              "detail": "Every covered institution must comply with the framework by this date."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real case: the 2016 cyber fraud on Bangladesh Bank",
+          "body": "Bangladesh Bank's own audited accounts for 2015-2016 record that in **February 2016** the Federal Reserve Bank of New York processed several **unauthorised transactions** from Bangladesh Bank's account there. About **USD 81 million** was paid into third-party accounts at Rizal Commercial Banking Corporation (RCBC) in the Philippines.\n\nBangladesh Bank told RCBC to halt onward payments, but much of the money had already been paid out to other recipients. The Philippines' Anti-Money Laundering Council secretariat recovered part of it, and the Philippine central bank fined RCBC.\n\nIn 2019, Bangladesh Bank and the New York Fed signed a Resolution and Assistance Agreement under which the New York Fed gives technical help in Bangladesh Bank's litigation to recover the funds. Their joint statement called this kind of fraud a threat to the international funds transfer system.\n\n**Lesson:** one compromised payment channel at a central bank cost tens of millions of dollars. Today's ICT guideline has a dedicated SWIFT section and both documents put heavy weight on staff awareness."
+        },
+        {
+          "type": "story",
+          "title": "The clicked link",
+          "setting": "Video call between head office and the KDA Avenue branch, Khulna. 11:30 am.",
+          "lines": [
+            {
+              "who": "sumaiya",
+              "text": "The email said 'Revised leave policy from HR', with a link. Officer Tanvir clicked it and typed his network password. Then he realised the sender's address was slightly wrong.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "Good that he noticed. Has he reported it formally, or just told you?",
+              "mood": "thinking"
+            },
+            {
+              "who": "sumaiya",
+              "text": "Just told me. He joined us six weeks ago. Has he even had the email security session yet?",
+              "mood": "neutral"
+            },
+            {
+              "who": "proshanta",
+              "text": "Let me check... his induction was in Dhaka, but the email security session for his batch is scheduled for next month.",
+              "mood": "worried"
+            },
+            {
+              "who": "anis",
+              "text": "Anisur Rahman Talukder, Head of ICT Audit. Next month would be past 60 days. An inspector would flag that.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farhana",
+              "text": "Then we have two jobs: handle this incident, and fix the training calendar.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "What first?",
+          "situation": "Officer Tanvir at the Khulna branch entered his network password on a page reached from a suspicious email. He has told his manager but not the IT help desk or the Cyber Security Unit. It is 11:35 am and he is still logged in to the core banking system.",
+          "choices": [
+            {
+              "text": "Report it at once through the bank's incident channel, have his password reset after his identity is verified, and let the Cyber Security Unit check his account activity.",
+              "outcome": "Right. The guideline expects abnormal activity to be reported immediately and identity to be verified before credentials are changed. The unit can now look for misuse of his account and block the phishing site.",
+              "score": 2
+            },
+            {
+              "text": "Tell Tanvir to change his own password now and say nothing more, to avoid embarrassing him.",
+              "outcome": "Partly helpful, but the attacker may already have used the password, and nobody is checking. Silence also stops the unit from warning others who got the same email.",
+              "score": 1
+            },
+            {
+              "text": "Wait for the email security session next month, where Tanvir can raise it.",
+              "outcome": "Poor. The stolen password can be used today. Incidents must go through the reporting channel straight away, not wait for training.",
+              "score": 0
+            },
+            {
+              "text": "Forward the phishing email to all branch staff with the warning 'do not click this'.",
+              "outcome": "Risky. Sending a live malicious link around the branch spreads it further. The Cyber Security Unit decides how to warn staff safely.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Who must be trained, and when",
+          "caption": "Sections refer to the ICT Security Guideline v4.0 and the Cybersecurity Framework v1.0 unless stated.",
+          "headers": [
+            "Starting point",
+            "Ongoing"
+          ],
+          "items": [
+            {
+              "label": "Every staff member",
+              "left": "Security awareness as early as possible after joining",
+              "right": "Then every year (guideline s.6.7.1)"
+            },
+            {
+              "label": "New joiners",
+              "left": "Email security session within 60 days of joining",
+              "right": "Yearly refresher recommended (s.5.14.9)"
+            },
+            {
+              "label": "All staff under the framework",
+              "left": "Cyber awareness education",
+              "right": "Periodic training on policies and cyber hygiene (s.2.12)"
+            },
+            {
+              "label": "Managers",
+              "left": "Training on ICT infrastructure, policies and governance",
+              "right": "Responsibilities in incidents (s.13.1)"
+            },
+            {
+              "label": "New officers (2026)",
+              "left": "Foundation training covers data protection and cyber security",
+              "right": "Condition for confirmation"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Words the inspector will use",
+          "cards": [
+            {
+              "front": "The Organization",
+              "back": "The guideline's and framework's word for every institution they cover: banks, NBFIs, MFS providers, PSPs, PSOs and others regulated by Bangladesh Bank."
+            },
+            {
+              "front": "Dispensation",
+              "back": "Permission from Bangladesh Bank, for a specific period, when an institution cannot yet comply with part of the ICT guideline."
+            },
+            {
+              "front": "Minimum requirement",
+              "back": "The guideline sets the floor. Banks may add stronger controls but may not go below it."
+            },
+            {
+              "front": "Seven functions",
+              "back": "Preparation and Govern, Identify, Protect, Detect, Respond, Recovery and Reporting, as listed in the framework."
+            },
+            {
+              "front": "Cyber hygiene",
+              "back": "Everyday safe habits: strong passwords, locking screens, patching, careful clicking and prompt reporting."
+            },
+            {
+              "front": "31 December 2026",
+              "back": "The date by which BRPD-2 Circular No. 02 requires compliance with the Cybersecurity Framework v1.0."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the yearly email security refresher in section 5.14.9 of the ICT Security Guideline is accurate?",
+          "options": [
+            "It is mandatory for every employee, with no exceptions",
+            "It is recommended for all staff; the session within 60 days of joining is the firm requirement",
+            "It is only for email administrators and IT staff",
+            "It replaces the annual security awareness training in section 6.7.1"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.14.9 requires the session within 60 days of joining and recommends a yearly refresher. Separately, section 6.7.1 requires security awareness training for all staff on joining and every year after, so the yearly cycle still happens."
+        },
+        {
+          "type": "tip",
+          "title": "How to keep the rulebook straight",
+          "body": "- Quote the **document and section** when you explain a rule: 'ICT Guideline 6.7.1' or 'Framework 8.1.2.1'.\n- Use the **bank's ICT Security Policy** for day-to-day steps; it must comply with the guideline.\n- When a Bangladesh Bank circular and a training plan disagree, the circular wins; flag the gap to the CISO.\n- Laws change: the Cyber Security Act 2026 was already amended in July 2026. Check the current text on the Laws of Bangladesh portal before quoting it."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 1 take-aways",
+          "items": [
+            "The ICT Security Guideline v4.0 (BRPD Circular 10, June 2023) sets minimum ICT controls for all Bangladesh Bank-regulated financial service providers.",
+            "The Cybersecurity Framework v1.0 (BRPD-2 Circular 02, March 2026) adds a seven-function baseline; compliance is due by 31 December 2026.",
+            "All staff need security awareness on joining and every year; new joiners need an email security session within 60 days.",
+            "The Cyber Security Act 2026 and the Personal Data Protection Act 2026 now sit above the Bangladesh Bank rules.",
+            "The 2016 cyber fraud on Bangladesh Bank's New York Fed account shows what a payment channel compromise can cost."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think about your own first weeks in your bank. When did you receive security awareness and an email security session? If it was later than the rules expect, what would you change for the next batch of joiners?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-cy-s1-q1",
+          "question": "Which Bangladesh Bank circular issued the Guideline on ICT Security, Version 4.0?",
+          "options": [
+            "BRPD-2 Circular No. 02 of 29 March 2026",
+            "BRPD-1 Circular No. 10 of 7 May 2026",
+            "BRPD Circular No. 10 of 19 June 2023",
+            "BFIU Circular No. 26 of 16 June 2020"
+          ],
+          "answer": 2,
+          "explanation": "Version 4.0 of the ICT Security Guideline was issued by BRPD Circular No. 10 of 19 June 2023. BRPD-2 Circular No. 02 of 2026 issued the Cybersecurity Framework instead.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s1-q2",
+          "question": "By what date must institutions covered by Bangladesh Bank's Cybersecurity Framework v1.0 comply with it?",
+          "options": [
+            "30 June 2026, the end of the fiscal year",
+            "29 March 2027, one year after issue",
+            "No date; it is voluntary guidance",
+            "31 December 2026"
+          ],
+          "answer": 3,
+          "explanation": "BRPD-2 Circular No. 02 of 29 March 2026 requires compliance with the framework by 31 December 2026.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s1-q3",
+          "question": "A payment service provider licensed by Bangladesh Bank says the ICT Security Guideline is only for scheduled banks. Is that right?",
+          "options": [
+            "No. Section 1.2 applies it to banks, NBFIs, MFS providers, PSPs, PSOs and other Bangladesh Bank-regulated providers.",
+            "Yes. Only scheduled banks are named in the guideline's applicability section.",
+            "Yes, unless the PSP also holds a full banking licence.",
+            "No, but PSPs need only follow the chapter on digital payment security."
+          ],
+          "answer": 0,
+          "explanation": "Section 1.2 lists banks, NBFIs, MFS providers, PSPs, PSOs, white label ATM and merchant acquirers and other regulated providers, calling them all 'the Organization'.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s1-q4",
+          "question": "Under section 6.7.1 of the ICT Security Guideline, when must security awareness training be given to staff?",
+          "options": [
+            "Only when a member of staff is promoted to an officer grade",
+            "As early as possible after joining, and every year after that",
+            "Every three years, or after a serious incident",
+            "Once at induction, with no repeat required"
+          ],
+          "answer": 1,
+          "explanation": "Section 6.7.1 requires security awareness training for all staff at the earliest possible time after they start and annually thereafter, including spotting social engineering and resisting phishing.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s1-q5",
+          "question": "Rafiq joined a bank on 1 August. Under section 5.14.9 of the ICT Security Guideline, by when should he have attended the email security awareness session?",
+          "options": [
+            "Within 30 days of joining, so by the end of August",
+            "By the end of the calendar year",
+            "Within 60 days of joining, so by about the end of September",
+            "Within 90 days, at his confirmation review"
+          ],
+          "answer": 2,
+          "explanation": "The guideline requires an email security awareness session for all new joiners within 60 days of their enrolment, covering phishing detection, email etiquette and internal incident reporting.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s1-q6",
+          "question": "What does section 1.3 of the ICT Security Guideline expect when a bank cannot fix a non-compliance within its time frame?",
+          "options": [
+            "Seek dispensation from Bangladesh Bank; repeated failure may lead to a penalty",
+            "Report the matter to the National Cyber Security Agency",
+            "Nothing; the guideline is advisory, so there are no consequences",
+            "Suspend the services affected until the next external audit"
+          ],
+          "answer": 0,
+          "explanation": "Section 1.3 asks for a monitoring team, a time-bound fix and, if that fails, a request for dispensation. After repeated failures a penalty may follow, depending on the impact on business or customers.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s1-q7",
+          "question": "Which list gives the seven functions named in Bangladesh Bank's Cybersecurity Framework v1.0?",
+          "options": [
+            "Plan, Do, Check, Act, Audit, Report and Improve",
+            "Identify, Protect, Detect, Respond and Recover only",
+            "Govern, Assess, Contain, Eradicate, Recover, Notify and Close",
+            "Preparation and Govern, Identify, Protect, Detect, Respond, Recovery and Reporting"
+          ],
+          "answer": 3,
+          "explanation": "The framework aligns with NIST but adds its own structure: seven functions from Preparation and Govern through to Reporting.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s1-q8",
+          "question": "A new officer clicked a link in a fake HR email and typed her password. Her branch manager suggests waiting for the next training session to discuss it. What should happen instead?",
+          "options": [
+            "Wait, because the email session within 60 days will cover it anyway",
+            "Report it now through the incident channel, so her account can be checked and the password reset after verifying her identity",
+            "Ask her to forward the email to colleagues so they can recognise it",
+            "Reset the password quietly and close the matter without a record"
+          ],
+          "answer": 1,
+          "explanation": "Abnormal activity must be reported immediately, and identity must be verified before credentials are changed. Forwarding a live link spreads it; silence leaves misuse undetected.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s1-q9",
+          "question": "According to Bangladesh Bank's 2015-2016 accounts, what happened to its account at the Federal Reserve Bank of New York in February 2016?",
+          "options": [
+            "An outage stopped all of its foreign payments for a week",
+            "Its customer records were stolen and offered for sale",
+            "Unauthorised transactions paid about USD 81 million to accounts at RCBC in the Philippines",
+            "A ransomware attack encrypted its reserve management system"
+          ],
+          "answer": 2,
+          "explanation": "The accounts record unauthorised transactions processed by the New York Fed that paid about USD 81 million into third-party accounts at RCBC in the Philippines, much of which was then paid onward.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s1-q10",
+          "question": "The framework says one of its controls conflicts with an Act of the Government of Bangladesh. Which applies?",
+          "options": [
+            "The Act prevails over the framework control",
+            "The framework control prevails because it is more specific",
+            "The bank may choose whichever is stricter for it",
+            "Neither applies until Bangladesh Bank issues a new circular"
+          ],
+          "answer": 0,
+          "explanation": "The framework's disclaimer says Government Acts, laws, guidelines and policies supersede a conflicting control. A conflict with another Bangladesh Bank instruction can be resolved on request.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Phishing, Email Security and Social Engineering at the Desk",
+      "stage": "The Inbox Ghat",
+      "summary": "Apply the ICT Security Guideline's email, social engineering, end-user device, work-from-home and social media banking rules: spot phishing and pretexting, handle confidential information by email, verify identity before credential changes and report suspicious activity at once.",
+      "minutes": 50,
+      "objectives": [
+        "Recognise phishing, vishing, smishing and pretexting attempts aimed at bank staff and customers",
+        "Apply the guideline's email rules on attachments, links, encryption, classification and corporate addresses",
+        "Verify identity before any password reset or token change, and refuse to reveal internal information",
+        "Follow desk, device and work-from-home rules and report abnormal activity immediately"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The fake leave policy",
+          "setting": "Cyber Security Unit, Motijheel. 2:00 pm, the same day.",
+          "lines": [
+            {
+              "who": "farhana",
+              "text": "The 'HR leave policy' email reached 214 staff. Eleven clicked. Three typed their passwords. We've reset all three and blocked the domain.",
+              "mood": "thinking"
+            },
+            {
+              "who": "rashed",
+              "text": "The sender's domain swapped one letter in our name. The display name said 'HR Division'. Our mail filter let it through because the domain was brand new.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sumaiya",
+              "text": "My officers say they were busy at the counter. They didn't have time to check every sender.",
+              "mood": "worried"
+            },
+            {
+              "who": "proshanta",
+              "text": "Then the training has to give them a habit that takes five seconds, not five minutes.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farhana",
+              "text": "Exactly. This stage is the Inbox Ghat: every message that lands on our shore gets checked before anyone steps on board.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How a phishing attack on a bank unfolds",
+          "scenes": [
+            {
+              "icon": "🎣",
+              "heading": "The lure",
+              "narration": "The attacker sends a message that looks routine: an HR notice, a Bangladesh Bank circular, a courier slip or a customer complaint. It is built to be opened without thinking."
+            },
+            {
+              "icon": "⏰",
+              "heading": "The pressure",
+              "narration": "It pushes for speed: act today, your account will be locked, the MD needs this now. Urgency stops people checking the sender or the link."
+            },
+            {
+              "icon": "🔗",
+              "heading": "The hook",
+              "narration": "A link leads to a fake login page, or an attachment installs malware. Short links and odd character strings hide where they really go."
+            },
+            {
+              "icon": "🔑",
+              "heading": "The catch",
+              "narration": "The attacker now holds a password, a session or a foothold on a PC, and can move towards payment systems or customer data."
+            },
+            {
+              "icon": "🚨",
+              "heading": "Your counter-move",
+              "narration": "Pause, check the sender and the link, never enter credentials from an email, and report it at once through the bank's channel."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "The five-second email check",
+          "caption": "Section 5.14.8 asks staff to avoid suspicious attachments and links and to cross-check the sender and subject before trusting a message.",
+          "items": [
+            {
+              "label": "Sender",
+              "detail": "Is the address exactly right, not just the display name?"
+            },
+            {
+              "label": "Expected?",
+              "detail": "Were you expecting this message or attachment?"
+            },
+            {
+              "label": "Link",
+              "detail": "Hover first; avoid short or encoded links (guideline s.6.7.1)."
+            },
+            {
+              "label": "Request",
+              "detail": "Does it ask for passwords, OTPs or sensitive data?"
+            },
+            {
+              "label": "Report",
+              "detail": "If in doubt, report it; do not forward it around."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which of these is one of the end-user rules in section 6.7.1 of the ICT Security Guideline?",
+          "options": [
+            "Open attachments only after business hours",
+            "Avoid clicking short code web links and encrypted character web links",
+            "Forward suspicious emails to colleagues for a second opinion"
+          ],
+          "answer": 1,
+          "explanation": "Section 6.7.1 tells staff to avoid short code and encrypted character links, be suspicious of unexpected messages, never open unexpected attachments and never share sensitive information by email."
+        },
+        {
+          "type": "concept",
+          "title": "The guideline's email rules",
+          "body": "Section 5.14 of the ICT Security Guideline sets the rules every staff member must know:\n\n- Use email only in line with the bank's policy; access comes only through an **official request**.\n- **Never send confidential information to outsiders** unless it is encrypted with an approved facility; for sensitive data, use end-to-end encryption.\n- **Check the data classification** before you forward or reply to anyone outside the bank.\n- No defamatory, abusive or harmful content; wilful sending can lead to discipline.\n- Corporate email is for business. Personal use needs management permission, and the **corporate address must not be used** for social networks, blogs or forums unless approved.\n- **Avoid suspicious attachments and links**; cross-check the sender and subject.\n- Outgoing mail carries a **confidentiality disclaimer**.\n\nAnd section 5.14.9: every new joiner attends an **email security session within 60 days**, covering phishing detection, etiquette and how to report incidents inside the bank."
+        },
+        {
+          "type": "sort",
+          "title": "Red flag or routine?",
+          "prompt": "Sort each message that reaches a branch officer.",
+          "buckets": [
+            "Red flag: stop and report",
+            "Routine: handle normally"
+          ],
+          "items": [
+            {
+              "text": "'Bangladesh Bank' email asking you to log in to a link to confirm your branch's SWIFT credentials",
+              "bucket": 0
+            },
+            {
+              "text": "Text from an unknown number with an OTP request 'to stop your salary account being frozen'",
+              "bucket": 0
+            },
+            {
+              "text": "Call from 'head office IT' asking you to read out your token code to fix a problem",
+              "bucket": 0
+            },
+            {
+              "text": "Zip attachment named 'Invoice_Urgent' from a supplier you have never dealt with",
+              "bucket": 0
+            },
+            {
+              "text": "Facebook page with the bank's logo offering loans if you message a WhatsApp number",
+              "bucket": 0
+            },
+            {
+              "text": "Circular from your bank's intranet portal that you opened yourself",
+              "bucket": 1
+            },
+            {
+              "text": "Calendar invite from your line manager's correct address for the weekly meeting",
+              "bucket": 1
+            },
+            {
+              "text": "Payslip notice in the HR system you log in to directly, not via an email link",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Know the attack",
+          "cards": [
+            {
+              "front": "Phishing",
+              "back": "Mass or targeted email that tricks people into clicking, opening a file or giving credentials."
+            },
+            {
+              "front": "Spear phishing",
+              "back": "Phishing tailored to one person or team, often using names, roles and real events from inside the bank."
+            },
+            {
+              "front": "Vishing",
+              "back": "A phone call pretending to be IT, a regulator, a senior manager or a customer, to extract codes or information."
+            },
+            {
+              "front": "Smishing",
+              "back": "A text or chat message with a link or a request for an OTP, PIN or account detail."
+            },
+            {
+              "front": "Pretexting",
+              "back": "A made-up story that gives the attacker a reason to ask: an audit, a system upgrade, an urgent transfer."
+            },
+            {
+              "front": "Business email compromise",
+              "back": "A real or look-alike executive or supplier mailbox used to request payments or change bank details."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The urgent password reset",
+          "setting": "ICT help desk, Shimul Commercial Bank data centre, Mirpur. 4:40 pm.",
+          "lines": [
+            {
+              "who": "rashed",
+              "text": "A caller says he is the Rajshahi branch manager, locked out before an important remittance. He wants his password reset and the new one read out on the phone.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anis",
+              "text": "Did he give his employee ID?",
+              "mood": "thinking"
+            },
+            {
+              "who": "rashed",
+              "text": "He did, and he knew the branch's sub-branch names. Our help desk officer is under pressure; the caller is getting angry.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "Names and IDs are easy to find. What does our procedure say about verifying identity before changing credentials?",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The angry caller",
+          "situation": "A caller claiming to be a branch manager demands an immediate password reset by phone. He gives a correct employee ID and is impatient. The help desk procedure requires a call-back to the number in the staff directory and approval through the ticketing system.",
+          "choices": [
+            {
+              "text": "Follow the procedure: end the call politely, ring back on the directory number, and reset only through the approved ticket.",
+              "outcome": "Best. Section 6.7.3 of the guideline requires identity to be verified before any credential is changed. The call-back reveals that the real manager never called.",
+              "score": 2
+            },
+            {
+              "text": "Reset the password but send it to the manager's email address rather than reading it out.",
+              "outcome": "Better than reading it out, but the identity has still not been verified, and if his mailbox is compromised the attacker gets the password anyway.",
+              "score": 1
+            },
+            {
+              "text": "Reset it because he gave the right employee ID and sub-branch names.",
+              "outcome": "Poor. These details are easy to collect from social media and old letters. Verification must use something the attacker cannot know or control.",
+              "score": 0
+            },
+            {
+              "text": "Put the caller through to the ICT Security Committee to decide.",
+              "outcome": "Unhelpful. The committee sets policy; it does not handle individual resets. The help desk has a procedure and must use it.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "matrix",
+          "title": "Information you may share",
+          "caption": "Section 6.7.4: do not reveal personal or organisational information, including structure or networks, unless you are confident of the person's authority.",
+          "axes": {
+            "x": "Who is asking (verified to unknown)",
+            "y": "Sensitivity"
+          },
+          "items": [
+            {
+              "label": "Share freely",
+              "detail": "Public product leaflets and published branch hours."
+            },
+            {
+              "label": "Share after checks",
+              "detail": "Customer data to the customer, after identity checks."
+            },
+            {
+              "label": "Share with authority only",
+              "detail": "Internal structure or system names, only to verified staff with a need to know."
+            },
+            {
+              "label": "Never share",
+              "detail": "Passwords, OTPs, token codes or PINs, to anyone, ever."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "A suspicious email has landed",
+          "prompt": "Put the right response in order.",
+          "steps": [
+            "Do not click links, open attachments or reply",
+            "Check the sender address and the request against what you expect",
+            "Report it through the bank's phishing or incident channel",
+            "If you clicked or entered details, say so at once so access can be secured",
+            "Delete it only after the Cyber Security Unit confirms",
+            "Watch for the unit's follow-up alert and share lessons with your team"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "At the desk: the clean desk rules",
+          "body": "Section 5.12 of the guideline turns cyber hygiene into desk habits:\n\n- **Lock your screen** before you leave your PC; the system will lock it automatically after a set time anyway.\n- **USB ports are controlled**; do not plug in personal drives or phones.\n- **No software installs** or downloads without authorisation.\n- Laptops with sensitive data are **encrypted**, and removable media go in a **locked cabinet** when not in use.\n- **Report any abnormal activity or virus at once.**\n\nWorking from home (section 5.15) adds: connect only through the bank's **VPN**, keep anti-malware updated, make sure no one can see your screen or overhear calls, and **never share a token card, smart card or credential** with anyone, including family.\n\nOn social media banking (section 11.9), the bank must watch for phishing links and fake accounts that copy its brand, block malicious URLs and take down fake posts and profiles quickly. If you see a fake page, report it; do not engage with it."
+        },
+        {
+          "type": "check",
+          "question": "Sumaiya's officer wants to email a customer's loan file to the customer's chartered accountant. What does section 5.14 of the guideline require first?",
+          "options": [
+            "Nothing, as long as the customer asked for it",
+            "Check its classification and send it only with an approved encryption facility",
+            "Send it from a personal email so it does not burden the bank's server",
+            "Print it and post it, because email is never allowed for customer data"
+          ],
+          "answer": 1,
+          "explanation": "Confidential information must not go to external parties by email unless encrypted with approved facilities, and staff must consider classification before forwarding. The customer's consent is also needed under the data protection rules."
+        },
+        {
+          "type": "tip",
+          "title": "Habits that beat social engineering",
+          "body": "- **Slow down when you feel rushed.** Urgency is the attacker's main tool.\n- **Use a second channel.** Ring back on a number you already hold, not the one in the message.\n- **No codes, ever.** Bank staff never need your password, OTP or token code.\n- **Report, don't forward.** One report helps the unit block the attack for everyone.\n- **Say it when you slip.** A quick report after a click limits the damage; hiding it multiplies it."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 2 take-aways",
+          "items": [
+            "Section 6.7.1: all staff learn to spot social engineering and resist phishing on joining and every year.",
+            "Section 5.14: no confidential email to outsiders without approved encryption; check classification; avoid suspicious links and attachments.",
+            "Section 6.7.3: verify identity before any password reset, token or key change.",
+            "Never share passwords, OTPs or token codes, and do not reveal internal structure to unverified people.",
+            "Lock screens, respect USB and software controls, use the VPN at home and report abnormal activity at once."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Recall the last message at work that made you feel rushed. What would the five-second check have shown? Write one habit you will start this week."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-cy-s2-q1",
+          "question": "Which of these does section 6.7.1 of the ICT Security Guideline tell end users to do?",
+          "options": [
+            "Open attachments only if antivirus is up to date",
+            "Open attachments that come from inside the country",
+            "Open attachments but disable macros first",
+            "Never open unexpected email attachments"
+          ],
+          "answer": 3,
+          "explanation": "Section 6.7.1 lists defences against phishing: be suspicious of unexpected messages, never open unexpected attachments, never share sensitive information by email and avoid clicking links in messages.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s2-q2",
+          "question": "Under section 5.14 of the guideline, when may an officer send confidential information to an external party by email?",
+          "options": [
+            "Whenever the external party is a known customer",
+            "Only when it is encrypted with an approved encryption facility",
+            "Only from a personal account to protect the bank's domain",
+            "Whenever a branch manager approves it verbally"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.14.3 bars sending confidential information to external parties by email unless encrypted using approved facilities. Section 5.14.12 asks for end-to-end encryption for sensitive data.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s2-q3",
+          "question": "An officer wants to use his corporate email address to join a professional Facebook group. What does the guideline say?",
+          "options": [
+            "Not unless management approves; the corporate address is not for social networks or forums",
+            "Allowed, because the group is professional",
+            "Allowed if he adds the email disclaimer to his posts",
+            "Never allowed, even with management approval"
+          ],
+          "answer": 0,
+          "explanation": "Section 5.14.7 says the corporate email address must not be used for social networking, blogs, groups or forums unless management approves.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s2-q4",
+          "question": "A caller with a correct employee ID demands an immediate password reset. What must the help desk do under section 6.7.3?",
+          "options": [
+            "Reset it because the ID matches the HR record",
+            "Reset it and send the new password by SMS",
+            "Verify the user's identity before changing any credential",
+            "Refuse all resets requested by phone"
+          ],
+          "answer": 2,
+          "explanation": "Section 6.7.3 requires identity verification before modifying credentials, such as password resets, new tokens or new keys. An ID number alone is easy to obtain.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s2-q5",
+          "question": "What must the email security session for new joiners cover under section 5.14.9?",
+          "options": [
+            "Configuring mail servers, spam filters and encryption keys",
+            "The penalties under the Cyber Security Act 2026 for each offence",
+            "Only the bank's email disclaimer and signature format",
+            "Detecting phishing emails, email etiquette and reporting incidents inside the bank"
+          ],
+          "answer": 3,
+          "explanation": "The session must cover the importance of detecting phishing, email etiquette and reporting incidents to the appropriate authority within the organisation.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s2-q6",
+          "question": "A teller receives a text: 'Your salary account will be frozen. Share the OTP we just sent to stop it.' What kind of attack is this, and what should she do?",
+          "options": [
+            "Vishing; call the number back to check",
+            "Smishing; do not reply or share the code, and report it",
+            "Spear phishing; forward it to colleagues as a warning",
+            "A routine bank alert; share the code to protect the account"
+          ],
+          "answer": 1,
+          "explanation": "A text asking for an OTP is smishing. No legitimate process needs an OTP to be shared. Reporting lets the bank warn others and block the sender.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s2-q7",
+          "question": "Working from home, an officer's spouse asks to borrow his token card to check the family's joint account. What does section 5.15 of the guideline say?",
+          "options": [
+            "Employees must not share token cards, smart cards or credentials with anyone",
+            "Sharing is acceptable within the employee's own household",
+            "Sharing is acceptable if the VPN is switched off first",
+            "Sharing is acceptable for read-only access to accounts"
+          ],
+          "answer": 0,
+          "explanation": "Section 5.15.7 bars sharing dynamic password token cards, smart cards, other access devices or credentials with anyone.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s2-q8",
+          "question": "A visitor claiming to be from a vendor asks a branch officer which core banking version and network provider the branch uses. What does section 6.7.4 expect?",
+          "options": [
+            "Share it, because vendors need it to provide support",
+            "Share it in writing so there is a record of the request",
+            "Give no such information unless confident of the person's authority to have it",
+            "Share it only if the visitor shows a business card"
+          ],
+          "answer": 2,
+          "explanation": "Section 6.7.4 says staff must not provide personal or organisational information, including structure or networks, unless confident of the person's authority.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s2-q9",
+          "question": "Which practice does section 5.12 of the guideline require for desktops and laptops?",
+          "options": [
+            "Leave PCs on overnight so patches can install",
+            "Lock the workstation before leaving it unattended",
+            "Allow staff to install free utilities they need",
+            "Keep USB ports open so staff can share files quickly"
+          ],
+          "answer": 1,
+          "explanation": "Section 5.12 requires locking unattended workstations, controlling USB ports, no software installation without authorisation and switching off computers at the end of the workday.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s2-q10",
+          "question": "The bank finds a Facebook page using its logo to offer 'instant loans' through a WhatsApp number. Under section 11.9, what should the bank do?",
+          "options": [
+            "Ignore it, because social media is outside the guideline",
+            "Reply on the page to warn the fraudsters off",
+            "Ask customers to report it to the page owner",
+            "Take down the fake page and block malicious links, and keep monitoring"
+          ],
+          "answer": 3,
+          "explanation": "Section 11.9 requires continuous monitoring for phishing links and fraudulent accounts, blocking malicious URLs and taking down malicious posts and profiles immediately.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "ICT Governance, Cyber Roles and ICT Risk Management",
+      "stage": "The Control Tower",
+      "summary": "Learn who governs ICT and cyber risk in a Bangladeshi bank: the board, the ICT Steering and ICT Security Committees, the CISO and the risk committee; how ICT risk is identified, assessed, treated and reported; and the access, privileged-user, staff screening and vendor controls that keep risk within appetite.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the roles of the board, ICT Steering Committee, ICT Security Committee, CISO and ICT Risk Management Committee",
+        "Run the guideline's ICT risk cycle, including appetite, tolerance, KRIs and the annual risk assessment",
+        "Apply access, password, privileged-user and staff screening controls from the guideline and the framework",
+        "Explain the role-based training the framework requires for administrators, developers and executives"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "The board paper",
+          "setting": "Board meeting room, Shimul Commercial Bank PLC, Motijheel. 10:00 am, a week later.",
+          "lines": [
+            {
+              "who": "farhana",
+              "text": "The board risk committee wants a one-page answer: who owns cyber risk here, and is it within our appetite?",
+              "mood": "neutral"
+            },
+            {
+              "who": "rashed",
+              "text": "ICT owns the systems. Doesn't that make me the owner of the risk?",
+              "mood": "thinking"
+            },
+            {
+              "who": "anis",
+              "text": "Not alone. Our last IS audit found that nobody had reviewed privileged accounts on the card system for nine months. That is a governance gap, not just a technical one.",
+              "mood": "neutral"
+            },
+            {
+              "who": "farhana",
+              "text": "Welcome to the Control Tower. Today we sort out who decides, who does and who checks.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who governs ICT risk",
+          "scenes": [
+            {
+              "icon": "🏛️",
+              "heading": "The board",
+              "narration": "The board approves the ICT strategy and the ICT Security Policy, makes sure ICT spending balances risk and benefit, ensures accountability and checks the bank's compliance with its policy."
+            },
+            {
+              "icon": "🧭",
+              "heading": "ICT Steering Committee",
+              "narration": "Drawn from ICT, risk, HR, the cyber security unit, internal control and audit, legal and business units, it tracks strategic goals, guides risk and funding, prioritises projects and watches regulatory compliance."
+            },
+            {
+              "icon": "🔒",
+              "heading": "ICT Security Committee",
+              "narration": "With members from ICT, cyber security, risk, internal control and business, it drives security policies, sets ICT risk thresholds and appetite with risk management, and approves changes to security processes."
+            },
+            {
+              "icon": "🛡️",
+              "heading": "The CISO",
+              "narration": "The framework requires a qualified CISO with the people, budget and recognised certification to lead cyber security. In the framework's incident team, the CISO is the single point of contact for users."
+            },
+            {
+              "icon": "📊",
+              "heading": "ICT Risk Management Committee",
+              "narration": "Governs overall ICT risk, reviews and approves treatment plans and receives regular reports from the security unit on the bank's ICT risk status."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "pyramid",
+          "title": "Four levels of decision (framework 2.4)",
+          "caption": "Information flows both ways: priorities and risk tolerance go down; progress and impact assessments come back up.",
+          "items": [
+            {
+              "label": "Board of Directors",
+              "detail": "Sets mission priorities and direction for managing risk."
+            },
+            {
+              "label": "Senior management",
+              "detail": "Approves the implementation strategy and takes risk decisions."
+            },
+            {
+              "label": "Business and process level",
+              "detail": "Nominates the strategy, builds profiles and allocates budget."
+            },
+            {
+              "label": "Implementation and operations",
+              "detail": "Puts the profiles into practice and reports progress upward."
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Match the role to the duty",
+          "prompt": "Link each body or person to a duty the guideline or framework gives it.",
+          "pairs": [
+            {
+              "left": "Board",
+              "right": "Approves the ICT strategy and the ICT Security Policy."
+            },
+            {
+              "left": "ICT Steering Committee",
+              "right": "Prioritises ICT projects and guides risk, funding and sourcing."
+            },
+            {
+              "left": "ICT Security Committee",
+              "right": "Helps set ICT risk thresholds and appetite and approves changes to security processes."
+            },
+            {
+              "left": "ICT Risk Management Committee",
+              "right": "Reviews and approves ICT risk treatment plans."
+            },
+            {
+              "left": "CISO",
+              "right": "Leads cyber security and is the single point of contact for users in a cyber incident."
+            },
+            {
+              "left": "Internal audit",
+              "right": "Carries out the internal IS audit at least once a year, using a risk-based approach."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Who must approve the bank's ICT Security Policy under section 2.2.1 of the ICT Security Guideline?",
+          "options": [
+            "The CISO",
+            "The board of directors",
+            "The ICT Steering Committee",
+            "Bangladesh Bank"
+          ],
+          "answer": 1,
+          "explanation": "The bank must have an ICT Security Policy that complies with the guideline and is approved by the board, and it must be reviewed periodically."
+        },
+        {
+          "type": "concept",
+          "title": "The ICT risk cycle",
+          "body": "Chapter 3 of the guideline treats ICT risk as a **business risk**, not just an IT problem. The bank must build a documented framework with five parts:\n\n1. **Identify** assets (each with an owner, custodian and user), threats and vulnerabilities.\n2. **Assess** likely impact and likelihood, using a risk assessment matrix built on the bank's tolerance matrix.\n3. **Treat** risks with controls; the ICT Risk Management Committee approves treatment plans, and residual risk is recorded.\n4. **Monitor and review** new assets, threats, vulnerabilities, incidents and changes.\n5. **Report** through defined lines, with a formal escalation process that says who may accept a risk.\n\nThe board or risk committee approves the **risk appetite** (how much risk the bank will accept) and **tolerance** (how far it may stray from that). **Key risk indicators** give early warning. An **ICT risk assessment must be done at least once a year**, and significant ICT risk events go into a central repository."
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The guideline's ICT risk framework",
+          "items": [
+            {
+              "label": "Identify",
+              "detail": "Assets, owners, threats and vulnerabilities."
+            },
+            {
+              "label": "Assess",
+              "detail": "Impact and likelihood against the tolerance matrix."
+            },
+            {
+              "label": "Treat",
+              "detail": "Controls and approved treatment plans; record residual risk."
+            },
+            {
+              "label": "Monitor",
+              "detail": "New assets, threats, incidents and changes."
+            },
+            {
+              "label": "Report",
+              "detail": "Defined lines and escalation to whoever may accept risk."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Whose control is it?",
+          "prompt": "Sort each control by where it sits in the bank.",
+          "buckets": [
+            "Governance and oversight",
+            "Access and identity",
+            "Assurance"
+          ],
+          "items": [
+            {
+              "text": "Board approval of the ICT Security Policy",
+              "bucket": 0
+            },
+            {
+              "text": "Risk appetite and tolerance approved by the board or risk committee",
+              "bucket": 0
+            },
+            {
+              "text": "Least-privilege access granted by role and approved by the asset owner",
+              "bucket": 1
+            },
+            {
+              "text": "Access revoked immediately on transfer or termination",
+              "bucket": 1
+            },
+            {
+              "text": "Multi-factor authentication for critical systems",
+              "bucket": 1
+            },
+            {
+              "text": "Internal IS audit at least once a year",
+              "bucket": 2
+            },
+            {
+              "text": "External IS audit by a qualified auditor at least annually",
+              "bucket": 2
+            },
+            {
+              "text": "Cybersecurity audit at least yearly and after any breach",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The privileged account",
+          "setting": "ICT Audit room, head office. 3:15 pm.",
+          "lines": [
+            {
+              "who": "anis",
+              "text": "On the card management system we found one shared 'admin' account used by four engineers and a vendor engineer, with a password unchanged for over a year.",
+              "mood": "worried"
+            },
+            {
+              "who": "rashed",
+              "text": "The vendor needs it for emergency support. Splitting it would slow them down.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farhana",
+              "text": "Speed is not a control. What does section 8.3 say about vendors and shared privileged accounts?",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the shared admin account",
+          "situation": "An audit finds a shared privileged account on the card management system, used by four ICT engineers and a vendor's engineer, with no individual logging. ICT says the vendor needs fast access for emergencies.",
+          "choices": [
+            {
+              "text": "Give each engineer a named privileged account through a privileged access tool, allow vendor access only when approved and closely supervised, and review activity logs regularly.",
+              "outcome": "Best. Section 8.3.2 requires restricting and reviewing privileged users, bans sharing privileged accounts and allows vendors privileged access only under close supervision and monitoring.",
+              "score": 2
+            },
+            {
+              "text": "Keep the shared account but change the password every 90 days.",
+              "outcome": "Partly better, but sharing still breaks accountability: nobody can tell who did what, and the vendor still has unsupervised access.",
+              "score": 1
+            },
+            {
+              "text": "Keep things as they are, because the vendor contract covers security.",
+              "outcome": "Poor. A contract does not move the risk. The bank remains responsible for controlling privileged access to its own systems.",
+              "score": 0
+            },
+            {
+              "text": "Delete the account and give all five people full administrator rights on their own logins.",
+              "outcome": "Poor. Named accounts help, but giving everyone full rights breaks least privilege. Access should be limited to what each role needs.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Access numbers to remember",
+          "caption": "All references are to the ICT Security Guideline v4.0. The bank's own policy may set stricter values.",
+          "items": [
+            {
+              "label": "Password characters",
+              "value": "11+",
+              "detail": "Minimum length where MFA is not used, mixing at least three character types (s.8.2.7)."
+            },
+            {
+              "label": "Maximum password life",
+              "value": "90 days",
+              "detail": "For internal users, within the bank's policy (s.8.2.8)."
+            },
+            {
+              "label": "Shared folder review",
+              "value": "6 months",
+              "detail": "Permissions on shared resources reviewed at least every six months (s.5.12.1.15)."
+            },
+            {
+              "label": "Revoke on move or exit",
+              "value": "Immediately",
+              "detail": "Access no longer needed after a transfer or termination is revoked or disabled (s.8.2.4)."
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Screening and role training (framework)",
+          "cards": [
+            {
+              "front": "Initial screening",
+              "back": "Identity, qualifications, past employment, civil or criminal proceedings, conflicting outside business and a credit check (framework 3.1.8.4)."
+            },
+            {
+              "front": "Periodic re-screening",
+              "back": "Pending proceedings, outside business interests and credit are checked again over time (3.1.8.5)."
+            },
+            {
+              "front": "Behavioural monitoring",
+              "back": "The framework expects continuous monitoring of employee behaviour to catch insider threats."
+            },
+            {
+              "front": "Role-based training",
+              "back": "Customised programmes for system, database and network administrators and developers (framework 1.3)."
+            },
+            {
+              "front": "Security staff",
+              "back": "Recognised certifications such as CISA, CISSP or CISM for the information security team (2.12(c))."
+            },
+            {
+              "front": "Executives and privileged users",
+              "back": "Training to understand their own roles, alongside physical security and information security staff (2.12(d))."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the framework, which group must receive training or awareness so they understand their security roles, alongside the bank's own staff?",
+          "options": [
+            "Only the bank's shareholders",
+            "Third parties such as vendors and suppliers",
+            "Only Bangladesh Bank inspectors",
+            "No one outside the bank"
+          ],
+          "answer": 1,
+          "explanation": "Section 2.12(e) of the framework calls for awareness or training for third parties and vendors so they understand their roles and responsibilities. The guideline also requires a board-approved outsourcing policy and written agreements."
+        },
+        {
+          "type": "example",
+          "title": "Vendors, outsourcing and continuity",
+          "body": "Shimul Commercial Bank outsources card personalisation and part of its ATM monitoring. Chapter 12 of the ICT Security Guideline sets the ground rules:\n\n- A **board-approved outsourcing policy** and **written agreements** that set out each party's roles and obligations.\n- **Risk-based evaluation** of the provider, and no weakening of the bank's own internal controls.\n- The provider must have **disaster recovery** arrangements, and the bank needs **contingency plans** for critical outsourced services.\n\nThe framework adds that vendors should get **security awareness** for their roles. For continuity, chapter 9 of the guideline requires a business continuity plan with a disaster recovery plan and site, tested against defined scenarios, including cyber scenarios, with results and lessons recorded.\n\nAt Shimul, Anisur's team now samples vendor access logs every quarter, and Proshanta has added a short vendor induction on the bank's security rules."
+        },
+        {
+          "type": "tip",
+          "title": "Governance habits that pass an audit",
+          "body": "- Keep an **owner** for every system and data set, and make that owner sign off access.\n- Put **risk acceptance** in writing, from someone the escalation matrix allows to accept it.\n- **Track audit findings** to closure; the guideline expects issues to be followed up and fixed.\n- Review **privileged users** on a schedule, not only after an incident.\n- Record **training by role**: administrators, developers, executives and vendors each have different needs."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 3 take-aways",
+          "items": [
+            "The board approves the ICT strategy and the ICT Security Policy; Steering, Security and Risk Management committees each have defined duties.",
+            "The framework requires a qualified, resourced CISO, and four levels of decision from the board to operations.",
+            "ICT risk runs through identify, assess, treat, monitor and report, with an ICT risk assessment at least once a year.",
+            "Least privilege, prompt revocation, strong passwords, MFA and tight control of privileged and vendor access are core controls.",
+            "Internal and external IS audits are at least annual; staff are screened on hiring and periodically, and trained for their roles."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one system you use at work. Who owns it, who can approve your access, and when was your access last reviewed? If you do not know, who would you ask?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-cy-s3-q1",
+          "question": "Which body does section 2.1.2 of the ICT Security Guideline say should include representatives from ICT, risk, HR, the cyber security unit, internal control and audit, legal and business units?",
+          "options": [
+            "The board audit committee",
+            "The Computer Incident Response Team",
+            "The shareholders' general meeting",
+            "The ICT Steering Committee"
+          ],
+          "answer": 3,
+          "explanation": "The ICT Steering Committee is formed with representatives from ICT, risk, HR, the cyber security unit, ICC and audit, legal and related business units.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s3-q2",
+          "question": "How often must a bank carry out an ICT risk assessment under chapter 3 of the guideline?",
+          "options": [
+            "At least once a year",
+            "At least once every three years",
+            "Only before a new system goes live",
+            "Only when Bangladesh Bank asks for one"
+          ],
+          "answer": 0,
+          "explanation": "Section 3.2(c) requires an ICT risk assessment at least once a year so risks are identified, assessed and managed.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s3-q3",
+          "question": "An officer moves from the foreign trade desk to a retail branch. When should his trade finance system access be removed?",
+          "options": [
+            "At the next quarterly access review",
+            "Immediately, because access no longer needed after a transfer must be revoked or disabled",
+            "After six months, in case he must return",
+            "Only when his new manager asks for it"
+          ],
+          "answer": 1,
+          "explanation": "Section 8.2.4 requires access rights that are no longer needed, for example after a transfer or termination, to be revoked or disabled immediately.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s3-q4",
+          "question": "A system does not use multi-factor authentication. What minimum password length does the guideline set for it?",
+          "options": [
+            "At least six characters, with at least one number",
+            "At least eight characters, with any characters allowed",
+            "At least eleven characters, with at least three types of character",
+            "At least sixteen characters, letters only"
+          ],
+          "answer": 2,
+          "explanation": "Section 8.2.7 sets a minimum of eleven characters where MFA is not used, combining at least three of upper case, lower case, special characters and numbers.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s3-q5",
+          "question": "A vendor engineer asks for standing administrator access to the core banking database to speed up support. What does section 8.3.2 of the guideline require?",
+          "options": [
+            "Grant it, provided the contract has a confidentiality clause",
+            "No privileged access for vendors without close supervision and monitoring",
+            "Grant it, but change the password once a year",
+            "Grant it only outside business hours"
+          ],
+          "answer": 1,
+          "explanation": "Among the privileged-user controls, the guideline disallows vendors from gaining privileged access to systems without close supervision and monitoring, and bans shared privileged accounts.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s3-q6",
+          "question": "Who approves the bank's ICT risk tolerance under section 3.1.3.2 of the guideline?",
+          "options": [
+            "The board or the risk management committee, then communicated to all stakeholders",
+            "Each branch manager for their own branch",
+            "The external IS auditor during the annual audit",
+            "The vendor that hosts the core banking system"
+          ],
+          "answer": 0,
+          "explanation": "The bank defines risk tolerance, has it approved by the board or the risk management committee and communicates it to all stakeholders.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s3-q7",
+          "question": "Which requirement about the CISO appears in section 2.3.1 of the Cybersecurity Framework?",
+          "options": [
+            "The CISO must report to the Head of ICT Division",
+            "The CISO role may be combined with the CITO in smaller banks",
+            "The CISO must be approved in advance by BFIU",
+            "The bank must recruit a qualified CISO and approve the people and budget the role needs"
+          ],
+          "answer": 3,
+          "explanation": "Section 2.3.1 asks the organisation to recruit a qualified CISO, approve human resources and a sufficient budget, and expects industry-accepted academic and professional certification.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s3-q8",
+          "question": "How often must internal information system audits be done under section 2.4.5 of the guideline?",
+          "options": [
+            "Every two years, alternating with the external audit",
+            "Only after a reported security incident",
+            "At least once a year, using a risk-based approach",
+            "Every quarter for every branch without exception"
+          ],
+          "answer": 2,
+          "explanation": "Internal IS audits must be done periodically, at least once a year, following a risk-based approach; reports are kept for the regulator.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s3-q9",
+          "question": "During hiring for the data centre team, HR asks what the framework's initial screening should cover. Which list fits section 3.1.8.4?",
+          "options": [
+            "Identity, qualifications, past jobs, civil or criminal proceedings, outside business conflicts and credit",
+            "Only identity and a medical fitness certificate",
+            "Only academic results and a written test score",
+            "Only references from two current colleagues"
+          ],
+          "answer": 0,
+          "explanation": "The framework lists identity verification, confirmation of qualifications and previous employment, past or pending proceedings, conflicting external business and a financial credit check.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s3-q10",
+          "question": "Section 1.3 of the framework calls for customised training programmes for specific job roles. Which roles does it name?",
+          "options": [
+            "Tellers, cash officers and relationship managers",
+            "System, database and network administrators, and developers",
+            "Board members and shareholders only",
+            "Customers who use internet banking"
+          ],
+          "answer": 1,
+          "explanation": "The framework expects regular training for all users and customised programmes for system administrators, database administrators, network administrators and developers.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Cyber Incidents: Response, the 72-Hour Report and Recovery",
+      "stage": "The 72-Hour Clock",
+      "summary": "Handle a cyber incident the way Bangladesh Bank expects: the incident response plan and CIRT, the framework's incident roles, reporting critical incidents to internal and external stakeholders, including BGD-CIRT and Bangladesh Bank, within 72 hours, the national CERT duty under the Cyber Security Act 2026, the PDPA breach notice, backups, recovery and lessons learned, with extra care for SWIFT.",
+      "minutes": 55,
+      "objectives": [
+        "Describe the incident response plan, the CIRT and the framework's incident roles from the MD to unit supervisors",
+        "Apply the 72-hour reporting rule for critical cyber incidents and know the other notification routes",
+        "Follow the guideline's SWIFT controls and the framework's backup, testing and recovery expectations",
+        "Run a post-incident review and turn lessons into training"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Friday night alert",
+          "setting": "Security Operations Centre, Shimul Commercial Bank data centre, Mirpur. 11:48 pm, Thursday, two weeks later.",
+          "lines": [
+            {
+              "who": "rashed",
+              "text": "The SOC has flagged ransomware activity on three servers in the remittance processing network. Files are being encrypted. A ransom note just appeared.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "I'm the incident response team leader. Isolate those servers from the network now. Who else is on the call?",
+              "mood": "thinking"
+            },
+            {
+              "who": "anis",
+              "text": "Audit is here as an observer. We need a clean timeline: when did it start, and when did we know?",
+              "mood": "neutral"
+            },
+            {
+              "who": "sumaiya",
+              "text": "Customers in Khulna are already texting that inward remittances haven't arrived.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "Then the clock is running. Let's work through this properly.",
+              "mood": "neutral"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The incident response cycle",
+          "scenes": [
+            {
+              "icon": "📋",
+              "heading": "Preparation",
+              "narration": "A written incident response plan, reviewed every year, sets roles, contacts, procedures, backup and recovery steps and the legal reporting duties. People are trained for their roles with simulated events."
+            },
+            {
+              "icon": "🔎",
+              "heading": "Detection and analysis",
+              "narration": "Monitoring tools, the security operations centre and staff reports raise alerts. Trained people available round the clock decide whether an event is a real incident and how severe it is."
+            },
+            {
+              "icon": "🧱",
+              "heading": "Containment, eradication and recovery",
+              "narration": "Isolate affected systems, remove the threat and restore services from clean backups, without destroying the evidence forensic investigators need."
+            },
+            {
+              "icon": "📝",
+              "heading": "Post-incident activity",
+              "narration": "Report as required, review what happened and why, and feed the lessons into procedures, training and tests."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "Who does what in a cyber incident (framework 2.5)",
+          "caption": "The framework suggests a pocket card with the team's emergency contacts for every employee.",
+          "items": [
+            {
+              "label": "Incident Management Leader",
+              "detail": "MD or delegate: manages high-severity incidents and decides on business changes; deals with the media."
+            },
+            {
+              "label": "Incident Management Coordinator",
+              "detail": "Head of ICT or CITO: coordinates divisions and leads recovery."
+            },
+            {
+              "label": "Response Team Leader",
+              "detail": "Head of information security or CISO: single contact for users; evaluates and escalates."
+            },
+            {
+              "label": "Response Team members",
+              "detail": "Division and unit supervisors: act after a briefing from the team leader."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under the framework's incident roles, who may speak to the media about a cyber incident?",
+          "options": [
+            "Any branch manager whose customers are affected",
+            "The Cyber Incident Management Leader (the MD or delegate) or a person they designate",
+            "The ICT vendor's account manager",
+            "The first officer who noticed the incident"
+          ],
+          "answer": 1,
+          "explanation": "Section 2.5 says only the Incident Management Leader, normally the MD, or a person designated by them deals with the media."
+        },
+        {
+          "type": "concept",
+          "title": "The 72-hour rule and other routes",
+          "body": "Section 8.1.2.1 of the Cybersecurity Framework: for any **critical cyber incident**, the bank must report to **internal stakeholders** (relevant business units, senior management, the board) and **external stakeholders** (customers, critical service providers, **BGD-CIRT** and **Bangladesh Bank**) **within 72 hours from the time of occurrence**.\n\nNote the starting point: the time the incident **occurred**, not when it was discovered or confirmed. Late detection eats into the window.\n\nOther routes to know:\n\n- The **ICT Security Guideline** asks the bank's CIRT to cooperate with and report to **Bangladesh Bank's CIRT**, and security events to be reported quickly through management channels.\n- The **Cyber Security Act 2026** says any public or private organisation that suffers a cyber incident must inform the **national CERT** under the National Cyber Security Agency **without delay**.\n- The **Personal Data Protection Act 2026** requires a data fiduciary to notify the **Authority** of a personal data breach likely to cause significant harm, in the form and time regulations set.\n\nYour bank's incident procedure should map each route, owner and channel."
+        },
+        {
+          "type": "match",
+          "title": "Match the duty to its source",
+          "prompt": "Link each reporting or response duty to the document that sets it.",
+          "pairs": [
+            {
+              "left": "Critical incident to BGD-CIRT and Bangladesh Bank within 72 hours",
+              "right": "Cybersecurity Framework v1.0, section 8.1.2.1"
+            },
+            {
+              "left": "CIRT cooperates and reports to Bangladesh Bank CIRT",
+              "right": "ICT Security Guideline v4.0, section 6.4.3"
+            },
+            {
+              "left": "Inform the national CERT without delay after a cyber incident",
+              "right": "Cyber Security Act 2026, section 9"
+            },
+            {
+              "left": "Notify the Authority of a breach likely to cause significant harm",
+              "right": "Personal Data Protection Act 2026, section 20"
+            },
+            {
+              "left": "Incident response plan reviewed every year",
+              "right": "ICT Security Guideline v4.0, section 6.3.2"
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "Shimul's ransomware clock",
+          "items": [
+            {
+              "label": "Encryption begins",
+              "value": "Thu 9:30 pm",
+              "detail": "Later forensic work shows the attack started here: the 72-hour clock runs from occurrence."
+            },
+            {
+              "label": "SOC alert",
+              "value": "Thu 11:48 pm",
+              "detail": "Analysts confirm ransomware on three servers."
+            },
+            {
+              "label": "Containment",
+              "value": "Fri 12:05 am",
+              "detail": "Servers isolated; incident team leader escalates to the coordinator and the MD."
+            },
+            {
+              "label": "Classified critical",
+              "value": "Fri 9:00 am",
+              "detail": "Remittance service down; internal reporting to senior management and the board begins."
+            },
+            {
+              "label": "72-hour limit",
+              "value": "Sun 9:30 pm",
+              "detail": "Reports to BGD-CIRT, Bangladesh Bank and other stakeholders must be in by now."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The ransom question",
+          "setting": "Crisis room, head office. 10:15 am, Friday.",
+          "lines": [
+            {
+              "who": "rashed",
+              "text": "Backups of the remittance database ran last night at 8 pm, before the attack started. We tested restoring them in September.",
+              "mood": "thinking"
+            },
+            {
+              "who": "anis",
+              "text": "And the attackers want payment in crypto within 48 hours, or they threaten to publish customer data.",
+              "mood": "neutral"
+            },
+            {
+              "who": "sumaiya",
+              "text": "If customer data leaks, my branch will be flooded with frightened people.",
+              "mood": "worried"
+            },
+            {
+              "who": "farhana",
+              "text": "The framework is blunt on ransom. And if personal data was taken, we have a data protection angle too.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Pay, restore or wait?",
+          "situation": "Shimul has clean, tested backups of the affected remittance database from before the attack. The attackers demand payment and threaten to leak customer data. Forensics has not yet confirmed whether data left the network. The incident occurred about 13 hours ago.",
+          "choices": [
+            {
+              "text": "Restore from clean backups after removing the threat, keep evidence, assess whether personal data was taken, and send the required reports within 72 hours of occurrence.",
+              "outcome": "Best. The framework says paying a ransom does not guarantee data comes back, expects tested backups and recovery, and requires critical incidents to be reported within 72 hours. A data breach assessment decides the PDPA notice.",
+              "score": 2
+            },
+            {
+              "text": "Pay quickly to stop the leak, then restore systems quietly without reporting, since data may not have left.",
+              "outcome": "Poor. Paying gives no guarantee, may fund crime and does not remove the reporting duty for a critical incident.",
+              "score": 0
+            },
+            {
+              "text": "Restore from backups but wait until forensics is completely finished before telling anyone outside the bank.",
+              "outcome": "Partly right on recovery, but forensics can take weeks. The 72-hour window runs from occurrence, so reporting cannot wait for a perfect picture.",
+              "score": 1
+            },
+            {
+              "text": "Wipe and rebuild all servers at once to get services back fastest.",
+              "outcome": "Risky. It may restore service, but it destroys forensic evidence the bank and investigators need and may miss how attackers got in.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Recovery and testing numbers (framework 7.1.1)",
+          "items": [
+            {
+              "label": "Automated backups",
+              "value": "Weekly",
+              "detail": "Or more often, depending on how sensitive and critical the data is."
+            },
+            {
+              "label": "Backup restore tests",
+              "value": "Quarterly",
+              "detail": "Test recovery for a sample of in-scope assets at least every quarter."
+            },
+            {
+              "label": "Incident exercises",
+              "value": "Annual",
+              "detail": "Incident response exercises for key people at least once a year."
+            },
+            {
+              "label": "Critical incident report",
+              "value": "72 hours",
+              "detail": "From the time of occurrence (framework 8.1.2.1)."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Handle a suspected critical incident",
+          "prompt": "Put Shimul's steps in the right order.",
+          "steps": [
+            "Detect and confirm the incident; record the time it is believed to have started",
+            "Contain: isolate affected systems while preserving evidence",
+            "Escalate through the incident team leader to the coordinator and the MD",
+            "Report the critical incident internally and to BGD-CIRT, Bangladesh Bank and other stakeholders within 72 hours",
+            "Eradicate the threat and recover from clean, tested backups",
+            "Hold a post-incident review and update procedures and training"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Payments under attack: the SWIFT controls",
+          "body": "The 2016 cyber fraud on Bangladesh Bank's account at the New York Fed involved unauthorised payment instructions worth about USD 81 million. Section 11.8 of today's ICT Security Guideline gives SWIFT its own rules. Banks must follow SWIFT's Customer Security Controls Framework and, among other things:\n\n- **restrict internet access** on SWIFT servers and client PCs, and **restrict USB** use;\n- allow **no super-user profiles**; admin and monitor profiles have no message processing rights; use **four- or six-eye** checks and maker-checker;\n- make **multi-factor sign-on** mandatory;\n- limit traffic to and from SWIFT servers **outside working hours**, such as holidays and after end of day;\n- never store passwords in files on servers;\n- make sure **every employee knows the incident response plan**;\n- submit the **annual security attestation**, backed by an independent assessment each year by a SWIFT-listed provider."
+        },
+        {
+          "type": "flip",
+          "title": "Lessons the framework asks banks to learn",
+          "cards": [
+            {
+              "front": "Is MFA enough?",
+              "back": "No. The framework warns banks never to rely on MFA alone for critical assets, because attackers can sometimes defeat it."
+            },
+            {
+              "front": "Will paying the ransom get data back?",
+              "back": "There is no guarantee. The framework tells banks to understand this, and to rely on backups instead."
+            },
+            {
+              "front": "Can known risks wait because another layer exists?",
+              "back": "No. Leaving several known risks open because 'another control will catch it' is exactly what the framework warns against."
+            },
+            {
+              "front": "What is the first aim of lessons learned?",
+              "back": "To educate employees and customers on protecting the confidentiality, integrity and availability of the bank's information."
+            },
+            {
+              "front": "When must a cybersecurity audit happen?",
+              "back": "At least once a year, and after any security breach or cyber attack."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Shimul's incident started at 9:30 pm on Thursday but was confirmed at 11:48 pm. From when does the framework's 72-hour reporting window run?",
+          "options": [
+            "From 11:48 pm, when the SOC confirmed it",
+            "From 9:30 pm on Thursday, the time of occurrence",
+            "From Monday morning, the first full working day",
+            "From when the board is told"
+          ],
+          "answer": 1,
+          "explanation": "Section 8.1.2.1 says the report to internal and external stakeholders is due within 72 hours from the time of occurrence, so slow detection shortens the time left."
+        },
+        {
+          "type": "tip",
+          "title": "Your part in an incident",
+          "body": "- **Report fast** through the bank's channel, even if you are not sure it is serious.\n- **Do not switch off or wipe** a suspect PC unless told to; unplug it from the network if instructed.\n- **Write down times** and what you saw; the 72-hour clock runs from occurrence.\n- **Do not talk to the media or post online**; only the MD or a designated person speaks for the bank.\n- **Join the drills.** The guideline wants simulated events in incident training for a reason."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 4 take-aways",
+          "items": [
+            "Every bank needs an incident response plan reviewed annually, a trained CIRT and people able to respond 24/7.",
+            "Framework roles: the MD leads high-severity incidents and media, the CITO coordinates, the CISO leads the response team.",
+            "Critical cyber incidents go to internal and external stakeholders, including BGD-CIRT and Bangladesh Bank, within 72 hours of occurrence.",
+            "The Cyber Security Act 2026 adds a duty to inform the national CERT without delay; the PDPA adds a breach notice to the Authority.",
+            "Weekly backups, quarterly restore tests, annual exercises, strict SWIFT controls and honest post-incident reviews keep the bank resilient."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If your PC showed a ransom note right now, who would you call first, and do you have the number? Note the gaps you find and raise them with your manager."
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-cy-s4-q1",
+          "question": "Under the Cybersecurity Framework, within what time must a critical cyber incident be reported to internal and external stakeholders, including Bangladesh Bank?",
+          "options": [
+            "Within 24 hours from the time of discovery",
+            "Within 7 days from the end of the investigation",
+            "By the end of the following month",
+            "Within 72 hours from the time of occurrence"
+          ],
+          "answer": 3,
+          "explanation": "Section 8.1.2.1 requires reporting of any critical cyber incident within 72 hours from the time of occurrence to stakeholders such as BGD-CIRT and Bangladesh Bank.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s4-q2",
+          "question": "Which external stakeholders does section 8.1.2.1 of the framework list for critical incident reports?",
+          "options": [
+            "Only the bank's external auditor",
+            "Shareholders and the stock exchanges only",
+            "Customers, critical service providers, BGD-CIRT and Bangladesh Bank",
+            "Only the police and the courts"
+          ],
+          "answer": 2,
+          "explanation": "The framework lists customers, critical service providers, BGD-CIRT and Bangladesh Bank as external stakeholders, alongside internal reporting to business units, senior management and the board.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s4-q3",
+          "question": "Who does the framework name as the Cyber Incident Response Team Leader and single point of contact for users?",
+          "options": [
+            "The Managing Director",
+            "The head of information security or CISO",
+            "The head of human resources",
+            "The external forensic investigator"
+          ],
+          "answer": 1,
+          "explanation": "Section 2.5 makes the head of information security or CISO the team leader and one-point contact; the MD is the Incident Management Leader and the CITO the coordinator.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s4-q4",
+          "question": "How often must the incident response plan be reviewed and updated under section 6.3.2 of the ICT Security Guideline?",
+          "options": [
+            "Every five years, with the ICT strategy",
+            "Only when Bangladesh Bank changes the guideline",
+            "Only after a critical incident has occurred",
+            "Every year, to reflect system changes and problems found"
+          ],
+          "answer": 3,
+          "explanation": "Section 6.3.2 asks the bank to review and update the incident response plan annually, taking account of system changes and issues found in use or testing.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s4-q5",
+          "question": "A ransomware gang offers to return encrypted files if the bank pays. What does the framework tell banks to understand?",
+          "options": [
+            "Paying is acceptable if the board approves within 24 hours",
+            "Paying removes the need to report the incident",
+            "Paying a ransom does not guarantee the data will be returned",
+            "Paying is required when backups are older than a week"
+          ],
+          "answer": 2,
+          "explanation": "Among its lessons learned, the framework says paying a ransom does not guarantee that encrypted data will be returned, and stresses the importance of backups.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s4-q6",
+          "question": "How often does the framework expect banks to test recovery from backups for a sample of in-scope assets?",
+          "options": [
+            "At least quarterly",
+            "At least once every two years",
+            "Only when a disaster happens",
+            "Only during the annual external audit"
+          ],
+          "answer": 0,
+          "explanation": "Section 7.1.1.12 asks for backup recovery testing quarterly or more often; section 7.1.1.10 asks for automated backups at least weekly.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s4-q7",
+          "question": "Under the Cyber Security Act 2026, what must an organisation do when it suffers a cyber incident?",
+          "options": [
+            "Inform the National Data Management Authority within 30 days",
+            "Inform only its own board at the next meeting",
+            "Inform the national CERT only if critical infrastructure is affected",
+            "Inform the national CERT under the National Cyber Security Agency without delay"
+          ],
+          "answer": 3,
+          "explanation": "Section 9 of the Act provides that any public, private or autonomous organisation where a cyber incident occurs must inform the national CERT under the Agency without delay.",
+          "difficulty": 4
+        },
+        {
+          "id": "bd-cy-s4-q8",
+          "question": "Which of these is one of the SWIFT controls in section 11.8 of the ICT Security Guideline?",
+          "options": [
+            "Multi-factor authentication for user sign-on is mandatory",
+            "Super-user profiles are allowed for faster processing",
+            "Internet access on SWIFT client PCs should stay open for updates",
+            "Passwords may be kept in a text file on the server"
+          ],
+          "answer": 0,
+          "explanation": "Section 11.8 makes MFA for sign-on mandatory, bans super key profiles, restricts internet and USB access and forbids storing passwords on servers.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s4-q9",
+          "question": "An officer's PC shows a ransom note. What should she do first?",
+          "options": [
+            "Restart the PC to see whether the note disappears",
+            "Post a warning on social media for customers",
+            "Report it at once through the incident channel and follow instructions, without wiping the PC",
+            "Copy her files to a USB drive before anything else"
+          ],
+          "answer": 2,
+          "explanation": "Prompt reporting starts the response; restarting, wiping or copying can spread malware or destroy evidence, and only designated people speak publicly.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s4-q10",
+          "question": "How often does the framework require a cybersecurity audit?",
+          "options": [
+            "Every three years, or when the CISO changes",
+            "At least once a year, and after any breach or cyber attack",
+            "Only when the external auditor requests one",
+            "Monthly, by the branch manager for each branch"
+          ],
+          "answer": 1,
+          "explanation": "Section 8.1.3 calls for a cybersecurity audit at least once a year and after any incident or attack, by internal teams or external companies.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Personal Data, the Cyber Security Act and Readiness for 31 December 2026",
+      "stage": "The Compliance Summit",
+      "summary": "Pull it together: the Personal Data Protection Act 2026 and the Code of Conduct on customer data, the Cyber Security Act 2026 on critical information infrastructure and offences, and the programme Bangladesh Bank expects to see by 31 December 2026: training by audience, records and KPIs, audits, compliance plans and dispensation.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the PDPA 2026 basics: consent, purpose limits, security, retention, breach notice and data subjects' rights",
+        "Describe what the Cyber Security Act 2026 means for a bank: the Agency, critical information infrastructure and offences",
+        "Build a training plan that meets the guideline and framework for every audience, with records and KPIs",
+        "Prepare evidence for an inspection: policies, audits, risk assessments, incident records and compliance plans"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Six weeks to the deadline",
+          "setting": "CISO's office, head office. 9:00 am, 18 November 2026.",
+          "lines": [
+            {
+              "who": "farhana",
+              "text": "Six weeks until 31 December. The board wants a readiness report, and Bangladesh Bank's ICT inspectors may visit early next year.",
+              "mood": "neutral"
+            },
+            {
+              "who": "proshanta",
+              "text": "I've pulled the training records. Annual awareness is at 82 percent. The 60-day email session is the weak spot for staff who joined branches mid-year.",
+              "mood": "thinking"
+            },
+            {
+              "who": "sumaiya",
+              "text": "Customers keep asking whether we're allowed to share their data with our insurance partner. My staff aren't sure what the new data law says.",
+              "mood": "neutral"
+            },
+            {
+              "who": "anis",
+              "text": "And I need evidence, not promises: policies, minutes, test results, incident reports, training logs.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farhana",
+              "text": "Final stage: the Compliance Summit. Let's climb it.",
+              "mood": "proud"
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The Personal Data Protection Act 2026 in five moves",
+          "scenes": [
+            {
+              "icon": "👤",
+              "heading": "Data belongs to the person",
+              "narration": "The Act treats a person's personal data as theirs. The bank, as a data fiduciary, processes it on their behalf and must be able to show it acts lawfully."
+            },
+            {
+              "icon": "✅",
+              "heading": "Consent, or another lawful basis",
+              "narration": "Consent must be freely given, specific, clear and possible to withdraw, after telling the person the purpose, how long data is kept, any transfer and how to withdraw. Some other bases, such as performing a contract with the person, also apply."
+            },
+            {
+              "icon": "🎯",
+              "heading": "Use it only for its purpose",
+              "narration": "Personal data may not be disclosed for a purpose other than the one it was collected for without the person's consent, subject to the Act's other provisions."
+            },
+            {
+              "icon": "🔐",
+              "heading": "Secure it and keep it only as long as needed",
+              "narration": "Banks must use suitable technical and organisational measures, such as pseudonymisation and encryption, and must not keep data beyond the period regulations allow."
+            },
+            {
+              "icon": "📣",
+              "heading": "Breaches and the Authority",
+              "narration": "A breach likely to cause significant harm must be notified to the National Data Management Authority in the form and time regulations set."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Customer data: two layers of duty",
+          "caption": "Both apply at once. The Act's complaint, fine and compensation sections and the Chief Data Officer duty start on a later date the Government will notify.",
+          "headers": [
+            "Code of Conduct",
+            "PDPA 2026"
+          ],
+          "items": [
+            {
+              "label": "Source",
+              "left": "Bangladesh Bank Code of Conduct",
+              "right": "Personal Data Protection Act 2026"
+            },
+            {
+              "label": "Core rule",
+              "left": "Keep customers' affairs and account details secret",
+              "right": "No disclosure beyond the collection purpose without consent"
+            },
+            {
+              "label": "Security",
+              "left": "Protect confidential information",
+              "right": "Technical and organisational measures, e.g. encryption"
+            },
+            {
+              "label": "If it goes wrong",
+              "left": "Disciplinary action under bank rules",
+              "right": "Notify the Authority of serious breaches; complaints and fines later"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Sumaiya's customer opened a savings account. The bank's insurance partner wants the customer's phone number for marketing. What does the PDPA 2026 require?",
+          "options": [
+            "Share it, because the customer already gave it to the bank",
+            "Do not disclose it for this new purpose without the customer's consent",
+            "Share it if the partner signs a confidentiality letter",
+            "Share it only with customers who have loans"
+          ],
+          "answer": 1,
+          "explanation": "Section 16 bars disclosing personal data for any purpose other than the one it was collected for without consent. The Code of Conduct also requires secrecy of customers' affairs."
+        },
+        {
+          "type": "concept",
+          "title": "The PDPA's moving parts for a bank",
+          "body": "Key points from the **Personal Data Protection Act 2026** (Act 63 of 2026):\n\n- **In force:** deemed effective from **6 November 2025**, except section 23 (Chief Data Officer) and sections 31-35 (complaints, administrative fines, compensation). Those start on a date the Government notifies after 18 months.\n- **Consent (section 5):** freely given, specific, clear and withdrawable; the person must be told the purpose, retention period, transfers and how to withdraw. The **burden of proving consent is on the bank**.\n- **Other lawful bases:** for example performing a contract with the person or steps they ask for before one.\n- **Rights:** access and portability, correction and updating, and withdrawal of consent, on written request.\n- **Security (section 17):** measures proportionate to the volume, sensitivity and harm, including pseudonymisation, encryption, resilience, timely restoration and regular testing.\n- **Retention (section 18):** no longer than regulations allow for the purpose.\n- **Breach (section 20):** notify the Authority of a breach likely to cause significant harm.\n- **Chief Data Officer (section 23):** significant data fiduciaries will need one."
+        },
+        {
+          "type": "sort",
+          "title": "Which law or rule?",
+          "prompt": "Sort each duty to its main source.",
+          "buckets": [
+            "PDPA 2026",
+            "Cyber Security Act 2026",
+            "Bangladesh Bank guideline or framework"
+          ],
+          "items": [
+            {
+              "text": "Prove that a customer's consent was validly given",
+              "bucket": 0
+            },
+            {
+              "text": "Notify the Authority of a personal data breach likely to cause significant harm",
+              "bucket": 0
+            },
+            {
+              "text": "Appoint a Chief Data Officer once that section comes into force",
+              "bucket": 0
+            },
+            {
+              "text": "Government may declare a system critical information infrastructure",
+              "bucket": 1
+            },
+            {
+              "text": "Unauthorised e-transactions from a bank are a criminal offence",
+              "bucket": 1
+            },
+            {
+              "text": "Email security session for new joiners within 60 days",
+              "bucket": 2
+            },
+            {
+              "text": "Critical cyber incidents reported to Bangladesh Bank within 72 hours",
+              "bucket": 2
+            },
+            {
+              "text": "Annual security awareness training for all staff",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "The Cyber Security Act 2026 for bankers",
+          "cards": [
+            {
+              "front": "What is it?",
+              "back": "Act 81 of 2026, passed on 10 April 2026 and deemed in force from 21 May 2025. It replaced the Cyber Security Ordinance 2025 and was amended again in July 2026."
+            },
+            {
+              "front": "Who runs it?",
+              "back": "A National Cyber Security Agency, headed by a Director General and attached to the ICT Division, with a national CERT and a national security operations centre."
+            },
+            {
+              "front": "Critical information infrastructure",
+              "back": "The Government may declare systems or networks as critical; the list is updated at least once a year (section 15)."
+            },
+            {
+              "front": "What if the bank's system is declared critical?",
+              "back": "It faces monitoring and inspection by the Director General and must audit its infrastructure every year and report to the National Cyber Security Council (section 16)."
+            },
+            {
+              "front": "Offences that touch banks",
+              "back": "Illegal access, damage to systems, cyber forgery and fraud, and e-transactions from a bank or MFS provider without lawful authority (section 24)."
+            },
+            {
+              "front": "Penalty for unauthorised e-transactions",
+              "back": "Up to one year's imprisonment and a fine of up to Tk 10 lakh under section 24, as the Act currently reads."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The training gap",
+          "setting": "Training Institute, Mirpur. 2:30 pm.",
+          "lines": [
+            {
+              "who": "proshanta",
+              "text": "Our biggest gap: 140 staff who joined branches between July and September have passed 60 days without the email security session. The classroom slots in Dhaka were full.",
+              "mood": "worried"
+            },
+            {
+              "who": "sumaiya",
+              "text": "Branch staff can't easily travel to Dhaka. Could it be online?",
+              "mood": "neutral"
+            },
+            {
+              "who": "anis",
+              "text": "The guideline lets the bank choose delivery methods, including e-learning. What it cares about is that it happens on time and we can prove it.",
+              "mood": "thinking"
+            },
+            {
+              "who": "farhana",
+              "text": "Then we need a fix for these 140 and a plan so it never slips again.",
+              "mood": "thinking"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Closing the 60-day gap",
+          "situation": "140 recent joiners have passed 60 days without the email security session required by section 5.14.9 of the ICT Security Guideline. The board readiness report is due in two weeks.",
+          "choices": [
+            {
+              "text": "Run the session for all 140 now through e-learning or virtual classes, record completion, report the gap and fix honestly, and build the session into every induction from day one.",
+              "outcome": "Best. The guideline lets banks choose methods such as e-learning. Fixing the gap, recording it and changing the process is what inspectors look for.",
+              "score": 2
+            },
+            {
+              "text": "Mark the 140 as complete because they attended general induction, which mentioned email briefly.",
+              "outcome": "Poor. Recording training that did not cover phishing detection, etiquette and incident reporting is a false record and will not survive an audit.",
+              "score": 0
+            },
+            {
+              "text": "Wait until January and include them in the annual awareness campaign.",
+              "outcome": "Partly helpful, as they would eventually be trained, but the 60-day breach continues and the board report would hide a known gap.",
+              "score": 1
+            },
+            {
+              "text": "Ask Bangladesh Bank for dispensation from the 60-day rule.",
+              "outcome": "Not suitable here. Dispensation is for exceptional, persistent non-compliance; this gap can be closed within days.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "Training plan by audience",
+          "caption": "Add vendors' security awareness and the bank's customer education campaigns to complete the picture.",
+          "items": [
+            {
+              "label": "All staff",
+              "detail": "Awareness on joining and every year; periodic cyber hygiene training."
+            },
+            {
+              "label": "New joiners",
+              "detail": "Email security session within 60 days; foundation training for new officers."
+            },
+            {
+              "label": "Managers and executives",
+              "detail": "ICT infrastructure, policies, governance and incident duties."
+            },
+            {
+              "label": "Privileged users and ICT staff",
+              "detail": "Role programmes for admins and developers; professional certifications."
+            },
+            {
+              "label": "CIRT and SOC",
+              "detail": "Incident training with simulations; national and international drills."
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Get ready for the inspection",
+          "prompt": "Put Shimul's readiness steps in a sensible order.",
+          "steps": [
+            "Map every guideline and framework control to an owner and current status",
+            "Close or plan each gap, with dates and approval from the right committee",
+            "Gather evidence: policies, minutes, risk assessments, audit reports, test results and incident records",
+            "Check training records by audience against the joining, 60-day and annual rules",
+            "Report readiness to the board and submit compliance plans for any remaining gaps",
+            "Keep monitoring KPIs and audit findings after the deadline"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "KPIs the framework suggests (7.1.2.4)",
+          "items": [
+            {
+              "label": "Mean time to detect",
+              "value": "MTTD",
+              "detail": "How fast incidents are spotted after they start."
+            },
+            {
+              "label": "Mean time to respond",
+              "value": "MTTR",
+              "detail": "How fast the bank contains and resolves incidents."
+            },
+            {
+              "label": "Critical vulnerabilities",
+              "value": "Trend",
+              "detail": "Whether the number of critical vulnerabilities falls over time."
+            },
+            {
+              "label": "Awareness training",
+              "value": "Rate",
+              "detail": "How often training runs and what share of staff complete it."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Which statement about the PDPA 2026's Chief Data Officer duty is accurate as of November 2026?",
+          "options": [
+            "It already applies to every bank in Bangladesh",
+            "It is for significant data fiduciaries and starts on a later date the Government will notify",
+            "It was removed when the Act was passed",
+            "It applies only to foreign banks"
+          ],
+          "answer": 1,
+          "explanation": "Section 23 requires significant data fiduciaries to appoint Chief Data Officers, but section 1(3) delays that section until a date notified after 18 months."
+        },
+        {
+          "type": "example",
+          "title": "Inside Shimul's readiness report",
+          "body": "Farhana's final board paper, two weeks later:\n\n- **Policy:** the ICT Security Policy is board-approved and now maps every framework control to an owner.\n- **Governance:** the CISO has an approved team and budget; the ICT Security Committee meets monthly.\n- **Risk:** the annual ICT risk assessment is done; three high risks have approved treatment plans.\n- **Assurance:** internal and external IS audits are complete; the shared admin account is gone.\n- **Incidents:** the ransomware case was reported to BGD-CIRT and Bangladesh Bank inside 72 hours of occurrence; the post-incident review led to new backup isolation.\n- **Training:** all 140 overdue joiners finished the email session online; annual awareness reached 97 percent; admins and developers have role training.\n- **Data protection:** consent wording and data-sharing rules for partners are being updated for the PDPA.\n- **Open items:** two technical controls need until March 2027; a compliance plan goes to Bangladesh Bank."
+        },
+        {
+          "type": "tip",
+          "title": "What inspectors usually ask for",
+          "body": "- The **board-approved ICT Security Policy** and the date of its last review.\n- **Training logs** showing joining dates against awareness and email session dates.\n- The latest **ICT risk assessment** and approved treatment plans.\n- **IS audit** reports and evidence that findings were closed.\n- **Incident register**, reports sent and post-incident reviews.\n- **Compliance plans** and any dispensation granted.\n\nKeep the evidence ready; it is much harder to rebuild after the visit is announced."
+        },
+        {
+          "type": "keypoints",
+          "title": "Stage 5 take-aways",
+          "items": [
+            "PDPA 2026: valid consent the bank can prove, no disclosure beyond the purpose without consent, security, retention limits and breach notice.",
+            "The CDO duty and the complaint, fine and compensation sections of the PDPA start later; check current notifications.",
+            "The Cyber Security Act 2026 creates the Agency and national CERT, lets the Government declare critical infrastructure and punishes cyber offences.",
+            "Training must cover every audience: all staff yearly, new joiners within 60 days, managers, privileged users, ICT staff, the CIRT and vendors.",
+            "Readiness means evidence: policies, risk assessments, audits, incident records, training logs, KPIs and compliance plans."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a Bangladesh Bank inspector asked you tomorrow to show how you met your security training duties, what records could you produce? What will you do this month to make them complete?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "bd-cy-s5-q1",
+          "question": "Under section 5 of the PDPA 2026, which description of valid consent is correct?",
+          "options": [
+            "Implied whenever a customer opens an account, with no need to explain the purpose",
+            "Freely given, specific, clear and withdrawable, after the person is told the purpose, retention, transfers and withdrawal process",
+            "Valid only if given in writing before a notary, and then permanent",
+            "Required only for sensitive data such as health records"
+          ],
+          "answer": 1,
+          "explanation": "Section 5(2) requires consent to be voluntary, specific, clear and revocable, given after the person is informed of the purpose, retention period, transfer and how to withdraw.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q2",
+          "question": "Who bears the burden of proving that consent was properly given under the PDPA 2026?",
+          "options": [
+            "The customer who gave consent",
+            "The National Data Management Authority",
+            "The data fiduciary, such as the bank",
+            "The bank's external auditor"
+          ],
+          "answer": 2,
+          "explanation": "Section 5(4) places the burden of proving valid consent on the data fiduciary.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q3",
+          "question": "From when is the PDPA 2026 deemed to be in force for most of its provisions?",
+          "options": [
+            "6 November 2025",
+            "10 April 2026",
+            "31 December 2026",
+            "1 January 2028"
+          ],
+          "answer": 0,
+          "explanation": "Section 1(3) deems the Act effective from 6 November 2025, except section 23 and sections 31 to 35, which start on a date notified after 18 months.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q4",
+          "question": "A bank suffers a personal data breach that is likely to cause significant harm to customers. What does section 20 of the PDPA 2026 require?",
+          "options": [
+            "Notify each customer within 24 hours by registered post",
+            "Notify only Bangladesh Bank, which informs the Authority",
+            "Nothing until the Chief Data Officer section is in force",
+            "Notify the Authority in the form, manner and time that regulations set"
+          ],
+          "answer": 3,
+          "explanation": "Section 20 requires the data fiduciary to inform the Authority of such a breach in the form, manner and time fixed by regulations. The 72-hour framework rule may also apply if it is a critical cyber incident.",
+          "difficulty": 4
+        },
+        {
+          "id": "bd-cy-s5-q5",
+          "question": "Which body is the 'Authority' under the PDPA 2026?",
+          "options": [
+            "The Bangladesh Financial Intelligence Unit",
+            "The National Data Management Authority set up under the National Data Management Act 2026",
+            "The Bangladesh Telecommunication Regulatory Commission",
+            "The National Cyber Security Agency"
+          ],
+          "answer": 1,
+          "explanation": "The Act defines the Authority as the National Data Management Authority established under section 8 of the National Data Management Act 2026.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q6",
+          "question": "Under section 15 of the Cyber Security Act 2026, who may declare a computer system or network to be critical information infrastructure?",
+          "options": [
+            "The Government, by notification in the official gazette",
+            "Bangladesh Bank, by circular to banks",
+            "Each bank's board, for its own systems",
+            "The courts, after a cyber offence trial"
+          ],
+          "answer": 0,
+          "explanation": "The Government may declare critical information infrastructure by gazette notification and must update the list at least once a year.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q7",
+          "question": "Someone uses a stolen internet banking login to move a customer's money without lawful authority. Which provision of the Cyber Security Act 2026 deals with this kind of conduct?",
+          "options": [
+            "Section 15, on declaring critical information infrastructure",
+            "Section 5, on setting up the National Cyber Security Agency",
+            "Section 52, on publishing an English text",
+            "Section 24, on e-transactions from a bank or financial institution without lawful authority"
+          ],
+          "answer": 3,
+          "explanation": "Section 24 makes it an offence to carry out an e-transaction from a bank, insurer, financial institution or MFS provider through digital means without lawful authority.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q8",
+          "question": "140 joiners passed 60 days without the email security session. Which response best fits the ICT Security Guideline?",
+          "options": [
+            "Record them as trained because induction mentioned email",
+            "Apply to Bangladesh Bank for dispensation from the rule",
+            "Train them now by e-learning or virtual class, record it and fix the induction process",
+            "Wait for the annual awareness campaign next year"
+          ],
+          "answer": 2,
+          "explanation": "The guideline lets banks choose delivery methods such as e-learning. Closing the gap quickly, keeping honest records and fixing the process is the right response; false records or delay are not.",
+          "difficulty": 3
+        },
+        {
+          "id": "bd-cy-s5-q9",
+          "question": "Which KPI does the framework suggest for tracking continuous improvement in awareness?",
+          "options": [
+            "Number of emails sent by the CISO each month",
+            "Total cost of the training institute building",
+            "Frequency and completion rates of cybersecurity awareness training",
+            "Number of staff who skipped training without penalty"
+          ],
+          "answer": 2,
+          "explanation": "Section 7.1.2.4 lists KPIs such as mean time to detect and respond, the trend in critical vulnerabilities, and the frequency and completion rates of awareness training.",
+          "difficulty": 2
+        },
+        {
+          "id": "bd-cy-s5-q10",
+          "question": "When preparing for a Bangladesh Bank ICT inspection, which record best proves the bank met section 6.7.1 of the guideline?",
+          "options": [
+            "A copy of the guideline signed by the CISO",
+            "The vendor's brochure for the e-learning platform",
+            "A list of staff who hold professional certifications",
+            "Training logs that show each employee's joining date and their awareness training dates every year"
+          ],
+          "answer": 3,
+          "explanation": "Section 6.7.1 requires awareness training on joining and annually. Records that link joining dates to training dates for each employee show it was done on time.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "bd",
+    "programs": [
+      71,
+      72,
+      73,
+      74,
+      77,
+      83,
+      84,
+      91,
+      66,
+      112,
+      114
+    ],
+    "classification": "mandatory-explicit",
+    "frequency": [
+      "induction",
+      "annual"
+    ],
+    "regulators": [
+      "Bangladesh Bank (BB)",
+      "National Cyber Security Agency (Cyber Security Act 2026)",
+      "National Data Management Authority (Personal Data Protection Act 2026)"
+    ],
+    "references": [
+      {
+        "title": "Guideline on ICT Security for Banks and Non-Bank Financial Institutions, Version 4.0 (issued by BRPD Circular No. 10 of 19 June 2023)",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/aboutus/regulationguideline/brpd/jun192023_ictsecurityv4.pdf",
+        "provision": "Sections 1.2-1.3, 2-3, 5.12, 5.14-5.15, 6.3-6.7, 8.2-8.3, 11.8-11.9, 12.1 and 13",
+        "note": "Applies to all Bangladesh Bank-regulated providers; security awareness for all staff on joining and every year; email security session within 60 days of joining; governance roles, annual ICT risk assessment and IS audits; access and privileged-user controls; incident response and CIRT; SWIFT controls; outsourcing.",
+        "effective": "2023-06-19",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Guidelines on Cybersecurity Framework, Version 1.0 (2026)",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/aboutus/regulationguideline/brpd/Cybersecurity%20Framework.pdf",
+        "provision": "Sections 1.1-1.5, 2.3.1, 2.4-2.5, 2.12, 3.1.8, 7.1.1-7.1.2 and 8.1.1-8.1.4",
+        "note": "Seven functions; qualified CISO; incident roles; awareness and training for all staff, security staff, privileged users, executives and vendors; staff screening; backups and exercises; critical incidents reported to stakeholders incl. BGD-CIRT and Bangladesh Bank within 72 hours of occurrence; yearly cybersecurity audit.",
+        "effective": "2026-03-29",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD-2 Circular No. 02: Cybersecurity Framework, Version 1.0 (2026)",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd-2/mar292026brpd-202.pdf",
+        "provision": "Paragraphs 2-4",
+        "note": "Issues the framework to banks, finance companies, MFS providers, PSPs, PSOs and other financial service providers; compliance is due by 31 December 2026; queries go to the ICT audit, inspection and compliance wing of Bangladesh Bank's ICT Department.",
+        "effective": "2026-03-29",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "BRPD-1 Circular No. 10: Guidelines on Foundation Training for the Newly Recruited Scheduled Bank Officials",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/circulars/brpd/may072026brpd-110e.pdf",
+        "provision": "Guidelines paragraph 5(D)(4)",
+        "note": "Foundation training for new officers must cover data protection and cyber security.",
+        "effective": "2026-05-07",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Personal Data Protection Act, 2026 (Act No. 63 of 2026)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-1692.html",
+        "provision": "Sections 1(3), 2, 5, 16-18, 20 and 23",
+        "note": "Deemed in force from 6 November 2025 except section 23 and sections 31-35; consent must be free, specific, clear and withdrawable and the fiduciary must prove it; no disclosure beyond the collection purpose without consent; security measures; retention limits; breach notice to the Authority; Chief Data Officers later.",
+        "effective": "2025-11-06",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Cyber Security Act, 2026 (Act No. 81 of 2026, as amended by Act No. 99 of 2026)",
+        "issuer": "Parliament of Bangladesh (Laws of Bangladesh portal)",
+        "url": "https://bdlaws.minlaw.gov.bd/act-details-1710.html",
+        "provision": "Sections 1(2), 5, 9, 15-16 and 24",
+        "note": "Deemed in force from 21 May 2025; sets up the National Cyber Security Agency, national CERT and SOC; organisations must inform the national CERT of a cyber incident without delay; critical information infrastructure is declared, inspected and audited yearly; unauthorised e-transactions from banks are an offence.",
+        "effective": "2025-05-21",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Code of Conduct for Banks and Non-Bank Financial Institutions",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/aboutus/regulationguideline/brpd/nov062017_guideline_code_of_conduct.pdf",
+        "provision": "Sections 5.2, 6.6 and 27",
+        "note": "Requires complete secrecy of customers' affairs and account information and protection of confidential information.",
+        "effective": "2017-11-06",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bangladesh Bank Annual Report 2015-2016, Chapter 14: Bangladesh Bank's Accounts for 2015-2016",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/pub/annual/anreport/ar1516/chap14.pdf",
+        "provision": "Note 10 (other foreign currency financial assets)",
+        "note": "Records that in February 2016 unauthorised transactions processed by the Federal Reserve Bank of New York paid about USD 81.19 million from Bangladesh Bank's account to third-party accounts at RCBC in the Philippines, and the recovery steps taken.",
+        "effective": "2016",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Bangladesh Bank-Federal Reserve Bank, New York Joint Statement (1 February 2019)",
+        "issuer": "Bangladesh Bank",
+        "url": "https://www.bb.org.bd/mediaroom/notice/joint_statementbb_federal.pdf",
+        "note": "Announces a Resolution and Assistance Agreement under which the New York Fed gives technical help in Bangladesh Bank's litigation to recover funds stolen in the 2016 cyber fraud event.",
+        "effective": "2019-02-01",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "bd-cy-x1",
+        "question": "A mobile financial service provider regulated by Bangladesh Bank asks whether the 2026 Cybersecurity Framework applies to it. What is the correct answer?",
+        "options": [
+          "Yes. The framework covers banks, financial institutions, MFS providers, PSPs, PSOs and other financial or payment service providers.",
+          "No. The framework is limited to scheduled banks listed under the Bank-Company Act.",
+          "Only if the provider also operates ATMs or card networks in Bangladesh.",
+          "Only from 2027, after the banks have complied first."
+        ],
+        "answer": 0,
+        "explanation": "Section 1.1 of the framework names MFS providers among the covered institutions, and BRPD-2 Circular No. 02 was addressed to them as well. All must comply by 31 December 2026.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x2",
+        "question": "A bank's compliance team lists its ICT security training duties. Which combination correctly reflects the ICT Security Guideline v4.0?",
+        "options": [
+          "Awareness every two years; an email session within 90 days for officers only; management training optional",
+          "Awareness for all staff on joining and every year; an email security session for new joiners within 60 days; management training on ICT governance",
+          "Awareness only for IT staff; an email session at the annual general meeting; management briefed by vendors",
+          "Awareness on joining only; email training recommended but no time set; management exempt"
+        ],
+        "answer": 1,
+        "explanation": "Sections 6.7.1, 5.14.9 and 13.1 set these duties. Section 13.3 adds general user awareness and periodic seminars covering all employees.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x3",
+        "question": "An ICT manager argues that because the 2026 Cybersecurity Framework exists, the 2023 ICT Security Guideline no longer applies. How should the CISO respond?",
+        "options": [
+          "He is right: the framework repealed the guideline from 29 March 2026",
+          "He is right only for banks; NBFIs still follow the guideline",
+          "Both apply: the framework sits alongside the guideline and draws on it, so the guideline's controls still bind the bank",
+          "Neither applies until the bank's board adopts them by resolution"
+        ],
+        "answer": 2,
+        "explanation": "The framework builds on ISO 27001, national ICT policies and the ICT Security Guideline itself and is meant as a baseline alongside it; nothing in the circular withdraws the guideline.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x4",
+        "question": "A bank has failed twice to fix a known ICT guideline non-compliance within the time it set itself. Under section 1.3, what should it have done, and what is the risk now?",
+        "options": [
+          "Informed the National Cyber Security Agency, which grants extensions; no penalty is possible",
+          "Sought dispensation from Bangladesh Bank; after repeated failures a penalty may be imposed depending on the impact",
+          "Nothing; the guideline sets minimum standards without any enforcement route",
+          "Asked its external auditor to waive the requirement for one more year"
+        ],
+        "answer": 1,
+        "explanation": "Section 1.3 expects a monitoring team, a time-bound fix and, if the fix fails, a request for dispensation. Multiple compliance failures can lead to a penalty, depending on business or customer impact.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x5",
+        "question": "Bangladesh Bank's 2015-2016 accounts describe the February 2016 event on its New York Fed account. Which statement matches those accounts?",
+        "options": [
+          "Unauthorised transactions paid about USD 81 million to accounts at RCBC in the Philippines, and RCBC let much of it be paid onward despite instructions to halt",
+          "About USD 81 million was stolen from domestic customers' accounts at Bangladeshi banks through fake ATM cards",
+          "The New York Fed refused all the payment orders, so no money left the account",
+          "The whole amount was returned within a week by the Philippine central bank"
+        ],
+        "answer": 0,
+        "explanation": "The accounts record unauthorised payments of about USD 81 million into third-party RCBC accounts; RCBC allowed onward payment despite Bangladesh Bank's instructions, and only part was later recovered.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x6",
+        "question": "In 2019, Bangladesh Bank and the Federal Reserve Bank of New York issued a joint statement about the 2016 cyber fraud. What did it announce?",
+        "options": [
+          "A settlement in which the New York Fed repaid the full amount to Bangladesh Bank",
+          "The closure of Bangladesh Bank's account at the New York Fed",
+          "A finding that Bangladesh Bank staff had authorised the payments",
+          "A Resolution and Assistance Agreement under which the New York Fed gives technical help in Bangladesh Bank's litigation to recover the funds"
+        ],
+        "answer": 3,
+        "explanation": "The 2019 joint statement describes the agreement for technical assistance in litigation against those complicit in the fraud, including joint meetings with Philippine parties.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x7",
+        "question": "A new HR officer joined on 2 January and attended general induction on day one. The email security session is planned for 15 March. Is the bank compliant with section 5.14.9?",
+        "options": [
+          "Yes. General induction on day one satisfies all email training duties",
+          "Yes. The 60-day rule applies only to ICT staff",
+          "Yes. The guideline only recommends this session",
+          "No. 15 March is more than 60 days after 2 January, so the session is late"
+        ],
+        "answer": 3,
+        "explanation": "The session must take place within 60 days of enrolment; 2 January plus 60 days is early March. Only the yearly refresher is a recommendation.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x8",
+        "question": "Which statement about the BRPD-1 Circular No. 10 of 2026 on foundation training is accurate for this topic?",
+        "options": [
+          "Foundation training for newly recruited officers must cover data protection and cyber security",
+          "It replaces the ICT guideline's annual awareness duty for all staff",
+          "It applies only to officers in ICT and security roles",
+          "It makes cyber training optional for officers already confirmed"
+        ],
+        "answer": 0,
+        "explanation": "The 2026 foundation training guidelines require new officers' foundation training to include data protection and cyber security; the guideline's joining and annual awareness duties still apply to all staff.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x9",
+        "question": "A treasury officer receives an email from the MD's correct-looking address asking her to send this week's dealing positions to a personal Gmail address 'for a board meeting tonight'. What should she do?",
+        "options": [
+          "Send it, because the address looks right and the MD is senior",
+          "Send it but password-protect the attachment and text the password to the same address",
+          "Not send it; confirm with the MD's office through a known channel and report the email as suspected business email compromise",
+          "Reply asking the sender to confirm by email before sending"
+        ],
+        "answer": 2,
+        "explanation": "Confidential data must not go to outsiders by email without approved encryption, and pressure from a senior name is a classic pretext. Verifying through a separate channel and reporting are the safe steps; replying to the same mailbox verifies nothing.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x10",
+        "question": "Which item is NOT among the end-user phishing defences listed in section 6.7.1 of the ICT Security Guideline?",
+        "options": [
+          "Be suspicious of unexpected messages or unknown senders",
+          "Forward unexpected emails to colleagues so several people can judge them",
+          "Never share sensitive information via email",
+          "Avoid clicking links received by email, chat or social networks"
+        ],
+        "answer": 1,
+        "explanation": "Section 6.7.1 lists suspicion of unexpected messages, never opening unexpected attachments, never sharing sensitive data by email and avoiding links. Forwarding a suspicious message spreads it.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x11",
+        "question": "A caller claiming to be from Bangladesh Bank's inspection team asks a branch officer for the names of the branch's ICT staff and the brand of its firewall 'to prepare for the visit'. What is the best response?",
+        "options": [
+          "Decline to give the details and refer the caller to head office, which can verify the request through official channels",
+          "Give the details, because inspectors have a right to information",
+          "Give the staff names but not the firewall brand",
+          "Ask for the caller's mobile number and send the details by SMS"
+        ],
+        "answer": 0,
+        "explanation": "Section 6.7.4 says staff must not reveal information about the organisation, including its structure or networks, unless confident of the person's authority. Official requests can be verified through head office.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x12",
+        "question": "The help desk receives a ticket from a user's own email account asking to register a new token device because the old one was lost. The user is on leave. What does section 6.7.3 require?",
+        "options": [
+          "Provision it, because the request came from the user's own mailbox",
+          "Provision it but limit the token to read-only use for a week",
+          "Refuse all token changes while staff are on leave",
+          "Verify the user's identity independently before provisioning the new token"
+        ],
+        "answer": 3,
+        "explanation": "Section 6.7.3 requires identity verification before modifying authentication credentials, including provisioning new tokens. A mailbox may itself be compromised.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x13",
+        "question": "An officer working from home lets her teenage son use her laptop for school work while it is connected to the bank's VPN. Which rules has she broken?",
+        "options": [
+          "None, because the VPN encrypts everything",
+          "Only the rule on switching off computers at the end of each workday",
+          "The work-from-home rules: keep bank information from being seen by unauthorised people and do not share access devices or credentials",
+          "Only the email disclaimer rule"
+        ],
+        "answer": 2,
+        "explanation": "Section 5.15 requires staff to stop unauthorised people viewing sensitive information and bars sharing access devices or credentials; a connected bank laptop gives the user access through her credentials.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x14",
+        "question": "A branch wants to offer account balance enquiries through a chat channel on social media. Which requirement in section 11.9 of the guideline applies?",
+        "options": [
+          "Use any popular platform, provided customers accept the terms",
+          "Use only end-to-end encrypted messaging channels and keep monitoring for phishing links and fake accounts",
+          "Use a public page so that all customers can see the answers",
+          "Use staff members' personal accounts to reply faster"
+        ],
+        "answer": 1,
+        "explanation": "Section 11.9 requires specific terms and conditions, end-to-end encrypted channels, continuous monitoring for phishing and fake accounts, and fast take-down of malicious content.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x15",
+        "question": "Which statement best describes what the email security session for new joiners must include under section 5.14.9?",
+        "options": [
+          "How to configure the mail gateway and DKIM records for the bank's domain",
+          "How to use personal email safely for business when the bank's system is down",
+          "Why detecting phishing matters, email etiquette and how to report incidents inside the bank",
+          "How to write the confidentiality disclaimer for each outgoing email"
+        ],
+        "answer": 2,
+        "explanation": "The guideline lists phishing detection, email etiquette and internal incident reporting as the content of the session, with regular staff communication on email security.",
+        "difficulty": 2
+      },
+      {
+        "id": "bd-cy-x16",
+        "question": "A loan officer received a link by SMS, opened it and entered her network password before noticing the URL was wrong. She is embarrassed and wants to just change her password. What is the best advice?",
+        "options": [
+          "Report it immediately so the security team can check for misuse, reset access properly and warn others",
+          "Change the password herself and say nothing, since no harm is visible",
+          "Wait to see whether anything unusual happens over the next week",
+          "Tell only her line manager informally to avoid a formal record"
+        ],
+        "answer": 0,
+        "explanation": "The guideline requires abnormal activity to be reported immediately. An attacker may already have used the password; a prompt report limits damage and helps others.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x17",
+        "question": "Which pair of requirements comes from section 5.12 of the ICT Security Guideline on desktops and laptops?",
+        "options": [
+          "USB ports must be open, and users may install approved freeware without asking",
+          "USB port access is controlled, and users may not install software without prior authorisation",
+          "Laptops need no encryption if kept in the office, and screens lock only at night",
+          "Users may disable antivirus during large downloads, and must report viruses monthly"
+        ],
+        "answer": 1,
+        "explanation": "Section 5.12 controls USB access, bans unauthorised software installation, requires encrypting sensitive data on laptops, locking unattended workstations and reporting abnormal activity immediately.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x18",
+        "question": "The ICT Division proposes accepting the risk of running an unsupported operating system on a branch server for six more months. Under chapter 3 of the guideline, what must happen first?",
+        "options": [
+          "The ICT Division head can accept it alone, because ICT owns the server",
+          "The branch manager decides, because the server is in the branch",
+          "Nothing; unsupported systems are outside ICT risk management",
+          "The risk must go through the formal escalation process to someone with authority to accept it, with any residual risk recorded"
+        ],
+        "answer": 3,
+        "explanation": "The guideline requires a formal escalation process identifying who may accept a risk, treatment plans approved by the ICT Risk Management Committee and recording of residual risk.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x19",
+        "question": "Which description of risk appetite and risk tolerance matches section 3.1.3 of the guideline?",
+        "options": [
+          "Appetite is set by the external auditor; tolerance is set by each branch manager",
+          "Appetite and tolerance are the same thing and need no approval",
+          "Tolerance is the amount of risk accepted; appetite is the IT budget for controls",
+          "Appetite is the amount of risk the bank will accept to meet its objectives; tolerance is the acceptable deviation from it, approved by the board or risk committee"
+        ],
+        "answer": 3,
+        "explanation": "The guideline defines appetite as the risk the bank is prepared to accept and tolerance as tolerable deviation, which needs board or risk committee approval and communication to stakeholders.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x20",
+        "question": "An IS audit finds that four engineers and a vendor share one privileged account on the payments switch. Which set of fixes best meets section 8.3 of the guideline?",
+        "options": [
+          "Keep the shared account but rotate its password every 30 days",
+          "Named privileged accounts limited to need, no account sharing, supervised and monitored vendor access, and timely review of privileged activity",
+          "Give the vendor its own permanent administrator account with no monitoring",
+          "Disable logging on the switch to improve its performance"
+        ],
+        "answer": 1,
+        "explanation": "Section 8.3.2 requires strong authentication, restricting and reviewing privileged users, granting access on need, banning shared privileged accounts and supervising vendor access.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x21",
+        "question": "An internal policy sets a password expiry of 180 days for internal users on a system without MFA. What does the guideline say?",
+        "options": [
+          "It is acceptable because the guideline sets no limit",
+          "It is acceptable if the password has at least eight characters",
+          "It is too long: the maximum validity for internal users is a 90-day cycle",
+          "It is too short: the guideline sets a one-year cycle"
+        ],
+        "answer": 2,
+        "explanation": "Section 8.2.8 caps the password validity for internal users at a 90-day cycle, within the bank's policy; without MFA passwords must also have at least eleven characters.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x22",
+        "question": "Which statement about information system audits under the ICT Security Guideline is correct?",
+        "options": [
+          "Internal IS audits must be at least yearly and risk-based, and a qualified external auditor must also audit IS at least annually",
+          "Internal IS audit is optional if an external IS audit is done every two years",
+          "External IS audits replace the need for internal audit to cover ICT",
+          "IS audits are only required for banks that operate SWIFT"
+        ],
+        "answer": 0,
+        "explanation": "Sections 2.4.5 and 2.5.1 require both internal and external information system audits at least once a year, carried out by qualified and certified people.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x23",
+        "question": "Under the framework's coordination model, which level approves the implementation strategy and takes risk decisions?",
+        "options": [
+          "The implementation and operations level",
+          "The business and process level",
+          "Senior management",
+          "The external auditor"
+        ],
+        "answer": 2,
+        "explanation": "Section 2.4 places mission priorities with the board, approval of strategy and risk decisions with senior management, profiles and budgets with the business level, and implementation with operations.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x24",
+        "question": "HR proposes screening staff only once, on hiring. What does section 3.1.8 of the framework expect?",
+        "options": [
+          "Periodic re-screening as well, covering pending proceedings, outside business interests and credit, plus continuous behavioural monitoring",
+          "Screening only on hiring, because repeat checks breach privacy",
+          "Re-screening only for staff who are promoted to senior management",
+          "Screening only for contract staff and vendors"
+        ],
+        "answer": 0,
+        "explanation": "The framework requires initial screening, periodic screening with a catch-up process, and continuous behavioural monitoring to manage insider threat.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x25",
+        "question": "A bank plans to outsource its ATM monitoring. Which set of steps fits chapter 12 of the guideline and the framework?",
+        "options": [
+          "Rely on the vendor's ISO certificate and skip the bank's own evaluation",
+          "Sign a short purchase order, because monitoring is not a critical service",
+          "Transfer all responsibility for incidents to the vendor through the contract",
+          "Follow the board-approved outsourcing policy, sign a written agreement setting roles, evaluate the provider's risk and DR, keep a contingency plan and give vendor staff security awareness"
+        ],
+        "answer": 3,
+        "explanation": "Chapter 12 requires a board-approved outsourcing policy, written agreements, risk-based evaluation, provider DR and contingency plans without weakening controls; framework 2.12(e) adds awareness for vendors.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x26",
+        "question": "A data exfiltration began at 2:00 am on Monday, was detected at 6:00 pm on Tuesday and was classified critical at 9:00 am on Wednesday. Under the framework, by when must the report to BGD-CIRT and Bangladesh Bank be made?",
+        "options": [
+          "By 6:00 pm on Friday, 72 hours after it was detected",
+          "By 2:00 am on Thursday, 72 hours after the incident began",
+          "By 9:00 am on Saturday, 72 hours after it was classified",
+          "By the end of the following week, after the investigation"
+        ],
+        "answer": 1,
+        "explanation": "Section 8.1.2.1 runs the 72 hours from the time of occurrence, so late detection leaves less time. Monday 2:00 am plus 72 hours is Thursday 2:00 am.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-cy-x27",
+        "question": "During a critical incident, a journalist calls the CISO asking for details. What does section 2.5 of the framework say?",
+        "options": [
+          "The CISO must answer, as the single point of contact",
+          "Any team member may answer if they stick to the facts",
+          "Only the Incident Management Leader (the MD or delegate) or someone they designate may deal with the media",
+          "The bank must refuse all comment until Bangladesh Bank has published a notice"
+        ],
+        "answer": 2,
+        "explanation": "The framework reserves media contact to the Cyber Incident Management Leader or a person designated by them. The CISO is the single contact for users, not for the media.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x28",
+        "question": "A bank's incident procedure tells staff to report cyber incidents only to Bangladesh Bank. Which gap is most important to close?",
+        "options": [
+          "It should send reports to the stock exchange instead of Bangladesh Bank",
+          "It should wait for the annual cybersecurity audit before reporting",
+          "No gap: Bangladesh Bank forwards reports to every other body",
+          "It omits other routes: BGD-CIRT and other stakeholders within 72 hours, the national CERT under the Cyber Security Act, and the PDPA breach notice to the Authority where relevant"
+        ],
+        "answer": 3,
+        "explanation": "The framework lists BGD-CIRT, Bangladesh Bank, customers and critical service providers; the Cyber Security Act requires informing the national CERT without delay; the PDPA adds breach notice to the Authority.",
+        "difficulty": 5
+      },
+      {
+        "id": "bd-cy-x29",
+        "question": "The ransomware gang threatens to leak data unless paid. The board asks what the framework says about paying. Which answer is accurate?",
+        "options": [
+          "The framework warns that paying does not guarantee the data will be returned and stresses backups and a documented ransomware strategy",
+          "The framework allows payment if the amount is below the bank's risk appetite",
+          "The framework requires payment when no backups exist",
+          "The framework is silent on ransomware"
+        ],
+        "answer": 0,
+        "explanation": "Lessons learned in section 8.1.4 state that paying a ransom does not guarantee return of data, and section 7.1.1.16 requires documented strategies for ransomware and extortion.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x30",
+        "question": "Which set of recovery practices does section 7.1.1 of the framework expect?",
+        "options": [
+          "Monthly backups kept on the same server, with restore tests every two years",
+          "Automated backups at least weekly, an isolated copy of recovery data, quarterly restore tests and annual incident response exercises",
+          "Backups only for customer data, tested when a disaster happens",
+          "Daily backups stored only with the vendor, with no restore testing"
+        ],
+        "answer": 1,
+        "explanation": "The framework asks for weekly or more frequent automated backups, an isolated recovery instance, restore testing at least quarterly and incident exercises at least once a year.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x31",
+        "question": "Which description of the CIRT under the ICT Security Guideline is accurate?",
+        "options": [
+          "It is an external body run by the National Cyber Security Agency for all banks",
+          "It responds immediately to cyber incidents, follows preparation, detection and analysis, containment and recovery, and post-incident steps, and reports to Bangladesh Bank CIRT",
+          "It meets once a quarter to review closed incidents only",
+          "It is the board committee that approves the ICT budget"
+        ],
+        "answer": 1,
+        "explanation": "Section 6.4 requires the bank to form its own CIRT, follow the four incident response steps, cooperate and report to Bangladesh Bank CIRT and train its members.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x32",
+        "question": "A SWIFT operator suggests saving the SWIFT application password in a document on the SWIFT server so night staff can log in. What does section 11.8 of the guideline say?",
+        "options": [
+          "Allowed if the document is named obscurely",
+          "Allowed if internet access on the server is open for monitoring",
+          "Not allowed: passwords must be kept securely and not stored on servers, and sign-on needs MFA",
+          "Allowed during holidays when traffic is low"
+        ],
+        "answer": 2,
+        "explanation": "Section 11.8 bans storing passwords on servers, makes MFA mandatory and also restricts SWIFT traffic outside working hours, internet and USB access.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x33",
+        "question": "The bank's SWIFT annual attestation is due. Who must carry out the independent assessment under section 11.8 of the guideline?",
+        "options": [
+          "The bank's own SWIFT operators",
+          "Bangladesh Bank's inspection department",
+          "Any audit firm on Bangladesh Bank's list of eligible auditors",
+          "A service provider listed in SWIFT's Cyber Security Service Provider directory"
+        ],
+        "answer": 3,
+        "explanation": "The guideline requires the independent assessment for the annual SWIFT attestation, against SWIFT's controls framework, to be done at least annually by a SWIFT-enlisted provider.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x34",
+        "question": "Which statement about incident response training is correct under section 6.3.14 of the ICT Security Guideline?",
+        "options": [
+          "Training must match users' assigned roles and include simulated events",
+          "Training is needed only for the CISO and the CIRT leader",
+          "Training is a single lecture for all staff, with no exercises",
+          "Training is optional if the bank uses a managed security provider"
+        ],
+        "answer": 0,
+        "explanation": "Section 6.3.14 requires role-based incident response training for information system users and simulated events so staff can respond well in a crisis.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x35",
+        "question": "A customer withdraws her consent to marketing messages but keeps her loan with the bank. Under the PDPA 2026, what follows?",
+        "options": [
+          "The bank must close her loan account at once",
+          "The bank may ignore the withdrawal because she is still a customer",
+          "The bank must delete all her data, including loan records",
+          "The bank stops marketing to her but may keep processing data needed to perform the loan contract, which has its own lawful basis"
+        ],
+        "answer": 3,
+        "explanation": "Consent must be withdrawable, but section 5(3) allows processing without consent for performing a contract to which the person is a party, within the Act's limits.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x36",
+        "question": "Which security measures does section 17 of the PDPA 2026 expect a bank to include?",
+        "options": [
+          "Only a written confidentiality clause in staff contracts",
+          "Only a firewall at the internet gateway",
+          "Pseudonymisation, encryption, resilience of systems, timely restoration after incidents and regular testing of the measures",
+          "Only storing data inside Bangladesh"
+        ],
+        "answer": 2,
+        "explanation": "Section 17 requires technical and organisational measures proportionate to volume, sensitivity and harm, including pseudonymisation, encryption, resilience, restoration and regular testing.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x37",
+        "question": "Which sections of the PDPA 2026 had not yet started in November 2026?",
+        "options": [
+          "Section 5 on consent and section 16 on disclosure",
+          "Section 23 on the Chief Data Officer and sections 31 to 35 on complaints, fines and compensation",
+          "Section 17 on security and section 20 on breaches",
+          "All sections, until the Government publishes an English text"
+        ],
+        "answer": 1,
+        "explanation": "Section 1(3) deems the Act in force from 6 November 2025 except section 23 and sections 31 to 35, which start on a date notified after 18 months.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x38",
+        "question": "A bank officer passes customer account statements to a property developer in exchange for referral fees. Which rules does this break?",
+        "options": [
+          "The Code of Conduct's secrecy of customers' affairs and the PDPA bar on disclosure beyond the collection purpose without consent",
+          "Only the ICT guideline's email disclaimer rule",
+          "None, if the customers are later offered flats at a discount",
+          "Only the Cyber Security Act's rule on critical information infrastructure"
+        ],
+        "answer": 0,
+        "explanation": "Bangladesh Bank's Code of Conduct requires complete secrecy of customers' affairs, and section 16 of the PDPA forbids disclosing personal data for another purpose without consent.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x39",
+        "question": "If the Government declares a bank's payment system to be critical information infrastructure, what follows under the Cyber Security Act 2026?",
+        "options": [
+          "The bank is exempt from Bangladesh Bank's ICT guideline for that system",
+          "The system must be handed over to the National Cyber Security Agency to run",
+          "The Director General may monitor and inspect it, and the bank must audit its internal and external infrastructure every year and report to the Council",
+          "Nothing changes unless a cyber offence is committed"
+        ],
+        "answer": 2,
+        "explanation": "Section 16 provides for monitoring and inspection by the Director General and an annual audit report by each declared critical infrastructure to the National Cyber Security Council.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x40",
+        "question": "Which group is NOT expressly named for training or awareness in section 2.12 of the Cybersecurity Framework?",
+        "options": [
+          "The bank's shareholders",
+          "Privileged users and senior executives",
+          "Physical security personnel",
+          "Third-party vendors and suppliers"
+        ],
+        "answer": 0,
+        "explanation": "Section 2.12 covers all staff, security staff certifications, privileged users, senior executives, physical and information security personnel, and third parties such as vendors.",
+        "difficulty": 3
+      },
+      {
+        "id": "bd-cy-x41",
+        "question": "A bank's readiness report says the framework 'will be complied with during 2027'. What is wrong with this plan?",
+        "options": [
+          "Nothing; the framework allows a one-year grace period after the deadline",
+          "BRPD-2 Circular No. 02 requires compliance by 31 December 2026, so remaining gaps need approved compliance plans and, if exceptional, dispensation",
+          "The framework must be complied with by 30 June 2026",
+          "The bank need not comply until the Cyber Security Act rules are issued"
+        ],
+        "answer": 1,
+        "explanation": "The circular sets 31 December 2026 as the compliance date. Under the ICT guideline approach, gaps need compliance plans, and dispensation from Bangladesh Bank is only for exceptional cases and a specific period.",
+        "difficulty": 4
+      },
+      {
+        "id": "bd-cy-x42",
+        "question": "A Bangladesh Bank inspector asks the training head to prove the bank met the joining, 60-day and annual training duties. Which evidence is strongest?",
+        "options": [
+          "The training calendar for next year",
+          "Photographs of a seminar held at head office",
+          "The total training budget approved by the board",
+          "Per-employee records linking joining dates to awareness, email session and annual refresher dates, with completion rates by audience"
+        ],
+        "answer": 3,
+        "explanation": "Only records that tie each employee's joining date to training completion show whether the 6.7.1 and 5.14.9 time limits were met. The framework also suggests tracking completion rates as a KPI.",
+        "difficulty": 3
+      }
+    ]
+  }
+}
