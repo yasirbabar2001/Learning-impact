@@ -1,0 +1,3271 @@
+{
+  "slug": "pk-sbp-fx-remittance-branchless",
+  "title": "Pakistan | SBP Foreign Exchange, Home Remittances and Branchless Banking Operations",
+  "tagline": "Apply SBP's Foreign Exchange Manual, home remittance and e-PRC rules, Branchless Banking Regulations and wire transfer information rules at a conventional bank.",
+  "category": "Banking & Compliance",
+  "level": "Intermediate",
+  "sectors": [
+    "Conventional commercial banks in Pakistan",
+    "Authorized Dealers in foreign exchange",
+    "Microfinance banks offering branchless banking",
+    "Branchless banking agent networks"
+  ],
+  "hours": 5,
+  "description": "This quest teaches the foreign exchange, home remittance and branchless banking rules that apply to conventional banks in Pakistan. It is based on the **State Bank of Pakistan's Foreign Exchange Manual** (Chapters 2 and 10, with the basics of Chapters 12 and 13) under the **Foreign Exchange Regulation Act 1947**, on SBP's **Branchless Banking Regulations** (revised December 2019), and, in general terms, on the wire transfer requirements of SBP's **AML/CFT/CPF Regulations**.\n\nChapter 2 of the FE Manual requires every Authorized Dealer to have a board-approved foreign exchange training and development policy and to assess each related employee's FX training needs at the start of each calendar year. Officials serving individuals, including call-centre staff, must be trained; Chapter 10 asks dealers to train staff on e-PRCs; and the Branchless Banking Regulations require agent training, including for Home Remittance Accounts. This quest supports those duties for FX, remittance, branchless banking, trade and training staff and their managers.\n\nIn five stages you join a fictional Pakistani bank, from licensing to inspection readiness.\n\nThe quest builds knowledge and does not replace your bank's own foreign exchange, remittance and branchless banking policies and procedures; always follow them and the latest SBP instructions.",
+  "audience": [
+    "Foreign exchange staff at authorized branches who serve individuals, sell exchange and process outward remittances",
+    "Contact and call-centre staff who answer customers' questions on foreign exchange services",
+    "Home remittance, SWIFT and payment operations staff, and branch staff who issue and verify e-PRCs",
+    "Branchless banking agent network managers, agents and branchless banking compliance staff",
+    "Trade, treasury, training and compliance managers who plan and evidence FX training for the board and SBP"
+  ],
+  "outcomes": [
+    "Explain how Authorized Dealers and authorized branches are licensed under the Foreign Exchange Regulation Act 1947 and the FE Manual, and apply their standing duties",
+    "Serve individuals' travel, education and medical FX needs and process outward remittances with the right form, approval and checks",
+    "Credit and pay home remittances within Chapter 10's deadlines, calculate delay compensation, and issue and verify e-PRCs and S-PRCs",
+    "Run branchless banking within SBP's rules on agents, Level 0 and Level 1 accounts and Home Remittance Accounts",
+    "Keep the originator and beneficiary information SBP requires with wires and home remittances, in general terms",
+    "Build and evidence the board-approved FX training programme and annual needs assessment Chapter 2 requires"
+  ],
+  "quest": {
+    "name": "The Corridor Mission",
+    "premise": "You have just joined Hingol Bank, a fictional conventional bank headquartered in Karachi with authorized branches across Pakistan and a branchless banking agent network, as its FX and Remittance Training Lead. The yearly FX training-needs assessment is due and an SBP inspection is coming. With FX head Sadia Rehman, branch manager Hina Javed, trade head Asad Khan, agent network manager Imran Lashari and agent Shakeel Ahmed, clear five stages, then face the final boss: the inspector's exam.",
+    "badge": {
+      "name": "Corridor Keeper",
+      "description": "Awarded to bankers who can apply SBP's FX Manual, home remittance and e-PRC rules, Branchless Banking Regulations and wire transfer information duties."
+    },
+    "color": "#1d4ed8",
+    "cast": [
+      {
+        "id": "sadia",
+        "name": "Sadia Rehman",
+        "role": "Head of FX and Home Remittances, Karachi, your mentor",
+        "look": {
+          "skin": 2,
+          "hair": "bun",
+          "color": "#1e3a8a"
+        }
+      },
+      {
+        "id": "hina",
+        "name": "Hina Javed",
+        "role": "Branch Manager and FX focal person, Lahore Gulberg",
+        "look": {
+          "skin": 3,
+          "hair": "hijab",
+          "color": "#9d174d"
+        }
+      },
+      {
+        "id": "asad",
+        "name": "Asad Khan",
+        "role": "Head of Trade Operations, Sialkot",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#374151"
+        }
+      },
+      {
+        "id": "imran",
+        "name": "Imran Lashari",
+        "role": "Branchless Banking Agent Network Manager, Hyderabad",
+        "look": {
+          "skin": 4,
+          "hair": "beard",
+          "color": "#047857"
+        }
+      },
+      {
+        "id": "shakeel",
+        "name": "Shakeel Ahmed",
+        "role": "Branchless banking agent and shopkeeper, Mardan",
+        "look": {
+          "skin": 3,
+          "hair": "short",
+          "color": "#b45309"
+        }
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "s1",
+      "title": "The FX Manual and the Authorized Dealer",
+      "stage": "The Licence Vault",
+      "summary": "Learn how foreign exchange business is licensed in Pakistan: the Foreign Exchange Regulation Act 1947, SBP's Foreign Exchange Manual and its main chapters, how a bank becomes an Authorized Dealer and designates authorized branches, and the standing duties every authorized branch carries.",
+      "minutes": 50,
+      "objectives": [
+        "Explain how the Foreign Exchange Regulation Act 1947 and SBP's Foreign Exchange Manual fit together",
+        "Describe how a bank obtains an Authorized Dealer licence and designates an authorized branch",
+        "Apply the Authorized Dealer's duties on declarations, refusal, customer notice and reporting of evasion",
+        "Use the Chapter 2 rules on returns and on the public buying and selling rate margin"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Day one at Hingol Bank",
+          "setting": "Foreign exchange operations floor, Hingol Bank head office, I.I. Chundrigar Road, Karachi. 9:00 am, first working day of December.",
+          "lines": [
+            {
+              "who": "narrator",
+              "mood": "neutral",
+              "text": "You have just joined Hingol Bank, a fictional conventional bank with authorized branches from Gilgit to Gwadar and a branchless banking agent network, as its FX and Remittance Training Lead."
+            },
+            {
+              "who": "sadia",
+              "mood": "happy",
+              "text": "Welcome! I'm Sadia Rehman, Head of FX Operations and Home Remittances. Your first deadline is close: the foreign exchange training-needs assessment for every FX employee, due at the start of the calendar year."
+            },
+            {
+              "who": "hina",
+              "mood": "worried",
+              "text": "Hina Javed, manager of our Lahore Gulberg branch and the FX focal person for individuals. Yesterday a new officer quoted a customer a dollar rate with a huge spread and told another that student fees 'need SBP's own approval'."
+            },
+            {
+              "who": "asad",
+              "mood": "neutral",
+              "text": "Asad Khan, trade operations, Sialkot. My exporters keep asking which rules are SBP's and which are Customs'. Half my staff can't say where the Manual even starts."
+            },
+            {
+              "who": "imran",
+              "mood": "thinking",
+              "text": "Imran Lashari, branchless banking agent network, Hyderabad. And my agents are about to start paying home remittances. Who trains them?"
+            },
+            {
+              "who": "sadia",
+              "mood": "proud",
+              "text": "All of that is your mission. Five stages, from the licence vault to the inspection room. We start with the basics: who may deal in foreign exchange at all, and on what terms."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Where Pakistan's FX rules come from",
+          "scenes": [
+            {
+              "icon": "📜",
+              "heading": "The Act",
+              "narration": "Pakistan's foreign exchange controls rest on the Foreign Exchange Regulation Act of 1947. Under section 3 of the Act, the State Bank may, on application, authorise a person to deal in foreign exchange."
+            },
+            {
+              "icon": "🏛️",
+              "heading": "Full or limited licences",
+              "narration": "SBP can allow dealing in all foreign currencies or only some, and in all kinds of transactions or only specified ones. Scheduled banks receive the licence for approved transactions of all descriptions."
+            },
+            {
+              "icon": "📘",
+              "heading": "The Manual",
+              "narration": "SBP gathers its standing instructions to Authorized Dealers in the Foreign Exchange Manual, organised in chapters, with forms and returns in the appendices. Footnotes show the circular behind each change."
+            },
+            {
+              "icon": "🏦",
+              "heading": "Authorized branches",
+              "narration": "Once licensed, a bank designates the branches that will do foreign exchange business. Only those authorized branches may deal in foreign exchange."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Why you are here",
+              "narration": "Chapter 2 also tells Authorized Dealers to build their staff's capacity: a board-approved training policy and a yearly assessment of each related employee's FX training needs."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "steps",
+          "title": "From licence to authorized branch",
+          "caption": "Chapter 2, paragraphs 1 and 2 of the Foreign Exchange Manual, in the order a bank meets them.",
+          "items": [
+            {
+              "label": "Head office applies to SBP",
+              "detail": "Application to the Exchange Policy Department naming the transactions sought."
+            },
+            {
+              "label": "Confirms its readiness",
+              "detail": "The bank confirms that trained staff, systems and equipment for FX work are in place."
+            },
+            {
+              "label": "SBP grants the licence",
+              "detail": "SBP may refuse without giving reasons, and may later withdraw it under section 3B."
+            },
+            {
+              "label": "Bank designates a branch",
+              "detail": "Head office sends the branch's name and address to SBP's Statistics and Data Warehouse Department."
+            },
+            {
+              "label": "Code allotted, business starts",
+              "detail": "SBP allots a reporting code; the branch may then begin FX business."
+            },
+            {
+              "label": "Head office reports",
+              "detail": "Branch dealings are consolidated and reported to SBP through the prescribed returns."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "When a bank's head office applies for an Authorized Dealer licence, what must it confirm besides the transactions it wants to deal in?",
+          "options": [
+            "That its board has approved an FX profit target for the year",
+            "That trained staff, systems and equipment for FX transactions are available",
+            "That every branch already holds a stock of foreign currency notes",
+            "That an exchange company has agreed to act as its agent"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 2, paragraph 2(i) asks the head office to state the nature of transactions it wants to deal in and to confirm that trained staff, the required systems and equipment are available. Training is part of the licence conversation from day one."
+        },
+        {
+          "type": "match",
+          "title": "Chapters you will open most",
+          "prompt": "Match each chapter of the Foreign Exchange Manual to what it covers.",
+          "pairs": [
+            {
+              "left": "Chapter 2",
+              "right": "Authorized Dealers: licensing, staff capacity building, services to individuals, rates and returns"
+            },
+            {
+              "left": "Chapter 10",
+              "right": "Inward and outward remittances, home remittances and proceeds realization certificates"
+            },
+            {
+              "left": "Chapter 11",
+              "right": "Purchase and sale of foreign currency notes and coins"
+            },
+            {
+              "left": "Chapter 12",
+              "right": "Exports: declaring exports and realizing the proceeds"
+            },
+            {
+              "left": "Chapter 13",
+              "right": "Imports: sale of foreign exchange for goods brought into Pakistan"
+            },
+            {
+              "left": "Chapter 17",
+              "right": "Genuine FX needs of individuals, such as education, medical treatment and travel"
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Trade basics from Chapters 12 and 13",
+          "cards": [
+            {
+              "front": "Who sets trade policy?",
+              "back": "The Ministry of Commerce, under the Imports and Exports (Control) Act 1950; FX rules sit on top and do not replace its licences or permits."
+            },
+            {
+              "front": "Form E",
+              "back": "The exporter's declaration of exports, certified by the Authorized Dealer in a convertible foreign currency; now largely electronic."
+            },
+            {
+              "front": "Export proceeds",
+              "back": "The full export value must come back through an Authorized Dealer in an approved manner within the period SBP prescribes."
+            },
+            {
+              "front": "Electronic Import Form (EIF)",
+              "back": "Importers request it electronically through WeBOC or the Pakistan Single Window, and an Authorized Dealer approves or rejects it."
+            },
+            {
+              "front": "CDD of traders",
+              "back": "Dealers carry out risk-based CDD of exporters and importers and record their trade activity in the customer risk profile."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "The Authorized Dealer's standing duties",
+          "body": "Chapter 2 sets duties that apply to every foreign exchange transaction, not just the unusual ones.\n\n- **Stay inside the licence** (para 5). Follow SBP's general and special instructions and never deal outside the terms of the authorization.\n- **Ask before you act** (para 6). Before any FX transaction, require the declarations and information that reasonably satisfy you it does not contravene or evade the Act.\n- **Refuse and report** (para 6). If the person refuses or answers unsatisfactorily, refuse the transaction. If you have reason to believe a contravention is planned, report it to SBP.\n- **Tell customers the rules** (para 7). Bring the FX regulations to customers' notice and apply them in daily work.\n- **Report evasion immediately** (para 7). Every case of evasion, or of a direct or indirect attempt, goes to SBP as soon as it comes to notice.\n- **File returns on time** (para 10) in the prescribed forms, and send senior officials to SBP meetings when called (para 8)."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "SBP's powers and the dealer's duties",
+          "headers": [
+            "State Bank of Pakistan",
+            "Authorized Dealer"
+          ],
+          "items": [
+            {
+              "label": "Licensing",
+              "left": "May authorise all or only specified currencies and transactions",
+              "right": "Deals only within the terms of its authorization"
+            },
+            {
+              "label": "Refusal",
+              "left": "May refuse a licence without assigning reasons",
+              "right": "Must refuse a transaction when declarations are refused or unsatisfactory"
+            },
+            {
+              "label": "Withdrawal",
+              "left": "May withdraw a licence or stop a branch's FX dealings (s.3B)",
+              "right": "Reports every evasion or attempted evasion to SBP immediately"
+            },
+            {
+              "label": "Rates",
+              "left": "Lets dealers set their own rates unless it directs otherwise",
+              "right": "Keeps the public buy-sell margin within 50 paisa per US dollar"
+            },
+            {
+              "label": "Returns",
+              "left": "Prescribes return forms in the Manual's appendices",
+              "right": "Submits returns of FX dealings on their due dates"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Two problems at the Gulberg counter",
+          "setting": "Hingol Bank, Gulberg branch, Lahore. 11:40 am.",
+          "lines": [
+            {
+              "who": "hina",
+              "mood": "worried",
+              "text": "Two things before lunch. First, a walk-in customer wants USD 9,000 sent abroad for a 'relative's fees' but won't sign the declaration or show any admission letter."
+            },
+            {
+              "who": "hina",
+              "mood": "thinking",
+              "text": "He says other banks never ask, and he'll split it across three days if that helps."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "And the second?"
+            },
+            {
+              "who": "hina",
+              "mood": "angry",
+              "text": "My new officer quoted retail customers a buying rate and a selling rate more than a rupee apart per dollar. He says the bank is 'free to set its rates'."
+            },
+            {
+              "who": "sadia",
+              "mood": "neutral",
+              "text": "Free within limits. Let's take the customer first. Training Lead, what should Hina's team do?"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The customer who won't declare",
+          "situation": "A walk-in customer at an authorized branch wants to buy foreign exchange to remit abroad. He refuses to complete the declaration or give the information the branch needs, offers to split the amount over three days, and becomes impatient.",
+          "choices": [
+            {
+              "text": "Refuse the transaction, record what happened and refer it to the branch's compliance contact, who decides whether the facts must be reported to SBP.",
+              "outcome": "Right. Paragraph 6 says the dealer must refuse when declarations are refused or unsatisfactory, and report to SBP where it has reason to believe a contravention is contemplated. The offer to split also deserves an internal AML review under the bank's own procedures.",
+              "score": 2
+            },
+            {
+              "text": "Process the remittance today because the amount is modest and the customer is in a hurry.",
+              "outcome": "Poor. The size of the amount does not remove the duty to obtain declarations. Proceeding without them breaches Chapter 2 and leaves the bank exposed.",
+              "score": 0
+            },
+            {
+              "text": "Accept the split into three smaller remittances so that each one attracts less scrutiny.",
+              "outcome": "Poor. Splitting to avoid scrutiny is a warning sign in itself. Agreeing to it would help the customer evade the rules the branch is meant to apply.",
+              "score": 0
+            },
+            {
+              "text": "Refuse politely but keep no record, so the customer is not embarrassed.",
+              "outcome": "Partly right. Refusal is correct, but without a record nobody can judge whether SBP should be told or whether the pattern repeats at other branches.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Within an authorized branch's permission?",
+          "prompt": "Sort each activity: allowed for an authorized branch under Chapter 2, or not allowed as described.",
+          "buckets": [
+            "Allowed",
+            "Not allowed as described"
+          ],
+          "items": [
+            {
+              "text": "Buying and selling foreign currency notes and coins",
+              "bucket": 0
+            },
+            {
+              "text": "Handling letters of credit payable in a foreign currency",
+              "bucket": 0
+            },
+            {
+              "text": "Dealing in foreign currency drafts and traveller's cheques",
+              "bucket": 0
+            },
+            {
+              "text": "Handling bills of exchange payable in a foreign currency",
+              "bucket": 0
+            },
+            {
+              "text": "A new branch selling dollars before SBP has allotted its code",
+              "bucket": 1
+            },
+            {
+              "text": "A retail buy-sell margin of PKR 1.20 per US dollar",
+              "bucket": 1
+            },
+            {
+              "text": "A transaction outside the terms of the bank's FX authorization",
+              "bucket": 1
+            },
+            {
+              "text": "Proceeding after a customer refuses the required declaration",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Key terms in the licence vault",
+          "cards": [
+            {
+              "front": "Authorized Dealer (AD)",
+              "back": "A bank licensed by SBP under the Foreign Exchange Regulation Act 1947 to deal in foreign exchange; scheduled banks are licensed for transactions of all descriptions."
+            },
+            {
+              "front": "Authorized branch",
+              "back": "A branch the AD has designated for FX business and notified to SBP, which allots it a code for statistical reporting."
+            },
+            {
+              "front": "Exchange Policy Department",
+              "back": "The SBP department that receives Authorized Dealer licence applications."
+            },
+            {
+              "front": "SBP-BSC",
+              "back": "SBP Banking Services Corporation, which receives many FX returns, applications and permits on SBP's behalf."
+            },
+            {
+              "front": "Section 22 of the Act",
+              "back": "Makes it an offence to give information or make a statement you know, or have reason to believe, is false in a material particular."
+            },
+            {
+              "front": "Prescribed returns",
+              "back": "Returns of FX dealings that ADs submit on due dates in forms specimened in the Manual's appendices."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "Chapter 2 in numbers",
+          "items": [
+            {
+              "value": "1947",
+              "label": "Year of the Act",
+              "detail": "The Foreign Exchange Regulation Act 1947 is the legal base for the AD licence."
+            },
+            {
+              "value": "50 paisa",
+              "label": "Public rate margin",
+              "detail": "Maximum gap between buying and selling rates per US dollar for the public; not for interbank deals."
+            },
+            {
+              "value": "5",
+              "label": "Service duties to individuals",
+              "detail": "Paragraph 4 lists five things ADs must ensure for individuals' FX needs."
+            },
+            {
+              "value": "7",
+              "label": "Training parameters",
+              "detail": "Paragraph 3 sets seven parameters for building FX staff capacity."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Hina's new officer quotes retail customers a US dollar buying rate and selling rate PKR 1.10 apart. Which statement is correct under Chapter 2?",
+          "options": [
+            "It is acceptable because dealers are completely free to set their own rates",
+            "It breaches the condition that the public buy-sell margin must not exceed 50 paisa per US dollar",
+            "It is acceptable as long as the rate is displayed on the branch board",
+            "It breaches Chapter 2 only if the customer is a non-resident"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 11 gives a general permission to set rates for ready and forward deals with the public, on condition that the margin between buying and selling rates does not exceed fifty paisa per US dollar or its equivalent. The condition does not apply to interbank transactions."
+        },
+        {
+          "type": "example",
+          "title": "Hingol case: the branch that was not on the list",
+          "body": "A fictional case from Hingol Bank's files.\n\nHingol opened a new branch in Multan Cantt and, keen to serve families receiving money from the Gulf, the branch began buying and selling dollars in its first week. Head office had approved the plan internally but had not yet sent the branch's name and address to SBP's Statistics and Data Warehouse Department, so no reporting code had been allotted.\n\nInternal audit spotted that the branch's FX deals were being booked through a neighbouring branch's code to make the returns balance.\n\n**What Hingol did**\n- Stopped FX dealing at the branch at once.\n- Notified the branch to SBP and waited for the code before restarting.\n- Corrected the returns and explained the error to SBP.\n- Added 'Is this branch authorized?' to the FX induction module for every new branch team.\n\n**Lesson:** an internal approval is not an authorization. Under Chapter 2 a branch can start FX business only after SBP has allotted its code."
+        },
+        {
+          "type": "keypoints",
+          "title": "Licence Vault take-aways",
+          "items": [
+            "SBP licenses Authorized Dealers under section 3 of the Foreign Exchange Regulation Act 1947; scheduled banks get licences for all kinds of approved transactions.",
+            "A branch may deal in FX only after head office notifies it to SBP and receives a reporting code.",
+            "Before any FX transaction, obtain declarations; refuse if they are refused or unsatisfactory, and report planned contraventions to SBP.",
+            "Tell customers the FX rules, report every evasion or attempt immediately, and file returns on their due dates.",
+            "Dealers set their own rates, but the public buy-sell margin must stay within 50 paisa per US dollar."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Think of the last foreign exchange request you handled or saw. Which declaration or document did your branch ask for, and could you explain to the customer why the Manual requires it?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "pk-fx-s1-q1",
+          "question": "Under which law does the State Bank of Pakistan authorise banks to deal in foreign exchange?",
+          "options": [
+            "The Banking Companies Ordinance 1962",
+            "The Payment Systems and Electronic Fund Transfers Act 2007",
+            "The Foreign Exchange Regulation Act 1947",
+            "The Anti-Money Laundering Act 2010"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 2 of the Foreign Exchange Manual says SBP authorises persons to deal in foreign exchange under section 3 of the Foreign Exchange Regulation Act 1947. The other laws govern banking, payments and AML respectively.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s1-q2",
+          "question": "A bank's head office plans to apply for an Authorized Dealer licence. To which part of SBP should the application go?",
+          "options": [
+            "The Exchange Policy Department",
+            "The Statistics and Data Warehouse Department",
+            "The Financial Monitoring Unit",
+            "The Banking Policy and Regulations Department"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 2(i) directs licence applications to the Exchange Policy Department. The Statistics and Data Warehouse Department comes in later, when the bank designates authorized branches and needs reporting codes.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s1-q3",
+          "question": "Hingol Bank wants its new Quetta branch to start selling foreign exchange next week. What must happen before the branch begins?",
+          "options": [
+            "The branch manager signs an undertaking to follow the Manual",
+            "Head office notifies the branch to SBP and SBP allots it a reporting code",
+            "The branch obtains its own separate FX licence from SBP's Exchange Policy Department",
+            "The branch opens a nostro account in its own name abroad"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 2(ii) requires head office to send the new branch's name and address to SBP's Statistics and Data Warehouse Department, which allots a code for statistical reporting. Only then can the branch start FX business.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s1-q4",
+          "question": "A customer refuses to give the information an authorized branch needs before an FX transaction, and staff suspect he plans to evade the Act. What does Chapter 2 require?",
+          "options": [
+            "Complete the transaction but flag it for review next month",
+            "Refuse the transaction and simply close the file",
+            "Ask the customer to come back with a relative who will sign instead",
+            "Refuse the transaction and report the matter to SBP"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 6 requires the dealer to refuse when declarations are refused or unsatisfactory and, where it has reason to believe a contravention is planned, to report the matter to SBP. Closing the file without a report misses the second duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s1-q5",
+          "question": "Which statement about the buying and selling rates an Authorized Dealer quotes to the public is correct?",
+          "options": [
+            "SBP fixes a single daily rate that all dealers must quote",
+            "Dealers set their own rates with no limit on the margin",
+            "Dealers set their own rates, keeping the margin within 50 paisa per US dollar",
+            "The 50 paisa margin limit applies to interbank deals between banks but not to retail customers"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 11 gives a general permission to set rates for the public on condition that the buy-sell margin does not exceed fifty paisa per US dollar or equivalent. The condition does not apply to interbank transactions, so the last option reverses the rule.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s1-q6",
+          "question": "A relationship officer learns that a long-standing customer attempted, through a cousin, to evade the FX regulations last week. The attempt failed. What should the bank do?",
+          "options": [
+            "Nothing, because the attempt failed and no foreign exchange moved",
+            "Warn the customer privately and wait to see if it happens again",
+            "Report it in the next periodic return to SBP, together with the other exceptions of the quarter",
+            "Report the attempt to SBP immediately, because attempts must be reported too"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 7 asks Authorized Dealers to report every case of evasion or attempt, direct or indirect, immediately as it comes to notice. Failure of the attempt and indirect routing through a relative do not remove the duty.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s1-q7",
+          "question": "Which of these may every authorized branch deal in under Chapter 2, paragraph 2(iii)?",
+          "options": [
+            "Only foreign currency deposits; notes and coins need a separate licence",
+            "Only inward remittances; outward remittances and all note dealings are limited to head office",
+            "Only transactions SBP approves case by case for that branch",
+            "Foreign currency notes, drafts, letters of credit and bills payable in foreign currency"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 2(iii) permits every authorized branch to deal in foreign currency notes, coins, deposits, credits, drafts, traveller's cheques, letters of credit and bills of exchange payable in any foreign currency, reported through head office's consolidated returns.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s1-q8",
+          "question": "A customer gives a branch a declaration he knows is false to obtain foreign exchange. Which consequence does the Manual point to?",
+          "options": [
+            "The only consequence is that the bank may refuse him and charge a higher rate next time",
+            "It is a civil matter between the customer and the bank",
+            "Giving false information is an offence under section 22 of the Act",
+            "It matters only if the amount exceeds USD 10,000"
+          ],
+          "answer": 2,
+          "explanation": "Chapter 10 tells dealers to warn applicants that, under section 22 of the Foreign Exchange Regulation Act, giving information or making a statement known or believed to be false in a material particular is an offence. No amount threshold applies.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s1-q9",
+          "question": "SBP-BSC calls Hingol Bank's treasury head to an urgent meeting on FX market issues. He wants to send a junior officer instead. What does Chapter 2 expect?",
+          "options": [
+            "The concerned executives or senior officials attend when SBP calls them",
+            "Any staff member may attend, because SBP meetings are informal and attendance is optional",
+            "The bank may reply in writing instead of attending",
+            "Only the bank's external auditor should attend"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 8 asks banks to ensure their concerned executives or senior officials attend SBP or SBP-BSC meetings when called, so they can give feedback and the institution's stance.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s1-q10",
+          "question": "SBP may stop an Authorized Dealer's individual branch from dealing in foreign exchange. Which power does the Manual link this to?",
+          "options": [
+            "A board resolution of the Authorized Dealer",
+            "A complaint to the Banking Mohtasib",
+            "Section 22 of the Foreign Exchange Regulation Act",
+            "Section 3B of the Foreign Exchange Regulation Act"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 2(iv) says SBP may refuse a licence, withdraw one already granted, or prohibit FX dealings by any authorized branch under section 3B of the Act. Section 22 concerns false statements.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "FX Services to Individuals and Outward Remittances",
+      "stage": "The Travel Counter",
+      "summary": "Serve individuals' foreign exchange needs the way Chapter 2, paragraph 4 requires, with trained staff at every authorized branch and call centre, then process outward remittances under Chapter 10: the right form, the dealer's checks, SBP approvals and permits, validity, and use of exchange for its stated purpose.",
+      "minutes": 50,
+      "objectives": [
+        "List the five service duties Chapter 2, paragraph 4 sets for individuals' travel, education and medical FX needs",
+        "Choose the correct outward remittance form and explain when a dealer approves or forwards an application to SBP",
+        "Apply the rules on validity of approvals, permits, third-party instructions and the mode of remittance",
+        "Explain the customer's duty to use foreign exchange for its stated purpose and surrender any unused amount"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Fees, flights and a phone call",
+          "setting": "Hingol Bank, Gulberg branch, Lahore. Monday morning, peak admission season.",
+          "lines": [
+            {
+              "who": "hina",
+              "mood": "worried",
+              "text": "Three customers in the queue: a father paying university fees in Manchester, a woman whose mother needs surgery in Istanbul, and a traveller off to Kuala Lumpur."
+            },
+            {
+              "who": "hina",
+              "mood": "angry",
+              "text": "And a complaint: our contact centre told the father that fee remittances are 'only done at main branches with SBP's direct approval'. He drove two hours to get here."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "Is that what Chapter 2 says about services to individuals?"
+            },
+            {
+              "who": "hina",
+              "mood": "neutral",
+              "text": "No. Every authorized branch should offer travel, education and medical FX. The call centre simply didn't know."
+            },
+            {
+              "who": "sadia",
+              "mood": "proud",
+              "text": "Then this stage is about two things: the service promise to individuals, and getting outward remittances right, form by form."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Five promises to individuals",
+          "scenes": [
+            {
+              "icon": "🌍",
+              "heading": "Every authorized branch",
+              "narration": "Paragraph 4 of Chapter 2 asks Authorized Dealers to offer foreign exchange for travel, education and medical treatment abroad efficiently at all their authorized branches, not just flagship ones."
+            },
+            {
+              "icon": "🎧",
+              "heading": "Trained people, including the call centre",
+              "narration": "Officials dealing with customers for these services, including staff at contact and call centres, must be adequately trained in FX business and know the rules on individuals' FX needs."
+            },
+            {
+              "icon": "📌",
+              "heading": "A focal person",
+              "narration": "Each dealer appoints a focal person at head office for FX services and related matters, so branches and customers have someone who can resolve problems."
+            },
+            {
+              "icon": "📣",
+              "heading": "Awareness and website",
+              "narration": "Dealers must take steps to make customers aware of these services and publish the relevant details on their official websites."
+            },
+            {
+              "icon": "💵",
+              "heading": "Cash in stock",
+              "narration": "Authorized branches should hold adequate stocks of the foreign currency notes customers need. The detailed rules for individuals sit in Chapter 17 of the Manual."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The individual FX service loop",
+          "caption": "Chapter 2, paragraph 4. Feedback from complaints should flow back into training and stock planning.",
+          "items": [
+            {
+              "label": "Offer at every authorized branch",
+              "detail": "Travel, education and medical FX available efficiently."
+            },
+            {
+              "label": "Train front-line and call-centre staff",
+              "detail": "Know FX business and the rules on individuals' needs."
+            },
+            {
+              "label": "Focal person at head office",
+              "detail": "Handles FX services and escalated issues."
+            },
+            {
+              "label": "Make customers aware",
+              "detail": "Campaigns plus service details on the website."
+            },
+            {
+              "label": "Keep enough notes in stock",
+              "detail": "Branches can meet customers' currency needs."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "Under Chapter 2, paragraph 4(ii), which staff must be adequately trained in foreign exchange business and the rules on individuals' FX needs?",
+          "options": [
+            "Only the head office focal person",
+            "Officials serving customers for FX services, including contact and call-centre staff",
+            "Only staff at branches in large cities",
+            "Only treasury dealers who set exchange rates"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 4(ii) covers the officials dealing with customers for FX services, expressly including those posted at the dealer's contact or call centres. The father's wasted journey shows why the call centre is in scope."
+        },
+        {
+          "type": "concept",
+          "title": "Outward remittances: the Chapter 10 basics",
+          "body": "**What it is.** An outward remittance is any sale of foreign exchange: transfers, drafts, traveller's cheques, notes and coins (notes and coins sit in Chapter 11).\n\n**Which form.** Every buyer lodges an application on the prescribed form with supporting documents:\n- **Form I** for remittances against imports\n- **Form T-1** for sale of exchange for travel\n- **Form M** for all other remittances\n\n**Who approves.** If the transaction is covered by the regulations and the dealer is empowered to approve it on SBP's behalf, the dealer may sell the exchange. If SBP's prior approval is needed, the dealer forwards the application to SBP with its comments under stamp and signature. Applicants never go to SBP directly; applications reach SBP only through a dealer.\n\n**How to send.** Prefer telegraphic or mail transfers. Issue a draft only where normal transfer would cause real hardship, and then cross it 'Account Payee only' in the beneficiary's name.\n\n**NRVA.** Repatriation from an NRVA needs no Form M, but is still reported under its purpose code."
+        },
+        {
+          "type": "match",
+          "title": "Forms, permits and approvals",
+          "prompt": "Match each item to its role in Chapter 10.",
+          "pairs": [
+            {
+              "left": "Form I",
+              "right": "Covers remittances against imports"
+            },
+            {
+              "left": "Form T-1",
+              "right": "Covers sale of foreign exchange for travel"
+            },
+            {
+              "left": "Form M",
+              "right": "Covers all other outward remittances"
+            },
+            {
+              "left": "SBP permit",
+              "right": "Authorises recurring remittances within stated amounts or periods"
+            },
+            {
+              "left": "Approved form",
+              "right": "Valid for up to 30 days from approval unless SBP states a longer period or revalidates it"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Processing an outward remittance",
+          "prompt": "Put the steps a dealer follows for an individual's outward remittance in order.",
+          "steps": [
+            "Customer lodges an application on the right prescribed form with the supporting documents",
+            "Dealer checks the form is complete and signed and satisfies itself the applicant is bona fide",
+            "If empowered, dealer approves; otherwise it forwards the form to SBP with comments under stamp and signature",
+            "Dealer remits only for the original applicant, to the beneficiary named in the approval",
+            "Dealer sends the form with the appropriate return to SBP-BSC"
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Three kinds of SBP permit",
+          "headers": [
+            "What it allows",
+            "Unused amounts and handling"
+          ],
+          "items": [
+            {
+              "label": "Overall-limit permit",
+              "left": "Remit any amounts within the validity, up to a stated total",
+              "right": "No monthly cap; the total limit is the ceiling"
+            },
+            {
+              "label": "Monthly, non-cumulative",
+              "left": "Remit up to a set amount each month",
+              "right": "Unused monthly balance lapses; no carry-forward"
+            },
+            {
+              "label": "Monthly, cumulative",
+              "left": "Remit up to a set amount each month",
+              "right": "Unused amounts carry forward within validity, then lapse"
+            },
+            {
+              "label": "Any permit",
+              "left": "Endorse each remittance on the permit and report on Form M",
+              "right": "Return exhausted or unneeded permits to SBP-BSC"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The cousin with the approval letter",
+          "setting": "Hingol Bank, Gulberg branch. 2:15 pm.",
+          "lines": [
+            {
+              "who": "hina",
+              "mood": "thinking",
+              "text": "A man brings an SBP-approved Form M issued in his cousin's name for medical treatment abroad. Approval date: 41 days ago."
+            },
+            {
+              "who": "hina",
+              "mood": "worried",
+              "text": "He wants the money sent to a different hospital account because 'the treatment moved'. The cousin is abroad and can't come in."
+            },
+            {
+              "who": "asad",
+              "mood": "neutral",
+              "text": "We see this in trade too. People think an approval is a voucher anyone can cash."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "It isn't. Training Lead, how many problems can you spot in that request?"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "A stale approval, a new beneficiary",
+          "situation": "A visitor presents an SBP-approved Form M for medical treatment issued in his cousin's name 41 days ago, with no stated longer validity and no revalidation. He asks the branch to remit to a different hospital than the one named in the approval.",
+          "choices": [
+            {
+              "text": "Decline to remit: the approval has lapsed, the instructions come from a third party, and the beneficiary differs. Explain revalidation and a fresh application by the applicant.",
+              "outcome": "Right. Approvals are valid for up to 30 days unless stated otherwise or revalidated, dealers act only for the original applicant, and they remit only to the beneficiary named in the approval. A fresh or revalidated approval is the route.",
+              "score": 2
+            },
+            {
+              "text": "Remit to the new hospital because the purpose, medical treatment, has not changed.",
+              "outcome": "Poor. The purpose may be the same, but the beneficiary is not the one approved, the instruction comes from a third party and the approval has lapsed.",
+              "score": 0
+            },
+            {
+              "text": "Remit to the original hospital named in the form, since that matches the approval.",
+              "outcome": "Partly right on the beneficiary, but still wrong: the approval has lapsed and the instruction comes from a third party, not the applicant.",
+              "score": 1
+            },
+            {
+              "text": "Ask the visitor to sign an indemnity and then remit as requested.",
+              "outcome": "Poor. An indemnity cannot cure a lapsed approval or replace the applicant's own instruction. The dealer would breach Chapter 10.",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Remit or stop?",
+          "prompt": "Sort each situation: the dealer may proceed, or must stop and resolve something first.",
+          "buckets": [
+            "Proceed",
+            "Stop and resolve first"
+          ],
+          "items": [
+            {
+              "text": "Form T-1 complete, documents examined, within the dealer's delegated powers",
+              "bucket": 0
+            },
+            {
+              "text": "SBP approval dated 12 days ago, applicant present, beneficiary as approved",
+              "bucket": 0
+            },
+            {
+              "text": "Recurring remittance within the monthly limit of a valid permit, endorsed on it",
+              "bucket": 0
+            },
+            {
+              "text": "Repatriation from an NRVA, reported under its purpose code in monthly returns",
+              "bucket": 0
+            },
+            {
+              "text": "Approval 35 days old with no longer validity stated and no revalidation",
+              "bucket": 1
+            },
+            {
+              "text": "Instructions from a friend of the applicant to change the beneficiary",
+              "bucket": 1
+            },
+            {
+              "text": "Monthly non-cumulative permit: customer wants last month's unused amount too",
+              "bucket": 1
+            },
+            {
+              "text": "Customer asks for an uncrossed bearer draft for convenience",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Rules worth remembering at the travel counter",
+          "cards": [
+            {
+              "front": "Use exchange for its purpose",
+              "back": "A person who buys FX for a purpose must use it only for that purpose and meet any conditions attached."
+            },
+            {
+              "front": "Cannot use it all?",
+              "back": "Unused foreign exchange, or exchange whose conditions cannot be met, must be surrendered to an Authorized Dealer immediately."
+            },
+            {
+              "front": "Outward remittance cancelled",
+              "back": "Report the cancellation to SBP as an inward remittance, with a letter giving the original return date, applicant, amounts and reasons."
+            },
+            {
+              "front": "Inward remittance cancelled",
+              "back": "If the beneficiary cannot be found, report the reversal as an outward remittance on Form M with a supporting letter."
+            },
+            {
+              "front": "Approval signed by an unknown SBP officer",
+              "back": "Present it to the nearest SBP-BSC office for authentication before acting on it."
+            },
+            {
+              "front": "Partly notes, partly instruments for travel",
+              "back": "Prepare two separate T-1 forms showing the amounts released in each form."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer holds an SBP permit allowing monthly remittances on a non-cumulative basis. Last month she remitted nothing. This month she asks to send two months' worth. What should the dealer do?",
+          "options": [
+            "Send both months, because the permit is still valid",
+            "Send only this month's amount, because unused monthly amounts do not carry forward",
+            "Send both months if she signs a declaration",
+            "Refuse entirely until SBP-BSC reissues the permit"
+          ],
+          "answer": 1,
+          "explanation": "Under the second type of permit, the monthly limits are not cumulative: an unused balance in one month cannot be carried into later months. Only the cumulative type allows carry-forward within validity."
+        },
+        {
+          "type": "tip",
+          "title": "Talking to customers about FX rules",
+          "body": "Chapter 2 asks dealers to bring the regulations to customers' notice, and Chapter 10 asks them to warn applicants about false statements. Make that easy:\n\n- Explain **why** a document is needed, not just that it is.\n- Never invent a rule. If you are unsure, check with the head office **focal person** instead of guessing, as the call centre did.\n- Tell customers that unused exchange must be surrendered to a dealer.\n- Keep the website's FX service page current so call-centre staff and customers read the same thing."
+        },
+        {
+          "type": "example",
+          "title": "Hingol case: rewriting the call-centre script",
+          "body": "A fictional case from Hingol Bank's files.\n\nAfter the Manchester fee complaint, Sadia's team listened to 40 recorded calls about education, medical and travel FX. In 11 calls, agents gave wrong or incomplete answers: some said only main branches could help, others quoted documents that the bank's own procedures did not require.\n\n**What changed**\n- The call-centre FX script was rewritten with the head office focal person and checked against the bank's Chapter 17 procedures.\n- Contact-centre agents joined the branch FX staff in the yearly training-needs assessment, because paragraph 4(ii) names them expressly.\n- A short 'which branch can help me?' answer pointed customers to every authorized branch.\n- The website page on FX services was updated, as paragraph 4(iv) expects.\n\nThree months later, repeat calls on FX services had fallen sharply and the branch complaint log showed no new 'wrong information' cases."
+        },
+        {
+          "type": "keypoints",
+          "title": "Travel Counter take-aways",
+          "items": [
+            "Offer travel, education and medical FX efficiently at every authorized branch, with a head office focal person and enough notes in stock.",
+            "Train every official who serves individuals for FX, including contact and call-centre staff.",
+            "Use Form I for imports, T-1 for travel and M for everything else; applications reach SBP only through a dealer.",
+            "Approvals last up to 30 days unless stated or revalidated; act only for the original applicant and the named beneficiary.",
+            "Foreign exchange must be used for its stated purpose; unused amounts are surrendered to a dealer."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If a customer called your bank's contact centre tomorrow about sending money for a child's studies abroad, would the answer be right? What would you check or change first?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "pk-fx-s2-q1",
+          "question": "Under Chapter 2, paragraph 4, where must Authorized Dealers offer foreign exchange services for travel, education and medical treatment abroad?",
+          "options": [
+            "Only at their main branch in each province",
+            "Only at branches with a treasury desk",
+            "At all their authorized branches",
+            "Only through head office, by appointment"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 4(i) asks dealers to ensure these services are offered efficiently by all their authorized branches. Restricting them to main branches is exactly what caused the Manchester fee complaint.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s2-q2",
+          "question": "Which outward remittance form covers the sale of foreign exchange for travel?",
+          "options": [
+            "Form I",
+            "Form T-1",
+            "Form M",
+            "Form E"
+          ],
+          "answer": 1,
+          "explanation": "Chapter 10 lists three outward remittance forms: Form I for imports, Form T-1 for travel and Form M for all other remittances. Form E belongs to exports.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s2-q3",
+          "question": "A student's father applies to remit university fees. The transaction needs SBP's prior approval and is outside the dealer's delegated powers. What does the dealer do?",
+          "options": [
+            "Forward the application to SBP with its comments under stamp and signature",
+            "Ask the father to take the form to SBP-BSC himself so the approval reaches SBP more quickly",
+            "Approve it anyway because education is a genuine need",
+            "Reject it, since dealers cannot handle such cases"
+          ],
+          "answer": 0,
+          "explanation": "Where SBP's prior approval is needed, the dealer forwards the application with comments under its stamp and signature. Applications that reach SBP directly from applicants are sent back to be resubmitted through a dealer.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s2-q4",
+          "question": "An SBP approval on Form M is dated 33 days ago. It states no longer validity and has not been revalidated. The applicant asks the dealer to remit today. What is correct?",
+          "options": [
+            "The dealer may remit because approvals last 60 days",
+            "The dealer should not remit until the approval is revalidated",
+            "The dealer may remit if the amount is unchanged",
+            "The dealer may remit after taking a fresh declaration from the applicant about the purpose"
+          ],
+          "answer": 1,
+          "explanation": "SBP authorizations are valid for a period not exceeding 30 days from approval unless expressly approved for longer or revalidated. Dealers must not remit against lapsed approvals.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s2-q5",
+          "question": "A customer asks for a bank draft for an outward remittance even though a telegraphic transfer is available and would cause her no hardship. What does Chapter 10 expect?",
+          "options": [
+            "Issue an uncrossed draft in the beneficiary's name, because the customer's preference governs",
+            "Issue a draft payable to bearer to speed up payment",
+            "Refuse the remittance until she accepts a cheque",
+            "Use a telegraphic or mail transfer, since drafts are for cases of real hardship"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 6 asks dealers to avoid drafts where a telegraphic or mail transfer can be used. Drafts may be issued where the normal transfer would cause hardship, and then must be crossed 'Account Payee only' in the beneficiary's name.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s2-q6",
+          "question": "A traveller returns early and has unused foreign exchange bought for the trip. What does Chapter 10 require of him?",
+          "options": [
+            "Keep it in his foreign currency account for his next trip, provided it is within twelve months",
+            "Transfer it to a relative travelling abroad",
+            "Surrender the unused foreign exchange to an Authorized Dealer immediately",
+            "Deposit it with SBP-BSC within 30 days"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 20 requires foreign exchange to be used only for the purpose for which it was obtained. If it cannot be used in full or in part, it should be surrendered to an Authorized Dealer immediately.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s2-q7",
+          "question": "Hingol Bank's contact-centre agent tells a caller that medical treatment remittances are handled only at head office. Which Chapter 2 duty has the bank failed to meet in that call?",
+          "options": [
+            "Keeping the public buy-sell margin within 50 paisa per US dollar on every customer quote",
+            "Filing returns of FX dealings on their due dates",
+            "Sending executives to SBP-BSC meetings when called",
+            "Training contact-centre staff in FX business and the rules on individuals' needs"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 4(ii) requires officials serving individuals for FX, including contact and call-centre staff, to be adequately trained and know the rules. The other duties exist but are not what the call shows.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s2-q8",
+          "question": "A permit allows monthly remittances on a cumulative basis. The customer remitted nothing in the first two months and now asks to remit those two months plus next month's amount in advance. What may the dealer do?",
+          "options": [
+            "Remit the two unused months plus this month, but not next month's amount in advance",
+            "Remit all four months, since the permit is cumulative",
+            "Remit only this month's amount, because unused amounts under any monthly permit lapse each month",
+            "Remit nothing until SBP-BSC confirms the balance"
+          ],
+          "answer": 0,
+          "explanation": "Under the cumulative type, unused amounts for earlier months carry forward within the permit's validity, but remitting ahead of later months' entitlements is not permitted.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s2-q9",
+          "question": "A remitter presents a Form M approved by SBP, bearing the serial number of another Authorized Dealer. Hingol Bank agrees to remit. How should Hingol handle the form?",
+          "options": [
+            "Send the remitter back to the other dealer, which alone may act",
+            "Remit under the other dealer's serial number without changes",
+            "Ask SBP-BSC to cancel the approval and reissue it on a Hingol form, in Hingol's own name, before any remittance is made",
+            "Insert its own prefix and serial number from a blank form, score out the other dealer's, and destroy that blank form"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 16 lets a dealer act on another dealer's approved form by inserting its own identifying prefix and serial number from one of its blank forms, scoring out the original under proper authentication and destroying the blank form used.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s2-q10",
+          "question": "Which detail does Chapter 2, paragraph 4 give about where the detailed rules on individuals' genuine FX needs are found?",
+          "options": [
+            "They are in Chapter 12 of the Manual",
+            "They are in Chapter 17 of the Manual",
+            "They are issued only to banks by private letter",
+            "They are in the Branchless Banking Regulations"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 4 points to Chapter 17 for the detailed instructions on releasing or remitting foreign exchange for individuals' education, medical treatment, travel and similar needs. Chapter 12 covers exports.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Home Remittances and Proceeds Realization Certificates",
+      "stage": "The Remittance Corridor",
+      "summary": "Deliver home remittances the way Chapter 10 requires: credit and payment timelines, the compensation owed for delays and SBP's power to penalise, review of remittance agreements, and the electronic and summary proceeds realization certificates (e-PRC and S-PRC) that staff must be trained to issue and verify.",
+      "minutes": 50,
+      "objectives": [
+        "Apply the Chapter 10 timelines for crediting or paying home remittances by each delivery route",
+        "Calculate the compensation a beneficiary is owed when a home remittance is delayed",
+        "Explain the same bank and different bank models for e-PRCs and S-PRCs and who reports the inflow",
+        "Describe the staff training, focal person and verifying-agency duties in the e-PRC guidelines"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Three days late",
+          "setting": "Home Remittances unit, Hingol Bank head office, Karachi. 10:00 am.",
+          "lines": [
+            {
+              "who": "sadia",
+              "mood": "worried",
+              "text": "A complaint from Riyadh. A driver sent money through our correspondent to his mother's account at another bank in Mardan. It reached her three days after we received the funds."
+            },
+            {
+              "who": "imran",
+              "mood": "thinking",
+              "text": "And a second one from Hyderabad: a nurse in Dubai sends money home every month, and her brother needs proof of the inflow for a government office. Our branch told him to 'come back next week' for a certificate."
+            },
+            {
+              "who": "shakeel",
+              "mood": "neutral",
+              "text": "I'm Shakeel Ahmed, one of Imran's agents in Mardan. Customers ask me about these certificates every day. I don't know what to tell them."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "Two very common failures: speed and paperwork. Chapter 10 covers both, and it puts a price on delay."
+            },
+            {
+              "who": "sadia",
+              "mood": "proud",
+              "text": "Training Lead, this is the Remittance Corridor. By the end you should be able to tell me what we owe the mother in Mardan."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "How Chapter 10 protects home remittances",
+          "scenes": [
+            {
+              "icon": "🌐",
+              "heading": "No restriction on inflows",
+              "narration": "Chapter 10 places no restriction on receiving remittances from abroad. Authorized Dealers may freely buy telegraphic and mail transfers, drafts and bills payable in foreign currency."
+            },
+            {
+              "icon": "⏱️",
+              "heading": "A mechanism with deadlines",
+              "narration": "To encourage overseas Pakistanis and others to use banking channels, banks must run a mechanism, set out in an SBP payment systems circular of 2009, that credits or pays beneficiaries within fixed times."
+            },
+            {
+              "icon": "💸",
+              "heading": "Compensation for delay",
+              "narration": "If a remittance is credited or paid late, the beneficiary is entitled to a return for each day of delay at the rate the Manual sets. The bank must pay it."
+            },
+            {
+              "icon": "⚖️",
+              "heading": "Penalties for patterns",
+              "narration": "Where SBP sees a tendency to delay, through inspection or the pattern of complaints, it may impose penalties under the Banking Companies Ordinance 1962."
+            },
+            {
+              "icon": "🤝",
+              "heading": "Agreements reviewed first",
+              "narration": "Before finalising home remittance agreements with entities in or outside Pakistan, banks send the drafts to SBP's Exchange Policy Department for input. Responsibility for protecting the bank's interest stays with the bank."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "timeline",
+          "title": "The home remittance clock",
+          "caption": "Chapter 10, paragraph 4(i). The clock starts when the bank receives the funds.",
+          "items": [
+            {
+              "value": "Instantly",
+              "label": "Same bank account",
+              "detail": "Beneficiary banks with the receiving bank: credit the account at once."
+            },
+            {
+              "value": "Within 24 hours",
+              "label": "Other bank account",
+              "detail": "Receiving bank passes intimation and funds to the beneficiary's bank, at most 24 hours after receipt."
+            },
+            {
+              "value": "Instantly",
+              "label": "Beneficiary's bank credits",
+              "detail": "Once funds and intimation arrive, the beneficiary's bank credits the account at once."
+            },
+            {
+              "value": "Within 24 hours",
+              "label": "Pay order or demand draft",
+              "detail": "Issue and dispatch the instrument within 24 hours of receiving the funds."
+            },
+            {
+              "value": "Instantly",
+              "label": "Cash over the counter",
+              "detail": "Where cash payment is offered, the funds must be available at once."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A remittance arrives at Hingol Bank for a beneficiary who banks elsewhere. What is the latest Hingol may pass the credit to the beneficiary's bank?",
+          "options": [
+            "Within 24 hours of receiving the funds",
+            "Within three working days",
+            "By the end of the following week",
+            "Whenever the next settlement batch runs"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 4(i)(b) requires the recipient bank to intimate and credit the other bank in line with the 2009 payment systems circular, and in any case within 24 hours of receiving the funds. The beneficiary's bank then credits instantly."
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "What delay costs",
+          "items": [
+            {
+              "value": "65 paisa",
+              "label": "Per PKR 1,000 per day",
+              "detail": "Return owed to the beneficiary for each day a home remittance is credited or paid late."
+            },
+            {
+              "value": "24 hours",
+              "label": "Longest normal window",
+              "detail": "Other-bank credits and pay orders or drafts; everything else is instant."
+            },
+            {
+              "value": "PKR 390",
+              "label": "Worked example",
+              "detail": "PKR 200,000 delayed 3 days: 200 x 0.65 x 3."
+            },
+            {
+              "value": "1962",
+              "label": "Penalty law",
+              "detail": "SBP may penalise a tendency to delay under the Banking Companies Ordinance."
+            }
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "e-PRCs and S-PRCs in brief",
+          "body": "A **Proceeds Realization Certificate (PRC)** is documentary proof that funds received from abroad were realized in Pakistan, whether workers' remittances, export proceeds, equity or loans. Dealers issue the **e-PRC** digitally in SBP's standard format with a system-generated unique number, and send an **S-PRC** (summary) at the end of each financial year to every customer issued e-PRCs that year.\n\n**Same bank model.** The beneficiary banks where the funds arrived. That bank emails the certificate to the registered address or posts it on an online portal for the customer to retrieve.\n\n**Different bank model.** The recipient (intermediary) bank sends the money to the beneficiary's bank with complete transaction information in the standard SWIFT MT102/MT103 format. The beneficiary's bank issues the e-PRC and S-PRC. Only the recipient bank reports the inflow in ITRS.\n\n**Cash over the counter.** Ask for an email address if the customer has one. If not, issue and hand over the PRC instantly while paying the rupees.\n\nThe old requirement to issue e-PRCs in duplicate has been withdrawn."
+        },
+        {
+          "type": "match",
+          "title": "Who does what with certificates",
+          "prompt": "Match each situation to what the e-PRC guidelines expect.",
+          "pairs": [
+            {
+              "left": "Beneficiary banks with the receiving bank",
+              "right": "Receiving bank issues the e-PRC by email or through its online portal"
+            },
+            {
+              "left": "Beneficiary banks elsewhere",
+              "right": "Beneficiary's bank issues the e-PRC from the full data the recipient bank sends"
+            },
+            {
+              "left": "Reporting the inflow in ITRS",
+              "right": "Done only by the recipient or intermediary bank"
+            },
+            {
+              "left": "Cash payout, customer has no email",
+              "right": "PRC issued and handed over instantly with the rupee payment"
+            },
+            {
+              "left": "End of each financial year",
+              "right": "S-PRC sent digitally to every customer issued e-PRCs that year"
+            },
+            {
+              "left": "Change of focal person",
+              "right": "Dealer informs the relevant verifying agencies"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "The different bank model, step by step",
+          "prompt": "Put the flow of a home remittance and its certificate in order when the beneficiary banks elsewhere.",
+          "steps": [
+            "Funds arrive from abroad at the recipient bank",
+            "Recipient bank sends the amount to the beneficiary's bank with complete MT102/MT103-format information",
+            "Recipient bank reports the inward remittance in ITRS",
+            "Beneficiary's bank credits the beneficiary's account instantly",
+            "Beneficiary's bank issues the e-PRC, and later the year-end S-PRC"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The government office calls",
+          "setting": "Hingol Bank, Latifabad branch, Hyderabad. 3:30 pm.",
+          "lines": [
+            {
+              "who": "imran",
+              "mood": "worried",
+              "text": "The nurse's brother is back. A government office says it cannot verify the certificate our branch emailed him because the purpose isn't recorded on its portal."
+            },
+            {
+              "who": "imran",
+              "mood": "thinking",
+              "text": "Our branch staff didn't know we had a focal person for verifying agencies, or that the purpose should be recorded at all."
+            },
+            {
+              "who": "sadia",
+              "mood": "neutral",
+              "text": "The guidelines expect dealers to acquaint or train relevant head office and branch staff on issuing and verifying e-PRCs and S-PRCs, so they can guide customers."
+            },
+            {
+              "who": "shakeel",
+              "mood": "thinking",
+              "text": "So who explains it to people like me at the agent counter?"
+            },
+            {
+              "who": "sadia",
+              "mood": "proud",
+              "text": "We do, through training. Let's fix the case first."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Cash, no email, needs proof today",
+          "situation": "A beneficiary collects a home remittance in cash over the counter at an authorized branch. She has no email address and needs proof of the foreign inflow for an official application tomorrow. The cashier suggests she 'come back next week when the certificate is generated'.",
+          "choices": [
+            {
+              "text": "Issue and hand over the PRC instantly while paying her the rupees, with complete information in the standard format.",
+              "outcome": "Right. For cash over the counter where the customer has no email, the guidelines require the dealer to issue and hand over the PRC instantly while disbursing the cash.",
+              "score": 2
+            },
+            {
+              "text": "Pay the cash now and email the certificate to a relative's address instead.",
+              "outcome": "Poor. Sending her certificate to someone else's email is not what the guidelines provide and risks her data. She has no email, so the PRC is handed over on the spot.",
+              "score": 0
+            },
+            {
+              "text": "Pay the cash and tell her to collect the certificate from the beneficiary's bank.",
+              "outcome": "Poor. In a cash payout the paying dealer is the one issuing the certificate; there is no other bank holding her account.",
+              "score": 0
+            },
+            {
+              "text": "Ask her to wait while the branch requests the certificate from head office, then hand it over later that day.",
+              "outcome": "Partly right. She would get it, but the guidelines expect instant issue at disbursement, and staff should be trained so no delay is needed.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Recipient bank or beneficiary's bank?",
+          "prompt": "In the different bank model, sort each task to the bank that performs it.",
+          "buckets": [
+            "Recipient (intermediary) bank",
+            "Beneficiary's bank"
+          ],
+          "items": [
+            {
+              "text": "Receives the funds from abroad",
+              "bucket": 0
+            },
+            {
+              "text": "Passes the credit on within 24 hours of receipt",
+              "bucket": 0
+            },
+            {
+              "text": "Sends complete transaction data in MT102/MT103 format",
+              "bucket": 0
+            },
+            {
+              "text": "Reports the inward remittance in ITRS",
+              "bucket": 0
+            },
+            {
+              "text": "Credits the beneficiary's account instantly on receipt",
+              "bucket": 1
+            },
+            {
+              "text": "Issues the e-PRC to its account holder",
+              "bucket": 1
+            },
+            {
+              "text": "Sends the year-end S-PRC to the customer",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "Corridor rules in one line",
+          "cards": [
+            {
+              "front": "Delay compensation",
+              "back": "Sixty-five paisa per thousand rupees per day of delay, paid by the bank to the beneficiary."
+            },
+            {
+              "front": "SBP penalties",
+              "back": "Possible under the Banking Companies Ordinance 1962 where inspection or complaints show a tendency to delay."
+            },
+            {
+              "front": "Remittance agreements",
+              "back": "Drafts go to SBP's Exchange Policy Department before finalising; the bank remains responsible for its own interests."
+            },
+            {
+              "front": "Focal person for e-PRCs",
+              "back": "Each dealer assigns one and shares contact details with verifying agencies."
+            },
+            {
+              "front": "Purpose of verification",
+              "back": "Dealers arrange with verifying agencies that the purpose of each e-PRC verification is recorded on the portal."
+            },
+            {
+              "front": "Staff training",
+              "back": "Dealers acquaint or train relevant head office and branch staff on issuing and verifying e-PRCs and S-PRCs."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "In the different bank model, which bank reports the inward home remittance in ITRS?",
+          "options": [
+            "Both banks, so that SBP can reconcile them",
+            "Only the beneficiary's bank, which issues the e-PRC",
+            "Only the recipient or intermediary bank",
+            "Neither bank; the correspondent abroad reports it"
+          ],
+          "answer": 2,
+          "explanation": "The e-PRC guidelines say the beneficiary's bank issues the e-PRC and S-PRC, but only the recipient or intermediary bank reports the inflow in ITRS. Double reporting would overstate inflows."
+        },
+        {
+          "type": "example",
+          "title": "Hingol case: paying for the Mardan delay",
+          "body": "A fictional case from Hingol Bank's files.\n\nThe Riyadh driver's remittance of PKR 300,000 reached Hingol on a Monday morning. The beneficiary's account was at another bank, so Hingol had 24 hours to pass the credit on. A failed batch file was not noticed until Thursday morning, so the credit went three days late.\n\n**Compensation owed:** 300 thousands x 65 paisa x 3 days = PKR 585, paid to the mother without her having to ask.\n\n**Root cause:** a manual hand-off between the SWIFT team and the interbank payments team, with no exception report for unsent credits.\n\n**Fixes**\n- An automated alert for any home remittance not passed on within 20 hours.\n- A monthly check of delay compensation paid, reviewed by the head of operations, because SBP looks at patterns of complaints.\n- A short module on the remittance clock and compensation added to the FX training plan for remittance and branch staff."
+        },
+        {
+          "type": "keypoints",
+          "title": "Remittance Corridor take-aways",
+          "items": [
+            "Same-bank credits, cash payouts and credits by the beneficiary's bank are instant; other-bank credits and pay orders or drafts go within 24 hours of receipt.",
+            "Late credit or payment costs 65 paisa per thousand rupees per day, and a pattern of delays can draw SBP penalties.",
+            "e-PRCs are issued digitally in a standard format; S-PRCs go to every e-PRC customer at the end of each financial year.",
+            "In the different bank model, the beneficiary's bank issues certificates and only the recipient bank reports the inflow in ITRS.",
+            "Dealers appoint an e-PRC focal person and must acquaint or train head office and branch staff to issue and verify certificates."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick one home remittance route your branch or unit handles. Where could the 24-hour or instant deadline slip, and how would anyone notice before the customer does?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "pk-fx-s3-q1",
+          "question": "A home remittance arrives for a beneficiary who keeps her account at the same bank. When must the bank credit it?",
+          "options": [
+            "Within 24 hours",
+            "Instantly",
+            "By the next working day",
+            "Within three working days"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 4(i)(a) of Chapter 10 requires instant credit where the beneficiary's account is with the same bank. The 24-hour window applies only to other-bank credits and to pay orders or drafts.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s3-q2",
+          "question": "A home remittance of PKR 100,000 is credited four days late. Using Chapter 10's rate, how much compensation does the beneficiary receive?",
+          "options": [
+            "PKR 260",
+            "PKR 65",
+            "PKR 400",
+            "PKR 2,600"
+          ],
+          "answer": 0,
+          "explanation": "The return is 65 paisa per thousand rupees per day: 100 thousands x 0.65 x 4 days = PKR 260. PKR 65 ignores the days, and PKR 2,600 multiplies by ten in error.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q3",
+          "question": "A beneficiary asks for her home remittance by demand draft. What is the bank's deadline?",
+          "options": [
+            "Issue and dispatch the draft within 24 hours of receiving the funds",
+            "Issue the draft within a week, when the courier runs",
+            "Issue the draft instantly at the time of receipt",
+            "Issue the draft within 24 hours of the beneficiary's written request, whenever she makes it"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 4(i)(c) requires pay orders or demand drafts to be issued and dispatched within 24 hours of the bank's receipt of the funds. The clock starts with the funds, not with a later request.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q4",
+          "question": "Inspection data shows that Hingol Bank regularly credits home remittances late, and complaints follow the same pattern. Which consequence does Chapter 10 provide for, besides compensation?",
+          "options": [
+            "SBP automatically withdraws the bank's Authorized Dealer licence",
+            "The FMU fines the bank under the AML Act",
+            "SBP may impose penalties under the Banking Companies Ordinance 1962",
+            "The beneficiaries must sue the bank in civil court"
+          ],
+          "answer": 2,
+          "explanation": "Paragraph 4(iii) says that where SBP notes a tendency to delay, through inspection or the pattern of complaints, it shall impose penalties under the Banking Companies Ordinance 1962. Licence withdrawal is a separate power, not automatic.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q5",
+          "question": "Hingol Bank is about to sign a home remittance agreement with an overseas money transfer partner. What must it do before finalising?",
+          "options": [
+            "Obtain a licence for the overseas partner from SBP's Exchange Policy Department before signing",
+            "Send the draft agreement to SBP's Exchange Policy Department for its input",
+            "Register the agreement with the Banking Mohtasib",
+            "Nothing, because SBP takes responsibility for these agreements"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3 requires banks to forward drafts of all home remittance agreements to the Exchange Policy Department before finalising them. SBP may give input, but responsibility for safeguarding the bank's interest stays with the bank.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q6",
+          "question": "A customer whose home remittance landed in his Hingol account asks how he will receive his e-PRC. Which answer fits the same bank model?",
+          "options": [
+            "By email to his registered address, or from Hingol's online issuance portal",
+            "From the correspondent bank abroad that sent the money",
+            "Only as a paper certificate, issued in duplicate and collected in person from his home branch",
+            "From SBP after Hingol reports the inflow in ITRS"
+          ],
+          "answer": 0,
+          "explanation": "Under the same bank model, the bank issues the e-PRC to its account holder at the registered email address or uploads it to its online portal. The requirement to issue in duplicate has been withdrawn.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q7",
+          "question": "When must an Authorized Dealer send S-PRCs, and to whom?",
+          "options": [
+            "At the end of each financial year, to every customer issued e-PRCs that year",
+            "Every month, to all customers who received any home remittance during that month at all",
+            "Only when a customer asks for one in writing",
+            "At the end of each quarter, to SBP and the customer"
+          ],
+          "answer": 0,
+          "explanation": "The guidelines require dealers, at the end of each financial year, to send S-PRCs digitally to all customers who were issued e-PRCs during the year.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s3-q8",
+          "question": "A government verifying office tells Hingol it cannot see why an e-PRC was verified on its portal. Which guideline addresses this?",
+          "options": [
+            "Dealers issue every e-PRC in duplicate for the verifying office",
+            "Dealers send the certificate to the verifying office by post",
+            "Dealers stop issuing e-PRCs to customers who deal with that office until the portal is fixed",
+            "Dealers arrange with verifying agencies that the purpose of each verification is recorded"
+          ],
+          "answer": 3,
+          "explanation": "The guidelines ask dealers to make the necessary arrangements with verifying agencies so that the purpose for which an e-PRC or S-PRC is verified is recorded in the portal. Duplicate issue has been withdrawn.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s3-q9",
+          "question": "Under the e-PRC guidelines, what must Authorized Dealers do about their staff?",
+          "options": [
+            "Acquaint or train relevant head office and branch staff to issue and verify e-PRCs and S-PRCs",
+            "Train only head office IT staff, since issuance is automated",
+            "Leave training to the verifying agencies",
+            "Train staff only when a customer complains"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 12 of the guidelines asks dealers to acquaint or train relevant staff at head office and branches on issuing and verifying e-PRCs and S-PRCs, so they can guide and educate customers.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s3-q10",
+          "question": "A remitter abroad sends money for his sister, who banks with Bank B, through Bank A in Pakistan. Which statement is correct?",
+          "options": [
+            "Bank A reports the inflow and issues the e-PRC to the sister",
+            "Bank B reports the inflow and Bank A issues the e-PRC",
+            "Bank A reports the inflow in ITRS; Bank B issues the e-PRC to the sister",
+            "Both banks report the inflow and both issue an e-PRC"
+          ],
+          "answer": 2,
+          "explanation": "In the different bank model the recipient bank (Bank A) sends the money with full data to the beneficiary's bank (Bank B), which issues the e-PRC and S-PRC. Only the recipient bank reports the inflow in ITRS.",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Branchless Banking: Agents, Account Levels and Home Remittance Accounts",
+      "stage": "The Agent's Shop",
+      "summary": "Run branchless banking within SBP's Branchless Banking Regulations: the bank-led model, what agents may and may not do, Level 0 and Level 1 accounts and their limits, the Home Remittance Account and the bank's duties to choose, check, supply and train the agents who serve it.",
+      "minutes": 55,
+      "objectives": [
+        "Explain the bank-led model and why the bank stays responsible for its agents' acts",
+        "Distinguish Level 0 and Level 1 branchless banking accounts by verification and limits",
+        "State what agents may do in account opening and what only the bank may do",
+        "Apply the Home Remittance Account rules and the bank's duties for agent due diligence, liquidity and training"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Behind the counter in Mardan",
+          "setting": "Shakeel's mobile and grocery shop, a Hingol Bank branchless banking agent, Mardan. 5:00 pm.",
+          "lines": [
+            {
+              "who": "shakeel",
+              "mood": "happy",
+              "text": "Imran sahib, business is good! People open wallets here every day. I keep a copy of each CNIC in this file, just in case the bank asks."
+            },
+            {
+              "who": "imran",
+              "mood": "worried",
+              "text": "Shakeel, that file is a problem. And who opened this account?"
+            },
+            {
+              "who": "shakeel",
+              "mood": "neutral",
+              "text": "My neighbour's mother. She can't come in, so he gave me her details and I filled it all in for her."
+            },
+            {
+              "who": "imran",
+              "mood": "thinking",
+              "text": "Next month we launch Home Remittance Accounts here. Customers from the Gulf corridor will draw cash at your counter."
+            },
+            {
+              "who": "shakeel",
+              "mood": "worried",
+              "text": "Then I'll need more cash in the drawer. And I'll be honest: I don't know the rules."
+            },
+            {
+              "who": "imran",
+              "mood": "proud",
+              "text": "That's why we're here. Training Lead, welcome to the Agent's Shop."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "The bank-led model",
+          "scenes": [
+            {
+              "icon": "🏦",
+              "heading": "Only bank-led",
+              "narration": "SBP's Branchless Banking Regulations allow only the bank-led model. The authorized financial institution leads the whole programme and carries all its responsibilities."
+            },
+            {
+              "icon": "🔗",
+              "heading": "Agency or joint venture",
+              "narration": "A bank can work through agency arrangements or a joint venture with a telecom or other non-bank partner, in one-to-one, one-to-many or many-to-many set-ups."
+            },
+            {
+              "icon": "📱",
+              "heading": "Every transaction hits a real account",
+              "narration": "The customer relationship always sits with a bank. Each transaction posts to the customer's actual account, and no money is stored on the phone or a provider's server; balances there only mirror the account."
+            },
+            {
+              "icon": "🧑‍💼",
+              "heading": "Agents serve, banks decide",
+              "narration": "An agent provides basic banking services on the bank's behalf under an agency agreement. The bank remains ultimately responsible, and customer contracts must say the bank answers for the agent's acts and omissions."
+            },
+            {
+              "icon": "🎓",
+              "heading": "Capacity building",
+              "narration": "Section 9(b) asks banks to build their agents' capacity through training, especially on money laundering and terrorist financing risks and their implications."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Level 0 versus Level 1 accounts",
+          "caption": "Section 4.3. Limits apply separately to payments and receipts. A Level 0 account moves to Level 1 after biometric verification at the customer's request.",
+          "headers": [
+            "Level 0",
+            "Level 1"
+          ],
+          "items": [
+            {
+              "label": "Identity check",
+              "left": "Verification of identity from NADRA",
+              "right": "Biometric verification from NADRA"
+            },
+            {
+              "label": "Before biometrics",
+              "left": "No account-to-person transfers, cash in or cash out",
+              "right": "Biometrics done at opening"
+            },
+            {
+              "label": "Daily limit",
+              "left": "Rs. 25,000",
+              "right": "Rs. 50,000, with exceptions for salary credits and trusted merchants"
+            },
+            {
+              "label": "Monthly limit",
+              "left": "Rs. 50,000",
+              "right": "Rs. 200,000"
+            },
+            {
+              "label": "Other caps",
+              "left": "Rs. 200,000 a year and a Rs. 200,000 maximum balance",
+              "right": "No yearly or balance cap in the table"
+            },
+            {
+              "label": "Both levels",
+              "left": "Screen name and CNIC against proscribed and designated lists",
+              "right": "Call-back or OTP for remote opening"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A Level 0 customer who has not yet had biometric verification asks an agent to withdraw cash. What is the rule?",
+          "options": [
+            "Allowed up to Rs. 25,000 a day",
+            "Not allowed until the customer is biometrically verified",
+            "Allowed if the agent knows the customer personally",
+            "Allowed if the customer shows a CNIC copy"
+          ],
+          "answer": 1,
+          "explanation": "Section 4.3 says Level 0 account holders cannot make account-to-person transfers, cash in or cash out until their biometric verification. The daily limit applies only once those transactions are possible."
+        },
+        {
+          "type": "concept",
+          "title": "What agents may and may not do",
+          "body": "**Agents may**\n- Offer basic services on the bank's behalf under a valid agency agreement: cash in, cash out, bill payments and help with account opening.\n- Help customers forward their information to the bank through the electronic channel.\n\n**Agents may not**\n- Perform any element of customer due diligence: identifying the customer or beneficial owner, or understanding the nature of business. The bank does all CDD at its end.\n- Keep customers' data or documents. The bank must ensure no agent retains them.\n- Open accounts on behalf of other people, or let anyone operate an account for the holder.\n\n**The bank must**\n- Verify identity with NADRA, screen against proscribed and designated lists, check the data received and send the customer an opening confirmation.\n- Onboard and monitor agents under SBP's 2016 agent acquisition and management framework; agent accounts are full KYC accounts.\n- Keep CDD and account records for at least ten years after the relationship ends."
+        },
+        {
+          "type": "sort",
+          "title": "Agent, bank, or nobody?",
+          "prompt": "Sort each task: something an agent may do, something only the bank does, or something nobody may do.",
+          "buckets": [
+            "Agent may do it",
+            "Only the bank does it",
+            "Not allowed at all"
+          ],
+          "items": [
+            {
+              "text": "Accept a cash deposit into a customer's account",
+              "bucket": 0
+            },
+            {
+              "text": "Help the customer send her details to the bank electronically",
+              "bucket": 0
+            },
+            {
+              "text": "Verify the customer's identity with NADRA",
+              "bucket": 1
+            },
+            {
+              "text": "Screen the name and CNIC against proscribed lists",
+              "bucket": 1
+            },
+            {
+              "text": "Send the customer an account opening confirmation",
+              "bucket": 1
+            },
+            {
+              "text": "Keep photocopies of customers' CNICs in a shop file",
+              "bucket": 2
+            },
+            {
+              "text": "Open an account for a neighbour's mother who is not present",
+              "bucket": 2
+            },
+            {
+              "text": "Let a son operate his father's account for him",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "stats",
+          "title": "The Home Remittance Account in numbers",
+          "caption": "Branchless Banking Regulations, Annexure A and section 4. Credits to an HRA can come only from home remittances.",
+          "items": [
+            {
+              "value": "PKR 1.5m",
+              "label": "Maximum balance",
+              "detail": "Inward home remittances have no daily limit, subject to this balance cap."
+            },
+            {
+              "value": "PKR 500,000",
+              "label": "Cash withdrawal a month",
+              "detail": "Total monthly cash withdrawal limit from the HRA."
+            },
+            {
+              "value": "1",
+              "label": "HRA per CNIC per bank",
+              "detail": "Individuals only, singly, Pakistani nationals."
+            },
+            {
+              "value": "10 years",
+              "label": "Record retention",
+              "detail": "Branchless banking CDD and transaction records kept at least this long."
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "Launch week problems",
+          "setting": "Hingol Bank agent network office, Hyderabad. Monday.",
+          "lines": [
+            {
+              "who": "imran",
+              "mood": "thinking",
+              "text": "Forty agents want to offer HRAs. Twelve have no biometric device, eight ran out of cash twice last month, and three have audit findings we never closed."
+            },
+            {
+              "who": "sadia",
+              "mood": "neutral",
+              "text": "And training? Annexure A says the bank must make sure agents are properly trained to serve HRA customers."
+            },
+            {
+              "who": "shakeel",
+              "mood": "happy",
+              "text": "I have a biometric device and a good cash position now. I'd like to offer home delivery too, for elderly customers."
+            },
+            {
+              "who": "imran",
+              "mood": "worried",
+              "text": "Home delivery carries a risk of misappropriation. The Regulations want extra controls if we do it."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "So, Training Lead: which agents go live, and what has to happen first?"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Choosing agents for the HRA launch",
+          "situation": "Hingol Bank's business team wants all 40 interested agents live with Home Remittance Accounts next week, including those with no biometric device, recent cash shortages or open audit findings. Training is planned 'after launch'.",
+          "choices": [
+            {
+              "text": "Go live only at agents with biometric devices that pass enhanced due diligence, have liquidity reassessed, sign revised service agreements and finish HRA training; bring the others in as they qualify.",
+              "outcome": "Right. Annexure A paragraph 17 limits HRA opening and transactions to agent locations with biometric devices, and requires enhanced due diligence with ongoing monitoring and periodic audit, a liquidity reassessment, revised agreements where needed and properly trained agents.",
+              "score": 2
+            },
+            {
+              "text": "Launch all 40 now and train them during the first month, since volumes will be low.",
+              "outcome": "Poor. HRA services are allowed only where biometric devices exist, and agents must be properly trained to serve customers. Launching first and training later breaks both.",
+              "score": 0
+            },
+            {
+              "text": "Launch at the 28 agents with biometric devices and check due diligence and cash later.",
+              "outcome": "Partly right. The biometric condition is met, but enhanced due diligence, liquidity reassessment and training are conditions of serving HRAs, not follow-ups.",
+              "score": 1
+            },
+            {
+              "text": "Delay the launch until every one of the 40 agents qualifies.",
+              "outcome": "Partly right on caution, but unnecessary. Qualified agents can serve customers now while others catch up, which supports the scheme's inclusion goal.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "The bank's duties for HRAs and agents",
+          "prompt": "Match each item from Annexure A, paragraph 17 to what it requires.",
+          "pairs": [
+            {
+              "left": "17(a) Biometric devices",
+              "right": "Open HRAs and run their transactions only where agents have biometric devices"
+            },
+            {
+              "left": "17(c) Agent due diligence",
+              "right": "Enhanced due diligence of interested agents, ongoing monitoring and periodic audit"
+            },
+            {
+              "left": "17(d) Liquidity",
+              "right": "Reassess each agent's cash capacity and keep cash available"
+            },
+            {
+              "left": "17(e) Data",
+              "right": "Protect customers' financial and non-financial data from leakage and misuse"
+            },
+            {
+              "left": "17(f) Training",
+              "right": "Ensure agents are properly trained to serve HRA customers"
+            },
+            {
+              "left": "17(i) Charges",
+              "right": "No service charges when an HRA is opened or closed"
+            }
+          ]
+        },
+        {
+          "type": "order",
+          "title": "Opening an HRA at an agent",
+          "prompt": "Put the steps for opening a Home Remittance Account at an agent in order.",
+          "steps": [
+            "Customer visits an agent location that has a biometric device",
+            "Agent captures the customer's details and biometrics and forwards them electronically to the bank",
+            "Bank verifies identity through NADRA biometric verification, at no cost to the customer",
+            "Bank screens the name and CNIC against proscribed and designated lists and completes CDD",
+            "Bank activates the account instantly and sends the customer confirmation; the agent keeps no data"
+          ]
+        },
+        {
+          "type": "flip",
+          "title": "HRA and agent rules worth remembering",
+          "cards": [
+            {
+              "front": "Credits to an HRA",
+              "back": "Only home remittances may be credited to it."
+            },
+            {
+              "front": "Outward cross-border remittances",
+              "back": "Not permitted from branchless banking accounts at all."
+            },
+            {
+              "front": "Existing wallet converting to HRA",
+              "back": "One-time registration with expected senders and countries; a remote registrant visits an agent once before any debit."
+            },
+            {
+              "front": "Home delivery of remittances",
+              "back": "Extra controls and monitoring, real-time SMS alerts on amounts and charges, and a separate MIS of such withdrawals."
+            },
+            {
+              "front": "Schedule of charges",
+              "back": "Published every calendar quarter at branches, agent locations and the website; not raised during the quarter."
+            },
+            {
+              "front": "Complaints",
+              "back": "Received 24 hours by SMS, IVR and email, acknowledged with a unique number and an estimated time to resolve."
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "A customer wants a cousin in Karachi to transfer rupees into her Home Remittance Account so she can withdraw it at Shakeel's shop. What should Shakeel tell her?",
+          "options": [
+            "That is fine, any domestic transfer can credit an HRA",
+            "Only home remittances can be credited to an HRA",
+            "Domestic credits are allowed up to Rs. 50,000 a day",
+            "She must first upgrade the HRA to Level 0"
+          ],
+          "answer": 1,
+          "explanation": "Annexure A says credit in an HRA can only be made through home remittances, and paragraph 17(g) asks banks to ensure HRAs are fed with home remittance proceeds. A domestic transfer would need a different account."
+        },
+        {
+          "type": "tip",
+          "title": "Training agents that actually works",
+          "body": "Two provisions make agent training a duty: **section 9(b)** (capacity building, especially on ML/TF risks) and **Annexure A, paragraph 17(f)** (agents properly trained to serve HRA customers).\n\n- Teach the **don'ts** first: no CDD, no copies, no accounts for absent people.\n- Use the agent's own counter: what a suspicious cash-out looks like, how to refuse politely, who to call.\n- Cover fraud and PIN safety, because agents also educate first-time customers.\n- Check understanding at refresher visits, not just at onboarding."
+        },
+        {
+          "type": "keypoints",
+          "title": "Agent's Shop take-aways",
+          "items": [
+            "Only the bank-led model is allowed; the bank is responsible for its agents and every transaction posts to a real account.",
+            "Agents may help customers forward information but never perform CDD, keep customer data or open accounts for absent people.",
+            "Level 0 needs NADRA verification and cannot cash in, cash out or send to persons before biometrics; Level 1 needs biometrics and has higher limits.",
+            "HRAs are Level 1 sub-accounts fed only by home remittances, with a PKR 1.5m balance cap and PKR 500,000 monthly cash withdrawal.",
+            "HRA agents need biometric devices, enhanced due diligence, monitoring, audit, enough cash and proper training."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If you visited one of your bank's agents tomorrow, which single habit would you check first, and what would you say if you found a file of customer CNIC copies?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "pk-fx-s4-q1",
+          "question": "Which branchless banking model do SBP's Branchless Banking Regulations allow?",
+          "options": [
+            "Only the bank-led model",
+            "Only the telecom-led model",
+            "Bank-led or telecom-led, at the bank's choice",
+            "Any model the agent prefers"
+          ],
+          "answer": 0,
+          "explanation": "Section 3 of the Regulations allows only the bank-led model, in which the financial institution leads the programme and carries its responsibilities, whether through agency arrangements or a joint venture.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s4-q2",
+          "question": "An agent offers to verify a new customer's identity and assess the nature of his business so the bank can save time. What do the Regulations say?",
+          "options": [
+            "Agents may verify identity but not assess the business",
+            "Agents may not perform any element of CDD; the bank does all CDD at its end",
+            "Agents may perform full CDD if they hold a bank account and have signed an agency agreement",
+            "Agents may perform CDD for Level 0 accounts only"
+          ],
+          "answer": 1,
+          "explanation": "Section 4.2(b)(ix) bars agents from performing CDD elements, including identifying the customer or beneficial owner and understanding the nature of business. Their role is limited to helping customers forward information electronically.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s4-q3",
+          "question": "What is the daily transaction limit on a Level 1 branchless banking account under section 4.3?",
+          "options": [
+            "Rs. 25,000, with no exceptions at all",
+            "Rs. 200,000, the same as the monthly limit, so that salaried customers are never restricted",
+            "Rs. 50,000, with exceptions for employer salary credits and trusted merchants",
+            "Rs. 1,500,000, the same as an HRA balance"
+          ],
+          "answer": 2,
+          "explanation": "Section 4.3 sets Level 1 at Rs. 50,000 per day and Rs. 200,000 per month. The daily limit does not apply to salary credits from employers against proof of employment or to payments to trusted merchants such as schools and hospitals.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s4-q4",
+          "question": "Shakeel keeps photocopies of customers' CNICs in a file at his shop 'in case the bank asks'. What does section 4.3 require of the bank?",
+          "options": [
+            "Ensure the agent locks the file in a safe",
+            "Ensure that no customer data or documents are retained by the agent",
+            "Ensure the agent destroys copies after one year",
+            "Ensure the agent shares copies with the bank monthly"
+          ],
+          "answer": 1,
+          "explanation": "Among the bank's responsibilities in section 4.3 is ensuring that no customer's data and documents are retained by the agent. Locking or later destroying the copies does not meet that duty.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s4-q5",
+          "question": "What is the maximum balance of a Home Remittance Account?",
+          "options": [
+            "PKR 200,000",
+            "PKR 1,500,000",
+            "PKR 500,000",
+            "No maximum balance at all"
+          ],
+          "answer": 1,
+          "explanation": "Annexure A sets no daily limit on inward home remittances but caps the HRA balance at PKR 1,500,000. PKR 500,000 is the monthly cash withdrawal limit, and PKR 200,000 is a Level 0 cap.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s4-q6",
+          "question": "Hingol Bank wants to offer HRA services at an agent who has no biometric device but an excellent compliance record. What does Annexure A allow?",
+          "options": [
+            "HRA services at any agent with a clean audit report",
+            "HRA transactions, but not account opening, at that agent",
+            "HRA services at that agent, provided the agent calls the bank to confirm each customer's identity",
+            "HRA opening and transactions only at agent locations with biometric devices"
+          ],
+          "answer": 3,
+          "explanation": "Paragraph 17(a) allows opening HRAs and related transactions only at agent locations where biometric devices are available. A good record does not replace that condition.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s4-q7",
+          "question": "Before serving HRA customers, which due diligence must Hingol Bank conduct on interested agents?",
+          "options": [
+            "Simplified due diligence, since agents are low risk",
+            "A one-time check at onboarding, with no later review",
+            "Enhanced due diligence, with ongoing monitoring and periodic audit",
+            "Only a credit check on the agent's business"
+          ],
+          "answer": 2,
+          "explanation": "Annexure A paragraph 17(c) requires enhanced due diligence of interested agents and continued effective ongoing monitoring, including periodic audit.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s4-q8",
+          "question": "A Hingol customer abroad asks to send money out of Pakistan from his branchless banking wallet to pay a supplier in Dubai. What is the rule?",
+          "options": [
+            "Permitted from Level 1 accounts up to the daily limit",
+            "Permitted only through an agent with a biometric device",
+            "Cross-border outward remittances from branchless banking accounts are not permitted",
+            "Permitted if the customer completes Form M at the agent and the agent forwards it to the bank"
+          ],
+          "answer": 2,
+          "explanation": "Section 5(b) of the Regulations says banks shall not permit cross-border outward remittance transactions from branchless banking accounts. The limits and forms in the other options do not create an exception.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s4-q9",
+          "question": "Hingol wants to add home delivery of remittance cash for elderly HRA customers. Which control set do the Regulations require?",
+          "options": [
+            "A signed waiver from each customer accepting any loss in delivery, which removes the need for alerts",
+            "Delivery only by the customer's relatives, with no SMS alerts",
+            "Additional controls and monitoring, real-time SMS alerts and a separate MIS of such withdrawals",
+            "No extra controls, because the cash comes from the same HRA"
+          ],
+          "answer": 2,
+          "explanation": "Annexure A paragraph 18 requires additional controls and monitoring for home delivery given the misappropriation risk, real-time SMS on amounts received, withdrawn and charged, and a separate MIS for quick complaint resolution.",
+          "difficulty": 4
+        },
+        {
+          "id": "pk-fx-s4-q10",
+          "question": "Which provision of the Branchless Banking Regulations asks banks to build agents' capacity through training, especially on ML/TF risks?",
+          "options": [
+            "Section 4.4",
+            "Section 6.4",
+            "Annexure B",
+            "Section 9(b)"
+          ],
+          "answer": 3,
+          "explanation": "Section 9(b) requires adequate measures for agents' capacity building through trainings, especially on ML/TF risks and their implications. Section 4.4 covers domestic fund transfers, section 6.4 internal audit, and Annexure B customer awareness.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Wire Transfer Information, the FX Training Programme and Inspection Readiness",
+      "stage": "The Inspection Room",
+      "summary": "Keep the right originator and beneficiary information with every wire and home remittance under SBP's AML/CFT/CPF Regulations and the Branchless Banking Regulations, then build the board-approved foreign exchange training programme Chapter 2 requires, with its annual needs assessment, and show an SBP inspector the roles, records and evidence behind it.",
+      "minutes": 55,
+      "objectives": [
+        "Describe, in general terms, the duties of ordering, intermediary and beneficiary institutions for wire transfer information",
+        "Apply the Branchless Banking Regulations' information rules for home remittances above and below USD 1,000",
+        "Build an FX training programme that meets the seven parameters of Chapter 2, paragraph 3",
+        "Assemble the roles, records and training evidence an SBP review of FX, remittance and branchless banking work will ask for"
+      ],
+      "cards": [
+        {
+          "type": "story",
+          "title": "Ten days to inspection",
+          "setting": "Board Risk Committee room, Hingol Bank head office, Karachi. 4:00 pm.",
+          "lines": [
+            {
+              "who": "sadia",
+              "mood": "worried",
+              "text": "SBP's inspection team arrives in ten days. Two items are on my desk: an inbound SWIFT payment with no originator address or ID, and the board paper on our FX training policy."
+            },
+            {
+              "who": "asad",
+              "mood": "thinking",
+              "text": "Trade sees the same thing. Payments arrive with a name and nothing else, and the business wants them credited today."
+            },
+            {
+              "who": "imran",
+              "mood": "neutral",
+              "text": "And my home remittance files: do we really keep originator details for every small remittance?"
+            },
+            {
+              "who": "hina",
+              "mood": "proud",
+              "text": "Gulberg has finished its training-needs assessments. Every FX officer, plus our two call-centre colleagues."
+            },
+            {
+              "who": "sadia",
+              "mood": "happy",
+              "text": "Good. Training Lead, this is the final stage: get the information right on every transfer, then show the board a training programme SBP would accept."
+            }
+          ]
+        },
+        {
+          "type": "explainer",
+          "title": "Who carries the information in a wire",
+          "scenes": [
+            {
+              "icon": "📤",
+              "heading": "The ordering institution",
+              "narration": "The bank sending a wire identifies and verifies its originator, and records enough detail to reconstruct the transfer: date, currency and amount, value date, purpose, beneficiary and beneficiary institution, and the relationship between the parties where relevant."
+            },
+            {
+              "icon": "✉️",
+              "heading": "Information that travels",
+              "narration": "The payment message carries the originator's name, account number or unique reference, and identity document number, and the beneficiary's name and identity document number, all the way along the chain."
+            },
+            {
+              "icon": "🔁",
+              "heading": "The intermediary",
+              "narration": "A bank in the middle passes all of that information on, keeps a record of what it received, and takes reasonable steps, consistent with straight-through processing, to spot cross-border wires with missing information."
+            },
+            {
+              "icon": "📥",
+              "heading": "The beneficiary institution",
+              "narration": "The receiving bank verifies the beneficiary if not already done, and uses risk-based policies to handle wires that arrive incomplete, including whether to execute, suspend or reject, and whether to report to the FMU."
+            },
+            {
+              "icon": "🚫",
+              "heading": "Weak counterparts",
+              "narration": "Banks limit or prohibit relationships and transactions with institutions that do not meet wire transfer standards."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "funnel",
+          "title": "What must travel with a wire (Regulation 11)",
+          "caption": "SBP AML/CFT/CPF Regulations, Regulation 11(3), in general terms. Batch files from one originator must also carry traceable beneficiary information.",
+          "items": [
+            {
+              "label": "Originator's name",
+              "detail": "Who is sending the money."
+            },
+            {
+              "label": "Originator's account or unique reference",
+              "detail": "Lets the transfer be traced end to end."
+            },
+            {
+              "label": "Originator's identity document number",
+              "detail": "The applicable ID document number."
+            },
+            {
+              "label": "Beneficiary's name",
+              "detail": "Who should receive the money."
+            },
+            {
+              "label": "Beneficiary's identity document number",
+              "detail": "The applicable ID document number."
+            }
+          ]
+        },
+        {
+          "type": "sort",
+          "title": "Whose duty is it?",
+          "prompt": "Sort each wire transfer duty to the institution that carries it under Regulation 11.",
+          "buckets": [
+            "Ordering institution",
+            "Intermediary institution",
+            "Beneficiary institution"
+          ],
+          "items": [
+            {
+              "text": "Identify and verify the originator before sending",
+              "bucket": 0
+            },
+            {
+              "text": "Record purpose and relationship details so the wire can be reconstructed",
+              "bucket": 0
+            },
+            {
+              "text": "Pass on all originator and beneficiary data unchanged",
+              "bucket": 1
+            },
+            {
+              "text": "Keep a record of all information received from the previous bank",
+              "bucket": 1
+            },
+            {
+              "text": "Spot cross-border wires lacking information, consistent with straight-through processing",
+              "bucket": 1
+            },
+            {
+              "text": "Verify the beneficiary's identity if not already verified",
+              "bucket": 2
+            },
+            {
+              "text": "Weigh incomplete information when deciding to execute or report to the FMU",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "An inbound cross-border payment for a Hingol customer arrives with the originator's name only. What does Regulation 11 expect of Hingol as beneficiary institution?",
+          "options": [
+            "Credit it at once, since the beneficiary is a known customer",
+            "Return it automatically, since any gap means rejection",
+            "Apply its risk-based policy, treating the gap as a factor in executing it and in judging suspicion",
+            "Ask the customer to supply the missing originator details and credit on his word"
+          ],
+          "answer": 2,
+          "explanation": "Regulation 11(6) requires risk-based policies, procedures and controls for incoming wires lacking complete information. The gap may be a factor in deciding whether to execute or terminate and whether the transaction is suspicious and merits reporting to the FMU."
+        },
+        {
+          "type": "concept",
+          "title": "Home remittances through branchless banking: information rules",
+          "body": "Section 5 of the Branchless Banking Regulations adds rules for home remittances into branchless banking accounts.\n\n**USD 1,000 or more** must carry the originator's name, account number (or unique reference), and the originator's address, national identity number, customer identification number, or date and place of birth; plus the beneficiary's name and account number or unique reference.\n\n**Below USD 1,000** must carry the originator's name and account number or unique reference, and the beneficiary's name and account number or unique reference. This information need not be verified for accuracy unless there is a suspicion of ML/TF.\n\n**Also**\n- Batch files from one originator must contain accurate originator data and traceable beneficiary data.\n- Intermediaries in Pakistan keep the information for at least ten years.\n- Banks use reasonable measures, including post-event or real-time monitoring, to spot remittances with missing data, and set risk-based policies on when to execute, reject or suspend."
+        },
+        {
+          "type": "diagram",
+          "kind": "compare",
+          "title": "Home remittances: above and below USD 1,000",
+          "headers": [
+            "USD 1,000 or more",
+            "Below USD 1,000"
+          ],
+          "items": [
+            {
+              "label": "Originator",
+              "left": "Name, account or unique reference, plus address, ID number, customer number, or date and place of birth",
+              "right": "Name and account number or unique reference"
+            },
+            {
+              "label": "Beneficiary",
+              "left": "Name and account number or unique reference",
+              "right": "Name and account number or unique reference"
+            },
+            {
+              "label": "Verification",
+              "left": "As for the bank's own customer and on suspicion",
+              "right": "Not required unless ML/TF is suspected"
+            },
+            {
+              "label": "Records",
+              "left": "Intermediary keeps the data at least ten years",
+              "right": "Intermediary keeps the data at least ten years"
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "title": "The board asks for the training policy",
+          "setting": "Board Risk Committee, Hingol Bank. The following morning.",
+          "lines": [
+            {
+              "who": "sadia",
+              "mood": "neutral",
+              "text": "The committee wants to know if our FX training meets Chapter 2, paragraph 3. Over to you, Training Lead."
+            },
+            {
+              "who": "asad",
+              "mood": "thinking",
+              "text": "My worry: our trade staff get AML training from compliance and FX training from treasury, and the two never meet."
+            },
+            {
+              "who": "hina",
+              "mood": "worried",
+              "text": "Mine: remote branches. Our officer in Chitral has had no FX course in two years."
+            },
+            {
+              "who": "sadia",
+              "mood": "thinking",
+              "text": "And finance has proposed cutting classroom training to one e-learning module a year for everyone. Let's hear your plan."
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "kind": "cycle",
+          "title": "The yearly FX training cycle",
+          "caption": "Chapter 2, paragraph 3 of the Foreign Exchange Manual, read as one cycle.",
+          "items": [
+            {
+              "label": "Board-approved policy",
+              "detail": "Covers all major FX areas and how staff are selected for programmes."
+            },
+            {
+              "label": "Needs assessment each January",
+              "detail": "Every related employee assessed at the start of the calendar year."
+            },
+            {
+              "label": "Risk-based focus areas",
+              "detail": "Trade, FC accounts, remittances, investments, set before the year starts."
+            },
+            {
+              "label": "Modules with AML/CFT and IT built in",
+              "detail": "AML/CFT, e-commerce and IT operations are integral parts."
+            },
+            {
+              "label": "Delivery for all, remote too",
+              "detail": "Plans for remote branches; in-house trainers; IBP, NIBAF and universities."
+            },
+            {
+              "label": "Assess and reward",
+              "detail": "Post-training assessment; FX training counts towards career growth."
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The one-module proposal",
+          "situation": "Finance proposes replacing Hingol Bank's FX training with a single annual e-learning module for all FX staff, dropping separate plans for remote branches and the post-training assessment, to cut costs.",
+          "choices": [
+            {
+              "text": "Keep a board-approved, needs-based programme: assess each employee in January, keep remote-branch plans and post-training assessment, and use in-house trainers and e-learning to cut cost.",
+              "outcome": "Right. Paragraph 3 expects a board-approved policy, a yearly needs assessment per employee, plans for remote branches at par with urban ones and a mechanism to assess staff after training. Cheaper delivery is fine; dropping these elements is not.",
+              "score": 2
+            },
+            {
+              "text": "Accept the proposal, since any training at all satisfies the Manual.",
+              "outcome": "Poor. A single module for everyone ignores the individual needs assessment, risk-based focus areas, remote-branch plans and post-training assessment that paragraph 3 sets out.",
+              "score": 0
+            },
+            {
+              "text": "Accept it for urban branches but keep classroom training for remote branches.",
+              "outcome": "Partly right. It protects remote staff, but still drops individual needs assessment and post-training assessment for everyone else.",
+              "score": 1
+            },
+            {
+              "text": "Reject any change and keep all classroom training exactly as it is.",
+              "outcome": "Partly right. The duties are protected, but paragraph 3 encourages in-house trainers and tailored courses; smarter delivery can cut cost without losing compliance.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "type": "match",
+          "title": "Paragraph 3, one parameter at a time",
+          "prompt": "Match each parameter of Chapter 2, paragraph 3 to what it asks of the Authorized Dealer.",
+          "pairs": [
+            {
+              "left": "(i) Needs assessment",
+              "right": "Assess each related employee's FX training needs at the start of each calendar year"
+            },
+            {
+              "left": "(ii) Focus areas",
+              "right": "Pick risk-based focus areas such as trade, FC accounts and remittances before the year starts"
+            },
+            {
+              "left": "(iii) Career growth",
+              "right": "Give function-specific FX training due weight in employees' career progression"
+            },
+            {
+              "left": "(iv) Critical topics",
+              "right": "Make AML/CFT, e-commerce and IT operations integral to FX modules"
+            },
+            {
+              "left": "(v) Remote branches",
+              "right": "Plan training so remote-branch staff build capacity at par with urban staff"
+            },
+            {
+              "left": "(vi)-(vii) Delivery",
+              "right": "Develop in-house trainers, assess staff after training, work with IBP, NIBAF and universities"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "question": "When does Chapter 2 require an Authorized Dealer to assess each related employee's foreign exchange training needs?",
+          "options": [
+            "Whenever SBP announces an inspection",
+            "At the beginning of each calendar year",
+            "Only when an employee joins the FX function",
+            "Every three years, with the board's policy review"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3(i) requires the assessment, for each related employee, at the beginning of each calendar year. Induction and inspection-driven training can add to it but do not replace it."
+        },
+        {
+          "type": "flip",
+          "title": "Who answers for branchless banking",
+          "cards": [
+            {
+              "front": "Board of directors",
+              "back": "Sets the branchless banking strategy and policies, takes an explicit, documented decision to offer it, and ensures proper security policies."
+            },
+            {
+              "front": "Senior management",
+              "back": "Implements the strategy, oversees security and outsourcing risk, and widens audit and compliance coverage with skilled staff."
+            },
+            {
+              "front": "Compliance officer",
+              "back": "Ensures compliance controls are built into the system and is consulted while products are developed and implemented."
+            },
+            {
+              "front": "Internal audit",
+              "back": "Reviews critical processes and outsourced activities on a risk basis and escalates significant exceptions to the Audit Committee."
+            },
+            {
+              "front": "New products and technology",
+              "back": "ML/TF risk assessed before launch, with measures to manage and mitigate the risks."
+            },
+            {
+              "front": "Annual risk matrix",
+              "back": "Banks assess branchless banking ML/TF risks every year, in light of the national risk assessment."
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Hingol case: the 2027 FX training plan",
+          "body": "A fictional case from Hingol Bank's files.\n\nThe board approved a revised FX training and development policy. In January, line managers completed a needs assessment for 214 related employees.\n\n**What the plan covered**\n- **Branch FX staff and call-centre agents:** services to individuals and outward remittance forms (Chapter 2, para 4(ii)).\n- **Remittance and branch staff:** the home remittance clock, compensation and e-PRC issue and verification (Chapter 10).\n- **Trade staff:** a joint FX and trade-based money laundering module, with AML/CFT built in.\n- **Agent managers and agents:** CDD limits, data, HRA service and ML/TF red flags (BB Regulations s.9(b) and Annexure A).\n- **Remote branches:** in-house trainers visiting Chitral, Turbat and Skardu.\n\nEvery course ended with an assessment, and results fed into appraisals. The inspector asked for three things: the board approval, the January assessments and the test results. All three were ready."
+        },
+        {
+          "type": "keypoints",
+          "title": "Inspection Room take-aways",
+          "items": [
+            "Wires carry originator and beneficiary names, account or reference numbers and ID numbers through the whole payment chain.",
+            "Beneficiary banks use risk-based policies for incomplete wires; the gap can affect execution and STR decisions.",
+            "Home remittances of USD 1,000 or more need fuller originator data; intermediaries keep it for at least ten years.",
+            "Chapter 2, paragraph 3 needs a board-approved FX training policy and a needs assessment for each related employee every January.",
+            "Build in AML/CFT and IT topics, plan for remote branches, assess staff after training and keep the evidence for SBP."
+          ]
+        },
+        {
+          "type": "reflect",
+          "prompt": "If an SBP inspector asked you tomorrow for proof that your FX or remittance staff are trained for their roles, what three documents would you hand over, and which one is missing today?"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "pk-fx-s5-q1",
+          "question": "Under Regulation 11, which item must travel with a wire transfer through the payment chain?",
+          "options": [
+            "The originator's salary slip",
+            "The beneficiary's credit score",
+            "The originator's identity document number",
+            "The originator's tax return"
+          ],
+          "answer": 2,
+          "explanation": "Regulation 11(3) lists the originator's name, account number or unique reference and identity document number, and the beneficiary's name and identity document number. The other items are not wire transfer information.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s5-q2",
+          "question": "Hingol Bank acts as an intermediary in a cross-border payment chain. Which duty applies to it under Regulation 11?",
+          "options": [
+            "Verify the identity of the final beneficiary in person before passing the payment on to the next bank",
+            "Keep all originator and beneficiary information with the wire and keep a record of it",
+            "Verify the originator's identity documents personally",
+            "Delete the information once the payment is passed on"
+          ],
+          "answer": 1,
+          "explanation": "Regulation 11(9) requires an intermediary to maintain all required information with the wire, keep a record of what it receives, take STP-consistent measures to spot gaps and have risk-based policies on execution. Verifying the parties falls to the ordering and beneficiary institutions.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q3",
+          "question": "A home remittance of USD 1,500 to a branchless banking account arrives with only the originator's name and account number. What is missing under section 5 of the Branchless Banking Regulations?",
+          "options": [
+            "Nothing, because the originator's name and account number are always enough for any home remittance",
+            "The beneficiary's employer and monthly income",
+            "The purpose of remittance certified by an embassy",
+            "Originator's address, national ID, customer ID, or date and place of birth"
+          ],
+          "answer": 3,
+          "explanation": "For home remittances of USD 1,000 or more, section 5(c) adds the originator's address, national identity number, customer identification number, or date and place of birth to the name and account number or unique reference.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q4",
+          "question": "For a home remittance below USD 1,000, when must the bank verify the accuracy of the accompanying originator information?",
+          "options": [
+            "Only where there is a suspicion of money laundering or terrorist financing",
+            "Always, before crediting the beneficiary",
+            "Never, even if ML/TF is suspected",
+            "Only if the remittance comes from a country the bank has not seen before for that beneficiary"
+          ],
+          "answer": 0,
+          "explanation": "Section 5(e) says information on remittances below USD 1,000 need not be verified for accuracy, but the bank must verify its customer's information where ML/TF is suspected.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q5",
+          "question": "How long must an intermediary financial institution in Pakistan keep originator and beneficiary information received with a home remittance?",
+          "options": [
+            "At least five years after the account is closed",
+            "At least ten years after the transaction is completed",
+            "Until the beneficiary withdraws the funds",
+            "At least one year after the transaction"
+          ],
+          "answer": 1,
+          "explanation": "Section 5(h) requires intermediary institutions within Pakistan to retain all originator and beneficiary information that accompanies a home remittance for at least ten years following completion of the transaction.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s5-q6",
+          "question": "Who must approve an Authorized Dealer's foreign exchange training and development policy under Chapter 2, paragraph 3?",
+          "options": [
+            "The board of directors",
+            "The head of human resources",
+            "The Institute of Bankers Pakistan",
+            "SBP's Exchange Policy Department"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 3 asks Authorized Dealers to prepare a comprehensive training and development policy, approved by their board of directors, for all major FX areas, including how staff are selected for programmes.",
+          "difficulty": 2
+        },
+        {
+          "id": "pk-fx-s5-q7",
+          "question": "Hingol Bank's FX training plan covers trade and remittance rules but has no AML/CFT or IT content. Which parameter of Chapter 2, paragraph 3 does it miss?",
+          "options": [
+            "Coordinating with IBP and NIBAF on course design",
+            "Making AML/CFT, e-commerce and IT operations integral to FX modules",
+            "Identifying risk-based focus areas such as trade and remittances before the calendar year starts",
+            "Developing in-house trainers for internal support"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3(iv) requires dealers, when preparing FX training modules, to make function-specific training in critical areas such as AML/CFT, e-commerce and IT operations an integral part of them.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q8",
+          "question": "An FX officer at a remote branch in Chitral has received no FX training in two years, while Karachi staff train every year. Which paragraph 3 parameter addresses this?",
+          "options": [
+            "Giving FX training weight in career growth",
+            "Training plans for remote-area staff so their capacity is at par with urban centres",
+            "Choosing training focus areas by risk",
+            "Assessing employees' performance after training"
+          ],
+          "answer": 1,
+          "explanation": "Paragraph 3(v) asks dealers to develop training plans for employees posted at branches in remote areas so their capacity building is at par with staff in urban centres.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q9",
+          "question": "Under the Branchless Banking Regulations, to whom does internal audit escalate significant exceptions found in branchless banking?",
+          "options": [
+            "The agent network manager",
+            "The Financial Monitoring Unit",
+            "The telecom partner's board",
+            "The Audit Committee of the board"
+          ],
+          "answer": 3,
+          "explanation": "Section 6.4(d) requires internal audit to escalate significant exceptions to the Audit Committee of the board, after risk-based reviews of critical processes and outsourced activities.",
+          "difficulty": 3
+        },
+        {
+          "id": "pk-fx-s5-q10",
+          "question": "Which is the best evidence that Hingol Bank met Chapter 2, paragraph 3(i) this year?",
+          "options": [
+            "Records of each related employee's FX training-needs assessment made at the start of the year",
+            "A list of all FX courses offered by the training department during the year, with their dates and venues",
+            "The total training budget approved for the year",
+            "Attendance at last year's SBP outreach session"
+          ],
+          "answer": 0,
+          "explanation": "Paragraph 3(i) is about assessing each related employee's FX training needs at the beginning of each calendar year. Only individual assessment records show that; course lists and budgets do not.",
+          "difficulty": 4
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "code": "pk",
+    "programs": [
+      152,
+      153,
+      151,
+      150,
+      142,
+      186
+    ],
+    "classification": "mandatory-role",
+    "frequency": [
+      "annual",
+      "role"
+    ],
+    "regulators": [
+      "State Bank of Pakistan (SBP)",
+      "SBP Banking Services Corporation (SBP-BSC)"
+    ],
+    "references": [
+      {
+        "title": "Foreign Exchange Manual, Chapter 2: Authorized Dealers",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/document/Chapter-2-foreign-exchange-manual.pdf",
+        "provision": "Chapter 2, paragraphs 1-11, incl. para 3 (Capacity Building of Employees) and para 4(ii)",
+        "note": "Licensing of Authorized Dealers and authorized branches; board-approved FX training policy with an annual needs assessment for each related employee and post-training assessment; trained staff, including call-centre staff, for individuals' FX services; declarations, reporting of evasion, returns and the public rate margin.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Foreign Exchange Manual, Chapter 10: Inward and Outward Remittances",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/document/Chapter-10-foreign-exchange-manual.pdf",
+        "provision": "Paragraphs 2-20; Annexure A (e-PRC and S-PRC guidelines), paragraph 12",
+        "note": "Home remittance credit and payment timelines and delay compensation; outward remittance forms, approvals, permits and validity; e-PRC and S-PRC issuance models; dealers to acquaint or train relevant staff on issuing and verifying e-PRCs and S-PRCs.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Branchless Banking Regulations (revised December 30, 2019; BPRD Circular No. 10 of 2019)",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/documents/circulars/C10-Branchless-Banking-Regulations.pdf",
+        "provision": "Sections 3, 4, 5, 6 and 9, incl. section 9(b); Annexure A (Home Remittances Account), paragraph 17(f)",
+        "note": "Bank-led model, agents' limited role in CDD, Level 0 and Level 1 accounts, home remittance information, roles of board, management, compliance and audit; capacity building of agents through training, especially on ML/TF risks; agents properly trained to serve HRA customers.",
+        "effective": "2019-12-30",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "AML/CFT/CPF Regulations (consolidated, updated to 28 November 2022)",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/documents/laws_regulations/CL33-Annex-B.pdf",
+        "provision": "Regulation 11 (Wire Transfer/Fund Transfer)",
+        "note": "Information that must travel with domestic and cross-border wire transfers and the duties of ordering, intermediary and beneficiary institutions.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Foreign Exchange Manual, Chapter 12: Exports",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/document/Chapter-12-foreign-exchange-manual.pdf",
+        "note": "Rules for export declarations, risk-based CDD of exporters and realization of export proceeds through Authorized Dealers.",
+        "checked": "2026-11-08"
+      },
+      {
+        "title": "Foreign Exchange Manual, Chapter 13: Imports",
+        "issuer": "State Bank of Pakistan",
+        "url": "https://www.sbp.org.pk/assets/document/Chp-13-foreign-exchange-manual.pdf",
+        "note": "Rules Authorized Dealers apply to import payments, Electronic Import Forms and KYC/CDD of importers.",
+        "checked": "2026-11-08"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "exam": {
+    "questionsPerAttempt": 30,
+    "passMark": 75,
+    "minutes": 45,
+    "bank": [
+      {
+        "id": "pk-fx-x1",
+        "question": "A bank wants an Authorized Dealer licence limited to buying and selling US dollar notes only. Which statement about SBP's powers is correct?",
+        "options": [
+          "SBP can only grant a licence that covers every foreign currency and every kind of FX transaction",
+          "SBP can restrict currencies but never the type of transaction",
+          "Only the Ministry of Finance may limit a dealer's authorization",
+          "SBP may restrict an authorization to specified currencies or specified transactions"
+        ],
+        "answer": 3,
+        "explanation": "Chapter 2, paragraph 1(i) lets SBP authorise dealing in all currencies or only specified ones, and all transactions or only specified ones. Scheduled banks normally receive the all-descriptions licence.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x2",
+        "question": "Hingol Bank's internal committee approved FX dealing at its new Skardu branch. Treasury wants the branch to start buying dollars tomorrow, before SBP replies. What is the correct position?",
+        "options": [
+          "The branch may start, because the bank's own approval is enough",
+          "The branch must wait until SBP allots its reporting code after head office notifies it",
+          "The branch may start if it books its deals through another authorized branch's code meanwhile",
+          "The branch may start but must stop if SBP objects within 30 days"
+        ],
+        "answer": 1,
+        "explanation": "Under Chapter 2, paragraph 2(ii), head office notifies the branch's name and address to SBP's Statistics and Data Warehouse Department, which allots a code; the branch may start FX business thereafter. Booking through another code misreports dealings.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x3",
+        "question": "During a busy day, an FX officer skips the customer declaration for a regular client because 'we know him'. Which Chapter 2 duty is breached?",
+        "options": [
+          "Keeping the public buy-sell rate margin within 50 paisa per US dollar for this regular customer",
+          "Sending senior officials to SBP meetings when called",
+          "Notifying new authorized branches to SBP",
+          "Obtaining declarations and information before undertaking any FX transaction"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 6 requires the dealer, before undertaking any FX transaction for any person, to obtain declarations and information that reasonably satisfy it that no contravention or evasion is involved. Familiarity with the client does not remove the duty.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x4",
+        "question": "An FX officer suspects a customer intends to evade the Foreign Exchange Regulation Act and refuses the transaction. The branch manager says refusal is enough. What else does Chapter 2 expect?",
+        "options": [
+          "Report the matter to SBP, since there is reason to believe a contravention is contemplated",
+          "Nothing more; refusing the transaction fully discharges the dealer's duties under Chapter 2 of the Manual",
+          "Report the customer to the Banking Mohtasib",
+          "Warn other banks by email so they also refuse him"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 6 requires refusal when declarations are refused or unsatisfactory and, where the dealer has reason to believe a contravention or evasion is contemplated, a report to SBP. Paragraph 7 adds that evasion and attempts are reported immediately.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x5",
+        "question": "Two banks deal with each other in the interbank market at a buying and selling spread wider than 50 paisa per US dollar. Under Chapter 2, paragraph 11, is this a breach?",
+        "options": [
+          "Yes, because the margin applies to every FX deal in Pakistan",
+          "Yes, unless SBP has approved the spread in advance",
+          "No, because the 50 paisa margin condition does not apply to interbank transactions",
+          "No, because the margin applies only to forward deals"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 11 lets dealers set their own ready and forward rates for the public subject to a buy-sell margin of no more than fifty paisa per US dollar, and expressly says the condition does not apply to interbank transactions.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x6",
+        "question": "Which description best fits Chapter 2, paragraph 7 of the Foreign Exchange Manual?",
+        "options": [
+          "Dealers file an annual summary of all customer complaints with SBP",
+          "Dealers may keep minor evasion cases internal if the amount involved is small and nothing was lost",
+          "Dealers bring FX rules to customers' notice and report every evasion or attempt immediately",
+          "Dealers report evasion only after a court has convicted the customer"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 7 asks dealers to notify customers of the FX regulations, ensure compliance in day-to-day operations, and report to SBP every case of evasion or attempted evasion, direct or indirect, immediately as it comes to notice.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x7",
+        "question": "An exporter asks Hingol Bank's Sialkot branch whether certifying his Form E means he no longer needs the Ministry of Commerce's export permit for a restricted item. What is the correct answer?",
+        "options": [
+          "No: FX rules do not relieve exporters from export policy requirements such as permits",
+          "Yes: an Authorized Dealer's certificate replaces any export permit",
+          "Yes, provided the export proceeds will be realized through an Authorized Dealer within the prescribed period",
+          "No, but only because Form E is no longer used for any export"
+        ],
+        "answer": 0,
+        "explanation": "Chapter 12, paragraph 3 says exports are regulated by the Ministry of Commerce under the Imports and Exports (Control) Act 1950, and nothing in the FX regulations relieves exporters from the Export Policy Order, including licences, permits or certificates where required.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x8",
+        "question": "An importer asks Hingol Bank to approve his Electronic Import Form, but Hingol has never completed KYC/CDD on him as a customer. What does Chapter 13 expect?",
+        "options": [
+          "Hingol may rely entirely on Pakistan Customs, which registers importers",
+          "Hingol may approve the EIF first and do CDD within a year",
+          "Hingol performs KYC/CDD on the importer as its customer under the applicable rules",
+          "Hingol needs no CDD because imports are regulated by the Ministry of Commerce"
+        ],
+        "answer": 2,
+        "explanation": "Chapter 13 says registration of importers in WeBOC is done by Customs, but Authorized Dealers shall continue to perform KYC/CDD of importers who are their account holders, as applicable laws and regulations require.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x9",
+        "question": "What role does SBP's Statistics and Data Warehouse Department play when an Authorized Dealer designates a new authorized branch?",
+        "options": [
+          "It issues the bank's Authorized Dealer licence after checking its staff, systems and equipment",
+          "It sets the exchange rates the branch may quote",
+          "It receives the branch's details and allots a code for statistical reporting",
+          "It approves the branch manager's appointment"
+        ],
+        "answer": 2,
+        "explanation": "Paragraph 2(ii) asks head office to send the new branch's name and address to the Statistics and Data Warehouse Department, which allots a code for statistical reporting. Licences come from the Exchange Policy Department.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x10",
+        "question": "A customer at Hingol Bank's Turbat branch is told the branch cannot help with medical treatment FX and must travel to Karachi. Turbat is an authorized branch. Which duty has Hingol failed?",
+        "options": [
+          "Appointing a focal person for FX services at every single authorized branch, including Turbat",
+          "Displaying exchange rates in Urdu and English",
+          "Reporting the customer's request to SBP-BSC",
+          "Offering travel, education and medical FX efficiently at all authorized branches"
+        ],
+        "answer": 3,
+        "explanation": "Chapter 2, paragraph 4(i) asks dealers to offer FX services for travel, education and medical treatment efficiently at all authorized branches. The focal person is required at head office level, not at every branch.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x11",
+        "question": "Where must an Authorized Dealer appoint a focal person for FX services to individuals under Chapter 2, paragraph 4(iii)?",
+        "options": [
+          "At each authorized branch",
+          "At head office or principal office level",
+          "At SBP-BSC's nearest office",
+          "At the contact centre only"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4(iii) requires a focal person at head or principal office level for FX services and related matters. Branch and call-centre staff are covered by the training duty in paragraph 4(ii).",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x12",
+        "question": "An applicant hands his outward remittance application directly to an SBP-BSC office to save time. What will happen under Chapter 10?",
+        "options": [
+          "SBP-BSC will process it, since it is the approving authority",
+          "He will be asked to resubmit it through an Authorized Dealer",
+          "SBP-BSC will forward it to any dealer of its choice",
+          "It will be approved faster because it skipped the dealer"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 9 says all FX applications go to SBP or SBP-BSC through Authorized Dealers; applicants who present them directly are asked to resubmit through a dealer.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x13",
+        "question": "Hingol Bank receives an SBP approval signed by an officer whose specimen signature Hingol does not hold. What should Hingol do before remitting?",
+        "options": [
+          "Remit, since the embossing seal alone is sufficient",
+          "Ask the customer to confirm the officer's identity",
+          "Return the approval to the customer and ask him to obtain a fresh one signed by a known officer",
+          "Present the approval to the nearest SBP-BSC office for authentication"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 11 asks dealers to check that approvals are signed by authorized SBP officers and bear the embossing seal, and to present those signed by officers whose specimen signatures they lack to the nearest SBP-BSC office for authentication.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x14",
+        "question": "A traveller wants part of her approved travel exchange in notes and part in a foreign currency instrument. How should the dealer document this under Chapter 10?",
+        "options": [
+          "Prepare two separate T-1 forms, each showing the amount released in that form",
+          "Use one T-1 form and note the split on the receipt",
+          "Use Form M for the foreign currency notes and Form T-1 for the instrument, filed with the same return",
+          "Use a single Form I, since both are payments abroad"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 15 says that where a traveller draws exchange partly in instruments and partly in notes, the dealer prepares two separate T-1 forms and indicates on each the amounts released in instruments and in notes.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x15",
+        "question": "An outward remittance reported to SBP last month is cancelled in full because the beneficiary's bank returned it. How does the dealer report the cancellation?",
+        "options": [
+          "As an inward remittance, with a letter giving the original return date, applicant, amounts and reasons",
+          "By deleting the original entry from last month's return",
+          "As an outward remittance on a fresh Form M",
+          "Only in the bank's internal records, since no exchange left Pakistan"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 18 requires a cancelled outward remittance to be reported as an inward remittance, supported by a letter with the date of the original return, the applicant's name and address, the original and cancelled amounts and the reasons.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x16",
+        "question": "A student bought foreign exchange for tuition but the university refunded part of the fee to her. She plans to spend the refund on a holiday abroad. What does Chapter 10 require?",
+        "options": [
+          "She must not use it for another purpose and should surrender it to an Authorized Dealer",
+          "She may spend it on any lawful purpose abroad",
+          "She may keep it in cash for up to a year",
+          "She may transfer it to her sibling's education abroad, since that is also an education purpose"
+        ],
+        "answer": 0,
+        "explanation": "Paragraph 20 says exchange acquired for a purpose must not be used otherwise, and if it cannot be used in full or in part for that purpose it should be surrendered to an Authorized Dealer immediately.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x17",
+        "question": "When effecting a remittance against an SBP permit, what must the dealer do on Form M?",
+        "options": [
+          "Attach a copy of the customer's passport",
+          "State the exchange rate applied by SBP",
+          "Nothing on Form M, since a permit replaces Form M entirely for every remittance made under it",
+          "State the permit number and certify the remittance has been endorsed on the permit"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 13 requires dealers to report permit remittances on Form M, stating the permit number and certifying that the remittance has been endorsed on the permit, which itself is endorsed with amount and date under stamp and signature.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x18",
+        "question": "A home remittance for a beneficiary at another bank reaches Hingol at 10 am Monday. Hingol passes the credit at 10 am Wednesday, and the other bank credits at once. How many days of delay compensation are owed?",
+        "options": [
+          "One day, because the 24-hour window ended at 10 am Tuesday",
+          "None, because the other bank credited instantly",
+          "Two days, counting from receipt on Monday",
+          "Three days, because Monday is included in full"
+        ],
+        "answer": 0,
+        "explanation": "Chapter 10 allows the recipient bank at most 24 hours from receipt to pass the credit on. That window closed at 10 am Tuesday, so the credit on Wednesday morning was about one day late and the 65 paisa per thousand per day return applies.",
+        "difficulty": 5
+      },
+      {
+        "id": "pk-fx-x19",
+        "question": "A home remittance of PKR 250,000 is paid two days late. What compensation is due under Chapter 10?",
+        "options": [
+          "PKR 325",
+          "PKR 162.50",
+          "PKR 650",
+          "PKR 3,250"
+        ],
+        "answer": 0,
+        "explanation": "At 65 paisa per thousand rupees per day: 250 thousands x 0.65 x 2 days = PKR 325. PKR 162.50 is one day, and PKR 650 doubles the result.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x20",
+        "question": "Hingol Bank's remittance partner insists its standard contract need not go to SBP because 'SBP will be responsible if anything goes wrong'. What is correct?",
+        "options": [
+          "SBP approves the contract, after which SBP becomes responsible for its terms and any losses",
+          "Send the draft to SBP for input; Hingol stays responsible for protecting its own interest",
+          "The contract need not go to SBP if the partner is foreign",
+          "Only agreements with banks inside Pakistan go to SBP"
+        ],
+        "answer": 1,
+        "explanation": "Chapter 10, paragraph 3 requires drafts of all home remittance agreements with entities inside and outside Pakistan to go to the Exchange Policy Department before finalising. SBP may comment, but the ultimate responsibility remains with the bank.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x21",
+        "question": "A complaint says a cash-over-the-counter home remittance was 'not ready' when the beneficiary arrived the day after the funds reached the bank. What standard applies?",
+        "options": [
+          "Cash payouts may take up to 24 hours",
+          "Funds offered as cash over the counter must be available instantly",
+          "Cash payouts may take up to three working days",
+          "Cash payouts have no time standard in Chapter 10"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4(i)(d) says that where banks offer cash over the counter to beneficiaries, they must ensure the funds are available instantly.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x22",
+        "question": "What is a Proceeds Realization Certificate, according to the e-PRC guidelines?",
+        "options": [
+          "A licence allowing a customer to receive remittances",
+          "A tax certificate issued by FBR on foreign income",
+          "A SWIFT message from the correspondent bank confirming that a payment was sent to Pakistan",
+          "Documentary proof that funds received from abroad were realized in Pakistan"
+        ],
+        "answer": 3,
+        "explanation": "The guidelines describe the PRC as documentary proof of funds received from abroad and realized in Pakistan, for example workers' remittances, export proceeds, equity or loans.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x23",
+        "question": "In the different bank model, Bank B cannot issue an accurate e-PRC because Bank A sent only the amount and the beneficiary's account number. Which bank failed its duty?",
+        "options": [
+          "Bank B, which should have issued the e-PRC on whatever partial data it received, and asked later",
+          "Neither bank, because e-PRCs are optional in that model",
+          "Bank A, which must send complete transaction information in the standard MT102/MT103 format",
+          "The overseas correspondent, which must issue the e-PRC"
+        ],
+        "answer": 2,
+        "explanation": "Under the different bank model the recipient or intermediary bank must send the amount with complete information as per the MT102 and MT103 formats; the beneficiary's bank issues the e-PRC based on that complete information.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x24",
+        "question": "A Hingol branch still issues every e-PRC in duplicate 'as Chapter 12 requires'. What is the current position?",
+        "options": [
+          "Duplicates are still required for export proceeds only, under Chapter 12's own paragraph",
+          "Duplicates are required for amounts above USD 1,000",
+          "The duplicate e-PRC requirement, including under Chapter 12, has been withdrawn",
+          "Duplicates are now required in triplicate for exports"
+        ],
+        "answer": 2,
+        "explanation": "The guidelines state that the requirement to issue e-PRCs in duplicate under SBP instructions, including Chapter 12, paragraph 31, stands withdrawn, to realign with the automated issuance process.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x25",
+        "question": "Hingol Bank changes the focal person who handles e-PRC verification queries. What do the guidelines expect?",
+        "options": [
+          "Inform SBP's Statistics and Data Warehouse Department only",
+          "Publish the change in a national newspaper",
+          "No action, since verifying agencies contact branches directly",
+          "Inform the relevant verifying agencies of the change"
+        ],
+        "answer": 3,
+        "explanation": "The guidelines ask dealers to inform relevant verifying agencies when their focal person changes or when their online verification user manual is modified, and to share focal person contact details.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x26",
+        "question": "Which statement about Chapter 10's treatment of inward remittances is correct?",
+        "options": [
+          "Inward remittances above a set amount need SBP's prior approval before the dealer can buy them",
+          "There is no restriction on receiving remittances from abroad in foreign currency",
+          "Only remittances from Gulf countries are freely allowed",
+          "Inward remittances must be converted to rupees within a week"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2 says there is no restriction on receipt of remittances from abroad, in foreign currency or by debit to non-resident rupee accounts of banks' overseas branches or correspondents, and dealers may freely purchase them.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x27",
+        "question": "In every branchless banking model, where must the customer's money actually sit?",
+        "options": [
+          "On the telecom partner's server as stored value, which the bank settles at the end of each day",
+          "In the agent's float account until withdrawn",
+          "In the customer's account at the bank; balances on the phone only mirror it",
+          "On the customer's SIM card as electronic money"
+        ],
+        "answer": 2,
+        "explanation": "Section 3.1(e) requires the customer relationship to reside with a bank, every transaction to hit the actual account, and no monetary value to be stored on the phone or provider's server. Banks must directly own the branchless banking platform.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x28",
+        "question": "A customer's son asks an agent to open a Level 1 account in his father's name and to operate it for him because the father is unwell. What do the Regulations allow?",
+        "options": [
+          "Both, if the son produces his own CNIC",
+          "Opening only, provided the father later signs",
+          "Neither: accounts cannot be opened for, or operated on behalf of, another individual",
+          "Operation only, provided the father opened the account himself and gave the son a written mandate"
+        ],
+        "answer": 2,
+        "explanation": "Section 4.2(b)(iii) bars banks from opening branchless banking accounts on behalf of other individuals and from allowing anyone to operate an account on the holder's behalf.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x29",
+        "question": "A small trading company asks to open a branchless banking account for its petty cash. What is the rule?",
+        "options": [
+          "Allowed as Level 0, with a lower limit",
+          "Allowed as a Level 1 account after biometric verification of the company's managing director",
+          "Allowed if the company is not high risk",
+          "Branchless banking accounts are for individuals only, not legal persons or arrangements"
+        ],
+        "answer": 3,
+        "explanation": "Section 4.2(b)(i) says branchless banking accounts are for individuals only and shall not be opened for legal persons or arrangements, or for high-risk customers and geographies the bank identifies.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x30",
+        "question": "A Level 0 account holder has received Rs. 45,000 this month and wants to receive Rs. 10,000 more. What does section 4.3 indicate?",
+        "options": [
+          "It exceeds the Rs. 50,000 monthly limit, which applies separately to receipts",
+          "It is fine because limits apply only to payments",
+          "It is fine because the yearly limit is Rs. 200,000",
+          "It exceeds the Rs. 25,000 monthly limit for Level 0"
+        ],
+        "answer": 0,
+        "explanation": "Level 0 accounts have limits of Rs. 25,000 per day, Rs. 50,000 per month and Rs. 200,000 per year, treated separately for payments and receipts. Receipts of Rs. 55,000 in a month would exceed the monthly limit.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x31",
+        "question": "When must a bank not apply simplified due diligence to branchless banking customers under section 4.2?",
+        "options": [
+          "When the customer opens the account remotely",
+          "When the customer is a first-time account holder who has never had a bank account before",
+          "When ML/TF is suspected or higher-risk factors or jurisdictions are identified",
+          "When the account is opened at an agent location"
+        ],
+        "answer": 2,
+        "explanation": "Section 4.2(a) rules out simplified due diligence where there is a suspicion of ML/TF, where high-risk factors are identified by SBP, the bank or international standards, and for customers from jurisdictions with inadequate AML/CFT measures.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x32",
+        "question": "A customer cannot complete CDD at the time of a branchless banking transaction, and the bank believes pursuing CDD would tip off a suspected launderer. What does section 4.2 direct?",
+        "options": [
+          "Complete the transaction and finish CDD next month",
+          "Stop pursuing CDD and file a suspicious transaction report instead",
+          "Ask the agent to complete CDD at the counter",
+          "Close the account quietly with no report"
+        ],
+        "answer": 1,
+        "explanation": "Section 4.2(b)(xiii) says that where the bank suspects ML/TF and reasonably believes CDD would tip off the customer, it shall not pursue CDD and shall file an STR instead.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x33",
+        "question": "An existing wallet holder registers for a Home Remittance Account through the mobile app. When may she make her first withdrawal from it?",
+        "options": [
+          "After a one-time in-person visit to a nearby agent completes registration",
+          "Immediately, because the app verified her PIN",
+          "After 30 days, once the first remittance clears",
+          "Only at a bank branch, never at an agent"
+        ],
+        "answer": 0,
+        "explanation": "Annexure A paragraph 16 requires remote registrants to visit a nearby agent once for face-to-face contact and cash withdrawal, and allows no debit before registration is complete.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x34",
+        "question": "Who bears the cost of NADRA biometric verification when an HRA is opened?",
+        "options": [
+          "The bank; the cost should not be passed on to the customer",
+          "The customer, deducted from the first remittance",
+          "The agent, from the commission earned",
+          "The overseas remitter, through a fee"
+        ],
+        "answer": 0,
+        "explanation": "Annexure A paragraph 7 requires NADRA biometric verification at opening to activate the HRA instantly and says its cost should not be passed on to the customer, to encourage remittance inflows.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x35",
+        "question": "Hingol Bank's agent contracts say nothing about who answers to customers for agents' mistakes. What does section 9.1 require customer agreements to state?",
+        "options": [
+          "The agent is solely responsible for its own errors",
+          "Responsibility is shared equally by the bank and the agent under the standard agency agreement",
+          "The bank is responsible to the customer for the agent's acts of omission and commission",
+          "The telecom partner is responsible for agent errors"
+        ],
+        "answer": 2,
+        "explanation": "Section 9.1(b) requires all customer agreements to state clearly that the bank is responsible to the customer for the agent's acts of omission and commission.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x36",
+        "question": "Hingol Bank sends a cross-border wire for a customer. Which record must it keep under Regulation 11(2)?",
+        "options": [
+          "Only the amount and the beneficiary's account number, since the SWIFT system keeps everything else",
+          "Details allowing reconstruction, such as date, currency, amount, value date, purpose and beneficiary",
+          "Only the SWIFT confirmation from the correspondent",
+          "Nothing beyond the customer's signed instruction"
+        ],
+        "answer": 1,
+        "explanation": "As ordering institution, the bank identifies and verifies the originator and records adequate details to reconstruct the wire: date, currency type and amount, value date, purpose, beneficiary and beneficiary institution details and, where applicable, the parties' relationship.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x37",
+        "question": "A respondent bank abroad repeatedly sends wires to Hingol without originator information despite requests. What does Regulation 11(7) direct?",
+        "options": [
+          "Limit or prohibit relationships or transactions with that institution",
+          "Continue as normal, since the duty lies only with the sender",
+          "Ask each beneficiary to obtain the details from the sender",
+          "Report the respondent to the Banking Mohtasib"
+        ],
+        "answer": 0,
+        "explanation": "Regulation 11(7) requires SBP-regulated entities to limit or prohibit relationships or transactions with institutions that do not comply with the standard requirements for wire transfers.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x38",
+        "question": "A Gulf money transfer company batches 300 individual remittances from one originator into one file to Hingol's branchless banking accounts. What must the batch contain?",
+        "options": [
+          "Only a total amount and a count of beneficiaries",
+          "Only the beneficiaries' mobile numbers",
+          "Originator details only for amounts above USD 1,000, and a single total for the rest of the batch",
+          "Accurate originator information and full beneficiary information that is traceable"
+        ],
+        "answer": 3,
+        "explanation": "Section 5(f) of the Branchless Banking Regulations, mirroring Regulation 11(4), requires batch files from a single originator to contain the required and accurate originator information and full, traceable beneficiary information.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x39",
+        "question": "Chapter 2, paragraph 3(ii) asks dealers to identify training focus areas. When and on what basis?",
+        "options": [
+          "After each SBP inspection, based only on the findings in the latest inspection report",
+          "Every three years, based on staff preferences",
+          "At year end, based on the training budget left",
+          "Before the start of each calendar year, keeping in view the risks of different areas"
+        ],
+        "answer": 3,
+        "explanation": "Paragraph 3(ii) says focus areas such as international trade, foreign currency accounts, remittances and inward or outward investments may be identified before the start of each calendar year, keeping in view the risks in each area.",
+        "difficulty": 4
+      },
+      {
+        "id": "pk-fx-x40",
+        "question": "Hingol Bank's FX staff complete courses, but nobody checks what they learned. Which element of Chapter 2, paragraph 3 is missing?",
+        "options": [
+          "A board-approved training and development policy",
+          "A suitable mechanism to assess employees' performance after training",
+          "Coordination with IBP, NIBAF and universities",
+          "Function-specific FX training counted in career growth"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3(vi) encourages in-house trainers and asks dealers to chalk out a suitable mechanism to assess employee performance after training. The other elements may exist without any assessment of learning.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x41",
+        "question": "Which institutions does Chapter 2, paragraph 3(vii) name for coordination on designing FX courses?",
+        "options": [
+          "The FMU, NACTA and the Ministry of Interior",
+          "IBP, NIBAF and local business schools or universities, directly or through PBA",
+          "SECP, FBR and the Banking Mohtasib",
+          "Only SBP's own training academy"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3(vii) asks dealers to enhance coordination with the Institute of Bankers Pakistan, the National Institute of Banking and Finance and local business schools or universities, directly or through the Pakistan Banks' Association.",
+        "difficulty": 3
+      },
+      {
+        "id": "pk-fx-x42",
+        "question": "An SBP inspector reviewing Hingol's branchless banking asks how ML/TF risks are assessed each year. What do the Regulations require?",
+        "options": [
+          "A one-time assessment at the time SBP authorized the service",
+          "A yearly risk matrix of threats, vulnerabilities, controls and residual risk, informed by the national risk assessment",
+          "An assessment only when the FMU raises a concern",
+          "An assessment carried out by the agents themselves"
+        ],
+        "answer": 1,
+        "explanation": "Section 4.1(b) requires banks to build a risk matrix covering threats, vulnerabilities, control effectiveness and residual risk, conducted yearly in light of the national ML/TF risk assessment and the overall risk profile of branchless banking.",
+        "difficulty": 5
+      },
+      {
+        "id": "pk-fx-x43",
+        "question": "Hingol's training plan for the year covers branch FX staff but leaves out branchless banking agents and contact-centre staff. Which two provisions does this most clearly fall short of?",
+        "options": [
+          "AML/CFT/CPF Regulation 11 and Chapter 10, paragraph 6",
+          "Chapter 12, paragraph 3 and Chapter 13, paragraph 2",
+          "BB Regulations section 9(b) on agent capacity building and FX Manual Chapter 2, para 4(ii)",
+          "BB Regulations section 4.4 on domestic transfers and FX Manual Chapter 2, paragraph 11 on rates"
+        ],
+        "answer": 2,
+        "explanation": "Section 9(b) asks banks to build agents' capacity through training, especially on ML/TF risks, and Chapter 2, paragraph 4(ii) expressly includes contact and call-centre staff among those to be trained in FX business.",
+        "difficulty": 5
+      }
+    ]
+  }
+}
