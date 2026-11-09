@@ -544,9 +544,14 @@ test("regulatory library: admin reviews a country map, publishes a draft quest, 
   await expect(anon).toHaveURL(/\/certifications\/pk-sbp-aml-cft-cpf$/);
   await expect(anon.locator(".reg-basis")).toContainText("Mandatory – Explicit");
   await expect(anon.locator(".reg-basis a").first()).toHaveAttribute("href", /^https:\/\//);
-  // the certifications page points to the library
+  // the certifications page features the library with country flags and lists the quest as a certification
   await page.goto("/certifications");
-  await expect(page.locator(".reg-banner")).toBeVisible();
+  await expect(page.locator(".reg-feature")).toBeVisible();
+  await expect(page.locator(".reg-flag", { hasText: "Pakistan" }).locator(".flag svg")).toBeVisible();
+  await page.getByRole("tab", { name: "Banking Regulation" }).click();
+  await expect(page.locator(".cert-card", { hasText: "AML/CFT/CPF Regulatory Compliance" })).toBeVisible();
+  await page.locator(".reg-flag", { hasText: "Pakistan" }).click();
+  await expect(page).toHaveURL(/\/regulatory#pk$/);
 });
 
 test("after the free stage a learner can unlock the whole quest or pay stage by stage; paid stages are deducted", async ({ browser }) => {

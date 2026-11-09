@@ -1,3 +1,5 @@
+import { Flag } from "@/components/Flag";
+import { flagSvg } from "@/lib/regulatory/flags";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -57,7 +59,10 @@ export default async function RegulatoryLibraryPage() {
               <div className="reg-countries">
                 {r.countries.map(({ t, j, quests }) => (
                   <Reveal key={t.code} className="glass reg-country">
-                    <h3>{t.name}</h3>
+                    <h3 id={t.code} className="reg-country__name">
+                      <Flag svg={flagSvg(t.code)} label={`Flag of ${t.name}`} />
+                      {t.name}
+                    </h3>
                     <p className="muted reg-country__regs">{j ? j.regulators.map((x) => x.abbr ?? x.name).join(" · ") : t.regulators}</p>
                     <ul>
                       {quests.map((q) => (

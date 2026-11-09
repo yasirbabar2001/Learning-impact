@@ -4,11 +4,14 @@ import { CertCatalog } from "@/components/portal/CertCatalog";
 import { Reveal } from "@/components/Reveal";
 import Link from "next/link";
 import { cookies } from "next/headers";
+import { Flag } from "@/components/Flag";
 import { catalog, regulatoryCatalog } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
 import { currentUser } from "@/lib/portal/auth";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals";
+import { flagSvg } from "@/lib/regulatory/flags";
+import { TARGETS } from "@/lib/regulatory/targets";
 
 export const metadata: Metadata = {
   title: "Professional Certifications",
@@ -42,12 +45,33 @@ export default async function CertificationsPage() {
     stages: c.course?.sessions.length ?? null,
     questName: c.available ? (c.course?.quest.name ?? null) : null,
   }));
-  const regulatory = regulatoryCatalog().filter((q) => q.available).length;
+  const live = regulatoryCatalog().filter((q) => q.available);
+  const regulatory = live.length;
+  const countries = TARGETS.map((t) => ({ ...t, flag: flagSvg(t.code), quests: live.filter((q) => q.jurisdiction === t.code).length })).filter((t) => t.quests > 0);
+  const name = (code: string | null) => TARGETS.find((t) => t.code === code)?.name ?? "";
+  items.push(
+    ...live.map((q) => ({
+      slug: q.slug,
+      title: q.title.replace(/^[^|]+\|\s*/, ""),
+      tagline: q.course?.tagline ?? q.tagline,
+      category: "Banking Regulation",
+      color: q.color,
+      available: true,
+      price: formatMoney(priceIn(q, currency), currency),
+      level: q.course?.level ?? null,
+      hours: q.course?.hours ?? null,
+      stages: q.course?.sessions.length ?? null,
+      questName: q.course?.quest.name ?? null,
+      country: name(q.jurisdiction),
+      flag: q.jurisdiction ? flagSvg(q.jurisdiction) : null,
+    })),
+  );
   return (
     <>
       <PageHero eyebrow="Professional certifications" title="Certifications you play" highlight="like a quest.">
         <p>
-          Fourteen professional certifications for the corporate and banking sector. Learn in short stages, earn XP and badges, pass every stage test and
+          Fourteen professional certifications for the corporate and banking sector
+          {regulatory > 0 ? `, plus ${regulatory} country-specific banking regulatory certifications` : ""}. Learn in short stages, earn XP and badges, pass every stage test and
           defeat a tough final exam to earn a verified certificate.
         </p>
       </PageHero>
@@ -60,6 +84,48 @@ export default async function CertificationsPage() {
             </Link>{" "}
             and get a {REFERRAL_XP.welcome} XP welcome bonus.
           </p>
+        </section>
+      )}
+      {regulatory > 0 && (
+        <section className="container section section--tight">
+          <Reveal className="reg-feature glass">
+            <div className="reg-feature__text">
+              <span className="eyebrow">🌍 Global Banking Regulatory Training</span>
+              <h2 className="h2">Does your regulator require it? We have the training.</h2>
+              <p className="muted">
+                A collection of compliance certifications built country by country on each banking regulator&apos;s own rules: AML/CFT, customer
+                protection, cyber security, governance and more. Every quest names the official sources it follows, and stage 1 is always free.
+              </p>
+              <p className="reg-feature__stats">
+                <span>
+                  <strong>{regulatory}</strong> certifications
+                </span>
+                <span>
+                  <strong>{countries.length}</strong> countries
+                </span>
+                <span>
+                  <strong>Stage 1</strong> free
+                </span>
+              </p>
+              <Link href="/regulatory" className="btn btn--primary">
+                <span className="btn__label">Find your country&apos;s training</span>
+                <span className="btn__arrow">→</span>
+              </Link>
+            </div>
+            <ul className="reg-feature__flags" aria-label="Countries covered">
+              {countries.map((c) => (
+                <li key={c.code}>
+                  <Link href={`/regulatory#${c.code}`} className="reg-flag">
+                    <Flag svg={c.flag} label={`Flag of ${c.name}`} />
+                    <span className="reg-flag__name">{c.name}</span>
+                    <span className="reg-flag__count">
+                      {c.quests} quest{c.quests === 1 ? "" : "s"}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         </section>
       )}
       <section className="container section section--tight">
@@ -75,14 +141,6 @@ export default async function CertificationsPage() {
           ))}
         </ol>
       </section>
-      {regulatory > 0 && (
-        <section className="container section--tight">
-          <Link href="/regulatory" className="auth__invite reg-banner">
-            🌍 <strong>Global Banking Regulatory Training:</strong> {regulatory} country-specific compliance quest{regulatory === 1 ? "" : "s"} for banking
-            staff. Browse by country →
-          </Link>
-        </section>
-      )}
       <section className="container section section--tight">
         <Reveal>
           <CertCatalog items={items} />

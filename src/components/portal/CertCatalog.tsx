@@ -16,6 +16,9 @@ export type CatalogCard = {
   hours: number | null;
   stages: number | null;
   questName: string | null;
+  /** Regulatory certifications: the country and its flag (SVG markup from a bundled package). */
+  country?: string;
+  flag?: string | null;
 };
 
 export function CertCatalog({ items }: { items: CatalogCard[] }) {
@@ -48,7 +51,10 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
               <Link href={`/certifications/${c.slug}`} className={`cert-card spot ${c.available ? "" : "is-soon"}`} style={{ ["--c" as string]: c.color }}>
                 <span className="cert-card__glow" aria-hidden="true" />
                 <span className="cert-card__top">
-                  <span className="tag">{c.category}</span>
+                  <span className="tag">
+                    {c.flag && <span className="flag flag--sm" aria-hidden="true" dangerouslySetInnerHTML={{ __html: c.flag }} />}
+                    {c.country || c.category}
+                  </span>
                   {c.available ? <span className="tag free-tag">🎁 Start for free</span> : <span className="tag">Coming soon</span>}
                 </span>
                 <h3>{c.title}</h3>
