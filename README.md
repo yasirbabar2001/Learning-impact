@@ -28,6 +28,11 @@ sent. All motion respects the visitor's "reduce motion" setting.
   paid for single stages) and the next stage only (full price ÷ paid stages; e.g. 5 stages at PKR 8,000 → PKR 2,000
   per stage). Stage orders show "Stage N" in Admin → Payments; approving one unlocks that stage, and once every
   paid stage is bought the learner is fully enrolled (final exam and certificate included). Team seats are unchanged.
+- **Two currencies:** learners in Pakistan see PKR; everyone else sees US dollars. A signed-in learner is placed by
+  their mobile number (+92 / 03… → PKR); a visitor by their browser's time zone (kept in the `li_cur` cookie). Each
+  quest can have its own dollar price (Admin → Certifications or Regulatory library); if left empty, the PKR price is
+  converted at the exchange rate in Admin → Certifications → Payment settings (default 280 PKR per $). Dollar orders
+  show the international payment instructions you enter there, and the dashboard reports PKR and USD revenue apart.
 - **Global Banking Regulatory Training** (Admin → Regulatory library, public page `/regulatory`): country-by-country
   maps of the 202 master programs (`content/regulatory/`), each classified Mandatory – Explicit, Mandatory –
   Role-Based, Regulatory Competence Requirement or Recommended, with frequency, audience and official references
