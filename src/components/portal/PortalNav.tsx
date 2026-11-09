@@ -8,7 +8,7 @@ import { logout } from "@/lib/actions/account";
 import { levelFor } from "@/lib/portal/levels";
 import { Logo } from "../Logo";
 
-type NavUser = { name: string; xp: number; streak: number; level: number; levelName: string; progress: number; manager: boolean; admin: boolean };
+type NavUser = { name: string; xp: number; streak: number; level: number; levelName: string; progress: number; manager: boolean; admin: boolean; team?: boolean };
 
 export function PortalNav({ user }: { user: NavUser | null }) {
   const path = usePathname();
@@ -98,11 +98,15 @@ export function PortalNav({ user }: { user: NavUser | null }) {
                   <p className="pmenu__lvl muted">
                     Level {user.level} · {user.levelName}
                   </p>
-                  {user.admin && (
+                  {user.admin ? (
                     <Link href="/admin" className="role-switch" onClick={() => setMenu(false)}>
                       🛡️ Switch to Admin
                     </Link>
-                  )}
+                  ) : user.team ? (
+                    <Link href="/team" className="role-switch" onClick={() => setMenu(false)}>
+                      📊 Team dashboard
+                    </Link>
+                  ) : null}
                   <nav className="pmenu__links">
                     {links.map((l) => (
                       <Link key={l.href} href={l.href} onClick={() => setMenu(false)} className="pmenu__mobile">

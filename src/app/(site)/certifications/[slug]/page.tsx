@@ -7,7 +7,7 @@ import { SplitWords } from "@/components/Text";
 import { catalogEntry, courseMinutes } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
-import { currentUser, hasAdminAccess } from "@/lib/portal/auth";
+import { currentUser, hasAdminAccess, isTeamMember } from "@/lib/portal/auth";
 import { enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 
 export const dynamic = "force-dynamic";
@@ -27,6 +27,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   const currency = await viewerCurrency(user);
   const price = priceIn(e, currency);
   const enrolled = user ? enrollmentFor(user.id, slug) : null;
+  const team = isTeamMember(user);
   const admin = hasAdminAccess(user);
   const firstStage = e.course ? `/learn/${slug}/${e.course.sessions[0].id}` : `/learn/${slug}`;
   const started = user && e.course && !enrolled ? progressMap(user.id, slug).get(e.course.sessions[0].id) : undefined;
@@ -113,9 +114,9 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
               </>
             )}
           </p>
-          {enrolled ? (
+          {enrolled || team ? (
             <Link href={`/learn/${slug}`} className="btn btn--primary cert__cta">
-              <span className="btn__label">Continue my quest</span>
+              <span className="btn__label">{enrolled ? "Continue my quest" : "⭐ Start: free for the Learning Impact Team"}</span>
               <span className="btn__arrow">→</span>
             </Link>
           ) : (

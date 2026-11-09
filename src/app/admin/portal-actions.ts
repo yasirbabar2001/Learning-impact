@@ -124,6 +124,15 @@ export async function setAdminAction(fd: FormData) {
   revalidatePath("/admin/learners");
 }
 
+/** Marks an account as Learning Impact Team (free certifications, read-only dashboard) or removes the mark. */
+export async function setTeamAction(fd: FormData) {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  run("UPDATE users SET is_team = ? WHERE id = ? AND status = 'active'", fd.get("team") === "1" ? 1 : 0, id);
+  revalidatePath("/admin/learners");
+  revalidatePath("/admin/users");
+}
+
 export async function revokeCertificateAction(fd: FormData) {
   await requireAdmin();
   run("UPDATE certificates SET revoked_at = ? WHERE id = ? AND revoked_at IS NULL", now(), String(fd.get("id")));

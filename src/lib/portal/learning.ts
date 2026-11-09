@@ -2,7 +2,7 @@ import "server-only";
 import { all, now, one, run, tx } from "../db";
 import { catalogEntry } from "../courses/catalog";
 import type { Course, Session } from "../courses/schema";
-import { hasAdminAccess, type User } from "./auth";
+import { hasAdminAccess, isTeamMember, newId, type User } from "./auth";
 import { awardXp, grantBadge, XP } from "./game";
 
 export const QUIZ_PASS = 7; // out of 10
@@ -51,7 +51,20 @@ export function accessFor(user: User, slug: string): Access | null {
   const enrollment = enrollmentFor(user.id, slug);
   if (enrollment) return { mode: "full", enrollment };
   if (hasAdminAccess(user)) return { mode: "preview", enrollment: null };
-  if (catalogEntry(slug)?.available) return { mode: "trial", enrollment: null };
+  const available = Boolean(catalogEntry(slug)?.available);
+  if (available && isTeamMember(user)) {
+    // Learning Impact Team members are enrolled free of charge the first time they open a published certification.
+    run(
+      "INSERT OR IGNORE INTO enrollments (id, user_id, course_slug, source, order_id, company_id, created_at) VALUES (?, ?, ?, 'admin', NULL, NULL, ?)",
+      newId(),
+      user.id,
+      slug,
+      now(),
+    );
+    const granted = enrollmentFor(user.id, slug);
+    if (granted) return { mode: "full", enrollment: granted };
+  }
+  if (available) return { mode: "trial", enrollment: null };
   return null;
 }
 

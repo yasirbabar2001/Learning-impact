@@ -19,6 +19,7 @@ export type UserRow = {
   status: string;
   email_verified_at: string | null;
   is_admin: number;
+  is_team: number;
   xp: number;
   streak: number;
   created_at: string;
@@ -52,7 +53,7 @@ export function adminUsers(f: UserFilters = {}): (UserRow & { level: string; adm
   } else if (f.status === "unverified") where.push("u.email_verified_at IS NULL");
   const rows = all<UserRow>(
     `SELECT u.id, u.name, u.email, u.phone, u.gender, u.account_type, u.organisation, c.name AS company, c.status AS company_status,
-            u.designation, u.status, u.email_verified_at, u.is_admin, u.xp, u.streak, u.created_at, u.last_login_at,
+            u.designation, u.status, u.email_verified_at, u.is_admin, u.is_team, u.xp, u.streak, u.created_at, u.last_login_at,
             (SELECT COUNT(*) FROM enrollments e WHERE e.user_id = u.id) AS enrolments,
             (SELECT COUNT(DISTINCT p.course_slug) FROM session_progress p WHERE p.user_id = u.id
                AND NOT EXISTS (SELECT 1 FROM enrollments e WHERE e.user_id = u.id AND e.course_slug = p.course_slug)) AS free_stage,

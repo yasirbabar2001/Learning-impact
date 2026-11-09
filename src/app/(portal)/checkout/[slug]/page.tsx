@@ -4,7 +4,7 @@ import { CheckoutForm, UnlockChoice } from "@/components/portal/CommerceForms";
 import { catalogEntry } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
-import { companyOf, requireUser } from "@/lib/portal/auth";
+import { companyOf, isTeamMember, requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
 import { enrollmentFor } from "@/lib/portal/learning";
 
@@ -15,7 +15,7 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
   const e = catalogEntry(slug);
   if (!e || !e.course) notFound();
   if (!e.available) redirect(`/certifications/${slug}`);
-  if (!isTeam && enrollmentFor(user.id, slug)) redirect(`/learn/${slug}`);
+  if (!isTeam && (enrollmentFor(user.id, slug) || isTeamMember(user))) redirect(`/learn/${slug}`); // team members learn for free
   const company = user.account_type === "company" && user.company_role === "manager" ? companyOf(user) : null;
   if (isTeam && !company) redirect("/company/setup");
   if (isTeam && company?.status !== "approved") redirect("/company/pending");

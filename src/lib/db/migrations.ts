@@ -247,4 +247,7 @@ export const MIGRATIONS: string[] = [
   ALTER TABLE course_settings ADD COLUMN price_usd INTEGER NOT NULL DEFAULT 0;
   ALTER TABLE orders ADD COLUMN currency TEXT NOT NULL DEFAULT 'PKR';
   `,
+  /* 9: Learning Impact Team members (free access to every certification, read-only dashboard) */ `
+  ALTER TABLE users ADD COLUMN is_team INTEGER NOT NULL DEFAULT 0;
+  `,
 ];

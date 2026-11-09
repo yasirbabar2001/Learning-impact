@@ -28,6 +28,7 @@ export type User = {
   show_on_leaderboard: number;
   reminders: number;
   is_admin: number;
+  is_team: number;
   gender: string;
   created_at: string;
 };
@@ -139,6 +140,14 @@ export const isOwnerEmail = (email: string) => OWNER_EMAILS.includes(email.trim(
 export function hasAdminAccess(user: Pick<User, "email" | "is_admin" | "status" | "email_verified_at"> | null | undefined): boolean {
   return Boolean(user && user.status === "active" && user.email_verified_at && (user.is_admin || isOwnerEmail(user.email)));
 }
+
+/** Learning Impact Team: every published certification for free and a read-only view of the admin dashboard. */
+export function isTeamMember(user: Pick<User, "is_team" | "status" | "email_verified_at"> | null | undefined): boolean {
+  return Boolean(user && user.status === "active" && user.email_verified_at && user.is_team);
+}
+
+/** Who may open the read-only team dashboard: team members and administrators. */
+export const canSeeTeamDashboard = (user: User | null | undefined) => isTeamMember(user) || hasAdminAccess(user);
 
 export function homeFor(user: Pick<User, "account_type">, next?: string) {
   return safeNext(next, user.account_type === "company" ? "/company" : "/learn");

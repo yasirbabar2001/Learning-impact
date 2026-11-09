@@ -10,7 +10,7 @@ import { Logo } from "./Logo";
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
 
 /** `account` is the signed-in user (null when signed out): the header shows Log in / Create account, or the dashboard. */
-export function Nav({ account = null }: { account?: { home: string; admin: boolean } | null }) {
+export function Nav({ account = null }: { account?: { home: string; admin: boolean; team?: boolean } | null }) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -59,11 +59,15 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
 
           {account ? (
             <>
-              {account.admin && (
+              {account.admin ? (
                 <Link href="/admin" className="nav__login nav__login--admin">
                   🛡️ Admin
                 </Link>
-              )}
+              ) : account.team ? (
+                <Link href="/team" className="nav__login nav__login--admin">
+                  📊 Team dashboard
+                </Link>
+              ) : null}
               <Link href={account.home} className="nav__cta">
                 <span>My dashboard</span>
               </Link>
@@ -106,7 +110,7 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
                 ...NAV_LINKS,
                 ...MOBILE_EXTRA_LINKS,
                 ...(account
-                  ? [{ href: account.home, label: "My dashboard" }, ...(account.admin ? [{ href: "/admin", label: "Admin panel" }] : [])]
+                  ? [{ href: account.home, label: "My dashboard" }, ...(account.admin ? [{ href: "/admin", label: "Admin panel" }] : account.team ? [{ href: "/team", label: "Team dashboard" }] : [])]
                   : [
                       { href: "/login", label: "Log in" },
                       { href: "/register", label: "Create account" },

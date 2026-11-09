@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PortalNav } from "@/components/portal/PortalNav";
-import { currentUser, hasAdminAccess } from "@/lib/portal/auth";
+import { currentUser, hasAdminAccess, isTeamMember } from "@/lib/portal/auth";
 import { levelFor } from "@/lib/portal/game";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
@@ -24,6 +24,7 @@ export default async function PortalLayout({ children }: { children: React.React
                 progress: level.progress,
                 manager: user.company_role === "manager",
                 admin: hasAdminAccess(user),
+                team: isTeamMember(user),
               }
             : null
         }

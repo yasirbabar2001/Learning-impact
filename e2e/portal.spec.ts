@@ -647,3 +647,40 @@ test("learners outside Pakistan see prices in US dollars and get international p
   await expect(page.locator("label.choice", { hasText: "International bank transfer" })).toBeVisible();
   await expect(page.locator("label.choice", { hasText: "JazzCash" })).toHaveCount(0);
 });
+
+test("an admin marks a learner as Learning Impact Team: free certifications and a read-only dashboard", async ({ browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="hr-operations"])');
+  await form.locator("input[name=price]").fill("8000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.3.3" } })).newPage();
+  const email = `team${Date.now()}@example.com`;
+  await signUpIndividual(page, "Team Member", email);
+  // Not on the team yet: no dashboard, and checkout asks for payment.
+  await page.goto("/team");
+  await expect(page).toHaveURL(/\/learn$/);
+
+  await admin.goto(`/admin/learners?q=${encodeURIComponent(email)}`);
+  await admin.getByRole("button", { name: /Mark as Learning Impact Team/ }).click();
+  await expect(admin.locator(".tag--team")).toBeVisible();
+
+  // Free access: the sales page offers a free start, and checkout sends them straight into the quest, fully enrolled.
+  await page.goto("/certifications/hr-operations");
+  await expect(page.getByRole("link", { name: /free for the Learning Impact Team/ })).toBeVisible();
+  await page.goto("/checkout/hr-operations");
+  await expect(page).toHaveURL(/\/learn\/hr-operations$/);
+  await expect(page.locator(".unlock-banner")).toHaveCount(0);
+
+  // Read-only dashboard: numbers but no links into the admin panel, and the admin panel itself stays closed.
+  await page.goto("/team");
+  await expect(page.getByRole("heading", { name: "Learning Impact dashboard" })).toBeVisible();
+  await expect(page.locator(".tile").first()).toBeVisible();
+  await expect(page.locator('a[href^="/admin"]')).toHaveCount(0);
+  await page.goto("/admin/certifications");
+  await expect(page).not.toHaveURL(/\/admin/);
+  const res = await page.request.get("/admin/users-export");
+  expect(res.status()).toBe(401);
+});

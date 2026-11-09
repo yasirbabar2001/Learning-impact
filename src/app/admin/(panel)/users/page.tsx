@@ -100,6 +100,7 @@ export default async function AdminUsers({ searchParams }: { searchParams: Promi
                 <td>
                   <strong>{u.name}</strong>
                   {u.admin && <span className="tag tag--gold">Admin</span>}
+                  {u.is_team ? <span className="tag tag--team">⭐ Team</span> : null}
                 </td>
                 <td>{u.email}</td>
                 <td className="nowrap">{u.phone || "—"}</td>
