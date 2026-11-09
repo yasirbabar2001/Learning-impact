@@ -28,6 +28,8 @@ export type CatalogEntry = Topic & {
   jurisdiction: string | null;
   course: Course | null;
   pricePkr: number;
+  /** Dollar price set by the admin (0 = convert from the PKR price). */
+  priceUsd: number;
   published: boolean;
   /** Available = content ready, published and priced. */
   available: boolean;
@@ -63,16 +65,17 @@ export function getCourse(slug: string): Course | null {
   return courses().get(slug) ?? null;
 }
 
-type SettingsRow = { slug: string; price_pkr: number; published: number };
+type SettingsRow = { slug: string; price_pkr: number; price_usd: number; published: number };
 
-const settingsMap = () => new Map(all<SettingsRow>("SELECT slug, price_pkr, published FROM course_settings").map((r) => [r.slug, r]));
+const settingsMap = () => new Map(all<SettingsRow>("SELECT slug, price_pkr, price_usd, published FROM course_settings").map((r) => [r.slug, r]));
 
 function entry(t: Topic, jurisdiction: string | null, settings: Map<string, SettingsRow>): CatalogEntry {
   const course = getCourse(t.slug);
   const s = settings.get(t.slug);
   const pricePkr = s?.price_pkr ?? 0;
+  const priceUsd = s?.price_usd ?? 0;
   const published = Boolean(s?.published);
-  return { ...t, jurisdiction, course, pricePkr, published, available: Boolean(course && published && pricePkr > 0) };
+  return { ...t, jurisdiction, course, pricePkr, priceUsd, published, available: Boolean(course && published && pricePkr > 0) };
 }
 
 /** The general professional certifications (the original roadmap). */
@@ -106,10 +109,12 @@ export const allTopics = (): { slug: string; title: string }[] => [
   ...regulatoryCatalog().map((t) => ({ slug: t.slug, title: t.title })),
 ];
 
-export function saveCourseSettings(slug: string, pricePkr: number, published: boolean) {
+export function saveCourseSettings(slug: string, pricePkr: number, published: boolean, priceUsd = 0) {
   const exists = one<{ slug: string }>("SELECT slug FROM course_settings WHERE slug = ?", slug);
-  if (exists) run("UPDATE course_settings SET price_pkr = ?, published = ?, updated_at = ? WHERE slug = ?", pricePkr, published ? 1 : 0, now(), slug);
-  else run("INSERT INTO course_settings (slug, price_pkr, published, updated_at) VALUES (?, ?, ?, ?)", slug, pricePkr, published ? 1 : 0, now());
+  if (exists)
+    run("UPDATE course_settings SET price_pkr = ?, price_usd = ?, published = ?, updated_at = ? WHERE slug = ?", pricePkr, priceUsd, published ? 1 : 0, now(), slug);
+  else
+    run("INSERT INTO course_settings (slug, price_pkr, price_usd, published, updated_at) VALUES (?, ?, ?, ?, ?)", slug, pricePkr, priceUsd, published ? 1 : 0, now());
 }
 
 export const formatPkr = (n: number) => `PKR ${n.toLocaleString("en-PK")}`;

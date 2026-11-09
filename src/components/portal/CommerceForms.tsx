@@ -3,8 +3,21 @@
 import { startTransition, useActionState, useState } from "react";
 import { startCheckout, submitPaymentProof } from "@/lib/actions/commerce";
 import { Field } from "./AuthForms";
+import { formatMoney, type Currency } from "@/lib/money";
 
-export function CheckoutForm({ slug, team, unitPrice, companyName }: { slug: string; team: boolean; unitPrice: number; companyName: string | null }) {
+export function CheckoutForm({
+  slug,
+  team,
+  unitPrice,
+  companyName,
+  currency = "PKR",
+}: {
+  slug: string;
+  team: boolean;
+  unitPrice: number;
+  companyName: string | null;
+  currency?: Currency;
+}) {
   const [state, action, pending] = useActionState(startCheckout, {});
   const [seats, setSeats] = useState(10);
   const e = state.errors ?? {};
@@ -24,7 +37,7 @@ export function CheckoutForm({ slug, team, unitPrice, companyName }: { slug: str
             {e.seats ? <span className="field__error">{e.seats}</span> : <span className="field__hint">Each seat lets one employee take the full certification.</span>}
           </label>
           <p className="checkout__total">
-            Total <strong>PKR {(unitPrice * (Number.isFinite(seats) && seats > 0 ? seats : 0)).toLocaleString("en-PK")}</strong>
+            Total <strong>{formatMoney(unitPrice * (Number.isFinite(seats) && seats > 0 ? seats : 0), currency)}</strong>
           </p>
         </>
       )}

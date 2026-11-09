@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { Ring } from "@/components/portal/Ring";
-import { catalog, formatPkr, getCourse } from "@/lib/courses/catalog";
+import { catalog, getCourse } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { all } from "@/lib/db";
 import { hasAdminAccess, requireUser } from "@/lib/portal/auth";
 import { ORDER_STATUS, ordersOf } from "@/lib/portal/commerce";
@@ -26,6 +28,7 @@ const ago = (iso: string) => {
 
 export default async function Dashboard() {
   const user = await requireUser("/learn");
+  const currency = await viewerCurrency(user);
   const level = levelFor(user.xp);
   const enrollments = enrollmentsOf(user.id);
   const quests = enrollments
@@ -263,7 +266,7 @@ export default async function Dashboard() {
               <Link key={s.slug} href={`/certifications/${s.slug}`} className="suggest__card spot" style={{ ["--c" as string]: s.color }}>
                 <span className="tag">{s.category}</span>
                 <strong>{s.title}</strong>
-                <span className="muted">🎁 Start for free · then {formatPkr(s.pricePkr)}</span>
+                <span className="muted">🎁 Start for free · then {formatMoney(priceIn(s, currency), currency)}</span>
               </Link>
             ))}
           </div>

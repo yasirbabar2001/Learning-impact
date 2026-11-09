@@ -4,6 +4,7 @@ import { catalog } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
 import { OWNER_EMAILS } from "@/lib/portal/auth";
 import { paymentSettings } from "@/lib/portal/commerce";
+import { priceIn, usdRate } from "@/lib/portal/currency";
 
 export default async function AdminCertifications() {
   const items = catalog();
@@ -23,7 +24,7 @@ export default async function AdminCertifications() {
       <div className="board__head">
         <div>
           <h1 className="h3">Certifications</h1>
-          <p className="muted">Set a price (PKR per learner) and publish each certification once its content is ready. Session tests can be downloaded as SCORM 1.2 packages for a client&apos;s own LMS. Stage 1 of every published certification is free for all learners; the rest unlocks after payment. <b>Preview course</b> opens every stage and the exam bank (nothing is saved).</p>
+          <p className="muted">Set a price per learner in PKR (learners in Pakistan) and, optionally, in US$ for learners elsewhere (left empty, it is converted at the rate below) and publish each certification once its content is ready. Session tests can be downloaded as SCORM 1.2 packages for a client&apos;s own LMS. Stage 1 of every published certification is free for all learners; the rest unlocks after payment. <b>Preview course</b> opens every stage and the exam bank (nothing is saved).</p>
         </div>
       </div>
       {ready > 0 && <p className="form-ok">{ready} certification(s) have content ready: set a price and tick Published to start selling.</p>}
@@ -44,6 +45,17 @@ export default async function AdminCertifications() {
                   <label className="admin-field">
                     <span className="admin-field__label">Price per learner (PKR)</span>
                     <input name="price" type="number" min={0} step={500} defaultValue={i.pricePkr || ""} placeholder="e.g. 25000" />
+                  </label>
+                  <label className="admin-field">
+                    <span className="admin-field__label">Price outside Pakistan (US$)</span>
+                    <input
+                      name="price_usd"
+                      type="number"
+                      min={0}
+                      step={1}
+                      defaultValue={i.priceUsd || ""}
+                      placeholder={i.pricePkr ? `auto: $${priceIn({ pricePkr: i.pricePkr, priceUsd: 0 }, "USD")}` : "e.g. 99"}
+                    />
                   </label>
                   <label className="admin-checks admin-checks--inline">
                     <input type="checkbox" name="published" defaultChecked={i.published} /> Published
@@ -75,7 +87,7 @@ export default async function AdminCertifications() {
       </ul>
       <section className="settings__group glass admin-pay">
         <h2>Payment details shown to buyers</h2>
-        <PaymentSettingsForm s={paymentSettings()} />
+        <PaymentSettingsForm s={paymentSettings()} usdRate={usdRate()} />
       </section>
     </div>
   );

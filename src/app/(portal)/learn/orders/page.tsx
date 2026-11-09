@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
+import { catalogEntry } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
 import { requireUser } from "@/lib/portal/auth";
 import { ORDER_STATUS, ordersOf } from "@/lib/portal/commerce";
 
@@ -30,7 +31,7 @@ export default async function OrdersPage() {
                   <strong>{catalogEntry(o.course_slug)?.title}</strong>
                   <span className="muted">
                     {o.kind === "seats" ? `${o.seats} seats · ` : ""}
-                    {formatPkr(o.amount_pkr)}
+                    {formatMoney(o.amount_pkr, o.currency)}
                   </span>
                 </span>
                 <span className="req__meta">

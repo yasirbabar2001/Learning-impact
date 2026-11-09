@@ -30,8 +30,10 @@ export function dashboardStats() {
   });
 
   return {
-    revenueTotal: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved'"),
-    revenueMonth: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved' AND decided_at >= ?", monthStart),
+    revenueTotal: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved' AND currency = 'PKR'"),
+    revenueMonth: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved' AND currency = 'PKR' AND decided_at >= ?", monthStart),
+    revenueTotalUsd: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved' AND currency = 'USD'"),
+    revenueMonthUsd: n("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE status = 'approved' AND currency = 'USD' AND decided_at >= ?", monthStart),
     paymentsToReview: n("SELECT COUNT(*) AS n FROM orders WHERE status = 'submitted'"),
     awaitingPayment: n("SELECT COUNT(*) AS n FROM orders WHERE status = 'awaiting_payment'"),
     learners: n("SELECT COUNT(*) AS n FROM users WHERE account_type = 'individual'"),
@@ -53,8 +55,8 @@ export function dashboardStats() {
     seatsPending: n("SELECT COUNT(*) AS n FROM invitations WHERE status = 'pending'"),
     signups,
     topCourses: all<{ course_slug: string; n: number }>("SELECT course_slug, COUNT(*) AS n FROM enrollments GROUP BY course_slug ORDER BY n DESC LIMIT 6"),
-    recentOrders: all<{ reference: string; status: string; amount_pkr: number; course_slug: string; name: string; created_at: string }>(
-      `SELECT o.reference, o.status, o.amount_pkr, o.course_slug, u.name, o.created_at
+    recentOrders: all<{ reference: string; status: string; amount_pkr: number; currency: string; course_slug: string; name: string; created_at: string }>(
+      `SELECT o.reference, o.status, o.amount_pkr, o.currency, o.course_slug, u.name, o.created_at
        FROM orders o JOIN users u ON u.id = o.user_id ORDER BY o.created_at DESC LIMIT 6`,
     ),
     recentUsers: all<{ name: string; email: string; account_type: string; created_at: string }>(

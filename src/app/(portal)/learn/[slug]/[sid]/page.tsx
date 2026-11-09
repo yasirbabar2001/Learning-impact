@@ -1,6 +1,8 @@
 import { notFound, redirect } from "next/navigation";
 import { LessonPlayer, type PublicCard } from "@/components/portal/LessonPlayer";
-import { catalogEntry, formatPkr, getCourse } from "@/lib/courses/catalog";
+import { catalogEntry, getCourse } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { viewerCurrency } from "@/lib/portal/currency";
 import { requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
 import { accessFor, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
@@ -24,8 +26,9 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
   const cards: PublicCard[] = s.cards;
   const next = course.sessions[idx + 1];
   const nextLocked = access.mode === "trial" && Boolean(next && all[idx + 1]?.paywall);
-  const price = catalogEntry(slug)?.pricePkr ?? 0;
-  const offer = nextLocked ? unlockOffer(user.id, slug, price) : null;
+  const entry = catalogEntry(slug);
+  const currency = await viewerCurrency(user);
+  const offer = nextLocked && entry ? unlockOffer(user.id, slug, entry, currency) : null;
 
   return (
     <div className="container" style={{ ["--c" as string]: course.quest.color }}>
@@ -52,9 +55,9 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
           nextLocked && offer
             ? {
                 href: `/checkout/${slug}`,
-                price: formatPkr(offer.full),
+                price: formatMoney(offer.full, currency),
                 stages: offer.remainingStages,
-                stagePrice: offer.next && offer.remainingStages > 1 ? formatPkr(offer.next.price) : null,
+                stagePrice: offer.next && offer.remainingStages > 1 ? formatMoney(offer.next.price, currency) : null,
                 stageNumber: offer.next?.number,
               }
             : null

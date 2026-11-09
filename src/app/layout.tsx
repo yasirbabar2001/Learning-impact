@@ -1,3 +1,4 @@
+import { CurrencyProbe } from "@/components/CurrencyProbe";
 import { IfspaceCard } from "@/components/IfspaceCard";
 import { VisitTracker } from "@/components/VisitTracker";
 import type { Metadata, Viewport } from "next";
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <IfspaceCard />
         <VisitTracker />
+        <CurrencyProbe />
       </body>
     </html>
   );

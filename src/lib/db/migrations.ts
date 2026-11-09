@@ -243,4 +243,8 @@ export const MIGRATIONS: string[] = [
     PRIMARY KEY (user_id, course_slug, session_id)
   );
   `,
+  /* 8: prices and orders in US dollars for learners outside Pakistan */ `
+  ALTER TABLE course_settings ADD COLUMN price_usd INTEGER NOT NULL DEFAULT 0;
+  ALTER TABLE orders ADD COLUMN currency TEXT NOT NULL DEFAULT 'PKR';
+  `,
 ];

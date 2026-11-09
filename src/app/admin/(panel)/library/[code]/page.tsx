@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
 import { regulatoryCatalog } from "@/lib/courses/catalog";
+import { priceIn } from "@/lib/portal/currency";
 import { groupedPrograms, jurisdiction, questStatuses, unassessed } from "@/lib/regulatory/library";
 import { PROGRAM_CATEGORIES } from "@/lib/regulatory/programs";
 import { CLASSIFICATION_HELP, CLASSIFICATION_LABELS, CLASSIFICATIONS, FREQUENCY_LABELS, isProvisional } from "@/lib/regulatory/schema";
@@ -83,6 +84,17 @@ export default async function AdminJurisdiction({ params }: { params: Promise<{ 
                     <label className="admin-field">
                       <span className="admin-field__label">Price per learner (PKR)</span>
                       <input name="price" type="number" min={0} step={500} defaultValue={q.pricePkr || ""} placeholder="e.g. 15000" />
+                    </label>
+                    <label className="admin-field">
+                      <span className="admin-field__label">Price outside Pakistan (US$)</span>
+                      <input
+                        name="price_usd"
+                        type="number"
+                        min={0}
+                        step={1}
+                        defaultValue={q.priceUsd || ""}
+                        placeholder={q.pricePkr ? `auto: $${priceIn({ pricePkr: q.pricePkr, priceUsd: 0 }, "USD")}` : "e.g. 59"}
+                      />
                     </label>
                     <label className="admin-checks admin-checks--inline">
                       <input type="checkbox" name="published" defaultChecked={q.published} /> Published

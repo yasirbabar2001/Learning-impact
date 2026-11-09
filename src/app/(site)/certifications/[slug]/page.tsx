@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { RegulatoryBasis } from "@/components/portal/RegulatoryBasis";
 import { Reveal } from "@/components/Reveal";
 import { SplitWords } from "@/components/Text";
-import { catalogEntry, courseMinutes, formatPkr } from "@/lib/courses/catalog";
+import { catalogEntry, courseMinutes } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { currentUser, hasAdminAccess } from "@/lib/portal/auth";
 import { enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 
@@ -22,6 +24,8 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   const e = catalogEntry(slug);
   if (!e) notFound();
   const user = await currentUser();
+  const currency = await viewerCurrency(user);
+  const price = priceIn(e, currency);
   const enrolled = user ? enrollmentFor(user.id, slug) : null;
   const admin = hasAdminAccess(user);
   const firstStage = e.course ? `/learn/${slug}/${e.course.sessions[0].id}` : `/learn/${slug}`;
@@ -99,13 +103,13 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
             🏅
           </span>
           <p className="cert__badge-name">Badge: {c.quest.badge.name}</p>
-          <p className="cert__price">{formatPkr(e.pricePkr)}</p>
+          <p className="cert__price">{formatMoney(price, currency)}</p>
           <p className="muted cert__price-note">
             One learner · lifetime access to the material · certificate included
             {c.sessions.length > 1 && (
               <>
                 <br />
-                or pay as you go: {formatPkr(Math.round(e.pricePkr / (c.sessions.length - 1)))} per stage after the free one
+                or pay as you go: {formatMoney(Math.round(price / (c.sessions.length - 1)), currency)} per stage after the free one
               </>
             )}
           </p>
@@ -122,7 +126,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
               </Link>
               <p className="cert__free-note">Stage 1 is free, no payment needed. Then unlock the whole quest, or one stage at a time.</p>
               <Link href={`/checkout/${slug}`} className="btn btn--ghost cert__cta">
-                <span className="btn__label">Enrol now · {formatPkr(e.pricePkr)}</span>
+                <span className="btn__label">Enrol now · {formatMoney(price, currency)}</span>
                 <span className="btn__arrow">→</span>
               </Link>
             </>

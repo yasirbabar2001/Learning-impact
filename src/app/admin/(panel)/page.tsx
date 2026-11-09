@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { catalog, formatPkr } from "@/lib/courses/catalog";
+import { catalog } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
 import { ORDER_STATUS } from "@/lib/portal/commerce";
 import { VisitorsChart } from "@/components/admin/VisitorsChart";
 import { dashboardStats, visitorStats, visitorTop } from "@/lib/portal/stats";
@@ -35,7 +36,7 @@ export default async function AdminDashboard() {
     {
       title: "Money",
       tiles: [
-        { href: "/admin/orders", icon: "💰", label: "Revenue (approved)", value: formatPkr(s.revenueTotal), note: `${formatPkr(s.revenueMonth)} this month`, tone: "good" },
+        { href: "/admin/orders", icon: "💰", label: "Revenue (approved)", value: formatMoney(s.revenueTotal, "PKR"), note: `${formatMoney(s.revenueTotalUsd, "USD")} in dollars · this month ${formatMoney(s.revenueMonth, "PKR")} + ${formatMoney(s.revenueMonthUsd, "USD")}`, tone: "good" },
         { href: "/admin/orders", icon: "🧾", label: "Payments to review", value: s.paymentsToReview, note: "Receipts waiting for approval", tone: s.paymentsToReview ? "alert" : undefined },
         { href: "/admin/orders", icon: "⏳", label: "Awaiting payment", value: s.awaitingPayment, note: "Orders started, not paid yet" },
       ],
@@ -192,7 +193,7 @@ export default async function AdminDashboard() {
                     {o.name} · {titles.get(o.course_slug) ?? o.course_slug}
                   </span>
                   <span className="muted">
-                    {formatPkr(o.amount_pkr)} · {ORDER_STATUS[o.status as keyof typeof ORDER_STATUS] ?? o.status} · {ago(o.created_at)}
+                    {formatMoney(o.amount_pkr, o.currency)} · {ORDER_STATUS[o.status as keyof typeof ORDER_STATUS] ?? o.status} · {ago(o.created_at)}
                   </span>
                 </li>
               ))}

@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { catalog, formatPkr } from "@/lib/courses/catalog";
+import { catalog } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { Reveal } from "../Reveal";
 
 const GAME = [
@@ -12,8 +14,9 @@ const GAME = [
 ];
 
 /** Home-page showcase of the certification quests. */
-export function HomeQuests() {
+export async function HomeQuests() {
   const items = catalog();
+  const currency = await viewerCurrency();
   const live = items.filter((i) => i.available);
   const shown = [...live, ...items.filter((i) => !i.available)].slice(0, 6);
   return (
@@ -55,7 +58,7 @@ export function HomeQuests() {
               {c.available && c.course && <span className="cert-card__quest">⚔️ {c.course.quest.name}</span>}
               <p className="muted">{c.course?.tagline ?? c.tagline}</p>
               <span className="cert-card__foot">
-                <strong>{c.available ? `Stage 1 free · then ${formatPkr(c.pricePkr)}` : "Register interest"}</strong>
+                <strong>{c.available ? `Stage 1 free · then ${formatMoney(priceIn(c, currency), currency)}` : "Register interest"}</strong>
                 <span className="cert-card__go" aria-hidden="true">
                   →
                 </span>

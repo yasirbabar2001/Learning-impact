@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CheckoutForm, UnlockChoice } from "@/components/portal/CommerceForms";
-import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
+import { catalogEntry } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { companyOf, requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
 import { enrollmentFor } from "@/lib/portal/learning";
@@ -17,7 +19,9 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
   const company = user.account_type === "company" && user.company_role === "manager" ? companyOf(user) : null;
   if (isTeam && !company) redirect("/company/setup");
   if (isTeam && company?.status !== "approved") redirect("/company/pending");
-  const offer = isTeam ? null : unlockOffer(user.id, slug, e.pricePkr);
+  const currency = await viewerCurrency(user);
+  const unit = priceIn(e, currency);
+  const offer = isTeam ? null : unlockOffer(user.id, slug, e, currency);
 
   return (
     <section className="container section checkout" style={{ ["--c" as string]: e.color }}>
@@ -31,13 +35,14 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
           {offer ? (
             <UnlockChoice
               slug={slug}
-              full={formatPkr(offer.full)}
-              next={offer.next ? { number: offer.next.number, title: offer.next.title, price: formatPkr(offer.next.price) } : null}
+              full={formatMoney(offer.full, currency)}
+              next={offer.next ? { number: offer.next.number, title: offer.next.title, price: formatMoney(offer.next.price, currency) } : null}
               remainingStages={offer.remainingStages}
-              paidSoFar={offer.paidSoFar ? formatPkr(offer.paidSoFar) : null}
+              paidSoFar={offer.paidSoFar ? formatMoney(offer.paidSoFar, currency) : null}
             />
           ) : (
-            <CheckoutForm slug={slug} team={isTeam} unitPrice={e.pricePkr} companyName={company?.name ?? null} />
+            <CheckoutForm slug={slug} team={isTeam} unitPrice={unit}
+              currency={currency} companyName={company?.name ?? null} />
           )}
           <p className="checkout__switch">
             {isTeam ? (
@@ -60,13 +65,13 @@ export default async function CheckoutPage({ params, searchParams }: { params: P
             </div>
             <div>
               <dt>{isTeam ? "Price per learner" : "Full quest"}</dt>
-              <dd>{formatPkr(e.pricePkr)}</dd>
+              <dd>{formatMoney(unit, currency)}</dd>
             </div>
             {offer && (
               <div>
                 <dt>Or per stage</dt>
                 <dd>
-                  {formatPkr(offer.perStage)} (stage 1 is free)
+                  {formatMoney(offer.perStage, currency)} (stage 1 is free)
                 </dd>
               </div>
             )}

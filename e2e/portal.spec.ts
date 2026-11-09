@@ -20,8 +20,8 @@ async function codeFor(email: string, after = 0): Promise<string> {
 }
 
 /** Mobile number and gender are required at sign-up. */
-async function fillMobileAndGender(page: Page, gender = "Female") {
-  await page.getByLabel(/Mobile number/).fill("+92 300 1234567");
+async function fillMobileAndGender(page: Page, gender = "Female", mobile = "+92 300 1234567") {
+  await page.getByLabel(/Mobile number/).fill(mobile);
   await page.locator(".gender-pick__opt", { hasText: new RegExp(`^${gender}$`) }).click();
 }
 
@@ -604,4 +604,41 @@ test("after the free stage a learner can unlock the whole quest or pay stage by 
   await page.getByRole("button", { name: /Unlock everything · PKR 6,000/ }).click();
   await expect(page).toHaveURL(/\/orders\/LIC-/);
   await expect(page.locator(".checkout__summary")).toContainText("PKR 6,000");
+});
+
+test("learners outside Pakistan see prices in US dollars and get international payment options", async ({ browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="hr-operations"])');
+  await form.locator("input[name=price]").fill("8000");
+  await form.locator("input[name=price_usd]").fill("40");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  // A visitor in Pakistan (by time zone) sees rupees; elsewhere, dollars.
+  const pk = await (await browser.newContext({ timezoneId: "Asia/Karachi" })).newPage();
+  await pk.goto("/certifications/hr-operations");
+  await expect(pk.getByText(/PKR 8,000/).first()).toBeVisible();
+
+  const page = await (await browser.newContext({ timezoneId: "Europe/London", extraHTTPHeaders: { "x-forwarded-for": "10.8.2.2" } })).newPage();
+  const email = `usd${Date.now()}@example.com`;
+  await page.goto("/register?next=/checkout/hr-operations");
+  await page.getByLabel(/Full name/).fill("Dollar Buyer");
+  await page.getByLabel("E-mail", { exact: false }).first().fill(email);
+  await page.locator("input[name=password]").fill("password123");
+  await page.locator("input[name=terms]").check();
+  await fillMobileAndGender(page, "Male", "+44 7700 900123");
+  await page.getByRole("button", { name: /Create my account/ }).click();
+  await typeCode(page, await codeFor(email));
+  await page.getByRole("button", { name: "Verify" }).click();
+  await expect(page).toHaveURL(/\/checkout\/hr-operations/);
+
+  // 5 stages for $40: $40 for everything or $10 per stage.
+  await expect(page.locator(".unlock-choice__price").first()).toHaveText("$40");
+  await expect(page.locator(".unlock-choice__price").nth(1)).toHaveText("$10");
+  await page.getByRole("button", { name: /Unlock stage 2 · \$10/ }).click();
+  await expect(page).toHaveURL(/\/orders\/LIC-/);
+  await expect(page.locator(".checkout__summary")).toContainText("$10");
+  await expect(page.locator("label.choice", { hasText: "International bank transfer" })).toBeVisible();
+  await expect(page.locator("label.choice", { hasText: "JazzCash" })).toHaveCount(0);
 });

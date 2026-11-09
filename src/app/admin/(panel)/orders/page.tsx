@@ -1,5 +1,6 @@
 import { approveOrderAction, rejectOrderAction } from "@/app/admin/portal-actions";
-import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
+import { catalogEntry } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
 import { all } from "@/lib/db";
 import { ORDER_STATUS, orderStageLabel, type Order } from "@/lib/portal/commerce";
 
@@ -42,7 +43,7 @@ export default async function AdminOrders({ searchParams }: { searchParams: Prom
               <div className="order-admin__head">
                 <span className={`badge badge--${o.status === "approved" ? "confirmed" : o.status === "submitted" ? "new" : o.status === "rejected" ? "proposal" : "closed"}`}>{ORDER_STATUS[o.status]}</span>
                 <strong>{o.reference}</strong>
-                <span>{formatPkr(o.amount_pkr)}</span>
+                <span>{formatMoney(o.amount_pkr, o.currency)}</span>
                 <span className="muted">{new Date(o.created_at).toLocaleString("en-GB")}</span>
               </div>
               <dl className="order-admin__facts">

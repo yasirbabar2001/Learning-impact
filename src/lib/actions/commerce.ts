@@ -2,7 +2,9 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { catalogEntry, formatPkr } from "../courses/catalog";
+import { catalogEntry } from "../courses/catalog";
+import { formatMoney } from "../money";
+import { priceIn, viewerCurrency } from "../portal/currency";
 import { run } from "../db";
 import { companyOf, requireUser } from "../portal/auth";
 import {
@@ -11,6 +13,7 @@ import {
   openOrderFor,
   orderByRef,
   PAYMENT_METHODS,
+  PAYMENT_METHODS_USD,
   PROOF_TYPES,
   storeProof,
   submitPayment,
@@ -31,19 +34,20 @@ export async function startCheckout(_: CheckoutState, fd: FormData): Promise<Che
 
   if (!team) {
     if (enrollmentFor(user.id, slug)) redirect(`/learn/${slug}`);
-    const offer = unlockOffer(user.id, slug, entry.pricePkr);
+    const currency = await viewerCurrency(user);
+    const offer = unlockOffer(user.id, slug, entry, currency);
     if (!offer) return { message: "This certification is not open for enrolment yet." };
     if (fd.get("option") === "stage") {
       // Unlock only the next stage.
       if (!offer.next) redirect(`/learn/${slug}`);
       const openStage = openOrderFor(user.id, slug, "individual", offer.next.id);
       if (openStage) redirect(`/orders/${openStage.reference}`);
-      const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.next.price, stageId: offer.next.id });
+      const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.next.price, currency, stageId: offer.next.id });
       redirect(`/orders/${order.reference}`);
     }
     const open = openOrderFor(user.id, slug, "individual");
     if (open) redirect(`/orders/${open.reference}`);
-    const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.full });
+    const order = createOrder({ userId: user.id, companyId: null, kind: "individual", slug, seats: 1, unitPrice: offer.full, currency });
     redirect(`/orders/${order.reference}`);
   }
 
@@ -53,7 +57,8 @@ export async function startCheckout(_: CheckoutState, fd: FormData): Promise<Che
   if (user.account_type !== "company" || user.company_role !== "manager" || !company) return { message: "Team seats are bought from a company account. Register your company first." };
   if (company.status !== "approved") return { message: "Your company profile is still under review. You can buy seats as soon as it is approved." };
   const companyId = company.id;
-  const order = createOrder({ userId: user.id, companyId, kind: "seats", slug, seats, unitPrice: entry.pricePkr });
+  const seatCurrency = await viewerCurrency(user);
+  const order = createOrder({ userId: user.id, companyId, kind: "seats", slug, seats, unitPrice: priceIn(entry, seatCurrency), currency: seatCurrency });
   redirect(`/orders/${order.reference}`);
 }
 
@@ -70,7 +75,8 @@ export async function submitPaymentProof(_: PaymentState, fd: FormData): Promise
   const txRef = String(fd.get("transaction") ?? "").trim().slice(0, 80);
   const note = String(fd.get("note") ?? "").trim().slice(0, 500);
   const errors: Record<string, string> = {};
-  if (!(PAYMENT_METHODS as readonly string[]).includes(method)) errors.method = "Choose how you paid.";
+  const methods: readonly string[] = order.currency === "USD" ? PAYMENT_METHODS_USD : PAYMENT_METHODS;
+  if (!methods.includes(method)) errors.method = "Choose how you paid.";
   if (txRef.length < 3) errors.transaction = "Enter the transaction ID or reference from your bank or wallet.";
 
   let proof: string | null = null;
@@ -91,7 +97,7 @@ export async function submitPaymentProof(_: PaymentState, fd: FormData): Promise
     void sendMail(
       notify,
       `Payment submitted: ${order.reference}`,
-      `<p>${esc(user.name)} (${esc(user.email)}) submitted payment of <b>${formatPkr(order.amount_pkr)}</b> via ${esc(method)} (ref ${esc(txRef)}) for order ${order.reference}.</p><p><a href="${SITE_URL}/admin/orders">Review it in the admin panel</a></p>`,
+      `<p>${esc(user.name)} (${esc(user.email)}) submitted payment of <b>${formatMoney(order.amount_pkr, order.currency)}</b> via ${esc(method)} (ref ${esc(txRef)}) for order ${order.reference}.</p><p><a href="${SITE_URL}/admin/orders">Review it in the admin panel</a></p>`,
     );
   }
   revalidatePath(`/orders/${ref}`);

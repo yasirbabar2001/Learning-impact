@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
-import { formatPkr, regulatoryCatalog } from "@/lib/courses/catalog";
+import { regulatoryCatalog } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { currentUser } from "@/lib/portal/auth";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { jurisdiction } from "@/lib/regulatory/library";
 import { CLASSIFICATION_LABELS, REGIONS } from "@/lib/regulatory/schema";
 import { TARGETS } from "@/lib/regulatory/targets";
@@ -15,7 +18,8 @@ export const metadata: Metadata = {
 };
 export const dynamic = "force-dynamic";
 
-export default function RegulatoryLibraryPage() {
+export default async function RegulatoryLibraryPage() {
+  const currency = await viewerCurrency(await currentUser());
   const live = regulatoryCatalog().filter((q) => q.available);
   const regions = REGIONS.map((region) => {
     const countries = TARGETS.filter((t) => t.region === region)
@@ -62,7 +66,7 @@ export default function RegulatoryLibraryPage() {
                             <strong>{q.title}</strong>
                             <span className="muted">
                               {q.course?.jurisdiction && CLASSIFICATION_LABELS[q.course.jurisdiction.classification]} · {q.course?.sessions.length} stages ·{" "}
-                              {formatPkr(q.pricePkr)} · Stage 1 free
+                              {formatMoney(priceIn(q, currency), currency)} · Stage 1 free
                             </span>
                           </Link>
                         </li>

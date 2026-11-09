@@ -10,7 +10,8 @@ export default async function AdminLibrary() {
   const maps = new Map(jurisdictions().map((j) => [j.code, j]));
   const quests = regulatoryCatalog();
   const questsBy = (code: string) => quests.filter((q) => q.jurisdiction === code);
-  const mapped = TARGETS.filter((t) => maps.has(t.code)).length;
+  const covered = TARGETS.filter((t) => maps.has(t.code));
+  const mapped = covered.length;
   const totalPrograms = [...maps.values()].reduce((n, j) => n + j.programs.length, 0);
   const mandatory = [...maps.values()].reduce((n, j) => n + j.programs.filter((m) => m.classification.startsWith("mandatory")).length, 0);
 
@@ -29,7 +30,7 @@ export default async function AdminLibrary() {
       <div className="tiles">
         <div className="tile tile--info">
           <span className="tile__value">
-            {mapped} / {TARGETS.length}
+            {mapped}
           </span>
           <span className="tile__label">Jurisdictions researched</span>
           <span className="tile__note">Checked against official sources</span>
@@ -47,7 +48,7 @@ export default async function AdminLibrary() {
       </div>
 
       {REGIONS.map((region) => {
-        const items = TARGETS.filter((t) => t.region === region);
+        const items = covered.filter((t) => t.region === region);
         if (!items.length) return null;
         return (
           <section key={region} className="dash-admin__group">
@@ -61,17 +62,13 @@ export default async function AdminLibrary() {
                   <>
                     <span className="tile__label">{t.name}</span>
                     <span className="tile__note">{t.regulators}</span>
-                    {j ? (
-                      <span className="lib-tiles__counts">
-                        <span className="cls cls--mandatory-explicit">{count("mandatory-explicit")} explicit</span>
-                        <span className="cls cls--mandatory-role">{count("mandatory-role")} role</span>
-                        <span className="cls cls--competence">{count("competence")} competence</span>
-                        <span className="cls cls--recommended">{count("recommended")} recommended</span>
-                      </span>
-                    ) : (
-                      <span className="tile__note">Phase {t.phase} · not researched yet</span>
-                    )}
-                    {j && j.programs.some(isProvisional) && <span className="tile__note">⏳ {j.programs.filter(isProvisional).length} awaiting source check</span>}
+                    <span className="lib-tiles__counts">
+                      <span className="cls cls--mandatory-explicit">{count("mandatory-explicit")} explicit</span>
+                      <span className="cls cls--mandatory-role">{count("mandatory-role")} role</span>
+                      <span className="cls cls--competence">{count("competence")} competence</span>
+                      <span className="cls cls--recommended">{count("recommended")} recommended</span>
+                    </span>
+                    {j?.programs.some(isProvisional) && <span className="tile__note">⏳ {j.programs.filter(isProvisional).length} awaiting source check</span>}
                     {qs.length > 0 && (
                       <span className="tile__note">
                         {qs.filter((q) => q.available).length} live · {qs.filter((q) => !q.available).length} draft quest(s)
@@ -79,17 +76,13 @@ export default async function AdminLibrary() {
                     )}
                   </>
                 );
-                return j ? (
+                return (
                   <Link key={t.code} href={`/admin/library/${t.code}`} className={`tile ${qs.some((q) => !q.available) ? "tile--alert" : "tile--info"}`}>
                     {body}
                     <span className="tile__go" aria-hidden="true">
                       →
                     </span>
                   </Link>
-                ) : (
-                  <div key={t.code} className="tile lib-tiles__todo">
-                    {body}
-                  </div>
                 );
               })}
             </div>

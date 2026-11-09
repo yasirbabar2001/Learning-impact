@@ -4,7 +4,10 @@ import { CertCatalog } from "@/components/portal/CertCatalog";
 import { Reveal } from "@/components/Reveal";
 import Link from "next/link";
 import { cookies } from "next/headers";
-import { catalog, formatPkr, regulatoryCatalog } from "@/lib/courses/catalog";
+import { catalog, regulatoryCatalog } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { currentUser } from "@/lib/portal/auth";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals";
 
 export const metadata: Metadata = {
@@ -24,6 +27,7 @@ const HOW = [
 ];
 
 export default async function CertificationsPage() {
+  const currency = await viewerCurrency(await currentUser());
   const referrer = referrerByCode((await cookies()).get(REF_COOKIE)?.value);
   const items = catalog().map((c) => ({
     slug: c.slug,
@@ -32,7 +36,7 @@ export default async function CertificationsPage() {
     category: c.category,
     color: c.color,
     available: c.available,
-    price: c.available ? formatPkr(c.pricePkr) : null,
+    price: c.available ? formatMoney(priceIn(c, currency), currency) : null,
     level: c.course?.level ?? null,
     hours: c.course?.hours ?? null,
     stages: c.course?.sessions.length ?? null,

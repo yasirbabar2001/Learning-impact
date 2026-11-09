@@ -2,9 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PaymentForm } from "@/components/portal/CommerceForms";
 import { cancelOrder } from "@/lib/actions/commerce";
-import { catalogEntry, formatPkr } from "@/lib/courses/catalog";
+import { catalogEntry } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
 import { requireUser } from "@/lib/portal/auth";
-import { ORDER_STATUS, orderByRef, orderStageLabel, PAYMENT_METHODS, paymentSettings } from "@/lib/portal/commerce";
+import { ORDER_STATUS, orderByRef, orderStageLabel, PAYMENT_METHODS, PAYMENT_METHODS_USD, paymentSettings } from "@/lib/portal/commerce";
 
 export default async function OrderPage({ params }: { params: Promise<{ ref: string }> }) {
   const { ref } = await params;
@@ -14,6 +15,7 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
   const entry = catalogEntry(order.course_slug);
   const pay = paymentSettings();
   const stage = orderStageLabel(order);
+  const usd = order.currency === "USD";
   const bankRows = [
     ["Account title", pay.accountTitle],
     ["Bank", pay.bankName],
@@ -54,8 +56,24 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
                 </p>
               )}
               {order.status === "submitted" && <p className="form-ok">We have your payment details and are checking them. You can update them below if needed.</p>}
-              <h2 className="checkout__h">1. Pay {formatPkr(order.amount_pkr)}</h2>
-              {bankRows.length > 1 ? (
+              <h2 className="checkout__h">1. Pay {formatMoney(order.amount_pkr, order.currency)}</h2>
+              {usd ? (
+                pay.international ? (
+                  <div className="bank bank--intl">
+                    {pay.international.split(/\n+/).map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
+                    <p>
+                      Payment description: <strong>{order.reference}</strong>
+                    </p>
+                  </div>
+                ) : (
+                  <p className="form-alert">
+                    Please contact info@learningimpact.pk with your order reference <strong>{order.reference}</strong> and we will send you international payment
+                    details (US dollars).
+                  </p>
+                )
+              ) : bankRows.length > 1 ? (
                 <dl className="bank">
                   {bankRows.map(([k, v]) => (
                     <div key={k}>
@@ -75,7 +93,7 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
               )}
               {pay.instructions && <p className="muted">{pay.instructions}</p>}
               <h2 className="checkout__h">2. Tell us you have paid</h2>
-              <PaymentForm reference={order.reference} methods={PAYMENT_METHODS} resubmit={Boolean(order.proof_file)} />
+              <PaymentForm reference={order.reference} methods={usd ? PAYMENT_METHODS_USD : PAYMENT_METHODS} resubmit={Boolean(order.proof_file)} />
               {order.status === "awaiting_payment" && (
                 <form action={cancelOrder} className="order-cancel">
                   <input type="hidden" name="reference" value={order.reference} />
@@ -107,13 +125,13 @@ export default async function OrderPage({ params }: { params: Promise<{ ref: str
             <div>
               <dt>Quantity</dt>
               <dd>
-                {order.seats} × {formatPkr(order.unit_price_pkr)}
+                {order.seats} × {formatMoney(order.unit_price_pkr, order.currency)}
               </dd>
             </div>
             <div>
               <dt>Total</dt>
               <dd>
-                <strong>{formatPkr(order.amount_pkr)}</strong>
+                <strong>{formatMoney(order.amount_pkr, order.currency)}</strong>
               </dd>
             </div>
           </dl>

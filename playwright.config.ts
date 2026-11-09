@@ -3,7 +3,8 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "e2e",
   timeout: 60_000,
-  use: { baseURL: "http://localhost:3200" },
+  // Browsers default to Pakistan time, so prices show in PKR unless a test chooses another time zone.
+  use: { baseURL: "http://localhost:3200", timezoneId: "Asia/Karachi" },
   webServer: [
     // Catches the site's e-mails (verification codes) in .data-e2e-mail/.
     { command: "node scripts/smtp-sink.mjs", port: 2525, reuseExistingServer: false },

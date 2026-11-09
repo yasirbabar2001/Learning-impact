@@ -46,7 +46,7 @@ export function ResetLinkButton({ id }: { id: string }) {
   );
 }
 
-export function PaymentSettingsForm({ s }: { s: PaymentSettings }) {
+export function PaymentSettingsForm({ s, usdRate }: { s: PaymentSettings; usdRate: number }) {
   const [state, action, pending] = useActionState(savePaymentSettingsAction, {});
   const rows: [keyof PaymentSettings, string, string?][] = [
     ["accountTitle", "Account title"],
@@ -67,6 +67,13 @@ export function PaymentSettingsForm({ s }: { s: PaymentSettings }) {
       </div>
       <Field label="Instructions shown to buyers">
         <textarea name="instructions" rows={3} defaultValue={s.instructions} />
+      </Field>
+      <h3 className="admin-sub">Learners outside Pakistan (US dollars)</h3>
+      <Field label="How to pay in US dollars (international bank / SWIFT details, payment link)">
+        <textarea name="international" rows={4} defaultValue={s.international} placeholder="e.g. Bank: ... SWIFT: ... IBAN: ... or pay by card at https://..." />
+      </Field>
+      <Field label="Exchange rate used when a course has no dollar price (PKR per US$1)">
+        <input name="usd_rate" type="number" min={1} step="0.01" defaultValue={usdRate} />
       </Field>
       {state.message && <p className={state.ok ? "form-ok" : "form-alert"}>{state.message}</p>}
       <button className="btn btn--primary btn--sm" disabled={pending}>

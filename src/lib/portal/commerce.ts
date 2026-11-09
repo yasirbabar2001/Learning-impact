@@ -2,7 +2,9 @@ import "server-only";
 import { randomBytes } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { getCourse } from "../courses/catalog";
+import { getCourse, type CatalogEntry } from "../courses/catalog";
+import type { Currency } from "../money";
+import { convert, priceIn } from "./currency";
 import { all, now, one, run, tx } from "../db";
 import { newId, newToken, tokenHash } from "./auth";
 import { rewardEnrolment } from "./referrals";
@@ -17,8 +19,10 @@ export type Order = {
   /** Set when the order unlocks a single stage instead of the whole quest. */
   stage_id: string | null;
   seats: number;
+  /** Unit price and total in the order's currency (column names predate dollar pricing). */
   unit_price_pkr: number;
   amount_pkr: number;
+  currency: Currency;
   status: "awaiting_payment" | "submitted" | "approved" | "rejected" | "cancelled";
   payment_method: string;
   transaction_ref: string;
@@ -39,6 +43,8 @@ export const ORDER_STATUS: Record<Order["status"], string> = {
 };
 
 export const PAYMENT_METHODS = ["Bank transfer (IBFT)", "Easypaisa", "JazzCash", "Cheque / pay order", "Other"] as const;
+/** Ways to pay for orders in US dollars (learners outside Pakistan). */
+export const PAYMENT_METHODS_USD = ["International bank transfer (SWIFT)", "Card / online payment link", "Other"] as const;
 
 /* ---------- Payment instructions (admin-editable) ---------- */
 
@@ -50,6 +56,8 @@ export type PaymentSettings = {
   branch: string;
   wallets: string;
   instructions: string;
+  /** How learners outside Pakistan pay in US dollars (e.g. SWIFT details or a payment link). */
+  international: string;
 };
 
 const DEFAULT_PAYMENT: PaymentSettings = {
@@ -60,6 +68,7 @@ const DEFAULT_PAYMENT: PaymentSettings = {
   branch: "",
   wallets: "",
   instructions: "Use your order reference as the payment description. Your access is activated as soon as we confirm the payment, normally within one working day.",
+  international: "",
 };
 
 export function paymentSettings(): PaymentSettings {
@@ -83,12 +92,13 @@ export function createOrder(o: {
   slug: string;
   seats: number;
   unitPrice: number;
+  currency?: Currency;
   stageId?: string | null;
 }): Order {
   const id = newId();
   run(
-    `INSERT INTO orders (id, reference, user_id, company_id, kind, course_slug, stage_id, seats, unit_price_pkr, amount_pkr, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO orders (id, reference, user_id, company_id, kind, course_slug, stage_id, seats, unit_price_pkr, amount_pkr, currency, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     id,
     orderRef(),
     o.userId,
@@ -99,6 +109,7 @@ export function createOrder(o: {
     o.seats,
     o.unitPrice,
     o.unitPrice * o.seats,
+    o.currency ?? "PKR",
     now(),
   );
   return one<Order>("SELECT * FROM orders WHERE id = ?", id)!;
@@ -140,13 +151,18 @@ export const unlockedStages = (userId: string, slug: string) =>
  * stages; a single stage costs the full price divided by the number of paid stages (the last one takes the rounding).
  * Example: 5 stages, PKR 8,000 → stage 1 free, each further stage PKR 2,000, or PKR 8,000 for everything.
  */
-export function unlockOffer(userId: string, slug: string, pricePkr: number) {
+export function unlockOffer(userId: string, slug: string, entry: Pick<CatalogEntry, "pricePkr" | "priceUsd">, currency: Currency = "PKR") {
   const course = getCourse(slug);
+  const pricePkr = priceIn(entry, currency);
   if (!course || pricePkr <= 0) return null;
   const paidStages = Math.max(1, course.sessions.length - FREE);
   const unlocked = unlockedStages(userId, slug);
-  const paidSoFar =
-    one<{ n: number }>("SELECT COALESCE(SUM(amount_pkr), 0) AS n FROM orders WHERE user_id = ? AND course_slug = ? AND stage_id IS NOT NULL AND status = 'approved'", userId, slug)?.n ?? 0;
+  // Earlier single-stage payments are credited, converted if they were made in the other currency.
+  const paidSoFar = all<{ amount_pkr: number; currency: Currency }>(
+    "SELECT amount_pkr, currency FROM orders WHERE user_id = ? AND course_slug = ? AND stage_id IS NOT NULL AND status = 'approved'",
+    userId,
+    slug,
+  ).reduce((n, o) => n + convert(o.amount_pkr, o.currency, currency), 0);
   const full = Math.max(0, pricePkr - paidSoFar);
   const perStage = Math.round(pricePkr / paidStages);
   const remaining = course.sessions.slice(FREE).filter((s) => !unlocked.has(s.id));
@@ -156,6 +172,7 @@ export function unlockOffer(userId: string, slug: string, pricePkr: number) {
     full,
     paidSoFar,
     perStage,
+    currency,
     remainingStages: remaining.length,
     unlocked,
     next: next ? { id: next.id, index, number: index + 1, title: next.title, stage: next.stage, price: remaining.length === 1 ? full : Math.min(perStage, full) } : null,

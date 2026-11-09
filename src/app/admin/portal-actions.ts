@@ -3,7 +3,9 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
-import { catalogEntry, formatPkr, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
+import { catalogEntry, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
+import { formatMoney } from "@/lib/money";
+import { saveUsdRate } from "@/lib/portal/currency";
 import { now, one, run } from "@/lib/db";
 import { createPasswordReset, currentUser } from "@/lib/portal/auth";
 import { approveOrder, orderStageLabel, enroll, paymentSettings, rejectOrder, savePaymentSettings, type Order } from "@/lib/portal/commerce";
@@ -21,7 +23,7 @@ export async function approveOrderAction(fd: FormData) {
       void sendMail(
         buyer.email,
         individual ? `You're in: ${entry.title}` : `${order.seats} seats ready: ${entry.title}`,
-        `<p>Assalam-o-Alaikum ${esc(buyer.name.split(" ")[0])},</p><p>We have confirmed your payment of <b>${formatPkr(order.amount_pkr)}</b> (order ${order.reference}).</p>${
+        `<p>Assalam-o-Alaikum ${esc(buyer.name.split(" ")[0])},</p><p>We have confirmed your payment of <b>${formatMoney(order.amount_pkr, order.currency)}</b> (order ${order.reference}).</p>${
           individual
             ? `<p>${order.stage_id ? `${esc(orderStageLabel(order) ?? "Your stage")} of <b>${esc(entry.title)}</b> is unlocked.` : `Your quest <b>${esc(entry.title)}</b> is unlocked.`}</p>${button(`${SITE_URL}/learn/${order.course_slug}`, order.stage_id ? "Continue the quest" : "Start the quest")}`
             : `<p>${order.seats} seats for <b>${esc(entry.title)}</b> are now in your company account. Invite your team from the company dashboard.</p>${button(`${SITE_URL}/company`, "Invite my team")}`
@@ -54,7 +56,8 @@ export async function saveCourseSettingsAction(fd: FormData) {
   const slug = String(fd.get("slug"));
   if (!isTopic(slug)) return;
   const price = Math.max(0, Math.min(10_000_000, Math.round(Number(fd.get("price")) || 0)));
-  saveCourseSettings(slug, price, fd.get("published") === "on" && price > 0);
+  const priceUsd = Math.max(0, Math.min(100_000, Math.round(Number(fd.get("price_usd")) || 0)));
+  saveCourseSettings(slug, price, fd.get("published") === "on" && price > 0, priceUsd);
   revalidatePath("/", "layout");
 }
 
@@ -66,6 +69,8 @@ export async function savePaymentSettingsAction(_: AdminFormState, fd: FormData)
   const keys = Object.keys(s) as (keyof typeof s)[];
   const next = Object.fromEntries(keys.map((k) => [k, String(fd.get(k) ?? "").trim().slice(0, 600)])) as typeof s;
   savePaymentSettings(next);
+  const rate = Number(fd.get("usd_rate"));
+  if (Number.isFinite(rate) && rate >= 1 && rate <= 10_000) saveUsdRate(rate);
   return { ok: true, message: "Payment details saved." };
 }
 
