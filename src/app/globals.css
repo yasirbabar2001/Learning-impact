@@ -4179,3 +4179,10 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
     padding: 7px 10px;
   }
 }
+/* Bring "Two ways to learn" closer to the hero so it shows up sooner. */
+.section.two-ways {
+  padding-top: clamp(16px, 3vw, 40px);
+}
+.hero__scroll {
+  display: none;
+}
