@@ -29,7 +29,9 @@ const HOW = [
   { icon: "🎓", title: "Get certified", text: "A certificate with a QR code that employers can verify online." },
 ];
 
-export default async function CertificationsPage() {
+export default async function CertificationsPage({ searchParams }: { searchParams: Promise<{ view?: string }> }) {
+  // ?view=skills: only the capacity building & technical quests, catalogue first (the home page's "Skills" card links here).
+  const skillsOnly = (await searchParams).view === "skills";
   const currency = await viewerCurrency(await currentUser());
   const referrer = referrerByCode((await cookies()).get(REF_COOKIE)?.value);
   const items = catalog().map((c) => ({
@@ -49,7 +51,7 @@ export default async function CertificationsPage() {
   const regulatory = live.length;
   const countries = TARGETS.map((t) => ({ ...t, flag: flagSvg(t.code), quests: live.filter((q) => q.jurisdiction === t.code).length })).filter((t) => t.quests > 0);
   const name = (code: string | null) => TARGETS.find((t) => t.code === code)?.name ?? "";
-  items.push(
+  if (!skillsOnly) items.push(
     ...live.map((q) => ({
       slug: q.slug,
       title: q.title.replace(/^[^|]+\|\s*/, ""),
@@ -66,7 +68,61 @@ export default async function CertificationsPage() {
       flag: q.jurisdiction ? flagSvg(q.jurisdiction) : null,
     })),
   );
-  return (
+  return skillsOnly ? (
+    <>
+      <PageHero eyebrow="Capacity building & technical" title="Skills certifications you play" highlight="like a quest.">
+        <p>
+          {items.length} professional certifications in leadership, technology, HR, operations, communication and banking skills. Learn in short stages, earn XP and
+          badges, pass every stage test and defeat a tough final exam to earn a verified certificate. Stage 1 of every quest is free.
+        </p>
+      </PageHero>
+      {referrer && (
+        <section className="container section--tight">
+          <p className="auth__invite">
+            🎁 <strong>{referrer.name.split(" ")[0]}</strong> invited you to Learning Impact.{" "}
+            <Link href="/register" className="inline-link">
+              Create your free account
+            </Link>{" "}
+            and get a {REFERRAL_XP.welcome} XP welcome bonus.
+          </p>
+        </section>
+      )}
+      <section id="quests" className="container section section--tight cert-quests">
+        <Reveal>
+          <CertCatalog items={items} />
+        </Reveal>
+      </section>
+      {regulatory > 0 && (
+        <section className="container section--tight">
+          <Link href="/regulatory" className="reg-switch glass">
+            <span className="reg-switch__flags" aria-hidden="true">
+              {countries.slice(0, 5).map((c) => (
+                <Flag key={c.code} svg={c.flag} label="" className="flag flag--sm" />
+              ))}
+            </span>
+            <span>
+              Looking for <strong>regulatory compliance quests</strong>? {regulatory} country-specific certifications for banking staff in {countries.length}{" "}
+              countries.
+            </span>
+            <span className="reg-switch__go">Browse by country →</span>
+          </Link>
+        </section>
+      )}
+      <section className="container section section--tight">
+        <ol className="how-strip">
+          {HOW.map((h, i) => (
+            <Reveal key={h.title} delay={i * 0.07}>
+              <li className="how-strip__item spot">
+                <span className="how-strip__icon">{h.icon}</span>
+                <strong>{h.title}</strong>
+                <span className="muted">{h.text}</span>
+              </li>
+            </Reveal>
+          ))}
+        </ol>
+      </section>
+    </>
+  ) : (
     <>
       <PageHero eyebrow="Professional certifications" title="Certifications you play" highlight="like a quest.">
         <p>
@@ -141,7 +197,7 @@ export default async function CertificationsPage() {
           ))}
         </ol>
       </section>
-      <section className="container section section--tight">
+      <section id="quests" className="container section section--tight cert-quests">
         <Reveal>
           <CertCatalog items={items} />
         </Reveal>

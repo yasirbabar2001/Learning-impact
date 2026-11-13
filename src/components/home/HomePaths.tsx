@@ -41,7 +41,7 @@ export function HomePaths({ programs }: { programs: Program[] }) {
         <p className="path3__facts">
           <strong>{skills.length}</strong> quests · stage 1 free
         </p>
-        <Link href="/certifications" className="btn btn--primary path3__cta">
+        <Link href="/certifications?view=skills#quests" className="btn btn--primary path3__cta">
           <span className="btn__label">Explore skills quests</span>
           <span className="btn__arrow">→</span>
         </Link>

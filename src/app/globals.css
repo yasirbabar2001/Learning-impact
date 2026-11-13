@@ -4195,3 +4195,35 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
     padding: 7px 12px;
   }
 }
+
+/* Certifications: skills-only view */
+.cert-quests {
+  scroll-margin-top: 100px;
+}
+.reg-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 194, 255, 0.35);
+  font-size: 14.5px;
+  transition: border-color 0.25s;
+}
+.reg-switch:hover {
+  border-color: var(--gold);
+}
+.reg-switch__flags {
+  display: inline-flex;
+  gap: 4px;
+}
+.reg-switch__flags .flag--sm {
+  margin: 0;
+}
+.reg-switch__go {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: nowrap;
+}

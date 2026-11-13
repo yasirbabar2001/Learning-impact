@@ -125,3 +125,12 @@ test("the home page opens with three paths and a Hire a Trainer button in the he
   await page.locator(".nav__hire").click();
   await expect(page).toHaveURL(/\/trainers$/);
 });
+
+test("Explore skills quests opens the skills catalogue without the regulatory quests", async ({ page }) => {
+  await page.goto("/");
+  await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).click();
+  await expect(page).toHaveURL(/\/certifications\?view=skills#quests$/);
+  await expect(page.locator("#quests .cert-card").first()).toBeInViewport();
+  await expect(page.locator(".reg-feature")).toHaveCount(0);
+  await expect(page.getByRole("tab", { name: "Banking Regulation" })).toHaveCount(0);
+});
