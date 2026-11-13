@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
-import { TwoWays } from "@/components/home/TwoWays";
+import { HomePaths } from "@/components/home/HomePaths";
 import { HomeQuests } from "@/components/portal/HomeQuests";
 import { IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
 import { Magnetic } from "@/components/Magnetic";
 import { Reveal } from "@/components/Reveal";
 import { Swoosh } from "@/components/Swoosh";
-import { RotatingWords, SplitWords } from "@/components/Text";
+import { SplitWords } from "@/components/Text";
 import { getPublishedPrograms, getSettings } from "@/lib/data";
 import { INDUSTRIES } from "@/lib/industries";
 
@@ -58,12 +58,12 @@ export default async function Home() {
 
   return (
     <>
-      <section className="hero container">
+      <section className="hero hero--paths container">
         <p className="eyebrow">
           <span className="eyebrow__dot" />
           {settings.heroEyebrow}
         </p>
-        <h1 className="display display--xl">
+        <h1 className="display display--home">
           <SplitWords text={settings.heroTitle} delay={0.35} />
           {settings.heroHighlight && (
             <span className="display__highlight">
@@ -72,29 +72,16 @@ export default async function Home() {
             </span>
           )}
         </h1>
-        <Reveal delay={0.9} className="hero__sub">
+        <Reveal delay={0.45} className="hero__sub">
           <p>{settings.heroSubtitle}</p>
         </Reveal>
-        <Reveal delay={1.05} className="hero__ctas">
-          <Magnetic href="/certifications">🎁 Start a certification free</Magnetic>
-          <Magnetic href="/trainers" variant="ghost">
-            Hire a trainer
-          </Magnetic>
-        </Reveal>
-        <Reveal delay={1.12} className="hero__trust">
-          <span>✓ Stage 1 of every certification is free</span>
+        <HomePaths programs={programs} />
+        <Reveal delay={0.9} className="hero__trust">
+          <span>✓ Stage 1 of every quest is free</span>
           <span>✓ Certificates any employer can verify</span>
           <span>✓ Training shaped for {INDUSTRIES.length} industries</span>
         </Reveal>
-        <Reveal delay={1.2} className="hero__for">
-          <span className="muted">Training for</span> <RotatingWords words={["new managers", "sales teams", "senior leaders", "frontline staff", "graduate hires", "whole organisations"]} />
-        </Reveal>
-        <div className="hero__scroll" aria-hidden="true">
-          <span />
-        </div>
       </section>
-
-      <TwoWays programs={programs} />
 
       <section className="marquee" aria-label="Training topics">
         {[0, 1].map((row) => (

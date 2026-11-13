@@ -114,11 +114,14 @@ test("a company books training from its industry and the admin sees the industry
   await expect(page.locator(".detail__list")).toContainText("Payment Service Providers");
 });
 
-test("the home page opens with two ways to learn and a Hire a Trainer button in the header", async ({ page }) => {
+test("the home page opens with three paths and a Hire a Trainer button in the header", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: /Two ways to learn/ })).toBeVisible();
-  await expect(page.locator(".way--programs")).toContainText("Corporate training programs");
-  await expect(page.locator(".way--regulatory")).toContainText("Regulatory requirement training");
+  await expect(page.locator(".path3--skills")).toContainText("Skills certification quests");
+  await expect(page.locator(".path3--regulatory")).toContainText("Regulatory compliance quests");
+  await expect(page.locator(".path3--corporate")).toContainText("Corporate training & trainers");
+  await page.locator(".path3--corporate").getByRole("link", { name: /Hire a trainer/ }).click();
+  await expect(page).toHaveURL(/\/trainers$/);
+  await page.goto("/");
   await page.locator(".nav__hire").click();
   await expect(page).toHaveURL(/\/trainers$/);
 });
