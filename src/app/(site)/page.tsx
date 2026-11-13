@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
+import { TwoWays } from "@/components/home/TwoWays";
 import { HomeQuests } from "@/components/portal/HomeQuests";
-import { IconBook, IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
+import { IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
 import { Magnetic } from "@/components/Magnetic";
 import { Reveal } from "@/components/Reveal";
 import { Swoosh } from "@/components/Swoosh";
 import { RotatingWords, SplitWords } from "@/components/Text";
-import { TiltCard } from "@/components/TiltCard";
 import { getPublishedPrograms, getSettings } from "@/lib/data";
 import { INDUSTRIES } from "@/lib/industries";
 
@@ -55,7 +55,6 @@ const FAQ = [
 
 export default async function Home() {
   const [settings, programs] = await Promise.all([getSettings(), getPublishedPrograms()]);
-  const featured = (programs.some((p) => p.featured) ? programs.filter((p) => p.featured) : programs).slice(0, 4);
 
   return (
     <>
@@ -77,10 +76,15 @@ export default async function Home() {
           <p>{settings.heroSubtitle}</p>
         </Reveal>
         <Reveal delay={1.05} className="hero__ctas">
-          <Magnetic href="/certifications">Explore certifications</Magnetic>
-          <Magnetic href="/book" variant="ghost">
-            Book corporate training
+          <Magnetic href="/certifications">🎁 Start a certification free</Magnetic>
+          <Magnetic href="/trainers" variant="ghost">
+            Hire a trainer
           </Magnetic>
+        </Reveal>
+        <Reveal delay={1.12} className="hero__trust">
+          <span>✓ Stage 1 of every certification is free</span>
+          <span>✓ Certificates any employer can verify</span>
+          <span>✓ Training shaped for {INDUSTRIES.length} industries</span>
         </Reveal>
         <Reveal delay={1.2} className="hero__for">
           <span className="muted">Training for</span> <RotatingWords words={["new managers", "sales teams", "senior leaders", "frontline staff", "graduate hires", "whole organisations"]} />
@@ -89,6 +93,8 @@ export default async function Home() {
           <span />
         </div>
       </section>
+
+      <TwoWays programs={programs} />
 
       <section className="marquee" aria-label="Training topics">
         {[0, 1].map((row) => (
@@ -105,82 +111,36 @@ export default async function Home() {
 
       <HomeQuests />
 
-      <section className="section container">
-        <Reveal>
-          <p className="eyebrow">Corporate training</p>
-          <h2 className="h2">
-            Pick a program, or bring in <span className="rainbow-text">the right expert.</span>
-          </h2>
-        </Reveal>
-        <div className="paths">
-          <Reveal delay={0.05}>
-            <TiltCard className="path">
-              <span className="path__icon">
-                <IconBook size={28} />
-              </span>
-              <h3>Book a training program</h3>
-              <p className="muted">Choose from ready-to-run programs across leadership, communication, sales, digital skills and more. Delivered for your team, on your dates.</p>
-              <ul className="ticks">
-                <li>Proven outlines, adaptable to your context</li>
-                <li>On-site, live virtual or hybrid</li>
-                <li>Proposal within one working day</li>
-              </ul>
-              <Link href="/book" className="path__link">
-                Book a program <span>→</span>
-              </Link>
-            </TiltCard>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <TiltCard className="path path--alt">
-              <span className="path__icon">
-                <IconUsers size={28} />
-              </span>
-              <h3>Request a trainer</h3>
-              <p className="muted">Need a specialist for a workshop, a course series, coaching or a keynote? Tell us the brief and we will match you with trainers who fit.</p>
-              <ul className="ticks">
-                <li>Matched to topic, industry and audience</li>
-                <li>Profiles shared before you commit</li>
-                <li>English, Urdu or both</li>
-              </ul>
-              <Link href="/trainers" className="path__link">
-                Request a trainer <span>→</span>
-              </Link>
-            </TiltCard>
-          </Reveal>
-        </div>
-      </section>
-
-      {featured.length > 0 && (
-        <section className="section container">
-          <Reveal className="section__head">
-            <div>
-              <p className="eyebrow">Popular programs</p>
-              <h2 className="h2">Where teams usually start.</h2>
-            </div>
-            <Link href="/programs" className="link-arrow">
-              See all programs <span>→</span>
-            </Link>
-          </Reveal>
-          <div className="featured">
-            {featured.map((p, i) => (
-              <Reveal key={p.id} delay={i * 0.08}>
-                <Link href={`/book?program=${p.slug}`} className="feature-card spot">
-                  <span className="feature-card__num">0{i + 1}</span>
-                  <span className="tag">{p.category}</span>
-                  <h3>{p.title}</h3>
-                  <p className="muted">{p.summary}</p>
-                  <span className="feature-card__foot">
-                    <span>{p.duration}</span>
-                    <span className="feature-card__go" aria-hidden="true">
-                      →
-                    </span>
-                  </span>
-                </Link>
-              </Reveal>
-            ))}
+      <section className="section container" aria-labelledby="hire-title">
+        <Reveal className="hire-band">
+          <div className="hire-band__text">
+            <p className="eyebrow">
+              <span className="eyebrow__dot" /> Hire a trainer
+            </p>
+            <h2 className="h2" id="hire-title">
+              Need an expert in the room? <span className="rainbow-text">We will find them.</span>
+            </h2>
+            <p className="muted">
+              Workshops, course series, coaching or a keynote: tell us the topic, audience and dates, and we match you with vetted trainers who have done
+              the job themselves.
+            </p>
           </div>
-        </section>
-      )}
+          <ul className="ticks hire-band__ticks">
+            <li>Matched to topic, industry and audience</li>
+            <li>Trainer profiles shared before you commit</li>
+            <li>English, Urdu or both · on-site or online</li>
+          </ul>
+          <div className="hire-band__ctas">
+            <Link href="/trainers" className="btn btn--primary">
+              <span className="btn__label">
+                <IconUsers size={18} /> Hire a trainer
+              </span>
+              <span className="btn__arrow">→</span>
+            </Link>
+            <span className="muted">Free to ask, no obligation.</span>
+          </div>
+        </Reveal>
+      </section>
 
       <section className="section container">
         <Reveal>
@@ -315,6 +275,24 @@ export default async function Home() {
         </Reveal>
         <Reveal delay={0.1}>
           <Faq items={FAQ} />
+        </Reveal>
+      </section>
+
+      <section className="section container">
+        <Reveal className="final-cta glass">
+          <h2 className="h2">
+            Not sure where to start? <span className="rainbow-text">Try a stage for free.</span>
+          </h2>
+          <p className="muted">Every certification opens with a free stage, no payment needed. Or tell us what your team needs and we will suggest a plan.</p>
+          <div className="hero__ctas final-cta__ctas">
+            <Magnetic href="/certifications">Start for free</Magnetic>
+            <Magnetic href="/trainers" variant="ghost">
+              Hire a trainer
+            </Magnetic>
+            <Magnetic href="/contact" variant="ghost">
+              Talk to us
+            </Magnetic>
+          </div>
         </Reveal>
       </section>
     </>

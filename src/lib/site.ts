@@ -4,12 +4,15 @@ export const SITE_NAME = "Learning Impact";
 export const NAV_LINKS = [
   { href: "/certifications", label: "Certifications" },
   { href: "/programs", label: "Programs" },
+  { href: "/regulatory", label: "Regulatory" },
   { href: "/industries", label: "Industries" },
-  { href: "/trainers", label: "Hire a Trainer" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
 /** Extra links shown only in the mobile menu. */
+/** The header's highlighted call to action (shown as a button, not a plain link). */
+export const HIRE_LINK = { href: "/trainers", label: "Hire a Trainer" } as const;
+
 export const MOBILE_EXTRA_LINKS = [
   { href: "/about", label: "About" },
   { href: "/book", label: "Book corporate training" },

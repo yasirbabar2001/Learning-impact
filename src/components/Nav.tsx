@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { MOBILE_EXTRA_LINKS, NAV_LINKS } from "@/lib/site";
+import { HIRE_LINK, MOBILE_EXTRA_LINKS, NAV_LINKS } from "@/lib/site";
 import { Logo } from "./Logo";
 
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
@@ -57,6 +57,11 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
             ))}
           </nav>
 
+          <Link href={HIRE_LINK.href} className={`nav__hire ${isActive(path, HIRE_LINK.href) ? "is-active" : ""}`}>
+            <span aria-hidden="true">🎯</span> <span className="nav__long">{HIRE_LINK.label}</span>
+            <span className="nav__short">Hire</span>
+          </Link>
+
           {account ? (
             <>
               {account.admin ? (
@@ -106,6 +111,11 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
           >
             <nav aria-label="Mobile">
+              <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 0.5 }}>
+                <Link href={HIRE_LINK.href} className="menu__hire" onClick={() => setOpen(false)}>
+                  🎯 {HIRE_LINK.label} <span aria-hidden="true">→</span>
+                </Link>
+              </motion.div>
               {[
                 ...NAV_LINKS,
                 ...MOBILE_EXTRA_LINKS,

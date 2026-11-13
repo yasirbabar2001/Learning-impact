@@ -3862,3 +3862,320 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
 .team-dash .tile {
   cursor: default;
 }
+
+/* ---------- Header: Hire a Trainer ---------- */
+.nav__hire {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #050507;
+  background: linear-gradient(90deg, #ffd23f, #ff9f1c);
+  box-shadow: 0 8px 26px -10px rgba(255, 159, 28, 0.8);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+.nav__hire:hover,
+.nav__hire.is-active {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px -8px rgba(255, 159, 28, 0.95);
+}
+.menu__hire {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #050507;
+  background: linear-gradient(90deg, #ffd23f, #ff9f1c);
+}
+@media (min-width: 961px) and (max-width: 1240px) {
+  .nav__link {
+    padding: 9px 10px;
+    font-size: 14.5px;
+  }
+  /* Contact stays in the footer and the menu; the header keeps room for the buttons. */
+  .nav__links a[href="/contact"] {
+    display: none;
+  }
+  .nav__hire {
+    padding: 9px 14px;
+    font-size: 14.5px;
+  }
+  .nav__cta {
+    padding: 10px 16px;
+  }
+  .nav__cta .nav__long {
+    display: none;
+  }
+  .nav__cta .nav__short {
+    display: inline;
+  }
+}
+@media (max-width: 960px) {
+  .nav__hire {
+    margin-left: auto;
+    padding: 8px 12px;
+    font-size: 13.5px;
+  }
+  .nav__brand {
+    margin-right: 0;
+  }
+}
+@media (max-width: 520px) {
+  .nav__inner {
+    padding: 0 6px 0 12px;
+  }
+  .nav__hire {
+    gap: 4px;
+    margin-left: auto;
+    padding: 7px 10px;
+    font-size: 12.5px;
+  }
+  .nav__hire .nav__long {
+    display: none;
+  }
+  .nav__hire .nav__short {
+    display: inline;
+  }
+}
+@media (max-width: 400px) {
+  .nav__hire {
+    padding: 7px 8px;
+  }
+}
+@media (max-width: 345px) {
+  .nav__hire {
+    display: none;
+  }
+}
+
+/* ---------- Home: hero trust line ---------- */
+.hero {
+  min-height: min(calc(100svh - 96px), 760px);
+}
+.hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  margin-top: 22px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- Home: two ways to learn ---------- */
+.two-ways__head {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.two-ways__head .eyebrow {
+  justify-content: center;
+}
+.two-ways__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.way {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+  padding: clamp(24px, 3.5vw, 40px);
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+}
+.way--programs {
+  background: linear-gradient(160deg, rgba(255, 77, 109, 0.16), rgba(255, 159, 28, 0.05) 45%, rgba(13, 13, 19, 0.6));
+}
+.way--regulatory {
+  background: linear-gradient(160deg, rgba(0, 194, 255, 0.16), rgba(123, 97, 255, 0.07) 45%, rgba(13, 13, 19, 0.6));
+}
+.way h3 {
+  margin: 0;
+  font-size: clamp(26px, 2.6vw, 34px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.way p {
+  margin: 0;
+}
+.way__icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  font-size: 26px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.way__kicker {
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.way__list {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+.way__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 0.25s, transform 0.25s var(--ease);
+}
+.way__item > span:first-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.way__item strong {
+  font-size: 15px;
+}
+.way__item .muted {
+  font-size: 12.5px;
+}
+.way__item:hover {
+  border-color: var(--gold);
+  transform: translateX(3px);
+}
+.way__flags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+.way__flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: border-color 0.25s, transform 0.25s var(--ease);
+}
+.way__flag .flag {
+  width: 26px;
+  border-radius: 3px;
+}
+.way__flag:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.way__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: auto !important;
+  padding-top: 6px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.way__facts strong {
+  color: var(--fg);
+  font-size: 18px;
+  margin-right: 3px;
+}
+.way__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ---------- Home: hire a trainer band and closing call to action ---------- */
+.hire-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 18px 40px;
+  align-items: center;
+  padding: clamp(24px, 4vw, 48px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 210, 63, 0.35);
+  background: linear-gradient(120deg, rgba(255, 210, 63, 0.12), rgba(255, 159, 28, 0.05) 50%, rgba(13, 13, 19, 0.6));
+}
+.hire-band__text .eyebrow {
+  margin-bottom: 12px;
+}
+.hire-band__text h2 {
+  margin: 0 0 12px;
+}
+.hire-band__ctas {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+}
+.hire-band__ctas .btn__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.final-cta {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: clamp(28px, 5vw, 60px);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.final-cta h2,
+.final-cta p {
+  margin: 0;
+  max-width: 760px;
+}
+.final-cta__ctas {
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .two-ways__grid,
+  .hire-band {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .way__flags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 380px) {
+  .nav__brand .logo {
+    width: 88px;
+  }
+  .nav__hire > span[aria-hidden] {
+    display: none;
+  }
+  .nav__login {
+    padding: 7px 7px;
+  }
+  .nav__cta {
+    padding: 7px 10px;
+  }
+}
