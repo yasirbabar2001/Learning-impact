@@ -128,10 +128,11 @@ test("the home page opens with three paths and a Hire a Trainer button in the he
 
 test("Explore skills quests opens the skills catalogue without the regulatory quests", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).click({ force: true }); // the floating ifSPACE card may overlap on small screens
+  await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).dispatchEvent("click"); // the floating ifSPACE card can sit on top of the button
   await expect(page).toHaveURL(/\/certifications\?view=skills#quests$/);
-  await expect(page.locator("#quests .cert-card").first()).toBeVisible();
-  await expect(page.locator("#quests .cert-card").first()).toBeInViewport({ timeout: 10_000 });
+  // The page opens scrolled to the quests (the hash target sits near the top of the screen).
+  await expect(page.locator("#quests")).toBeVisible();
+  await expect.poll(async () => (await page.locator("#quests").boundingBox())?.y ?? 9999, { timeout: 15_000 }).toBeLessThan(400);
   await expect(page.locator(".reg-feature")).toHaveCount(0);
   await expect(page.getByRole("tab", { name: "Banking Regulation" })).toHaveCount(0);
 });

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Audience, Board, Bubble, ChartCard, CheckBadge, lookFor, Plant, Screen, Seated, seedOf, Skyline, Standing } from "./cover/scene";
 
 /**
  * Title artwork for a course: a drawn illustration of the topic (leadership summit, AI chip, AML shield, padlock…)
@@ -370,6 +371,95 @@ function art(m: Motif, c: string): ReactNode {
   }
 }
 
+type Layout = "board" | "desk" | "service";
+const LAYOUT: Record<Motif, Layout> = {
+  leadership: "board",
+  executive: "board",
+  communication: "board",
+  conflict: "board",
+  people: "board",
+  talent: "board",
+  equality: "board",
+  governance: "board",
+  law: "board",
+  workplace: "board",
+  green: "board",
+  ai: "desk",
+  database: "desk",
+  infrastructure: "desk",
+  cyber: "desk",
+  aml: "desk",
+  privacy: "desk",
+  fx: "desk",
+  procurement: "desk",
+  consumer: "service",
+  experience: "service",
+};
+
+/** The illustrated scene: people at work with the topic on a board, screen or speech bubble. */
+function scene(m: Motif, c: string, slug: string, country: string | null): ReactNode {
+  const seed = seedOf(slug);
+  const look = (n: number) => lookFor(seed, n);
+  const topic = art(m, c);
+  const floor = <rect x="0" y="520" width="1200" height="110" fill="#000" opacity="0.32" />;
+  const layout = LAYOUT[m];
+  if (layout === "board")
+    return (
+      <>
+        <Skyline y={520} country={country} seed={seed} color="#ffffff" />
+        {floor}
+        <Board x={560} y={60} w={520} h={340} accent={c}>
+          {topic}
+        </Board>
+        <CheckBadge x={1086} y={66} accent={c} />
+        <Plant x={1150} y={560} />
+        <Standing x={430} y={575} scale={0.95} look={look(1)} pose="point" />
+        <Audience x={110} y={650} look={look(2)} scale={0.95} />
+        <Audience x={260} y={665} look={look(3)} scale={1.02} />
+        <Audience x={760} y={660} look={look(4)} scale={0.95} />
+        <Audience x={905} y={672} look={look(5)} scale={1} />
+      </>
+    );
+  if (layout === "desk")
+    return (
+      <>
+        <Skyline y={470} country={country} seed={seed} color="#ffffff" />
+        <Screen x={560} y={50} w={540} h={330} accent={c}>
+          {topic}
+        </Screen>
+        {!country && <ChartCard x={60} y={70} accent={c} />}
+        <CheckBadge x={1102} y={58} accent={c} />
+        <Seated x={380} y={455} look={look(1)} />
+        <rect x="200" y="450" width="1000" height="26" rx="6" fill="#e6e8ef" />
+        <rect x="200" y="476" width="1000" height="160" fill="#000" opacity="0.35" />
+        <rect x="292" y="350" width="176" height="104" rx="10" fill="#d4d7e0" />
+        <circle cx="380" cy="402" r="11" fill={c} />
+        <rect x="270" y="448" width="220" height="10" rx="5" fill="#b9bdc8" />
+        <rect x="520" y="405" width="70" height="46" rx="8" fill="#fff" opacity="0.9" />
+        <path d="M590 418 a14 14 0 0 1 0 22" fill="none" stroke="#fff" strokeWidth="7" opacity="0.9" />
+        <Plant x={1140} y={450} />
+      </>
+    );
+  return (
+    <>
+      <Skyline y={470} country={country} seed={seed} color="#ffffff" />
+      {floor}
+      <Seated x={850} y={420} look={look(1)} typing={false} />
+      <rect x="560" y="410" width="600" height="230" rx="18" fill="#eef0f5" opacity="0.94" />
+      <rect x="560" y="410" width="600" height="18" rx="9" fill={c} />
+      <Standing x={360} y={600} scale={0.95} look={look(2)} pose="wave" />
+      <Bubble x={470} y={60} w={300} h={210}>
+        <g transform="translate(150 105) scale(0.42)">
+          <rect x="-330" y="-240" width="660" height="480" rx="40" fill={c} />
+          {topic}
+        </g>
+      </Bubble>
+      <CheckBadge x={1100} y={90} accent={c} />
+      <ChartCard x={960} y={180} accent={c} />
+    </>
+  );
+}
+
 /** Shades a hex colour towards black (0..1). */
 function darken(hex: string, amount: number) {
   const n = parseInt(hex.replace("#", "").padEnd(6, "0").slice(0, 6), 16);
@@ -426,11 +516,8 @@ export function CourseCover({
         </defs>
         <rect width="1200" height="630" fill={`url(#${id}-bg)`} />
         <rect width="1200" height="630" fill={`url(#${id}-dots)`} />
-        <circle cx="840" cy="300" r="330" fill={`url(#${id}-glow)`} />
-        <circle cx="840" cy="315" r="250" fill="none" stroke="#fff" strokeOpacity="0.1" strokeWidth="2" />
-        <circle cx="840" cy="315" r="300" fill="none" stroke="#fff" strokeOpacity="0.06" strokeWidth="2" strokeDasharray="6 12" />
-        <circle cx="140" cy="560" r="180" fill={color} opacity="0.25" />
-        <g transform="translate(840 330)">{art(motif, color)}</g>
+        <circle cx="820" cy="240" r="360" fill={`url(#${id}-glow)`} />
+        {scene(motif, color, slug, flag ? slug.slice(0, 2) : null)}
       </svg>
       {flag && <span className="cover__flag" dangerouslySetInnerHTML={{ __html: flag }} />}
     </span>

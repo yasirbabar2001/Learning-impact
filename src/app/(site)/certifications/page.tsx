@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { CertCatalog } from "@/components/portal/CertCatalog";
 import { Reveal } from "@/components/Reveal";
+import { ScrollToHash } from "@/components/ScrollToHash";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { Flag } from "@/components/Flag";
@@ -73,6 +74,7 @@ export default async function CertificationsPage({ searchParams }: { searchParam
   );
   return skillsOnly ? (
     <>
+      <ScrollToHash />
       <PageHero eyebrow="Capacity building & technical" title="Skills certifications you play" highlight="like a quest.">
         <p>
           {items.length} professional certifications in leadership, technology, HR, operations, communication and banking skills. Learn in short stages, earn XP and
