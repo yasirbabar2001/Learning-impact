@@ -384,6 +384,7 @@ export function CourseCover({
   label,
   className = "",
   idSuffix = "",
+  image = null,
 }: {
   slug: string;
   color: string;
@@ -393,9 +394,19 @@ export function CourseCover({
   className?: string;
   /** Needed when the same cover appears twice on one page, so the SVG gradient ids stay unique. */
   idSuffix?: string;
+  /** Uploaded or bundled title picture; when set it replaces the drawn artwork. */
+  image?: string | null;
 }) {
   const id = `cv-${slug}${idSuffix}`;
   const motif = motifFor(slug);
+  if (image)
+    return (
+      <span className={`cover cover--photo ${className}`} {...(label ? { role: "img", "aria-label": label } : { "aria-hidden": true })}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={image} alt="" loading="lazy" decoding="async" />
+        {flag && <span className="cover__flag" dangerouslySetInnerHTML={{ __html: flag }} />}
+      </span>
+    );
   return (
     <span className={`cover ${className}`} {...(label ? { role: "img", "aria-label": label } : { "aria-hidden": true })}>
       <svg viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice" aria-hidden="true">

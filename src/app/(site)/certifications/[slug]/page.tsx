@@ -12,6 +12,7 @@ import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { currentUser, hasAdminAccess, isTeamMember } from "@/lib/portal/auth";
 import { enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 import { flagSvg } from "@/lib/regulatory/flags";
+import { coverUrl } from "@/lib/portal/covers";
 
 export const dynamic = "force-dynamic";
 
@@ -32,6 +33,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   const enrolled = user ? enrollmentFor(user.id, slug) : null;
   const team = isTeamMember(user);
   const flag = e.jurisdiction ? flagSvg(e.jurisdiction) : null;
+  const image = coverUrl(slug);
   const admin = hasAdminAccess(user);
   const firstStage = e.course ? `/learn/${slug}/${e.course.sessions[0].id}` : `/learn/${slug}`;
   const started = user && e.course && !enrolled ? progressMap(user.id, slug).get(e.course.sessions[0].id) : undefined;
@@ -41,7 +43,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   if (!c || !e.available) {
     return (
       <section className="container section cert-soon" style={{ ["--c" as string]: e.color }}>
-        <CourseCover slug={slug} color={e.color} flag={flag} label={`${e.title} cover`} className="cover--hero cover--soon" />
+        <CourseCover slug={slug} color={e.color} flag={flag} label={`${e.title} cover`} className="cover--hero cover--soon" image={image} />
         <p className="eyebrow">
           <span className="eyebrow__dot" /> {e.category} · coming soon
         </p>
@@ -76,7 +78,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
     <div className="cert" style={{ ["--c" as string]: c.quest.color }}>
       <section className="container cert__hero">
         <div>
-          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--hero cover--mobile" />
+          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--hero cover--mobile" image={image} />
           <p className="eyebrow">
             <span className="eyebrow__dot" /> {c.category} · {c.level} certification
           </p>
@@ -108,7 +110,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
           </ul>
         </div>
         <Reveal delay={0.4} className="cert__buy glass">
-          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--side" idSuffix="-side" />
+          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--side" idSuffix="-side" image={image} />
           <span className="cert__badge" aria-hidden="true">
             🏅
           </span>

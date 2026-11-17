@@ -1,3 +1,4 @@
+import { CoverUpload } from "@/components/admin/CoverUpload";
 import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
 import { PaymentSettingsForm } from "@/components/admin/PortalAdminForms";
 import { catalog } from "@/lib/courses/catalog";
@@ -70,6 +71,7 @@ export default async function AdminCertifications() {
                     Sales page ↗
                   </a>
                 </form>
+                <CoverUpload slug={i.slug} color={i.color} />
                 <p className="muted scorm-links">
                   SCORM 1.2 stage tests:{" "}
                   {i.course.sessions.map((s, k) => (

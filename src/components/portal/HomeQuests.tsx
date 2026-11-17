@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { catalog } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
+import { coverUrl } from "@/lib/portal/covers";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { CourseCover } from "../CourseCover";
 import { Reveal } from "../Reveal";
@@ -51,7 +52,7 @@ export async function HomeQuests() {
           <Reveal key={c.slug} delay={i * 0.06}>
             <Link href={`/certifications/${c.slug}`} className={`cert-card spot ${c.available ? "" : "is-soon"}`} style={{ ["--c" as string]: c.color }}>
               <span className="cert-card__glow" aria-hidden="true" />
-              <CourseCover slug={c.slug} color={c.color} label="" className="cover--card" />
+              <CourseCover slug={c.slug} color={c.color} image={coverUrl(c.slug)} label="" className="cover--card" />
               <span className="cert-card__top">
                 <span className="tag">{c.category}</span>
                 {c.available ? <span className="tag free-tag">🎁 Start for free</span> : <span className="tag">Coming soon</span>}

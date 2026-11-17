@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { removeCover, saveCover } from "@/lib/portal/covers";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
 import { catalogEntry, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
@@ -58,6 +59,20 @@ export async function saveCourseSettingsAction(fd: FormData) {
   const price = Math.max(0, Math.min(10_000_000, Math.round(Number(fd.get("price")) || 0)));
   const priceUsd = Math.max(0, Math.min(100_000, Math.round(Number(fd.get("price_usd")) || 0)));
   saveCourseSettings(slug, price, fd.get("published") === "on" && price > 0, priceUsd);
+  revalidatePath("/", "layout");
+}
+
+/** Uploads (or removes) a course's title picture. */
+export async function saveCoverAction(fd: FormData) {
+  await requireAdmin();
+  const slug = String(fd.get("slug"));
+  if (!isTopic(slug)) return;
+  if (fd.get("remove") === "1") removeCover(slug);
+  else {
+    const file = fd.get("cover");
+    if (!(file instanceof File) || file.size === 0) return;
+    saveCover(slug, Buffer.from(await file.arrayBuffer()), file.type);
+  }
   revalidatePath("/", "layout");
 }
 

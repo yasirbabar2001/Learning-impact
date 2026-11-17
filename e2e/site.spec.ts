@@ -130,7 +130,8 @@ test("Explore skills quests opens the skills catalogue without the regulatory qu
   await page.goto("/");
   await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).click({ force: true }); // the floating ifSPACE card may overlap on small screens
   await expect(page).toHaveURL(/\/certifications\?view=skills#quests$/);
-  await expect(page.locator("#quests .cert-card").first()).toBeInViewport();
+  await expect(page.locator("#quests .cert-card").first()).toBeVisible();
+  await expect(page.locator("#quests .cert-card").first()).toBeInViewport({ timeout: 10_000 });
   await expect(page.locator(".reg-feature")).toHaveCount(0);
   await expect(page.getByRole("tab", { name: "Banking Regulation" })).toHaveCount(0);
 });

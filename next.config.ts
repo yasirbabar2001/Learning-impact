@@ -14,6 +14,8 @@ const nextConfig: NextConfig = {
   output: "standalone",
   // No next/image usage, so skip the sharp image optimiser and keep the upload small.
   images: { unoptimized: true },
+  // Payment receipts and course pictures are uploaded through server actions (up to 5 MB each).
+  experimental: { serverActions: { bodySizeLimit: "6mb" } },
   // Read at runtime with fs, so they must be copied into the standalone server bundle.
   outputFileTracingIncludes: { "/**": ["./content/courses/*.json", "./assets/fonts/*"] },
   outputFileTracingExcludes: { "*": ["node_modules/@img/**", "node_modules/sharp/**", "node_modules/.pnpm/@img+*/**", "node_modules/.pnpm/sharp@*/**"] },

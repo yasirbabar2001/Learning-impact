@@ -11,6 +11,7 @@ import { currentUser } from "@/lib/portal/auth";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { REF_COOKIE, REFERRAL_XP, referrerByCode } from "@/lib/portal/referrals";
 import { flagSvg } from "@/lib/regulatory/flags";
+import { coverUrl } from "@/lib/portal/covers";
 import { TARGETS } from "@/lib/regulatory/targets";
 
 export const metadata: Metadata = {
@@ -46,6 +47,7 @@ export default async function CertificationsPage({ searchParams }: { searchParam
     hours: c.course?.hours ?? null,
     stages: c.course?.sessions.length ?? null,
     questName: c.available ? (c.course?.quest.name ?? null) : null,
+    image: coverUrl(c.slug),
   }));
   const live = regulatoryCatalog().filter((q) => q.available);
   const regulatory = live.length;
@@ -66,6 +68,7 @@ export default async function CertificationsPage({ searchParams }: { searchParam
       questName: q.course?.quest.name ?? null,
       country: name(q.jurisdiction),
       flag: q.jurisdiction ? flagSvg(q.jurisdiction) : null,
+      image: coverUrl(q.slug),
     })),
   );
   return skillsOnly ? (

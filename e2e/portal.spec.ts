@@ -684,3 +684,22 @@ test("an admin marks a learner as Learning Impact Team: free certifications and 
   const res = await page.request.get("/admin/users-export");
   expect(res.status()).toBe(401);
 });
+
+test("an admin uploads a course title picture and it replaces the drawn artwork", async ({ browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const row = admin.locator(".order-admin", { has: admin.locator('input[name=slug][value="talent-management"]') }).first();
+  await row.locator(".cover-admin input[type=file]").setInputFiles(path.join(__dirname, "fixtures", "receipt.png"));
+  await row.getByRole("button", { name: /Upload picture/ }).click();
+  await expect(row.getByRole("button", { name: /Replace picture/ })).toBeVisible();
+  await admin.goto("/certifications/talent-management");
+  const img = admin.locator(".cover--photo img").first();
+  await expect(img).toHaveAttribute("src", /^\/covers\/talent-management\?v=/);
+  const res = await admin.request.get((await img.getAttribute("src"))!);
+  expect(res.status()).toBe(200);
+  expect(res.headers()["content-type"]).toBe("image/png");
+  // Removing it brings the drawn artwork back.
+  await admin.goto("/admin/certifications");
+  await row.getByRole("button", { name: /Remove picture/ }).click();
+  await expect(row.getByRole("button", { name: /Upload picture/ })).toBeVisible();
+});

@@ -1,3 +1,4 @@
+import { CoverUpload } from "@/components/admin/CoverUpload";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
@@ -109,6 +110,7 @@ export default async function AdminJurisdiction({ params }: { params: Promise<{ 
                       Sales page ↗
                     </a>
                   </form>
+                  <CoverUpload slug={q.slug} color={q.color} />
                 </li>
               );
             })}
