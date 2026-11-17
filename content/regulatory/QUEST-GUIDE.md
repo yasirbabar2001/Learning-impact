@@ -62,6 +62,11 @@ course format as every other quest (`src/lib/courses/schema.ts`), so read `conte
 - In `description`, say which regulator and laws it is based on, who must take it and why, and include one
   sentence that it builds knowledge and does not replace the institution's own policies.
 
+- `takeaways`: 4 or 5 key takeaways shown as highlighted chips right under the title. Each is 2-6 words, at most 38
+  characters, no full stop, and names a concrete thing the learner can do after the quest (e.g. "File STRs and CTRs on goAML").
+- Cover picture: drawn automatically from the slug (topic keywords such as `aml`, `cyber`, `consumer`, `governance`) with the
+  country flag; add the slug to `BY_SLUG` in `src/components/CourseCover.tsx` if a different illustration fits better.
+
 ## Check
 
 Run `pnpm -s content:check content/courses/<slug>.json` from /home/user/learning-impact until it passes.

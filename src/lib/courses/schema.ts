@@ -128,6 +128,8 @@ export const courseSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
   title: text(5, 90),
   tagline: text(20, 160),
+  /** 4-5 short, specific things the learner will be able to do (shown as highlighted chips under the title). */
+  takeaways: z.array(text(5, 40)).min(4).max(5).optional(),
   category: z.enum(CATEGORIES),
   level: z.enum(LEVELS),
   sectors: z.array(text(3, 60)).min(2).max(10),

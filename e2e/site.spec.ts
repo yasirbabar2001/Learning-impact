@@ -128,9 +128,16 @@ test("the home page opens with three paths and a Hire a Trainer button in the he
 
 test("Explore skills quests opens the skills catalogue without the regulatory quests", async ({ page }) => {
   await page.goto("/");
-  await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).click();
+  await page.locator(".path3--skills").getByRole("link", { name: /Explore skills quests/ }).click({ force: true }); // the floating ifSPACE card may overlap on small screens
   await expect(page).toHaveURL(/\/certifications\?view=skills#quests$/);
   await expect(page.locator("#quests .cert-card").first()).toBeInViewport();
   await expect(page.locator(".reg-feature")).toHaveCount(0);
   await expect(page.getByRole("tab", { name: "Banking Regulation" })).toHaveCount(0);
+});
+
+test("each certification page shows its cover picture and key takeaways under the title", async ({ page }) => {
+  await page.goto("/certifications/advanced-leadership");
+  await expect(page.locator(".cover").first()).toBeAttached();
+  await expect(page.locator(".takeaways .takeaway")).toHaveCount(5);
+  await expect(page.locator(".takeaways")).toContainText("Lead change through resistance");
 });

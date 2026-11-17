@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { AnimatePresence, LayoutGroup, motion } from "motion/react";
 import { useState } from "react";
+import { CourseCover } from "../CourseCover";
 
 export type CatalogCard = {
   slug: string;
@@ -50,6 +51,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
             >
               <Link href={`/certifications/${c.slug}`} className={`cert-card spot ${c.available ? "" : "is-soon"}`} style={{ ["--c" as string]: c.color }}>
                 <span className="cert-card__glow" aria-hidden="true" />
+                <CourseCover slug={c.slug} color={c.color} flag={c.flag} label="" className="cover--card" />
                 <span className="cert-card__top">
                   <span className="tag">
                     {c.flag && <span className="flag flag--sm" aria-hidden="true" dangerouslySetInnerHTML={{ __html: c.flag }} />}
