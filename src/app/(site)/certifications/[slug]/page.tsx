@@ -43,7 +43,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   if (!c || !e.available) {
     return (
       <section className="container section cert-soon" style={{ ["--c" as string]: e.color }}>
-        <CourseCover slug={slug} color={e.color} flag={flag} label={`${e.title} cover`} className="cover--hero cover--soon" image={image} />
+        <CourseCover slug={slug} color={e.color} flag={flag} label={`${e.title} cover`} className="cover--hero cover--soon" image={image} priority />
         <p className="eyebrow">
           <span className="eyebrow__dot" /> {e.category} · coming soon
         </p>
@@ -78,7 +78,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
     <div className="cert" style={{ ["--c" as string]: c.quest.color }}>
       <section className="container cert__hero">
         <div>
-          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--hero cover--mobile" image={image} />
+          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--hero cover--mobile" image={image} priority />
           <p className="eyebrow">
             <span className="eyebrow__dot" /> {c.category} · {c.level} certification
           </p>
@@ -110,7 +110,7 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
           </ul>
         </div>
         <Reveal delay={0.4} className="cert__buy glass">
-          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--side" idSuffix="-side" image={image} />
+          <CourseCover slug={slug} color={c.quest.color} flag={flag} label={`${c.title} cover`} className="cover--side" image={image} priority />
           <span className="cert__badge" aria-hidden="true">
             🏅
           </span>

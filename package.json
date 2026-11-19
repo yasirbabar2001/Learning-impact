@@ -5,6 +5,8 @@
   "description": "Learning Impact: corporate training programs and trainer requests (learningimpact.pk)",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build-covers.mjs",
+    "covers": "node scripts/build-covers.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -19,7 +21,7 @@
     "country-flag-icons": "^1.6.20",
     "fflate": "^0.8.3",
     "motion": "^14.9.0",
-    "next": "16.4.3",
+    "next": "16.4.6",
     "nodemailer": "^10.3.1",
     "pdf-lib": "^1.17.1",
     "qrcode": "^1.5.4",
@@ -38,7 +40,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.4.3",
+    "eslint-config-next": "^16.4.6",
     "typescript": "^5.9.3"
   },
   "pnpm": {

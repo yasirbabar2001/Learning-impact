@@ -169,6 +169,20 @@ The starter program catalogue and default settings are added automatically the f
 Create a free Resend account, verify `learningimpact.pk` there (it gives you DNS records to add at domain.pk), then
 set `RESEND_API_KEY`, `NOTIFY_EMAIL_TO` (comma-separated addresses) and `NOTIFY_EMAIL_FROM`.
 
+#### 5. Keep the site quick on cPanel (recommended)
+
+cPanel stops a Node.js app after a quiet spell, and the next visitor waits while it starts again. Keep it awake with
+a cron job: cPanel → **Cron Jobs** → Common settings "Once Per Five Minutes" (`*/5 * * * *`) → Command:
+
+```
+curl -s -o /dev/null https://learningimpact.pk/
+```
+
+Other speed notes: pages are sent fully readable before their JavaScript loads (animations only play for content
+further down and on page changes), the course library is loaded while the server starts (`src/instrumentation.ts`),
+and course pictures are drawn once at build time (`scripts/build-covers.mjs` → `public/cover-art/`, cached by
+browsers for a day) instead of being written into every page.
+
 ## Project layout
 
 ```

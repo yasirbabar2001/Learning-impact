@@ -38,7 +38,7 @@ export function IndustriesExplorer() {
         </label>
       </div>
 
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="popLayout" initial={false}>
         {sections.map((g) => (
           <motion.section key={g.id} layout className={`sector sector--${g.id}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} aria-labelledby={`sector-${g.id}`}>
             <div className="sector__head">
@@ -48,7 +48,7 @@ export function IndustriesExplorer() {
               <p className="muted">{g.intro}</p>
             </div>
             <motion.div layout className="industry-grid">
-              <AnimatePresence mode="popLayout">
+              <AnimatePresence mode="popLayout" initial={false}>
                 {g.items.map((ind, i) => (
                   <motion.article
                     layout

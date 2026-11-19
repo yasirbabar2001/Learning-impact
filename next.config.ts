@@ -20,7 +20,11 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: { "/**": ["./content/courses/*.json", "./assets/fonts/*"] },
   outputFileTracingExcludes: { "*": ["node_modules/@img/**", "node_modules/sharp/**", "node_modules/.pnpm/@img+*/**", "node_modules/.pnpm/sharp@*/**"] },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      // Course pictures are redrawn on every build; let browsers reuse them for a day.
+      { source: "/cover-art/:file*", headers: [{ key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" }] },
+    ];
   },
   async redirects() {
     return [{ source: "/:path*", has: [{ type: "host", value: "www.learningimpact.pk" }], destination: "https://learningimpact.pk/:path*", permanent: true }];

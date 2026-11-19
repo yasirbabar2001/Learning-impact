@@ -54,7 +54,7 @@ export function ProgramsExplorer({ programs }: { programs: Program[] }) {
       </div>
 
       <motion.div layout className="program-grid">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="popLayout" initial={false}>
           {shown.map((p, i) => (
             <motion.button
               layout

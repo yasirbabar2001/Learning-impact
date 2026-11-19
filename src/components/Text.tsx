@@ -2,9 +2,12 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { Fragment, useEffect, useState } from "react";
+import { firstPaint } from "@/lib/first-paint";
 
 /** Headline whose words rise one after another. */
 export function SplitWords({ text, className, delay = 0 }: { text: string; className?: string; delay?: number }) {
+  // On the first page of a visit the headline is shown at once (readable before JavaScript loads).
+  const [animate] = useState(() => firstPaint.done);
   return (
     <span className={className}>
       {text.split(" ").map((word, i) => (
@@ -12,7 +15,7 @@ export function SplitWords({ text, className, delay = 0 }: { text: string; class
           <span className="split__mask">
           <motion.span
             className="split__word"
-            initial={{ y: "110%", rotate: 6 }}
+            initial={animate ? { y: "110%", rotate: 6 } : false}
             animate={{ y: "0%", rotate: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: delay + i * 0.07 }}
           >

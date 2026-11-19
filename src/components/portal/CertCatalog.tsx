@@ -41,7 +41,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
         </div>
       </div>
       <motion.div layout className="cert-grid">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="popLayout" initial={false}>
           {shown.map((c, i) => (
             <motion.div
               layout
