@@ -172,7 +172,8 @@ set `RESEND_API_KEY`, `NOTIFY_EMAIL_TO` (comma-separated addresses) and `NOTIFY_
 #### 5. Keep the site quick on cPanel (recommended)
 
 cPanel stops a Node.js app after a quiet spell, and the next visitor waits while it starts again. Keep it awake with
-a cron job: cPanel → **Cron Jobs** → Common settings "Once Per Five Minutes" (`*/5 * * * *`) → Command:
+one "Once Per Five Minutes" (`*/5 * * * *`) cron job in cPanel → **Cron Jobs**. If you already have the job from
+`docs/HOSTING-DOMAIN-PK.md` (step 7, `.../api/health`), edit that one instead of adding a second; the command:
 
 ```
 curl -s -o /dev/null https://learningimpact.pk/

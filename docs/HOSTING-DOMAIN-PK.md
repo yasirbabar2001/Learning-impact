@@ -141,10 +141,11 @@ stored in `DATA_DIR/uploads`.
      reminders were sent, e.g. `{"streak":0,"comeback":0,"failed":0,"checked":0}`.
 7. **Keep the site awake (recommended, makes the first click fast):** shared hosting puts a Node.js app to sleep
    after a few idle minutes, and the next visitor then waits several seconds while it starts again. In cPanel →
-   **Cron Jobs**, add one more job with *Common Settings* = **Once Per Five Minutes** and this command:
+   **Cron Jobs**, add one more job (only one; edit it if it already exists) with *Common Settings* = **Once Per
+   Five Minutes** and this command (it also keeps the home page ready):
 
    ```
-   curl -s https://learningimpact.pk/api/health > /dev/null
+   curl -s -o /dev/null https://learningimpact.pk/
    ```
 
 8. **Invite links:** every learner's dashboard shows a personal link (`learningimpact.pk/r/CODE`). When a friend
