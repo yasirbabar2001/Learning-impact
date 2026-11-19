@@ -12,7 +12,9 @@ export const dynamic = "force-dynamic";
 async function handle(req: NextRequest) {
   const secret = process.env.CRON_SECRET;
   const key = req.nextUrl.searchParams.get("key") ?? req.headers.get("x-cron-key") ?? "";
-  if (!secret || key.length !== secret.length || !timingSafeEqual(Buffer.from(key), Buffer.from(secret))) return new NextResponse("Not found", { status: 404 });
+  // Tell whoever sets up the cron job that the password itself is missing on the server (reveals nothing secret).
+  if (!secret) return new NextResponse("Reminders are not set up: add CRON_SECRET in cPanel > Setup Node.js App, then restart the app.", { status: 503 });
+  if (key.length !== secret.length || !timingSafeEqual(Buffer.from(key), Buffer.from(secret))) return new NextResponse("Not found", { status: 404 });
   return NextResponse.json(await sendReminders());
 }
 

@@ -50,6 +50,21 @@ export default async function AdminLearners({ searchParams }: { searchParams: Pr
         <TestEmailForm configured={mailConfigured()} host={process.env.SMTP_HOST ?? ""} />
       </section>
       <section className="settings__group glass">
+        <h2>Daily reminder e-mails</h2>
+        {process.env.CRON_SECRET ? (
+          <p className="muted">
+            ✓ <b>CRON_SECRET is set</b> ({process.env.CRON_SECRET.length} characters
+            {/[^A-Za-z0-9]/.test(process.env.CRON_SECRET) ? ", contains a space or symbol: use letters and digits only" : ""}). The cron job must call{" "}
+            <code>https://learningimpact.pk/api/cron/reminders?key=</code> followed by exactly the same password.
+          </p>
+        ) : (
+          <p className="form-alert">
+            CRON_SECRET is not set on the server, so the reminder address answers “Reminders are not set up”. Add it in cPanel → Setup Node.js App →
+            Environment variables, then click Restart.
+          </p>
+        )}
+      </section>
+      <section className="settings__group glass">
         <h2>Enrol a learner manually</h2>
         <EnrollForm courses={allTopics()} />
       </section>
