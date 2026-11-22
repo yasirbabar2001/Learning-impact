@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { SiteSettings } from "@/lib/types";
 import { Logo } from "./Logo";
+import { BrandTagline } from "@/components/BrandTagline";
 
 export function Footer({ settings }: { settings: SiteSettings }) {
   const socials = [
@@ -32,6 +33,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
       <div className="footer__grid">
         <div>
           <Logo className="footer__logo" animated={false} />
+          <BrandTagline className="brand__tagline--footer" />
           <p className="muted">Corporate training, professional certifications and expert trainers for organisations worldwide.</p>
         </div>
         <div>

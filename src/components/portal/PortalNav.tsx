@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { logout } from "@/lib/actions/account";
 import { levelFor } from "@/lib/portal/levels";
 import { Logo } from "../Logo";
+import { BrandTagline } from "@/components/BrandTagline";
 
 type NavUser = { name: string; xp: number; streak: number; level: number; levelName: string; progress: number; manager: boolean; admin: boolean; team?: boolean };
 
@@ -57,8 +58,9 @@ export function PortalNav({ user }: { user: NavUser | null }) {
   return (
     <header className="pnav">
       <div className="pnav__inner">
-        <Link href={user ? "/learn" : "/"} className="pnav__brand" aria-label="Learning Impact">
+        <Link href={user ? "/learn" : "/"} className="pnav__brand brand" aria-label="Learning Impact">
           <Logo />
+          <BrandTagline />
         </Link>
         {user && (
           <nav className="pnav__links" aria-label="Portal">

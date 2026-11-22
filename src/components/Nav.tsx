@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { HIRE_LINK, MOBILE_EXTRA_LINKS, NAV_LINKS } from "@/lib/site";
+import { BrandTagline } from "./BrandTagline";
 import { Logo } from "./Logo";
 
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
@@ -36,8 +37,9 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
     <>
       <header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
         <div className="nav__inner">
-          <Link href="/" className="nav__brand" aria-label="Learning Impact home" onClick={() => setOpen(false)}>
+          <Link href="/" className="nav__brand brand" aria-label="Learning Impact home" onClick={() => setOpen(false)}>
             <Logo />
+            <BrandTagline />
           </Link>
 
           <nav className="nav__links" aria-label="Main" onPointerLeave={() => setHovered(null)}>

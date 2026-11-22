@@ -1,6 +1,9 @@
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://learningimpact.pk").replace(/\/$/, "");
 export const SITE_NAME = "Learning Impact";
 
+/** Brand tagline, shown under the logo in the headers and footer (in parts so it can wrap neatly). */
+export const TAGLINE = ["Learn Today.", "Lead Tomorrow.", "Transform Forever."] as const;
+
 export const NAV_LINKS = [
   { href: "/certifications", label: "Certifications" },
   { href: "/programs", label: "Programs" },

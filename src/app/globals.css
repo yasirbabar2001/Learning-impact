@@ -4441,3 +4441,67 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
     transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s),
     filter 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s);
 }
+
+/* ---------- Brand tagline under the logo ---------- */
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  line-height: 1;
+}
+.brand__tagline {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: rgba(246, 246, 248, 0.72);
+}
+.brand__tagline > span:last-child {
+  background: linear-gradient(90deg, #ffd23f, #ff9f1c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.brand__tagline--footer {
+  margin: 8px 0 14px;
+  font-size: 13px;
+}
+/* In the headers the tagline sits on two lines under the logo, so it takes no extra width. */
+.nav .brand__tagline > span:last-child,
+.pnav .brand__tagline > span:last-child {
+  display: block;
+}
+.nav .brand__tagline,
+.pnav .brand__tagline {
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 960px) {
+  .nav .brand__tagline,
+  .pnav .brand__tagline {
+    font-size: 8.5px;
+    letter-spacing: 0.03em;
+  }
+}
+@media (max-width: 380px) {
+  .nav .brand__tagline,
+  .pnav .brand__tagline {
+    font-size: 7.5px;
+    letter-spacing: 0.01em;
+  }
+}
+/* Phones: three short lines, no wider than the logo, so the header buttons keep their room. */
+@media (max-width: 520px) {
+  .nav .brand__tagline > span,
+  .pnav .brand__tagline > span {
+    display: block;
+  }
+  .nav .brand__tagline,
+  .pnav .brand__tagline {
+    font-size: 7.5px;
+    letter-spacing: 0.02em;
+  }
+}
