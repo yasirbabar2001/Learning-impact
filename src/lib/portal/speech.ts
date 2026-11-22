@@ -45,13 +45,33 @@ export function plain(text: string) {
 
 let current: SpeechSynthesisUtterance | null = null;
 
-export function speak(text: string, onEnd?: () => void) {
+/** Where the voice has got to in the text being read, so a pause can resume at the same word. */
+let spoken = { text: "", from: 0, pos: 0, startedAt: 0, boundary: false };
+
+/** Average speaking speed used when the voice does not report word positions (characters per second, kept low so a
+ * resume repeats a word or two rather than skipping any). */
+const CHARS_PER_SECOND = 13;
+
+/** Reads `text` aloud, starting `from` characters into its plain-text form (0 = the beginning). */
+export function speak(text: string, onEnd?: () => void, from = 0) {
   if (!speechSupported()) {
     onEnd?.();
     return;
   }
   stopSpeaking();
-  const u = new SpeechSynthesisUtterance(plain(text));
+  const full = plain(text);
+  const start = Math.max(0, Math.min(from, full.length));
+  if (start >= full.length) {
+    onEnd?.();
+    return;
+  }
+  const u = new SpeechSynthesisUtterance(full.slice(start));
+  spoken = { text: full, from: start, pos: start, startedAt: Date.now(), boundary: false };
+  u.onboundary = (e) => {
+    if (current !== u) return;
+    spoken.pos = start + e.charIndex;
+    spoken.boundary = true;
+  };
   const v = voice();
   if (v) u.voice = v;
   u.lang = v?.lang ?? "en-GB";
@@ -71,6 +91,21 @@ export function speak(text: string, onEnd?: () => void) {
   };
   current = u;
   window.speechSynthesis.speak(u);
+}
+
+/**
+ * Pauses the narration and returns the position to resume from (start of the word being read). The browser's own
+ * pause is not used: Chrome drops paused speech after a few seconds and Android ignores it.
+ */
+export function pauseSpeaking(): number {
+  if (!current) return 0;
+  const { text, from, startedAt, boundary } = spoken;
+  let pos = boundary ? spoken.pos : from + Math.round(((Date.now() - startedAt) / 1000) * CHARS_PER_SECOND);
+  pos = Math.min(Math.max(pos, from), text.length);
+  const space = text.lastIndexOf(" ", pos - 1);
+  pos = Math.max(from, space < 0 ? 0 : space + 1);
+  stopSpeaking();
+  return pos;
 }
 
 export function stopSpeaking() {

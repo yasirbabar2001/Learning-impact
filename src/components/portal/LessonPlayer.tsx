@@ -9,7 +9,7 @@ import remarkGfm from "remark-gfm";
 import type { Card, CastMember } from "@/lib/courses/schema";
 import type { AccessMode } from "@/lib/portal/learning";
 import { play, setSoundOn, soundOn } from "@/lib/portal/sfx";
-import { autoReadOn, plain, setAutoRead, speak, speechSupported, stopSpeaking } from "@/lib/portal/speech";
+import { autoReadOn, pauseSpeaking, plain, setAutoRead, speak, speechSupported, stopSpeaking } from "@/lib/portal/speech";
 import { DiagramCard } from "./cards/DiagramCard";
 import { FlipCard, MatchCard, OrderCard, ScenarioCard, SortCard } from "./cards/GameCards";
 import { ExplainerCard, StoryCard, storyScript, VideoCard } from "./cards/StoryCards";
@@ -146,6 +146,9 @@ export function LessonPlayer(p: Props) {
   const [sound, setSound] = useState(true);
   const [autoRead, setAutoReadState] = useState(false);
   const [reading, setReading] = useState(false);
+  // Paused narration resumes from the same word (resumeAt is a position in the card's text).
+  const [paused, setPaused] = useState(false);
+  const resumeAt = useRef(0);
   const [canSpeak, setCanSpeak] = useState(false);
   const [celebrate, setCelebrate] = useState<null | { kind: "lesson" | "stage"; xp: number; xpBefore: number; result?: ScormResult; confirmed?: boolean }>(null);
   /** What the server has recorded for this stage test so far (props are not refreshed while on the page). */
@@ -220,6 +223,8 @@ export function LessonPlayer(p: Props) {
       if (to < 0 || to >= p.cards.length) return;
       stopSpeaking();
       setReading(false);
+      setPaused(false);
+      resumeAt.current = 0;
       setDir(to > i ? 1 : -1);
       setI(to);
       play("whoosh");
@@ -237,6 +242,8 @@ export function LessonPlayer(p: Props) {
       const intro = INTRO[card.type];
       if (intro) react(card.type === "scenario" || card.type === "check" ? "think" : "idle", intro, 2200);
       if (autoRead && card.type !== "explainer" && card.type !== "story" && card.type !== "video") {
+        setPaused(false);
+        resumeAt.current = 0;
         setReading(true);
         speak(script(card, p.cast), () => setReading(false));
       }
@@ -291,14 +298,30 @@ export function LessonPlayer(p: Props) {
     }
   };
 
+  const finished = () => {
+    setReading(false);
+    setPaused(false);
+    resumeAt.current = 0;
+  };
   const listen = () => {
-    if (reading) {
-      stopSpeaking();
-      setReading(false);
-      return;
-    }
+    setPaused(false);
+    resumeAt.current = 0;
     setReading(true);
-    speak(script(card, p.cast), () => setReading(false));
+    speak(script(card, p.cast), finished);
+  };
+  const pause = () => {
+    resumeAt.current = pauseSpeaking();
+    setReading(false);
+    setPaused(true);
+  };
+  const resume = () => {
+    setPaused(false);
+    setReading(true);
+    speak(script(card, p.cast), finished, resumeAt.current);
+  };
+  const stop = () => {
+    stopSpeaking();
+    finished();
   };
 
   const progress = Math.round(((i + (phase === "cards" ? 0 : 1)) / p.cards.length) * 100);
@@ -463,9 +486,26 @@ export function LessonPlayer(p: Props) {
                   {KIND[card.type].icon} {KIND[card.type].label}
                 </span>
                 {canSpeak && card.type !== "explainer" && card.type !== "video" && (
-                  <button className={`listen-btn ${reading ? "is-on" : ""}`} onClick={listen} aria-pressed={reading}>
-                    {reading ? "■ Stop" : "🔊 Listen"}
-                  </button>
+                  <span className="listen-ctrls">
+                    {reading ? (
+                      <button className="listen-btn is-on" onClick={pause} aria-label="Pause reading">
+                        ⏸ Pause
+                      </button>
+                    ) : paused ? (
+                      <button className="listen-btn is-on" onClick={resume} aria-label="Resume reading from where it paused">
+                        ▶ Resume
+                      </button>
+                    ) : (
+                      <button className="listen-btn" onClick={listen}>
+                        🔊 Listen
+                      </button>
+                    )}
+                    {(reading || paused) && (
+                      <button className="listen-btn" onClick={stop} aria-label="Stop reading">
+                        ■ Stop
+                      </button>
+                    )}
+                  </span>
                 )}
               </div>
               <CardBody card={card} index={i} cast={p.cast} slug={p.slug} sid={p.sid} check={checks[i]} onAnswer={answer} onGame={gameResult(i)} />

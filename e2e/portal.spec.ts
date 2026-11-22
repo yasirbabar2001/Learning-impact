@@ -227,8 +227,11 @@ test("a learner's invite link brings a friend and pays both of them XP", async (
   await page.goto("/learn/leaderboard");
   await expect(page.locator(".league-card")).toContainText(/You are #\d+ of \d+/);
 
-  // Reminder cron is closed without the secret; forged unsubscribe links are refused.
-  expect((await page.request.get("/api/cron/reminders")).status()).toBe(404);
+  // Reminder cron is closed without the secret (the test server has none, so it says it is not set up);
+  // forged unsubscribe links are refused.
+  const cron = await page.request.get("/api/cron/reminders?key=guess");
+  expect(cron.status()).toBe(503);
+  expect(await cron.text()).not.toContain("streak");
   await friend.goto("/api/unsubscribe?u=x&t=forged");
   await expect(friend.getByText("Link not valid")).toBeVisible();
 });
@@ -702,4 +705,59 @@ test("an admin uploads a course title picture and it replaces the drawn artwork"
   await admin.goto("/admin/certifications");
   await row.getByRole("button", { name: /Remove picture/ }).click();
   await expect(row.getByRole("button", { name: /Upload picture/ })).toBeVisible();
+});
+
+test("narration can be paused and resumes from the same place, not from the start", async ({ browser }) => {
+  const admin = await adminPage(browser);
+  await admin.goto("/admin/certifications");
+  const form = admin.locator('form:has(input[name=slug][value="talent-management"])');
+  await form.locator("input[name=price]").fill("15000");
+  await form.locator("input[name=published]").check();
+  await form.getByRole("button", { name: "Save" }).click();
+
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.4.4" } })).newPage();
+  // A stand-in for the browser's voice: records what it is asked to read and reports reaching character 40.
+  await page.addInitScript(() => {
+    const w = window as unknown as { __said: string[] };
+    w.__said = [];
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: {
+        speak(u: SpeechSynthesisUtterance) {
+          w.__said.push(u.text);
+          setTimeout(() => u.onboundary?.({ charIndex: 40 } as SpeechSynthesisEvent), 50);
+        },
+        cancel() {},
+        pause() {},
+        resume() {},
+        getVoices: () => [],
+      },
+    });
+  });
+  await signUpIndividual(page, "Paula Pause", `pause${Date.now()}@example.com`);
+  await page.goto("/learn/talent-management/s1");
+  await page.getByRole("button", { name: /Begin the stage/ }).click();
+  await page.locator(".lesson__nav .btn--primary").click(); // story -> explainer
+  await page.locator(".lesson__nav .btn--primary").click(); // explainer -> a narrated card
+  await expect(page.getByRole("button", { name: /Listen/ })).toHaveCount(1); // the previous card has slid away
+
+  await page.getByRole("button", { name: /Listen/ }).click();
+  await expect(page.getByRole("button", { name: "Pause reading" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Stop reading" })).toBeVisible();
+  await page.waitForTimeout(200); // the voice reports its position
+  await page.getByRole("button", { name: "Pause reading" }).click();
+  await page.getByRole("button", { name: /Resume reading/ }).click();
+
+  const said = await page.evaluate(() => (window as unknown as { __said: string[] }).__said);
+  expect(said).toHaveLength(2);
+  // The second time it carries on from the word it had reached (around character 40), not from the beginning.
+  expect(said[1].length).toBeLessThan(said[0].length);
+  expect(said[0].endsWith(said[1])).toBe(true);
+  expect(said[0].length - said[1].length).toBeGreaterThan(25);
+
+  // Stop ends it; Listen then starts again from the beginning.
+  await page.getByRole("button", { name: "Stop reading" }).click();
+  await page.getByRole("button", { name: /Listen/ }).click();
+  const again = await page.evaluate(() => (window as unknown as { __said: string[] }).__said);
+  expect(again[2]).toBe(said[0]);
 });
