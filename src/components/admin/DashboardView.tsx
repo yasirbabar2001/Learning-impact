@@ -5,6 +5,7 @@ import { ORDER_STATUS } from "@/lib/portal/commerce";
 import { VisitorsChart } from "@/components/admin/VisitorsChart";
 import { dashboardStats, visitorStats, visitorTop } from "@/lib/portal/stats";
 import { store } from "@/lib/store";
+import { listSuggestions } from "@/lib/portal/suggestions";
 
 type Tile = { href: string; label: string; value: string | number; note?: string; tone?: "alert" | "good" | "info"; icon: string };
 
@@ -39,6 +40,7 @@ export async function DashboardView({ readOnly = false }: { readOnly?: boolean }
   const requests = await store.listRequests();
   const newRequests = requests.filter((r) => r.status === "new").length;
   const requests7 = requests.filter((r) => newerThan(r.createdAt, 7)).length;
+  const suggestions = listSuggestions();
   const courses = catalog();
   const live = courses.filter((c) => c.available).length;
   const ready = courses.filter((c) => c.course && !c.available).length;
@@ -76,6 +78,14 @@ export async function DashboardView({ readOnly = false }: { readOnly?: boolean }
       tiles: [
         { href: "/admin/certifications", icon: "📚", label: "Certifications live", value: `${live} / ${courses.length}`, note: ready ? `${ready} ready to publish` : "All ready ones are live", tone: ready ? "info" : undefined },
         { href: "/admin/requests", icon: "📨", label: "New training requests", value: newRequests, note: `${requests7} in the last 7 days`, tone: newRequests ? "alert" : undefined },
+        {
+          href: "/admin/suggestions",
+          icon: "💡",
+          label: "Training suggestions",
+          value: suggestions.filter((x) => x.status === "new").length,
+          note: `${suggestions.length} in total · ${suggestions.filter((x) => newerThan(x.created_at, 7)).length} this week`,
+          tone: suggestions.some((x) => x.status === "new") ? "alert" : undefined,
+        },
         { href: "/admin/programs", icon: "🗂️", label: "Programs", value: "Edit", note: "Corporate training catalogue" },
         { href: "/admin/settings", icon: "⚙️", label: "Site settings", value: "Edit", note: "Contact details, announcement" },
       ],

@@ -250,4 +250,20 @@ export const MIGRATIONS: string[] = [
   /* 9: Learning Impact Team members (free access to every certification, read-only dashboard) */ `
   ALTER TABLE users ADD COLUMN is_team INTEGER NOT NULL DEFAULT 0;
   `,
+  /* 10: training suggestions from visitors and learners (Admin > Suggestions) */ `
+  CREATE TABLE training_suggestions (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    details TEXT NOT NULL DEFAULT '',
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    phone TEXT NOT NULL DEFAULT '',
+    organisation TEXT NOT NULL DEFAULT '',
+    user_id TEXT REFERENCES users(id),
+    page TEXT NOT NULL DEFAULT '',
+    status TEXT NOT NULL DEFAULT 'new' CHECK (status IN ('new', 'read', 'planned', 'declined')),
+    created_at TEXT NOT NULL
+  );
+  CREATE INDEX training_suggestions_created ON training_suggestions(created_at);
+  `,
 ];

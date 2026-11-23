@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { removeCover, saveCover } from "@/lib/portal/covers";
+import { deleteSuggestion, setSuggestionStatus, SUGGESTION_STATUS } from "@/lib/portal/suggestions";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
 import { catalogEntry, isTopic, saveCourseSettings } from "@/lib/courses/catalog";
@@ -74,6 +75,17 @@ export async function saveCoverAction(fd: FormData) {
     saveCover(slug, Buffer.from(await file.arrayBuffer()), file.type);
   }
   revalidatePath("/", "layout");
+}
+
+/** Admin › Suggestions: mark a training suggestion as read / planned / declined, or delete it. */
+export async function suggestionAction(fd: FormData) {
+  await requireAdmin();
+  const id = String(fd.get("id"));
+  const status = String(fd.get("status"));
+  if (status === "delete") deleteSuggestion(id);
+  else if (status in SUGGESTION_STATUS) setSuggestionStatus(id, status as keyof typeof SUGGESTION_STATUS);
+  revalidatePath("/admin/suggestions");
+  revalidatePath("/admin");
 }
 
 export type AdminFormState = { ok?: boolean; message?: string; link?: string };

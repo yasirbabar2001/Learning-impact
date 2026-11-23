@@ -9,6 +9,7 @@ import { Logo } from "../Logo";
 const LINKS = [
   { href: "/admin", label: "Dashboard" },
   { href: "/admin/requests", label: "Requests" },
+  { href: "/admin/suggestions", label: "Suggestions" },
   { href: "/admin/orders", label: "Payments" },
   { href: "/admin/companies", label: "Companies" },
   { href: "/admin/users", label: "Users" },

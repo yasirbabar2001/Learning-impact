@@ -410,7 +410,7 @@ test("each stage offers its presentation as a PDF; the admin dashboard links to 
   await anon.close();
 
   await page.goto("/admin");
-  await expect(page.locator(".tile")).toHaveCount(15);
+  await expect(page.locator(".tile")).toHaveCount(16); // includes Training suggestions
   await page.locator(".tile", { hasText: "Companies to approve" }).click();
   await expect(page).toHaveURL(/\/admin\/companies$/);
 });
@@ -760,4 +760,43 @@ test("narration can be paused and resumes from the same place, not from the star
   await page.getByRole("button", { name: /Listen/ }).click();
   const again = await page.evaluate(() => (window as unknown as { __said: string[] }).__said);
   expect(again[2]).toBe(said[0]);
+});
+
+test("the trainings bar lists every training and visitors can suggest one, which admins see in Suggestions", async ({ browser }) => {
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.5.5" } })).newPage();
+  await page.goto("/");
+  await page.getByRole("button", { name: /All trainings/ }).click();
+  const panel = page.getByRole("region", { name: "All trainings" });
+  await expect(panel).toContainText("Skills certification quests");
+  await expect(panel).toContainText("Corporate training programs");
+  await panel.getByRole("searchbox").fill("leadership");
+  await expect(panel.getByRole("link", { name: /Advanced Leadership/ })).toBeVisible();
+  await expect(panel.getByRole("link", { name: /Database Management/ })).toHaveCount(0);
+
+  const topic = `Trade finance fraud ${Date.now()}`;
+  await panel.getByRole("searchbox").fill(topic);
+  await page.getByRole("button", { name: "Suggest a training" }).first().click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog.getByLabel(/Training you would like/)).toHaveValue(topic); // carries over what they searched for
+  await dialog.getByLabel(/Details/).fill("For trade finance officers, two days, on-site in Karachi.");
+  await dialog.getByLabel(/Your name/).fill("Sana Suggester");
+  await dialog.getByLabel(/E-mail/).fill("sana.suggester@example.com");
+  await dialog.getByLabel(/Mobile/).fill("+92 300 7654321");
+  await dialog.getByRole("button", { name: /Send suggestion/ }).click();
+  await expect(dialog).toContainText("Thank you");
+
+  const admin = await adminPage(browser);
+  await expect(admin.locator(".tile", { hasText: "Training suggestions" })).toBeVisible();
+  await admin.goto("/admin/suggestions");
+  const item = admin.locator(".suggestion", { hasText: topic });
+  await expect(item).toContainText("Sana Suggester");
+  await expect(item).toContainText("sana.suggester@example.com");
+  await expect(item).toContainText("+92 300 7654321");
+  await expect(item).toContainText("For trade finance officers");
+  await item.getByRole("button", { name: "Mark planned" }).click();
+  await expect(admin.locator(".suggestion", { hasText: topic }).locator(".badge")).toHaveText("Planned");
+
+  // Visitors cannot open the inbox.
+  await page.goto("/admin/suggestions");
+  await expect(page).not.toHaveURL(/\/admin\/suggestions/);
 });
