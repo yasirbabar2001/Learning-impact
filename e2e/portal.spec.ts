@@ -762,22 +762,25 @@ test("narration can be paused and resumes from the same place, not from the star
   expect(again[2]).toBe(said[0]);
 });
 
-test("the trainings bar lists every training and visitors can suggest one, which admins see in Suggestions", async ({ browser }) => {
+test("the Programs menu offers the three kinds of training; visitors can suggest a training, which admins see in Suggestions", async ({ browser }) => {
   const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.5.5" } })).newPage();
   await page.goto("/");
-  await page.getByRole("button", { name: /All trainings/ }).click();
-  const panel = page.getByRole("region", { name: "All trainings" });
-  await expect(panel).toContainText("Skills certification quests");
-  await expect(panel).toContainText("Corporate training programs");
-  await panel.getByRole("searchbox").fill("leadership");
-  await expect(panel.getByRole("link", { name: /Advanced Leadership/ })).toBeVisible();
-  await expect(panel.getByRole("link", { name: /Database Management/ })).toHaveCount(0);
+  await page.locator(".nav__links").getByRole("link", { name: /Programs/ }).hover();
+  const menu = page.getByRole("menu", { name: "Programs" });
+  await expect(menu.getByRole("menuitem")).toHaveCount(3);
+  await expect(menu).toContainText("Skills quests");
+  await expect(menu).toContainText("Regulatory quests");
+  await expect(menu).toContainText("Corporate training programs");
+  await menu.getByRole("menuitem", { name: /Regulatory quests/ }).click();
+  await expect(page).toHaveURL(/\/regulatory$/);
+
+  // Only one bar: the header.
+  await expect(page.locator(".tbar")).toHaveCount(0);
 
   const topic = `Trade finance fraud ${Date.now()}`;
-  await panel.getByRole("searchbox").fill(topic);
-  await page.getByRole("button", { name: "Suggest a training" }).first().click();
+  await page.locator(".nav__suggest").click();
   const dialog = page.getByRole("dialog");
-  await expect(dialog.getByLabel(/Training you would like/)).toHaveValue(topic); // carries over what they searched for
+  await dialog.getByLabel(/Training you would like/).fill(topic);
   await dialog.getByLabel(/Details/).fill("For trade finance officers, two days, on-site in Karachi.");
   await dialog.getByLabel(/Your name/).fill("Sana Suggester");
   await dialog.getByLabel(/E-mail/).fill("sana.suggester@example.com");

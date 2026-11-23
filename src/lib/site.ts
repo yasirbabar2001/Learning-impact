@@ -7,16 +7,24 @@ export const TAGLINE = ["Learn Today.", "Lead Tomorrow.", "Transform Forever."] 
 export const NAV_LINKS = [
   { href: "/certifications", label: "Certifications" },
   { href: "/programs", label: "Programs" },
-  { href: "/regulatory", label: "Regulatory" },
   { href: "/industries", label: "Industries" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
-/** Extra links shown only in the mobile menu. */
+/** The pop-up menu under "Programs" in the header: the three kinds of training we offer. */
+export const PROGRAMS_MENU = [
+  { href: "/certifications?view=skills#quests", icon: "⚔️", label: "Skills quests", note: "Capacity building & technical certifications" },
+  { href: "/regulatory", icon: "🌍", label: "Regulatory quests", note: "Banking compliance training, country by country" },
+  { href: "/programs", icon: "🏢", label: "Corporate training programs", note: "Book a ready-to-run program for your team" },
+] as const;
+
 /** The header's highlighted call to action (shown as a button, not a plain link). */
 export const HIRE_LINK = { href: "/trainers", label: "Hire a Trainer" } as const;
 
+/** Extra links shown only in the mobile menu. */
 export const MOBILE_EXTRA_LINKS = [
+  { href: "/certifications?view=skills#quests", label: "Skills quests" },
+  { href: "/regulatory", label: "Regulatory quests" },
   { href: "/about", label: "About" },
   { href: "/book", label: "Book corporate training" },
 ] as const;

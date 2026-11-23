@@ -4506,208 +4506,6 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
   }
 }
 
-/* ---------- Trainings bar (under the header) ---------- */
-.tbar {
-  position: relative;
-  z-index: 60;
-  padding: 0 var(--gutter);
-}
-.tbar__inner {
-  max-width: var(--container);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: rgba(12, 12, 16, 0.7);
-}
-.tbar__all,
-.tbar__suggest {
-  flex: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.tbar__all {
-  color: #050507;
-  background: #fff;
-}
-.tbar__all.is-open {
-  background: var(--gold);
-}
-.tbar__count {
-  padding: 1px 8px;
-  border-radius: 999px;
-  font-size: 12px;
-  background: rgba(5, 5, 7, 0.12);
-}
-.tbar__quick {
-  display: flex;
-  gap: 6px;
-  min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.tbar__quick::-webkit-scrollbar {
-  display: none;
-}
-.tbar__chip {
-  flex: none;
-  padding: 7px 13px;
-  border-radius: 999px;
-  border: 1px solid var(--line-strong);
-  font-size: 13.5px;
-  color: var(--fg);
-  white-space: nowrap;
-  transition: border-color 0.2s, background 0.2s;
-}
-.tbar__chip:hover {
-  border-color: var(--gold);
-  background: rgba(255, 210, 63, 0.08);
-}
-.tbar__suggest {
-  margin-left: auto;
-  color: var(--gold);
-  border: 1px solid rgba(255, 210, 63, 0.5);
-  background: rgba(255, 210, 63, 0.08);
-}
-.tbar__suggest:hover {
-  background: rgba(255, 210, 63, 0.16);
-}
-.tbar__panel {
-  position: absolute;
-  left: var(--gutter);
-  right: var(--gutter);
-  top: calc(100% + 8px);
-  max-width: var(--container);
-  margin: 0 auto;
-  max-height: min(70vh, 640px);
-  overflow: auto;
-  padding: 18px 20px;
-  border-radius: 22px;
-  border: 1px solid var(--line-strong);
-  background: #0d0d14;
-  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.9);
-}
-.tbar__panel-head {
-  position: sticky;
-  top: -18px;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: -18px -20px 14px;
-  padding: 14px 20px;
-  background: #0d0d14;
-  border-bottom: 1px solid var(--line);
-}
-.tbar__search {
-  flex: 1;
-  min-width: 0;
-  padding: 11px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--fg);
-  font-size: 15px;
-}
-.tbar__found {
-  font-size: 13px;
-  white-space: nowrap;
-}
-.tbar__close {
-  flex: none;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--line-strong);
-  color: var(--fg);
-}
-.tbar__cols {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-}
-.tbar__col h3 {
-  margin: 0 0 10px;
-  font-size: 15px;
-}
-.tbar__col h3 a {
-  color: var(--gold);
-}
-.tbar__col h4 {
-  margin: 10px 0 4px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.tbar__col ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.tbar__col li a {
-  display: grid;
-  gap: 1px;
-  padding: 6px 8px;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 1.3;
-  color: var(--fg);
-}
-.tbar__col li a small {
-  font-size: 11.5px;
-  color: var(--muted);
-}
-.tbar__col li a:hover {
-  background: rgba(255, 255, 255, 0.06);
-}
-.tbar__none {
-  font-size: 13px;
-}
-.tbar__missing {
-  margin: 16px 0 0;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-  font-size: 14px;
-}
-.tbar__missing .inline-link {
-  font: inherit;
-  color: var(--gold);
-}
-@media (max-width: 900px) {
-  .tbar__cols {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 640px) {
-  .tbar__inner {
-    flex-wrap: wrap;
-    border-radius: 20px;
-  }
-  .tbar__quick {
-    order: 3;
-    flex-basis: 100%;
-  }
-  .tbar__all,
-  .tbar__suggest {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-  .tbar__panel {
-    left: 8px;
-    right: 8px;
-  }
-}
-
 /* ---------- Suggest a training dialog ---------- */
 .tsuggest {
   width: min(560px, calc(100vw - 24px));
@@ -4729,6 +4527,11 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
   padding: 26px;
 }
 .tsuggest__x {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  color: var(--fg);
   position: absolute;
   top: 16px;
   right: 16px;
@@ -4771,4 +4574,138 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
 .suggestion__who {
   margin: 4px 0 10px;
   font-size: 13.5px;
+}
+
+/* ---------- Header: Programs menu and Suggest a training ---------- */
+.nav__dd {
+  position: relative;
+}
+.nav__caret {
+  font-size: 11px;
+  opacity: 0.7;
+}
+.nav__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  z-index: 110;
+  display: grid;
+  gap: 4px;
+  width: 340px;
+  padding: 8px;
+  border-radius: 18px;
+  border: 1px solid var(--line-strong);
+  background: #0d0d14;
+  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 6px);
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+}
+/* An invisible bridge so the pointer can travel from "Programs" down into the menu. */
+.nav__menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 10px;
+}
+.nav__dd.is-open .nav__menu,
+.nav__dd:focus-within .nav__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+.nav__menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--fg);
+  transition: background 0.2s;
+}
+.nav__menu-item:hover,
+.nav__menu-item:focus-visible {
+  background: rgba(255, 210, 63, 0.1);
+}
+.nav__menu-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  font-size: 19px;
+  background: rgba(255, 255, 255, 0.07);
+}
+.nav__menu-item strong {
+  display: block;
+  font-size: 15px;
+}
+.nav__menu-item small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.nav__suggest {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 210, 63, 0.55);
+  background: rgba(255, 210, 63, 0.08);
+  color: var(--gold);
+  font-size: 14.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.nav__suggest:hover {
+  background: rgba(255, 210, 63, 0.16);
+}
+.nav__suggest + .nav__hire {
+  margin-left: 8px;
+}
+.menu__suggest {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 13px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 210, 63, 0.6);
+  color: var(--gold);
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 961px) and (max-width: 1240px) {
+  .nav__suggest .nav__long {
+    display: none;
+  }
+  .nav__suggest .nav__short {
+    display: inline;
+  }
+  .nav__suggest {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}
+/* Phones and tablets: Suggest moves into the menu (next to Hire a Trainer), keeping the header uncluttered. */
+@media (max-width: 960px) {
+  .nav__suggest {
+    display: none;
+  }
+}
+@media (min-width: 1241px) {
+  .nav__link {
+    padding: 9px 12px;
+  }
+}
+.nav__link > span {
+  white-space: nowrap;
 }
