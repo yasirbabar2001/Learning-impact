@@ -4712,3 +4712,50 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
 .nav__link > span {
   white-space: nowrap;
 }
+
+/* ---------- Floating live chat (bottom right) ---------- */
+.livechat {
+  position: fixed;
+  right: clamp(12px, 2vw, 24px);
+  bottom: clamp(12px, 2vh, 24px);
+  z-index: 85;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px 11px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 211, 102, 0.55);
+  background: rgba(12, 12, 16, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #25d366;
+  font-size: 14.5px;
+  font-weight: 700;
+  box-shadow: 0 10px 30px -12px rgba(37, 211, 102, 0.5);
+  transition: background 0.25s, transform 0.25s var(--ease), box-shadow 0.25s;
+}
+.livechat span {
+  color: #fff;
+}
+.livechat:hover,
+.livechat:focus-visible {
+  background: rgba(37, 211, 102, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px -10px rgba(37, 211, 102, 0.65);
+}
+@media (max-width: 520px) {
+  .livechat {
+    padding: 12px;
+  }
+  .livechat span {
+    display: none;
+  }
+}
+@media print {
+  .livechat {
+    display: none;
+  }
+}
+.livechat-note {
+  margin-bottom: 14px;
+}

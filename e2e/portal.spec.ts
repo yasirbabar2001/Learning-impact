@@ -803,3 +803,24 @@ test("the Programs menu offers the three kinds of training; visitors can suggest
   await page.goto("/admin/suggestions");
   await expect(page).not.toHaveURL(/\/admin\/suggestions/);
 });
+
+test("live chat: visitors are asked to sign up first; signed-in learners go straight to WhatsApp", async ({ browser }) => {
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.6.6" } })).newPage();
+  await page.goto("/programs");
+  const chat = page.locator(".livechat");
+  await expect(chat).toBeVisible();
+  await chat.click();
+  await expect(page).toHaveURL(/\/register\?next=%2Fprograms&chat=1$/);
+  await expect(page.getByText("Sign up first in order to avail this service.")).toBeVisible();
+  await page.getByRole("link", { name: "Log in" }).last().click();
+  await expect(page.getByText("Log in first in order to use live chat.")).toBeVisible();
+
+  await signUpIndividual(page, "Waqar Chat", `chat${Date.now()}@example.com`);
+  await page.goto("/certifications");
+  const link = page.locator(".livechat");
+  await expect(link).toHaveAttribute("href", /^https:\/\/wa\.me\/923007955559\?text=/);
+  await expect(link).toHaveAttribute("href", /Waqar%20Chat/);
+  await expect(link).toHaveAttribute("target", "_blank");
+  await page.goto("/learn");
+  await expect(page.locator(".livechat")).toBeVisible();
+});

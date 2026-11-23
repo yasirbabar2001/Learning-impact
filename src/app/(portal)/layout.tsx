@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LiveChat } from "@/components/LiveChat";
 import { PortalNav } from "@/components/portal/PortalNav";
 import { currentUser, hasAdminAccess, isTeamMember } from "@/lib/portal/auth";
 import { levelFor } from "@/lib/portal/game";
@@ -30,6 +31,7 @@ export default async function PortalLayout({ children }: { children: React.React
         }
       />
       {children}
+      <LiveChat signedIn={user && user.email_verified_at ? { name: user.name, email: user.email } : null} />
       <footer className="portal-foot">
         <span>© {new Date().getFullYear()} Learning Impact (SMC-Private) Limited</span>
         <span>

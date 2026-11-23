@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { LiveChat } from "@/components/LiveChat";
 import { Nav } from "@/components/Nav";
 import { getSettings } from "@/lib/data";
 import { currentUser, hasAdminAccess, homeFor, isTeamMember } from "@/lib/portal/auth";
@@ -25,6 +26,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       <Nav account={user ? { home: user.email_verified_at ? homeFor(user) : "/verify-email", admin: hasAdminAccess(user), team: isTeamMember(user), name: user.name, email: user.email } : null} />
       {children}
       <Footer settings={settings} />
+      <LiveChat signedIn={user && user.email_verified_at ? { name: user.name, email: user.email } : null} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </>
   );
