@@ -1,6 +1,7 @@
 import { CurrencyProbe } from "@/components/CurrencyProbe";
 import { IfspaceCard } from "@/components/IfspaceCard";
 import { VisitTracker } from "@/components/VisitTracker";
+import { PwaRegister } from "@/components/app/PwaRegister";
 import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { Aurora } from "@/components/Aurora";
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: SITE_NAME, url: SITE_URL, title: SITE_NAME, description, locale: "en_PK" },
   twitter: { card: "summary_large_image", title: SITE_NAME, description },
   robots: { index: true, follow: true },
+  appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: "black-translucent" },
+  icons: { apple: "/icons/apple-touch-icon.png" },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = { themeColor: "#050507", colorScheme: "dark" };
@@ -42,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <IfspaceCard />
         <VisitTracker />
         <CurrencyProbe />
+        <PwaRegister />
       </body>
     </html>
   );

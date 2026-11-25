@@ -726,7 +726,9 @@ p {
   inset: 0;
   z-index: 90;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 120px var(--gutter) 40px;
   background: radial-gradient(circle at 80% 10%, rgba(123, 97, 255, 0.35), transparent 50%), radial-gradient(circle at 10% 90%, rgba(255, 77, 109, 0.3), transparent 50%), #07070a;
 }
@@ -735,6 +737,7 @@ p {
   flex-direction: column;
   gap: 6px;
   width: 100%;
+  margin-block: auto; /* centred when it fits, scrollable from the top when it does not */
 }
 .menu nav > div {
   overflow: hidden;
@@ -4839,4 +4842,50 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
   .freeband__cta {
     justify-self: start;
   }
+}
+
+/* ---------- Learning Impact app (install buttons, modal, promo band, /app page) ---------- */
+.appbtn { cursor: pointer; }
+.menu__app { margin-left: 10px; border-color: rgba(255, 255, 255, 0.35); color: #fff; background: transparent; }
+.footer__app { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 18px; }
+.footer__app .muted { font-size: 13px; }
+.appmodal { position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center; padding: 16px; background: rgba(5, 5, 7, 0.72); backdrop-filter: blur(6px); }
+.appmodal__card { position: relative; width: min(460px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 28px 24px 22px; border-radius: 24px; background: #12121a; border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6); text-align: center; }
+.appmodal__card h2 { font-family: var(--font-display), sans-serif; font-size: 24px; margin: 12px 0 4px; }
+.appmodal__icon { border-radius: 16px; }
+.appmodal__x { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.08); color: #fff; font-size: 22px; cursor: pointer; }
+.appmodal__tabs { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; margin: 18px 0 14px; }
+.appmodal__tabs button { padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.18); background: transparent; color: #d9d6e6; font-size: 14px; font-weight: 600; cursor: pointer; }
+.appmodal__tabs button.is-on { background: var(--gold, #ffd23f); border-color: var(--gold, #ffd23f); color: #050507; }
+.appmodal__more { display: inline-block; margin-top: 14px; color: var(--gold, #ffd23f); font-weight: 600; }
+.appsteps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; text-align: left; }
+.appsteps li { display: flex; gap: 12px; align-items: flex-start; line-height: 1.45; }
+.appsteps__n { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 210, 63, 0.16); color: var(--gold, #ffd23f); font-weight: 800; font-size: 14px; }
+.appband { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: center; padding: clamp(24px, 4vw, 44px); border-radius: 28px; }
+.appband__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.appband__platforms { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.appband__platforms li { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: 18px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); font-weight: 700; font-size: 18px; }
+.appband__platforms span { font-size: 28px; }
+.appguide { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+.appguide__card { padding: 22px; border-radius: 22px; }
+.appguide__card h3 { margin: 0 0 14px; font-size: 20px; }
+.appperks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.appperks__item { padding: 22px; border-radius: 22px; }
+.appperks__icon { font-size: 32px; }
+.appperks__item h3 { margin: 10px 0 6px; font-size: 18px; }
+.appbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 9000; display: flex; align-items: center; gap: 10px; padding: 10px 10px 10px 12px; border-radius: 18px; background: #14141c; border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55); }
+.appbar img { border-radius: 10px; flex: none; }
+.appbar p { margin: 0; flex: 1; min-width: 0; display: grid; line-height: 1.25; }
+.appbar p b { font-size: 14px; }
+.appbar p span { font-size: 12px; color: #b9b7c8; }
+.appbar__btn { flex: none; padding: 9px 14px; border-radius: 999px; border: 0; background: var(--gold, #ffd23f); color: #050507; font-weight: 800; font-size: 14px; }
+.appbar__x { flex: none; width: 32px; height: 32px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.08); color: #fff; font-size: 20px; cursor: pointer; }
+@media (max-width: 960px) {
+  .appband { grid-template-columns: 1fr; }
+  .appguide { grid-template-columns: 1fr; }
+  .appperks { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .appperks { grid-template-columns: 1fr; }
+  .menu__app { margin-left: 0; }
 }

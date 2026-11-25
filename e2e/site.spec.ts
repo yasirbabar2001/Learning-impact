@@ -143,3 +143,28 @@ test("each certification page shows its cover picture and key takeaways under th
   await expect(page.locator(".takeaways .takeaway")).toHaveCount(5);
   await expect(page.locator(".takeaways")).toContainText("Lead change through resistance");
 });
+
+test("the site is installable as an app and offers a Get the app button with steps for each device", async ({ page, request }) => {
+  const manifest = await (await request.get("/manifest.webmanifest")).json();
+  expect(manifest.display).toBe("standalone");
+  expect(manifest.icons.some((i: { purpose?: string }) => i.purpose === "maskable")).toBe(true);
+  expect((await request.get("/sw.js")).ok()).toBe(true);
+  expect((await request.get("/offline.html")).ok()).toBe(true);
+  expect((await request.get("/icons/icon-512.png")).ok()).toBe(true);
+
+  await page.goto("/");
+  await expect(page.locator('link[rel="manifest"]')).toHaveCount(1);
+  await expect(page.locator("#get-the-app").getByRole("button", { name: /Get the app/ })).toBeVisible();
+  await expect(page.locator(".footer__app").getByRole("button", { name: /Get the app/ })).toBeVisible();
+
+  await page.goto("/app");
+  await expect(page.getByRole("heading", { name: "How to install" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /iPhone & iPad/ })).toBeVisible();
+  await page.locator(".appband").getByRole("button", { name: /Get the app/ }).dispatchEvent("click");
+  const dialog = page.getByRole("dialog", { name: "Install the Learning Impact app" });
+  await expect(dialog).toBeVisible();
+  await dialog.getByRole("tab", { name: /iPhone/ }).click();
+  await expect(dialog.getByText("Add to Home Screen")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
+});

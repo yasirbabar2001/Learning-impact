@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { SiteSettings } from "@/lib/types";
 import { Logo } from "./Logo";
 import { BrandTagline } from "@/components/BrandTagline";
+import { InstallApp } from "@/components/app/InstallApp";
 
 export function Footer({ settings }: { settings: SiteSettings }) {
   const socials = [
@@ -35,6 +36,10 @@ export function Footer({ settings }: { settings: SiteSettings }) {
           <Logo className="footer__logo" animated={false} />
           <BrandTagline className="brand__tagline--footer" />
           <p className="muted">Corporate training, professional certifications and expert trainers for organisations worldwide.</p>
+          <div className="footer__app">
+            <InstallApp className="btn btn--ghost" label="Get the app" />
+            <span className="muted">Android · iPhone · Windows · Mac</span>
+          </div>
         </div>
         <div>
           <h3>Explore</h3>
@@ -45,6 +50,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
           <Link prefetch={false} href="/about">About us</Link>
           <Link prefetch={false} href="/contact">Contact</Link>
           <Link prefetch={false} href="/verify">Verify a certificate</Link>
+          <Link prefetch={false} href="/app">Get the app</Link>
           <Link prefetch={false} href="/login">Learner login</Link>
         </div>
         <div>

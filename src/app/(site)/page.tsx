@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
 import { FreeBanner } from "@/components/home/FreeBanner";
+import { AppBand } from "@/components/app/AppBand";
 import { HomePaths } from "@/components/home/HomePaths";
 import { HomeQuests } from "@/components/portal/HomeQuests";
 import { IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
@@ -251,6 +252,12 @@ export default async function Home() {
           <span className="industries__badge">
             <IconShield size={18} /> Confidential by default
           </span>
+        </Reveal>
+      </section>
+
+      <section className="section container" id="get-the-app">
+        <Reveal>
+          <AppBand />
         </Reveal>
       </section>
 

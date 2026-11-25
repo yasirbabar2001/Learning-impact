@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { InstallApp } from "@/components/app/InstallApp";
 import { HIRE_LINK, MOBILE_EXTRA_LINKS, NAV_LINKS, PROGRAMS_MENU } from "@/lib/site";
 import { BrandTagline } from "./BrandTagline";
 import { Logo } from "./Logo";
@@ -169,6 +170,7 @@ export function Nav({ account = null }: { account?: { home: string; admin: boole
                 >
                   💡 Suggest a training
                 </button>
+                <InstallApp className="menu__suggest menu__app" label="Get the app" compact />
               </motion.div>
               {[
                 ...NAV_LINKS,
