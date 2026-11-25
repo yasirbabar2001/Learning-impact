@@ -29,7 +29,9 @@ export type Motif =
   | "experience"
   | "conflict"
   | "equality"
-  | "privacy";
+  | "privacy"
+  | "design"
+  | "office";
 
 const BY_SLUG: Record<string, Motif> = {
   "advanced-leadership": "leadership",
@@ -48,6 +50,11 @@ const BY_SLUG: Record<string, Motif> = {
   "conflict-management": "conflict",
   "ae-cbuae-law-2025": "law",
   "pk-sbp-fx-remittance-branchless": "fx",
+  "ai-tools-everyday-work": "ai",
+  "canva-design": "design",
+  "freelancing-starter": "fx",
+  "office-essentials": "office",
+  "workplace-english": "communication",
 };
 
 /** Picks the illustration for a course from its slug (regulatory quests by topic keywords). */
@@ -358,6 +365,38 @@ function art(m: Motif, c: string): ReactNode {
           <path d="M-140 120 a40 40 0 0 1 80 0 M60 -120 a40 40 0 0 1 80 0" fill="none" stroke={W2} strokeWidth="6" />
         </>
       );
+    case "design":
+      return (
+        <>
+          {[
+            [-170, -120, c],
+            [-60, -150, "#ff4d6d"],
+            [60, -150, "#ffd23f"],
+            [170, -120, "#2ee59d"],
+          ].map(([x, y, fill]) => (
+            <circle key={`${x}`} cx={x as number} cy={y as number} r="46" fill={fill as string} stroke={W} strokeWidth="5" />
+          ))}
+          <rect x="-200" y="-40" width="400" height="200" rx="22" fill={W3} stroke={W} strokeWidth="5" />
+          <rect x="-170" y="-10" width="150" height="140" rx="12" fill={c} opacity="0.85" />
+          <path d="M10 10 H170 M10 50 H140 M10 90 H160" stroke={W} strokeWidth="10" strokeLinecap="round" />
+          <path d="M150 190 L230 110 L262 142 L182 222 Z" fill={W} />
+          <path d="M150 190 L140 232 L182 222 Z" fill={c} />
+        </>
+      );
+    case "office":
+      return (
+        <>
+          <rect x="-210" y="-170" width="420" height="320" rx="18" fill={W3} stroke={W} strokeWidth="6" />
+          <rect x="-210" y="-170" width="420" height="56" rx="18" fill={c} />
+          {[-90, -20, 50].map((y) =>
+            [-150, -40, 70].map((x) => <rect key={`${x}${y}`} x={x} y={y} width="96" height="52" rx="6" fill="rgba(255,255,255,0.22)" />),
+          )}
+          <rect x="70" y="50" width="96" height="52" rx="6" fill={W} />
+          <text x="-180" y="-128" fontSize="34" fontWeight="800" fill="#fff" fontFamily="system-ui, sans-serif">
+            =SUM( )
+          </text>
+        </>
+      );
     case "privacy":
       return (
         <>
@@ -391,6 +430,8 @@ const LAYOUT: Record<Motif, Layout> = {
   cyber: "desk",
   aml: "desk",
   privacy: "desk",
+  design: "board",
+  office: "desk",
   fx: "desk",
   procurement: "desk",
   consumer: "service",
