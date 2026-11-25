@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Faq } from "@/components/Faq";
+import { FreeBanner } from "@/components/home/FreeBanner";
 import { HomePaths } from "@/components/home/HomePaths";
 import { HomeQuests } from "@/components/portal/HomeQuests";
 import { IconBuilding, IconChart, IconGlobe, IconHybrid, IconMic, IconScreen, IconShield, IconSpark, IconTarget, IconUsers } from "@/components/Icons";
@@ -75,6 +76,7 @@ export default async function Home() {
         <Reveal delay={0.45} className="hero__sub">
           <p>{settings.heroSubtitle}</p>
         </Reveal>
+        <FreeBanner />
         <HomePaths programs={programs} />
         <Reveal delay={0.9} className="hero__trust">
           <span>✓ Stage 1 of every quest is free</span>

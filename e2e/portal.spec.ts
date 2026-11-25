@@ -837,6 +837,12 @@ test("free courses: the Basic level is free and earns a Certificate of Completio
   // Listed under Free courses, free with a Premium upgrade, without any admin setup.
   await page.goto("/certifications?view=free");
   await expect(page.locator(".cert-card", { hasText: course.title })).toContainText("Premium PKR 5,000");
+  // The home page shows the free courses in its first screen.
+  await page.goto("/");
+  await expect(page.locator(".freeband")).toBeInViewport();
+  await expect(page.locator(".freeband")).toContainText("Start free. Get certified.");
+  await page.locator(".freeband").getByRole("link", { name: /Start a free course/ }).click();
+  await expect(page).toHaveURL(/view=free/);
   await page.goto(`/certifications/${course.slug}`);
   await expect(page.locator(".cert__price")).toHaveText("Free");
   await expect(page.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
