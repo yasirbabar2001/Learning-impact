@@ -266,4 +266,7 @@ export const MIGRATIONS: string[] = [
   );
   CREATE INDEX training_suggestions_created ON training_suggestions(created_at);
   `,
+  /* 11: free certificates of completion (Basic level of Free & Premium courses) beside verified certificates */ `
+  ALTER TABLE certificates ADD COLUMN kind TEXT NOT NULL DEFAULT 'verified';
+  `,
 ];

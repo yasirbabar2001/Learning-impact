@@ -72,9 +72,11 @@ const settingsMap = () => new Map(all<SettingsRow>("SELECT slug, price_pkr, pric
 function entry(t: Topic, jurisdiction: string | null, settings: Map<string, SettingsRow>): CatalogEntry {
   const course = getCourse(t.slug);
   const s = settings.get(t.slug);
-  const pricePkr = s?.price_pkr ?? 0;
+  // A course can carry a default price (Free & Premium courses: PKR 5,000) that applies, published, until an
+  // administrator saves its settings.
+  const pricePkr = s ? s.price_pkr : (course?.defaultPricePkr ?? 0);
   const priceUsd = s?.price_usd ?? 0;
-  const published = Boolean(s?.published);
+  const published = s ? Boolean(s.published) : Boolean(course?.defaultPricePkr);
   return { ...t, jurisdiction, course, pricePkr, priceUsd, published, available: Boolean(course && published && pricePkr > 0) };
 }
 
@@ -96,17 +98,32 @@ export function regulatoryCatalog(): CatalogEntry[] {
     .map((c) => entry({ slug: c.slug, title: c.title, category: c.category, color: c.quest.color, tagline: c.tagline }, c.jurisdiction!.code, settings));
 }
 
-export function catalogEntry(slug: string): CatalogEntry | null {
-  return catalog().find((c) => c.slug === slug) ?? regulatoryCatalog().find((c) => c.slug === slug) ?? null;
+/**
+ * Free & Premium courses: every course file with `freeStages`. The Basic level is free (with a Certificate of
+ * Completion); the Premium upgrade (default PKR 5,000) unlocks the Advanced level, the exam and the verified certificate.
+ */
+export function freeCatalog(): CatalogEntry[] {
+  const settings = settingsMap();
+  return [...courses().values()]
+    .filter((c) => c.freeStages && !c.jurisdiction)
+    .sort((a, b) => a.title.localeCompare(b.title))
+    .map((c) => entry({ slug: c.slug, title: c.title, category: c.category, color: c.quest.color, tagline: c.tagline }, null, settings));
 }
 
-/** True for any certification slug (general or regulatory). */
-export const isTopic = (slug: string) => TOPICS.some((t) => t.slug === slug) || Boolean(getCourse(slug)?.jurisdiction);
+export function catalogEntry(slug: string): CatalogEntry | null {
+  return (
+    catalog().find((c) => c.slug === slug) ?? regulatoryCatalog().find((c) => c.slug === slug) ?? freeCatalog().find((c) => c.slug === slug) ?? null
+  );
+}
+
+/** True for any certification slug (general, regulatory or Free & Premium). */
+export const isTopic = (slug: string) => TOPICS.some((t) => t.slug === slug) || Boolean(getCourse(slug)?.jurisdiction) || Boolean(getCourse(slug)?.freeStages);
 
 /** Every certification (for admin pickers). */
 export const allTopics = (): { slug: string; title: string }[] => [
   ...TOPICS.map((t) => ({ slug: t.slug, title: t.title })),
   ...regulatoryCatalog().map((t) => ({ slug: t.slug, title: t.title })),
+  ...freeCatalog().map((t) => ({ slug: t.slug, title: t.title })),
 ];
 
 export function saveCourseSettings(slug: string, pricePkr: number, published: boolean, priceUsd = 0) {

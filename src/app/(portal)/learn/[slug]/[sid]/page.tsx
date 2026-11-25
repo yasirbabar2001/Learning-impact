@@ -5,6 +5,7 @@ import { formatMoney } from "@/lib/money";
 import { viewerCurrency } from "@/lib/portal/currency";
 import { requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
+import { freeStagesOf } from "@/lib/portal/completion";
 import { accessFor, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 import { SITE_URL } from "@/lib/site";
 
@@ -62,7 +63,8 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
               }
             : null
         }
-        paidStage={access.mode === "trial" && idx > 0}
+        paidStage={access.mode === "trial" && idx >= freeStagesOf(course)}
+        freeLevel={course.freeStages ?? null}
       />
     </div>
   );

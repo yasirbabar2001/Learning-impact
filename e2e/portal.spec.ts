@@ -1,4 +1,4 @@
-import { readFileSync, statSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 
@@ -767,7 +767,7 @@ test("the Programs menu offers the three kinds of training; visitors can suggest
   await page.goto("/");
   await page.locator(".nav__links").getByRole("link", { name: /Programs/ }).hover();
   const menu = page.getByRole("menu", { name: "Programs" });
-  await expect(menu.getByRole("menuitem")).toHaveCount(3);
+  await expect(menu.getByRole("menuitem")).toHaveCount(4); // Free courses, Skills, Regulatory, Corporate
   await expect(menu).toContainText("Skills quests");
   await expect(menu).toContainText("Regulatory quests");
   await expect(menu).toContainText("Corporate training programs");
@@ -823,4 +823,46 @@ test("live chat: visitors are asked to sign up first; signed-in learners go stra
   await expect(link).toHaveAttribute("target", "_blank");
   await page.goto("/learn");
   await expect(page.locator(".livechat")).toBeVisible();
+});
+
+test("free courses: the Basic level is free and earns a Certificate of Completion; Premium is the upgrade", async ({ browser }) => {
+  const dir = path.join(process.cwd(), "content/courses");
+  const file = readdirSync(dir)
+    .map((f: string) => JSON.parse(readFileSync(path.join(dir, f), "utf8")))
+    .find((c: { freeStages?: number; jurisdiction?: unknown }) => c.freeStages && !c.jurisdiction);
+  test.skip(!file, "no Free & Premium course in content/courses");
+  const course = file as { slug: string; title: string; freeStages: number; sessions: { id: string; quiz: { answer: number }[] }[] };
+
+  const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.7.7" } })).newPage();
+  // Listed under Free courses, free with a Premium upgrade, without any admin setup.
+  await page.goto("/certifications?view=free");
+  await expect(page.locator(".cert-card", { hasText: course.title })).toContainText("Premium PKR 5,000");
+  await page.goto(`/certifications/${course.slug}`);
+  await expect(page.locator(".cert__price")).toHaveText("Free");
+  await expect(page.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
+
+  await signUpIndividual(page, "Fatima Free", `free${Date.now()}@example.com`);
+  // The Basic stages are open one after another without paying; finish each lesson and pass each stage test.
+  for (const s of course.sessions.slice(0, course.freeStages)) {
+    expect((await page.request.post(`/api/learn/${course.slug}/${s.id}`, { data: { event: "complete" } })).status()).toBe(200);
+    const res = await page.request.post(`/api/scorm/${course.slug}/${s.id}`, { data: { responses: s.quiz.map((q) => q.answer) } });
+    expect(res.status()).toBe(200);
+    expect((await res.json()).passed).toBe(true);
+  }
+  // The first Advanced stage stays behind the Premium upgrade.
+  const premium = course.sessions[course.freeStages];
+  expect((await page.request.post(`/api/learn/${course.slug}/${premium.id}`, { data: { event: "complete" } })).status()).toBe(403);
+
+  await page.goto(`/learn/${course.slug}`);
+  await expect(page.getByText("You finished the free Basic level!")).toBeVisible();
+  await expect(page.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
+  await page.goto("/learn/certificates");
+  await expect(page.getByText("Certificate of Completion · Basic level")).toBeVisible();
+  const pdf = await page.request.get((await page.getByRole("link", { name: /Download PDF/ }).first().getAttribute("href"))!);
+  expect(pdf.headers()["content-type"]).toBe("application/pdf");
+
+  // Checkout offers the single Premium upgrade, not stage-by-stage payments.
+  await page.goto(`/checkout/${course.slug}`);
+  await expect(page.locator(".unlock-choice__price").first()).toHaveText("PKR 5,000");
+  await expect(page.locator(".unlock-choice__price")).toHaveCount(1);
 });

@@ -8,6 +8,7 @@ import { convert, priceIn } from "./currency";
 import { all, now, one, run, tx } from "../db";
 import { newId, newToken, tokenHash } from "./auth";
 import { rewardEnrolment } from "./referrals";
+import { freeStagesOf, isFreePremium } from "./completion";
 
 export type Order = {
   id: string;
@@ -139,8 +140,6 @@ export function orderStageLabel(o: Pick<Order, "course_slug" | "stage_id">) {
   return i >= 0 ? `Stage ${i + 1}: ${course!.sessions[i].title}` : `Stage ${o.stage_id}`;
 }
 
-/** Stages anyone can play for free (keep in sync with learning.ts FREE_STAGES). */
-const FREE = 1;
 
 /** Stages this learner has bought one by one (approved stage orders). */
 export const unlockedStages = (userId: string, slug: string) =>
@@ -155,6 +154,7 @@ export function unlockOffer(userId: string, slug: string, entry: Pick<CatalogEnt
   const course = getCourse(slug);
   const pricePkr = priceIn(entry, currency);
   if (!course || pricePkr <= 0) return null;
+  const FREE = freeStagesOf(course);
   const paidStages = Math.max(1, course.sessions.length - FREE);
   const unlocked = unlockedStages(userId, slug);
   // Earlier single-stage payments are credited, converted if they were made in the other currency.
@@ -175,7 +175,11 @@ export function unlockOffer(userId: string, slug: string, entry: Pick<CatalogEnt
     currency,
     remainingStages: remaining.length,
     unlocked,
-    next: next ? { id: next.id, index, number: index + 1, title: next.title, stage: next.stage, price: remaining.length === 1 ? full : Math.min(perStage, full) } : null,
+    // Free & Premium courses have one upgrade (the whole Advanced level), not stage-by-stage payments.
+    next:
+      next && !isFreePremium(course)
+        ? { id: next.id, index, number: index + 1, title: next.title, stage: next.stage, price: remaining.length === 1 ? full : Math.min(perStage, full) }
+        : null,
   };
 }
 
@@ -252,7 +256,7 @@ export function approveOrder(orderId: string, adminNote: string) {
       // Every paid stage bought one by one: the learner now has the whole quest, exam and certificate included.
       const course = getCourse(o.course_slug);
       const unlocked = unlockedStages(o.user_id, o.course_slug);
-      if (course && course.sessions.slice(FREE).every((s) => unlocked.has(s.id))) {
+      if (course && course.sessions.slice(freeStagesOf(course)).every((s) => unlocked.has(s.id))) {
         enroll(o.user_id, o.course_slug, "purchase", o.id, null);
         rewardEnrolment(o.user_id);
       }
@@ -369,7 +373,7 @@ export function teamProgress(companyId: string): TeamRow[] {
        (SELECT COUNT(*) FROM session_progress p WHERE p.user_id = u.id AND p.course_slug = e.course_slug AND p.quiz_passed_at IS NOT NULL) AS stages_passed,
        (SELECT MAX(percent) FROM exam_attempts a WHERE a.user_id = u.id AND a.course_slug = e.course_slug AND a.submitted_at IS NOT NULL) AS best_exam,
        (SELECT COUNT(*) FROM exam_attempts a WHERE a.user_id = u.id AND a.course_slug = e.course_slug AND a.submitted_at IS NOT NULL) AS attempts,
-       (SELECT code FROM certificates c WHERE c.user_id = u.id AND c.course_slug = e.course_slug AND c.revoked_at IS NULL) AS cert_code
+       (SELECT code FROM certificates c WHERE c.user_id = u.id AND c.course_slug = e.course_slug AND c.kind = 'verified' AND c.revoked_at IS NULL) AS cert_code
      FROM enrollments e JOIN users u ON u.id = e.user_id
      WHERE e.company_id = ? ORDER BY e.course_slug, u.name`,
     companyId,

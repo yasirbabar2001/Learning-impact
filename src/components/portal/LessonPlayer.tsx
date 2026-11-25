@@ -54,6 +54,8 @@ type Props = {
   mode?: AccessMode;
   /** For the free stage: where to pay to unlock the remaining stages. */
   unlock?: { href: string; price: string; stages: number; stagePrice?: string | null; stageNumber?: number } | null;
+  /** Free & Premium courses: how many opening stages (the Basic level) are free. */
+  freeLevel?: number | null;
   /** A trial stage the learner bought on its own (pay as you go), rather than the free stage. */
   paidStage?: boolean;
 };
@@ -349,6 +351,11 @@ export function LessonPlayer(p: Props) {
             <>
               🔓 <strong>Pay-as-you-go stage.</strong> You unlocked this stage on its own.{" "}
               {p.unlock ? `Unlock the remaining ${p.unlock.stages} stage(s), the final exam and your certificate for ${p.unlock.price}${p.unlock.stagePrice ? `, or the next stage for ${p.unlock.stagePrice}` : ""}.` : ""}
+            </>
+          ) : p.freeLevel ? (
+            <>
+              🎁 <strong>Free Basic level.</strong> Stages 1 to {p.freeLevel} are free, with a Certificate of Completion.{" "}
+              {p.unlock ? `⭐ Upgrade to Premium for ${p.unlock.price} to unlock the Advanced level, the final exam and the verified certificate.` : ""}
             </>
           ) : (
             <>

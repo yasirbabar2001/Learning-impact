@@ -33,6 +33,8 @@ export type Certificate = {
   percent: number;
   issued_at: string;
   revoked_at: string | null;
+  /** "verified": passed the final exam. "completion": finished the free Basic level of a Free & Premium course. */
+  kind: "verified" | "completion";
 };
 
 function shuffle<T>(items: T[]): T[] {
@@ -51,7 +53,11 @@ export const openAttempt = (userId: string, slug: string) =>
   one<Attempt>("SELECT * FROM exam_attempts WHERE user_id = ? AND course_slug = ? AND submitted_at IS NULL ORDER BY started_at DESC LIMIT 1", userId, slug) ?? null;
 
 export const certificateFor = (userId: string, slug: string) =>
-  one<Certificate>("SELECT * FROM certificates WHERE user_id = ? AND course_slug = ? AND revoked_at IS NULL", userId, slug) ?? null;
+  one<Certificate>("SELECT * FROM certificates WHERE user_id = ? AND course_slug = ? AND kind = 'verified' AND revoked_at IS NULL", userId, slug) ?? null;
+
+/** The free Certificate of Completion for the Basic level of a Free & Premium course, if earned. */
+export const completionFor = (userId: string, slug: string) =>
+  one<Certificate>("SELECT * FROM certificates WHERE user_id = ? AND course_slug = ? AND kind = 'completion' AND revoked_at IS NULL", userId, slug) ?? null;
 
 export const certificateByCode = (code: string) => one<Certificate>("SELECT * FROM certificates WHERE code = ?", code) ?? null;
 
@@ -102,7 +108,7 @@ export function saveAnswer(attempt: Attempt, questionId: string, displayIndex: n
   return true;
 }
 
-const certCode = () => {
+export const certCode = () => {
   const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   return "LI-" + Array.from(randomBytes(8), (b) => alphabet[b % alphabet.length]).join("").replace(/(.{4})/, "$1-");
 };
@@ -132,7 +138,7 @@ export function submitAttempt(attempt: Attempt, course: Course, holderName: stri
       attempt.id,
     );
     // A revoked certificate is not re-issued automatically (revocation is for misconduct).
-    const anyCertificate = one<{ id: string }>("SELECT id FROM certificates WHERE user_id = ? AND course_slug = ?", attempt.user_id, course.slug);
+    const anyCertificate = one<{ id: string }>("SELECT id FROM certificates WHERE user_id = ? AND course_slug = ? AND kind = 'verified'", attempt.user_id, course.slug);
     if (passed && !anyCertificate) {
       run(
         "INSERT INTO certificates (id, code, user_id, course_slug, attempt_id, holder_name, percent, issued_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",

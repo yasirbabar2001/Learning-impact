@@ -3,6 +3,7 @@ import { all, now, one, run, tx } from "../db";
 import { catalogEntry } from "../courses/catalog";
 import type { Course, Session } from "../courses/schema";
 import { hasAdminAccess, isTeamMember, newId, type User } from "./auth";
+import { freeStagesOf, issueCompletionIfDone } from "./completion";
 import { awardXp, grantBadge, XP } from "./game";
 
 export const QUIZ_PASS = 7; // out of 10
@@ -38,7 +39,7 @@ export type StageStatus = "locked" | "open" | "lesson-done" | "passed";
 export type AccessMode = "full" | "trial" | "preview";
 export type Access = { mode: AccessMode; enrollment: Enrollment | null };
 
-/** Number of stages anyone can play for free. */
+/** Number of stages anyone can play for free (most courses; Free & Premium courses set their own, see completion.ts). */
 export const FREE_STAGES = 1;
 
 export const enrollmentFor = (userId: string, slug: string) =>
@@ -109,7 +110,7 @@ export function stagesFor(course: Course, userId: string, mode: AccessMode) {
     return stages(course, progressMap(userId, course.slug)).map((s) => ({ ...s, status: s.status === "locked" ? ("open" as StageStatus) : s.status, paywall: false }));
   const bought = mode === "trial" ? boughtStages(userId, course.slug) : new Set<string>();
   return stages(course, progressMap(userId, course.slug)).map((s, i) => {
-    const paywall = mode === "trial" && i >= FREE_STAGES && !bought.has(s.session.id);
+    const paywall = mode === "trial" && i >= freeStagesOf(course) && !bought.has(s.session.id);
     return { ...s, status: paywall ? ("locked" as StageStatus) : s.status, paywall };
   });
 }
@@ -199,12 +200,14 @@ export function gradeQuiz(userId: string, course: Course, session: Session, resp
       session.id,
     );
     let xp = 0;
-    if (!rewards) return { score, total: session.quiz.length, passed, xp };
+    // Free & Premium courses: passing the last Basic stage test earns the free Certificate of Completion.
+    const completion = passed ? issueCompletionIfDone(userId, course) : null;
+    if (!rewards) return { score, total: session.quiz.length, passed, xp, completion };
     if (passed) xp += awardXp(userId, `quiz-pass:${course.slug}:${session.id}`, `Passed test: ${session.stage}`, XP.quizPass);
     if (score === session.quiz.length) {
       xp += awardXp(userId, `quiz-perfect:${course.slug}:${session.id}`, `Perfect score: ${session.stage}`, XP.quizPerfect);
       grantBadge(userId, "quiz-ace");
     }
-    return { score, total: session.quiz.length, passed, xp };
+    return { score, total: session.quiz.length, passed, xp, completion };
   });
 }

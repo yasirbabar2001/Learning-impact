@@ -8,7 +8,8 @@ import { formatMoney } from "@/lib/money";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
-import { attemptsAllowed, attemptsOf, certificateFor } from "@/lib/portal/exam";
+import { attemptsAllowed, attemptsOf, certificateFor, completionFor } from "@/lib/portal/exam";
+import { freeStagesOf, isFreePremium } from "@/lib/portal/completion";
 import { accessFor, courseProgress, progressMap, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 
 export default async function QuestPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -26,7 +27,11 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
   const offer = mode === "trial" && entry ? unlockOffer(user.id, slug, entry, currency) : null;
   const price = formatMoney(offer?.full ?? (entry ? priceIn(entry, currency) : 0), currency);
   const stagePrice = offer?.next && offer.remainingStages > 1 ? formatMoney(offer.next.price, currency) : null;
-  const freeDone = mode === "trial" && p.stages[0]?.status === "passed";
+  // Free & Premium courses: the whole Basic level is free and ends with a Certificate of Completion.
+  const fp = isFreePremium(course);
+  const freeCount = freeStagesOf(course);
+  const freeDone = mode === "trial" && p.stages[freeCount - 1]?.status === "passed";
+  const completion = fp ? completionFor(user.id, slug) : null;
   const cert = certificateFor(user.id, slug);
   const attempts = attemptsOf(user.id, slug).filter((a) => a.submitted_at);
   const best = attempts.reduce((m, a) => Math.max(m, a.percent ?? 0), 0);
@@ -114,17 +119,39 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
             </span>
             <div>
               <strong>
-                {offer?.unlocked.size ? "Pay as you go: keep unlocking stages" : freeDone ? "You cleared your free stage!" : "Stage 1 is free. Try it now."}
+                {fp
+                  ? freeDone
+                    ? "🎓 You finished the free Basic level!"
+                    : `The Basic level (stages 1 to ${freeCount}) is free.`
+                  : offer?.unlocked.size
+                    ? "Pay as you go: keep unlocking stages"
+                    : freeDone
+                      ? "You cleared your free stage!"
+                      : "Stage 1 is free. Try it now."}
               </strong>
               <p className="muted">
-                {freeDone || offer?.unlocked.size
+                {fp ? (
+                  <>
+                    {freeDone ? "Your free Certificate of Completion is ready. " : "Finish it to earn a free Certificate of Completion. "}
+                    Upgrade to Premium for {price} to unlock the {offer?.remainingStages ?? course.sessions.length - freeCount} Advanced stages, the final exam and
+                    the verified certificate. Your progress is kept.
+                    {completion && (
+                      <>
+                        {" "}
+                        <a href={`/api/certificates/${completion.code}`} className="inline-link" target="_blank" rel="noreferrer">
+                          Download your Certificate of Completion
+                        </a>
+                      </>
+                    )}
+                  </>
+                ) : freeDone || offer?.unlocked.size
                   ? `Unlock the remaining ${offer?.remainingStages ?? course.sessions.length - 1} stage(s), the final exam and your verified certificate for ${price}${stagePrice ? `, or pay for one stage at a time (${stagePrice} for stage ${offer?.next?.number})` : ""}. Your progress is kept.`
                   : `No payment needed to start. When you are ready, unlock the full certification for ${price}${stagePrice ? ` or pay stage by stage (${stagePrice} each)` : ""}.`}
               </p>
             </div>
             <div className="unlock-banner__ctas">
               <Link href={`/checkout/${slug}`} className={`btn ${freeDone ? "btn--primary" : "btn--ghost"}`}>
-                <span className="btn__label">Unlock full certification · {price}</span>
+                <span className="btn__label">{fp ? `⭐ Upgrade to Premium · ${price}` : `Unlock full certification · ${price}`}</span>
                 <span className="btn__arrow">→</span>
               </Link>
               {stagePrice && (freeDone || offer?.unlocked.size) ? (

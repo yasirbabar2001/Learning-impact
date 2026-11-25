@@ -30,9 +30,11 @@ export default async function VerifyPage({ params }: { params: Promise<{ code: s
         <span className="verify__icon">{valid ? "✓" : "✕"}</span>
         {valid && cert ? (
           <>
-            <p className="eyebrow">Verified certificate</p>
+            <p className="eyebrow">{cert.kind === "completion" ? "Verified certificate of completion" : "Verified certificate"}</p>
             <h1 className="h3">{cert.holder_name}</h1>
-            <p className="muted">has earned the Learning Impact professional certification</p>
+            <p className="muted">
+              {cert.kind === "completion" ? "has completed the Basic level of the Learning Impact course" : "has earned the Learning Impact professional certification"}
+            </p>
             <p className="verify__course" style={{ color: course?.quest.color }}>
               {course?.title ?? cert.course_slug}
             </p>
@@ -42,7 +44,7 @@ export default async function VerifyPage({ params }: { params: Promise<{ code: s
                 <dd>{new Date(cert.issued_at).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</dd>
               </div>
               <div>
-                <dt>Final exam score</dt>
+                <dt>{cert.kind === "completion" ? "Basic stage tests" : "Final exam score"}</dt>
                 <dd>{cert.percent}%</dd>
               </div>
               <div>

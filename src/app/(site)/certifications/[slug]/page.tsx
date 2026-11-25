@@ -12,6 +12,7 @@ import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { currentUser, hasAdminAccess, isTeamMember } from "@/lib/portal/auth";
 import { enrollmentFor, progressMap, QUIZ_PASS } from "@/lib/portal/learning";
 import { flagSvg } from "@/lib/regulatory/flags";
+import { freeStagesOf, isFreePremium } from "@/lib/portal/completion";
 import { coverUrl } from "@/lib/portal/covers";
 
 export const dynamic = "force-dynamic";
@@ -33,6 +34,9 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
   const enrolled = user ? enrollmentFor(user.id, slug) : null;
   const team = isTeamMember(user);
   const flag = e.jurisdiction ? flagSvg(e.jurisdiction) : null;
+  // Free & Premium courses: the Basic level is free (with a Certificate of Completion); Premium unlocks the rest.
+  const fp = isFreePremium(e.course);
+  const freeCount = e.course ? freeStagesOf(e.course) : 1;
   const image = coverUrl(slug);
   const admin = hasAdminAccess(user);
   const firstStage = e.course ? `/learn/${slug}/${e.course.sessions[0].id}` : `/learn/${slug}`;
@@ -115,16 +119,29 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
             🏅
           </span>
           <p className="cert__badge-name">Badge: {c.quest.badge.name}</p>
-          <p className="cert__price">{formatMoney(price, currency)}</p>
-          <p className="muted cert__price-note">
-            One learner · lifetime access to the material · certificate included
-            {c.sessions.length > 1 && (
-              <>
+          {fp ? (
+            <>
+              <p className="cert__price">Free</p>
+              <p className="muted cert__price-note">
+                Basic level ({freeCount} stages) free, with a Certificate of Completion
                 <br />
-                or pay as you go: {formatMoney(Math.round(price / (c.sessions.length - 1)), currency)} per stage after the free one
-              </>
-            )}
-          </p>
+                ⭐ Premium {formatMoney(price, currency)}: Advanced stages, final exam and verified certificate
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="cert__price">{formatMoney(price, currency)}</p>
+              <p className="muted cert__price-note">
+                One learner · lifetime access to the material · certificate included
+                {c.sessions.length > 1 && (
+                  <>
+                    <br />
+                    or pay as you go: {formatMoney(Math.round(price / (c.sessions.length - 1)), currency)} per stage after the free one
+                  </>
+                )}
+              </p>
+            </>
+          )}
           {enrolled || team ? (
             <Link href={`/learn/${slug}`} className="btn btn--primary cert__cta">
               <span className="btn__label">{enrolled ? "Continue my quest" : "⭐ Start: free for the Learning Impact Team"}</span>
@@ -136,9 +153,13 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
                 <span className="btn__label">{started?.quiz_passed_at ? "See my progress" : started ? "Continue my free stage" : "🎁 Start for free"}</span>
                 <span className="btn__arrow">→</span>
               </Link>
-              <p className="cert__free-note">Stage 1 is free, no payment needed. Then unlock the whole quest, or one stage at a time.</p>
-              <Link href={`/checkout/${slug}`} className="btn btn--ghost cert__cta">
-                <span className="btn__label">Enrol now · {formatMoney(price, currency)}</span>
+              <p className="cert__free-note">
+                {fp
+                  ? `Stages 1 to ${freeCount} are free, with a Certificate of Completion. Upgrade to Premium any time for the Advanced level.`
+                  : "Stage 1 is free, no payment needed. Then unlock the whole quest, or one stage at a time."}
+              </p>
+              <Link href={`/checkout/${slug}`} className={`btn ${fp ? "btn--primary cert__premium" : "btn--ghost"} cert__cta`}>
+                <span className="btn__label">{fp ? `⭐ Upgrade to Premium · ${formatMoney(price, currency)}` : `Enrol now · ${formatMoney(price, currency)}`}</span>
                 <span className="btn__arrow">→</span>
               </Link>
             </>

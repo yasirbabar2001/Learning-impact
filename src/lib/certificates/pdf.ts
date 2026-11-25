@@ -24,6 +24,8 @@ export type CertificateData = {
   color: string;
   percent: number;
   issuedAt: string;
+  /** "completion": the free Certificate of Completion for the Basic level of a Free & Premium course. */
+  kind?: "verified" | "completion";
 };
 
 function centered(page: PDFPage, text: string, f: PDFFont, size: number, y: number, color: RGB, spacing = 0) {
@@ -79,15 +81,23 @@ export async function certificatePdf(d: CertificateData): Promise<Uint8Array> {
   page.drawCircle({ x: lx + 304 * scale, y: 548 - 49 * scale, size: 6 * scale, color: GOLD });
   centered(page, "(SMC-PRIVATE) LIMITED", semi, 6.5, 498, NAVY, 1.4);
 
-  centered(page, "CERTIFICATE OF ACHIEVEMENT", semi, 11, 455, GOLD, 3.2);
+  const completion = d.kind === "completion";
+  centered(page, completion ? "CERTIFICATE OF COMPLETION" : "CERTIFICATE OF ACHIEVEMENT", semi, 11, 455, GOLD, 3.2);
   centered(page, "This certifies that", body, 12, 420, GREY);
   const nameSize = fit(bold, d.holder, 40, W - 160);
   centered(page, d.holder, bold, nameSize, 368, NAVY);
   page.drawLine({ start: { x: W / 2 - 170, y: 356 }, end: { x: W / 2 + 170, y: 356 }, thickness: 1, color: accent, opacity: 0.7 });
-  centered(page, "has successfully completed the professional certification", body, 12, 328, GREY);
+  centered(page, completion ? "has successfully completed the Basic level of the course" : "has successfully completed the professional certification", body, 12, 328, GREY);
   const courseSize = fit(light, d.course, 30, W - 160);
   centered(page, d.course, light, courseSize, 288, INK);
-  centered(page, `Final exam score ${d.percent}%  ·  Quest badge: ${d.badge}`, semi, 11, 256, NAVY);
+  centered(
+    page,
+    completion ? `Basic stage tests average ${d.percent}%  ·  Learning Impact free course` : `Final exam score ${d.percent}%  ·  Quest badge: ${d.badge}`,
+    semi,
+    11,
+    256,
+    NAVY,
+  );
 
   // Footer: date, signature, QR and code.
   const issued = new Date(d.issuedAt).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });

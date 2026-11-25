@@ -1,14 +1,14 @@
 import { CoverUpload } from "@/components/admin/CoverUpload";
 import { saveCourseSettingsAction } from "@/app/admin/portal-actions";
 import { PaymentSettingsForm } from "@/components/admin/PortalAdminForms";
-import { catalog } from "@/lib/courses/catalog";
+import { catalog, freeCatalog } from "@/lib/courses/catalog";
 import { all } from "@/lib/db";
 import { OWNER_EMAILS } from "@/lib/portal/auth";
 import { paymentSettings } from "@/lib/portal/commerce";
 import { priceIn, usdRate } from "@/lib/portal/currency";
 
 export default async function AdminCertifications() {
-  const items = catalog();
+  const items = [...catalog(), ...freeCatalog()];
   const counts = new Map(all<{ course_slug: string; n: number }>("SELECT course_slug, COUNT(*) AS n FROM enrollments GROUP BY course_slug").map((r) => [r.course_slug, r.n]));
   const certs = new Map(all<{ course_slug: string; n: number }>("SELECT course_slug, COUNT(*) AS n FROM certificates WHERE revoked_at IS NULL GROUP BY course_slug").map((r) => [r.course_slug, r.n]));
   const trials = new Map(

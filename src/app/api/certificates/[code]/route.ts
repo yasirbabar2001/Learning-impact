@@ -21,6 +21,7 @@ export async function GET(_: Request, { params }: { params: Promise<{ code: stri
     color: course?.quest.color ?? "#0d2c66",
     percent: cert.percent,
     issuedAt: cert.issued_at,
+    kind: cert.kind,
   });
   return new Response(Buffer.from(pdf), {
     headers: {

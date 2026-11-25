@@ -16,6 +16,7 @@ export const NAV_LINKS = [
 
 /** The pop-up menu under "Programs" in the header: the three kinds of training we offer. */
 export const PROGRAMS_MENU = [
+  { href: "/certifications?view=free#quests", icon: "🎁", label: "Free courses", note: "Free Basic level and certificate, Premium upgrade" },
   { href: "/certifications?view=skills#quests", icon: "⚔️", label: "Skills quests", note: "Capacity building & technical certifications" },
   { href: "/regulatory", icon: "🌍", label: "Regulatory quests", note: "Banking compliance training, country by country" },
   { href: "/programs", icon: "🏢", label: "Corporate training programs", note: "Book a ready-to-run program for your team" },
@@ -26,6 +27,7 @@ export const HIRE_LINK = { href: "/trainers", label: "Hire a Trainer" } as const
 
 /** Extra links shown only in the mobile menu. */
 export const MOBILE_EXTRA_LINKS = [
+  { href: "/certifications?view=free#quests", label: "Free courses" },
   { href: "/certifications?view=skills#quests", label: "Skills quests" },
   { href: "/regulatory", label: "Regulatory quests" },
   { href: "/about", label: "About" },

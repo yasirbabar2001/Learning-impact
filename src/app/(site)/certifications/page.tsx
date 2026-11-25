@@ -6,7 +6,7 @@ import { ScrollToHash } from "@/components/ScrollToHash";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { Flag } from "@/components/Flag";
-import { catalog, regulatoryCatalog } from "@/lib/courses/catalog";
+import { catalog, freeCatalog, regulatoryCatalog } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
 import { currentUser } from "@/lib/portal/auth";
 import { priceIn, viewerCurrency } from "@/lib/portal/currency";
@@ -33,7 +33,10 @@ const HOW = [
 
 export default async function CertificationsPage({ searchParams }: { searchParams: Promise<{ view?: string }> }) {
   // ?view=skills: only the capacity building & technical quests, catalogue first (the home page's "Skills" card links here).
-  const skillsOnly = (await searchParams).view === "skills";
+  // ?view=free: only the Free & Premium courses.
+  const view = (await searchParams).view;
+  const freeOnly = view === "free";
+  const skillsOnly = view === "skills" || freeOnly;
   const currency = await viewerCurrency(await currentUser());
   const referrer = referrerByCode((await cookies()).get(REF_COOKIE)?.value);
   const items = catalog().map((c) => ({
@@ -50,6 +53,25 @@ export default async function CertificationsPage({ searchParams }: { searchParam
     questName: c.available ? (c.course?.quest.name ?? null) : null,
     image: coverUrl(c.slug),
   }));
+  const freeItems = freeCatalog()
+    .filter((c) => c.available)
+    .map((c) => ({
+      slug: c.slug,
+      title: c.title,
+      tagline: c.course?.tagline ?? c.tagline,
+      category: "🎁 Free courses",
+      color: c.color,
+      available: true,
+      price: formatMoney(priceIn(c, currency), currency),
+      level: c.course?.level ?? null,
+      hours: c.course?.hours ?? null,
+      stages: c.course?.sessions.length ?? null,
+      questName: c.course?.quest.name ?? null,
+      image: coverUrl(c.slug),
+      premium: true,
+    }));
+  if (freeOnly) items.splice(0, items.length);
+  items.unshift(...freeItems);
   const live = regulatoryCatalog().filter((q) => q.available);
   const regulatory = live.length;
   const countries = TARGETS.map((t) => ({ ...t, flag: flagSvg(t.code), quests: live.filter((q) => q.jurisdiction === t.code).length })).filter((t) => t.quests > 0);
@@ -75,12 +97,22 @@ export default async function CertificationsPage({ searchParams }: { searchParam
   return skillsOnly ? (
     <>
       <ScrollToHash />
-      <PageHero eyebrow="Capacity building & technical" title="Skills certifications you play" highlight="like a quest.">
-        <p>
-          {items.length} professional certifications in leadership, technology, HR, operations, communication and banking skills. Learn in short stages, earn XP and
-          badges, pass every stage test and defeat a tough final exam to earn a verified certificate. Stage 1 of every quest is free.
-        </p>
-      </PageHero>
+      {freeOnly ? (
+        <PageHero eyebrow="🎁 Free courses" title="Learn for free, get a" highlight="free certificate.">
+          <p>
+            {freeItems.length} practical courses, from AI tools to spoken English. The Basic level of each is free and ends with a Certificate of Completion. Want
+            advanced skills? Upgrade any course to Premium{freeItems[0] ? ` for ${freeItems[0].price}` : ""} for the Advanced stages, the final exam and a verified
+            certificate.
+          </p>
+        </PageHero>
+      ) : (
+        <PageHero eyebrow="Capacity building & technical" title="Skills certifications you play" highlight="like a quest.">
+          <p>
+            {items.length} professional certifications in leadership, technology, HR, operations, communication and banking skills. Learn in short stages, earn XP and
+            badges, pass every stage test and defeat a tough final exam to earn a verified certificate. Stage 1 of every quest is free.
+          </p>
+        </PageHero>
+      )}
       {referrer && (
         <section className="container section--tight">
           <p className="auth__invite">

@@ -22,6 +22,8 @@ export type CatalogCard = {
   flag?: string | null;
   /** Title picture URL, when one was uploaded. */
   image?: string | null;
+  /** Free & Premium course: free Basic level, `price` is the Premium upgrade. */
+  premium?: boolean;
 };
 
 export function CertCatalog({ items }: { items: CatalogCard[] }) {
@@ -59,7 +61,13 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                     {c.flag && <span className="flag flag--sm" aria-hidden="true" dangerouslySetInnerHTML={{ __html: c.flag }} />}
                     {c.country || c.category}
                   </span>
-                  {c.available ? <span className="tag free-tag">🎁 Start for free</span> : <span className="tag">Coming soon</span>}
+                  {c.premium ? (
+                    <span className="tag free-tag">🎁 Free course</span>
+                  ) : c.available ? (
+                    <span className="tag free-tag">🎁 Start for free</span>
+                  ) : (
+                    <span className="tag">Coming soon</span>
+                  )}
                 </span>
                 <h3>{c.title}</h3>
                 {c.questName && <span className="cert-card__quest">⚔️ {c.questName}</span>}
@@ -70,7 +78,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                   {c.level ? <span>{c.level}</span> : null}
                 </span>
                 <span className="cert-card__foot">
-                  <strong>{c.available ? `Stage 1 free · then ${c.price}` : "Register interest"}</strong>
+                  <strong>{c.premium ? `Free · ⭐ Premium ${c.price}` : c.available ? `Stage 1 free · then ${c.price}` : "Register interest"}</strong>
                   <span className="cert-card__go" aria-hidden="true">
                     →
                   </span>

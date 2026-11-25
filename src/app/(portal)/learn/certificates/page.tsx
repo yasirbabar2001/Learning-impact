@@ -34,13 +34,14 @@ export default async function CertificatesPage() {
             const course = getCourse(c.course_slug);
             const issued = new Date(c.issued_at);
             const verifyUrl = `${SITE_URL}/verify/${c.code}`;
-            const linkedin = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(course?.title ?? "")}&organizationName=${encodeURIComponent("Learning Impact")}&issueYear=${issued.getFullYear()}&issueMonth=${issued.getMonth() + 1}&certUrl=${encodeURIComponent(verifyUrl)}&certId=${encodeURIComponent(c.code)}`;
+            const linkedin = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(`${course?.title ?? ""}${c.kind === "completion" ? " (Basic, Certificate of Completion)" : ""}`)}&organizationName=${encodeURIComponent("Learning Impact")}&issueYear=${issued.getFullYear()}&issueMonth=${issued.getMonth() + 1}&certUrl=${encodeURIComponent(verifyUrl)}&certId=${encodeURIComponent(c.code)}`;
             return (
               <Reveal key={c.id} delay={i * 0.08}>
                 <article className="trophy glass spot" style={{ ["--c" as string]: course?.quest.color ?? "#ffd23f" }}>
-                  <span className="trophy__icon">🏆</span>
+                  <span className="trophy__icon">{c.kind === "completion" ? "🎓" : "🏆"}</span>
                   <div>
                     <h2>{course?.title}</h2>
+                    {c.kind === "completion" && <p className="tag free-tag">Certificate of Completion · Basic level</p>}
                     <p className="muted">
                       {issued.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })} · score {c.percent}% · code <strong>{c.code}</strong>
                     </p>
