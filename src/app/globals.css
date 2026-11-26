@@ -4835,12 +4835,28 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
 .freeband__cta {
   white-space: nowrap;
 }
+.freeband__ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.freeband__premium {
+  justify-content: center;
+  border: 1px solid rgba(255, 210, 63, 0.7);
+  color: var(--gold, #ffd23f);
+  background: rgba(255, 210, 63, 0.08);
+}
+.freeband__premium:hover {
+  background: var(--gold, #ffd23f);
+  color: #050507;
+}
 @media (max-width: 1100px) {
   .freeband {
     grid-template-columns: 1fr;
   }
-  .freeband__cta {
-    justify-self: start;
+  .freeband__ctas {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

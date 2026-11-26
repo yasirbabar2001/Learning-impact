@@ -836,11 +836,15 @@ test("free courses: the Basic level is free and earns a Certificate of Completio
   const page = await (await browser.newContext({ extraHTTPHeaders: { "x-forwarded-for": "10.8.7.7" } })).newPage();
   // Listed under Free courses, free with a Premium upgrade, without any admin setup.
   await page.goto("/certifications?view=free");
-  await expect(page.locator(".cert-card", { hasText: course.title })).toContainText("Premium PKR 5,000");
+  const cell = page.locator(".cert-cell", { hasText: course.title });
+  await expect(cell.getByRole("link", { name: "🎁 Start free" })).toHaveAttribute("href", `/certifications/${course.slug}`);
+  await expect(cell.getByRole("link", { name: /Go Premium/ })).toHaveAttribute("href", `/checkout/${course.slug}`);
+  await expect(cell.getByRole("link", { name: /Go Premium/ })).toContainText("Premium · PKR 5,000");
   // The home page shows the free courses in its first screen.
   await page.goto("/");
   await expect(page.locator(".freeband")).toBeInViewport();
   await expect(page.locator(".freeband")).toContainText("Start free. Get certified.");
+  await expect(page.locator(".freeband").getByRole("link", { name: /Go Premium · PKR 5,000/ })).toBeVisible();
   await page.locator(".freeband").getByRole("link", { name: /Start a free course/ }).click();
   await expect(page).toHaveURL(/view=free/);
   await page.goto(`/certifications/${course.slug}`);

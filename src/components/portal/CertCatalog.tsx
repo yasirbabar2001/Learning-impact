@@ -48,6 +48,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
             <motion.div
               layout
               key={c.slug}
+              className="cert-cell"
               initial={{ opacity: 0, y: 26, scale: 0.97 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, scale: 0.92 }}
@@ -77,13 +78,27 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                   {c.hours ? <span>{c.hours} hours</span> : null}
                   {c.level ? <span>{c.level}</span> : null}
                 </span>
-                <span className="cert-card__foot">
-                  <strong>{c.premium ? `Free · ⭐ Premium ${c.price}` : c.available ? `Stage 1 free · then ${c.price}` : "Register interest"}</strong>
-                  <span className="cert-card__go" aria-hidden="true">
-                    →
+                {c.premium ? (
+                  <span className="cert-card__actions-space" aria-hidden="true" />
+                ) : (
+                  <span className="cert-card__foot">
+                    <strong>{c.available ? `Stage 1 free · then ${c.price}` : "Register interest"}</strong>
+                    <span className="cert-card__go" aria-hidden="true">
+                      →
+                    </span>
                   </span>
-                </span>
+                )}
               </Link>
+              {c.premium && (
+                <div className="cert-card__actions">
+                  <Link href={`/certifications/${c.slug}`} className="cert-card__btn cert-card__btn--free">
+                    🎁 Start free
+                  </Link>
+                  <Link href={`/checkout/${c.slug}`} className="cert-card__btn cert-card__btn--premium" aria-label={`Go Premium: ${c.title}, ${c.price}`}>
+                    ⭐ Premium · {c.price}
+                  </Link>
+                </div>
+              )}
             </motion.div>
           ))}
         </AnimatePresence>

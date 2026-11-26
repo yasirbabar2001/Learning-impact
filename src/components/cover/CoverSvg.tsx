@@ -31,7 +31,11 @@ export type Motif =
   | "equality"
   | "privacy"
   | "design"
-  | "office";
+  | "office"
+  | "property"
+  | "presentation"
+  | "calm"
+  | "attire";
 
 const BY_SLUG: Record<string, Motif> = {
   "advanced-leadership": "leadership",
@@ -54,6 +58,11 @@ const BY_SLUG: Record<string, Motif> = {
   "canva-design": "design",
   "freelancing-starter": "fx",
   "office-essentials": "office",
+  "real-estate-selling": "property",
+  "graphic-design-basics": "design",
+  "presentation-skills": "presentation",
+  "composure-at-work": "calm",
+  "professional-attire": "attire",
   "workplace-english": "communication",
 };
 
@@ -397,6 +406,61 @@ function art(m: Motif, c: string): ReactNode {
           </text>
         </>
       );
+    case "property":
+      return (
+        <>
+          <path d="M-200 0 L-60 -130 L80 0" fill="none" stroke={W} strokeWidth="12" strokeLinejoin="round" strokeLinecap="round" />
+          <rect x="-170" y="0" width="220" height="170" fill={W3} stroke={W} strokeWidth="6" />
+          <rect x="-90" y="70" width="60" height="100" rx="6" fill={c} />
+          <rect x="-150" y="30" width="44" height="40" rx="4" fill="rgba(255,255,255,0.35)" />
+          <rect x="-14" y="30" width="44" height="40" rx="4" fill="rgba(255,255,255,0.35)" />
+          <path d="M120 -150 V40" stroke={W} strokeWidth="10" strokeLinecap="round" />
+          <rect x="120" y="-140" width="130" height="80" rx="10" fill={c} stroke={W} strokeWidth="5" />
+          <text x="140" y="-90" fontSize="30" fontWeight="800" fill="#fff" fontFamily="system-ui, sans-serif">SOLD</text>
+          <circle cx="170" cy="120" r="44" fill={W3} stroke={W} strokeWidth="6" />
+          <path d="M150 120 L165 136 L192 104" fill="none" stroke={W} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+        </>
+      );
+    case "presentation":
+      return (
+        <>
+          <rect x="-220" y="-170" width="300" height="200" rx="14" fill={W3} stroke={W} strokeWidth="6" />
+          <path d="M-70 30 V110 M-130 110 L-70 30 L-10 110" fill="none" stroke={W} strokeWidth="8" strokeLinecap="round" />
+          <rect x="-190" y="-80" width="44" height="90" fill={c} />
+          <rect x="-130" y="-120" width="44" height="130" fill="#ffd23f" />
+          <rect x="-70" y="-60" width="44" height="70" fill="#2ee59d" />
+          <path d="M-190 -140 H20" stroke={W} strokeWidth="10" strokeLinecap="round" />
+          <circle cx="170" cy="-60" r="44" fill={W} />
+          <path d="M100 120 a70 90 0 0 1 140 0 Z" fill={c} stroke={W} strokeWidth="6" />
+          <path d="M120 20 L40 -60" stroke={W} strokeWidth="8" strokeLinecap="round" />
+          <path d="M215 -110 q30 30 0 60 M240 -130 q50 50 0 100" fill="none" stroke={W2} strokeWidth="6" strokeLinecap="round" />
+        </>
+      );
+    case "calm":
+      return (
+        <>
+          {[170, 125, 80].map((r, i) => (
+            <circle key={r} cx="0" cy="-10" r={r} fill="none" stroke={i === 2 ? c : W2} strokeWidth={i === 2 ? 10 : 6} opacity={1 - i * 0.15} />
+          ))}
+          <circle cx="0" cy="-10" r="44" fill={W} />
+          <path d="M-230 150 q40 -30 80 0 t80 0 t80 0 t80 0 t80 0" fill="none" stroke={W} strokeWidth="8" strokeLinecap="round" />
+          <path d="M-230 195 q40 -30 80 0 t80 0 t80 0 t80 0 t80 0" fill="none" stroke={c} strokeWidth="8" strokeLinecap="round" />
+          <path d="M-20 -20 q6 -6 12 0 M8 -20 q6 -6 12 0 M-16 2 q16 14 32 0" fill="none" stroke={c} strokeWidth="6" strokeLinecap="round" />
+        </>
+      );
+    case "attire":
+      return (
+        <>
+          <path d="M-150 -150 L-60 -180 Q0 -150 60 -180 L150 -150 L210 -40 L140 -10 L120 -50 V180 H-120 V-50 L-140 -10 L-210 -40 Z" fill={W3} stroke={W} strokeWidth="6" strokeLinejoin="round" />
+          <path d="M-60 -180 L0 -90 L60 -180" fill="none" stroke={W} strokeWidth="6" strokeLinejoin="round" />
+          <path d="M0 -90 L-22 -60 L0 80 L22 -60 Z" fill={c} stroke={W} strokeWidth="4" strokeLinejoin="round" />
+          <path d="M-14 -100 H14 L0 -84 Z" fill={c} />
+          {[-10, 40, 90, 140].map((y) => (
+            <circle key={y} cx="-60" cy={y} r="7" fill={W} />
+          ))}
+          <path d="M150 120 l18 -36 l18 36 l-36 -22 h36 Z" fill="#ffd23f" />
+        </>
+      );
     case "privacy":
       return (
         <>
@@ -431,6 +495,10 @@ const LAYOUT: Record<Motif, Layout> = {
   aml: "desk",
   privacy: "desk",
   design: "board",
+  property: "service",
+  presentation: "board",
+  calm: "board",
+  attire: "board",
   office: "desk",
   fx: "desk",
   procurement: "desk",

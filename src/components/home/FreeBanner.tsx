@@ -9,6 +9,11 @@ const SHORT: Record<string, string> = {
   "freelancing-starter": "💻 Freelancing",
   "office-essentials": "📊 MS Office",
   "workplace-english": "🗣️ Spoken English",
+  "real-estate-selling": "🏠 Real estate selling",
+  "graphic-design-basics": "✏️ Graphic design",
+  "presentation-skills": "🎤 Presentations",
+  "composure-at-work": "🧘 Stay composed",
+  "professional-attire": "👔 Professional attire",
 };
 
 /** Home page, first screen: the free courses with their free certificate, and the Premium upgrade. */
@@ -37,10 +42,15 @@ export async function FreeBanner() {
           </li>
         ))}
       </ul>
-      <Link href="/certifications?view=free#quests" className="btn btn--primary freeband__cta">
-        <span className="btn__label">Start a free course</span>
-        <span className="btn__arrow">→</span>
-      </Link>
+      <div className="freeband__ctas">
+        <Link href="/certifications?view=free#quests" className="btn btn--primary freeband__cta">
+          <span className="btn__label">Start a free course</span>
+          <span className="btn__arrow">→</span>
+        </Link>
+        <Link href="/certifications?view=free#quests" className="btn freeband__cta freeband__premium">
+          <span className="btn__label">⭐ Go Premium · {premium}</span>
+        </Link>
+      </div>
     </div>
   );
 }

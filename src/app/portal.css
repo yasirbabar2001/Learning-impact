@@ -4060,3 +4060,18 @@
   flex-wrap: wrap;
   gap: 6px;
 }
+
+/* Free & Premium course cards: two direct choices at the bottom of the card. */
+.cert-cell { position: relative; }
+.cert-card__actions-space { display: block; height: 46px; margin-top: auto; }
+.cert-card__actions { position: absolute; left: 26px; right: 26px; bottom: 24px; display: flex; gap: 10px; }
+.cert-card__btn { flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 12px; border-radius: 999px; font-weight: 800; font-size: 14.5px; white-space: nowrap; transition: transform 0.25s, background 0.25s, color 0.25s; }
+.cert-card__btn:hover { transform: translateY(-2px); }
+.cert-card__btn--free { border: 1px solid rgba(255, 255, 255, 0.35); color: #fff; background: rgba(255, 255, 255, 0.06); }
+.cert-card__btn--free:hover { background: #fff; color: #050507; }
+.cert-card__btn--premium { border: 1px solid var(--gold, #ffd23f); background: var(--gold, #ffd23f); color: #050507; }
+.cert-card__btn--premium:hover { box-shadow: 0 10px 26px rgba(255, 210, 63, 0.35); }
+@media (max-width: 420px) {
+  .cert-card__actions { left: 18px; right: 18px; gap: 8px; }
+  .cert-card__btn { font-size: 13.5px; padding: 10px 8px; }
+}
