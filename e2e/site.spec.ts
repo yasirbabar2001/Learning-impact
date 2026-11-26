@@ -168,3 +168,19 @@ test("the site is installable as an app and offers a Get the app button with ste
   await page.keyboard.press("Escape");
   await expect(dialog).toBeHidden();
 });
+
+test("an Install the app card shows at the top right and stays closed once dismissed", async ({ page }) => {
+  await page.goto("/?app-prompt=1");
+  const card = page.getByRole("region", { name: "Get the app" });
+  await expect(card).toBeVisible();
+  const box = (await card.boundingBox())!;
+  const width = page.viewportSize()!.width;
+  expect(box.y).toBeLessThan(160);
+  expect(box.x + box.width).toBeGreaterThan(width - 60);
+  await card.getByRole("button", { name: /Install/ }).dispatchEvent("click");
+  await expect(page.getByRole("dialog", { name: "Install the Learning Impact app" })).toBeVisible();
+  await page.keyboard.press("Escape");
+  await card.getByRole("button", { name: "Close" }).click();
+  await expect(card).toBeHidden();
+  expect(Number(await page.evaluate(() => localStorage.getItem("li-app-prompt-dismissed")))).toBeGreaterThan(0);
+});

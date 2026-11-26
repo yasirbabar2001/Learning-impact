@@ -4873,13 +4873,20 @@ html :is(.glass, .btn--ghost, .path, .feature-card, .step, .format-card, .initia
 .appperks__item { padding: 22px; border-radius: 22px; }
 .appperks__icon { font-size: 32px; }
 .appperks__item h3 { margin: 10px 0 6px; font-size: 18px; }
-.appbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 9000; display: flex; align-items: center; gap: 10px; padding: 10px 10px 10px 12px; border-radius: 18px; background: #14141c; border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55); }
-.appbar img { border-radius: 10px; flex: none; }
-.appbar p { margin: 0; flex: 1; min-width: 0; display: grid; line-height: 1.25; }
-.appbar p b { font-size: 14px; }
-.appbar p span { font-size: 12px; color: #b9b7c8; }
-.appbar__btn { flex: none; padding: 9px 14px; border-radius: 999px; border: 0; background: var(--gold, #ffd23f); color: #050507; font-weight: 800; font-size: 14px; }
-.appbar__x { flex: none; width: 32px; height: 32px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.08); color: #fff; font-size: 20px; cursor: pointer; }
+.appcard { position: fixed; top: 108px; right: 24px; z-index: 85; width: 340px; max-width: calc(100vw - 24px); display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 14px; border-radius: 18px; background: rgba(20, 20, 28, 0.94); backdrop-filter: blur(10px); border: 1px solid rgba(255, 210, 63, 0.45); box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55), 0 0 0 4px rgba(255, 210, 63, 0.08); animation: appcard-in 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+.appcard img { flex: none; border-radius: 11px; }
+.appcard p { margin: 0; flex: 1; min-width: 0; display: grid; line-height: 1.25; }
+.appcard p b { font-size: 15px; }
+.appcard p span { font-size: 12.5px; color: #c9c6d8; }
+.appcard__btn { flex: none; border: 0; border-radius: 999px; padding: 9px 14px; background: var(--gold, #ffd23f); color: #050507; font-weight: 800; font-size: 14px; }
+.appcard__x { position: absolute; top: -10px; right: -10px; width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.2); background: #2a2a36; color: #fff; font-size: 16px; line-height: 1; cursor: pointer; }
+@keyframes appcard-in { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
+@media (max-width: 760px) {
+  .appcard { top: 104px; right: 12px; width: 310px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .appcard { animation: none; }
+}
 @media (max-width: 960px) {
   .appband { grid-template-columns: 1fr; }
   .appguide { grid-template-columns: 1fr; }

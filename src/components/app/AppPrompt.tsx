@@ -1,25 +1,28 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { InstallApp, isStandalone } from "./InstallApp";
 
 const KEY = "li-app-prompt-dismissed";
 
-/** On phones, a small one-time bar offering the app. Dismissing it hides it for 30 days. */
+/** Top-right card offering the app on every device. Closing it hides it for 30 days; never shown inside the installed app. */
 export function AppPrompt() {
+  const path = usePathname();
   const [show, setShow] = useState(false);
   useEffect(() => {
-    if (isStandalone() || navigator.webdriver || !window.matchMedia("(max-width: 760px)").matches) return;
+    const forced = new URLSearchParams(location.search).has("app-prompt");
+    if (isStandalone() || (navigator.webdriver && !forced)) return;
     try {
       const at = Number(localStorage.getItem(KEY) || 0);
-      if (Date.now() - at < 30 * 864e5) return;
+      if (!forced && Date.now() - at < 30 * 864e5) return;
     } catch {
       /* storage blocked: still show */
     }
-    const t = setTimeout(() => setShow(true), 12000);
+    const t = setTimeout(() => setShow(true), forced ? 0 : 1500);
     return () => clearTimeout(t);
   }, []);
-  if (!show) return null;
+  if (!show || path === "/app") return null;
   const close = () => {
     setShow(false);
     try {
@@ -29,15 +32,15 @@ export function AppPrompt() {
     }
   };
   return (
-    <div className="appbar" role="region" aria-label="Get the app">
+    <div className="appcard" role="region" aria-label="Get the app">
       {/* eslint-disable-next-line @next/next/no-img-element -- tiny static icon */}
-      <img src="/icons/icon-192.png" alt="" width={40} height={40} />
+      <img src="/icons/icon-192.png" alt="" width={44} height={44} />
       <p>
-        <b>Learning Impact app</b>
-        <span>Learn faster from your home screen</span>
+        <b>Get the Learning Impact app</b>
+        <span>Free · Android, iPhone &amp; desktop</span>
       </p>
-      <InstallApp className="appbar__btn" label="Install" compact />
-      <button type="button" className="appbar__x" aria-label="Not now" onClick={close}>
+      <InstallApp className="appcard__btn" label="Install" compact />
+      <button type="button" className="appcard__x" aria-label="Close" onClick={close}>
         ×
       </button>
     </div>
