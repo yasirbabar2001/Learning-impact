@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { FreeVsPremium } from "@/components/portal/FreeVsPremium";
+import { PremiumBar } from "@/components/portal/PremiumBar";
 import { QuestMap, type MapNode } from "@/components/portal/QuestMap";
 import { Ring } from "@/components/portal/Ring";
 import { Reveal } from "@/components/Reveal";
@@ -36,9 +38,15 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
   const attempts = attemptsOf(user.id, slug).filter((a) => a.submitted_at);
   const best = attempts.reduce((m, a) => Math.max(m, a.percent ?? 0), 0);
 
+  const upsell = fp && mode === "trial";
+  const compare = (
+    <FreeVsPremium freeCount={freeCount} total={course.sessions.length} price={price} examQuestions={course.exam.questionsPerAttempt} upgradeHref={`/checkout/${slug}`} />
+  );
+
   const nodes: MapNode[] = shown.map((s, i) => ({
     key: s.session.id,
-    href: s.status === "locked" ? null : `/learn/${slug}/${s.session.id}`,
+    // A Premium stage opens the upgrade page, so the learner can go Premium from the map itself.
+    href: s.status === "locked" ? (upsell && s.paywall ? `/checkout/${slug}` : null) : `/learn/${slug}/${s.session.id}`,
     n: `Stage ${i + 1}`,
     stage: s.session.stage,
     title: s.session.title,
@@ -53,7 +61,9 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
               ? `In progress · card ${Math.min(s.progress.cards_seen + 1, s.session.cards.length)} of ${s.session.cards.length}`
               : `${mode === "trial" ? "Free · " : ""}${s.session.minutes} min · ${s.session.cards.length} cards`
             : s.paywall
-              ? s.session.id === offer?.next?.id && stagePrice
+              ? fp
+                ? `⭐ Premium stage · upgrade for ${price}`
+                : s.session.id === offer?.next?.id && stagePrice
                 ? `🔒 Unlock this stage for ${stagePrice}, or the full quest for ${price}`
                 : `🔒 Included in the full certification (${price})`
               : "Clear the previous stage to unlock",
@@ -70,7 +80,9 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
       : mode === "preview"
         ? "Preview the question bank"
         : mode === "trial"
-          ? "🔒 Included in the full certification"
+          ? fp
+            ? "⭐ Premium: final exam & verified certificate"
+            : "🔒 Included in the full certification"
           : p.examUnlocked && enrollment
             ? `${attemptsAllowed(enrollment.extra_attempts) - attempts.length} attempt(s) left${attempts.length ? ` · best ${best}%` : ""}`
             : "Unlocks when every stage is cleared",
@@ -78,6 +90,13 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="quest" style={{ ["--c" as string]: course.quest.color }}>
+      {upsell && (
+        <div className="container">
+          <PremiumBar href={`/checkout/${slug}`} price={price} freeCount={freeCount}>
+            {compare}
+          </PremiumBar>
+        </div>
+      )}
       <section className="container quest__head">
         <Reveal className="quest__intro">
           <Link href="/learn" className="link-arrow quest__back">
@@ -169,6 +188,7 @@ export default async function QuestPage({ params }: { params: Promise<{ slug: st
       <section className="container quest__map">
         <QuestMap nodes={nodes} />
       </section>
+      {upsell && <section className="container section section--tight">{compare}</section>}
     </div>
   );
 }

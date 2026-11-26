@@ -1,11 +1,13 @@
 import { notFound, redirect } from "next/navigation";
+import { FreeVsPremium } from "@/components/portal/FreeVsPremium";
 import { LessonPlayer, type PublicCard } from "@/components/portal/LessonPlayer";
+import { PremiumBar } from "@/components/portal/PremiumBar";
 import { catalogEntry, getCourse } from "@/lib/courses/catalog";
 import { formatMoney } from "@/lib/money";
-import { viewerCurrency } from "@/lib/portal/currency";
+import { priceIn, viewerCurrency } from "@/lib/portal/currency";
 import { requireUser } from "@/lib/portal/auth";
 import { unlockOffer } from "@/lib/portal/commerce";
-import { freeStagesOf } from "@/lib/portal/completion";
+import { freeStagesOf, isFreePremium } from "@/lib/portal/completion";
 import { accessFor, QUIZ_PASS, stagesFor } from "@/lib/portal/learning";
 import { SITE_URL } from "@/lib/site";
 
@@ -30,9 +32,23 @@ export default async function StagePage({ params }: { params: Promise<{ slug: st
   const entry = catalogEntry(slug);
   const currency = await viewerCurrency(user);
   const offer = nextLocked && entry ? unlockOffer(user.id, slug, entry, currency) : null;
+  // Free & Premium courses: the upgrade stays one tap away on every free stage.
+  const upsell = isFreePremium(course) && access.mode === "trial" && entry;
+  const premiumPrice = entry ? formatMoney(priceIn(entry, currency), currency) : "";
 
   return (
     <div className="container" style={{ ["--c" as string]: course.quest.color }}>
+      {upsell && (
+        <PremiumBar href={`/checkout/${slug}`} price={premiumPrice} freeCount={freeStagesOf(course)}>
+          <FreeVsPremium
+            freeCount={freeStagesOf(course)}
+            total={course.sessions.length}
+            price={premiumPrice}
+            examQuestions={course.exam.questionsPerAttempt}
+            upgradeHref={`/checkout/${slug}`}
+          />
+        </PremiumBar>
+      )}
       <LessonPlayer
         slug={slug}
         sid={sid}

@@ -95,7 +95,7 @@ export function CertCatalog({ items }: { items: CatalogCard[] }) {
                     🎁 Start free
                   </Link>
                   <Link href={`/checkout/${c.slug}`} className="cert-card__btn cert-card__btn--premium" aria-label={`Go Premium: ${c.title}, ${c.price}`}>
-                    ⭐ Premium · {c.price}
+                    👑 Premium · {c.price}
                   </Link>
                 </div>
               )}

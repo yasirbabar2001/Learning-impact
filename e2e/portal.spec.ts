@@ -849,7 +849,12 @@ test("free courses: the Basic level is free and earns a Certificate of Completio
   await expect(page).toHaveURL(/view=free/);
   await page.goto(`/certifications/${course.slug}`);
   await expect(page.locator(".cert__price")).toHaveText("Free");
-  await expect(page.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
+  await expect(page.locator(".cert__premium")).toContainText("Upgrade to Premium · PKR 5,000");
+  // The course page compares Free and Premium and marks each stage.
+  const table = page.getByRole("table", { name: "Free vs Premium" });
+  await expect(table).toBeVisible();
+  await expect(table.getByRole("row", { name: /Final certification exam/ }).getByLabel("Not included")).toBeVisible();
+  await expect(page.locator(".stage-tag--free")).toHaveCount(course.freeStages);
 
   await signUpIndividual(page, "Fatima Free", `free${Date.now()}@example.com`);
   // The Basic stages are open one after another without paying; finish each lesson and pass each stage test.
@@ -865,7 +870,18 @@ test("free courses: the Basic level is free and earns a Certificate of Completio
 
   await page.goto(`/learn/${course.slug}`);
   await expect(page.getByText("You finished the free Basic level!")).toBeVisible();
-  await expect(page.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
+  await expect(page.locator(".unlock-banner").getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toBeVisible();
+  // An always-visible upgrade bar, with the Free vs Premium comparison one tap away.
+  const bar = page.getByRole("region", { name: "Your plan" });
+  await expect(bar.getByRole("link", { name: /Upgrade to Premium · PKR 5,000/ })).toHaveAttribute("href", `/checkout/${course.slug}`);
+  await bar.getByRole("button", { name: "Free vs Premium" }).click();
+  await expect(page.getByRole("dialog", { name: "Free vs Premium" })).toBeVisible();
+  await page.keyboard.press("Escape");
+  // Premium stages on the map lead to the upgrade.
+  await expect(page.locator(`a.qnode__link[href="/checkout/${course.slug}"]`)).toHaveCount(course.sessions.length - course.freeStages);
+  // ...and the bar is there on every free stage too.
+  await page.goto(`/learn/${course.slug}/${course.sessions[0].id}`);
+  await expect(page.getByRole("region", { name: "Your plan" }).getByRole("link", { name: /Upgrade to Premium/ })).toBeVisible();
   await page.goto("/learn/certificates");
   await expect(page.getByText("Certificate of Completion · Basic level")).toBeVisible();
   const pdf = await page.request.get((await page.getByRole("link", { name: /Download PDF/ }).first().getAttribute("href"))!);

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FreeVsPremium } from "@/components/portal/FreeVsPremium";
 import { notFound } from "next/navigation";
 import { CourseCover } from "@/components/CourseCover";
 import { RegulatoryBasis } from "@/components/portal/RegulatoryBasis";
@@ -200,6 +201,20 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
         </Reveal>
       </section>
 
+      {fp && (
+        <section className="container section section--tight" id="free-vs-premium">
+          <Reveal>
+            <FreeVsPremium
+              freeCount={freeCount}
+              total={c.sessions.length}
+              price={formatMoney(price, currency)}
+              examQuestions={c.exam.questionsPerAttempt}
+              upgradeHref={enrolled ? null : `/checkout/${slug}`}
+            />
+          </Reveal>
+        </section>
+      )}
+
       <RegulatoryBasis course={c} />
 
       <section className="container section section--tight">
@@ -215,7 +230,10 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
               <li className="stage-row spot">
                 <span className="stage-row__n">{i + 1}</span>
                 <div>
-                  <span className="stage-row__stage">{s.stage}</span>
+                  <span className="stage-row__stage">
+                    {s.stage}
+                    {fp && (i < freeCount ? <span className="stage-tag stage-tag--free">🎁 Free</span> : <span className="stage-tag stage-tag--premium">⭐ Premium</span>)}
+                  </span>
                   <h3>{s.title}</h3>
                   <p className="muted">{s.summary}</p>
                   <span className="stage-row__meta">
@@ -229,7 +247,10 @@ export default async function CertificationPage({ params }: { params: Promise<{ 
             <li className="stage-row stage-row--boss spot">
               <span className="stage-row__n">🐉</span>
               <div>
-                <span className="stage-row__stage">Final boss</span>
+                <span className="stage-row__stage">
+                  Final boss
+                  {fp && <span className="stage-tag stage-tag--premium">⭐ Premium</span>}
+                </span>
                 <h3>Certification exam</h3>
                 <p className="muted">
                   {c.exam.questionsPerAttempt} questions drawn at random from a bank of {c.exam.bank.length}, {c.exam.minutes} minutes, pass mark {c.exam.passMark}%. Up
